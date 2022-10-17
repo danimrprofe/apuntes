@@ -1,87 +1,80 @@
-## Lección 5 Entradas Digitales 
-### Resumen 
-En esta lección, usted aprenderá a utilizar los botones con entradas digitales para  encender y apagar un LED.  
-Presionar el botón se encenderá el LED; pulsar el otro botón se apagará el LED.  
-Componente necesario: 
+### [05entradas-digitales](arduino/05.Entradas-digitales.md)
 
-- (1) x Elegoo Uno R3 
-- (1) protoboard de 830 puntos de amarre x 
-- LED rojo de 5mm x (1)  
-- (1) x resistencia de 220 ohmios 
-- interruptores de presión x (2)  
-- (7) x M M cables (cables de puente de macho a macho) 
-- Introducción del componente 
+- [Lección 5 Entradas Digitales](arduino/05.Entradas-digitales.md#lección-5-entradas-digitales)
+  * [Resumen](arduino/05.Entradas-digitales.md#resumen)
+  * [Pulsadores](arduino/05.Entradas-digitales.md#pulsadores)
+  * [Conexión](arduino/05.Entradas-digitales.md#conexión)
+  * [Esquema](arduino/05.Entradas-digitales.md#esquema)
+  * [Diagrama de cableado](arduino/05.Entradas-digitales.md#diagrama-de-cableado)
+  * [Código](arduino/05.Entradas-digitales.md#código)
+- [Código completo](arduino/05.Entradas-digitales.md#código-completo)
 
-### Pulsadores
+### [06zumbador-activo](arduino/06.zumbador activo.md)
 
-Los interruptores son componentes muy simples. Cuando pulse un botón o girar una palanca, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores táctiles poco utilizados en esta lección tienen cuatro conexiones, que pueden ser un poco confusas
+- [Lección 6 Activar zumbador](arduino/06.zumbador activo.md#lección-6-activar-zumbador)
+  * [Resumen](arduino/06.zumbador activo.md#resumen)
+  * [Zumbador](arduino/06.zumbador activo.md#zumbador)
+  * [Conexión](arduino/06.zumbador activo.md#conexión)
+  * [Esquema](arduino/06.zumbador activo.md#esquema)
+  * [Diagrama de conexiones](arduino/06.zumbador activo.md#diagrama-de-conexiones)
+  * [Código](arduino/06.zumbador activo.md#código)
 
-<img width="400" src="media/image67.jpeg" id="image67">
+### [07zumbador-pasivo](arduino/07.zumbador-pasivo.md)
 
-En realidad, hay realmente dos conexiones eléctricas. Dentro del paquete de interruptor, pins B y C se conectan entre sí, como son A y D.
+  * [Lección 7 Zumbador Pasivo](arduino/07.zumbador-pasivo.md#lección-7-zumbador-pasivo)
+    + [Resumen](arduino/07.zumbador-pasivo.md#resumen)
+- [Componentes necesarios](arduino/07.zumbador-pasivo.md#componentes-necesarios)
+    + [Zumbador pasivo](arduino/07.zumbador-pasivo.md#zumbador-pasivo)
+    + [Conexión](arduino/07.zumbador-pasivo.md#conexión)
+    + [Esquema](arduino/07.zumbador-pasivo.md#esquema)
+    + [Diagrama de conexiones](arduino/07.zumbador-pasivo.md#diagrama-de-conexiones)
+    + [Código](arduino/07.zumbador-pasivo.md#código)
 
-### Conexión
+### [08interruptor-bola](arduino/08.Interruptor-bola.md)
 
-### Esquema
+- [Lección 8 Interruptor de bola de inclinación](arduino/08.Interruptor-bola.md#lección-8-interruptor-de-bola-de-inclinación)
+  * [Resumen](arduino/08.Interruptor-bola.md#resumen)
+  * [Sensor de inclinación](arduino/08.Interruptor-bola.md#sensor-de-inclinación)
+  * [Conexión](arduino/08.Interruptor-bola.md#conexión)
+  * [Esquema](arduino/08.Interruptor-bola.md#esquema)
+  * [Diagrama de conexiones](arduino/08.Interruptor-bola.md#diagrama-de-conexiones)
+  * [Código](arduino/08.Interruptor-bola.md#código)
 
-<img width="400" src="media/image68.jpeg" id="image68">
+### [09servo](arduino/09.Servo.md)
+
+- [Lección 9 Servo](arduino/09.Servo.md#lección-9-servo)
+  * [Resumen](arduino/09.Servo.md#resumen)
+  * [Servomotor SG90](arduino/09.Servo.md#servomotor-sg90)
+  * [Conexión](arduino/09.Servo.md#conexión)
+  * [Esquema](arduino/09.Servo.md#esquema)
+  * [Diagrama de cableado](arduino/09.Servo.md#diagrama-de-cableado)
+  * [Código](arduino/09.Servo.md#código)
+
+### [10sensor-ultrasonico](arduino/10.Sensor-ultrasonico.md)
+
+- [Lección 10 Módulo Sensor ultrasónico](arduino/10.Sensor-ultrasonico.md#lección-10-módulo-sensor-ultrasónico)
+  * [Resumen](arduino/10.Sensor-ultrasonico.md#resumen)
+  * [Componentes necesarios](arduino/10.Sensor-ultrasonico.md#componentes-necesarios)
+  * [Sensor de ultrasonidos](arduino/10.Sensor-ultrasonico.md#sensor-de-ultrasonidos)
+  * [Conexión](arduino/10.Sensor-ultrasonico.md#conexión)
+  * [Diagrama de cableado](arduino/10.Sensor-ultrasonico.md#diagrama-de-cableado)
+  * [Montaje](arduino/10.Sensor-ultrasonico.md#montaje)
+  * [Código](arduino/10.Sensor-ultrasonico.md#código)
+
+### [esp8266](arduino/esp8266.md)
+
+- [Código fuente](arduino/esp8266.md#código-fuente)
+- [Subida](arduino/esp8266.md#subida)
+- [Salida monitor serie](arduino/esp8266.md#salida-monitor-serie)
 
 
-### Diagrama de cableado
 
-<img width="400" src="media/image69.jpeg" id="image69">
+### [tiras-led](arduino/tiras-led.md)
 
-Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor. Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas. Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
-
-### Código
-
-Después de cablearlo, por favor, abra el programa en el código de carpeta - Lección 5 entradas digitales y presione UPLOAD para cargar el programa. Si se aparecen errores, ver Lección 2 para obtener más información sobre el tutorial de subir programa.
-
-El bosquejo en su placa UNO de carga. Presionando el botón izquierdo se encenderá el LED mientras que pulsando el botón derecho apagará.
-
-La primera parte del proyecto define tres variables para ls tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.
-
-La función de **setup** define el ledPin como una salida normal, pero ahora tenemos las dos entradas para ocuparse. En este caso, utilizamos el conjunto el pinMode ser 'INPUT_PULLUP' como este:
-
-El modo pin de INPUT_PULLUP significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, se debe 'sacarse' a alta. En otras palabras, el valor predeterminado de la entrada es alta, a menos que se tiró bajo por la acción de pulsar el botón.
-
-Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
-
-Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
-
-En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
-
-Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces un 'digitalWrite' en el ledPin enciende.
-
-## Código completo
-
-```c
-int ledPin = 5;
-int pinBotonA = 9;
-int pinBotonB = 8;
-
-byte leds = 0;
-
-void setup() 
-{
-  pinMode(ledPin, OUTPUT);
-  pinMode(pinBotonA, INPUT_PULLUP);  
-  pinMode(pinBotonB, INPUT_PULLUP);  
-}
-
-void loop() 
-{
-  if (digitalRead(pinBotonA) == LOW)
-  {
-    digitalWrite(ledPin, HIGH);
-  }
-  if (digitalRead(pinBotonB) == LOW)
-  {
-    digitalWrite(ledPin, LOW);
-  }
-}
-``` 
-
-<img width="400" src="media/image70.jpeg" id="image70">
-
-Del mismo modo, si se presiona el botón B, un bajo se escribe en el ledPin.
+  * [Conexión](arduino/tiras-led.md#conexión)
+  * [Cabecera](arduino/tiras-led.md#cabecera)
+  * [Setup](arduino/tiras-led.md#setup)
+  * [Loop](arduino/tiras-led.md#loop)
+- [Iluminar todos los LED de golpe](arduino/tiras-led.md#iluminar-todos-los-led-de-golpe)
+  * [LED Chaser](arduino/tiras-led.md#led-chaser)
+  * [Serial glow](arduino/tiras-led.md#serial-glow)

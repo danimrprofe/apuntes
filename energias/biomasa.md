@@ -27,7 +27,7 @@ La biomasa se puede quemar directamente para obtener energía (biomasa energéti
 
 ## Biocombustibles
 
-Los biocombustibles se obtienen de la transformación de ciertos productos vegetales.
+Los **biocombustibles** se obtienen de la transformación de ciertos productos vegetales.
 Obtención
 
 1.	De cultivos oleaginosos (colza, girasol o soja) , se obtienen aceites vegetales que se transforman en biodiésel para motores y turbinas. Pueden usarse solo en motores diésel preparados o en cualquier motor normal, mezclado con el diésel clásico. Suponen una drástica reducción  de las emisiones de CO2 y SOx y partículas en suspensión, aunque aumentan las emisiones de NOx y los motores son más difíciles de arrancar en frío y la potencia del motor disminuye.

@@ -27,16 +27,19 @@ La biomasa se puede quemar directamente para obtener energía (biomasa energéti
 
 ## Biocombustibles
 
-Los **biocombustibles** se obtienen de la transformación de ciertos productos vegetales.
-Obtención
+![](img/2022-10-20-22-21-07.png)
 
-1.	De cultivos oleaginosos (colza, girasol o soja) , se obtienen aceites vegetales que se transforman en biodiésel para motores y turbinas. Pueden usarse solo en motores diésel preparados o en cualquier motor normal, mezclado con el diésel clásico. Suponen una drástica reducción  de las emisiones de CO2 y SOx y partículas en suspensión, aunque aumentan las emisiones de NOx y los motores son más difíciles de arrancar en frío y la potencia del motor disminuye.
-2.	De cultivos ricos en almidón, como cereales, caña de azúcar o remolacha, por fermentación se obtiene bioetanol. Puede utilizarse directamente en motores sin rectificar, pero son más difíciles de arrancar en frío y su rendimiento es menor que la gasolina
-3.	La biomasa húmeda (restos orgánicos de cualquier tipo) (>60 % agua) se convierte biológicamente en biogás, por fermentación, proceso realizado por bacterias en condiciones anaerobias.
+Los **biocombustibles** se obtienen de la transformación de ciertos productos vegetales.
+
+1.	De cultivos oleaginosos (colza, girasol o soja) , se obtienen aceites vegetales que se transforman en **biodiésel** para motores y turbinas. Pueden usarse solo en motores diésel preparados o en cualquier motor normal, mezclado con el diésel clásico. Suponen una drástica reducción  de las emisiones de CO2 y SOx y partículas en suspensión, aunque aumentan las emisiones de NOx y los motores son más difíciles de arrancar en frío y la potencia del motor disminuye.
+2.	De cultivos ricos en almidón, como cereales, caña de azúcar o remolacha, por fermentación se obtiene **bioetanol**. Puede utilizarse directamente en motores sin rectificar, pero son más difíciles de arrancar en frío y su rendimiento es menor que la gasolina
+3.	La biomasa húmeda (restos orgánicos de cualquier tipo) (>60 % agua) se convierte biológicamente en **biogás**, por fermentación, proceso realizado por bacterias en condiciones anaerobias.
+
+![](img/2022-10-20-22-19-33.png)
 
 ### Ventajas
 
-Los biocombustibles son menos contaminantes que los combustibles fósiles ya que se supone que compensan el CO2 que genera su combustión con el CO2 consumido previamente por la planta de la cual se obtiene. 
+Los **biocombustibles** son menos contaminantes que los combustibles fósiles ya que se supone que compensan el CO2 que genera su combustión con el CO2 consumido previamente por la planta de la cual se obtiene. 
 
 ### Desventajas
 

@@ -1,18 +1,9 @@
 PETRÓLEO
 del griego: πετρέλαιον, lit. «aceite de roca»
 
-El petróleo se origina en cuencas sedimentarias marinas de poca profundidad, cuando se produce la muerte masiva del PLANCTON (debido a cambios de Tº, salinidad, o otras causas). Sus restos orgánicos sedimentan junto con arenas y limos y forman los fangos sapropélicos, donde existen condiciones anaerobias. Con el progresivo enterramiento se produce la transformación simultánea de sus componentes:
+El petróleo se origina en cuencas sedimentarias marinas de poca profundidad, cuando se produce la muerte masiva del PLANCTON (debido a cambios de Tº, salinidad, o otras causas). Sus restos orgánicos sedimentan junto con arenas y limos y forman los fangos sapropélicos, donde existen condiciones anaerobias. Con el progresivo enterramiento se produce la transformación simultánea de sus componentes.
 
-- Los restos orgánicos fermentan y forman los HIDROCARBUROS (mezcla de muchos tamaños)
-- Las arenas y limos sufren diagénesis para transformarse en la ROCA MADRE POROSA que queda impregnada por los hidrocarburos
-
-Como los HC son de menor densidad, tienden a aflorar hacia la superficie, proceso conocido como MIGRACIÓN:
-- Si alcanzan la superficie, parte de los HC se evaporan y el resto queda formando un residuo bituminoso (Ej pizarras bituminosas)
-- Si durante el ascenso encuentra una capa de roca impermeable, quedará almacenado impregnando la roca porosa que hay bajo ella (ROCA ALMACÉN) en un trampa petrolífera:
-En la roca almacén, los diferentes componentes se separan por orden de densidad y pueden ser extraído por separado
-EL PETRÓLEO
-
-Cuando se extrae, lo que se obtiene es el CRUDO, una mezcla de HC sólidos, líquidos y gaseosos de muy diversos tamaños. El crudo se somete a un proceso de separación de sus componentes denominada DESTILACIÓN FRACCIONADA de la que se obtienen cientos de productos derivados como:
+Cuando se extrae, lo que se obtiene es el **crudo**, una mezcla de hidrocarburos sólidos, líquidos y gaseosos de muy diversos tamaños. El crudo se somete a un proceso de separación de sus componentes denominada **destilación fraccionada** de la que se obtienen cientos de productos derivados como:
 
 - Combustibles: gas propano. butano, gasolinas, fuel, queroseno
 - Numerosas materias primas: asfaltos, betunes, aceites lubricantes, plásticos, fibras sintéticas, fertilizantes, pesticidas, medicamentos y pinturas
@@ -35,6 +26,8 @@ La fracturación hidráulica, fractura hidráulica o estimulación hidráuli
  
 Habitualmente el material inyectado es **agua con arena y productos químicos**, cuya finalidad es favorecer la fisuración o incluso la disolución de la roca.
 
+![](img/2022-10-21-00-41-09.png)
+
 Los partidarios de la fracturación hidráulica argumentan los beneficios económicos de las vastas cantidades de hidrocarburos previamente inaccesibles, que esta nueva técnica permite extraer. Sus oponentes, en cambio, señalan el impacto medioambiental de esta técnica, que incluye la contaminación de acuíferos, elevado consumo de agua, contaminación de la atmósfera, contaminación sonora, migración de los gases y productos químicos utilizados a la superficie, contaminación en superficie debida a vertidos, y los posibles efectos en la salud derivados de estos peligros. Se han producido incrementos en la actividad sísmica, la mayoría asociados con la inyección profunda de fluidos relacionados con el fracking en el subsuelo.
 
 Se estima que en 2010 esta técnica estaba presente en aproximadamente el 60 % de los pozos de extracción en uso.Debido al aumento del precio de los combustibles fósiles, que han hecho económicamente rentables estos métodos, se está propagando su empleo en los últimos años, especialmente en los Estados Unidos.
@@ -42,6 +35,8 @@ Se estima que en 2010 esta técnica estaba presente en aproximadamente el 60 % 
 ## Barcos petroleros (tankers)
 
 El transporte del petróleo es mayoritariamente por vía marítima, en barcos que pueden transportar hasta 500.000 toneladas, también se puede transportar por vía terrestre por oleoductos de petróleo. Los oleoductos son conductos de más de un metro de diámetro y cientos de kilómetros de longitud por el cual se impulsa el aceite mineral. Por los mares del mundo se transportan más de 250 millones de toneladas de petróleo crudo.
+
+![](img/2022-10-21-00-39-31.png)
 
 ## Grupo electrógeno
 

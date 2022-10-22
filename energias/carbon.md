@@ -80,9 +80,9 @@ Funcionan con 2 turbinas:
 
 En algunos casos también se aprovecha el calor de los gases de la combustión (600ºC) para general vapor de alta presión, que mueve una tercera turbina
 
-Con este método se consiguen eficiencias mucho más altas (hasta 55%) y se produce menor contaminación
+Con este método se consiguen eficiencias mucho más altas (hasta 55%) y se produce menor contaminación.
 
-# 3) SISTEMAS DE COGENERACIÓN
+## 3) SISTEMAS DE COGENERACIÓN
 
 Son sistemas de alta eficiencia donde se aprovecha el mismo combustible para generar 2 o  más productos: electricidad y calor aprovechable (hornos, agua caliente, etc.) o electricidad y E. mecánica (movimiento de una máquina). Es muy útil en industrias Ej. Azulejeras de Castellón: aprovechan el calor de los hornos para generar vapor y mover una turbina (se autoabastecen de electricidad), pero también en viviendas, ej: calderas para generar electricidad, agua caliente sanitaria y calefacción
 

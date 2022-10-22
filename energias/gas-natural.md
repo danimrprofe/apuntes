@@ -6,7 +6,7 @@ Usos y aplicaciones
 El gas natural se utiliza como fuente de energía para varios usos, entre los que destacan:
 Calefacción, aire acondicionado, agua caliente sanitaria y cocción para usos comerciales y domésticos (Consejos de seguridad asociados).
 
-- Generación de electricidad a través de las centrales de ciclo combinado.
+- Generación de electricidad a través de las **centrales de ciclo combinado**.
 - Combustible para buques y transporte marítimo (GNL/LNG).
 - Combustible para vehículos terrestres (GNC/CNG y GNL/LNG) 
 - Procesos industriales y fabricación de abonos.

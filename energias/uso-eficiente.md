@@ -1,5 +1,6 @@
 USO EFICIENTE DE LA ENERGÍA
-A partir de la crisis del petróleo (1973) se plantea una nueva forma de energía: el AHORRO ENERGÉTICO.  La consigna es: no es necesario disminuir la calidad de vida para ahorrar energía. Un estudio profundo de los gastos inútiles ha demostrado que hay viabilidad en este enfoque
+A partir de la crisis del petróleo (1973) se plantea una nueva forma de energía: el AHORRO ENERGÉTICO.  La consigna es: no es necesario disminuir la calidad de vida para ahorrar energía. Un estudio profundo de los gastos inútiles ha demostrado que hay viabilidad en este enfoque.
+
 Uno de los mecanismos de ahorro es la COGENERACIÓN ENERGÉTICA, es decir la producción combinada de dos formas de energía útiles a partir de una única fuente de combustible. Este sistema permite utilizar hasta el 90% de la energía del combustible, contra el 33% típico de una planta energética
 Medidas especificas respecto al uso de la energía son:
 1) Aumentar la eficiencia del sistema energético: El sistema de trasporte eléctrico tiene una eficiencia global del 33%, por lo que es necesario producir el triple de energía de la que consumimos. La eléctricas incentivan el ahorro mediante los negavatios (vatios negativos), ayudas económicas para comparar bombillas y electrodomésticos más eficientes.

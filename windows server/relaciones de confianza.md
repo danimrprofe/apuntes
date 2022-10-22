@@ -17,6 +17,7 @@ Una relación de confianza es una relación establecida entre dos dominios. Perm
 Estas relaciones permiten: 
 * A los usuarios acceder a los recursos de otro dominio
 * A los administradores definir los permisos y derechos de usuario para los usuarios del otro dominio.
+
 Permite establecer comunicación entre varios controladores de dominio, con el fin de poder administrar desde un solo punto de la red a todos los usuarios y recursos que tengas.
 
 En una red que consista en dos o más dominios, cada dominio actúa como una red por separado con su propia base de datos de cuentas.

@@ -97,7 +97,7 @@ Cable
 de sortida 
 Interior d'un potenciometre rotatori. Les fletxes grogues indiquen el camí que recorre el corrent elèctric. 
 
-#7. Exemple 1: control de la velocitat d'un motor elèctric 
+# 7. Exemple 1: control de la velocitat d'un motor elèctric 
 
 En aquest circuit s'ha col·locat un potenciòmetre rotatori intercalat entre dues piles i un petit motor elèctric. Aquest potenciòmetre té un eix i un comandament que ens permet girar-lo fàcilment amb la mà, sense necessitat de fer servir un tornavís. Movent el comandament del potenciòmetre podem fer que arribi més o menys potència elèctrica al motor, la qual cosa farà que el motor giri més o menys ràpidament i amb més o menys força. Un circuit semblant el podem trobar en trens i cotxes elèctrics de joguina. 
 719 

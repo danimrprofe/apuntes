@@ -1,4 +1,4 @@
-#  Renderizado
+# Renderizado
 
 Renderizar es el proceso mediante el cual se crea un archivo de imagen o película definitivo a partir del diseño que estamos realizando. Antes de renderizar es importante elegir los parámetros necesarios como:
 

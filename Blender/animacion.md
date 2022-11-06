@@ -1,4 +1,4 @@
-#  Animación
+# Animación
 
 Vamos a hacer que la cámara se mueva alrededor de la escena, mientras que el objeto permanecerá fijo.
 

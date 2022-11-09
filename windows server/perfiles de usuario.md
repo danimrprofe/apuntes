@@ -77,7 +77,8 @@ Características:
 - Es un perfil móvil de solo lectura
 - Si guardamos cualquier documento en el perfil, después de cerrar sesión todos los documentos guardados serán borrados automáticamente
 - Cada perfil tiene su propio archivo de preferencias llamado **NTUSER.DAT**
-- Para configurar el perfil obligatorio necesitamos renombrar **NTUSER.DAT** a **NTUSER.MAN**
+- Los perfiles de usuario se convierten en perfiles obligatorios cuando el administrador cambia el nombre del archivo NTuser.dat (el subárbol del Registro) de cada perfil de usuario en el sistema de archivos del servidor de perfiles de NTuser.dat a NTuser.man. 
+- La .man extensión hace que el perfil de usuario sea un perfil de solo lectura.
 
 ### Perfil súper-obligatorio
 

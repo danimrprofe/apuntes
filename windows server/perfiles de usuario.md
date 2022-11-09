@@ -48,6 +48,9 @@ En un controlador de dominio con Windows Server se crean cuentas de usuario y de
 - Perfil **local**: Solo accesible desde la estación de trabajo donde se ha creado
 - Perfil **temporal**: Se crea por error en la carga del perfil de usuario
 - Perfil **de red**: Los usuarios de Windows Server pueden acceder desde cualquier estación de trabajo.
+  - Móvil
+  - Obligatorio
+  - Superobligatorio
 
 ## Tipos de perfil de red
 

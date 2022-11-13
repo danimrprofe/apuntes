@@ -2,6 +2,8 @@
 
 La idea de este proyecto es crear un sistema automático de control de un aparcamiento utilizando Arduino
 
+![](img/2022-11-13-11-36-13.png)
+
 # Materiales necesarios 
 
 - 3 LED de color rojo

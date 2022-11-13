@@ -23,5 +23,8 @@ está ocupada.
 # Posibles mejoras
 
 - Crear un contador de plazas libres. Para ello ayudarse de un seven segments o una pantalla LCD
+
+![](img/2022-11-13-13-01-40.png)
+
 - Crear un detector a la entrada para abrir la barrera solo cuando haya un coche esperando.
 - Se puede incorporar un semáforo a la entrada que indique si se puede pasar.

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>14.LCD.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="lecci%C3%B3n-14-pantalla-lcd">Lección 14 Pantalla LCD</h2>
+<h3 id="resumen">Resumen</h3>
+<p>En esta lección, usted aprenderá cómo conectar y usar una pantalla LCD alfanumérico.</p>
+<p>La pantalla tiene una retroiluminación de LED y puede mostrar dos filas con hasta 16 caracteres en cada fila. Puede ver los rectángulos para cada carácter en la pantalla y los píxeles que componen cada carácter. La pantalla es blanca en azul y está diseñada para mostrar texto.</p>
+<img width="400" src="file:///e:/Docencia/apuntes/arduino/media/image109.png" id="image109">
+<p>En esta lección, se ejecutará el programa de ejemplo de Arduino para la <strong>librería</strong> de la LCD, pero en la siguiente lección, nos pondremos nuestra pantalla para mostrar la temperatura mediante sensores.</p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<ul>
+<li>
+<blockquote>
+<p>Elegoo Uno R3</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>LCD1602 módulo</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Potenciómetro (10k)</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>830 tie-puntos Breadboard</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>M-M cables (cables de puente de macho a macho)</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="lcd1602">LCD1602</h3>
+<p>Introduccion a las patillas del LCD1602:</p>
+<ul>
+<li>VSS: Un pin que se conecta a tierra</li>
+<li>VDD: Un pin que se conecta a un + 5V fuente de alimentación</li>
+</ul>
+<p>VO: Un pasador que ajusta el contraste de LCD1602</p>
+<p>RS: Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.</p>
+<ul>
+<li>R/W: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.</li>
+<li>D0-D7: Pernos que leer y escribir datos</li>
+</ul>
+<p>A y K: Que el control de la retroiluminación LED de los pernos</p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<h3 id="esquema">Esquema</h3>
+<img width="400" src="file:///e:/Docencia/apuntes/arduino/media/image110.jpeg" id="image110">
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<img width="400" src="file:///e:/Docencia/apuntes/arduino/media/image111.jpeg" id="image111">
+<p>La pantalla LCD necesita seis pines de Arduino, todo listo para ser salidas digitales.</p>
+<p>También necesita 5V y GND conexiones.</p>
+<p>Hay un número de conexiones a realizar. Alineación de la pantalla con la parte superior de la placa ayuda a identificar sus pines sin demasiada cuenta, especialmente si la placa tiene sus filas numeradas con la fila 1 como la fila superior de la Junta. No lo olvides, el cable largo amarillo que conecta el regulador de la olla a la clavija 3 de la pantalla. La 'olla' se utiliza para controlar el contraste de la pantalla. Usted puede encontrar que su pantalla se suministra sin cabecera pins conectados a él. Si es así, siga las instrucciones en la sección siguiente.</p>
+<h3 id="codigo">Codigo</h3>
+<p>Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 22 LCD pantalla y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.</p>
+<p>Antes de ejecutar esto, asegúrese de que ha instalado la <strong>librería</strong> &lt; LiquidCrystal &gt; o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.</p>
+<p>Para obtener más información sobre carga el archivo de <strong>librería</strong>, ver Lección 1. Subir el código a la placa Arduino y usted debería ver el mensaje 'Hola, mundo' aparece, seguido de un número que cuenta de cero.</p>
+<p>Lo primero que nota en el dibujo es la línea:</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt; LiquidCrystal.h &gt;</span></span>
+</div></code></pre>
+<p>Esto dice Arduino que queremos utilizar la <strong>librería</strong> de cristal líquido.</p>
+<p>A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de Arduino son para conectarse a que pines de la pantalla.</p>
+<pre class="hljs"><code><div>LiquidCrystal lcd (7, 8, 9, 10, 11, 12);
+</div></code></pre>
+<p>Después de subir este código, asegúrese de que se enciende la retroiluminación y ajustar el potenciómetro de toda la manera alrededor hasta que aparezca el mensaje de texto</p>
+<p>En la función de <strong>setup</strong>, tenemos dos comandos:</p>
+<pre class="hljs"><code><div>LCD.Begin (<span class="hljs-number">16</span>, <span class="hljs-number">2</span>);
+LCD.Print (<span class="hljs-string">"Hola, mundo!"</span>);
+</div></code></pre>
+<p>La primera cuenta la <strong>librería</strong> de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.</p>
+<p>En la función de 'loop', aso tienen dos comandos:</p>
+<pre class="hljs"><code><div>lcd.setCursor (0, 1);
+LCD.Print(Millis()/1000);
+</div></code></pre>
+<p>El primero establece la posición del cursor (donde aparecerá el siguiente texto) columna 0 y fila 1. Los números de columna y fila comienzan en 0 en lugar de 1.</p>
+<img width="400" src="file:///e:/Docencia/apuntes/arduino/media/image112.png" id="image112">
+<p>La segunda línea muestra el número de milisegundos desde que se restableció el Arduino.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">//www.elegoo.com</span>
+<span class="hljs-comment">//2016.12.9</span>
+
+<span class="hljs-comment">/*
+  LiquidCrystal Library - Hello World
+
+ Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
+ library works with all LCD displays that are compatible with the
+ Hitachi HD44780 driver. There are many of them out there, and you
+ can usually tell them by the 16-pin interface.
+
+ This sketch prints "Hello World!" to the LCD
+ and shows the time.
+
+  The circuit:
+ * LCD RS pin to digital pin 7
+ * LCD Enable pin to digital pin 8
+ * LCD D4 pin to digital pin 9
+ * LCD D5 pin to digital pin 10
+ * LCD D6 pin to digital pin 11
+ * LCD D7 pin to digital pin 12
+ * LCD R/W pin to ground
+ * LCD VSS pin to ground
+ * LCD VCC pin to 5V
+ * 10K resistor:
+ * ends to +5V and ground
+ * wiper to LCD VO pin (pin 3)
+
+ Library originally added 18 Apr 2008
+ by David A. Mellis
+ library modified 5 Jul 2009
+ by Limor Fried (http://www.ladyada.net)
+ example added 9 Jul 2009
+ by Tom Igoe
+ modified 22 Nov 2010
+ by Tom Igoe
+
+ This example code is in the public domain.
+
+ http://www.arduino.cc/en/Tutorial/LiquidCrystal
+ */</span>
+
+<span class="hljs-comment">// include the library code:</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;LiquidCrystal.h&gt;</span></span>
+
+<span class="hljs-comment">// initialize the library with the numbers of the interface pins</span>
+<span class="hljs-function"><span class="hljs-built_in">LiquidCrystal</span> <span class="hljs-title">lcd</span><span class="hljs-params">(<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// set up the LCD's number of columns and rows:</span>
+  lcd.<span class="hljs-built_in">begin</span>(<span class="hljs-number">16</span>, <span class="hljs-number">2</span>);
+  <span class="hljs-comment">// Print a message to the LCD.</span>
+  lcd.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello, World!"</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// set the cursor to column 0, line 1</span>
+  <span class="hljs-comment">// (note: line 1 is the second row, since counting begins with 0):</span>
+  lcd.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+  <span class="hljs-comment">// print the number of seconds since reset:</span>
+  lcd.<span class="hljs-built_in">print</span>(<span class="hljs-built_in">millis</span>() / <span class="hljs-number">1000</span>);
+}
+</div></code></pre>
+
+</body>
+</html>

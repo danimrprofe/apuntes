@@ -157,23 +157,24 @@ https://academy.bit2me.com/que-es-bloque-genesis/
 ![](img/2022-11-06-22-52-47.png)
 
 
-Cómo se lleva la contabilidad
+# Cómo se lleva la contabilidad
 Por lo general, pensamos que una transacción tiene un débito y un crédito (contabilidad de doble entrada)
 Con Bitcoin, hay una tercera entrada. Cada transacción va a un depósito de conocimiento común.
 Este repositorio o libro mayor público es altamente seguro y lo mantienen todos en la red.
 El libro público es la última palabra, por lo que no puede haber desacuerdo sobre los débitos y créditos y no puede haber "gastos dobles".
 El libro mayor público se llama "cadena de bloques"
 
-Seguridad. Clave pública y privada
-La creación de una "cuenta bancaria" en la red global de Bitcoin genera una contraseña extremadamente larga, también conocida como "clave privada"
-Esta es imposible de adivinar para nadie más. 
-Cualquiera, en cualquier lugar con acceso a Internet, puede recibir, enviar y mantener Bitcoin utilizando la versión pública de su clave 
-Se puede compartir libremente para recibir fondos de forma segura
+# Seguridad. Clave pública y privada
 
-Bitcoin
-¿Dónde están mis bitcoin?
-¿Cuántos bitcoin hay?
-¿Cómo se crean?
+La creación de una "cuenta bancaria" en la red global de Bitcoin genera una contraseña extremadamente larga, también conocida como "clave privada". Esta es imposible de adivinar para nadie más. 
+
+Cualquiera, en cualquier lugar con acceso a Internet, puede recibir, enviar y mantener Bitcoin utilizando la versión pública de su clave.  Se puede compartir libremente para recibir fondos de forma segura
+
+## Bitcoin
+
+- ¿Dónde están mis bitcoin?
+- ¿Cuántos bitcoin hay?
+- ¿Cómo se crean?
 
 ## ¿Cuántos bitcoin se obtienen por crear un bloque?
 
@@ -188,8 +189,8 @@ Bitcoin
 
 - La producción se ralentiza con el tiempo
 - La cantidad de nuevas monedas se divide por la mitad cada 4 años
-- En 2140 se estima que se habrán creado todos los bitcoin
-- El máximo de monedas que habrá serán 21.000.000 de bitcoin. Ni más ni menos.
+- En **2140** se estima que se habrán creado todos los bitcoin
+- El máximo de monedas que habrá serán **21.000.000 de bitcoin**. Ni más ni menos.
 
 ![](img/2022-11-06-22-53-04.png)
 
@@ -204,7 +205,7 @@ Bitcoin
 ![](img/2022-11-06-22-53-12.png)
 
 ## Cuenta en bitcoin
-Cada persona crea al menos una dirección, identificada con un código
+Cada persona crea al menos una dirección. Una dirección de Bitcoin es un identificador de **33 caracteres** que representa una cuenta de Bitcoin. Las direcciones se generan usando una clave privada, que es un número aleatorio de 32 bytes.
 
 ![](img/2022-11-06-22-53-18.png)
 
@@ -226,21 +227,21 @@ https://bitcoin.org/es/elige-tu-monedero?step=1
 
 ![](img/2022-11-06-22-53-46.png)
 
+# Algunos problemas
 
-Algunos problemas
 En ningún momento se asocia esta cuenta con unos datos reales
 Si se pierden las claves, se pierde el acceso a la cuenta y, por tanto, el acceso al dinero
 
 ![](img/2022-11-06-22-53-53.png)
 
 
-Monederos (wallets)
+# Monederos (wallets)
 Del mismo modo que podemos tener varias monedas distintas en una cartera
 Podemos tener claves de varias criptomonedas en un misma billetera.
 
 ![](img/2022-11-06-22-53-59.png)
 
-Transacciones
+# Transacciones
 Cómo se intercambian criptomonedas
 
 ![](img/2022-11-06-22-54-04.png)
@@ -278,12 +279,26 @@ Cómo se intercambian criptomonedas
 
 ## Bitcoin wallet
 
+1. Monederos de escritorio: Los monederos de escritorio se instalan en una computadora portátil o de escritorio y le dan al usuario el control completo del monedero. Solo son accesibles desde la computadora individual en la que se descargan. Los monederos de escritorio ofrecen uno de los niveles de seguridad más altos, pero si su computadora es pirateada o obtiene un virus, es posible que pierda todos sus fondos.
+
+2. Monederos en línea: Los monederos en línea son sitios web o aplicaciones que le permiten usar su servicio para almacenar sus monedas. Si bien son más convenientes de usar, se almacenan de forma remota y, por lo tanto, la seguridad no está completamente en sus manos.
+
+3. Monederos móviles: Los monederos móviles son aplicaciones que puedes descargar en tu teléfono. Los monederos móviles te permiten llevar tus monedas a donde quiera que vayas y también te permiten gastar tus monedas en tiendas y establecimientos reales.
+
+4. Monederos de hardware: Los monederos de hardware son dispositivos físicos que parecen unidades USB. Almacenan tus monedas sin conexión y lejos de amenazas potenciales y también te permiten gastar tus monedas en tiendas y establecimientos reales.
+
 ![](img/2022-11-06-22-54-40.png)
 
-¿Podemos comprar bitcoin?
-Podemos comprar bitcoin con euros, y venderlo a cambio de euros
-El tipo de cambio varía con el tiempo.
-Las personas que minan un bloque con éxito (mineros), se “autotransfieren” una cantidad fija de la nada
+## ¿Podemos comprar bitcoin?
+
+Puedes comprar bitcoin a través de **exchanges** online o a través de plataformas de peer-to-peer. 
+
+- Los **exchanges** en línea funcionan de manera similar a las bolsas de valores tradicionales, donde compras y vendes bitcoin a través de una plataforma. La principal diferencia es que los exchanges en línea operan 24/7, lo que te permite comprar y vender bitcoin en cualquier momento. 
+- Las **plataformas de peer-to-peer**, por otro lado, conectan directamente a compradores y vendedores. Esto significa que puedes comprar y vender bitcoin directamente de otras personas. 
+
+- Podemos comprar bitcoin con euros, y venderlo a cambio de euros
+- El tipo de cambio varía con el tiempo.
+- Las personas que minan un bloque con éxito (mineros), se “autotransfieren” una cantidad fija de la nada
 
 ![](img/2022-11-06-22-54-51.png)
 
@@ -388,8 +403,8 @@ Videos interesantes
 
 ## Marketplaces
 
-- Los NFTs pueden ser intercambiados en marketplaces 
-- Treasureland, BakerySwap o Juggerworld en BSC, y OpenSea en Ethereum. 
+Un mercado de NFT (marketplace) es una plataforma en la que puedes comprar y vender NFTs. Algunos de los principales mercados de NFT son OpenSea, Rarible y Nifty Gateway.
+
 - Dichos mercados conectan a los compradores con los vendedores
 - En ellos el valor de cada token es único. 
 - NFT son propensos a los cambios de precio como respuesta a la oferta y demanda del mercado
@@ -419,5 +434,4 @@ Se necesita una cartera (wallet) para:
 
 ## ¿Qué hace la gente que compra NFTs?
 
-Algunas personas guardan NFT de proyectos que creen que tendrán valor a largo plazo
-Otras personas comercian activamente con NFT para aprovechar las fluctuaciones de precios. 
+Algunos los ven como una inversión, ya que su valor puede aumentar con el tiempo. Hay gente que compra NFTs para utilizarlos como coleccionables, como si fueran trading cards. Otros los usan como representaciones de activos digitales, como terrenos en videojuegos o mundos virtuales. Algunos incluso los usan como obras de arte digitales.

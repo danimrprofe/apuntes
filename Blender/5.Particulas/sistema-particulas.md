@@ -1,5 +1,9 @@
 # Sistemas de partículas
 
+Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En Blender, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
+
+Los sistemas de partículas en Blender se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas. 
+
 <img src="media/image1.png" id="image1">
 
 ## Partículas
@@ -14,7 +18,7 @@ Vista lateral del resultado
 
 <img src="media/image3.png" id="image3">
 
-1. Crear el objeto que va a caer como si fuera un copo
+## 1. Crear el objeto que va a caer como si fuera un copo
 
 El copo que vamos a crear es una icosfera y, a partir de ella se crearán múltiples copias.
 
@@ -34,7 +38,11 @@ Le damos las características que queramos, que hagan que los copos se vean lo m
 
 <img src="media/image6.png" id="image7">
 
-2. Crear un plano con emisiones
+## 2. Crear un plano con emisiones
+
+Los sistemas de partículas en Blender se pueden controlar usando **emisores**, que son objetos que se usan para generar las partículas. 
+
+Los **emisores** pueden estar configurados para emitir partículas de forma continua o bajo ciertas condiciones, como cuando se colisionan con otro objeto.
 
 Shift+a plano, y colocamos un plano
 
@@ -48,7 +56,7 @@ Al plano que lanza nieve le he cambiado el nombre para poder luego identificarlo
 
 <img src="media/image8.png" id="image9">
 
-3. Configuramos el plano para que emita partículas
+## 3. Configuramos el plano para que emita partículas
 
 Seleccionamos el plano generador de nieve
 
@@ -64,13 +72,13 @@ Configuramos los parámetros necesarios como número de copos, frames de inicio 
 
 Podemos ver la animación (tecla espacio), y veremos el efecto creado. De todos modos, tal como está en el render final no aparecerían las partículas.
 
-4. Cambiamos el tipo de emisión para emitir objetos
+## 4. Cambiamos el tipo de emisión para emitir objetos
 
 Por último, 
 
 Elegimos más abajo en render elegimos render as object
 
-Revisamos que show emitter esté marcado
+El objeto tiene un **flag** que indica si el emisor está activo o no. Si se activa un emisor, se empieza a emitir partículas de forma continua, y si se desactiva, se para la emisión. Puede usar esta función para crear efectos de partículas en respuesta a eventos del juego (por ejemplo, una explosión).
 
 En el submenú object seleccionamos en instance object la icosfera que habíamos creado. De este modo, le estamos diciendo que cree todos los objetos a partir de este.
 
@@ -84,7 +92,7 @@ Volved a simular la animación y veréis que ya se comportan más como copos de 
 
 <img src="media/image13.png" id="image15">
 
-5. Colisiones y amortiguación
+1. Colisiones y amortiguación
 
 Al fondo hay que ponerle un modificador de colisión para que las partículas no lo atraviesen.
 
@@ -98,7 +106,7 @@ Ahora los copos ya no atraviesan el plano y no rebotan, sino que se quedan parad
 
 <img src="media/image16.png" id="image18">
 
-6. Luz iluminación
+## 6. Luz iluminación
 
 Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos..
 
@@ -116,13 +124,13 @@ En mi caso he colocado la luz a 12 metros de altura, como referencia, por si lo 
 
 <img src="media/image20.png" id="image22">
 
-Cámara
+## Cámara
 
 La cámara la podéis poner donde queráis. Yo la he modificado a ojo y en una posición en la que se vea bien la escena.
 
 <img src="media/image21.png" id="image23">
 
-Escena final
+## Escena final
 
 Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 

@@ -1,37 +1,48 @@
---- 
-title:
-- MongoDB
-subtitle:
-- Pruebas con MongoDB
-author:
-- Daniel Moreno
-institute:
-- IES Francesc de Borja Moll
-date: 
-- \today
-theme:
-- metropolis
-header-includes:
- - '\usetheme{metropolis}'
- - '\makeatletter'
- - '\beamer@ignorenonframefalse'
- - '\makeatother'
-aspectratio:
- - 169
----
+# Introducción a mongoDB
 
-
+Mongodb es una base de datos NoSQL que se utiliza para almacenar y recuperar datos de forma rápida y sencilla. No requiere un esquema predefinido, por lo que es ideal para aplicaciones en las que los datos pueden cambiar con frecuencia.
 
 # Características
 
-* Se trata de una base datos NoSQL, por lo que no se realizan consultas utilizando lenguaje SQL
-* Los datos se almacenan en formato JSON, y más concretamente se guardan en un formato llamado BSON
+Se trata de una base datos NoSQL, por lo que no se realizan consultas utilizando lenguaje SQL.
+
+Mongodb se ejecuta en un servidor y se puede acceder a él a través de una conexión de red. Los datos se almacenan en formato JSON, lo que hace que sea muy fácil de leer y escribir.
+
 * No se definen esquemas como en las BD relacionales
 * Las BD se crean en el momento que se inserta el primer registro
 * No soporta joins del lado del servidor
-* Los datos se guardan en colecciones, que a su vez están formadas por documentos. Estos documentos tienen una estructura JSON
-* No se definen IDs para cada documento, sino que se autogeneran cuando se introduce un documento nuevo
-* Permite acceder a los datos utilizando librerías javascript.
+
+# Cómo se guardan las cosas
+
+* `MongoDB` permite almacenar `datos estructurados` en forma de `documentos`.
+* Los `documentos` se almacenan dentro de `colecciones`, las cuales a su vez pertenecen a una `base de datos`.
+* Estos documentos tienen una estructura JSON
+* Los documentos se pueden comparar con los `registros` en una base de datos relacional.
+* * No se definen IDs para cada documento, sino que se autogeneran cuando se introduce un documento nuevo
+* Las `colecciones` se pueden comparar con las `tablas` en una base de datos relacional.
+* Las `base de datos` se pueden comparar con las `bases de datos` en una base de datos relacional.
+
+Ejemplo:
+
+* Base de datos: `tienda`
+* Colección: `productos`
+* Documento: 
+
+```json
+    {
+        "_id" : ObjectId("5b078ebb6f5a7f36d8916a7f"),
+        "nombre" : "TV LED",
+        "descripcion" : "TV LED de 50 pulgadas",
+        "precio" : 500,
+        "categoria" : "electronica",
+        "tags" : [ 
+            "tv", 
+            "led"
+        ]
+    }
+```
+
+Permite acceder a los datos utilizando librerías javascript.
 
 En cuanto a los documentos:
 

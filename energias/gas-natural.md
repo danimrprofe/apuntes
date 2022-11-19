@@ -1,41 +1,77 @@
-GAS NATURAL
+# GAS NATURAL
 
-Composición del gas natural
+![](img/2022-11-19-15-34-29.png)
 
-Usos y aplicaciones
+## Usos del gas natural
+
 El gas natural se utiliza como fuente de energía para varios usos, entre los que destacan:
-Calefacción, aire acondicionado, agua caliente sanitaria y cocción para usos comerciales y domésticos (Consejos de seguridad asociados).
 
+- Calefacción, aire acondicionado, agua caliente sanitaria 
+- Cocción para usos comerciales y domésticos (Consejos de seguridad asociados).
 - Generación de electricidad a través de las **centrales de ciclo combinado**.
 - Combustible para buques y transporte marítimo (GNL/LNG).
 - Combustible para vehículos terrestres (GNC/CNG y GNL/LNG) 
 - Procesos industriales y fabricación de abonos.
 
-Está formado por una mezcla de gases en proporciones variables (H2, metano, etano, propano y butano) resultado de la fermentación anaerobia de restos orgánicos. Pueden aparecer en yacimientos aislados o junto al petróleo. Se forma de manera similar al petróleo, pero a mayor presión y temperatura.
+![](img/2022-11-19-15-18-26.png)
+
+## Composición 
+
+Está formado por una **mezcla de gases** en proporciones variables (H2, metano, etano, propano y butano) resultado de la fermentación anaerobia de restos orgánicos. 
+
+![](img/2022-11-19-15-34-42.png)
+
+Pueden aparecer en yacimientos aislados o junto al petróleo. Se forma de manera similar al petróleo, pero a mayor presión y temperatura.
 
 Es el combustible de mayor poder calorífico y el menos contaminante (su combustión produce menos CO2 y no forma NOx, ni SOX responsables del smog y la lluvia ácida).
-Su extracción es sencilla y barata (no requiere procesado) y su transporte puede ser por gasoductos o grandes barcos gaseros (gas licuado a presión)
 
-Su principal uso es la generación de electricidad en centrales térmicas de ciclo combinado, el uso doméstico (cocinas, calefacciones y agua caliente), el transporte y el industrial. 
+ El gas natural se extrae del subsuelo mediante la perforación de pozos y se transporta a plantas de tratamiento donde se separa del petróleo y otros fluidos. 
+ 
+ ![](img/2022-11-19-15-17-46.png)
+ 
+ ## Transporte
+ 
+ Luego, el gas natural se transporta a través de una red de tuberías a plantas de regasificación, donde se convierte en gas licuado de petróleo (GLP) o gas natural licuado (GNL), que es más fácil de transportar. 
 
-El principal inconveniente es que en caso de accidente, se libera metano, un gas de efecto invernadero 25 veces más potente que el CO2 y sigue siendo una energía no renovable.
+ También nos puede llegar directamente a través de **gasoductos**.
 
-GAS NATURAL
+ ![](img/2022-11-19-15-36-53.png)
 
-Origen
+ ![](img/2022-11-19-15-16-54.png)
+ 
+ El GNL se transporta en buques "tankers" a puertos de importación, donde se regasifica y se distribuye a los consumidores a través de una red de tuberías. 
 
-Transporte
-El gas natural nos llega a través de gasoductos o en barcos.
+![](img/2022-11-19-15-16-06.png)
 
-Dentro de España
+# Transporte dentro de España
 
-Transporte
+
+El gas natural llega a Mallorca a través de un gasoducto submarino que conecta la isla con la península ibérica. 
+
+![](img/2022-11-19-15-37-37.png)
 
 # Uso doméstico
 
-El **cuarto de contadores** suele estar ubicado en la planta baja del edificio.
-Cada piso tiene su propio contador individual, que mide los metros cúbicos de gas que consumimos.
+El cuarto de contadores es una habitación en la que se encuentran los contadores de luz, agua y gas. Esta habitación suele estar ubicada en un lugar de la casa en el que se pueda acceder fácilmente, ya que es necesario que los contadores estén accesibles para que se puedan realizar las lecturas. El **cuarto de contadores** suele estar ubicado en la planta baja del edificio.
 
+![](img/2022-11-19-15-38-55.png)
+
+Cada piso tiene su propio contador individual, que mide los metros cúbicos de gas que consumimos. Se apuntan las mediciones de dos días diferentes, normalmente cada uno o dos meses y se calcula la diferencia.
+
+![](img/2022-11-19-15-39-04.png)
+
+Una vez en el hogar, las calderas generalmente queman el gas para generar calor, o las cocinas para mantener el fuego de las cocinas.
+
+![](img/2022-11-19-15-38-04.png)
+
+# Curiosidades. Acetileno
 
 El acetileno se obtiene por medio de la reacción de hidrólisis de carburo de calcio, este es el alcalino más sencillo.
+
+![](img/2022-11-19-15-13-22.png)
+
 Los usos del acetileno son el calentamiento de llama, alzado de llama, soldadura, endurecimiento de llama, texturado, mercado de pallets de madera, inmunización y cubrimiento de carbono.
+
+![](img/2022-11-19-15-13-36.png)
+
+![](img/2022-11-19-15-39-15.png)

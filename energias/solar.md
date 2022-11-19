@@ -48,8 +48,8 @@ Para obtener potencias superiores, se unen un determinado número de células, f
 
 Además de las células fotovoltaicas, forman parte de una instalación solar fotovoltaica, como componentes habituales, los siguientes elementos:
 
--	Batería o acumulador. Se utiliza en instalaciones autónomas no conectadas a la red eléctrica para almacenar energía eléctrica.
-- Inversor. Tiene la función de transformar la corriente continua generada por la instalación solar fotovoltaica en corriente alterna, para así poder utilizar aparatos de consumo más habituales, de 220 V en corriente alterna, o bien para poder entregar la energía a la red eléctrica.
-- Regulador de carga. En instalaciones autónomas, tiene la función de proteger a los acumuladores contra la sobrecarga y la descarga excesiva.
+- **Batería** o acumulador. Se utiliza en instalaciones autónomas no conectadas a la red eléctrica para almacenar energía eléctrica.
+- **Inversor**. Tiene la función de transformar la corriente continua generada por la instalación solar fotovoltaica en corriente alterna, para así poder utilizar aparatos de consumo más habituales, de 220 V en corriente alterna, o bien para poder entregar la energía a la red eléctrica.
+- **Regulador** de carga. En instalaciones autónomas, tiene la función de proteger a los acumuladores contra la sobrecarga y la descarga excesiva.
  
 ![](img/2022-10-12-16-31-11.png)

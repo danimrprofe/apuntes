@@ -1,19 +1,36 @@
-PETRÓLEO
-del griego: πετρέλαιον, lit. «aceite de roca»
+# PETRÓLEO
+
+Del griego: πετρέλαιον, lit. «aceite de roca».  Es una sustancia líquida no miscible en agua,
+formada principalmente por hidrocarburos y con la que se produce energía.
+
+El petróleo es una mezcla de compuestos orgánicos de **fósiles** de animales y vegetales marinos
+que se encuentran en los sedimentos marinos. Es un recurso natural no renovable.
 
 El petróleo se origina en cuencas sedimentarias marinas de poca profundidad, cuando se produce la muerte masiva del PLANCTON (debido a cambios de Tº, salinidad, o otras causas). Sus restos orgánicos sedimentan junto con arenas y limos y forman los fangos sapropélicos, donde existen condiciones anaerobias. Con el progresivo enterramiento se produce la transformación simultánea de sus componentes.
 
-Cuando se extrae, lo que se obtiene es el **crudo**, una mezcla de hidrocarburos sólidos, líquidos y gaseosos de muy diversos tamaños. El crudo se somete a un proceso de separación de sus componentes denominada **destilación fraccionada** de la que se obtienen cientos de productos derivados como:
+## Crudo
+
+Cuando se extrae, lo que se obtiene es el **crudo**, una mezcla de hidrocarburos sólidos, líquidos y gaseosos de muy diversos tamaños. 
+
+![](img/2022-11-19-15-27-24.png)
+
+El crudo se somete a un proceso de separación de sus componentes denominada **destilación fraccionada** de la que se obtienen cientos de productos derivados como:
 
 - Combustibles: gas propano. butano, gasolinas, fuel, queroseno
 - Numerosas materias primas: asfaltos, betunes, aceites lubricantes, plásticos, fibras sintéticas, fertilizantes, pesticidas, medicamentos y pinturas
 
-Su principal uso es en el transporte (automóviles, barcos, aviones, etc.), calefacciones, industria química, centrales térmicas (fuel) y todo tipo de industrias que utilizan sus derivados
+![](img/2022-11-19-15-27-45.png)
 
-El petróleo embolsado a poca profundidad es fácil de extraer sus derivados tienen alto poder calorífico, sin embargo, su uso produce graves impactos ambientales (y económicos): 
+# Extracción
+
+El petróleo se extrae de los pozos de petróleo mediante la perforación de un **pozo** hasta llegar a un **yacimiento** de petróleo. Luego, el petróleo se extrae del yacimiento mediante la **bomba** de una bomba de pozo.
+
+# Inconvenientes
 
 - Su combustión produce contaminantes atmosféricos responsables del calentamiento global , smog y la lluvia ácida.
 - Los accidentes durante su transporte en oleoductos y grandes superpetroleros provocan importantes fugas (mareas negras)
+
+![](img/2022-11-19-15-33-57.png)
 
 España tiene una enorme dependencia energética del exterior: Petróleo (México, Arabia) y Gas (Argelia, Libia)
 
@@ -28,9 +45,7 @@ Habitualmente el material inyectado es **agua con arena y productos químicos**,
 
 ![](img/2022-10-21-00-41-09.png)
 
-Los partidarios de la fracturación hidráulica argumentan los beneficios económicos de las vastas cantidades de hidrocarburos previamente inaccesibles, que esta nueva técnica permite extraer. Sus oponentes, en cambio, señalan el impacto medioambiental de esta técnica, que incluye la contaminación de acuíferos, elevado consumo de agua, contaminación de la atmósfera, contaminación sonora, migración de los gases y productos químicos utilizados a la superficie, contaminación en superficie debida a vertidos, y los posibles efectos en la salud derivados de estos peligros. Se han producido incrementos en la actividad sísmica, la mayoría asociados con la inyección profunda de fluidos relacionados con el fracking en el subsuelo.
-
-Se estima que en 2010 esta técnica estaba presente en aproximadamente el 60 % de los pozos de extracción en uso.Debido al aumento del precio de los combustibles fósiles, que han hecho económicamente rentables estos métodos, se está propagando su empleo en los últimos años, especialmente en los Estados Unidos.
+Los partidarios de la fracturación hidráulica argumentan los beneficios económicos de las vastas cantidades de hidrocarburos previamente inaccesibles, que esta nueva técnica permite extraer. Sus oponentes, en cambio, señalan el impacto medioambiental de esta técnica, que incluye la contaminación de acuíferos, elevado consumo de agua, contaminación de la atmósfera, contaminación sonora, migración de los gases y productos químicos utilizados a la superficie, contaminación en superficie debida a vertidos, y los posibles efectos en la salud derivados de estos peligros. 
 
 ## Barcos petroleros (tankers)
 
@@ -38,9 +53,14 @@ El transporte del petróleo es mayoritariamente por vía marítima, en barcos qu
 
 ![](img/2022-10-21-00-39-31.png)
 
-## Grupo electrógeno
+## Curiosidades. Grupo electrógeno
 
-El grupo electrógeno o generador es un dispositivo diseñado para ser capaz de mantener una diferencia de potencial eléctrico entre dos de sus puntos, denominados como polos, bornes o terminales. 
+Un grupo electrógeno es una máquina que convierte la energía de un combustible, como la **gasolina**, el diésel o el gas, en energía eléctrica. Esto quiere decir que puede producir electricidad sin necesidad de estar conectado a la red eléctrica.
+
+ Se trata de una solución muy utilizada en entornos en los que la conexión a la red eléctrica es imposible o difícil, como por ejemplo, en lugares alejados de la misma o en lugares en los que se requiere una energía eléctrica de alta calidad y/o de respaldo.
+
+![](img/2022-11-19-15-24-31.png)
+
 Lo que permite la transformación de la energía mecánica en energía eléctrica. 
 
 https://www.youtube.com/watch?v=otZTFb7XFYc

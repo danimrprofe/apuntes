@@ -6,9 +6,13 @@ Se basa en la desintegración radiactiva de los átomos de Uranio. Estos átomos
 - radiactividad
 - GRANDES CANTIDADES DE CALOR, que es lo que aprovecha del proceso. 
 
-Es el combustible de las centrales nucleares, donde el calor producido por la reacción se utiliza para producir vapor, con el cual se mueve unas turbinas y se genera energía eléctrica
+![](img/2022-11-19-15-02-57.png)
 
-En la fisión se liberan, grandes cantidades de energía (calor y radiactividad), pero también 2 -3 nuevos neutrones de alta velocidad que producen nuevas fisiones: Es una REACCIÓN EN CADENA que si no se controla produciría una explosión atómica (bucle +). 
+Es el combustible de las centrales nucleares, donde el calor producido por la reacción se utiliza para producir **vapor**, con el cual se mueve unas **turbinas** y se genera energía eléctrica.
+
+![](img/image.png.png)
+
+En la **fisión** se liberan también 2 -3 nuevos neutrones que producen nuevas fisiones: es una **reacción en cadena** que si no se controla produciría una explosión atómica. 
 
 ## Moderador
 
@@ -26,10 +30,9 @@ Para extraer el calor producido hay un SISTEMA DE REFRIGERACIÓN POR AGUA que co
 - **Circuito secundario**: Enfría al primario y es el que genera el VAPOR que mueve las turbinas 
 - **Circuito terciario**: Licua el vapor del 2º. Esta agua entra y sale del exterior (río, mar) y genera el vapor que vemos salir por la torres de refrigeración
 
-URANIO Y ENERGÍA DE FISIÓN NUCLEAR
+![](img/2022-11-19-15-04-17.png)
 
-Núcleo de un reactor nuclear, aunque asombrosamente bello, el resplandor que se aprecia, es producto de altísimas dosis de radiación.
-Circuitos de refrigeración
+## Impacto ambiental
 
 Las centrales nucleares NO PRODUCEN CONTAMINANTES ATMOSFÉRICOS, pero sus principales inconvenientes son:
 
@@ -85,7 +88,7 @@ A continuación, en una planta de enriquecimiento de uranio:
 BARRAS DE COMBUSTIBLE
 (Largos cilindros de acero rellenos de pastillas  cerámicas)
 
-REACTOR
+Reactor
 
 Se colocan en la parte más externa y cada 1-2 años se desplazan hacia el centro. Las barras más antiguas del centro se retiran. Cada barra permanece en el reactor 3 ciclos (3-6 años) antes de ser retiradas. Para entonces el % de U-235 ya no es suficiente para mantener la reacción.
 
@@ -95,9 +98,10 @@ Formado por:  95,6 % de URANIO NO GASTADO
 	3,4 % PRODUCTOS DE FISIÓN (calor)(vida ½)
 	1 % ACTÍNIDOS (U + neutrón) (Larga vida)
 
-PISCINAS DE ENFRIAMIENTO
+## PISCINAS DE ENFRIAMIENTO
 (Hormigón revestido de acero y agua ligera pura (5-10años)
-ALMACEN TEMPORAL EN SUPERFICIE “CONTENEDORES SECOS (50-60años)
+## ALMACEN TEMPORAL EN SUPERFICIE “CONTENEDORES SECOS (50-60años)
+
 - In situ (junto al reactor en cada central)
 - Centralizado (ATC)
 Grandes contenedores de hormigón donde se almacenan manguitos de acero   sellados y refrigerado por la circulación natural del aire (enfriamiento residual)
@@ -115,3 +119,9 @@ DEPÓSITOS ARCILLOSOS
 “CICLO ABIERTO”
 “CICLO
 CERRADO”
+
+## Curiosidades
+
+### Bombas nucleares
+
+![](img/2022-11-19-15-02-37.png)

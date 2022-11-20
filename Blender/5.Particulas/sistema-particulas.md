@@ -36,6 +36,8 @@ Le damos material y color para que se vea. Vamos a crear un material nuevo y le 
 
 Le damos las características que queramos, que hagan que los copos se vean lo más similares posibles a la nieve real.
 
+Metálico y especular son ambos tipos de materiales que se pueden usar en Blender. Los materiales **metálicos** generalmente se usan para crear objetos metálicos, mientras que los materiales **especulares** se usan para crear objetos más brillantes o reflectantes.
+
 <img src="media/image6.png" id="image7">
 
 ## 2. Crear un plano con emisiones
@@ -74,9 +76,8 @@ Podemos ver la animación (tecla espacio), y veremos el efecto creado. De todos 
 
 ## 4. Cambiamos el tipo de emisión para emitir objetos
 
-Por último, 
 
-Elegimos más abajo en render elegimos render as object
+Elegimos más abajo en **render** elegimos **render as object**.
 
 El objeto tiene un **flag** que indica si el emisor está activo o no. Si se activa un emisor, se empieza a emitir partículas de forma continua, y si se desactiva, se para la emisión. Puede usar esta función para crear efectos de partículas en respuesta a eventos del juego (por ejemplo, una explosión).
 
@@ -92,7 +93,7 @@ Volved a simular la animación y veréis que ya se comportan más como copos de 
 
 <img src="media/image13.png" id="image15">
 
-1. Colisiones y amortiguación
+## Colisiones y amortiguación
 
 Al fondo hay que ponerle un modificador de colisión para que las partículas no lo atraviesen.
 
@@ -106,19 +107,25 @@ Ahora los copos ya no atraviesan el plano y no rebotan, sino que se quedan parad
 
 <img src="media/image16.png" id="image18">
 
-## 6. Luz iluminación
+## 6. Iluminación
 
-Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos..
+Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos.
 
 <img src="media/image17.png" id="image19">
 
-Insertar un a luz de área que esté justo encima de los objetos que queremos iluminar
+## Insertar luz de área
+
+Insertar una **luz de área** que esté justo encima de los objetos que queremos iluminar
 
 <img src="media/image18.png" id="image20">
+
+## Potencia
 
 Propiedades de la luz. En mi caso le he puesto 1000 W de potencia y me ha parecido  suficiente.
 
 <img src="media/image19.png" id="image21">
+
+## Altura de la luz
 
 En mi caso he colocado la luz a 12 metros de altura, como referencia, por si lo queréis hacer así, y centrado en origen de coordenadas para la x y la y.
 

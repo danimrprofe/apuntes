@@ -1,6 +1,6 @@
 # Introducción a mongoDB
 
-Mongodb es una base de datos NoSQL que se utiliza para almacenar y recuperar datos de forma rápida y sencilla. No requiere un esquema predefinido, por lo que es ideal para aplicaciones en las que los datos pueden cambiar con frecuencia.
+**Mongodb** es una base de datos NoSQL que se utiliza para almacenar y recuperar datos de forma rápida y sencilla. No requiere un esquema predefinido, por lo que es ideal para aplicaciones en las que los datos pueden cambiar con frecuencia.
 
 # Características
 

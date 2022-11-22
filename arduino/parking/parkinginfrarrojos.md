@@ -1,3 +1,4 @@
+```c
 // variables y  includes
 
 #include <Servo.h>
@@ -47,6 +48,9 @@ void setup()
 
   Serial.begin(9600);
   miservo.attach(13); // Le asignamos el PIN
+
+  //Habilitamos como salida
+
   pinMode(pinP1Rojo, OUTPUT);
   pinMode(pinP1Verde, OUTPUT);
   pinMode(pinP2Rojo, OUTPUT);
@@ -133,3 +137,4 @@ void loop()
   
   
 }
+```

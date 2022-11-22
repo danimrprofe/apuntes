@@ -19,7 +19,12 @@ En esta lección, aprenderá a utilizar un relé
 
 ### Relé
 
-Un relé es un interruptor operado eléctricamente. Muchos relés utilizan un electroimán para operar mecánicamente un interruptor, pero otros principios de funcionamiento también se utilizan como relés de estado sólidos. Relés se utilizan donde es necesario un circuito de control por una señal de baja potencia (con aislamiento eléctrico total entre el control y los circuitos controlados), o donde varios circuitos deben ser controlados por una señal. Los primeros Relais fueron utilizados en circuitos de larga distancia telégrafo como amplificadores. Repite la señal proveniente un circuito y había retransmitido en otro circuito. Relais fueron utilizados extensivamente en centrales telefónicas y computadoras tempranas para realizar operaciones lógicas.
+Un relé es un interruptor operado eléctricamente. Muchos relés utilizan un electroimán para operar mecánicamente un interruptor, pero otros principios de funcionamiento también se utilizan como relés de estado sólidos. 
+
+# Usos
+
+Los relés se utilizan donde es necesario un circuito de control por una señal de baja potencia (con aislamiento eléctrico total entre el control y los circuitos controlados), o donde varios circuitos deben ser controlados por una señal. 
+
 
 Un tipo de relé que pueda manejar la alta potencia necesaria para controlar directamente un motor eléctrico u otras cargas se llama un contactor. Relés de estado sólidos controlan de circuitos de potencia sin partes móviles, en cambio usando un dispositivo de semiconductor para realizar la conmutación. Relevadores con características de funcionamiento calibradas y a veces múltiples bobinas de funcionamiento se utilizan para proteger circuitos eléctricos contra sobrecarga o fallos. En los sistemas modernos de energía eléctrica, estas funciones son realizadas por instrumentos digitales llamados "relés de protección".
 

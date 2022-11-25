@@ -2,6 +2,14 @@
 
 # ¿Qué es el doxxeo?
 
+![](img/2022-11-25-17-39-11.png)
+
+## Introducción
+
+![](img/2022-11-25-17-39-35.png)
+
+## Qué es el doxxeo
+
 - Doxing es el acto de encontrar y compartir la información personal y confidencialde alguien sin su permiso.
 - Tipo de ciberataque y ciberacoso en Internet
 - Doxing puede ser usado para amenazar o atacar a la persona, o para chantajearla.
@@ -11,8 +19,16 @@
 
 - Venganza
 - Justicia extrajudicial
+
+![](img/2022-11-25-17-40-13.png)
+
 - Dañar a persona con notoriedad
+
+![](img/2022-11-25-17-40-03.png)
+
 - Dañar a personas con opiniones o puntos de vista opuestos
+
+![](img/2022-11-25-17-40-09.png)
 
 # ¿Cuales son sus propósitos?
 
@@ -47,6 +63,7 @@ Hay una variedad de estrategias de doxing que se pueden usar para recopilar info
 Facilita identificación en mundo real / familiares
 Dirección, trabajo, teléfono
 
+![](img/2022-11-25-17-40-38.png)
 
 # Posibles resultados
 
@@ -94,16 +111,10 @@ FASE 2
 - Objetivo: llegar al mayor número de personas y estas sigan difundiéndola.
 
 
-Ejemplos
-Empezamos casi por el principio de esta práctica. En 1997, activistas antiaborto de EE. UU. se hicieron con información personal de las clínicas y profesionales que llevaban a cabo esta práctica en el país, publicándola en una lista negra que estuvo colgada en Internet hasta 2002. En ella no solo se identificaba a estas personas, también si incitaba a hacerles daño.
+## Ejemplos
 
+1. Empezamos casi por el principio de esta práctica. En 1997, activistas antiaborto de EE. UU. se hicieron con información personal de las clínicas y profesionales que llevaban a cabo esta práctica en el país, publicándola en una lista negra que estuvo colgada en Internet hasta 2002. En ella no solo se identificaba a estas personas, también si incitaba a hacerles daño.
 
+2. Seguimos en EE. UU., pero en el año 2013; tras el atentado de la Maratón de Boston, miles de usuarios en Reddit decidieron jugar a ser policías y tratar de identificar a los responsables. Al final, lo que consiguieron fue identificar erróneamente a varios sospechosos, a los que sometieron a ataques de doxing. Ninguna de estas personas era responsable del atentado. Lo peor, es que a causa del acoso recibido, una de ellas acabó suicidándose.
 
-Ejemplos
-Seguimos en EE. UU., pero en el año 2013; tras el atentado de la Maratón de Boston, miles de usuarios en Reddit decidieron jugar a ser policías y tratar de identificar a los responsables. Al final, lo que consiguieron fue identificar erróneamente a varios sospechosos, a los que sometieron a ataques de doxing. Ninguna de estas personas era responsable del atentado. Lo peor, es que a causa del acoso recibido, una de ellas acabó suicidándose.
-
-
-
-Ejemplos
-
-Y para terminar, un caso más cercano y más conocido. Hablamos de la persona que difundió la imagen y los datos personales de la víctima de ‘la Manada’. Dicha difusión la llevó a cabo en redes sociales, foros y medios digitales.
+3. Y para terminar, un caso más cercano y más conocido. Hablamos de la persona que difundió la imagen y los datos personales de la víctima de ‘la Manada’. Dicha difusión la llevó a cabo en redes sociales, foros y medios digitales.

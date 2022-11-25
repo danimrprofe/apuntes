@@ -24,3 +24,16 @@ Resulta prácticamente imposible descubrir la clave privada a partir de la públ
 Práctica: https://www.devglan.com/online-tools/rsa-encryption-decryption
 
 
+## Generación de claves
+
+![](img/2022-11-25-17-36-21.png)
+
+## Encriptar con clave privada
+
+![](img/2022-11-25-17-36-31.png)
+
+## Webs para practicar
+
+https://cryptii.com/pipes/caesar-cipher
+https://cifraronline.com/
+

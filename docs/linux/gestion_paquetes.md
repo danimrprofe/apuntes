@@ -1,39 +1,18 @@
---- 
-title:
-- Pandoc
-subtitle:
-- Pruebas con pandoc
-author:
-- Daniel Moreno
-institute:
-- IES Francesc de Borja Moll
-date: 
-- \today
-theme:
-- metropolis
-header-includes:
- - '\usetheme{metropolis}'
- - '\makeatletter'
- - '\beamer@ignorenonframefalse'
- - '\makeatother'
-aspectratio:
- - 169
----
 
 # Instalación de paquetes
 
-- [Instalación de paquetes](#instalaci%C3%B3n-de-paquetes)
-- [1. Noción de paquete](#1-noci%C3%B3n-de-paquete)
+- [Instalación de paquetes](#instalación-de-paquetes)
+- [1. Noción de paquete](#1-noción-de-paquete)
 - [2. Gestor de paquetes DPKG](#2-gestor-de-paquetes-dpkg)
-- [Ejemplo: instalación de google chrome](#ejemplo-instalaci%C3%B3n-de-google-chrome)
+- [Ejemplo: instalación de google chrome](#ejemplo-instalación-de-google-chrome)
 - [Gestion de dependencias](#gestion-de-dependencias)
-- [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gesti%C3%B3n-de-paquetes-avanzada-apt-y-yum)
+- [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gestión-de-paquetes-avanzada-apt-y-yum)
 - [4. Repositorios](#4-repositorios)
   - [Lista de repositorios](#lista-de-repositorios)
-- [5. Prácticas con el gestor APT](#5-pr%C3%A1cticas-con-el-gestor-apt)
+- [5. Prácticas con el gestor APT](#5-prácticas-con-el-gestor-apt)
 - [Mostrar que paquetes se pueden actualizar:](#mostrar-que-paquetes-se-pueden-actualizar)
 - [Tareas](#tareas)
-- [6. Cliente gráfico synaptic](#6-cliente-gr%C3%A1fico-synaptic)
+- [6. Cliente gráfico synaptic](#6-cliente-gráfico-synaptic)
 - [7. Aptitude](#7-aptitude)
 
 # 1. Noción de paquete

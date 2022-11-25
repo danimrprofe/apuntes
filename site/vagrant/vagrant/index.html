@@ -1,0 +1,1701 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Vagrant - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vagrant" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vagrant
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../arduino/04.LEDRGB/" class="md-tabs__link">
+        Arduino
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../azure/azure/" class="md-tabs__link">
+        Azure
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../criptomonedas/brevehistoriadebitcoin/" class="md-tabs__link">
+        Criptomonedas
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docker/docker/" class="md-tabs__link">
+        Docker
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../kubernetes/arquitectura%20de%20k8s/" class="md-tabs__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Vagrant
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../windows%20server/1.%20SO%20en%20red/" class="md-tabs__link">
+        Windows server
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Arduino
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Arduino" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Arduino
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/04.LEDRGB/" class="md-nav__link">
+        04.LEDRGB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/05.Pulsador/" class="md-nav__link">
+        05.Pulsador
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/06.zumbador%20activo/" class="md-nav__link">
+        06.zumbador activo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/07.zumbador-pasivo/" class="md-nav__link">
+        07.zumbador pasivo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/08.Interruptor-bola/" class="md-nav__link">
+        Lección 8 Interruptor de bola de inclinación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/09.Servo/" class="md-nav__link">
+        09.Servo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/10.Sensor-ultrasonico/" class="md-nav__link">
+        10. Módulo Sensor ultrasónico
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/11.Humedadytemperatura/" class="md-nav__link">
+        11.Humedadytemperatura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/12.Joystick/" class="md-nav__link">
+        12.Módulo Joystick analógico
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/14.LCD/" class="md-nav__link">
+        14.LCD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/15.Termometro/" class="md-nav__link">
+        15.Termometro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/16.OchoLed/" class="md-nav__link">
+        16.OchoLed
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/17.Monitorserie/" class="md-nav__link">
+        17.Monitorserie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/18.Fotocelula/" class="md-nav__link">
+        18.Fotocelula
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/19.Display%207segmentos%201%20digito/" class="md-nav__link">
+        19.Display 7segmentos 1 digito
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/20.Display%207segmentos%204%20d%C3%ADgitos/" class="md-nav__link">
+        20.Display 7segmentos 4 dígitos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/21.MotorCC/" class="md-nav__link">
+        21.MotorCC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/22.Rele/" class="md-nav__link">
+        22. Relé
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/23.Motorpasoapaso/" class="md-nav__link">
+        23.Motorpasoapaso
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/24.Pasoapasoconmando/" class="md-nav__link">
+        24. Motor paso a paso con mando a distancia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/elegoo/" class="md-nav__link">
+        Elegoo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/esp8266/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/mando%20con%20infrarrojos/" class="md-nav__link">
+        Mando con infrarrojos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/proyecto-parking/" class="md-nav__link">
+        Objetivo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/tiras-led/" class="md-nav__link">
+        Tiras led
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_26" type="checkbox" id="__nav_1_26" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_26">
+          Parking
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Parking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_26">
+          <span class="md-nav__icon md-icon"></span>
+          Parking
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/parking/parking1cocheIR/" class="md-nav__link">
+        Problema
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/parking/parkinginfrarrojos/" class="md-nav__link">
+        Parkinginfrarrojos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/parking/soloLED/" class="md-nav__link">
+        Problema
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arduino/parking/soloServo/" class="md-nav__link">
+        Problema
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Azure
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Azure" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Azure
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../azure/azure/" class="md-nav__link">
+        Conectar
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Criptomonedas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Criptomonedas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Criptomonedas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../criptomonedas/brevehistoriadebitcoin/" class="md-nav__link">
+        Breve historia de Bitcoin. Transacciones, bloques, hashes y recompensas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../criptomonedas/cripotomonedas/" class="md-nav__link">
+        Criptomonedas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../criptomonedas/nft/" class="md-nav__link">
+        NFT
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Docker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Docker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/docker/" class="md-nav__link">
+        ['Docker']
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Kubernetes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Kubernetes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Kubernetes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/arquitectura%20de%20k8s/" class="md-nav__link">
+        Arquitectura de k8s
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/crear%20cluster%20kubernetes/" class="md-nav__link">
+        Crear cluster kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/despliegues/" class="md-nav__link">
+        Despliegues en k8s
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/escalado%20y%20replicacion/" class="md-nav__link">
+        Escalado y replicacion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/etiquetas%20y%20selectores/" class="md-nav__link">
+        Etiquetas y selectores
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/kubectl%20y%20pods/" class="md-nav__link">
+        Kubectl y pods
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/playground%20k8s/" class="md-nav__link">
+        Playground k8s
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kubernetes/readme/" class="md-nav__link">
+        kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Vagrant
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vagrant" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Vagrant
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Vagrant
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Windows server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Windows server" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Windows server
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/1.%20SO%20en%20red/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/2.%20active%20directory/" class="md-nav__link">
+        2. active directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/3.%20Instalar%20AD%20en%20WS/" class="md-nav__link">
+        Como instalar el Directorio Activo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/Politicas%20de%20grupo/" class="md-nav__link">
+        Politicas de grupo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/bosque/" class="md-nav__link">
+        Concepto de bosque
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/conexion-estacion-trabajo/" class="md-nav__link">
+        Conexión de la estación de trabajo Desde Windows cliente (7, 8.1. 10 ...)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/grupos/" class="md-nav__link">
+        Grupos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/niveles%20funcionales/" class="md-nav__link">
+        Niveles funcionales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/perfiles%20de%20usuario/" class="md-nav__link">
+        Perfiles de usuario
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/relaciones%20de%20confianza/" class="md-nav__link">
+        Relaciones de confianza
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/roles%20de%20equipos%20en%20dominio/" class="md-nav__link">
+        Roles de equipos en dominio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/roles%20de%20servidor/" class="md-nav__link">
+        Roles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/unidades%20organizativas/" class="md-nav__link">
+        Unidades organizativas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows%20server/usuarios%20globales%20o%20de%20dominio/" class="md-nav__link">
+        Usuarios globales o de dominio
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="vagrant">Vagrant</h1>
+<ul>
+<li><a href="#vagrant">Vagrant</a></li>
+<li><a href="#introducci%C3%B3n">Introducción</a></li>
+<li><a href="#caracter%C3%ADsticas">Características</a></li>
+<li><a href="#c%C3%B3mo-instalarlo">Cómo instalarlo</a></li>
+<li><a href="#boxes">Boxes</a></li>
+<li><a href="#creaci%C3%B3n-de-boxes">Creación de boxes</a></li>
+<li><a href="#cosas-que-puedes-hacer-con-vagrant">Cosas que puedes hacer con Vagrant</a></li>
+<li><a href="#vagrantfiles">Vagrantfiles</a></li>
+<li><a href="#comandos-vagrant">Comandos vagrant</a></li>
+<li><a href="#version-utilizada">Version utilizada</a></li>
+<li><a href="#descargando-boxes">Descargando boxes</a></li>
+<li><a href="#inicializando-configuraciones-vagrantfile">Inicializando configuraciones (Vagrantfile)</a></li>
+<li><a href="#conectando-con-las-m%C3%A1quinas-virtuales">Conectando con las máquinas virtuales</a></li>
+<li><a href="#parando-m%C3%A1quinas">Parando máquinas</a></li>
+<li><a href="#configuraciones-de-vagrant">Configuraciones de Vagrant</a></li>
+<li><a href="#aprovisionamiento">Aprovisionamiento</a></li>
+<li><a href="#herramientas-de-aprovisionamiento">Herramientas de aprovisionamiento</a></li>
+<li><a href="#ejemplos-de-aprovisionamiento">Ejemplos de aprovisionamiento</a><ul>
+<li><a href="#shell">shell</a></li>
+<li><a href="#script">script</a></li>
+<li><a href="#ansible">ansible</a></li>
+</ul>
+</li>
+<li><a href="#ejecucion-de-un-playbook">Ejecucion de un playbook</a></li>
+<li><a href="#proyectos-en-este-repositorio">Proyectos en este repositorio</a></li>
+<li><a href="#vagrant-ansible">vagrant-ansible</a></li>
+<li><a href="#vagrant-mult">vagrant-mult</a></li>
+<li><a href="#vagrant-wordpress">vagrant-wordpress</a></li>
+</ul>
+<h1 id="introduccion">Introducción</h1>
+<p><code>Vagrant</code> es una herramienta que permite crear entornos de desarrollo basados en 
+máquinas virtuales. </p>
+<p>La idea es crear entornos que sean lo más parecido o idénticos
+a los servidores de producción. </p>
+<p>El objetivo es solucionar el problema de  "en mi máquina funciona". </p>
+<p>Si definimos un entorno determinado, lo podemos ejecutar
+en cualquier lugar, sabiendo que cada vez que implemente en un sitio diferente
+se crearán las mismas máquinas y funcionarán de la misma forma.</p>
+<h1 id="caracteristicas">Características</h1>
+<p>Características de Vagrant:</p>
+<ul>
+<li>Agrega una capa por encima del software de virtualización (Virtualbox, VMware, etc).</li>
+<li>Está escrito en Ruby </li>
+<li>Inicialmente se construyó para ser utilizado con VirtualBox como hipervisor</li>
+<li>Actualmente soporta muchos más.</li>
+</ul>
+<p>Vagrant permite crear entornos de desarrollo:</p>
+<ul>
+<li>Reproducibles</li>
+<li>Portables</li>
+<li>Ligeros</li>
+</ul>
+<h1 id="como-instalarlo">Cómo instalarlo</h1>
+<p>Para poner en macha Vagrant necesitaremos, por lo menos:</p>
+<ul>
+<li>
+<p>Descargar e instalar VirtualBox (si es el hipervisor elegido).</p>
+<p>apt install virtualbox</p>
+</li>
+<li>
+<p>Descargar e instalar Vagrant</p>
+<p>apt install vagrant</p>
+</li>
+<li>
+<p>Descargar la box de vagrant que queramos</p>
+</li>
+</ul>
+<p>En caso de aprovisionamiento con ansible:</p>
+<pre><code>apt install ansible
+</code></pre>
+<h1 id="boxes">Boxes</h1>
+<p>Una <code>box</code> es un archivo (tareado y gzipeado) parecida a una imagen de máquina
+virtual, lista para ejecutarse (sin necesidad de instalación). </p>
+<p>Las podemos:</p>
+<ul>
+<li>Descargar de diferentes proveedores</li>
+<li>Crear nosotros manualmente</li>
+</ul>
+<p>Cada box contiene:</p>
+<ul>
+<li>Un <code>Vagrantfile</code></li>
+<li>Una imagen de máquina virtual (<code>vmdk</code>)</li>
+<li>Un archivo <code>OVF</code> que define el hardware virtual del box</li>
+<li>Un archivo <code>JSON</code> que define que proveedor trabaja con la caja</li>
+</ul>
+<h1 id="creacion-de-boxes">Creación de boxes</h1>
+<p>Las boxes se pueden crear:</p>
+<ul>
+<li>Utilizando herramientas (packer.io, imagefactory)</li>
+<li>Manualmente a través del comando vagrant package. </li>
+</ul>
+<h1 id="cosas-que-puedes-hacer-con-vagrant">Cosas que puedes hacer con Vagrant</h1>
+<p>Redactando correctamenteun archivo de configuración podemos:</p>
+<ul>
+<li>Arrancar y parar máquinas</li>
+<li>Customizar las MV con tantos CPU cores, memoria como queramos</li>
+<li>Conectar por SSH a las diferentes máquinas con vagrant ssh</li>
+<li>Aprovisionar las máquinas con todo lo que se necesite, utilizando
+Puppet, chef, ansible, shell, etc.</li>
+</ul>
+<h1 id="vagrantfiles">Vagrantfiles</h1>
+<p>La configuración del entorno que queremos implementar se realiza en un archivo
+de texto plano escrito en Ruby llamado <code>Vagrantfile</code> (similar a los Dockerfiles).</p>
+<p>A través de este archivo podemos definir el entorno que queramos, y podemos:</p>
+<ul>
+<li>Configurar máquinas virtuales</li>
+</ul>
+<h1 id="comandos-vagrant">Comandos vagrant</h1>
+<h2 id="version-utilizada">Version utilizada</h2>
+<p>Para conocer la versión de Vagrant instalada:</p>
+<pre><code>vagrant version
+</code></pre>
+<h1 id="descargando-boxes">Descargando boxes</h1>
+<p>Podemos consultar las boxes que hay publicadas en: https://app.vagrantup.com/boxes/search</p>
+<p>Para descargar una box de una máquina virtual concreta:</p>
+<pre><code>vagrant box ubuntu/precise64
+</code></pre>
+<p>Podemos listar las boxes que tenemos descargadas. Si una box no está descargada pero hacemos un vagrant up se descargará la primera vez.</p>
+<pre><code>vagrant box list
+</code></pre>
+<h1 id="inicializando-configuraciones-vagrantfile">Inicializando configuraciones (Vagrantfile)</h1>
+<p>Creamos una carpeta para guardar los archivos de configuración, y una vez dentro inicializamos vagrant en esta carpeta:</p>
+<pre><code>vagrant init
+</code></pre>
+<p>Nos ha creado el archivo Vagrantfile que procederemos a adaptar a nuestras necesidades. Para hacer un init no tiene que existir ningún Vagrantfile.</p>
+<p>Una vez definido el vagrantfile ya podemos levantar la/s MV:</p>
+<pre><code>vagrant up
+</code></pre>
+<p>Veremos que nos empieza a descargar la box, que no estaba descargada en el equipo</p>
+<pre><code>Bringing machine 'default' up with 'virtualbox' provider...
+==&gt; default: Box 'ubuntu/precise64' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: &gt;= 0
+==&gt; default: Loading metadata for box 'ubuntu/precise64'
+    default: URL: https://vagrantcloud.com/ubuntu/precise64
+==&gt; default: Adding box 'ubuntu/precise64' (v20170427.0.0) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/ubuntu/boxes/precise64/versions/20170427.0.0/providers/virtualbox.box
+    default: Download redirected to host: cloud-images.ubuntu.com
+</code></pre>
+<p>Podemos ver qué MV tenemos levantadas con:</p>
+<pre><code>vagrant status
+</code></pre>
+<h1 id="conectando-con-las-maquinas-virtuales">Conectando con las máquinas virtuales</h1>
+<p>Podemos conectar a la máquina con la un comando SSH de vagrant. Otra opción es desocultar la MV (que habrá arrancado en Virtualbox en modo oculto), o bien tirar de putty.</p>
+<pre><code>vagrant ssh
+</code></pre>
+<p>Mágicamente se nos meterá por ssh en la MV, sin pedir contraseña. Una vez dentro podemos hacer lo que queramos.</p>
+<p>Si solo tenemos una MV levantada, se conectará a esta. Si tenemos más de una, pedirá el nombre de la MV. </p>
+<p>Salimos con</p>
+<pre><code>exit
+</code></pre>
+<h1 id="parando-maquinas">Parando máquinas</h1>
+<p>Para cerrar las máquinas virtuales por las buenas:</p>
+<pre><code>vagrant halt
+</code></pre>
+<p>Las podemos volver a levantar con un up.</p>
+<p>Para destruir la máquina virtual (veremos que ya no aparece en Virtualbox)</p>
+<pre><code>vagrant destroy
+</code></pre>
+<h1 id="configuraciones-de-vagrant">Configuraciones de Vagrant</h1>
+<p>Todas las configuraciones se guardan en una carpeta oculta llamada .vagrant. Estas configuraciones se pueden subir a github y llevar un control de versiones, al ser la configuración guardada en archivos de texto plano.</p>
+<p>Las boxes se meten en la carpeta que tengamos definida en Virtualbox para almacenar las MV.</p>
+<h1 id="aprovisionamiento">Aprovisionamiento</h1>
+<p>Cuando preparamos un entorno de desarrollo, se suele hacer de forma manual.
+Se ejecutan los comandos necesarios en el SO guest para personalizar nuestro entorno.</p>
+<p>Esto lo podemos automatizar, almacenando los comandos a realizar en scripts especiales.</p>
+<p>Estos scripts son los que se ejecutarán automáticamente al levantar las MV.</p>
+<p>Este proceso de instalar y configurar software dentro del SO guest automáticamente se conoce como <code>aprovisionamiento</code>.</p>
+<h1 id="herramientas-de-aprovisionamiento">Herramientas de aprovisionamiento</h1>
+<p>Existen diferentes herramientas para ello:</p>
+<ul>
+<li>Shell scripts</li>
+<li>Puppet</li>
+<li>Ansible</li>
+<li>Chef</li>
+</ul>
+<h1 id="ejemplos-de-aprovisionamiento">Ejemplos de aprovisionamiento</h1>
+<h4 id="shell">shell</h4>
+<p>To-do</p>
+<h4 id="script">script</h4>
+<p>To-do</p>
+<h4 id="ansible">ansible</h4>
+<p>Para aprovisionar con Ansible, podemos tener un playbook creado en la misma carpeta. Lo habitual es crear un archivo hosts para ello.</p>
+<p>Si no le decimos nada, en distribuciones linux buscará el archivo en <code>/etc/ansible/hosts</code>. Si no queremos que coja ese, y queremos que coja uno que queramos nosotros (en este caso en la misma carpeta del playbook):</p>
+<pre><code>ansible-playbook instrucciones.yml -i hosts
+</code></pre>
+<h1 id="ejecucion-de-un-playbook">Ejecucion de un playbook</h1>
+<p>La primera vez nos pedirá confirmación:</p>
+<pre><code>PLAY [Configurar webserver con nginx] **************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
+The authenticity of host '[127.0.0.1]:2222 ([127.0.0.1]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:MGWE4lf8Hgq9vYEe4Qr52RJNKpM9mfN124g96Y/xc2Y.
+Are you sure you want to continue connecting (yes/no)? 
+</code></pre>
+<h2 id="proyectos-en-este-repositorio">Proyectos en este repositorio</h2>
+<h2 id="vagrant-ansible">vagrant-ansible</h2>
+<p>La idea es aprovisionar máquinas virtuales a través de un playbook de ansible.</p>
+<h2 id="vagrant-mult">vagrant-mult</h2>
+<p>Automatizar el aprovisionamiento de varias MV en un único Vagrantfile</p>
+<h2 id="vagrant-wordpress">vagrant-wordpress</h2>
+<p>Automatizar y aprovisionar una MV con wordpress</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
+      
+        
+        <a href="../../kubernetes/readme/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: kubernetes" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              kubernetes
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../windows%20server/1.%20SO%20en%20red/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Introducción
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

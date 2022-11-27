@@ -4,41 +4,41 @@ Un sistema de partículas es un conjunto de partículas que se mueven de forma c
 
 Los sistemas de partículas en Blender se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas. 
 
-<img src="media/image1.png" id="image1">
+![](media/image1.png)
 
 ## Partículas
 
 Crearemos un árbol de navidad y crearemos un efecto de nieve para practicar los sistemas de partículas. 
 
-<img src="media/image2.png" id="image2">
+![](media/image2.png)
 
 La simulación con sistemas de partículas permite obtener animaciones complejas de objetos que responden a fuerzas gravitatorias y acciones como las que produce el viento o un campo magnético. De esta forma podemos recrear lluvia, nieve, y otros.
 
 Vista lateral del resultado
 
-<img src="media/image3.png" id="image3">
+![](media/image3.png)
 
 ## 1. Crear el objeto que va a caer como si fuera un copo
 
 El copo que vamos a crear es una icosfera y, a partir de ella se crearán múltiples copias.
 
-<img src="media/image4.png" id="image4">
+![](media/image4.png)
 
 Colocamos una icosfera con shift a mesh
 
 Con G nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading
 
-<img src="media/image4.png" id="image5">
+![](media/image4.png)
 
 Le damos material y color para que se vea. Vamos a crear un material nuevo y le vamos a cambiar el nombre a nieve.
 
-<img src="media/image5.png" id="image6">
+![](media/image5.png)
 
 Le damos las características que queramos, que hagan que los copos se vean lo más similares posibles a la nieve real.
 
 Metálico y especular son ambos tipos de materiales que se pueden usar en Blender. Los materiales **metálicos** generalmente se usan para crear objetos metálicos, mientras que los materiales **especulares** se usan para crear objetos más brillantes o reflectantes.
 
-<img src="media/image6.png" id="image7">
+![](media/image6.png)
 
 ## 2. Crear un plano con emisiones
 
@@ -52,25 +52,25 @@ Lo pondremos encima del árbol, pero que no salga en el plano de la cámara. con
 
 Con S escalamos para que cubra toda la zona en la que queremos que nieve.
 
-<img src="media/image7.png" id="image8">
+![](media/image7.png)
 
 Al plano que lanza nieve le he cambiado el nombre para poder luego identificarlo más fácilmente.
 
-<img src="media/image8.png" id="image9">
+![](media/image8.png)
 
 ## 3. Configuramos el plano para que emita partículas
 
 Seleccionamos el plano generador de nieve
 
-<img src="media/image8.png" id="image10">
+![](media/image8.png)
 
 Le agregamos un particlesystem y configuramos los parámetros necesarios. Yo le he cambiado el nombre con F2 a partículas de nieve para identificarlo.
 
-<img src="media/image9.png" id="image11">
+![](media/image9.png)
 
 Configuramos los parámetros necesarios como número de copos, frames de inicio y fin y vida de los copos (cantidad de frames hasta que desaparecen).
 
-<img src="media/image10.png" id="image12">
+![](media/image10.png)
 
 Podemos ver la animación (tecla espacio), y veremos el efecto creado. De todos modos, tal como está en el render final no aparecerían las partículas.
 

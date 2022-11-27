@@ -1,5 +1,5 @@
-site_name: My Docs
-
+site_name: Mis apuntes
+site_url: https://danimrprofe.github.io/apuntes/
 theme:
   name: material
   language: es

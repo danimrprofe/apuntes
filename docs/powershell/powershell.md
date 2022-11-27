@@ -1,8 +1,4 @@
-# Apuntes powershell
-
-- [Apuntes powershell](#apuntes-powershell)
-  - [Conexión remota](#conexi%C3%B3n-remota)
-  - [Configuración de red](#configuraci%C3%B3n-de-red)
+# Powershell
 
 ## Conexión remota
 

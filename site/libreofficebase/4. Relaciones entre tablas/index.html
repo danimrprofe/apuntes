@@ -15,7 +15,7 @@
     
     
       
-        <title>4. relaciones entre tablas - My Docs</title>
+        <title>4. relaciones entre tablas - Mis apuntes</title>
       
     
     
@@ -84,7 +84,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="Mis apuntes" class="md-header__button md-logo" aria-label="Mis apuntes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +97,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My Docs
+            Mis apuntes
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -866,13 +866,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="Mis apuntes" class="md-nav__button md-logo" aria-label="Mis apuntes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    My Docs
+    Mis apuntes
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -2404,7 +2404,7 @@
   
     <li class="md-nav__item">
       <a href="../../Seguridad%20informatica%20y%20privacidad/03.%20Malware/3.2%20Como%20se%20infecta%20un%20pc/" class="md-nav__link">
-        3.2 Como se infecta un pc
+        3.2. Cómo se infecta un ordenador
       </a>
     </li>
   
@@ -4934,6 +4934,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#relacion-uno-a-muchos" class="md-nav__link">
+    Relación uno a muchos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#relacion-peliculas-generos" class="md-nav__link">
     Relación PELICULAS - GENEROS
   </a>
@@ -6720,6 +6727,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#relacion-uno-a-muchos" class="md-nav__link">
+    Relación uno a muchos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#relacion-peliculas-generos" class="md-nav__link">
     Relación PELICULAS - GENEROS
   </a>
@@ -6758,72 +6772,75 @@
 <h1 id="4-relaciones-entre-tablas">4. relaciones entre tablas</h1>
 <p>El problema de la información repetida</p>
 <p>Una de las grandes ventajas de las bases de datos es que podemos tener toda la información que necesitamos almacenar en varias tablas, relacionadas entre ellas, en lugar de una única tabla enorme con toda la información. </p>
-<p>Se podría pensar en añadir una nueva columna (no la hagáis) a la tabla Peliculas que se llamara Género, de manera que por cada película almacenada también tuviera su género. </p>
-<p><img src="media/image37.png" id="image38"></p>
+<p>Se podría pensar en añadir una nueva columna (no la hagáis) a la <strong>tabla Peliculas</strong> que se llamara Género, de manera que por cada película almacenada también tuviera su género. </p>
+<p><img alt="" src="../media/image37.png" /></p>
 <p>Si nos fijamos en esta solución podemos ver que se está repitiendo el mismo valor muchas veces, por ejemplo, Ciencia-Ficción aparece en cuatro filas y Drama en otras tantas. </p>
-<p><img src="media/image37.png" id="image39"></p>
+<p><img alt="" src="../media/image37.png" /></p>
 <p>¿Qué problemas podemos tener si lo hacemos así?</p>
-<p>Que en algún momento nos equivoquemos al teclear, y escribamos, por ejemplo, Ciencia-Fusión.</p>
-<p>Qué decidamos cambiar el nombre de un género, y por tanto tendríamos que cambiarlo en todas las filas.</p>
-<p>Crear tabla de géneros</p>
+<ol>
+<li>Que en algún momento nos equivoquemos al teclear, y escribamos, por ejemplo, Ciencia-Fusión.</li>
+<li>Qué decidamos cambiar el nombre de un género, y por tanto tendríamos que cambiarlo en todas las filas.</li>
+</ol>
+<p><strong>Crear tabla de géneros</strong></p>
 <p>La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la tabla PELICULAS y de la tabla GENEROS que están relacionadas.</p>
-<p>Creamos la tabla géneros</p>
-<p>id_genero hay que ponerlo como clave principal. </p>
-<p>Al marcar valor automático a SI, no tendremos que rellenar este campo.</p>
-<p><img src="media/image38.png" id="image40"></p>
+<p>Creamos la tabla géneros, con los campos <strong>id_genero</strong> y <strong>nombre_genero</strong>. <strong>id_genero</strong> hay que marcarlo como <strong>clave principal</strong>. </p>
+<p>Al marcar <strong>valor automático</strong> a <strong>SI</strong>, no tendremos que rellenar este campo.</p>
+<p><img alt="" src="../media/image38.png" /></p>
 <p>Y la guardamos con el nombre generos.</p>
-<p><img src="media/image39.png" id="image41"></p>
-<p>Repaso de tablas</p>
+<p><img alt="" src="../media/image39.png" /></p>
+<p><strong>Repaso de tablas</strong></p>
 <p>Ahora mismo deberíais tener 3 tablas:</p>
-<p><img src="media/image40.png" id="image42"></p>
+<p><img alt="" src="../media/image40.png" /></p>
 <p>Rellenar la tabla generos</p>
 <p>Vamos a rellenar la tabla generos. En la primera columna no tenemos que poner nada, siempre se pondrán los valores automáticamente cuando pasemos a la siguiente fila.</p>
 <p>🚩 Si no se autocompletan los números, revisa que id_genero sea clave principal.</p>
-<p><img src="media/image41.png" id="image43"></p>
+<p><img alt="" src="../media/image41.png" /></p>
 <p>Información de intérpretes</p>
 <p>También vamos a suponer que quisiéramos almacenar información (apellidos, nombre y nacionalidad) acerca de los principales intérpretes con cada una de nuestra películas. </p>
 <p>A pesar de haber creado una tabla INTÉRPRETES  anteriormente, podríamos haber pensado en agregar columnas a la tabla PELICULAS donde guardar la información acerca de sus protagonistas. </p>
-<p><img src="media/image42.png" id="image44"></p>
+<p><img alt="" src="../media/image42.png" /></p>
 <p>Esta solución es difícil de mantener y puede dar multitud de problemas y errores, por lo ya habíamos creado una tabla INTÉRPRETES </p>
 <h2 id="tipos-de-relaciones">Tipos de relaciones</h2>
 <p>Para ver la forma de establecer la relación es necesario decidir, previamente, qué tipo de relación existe entre las tablas. Existen tres tipos básicos de relaciones entre tablas: </p>
-<p>Uno a muchos (pelicula y género)</p>
+<p><strong>Uno a muchos (1:n)</strong></p>
 <p>Cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla, pero una fila de la segunda sólo está relacionada con una de la primera. </p>
 <p>Una película puede tener un único género pero un género puede serlo de varias películas.</p>
-<p>Muchos a muchos</p>
+<p><strong>Muchos a muchos (n:n)</strong></p>
 <p>Esta clase de relación ocurre cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla y una fila de la segunda tabla puede estarlo con muchas filas de la primera. </p>
 <p>Un ejemplo de este tipo lo tenemos en la relación entre la tabla Peliculas y la tabla Interpretes</p>
 <p>Una película en particular puede tener muchos intérpretes y viceversa.  </p>
-<p>Uno a uno</p>
+<p><strong>Uno a uno (1:1)</strong> </p>
 <p>Cuando una fila de la primera tabla sólo puede estar relacionada con una fila de la segunda y viceversa.</p>
 <p>Por ejemplo una tabla con países y otra con jefes de gobierno, dado que, normalmente, un país sólo tiene un jefe de gobierno y un jefe de gobierno lo es sólo de un país.  </p>
 <p>Establecer relaciones entre tablas </p>
 <p>En función del tipo de relación, los pasos a realizar para indicarlas son distintos. </p>
 <p>A continuación se explica al detalle las reglas básicas para los tipos uno a muchos y muchos a muchos. </p>
-<p>Relaciones uno a muchos </p>
+<h2 id="relacion-uno-a-muchos">Relación uno a muchos</h2>
 <p>Para este tipo de relaciones la solución siempre es crear una nueva columna en la tabla del lado del muchos, es decir, debemos crear una nueva columna en la tabla cuyas filas sólo pueden estar relacionadas con una fila de la otra tabla, de manera que el valor de ese campo me indique sin lugar a dudas con qué fila está relacionada de la otra tabla. </p>
 <p>En el caso de Generos y Peliculas, esto supone que tenemos que crear en Peliculas un nuevo campo que para cada película mantenga un valor que me indique sin error al género al que pertenece. </p>
 <p>Por tanto, la columna debe ser del mismo tipo de dato que la columna que sea clave primaria en la otra tabla y los valores que podrá contener será cualquiera de los valores que tome la clave primaria en dicha tabla. </p>
 <p>Crear columna género dentro de la tabla películas</p>
-<p>Es decir, en la tabla Peliculas tendremos que crear una columna del mismo tipo que a la que llamaremos Genero. <img src="media/image43.png" id="image45"></p>
-<p>Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la tabla Generos . </p>
+<p>Es decir, en la tabla Peliculas tendremos que crear una columna del mismo tipo que a la que llamaremos Genero. </p>
+<p><img alt="" src="../media/image43.png" /></p>
+<p>Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la <strong>tabla Generos</strong>. </p>
 <p>Rellenar género de las películas</p>
 <p>Como la columna que hemos creado en la tabla películas es nueva, tendremos que completarla con el número correspondiente al género al  que pertenece la película.</p>
-<p><img src="media/image44.png" id="image46"></p>
-<p>Herramienta relaciones</p>
+<p><img alt="" src="../media/image44.png" /></p>
+<p><strong>Herramienta relaciones</strong></p>
 <p>Falta indicarle que las dos tablas están relacionadas y que vamos a utilizar para mantener dicha relación la nueva columna id_genero que hemos creado en peliculas. </p>
-<p>Para realizar esta operación tenemos que abrir la herramienta QUE SOLO ENCONTRARÉIS EN LA VENTANA PRINCIPAL, llamada Relaciones. <img src="media/image45.png" id="image47"></p>
+<p>Para realizar esta operación tenemos que abrir la herramienta QUE SOLO ENCONTRARÉIS EN LA VENTANA PRINCIPAL, llamada Relaciones. </p>
+<p><img alt="" src="../media/image45.png" /></p>
 <p>Veréis que se abre una ventana nueva.</p>
 <p>Añadir las tablas que vamos a utilizar</p>
 <p>Lo primero que nos ocurre nada más entrar en la ventana Relaciones. Seleccionamos cada tabla y le damos a añadir.</p>
-<p><img src="media/image46.png" id="image48"></p>
+<p><img alt="" src="../media/image46.png" /></p>
 <p>Deberemos ver esto. Las tablas que aquí vemos las podremos unir con flechas. Estas flechas que pondremos indicarán las relaciones que tienen entre ellas.</p>
-<p><img src="media/image47.png" id="image49"></p>
+<p><img alt="" src="../media/image47.png" /></p>
 <h2 id="relacion-peliculas-generos">Relación PELICULAS - GENEROS</h2>
 <p>A continuación ya podemos establecer la relación que queremos indicar. Para ello pinchamos en el icono que aparece a la derecha en la ventana relaciones </p>
-<p><img src="media/image48.png" id="image50"></p>
+<p><img alt="" src="../media/image48.png" /></p>
 <p>Entonces, nos debe aparecer una ventana donde primero debemos indicar las tablas que queremos relacionar para, a continuación, elegir en función de qué columna vamos a establecer la relación. Debería quedar así:</p>
-<p><img src="media/image49.png" id="image51"></p>
+<p><img alt="" src="../media/image49.png" /></p>
 <p>En la parte inferior de esta ventana veremos que nos pide que indiquemos dos opciones: </p>
 <ul>
 <li>Opciones de actualización </li>
@@ -6831,15 +6848,17 @@
 </ul>
 <p>Nos ofrece cuatro posibilidades para cada una de ellas. Estas opciones sirven para indicar qué hacer si algún valor del campo de clave primaria que está siendo referenciada (en nuestro caso Id_genero) sufre alguna modificación o si esa fila es eliminada.</p>
 <p>Para la actualización, lo normal suele ser elegir la posibilidad de actualizar en cascada, y para el borrado no existe una opción preferida sino que dependerá bastante del contexto, en nuestro caso, para esta relación, indicaremos poner a nulos. </p>
-<p><img src="media/image51.png" id="image52"></p>
+<p><img alt="" src="../media/image51.png" /></p>
 <p>Le damos a aceptar</p>
 <h2 id="visualizar-la-relacion-creada">Visualizar la relación creada</h2>
 <p>Una vez hemos terminado de indicar la relación, ésta debe aparecer indicada tal y como se muestra.</p>
-<p><img src="media/image52.png" id="image53"></p>
+<p><img alt="" src="../media/image52.png" /></p>
 <p>Ahora aparece una línea uniendo ambas tablas y que en el extremo de esa línea;</p>
-<p>En el lado de la tabla Generos aparece el valor 1</p>
-<p>En el extremo de la tabla Peliculas, nos aparece el valor n. </p>
-<p>Estos valores nos están indicando que el tipo de relación es de uno (1) a muchos (n). </p>
+<ul>
+<li>En el lado de la tabla Generos aparece el valor 1</li>
+<li>En el extremo de la tabla Peliculas, nos aparece el valor n. </li>
+</ul>
+<p>Estos valores nos están indicando que el tipo de relación es de <strong>uno (1) a muchos (n). </strong></p>
 <h2 id="relacion-peliculas-interpretes">Relación PELICULAS - INTERPRETES</h2>
 <p>En este caso puede darse el caso de:</p>
 <ul>
@@ -6848,36 +6867,39 @@
 </ul>
 <p>La relación entre películas e intérpretes es de muchos a muchos (N a N).</p>
 <p>Cuando esto pasa, no basta con añadir una columna. Necesitamos crear una nueva tabla.</p>
-<p>Crear tabla protagonistas</p>
-<p>A esta tabla la llamaremos Protagonistas con, al menos, dos columnas:</p>
-<p>Identificador de película</p>
-<p>Identificador de intérprete cada una de ellas para apuntar a cada una de las claves primarias respectivas de las tablas que queremos relacionar</p>
+<p><strong>Crear tabla protagonistas</strong></p>
+<p>A esta <strong>tabla</strong> la llamaremos <strong>Protagonistas</strong> con, al menos, dos columnas:</p>
+<ul>
+<li>Identificador de película</li>
+<li>Identificador de intérprete</li>
+</ul>
+<p>Cada una de ellas para apuntar a cada una de las claves primarias respectivas de las tablas que queremos relacionar</p>
 <p>Cada fila de esta tabla va a representar las relaciones que existen entre las filas de ambas tablas. </p>
-<p><img src="media/image53.png" id="image54"></p>
-<p>Rellenar filas de la tabla</p>
+<p><img alt="" src="../media/image53.png" /></p>
+<p><strong>Rellenar filas de la tabla</strong></p>
 <p>Rellenaremos la tabla, asignando a cada id de película, un id de intérprete. La tabla es la que véis a la izquierda. Si os fijáis:</p>
 <ul>
 <li>La película 1 es blade runner, protagonizada por Harrison ford (intérprete número 1)</li>
 <li>La película 2 es la guerra de las galaxias, protagonizada también por él (intérprete 1)</li>
 <li>Etc.</li>
 </ul>
-<p><img src="media/image54.png" id="image55"></p>
+<p><img alt="" src="../media/image54.png" /></p>
 <p>Como véis la tabla protagonistas enlaza las películas con sus intérpretes, y viceversa.</p>
 <h1 id="relacion-entre-peliculas-interpretes-protagonistas">Relación entre PELICULAS - INTERPRETES (protagonistas)</h1>
 <p>Una vez que tenemos creada esta tabla nos falta indicar las relaciones existentes, siguiendo la misma mecánica que hemos visto en el anterior apartado. </p>
 <p>Así, una vez que nos hemos situado de nuevo en la ventana Relaciones y hemos añadido las tablas que queremos relacionar a dicha ventana. </p>
 <p>Agregamos la tabla protagonistas</p>
-<p><img src="media/image55.png" id="image56"></p>
+<p><img alt="" src="../media/image55.png" /></p>
 <p>Aquí véis las dos tablas que hemos añadido, pero que no están conectadas con nada más. Ahora vamos a enlazar estas 3 tablas entre sí:</p>
-<p><img src="media/image56.png" id="image57"></p>
+<p><img alt="" src="../media/image56.png" /></p>
 <p>Relación películas y protagonistas</p>
-<p><img src="media/image58.png" id="image58"></p>
+<p><img alt="" src="../media/image58.png" /></p>
 <p>Relación Protagonistas e Interpretes</p>
 <p>Del mismo modo relacionamos estas dos tablas, a través del campo id_interprete que aparece en ambas tablas.</p>
-<p><img src="media/image59.png" id="image59"></p>
+<p><img alt="" src="../media/image59.png" /></p>
 <h2 id="resumen-de-relaciones">Resumen de relaciones</h2>
 <p>Resumiendo, al final las relaciones que hemos creado tienen que quedar así. Si tenéis así las relaciones, podéis pasar al siguiente apartado.</p>
-<p><img src="media/image60.png" id="image60"></p>
+<p><img alt="" src="../media/image60.png" /></p>
 
 
 

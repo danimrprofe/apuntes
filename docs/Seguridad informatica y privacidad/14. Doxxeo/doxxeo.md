@@ -35,11 +35,22 @@
 - Intimidar a la víctima invadiendo y eliminando su privacidad
 - Perpetuar el acoso distribuyendo la información para futuros acosadores
 
-# ¿Cómo se realiza?
+# ¿Cómo se lleva a cabo?
 
-1. Se reúne información y datos personales de la víctima
-2. Se hace pública en la red
-3. Incitación al acoso y amenazas
+FASE 1
+
+- Recopilan toda la información que puedan encontrar 
+- Redes sociales, páginas webs, bases de datos
+- Buscan teléfonos y direcciones, pirateo de bases de datos, ataques de ingeniería social. 
+Objetivo: reunir toda la información posible sobre la víctima, su entorno y su vida.
+
+FASE 2
+
+- Difusión de información recopilada
+- Todos los medios y plataformas disponibles en la Red. 
+- Objetivo: llegar al mayor número de personas y estas sigan difundiéndola.
+- Incitación al acoso y amenazas
+
 
 # ¿Cómo conseguir información?
 
@@ -72,7 +83,8 @@ Dirección, trabajo, teléfono
 - Suplantación de identidad
 - Swatting (denuncias falsas)
 
-Consecuencias
+Consecuencias: 
+
 - Puede llevar al acoso y hasta las amenazas de violencia.
 - Puede dañar la reputación de una persona.
 - Pérdida de trabajo o expulsión de la escuela.
@@ -87,7 +99,7 @@ Consecuencias
 # ¿Cómo protegerse
 
 - La mejor forma de protegerse del doxxeo es ser cuidadoso con la información que se comparte en línea. 
-- No publique información personal en sitios web públicos o en redes sociales
+- No publicar información personal en sitios web públicos o en redes sociales
 - Tener cuidado de no revelar demasiada información en conversaciones en línea. 
 - No abrir enlaces sospechosos o adjuntos de correo electrónico, ya que esto podría permitir que un atacante ingrese a su sistema. 
 - Googlearnos. 
@@ -95,20 +107,6 @@ Consecuencias
 - No reutilizar contraseñas
 - Habilitar autenticación de doble factor
 
-# ¿Cómo se lleva a cabo?
-
-FASE 1
-
-- Recopilan toda la información que puedan encontrar 
-- Redes sociales, páginas webs, bases de datos
-- Buscan teléfonos y direcciones, pirateo de bases de datos, ataques de ingeniería social. 
-Objetivo: reunir toda la información posible sobre la víctima, su entorno y su vida.
-
-FASE 2
-
-- Difusión de información recopilada
-- Todos los medios y plataformas disponibles en la Red. 
-- Objetivo: llegar al mayor número de personas y estas sigan difundiéndola.
 
 
 ## Ejemplos

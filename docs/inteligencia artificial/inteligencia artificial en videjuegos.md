@@ -22,18 +22,3 @@ El aprendizaje automático se utiliza para mejorar la jugabilidad. Esta técnica
 El procesamiento de lenguaje natural se utiliza para mejorar la interactividad. Esta técnica se utiliza para analizar el lenguaje hablado o escrito y para responder de forma natural. El procesamiento de lenguaje natural permite a los personajes virtuales interactuar de forma natural con los jugadores. 
 
 La inteligencia artificial en los videojuegos se utiliza para crear personajes y entornos virtuales más realistas y para mejorar la jugabilidad. En los últimos años, se han desarrollado diversas técnicas de inteligencia artificial para videojuegos que han permitido crear personajes más inteligentes y entornos más dinámicos. 
-
-# Machine learning y deep learning
-
-El aprendizaje automático es un subconjunto de la IA que se enfoca en proporcionar a las máquinas la capacidad de aprender de los datos, sin ser programadas explícitamente. El aprendizaje profundo es un subconjunto del aprendizaje automático que utiliza algoritmos para modelar abstracciones de alto nivel en los datos.
-
-En general, los algoritmos de aprendizaje profundo son más precisos que los algoritmos de aprendizaje automático, pero también son más costosos computacionalmente.
-
-Tanto el aprendizaje automático como el aprendizaje profundo se utilizan para crear modelos que pueden hacer predicciones sobre los datos. Sin embargo, el aprendizaje profundo es más efectivo para hacer predicciones sobre datos complejos, como imágenes o datos en lenguaje natural.
-
-https://machinelearningforkids.co.uk/
-https://teachablemachine.withgoogle.com/train
-https://web.learningml.org/
-
-Programación para NXT:
-https://lab.open-roberta.org/

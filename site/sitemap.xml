@@ -1266,6 +1266,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://danimrprofe.github.io/apuntes/pensamiento-computacional/0.%20Pensamiento%20computacional/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://danimrprofe.github.io/apuntes/plastics/Tasca%20esquema%20tipus%20de%20plastics/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
@@ -1301,22 +1306,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://danimrprofe.github.io/apuntes/programacion/Programacion%20estructurada/0.%20Pensamiento%20computacional/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/programacion/Programacion%20estructurada/1.%20IniciacionPython/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/programacion/pensamiento-computacional/pensamiento-computacional/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://danimrprofe.github.io/apuntes/proxy-cache/squid/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/python/1.%20IniciacionPython/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
     </url>

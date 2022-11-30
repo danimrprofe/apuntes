@@ -7,6 +7,9 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.indexes
+    - header.autohide
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

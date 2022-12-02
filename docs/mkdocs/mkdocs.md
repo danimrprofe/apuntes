@@ -135,6 +135,9 @@ jobs:
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
 ```
+Cada vez que hagamos cambios, pusheamos primero.
+
+![](img/2022-12-02-08-08-49.png)
 
 Una vez pusheados los cambios, Github automáticamente detectará la configuración del yaml y comenzará el despliegue. Para comprobarlo iremos a la pestaña **actions**:
 

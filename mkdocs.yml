@@ -1,10 +1,22 @@
 site_name: Mis apuntes
+
+nav:
+  - Inicio: index.md
+
+site_author: danimrprofe
+site_description: >-
+  página con apuntes de informática
+
+repo_name: danimprofe/apuntes
+repo_url: https://github.com/danimrprofe/
+
 site_url: https://danimrprofe.github.io/apuntes/
 theme:
   name: material
   language: es
   features:
     - navigation.top
+    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.instant
@@ -13,7 +25,8 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: teal
+      accent: purple
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -28,4 +41,15 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - admonition
   - pymdownx.superfences
+
+plugins:
+  - search
+
+copyright: danimrprofe 2022
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/danimrprofe/

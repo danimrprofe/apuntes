@@ -1,20 +1,12 @@
 # PSCP
 
-- [PSCP](#pscp)
-  - [Qué es PSCP](#qu%C3%A9-es-pscp)
-  - [Ejecución de comandos](#ejecuci%C3%B3n-de-comandos)
-  - [Uso de pscp](#uso-de-pscp)
-  - [Copiar archivos](#copiar-archivos)
-    - [De Windows a Linux](#de-windows-a-linux)
-    - [De Linux a Windows](#de-linux-a-windows)
-  - [Conexión a través de NAT](#conexi%C3%B3n-a-trav%C3%A9s-de-nat)
 
 ## Qué es PSCP
 
-pscp es un comando de terminal que funciona en Windows
-Funciona casi  de la misma manera que el comando scp de los sistemas operativos tipo Unix.
+**pscp** es un comando de terminal que funciona en Windows
+Funciona casi  de la misma manera que el comando **scp** de los sistemas operativos tipo Unix.
 
-Lo primero que se debe hacer es bajar el software. Una vez descargado puede ser invocado desde la terminal de comandos de Windows Para hacer eso, ir a menú inicio, luego ejecutar y escribir  el comando
+Una vez descargado puede ser invocado desde la **terminal** de comandos de Windows Para hacer eso, ir a menú inicio, luego ejecutar y escribir  el comando
 
 ## Ejecución de comandos
 

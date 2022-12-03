@@ -52,3 +52,6 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/danimrprofe/
+
+extra_css:
+  - stylesheets/extra.css

@@ -1,7 +1,5 @@
 site_name: Mis apuntes
 
-nav:
-  - Inicio: index.md
 
 site_author: danimrprofe
 site_description: >-
@@ -42,6 +40,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details 
 
 plugins:
   - search

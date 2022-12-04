@@ -1,5 +1,5 @@
 
-# Reparación y diagnóstico barebone y tarjetas POST
+## Reparación y diagnóstico barebone y tarjetas POST
 
 En esta tarea irás pasando por 4 montajes con placa. Para cada montaje tomar notas y sacar fotos para poder realizar una memoria explicativa de todo el proceso.
 

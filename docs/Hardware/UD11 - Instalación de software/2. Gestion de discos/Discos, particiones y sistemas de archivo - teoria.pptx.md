@@ -18,7 +18,7 @@
   * La agrupación de varios sectores se denomina  __clúster__ \.
 * Para localizar la información en un disco
   * __Identificación:__  Cabeza \- Cilindro \- Sector
-  * Las cabezas y los cilindros se comienzan a numerar desde el «0» y los sectores desde el «1»\, así que el primer bloque de información estará situado en la posición «0\-0\-1»\.
+  * Las cabezas y los cilindros se comienzan a numerar desde el «0» y los sectores desde el «1», así que el primer bloque de información estará situado en la posición «0\-0\-1»\.
 
 ![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria2.jpg)
 
@@ -52,7 +52,7 @@ Primer bloque:  __0 \- 0 \- 1__
 
 * Unidades físicas y lógicas
   * Cada disco duro constituye una  __unidad física__
-  * Cada unidad física puede contener una o más  __unidades lógicas__ \, denominadas  _particiones_ \.
+  * Cada unidad física puede contener una o más  __unidades lógicas__ , denominadas  _particiones_ \.
 * Tabla de particiones
   * Contiene el registro de las particiones de un disco
   * Está en el sector  __MBR__
@@ -64,9 +64,9 @@ Primer bloque:  __0 \- 0 \- 1__
 ## Tipos de particiones
 
 * Partición  _primaria_
-  * División simple del disco destinada\, a contener SO \(aunque también puede contener datos\)
+  * División simple del disco destinada, a contener SO \(aunque también puede contener datos\)
   * __Máximo 4 __ particiones primarias en un disco
-  * A cada una se asigna una  __letra__  de unidad \(G\, D:\. etc\.\)
+  * A cada una se asigna una  __letra__  de unidad \(G, D:\. etc\.\)
   * Pueden tener asociado un nombre que permite identificarlas más rápidamente \( __etiqueta__ \)\.
   * La partición primaria puede ser una partición  __activa__ \.
 * Partición  _extendida_
@@ -76,7 +76,7 @@ Primer bloque:  __0 \- 0 \- 1__
 * Partición  _lógica_
   * Es una subdivisión de la partición extendida\.
   * Pueden existir  __varias particiones lógicas__  dentro de la misma  __partición extendida__ \.
-  * Al igual que a las primarias\, se les asigna una letra de unidad\.
+  * Al igual que a las primarias, se les asigna una letra de unidad\.
   * Las particiones lógicas no pueden ser particiones activas\.
 
 ![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria6.gif)
@@ -113,8 +113,8 @@ Esquema lógico con particiones lógicas en la partición extendida
 * Sistema de archivos  <span style="color:#FF0000">FAT</span>
   * Desarrollados para Windows pero  _compatibles con entornos Linux_ \.
   * Crean una  __tabla de asignación __ de archivos \(File Allocation Table\)
-  * Alojada en los primeros sectores del disco\, con una copia de su contenido por si la primera se daña\.
-  * Formato muy popular \(disquetes\, tarjetas de memoria y dispositivos similares\)
+  * Alojada en los primeros sectores del disco, con una copia de su contenido por si la primera se daña\.
+  * Formato muy popular \(disquetes, tarjetas de memoria y dispositivos similares\)
   * Produce bastante  __fragmentación__  en el disco
   * __Limitaciones__
     * No permite particiones  _superiores a los 32 GB _
@@ -140,24 +140,24 @@ Esquema lógico con particiones lógicas en la partición extendida
 
 ![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria12.png)
 
-__Mac OS X __ sólo puede leer las unidades NTFS\, no escribirlas\.
+__Mac OS X __ sólo puede leer las unidades NTFS, no escribirlas\.
 
-__Linux__  Algunas distribuciones pueden habilitar el soporte de escritura NTFS\, pero algunas pueden ser de sólo lectura\.
+__Linux__  Algunas distribuciones pueden habilitar el soporte de escritura NTFS, pero algunas pueden ser de sólo lectura\.
 
 __PlayStation__  Ninguna de las consolas PlayStation de Sony admite NTFS\.
 
-__Xbox 360__  no puede leer las unidades NTFS\, Xbox One puede
+__Xbox 360__  no puede leer las unidades NTFS, Xbox One puede
 
 * Sistema de archivos extendido  <span style="color:#FF0000">EXT</span>
   * Sistema característico de los entornos  __Linux__
   * __Incompatible__  con entornos Windows\.
   * Diferentes versiones:
-    * Ext2\, ext3 y ext4
+    * Ext2, ext3 y ext4
     * Cada versión incluye mejoras sobre la anterior\.
   * La versión más moderna \( __ext4__ \) es capaz de
     * Archivos <  __16 TB __
     * Particiones <  __1 EB __ \(exabyte\)
-  * Linux utiliza un espacio en el disco denominado  __swap__ \, mediante el cual puede guardar información que no se mantiene en memoria\.
+  * Linux utiliza un espacio en el disco denominado  __swap__ , mediante el cual puede guardar información que no se mantiene en memoria\.
 
 ![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria13.jpg)
 
@@ -201,7 +201,7 @@ Las dos particiones deben tener sistemas de archivos compatibles entre sí\.
 
 __Copia de particiones__
 
-__ __ Genera una partición con el mismo tamaño\, sistema de archivos y contenido que la partición original\.
+__ __ Genera una partición con el mismo tamaño, sistema de archivos y contenido que la partición original\.
 
 Pueden copiarse particiones en varios discos\.
 
@@ -218,9 +218,9 @@ La recuperación no siempre puede llevarse a cabo\.
 * Cambiar el sistema de archivos de una partición
   * Conversión de particiones: modificación de un sistema de archivos a otro\.
   * Conversión entre  __FAT y NTFS __ tiene sus problemas
-    * Se permite el cambio con limitaciones \(espacio en disco\, persistencia de los datos\)
+    * Se permite el cambio con limitaciones \(espacio en disco, persistencia de los datos\)
   * Conversión sistemas  Windows y Linux es más compleja
-  * Si la aplicación lo permite\, el cambio del sistema de archivos se realizaría mediante la opción de convertir\, pudiendo realizar la conversión entre FAT y NTFS\. pero no entre particiones ext\.
+  * Si la aplicación lo permite, el cambio del sistema de archivos se realizaría mediante la opción de convertir, pudiendo realizar la conversión entre FAT y NTFS\. pero no entre particiones ext\.
 * Cambiar el tipo de partición
   * Existe la posibilidad de  _convertir una partición _  _primaria_  _ en _  _lógica_  y viceversa\.
   * Este cambio es bastante útil cuando se agota el cupo de cuatro particiones primarias en el disco
@@ -231,7 +231,7 @@ La recuperación no siempre puede llevarse a cabo\.
 
 * Formateo de particiones
   * Proceso de preparar un dispositivo de almacenamiento para un uso inicial\.
-  * Formatear no implica borrar los datos\, aunque no sean visibles
+  * Formatear no implica borrar los datos, aunque no sean visibles
   * Se puede formatear un disco completo o una partición
   * __Dos niveles de formateo__
     * Alto nivel \(lógico\)
@@ -244,11 +244,11 @@ La recuperación no siempre puede llevarse a cabo\.
   * Similar a  __borrar el índice de un libro__ \.
   * Se emplea para asignar el  __sistema de archivos __ a la partición
   * Incluye  __comprobación de errores __ \(físicos o magnéticos\) en el disco\.
-  * Dependiendo de la  __configuración__ \, el proceso durará más o menos\.
+  * Dependiendo de la  __configuración__ , el proceso durará más o menos\.
   * Tener en cuenta
     * No se puede interrumpir la acción de formateo
     * Cuando haya terminado no habrá acceso a los datos antiguos\.
-    * Sin embargo\, estos  <span style="color:#FF0000"> __datos no se borran__ </span>
+    * Sin embargo, estos  <span style="color:#FF0000"> __datos no se borran__ </span>
     * Existen herramientas software con las que  __pueden recuperarse__ \.
 * _¿Desde dónde puedo formatear?_
   * Desde el  __sistema operativo __
@@ -261,10 +261,10 @@ La recuperación no siempre puede llevarse a cabo\.
 * Formateo a  _bajo nivel \(o formateo físico\)_
   * __Elimina: __  _particiones de disco \+ datos \+ tablas de archivos_
   * Se vuelve a los valores iniciales de  __fábrica__ \.
-  * Coloca  __marcas__  en la superficie del disco para dividirlo de nuevo en pistas y sectores\, eliminando las antiguas referencias\.
+  * Coloca  __marcas__  en la superficie del disco para dividirlo de nuevo en pistas y sectores, eliminando las antiguas referencias\.
   * Este tipo de formateo proporciona más  __seguridad__
   * Recuperación de la información  _difícil pero _ también es  _posible_
-  * Solo elimina las marcas divisorias del disco\, no los datos
+  * Solo elimina las marcas divisorias del disco, no los datos
   * Formateo  __muy lento__
   * En caso de interrumpirse el disco puede quedar inutilizable
 * Herramientas

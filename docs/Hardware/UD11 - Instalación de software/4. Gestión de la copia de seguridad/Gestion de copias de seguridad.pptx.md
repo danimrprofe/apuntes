@@ -8,7 +8,7 @@ _Implantación de sistemas operativos_
 
 * La copia de seguridad
   * Respaldo de la información
-  * Protección del sistema ante desastres \(avería\, un virus\, fallo en el suministro eléctrico\, etc\.\)
+  * Protección del sistema ante desastres \(avería, un virus, fallo en el suministro eléctrico, etc\.\)
 * Planificación
   * A la hora de crear la copia de seguridad es recomendable hacer una planificación
   * Hay que tener en cuenta los siguientes factores:
@@ -106,10 +106,10 @@ _Implantación de sistemas operativos_
 
 * Creación de una copia de seguridad
   * Para gestionar eficazmente todas las copias de seguridad
-  * Se tienen que fijar unas normas para  __nombrar las versiones__ \,
+  * Se tienen que fijar unas normas para  __nombrar las versiones__ ,
   * De forma que no existan problemas de identificación
   * La aplicación que genera las copias de seguridad emplea su propio método\.
-  * o ideal es que en el nombre se identifique\, como mínimo\,
+  * o ideal es que en el nombre se identifique, como mínimo,
     * El equipo origen
     * El tipo de contenido de la copia
     * La fecha en que se realizó\.
@@ -136,26 +136,26 @@ _Implantación de sistemas operativos_
     * Que se  __elimina__  información
   * Permite almacenar información de diferentes momentos en muchísimo menos espacio\.
   * A pesar de que los modelos incremental y diferencial son más lentos en la restauración
-  * Son los más utilizados en sistemas con gran volumen de datos\,
+  * Son los más utilizados en sistemas con gran volumen de datos,
   * Es preferible el  _gasto de tiempo _ antes que el  _gasto de espacio _ que supondría la copia completa\.
 
 * Automatización del proceso
-  * La creación de la copia\, en la mayoría de los casos\, es  __automatizada__ \.
-  * Se decide cuándo\, cómo\, dónde y qué se va a guardar en la copia\.
+  * La creación de la copia, en la mayoría de los casos, es  __automatizada__ \.
+  * Se decide cuándo, cómo, dónde y qué se va a guardar en la copia\.
   * La programación es un aspecto muy importante y depende de las necesidades del sistema\.
   * Se puede programar
-    * Una copia al día\. a la semana\, etc\.\,
+    * Una copia al día\. a la semana, etc\.,
     * Varias copias en el mismo día o incluso a la misma hora
 
 __Ejemplo de planificación de copia de seguridad:__
 
-Todos los días 1 de cada mes\, a las 23:00 horas: copia de seguridad total\.
+Todos los días 1 de cada mes, a las 23:00 horas: copia de seguridad total\.
 
 Todos los viernes a las 23:00 horas: copia de segundad diferencial desde la copia del día 1\.
 
 Todos los días \(excepto los viernes y el día 1\) a las 23:00 horas: copia de segundad incremental desde la copia del día anterior\.
 
-__Regla 3\, 2\, 1 de copias de seguridad:__
+__Regla 3, 2, 1 de copias de seguridad:__
 
 __Tener 3 copias de seguridad diferentes \(original y 2 copias\)\.__
 

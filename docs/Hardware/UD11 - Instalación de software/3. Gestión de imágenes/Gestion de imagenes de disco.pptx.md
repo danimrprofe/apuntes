@@ -12,7 +12,7 @@ _Implantación de sistemas operativos_
   * Tener cuidado al hacer copias
   * Se puede hacer para datos que no sean del sistema operativo
   * __NO__  se puede arrastrar y soltar un sistema operativo\.
-  * Si es la unidad desde la que se inicia\, sólo la clonación o la creación de imágenes pueden confeccionar una copia de trabajo de forma fiable\.
+  * Si es la unidad desde la que se inicia, sólo la clonación o la creación de imágenes pueden confeccionar una copia de trabajo de forma fiable\.
 
 ![](img/Gestion%20de%20imagenes%20de%20disco1.jpg)
 
@@ -21,8 +21,8 @@ _Implantación de sistemas operativos_
 ## Gestión de imágenes de disco
 
 * Imagen de un disco
-  * El producto de hacer una copia\, sector por sector
-  * De un soporte de almacenamiento \(HDD\, CD\, DVD\, pendrive\, etc\.\)
+  * El producto de hacer una copia, sector por sector
+  * De un soporte de almacenamiento \(HDD, CD, DVD, pendrive, etc\.\)
   * Puede hacerse
     * De un disco completo
     * De una partición en concreto
@@ -34,24 +34,24 @@ _Implantación de sistemas operativos_
 
 * Clonación de un disco a otro disco
   * Copia el contenido completo de una unidad a otra
-    * Archivos\, tablas de particiones y MBR
+    * Archivos, tablas de particiones y MBR
   * Para mover los datos de un disco a otro
   * Solución más fácil y rápida
   * __Funcionamiento__
     * Se conecta una nueva unidad al equipo
     * Se inicia el software y se clona todo el disco en ella
-    * Una vez clonado\, funciona directamente sin ningún programa
+    * Una vez clonado, funciona directamente sin ningún programa
     * Se sustituye un disco o partición por el clon
   * Se utiliza fundamentalmente para  _despliegues_
 
 ![](img/Gestion%20de%20imagenes%20de%20disco4.jpg)
 
 * Creación de una imagen a partir del disco \(Imaging\)
-  * A partir de  __unidad o partición __ de un HD\, DVD\, pendrive\, etc\.
+  * A partir de  __unidad o partición __ de un HD, DVD, pendrive, etc\.
   * Copia todos los datos  _a un solo archivo: _  __imagen de disco \(ISO\)__
   * Guardado en otra unidad
 * Imagen de disco
-  * __Contiene los datos__ \, estructura e información del disco
+  * __Contiene los datos__ , estructura e información del disco
   * Se puede  __restaurar la imagen__
     * En la unidad existente
     * En otra nueva
@@ -62,32 +62,32 @@ _Implantación de sistemas operativos_
 
 * ¿Para qué se usan las imágenes de un disco?
   * __Copia de seguridad__
-    * Se hace una imagen\, utilizando el procedimiento de  _Imaging_
+    * Se hace una imagen, utilizando el procedimiento de  _Imaging_
     * Disponer de ella si el disco original sufriera algún problema\.
   * __Clonación para despliegues__
     * La creación imagen mediante  _cloning_  \(clonación\)
     * Replicar en otros PC de forma directa \(tantas veces como deseemos\)
     * Se utiliza cuando se necesita:
-      * Replicar el estado de un equipo \(con configuraciones\, programas\, etc\.\)
-      * A otros PC\, sobre todo cuando el número de equipos es elevado\.
+      * Replicar el estado de un equipo \(con configuraciones, programas, etc\.\)
+      * A otros PC, sobre todo cuando el número de equipos es elevado\.
     * Despliegue = procedimiento de instalar la imagen original en otros equipos\.
 
 ## Software para la gestión de imágenes de disco
 
-* Se pueden utilizar diferentes programas para la gestión de imágenes\, en función del soporte que se quiera replicar\.
+* Se pueden utilizar diferentes programas para la gestión de imágenes, en función del soporte que se quiera replicar\.
 * Imágenes de  _discos ópticos_
   * Las imágenes de discos ópticos se puede realizar con una amplia gama de software
-    * Gratuito \(ImgBurn\, CDBurnerXP\, ISODisk\, etc\.\)
-    * De pago \(CloneDVD\. PowerlSO\, Nero\, Alcohol 120 %\. etc\.\)\.
+    * Gratuito \(ImgBurn, CDBurnerXP, ISODisk, etc\.\)
+    * De pago \(CloneDVD\. PowerlSO, Nero, Alcohol 120 %\. etc\.\)\.
   * El formato más extendido para este tipo de imágenes es ISO\.
   * Cada aplicación suele tener además un formato propio
 * Imágenes de  _discos duros_
-  * Hay programas dedicados a este tipo de imágenes\, como  __ODIN__  o  __Clonezilla__  \(gratuitos\)
+  * Hay programas dedicados a este tipo de imágenes, como  __ODIN__  o  __Clonezilla__  \(gratuitos\)
   * Lo habitual es que también gestionen las copias de seguridad de los discos
-    * Acronis True Image\, Redo Backup & Recovery o Paragon Hard Disk Manager\.
+    * Acronis True Image, Redo Backup & Recovery o Paragon Hard Disk Manager\.
 * Imágenes de  _dispositivos de almacenamiento extraíble_
   * Tarjetas de memoria y discos USB
-  * Pueden ser tratados como discos duros u ópticos\, según finalidad
+  * Pueden ser tratados como discos duros u ópticos, según finalidad
 
 ![](img/Gestion%20de%20imagenes%20de%20disco6.png)
 
@@ -99,7 +99,7 @@ _Implantación de sistemas operativos_
     * Pueden dar problema con los controladores\.
   * __Problemas de seguridad__
     * Cada equipo Windows basado en arquitectura NT tiene un número único que lo identifica llamado  __SID__  \(Security IDentificator\. identificador de seguridad\)\.
-    * A partir de ese número se generan SIDs para usuarios\, de acuerdo con los cuales el sistema organiza los permisos\, el control de accesos\, etc\.
+    * A partir de ese número se generan SIDs para usuarios, de acuerdo con los cuales el sistema organiza los permisos, el control de accesos, etc\.
     * La réplica limpia del disco conllevaría una réplica en los SID\.
     * Puede originar graves problemas de seguridad al interconectar los equipos\.
 
@@ -124,8 +124,8 @@ _Implantación de sistemas operativos_
 * Despliegue de la réplica
   * Debemos obtener espacio en el disco destino para poder alojar el archivo de réplica\.
   * El despliegue de réplicas de disco con SO requiere activar la partición donde hemos colocado la imagen\.
-  * Una vez hecho eso\, con iniciar el equipo se procederá a la «instalación» de la imagen en el disco\.
-  * En función de si hemos diseñado un archivo de respuesta o no\, tendremos que terminar la configuración del equipo destino\.
+  * Una vez hecho eso, con iniciar el equipo se procederá a la «instalación» de la imagen en el disco\.
+  * En función de si hemos diseñado un archivo de respuesta o no, tendremos que terminar la configuración del equipo destino\.
 
 ## Clonezilla
 
@@ -147,7 +147,7 @@ _Implantación de sistemas operativos_
   * Parámetros de arranque para  __personalizar__  la imagen y clonación
   * Clonezilla SE pueden clonar  __masivamente__  muchos ordenadores\.
   * Se puede utilizar  __remotamente__
-  * El archivo de imagen puede ser un  _disco local\, un servidor SSH\, samba o NFS\._
+  * El archivo de imagen puede ser un  _disco local, un servidor SSH, samba o NFS\._
 
 ![](img/Gestion%20de%20imagenes%20de%20disco13.gif)
 
@@ -204,11 +204,11 @@ _Implantación de sistemas operativos_
 ![](img/Gestion%20de%20imagenes%20de%20disco20.png)
 
 * Clonación de una imagen a varios PC
-  * En primer lugar\, creamos una imagen de un disco \(image to device\)
-  * En Virtualbox\, crear una  __red NAT__
+  * En primer lugar, creamos una imagen de un disco \(image to device\)
+  * En Virtualbox, crear una  __red NAT__
   * Configurar todas las MV como  __red NAT __ para que cada una de ellas tenga su propia IP
 * __En __ el Servidor
-  * Dentro de Clonezilla\, seleccionar Lite server
+  * Dentro de Clonezilla, seleccionar Lite server
   * Configurar DHCP y decir cuantos PC vamos a clonar
   * Se quedará a la espera de la conexión
 * En las MV cliente

@@ -9,7 +9,7 @@
 * [Impresoras](slide57.xml)
   * Impresoras de tinta
   * [Impresoras láser](slide66.xml)
-  * [Térmica\, plotter\, 3d](slide74.xml)
+  * [Térmica, plotter, 3d](slide74.xml)
 * [Tabletas y webcam](slide81.xml)
 * [Sonido](slide87.xml)
 * [Periféricos de red](slide91.xml)
@@ -52,15 +52,15 @@ Tipos de teclado
 
 * Varios tipos según número y disposición de las teclas
 * _Los más antiguos de 83 y 84 teclas_
-  * Ordenadores PC y PC XT de IBM\, y PC AT de IBM\, respectivamente\.
+  * Ordenadores PC y PC XT de IBM, y PC AT de IBM, respectivamente\.
 * _Teclado mejorado de 101 teclas_
   * última versión del PC AT de IBM
   * Añadía teclas adicionales: teclas para el cursor \(movimiento\)
-  * 2a tecla Ctrl\, Alt e Intro
+  * 2a tecla Ctrl, Alt e Intro
   * 2 teclas más de funciones\.
   * Teclado estándar durante muchos años\.
 * _Teclado para Windows de 104 teclas_
-  * 3 teclas adicionales: 2 teclas Windows \(Menú inicio\)\, 1 tecla de menú contextual
+  * 3 teclas adicionales: 2 teclas Windows \(Menú inicio\), 1 tecla de menú contextual
 
 __Teclados ergonómicos: __
 
@@ -90,13 +90,13 @@ Tecnología Wi\-Fi o Bluetooth
 
 Con pilas o baterías\.
 
-Batería más caro\, evita cambiar pilas cada poco tiempo\.
+Batería más caro, evita cambiar pilas cada poco tiempo\.
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%299.png)
 
   * __Wi\-Fi orientada al tráfico de grandes cantidades de datos__
-  * __B__  __uetooth __  __a__  __náloga al USB \(en cuanto a conectividad\)\, __
-  * __Más d__  __estinada a conexión de periféricos a un PC: teléfonos moviles\, PDA… __
+  * __B__  __uetooth __  __a__  __náloga al USB \(en cuanto a conectividad\), __
+  * __Más d__  __estinada a conexión de periféricos a un PC: teléfonos moviles, PDA… __
 
 Teclados para portátiles
 
@@ -104,7 +104,7 @@ Integrados en la unidad
 
 Difícil reemplazarlos
 
-Más pequeños\, las teclas unas más cerca de otras
+Más pequeños, las teclas unas más cerca de otras
 
 Disposición puede variar de un fabricante a otro
 
@@ -118,9 +118,9 @@ Teclados virtuales Infrarrojos o luz láser
 
 Generado con luz sobre una superficie plana
 
-Al pulsar cada tecla\, la información se manda al dispositivo
+Al pulsar cada tecla, la información se manda al dispositivo
 
-Útil en dispositivos móviles \(PDA\, móviles\, Pocket PC\, etc\.\)
+Útil en dispositivos móviles \(PDA, móviles, Pocket PC, etc\.\)
 
 Pequeño dispositivo Bluetooth a un aparato electrónico
 
@@ -190,7 +190,7 @@ La rueda tiene emisor y receptor infrarrojo
 
 El movimiento del ratón produce movimiento en la bola y este a su vez en los rodillos con sus ruedas\.
 
-Cuando giran las ruedas\, el receptor detecta cuándo pasa la emisión y la convierte en el movimiento del puntero del ratón en la pantalla\.
+Cuando giran las ruedas, el receptor detecta cuándo pasa la emisión y la convierte en el movimiento del puntero del ratón en la pantalla\.
 
 Superficie lisa para el rodamiento de la bola
 
@@ -198,7 +198,7 @@ Ideal: alfombrilla para ratón\.
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2926.png)
 
-__El ratón de bola ha sido uno de los modelos más utilizados\. En la actualidad\, este tipo de ratón está en desuso por la inconveniencia al usarse en determinadas superficies y por la necesidad de desarmarlo periódicamente para limpiar las piezas internas \(rodillos y bola\)\.__
+__El ratón de bola ha sido uno de los modelos más utilizados\. En la actualidad, este tipo de ratón está en desuso por la inconveniencia al usarse en determinadas superficies y por la necesidad de desarmarlo periódicamente para limpiar las piezas internas \(rodillos y bola\)\.__
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2927.png)
 
@@ -270,7 +270,7 @@ __Dot__  __ pitch__ : Distancia entre dos puntos del mismo color\. Mide la nitid
 
 __Ángulo de visión__ : Posiciones en los que se ve correctamente la pantalla
 
-__Frecuencia de refresco__ : velocidad con que se refresca información en pantalla\. Más frecuencia\, menor parpadeo pero más consumo\.
+__Frecuencia de refresco__ : velocidad con que se refresca información en pantalla\. Más frecuencia, menor parpadeo pero más consumo\.
 
 __Área útil__ : tamaño que utiliza el monitor para representar datos
 
@@ -300,10 +300,10 @@ __Consumo__ : cantidad de energía que consume el monitor
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2949.png)
 
-* Permite capturar información impresa \(texto\, imagen\, foto\) para su posterior tratamiento en el ordenador\.
+* Permite capturar información impresa \(texto, imagen, foto\) para su posterior tratamiento en el ordenador\.
 * Fuente de luz refleja la imagen capturada
 * Imagen reflejada se digitaliza
-* Se envía al software\, desde donde puede
+* Se envía al software, desde donde puede
   * Almacenarse
   * Editarse
   * Imprimirse\.
@@ -314,7 +314,7 @@ __Fuente de luz fluorescente o incandescente: __ Iluminar el objeto que se desea
 
 __Sistema óptico__ : Generalmente formado por espejos\. Recoge la luz reflejada por el objeto y la dirige hacia el fotosensor
 
-__Fotosensor__ : Recoge la luz reflejada por el objeto y la transforma en una señal eléctrica analógica\, normalmente un chip CCD\.
+__Fotosensor__ : Recoge la luz reflejada por el objeto y la transforma en una señal eléctrica analógica, normalmente un chip CCD\.
 
 __Conversor analógico/digital \(ACD o A/D\): __ Convierte la señal eléctrica del fotosensor en formato binario
 
@@ -323,22 +323,22 @@ Un dispositivo que se encarga de  __almacenar__  esa imagen o de traspasarla a u
 __Software__  específico para tratar las imágenes que se obtienen
 
 * La exploración de un documento en el escáner se realiza por medio de unos dispositivos ópticos denominados dispositivos de carga acoplada  __CCD__  \(Charged Coupled Device\)\.
-* Además\, el escáner está formado por dos elementos principales:
+* Además, el escáner está formado por dos elementos principales:
 * _Carro de exploración_
   * Se desplaza bajo el cristal de exposición
   * Tras examinar el documento envía los datos a la placa CCD por medio de la faja de conexión de cable paralelo\.
 * _La placa CCD_
-  * Al recibir la información\, convierte los datos en información electrónica\, es decir\, los digitaliza\.
+  * Al recibir la información, convierte los datos en información electrónica, es decir, los digitaliza\.
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2951.jpg)
 
-__CCD\. __  __Chip de silicio sensible a la luz que está eléctricamente dividido en un gran número de partes independientes llamadas píxel __  _\(picture element\, _  __elemento de imagen\)\. Estos chips son los encargados de recoger la información en un escáner\. También son frecuentes en cámaras de fotos digitales\.__
+__CCD\. __  __Chip de silicio sensible a la luz que está eléctricamente dividido en un gran número de partes independientes llamadas píxel __  _\(picture element, _  __elemento de imagen\)\. Estos chips son los encargados de recoger la información en un escáner\. También son frecuentes en cámaras de fotos digitales\.__
 
-* _Píxeles\, o puntos por pulgada_
+* _Píxeles, o puntos por pulgada_
   * __dpi__ : dots per inch
   * __ppp__  __:__  puntos por pulgada
 * _Determinan resolución de un escáner_
-  * Cuanto más alto\, más  __resolución__  tendrá la imagen
+  * Cuanto más alto, más  __resolución__  tendrá la imagen
   * Determina el detalle que va a mostrar una imagen
   * __Habitualmente__  __: __ Hasta 2\.400 ppp de resolución\.
 * _Tamaño de papel_
@@ -347,9 +347,9 @@ __CCD\. __  __Chip de silicio sensible a la luz que está eléctricamente dividi
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2952.png)
 
-El  __píxel __ es la unidad mínima de imagen digital\, por lo que cuantos más píxeles
+El  __píxel __ es la unidad mínima de imagen digital, por lo que cuantos más píxeles
 
-haya en una pulgada\, más detalle tendrá la imagen y\, en consecuencia\, más resolución\.
+haya en una pulgada, más detalle tendrá la imagen y, en consecuencia, más resolución\.
 
 Reconocimiento óptico
 
@@ -479,7 +479,7 @@ Sustitución de cartucho de tóner
 
 * 2 piezas muy diferentes que actúan en conjunción en impresoras láser
 * __El tambor__
-  * Pieza de forma cilíndrica\, rota recibiendo los impactos del láser
+  * Pieza de forma cilíndrica, rota recibiendo los impactos del láser
   * Láser lo impregna con puntos electropositivos formando la imagen que se desea imprimir\.
 * __El tóner__
   * Tinta seca permite impresión sobre el papel
@@ -499,7 +499,7 @@ Sustitución de cartucho de tóner
   * Nivel bajo debido a que las impresiones salen con colores desvaídos
   * Reemplazarlo para tener una buena calidad de impresión\.
 * _Tambores_
-  * Desgaste con el uso\, cubierta de propiedades fotoconductoras que es lo que permite atraer el tóner va perdiendo su funcionalidad
+  * Desgaste con el uso, cubierta de propiedades fotoconductoras que es lo que permite atraer el tóner va perdiendo su funcionalidad
   * Impresiones se vean borrosas o confusas\.
   * Una vez alcance el límite de su vida útil es preciso reemplazarlo\.
 
@@ -522,11 +522,11 @@ Tóner y tambor separados
 ## Papel
 
 * __Impresoras de impacto__
-  * Son más indulgentes\, un mecanismo tiene un impacto físico en el papel
+  * Son más indulgentes, un mecanismo tiene un impacto físico en el papel
 * __Impresoras de inyección de tinta__
   * Rocían tinta sobre el papel
   * Calidad del papel determina qué tan bien se adhiere la tinta
-  * Si el papel absorbe demasiada tinta\, la impresión aparece descolorida
+  * Si el papel absorbe demasiada tinta, la impresión aparece descolorida
 * __Impresora láser__
   * Forma en que el papel se calienta y absorbe el tóner afecta la impresión
   * Papel es un factor importante
@@ -541,7 +541,7 @@ Impresión virtual
 
   * Se imprime en un lugar diferente a la impresora conectada directamente
   * Comúnmente a un tipo de archivo archivo
-  * Que se pueda ver\, guardar o incluso enviar por correo electrónico
+  * Que se pueda ver, guardar o incluso enviar por correo electrónico
 * __Impresión a un archivo__
   * Print to file
   * Print to PDF
@@ -554,7 +554,7 @@ Impresión virtual
 
 * _Impresoras multifunción o MFC_
 * __Funciones__ :
-  * Impresora\, escáner y fotocopiadora\. Fax \(opcional\)
+  * Impresora, escáner y fotocopiadora\. Fax \(opcional\)
   * Lector de tarjetas: impresión directa de fotografías
   * Disco duro: almacenar documentos e imágenes
 * __Funcionan autónomamente__
@@ -603,9 +603,9 @@ Impresora local e impresora en red
 
 ## Cámaras IP
 
-Las cableadas se conectarán al switch a través de su cable de red\, y las Wi\-Fi se conectarán al router que permitirá el acceso a través de Internet a las imágenes y vídeos que capturan las cámaras\.\.
+Las cableadas se conectarán al switch a través de su cable de red, y las Wi\-Fi se conectarán al router que permitirá el acceso a través de Internet a las imágenes y vídeos que capturan las cámaras\.\.
 
-Vigilancia y la monitorización de distintas áreas\, grabar audio e incluso fotografías\.
+Vigilancia y la monitorización de distintas áreas, grabar audio e incluso fotografías\.
 
 Se controla de manera  __remota__
 
@@ -613,7 +613,7 @@ En directo a través de Internet a un  __navegador web__
 
 Acceso desde cualquier dispositivo conectado a Internet
 
-Incorpora su propio miniordenador\, lo que le permite emitir vídeo por sí misma\.
+Incorpora su propio miniordenador, lo que le permite emitir vídeo por sí misma\.
 
 Podemos encontrarnos cámaras IP  _cableadas_  e  _inalámbricas_  \(Wi\-Fi\)
 
@@ -621,7 +621,7 @@ Podemos encontrarnos cámaras IP  _cableadas_  e  _inalámbricas_  \(Wi\-Fi\)
 
 __Una cámara IP \(o una cámara de red\) es un dispositivo que contiene:__
 
-__Una cámara de vídeo de gran calidad\, que capta las imágenes\.__
+__Una cámara de vídeo de gran calidad, que capta las imágenes\.__
 
 __Un chip de compresión prepara imágenes para ser transmitidas por Internet__
 
@@ -685,10 +685,10 @@ Sistema envolvente
 
 * Necesidad
   * _Conectar ordenadores _ entre sí
-  * Compartir recursos \( _impresoras_ \, documentos\)
+  * Compartir recursos \( _impresoras_ , documentos\)
 * Adaptadores de red o  _NIC_  \(Network Interface Card\)
-* Diversos tipos de tarjetas de red\,
-  * Tipo de cable o arquitectura red \(coaxial\, fibra\, UTP\)
+* Diversos tipos de tarjetas de red,
+  * Tipo de cable o arquitectura red \(coaxial, fibra, UTP\)
 * Más utilizado:
   * _Ethernet_  con un conector  _RJ\-45_
   * También redes Wi\-Fi\.
@@ -723,7 +723,7 @@ Tarjetas de red
   * Código identificador de  _48 bits _ \(6 bytes\)
   * Corresponde de forma única a una  _tarjeta o interfaz de red\. _
 * _Características_
-  * Individual\, cada dispositivo tiene su propia dirección
+  * Individual, cada dispositivo tiene su propia dirección
   * Únicas a nivel mundial
   * Escritas en el hardware en su momento de fabricación\.
   * Se conoce también como dirección física
@@ -738,20 +738,20 @@ Tarjetas de red
   * Se suelen ordenar por parejas:
   * XX\.XX\.XX\.XX\.XX\.XX  _00–16–E6–5E–7B–74_
 * No necesaria para montar una red doméstica ni configurar conexión a Internet\.
-* Se puede “modificar”\, pero al arrancar el equipo\, la MAC volverá siempre a su estado original\.
+* Se puede “modificar”, pero al arrancar el equipo, la MAC volverá siempre a su estado original\.
 
 ![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29132.jpg)
 
-* Una tarjeta de red puede trabajar a  __distintas velocidades__ \, en función de la  __tecnología__  y los estándares que soporte\.
+* Una tarjeta de red puede trabajar a  __distintas velocidades__ , en función de la  __tecnología__  y los estándares que soporte\.
 * Redes tradicionales: entre 4 y 16 Mb/s
 * En la actualidad
   * Nuevas tecnologías de comunicación
   * Incremento de la capacidad de almacenamiento
   * Poder de procesamiento de los ordenadores actuales
 * Los estándares más usados son:
-  * _Ethernet\, 10 Mb/s\._
-  * _Fast Ethernet\, 100 Mb/s\._
-  * _Gigabit Ethernet\, 1\.000 Mb/s \(aprox\. 1 Gb/s\)_
+  * _Ethernet, 10 Mb/s\._
+  * _Fast Ethernet, 100 Mb/s\._
+  * _Gigabit Ethernet, 1\.000 Mb/s \(aprox\. 1 Gb/s\)_
 * Tarjetas de red actuales
   * Soportan dos o tres velocidades
   * Se adaptan a la velocidad del resto de la red

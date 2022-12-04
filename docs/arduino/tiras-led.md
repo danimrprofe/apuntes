@@ -22,31 +22,18 @@ Las tiras **WS2812B** pueden alimentarse a través de una batería o de una fuen
 
 ## Cabecera
 
-```c
+```c  linenums="1" title="pruebaLED.ino"
 #include<FastLED.h> // header file
 
 #define NUM_LEDS 60 // number of led present in your strip
 #define DATA_PIN 6 // digital pin of your arduino
 
 CRGB leds[NUM_LEDS];
-```
 
-## Setup
-
-```c
 void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(50);
 }
-```
-
-## Loop
-
-```c
-
-// en mi tira, un píxel equivale a 3 LED, por lo que cuando enciendo 1 LED como en el código, 3 LED brillaron
-//esto se debe a que en mi tira de leds hay 3 leds conectados en serie y controlados por ws28111 en 12v
-// leds[led no.] es una matriz
 
 void loop() {
   leds[0] = CRGB::Green; //glow 1st led as green
@@ -54,10 +41,11 @@ void loop() {
   FastLED.show(); // apply the function on led strip
   delay(30);
 }
+```
 
 ## Parpadeo (blink)
 
-```c
+```c  linenums="1" title="parpadeoLED.ino"
 void loop() { 
   leds[0] = CRGB::Blue;
   FastLED.show(); 

@@ -21,12 +21,15 @@ Debe cambiarse el usuario de acuerdo a la configuración particular de cada PC.
 
 ## Uso de pscp
 
+```shell
 pscp [options] [user@]host:source target
 pscp [options] source [source...] [user@]host:target
 pscp [options] -ls [user@]host:filespec
+```
 
 Opciones
 
+```
 -V        print version information and exit
 -pgpfp    print PGP key fingerprints and exit
 -p        preserve file attributes
@@ -47,6 +50,7 @@ Opciones
  -batch    disable all interactive prompts
  -unsafe   allow server-side wildcards (DANGEROUS)
  -sftp     force use of SFTP protocol  -scp      force use of SCP protocol
+```
 
 ## Copiar archivos
 
@@ -54,7 +58,9 @@ Opciones
 
 Se puede utilizar scp para copiar archivos de Windows a Linux
 
-    pscp c:\path\to\file user@remote-server:/path/to/remote-folder
+```
+pscp c:\path\to\file user@remote-server:/path/to/remote-folder
+```
 
 ### De Linux a Windows
 
@@ -70,7 +76,7 @@ No podemos crear conexiones a una máquina de dentro de la red
 El router no sabe a qué máquina enviar las conexiones que le llegan del exterior
 Necesitamos configurar el reenvío de puertos o port forwarding
 
-Solución: port forwarding
+## Solución: port forwarding
 
 Asociar puerto del router con una máquina y un puerto dentro de la red NAT.
 

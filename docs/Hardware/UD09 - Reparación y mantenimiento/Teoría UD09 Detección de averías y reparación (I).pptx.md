@@ -102,7 +102,7 @@ _Averías hardware_
 * __Fallos de hardware en:__
   * Caja del equipo
   * Pila de la placa base
-  * Microprocesador\, memoria\, tarjetas de expansión\, etc\.
+  * Microprocesador, memoria, tarjetas de expansión, etc\.
   * Periféricos
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%293.jpg)
@@ -111,7 +111,7 @@ _Averías_  __ __  _software_
 
 * __Software =__  soporte lógico del equipo informático
 * Tipos
-  * __Software del sistema __ \(SO\, controladores o drivers\)
+  * __Software del sistema __ \(SO, controladores o drivers\)
   * __Software de aplicación __ \(programas\)
   * __Firmware__  de circuitos electrónicos
 * Los circuitos electrónicos disponen de firmware
@@ -128,10 +128,10 @@ _Averías_  __ __  _software_
   * Herramientas hardware y software
 * _Herramientas físicas_
   * Para manipular los componentes del equipo
-  * Destornilladores\, pinzas\, polímetro\, tarjetas de diagnóstico POST
+  * Destornilladores, pinzas, polímetro, tarjetas de diagnóstico POST
 * _Para protegernos de posibles descargas_
   * Tomaremos las precauciones necesarias
-  * Utilizaremos guantes de nitrilo o kevlar\, según el tipo de avería\.
+  * Utilizaremos guantes de nitrilo o kevlar, según el tipo de avería\.
 * _En cuanto a herramientas software_
   * Aplicaciones nos pueden ayudar a descubrir posibles problemas\.
 
@@ -143,7 +143,7 @@ _Averías_  __ __  _software_
 
 __Protocolos y diagramas__
 
-* Infinidad de averías\, es conveniente seguir:
+* Infinidad de averías, es conveniente seguir:
 * _Protocolo_  _ _
   * Serie de  __pasos__  para proceder al diagnóstico
   * Nos permite averiguar avería
@@ -168,7 +168,7 @@ __Protocolos y diagramas__
   * __Búsqueda detallada__  = más posibilidades de encontrar el error
   * Algunas páginas marcan las averías y problemas que han sido  __solucionados__
 * _Foros_
-  * Información muy dispersa\, difusa y difícil de extraer
+  * Información muy dispersa, difusa y difícil de extraer
 * _Yahoo answers_
   * Usuario que pregunta escoge la respuesta más acertada
   * Sistemas de  __votación__
@@ -183,7 +183,7 @@ __Protocolos y diagramas__
 
 ## 2. Señales de aviso luminosas y acústicas
 
-Mensajes\, códigos\, pitidos\, leds
+Mensajes, códigos, pitidos, leds
 
 * _Principales BIOS \(AMI y Award\)_
   * Envían mensajes de error
@@ -195,7 +195,7 @@ Mensajes\, códigos\, pitidos\, leds
 * _Señales de tipo luminoso_
   * Conocer estado de los dispositivos conectados
   * __LED del equipo __ \(disco duro y encendido\)
-  * __LEDs de los periféricos__  \(monitor\, impresora\, router\, etc\.\)\.
+  * __LEDs de los periféricos__  \(monitor, impresora, router, etc\.\)\.
   * Significado de colores o parpadeos: manual del fabricante
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2911.png)
@@ -214,13 +214,13 @@ El sistema se encuentra completamente parado
 
 * Problema suele estar relacionado con la  __alimentación eléctrica__ \.
 * _Comprobaciones_
-  * __Tensión en la línea __ de corriente\, conectando otro aparato y asegurándonos que funciona\.
+  * __Tensión en la línea __ de corriente, conectando otro aparato y asegurándonos que funciona\.
   * __Cable conectado al equipo__
   * Interruptor en estado de encendido \(si tiene\)
   * Funcionamiento  __conector de la placa __ base funciona \(polímetro\)
   * __Fusibles__  están en buen estado \(si tuviera\)
   * Desconectamos todas las unidades de disco y las tarjetas de expansión
-  * Comprobamos tensiones\, para averiguar si el problema puede deberse a una sobrecarga que haya producido un cortocircuito\.
+  * Comprobamos tensiones, para averiguar si el problema puede deberse a una sobrecarga que haya producido un cortocircuito\.
 * Si seguimos sin obtener corriente eléctrica
   * El problema proviene de la fuente de alimentación \(sustituirla\)
 * Si por el contrario hay energía
@@ -245,7 +245,7 @@ El sistema arranca correctamente y se para después de un determinado tiempo fun
   * Seguir dicho protocolo de actuación\.
 * En la mayoría de los casos el problema suele deberse a un exceso de  __temperatura__
 * Se deben realizar las siguientes acciones:
-  * Comprobar que la  __temperatura__  del equipo no excede los valores recomendados\. En caso contrario\, se debe comprobar el funcionamiento de los ventiladores\, y si fuese necesario\, proceder a cambiar el sistema de refrigeración por uno más eficaz\.
+  * Comprobar que la  __temperatura__  del equipo no excede los valores recomendados\. En caso contrario, se debe comprobar el funcionamiento de los ventiladores, y si fuese necesario, proceder a cambiar el sistema de refrigeración por uno más eficaz\.
   * Comprobar si la  __frecuencia de trabajo del microprocesador __ es la correcta\.
 
 El equipo se enciende pero la pantalla permanece negra\. El ventilador no se enciende y el disco duro no gira
@@ -253,13 +253,13 @@ El equipo se enciende pero la pantalla permanece negra\. El ventilador no se enc
 * El problema puede proceder de distintos emplazamientos:
 * _Comprobaciones_
   * Comprobaciones de alimentación descritas en el primer caso
-  * Conectar uno a uno\, de los distintos dispositivos\, comprobaremos si se activa el ventilador y cuándo
+  * Conectar uno a uno, de los distintos dispositivos, comprobaremos si se activa el ventilador y cuándo
   * Detectaremos cuál es el dispositivo que produce cortocircuito\.
 * _Si el ventilador sigue sin funcionar_
   * Desconectaremos la placa base del equipo
   * Conectaremos a la fuente de alimentación el disco duro
-  * Si el ventilador funciona\, el problema está en la placa base\.
-  * En caso contrario\, el problema proviene de la fuente de alimentación
+  * Si el ventilador funciona, el problema está en la placa base\.
+  * En caso contrario, el problema proviene de la fuente de alimentación
     * Procederemos a cambiarla\.
 
 El sistema se queda totalmente bloqueado o se resetea automáticamente sin intención del usuario
@@ -274,16 +274,16 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
   * _Memoria RAM:_
     * Deberá comprobarse su correcto funcionamiento\.
 * __Posibles soluciones__
-  * Rastrear por completo en busca de virus\, gusanos u otro malware\.
+  * Rastrear por completo en busca de virus, gusanos u otro malware\.
   * Puede deberse a algún fallo en algún driver del sistema
   * Arrancar el equipo en el modo a prueba de fallos y restaurar el sistema\.
-  * Reinstalación del sistema operativo\, ya que puede haberse corrompido el archivo de inicio\.
+  * Reinstalación del sistema operativo, ya que puede haberse corrompido el archivo de inicio\.
 
 ## 3.2. Averías en la caja del equipo
 
 * _Averías en cajas_
 * Poco habitual que la caja de un equipo produzca fallos\.
-* Componentes sencillos\, así como la resolución de problemas\.
+* Componentes sencillos, así como la resolución de problemas\.
 * _Posibles problemas_
 * __Botones de encendido y de reseteo: __
   * Desconectar placa base\.
@@ -313,7 +313,7 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
 
 * __Ordenador no arranca__
   * No se detecta ningún tipo de actividad en el sistema:
-    * Ordenador no arranca\, discos duros no giran\, ventiladores no funcionan\, etc\.
+    * Ordenador no arranca, discos duros no giran, ventiladores no funcionan, etc\.
   * Fuente no conectada correctamente a la placa base
   * Medidas de tensión fuera de los límites descritos en la BIOS
   * Debemos comprobar la tensión mediante un polímetro\.
@@ -322,10 +322,10 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
   * Fuente cuya potencia es escasa
   * Comprobar que cumpla los requisitos del equipo\.
 * __Ventiladores__
-  * Fuente funciona\, pero la tensión en los ventiladores no sea la adecuada\.
+  * Fuente funciona, pero la tensión en los ventiladores no sea la adecuada\.
   * Velocidad de giro más lenta de lo normal: refrigeración inadecuada
   * Solución:
-    * Con una modificación de la velocidad de giro de los ventiladores\, si estos lo permiten
+    * Con una modificación de la velocidad de giro de los ventiladores, si estos lo permiten
     * Cambiar la fuente de alimentación por otra más potente\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2915.png)
@@ -334,7 +334,7 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
 
 Sobrecalentamiento
 
-* Generalmente\, hay dos problemas básicos de mal funcionamiento del microprocesador:
+* Generalmente, hay dos problemas básicos de mal funcionamiento del microprocesador:
   * El sobrecalentamiento
   * Una mala inserción en el socket\.
 * _Problemas de sobrecalentamiento_
@@ -394,9 +394,9 @@ Problemas de inserción en el socket
     * Oímos una secuencia larga de pitidos
     * Sistema no detecta la memoria
     * Sabremos que no es un fallo del microprocesador
-* A veces\, este problema puede dar lugar a un  __calentamiento__  del microprocesador
+* A veces, este problema puede dar lugar a un  __calentamiento__  del microprocesador
   * A pesar de que este aparentemente no se encienda\.
-  * Evitar esta situación puesto\, puede provocar avería irreparable\.
+  * Evitar esta situación puesto, puede provocar avería irreparable\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2922.png)
 
@@ -414,7 +414,7 @@ Problemas de inserción en el socket
     * No viene dada directamente por la temperatura del dispositivo
     * Diferencia de temperaturas entre el dispositivo y el interior de la caja\.
 * _Desgaste del ventilador _
-  * Puede producir un mal funcionamiento\, llegando incluso a dejar de funcionar
+  * Puede producir un mal funcionamiento, llegando incluso a dejar de funcionar
   * Puede ser necesario cambiar este sistema por completo\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2924.png)
@@ -426,9 +426,9 @@ Problemas de inserción en el socket
 El ventilador no gira
 
 * Puede estar producido por diferentes razones
-* _En general\, problema de alimentación eléctrica\._
+* _En general, problema de alimentación eléctrica\._
   * Comprobar conexión del ventilador con la placa es correcta\.
-  * Es posible que la placa base no proporcione la corriente necesaria al ventilador\, llegando incluso a no funcionar\.
+  * Es posible que la placa base no proporcione la corriente necesaria al ventilador, llegando incluso a no funcionar\.
 * _Exceso de polvo_
   * Impedir correcto funcionamiento refrigerador
   * Limpiar el polvo adherido al disipador \(mejor aire comprimido\)
@@ -450,9 +450,9 @@ El ventilador gira a una velocidad más baja de lo normal
   * Velocidades de giro  __< 1\.500 rpm __ más lenta de lo normal\.
   * Corriente proporcionada por la placa base es insuficiente
   * Sustituir placa base
-* Si no es así\, pueden darse dos casos:
+* Si no es así, pueden darse dos casos:
   * _Ventiladores de velocidad constante:_  cambiar el ventilador por otro más rápido
-  * _Ventiladores de velocidad variable:_  podemos modificar los parámetros\, siempre dentro de los límites permitidos\.
+  * _Ventiladores de velocidad variable:_  podemos modificar los parámetros, siempre dentro de los límites permitidos\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2930.png)
 
@@ -469,8 +469,8 @@ El ventilador gira a una velocidad más baja de lo normal
   * No debe haber  _piezas metálicas _ en contacto con la placa base más que aquellas que son propias de la misma\.
   * Fallo de la PB puede dar lugar a  _fallos sucesivos de otros elementos_  conectados a ella
   * Mala configuración de  _jumpers_  de la placa puede ocasionar problemas en el sistema\.
-  * Para evitar suponer que los problemas provienen de la BIOS\, deben  _cargarse los parámetros configurados por defecto_ \.
-  * Por último\, y una vez que se haya detectado que el problema procede directamente de la placa base\, podemos actualizar la BIOS como último recurso\.
+  * Para evitar suponer que los problemas provienen de la BIOS, deben  _cargarse los parámetros configurados por defecto_ \.
+  * Por último, y una vez que se haya detectado que el problema procede directamente de la placa base, podemos actualizar la BIOS como último recurso\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2933.jpg)
 
@@ -479,15 +479,15 @@ Alguno de los componentes está deteriorado
 * Dependiendo del componente la placa base puede ser salvada\.
 * __Algunas averías pueden ser reparadas__
   * Conexiones de puertos USB o PS/2
-  * Slots de memoria \(que son muy frágiles\)\, en los condensadores
+  * Slots de memoria \(que son muy frágiles\), en los condensadores
   * Soporte del disipador o en el ventilador del puente norte
 * __Sustituir elemento por una tarjeta de expansión__
-  * Tarjeta gráfica\, de sonido\, de red
-  * Puertos serie\, paralelo\, USB y Firewire
+  * Tarjeta gráfica, de sonido, de red
+  * Puertos serie, paralelo, USB y Firewire
   * Conectores SATA e IDE
   * Nos permiten mantener la placa\.
 * __Otros elementos difícilmente reparables__
-  * Chipset\, el BIOS\, el socket del microprocesador\, etc\.
+  * Chipset, el BIOS, el socket del microprocesador, etc\.
   * Enviárselos al fabricante si se encuentra en garantía
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2934.jpg)
@@ -507,13 +507,13 @@ Los datos de la BIOS no se guardan cuando se modifica
 ## 3.7. Averías en la pila o batería
 
 * __Agotamiento de la batería__
-  * Más que una avería\, el problema suele ser que la pila se  __agote__ \.
+  * Más que una avería, el problema suele ser que la pila se  __agote__ \.
   * En la pantalla aparece un mensaje indicándolo\.
-  * Si no es así\, comprobar si la fecha y la hora del sistema están retrasadas\.
+  * Si no es así, comprobar si la fecha y la hora del sistema están retrasadas\.
 * __Podemos cerciorarnos de si se muestra un error en la BIOS\.__
-  * Los mensajes más comunes relacionados con la pila\, que pueden mostrarse por pantalla son:
-    * CMOS battery failed\, si la pila no funciona
-    * CMOS battery state low\, si la pila se está agotando\.
+  * Los mensajes más comunes relacionados con la pila, que pueden mostrarse por pantalla son:
+    * CMOS battery failed, si la pila no funciona
+    * CMOS battery state low, si la pila se está agotando\.
 * __Sustitución de la pila__
   * Asegurarnos de que las características de la pila antigua y las de la nueva sean exactamente iguales\.
 
@@ -523,7 +523,7 @@ Los datos de la BIOS no se guardan cuando se modifica
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2937.png)
 
-* Errores en la memoria principal\, suelen estar relacionados con:
+* Errores en la memoria principal, suelen estar relacionados con:
   * Daños en la propia  _memoria_
   * Daños en el  _zócalo_  o en la  _placa_  base
   * Una incorrecta  _inserción_ \.
@@ -534,7 +534,7 @@ Los datos de la BIOS no se guardan cuando se modifica
   * Mezclar módulos de simple y doble  _cara_ \.
   * Mezclar módulos  _DIMM_  y  _SIMM_ \.
   * Insertar primero los módulos en zócalos más altos\.
-* A continuación\, veremos los casos más comunes que suelen darse relacionados con la memoria RAM\.
+* A continuación, veremos los casos más comunes que suelen darse relacionados con la memoria RAM\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2938.png)
 
@@ -544,23 +544,23 @@ El ordenador no arranca una vez insertada la memoria
   * Comprobar módulos ubicados e insertados correctamente \(ayuda del manual\)
   * Llenado de zócalos en el orden correcto\.
   * Memoria se encuentra dañada\.
-* _El PC se detenga tras el pitido inicial y\, el disco duro no arranque_
+* _El PC se detenga tras el pitido inicial y, el disco duro no arranque_
   * Incorrecta colocación de los módulos en los zócalos\.
   * Comprobar el manual del fabricante para asegurar su correcta colocación en la placa base\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2939.png)
 
-_Cuando realizamos la instalación de un sistema operativo\, falla cada vez en un punto diferente de la instalación_
+_Cuando realizamos la instalación de un sistema operativo, falla cada vez en un punto diferente de la instalación_
 
-Hay una  __celda defectuosa __ en la memoria\, y al intentar cargar un dato en ella\, el ordenador se bloquea y la instalación falla\.
+Hay una  __celda defectuosa __ en la memoria, y al intentar cargar un dato en ella, el ordenador se bloquea y la instalación falla\.
 
 Podemos comprobar su correcto funcionamiento mediante aplicaciones
 
-En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
+En el caso de que el problema sea ese, tendremos que cambiar la memoria\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2940.png)
 
-* _El sistema funciona\, pero al cabo de un tiempo se bloquea y muestra un error en pantalla_
+* _El sistema funciona, pero al cabo de un tiempo se bloquea y muestra un error en pantalla_
 * Problema suele ser debido:
   * Incorrecta colocación del zócalo de memoria
   * Sobrecalentamiento de los módulos por una mala refrigeración
@@ -577,7 +577,7 @@ En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
   * Utilizar el  __manual__  que incorpora la tarjeta
     * Asegurarnos de una correcta inserción y configuración\.
   * 2 tarjetas se encuentren conectadas al mismo bus
-  * Si una de ellas está defectuosa\, puede provocar un mal funcionamiento de la otra\.
+  * Si una de ellas está defectuosa, puede provocar un mal funcionamiento de la otra\.
 * _El problema de una tarjeta puede ser de software_
   * Comprobar versión del driver instalado en el equipo
   * Actualizar el firmware en último caso\.
@@ -585,25 +585,25 @@ En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
 ## 3.11.	Averías en los discos duros o unidades ópticas
 
 * Modo más fácil de verificar que se ha producido un fallo en un disco duro o en una unidad óptica:
-  * Al arrancar el sistema\, no detecta las unidades
+  * Al arrancar el sistema, no detecta las unidades
   * Problema puede provenir de varios emplazamientos
   * Es necesario asegurarse de su origen\.
 * __Dispositivos IDE:__
   * Correctamente configurados como maestro y esclavo
   * Conectados al cable de datos de manera adecuada\.
-* A continuación\, veremos los problemas más comunes de este tipo de unidades\.
+* A continuación, veremos los problemas más comunes de este tipo de unidades\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2942.jpg)
 
 * _Al instalar un nuevo disco no detecta el anterior_
-* Si queremos instalar dos discos\, uno IDE y otro SATA
+* Si queremos instalar dos discos, uno IDE y otro SATA
 * Puede que la placa base no permita ambas interfaces a la vez\.
-* Comprobarlo en manual y sustituir la placa base\, si fuera necesario\.
+* Comprobarlo en manual y sustituir la placa base, si fuera necesario\.
 * _El disco duro hace ruido pero no arranca_
 * Disco duro correctamente instalado y configurado pero sonido extraño
   * Fallo mecánico producido por una pérdida de verticalidad de los platos
   * Hace que el cabezal no pueda leer el disco correctamente\.
-* Comprobar que efectivamente\, no funciona en otros equipos
+* Comprobar que efectivamente, no funciona en otros equipos
 * El daño es irreparable por medio de software: será necesario cambiar el disco duro\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2943.jpg)
@@ -614,7 +614,7 @@ Incompatibilidades y cuello de botella
 
 _Incompatibilidad entre componentes_
 
-Multitud de hardware que podemos incluir en nuestro equipo\. Diferentes características físicas\, eléctricas y electrónicas
+Multitud de hardware que podemos incluir en nuestro equipo\. Diferentes características físicas, eléctricas y electrónicas
 
 No todos susceptibles de funcionar en nuestro ordenador\. Se denomina  __incompatibilidad__  entre componentes\.
 
@@ -624,7 +624,7 @@ Un problema muy común llamado  __bottleneck__
 
 Limitación del rendimiento del equipo por la instalación de componentes más antiguos o lentos que aquellos para los que está preparado\.
 
-Importante tener en cuenta para el montaje de nuestro equipo\, o bien para su ampliación\.
+Importante tener en cuenta para el montaje de nuestro equipo, o bien para su ampliación\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2944.png)
 
@@ -644,7 +644,7 @@ _Principales incompatibilidades_
 
 Comprobar socket CPU de la placa y comparar con el procesador elegido\.
 
-Mirar que RAM admite la placa base \(por ejemplo\, DDR4 2300MHz\) y puede soportar la CPU\.
+Mirar que RAM admite la placa base \(por ejemplo, DDR4 2300MHz\) y puede soportar la CPU\.
 
 Comprobar si la placa base admite o no  _SLI/_  _Crossfire_  _ _ GPU\.
 
@@ -657,13 +657,13 @@ Asegurarse de que la fuente de alimentación proporciona suficiente potencia
 ## 4.1.	Incompatibilidades entre caja y placa base
 
 * _Factor de forma de la caja de un ordenador define_
-  * Su estilo\, el tamaño y la forma de la misma
-  * La organización interna y externa\, sus conexiones eléctricas
+  * Su estilo, el tamaño y la forma de la misma
+  * La organización interna y externa, sus conexiones eléctricas
   * Los componentes con los que es compatible\.
 * _Compatibilidad entre cajas y placas base:_
-  * _Microtorre_  y  _Slim_ : soportan placas Micro ATX\, Flex ATX o similares\.
+  * _Microtorre_  y  _Slim_ : soportan placas Micro ATX, Flex ATX o similares\.
   * _Minitorre_ : soportan placas ATX y sucesivas\.
-  * _Semitorre_ \,  _torre_ \,  _gran torre _ y  _sobremesa_ : admiten cualquier tipo de placa base\.
+  * _Semitorre_ ,  _torre_ ,  _gran torre _ y  _sobremesa_ : admiten cualquier tipo de placa base\.
   * _Mini_ : soportan únicamente placas Mini ITX o similares\.
 * _Más de 20 factores de forma diferentes_
   * Lo recomendable es  consultar las especificaciones de las cajas\. Se detallan los requisitos o el sistema de refrigeración que pueden integrar\.
@@ -672,7 +672,7 @@ Asegurarse de que la fuente de alimentación proporciona suficiente potencia
 
 ## 4.2.	Incompatibilidades en el microprocesador
 
-Sockets disponen de  __especificaciones__  que los hacen diferentes:  _t_  _ecnología\, voltaje\, arquitectura\, forma\, número de patillas\, etc\._
+Sockets disponen de  __especificaciones__  que los hacen diferentes:  _t_  _ecnología, voltaje, arquitectura, forma, número de patillas, etc\._
 
 Encontrar correspondencia microprocesador/socket\.
 
@@ -696,32 +696,32 @@ En ocasiones las diferencias eléctricas o electrónicas son insalvables\.
 
 * _Conexión física_
   * __Físicamente__  no es posible insertar módulos de memoria en zócalos para los que no han sido fabricados\.
-    * Cada módulo tiene su tamaño\, un número de contactos\, la posición y número de muescas propio\,
+    * Cada módulo tiene su tamaño, un número de contactos, la posición y número de muescas propio,
     * Correspondencia entre zócalo y módulo\.
   * La  __orientación__  de la memoria en el zócalo apropiada\.
-  * De lo contrario\, la muesca no coincidirá con el saliente del zócalo
+  * De lo contrario, la muesca no coincidirá con el saliente del zócalo
 * _Hay ciertas intolerancias entre memorias del mismo tipo_
   * Al utilizar varios módulos de memoria en nuestros zócalos
     * Recomendable que todos pertenezcan al mismo modelo\.
   * Hay placas base que soportan  __varios tipos de memoria__
     * No las admiten de forma simultánea
     * Únicamente podremos utilizar un tipo de memoria u otro\.
-  * Cuando a una placa base que soporta una memoria determinada le insertamos una memoria superior\, limitamos esta capacidad\, desaprovechando su velocidad\.
+  * Cuando a una placa base que soporta una memoria determinada le insertamos una memoria superior, limitamos esta capacidad, desaprovechando su velocidad\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2952.png)
 
 ## 4.4.	Incompatibilidades en la tarjeta gráfica
 
 * __Tarjetas PCI y AGP__
-  * Físicamente por su tamaño\, número de contactos y por la colocación y número de sus muescas\.
-  * Tienen diferentes anchos de bus\, y su voltaje cambia\, lo que hace incompatibles las tarjetas gráficas que se insertan en ellos\.
+  * Físicamente por su tamaño, número de contactos y por la colocación y número de sus muescas\.
+  * Tienen diferentes anchos de bus, y su voltaje cambia, lo que hace incompatibles las tarjetas gráficas que se insertan en ellos\.
 * __Retrocompatibilidad __
   * Entre estándares PCI\-X y PCI cuando se mantienen voltaje y ancho de bus
   * Lo mismo sucede con AGP Pro y AGP\.
 * __Conexión de varias tarjetas gráficas__
-  * Sistema SLI con tarjetas NVidia\, o Crossfire con tarjetas ATI
-  * Al principio las tarjetas tenían que ser exactamente iguales\, no solo en modelo\, sino también en capacidad\.
-  * En la actualidad\, es posible combinar dos modelos de tarjeta diferente \(siempre del mismo fabricante\) mientras se mantenga su GPU\.
+  * Sistema SLI con tarjetas NVidia, o Crossfire con tarjetas ATI
+  * Al principio las tarjetas tenían que ser exactamente iguales, no solo en modelo, sino también en capacidad\.
+  * En la actualidad, es posible combinar dos modelos de tarjeta diferente \(siempre del mismo fabricante\) mientras se mantenga su GPU\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2953.jpg)
 
@@ -737,7 +737,7 @@ Especificación PCIe requiere que ranuras negocien solo a enlace x1\.
 
 Es posible que un fabricante de placa base incorpore la conexión ascendente sin degradación del ancho de banda
 
-Al conectar tarjeta  __PCIe x4 __ en ranura  __PCIe x8 __ \, placa puede funcionar a  __x1__
+Al conectar tarjeta  __PCIe x4 __ en ranura  __PCIe x8 __ , placa puede funcionar a  __x1__
 
 Este comportamiento depende del fabricante de la placa base\.
 
@@ -747,14 +747,14 @@ Este comportamiento depende del fabricante de la placa base\.
 
 ## 4.5.	Incompatibilidades en las unidades de almacenamiento
 
-* En una placa base\, estos dispositivos se conectan a través de conectores ATA \(o IDE\)\.
-* Distintos tipos de conexiones se diferencian físicamente en su tamaño y número de pines\, voltaje y tamaño de bus\.
+* En una placa base, estos dispositivos se conectan a través de conectores ATA \(o IDE\)\.
+* Distintos tipos de conexiones se diferencian físicamente en su tamaño y número de pines, voltaje y tamaño de bus\.
 * __Unidades IDE__
   * Tener en cuenta la disposición  __maestro\-esclavo__ \. En un disco IDE necesitaremos un  __jumper__  para configurarlos
 * __Compatibilidad SATA\-IDE__
   * Un conector SATA y un conector IDE son incompatibles\. Físicamente son totalmente diferentes\.
 * __Compatibilidad entre SATA__
-  * Entre SATA \(I\, II y III\) sí hay compatibilidad\.
+  * Entre SATA \(I, II y III\) sí hay compatibilidad\.
   * Disco SATA en conector más antiguo verá limitado su rendimiento a las características de dicho conector\.
 
 ![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2956.png)
@@ -773,7 +773,7 @@ __Fuente ATX __ destinada a placas base ATX\. Entre las fuentes de alimentación
 
 _Otros tipos de fuentes _
 
-Diseñadas para placas más pequeñas \(pATX\, Flex ATX y Mini ITX\)
+Diseñadas para placas más pequeñas \(pATX, Flex ATX y Mini ITX\)
 
 La fuente de alimentación sigue el mismo estándar que la ATX\.
 

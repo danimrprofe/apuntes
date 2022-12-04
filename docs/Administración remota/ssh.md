@@ -1,36 +1,4 @@
-# Administración remota (SSH y SCP)
-
-- [Administración remota (SSH y SCP)](#administraci%C3%B3n-remota-ssh-y-scp)
-  - [¿Qué es SSH?](#%C2%BFqu%C3%A9-es-ssh)
-  - [Instalación openSSH](#instalaci%C3%B3n-openssh)
-  - [Arrancar y parar el servicio:](#arrancar-y-parar-el-servicio)
-  - [Configuración de puertos](#configuraci%C3%B3n-de-puertos)
-  - [Archivos de configuración](#archivos-de-configuraci%C3%B3n)
-    - [Configuración sshd_config](#configuraci%C3%B3n-sshdconfig)
-  - [Conexión desde el cliente](#conexi%C3%B3n-desde-el-cliente)
-    - [Configuración del cliente](#configuraci%C3%B3n-del-cliente)
-    - [Crear alias](#crear-alias)
-    - [Crear registros DNS](#crear-registros-dns)
-    - [Prioridad entre configuraciones](#prioridad-entre-configuraciones)
-  - [Ejecutar comandos directamente](#ejecutar-comandos-directamente)
-  - [Editar archivos remotamente](#editar-archivos-remotamente)
-  - [Autenticación por clave pública](#autenticaci%C3%B3n-por-clave-p%C3%BAblica)
-    - [Copiar clave pública](#copiar-clave-p%C3%BAblica)
-  - [Comprobar usuarios conectados](#comprobar-usuarios-conectados)
-  - [Permisos de administrador](#permisos-de-administrador)
-  - [Transferencia de archivos](#transferencia-de-archivos)
-    - [Copia básica](#copia-b%C3%A1sica)
-    - [Crear dummy files para pruebas](#crear-dummy-files-para-pruebas)
-    - [Copiar varios archivos al mismo tiempo](#copiar-varios-archivos-al-mismo-tiempo)
-    - [Traer archivos desde un ordenador remoto](#traer-archivos-desde-un-ordenador-remoto)
-    - [Tarear archivos](#tarear-archivos)
-  - [Buenas prácticas](#buenas-pr%C3%A1cticas)
-  - [Otras herrramientas de gestión remota](#otras-herrramientas-de-gesti%C3%B3n-remota)
-    - [Putty](#putty)
-    - [WinSCP](#winscp)
-    - [mRemote](#mremote)
-  - [Terminal server](#terminal-server)
-  - [Conectar](#conectar)
+# SSH
 
 ## ¿Qué es SSH?
 
@@ -52,8 +20,10 @@ La versión libre de SSH más importante es OpenSSH (www.openssh.com).
 
 Necesitaremos instalar el servidor instalado en aquellas máquinas a las que queramos acceder mediante SSH
 
-    apt install openssh-client
-    apt install openssh-server
+```shell
+apt install openssh-client
+apt install openssh-server
+```
 
 También podemos instalar el metapaquete SSH. Es una forma práctica de instalar tanto el cliente como el servidor al mismo tiempo.
 
@@ -89,7 +59,7 @@ Los archivos de configuración se encuentran en `/etc/ssh/`
 
 Indicar en que dirección escuchar, el puerto y qué versión del protocolo utilizar:
 
-```bash
+```properties linenums="1" title="config"
 Port 22 
 #ListenAddress :: (IPv6)
 #ListenAddress 0.0.0.0 (todas las interfaces)
@@ -99,11 +69,15 @@ Protocol 2
 
 Es interesante desactivar la opción que nos permita hacer login como super usuario:
 
-    PermitRootLogin without-password
+```properties
+PermitRootLogin without-password
+```
 
 No permitir conexión SSH sin introducir contraseña
 
-    PermitEmptyPasswords no
+```properties
+PermitEmptyPasswords no
+```
 
 ## Conexión desde el cliente
 
@@ -116,7 +90,9 @@ Si no indicamos nada más, se va a intentar iniciar sesión en la máquina remot
 
 Para iniciar sesión con otro usuario:
 
-    ssh pepe@servidor
+```shell
+john@elmuro$ ssh pepe@servidor
+```
 
 En la máquina servidor tendrá que haber un usuario llamado pepe, y tendremos que saber su contraseña
 
@@ -125,18 +101,22 @@ En la máquina servidor tendrá que haber un usuario llamado pepe, y tendremos q
 Necesitamos crear un archivo de configuración /home/john/.ssd/config
 Si no existe la carpeta: 
 
-    cd ~
-    mkdir .ssh
+```shell
+john@elmuro$ cd ~
+john@elmuro$ mkdir .ssh
+```
 
 Crear archivo de configuración: 
 
-    nano config
+```shell
+john@elmuro$ nano config
+```
 
 Completar para cada host que queramos configurar
 
 Si queremos tener opciones que apliquen a todos los host: Host *
 
-```
+```shell
 john@elmuro$ cat .ssh/config
 Host internalia
     Hostname 172.0.0.9 

@@ -1,4 +1,4 @@
-![](img%5CGestion%20de%20copias%20de%20seguridad0.png)
+![](img/Gestion%20de%20copias%20de%20seguridad0.png)
 
 ## Montaje y mantenimiento de sistemas y componentes informáticos
 
@@ -17,7 +17,7 @@ _Implantación de sistemas operativos_
     * __Tiempo__  medio empleado en crear la copia de seguridad\.
     * __Espacio__  disponible para las copias y el volumen de crecimiento esperado para cada una\.
 
-![](img%5CGestion%20de%20copias%20de%20seguridad1.png)
+![](img/Gestion%20de%20copias%20de%20seguridad1.png)
 
 ## Tipos de copia de seguridad
 
@@ -32,7 +32,7 @@ _Implantación de sistemas operativos_
     * Se necesita un volumen de espacio considerable\.
     * Se guarda mucha información repetida \(redundante\)
 
-![](img%5CGestion%20de%20copias%20de%20seguridad2.png)
+![](img/Gestion%20de%20copias%20de%20seguridad2.png)
 
 ## Completa
 
@@ -48,7 +48,7 @@ _Implantación de sistemas operativos_
   * Tarda más tiempo en restaurarse que la copia completa
   * Si se perdiese algún archivo incremental la copia no podría restaurarse\.
 
-![](img%5CGestion%20de%20copias%20de%20seguridad3.png)
+![](img/Gestion%20de%20copias%20de%20seguridad3.png)
 
 ## Incremental
 
@@ -64,15 +64,15 @@ _Implantación de sistemas operativos_
   * Se necesita  _copia base \+ la última copia diferencial _
   * Más rápida que la incremental pero más lenta que la completa
 
-![](img%5CGestion%20de%20copias%20de%20seguridad4.png)
+![](img/Gestion%20de%20copias%20de%20seguridad4.png)
 
 ## Diferencial
 
 ## Comparativa
 
-![](img%5CGestion%20de%20copias%20de%20seguridad5.png)
+![](img/Gestion%20de%20copias%20de%20seguridad5.png)
 
-![](img%5CGestion%20de%20copias%20de%20seguridad6.png)
+![](img/Gestion%20de%20copias%20de%20seguridad6.png)
 
 ## Tipos de copia de seguridad
 
@@ -115,7 +115,7 @@ _Implantación de sistemas operativos_
     * La fecha en que se realizó\.
   * Por ejemplo:
 
-![](img%5CGestion%20de%20copias%20de%20seguridad7.png)
+![](img/Gestion%20de%20copias%20de%20seguridad7.png)
 
 * Opciones
   * Compresión: disminuye el espacio ocupado\.

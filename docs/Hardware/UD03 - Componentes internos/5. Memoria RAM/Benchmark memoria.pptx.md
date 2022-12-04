@@ -8,7 +8,7 @@ Passmark results
 
 ## 
 
-![](img%5CBenchmark%20memoria0.png)
+![](img/Benchmark%20memoria0.png)
 
 ## Benchmark
 

@@ -1,10 +1,6 @@
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%290.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%290.jpg)
 
 ## Unidad 9: Detección de averías y reparación (I)
-
-## Montaje y mantenimiento de equipos
-CFGM Sistemas microinformáticos y redes (SMX)
-IES Francesc de Borja Moll
 
 ## Índice
 
@@ -76,7 +72,7 @@ Dónde habéis encontrado la información para arreglarlo
 
 Qué herramientas habéis utilizado
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%291.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%291.jpg)
 
 ## 1. Detección de averías de un equipo
 
@@ -93,7 +89,7 @@ Qué herramientas habéis utilizado
 * Sistema informático = hardware \+ software
   * Sus averías derivan de estos dos tipos de elementos\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%292.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%292.png)
 
 ## 1.1. Tipos de averías en un sistema informático
 
@@ -109,7 +105,7 @@ _Averías hardware_
   * Microprocesador\, memoria\, tarjetas de expansión\, etc\.
   * Periféricos
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%293.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%293.jpg)
 
 _Averías_  __ __  _software_
 
@@ -123,7 +119,7 @@ _Averías_  __ __  _software_
   * Forma parte del software del sistema\.
   * El firmware más conocido es el programa  __BIOS__
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%294.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%294.png)
 
 ## 1.2. Herramientas para detectar averías en un equipo
 
@@ -139,9 +135,9 @@ _Averías_  __ __  _software_
 * _En cuanto a herramientas software_
   * Aplicaciones nos pueden ayudar a descubrir posibles problemas\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%295.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%295.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%296.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%296.png)
 
 ## 1.3. Protocolo de detección de averías
 
@@ -159,9 +155,9 @@ __Protocolos y diagramas__
     * __Automatizar__  las tareas a realizar
     * Recordar siempre un  __orden__
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%297.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%297.jpg)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%298.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%298.png)
 
 __Protocolos y diagramas__
 
@@ -181,9 +177,9 @@ __Protocolos y diagramas__
   * _[https://www\.quora\.com](https://www.quora.com/)_
   * _[https://superuser\.com/](https://superuser.com/)_
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%299.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%299.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2910.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2910.png)
 
 ## 2. Señales de aviso luminosas y acústicas
 
@@ -202,9 +198,9 @@ Mensajes\, códigos\, pitidos\, leds
   * __LEDs de los periféricos__  \(monitor\, impresora\, router\, etc\.\)\.
   * Significado de colores o parpadeos: manual del fabricante
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2911.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2911.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2912.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2912.png)
 
 ## 3. Fallos comunes
 
@@ -297,7 +293,7 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
   * Problema proviene de la placa base
     * Conectar tarjeta de expansión de puertos USB
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2913.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2913.png)
 
 * _Otros posibles problemas_
 * __Conectores de audio frontales: __
@@ -311,7 +307,7 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
   * Si no arrancan con el encendido del equipo
   * Problema de cables del ventilador o del motor interno\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2914.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2914.png)
 
 ## 3.3. Averías en la fuente de alimentación
 
@@ -332,7 +328,7 @@ El sistema se queda totalmente bloqueado o se resetea automáticamente sin inten
     * Con una modificación de la velocidad de giro de los ventiladores\, si estos lo permiten
     * Cambiar la fuente de alimentación por otra más potente\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2915.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2915.png)
 
 ## 3.4. Averías en el microprocesador
 
@@ -350,9 +346,9 @@ Sobrecalentamiento
   * Se puede producir un reinicio inesperado
   * Problema suele provenir de la refrigeración\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2916.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2916.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2917.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2917.png)
 
 Sobrecalentamiento
 
@@ -367,9 +363,9 @@ Sobrecalentamiento
   * El correcto funcionamiento del ventilador incorporado
   * Si la masilla térmica se encuentra en buenas condiciones\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2918.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2918.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2919.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2919.png)
 
 Problemas de inserción en el socket
 
@@ -385,9 +381,9 @@ Problemas de inserción en el socket
   * Los ventiladores se encienden
   * Sistema aparentemente no presenta ninguna actividad más
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2920.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2920.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2921.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2921.png)
 
 Problemas de inserción en el socket
 
@@ -402,9 +398,9 @@ Problemas de inserción en el socket
   * A pesar de que este aparentemente no se encienda\.
   * Evitar esta situación puesto\, puede provocar avería irreparable\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2922.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2922.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2923.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2923.png)
 
 ## 3.5. Averías en los refrigeradores
 
@@ -421,11 +417,11 @@ Problemas de inserción en el socket
   * Puede producir un mal funcionamiento\, llegando incluso a dejar de funcionar
   * Puede ser necesario cambiar este sistema por completo\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2924.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2924.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2925.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2925.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2926.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2926.jpg)
 
 El ventilador no gira
 
@@ -440,11 +436,11 @@ El ventilador no gira
     * Limpio y no haya exceso de suciedad en el ambiente
     * Puede producir obstrucción del refrigerador a causa del polvo\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2927.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2927.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2928.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2928.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2929.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2929.jpg)
 
 El ventilador gira a una velocidad más baja de lo normal
 
@@ -458,11 +454,11 @@ El ventilador gira a una velocidad más baja de lo normal
   * _Ventiladores de velocidad constante:_  cambiar el ventilador por otro más rápido
   * _Ventiladores de velocidad variable:_  podemos modificar los parámetros\, siempre dentro de los límites permitidos\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2930.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2930.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2931.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2931.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2932.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2932.jpg)
 
 ## 3.6. Averías en la placa base
 
@@ -476,7 +472,7 @@ El ventilador gira a una velocidad más baja de lo normal
   * Para evitar suponer que los problemas provienen de la BIOS\, deben  _cargarse los parámetros configurados por defecto_ \.
   * Por último\, y una vez que se haya detectado que el problema procede directamente de la placa base\, podemos actualizar la BIOS como último recurso\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2933.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2933.jpg)
 
 Alguno de los componentes está deteriorado
 
@@ -494,7 +490,7 @@ Alguno de los componentes está deteriorado
   * Chipset\, el BIOS\, el socket del microprocesador\, etc\.
   * Enviárselos al fabricante si se encuentra en garantía
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2934.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2934.jpg)
 
 Los datos de la BIOS no se guardan cuando se modifica
 
@@ -506,7 +502,7 @@ Los datos de la BIOS no se guardan cuando se modifica
   * __Jumper __ colocado en posición de borrado
   * No permite guardar modificación de la configuración
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2935.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2935.jpg)
 
 ## 3.7. Averías en la pila o batería
 
@@ -521,11 +517,11 @@ Los datos de la BIOS no se guardan cuando se modifica
 * __Sustitución de la pila__
   * Asegurarnos de que las características de la pila antigua y las de la nueva sean exactamente iguales\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2936.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2936.png)
 
 ## 3.8 Averías en la memoria principal
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2937.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2937.png)
 
 * Errores en la memoria principal\, suelen estar relacionados con:
   * Daños en la propia  _memoria_
@@ -540,7 +536,7 @@ Los datos de la BIOS no se guardan cuando se modifica
   * Insertar primero los módulos en zócalos más altos\.
 * A continuación\, veremos los casos más comunes que suelen darse relacionados con la memoria RAM\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2938.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2938.png)
 
 El ordenador no arranca una vez insertada la memoria
 
@@ -552,7 +548,7 @@ El ordenador no arranca una vez insertada la memoria
   * Incorrecta colocación de los módulos en los zócalos\.
   * Comprobar el manual del fabricante para asegurar su correcta colocación en la placa base\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2939.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2939.png)
 
 _Cuando realizamos la instalación de un sistema operativo\, falla cada vez en un punto diferente de la instalación_
 
@@ -562,7 +558,7 @@ Podemos comprobar su correcto funcionamiento mediante aplicaciones
 
 En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2940.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2940.png)
 
 * _El sistema funciona\, pero al cabo de un tiempo se bloquea y muestra un error en pantalla_
 * Problema suele ser debido:
@@ -571,7 +567,7 @@ En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
   * Velocidad de bus demasiado elevada\.
 * Para solucionarlo deberán llevarse a cabo las actuaciones pertinentes en función del problema en cuestión\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2941.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2941.png)
 
 ## 3.10.	Averías en las tarjetas de expansión
 
@@ -597,7 +593,7 @@ En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
   * Conectados al cable de datos de manera adecuada\.
 * A continuación\, veremos los problemas más comunes de este tipo de unidades\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2942.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2942.jpg)
 
 * _Al instalar un nuevo disco no detecta el anterior_
 * Si queremos instalar dos discos\, uno IDE y otro SATA
@@ -610,7 +606,7 @@ En el caso de que el problema sea ese\, tendremos que cambiar la memoria\.
 * Comprobar que efectivamente\, no funciona en otros equipos
 * El daño es irreparable por medio de software: será necesario cambiar el disco duro\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2943.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2943.jpg)
 
 ## 4. Incompatibilidades de hardware
 
@@ -630,19 +626,19 @@ Limitación del rendimiento del equipo por la instalación de componentes más a
 
 Importante tener en cuenta para el montaje de nuestro equipo\, o bien para su ampliación\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2944.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2944.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2945.png)
-
-Incompatibilidades y cuello de botella
-
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2946.png)
-
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2947.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2945.png)
 
 Incompatibilidades y cuello de botella
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2948.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2946.png)
+
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2947.png)
+
+Incompatibilidades y cuello de botella
+
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2948.png)
 
 _Principales incompatibilidades_
 
@@ -656,7 +652,7 @@ Verificar tamaño y dimensiones de los componentes cuando se coloquen dentro de 
 
 Asegurarse de que la fuente de alimentación proporciona suficiente potencia
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2949.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2949.png)
 
 ## 4.1.	Incompatibilidades entre caja y placa base
 
@@ -672,7 +668,7 @@ Asegurarse de que la fuente de alimentación proporciona suficiente potencia
 * _Más de 20 factores de forma diferentes_
   * Lo recomendable es  consultar las especificaciones de las cajas\. Se detallan los requisitos o el sistema de refrigeración que pueden integrar\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2950.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2950.png)
 
 ## 4.2.	Incompatibilidades en el microprocesador
 
@@ -694,7 +690,7 @@ __Sockets retrocompatibles__ : soportan microprocesadores más antiguos que aque
 
 En ocasiones las diferencias eléctricas o electrónicas son insalvables\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2951.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2951.jpg)
 
 ## 4.3.	Incompatibilidades en la memoria RAM
 
@@ -712,7 +708,7 @@ En ocasiones las diferencias eléctricas o electrónicas son insalvables\.
     * Únicamente podremos utilizar un tipo de memoria u otro\.
   * Cuando a una placa base que soporta una memoria determinada le insertamos una memoria superior\, limitamos esta capacidad\, desaprovechando su velocidad\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2952.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2952.png)
 
 ## 4.4.	Incompatibilidades en la tarjeta gráfica
 
@@ -727,7 +723,7 @@ En ocasiones las diferencias eléctricas o electrónicas son insalvables\.
   * Al principio las tarjetas tenían que ser exactamente iguales\, no solo en modelo\, sino también en capacidad\.
   * En la actualidad\, es posible combinar dos modelos de tarjeta diferente \(siempre del mismo fabricante\) mientras se mantenga su GPU\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2953.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2953.jpg)
 
 _Up\-_  _Plugging_  _ y Down\-Plugging_
 
@@ -745,9 +741,9 @@ Al conectar tarjeta  __PCIe x4 __ en ranura  __PCIe x8 __ \, placa puede funcion
 
 Este comportamiento depende del fabricante de la placa base\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2954.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2954.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2955.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2955.jpg)
 
 ## 4.5.	Incompatibilidades en las unidades de almacenamiento
 
@@ -761,7 +757,7 @@ Este comportamiento depende del fabricante de la placa base\.
   * Entre SATA \(I\, II y III\) sí hay compatibilidad\.
   * Disco SATA en conector más antiguo verá limitado su rendimiento a las características de dicho conector\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2956.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2956.png)
 
 ## 4.6.	Incompatibilidades en la fuente de alimentación
 
@@ -785,15 +781,15 @@ La fuente de alimentación sigue el mismo estándar que la ATX\.
 
 Se adaptarán a las necesidades de cada tipo de placas base\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2957.jpg)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2957.jpg)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2958.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2958.png)
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2959.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2959.png)
 
 ## 4.7.	Incompatibilidades en el sistema de refrigeración
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2960.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2960.png)
 
 _A la hora de elegir la refrigeración tener en cuenta _
 
@@ -813,7 +809,7 @@ Comprobar sockets que soporta este sistema de refrigeración\. No instalar sobre
 
 Dimensiones pueden no coincidir con modelo de caja\. Tener en cuenta caja al elegir el sistema de refrigeración
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2961.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2961.png)
 
 * La caja es también uno de los elementos a tener en cuenta a la hora de seleccionar la refrigeración\.
 * _Caja_
@@ -826,5 +822,5 @@ Dimensiones pueden no coincidir con modelo de caja\. Tener en cuenta caja al ele
   * Cajas de alto rendimiento
   * Sistemas de refrigeración adecuados para un correcto funcionamiento del equipo\.
 
-![](img%5CTeor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2962.png)
+![](img/Teor%C3%ADa%20UD09%20Detecci%C3%B3n%20de%20aver%C3%ADas%20y%20reparaci%C3%B3n%20%28I%2962.png)
 

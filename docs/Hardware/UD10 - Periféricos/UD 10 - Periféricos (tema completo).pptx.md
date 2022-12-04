@@ -1,9 +1,5 @@
 ## Periféricos
 
-## Montaje y mantenimiento de equipos
-CFGM Sistemas microinformáticos y redes (SMX)
-IES Francesc de Borja Moll
-
 ## Periféricos
 
 * [Teclado](slide3.xml)
@@ -20,9 +16,9 @@ IES Francesc de Borja Moll
 
 ## Concepto y conexión
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%290.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%290.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%291.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%291.jpg)
 
 ## Conexiones
 
@@ -34,7 +30,7 @@ Tipos de conexiones
   * Conector USB
   * Inalámbricos \(Bluetooth\)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%292.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%292.png)
 
   * __El conector DIN de 5 pines es el más antiguo y actualmente está en desuso\. Existen adaptadores DIN para poder conectar un teclado con conector DIN de 5 pines en un puerto PS/2 del ordenador\.__
 
@@ -42,15 +38,15 @@ Tipos de conexiones
 
 Sobremesa y portátil
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%293.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%293.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%294.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%294.png)
 
 Tipos de teclado
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%295.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%295.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%296.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%296.png)
 
 Tipos de teclado
 
@@ -82,9 +78,9 @@ abrir el navegador o el correo electrónico
 
 controlar el volumen de sonido o los controles de CD
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%297.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%297.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%298.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%298.jpg)
 
 __Teclados inalámbricos __
 
@@ -96,7 +92,7 @@ Con pilas o baterías\.
 
 Batería más caro\, evita cambiar pilas cada poco tiempo\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%299.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%299.png)
 
   * __Wi\-Fi orientada al tráfico de grandes cantidades de datos__
   * __B__  __uetooth __  __a__  __náloga al USB \(en cuanto a conectividad\)\, __
@@ -114,7 +110,7 @@ Disposición puede variar de un fabricante a otro
 
 Algunas teclas tienen más de una función
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2910.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2910.jpg)
 
 __Teclados proyectados__
 
@@ -128,25 +124,25 @@ Al pulsar cada tecla\, la información se manda al dispositivo
 
 Pequeño dispositivo Bluetooth a un aparato electrónico
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2911.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2911.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2912.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2912.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2913.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2913.png)
 
 _Disposición de teclas_
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2914.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2914.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2915.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2915.png)
 
 Teclado más común:  __QWERTY__
 
 El teclado de sobremesa tiene alrededor de 104 teclas \(90 en portátil\)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2916.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2916.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2917.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2917.png)
 
 ## PeriféricosRatones
 
@@ -154,21 +150,21 @@ El teclado de sobremesa tiene alrededor de 104 teclas \(90 en portátil\)
 
 ## Ratones
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2918.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2918.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2919.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2919.jpg)
 
 Primeras generaciones
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2920.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2920.jpg)
 
 Sobremesa y portátil
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2921.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2921.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2922.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2922.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2923.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2923.jpg)
 
 ## Ratón mecánico
 
@@ -180,9 +176,9 @@ Permiten detectar desplazamientos del ratón sobre la superficie
 
 Precedieron a optomecánicos\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2924.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2924.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2925.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2925.png)
 
 Ratón opto\-mecánico
 
@@ -200,15 +196,15 @@ Superficie lisa para el rodamiento de la bola
 
 Ideal: alfombrilla para ratón\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2926.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2926.png)
 
 __El ratón de bola ha sido uno de los modelos más utilizados\. En la actualidad\, este tipo de ratón está en desuso por la inconveniencia al usarse en determinadas superficies y por la necesidad de desarmarlo periódicamente para limpiar las piezas internas \(rodillos y bola\)\.__
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2927.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2927.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2928.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2928.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2929.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2929.png)
 
 ## Ratones
 
@@ -220,31 +216,31 @@ Interpreta como se ha movido el ratón comparándolas
 
 Trasladan el movimiento al puntero
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2930.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2930.png)
 
 __Superficies lisas__
 
 __No recomendado brillantes o de cristal__
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2931.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2931.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2932.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2932.jpg)
 
 ## Ratón óptico
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2933.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2933.png)
 
 ## Ratones
 
 Óptico vs mecánico
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2934.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2934.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2935.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2935.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2936.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2936.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2937.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2937.png)
 
 ## Otros tipos de touchpad
 
@@ -256,11 +252,11 @@ Touchbar \(Apple\)
 
 ## Monitor
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2938.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2938.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2939.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2939.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2940.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2940.png)
 
 __Tamaño__  \(pulgadas\): Distancia entre esquinas opuestas
 
@@ -280,17 +276,17 @@ __Área útil__ : tamaño que utiliza el monitor para representar datos
 
 __Consumo__ : cantidad de energía que consume el monitor
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2941.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2941.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2942.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2942.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2943.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2943.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2944.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2944.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2945.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2945.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2946.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2946.png)
 
 ## Periféricosescáner
 
@@ -298,11 +294,11 @@ __Consumo__ : cantidad de energía que consume el monitor
 
 ## Escáner
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2947.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2947.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2948.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2948.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2949.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2949.png)
 
 * Permite capturar información impresa \(texto\, imagen\, foto\) para su posterior tratamiento en el ordenador\.
 * Fuente de luz refleja la imagen capturada
@@ -312,7 +308,7 @@ __Consumo__ : cantidad de energía que consume el monitor
   * Editarse
   * Imprimirse\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2950.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2950.png)
 
 __Fuente de luz fluorescente o incandescente: __ Iluminar el objeto que se desea digitalizar\.
 
@@ -334,7 +330,7 @@ __Software__  específico para tratar las imágenes que se obtienen
 * _La placa CCD_
   * Al recibir la información\, convierte los datos en información electrónica\, es decir\, los digitaliza\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2951.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2951.jpg)
 
 __CCD\. __  __Chip de silicio sensible a la luz que está eléctricamente dividido en un gran número de partes independientes llamadas píxel __  _\(picture element\, _  __elemento de imagen\)\. Estos chips son los encargados de recoger la información en un escáner\. También son frecuentes en cámaras de fotos digitales\.__
 
@@ -349,7 +345,7 @@ __CCD\. __  __Chip de silicio sensible a la luz que está eléctricamente dividi
   * Diferentes dimensiones
   * Habitual: tamaño  __DIN A4__
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2952.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2952.png)
 
 El  __píxel __ es la unidad mínima de imagen digital\, por lo que cuantos más píxeles
 
@@ -367,61 +363,61 @@ Extrae caracteres de texto de una imagen
 
 Los guardan en un formato que pueda editarse como texto\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2953.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2953.png)
 
 Reconocimiento óptico
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2954.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2954.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2955.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2955.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2956.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2956.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2957.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2957.png)
 
 Componentes de un escáner de sobremesa
 
 Escanear desde el móvil
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2958.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2958.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2959.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2959.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2960.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2960.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2961.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2961.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2962.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2962.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2963.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2963.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2964.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2964.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2965.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2965.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2966.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2966.png)
 
 ## Lectores de códigos
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2967.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2967.png)
 
 _[https://www\.barcodelookup\.com/](https://www.barcodelookup.com/)_
 
 _[http://www\.qrcode\.es/es/generador\-qr\-code/](http://www.qrcode.es/es/generador-qr-code/)_
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2968.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2968.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2969.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2969.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2970.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2970.png)
 
 ## Códigos QR (aplicaciones)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2971.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2971.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2972.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2972.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2973.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2973.png)
 
 ## PeriféricosImpresoras
 
@@ -429,17 +425,17 @@ _[http://www\.qrcode\.es/es/generador\-qr\-code/](http://www.qrcode.es/es/genera
 
 ## Impresoras
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2974.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2974.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2975.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2975.jpg)
 
 Matricial y sublimación
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2976.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2976.png)
 
 Térmica y tinta sólida
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2977.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2977.png)
 
 ## PeriféricosImpresoras de inyección de tinta
 
@@ -447,17 +443,17 @@ Térmica y tinta sólida
 
 ## Impresora inyección
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2978.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2978.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2979.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2979.png)
 
 Proceso de inyección
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2980.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2980.png)
 
 Proceso de impresión de un carácter
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2981.gif)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2981.gif)
 
 Cambio de cartucho
 
@@ -467,17 +463,17 @@ Cambio de cartucho
 
 ## Impresora láser
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2982.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2982.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2983.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2983.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2984.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2984.jpg)
 
 Sustitución de cartucho de tóner
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2985.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2985.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2986.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2986.png)
 
 [https://www\.youtube\.com/watch?v=Pvw1OuLSECg](https://www.youtube.com/watch?v=Pvw1OuLSECg)
 
@@ -491,9 +487,9 @@ Sustitución de cartucho de tóner
   * El tambor pasa por el tóner atrayéndolo a los puntos que conforman la imagen
   * Se impregna en el papel utilizando presión y calor
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2987.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2987.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2988.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2988.png)
 
 * _¿Cuándo cambiar el tambor y el tóner?_
   * __Tambor y tóner en una pieza: __ Deben cambiarse simultáneamente
@@ -509,19 +505,19 @@ Sustitución de cartucho de tóner
 
 Tóner y tambor separados
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2989.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2989.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2990.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2990.png)
 
 ## Impresora térmica
 
 ## Impresora
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2991.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2991.png)
 
 ## Impresión 3D
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2992.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2992.png)
 
 ## Papel
 
@@ -537,7 +533,7 @@ Tóner y tambor separados
     * Duración de la tinta
     * Calidad de la impresión
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2993.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2993.png)
 
 ## Otros tipos de impresión
 
@@ -552,7 +548,7 @@ Impresión virtual
   * Print to XPS
   * Print to image
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2994.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2994.png)
 
 ## Otros
 
@@ -565,9 +561,9 @@ Impresión virtual
   * Sin necesidad de que el ordenador esté encendido \(Salvo escáner\)
   * Ahorro en espacio y dinero
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2995.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2995.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2996.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2996.png)
 
 ## Tipos de conexión
 
@@ -583,27 +579,27 @@ Impresora local e impresora en red
     * Conexión mediante RJ45 \(Ethernet\) a un dispositivo de red
     * Conexión vía USB a un servidor de impresión
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2997.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2997.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2998.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2998.png)
 
 ## PeriféricosWebcams y tablets
 
 ## Tableta digitalizadora
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2999.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%2999.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29100.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29100.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29101.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29101.png)
 
 ## Webcam
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29102.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29102.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29103.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29103.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29104.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29104.png)
 
 ## Cámaras IP
 
@@ -621,7 +617,7 @@ Incorpora su propio miniordenador\, lo que le permite emitir vídeo por sí mism
 
 Podemos encontrarnos cámaras IP  _cableadas_  e  _inalámbricas_  \(Wi\-Fi\)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29105.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29105.png)
 
 __Una cámara IP \(o una cámara de red\) es un dispositivo que contiene:__
 
@@ -637,25 +633,25 @@ __Un ordenador que se conecta por sí mismo a Internet__
 
 ## Sonido
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29106.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29106.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29107.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29107.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29108.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29108.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29109.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29109.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29110.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29110.jpg)
 
 Sistema envolvente
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29111.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29111.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29112.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29112.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29113.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29113.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29114.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29114.jpg)
 
 ## PeriféricosRed
 
@@ -663,29 +659,29 @@ Sistema envolvente
 
 ## Red
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29115.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29115.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29116.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29116.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29117.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29117.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29118.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29118.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29119.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29119.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29120.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29120.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29121.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29121.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29122.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29122.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29123.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29123.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29124.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29124.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29125.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29125.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29126.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29126.jpg)
 
 * Necesidad
   * _Conectar ordenadores _ entre sí
@@ -698,7 +694,7 @@ Sistema envolvente
   * También redes Wi\-Fi\.
   * Placas base integran conector RJ\-45
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29127.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29127.jpg)
 
 Tarjetas de red
 
@@ -710,7 +706,7 @@ Tarjetas de red
   * Comunica un ordenador con una red local
   * _Ranura_  <span style="color:#FFC000"> </span>  _PCI_  <span style="color:#FFC000"> </span> \(Placa base\) o integrada en  <span style="color:#FFC000">placa </span>  _base_
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29128.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29128.jpg)
 
 * Salida conexión tarjeta de red = cableado a utilizar
 * Cable y conectores
@@ -719,9 +715,9 @@ Tarjetas de red
 * _Leds_  muestran actividad de la tarjeta
 * Tarjetas de red  _híbridas_  \(dos sistemas\)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29129.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29129.png)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29130.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29130.jpg)
 
 * _Media Access Control _ address
   * Código identificador de  _48 bits _ \(6 bytes\)
@@ -732,7 +728,7 @@ Tarjetas de red
   * Escritas en el hardware en su momento de fabricación\.
   * Se conoce también como dirección física
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29131.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29131.jpg)
 
 * MAC determinada y configurada por
   * _IEEE_  \(los últimos 24 bits\)
@@ -744,7 +740,7 @@ Tarjetas de red
 * No necesaria para montar una red doméstica ni configurar conexión a Internet\.
 * Se puede “modificar”\, pero al arrancar el equipo\, la MAC volverá siempre a su estado original\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29132.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29132.jpg)
 
 * Una tarjeta de red puede trabajar a  __distintas velocidades__ \, en función de la  __tecnología__  y los estándares que soporte\.
 * Redes tradicionales: entre 4 y 16 Mb/s
@@ -760,7 +756,7 @@ Tarjetas de red
   * Soportan dos o tres velocidades
   * Se adaptan a la velocidad del resto de la red
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29133.gif)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29133.gif)
 
 Tarjetas de red Wi\-Fi
 
@@ -776,7 +772,7 @@ Tarjetas de red Wi\-Fi
   * Facilidad de instalación y portabilidad\.
 * Tarjetas expansión Wi\-Fi: también tienen dirección MAC\.
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29134.jpg)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29134.jpg)
 
-![](img%5CUD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29135.png)
+![](img/UD%2010%20-%20Perif%C3%A9ricos%20%28tema%20completo%29135.png)
 

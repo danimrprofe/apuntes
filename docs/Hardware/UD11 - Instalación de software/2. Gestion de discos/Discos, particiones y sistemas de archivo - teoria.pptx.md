@@ -2,7 +2,7 @@
 
 ## Estructura física del disco duro
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria1.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria1.jpg)
 
 * Estructura física del disco
   * Un disco duro puede contar con uno o varios  __discos__ \.
@@ -20,7 +20,7 @@
   * __Identificación:__  Cabeza \- Cilindro \- Sector
   * Las cabezas y los cilindros se comienzan a numerar desde el «0» y los sectores desde el «1»\, así que el primer bloque de información estará situado en la posición «0\-0\-1»\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria2.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria2.jpg)
 
 Cabeza – Cilindro – Sector
 
@@ -38,7 +38,7 @@ Primer bloque:  __0 \- 0 \- 1__
     * _LILO y GRUB_ : para sistemas Linux
     * _PXE_ : para arranque a través de un entorno de red\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria3.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria3.jpg)
 
 * __Espacio particionado: __
   * Espacio que ya se ha asignado para almacenar datos o programas
@@ -46,7 +46,7 @@ Primer bloque:  __0 \- 0 \- 1__
   * Zona no accesible del disco a la que todavía no se le ha asignado un fin\.
   * No contiene datos ni programas de ningún tipo\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria4.png)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria4.png)
 
 ## Partición de discos
 
@@ -59,7 +59,7 @@ Primer bloque:  __0 \- 0 \- 1__
   * Se indica cuál es la  __partición activa __ del disco\.
     * A la que se dirige el bootstrap para iniciar el arranque del sistema\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria5.gif)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria5.gif)
 
 ## Tipos de particiones
 
@@ -79,19 +79,19 @@ Primer bloque:  __0 \- 0 \- 1__
   * Al igual que a las primarias\, se les asigna una letra de unidad\.
   * Las particiones lógicas no pueden ser particiones activas\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria6.gif)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria6.gif)
 
 ## Ejemplos de particiones
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria7.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria7.jpg)
 
 Esquema lógico con particiones primarias
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria8.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria8.jpg)
 
 Esquema lógico con una partición extendida
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria9.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria9.jpg)
 
 Esquema lógico con particiones lógicas en la partición extendida
 
@@ -122,9 +122,9 @@ Esquema lógico con particiones lógicas en la partición extendida
 * Tipos de FAT
   * Existen  __3__  modalidades de FAT
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria10.png)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria10.png)
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria11.png)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria11.png)
 
 * Sistema de archivos  <span style="color:#FF0000">NTFS</span>
   * Diseñado para versiones modernas de Windows \(NT \- Windows 8\.1\)
@@ -138,7 +138,7 @@ Esquema lógico con particiones lógicas en la partición extendida
   * Necesita  __mucho espacio en disco __ para gestión de los archivos\.
   * No recomendable para discos o particiones < 10 GB\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria12.png)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria12.png)
 
 __Mac OS X __ sólo puede leer las unidades NTFS\, no escribirlas\.
 
@@ -159,7 +159,7 @@ __Xbox 360__  no puede leer las unidades NTFS\, Xbox One puede
     * Particiones <  __1 EB __ \(exabyte\)
   * Linux utiliza un espacio en el disco denominado  __swap__ \, mediante el cual puede guardar información que no se mantiene en memoria\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria13.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria13.jpg)
 
 ## Operaciones sobre particiones
 
@@ -171,7 +171,7 @@ __ __ La capacidad depende del espacio del disco y de la ubicación y tamaño de
 
 Si va a contener un sistema operativo debe estar en los primeros 2 GB del disco\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria14.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria14.jpg)
 
 __Creación de particiones lógicas__
 
@@ -179,13 +179,13 @@ __ __ Solamente si van a albergar particiones extendidas\.
 
 No hay límite para la creación de particiones lógicas en una primaria\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria15.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria15.jpg)
 
 __Redimensión y desplazamiento de particiones__
 
 __ __ Debe existir espacio disponible en los extremos\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria16.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria16.jpg)
 
 __Uso de espacio no asignado__
 
@@ -197,7 +197,7 @@ Las dos particiones deben estar una junto a otra\.
 
 Las dos particiones deben tener sistemas de archivos compatibles entre sí\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria17.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria17.jpg)
 
 __Copia de particiones__
 
@@ -205,7 +205,7 @@ __ __ Genera una partición con el mismo tamaño\, sistema de archivos y conteni
 
 Pueden copiarse particiones en varios discos\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria18.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria18.jpg)
 
 __Eliminación y recuperación de particiones__
 
@@ -213,7 +213,7 @@ Eliminar una partición destruye los datos sobrescribiendo los sectores del disc
 
 La recuperación no siempre puede llevarse a cabo\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria19.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria19.jpg)
 
 * Cambiar el sistema de archivos de una partición
   * Conversión de particiones: modificación de un sistema de archivos a otro\.
@@ -225,7 +225,7 @@ La recuperación no siempre puede llevarse a cabo\.
   * Existe la posibilidad de  _convertir una partición _  _primaria_  _ en _  _lógica_  y viceversa\.
   * Este cambio es bastante útil cuando se agota el cupo de cuatro particiones primarias en el disco
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria20.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria20.jpg)
 
 ## Formateo de una partición
 
@@ -237,7 +237,7 @@ La recuperación no siempre puede llevarse a cabo\.
     * Alto nivel \(lógico\)
     * Bajo nivel \(físico\)
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria21.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria21.jpg)
 
 * Formateo  _alto nivel \(formateo lógico\)_
   * Borra solo tabla de acceso a los archivos almacenados \(no los datos\)
@@ -256,7 +256,7 @@ La recuperación no siempre puede llevarse a cabo\.
   * Desde un  __disco de arranque __ \(a todos los discos del equipo\)
     * Mediante cualquiera de las  __aplicaciones de gestión de discos__ \.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria22.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria22.jpg)
 
 * Formateo a  _bajo nivel \(o formateo físico\)_
   * __Elimina: __  _particiones de disco \+ datos \+ tablas de archivos_
@@ -274,5 +274,5 @@ La recuperación no siempre puede llevarse a cabo\.
     * _HDD Low _  _Level_  _ Format Tool _ \(gratuita\)
     * _KillDisk_  \(de pago\)\.
 
-![](img%5CDiscos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria23.jpg)
+![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria23.jpg)
 

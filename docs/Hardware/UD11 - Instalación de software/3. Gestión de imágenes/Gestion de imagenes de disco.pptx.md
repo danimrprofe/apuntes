@@ -1,4 +1,4 @@
-![](img%5CGestion%20de%20imagenes%20de%20disco0.png)
+![](img/Gestion%20de%20imagenes%20de%20disco0.png)
 
 ## Montaje y mantenimiento de sistemas y componentes informáticos
 
@@ -14,9 +14,9 @@ _Implantación de sistemas operativos_
   * __NO__  se puede arrastrar y soltar un sistema operativo\.
   * Si es la unidad desde la que se inicia\, sólo la clonación o la creación de imágenes pueden confeccionar una copia de trabajo de forma fiable\.
 
-![](img%5CGestion%20de%20imagenes%20de%20disco1.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco1.jpg)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco2.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco2.jpg)
 
 ## Gestión de imágenes de disco
 
@@ -30,7 +30,7 @@ _Implantación de sistemas operativos_
   * __Cloning__
   * __Imaging__
 
-![](img%5CGestion%20de%20imagenes%20de%20disco3.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco3.jpg)
 
 * Clonación de un disco a otro disco
   * Copia el contenido completo de una unidad a otra
@@ -44,7 +44,7 @@ _Implantación de sistemas operativos_
     * Se sustituye un disco o partición por el clon
   * Se utiliza fundamentalmente para  _despliegues_
 
-![](img%5CGestion%20de%20imagenes%20de%20disco4.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco4.jpg)
 
 * Creación de una imagen a partir del disco \(Imaging\)
   * A partir de  __unidad o partición __ de un HD\, DVD\, pendrive\, etc\.
@@ -58,7 +58,7 @@ _Implantación de sistemas operativos_
   * Se utiliza fundamentalmente como  _copia de seguridad_ \.
   * Necesita de un programa para poderse utilizar
 
-![](img%5CGestion%20de%20imagenes%20de%20disco5.png)
+![](img/Gestion%20de%20imagenes%20de%20disco5.png)
 
 * ¿Para qué se usan las imágenes de un disco?
   * __Copia de seguridad__
@@ -89,7 +89,7 @@ _Implantación de sistemas operativos_
   * Tarjetas de memoria y discos USB
   * Pueden ser tratados como discos duros u ópticos\, según finalidad
 
-![](img%5CGestion%20de%20imagenes%20de%20disco6.png)
+![](img/Gestion%20de%20imagenes%20de%20disco6.png)
 
 ## Clonación de un disco
 
@@ -103,9 +103,9 @@ _Implantación de sistemas operativos_
     * La réplica limpia del disco conllevaría una réplica en los SID\.
     * Puede originar graves problemas de seguridad al interconectar los equipos\.
 
-![](img%5CGestion%20de%20imagenes%20de%20disco7.png)
+![](img/Gestion%20de%20imagenes%20de%20disco7.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco8.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco8.jpg)
 
 * Herramienta  __Sysprep \(Windows\)__
   * Prepara el sistema para ser clonado
@@ -115,11 +115,11 @@ _Implantación de sistemas operativos_
   * Se puede utilizar un  __archivo de respuesta __ junto con Sysprep
   * Indica al asistente los valores con los que debe completarse de forma totalmente  __desatendida__ \.
 
-![](img%5CGestion%20de%20imagenes%20de%20disco9.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco9.jpg)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco10.jpg)
+![](img/Gestion%20de%20imagenes%20de%20disco10.jpg)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco11.png)
+![](img/Gestion%20de%20imagenes%20de%20disco11.png)
 
 * Despliegue de la réplica
   * Debemos obtener espacio en el disco destino para poder alojar el archivo de réplica\.
@@ -129,7 +129,7 @@ _Implantación de sistemas operativos_
 
 ## Clonezilla
 
-![](img%5CGestion%20de%20imagenes%20de%20disco12.png)
+![](img/Gestion%20de%20imagenes%20de%20disco12.png)
 
 * Clonezilla
   * Es una herramienta  _Open Source _ \(software distribuido y desarrollado libremente\)
@@ -149,9 +149,9 @@ _Implantación de sistemas operativos_
   * Se puede utilizar  __remotamente__
   * El archivo de imagen puede ser un  _disco local\, un servidor SSH\, samba o NFS\._
 
-![](img%5CGestion%20de%20imagenes%20de%20disco13.gif)
+![](img/Gestion%20de%20imagenes%20de%20disco13.gif)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco14.png)
+![](img/Gestion%20de%20imagenes%20de%20disco14.png)
 
 ## Clonación DISCO a IMAGEN y viceversa
 
@@ -186,22 +186,22 @@ _Implantación de sistemas operativos_
   * Las máquinas tienen que “verse” \(misma red\)\.
   * Adjudicación de IP estática o mediante DHCP
 
-![](img%5CGestion%20de%20imagenes%20de%20disco15.png)
+![](img/Gestion%20de%20imagenes%20de%20disco15.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco16.png)
+![](img/Gestion%20de%20imagenes%20de%20disco16.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco17.png)
+![](img/Gestion%20de%20imagenes%20de%20disco17.png)
 
 * Clonación disco a disco a través de red
   * Tiempo clonación: 12 minutos aprox\. \(Disco SSD\)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco18.png)
+![](img/Gestion%20de%20imagenes%20de%20disco18.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco19.png)
+![](img/Gestion%20de%20imagenes%20de%20disco19.png)
 
 ## Clonación de 1 PC a varios PC (Multicast)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco20.png)
+![](img/Gestion%20de%20imagenes%20de%20disco20.png)
 
 * Clonación de una imagen a varios PC
   * En primer lugar\, creamos una imagen de un disco \(image to device\)
@@ -215,9 +215,9 @@ _Implantación de sistemas operativos_
   * Entrar en modo Shell y ejecutar el comando que nos da el servidor al final
   * Introducir la IP del servidor y esperar
 
-![](img%5CGestion%20de%20imagenes%20de%20disco21.png)
+![](img/Gestion%20de%20imagenes%20de%20disco21.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco22.png)
+![](img/Gestion%20de%20imagenes%20de%20disco22.png)
 
-![](img%5CGestion%20de%20imagenes%20de%20disco23.png)
+![](img/Gestion%20de%20imagenes%20de%20disco23.png)
 

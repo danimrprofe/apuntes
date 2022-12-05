@@ -51,12 +51,12 @@ Pulsar la tecla de función F5 y escribir la referencia de la celda.
 
 **Cómo ir a la última fila, columna o celda**
 
-Con la tecla CTRL:
+Con la tecla ++ctrl++:
 
-- CTRL + flecha abajo: última fila
-- CTRL + flecha arriba: primera fila
-- CTRL + flecha derecha: última columna
-- CTRL + flecha izquierda: primera columna
+- ++ctrl++ + flecha abajo: última fila
+- ++ctrl++ + flecha arriba: primera fila
+- ++ctrl++ + flecha derecha: última columna
+- ++ctrl++ + flecha izquierda: primera columna
 
 **pegado especial**
 
@@ -75,7 +75,7 @@ Según el tipo de dato que asignemos, tomará una celda como un número o como t
 **Validar datos**
 
 Al introducir un dato en la celda hay que validarlo:
-Escribiendo el dato y pulsando Intro.
+Escribiendo el dato y pulsando ++enter++.
 Escribiendo el dato y presionando el botón de validar de la barra de fórmulas.
 
 **Introducir datos**

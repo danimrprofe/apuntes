@@ -38,7 +38,7 @@
 ## Navegador
 
 - Crear tabs, cerrar tabs, modo incógnito
-- Moverse entre pestañas: CTRL + TAB
+- Moverse entre pestañas:++ctrl+++ TAB
 - Pantalla completa
 - Mostrar escritorio
 - Crear o editar marcadores

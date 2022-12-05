@@ -42,21 +42,21 @@ Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD 
 
 ## Terminar
 
-ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con **Tabulación** al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla **shift** pulsada y por último seleccionamos los huesos.
+ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ++tab++ al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ++shift++ pulsada y por último seleccionamos los huesos.
 
-A continuación, pulsamos Ctrl+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
+A continuación, pulsamos ++ctrl+++P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
 Comprobamos que todo funciona[Música]y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
-Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos Ctrl+P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
+Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ++ctrl+++P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
 
-Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ctrl+z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje 
+Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ++ctrl+++z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje 
 
 ## Mover todo el personaje
 
 Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la E para extruir un nuevo hueso y lo colocamos por aquí.
 
-Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos Ctrl+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos Ctrl+P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado. 
+Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ++ctrl+++P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ++ctrl+++P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado. 
 
 ## Animación
 

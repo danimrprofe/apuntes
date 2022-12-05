@@ -39,7 +39,7 @@ Tipos de teclado
 * _Teclado mejorado de 101 teclas_
   * última versión del PC AT de IBM
   * Añadía teclas adicionales: teclas para el cursor \(movimiento\)
-  * 2a tecla Ctrl, Alt e Intro
+  * 2a tecla ++ctrl++, Alt e ++enter++
   * 2 teclas más de funciones\.
   * Teclado estándar durante muchos años\.
 * _Teclado para Windows de 104 teclas_

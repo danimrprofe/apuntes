@@ -527,7 +527,7 @@ En GNU/Linux antes de poder gestionarlas es necesario editar el fichero `/etc/fs
 
 En `/etc/fstab` agregamos la directiva a la partición en donde queremos limitar la cuota: Usrquota
 
-Añadirnos usrquota, grpquota, a la partición en la que queramos activar las cuotas de disco. Hacemos una copia de la línea (CTRL+K --- CTRL+U) que vamos a editar, por si acaso, y la ponemos con comentarios. 
+Añadirnos usrquota, grpquota, a la partición en la que queramos activar las cuotas de disco. Hacemos una copia de la línea (++ctrl+++K --- ++ctrl+++U) que vamos a editar, por si acaso, y la ponemos con comentarios. 
 
     /dev/hda1   /     ext3    **usrquota,grpquota**,errors=remount-ro 0       1
 

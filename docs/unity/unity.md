@@ -62,7 +62,7 @@ Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos mo
 
 ### Crear jugador 1
 
-Ahora Ctrl+D y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.
+Ahora ++ctrl+++D y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.
 
 Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro unit y su día dietsprite square y si la colocamos en el 0,0.
 
@@ -76,7 +76,7 @@ Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle u
 
 Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles colliders a nuestros objetos. Los colliders son  componentes que se añaden a estos objetos 
 
-Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con shift pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente 
+Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con++shift++pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente 
 
 Si que no queréis que alguno por ejemplo en mi caso no que recoger la línea del centro porque no quiero que tenga esa colisión porque imagino que tenemos la bola aquí y conexiones con el centro y puesto que no tendría sentido básicamente porque a lo mejor si vengo desde aquí y colisionó colisión colisión y comisionó mi player uno va a ganar otro rato porque no puede pasar para allá entonces lo que sí vamos a hacer es nombrarlo para que sepamos qué es el centro que en este caso por estirando cuenta que es el goal 2 llamamos centro y a este es al que no tenemos que añadirle colisión.
 

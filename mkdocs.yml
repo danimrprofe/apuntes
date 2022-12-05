@@ -12,6 +12,7 @@ site_url: https://danimrprofe.github.io/apuntes/
 theme:
   name: material
   language: es
+  
   features:
     - navigation.top
     - navigation.sections
@@ -41,7 +42,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition
-  - pymdownx.details 
+  - pymdownx.details   
+  - pymdownx.keys
 
 plugins:
   - search

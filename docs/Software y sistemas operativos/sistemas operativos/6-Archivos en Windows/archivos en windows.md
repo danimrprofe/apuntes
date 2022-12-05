@@ -162,7 +162,7 @@ Si utilizamos el Explorador, que es lo más conveniente, deberemos proceder de l
 También se puede hacer la operación con el botón izquierdo, pero esta acción es de movimiento de archivo y no de copia. Si la operación la realizamos entre dos unidades diferentes de almacenamiento, por ejemplo, disco duro y disquetera, la operación será de copia. Esto quedará indicado apareciendo un pequeño ¡cono con el símbolo + al arrastrar el objeto de una unidad a otra.
 
 - Si mientras realizamos el desplazamiento del objeto, 
-- Si mantenemos pulsada la tecla **CTRL**, la acción siempre será de copia
+- Si mantenemos pulsada la tecla **++ctrl++**, la acción siempre será de copia
 - Si mantenemos la tecla **SHIFT** pulsada, la acción será de movimiento
 
 Por otro lado, al realizar la copia no podemos modificar directamente el nombre del fichero en el destino, acción posible en modo comando. 

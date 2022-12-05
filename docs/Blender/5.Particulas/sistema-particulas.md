@@ -24,7 +24,7 @@ El copo que vamos a crear es una icosfera y, a partir de ella se crearán múlti
 
 ![](media/image4.png)
 
-Colocamos una icosfera con shift a mesh
+Colocamos una icosfera con++shift++a mesh
 
 Con G nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading
 

@@ -170,7 +170,7 @@ Por defecto, se nos abrirá para editar con `vim`, en modo de lectura.
 
 - Para insertar cosas, tenemos que pulsar `i`.
 - Para salir del modo edición, pulsamos `esc`.
-- Para salir guardando, tras salir del modo edición, escribir `:wq` y pulsar intro.
+- Para salir guardando, tras salir del modo edición, escribir `:wq` y pulsar ++enter++.
 
 Dentro del archivo introduciremos las lineas de texto con las diferentes tareas.
 

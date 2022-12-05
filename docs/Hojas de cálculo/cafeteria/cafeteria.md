@@ -27,7 +27,7 @@ Tenemos que arreglar la hoja para incluir estos cambios. Para eso tenemos que a�
 
 ## Paso 5: Incluir el mensaje de gracias por su visita 
 
-Si solo usamos intro, nos moveremos a la siguiente celda. Para escribir más de una línea en una celda, se utiliza <kbd>Ctrl</kbd>+<kbd>intro</kbd> al mismo tiempo. 
+Si solo usamos ++enter++, nos moveremos a la siguiente celda. Para escribir más de una línea en una celda, se utiliza ++ctrl+++enter++++ al mismo tiempo. 
 
 ![](img/2022-11-30-09-47-47.png)
 

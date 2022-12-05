@@ -1,9 +1,8 @@
-## 13. Módulo de receptor IR
+# 13. Módulo de receptor IR
 
-### Resumen
+## Resumen
 
-
-Los mandos a distancia infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego usaremos una **librería** que fue diseñada para este sensor en particular.
+Los **mandos a distancia** infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego usaremos una **librería** que fue diseñada para este sensor en particular.
 
 En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
 
@@ -19,55 +18,60 @@ x F-M cables (cables de hembra a macho DuPont)ç
 
 ### Sensor receptor de infrarrojos
 
-Los detectores infrarrojos son pequeños microchips con una célula fotoeléctrica que están configurados para recibir a la luz infrarroja. Casi siempre se utilizan para la detección de control remoto - cada TV y reproductor de DVD tiene uno de estos en la parte delantera para escuchar la señal de IR desde el clicker. Dentro del control remoto es un juego IR LED, que emite pulsos IR para comunicar al televisor para encender, apagar o cambiar de canal. Luz infrarroja no es visible para el ojo humano, lo que significa que tarda un poquito más de trabajo para probar una configuración. Hay algunas diferencias entre ellos y decir unas fotocélulas CdS:
+Los detectores infrarrojos son pequeños microchips con una célula fotoeléctrica que están configurados para recibir a la luz infrarroja. 
+
+Casi siempre se utilizan para la detección de control remoto - cada TV y reproductor de DVD tiene uno de estos en la parte delantera para escuchar la señal de IR desde el clicker. 
+
+Dentro del control remoto es un juego IR LED, que emite pulsos IR para comunicar al televisor para encender, apagar o cambiar de canal. 
+
+La luz infrarroja no es visible para el ojo humano.
 
 Detectores infrarrojos son especialmente filtrados para IR ligero, no son buenos para detectar luz visible. Por otro lado, las fotocélulas son buenas para detectar luz visible de amarillo/verde y no son buenas para luz IR.
 
 Detectores infrarrojos tienen un demodulador en ese aspecto para IR modulada a 38 KHz. Sólo brilla un LED IR no detectada, tiene que ser PWM intermitente en 38 KHz. fotocélulas no tienen ningún tipo de demodulador y puede detectar cualquier frecuencia (incluyendo CC) dentro de la velocidad de respuesta de la fotocélula (que es aproximadamente 1KHz)
 
-Detectores infrarrojos son salida digital - tampoco detectan señal 38KHz IR y salida bajo (0V) o no detecta ninguno y salida alto (5V). Fotocélulas actúan como resistencias, los cambios de resistencia dependiendo de cuánto se exponen a la luz
+Detectores infrarrojos son salida digital - tampoco detectan señal 38KHz IR y salida bajo (0V) o no detecta ninguno y salida alto (5V). 
 
-Lo que se puede medir
+Las fotocélulas actúan como resistencias, los cambios de resistencia dependiendo de cuánto se exponen a la luz
+
+## ¿Qué podemos medir?
 
 <img width="400" src="media/image104.jpeg" id="image104">
 
 Como se puede ver en estos gráficos de hoja de datos, la detección de frecuencia de peak es a 38 KHz y el pico color del LED es de 940 nm. Se puede usar desde unos 35 KHz kHz 41 pero la sensibilidad se desprenderá para que no detecte asídesde lejos. Asimismo, puede utilizar LEDs de 850 a 1100 nm pero no funcionan tan bien como 900 a 1000nm asíque asegúrese de obtener coincidencia de LEDs! Compruebe la ficha técnica para su IR LED verificar la longitud de onda.
 
-¡Trate de conseguir un 940nm - Recuerde que 940nm no es luz visible!
-
-### Conexión
-
-### Esquema
+## Esquema de conexiones
 
 <img width="400" src="media/image105.jpeg" id="image105">
 
-### Diagrama de cableado
+## Diagrama de cableado
 
 Hay 3 conexiones para el receptor de infrarrojos.
 
 Las conexiones son: señal, voltaje y tierra.
 
-- El "-" es la tierra"S" es señal y medio es voltaje de 5V.
+- El "-" es la tierra
+- "S" es señal 
+- El del medio corresponde a 5V.
 
-<img width="400" src="media/image106.jpeg" id="image106">
-<img width="400" src="media/image107.jpeg" id="image107">
+![](media/image106.jpeg)
+
+## Montaje
+
+![](media/image107.jpeg)
 
 ### Código
 
 ```c
 #include "IRremote.h"
 
-int receiver = 11; // Signal Pin of IR receiver to Arduino Digital Pin 11
+int receiver = 11; // Signal Pin of IR receiver
 
 /*-----( Declare objects )-----*/
 IRrecv irrecv(receiver);     // create instance of 'irrecv'
 decode_results results;      // create instance of 'decode_results'
 
-/*-----( Function )-----*/
-void translateIR() // takes action based on IR code received
-
-// describing Remote IR codes 
-
+void translateIR()
 {
 
   switch(results.value)
@@ -124,10 +128,8 @@ void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
   }  
 }/* --(end main loop )-- */
 ```
+## Visualizar datos en el monitor
 
-
-Abrir al monitor y puede ver los datos:
-
-Haga clic en el Serial Monitor botón para encender el monitor serie. Se introducen los conceptos básicos sobre el monitor serial en detalles en la lección 1
+Haga clic en el botón **Serial Monitor** para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.
 
 <img width="400" src="media/image108.jpeg" id="image108">

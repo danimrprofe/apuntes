@@ -88,7 +88,7 @@ Las suites más utilizadas actualmente son:
 
 Podemos hacer zoom:
 
-- Con **Ctrl** y la rueda del ratón
+- Con **++ctrl++** y la rueda del ratón
 - Utilizando el control de zoom del procesador de textos
   
 ## 2.2. Obtener ayuda
@@ -101,8 +101,8 @@ Acciones:
 
 | Función           | Atajo    |
 | ----------------- | -------- |
-| Abrir documento   | Ctrl + A |
-| Guardar documento | Ctrl + G |
+| Abrir documento   | ++ctrl++ + A |
+| Guardar documento | ++ctrl++ + G |
 
 Al guardar el documento podremos elegir entre varios tipos de archivo:
 
@@ -134,12 +134,12 @@ Podemos movernos por las diferentes partes del documento:
 | Principio de línea                            | Inicio                  |
 | Final de línea                                | Fin                     |
 | Moverse por páginas                           | AvPag y Repag           |
-| Moverse al principio del documento y al final | Ctrl + Inicio           |
-| Moverse al final                              | Ctrl + Fin              |
-| Una palabra a la izquierda                    | Ctrl + flecha izquierda |
-| Una palabra a la derecha                      | Ctrl + flecha derecha   |
-| Un párrafo arriba                             | Ctrl + flecha arriba    |
-| Un párrafo abajo                              | Ctrl + flecha abajo     |
+| Moverse al principio del documento y al final | ++ctrl++ + Inicio           |
+| Moverse al final                              | ++ctrl++ + Fin              |
+| Una palabra a la izquierda                    | ++ctrl++ + flecha izquierda |
+| Una palabra a la derecha                      | ++ctrl++ + flecha derecha   |
+| Un párrafo arriba                             | ++ctrl++ + flecha arriba    |
+| Un párrafo abajo                              | ++ctrl++ + flecha abajo     |
 
 ## 2.5. Selección de textos
 
@@ -148,9 +148,9 @@ Podemos seleccionar un fragmento de texto de varias formas:
 | Función                                 | Atajo                                   |
 | --------------------------------------- | --------------------------------------- |
 | Seleccionar carácter, palabra y línea   | 1, 2 o 3 clics                          |
-| Seleccionar texto                       | mayús + teclas izq. o derecha           |
-| Seleccionar todo el texto               | Ctrl + E                                |
-| Seleccionar palabras o frases separadas | Ctrl + botón izquierdo en cada elemento |
+| Seleccionar texto                       | ++shift+++ teclas izq. o derecha           |
+| Seleccionar todo el texto               | ++ctrl++ + E                                |
+| Seleccionar palabras o frases separadas | ++ctrl++ + botón izquierdo en cada elemento |
 
 ## 2.6. Cortar, copiar y pegar
 
@@ -158,9 +158,9 @@ Atajos de teclado:
 
 | Función | Atajo    |
 | ------- | -------- |
-| Cortar  | Ctrl + X |
-| Copiar  | Ctrl + C |
-| Pegar   | Ctrl + P |
+| Cortar  | ++ctrl++ + X |
+| Copiar  | ++ctrl++ + C |
+| Pegar   | ++ctrl++ + P |
 
 Existen diferentes tipos de pegado.
 
@@ -171,9 +171,9 @@ Para **borrar o eliminar** parte del texto, tenemos diferentes combinaciones, co
 | Función                    | Atajo            |
 | -------------------------- | ---------------- |
 | Un carácter a la izquierda | Retroceso        |
-| Una palabra a la izquierda | Ctrl + Retroceso |
+| Una palabra a la izquierda | ++ctrl++ + Retroceso |
 | Un carácter a la derecha   | Supr             |
-| Una palabra a la derecha   | Ctrl + Supr      |
+| Una palabra a la derecha   | ++ctrl++ + Supr      |
 
 # 3. Aplicación de formatos
 

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>11.Humedadytemperatura.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="11-sensor-de-humedad-y-temperatura-dht11">11. Sensor de humedad y temperatura DHT11</h1>
+<h2 id="resumen">Resumen</h2>
+<p>En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura <strong>DHT11</strong>.</p>
+<p>Otra vez vamos a usar una <strong>librería</strong> diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.</p>
+<h2 id="componentes-necesarios">Componentes necesarios</h2>
+<img width="200" src="file:///z:/apuntes/docs/arduino/media/image93.jpeg" id="image93">
+<pre class="hljs"><code><div>(1) x Elegoo Uno R3
+(1) x módulo de humedad y temperatura DHT11
+(3) x F M cables (cables de hembra a macho DuPont)
+</div></code></pre>
+<h3 id="sensor-de-temperatura-y-humedad">Sensor de temperatura y humedad</h3>
+<p>Sensor digital de temperatura y humedad <strong>DHT11</strong> es un Sensor compuesto que contiene la salida de la señal digital calibrado de la temperatura y la humedad.</p>
+<p>Aplicaciones: HVAC, deshumidificador, ensayos e inspección de equipos, bienes de consumo, control automático, automóvil, registradores de datos, estaciones meteorológicas, electrodomésticos, regulador de humedad, humedad médicos y otros medición y control.</p>
+<h2 id="par%C3%A1metros-del-sensor">Parámetros del sensor</h2>
+<p>Humedad relativa:</p>
+<ul>
+<li>Resolución: 16 bits</li>
+<li>Repetibilidad: ±1% H.R.</li>
+<li>Precisión: 25 ° C ±5% hr</li>
+<li>Intercambiabilidad: intercambiables</li>
+<li>Tiempo de respuesta: 1 / e (63%) de 25º c 6s</li>
+<li>1m / s de aire 6s</li>
+<li>Histéresis: &lt; ± 0.3% RH</li>
+<li>Estabilidad a largo plazo: &lt; ± 0.5% hr / año en</li>
+</ul>
+<p>Temperatura:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resolución:</td>
+<td>16 bits</td>
+</tr>
+<tr>
+<td>Repetibilidad:</td>
+<td>±0. 2 ° C</td>
+</tr>
+<tr>
+<td>Rango:</td>
+<td>25 ° C ±2° c</td>
+</tr>
+<tr>
+<td>Tiempo de respuesta:</td>
+<td>1 / e (63%) 10S</td>
+</tr>
+</tbody>
+</table>
+<p>Características eléctricas</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente de alimentación:</td>
+<td>DC 3.5 ~ 5.5V</td>
+</tr>
+<tr>
+<td>Corriente:</td>
+<td>medición 0.3mA espera 60μA</td>
+</tr>
+<tr>
+<td>Periodo de muestreo:</td>
+<td>más de 2 segundos</td>
+</tr>
+</tbody>
+</table>
+<p>Descripción de pines</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDD</td>
+<td>alimentación 3,5~5.5V DC</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>bus de datos</td>
+</tr>
+<tr>
+<td>NC</td>
+<td>pin vacío</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>tierra</td>
+</tr>
+</tbody>
+</table>
+<h3 id="esquema-de-conexi%C3%B3n">Esquema de conexión</h3>
+<p><img src="file:///z:/apuntes/docs/arduino/media/image94.jpeg" alt=""></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///z:/apuntes/docs/arduino/media/image95.jpeg" alt=""></p>
+<h2 id="montaje-f%C3%ADsico">Montaje físico</h2>
+<p><img src="file:///z:/apuntes/docs/arduino/media/image96.jpeg" alt=""></p>
+<p>Como se puede ver que sólo necesitamos 3 conexiones al sensor, ya que uno de lo pin no se utiliza.</p>
+<p>Las conexiones son: voltaje, tierra y señal de que puede conectarse a cualquier Pin en nuestro UNO.</p>
+<h3 id="c%C3%B3digo">Código</h3>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;dht_nonblocking.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DHT_SENSOR_TYPE DHT_TYPE_11</span>
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> DHT_SENSOR_PIN = <span class="hljs-number">2</span>;
+<span class="hljs-function">DHT_nonblocking <span class="hljs-title">dht_sensor</span><span class="hljs-params">( DHT_SENSOR_PIN, DHT_SENSOR_TYPE )</span></span>;
+
+<span class="hljs-comment">/*
+ * Initialize the serial port.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">( )</span>
+</span>{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>( <span class="hljs-number">9600</span>);
+}
+
+<span class="hljs-comment">/*
+ * Poll for a measurement, keeping the state machine alive.  Returns
+ * true if a measurement is available.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">medir</span> <span class="hljs-params">( <span class="hljs-keyword">float</span> *temperature, <span class="hljs-keyword">float</span> *humidity )</span>
+</span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> measurement_timestamp = <span class="hljs-built_in">millis</span>( );
+
+  <span class="hljs-comment">/* Measure once every four seconds. */</span>
+  <span class="hljs-keyword">if</span>( <span class="hljs-built_in">millis</span>( ) - measurement_timestamp &gt; <span class="hljs-number">3000u</span>l )
+  {
+    <span class="hljs-keyword">if</span>( dht_sensor.measure( temperature, humidity ) == <span class="hljs-literal">true</span> )
+    {
+      measurement_timestamp = <span class="hljs-built_in">millis</span>( );
+      <span class="hljs-keyword">return</span>( <span class="hljs-literal">true</span> );
+    }
+  }
+
+  <span class="hljs-keyword">return</span>( <span class="hljs-literal">false</span> );
+}
+
+
+<span class="hljs-comment">/*
+ * Main program loop.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">( )</span>
+</span>{
+  <span class="hljs-keyword">float</span> temperature;
+  <span class="hljs-keyword">float</span> humidity;
+
+  <span class="hljs-comment">/* Measure temperature and humidity.  If the functions returns
+     true, then a measurement is available. */</span>
+  <span class="hljs-keyword">if</span>( medir( &amp;temperature, &amp;humidity ) == <span class="hljs-literal">true</span> )
+  {
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( <span class="hljs-string">"T = "</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( temperatura, <span class="hljs-number">1</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( <span class="hljs-string">" deg. C, H = "</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( humedad, <span class="hljs-number">1</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>( <span class="hljs-string">"%"</span> );
+  }
+}
+</div></code></pre>
+<h2 id="salida-en-el-monitor">Salida en el monitor</h2>
+<p>Los valores medidos se mostrarán por pantalla en el monitor serie:</p>
+<p><img src="file:///z:/apuntes/docs/arduino/media/image97.jpeg" alt=""></p>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ En caso contrario, nos mostrará en qué sitios web, entre los que nos hemos reg
 La autenticación de dos factores requiere dos formas de probar tu identidad y también se puede utilizar para proteger cuentas. Requiere un paso adicional al iniciar sesión en sus cuentas y hace que sus datos estén más seguros en línea.
 
 ### ¿Cuál es la forma más habitual?
-
+****
 La forma más común de autenticación de dos factores al iniciar sesión en una cuenta es el proceso de:
 
 1. Ingresar usuario y contraseña o código PIN en la página web correspondiente

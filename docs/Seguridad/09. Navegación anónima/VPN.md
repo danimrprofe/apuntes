@@ -1,6 +1,10 @@
 # Redes privadas virtuales
 
-Consiste en conectarse a Internet a través de una red privada, estableciendo una conexión cifrada y así evita que el buscador guarde tus datos.
+
+Las VPN se utilizan para proporcionar una conexión segura a una red privada a través de una red pública, como Internet. Esto se logra mediante el uso de una serie de protocolos de seguridad para crear un "túnel" seguro entre dos puntos. Esta conexión segura ayuda a proteger la privacidad y seguridad de la información transmitida entre los puntos.
+
+
+
 
 ![](img/2022-12-11-22-16-18.png)
 
@@ -9,17 +13,10 @@ Consiste en conectarse a Internet a través de una red privada, estableciendo un
 
 ## Algunas ventajas de utilizar una VPN
 
-- Acceder a contenido global
-- Algunos contenidos solo están disponibles en determinadas regiones. Una VPN cambia su ubicación virtual para que pueda verla en cualquier lugar.
+Una de las principales razones de la popularidad de las VPN es la seguridad que proporcionan. La encriptación de los datos y los protocolos de seguridad utilizados en una VPN aseguran que la información se mantenga segura mientras viaja a través de Internet. Esto es especialmente útil para aquellos que desean acceder a redes privadas desde su hogar u oficina.
 
-Evite la censura local
+Otra ventaja de las VPN es la capacidad de evitar las restricciones geográficas. Esto significa que los usuarios pueden acceder a contenido restringido en su país sin tener que viajar físicamente. Esto también se puede utilizar para cambiar la dirección IP de un usuario para ocultar su ubicación real.
 
-Algunos gobiernos bloquean aplicaciones y sitios web populares. Una VPN los desbloquea cambiando su ubicación virtual.
+## Inconvenientes
 
-Proteja su privacidad en línea
-Los propietarios de redes y los proveedores de Internet pueden ver todo lo que hace en línea. Con una VPN activado, no pueden ver nada.
-
-## Evitar el seguimiento basado en IP
-
-Los servicios publicitarios utilizan su dirección IP para rastrear su comportamiento en todos los sitios. Las VPN los detiene asignándole una nueva IP.
-Juega en nuevos servidores de juegos, evita la aceleración y desbloquea aplicaciones y sitios web en las redes de la escuela y el trabajo.
+Sin embargo, hay algunos inconvenientes que deben tenerse en cuenta al usar una VPN. Algunos servicios de VPN pueden ser costosos. Además, a veces puede haber problemas de velocidad. Esto puede ser debido a la congestión de la red o al mal funcionamiento de los servidores VPN.

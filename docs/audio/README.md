@@ -43,7 +43,7 @@ El sonido se propaga por un medio físico que generalmente es el aire, pero no e
 ## 1.1	FRECUENCIA DE UN SONIDO
 
 La frecuencia de sonido es el número de vibraciones por segundo que produce. Se mide en Herzios (Hz), aunque generalmente se **utilizan** unidades más grandes: KHz, MHz
-Los sonidos agudos tienen una frecuencia más alta, mientras que los sonidos graves tienen frecuencias más bajas. 
+Los sonidos agudos tienen una frecuencia más alta, mientras que los sonidos graves tienen frecuencias más bajas.
 
 ![](img/2020-03-31-10-56-12.png)
 
@@ -99,7 +99,7 @@ El aire es impulsado por los pulmones, y las cuerdas vocales, según su posició
 
 Este funcionamiento tiene lógica, puesto que no únicamente utilizamos los pulmones para hablar, sino también para respirar, y no siempre nos interesa emitir algún sonido.
 
-Podéis ver un video del funcionamiento de las cuerdas vocales a continuación. 
+Podéis ver un video del funcionamiento de las cuerdas vocales a continuación.
 Las cuerdas vocales se mueven mucho más rápido de lo que se ve, imaginad que, para un sonido de 1000 Hz, se moverían a razón de 1000 veces por segundo.
 
 ![](img/2020-03-31-10-58-44.png)
@@ -231,9 +231,9 @@ La **extensión** del archivo (mp3, wav, flac) nos indica el tipo de archivo del
 
 ## 4.2. COMPRESIÓN
 
-Si los guardamos tal cual, los archivos de audio contienen toda la información del sonido original. De esta forma, tenemos archivos de mejor calidad, pero mayor tamaño. 
+Si los guardamos tal cual, los archivos de audio contienen toda la información del sonido original. De esta forma, tenemos archivos de mejor calidad, pero mayor tamaño.
 
-Gracias a los ordenadores podemos comprimir los archivos de sonido y vídeo utilizando operaciones matemáticas para reducir el tamaño descartando parte de la información que no somos capaces de apreciar. 
+Gracias a los ordenadores podemos comprimir los archivos de sonido y vídeo utilizando operaciones matemáticas para reducir el tamaño descartando parte de la información que no somos capaces de apreciar.
 
 La calidad del sonido es menor pero también disminuye el tamaño. Una canción comprimida en MP3 puede ocupar **una décima parte** de lo que ocuparía la misma canción sin comprimir
 
@@ -287,7 +287,7 @@ Una estación de trabajo de audio digital o DAW, es un software que permite crea
 
 Los sonidos se pueden trabajar en pistas separadas y aplicar diferentes efectos a una pista a o a un trozo concreto.Permite también exportar el resultado en diferentes formatos de audio.
 
-Algunos ejemplos son: 
+Algunos ejemplos son:
 
 - Cubase
 - Pro Tools
@@ -295,7 +295,6 @@ Algunos ejemplos son:
 - Otros: Ardour, Cakewalk Sonar, FL Studio, lmms, DSP-Quattro, etc.
 
 ![](img/2020-03-31-11-04-44.png)
-
 
 # 6.TRANSMISIÓN A TRAVÉS DE INTERNET
 
@@ -309,13 +308,13 @@ Se financian a través de publicidad o mediante suscripción.
 
 ## 6.2. Podcast
 
-Se trata de un archivo de sonido digital creado para ser difundido por Internet. 
+Se trata de un archivo de sonido digital creado para ser difundido por Internet.
 Cualquiera puede escucharlo en el momento que desee desde un ordenador o dispositivo portátil.
 
 Recorrido de un podcast
 
 ![](img/2020-03-31-11-05-18.png)
- 
+
 1) Productor graba el archivo
 2) Comprime el archivo en un formato apto para el podcast
 3) Lo cuelga en Internet

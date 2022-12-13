@@ -1,4 +1,4 @@
-# Motor de corriente continua
+# Motor CC
 
 ## Resumen
 

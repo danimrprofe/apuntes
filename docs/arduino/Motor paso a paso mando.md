@@ -1,5 +1,4 @@
-
-# 24. Motor paso a paso con mando a distancia
+# Motor paso a paso mando
 
 ## Resumen
 

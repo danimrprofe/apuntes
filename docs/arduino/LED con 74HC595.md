@@ -1,4 +1,4 @@
-##  16. Ocho LED con 74HC595
+# LED con 74HC595
 
 ### Resumen
 
@@ -41,10 +41,10 @@ El chip también tiene un pin de salida activado (OE), que se utiliza para activ
 
 Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.
 
-Es probablemente más fácil poner el **chip 74HC595** en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa. 
+Es probablemente más fácil poner el **chip 74HC595** en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa.
 
 Pin 1 del chip es a la izquierda de esta muesca.
-Digital 12 del UNO va al pin #14 del registro de desplazamiento 
+Digital 12 del UNO va al pin #14 del registro de desplazamiento
 Digital 11 del UNO va al pin #12 del registro de desplazamiento
 
 9 digital a partir de la UNO va al pin #11 del registro de desplazamiento

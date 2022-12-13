@@ -1,10 +1,10 @@
 # Sensor luz (fotocelula)
 
-### Resumen
+## Resumen
 
 Vamos a aprender como medir la intensidad de la luz utilizando una entrada analógica. Con lo que aprenderemos, podremos posteriormente utilizar el nivel de luz para controlar el apagar un LED o encenderlo cuando no haya luz, por ejemplo.
 
-### Componentes necesarios:
+## Componentes necesarios:
 
 Los componentes que utilizaremos son los siguientes:
 
@@ -32,15 +32,15 @@ La resistencia y fotocélula junto se comportan como una sola. Cuando la luz es 
 
 Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la resistencia fija de 1 kΩ y es como si el recipiente estuviera girando hacia GND. Cargue el croquis dado en la siguiente sección y trate de cubrir la fotocélula con el dedo y, a continuación, sosténgalo cerca de una fuente de luz.
 
-### Conexión
+## Conexión
 
 ![](img/2022-10-20-22-13-48.png)
 
-### Diagrama de cableado
+## Diagrama de cableado
 
 ![](img/2022-10-20-22-14-10.png)
 
-### Código para leer valor de un LDR
+## Código para leer valor de un LDR
 
 ```c
 int sensorPin = A0; // select the input pin for LDR
@@ -56,7 +56,7 @@ void loop() {
 }
 ```
 
-### Código encender un LED cuando la luz es baja
+## Código encender un LED cuando la luz es baja
 
 Encender LED cuando la luz es baja y viceversa.
 
@@ -96,19 +96,19 @@ const int LDRPin = A0;   //Pin del LDR
 int V;
 int ilum;
 
-void setup() 
+void setup()
 {
    Serial.begin(115200);
 }
 
 void loop()
 {
-   V = analogRead(LDRPin);         
+   V = analogRead(LDRPin);
 
-   //ilum = ((long)(1024-V)*A*10)/((long)B*Rc*V);  //usar si LDR entre GND y A0 
+   //ilum = ((long)(1024-V)*A*10)/((long)B*Rc*V);  //usar si LDR entre GND y A0
    ilum = ((long)V*A*10)/((long)B*Rc*(1024-V));    //usar si LDR entre A0 y Vcc (como en el esquema anterior)
-  
-   Serial.println(ilum);   
+
+   Serial.println(ilum);
    delay(1000);
 }
 ```

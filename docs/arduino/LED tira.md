@@ -1,3 +1,5 @@
+# LED tira
+
 ## Introducción
 
 Los LEDs se están volviendo cada vez más populares como un medio para iluminar un espacio. Uno de los tipos de LEDs más nuevos y populares es el WS2812B. Estos LEDs ofrecen una serie de ventajas sobre los LEDs tradicionales, como la capacidad de cambiar de color y la capacidad de crear una gran variedad de efectos de iluminación.
@@ -46,9 +48,9 @@ void loop() {
 ## Parpadeo (blink)
 
 ```c  linenums="1" title="parpadeoLED.ino"
-void loop() { 
+void loop() {
   leds[0] = CRGB::Blue;
-  FastLED.show(); 
+  FastLED.show();
   delay(200);
   leds[0] = CRGB::Black;
   FastLED.show();
@@ -72,7 +74,7 @@ fill_solid(leds, NUM_LEDS, CRGB:Red);
 
 Arcoiris
 
-```c 
+```c
 fill_rainbow(leds, NUM_LEDS, 0,255 / NUM_LEDS);
 ```
 
@@ -82,7 +84,7 @@ fill_rainbow(leds, NUM_LEDS, 0,255 / NUM_LEDS);
 // chase forward
 void loop()
 {
-  for(int dot = 0;dot < NUM_LEDS; dot++) { 
+  for(int dot = 0;dot < NUM_LEDS; dot++) {
     leds[dot] = CRGB::Red;
     FastLED.show();
     leds[dot] = CRGB::Black;
@@ -93,7 +95,7 @@ void loop()
 // chase backward
 
 void loop()
-{ 
+{
   for(int dot=NUM_LEDS ; dot >=0 ; dot--) {
     leds[dot] = CRGB::Red;
     FastLED.show();
@@ -104,7 +106,7 @@ void loop()
 
 // chase both
 
-void loop() { 
+void loop() {
   for(int dot=(NUM_LEDS-1) ; dot >=0 ; dot--) {
     leds[dot] = CRGB::Green;
     FastLED.show();
@@ -112,7 +114,7 @@ void loop() {
     delay(300);
   }
 
-  for(int dot = 0;dot < NUM_LEDS; dot++) { 
+  for(int dot = 0;dot < NUM_LEDS; dot++) {
     leds[dot] = CRGB::Red;
     FastLED.show();
     leds[dot] = CRGB::Black;
@@ -126,7 +128,7 @@ void loop() {
 ```c
 void loop()
 {
-  for(int dot=(NUM_LEDS-1) ; dot >=0 ; dot--) { 
+  for(int dot=(NUM_LEDS-1) ; dot >=0 ; dot--) {
     leds[dot] = CRGB::HotPink;
     FastLED.show();
     delay(300);

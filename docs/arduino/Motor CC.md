@@ -1,4 +1,4 @@
-# 21. Motor de corriente continua
+# Motor de corriente continua
 
 ## Resumen
 

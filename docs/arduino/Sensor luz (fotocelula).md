@@ -1,4 +1,4 @@
-## 18. Fotocélula
+# Sensor luz (fotocelula)
 
 ### Resumen
 

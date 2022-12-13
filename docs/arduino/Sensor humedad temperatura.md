@@ -1,4 +1,4 @@
-# 11. Sensor de humedad y temperatura DHT11
+# Sensor humedad temperatura DHT11
 
 ## Resumen
 

@@ -1,4 +1,12 @@
-# Servo
+# Motor servo
+
+## Componentes necesarios
+
+| Cant | Elemento                                     |
+| ---- | -------------------------------------------- |
+| 1    | Placa Arduino UNO                            |
+| 1    | Servo (SG90)                                 |
+| 1    | M cables (cables de puente de macho a macho) |
 
 ## Resumen
 
@@ -16,14 +24,6 @@ El Servo tiene tres cables:
 - Rojo es el cable de corriente y debe conectarse al puerto de 5v
 - Naranja es el cable de señal y debe conectarse al puerto 9.
 
-Componentes necesarios:
-
-| Cant | Elemento                                     |
-| ---- | -------------------------------------------- |
-| 1    | Placa Arduino UNO                            |
-| 1    | Servo (SG90)                                 |
-| 1    | M cables (cables de puente de macho a macho) |
-
 ## Servomotor SG90
 
 | Parámetro                  | Valor                                                           |
@@ -36,6 +36,8 @@ Componentes necesarios:
 | Voltaje de funcionamiento: | 3.5 ~ 6V                                                        |
 | Dimensión:                 | 1.26 en x 1,18 en x 0,47 en (3,2 x 3 cm x 1.2 cm)               |
 | Peso:                      | 4,73 onzas (134)                                                |
+
+## Accesorios
 
 El servo viene con diferentes accesorios que se pueden utilizar para sujetarlo a otras piezas.
 
@@ -98,10 +100,10 @@ void loop() {
 
 El servomotor **MG995** es un servomotor digital de alta velocidad y alta precisión. El servomotor está construido con una carcasa de plástico reforzado y un eje de metal.
 
-El servomotor es compatible con la mayoría de los sistemas de control remoto de radiofrecuencia y puede ser controlado por un microcontrolador o un ordenador. El servomotor tiene una salida de 5 V y una corriente máxima de 2 A. El servomotor puede alcanzar una velocidad de giro de 0,12 segundos por vuelta.
+Es compatible con la mayoría de los sistemas de control remoto de radiofrecuencia y puede ser controlado por un microcontrolador o un ordenador. Tiene una salida de 5 V y una corriente máxima de 2 A. Puede alcanzar una velocidad de giro de 0,12 segundos por vuelta.
 
-Comparativa:
+## Comparativa
 
-- El SG90 es un microservo más pequeño y ligero que el MG995.
+- El **SG90** es un microservo más pequeño y ligero que el MG995.
 - También es más económico.
-- El SG90 tiene un rango de movimiento de aproximadamente 180 grados, mientras que el MG995 tiene un rango de movimiento de aproximadamente 360 grados.
+- El **SG90** tiene un rango de movimiento de aproximadamente 180 grados, mientras que el MG995 tiene un rango de movimiento de aproximadamente 360 grados.

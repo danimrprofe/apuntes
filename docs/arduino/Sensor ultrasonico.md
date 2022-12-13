@@ -1,4 +1,4 @@
-# 10. Sensor ultrasónico
+# Sensor ultrasonico
 
 El **sensor ultrasónico** es ideal para todo tipo de proyectos que necesitan medidas de distancia, evitando los obstáculos como ejemplos.
 

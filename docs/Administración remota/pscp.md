@@ -58,7 +58,7 @@ Opciones
 
 Se puede utilizar scp para copiar archivos de Windows a Linux
 
-```
+```bash
 pscp c:\path\to\file user@remote-server:/path/to/remote-folder
 ```
 
@@ -66,13 +66,15 @@ pscp c:\path\to\file user@remote-server:/path/to/remote-folder
 
 Igualmente se puede copiar archivos de Linux (FreeBSD o Max OS X) a Windows.
 
-    pscp user@remote-server:/path/to/remote-file c:\path\to\local-folder\
+```bash
+pscp user@remote-server:/path/to/remote-file c:\path\to\local-folder\
+```
 
 ## Conexión a través de NAT
 
 Cuando la máquina remota a la que queremos acceder está en otra red, y es una red NAT
 
-No podemos crear conexiones a una máquina de dentro de la red 
+No podemos crear conexiones a una máquina de dentro de la red
 El router no sabe a qué máquina enviar las conexiones que le llegan del exterior
 Necesitamos configurar el reenvío de puertos o port forwarding
 

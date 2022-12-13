@@ -1,10 +1,8 @@
 # Redes privadas virtuales
 
+Las VPN se utilizan para proporcionar una conexión segura a una red privada a través de una red pública, como Internet. Esto se logra mediante el uso de una serie de protocolos de seguridad para crear un "túnel" seguro entre dos puntos.
 
-Las VPN se utilizan para proporcionar una conexión segura a una red privada a través de una red pública, como Internet. Esto se logra mediante el uso de una serie de protocolos de seguridad para crear un "túnel" seguro entre dos puntos. Esta conexión segura ayuda a proteger la privacidad y seguridad de la información transmitida entre los puntos.
-
-
-
+Esta conexión segura ayuda a proteger la privacidad y seguridad de la información transmitida entre los puntos.
 
 ![](img/2022-12-11-22-16-18.png)
 

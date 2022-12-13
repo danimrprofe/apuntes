@@ -1,37 +1,5 @@
 # Proxy-caché squid
 
-- [Proxy-caché squid](#proxy-cach%C3%A9-squid)
-  - [1. Introducción](#1-introducci%C3%B3n)
-  - [2. Ventajas de disponer de un proxy](#2-ventajas-de-disponer-de-un-proxy)
-  - [3. Inconvenientes de la utilización de un Proxy](#3-inconvenientes-de-la-utilizaci%C3%B3n-de-un-proxy)
-  - [4. introducción a los servicios](#4-introducci%C3%B3n-a-los-servicios)
-  - [5. Scripts de servicios](#5-scripts-de-servicios)
-  - [6. Instalación del Proxy squid](#6-instalaci%C3%B3n-del-proxy-squid)
-  - [7. Arranque y parada del proxy squid](#7-arranque-y-parada-del-proxy-squid)
-  - [8. Comprobar el estado del servicio](#8-comprobar-el-estado-del-servicio)
-  - [9. Configuración básica del proxy squid](#9-configuraci%C3%B3n-b%C3%A1sica-del-proxy-squid)
-  - [10. Comprobar que el puerto esté abierto](#10-comprobar-que-el-puerto-est%C3%A9-abierto)
-  - [11. filtrar comentarios del archivo de configuración](#11-filtrar-comentarios-del-archivo-de-configuraci%C3%B3n)
-  - [12. Comprobación del archivo de configuración](#12-comprobaci%C3%B3n-del-archivo-de-configuraci%C3%B3n)
-  - [13. Crear listas de control y accesos](#13-crear-listas-de-control-y-accesos)
-    - [Listas de control ACL](#listas-de-control-acl)
-      - [Definir una ACL para toda la red](#definir-una-acl-para-toda-la-red)
-      - [Definir ACLs para cada aula](#definir-acls-para-cada-aula)
-    - [Accesos HTTP_ACCESS](#accesos-httpaccess)
-      - [Limitaciones remporales](#limitaciones-remporales)
-      - [Diferencias entre las sentencias acl y http_access](#diferencias-entre-las-sentencias-acl-y-httpaccess)
-  - [14. opciones de red](#14-opciones-de-red)
-    - [Configuración normal](#configuraci%C3%B3n-normal)
-    - [Configuración como proxy transparente (no lo haremos)](#configuraci%C3%B3n-como-proxy-transparente-no-lo-haremos)
-- [\](#)
-- [Script para prohibir la navegación de un aula \](#script-para-prohibir-la-navegaci%C3%B3n-de-un-aula)
-- [Se creará el rango del aula en /etc/squid/aulas-prohibidas.txt \](#se-crear%C3%A1-el-rango-del-aula-en-etcsquidaulas-prohibidastxt)
-- [Indicar el número de aula al ejecutar el script \](#indicar-el-n%C3%BAmero-de-aula-al-ejecutar-el-script)
-- [\](#1)
-- [Script para permitir la navegación de un aula \](#script-para-permitir-la-navegaci%C3%B3n-de-un-aula)
-- [Se eliminará el rango del aula de /etc/squid/aulas-prohibidas.txt \](#se-eliminar%C3%A1-el-rango-del-aula-de-etcsquidaulas-prohibidastxt)
-- [Indicar el número de aula al ejecutar el script \](#indicar-el-n%C3%BAmero-de-aula-al-ejecutar-el-script--1)
-
 ## 1. Introducción
 
 Un proxy de conexión a Internet es un servidor que hace de intermediario entre los PCs de la red y el router de conexión a Internet, de forma que cuando un usuario quiere acceder a Internet, su PC realiza la petición al servidor Proxy y es el Proxy quien realmente accede a Internet.
@@ -83,13 +51,13 @@ Los argumentos son autodescriptivos, y tienen permisos de ejecucción, siendo ro
 
 ## 6. Instalación del Proxy squid
 
-Linux dispone del proxy **squid**. Se trata de una aplicación de gran éxito que se lleva utilizando muchos años y dispone de cientos de posibilidades para personalizar su funcionamiento a nuestras necesidades. 
+Linux dispone del proxy **squid**. Se trata de una aplicación de gran éxito que se lleva utilizando muchos años y dispone de cientos de posibilidades para personalizar su funcionamiento a nuestras necesidades.
 
 Squid es un **proxy** de almacenamiento en caché para la Web que admite **HTTP, HTTPS, FTP** y más. Entre otras, tiene las siguientes funciones:
 
-- Reduce el ancho de banda y mejora los tiempos de respuesta al almacenar en caché 
-- Permite reutilizar las páginas web solicitadas con frecuencia. 
-- Permite crear controles de acceso 
+- Reduce el ancho de banda y mejora los tiempos de respuesta al almacenar en caché
+- Permite reutilizar las páginas web solicitadas con frecuencia.
+- Permite crear controles de acceso
 
 Para instalar la última versión de squid, podemos hacerlo con **apt** desde una consola de root:
 
@@ -120,7 +88,7 @@ sudo systemctl stop squid
 // Recargar configuración del servidor squid \
 sudo /etc/init.d/squid reload
 
-Para un arranque automático del servicio al iniciar el servidor, debemos crear los enlaces simbólicos correspondientes tal y como se indica en el apartado Trucos > Arranque automático de servicios al iniciar el sistema. 
+Para un arranque automático del servicio al iniciar el servidor, debemos crear los enlaces simbólicos correspondientes tal y como se indica en el apartado Trucos > Arranque automático de servicios al iniciar el sistema.
 
 ## 8. Comprobar el estado del servicio
 
@@ -144,7 +112,7 @@ Podemos comprobar que está escuchando en el puerto 3128, en este caso. El puert
 
 ## 9. Configuración básica del proxy squid
 
-El archivo de configuración del proxy es el archivo **/etc/squid/squid.conf**. Si observamos dicho archivo, veremos que es un archivo muy extenso en el que hay cientos de parámetros que podemos establecer, pero para una utilización básica, son unos pocos los parámetros que debemos configurar. 
+El archivo de configuración del proxy es el archivo **/etc/squid/squid.conf**. Si observamos dicho archivo, veremos que es un archivo muy extenso en el que hay cientos de parámetros que podemos establecer, pero para una utilización básica, son unos pocos los parámetros que debemos configurar.
 
 Antes de editar el archivo de configuración, es recomendable hacer una copia del archivo original y protegerlo contra escritura para tener el archivo original como referencia, y reutilizarlo si fuese necesario. Se puede hacer con los siguientes comandos:
 
@@ -193,7 +161,7 @@ En esta sección estableceremos los permisos de acceso, es decir, quien puede na
 
 ### Listas de control ACL
 
-Una** lista de control de acceso (acl) **se crea utilizando la palabra acl seguido del nombre que queramos dar a la lista y seguido de una condición que cumplirán los miembros de la lista. 
+Una** lista de control de acceso (acl) **se crea utilizando la palabra acl seguido del nombre que queramos dar a la lista y seguido de una condición que cumplirán los miembros de la lista.
 
 Entre las condiciones más utilizadas destacamos: src (IPs o URLs origen), dst (IPs o URLs destino), port (puertos) y proto (protocolos). Ejemplos:
 
@@ -239,7 +207,7 @@ http_access deny aula4 \
 http_access deny aula5
 ```
 
-Por defecto, squid viene configurado para actuar como **caché **de acceso a Internet, pero no tiene creadas listas de control de acceso. Si configuramos el navegador de Internet de los PCs cliente para que utilicen el Proxy, veremos que tenemos denegado el acceso al Proxy. 
+Por defecto, squid viene configurado para actuar como **caché **de acceso a Internet, pero no tiene creadas listas de control de acceso. Si configuramos el navegador de Internet de los PCs cliente para que utilicen el Proxy, veremos que tenemos denegado el acceso al Proxy.
 
 Para empezar a disfrutar del Proxy, tendremos que crear una lista de control de acceso con el rango de nuestra red y darle permiso. Si en nuestra red utilizamos el rango 10.0.0.0/8, deberíamos añadir en /etc/squid/squid.conf:
 
@@ -249,7 +217,7 @@ acl todos src 10.0.0.0/8 \
 http_access allow todos
 ```
 
-Cuando creamos ACLs, podemos sustituir el rango de IPs por el nombre de un** archivo externo**, y de esa manera podemos indicar el en archivo externo el rango o los rangos de IPs a los que queremos referirnos, sin necesidad de estar continuamente modificando el archivo squid.conf. 
+Cuando creamos ACLs, podemos sustituir el rango de IPs por el nombre de un** archivo externo**, y de esa manera podemos indicar el en archivo externo el rango o los rangos de IPs a los que queremos referirnos, sin necesidad de estar continuamente modificando el archivo squid.conf.
 
 Más adelante veremos un ejemplo cómo tener un archivo externo con las URLs prohibidas a las que no podrán navegar nuestros alumnos.
 
@@ -302,7 +270,7 @@ En esta sección estableceremos con el parámetro http_port, el puerto en el que
 
 ### Configuración como proxy transparente (no lo haremos)
 
-Squid puede trabajar en modo **transparente**. La ventaja de configurar squid en dicho modo de trabajo, es que no sería necesario configurar el navegador de los PCs clientes para trabajar con el proxy, sino que simplemente configuramos la puerta de enlace del PC cliente con la IP del servidor proxy. 
+Squid puede trabajar en modo **transparente**. La ventaja de configurar squid en dicho modo de trabajo, es que no sería necesario configurar el navegador de los PCs clientes para trabajar con el proxy, sino que simplemente configuramos la puerta de enlace del PC cliente con la IP del servidor proxy.
 
 Posteriormente tendremos que configurar el cortafuegos del servidor para que redirija las peticiones al puerto 80 hacia el puerto 3128 y así las reciba squid. Si deseamos poner el Proxy en modo transparente, deberemos indicarlo después del puerto. En tal caso, el parámetro http_port quedaría así:
 
@@ -315,14 +283,14 @@ http_proxy 3128 transparent
 //Redirigir las peticiones al puerto 80 hacia el puerto 3128. Ejecutar como root: \
 
 ```
-sudo iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 -j REDIRECT --to-port 3128 
+sudo iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 -j REDIRECT --to-port 3128
 ```
 
 El inconveniente de trabajar en modo transparente es que no sirve para el protocolo HTTPS.  \
 
 ## 15. Configuración del navegador de los PCs clientes, para que utilicen el Proxy
 
-Supongamos que nuestro servidor Proxy tiene la IP 192.168.1.239 y el servidor **squid** está escuchando en el puerto 3128 que es el puerto que utiliza por defecto. Con estos dos datos, la IP y el puerto, ya podemos configurar el navegador de Internet de los PC clientes. 
+Supongamos que nuestro servidor Proxy tiene la IP 192.168.1.239 y el servidor **squid** está escuchando en el puerto 3128 que es el puerto que utiliza por defecto. Con estos dos datos, la IP y el puerto, ya podemos configurar el navegador de Internet de los PC clientes.
 
 ### Mozilla Firefox
 
@@ -336,9 +304,9 @@ A partir de este momento, Firefox enviará a nuestro Proxy cualquier consulta we
 
 Para indicar a Internet Explorer que debe utilizar un Proxy para realizar conexiones, debemos ir a Herramientas > Opciones de Internet > Conexiones > Configuración de LAN y activar la casilla 'Usar un servidor proxy para la LAN'. En la casilla 'Dirección' pondremos la IP de nuestro Proxy y el 'Puerto' el puerto, tal y como se muestra en la siguiente ventana:
 
-## 16. Configuración del Proxy a través de un archivo de configuración (no lo haremos) 
+## 16. Configuración del Proxy a través de un archivo de configuración (no lo haremos)
 
-Para no tener que recordar la dirección del proxy y facilitar la tarea a la hora de configurar el proxy en los PCs clientes, existe la posibilidad de crear un archivo de configuración automática del proxy. Dicho archivo indicará al navegador, en función de la url a la que quiera conectarse, si debe hacerlo directamente o debe hacerlo a través del proxy. 
+Para no tener que recordar la dirección del proxy y facilitar la tarea a la hora de configurar el proxy en los PCs clientes, existe la posibilidad de crear un archivo de configuración automática del proxy. Dicho archivo indicará al navegador, en función de la url a la que quiera conectarse, si debe hacerlo directamente o debe hacerlo a través del proxy.
 
 En un direccionamiento como el que tenemos en nuestro centro, cuando accedemos a nuestra red 10.0.0.0/8 o a la dirección de localhost 127.0.0.1, la conexión debe ser directa, en cambio, cuando accedemos a cualquier otra dirección, deberá ser a través de proxy.
 
@@ -401,7 +369,7 @@ Por último, tan solo tenemos que recargar la configuración de squid para que e
 sudo /etc/init.d/squid reload
 ```
 
-## 19. Indicar URL prohibidas 
+## 19. Indicar URL prohibidas
 
 Podemos crear ACL para listas de direcciones.
 
@@ -410,7 +378,7 @@ acl urls-prohibidas dst .facebook.com .twitter.com \
 http_access deny urls-prohibidas
 ```
 
-Las direcciones que comienzan por un punto (.) hacen referencia a cualquier URL que acabe en esta cadena. 
+Las direcciones que comienzan por un punto (.) hacen referencia a cualquier URL que acabe en esta cadena.
 
 Ejemplo: `.facebook.com` afecta a `static.facebook.com`
 
@@ -453,7 +421,7 @@ Así, editando los archivos /etc/squid/aulas-prohibidas.txt y /etc/squid/urls-pr
 
 ## 20. SCRIPTS
 
-El inconveniente es que cada vez que queremos permitir o denegar el acceso a Internet a un aula, tenemos que andar editando el archivo aulas-prohibidas.txt lo que puede resultar un poco engorroso. 
+El inconveniente es que cada vez que queremos permitir o denegar el acceso a Internet a un aula, tenemos que andar editando el archivo aulas-prohibidas.txt lo que puede resultar un poco engorroso.
 
 Podemos crear dos scripts de unix que hagan el trabajo por nosotros y solamente tengamos que ejecutar los scripts indicando el número de aula que queremos prohibir o permitir:
 
@@ -476,7 +444,7 @@ echo Prohibir navegar aula $1, subred 10.0.$1.0/24 \
 echo 10.0.$1.0/24 >> /etc/squid/aulas-prohibidas.txt \
 /etc/init.d/squid reload \
 echo subredes denegadas: \
-cat /etc/squid/aulas-prohibidas.txt 
+cat /etc/squid/aulas-prohibidas.txt
 ```
 
 #### Script permitir aula
@@ -503,7 +471,7 @@ echo Subredes denegadas: \
 cat /etc/squid/aulas-prohibidas.txt
 ```
 
-Si deseamos que el aula 1 no navegue, deberíamos ejecutar: prohibir-aula 1. Si luego deseamos permitir que el aula 1 navegue, tendríamos que ejecutar: 
+Si deseamos que el aula 1 no navegue, deberíamos ejecutar: prohibir-aula 1. Si luego deseamos permitir que el aula 1 navegue, tendríamos que ejecutar:
 
     permitir-aula 1
 

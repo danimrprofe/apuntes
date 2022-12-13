@@ -1,43 +1,6 @@
 
 # Apuntes IPv6
 
-- [Apuntes IPv6](#apuntes-ipv6)
-  - [Direccionamiento IPv6](#direccionamiento-ipv6)
-  - [IPv4 vs IPv6](#ipv4-vs-ipv6)
-- [Notación IPv6](#notaci%C3%B3n-ipv6)
-- [Creación de una dirección IPv6](#creaci%C3%B3n-de-una-direcci%C3%B3n-ipv6)
-  - [Encabezado IPv4 vs IPv6](#encabezado-ipv4-vs-ipv6)
-    - [Ventajas del encabezado de IPv6](#ventajas-del-encabezado-de-ipv6)
-  - [Acortar direcciones](#acortar-direcciones)
-    - [Los ceros iniciales de los campos son opcionales](#los-ceros-iniciales-de-los-campos-son-opcionales)
-    - [Campos sucesivos de 0](#campos-sucesivos-de-0)
-  - [Ejemplos](#ejemplos)
-  - [Máscaras](#m%C3%A1scaras)
-  - [Tipos de direcciones IPv6](#tipos-de-direcciones-ipv6)
-    - [Espacio de direcciones](#espacio-de-direcciones)
-    - [Tipos de direcciones](#tipos-de-direcciones)
-    - [Formato de tipos de direcciones](#formato-de-tipos-de-direcciones)
-      - [Dirección de enlace local (link local)](#direcci%C3%B3n-de-enlace-local-link-local)
-        - [Comprobación de dirección de enlace local](#comprobaci%C3%B3n-de-direcci%C3%B3n-de-enlace-local)
-      - [Dirección unicast global](#direcci%C3%B3n-unicast-global)
-      - [Dirección unicast global (ejemplo de funcionamiento)](#direcci%C3%B3n-unicast-global-ejemplo-de-funcionamiento)
-- [Ejemplos de configuración](#ejemplos-de-configuraci%C3%B3n)
-      - [Direcciones anycast](#direcciones-anycast)
-      - [Direcciones multicast](#direcciones-multicast)
-      - [Direcciones especiales](#direcciones-especiales)
-        - [Dirección de loopback](#direcci%C3%B3n-de-loopback)
-        - [Dirección no especificada](#direcci%C3%B3n-no-especificada)
-  - [Transición de IPv4 a IPv6](#transici%C3%B3n-de-ipv4-a-ipv6)
-    - [Estrategias](#estrategias)
-    - [Dual stack](#dual-stack)
-    - [Tunneling](#tunneling)
-    - [Correspondencia direcciones especiales](#correspondencia-direcciones-especiales)
-  - [Loopback en IPv6](#loopback-en-ipv6)
-  - [Reparto de direcciones IPv6](#reparto-de-direcciones-ipv6)
-    - [Reparto entre las RIR](#reparto-entre-las-rir)
-  - [Cómo se reparten las direcciones IP](#c%C3%B3mo-se-reparten-las-direcciones-ip)
-- [Mapa geolocalizacion IPs](#mapa-geolocalizacion-ips)
-
 ## Direccionamiento IPv6
 
 - Direcciones IPv4: 32 bits divididos en cuatro campos de 8 bits separados por puntos.
@@ -100,7 +63,7 @@ Las direcciones en IPv6 se pueden simplificar.
 
 - Por ejemplo, el campo 09C0 es igual a 9C0 y el campo 0000 es igual a 0. De manera que
 - `2031:0000:130F:0000:0000:09C0:876A:130B` puede escribirse como - 2031:0:130F:0000:0000:9C0:876A:130B.
-  
+
 ### Campos sucesivos de 0
 
 - Los campos sucesivos de ceros pueden representarse con doble dos puntos "::". Sin - embargo, este método de abreviación sólo puede utilizarse una vez en una dirección. - Por ejemplo
@@ -188,7 +151,7 @@ Adaptador de Ethernet Ethernet:
    Dirección física. . . . . . . . . . . . . : D4-3D-7E-4E-67-DF
    DHCP habilitado . . . . . . . . . . . . . : no
    Configuración automática habilitada . . . : sí
-   
+
    Vínculo: dirección IPv6 local. . . : fe80::9100:9f39:2f3b:b256%13(Preferido)
    Dirección IPv4. . . . . . . . . . . . . . : 192.168.1.2(Preferido)
    Máscara de subred . . . . . . . . . . . . : 255.255.255.0
@@ -266,7 +229,7 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 
 ##### Dirección no especificada
 
-- En IPv4, una dirección IP compuesta únicamente por ceros tiene un significado - especial: hace referencia al mismo host y se utiliza cuando un dispositivo no conoce - su propia dirección. 
+- En IPv4, una dirección IP compuesta únicamente por ceros tiene un significado - especial: hace referencia al mismo host y se utiliza cuando un dispositivo no conoce - su propia dirección.
 - En IPv6, este concepto se formalizó y la dirección compuesta - únicamente por ceros (`0:0:0:0:0:0:0:0`) se denomina dirección "no especificada".
 - Normalmente se utiliza en el campo de origen de un datagrama que envía un dispositivo - que desea configurar su dirección IP.
 - Es posible aplicar compresión de direcciones en esta dirección, lo que la convierte - simplemente en "::".
@@ -380,7 +343,7 @@ Para acceder en el navegador al servidor http local, en el caso de IPv6 tendremo
 
 ### Reparto entre las RIR
 
-En IPv6 existen diferentes tipos de direcciones IP según el uso. La **IANA** se encarga de repartir las direcciones IP unicast globales entre los diferentes registros regionales o **RIR**. 
+En IPv6 existen diferentes tipos de direcciones IP según el uso. La **IANA** se encarga de repartir las direcciones IP unicast globales entre los diferentes registros regionales o **RIR**.
 
 En su página web tienen un esquema de la repartición de los diferentes bloques de direcciones IP a los RIR.
 

@@ -61,7 +61,7 @@ A continuació __ calibrar les quatre cantonades __ del llit amb extrusor posant
 
 ## Crear un model STL
 
-Per a imprimir un objecte amb una impressora 3d necessitem el seu disseny digital en un format d’ <span style="color:#448C79"> __arxiu anomenat stl__ </span>  , que és l’estàndard per a la impressió 3d.
+Per a imprimir un objecte amb una impressora 3d necessitem el seu disseny digital en un format d’ arxiu anomenat stl , que és l’estàndard per a la impressió 3d.
 
 ![](img%5CImpressora%203D11.png)
 

@@ -18,7 +18,7 @@ diferentes formas y tamaños adaptados a todo tipo de aplicaciones.
 
 #### Vástago
 
-El vástago es una varilla de metal que suele ser de acero. Un extremo se inserta en el mango y el otro tiene incorporada la punta para encajar en la cabeza del tornillo. 
+El vástago es una varilla de metal que suele ser de acero. Un extremo se inserta en el mango y el otro tiene incorporada la punta para encajar en la cabeza del tornillo.
 
 Por lo general se presenta desnudo, pero en
 aplicaciones de electricidad y electrónica es necesario que se encuentre aislado en toda su longitud.
@@ -33,21 +33,19 @@ El atornillado se hace en el sentido de
 las agujas del reloj, y el desatornillado en
 sentido contrario.
 
-
-
 #### Cabeza
 
 La cabeza es la parte que se apoya en la ranura del tornillo. Sobre ella se ejerce la fuerza para su atornillado o desatornillado y puede tener diferentes formas. A continuación se muestran algunas de ellas, pero
 no son las únicas.
 
-
 La cabeza del destornillador debe ser del mismo tipo y de la misma medida que la del tornillo sobre el que se va a trabajar. De lo contrario, además de no conseguir atornillar o desatornillar el tornillo, el destornillador y la cabeza se pueden deteriorar.
 
-### 1.1.2. Destornilladores eléctricos
+### Destornilladores eléctricos
 
 Son herramientas portátiles que permiten atornillar y desatornillar sin
 apenas esfuerzo. Funcionan mediante una batería o por conexión directa
-a la red de 230 Vca.
+a la red.
+
 Los hay de muchos tamaños y formas, pero todos tienen en común que
 las cabezas y los vástagos son intercambiables, pudiéndose utilizar para
 todo tipo de tornillos y aplicaciones.
@@ -63,16 +61,10 @@ gos con formas especiales.
 
 En el taller de reparaciones no debe faltar
 un utensilio denominado «magnetizador-
-desmagnetizador», que permite mag-
-netizar y desmagnetizar la punta de los
-destornilladores según las necesidades.
-Figura 1.8. Magnetizador-desmagnetizador de
-destornilladores (Wiha).
-Herramientas del taller de reparación
-9
-Figura 1.10. Destornillador de batería.
-Figura 1.11. Taladro destornillador.
-1.2. Herramientas tipo llave
+desmagnetizador», que permite magnetizar y desmagnetizar la punta de los destornilladores según las necesidades.
+
+## 1.2. Herramientas tipo llave
+
 Son herramientas portátiles y manuales utilizadas en técnicas de apriete.
 Pueden ser de diferentes tipos, como veremos a continuación.
 
@@ -94,7 +86,7 @@ Pueden ser fijas o ajustables.
 
 ### 1.2.3. Llaves de boca fija
 
-Existen muchas formas y tamaños, pero las más conocidas son las de tipo plano. 
+Existen muchas formas y tamaños, pero las más conocidas son las de tipo plano.
 
 Estas suelen disponer de dos bocas abiertas con medidas
 contiguas ubicadas en cada uno de los extremos de la llave.

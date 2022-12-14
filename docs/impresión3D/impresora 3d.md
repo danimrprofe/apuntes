@@ -4,15 +4,15 @@
 
 
 
-![](img%5CImpressora%203D2.png)
+![](img/Impressora%203D2.png)
 
 ## La Impresora que tenim és una Prusa I3 Pro W.
 
-![](img%5CImpressora%203D1.jpg)
+![](img/Impressora%203D1.jpg)
 
 El llit es pot escalfar fins 110ºC . Es pot canviar en la configuració. La temperatura s'haurà d'ajustar a el tipus de plàstic utilitzat, ja que cada un té una temperatura diferent de fusió.
 
-![](img%5CImpressora%203D3.jpg)
+![](img/Impressora%203D3.jpg)
 
 ## Tipus de filament
 
@@ -21,11 +21,11 @@ Sembla que suporta filaments PLA i ABS.
 - Diàmetre de __filament __ 1.75 mm,
 - Diàmetre de __boca __ 0.3 mm.
 
-![](img%5CImpressora%203D4.jpg)
+![](img/Impressora%203D4.jpg)
 
 ## Què accessoris tenim per treballar amb la impressora
 
-![](img%5CImpressora%203D5.jpg)
+![](img/Impressora%203D5.jpg)
 
 _Al departament tenim:_
 
@@ -37,7 +37,7 @@ Laca per fer a sobre del llit calenta parell que l'objecte adherència millor i 
 
 Una rasqueta per arrencar restes de plàstic del llit calent.
 
-![](img%5CImpressora%203D6.jpg)
+![](img/Impressora%203D6.jpg)
 
 ## Posada en marxa
 
@@ -63,7 +63,7 @@ A continuació __ calibrar les quatre cantonades __ del llit amb extrusor posant
 
 Per a imprimir un objecte amb una impressora 3d necessitem el seu disseny digital en un format d’ arxiu anomenat stl , que és l’estàndard per a la impressió 3d.
 
-![](img%5CImpressora%203D11.png)
+![](img/Impressora%203D11.png)
 
 La majoria de programes de disseny 3d permeten guardar o exportar els nostres dissenys al format .stl.
 
@@ -71,7 +71,7 @@ Podem fer els dissenys amb programes com ara  _[Tinkercad](https://www.tinkercad
 
 També podem descarregar models de  _[Thingiverse ](https://www.thingiverse.com/)_ o altres repositoris d’objectes online
 
-![](img%5CImpressora%203D12.png)
+![](img/Impressora%203D12.png)
 
 ## Laminar l’objecte
 
@@ -85,13 +85,13 @@ Jo he utilitzat el programari cura:
 
 [Pàgina web de cura](https://ultimaker.com/es/software/ultimaker-cura)
 
-![](img%5CImpressora%203D13.png)
+![](img/Impressora%203D13.png)
 
 ## Falda
 
 La falda ens netejarà l’extrusor al començar
 
-![](img%5CImpressora%203D15.png)
+![](img/Impressora%203D15.png)
 
 ## Opcions d'impressió
 
@@ -109,7 +109,7 @@ Ens caldrà un arxiu GCODE de la figura que volem imprimir.
 
 Per a això, l'haurem de haver passat de l'ordinador a la targeta SD, i després insertar la tarjeta SD darrere de la pantalla LCD a l'esquerra (costa una mica trobar-lo)
 
-![](img%5CImpressora%203D16.png)
+![](img/Impressora%203D16.png)
 
 ## Imprimir
 
@@ -119,7 +119,7 @@ Després que tot l'ajust estigui bé, anar a  __autohome__
 
 També podem preencalentir el plàstic prèviament sense començar a imprimir res. En aquest cas el llit i l'extrusor s'encalentiran fins assolir les temperatures fixades.
 
-![](img%5CImpressora%203D8.png)
+![](img/Impressora%203D8.png)
 
 ## Imprimir un model des de la tarjeta SD
 
@@ -131,16 +131,16 @@ En aquest moment, començaran a escalfar-se l’extrussor i el llit i, en arriba
 
 ## Components de la impressora i friquisme
 
-![](img%5CImpressora%203D21.jpg)
+![](img/Impressora%203D21.jpg)
 
 ## Extrusor complet amb ventilador lateral
 
 Vista de l’extrusor un cop desmuntat. A ma esquerra el  __ventilador __ que refreda la part del tub on va el filament abans d’entrar al heater. Això es fa per evitar que es fongui la part de filament superior i el filament es pugui empènyer amb més facilitat
 
-![](img%5CImpressora%203D22.jpg)
+![](img/Impressora%203D22.jpg)
 
 
-![](img%5CImpressora%203D23.jpg)
+![](img/Impressora%203D23.jpg)
 
 Entrada de filament
 
@@ -150,7 +150,7 @@ Aquí es pot veure un cop desmuntat  __l’__  __extrusor__  __ __ (va fixat amb
 
 El mecanisme dret permet amb un pern alliberar la roda dentada per a poder ficar el filament a ma fent pressió
 
-![](img%5CImpressora%203D24.jpg)
+![](img/Impressora%203D24.jpg)
 
 Encalentidor o heater
 
@@ -164,21 +164,21 @@ El cable vermell duu corrent per encalentir, i el blanc el termistor que mesura 
 
 Rosca per fixar a la base
 
-![](img%5CImpressora%203D25.jpg)
+![](img/Impressora%203D25.jpg)
 
-![](img%5CImpressora%203D26.jpg)
+![](img/Impressora%203D26.jpg)
 
 Boquilla o nozzer
 
 Entrada de filament
 
-![](img%5CImpressora%203D27.png)
+![](img/Impressora%203D27.png)
 
 cables de corrent per encalentir
 
 Encalentidor o heater
 
-![](img%5CImpressora%203D28.jpg)
+![](img/Impressora%203D28.jpg)
 
 ## Problemes: obstrucció
 
@@ -192,7 +192,7 @@ Amb un cable elèctric rigid vam aconseguir fer pressió i que sortís per l’a
 
 La impressora té dos sensors de temperatura ( __termistors__ ). Aquests varien la seva resistència en funció de la temperatura.
 
-![](img%5CImpressora%203D29.jpg)
+![](img/Impressora%203D29.jpg)
 
 Les dues temperatures que ens interessen són la del heater i la del hot bed.
 

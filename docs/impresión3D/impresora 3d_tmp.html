@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>impresora 3d.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="la-impressora-3d">La impressora 3D</h1>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D2.png" alt=""></p>
+<h2 id="la-impresora-que-tenim-%C3%A9s-una-prusa-i3-pro-w">La Impresora que tenim és una Prusa I3 Pro W.</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D1.jpg" alt=""></p>
+<p>El llit es pot escalfar fins 110ºC . Es pot canviar en la configuració. La temperatura s'haurà d'ajustar a el tipus de plàstic utilitzat, ja que cada un té una temperatura diferent de fusió.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D3.jpg" alt=""></p>
+<h2 id="tipus-de-filament">Tipus de filament</h2>
+<p>Sembla que suporta filaments PLA i ABS.</p>
+<ul>
+<li>Diàmetre de __filament __ 1.75 mm,</li>
+<li>Diàmetre de __boca __ 0.3 mm.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D4.jpg" alt=""></p>
+<h2 id="qu%C3%A8-accessoris-tenim-per-treballar-amb-la-impressora">Què accessoris tenim per treballar amb la impressora</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D5.jpg" alt=""></p>
+<p><em>Al departament tenim:</em></p>
+<p>Un lector de targetes USB per a targetes SD</p>
+<p>Dues targetes SD, de 256 MB i de 8 GB. La de 8 GB no m'ha funcionat, l'altra si. La de 256 ja venia amb diversos arxius d'altres anys.</p>
+<p>Laca per fer a sobre del llit calenta parell que l'objecte adherència millor i no es deixi anar a meitat de la impressió</p>
+<p>Una rasqueta per arrencar restes de plàstic del llit calent.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D6.jpg" alt=""></p>
+<h2 id="posada-en-marxa">Posada en marxa</h2>
+<p>A la dreta de la màquina hi ha un  <strong>botó d'encesa</strong>  per posar en marxa la impressora.</p>
+<p>Per manejar-la, hi ha un panell LCD amb una rodeta per desplaçar-nos per les diferents opcions i prémer-la quan vulguem entrar en una o acceptar.</p>
+<p>El primer que he fet és provar que funciona, i per això he anat a prepari&gt; autohome, i el extrusor s'ha col·locat en el punt inicial.</p>
+<h2 id="calibraci%C3%B3">Calibració</h2>
+<p>Necessitem calibrar la impresora abans de començar a imprimir per primer cop.</p>
+<p>Aturar els  __motors stepper __ al menú LCD</p>
+<p>En primer lloc cal  <strong>calibrar l'eix Z</strong>  i mirar que les dues barres estan a la mateixa altura amb un  <strong>peu de rei</strong></p>
+<p>A continuació __ calibrar les quatre cantonades __ del llit amb extrusor posant el foli al mig i girant les claus fins que fregui però passi el paper.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/2022-12-13-18-59-07.png" alt=""></p>
+<h2 id="crear-un-model-stl">Crear un model STL</h2>
+<p>Per a imprimir un objecte amb una impressora 3d necessitem el seu disseny digital en un format d’ arxiu anomenat stl , que és l’estàndard per a la impressió 3d.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D11.png" alt=""></p>
+<p>La majoria de programes de disseny 3d permeten guardar o exportar els nostres dissenys al format .stl.</p>
+<p>Podem fer els dissenys amb programes com ara  <em><a href="https://www.tinkercad.com/">Tinkercad</a></em> .</p>
+<p>També podem descarregar models de  <em><a href="https://www.thingiverse.com/">Thingiverse </a></em> o altres repositoris d’objectes online</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D12.png" alt=""></p>
+<h2 id="laminar-lobjecte">Laminar l’objecte</h2>
+<p>Carreguem l’arxiu de l’objecte (STL) que volem imprimir en un programa anomenat laminador o slicer</p>
+<p>El laminador dividirà l’objecte en fines capes horitzontals segons uns paràmetres, que defineixen les característiques físiques i d’impressió de cada una.</p>
+<p>El resultat de tot aquest procés de laminat és un arxiu tipus g-code que conté tot un seguit d’ordres que la impressora 3d és capaç d’executar a fi d’imprimir el nostre objecte</p>
+<p>Jo he utilitzat el programari cura:</p>
+<p><a href="https://ultimaker.com/es/software/ultimaker-cura">Pàgina web de cura</a></p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D13.png" alt=""></p>
+<h2 id="falda">Falda</h2>
+<p>La falda ens netejarà l’extrusor al començar</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D15.png" alt=""></p>
+<h2 id="opcions-dimpressi%C3%B3">Opcions d'impressió</h2>
+<p>Opcions més habituals a seleccionar per imprimir:</p>
+<ul>
+<li>0.2 mm de definició</li>
+<li>Parets: 3 i 1.2 mm (3 parets de 0.4)</li>
+<li>Velocitat d’impressió: 40 mm/s</li>
+<li>Farcit: 20%</li>
+<li>Marcar generar soporte</li>
+</ul>
+<h2 id="carregar-el-model-a-imprimir">Carregar el model a imprimir</h2>
+<p>Ens caldrà un arxiu GCODE de la figura que volem imprimir.</p>
+<p>Per a això, l'haurem de haver passat de l'ordinador a la targeta SD, i després insertar la tarjeta SD darrere de la pantalla LCD a l'esquerra (costa una mica trobar-lo)</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D16.png" alt=""></p>
+<h2 id="imprimir">Imprimir</h2>
+<p>Després que tot l'ajust estigui bé, anar a  <strong>autohome</strong></p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/2022-12-13-19-00-25.png" alt=""></p>
+<p>També podem preencalentir el plàstic prèviament sense començar a imprimir res. En aquest cas el llit i l'extrusor s'encalentiran fins assolir les temperatures fixades.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D8.png" alt=""></p>
+<h2 id="imprimir-un-model-des-de-la-tarjeta-sd">Imprimir un model des de la tarjeta SD</h2>
+<p>Trieu el fitxer de la targeta SD per començar a imprimir.Triam el fitxer <strong>gcode</strong> que hem carregat a la tarjeta SD des de l’ordinador</p>
+<p>En aquest moment, començaran a escalfar-se l’extrussor i el llit i, en arribar a la temperatura dessitjada, començarà la impressió.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/2022-12-13-19-02-28.png" alt=""></p>
+<h2 id="components-de-la-impressora-i-friquisme">Components de la impressora i friquisme</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D21.jpg" alt=""></p>
+<h2 id="extrusor-complet-amb-ventilador-lateral">Extrusor complet amb ventilador lateral</h2>
+<p>Vista de l’extrusor un cop desmuntat. A ma esquerra el  __ventilador __ que refreda la part del tub on va el filament abans d’entrar al heater. Això es fa per evitar que es fongui la part de filament superior i el filament es pugui empènyer amb més facilitat</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D22.jpg" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D23.jpg" alt=""></p>
+<p>Entrada de filament</p>
+<h2 id="vista-del-mecanisme-de-extrusi%C3%B3">Vista del mecanisme de extrusió</h2>
+<p>Aquí es pot veure un cop desmuntat  <strong>l’</strong>  <strong>extrusor</strong>  __ __ (va fixat amb un pern per sota), per on entra el filament, les rodes dentades el fiquen cap a dins.</p>
+<p>El mecanisme dret permet amb un pern alliberar la roda dentada per a poder ficar el filament a ma fent pressió</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D24.jpg" alt=""></p>
+<p>Encalentidor o heater</p>
+<p>Boquilla o nozzer</p>
+<h2 id="encalentidor-i-boquilla">Encalentidor i boquilla</h2>
+<p>L’entrada té un interior de tefló, i l’encalentidor encalenteix el tros de filament abans de l’entrada a la  <strong>boquilla extrusora</strong>  (nozzle).</p>
+<p>El cable vermell duu corrent per encalentir, i el blanc el termistor que mesura la temperatura.</p>
+<p>Rosca per fixar a la base</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D25.jpg" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D26.jpg" alt=""></p>
+<p>Boquilla o nozzer</p>
+<p>Entrada de filament</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D27.png" alt=""></p>
+<p>cables de corrent per encalentir</p>
+<p>Encalentidor o heater</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D28.jpg" alt=""></p>
+<h2 id="problemes-obstrucci%C3%B3">Problemes: obstrucció</h2>
+<p>Per tal de retirar material, vam haver de treure la peça i posar la impresora en mode  <strong>preheat ABS</strong> , el que fa encalentir el heater a 240º.</p>
+<p>Si no llevem la ventilació, la part que no està coberta pel heater es refredaria i el plàstic interior obstruit no arribaria a fondre.</p>
+<p>Amb un cable elèctric rigid vam aconseguir fer pressió i que sortís per l’altre banda tot el plàstic que hi havia.</p>
+<h2 id="problemes-termistor">Problemes: termistor</h2>
+<p>La impressora té dos sensors de temperatura ( <strong>termistors</strong> ). Aquests varien la seva resistència en funció de la temperatura.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/impresión3D/img/Impressora 3D29.jpg" alt=""></p>
+<p>Les dues temperatures que ens interessen són la del heater i la del hot bed.</p>
+<ul>
+<li>Un termistor va aferrat sota el llit calent amb cinta i en mesura la temperatura.</li>
+<li>L’altre va enganxar al heater i també en mesura la temperatura.</li>
+</ul>
+<p>Si qualsevol dels termistors detecta una temperatura anormalment alta, l’impressora donarà un error en pantalla per a evitar accidents.</p>
+<h2 id="biblioteques-dobjectes">Biblioteques d’objectes</h2>
+<p>Es poden descarregar models ja fets d’internet de diverses fonts:</p>
+<ul>
+<li>Thingiverse:  <em><a href="http://www.thingiverse.com/">http://www.thingiverse.com/</a></em></li>
+<li>Youmagine: <em><a href="https://www.youmagine.com/"> https://www.youmagine.com/</a></em></li>
+<li>Instructables: http://www.instructables.com/</li>
+<li>Myminifactory: http://www.miminifactory.com/</li>
+<li>Shapeways: https://shapeways.com/</li>
+<li>3DHubs: https://www.3dhubs.com/</li>
+<li>http://www.123dapp.com/Gallery/content/all</li>
+<li>http://apps.microsoft.com/windows/en-us/app/3d-builder/75f3f766-13b3-45e9-a62f-29590d5781f2</li>
+<li>https://3dwarehouse.sketchup.com/?redirect=1</li>
+</ul>
+<h2 id="disseny-dobjectes">Disseny d’objectes</h2>
+<p><em><a href="https://www.blender.org/">Blender</a></em> , programa professional molt complet. També permet crear animacions amb els objectes dissenyats. Tutorial.</p>
+<p><em><a href="https://www.autodesk.com/solutions/123d-apps">Autodesk 123D</a></em></p>
+<p><em><a href="https://www.sketchup.com/">SketchUp </a></em> programa pensat per ser utilitzat de forma intuïtiva i flexible, fent que sigui fàcil el seu aprenentatge. Tutorial.</p>
+<p><em><a href="https://www.tinkercad.com/">Tinkercad</a></em>  programa gratuït en línia creat per Autodesk. Materials de formació a Ateneu.</p>
+<h2 id="crear-un-modelo-3d-desde-una-imagen-vectorial-e-imprimirlo">Crear un modelo 3D desde una imagen vectorial e imprimirlo</h2>
+<p>Podemos crear una imagen .SVG, o directamente importar una a tinkercad.</p>
+<p>Dentro de tinkercad,podremos cambiar el tamaño de los modelos importados, recolocarlos, etc.
+Tendremos que exportar el archivo a un formato .STL que pasarle al programa Cura
+Por último, en cura, generaremos un archivo .Gcode, que será el que pasemos a la impresora utilizando la tarjeta de memoria</p>
+
+</body>
+</html>

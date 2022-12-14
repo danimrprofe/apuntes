@@ -63,6 +63,8 @@ En el taller de reparaciones no debe faltar
 un utensilio denominado «magnetizador-
 desmagnetizador», que permite magnetizar y desmagnetizar la punta de los destornilladores según las necesidades.
 
+![](img/2022-12-14-15-23-25.png)
+
 ## 1.2. Herramientas tipo llave
 
 Son herramientas portátiles y manuales utilizadas en técnicas de apriete.
@@ -489,7 +491,7 @@ El taladro puede ser de columna o de mano.
 también denominado «de sobremesa», es ideal para ser instalado de forma fija en el taller del reparador. Dispone de una mesa regulable en altura, para colocar y sujetar la pieza que se va a taladrar. En muchas ocasiones viene acompañado de un pequeño tornillo de banco. Existen taladros de sobremesa de reducido tamaño,
 ideales para la fabricación de circuitos impresos en electrónica.
 
-![](img/2022-12-05-16-55-08.png)
+![](img/2022-12-14-15-24-49.png)
 
 Figura 1.51. Taladro de sobremesa de propósito general (Shop Fox).
 Motor eléctrico

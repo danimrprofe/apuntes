@@ -2,6 +2,8 @@
 
 ¿Qué pasaría si pudiéramos crear activos digitales similares a Bitcoin, pero con un identificador único en cada unidad? Esto haría que cada uno fuera único, lo que significa que no sería fungible. Esta característica es lo que define a un NFT, que no puede ser replicado o transferido sin el permiso del propietario, ni siquiera por el creador.
 
+## Aplicaciones
+
 Esto ha abierto la puerta a nuevas formas de usar los activos digitales, permitiendo a los usuarios crear y vender obras de arte digital únicas, almacenar recuerdos exclusivos como videos y fotos, e incluso utilizarlo como una forma de inversión, como Bitcoin.
 
 Esto significa que si **posees un NFT**, tienes un activo único que puedes vender a alguien más si deseas obtener beneficios, al igual que ofrece un  mayor nivel de flexibilidad a los creadores para establecer sus propias reglas sobre cómo se pueden transferir los activos.
@@ -22,7 +24,7 @@ Un mercado de NFT (marketplace) es una plataforma en la que puedes comprar y ven
 
 El valor de los coleccionables digitales es igual al de cualquier otro artículo preciado, y se asigna por la gente que lo considera **valioso**. Esto se debe a que **el valor es una creencia compartida**, y no importa si se trata de dinero fíat, metales preciosos o un vehículo, todos estos objetos adquieren su valor porque la gente cree que lo tienen. Por lo tanto, los coleccionables digitales no son diferentes.
 
-## Walletes
+## Wallets
 
 Una cartera (**wallet**) es la herramienta imprescindible para poder conectar al marketplace (opensea), mintear un trabajo, pagar comisiones, recibir dinero, etc.
 

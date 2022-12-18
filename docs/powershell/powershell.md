@@ -35,3 +35,9 @@ Configurar direcciones DNS
 Set-dnsclientserveraddress -interfaceindex 6 –serveraddresses
 ("192.168.0.1","192.168.0.2")
 
+
+## Quitar espacios en nombres de carpetas y archivosa
+
+```ps
+Get-ChildItem . -Recurse | Where-Object { $_.Name.Contains(' ') } | Rename-Item -NewName { $_.Name -replace ' ', '_' }
+```

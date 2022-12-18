@@ -1,49 +1,53 @@
-# Conectar
+# Azure
 
-Hemos creado una cuenta con suscricion gratuita para probar las funcionalidades de azure.
+Azure es una plataforma de computación en la nube de Microsoft que ofrece una variedad de servicios de computación, almacenamiento, redes, análisis, Inteligencia Artificial y más para ayudar a las empresas a mejorar su productividad y competitividad. Azure ofrece escalabilidad, fiabilidad y seguridad, así como soporte para una variedad de lenguajes de programación y herramientas de desarrollo.
+
+## Conectar
+
+Hemos creado una cuenta con **suscripción gratuita** para probar las funcionalidades de azure.
 
 Para acceder y logearse podemos hacerlo a traves del portal:
 
 https://portal.azure.com/
 
-
-# Grupos de recursos
+## Grupos de recursos
 
 Todos los recursos que se creen deben ir dentro de un **grupo de recursos**.
 
 Es decir, aunque solo creamos crear una maquina virtual, debemos crear un grupo de recursos en el que estara situada.
 
-Lo primero que nos preguntara al crear un recuroso cualquiera sera en que grupo queremos crearlo.
+Lo primero que nos preguntara al crear un recurso cualquiera sera en que **grupo** queremos crearlo.
 
-# Crear una infraestructura
+## Crear una infraestructura
 
-Podemos crear toda nuestra infraestructura a base de clicks pero es un poco tedioso. 
+Podemos crear toda nuestra **infraestructura** a base de clicks pero es un poco tedioso.
+
 Vamos a crear toda la infraestructura automáticamente. Podemos hacerlo de varias formas:
 
 1. A base de shell puro y duro
 2. Automatización tipo terraform.
 3. Otros
 
-# Creación manual
+## Creación manual
 
 Azure nos permite crear una infraestructura de contenedores, por lo que tenemos que crear un grupo de recursos
-al que vamos a llamar `contenedores`. 
+al que vamos a llamar `contenedores`.
 
 Dentro de él vamos a meter todas las `instancias de contenedor` que queramos.
 
 En este caso vamos a crear un servicio de kubernetes utilizando `Azure Kubernetes Service` o AKS.
 
-## Detalles del proyecto
+### Detalles del proyecto
 
 Creamos un servicio AKS, para lo cual vamos a crear un grupo de recursos nuevo, llamado "clusterk8s"
 
-## Detalles del cluster
+### Detalles del cluster
 
 * Nos vamos a crear un cluster:
   * lo llamamos `cluster-k8s-pruebas`.
   * Versión de kubernetes 1.12.7 región North Europe
 
-# Pool de nodos
+## Pool de nodos
 
 Aquí definimos el número de nodos que vamos a meter. Nos recomiendan:
 
@@ -53,7 +57,7 @@ Aquí definimos el número de nodos que vamos a meter. Nos recomiendan:
 Nos permiten elegir el tipo de máquina, por lo que vamos a pillar una sencillita, además de que
 nos consumirá menos dinero.
 
-# Elegir maquinas para el cluster
+## Elegir maquinas para el cluster
 
 He probado con maquinas de 2 GB y un vCore pero me dice que no valen para montar un AKS.
 
@@ -65,13 +69,13 @@ Me voy a coger una máquina **A1_v2** que, por unos 30 euros mes, me da:
 
 Todos los nodos que cree van a ser iguales, por lo que conviene atinar bien o deberemos crear el AKS de nuevo.
 
-# Limitaciones de cuenta
+## Limitaciones de cuenta
 
 - Una vez definidas las maquinas voy a decirle cuantos nodos quiero
-- Le indicamos que nos meta 2 nodos en el cluster. 
+- Le indicamos que nos meta 2 nodos en el cluster.
 - La cuenta gratuita no me deja crear más nodos.
 
-# Escalado
+## Escalado
 
 A continuación nos va a pedir opciones de escalado que le queremos meter. Nos permite meter:
 
@@ -80,24 +84,24 @@ A continuación nos va a pedir opciones de escalado que le queremos meter. Nos p
 
 De momento pasamos olímpicamente porque no vamos a implantar escalado.
 
-# Servicio
+## Servicio
 
 Nos pedirá crear un  `service principal`
 
-# Networking
+## Networking
 
 TODO
 
-# Monitorización
+## Monitorización
 
 Por lo que dice, **AKS** nos va a facilitar métricas ed CPU y memoria por cada nodo.
 
 También podemos meter más cosas de monitorización, pero nos avisan de que nos van a cobrar.
 Le decimos que gracias pero que no queremos por ahora extra monitorización.
 
-# Levantando el AKS
+## Levantando el AKS
 
-Por último, nos dejará comprobar la configuración para levantar el sistema. 
+Por último, nos dejará comprobar la configuración para levantar el sistema.
 
 Me permite guardar como template la configuración que he hecho en varios sistemas, entre ellos:
 
@@ -107,7 +111,7 @@ Me permite guardar como template la configuración que he hecho en varios sistem
 
 Con lo cual, si tenemos que volver a crear el mismo chiringuito, no nos hará falta hacerlo a mano paso por paso.
 
-# Levantando el cluster
+## Levantando el cluster
 
 Lo que más tarda es en levantar el **cluster**, puesto que me tiene que arrancar las 2 MV.
 
@@ -115,7 +119,7 @@ Por lo que veo, me ha creado un **deployment** llamado:
 
     Deployment name:microsoft.aks-20190429114347
 
-# Resultado del despliegue
+## Resultado del despliegue
 
 Al cabo de 8 minutazos:
 
@@ -130,7 +134,7 @@ Duration:8 minutes 43 seconds
 Correlation ID:9df64479-3390-4b1f-b1bb-ee5be5158c97
 ```
 
-# Deployment center
+## Deployment center
 
 Bueno, pues tengo mi cluster creado con mis 2 maquinitas, y montado el AKS de kubernetes encima. De momento
 se quedan esperando a que despliegue algo encima.
@@ -138,7 +142,7 @@ se quedan esperando a que despliegue algo encima.
 Me voy a **deployment center** para linkar a un proyecto de **GitHub**. He cogido un repo de un proyecto que tengo de pruebas
 basado en Node.js y mongoDB, que ya tenía dockerizado.
 
-# DevOps project
+## DevOps project
 
 Me obliga a crear un **DevOps project** porque sí, al que voy a llamar `danimrprofe`. Podré consultar mis proyectos en:
 

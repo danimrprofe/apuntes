@@ -8,25 +8,25 @@
   * Gama de consumibles de información amplia y para todas las necesidades del usuario\.
   * Consumibles de diferentes tamaños, capacidades y prestaciones\.
 
-![](img/15%20Elementos%20consumibles22.jpg)
+![](img/15_Elementos_consumibles22.jpg)
 
-![](img/15%20Elementos%20consumibles23.jpg)
+![](img/15_Elementos_consumibles23.jpg)
 
 * Soportes magnéticos
   * Se utilizan para almacenar datos
   * Hay distintos tipos de consumibles, según tamaños, capacidades y prestaciones
 
-![](img/15%20Elementos%20consumibles24.png)
+![](img/15_Elementos_consumibles24.png)
 
 * __Soportes ópticos__
   * Se utilizan para almacenar datos
   * Hay distintos tipos de consumibles, según tamaños, capacidades y prestaciones
 
-![](img/15%20Elementos%20consumibles25.png)
+![](img/15_Elementos_consumibles25.png)
 
-![](img/15%20Elementos%20consumibles26.png)
+![](img/15_Elementos_consumibles26.png)
 
-![](img/15%20Elementos%20consumibles27.jpg)
+![](img/15_Elementos_consumibles27.jpg)
 
 ## 2. Medidas de conservación y reciclaje de consumibles
 
@@ -46,7 +46,7 @@
   * Limpiar un disco con productos inadecuados puede acabar dejándolo inutilizable\.
 * Debemos hacer uso de productos especiales, indicados para limpieza de CD/DVD o\. en caso de no disponer de ellos, utilizaremos un paño ligeramente humedecido con un poco de jabón\. Nunca con productos abrasivos\.
 
-![](img/15%20Elementos%20consumibles28.jpg)
+![](img/15_Elementos_consumibles28.jpg)
 
 * __Discos magnéticos__
   * No son tan frágiles
@@ -66,4 +66,4 @@
   * Disco interior no es reciclable directamente
     * Llevarlo a un punto de recogida selectiva o a un  _Punto Limpio_ \.
 
-![](img/15%20Elementos%20consumibles29.jpg)
+![](img/15_Elementos_consumibles29.jpg)

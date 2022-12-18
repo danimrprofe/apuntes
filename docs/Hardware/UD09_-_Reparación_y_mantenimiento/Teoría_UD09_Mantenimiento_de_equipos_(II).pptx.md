@@ -1,4 +1,4 @@
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%290.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%290.jpg)
 
 ## Unidad 9: Mantenimiento de equipos (2)
 
@@ -26,13 +26,13 @@ __Problemas de seguridad__ , al poder hacerse públicos datos confidenciales\.
 
 __Pérdida en rendimiento y productividad__  por reinicios o bloqueos\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%291.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%291.jpg)
 
 <span style="color:#000000"> __La clave del correcto funcionamiento__ </span>
 
 <span style="color:#000000"> __de un SI es su mantenimiento\.__ </span>
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%292.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%292.jpg)
 
 * _En empresas donde la dotación informática es importante_
 * Servicio de mantenimiento a través de
@@ -42,11 +42,11 @@ __Pérdida en rendimiento y productividad__  por reinicios o bloqueos\.
 * Filiales repartidas por toda la geografía
 * El mantenimiento se centraliza:  __CAU__  \(Centro de Atención al Usuario\)\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%293.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%293.png)
 
 Áreas de mantenimiento
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%294.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%294.jpg)
 
 * _1\) Mantenimiento Hardware_  _\. _
 * Se encarga de alertar de problemas físicos
@@ -68,7 +68,7 @@ __Pérdida en rendimiento y productividad__  por reinicios o bloqueos\.
 
 Áreas de mantenimiento
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%295.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%295.jpg)
 
 * _2\) Mantenimiento Software_  _\. _
 * Alertar de problemas producidos en aplicaciones o datos
@@ -90,7 +90,7 @@ __Pérdida en rendimiento y productividad__  por reinicios o bloqueos\.
 
 Áreas de mantenimiento
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%296.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%296.jpg)
 
 * _3\) Documentación_
 * Actualizar información existente del conjunto informático de la empresa\.
@@ -133,7 +133,7 @@ Sistemas indicadores de temperatura
 
 Desfragmentador de disco \(comprobar utilización del disco\)
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%297.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%297.jpg)
 
 * Áreas de mantenimiento:
   * Hardware
@@ -153,7 +153,7 @@ Tareas auxiliares de mantenimiento
     * Realizar  __labores que reduzcan el fallo __
     * __Mejorar las condiciones __ de todos los componentes  __hardware__ \.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%298.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%298.jpg)
 
 * Áreas de mantenimiento:
   * Hardware
@@ -176,7 +176,7 @@ Tareas auxiliares de mantenimiento
   * Dar un período de vida útil a los componentes y sustituirlos cuando se llegue a ella\.
   * Por recomendación de los mantenimientos predictivos o preventivos\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%299.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%299.jpg)
 
 * Áreas de mantenimiento:
   * Hardware
@@ -217,7 +217,7 @@ Labores software
   * Realizar copias de seguridad\.
   * Reinstalación sistema operativo\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2910.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2910.jpg)
 
 Labores hardware
 
@@ -231,7 +231,7 @@ Labores hardware
   * Inspeccionar cables y conexiones, buscar cables quemados, sueltos, maltratados o simplemente dañados\.
   * Ajustar conectores de alimentación, buses IDE y SATA, conectores de frontal \(encendido, USB, audio, etc\.\)\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2911.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2911.jpg)
 
 Labores hardware
 
@@ -246,7 +246,7 @@ Labores hardware
   * Sólo en limpiar con mucho cuidado la parte exterior\.
   * También se deben ajustar bien sus conectores tanto el de alimentación como el de datos\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2912.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2912.jpg)
 
 Labores hardware
 
@@ -263,9 +263,9 @@ Labores hardware
     * Realizando limpieza o lubricado\.
   * Verificación de conectores \(pines doblados, aislantes deteriorados\)\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2913.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2913.png)
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2914.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2914.png)
 
 Labores hardware
 
@@ -286,9 +286,9 @@ Labores hardware
   * Evitar productos con disolventes, alcohol u componentes abrasivos
     * Deterioran los componentes
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2915.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2915.png)
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2916.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2916.png)
 
 ## Técnicas de mantenimiento correctivo
 
@@ -306,7 +306,7 @@ Labores hardware
   * El mantenimiento predictivo así lo aconseja \(algo nos avisa de un futuro fallo en el hardware\)
   * Cuando el mantenimiento preventivo ya no es posible \(ya se ha dado la incidencia\)
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2917.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2917.png)
 
 * _Corrección _  <span style="color:#FF0000"> __a plazo fijo__ </span>  _:_  _ _
   * Según resultados de mantenimiento predictivo y recomendación del fabricante
@@ -318,7 +318,7 @@ Labores hardware
   * Permite alargar el uso de los componentes
   * Existe un riesgo mayor de que falle el sistema o de que la avería acabe siendo más importante\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2918.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2918.png)
 
 ## Frecuencia de mantenimiento
 
@@ -330,7 +330,7 @@ Labores hardware
   * __El estrés del sistema__ , o lo que es lo mismo, si se hace un uso intensivo del mismo o de sus componentes, y ese uso puede dar lugar a funcionamiento inesperado\.
   * __El grado de estabilidad y seguridad del sistema__ , es decir, la importancia que tiene en el sistema el que no se produzcan fallos de ningún tipo\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2919.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2919.png)
 
 ## Diseño de la documentación básica para el mantenimiento
 
@@ -344,7 +344,7 @@ Recoger toda la información de las labores realizadas en un  __informe__ \.
 
 Ayudará a controlar las labores a realizar en cada momento\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2920.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2920.jpg)
 
 Tipos e informes
 
@@ -354,9 +354,9 @@ Tipos e informes
   * Eso se recoge en una base de datos que es rellanada con los informes realizados y se conoce como  __Plan de Mantenimiento Preventivo __ \.
 * Forma o contenido de los informes en función de las labores que tienen encomendadas por la empresa\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2921.jpg)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2921.jpg)
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2922.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2922.png)
 
 ## Plan de mantenimiento preventivo
 
@@ -381,13 +381,13 @@ Tipos e informes
   * Acciones predictivas realizadas o correctivas aplicadas\.
   * __Muy importante: __ Fecha y firma del que realiza el mantenimiento\.
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2923.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2923.png)
 
 ## Reparaciones
 
 Parte de asistencia
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2924.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2924.png)
 
 Cuando realicemos una reparación de un equipo, elaborar partes de asistencia que  _reflejen los trabajos efectuados\. _
 
@@ -407,7 +407,7 @@ Consigue solucionarlo
 
 Parte de asistencia
 
-![](img/Teor%C3%ADa%20UD09%20Mantenimiento%20de%20equipos%20%28II%2925.png)
+![](img/Teor%C3%ADa_UD09_Mantenimiento_de_equipos_%28II%2925.png)
 
 __Ejemplo 2__
 

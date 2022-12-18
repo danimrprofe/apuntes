@@ -1,74 +1,13 @@
---- 
-title:
-- Docker
-subtitle:
-- Pruebas con Docker
-author:
-- Daniel Moreno
-institute:
-- IES Francesc de Borja Moll
-date: 
-- \today
-theme:
-- metropolis
-header-includes:
- - '\usetheme{metropolis}'
- - '\makeatletter'
- - '\beamer@ignorenonframefalse'
- - '\makeatother'
-aspectratio:
- - 169
----
-
-# Índice
-
-- [Índice](#%C3%ADndice)
-- [Contenedores](#contenedores)
-- [Contenedores Windows y contenedores Linux](#contenedores-windows-y-contenedores-linux)
-- [Imágenes](#im%C3%A1genes)
-- [Aprovechamiento de las capas](#aprovechamiento-de-las-capas)
-- [Docker](#docker)
-- [Dockerfiles](#dockerfiles)
-  - [Formato de un dockerfile](#formato-de-un-dockerfile)
-  - [Ejecutar un comando](#ejecutar-un-comando)
-- [Construir una imagen](#construir-una-imagen)
-- [Definir etiqueta para una imagen](#definir-etiqueta-para-una-imagen)
-    - [Consultar imágenes](#consultar-im%C3%A1genes)
-    - [Ejecutar un contenedor](#ejecutar-un-contenedor)
-- [Docker compose](#docker-compose)
-- [Definición de servicios](#definici%C3%B3n-de-servicios)
-- [Montaje de volúmenes](#montaje-de-vol%C3%BAmenes)
-- [Variables de entorno](#variables-de-entorno)
-- [Ejemplo de docker-compose](#ejemplo-de-docker-compose)
-- [Ejecutar docker-compose](#ejecutar-docker-compose)
-- [Visualizar contenedores](#visualizar-contenedores)
-- [Monitorizar contenedores](#monitorizar-contenedores)
-- [Eliminar contenedores](#eliminar-contenedores)
-  - [Eliminar contenedores linux](#eliminar-contenedores-linux)
-  - [Eliminar contenedores Windows](#eliminar-contenedores-windows)
-  - [Eliminar contenedores y imágenes con batch](#eliminar-contenedores-y-im%C3%A1genes-con-batch)
-- [Eliminar contenedores en powershell:](#eliminar-contenedores-en-powershell)
-- [Persistencia](#persistencia)
-- [Dive](#dive)
-- [Multi stage builds](#multi-stage-builds)
-- [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
-- [Ventajas de dockerizar](#ventajas-de-dockerizar)
-- [Almacenar en repositorio](#almacenar-en-repositorio)
-  - [Construir la imagen](#construir-la-imagen)
-  - [Login en docker hub](#login-en-docker-hub)
-  - [Subir imagen](#subir-imagen)
-  - [Descargar imagen](#descargar-imagen)
 
 # Contenedores
 
-Los contenedores no tienen un sistema operativo dentro, el contenedor aísla el espacio
-de usuario.
+Los **contenedores** no tienen un sistema operativo dentro, el contenedor aísla el espacio de usuario.
 
 Son muy ligeros porque corren como un proceso sobre el SO del host.
 
 Los contenedores escalan en función de la demanda, mientras que las MV tienen que ser aprovisionadas previamente.
 
-# Contenedores Windows y contenedores Linux
+## Contenedores Windows y contenedores Linux
 
 Los contenedores Windows corren sobre Windows y los contenedores Linux sobre Linux
 Se diferencian en los tipos de aislamiento que tienen ambos
@@ -81,7 +20,7 @@ Los contenedores Linux:
 En Hyper-V Windows lanza una MV super fina que tiene su propio kernel y por tanto
 los contenedores no son visibles desde el propio SO.
 
-# Imágenes
+## Imágenes
 
 Una imagen es como una aplicación compilada.
 Un contenedor es una instancia en ejecución de una imagen concreta.
@@ -109,7 +48,7 @@ y se convierte en el proceso con PID 1 dentro del árbol virtual de procesos.
 
 El contenedor seguirá en marcha mientras el proceso creado siga en ejecución.
 
-# Aprovechamiento de las capas
+## Aprovechamiento de las capas
 
 Cada vez que se ejecuta una instrucción, se crea un contenedor y se etiqueta con un
 hash creado para obtener un nombre único. De este modo, podemos reutilizar estas capas intermedias y solo tener que construirlas una vez.
@@ -121,17 +60,17 @@ ambos contenedores.
 Para cada RUN se crea una capa, por lo que se pueden agrupar varios comandos en un
 solo RUN y crear una única capa.
 
-# Docker
+## Docker
 
 Docker permite automatizar el despliegue de aplicaciones dentro de contenedores.
 
 Veremos diferentes configuraciones de Docker que podemos hacer.
 
-# Dockerfiles
+## Dockerfiles
 
 Permiten automatizar la construcción de una imagen, a través de un fichero que contiene instrucciones para fabricar una imagen, a través de una serie de pasos.
 
-## Formato de un dockerfile
+### Formato de un dockerfile
 
 Formato del Dockerfile, que se creará dentro de la carpeta donde tengamos el proyecto
 
@@ -140,7 +79,7 @@ FROM ubuntu:14.04
 ENTRYPOINT ["/bin/echo"]
 ```
 
-## Ejecutar un comando
+### Ejecutar un comando
 
 Si en lugar de utilizar entrypoints queremos pasar parámetros, podemos utilizar CMD
 
@@ -148,7 +87,7 @@ Si en lugar de utilizar entrypoints queremos pasar parámetros, podemos utilizar
 CMD ["/bin/echo" , "Hi Docker !"]
 ```
 
-# Construir una imagen
+## Construir una imagen
 
 Construimos la imagen con el siguiente comando. Al haber un Dockerfile en la carpeta
 la detecta y monta la imagen a partir de las instrucciones del Dockerfile.
@@ -157,7 +96,7 @@ la detecta y monta la imagen a partir de las instrucciones del Dockerfile.
 docker build .
 ```
 
-# Definir etiqueta para una imagen
+## Definir etiqueta para una imagen
 
 Al no definir repositorios ni tags, se asigna a la imagen una ID hexadecimal. Podemos especificar un nombre y una etiqueta al construir la imagen:
 
@@ -165,7 +104,7 @@ Al no definir repositorios ni tags, se asigna a la imagen una ID hexadecimal. Po
 docker build -t cookbook:hello .
 ```
 
-### Consultar imágenes
+#### Consultar imágenes
 
 Consultar las imágenes disponibles en nuestra máquina. A partir de una imagen,
 podemos levantar tantos contenedores como queramos.
@@ -186,7 +125,7 @@ ubuntu                latest              20bb25d32758        3 months ago      
 node                  10.13-alpine        93f2dcbcddfe        4 months ago        70.3MB
 ```
 
-### Ejecutar un contenedor
+#### Ejecutar un contenedor
 
 A partir de una imagen podemos crear y ejecutar un contenedor, especificando el ID de la imagen:
 
@@ -194,7 +133,7 @@ A partir de una imagen podemos crear y ejecutar un contenedor, especificando el 
 docker run 20bb25d32758
 ```
 
-# Docker compose
+## Docker compose
 
 Si quisiera levantar varios contenedores de diferentes imágenes, me vería obligado
 a definir diferentes Dockerfiles para cada uno y levantar los contenedores uno a uno.
@@ -205,7 +144,7 @@ a definir diferentes Dockerfiles para cada uno y levantar los contenedores uno a
 - Con un solo comando podemos poner en marcha varios contenedores al mismo tiempo.
 - Podemos decir que un servicio solo se levante si otro se ha iniciado previamente
 
-# Definición de servicios
+## Definición de servicios
 
 Para ello definimos la configuración de los servicios mediante un archivo en formato YAML, que llamaremos docker-compose.
 
@@ -217,7 +156,7 @@ Ejemplo de docker-compose, en el que podemos ver dos servicios:
 Estas imágenes saldrán de docker hub. Los propios desarrolladores generan las
 imágenes docker y las publican allí.
 
-# Montaje de volúmenes
+## Montaje de volúmenes
 
 Como ya sabemos, los contenedores tienen un ciclo de vida y dentro de ellos
 los datos no persisten, por lo que tendremos que enlazar una carpeta externa
@@ -228,13 +167,13 @@ Por ejemplo, la carpeta `db_data` que tenemos en la carpeta contenedora de los d
 
 De este modo, al morir el contenedor los datos no serán borrados.
 
-# Variables de entorno
+## Variables de entorno
 
 Los diferentes servicios pueden tener que compartir variables entre ellos. Por ejemplo, `wordpress` necesitará saber los datos de acceso a la BD donde guardará la información que necesite.
 
 Esto, que generalmente haríamos a mano modificando archivos de configuración, se puede hacer definiendo variables externamente dentro del dockerfile.
 
-# Ejemplo de docker-compose
+## Ejemplo de docker-compose
 
 ```yaml
 version: '3.3'
@@ -242,7 +181,7 @@ version: '3.3'
 services:
   basededatos:
     image: mysql:5.7
-    volumes: 
+    volumes:
       - db_data:/var/lib/mysql
     restart: always
     environment:
@@ -267,7 +206,7 @@ volumes:
 db_data: {}
 ```
 
-# Ejecutar docker-compose
+## Ejecutar docker-compose
 
 Para ejecutar docker-compose:
 
@@ -283,7 +222,7 @@ De todos modos, también podemos ejecutar los contenedores en segundo plano (det
 docker-compose up -d
 ```
 
-# Visualizar contenedores
+## Visualizar contenedores
 
 Si queremos visualizar los contenedores que se están ejecutando:
 
@@ -291,16 +230,16 @@ Si queremos visualizar los contenedores que se están ejecutando:
 docker ps
 ```
 
-# Monitorizar contenedores
+## Monitorizar contenedores
 
 * Comprobar recursos que utiliza un contenedor: docker stats xxx
 * Comprobar los logs de un contenedor: docker logs
-* Comprobar todos los eventos que han ocurrido a un contenedor: docker events 
+* Comprobar todos los eventos que han ocurrido a un contenedor: docker events
 * Listar procesos de un contenedor: docker top xxx
 
-# Eliminar contenedores
+## Eliminar contenedores
 
-## Eliminar contenedores linux
+### Eliminar contenedores linux
 
 Actualización: podemos borrar todas las imágenes:
 
@@ -313,7 +252,7 @@ docker stop $(docker ps -q)
 docker rm -v $(docker ps -aq)
 ```
 
-## Eliminar contenedores Windows
+### Eliminar contenedores Windows
 
 Borrar todos los contenedores en windows. Meter en un bat
 
@@ -321,7 +260,7 @@ Borrar todos los contenedores en windows. Meter en un bat
 FOR /f "tokens=*" %i IN ('docker ps -a -q') DO docker rm %i
 ```
 
-## Eliminar contenedores y imágenes con batch
+### Eliminar contenedores y imágenes con batch
 
 Un bat que te lo hace todo (maravilloso), borra contenedores e imágenes.
 
@@ -331,20 +270,20 @@ FOR /f "tokens=*" %%i IN ('docker ps -aq') DO docker rm %%i
 FOR /f "tokens=*" %%i IN ('docker images --format "{{.ID}}"') DO docker rmi %%i
 ```
 
-# Eliminar contenedores en powershell:
+## Eliminar contenedores en powershell:
 
 ```poweshell
 docker ps -aq | foreach {docker rm $_}
 ```
 
-# Persistencia
+## Persistencia
 
 Los contenedores por defecto están completamente aislados del mundo exterior.
 
 Podemos montar un volumen que funcionará como si fuer una carpeta compartida
 a la que puedes acceder desde otro lugar.
 
-# Dive
+## Dive
 
 Existe una herramienta llamada dive que permite monitorizar una imagen para ver
 detalles, espacio ocupado, sistema de archivos, etc. e intentar optimizarla.
@@ -355,7 +294,7 @@ No he tenido tiempo de probarlo, pero el proyecto está en:
 
 
 
-# Multi stage builds
+## Multi stage builds
 
 Definimos un **dockerfile** y ponemos en primer lugar una línea FROM. A continuación
 ponemos otra línea FROM. Por ejemplo:
@@ -368,7 +307,7 @@ Luego borrar el código fuente
 Etiquetamos el estado y utilizarlo como un nuevo statement.
 Todo lo que hay antes del segundo FROM se elimina
 
-# Buenas prácticas para construir contenedores
+## Buenas prácticas para construir contenedores
 
 - Una sola aplicación por contenedor. Por ejemplo, PHP y Mysql en dos contenedores.
 - Agregar el código fuente de la aplición lo más tarde posible. Las capas y dependencias se pueden cachear y acelerar las builds posteriores
@@ -377,7 +316,7 @@ Todo lo que hay antes del segundo FROM se elimina
 - Etiquetar las imágenes
 - Utiliza volúmenes para manejar guardar la configuración y los datos fuera de los contenedores
 
-# Ventajas de dockerizar
+## Ventajas de dockerizar
 
 Algunas ventajas de cambiar a un entorno docker son:
 
@@ -388,12 +327,12 @@ al tenerlos que definir como instrucciones en un Dockerfile.
 - Al hacer los dockerfiles tratas tu infraestructura como código que puede
 ser commited y compartido, así como ver un histórico de cambios.
 
-# Almacenar en repositorio
+## Almacenar en repositorio
 
 Podemos pushear la imagen a un registro del tipo `Docker hub`, para poderla utilizar
 y construir y escalar contenedores a partir de ella.
 
-## Construir la imagen
+### Construir la imagen
 
 Primero creo la imagen, si no la tenía ya creada:
 
@@ -409,7 +348,7 @@ danimrtic/nodejs-mongodb   latest              1d3b7e77a948        32 seconds ag
 
 Ahora podríamos crear todos los contenedores que queramos a partir de ella, o utilizarla como punto de partida para crear otras imágenes.
 
-## Login en docker hub
+### Login en docker hub
 
 Ahora vamos a subir la imagen al repositorio. Para ello nos logueamos:
 
@@ -420,7 +359,7 @@ Login Succeeded
 ```
 Una vez esto, me guarda la configuración en un archivo `JSON`.
 
-## Subir imagen
+### Subir imagen
 
 Pusheo la imagen:
 
@@ -447,7 +386,7 @@ Borro todas las imágenes para obligar la descarga:
 
     docker system prune -a
 
-## Descargar imagen
+### Descargar imagen
 
 Y a descargar la imagen:
 

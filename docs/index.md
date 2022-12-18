@@ -2,9 +2,7 @@
 
 Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de la informática durante los años que he dedicado a aprender y dar clase.
 
-Las páginas que más consulto  son:
 
-4º ESO y 1º bachillerato
 
 - [arduino](arduino/index.md)
 

@@ -20,11 +20,11 @@
   * Distinto grosor, brillo o mate, de colores, etc\.
   * Utilizar el  __tipo de papel __ que nos aconseje el  __fabricante__ \.
 
-![](img/15%20Elementos%20consumibles0.png)
+![](img/15_Elementos_consumibles0.png)
 
 __Medio de impresión__
 
-![](img/15%20Elementos%20consumibles1.png)
+![](img/15_Elementos_consumibles1.png)
 
 ## Conservación de medios de impresión
 
@@ -56,7 +56,7 @@ __Medio de impresión__
   * La cartulina también se considera papel\.
   * Las  __transparencias__  o el  __papel plastificado __ se reciclan en el contenedor amarillo\.
 
-![](img/15%20Elementos%20consumibles2.jpg)
+![](img/15_Elementos_consumibles2.jpg)
 
 ## Sustitución de papel y etiquetas
 
@@ -69,7 +69,7 @@ __Medio de impresión__
   * Muchos dispositivos disponen de  __varias bandejas __
   * Bandejas de medios de impresión de distintos  __tamaños__
 
-![](img/15%20Elementos%20consumibles3.png)
+![](img/15_Elementos_consumibles3.png)
 
 * __Alimentación de papel y etiquetas__
   * Ajuste al tipo de papel mediante  __pestañas correderas__ \.
@@ -82,6 +82,6 @@ __Medio de impresión__
     * Encajar los extremos agujereados del papel en las ruedas dentadas
     * Fijar el encaje con una palanca de fijación\.
 
-![](img/15%20Elementos%20consumibles4.png)
+![](img/15_Elementos_consumibles4.png)
 
 

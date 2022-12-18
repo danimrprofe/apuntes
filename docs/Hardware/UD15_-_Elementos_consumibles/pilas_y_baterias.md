@@ -9,13 +9,13 @@
     * Diferente forma y diferentes valores de voltaje y capacidad
   * Hay fabricantes que venden  __baterías__   __genéricas__  para diversos modelos de portátil\.
 
-![](img/15%20Elementos%20consumibles12.jpg)
+![](img/15_Elementos_consumibles12.jpg)
 
-![](img/15%20Elementos%20consumibles13.jpg)
+![](img/15_Elementos_consumibles13.jpg)
 
-![](img/15%20Elementos%20consumibles14.jpg)
+![](img/15_Elementos_consumibles14.jpg)
 
-![](img/15%20Elementos%20consumibles15.jpg)
+![](img/15_Elementos_consumibles15.jpg)
 
 ## Baterías
 
@@ -41,13 +41,13 @@
   * Las que más duran son las  __alcalinas__
 * Modelos más usados son estos:
 
-![](img/15%20Elementos%20consumibles16.jpg)
+![](img/15_Elementos_consumibles16.jpg)
 
-![](img/15%20Elementos%20consumibles17.jpg)
+![](img/15_Elementos_consumibles17.jpg)
 
-![](img/15%20Elementos%20consumibles18.jpg)
+![](img/15_Elementos_consumibles18.jpg)
 
-![](img/15%20Elementos%20consumibles19.jpg)
+![](img/15_Elementos_consumibles19.jpg)
 
 ## Conservación de pilas y baterías
 
@@ -63,7 +63,7 @@
   * En su defecto, uno de iguales  __características__
     * Podríamos darle un voltaje e intensidad incorrectos, pudiendo incluso dejar inservible la batería
 
-![](img/15%20Elementos%20consumibles20.jpg)
+![](img/15_Elementos_consumibles20.jpg)
 
 * __Conservación de consumibles de energía__
   * Limpieza de las  __conexiones__
@@ -90,7 +90,7 @@
 * Contaminación
   * 1  __pila de botón __ puede contaminar hasta 600\.000 litros de agua
 
-![](img/15%20Elementos%20consumibles21.jpg)
+![](img/15_Elementos_consumibles21.jpg)
 
 ## Sustitución de pilas y baterías
 

@@ -2,7 +2,7 @@
 
 ## Estructura física del disco duro
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria1.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria1.jpg)
 
 * Estructura física del disco
   * Un disco duro puede contar con uno o varios  __discos__ \.
@@ -20,7 +20,7 @@
   * __Identificación:__  Cabeza \- Cilindro \- Sector
   * Las cabezas y los cilindros se comienzan a numerar desde el «0» y los sectores desde el «1», así que el primer bloque de información estará situado en la posición «0\-0\-1»\.
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria2.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria2.jpg)
 
 Cabeza – Cilindro – Sector
 
@@ -38,7 +38,7 @@ Primer bloque:  __0 \- 0 \- 1__
     * _LILO y GRUB_ : para sistemas Linux
     * _PXE_ : para arranque a través de un entorno de red\.
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria3.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria3.jpg)
 
 * __Espacio particionado: __
   * Espacio que ya se ha asignado para almacenar datos o programas
@@ -46,7 +46,7 @@ Primer bloque:  __0 \- 0 \- 1__
   * Zona no accesible del disco a la que todavía no se le ha asignado un fin\.
   * No contiene datos ni programas de ningún tipo\.
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria4.png)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria4.png)
 
 
 

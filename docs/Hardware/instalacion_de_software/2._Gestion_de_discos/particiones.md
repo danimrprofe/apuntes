@@ -9,7 +9,7 @@
   * Se indica cuál es la  __partición activa __ del disco\.
     * A la que se dirige el bootstrap para iniciar el arranque del sistema\.
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria5.gif)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria5.gif)
 
 ## Tipos de particiones
 
@@ -29,18 +29,18 @@
   * Al igual que a las primarias, se les asigna una letra de unidad\.
   * Las particiones lógicas no pueden ser particiones activas\.
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria6.gif)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria6.gif)
 
 ## Ejemplos de particiones
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria7.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria7.jpg)
 
 Esquema lógico con particiones primarias
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria8.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria8.jpg)
 
 Esquema lógico con una partición extendida
 
-![](img/Discos%2C%20particiones%20y%20sistemas%20de%20archivo%20-%20teoria9.jpg)
+![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria9.jpg)
 
 Esquema lógico con particiones lógicas en la partición extendida

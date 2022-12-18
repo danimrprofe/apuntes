@@ -1,8 +1,6 @@
 # Mkdocs
 
-MkDocs es un generador de documentación rápido, simple y delicioso escrito en Python.
-
-Si alguna vez te has frustrado con el tedioso proceso de escribir y mantener la documentación, entonces MkDocs es la herramienta que necesitas.
+MkDocs es un generador de documentación rápido y simple escrito en Python. PErmite escribir y mantener la documentación de forma sencilla.
 
 ## Mis necesidades
 
@@ -39,7 +37,7 @@ En mi caso uso **python -m** puesto que estoy en windows y no reconoce python co
 
 ## Crear un proyecto nuevo
 
-Una vez que **MkDocs** esté instalado, podrá usar el comando `mkdocs` para crear un nuevo proyecto. 
+Una vez que **MkDocs** esté instalado, podrá usar el comando `mkdocs` para crear un nuevo proyecto.
 
 ```
 python -m mkdocs new my-project
@@ -116,11 +114,11 @@ Para ello tenemos que crear un workflow en la root de nuestro repo:
 El contenido dependerá de lo que queramos hacer. En mi caso:
 
 ```yaml
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -132,7 +130,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
 ```
 Cada vez que hagamos cambios, pusheamos primero.
@@ -149,7 +147,7 @@ Se nos mostrarán los **workflow run** ejecutados cronológicamente:
 
 Podemos ver última **run** a la fecha y hora del último pusheo, y el despliegue ha durado cerca de 5 minutos. Esto dependerá del tamaño del proyecto y la potencia de la máquina virtual.
 
-Como vemos, el deploy es disparado via github pages, y podemos ver las fases de build y deploy. Al hacer deploy, automáticamente se crea previamente una build del proyecto. 
+Como vemos, el deploy es disparado via github pages, y podemos ver las fases de build y deploy. Al hacer deploy, automáticamente se crea previamente una build del proyecto.
 
 El estado y los checks nos confirman que la run ha sido correcta.
 

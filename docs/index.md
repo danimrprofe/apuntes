@@ -6,7 +6,7 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 2º de bachillerato
 
-- [seguridad informática](seguridad/index.md)
+- [seguridad informática](Seguridad/index.md)
 - [inteligencia artificial](inteligencia_artificial/index.md)
 
 1º de bachillerato

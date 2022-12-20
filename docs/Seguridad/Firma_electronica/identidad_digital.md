@@ -1,54 +1,57 @@
 # Identidad digital
 
-![](img%5CIdentidad%20digital0.jpg)
 
-#
+![](img/Identidad_digital1.png)
 
-![](img%5CIdentidad%20digital1.png)
+## Identificación
 
-# ¿En qué situaciones es necesario identificarnos?
+En nuestro día a día\, necesitamos identificarnos para acceder a servicios. Es decir\, demostrar que somos nosotros realmente.
 
-![](img%5CIdentidad%20digital2.png)
-
-# Identificación
-
-En nuestro día a día\, necesitamos identificarnos para acceder a servicios\. Es decir\, demostrar que somos nosotros realmente\.
+Las formas de identificación más comunes son el DNI\, el pasaporte\, la tarjeta de crédito o el carnet de conducir. Todas estas formas sirven para poder acceder a servicios bancarios\, alojamientos\, transporte\, compras en línea\, entre otros. Además\, muchos lugares también requieren la presentación de un documento de identificación para poder acceder a ellos.
 
 En el mundo real la verificación relacionada con
 
-Rasgos \(aspecto físico\)
+- Rasgos (aspecto físico)
+- Datos (huella dactilar)
+- Firmas (firma en documentos)
 
-Datos \(huella dactilar\)
+![](img/2022-12-20-20-35-16.png)
 
-Firmas
+Pero en el mundo digital\, la autenticación se basa en otros métodos como:
 
-![](img%5CIdentidad%20digital3.png)
+- Contraseñas
+- Códigos de seguridad
+- Token de autenticación
+- Biometría
+- La autenticación de dos factores (2FA)
 
-# HUELLA DACTILAR
+![](img/Identidad%digital3.png)
+
+## HUELLA DACTILAR
 
 ![](img/2022-12-13-16-53-30.png)
 
 Las huellas digitales son únicas, incluso para estos hermanos idénticos. Esto se debe a que las huellas dactilares no responden a la genética sino que, al formarse al tercer mes de embarazo, van variando cuando los dedos rozan con el cordón umbilical o este crece permitiendo más movimientos intrauterinos
 
-![](img%5CIdentidad%20digital5.png)
+![](img/Identidad_digital5.png)
 
-# FIRMA
+### Firma
 
-#
+La firma de una persona es una forma de identificación. No es una forma válida de autenticación en sí misma, ya que no es una prueba de quién es la persona. Para ser válida, la firma debe ser autenticada por un tercero, como un notario público, y debe estar asociada con un documento legalmente vinculante.
 
-![](img%5CIdentidad%20digital6.png)
+![](img/Identidad_digital6.png)
 
-![](img%5CIdentidad%20digital7.png)
+![](img/Identidad_digital7.png)
 
-![](img%5CIdentidad%20digital8.png)
+![](img/Identidad_digital8.png)
 
-# DNI
+## DNI
 
-![](img%5CIdentidad%20digital9.png)
+![](img/Identidad_digital9.png)
 
-# Documento nacional de identidad
+## Documento nacional de identidad
 
-![](img%5CIdentidad%20digital10.jpg)
+![](img/Identidad_digital10.jpg)
 
 La forma más habitual de demostrar nuestra identidad es presentar nuestro DNI o firmar\.
 
@@ -56,41 +59,24 @@ La policía nos da un DNI solo a nosotros\, con nuestra huella\, foto y firma\.
 
 Presentando este documento con nuestra foto\, demostramos que nuestros  __datos __ son los que allí figuran\.
 
-![](img%5CIdentidad%20digital11.png)
+![](img/Identidad_digital11.png)
 
-# Identificación en Internet
+## ¿Cómo nos identificamos en Internet?
 
-# ¿Cómo nos identificamos en Internet?
-
-Hoy en día muchos trámites que hacíamos presencialmente se hacen a través de Internet\, bien sean por comodidad o por ser obligatorio\.
-
-Necesitamos una forma de acreditar que somos quien decimos ser\.
-
-Nadie nos puede ver\, ni podemos mostrar el DNI físicamente\.
+En la actualidad, muchas de las tareas que antes se realizaban de forma presencial ahora se han trasladado al ámbito digital, ya sea por comodidad o por imposición legal. Esto conlleva una necesidad de encontrar una forma de acreditar de manera segura nuestra identidad, ya que no podemos mostrar físicamente un documento de identidad como el DNI.
 
 __Necesitamos otros métodos\.__
 
-# ¿Qué métodos se os ocurren?
 
-# Contraseñas
+## Contraseñas
 
-__Se trata del método más ampliamente extendido para proteger algo\. Permite identificación y acceso a información\. Sin embargo\, no el más seguro\. Hay que tener algunas cosas en cuenta:__
+La contraseña es el método más ampliamente extendido para proteger nuestros datos, permitiendo una identificación y acceso seguros a nuestra información. Aunque no es el método más seguro, hay algunos elementos clave que debemos tener en cuenta para mejorar su seguridad: utilizar contraseñas largas y complejas, incluir caracteres especiales, mayúsculas o minúsculas, cambiar la contraseña de forma regular y no utilizar la misma contraseña para varias páginas.
 
-__Utilizar una contraseña larga y lo suficientemente compleja__
+ Además, es conveniente contar con métodos de recuperación, como un número de teléfono o dirección alternativa, para poder recuperar el acceso si olvidamos la contraseña.
 
-__No incluir información personal en nuestra contraseña__
+![](img/Identidad_digital12.png)
 
-__Poner caracteres especiales\, mayúsculas y minúsculas para hacerla más compleja\.__
-
-__Cambiarla regularmente__
-
-__No utilizar la misma contraseña en varias páginas\.__
-
-__Otro factor muy importante es utilizar métodos de recuperación\, como un número de teléfono u otra dirección alternativa\, a fin de poder recuperar el acceso si olvidamos la contraseña\.__
-
-![](img%5CIdentidad%20digital12.png)
-
-# Formas de demostrar nuestra identidad
+## Formas de demostrar nuestra identidad
 
 Existen multitud de métodos de demostrar nuestra identidad digitalmente:
 

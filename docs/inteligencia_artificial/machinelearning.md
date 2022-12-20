@@ -14,7 +14,7 @@ Tanto el aprendizaje automático como el aprendizaje profundo se utilizan para c
 
 ## Proyectos:
 
-- [ML4K[](https://machinelearningforkids.co.uk/)
+- Machine learning for kids: [ML4K](https://machinelearningforkids.co.uk/)
 - [Teachablemachine](https://teachablemachine.withgoogle.com/train)
 - [Learningml](https://web.learningml.org/)
 

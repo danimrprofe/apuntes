@@ -1,7 +1,12 @@
+# Machine vs deep learning
 
-# Machine learning y deep learning
+## Machine learning
 
-El aprendizaje automático es un subconjunto de la IA que se enfoca en proporcionar a las máquinas la capacidad de aprender de los datos, sin ser programadas explícitamente. El aprendizaje profundo es un subconjunto del aprendizaje automático que utiliza algoritmos para modelar abstracciones de alto nivel en los datos.
+El aprendizaje automático es un subconjunto de la IA que se enfoca en proporcionar a las máquinas la capacidad de aprender de los datos, sin ser programadas explícitamente.
+
+## Deep learning
+
+El aprendizaje profundo es un subconjunto del aprendizaje automático que utiliza algoritmos para modelar abstracciones de alto nivel en los datos.
 
 En general, los algoritmos de aprendizaje profundo son más precisos que los algoritmos de aprendizaje automático, pero también son más costosos computacionalmente.
 

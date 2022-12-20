@@ -2,8 +2,6 @@
 
 Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de la informática durante los años que he dedicado a aprender y dar clase.
 
-
-
 - [arduino](arduino/index.md)
 
 2º de bachillerato

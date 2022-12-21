@@ -63,10 +63,7 @@ Presentando este documento con nuestra foto\, demostramos que nuestros  __datos 
 
 ## ¿Cómo nos identificamos en Internet?
 
-En la actualidad, muchas de las tareas que antes se realizaban de forma presencial ahora se han trasladado al ámbito digital, ya sea por comodidad o por imposición legal. Esto conlleva una necesidad de encontrar una forma de acreditar de manera segura nuestra identidad, ya que no podemos mostrar físicamente un documento de identidad como el DNI.
-
-__Necesitamos otros métodos\.__
-
+En la actualidad, muchas de las tareas que antes se realizaban de forma presencial ahora se han trasladado al ámbito **digital**, ya sea por comodidad o por imposición legal. Esto conlleva una necesidad de encontrar una forma de acreditar de manera segura nuestra identidad, ya que no podemos mostrar físicamente un documento de identidad como el DNI.
 
 ## Contraseñas
 

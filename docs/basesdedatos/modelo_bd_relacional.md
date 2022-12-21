@@ -1,37 +1,10 @@
-- [Introducción##](#introducci%C3%B3n)
-- [Modelo de datos relacional##](#modelo-de-datos-relacional)
-- [Estructura de datos##](#estructura-de-datos)
-  - [Entidades](#entidades)
-  - [Atributos o campos.](#atributos-o-campos)
-    - [Dominio](#dominio)
-  - [Entidades fuertes y débiles](#entidades-fuertes-y-d%C3%A9biles)
-  - [Relaciones](#relaciones)
-  - [Claves](#claves)
-    - [Identificador o superclave](#identificador-o-superclave)
-    - [Clave candidata](#clave-candidata)
-    - [Clave primaria o principal (prímary key)](#clave-primaria-o-principal-pr%C3%ADmary-key)
-    - [Clave ajena o foránea (foreign key)](#clave-ajena-o-for%C3%A1nea-foreign-key)
-- [Relaciones](#relaciones-1)
-  - [Grado de una relación](#grado-de-una-relaci%C3%B3n)
-  - [Cardinalidades de asignación](#cardinalidades-de-asignaci%C3%B3n)
-    - [1:1, uno a uno.](#11-uno-a-uno)
-    - [1:N, uno a muchos.](#1n-uno-a-muchos)
-    - [N:l, muchos a uno.](#nl-muchos-a-uno)
-    - [M:N, muchos a muchos.](#mn-muchos-a-muchos)
-- [Formas normales](#formas-normales)
-- [Reglas de integridad](#reglas-de-integridad)
-- [Manipulación de datos](#manipulaci%C3%B3n-de-datos)
-  - [Algebra relacional](#algebra-relacional)
-    - [Tipos de operadores](#tipos-de-operadores)
-    - [Operaciones básicas](#operaciones-b%C3%A1sicas)
-  - [Operaciones derivadas](#operaciones-derivadas)
-- [Diagramas de estructuras](#diagramas-de-estructuras)
+# Modelo BD relacional
 
-## Introducción## 
+## Introducción
 
 Revisión modelos de gestión de bases de datos
 
-## Modelo de datos relacional## 
+## Modelo de datos relacional##
 
 Modelo propuesto en los años 70. Basado en el concepto matemático de
 relación, teoría de conjuntos y lógica de predicados
@@ -58,7 +31,7 @@ Entidad
 
 - El mundo está formado por conjuntos de entidades del mismo tipo
 - Es un objeto del mundo real, que tiene interés
-- Por ejemplo, los ALUMNOS de un centro escolar o los CLIENTES de un banco. 
+- Por ejemplo, los ALUMNOS de un centro escolar o los CLIENTES de un banco.
 
 ### Conjunto de entidades
 
@@ -87,23 +60,23 @@ Las entidades débiles se relacionan con la entidad fuerte con una relación uno
 Tiene dependencia de existencia y dependencia de identificación respecto a alguna entidad fuerte
 La relación entre una entidad fuerte y una débil siempre va a ser 1:N
 
-- La entidad NOTAS es una entidad débil pues necesita a la entidad ALUMNO para existir. 
+- La entidad NOTAS es una entidad débil pues necesita a la entidad ALUMNO para existir.
 - En modelo de colegio, grupo es una entidad débil porque no existe si no existe el curso
 - Una línea factura/albarán/pedido depende siempre de la factura/albarán/pedido en el que está. Las líneas son una entidad débil
-  
-### Atributos o campos. 
 
-Son las unidades de información que describen propiedades de las entidades. 
+### Atributos o campos
 
-Por ejemplo, la entidad ALUMNO posee los atributos: 
+Son las unidades de información que describen propiedades de las entidades.
+
+Por ejemplo, la entidad ALUMNO posee los atributos:
 
 - número de matrícula
 - nombre
 - dirección
 - población
-- teléfono. 
+- teléfono.
 
-Los atributos toman valores, por ejemplo, el atributo población puede ser ALCALÁ, GUADALAJARA, etcétera. 
+Los atributos toman valores, por ejemplo, el atributo población puede ser ALCALÁ, GUADALAJARA, etcétera.
 
 Se representan mediante una elipse con el nombre en su interior.
 
@@ -115,7 +88,7 @@ Es el conjunto de valores permitido para cada atributo. Por ejemplo el dominio d
 
 
 Concepto
-
+s
 Tablas, filas, tuplas, atributos o columnas
 
 - Dominio: indica los valores que puede tener una columna de una relación
@@ -126,28 +99,29 @@ Grado de una relación: numero de columnas
 
 Cardinalidad de una relación: numero de filas
 
-### Claves 
+### Claves
 
 #### Identificador o superclave
 
-Es el conjunto de atributos que identifican de forma única a cada entidad. 
+Es el conjunto de atributos que identifican de forma única a cada entidad.
 Por ejemplo, la entidad EMPLEADO, con los atributos Número de la Seguridad Social, DNI, Nombre, Dirección, Fecha nacimiento y Tlf, podrían ser identificado-res o superclaves los conjuntos Nombre, Dirección, Fecha nacimiento y Tlf, o también DNI, Nombre y Dirección, o también Num Seg Social, Nombre, Dirección y Tlf, o solos el DNI y el Número de la Seguridad Social.
 
 #### Clave candidata
 
-Es cada una de las superclaves formadas por el mínimo número de campos posibles. 
+Es cada una de las superclaves formadas por el mínimo número de campos posibles.
 En el ejemplo anterior, son el DNI y el Número de la Seguridad Social.
 
 #### Clave primaria o principal (prímary key)
 
-Es la clave candidata seleccionada por el diseñador de la BD. 
-Una clave candidata no puede contener valores nulos, ha de ser sencilla de crear y no ha de variar con el tiempo. 
-El atributo o los atributos que forman esta clave se representan subrayados.
+Una clave primaria es una clave candidata seleccionada por el diseñador de la base de datos para identificar de manera única y distintiva a cada registro de una tabla.
+
+Esta clave no puede contener valores nulos, debe ser fácil de crear y debe permanecer inalterable. Los atributos que la conforman se suelen representar con un subrayado.
 
 #### Clave ajena o foránea (foreign key)
 
-Es el atributo o conjunto de atributos de una entidad que forman la clave primaria en otra entidad. 
-Las claves ajenas van a representar las relaciones entre tablas. 
+Es el atributo o conjunto de atributos de una entidad que forman la clave primaria en otra entidad.
+Las claves ajenas van a representar las relaciones entre tablas.
+
 Por ejemplo, si tenemos por un lado, las entidades ARTÍCULOS, con los atributos código de articulo (clave primaria), denominación, stock. Y, por otro lado, VENTAS, con los atributos Código de venta (clave primaria), fecha de venta, código de articulo, unidades vendidas, el código de articulo es clave ajena pues está como clave primaria en la entidad ARTÍCULOS.
 
 
@@ -177,17 +151,11 @@ Impedir que ciertos atributos se repitan
 
 ### Relaciones
 
+Las **relaciones** son la asociación entre diferentes entidades y se identifican por un nombre de verbo representado por un rombo. Normalmente, no tienen atributos, a no ser que exista una entidad asociada que, al generar una tabla, contenga los atributos de dicha relación. Esto se hace en el modelo relacional para representar los datos.
+
 ![](2019-05-13-13-59-23.png)
 
-Definimos una relación como la asociación entre diferentes entidades. 
-Tienen nombre de verbo, que la identifica de las otras relaciones y se representa mediante un rombo. 
-Normalmente las relaciones no tienen atributos. 
-Cuando surge una relación con atributos significa que debajo hay una entidad que aún no se ha definido. 
-A esa entidad se la llama entidad asociada. 
-Esta entidad dará origen a una tabla que contendrá esos atributos. 
-Esto se hace en el modelo relacional a la hora de representar los datos..
-
-### Conjunto de relaciones 
+### Conjunto de relaciones
 
 Conjunto de relaciones del mismo tipo, por ejemplo entre ARTÍCULOS y VENTAS todas las asociaciones existentes entre los artículos y las ventas que tengan estos, forman un conjunto de relaciones.
 
@@ -199,14 +167,14 @@ Una relación también puede tener atributos descriptivos, por ejemplo, la FECHA
 
 ### Grado de una relación
 
-Se define grado de una relación como el número de conjuntos de entidades que participan en el conjunto de relaciones, o lo que es lo mismo, el número de entidades que participan en una relación. 
+Se define grado de una relación como el número de conjuntos de entidades que participan en el conjunto de relaciones, o lo que es lo mismo, el número de entidades que participan en una relación.
 
 - Relaciones binarias (grado 2): Relaciones en las que participan dos entidades
 - Relaciones ternarias (grado 3): Si participan tres.
 - Relaciones de anillo (grado 1):
-- Relaciones en las que sólo participa una entidad 
+- Relaciones en las que sólo participa una entidad
 
-Relaciona una entidad consigo misma, se las llama relaciones reflexivas. 
+Relaciona una entidad consigo misma, se las llama relaciones reflexivas.
 Por ejemplo, la entidad EMPLEADO puede tener una relación JEFE DE consigo misma: un empleado es JEFE DE muchos empleados y, a la vez, el jefe es un empleado.
 
 Los conjuntos de relaciones pueden tener cualquier grado, lo ideal es tener relaciones binarias.
@@ -214,45 +182,38 @@ Otro ejemplo puede ser la relación DELEGADO DE los alumnos de un curso: el dele
 
 ### Cardinalidades de asignación
 
-En el modelo E-R 
-
-Se representan ciertas restricciones a las que deben ajustarse los datos contenidos en una BD. 
-Éstas son las restricciones de las cardinalidades de asignación
-
-Cardinalidades de asignación
-
-Expresan el número de entidades a las que puede asociarse otra entidad mediante un conjunto de relación.
-Las cardinalidades de asignación se describen para conjuntos binarios de relaciones. Son las siguientes:
+En el modelo E-R, las **cardinalidades** de asignación representan restricciones que deben cumplirse para los datos contenidos en una Base de Datos. Estas restricciones se refieren al número de entidades a las que puede asociarse otra entidad mediante un conjunto de relaciones, que son descritas para conjuntos binarios de relaciones.
 
 #### 1:1, uno a uno.
 
 A cada elemento de la primera entidad le corresponde sólo uno de la segunda entidad, y a la inversa. Por ejemplo, un cliente de un hotel ocupa una habitación, o un curso de alumnos pertenece a un aula, y a esa aula sólo asiste ese grupo de alumnos. Ver Figura 1.7:
 
-#### 1:N, uno a muchos. 
+#### 1:N, uno a muchos.
 
-A cada elemento de la primera entidad le corresponde uno o más elementos de la segunda entidad, y a cada elemento de la segunda entidad le corresponde uno sólo de la primera entidad. 
-Por ejemplo, un proveedor suministra muchos artículos 
+A cada elemento de la primera entidad le corresponde uno o más elementos de la segunda entidad, y a cada elemento de la segunda entidad le corresponde uno sólo de la primera entidad.
+Por ejemplo, un proveedor suministra muchos artículos
 
-#### N:l, muchos a uno. 
+#### N:l, muchos a uno.
 
 Es el mismo caso que el anterior pero al revés; a cada elemento de la primera entidad le corresponde un elemento de la segunda, y a cada elemento de la segunda entidad, le corresponden varios de la primera.
 
-#### M:N, muchos a muchos. 
+#### M:N, muchos a muchos.
 
-A cada elemento de la primera entidad le corresponde uno o más elementos de la segunda entidad, y a cada elemento de la segunda entidad le corresponde uno o más elementos de la primera entidad. 
+A cada elemento de la primera entidad le corresponde uno o más elementos de la segunda entidad, y a cada elemento de la segunda entidad le corresponde uno o más elementos de la primera entidad.
 Por ejemplo, un vendedor vende muchos artículos, y un artículo es vendido por muchos vendedores (ver Figura 1.9).
 
 La cardinalidad de una entidad sirve para conocer su grado de participación en la relación, es decir, el número de correspondencias en las que cada elemento de la entidad interviene. Mide la obligatoriedad de correspondencia entre dos entidades.
+
 La representamos entre paréntesis indicando los valores máximo y mínimo: (máximo, mínimo). Los valores para la cardinalidad son: (0,1), (1,1), (0,N), (1,N) y (M,N). El valor 0 se pone cuando la participación de la entidad es opcional.
 
 ## Formas normales
 
-Algunos modelos son mejores que otros. En particular, las decisiones deficientes con respecto a las definiciones de entidades pueden aumentar la redundancia de datos 
+Algunos modelos son mejores que otros. En particular, las decisiones deficientes con respecto a las definiciones de entidades pueden aumentar la redundancia de datos
 y llevar a la actualización de anomalías.
 
-Las anomalías de actualización incluyen comportamientos tales como requerir información sobre una segunda entidad (por ejemplo, un dormitorio) al insertar información 
-sobre una primera entidad (por ejemplo, un estudiante) o perder información sobre una segunda entidad (por ejemplo, un dormitorio) cuando una entidad de un Tipo 
-diferente se elimina (por ejemplo, el último estudiante en el dormitorio). La normalización es el proceso de someter relaciones a las pruebas. Pasar las pruebas 
+Las anomalías de actualización incluyen comportamientos tales como requerir información sobre una segunda entidad (por ejemplo, un dormitorio) al insertar información
+sobre una primera entidad (por ejemplo, un estudiante) o perder información sobre una segunda entidad (por ejemplo, un dormitorio) cuando una entidad de un Tipo
+diferente se elimina (por ejemplo, el último estudiante en el dormitorio). La normalización es el proceso de someter relaciones a las pruebas. Pasar las pruebas
 asegurará que la relación mostrará propiedades deseables.
 
 El objetivo de la normalización
@@ -260,21 +221,21 @@ El objetivo de la normalización
 - Eliminar redundancias y garantizar
 - Garantizar la integridad de la información almacenada
 
-Asegurar que cada relación represente un solo tema. 
+Asegurar que cada relación represente un solo tema.
 
-Por ejemplo, una relación debe tener información sobre los estudiantes, y una relación debe tener información sobre los dormitorios, pero una relación que tiene 
+Por ejemplo, una relación debe tener información sobre los estudiantes, y una relación debe tener información sobre los dormitorios, pero una relación que tiene
 información sobre los estudiantes y dormitorios dará lugar a problemas.
 
-Existen varias "formas" normales que han sido identificadas para las bases de datos relacionales. 
+Existen varias "formas" normales que han sido identificadas para las bases de datos relacionales.
 
-Los niveles más altos de normalización conducen a diseños que reducen la redundancia de datos y evitan las anomalías de actualización mencionadas anteriormente. 
+Los niveles más altos de normalización conducen a diseños que reducen la redundancia de datos y evitan las anomalías de actualización mencionadas anteriormente.
 
-Cualquier forma normal más alta también se ajusta a todas las formas normales inferiores. 
+Cualquier forma normal más alta también se ajusta a todas las formas normales inferiores.
 
 Así, una relación en la tercera forma normal (3NF) también está en la segunda forma normal (2NF), y la primera forma normal (INF).
 
-Las discusiones de formas normales se basan en el concepto de dependencia functional. Cuando el valor de un atributo o conjunto de atributos determina el valor de 
-otro atributo, existe una dependencia funcional y el primer atributo o conjunto de atributos se denomina determinante.Supongamos que hemos creado una relación con 
+Las discusiones de formas normales se basan en el concepto de dependencia functional. Cuando el valor de un atributo o conjunto de atributos determina el valor de
+otro atributo, existe una dependencia funcional y el primer atributo o conjunto de atributos se denomina determinante.Supongamos que hemos creado una relación con
 los atributos mostrados en la Figura 8.3.
 
 
@@ -288,7 +249,7 @@ anteriores.
 - 4ª forma normal
 - 5ª forma normal
 
-## Reglas de integridad 
+## Reglas de integridad
 
 - Reglas de integridad de usuario
 - Reglas de integridad de modelo
@@ -315,7 +276,7 @@ se obtiene otra relación como resultado.
 - Selección: subconjunto de una relación. Tuplas que cumplen una condición determinada
 - Proyección: seleccionar todos los valores de atributos especificados eliminando duplicados
 - Unión: incluye todas las tuplas de 2 relaciones, descartando repeticiones
-- Diferencia: Incluye todas las tuplas de A que no pertenecen a B 
+- Diferencia: Incluye todas las tuplas de A que no pertenecen a B
 - Producto cartesiano: incluye todas las tuplas de 2 relaciones, concatenadas (columnas)
 
 ### Operaciones derivadas
@@ -353,14 +314,14 @@ Cálculo relacional de dominios
 
 ## Diagramas de estructuras
 
-Los diagramas Entidad-Relación representan la estructura lógica de una BD de manera gráfica. 
+Los diagramas Entidad-Relación representan la estructura lógica de una BD de manera gráfica.
 Los símbolos utilizados son los siguientes:
 
 - Rectángulos para representar a las entidades.
 - Elipses para los atributos. El atributo que forma parte de la clave primaria va subrayado.
 - Rombos para representar las relaciones.
-- Líneas, que unen atributos a entidades y a relaciones, y entidades a relaciones. 
-- Si la línea tiene punta, en ese sentido está el 1, y si no la tiene, en ese sitio está el muchos. 
+- Líneas, que unen atributos a entidades y a relaciones, y entidades a relaciones.
+- Si la línea tiene punta, en ese sentido está el 1, y si no la tiene, en ese sitio está el muchos.
 - La orientación señala cardinalidad.
 - Si la relación tiene atributos asociados, se le unen a la relación.
 - Cada componente se etiqueta con el nombre de lo que representa

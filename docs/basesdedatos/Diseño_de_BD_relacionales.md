@@ -1,32 +1,14 @@
 # Diseño de BD relacionales
-- [Diseño de BD relacionales](#dise%C3%B1o-de-bd-relacionales)
-  - [Introducción](#introducci%C3%B3n)
-  - [Fases del diseño](#fases-del-dise%C3%B1o)
-  - [Diseño conceptual](#dise%C3%B1o-conceptual)
-  - [Diseño lógico](#dise%C3%B1o-l%C3%B3gico)
-    - [Transformar E/R a tablas](#transformar-er-a-tablas)
-    - [Transform atributos en campos de tablas](#transform-atributos-en-campos-de-tablas)
-    - [Restricciones de integridad](#restricciones-de-integridad)
-  - [Normalización](#normalizaci%C3%B3n)
-    - [Formas normales](#formas-normales)
-    - [Ejemplo de normalización](#ejemplo-de-normalizaci%C3%B3n)
-  - [Diseño físico. Optimización](#dise%C3%B1o-f%C3%ADsico-optimizaci%C3%B3n)
-  - [Bibliografía](#bibliograf%C3%ADa)
-  - [Construir una BD desde el modelo de datos](#construir-una-bd-desde-el-modelo-de-datos)
-    - [Primer paso](#primer-paso)
-    - [Segundo paso](#segundo-paso)
 
 ## Introducción
 
 ## Fases del diseño
 
-- Diseño conceptual (Modelo E-R)
-- Diseño lógico (Pasar a tablas -- normalización)
-- Diseño físico
-  - Generar esquema físico de BD sobre el SGDB. 
-  - Definir tablas y campos
-  - Imponer restricciones de integridad
-  - Definir índices
+El diseño de una Base de Datos (BD) consta de **tres fases**: diseño conceptual, diseño lógico y diseño físico.
+
+En la primera se crea un modelo Entidad-Relación (E-R) para representar la información que se va a almacenar.  A continuación, se realiza el diseño lógico, que consiste en pasar el modelo E-R a tablas, normalizándolas.
+
+Por último, se lleva a cabo el diseño físico, en el que se genera el esquema físico de la BD sobre el Sistema Gestor de Bases de Datos (SGDB) escogido, se definen las tablas y campos, se imponen las restricciones de integridad, y se definen los índices.
 
 ## Diseño conceptual
 
@@ -38,7 +20,7 @@ Conceptos:
 
 Diagramas entidad-relación
 
-- Elección de los tipos de entidad y sus atributos 
+- Elección de los tipos de entidad y sus atributos
 - Elección de tipos de relación
 
 ## Diseño lógico
@@ -61,7 +43,7 @@ Claves
 
 ### Restricciones de integridad
 
-- Integridad referencial: 
+- Integridad referencial:
   - No puede aparecer un DNI matrícula que no esté en DNI de alumnos
 - Participación total
   - Todos los valores de DNI de Alumnos debe aparecer en DNI de matrícula
@@ -85,7 +67,7 @@ Claves
 - Segunda
 - Tercera
 
-## Diseño físico. Optimización 
+## Diseño físico. Optimización
 
 - Índices
   - Elección de índices
@@ -103,24 +85,24 @@ Forth y Silberschatdz "Fundamentos de bases de datos" (McGraw-hill)
 
 ### Primer paso
 
-crear una relación para cada entidad fuerte en el modelo de datos. 
+crear una relación para cada entidad fuerte en el modelo de datos.
 Cada atributo del tipo de entidad en el modelo se convertirá en un nombre de columna en la relación.
 En este momento uno debe elegir un atributo, o conjunto de atributos, llamado una clave primaria, que identificará de manera única cada fila de la relación.
-La clave ideal es corta, numérica y nunca cambia. 
-Si no hay un buen atributo clave entre los atributos de la tabla. 
-Una opción es concatenar los valores de varios campos para lograr un identificador que será único para cada fila. 
+La clave ideal es corta, numérica y nunca cambia.
+Si no hay un buen atributo clave entre los atributos de la tabla.
+Una opción es concatenar los valores de varios campos para lograr un identificador que será único para cada fila.
 Si este enfoque conduce a claves largas, alfanuméricas, puede ser mejor usar una clave sustituta.
-Una clave sustituta es simplemente un número, generado por el DBMS, que se asigna a cada tupla. 
+Una clave sustituta es simplemente un número, generado por el DBMS, que se asigna a cada tupla.
 
 ### Segundo paso
 
-Crear una relación para cada tipo de entidad débil y dependiente de ID. 
-Cada atributo del tipo de entidad en el modelo de datos se convierte en una columna en la nueva relación. 
+Crear una relación para cada tipo de entidad débil y dependiente de ID.
+Cada atributo del tipo de entidad en el modelo de datos se convierte en una columna en la nueva relación.
 Se debe agregar una columna a la relación débil o dependiente de ID que contenga la clave externa de la tupla de entidad fuerte a la que está relacionada.
 Clave externa
-Columna en una relación, establece una relación con los datos en otra relación. 
+Columna en una relación, establece una relación con los datos en otra relación.
 
 Además de los atributos de la computadora del estudiante, tales como marca y número de serie, la relación StudentComputer tendrá una columna que identifica al estudiante que posee la computadora. Si SSN es la clave de la relación Estudiante, la clave extranjera en la relación StudentComputer contendrá los valores de los números de seguro social de los estudiantes. No es necesario que los nombres de columna en las dos relaciones sean los mismos. Por lo tanto, aunque la columna clave de la | Relación de estudiante se denomina "SSN", la columna de clave externa en StudentComputer se podría llamar "StudentSSN".
-La nueva relación creada para la entidad débil también debe tener una clave primaria propia. 
+La nueva relación creada para la entidad débil también debe tener una clave primaria propia.
 Si la entidad débil es dependiente del ID de la entidad fuerte, entonces haga que la clave de la relación dependiente del ID sea una combinación del campo de clave externa y uno o más otros atributos de la relación dependiente del ID.
 Otra aplicación de entidades dependientes de ID es el modelado de atributos multivalorados. Por ejemplo, es posible que desee proporcionar múltiples direcciones para cada estudiante; Muchos tendrán una dirección durante el año académico y otra durante el verano, por ejemplo. En tal caso, modelar una entidad dependiente de ID denominada "Dirección", y crear una relación con atributos tales como "Calle", "Ciudad", "Estado", etc., así como un atributo de clave externa que contenga valores De la clave primaria para la relación Estudiantil.

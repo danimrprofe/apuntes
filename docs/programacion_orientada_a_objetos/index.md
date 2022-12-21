@@ -1,32 +1,28 @@
 # Programación orientada a objetos
-- [Programación orientada a objetos](#programaci%C3%B3n-orientada-a-objetos)
-  - [1. Introducción](#1-introducci%C3%B3n)
-  - [2. Conceptos básicos](#2-conceptos-b%C3%A1sicos)
+- [Programación orientada a objetos](#programación-orientada-a-objetos)
+  - [1. Introducción](#1-introducción)
+  - [2. Conceptos básicos](#2-conceptos-básicos)
     - [Objetos](#objetos)
-    - [Métodos](#m%C3%A9todos)
+    - [Métodos](#métodos)
     - [Mensajes](#mensajes)
     - [Clases](#clases)
   - [3. Propiedades](#3-propiedades)
   - [4. Herencia](#4-herencia)
-  - [5. Encapsulación](#5-encapsulaci%C3%B3n)
+  - [5. Encapsulación](#5-encapsulación)
   - [6. Polimorfismo](#6-polimorfismo)
-  - [7. Abstracción](#7-abstracci%C3%B3n)
+  - [7. Abstracción](#7-abstracción)
   - [8. Otras](#8-otras)
-  - [9. Agrupación de clases](#9-agrupaci%C3%B3n-de-clases)
-  - [10. Metodología](#10-metodolog%C3%ADa)
-  - [11. Diseño orientado a objetos](#11-dise%C3%B1o-orientado-a-objetos)
-  - [12. Lenguajes de programación orientado a objetos](#12-lenguajes-de-programaci%C3%B3n-orientado-a-objetos)
+  - [9. Agrupación de clases](#9-agrupación-de-clases)
+  - [10. Metodología](#10-metodología)
+  - [11. Diseño orientado a objetos](#11-diseño-orientado-a-objetos)
+  - [12. Lenguajes de programación orientado a objetos](#12-lenguajes-de-programación-orientado-a-objetos)
 
 ## 1. Introducción
 
-- Problema variables accedidas desde cualquier punto del programa. Solución mediante encapsulación de métodos y variables en módulos.
-- Dichos módulos pueden modificar de forma indirecfta sus variables mediante operaciones. (objetos)
-- Extensión de C a C++ con conceptos de orientación de objetos
-- 1995: Aparición de Java, desarrollada por SUN, hereda conceptos de C++
-- POO ha supuesto cambio radical respecto a programación tradicional
-- El desarrollo del software gira entorno a los objetos
+La Programación Orientada a Objetos (POO) es un paradigma de programación que ha supuesto un cambio radical respecto a la programación tradicional. El desarrollo de software gira entorno a los objetos, encapsulando métodos y variables en módulos llamados **objetos**, los cuales pueden modificar de forma indirecta sus variables mediante operaciones. Los objetos se utilizan para construir programas.
 
-Ampliamente exendido gracias a:
+
+Ampliamente extendido gracias a:
 
 - Alta reutilización de código
 - Facilidad de mantenimiento
@@ -54,24 +50,18 @@ Ampliamente exendido gracias a:
 
 ### Métodos
 
-  - Públicos, privados y protegidos
-  - Mutadores (modifican algún atributo del objeto) y observadores (no modifican)
-  - Constructores: se activan al crearse el objeto. Define valores iniciales de las propiedades
-  - Destructores: se activa cuando el método desaparece. Se suele utilizar para liberar recursos
+Los métodos son funciones asociadas a un objeto. Estos pueden ser públicos, privados o protegidos, mutadores o observadores, constructores o destructores. Los primeros modifican algún atributo del objeto, los segundos solo obtienen información, los **constructores** se activan al crearse el objeto y definen los valores iniciales de las propiedades, mientras que los **destructores** se activan al eliminarse el objeto y suelen usarse para liberar recursos.
 
 ### Mensajes
 
   - Los objetos se comunican entre sí mediante mensajes: nombre de objeto +  método + parámetros
-  - Los mensajes conectan al objeto con el mundo ecterior
+  - Los mensajes conectan al objeto con el mundo exterior
 
 ### Clases
 
-  - Conjunto de objetos que pertenecen a la misma familia, tienen un conjunto de métodos y datos comunes
-  - Una clase es una estructura estática, va a definir: atributos y métodos
-  - Cada objeto creado de una clase se llama instancia
-  - Una clase que no tendrá instancias se llama clase abstracta
-  - Durante la ejecución del programa se clean objetos de una clase
-  - Biblioteca de clases: conjunto de clases que se va a utilizar
+Las clases son una estructura estática que define los atributos y métodos de un conjunto de objetos que pertenecen a la misma familia. Estos objetos, también conocidos como **instancias**, se crean durante la ejecución del programa.
+
+Existen **clases abstractas**, aquellas que no tendrán instancias. Para facilitar el desarrollo y reutilizar clases, existen las **bibliotecas de clases**, conjunto de clases disponibles en un mismo lugar para su uso.
 
 ## 3. Propiedades
 
@@ -84,7 +74,7 @@ Ampliamente exendido gracias a:
 
 - Se pueden definir nuevas clases basadas en clases existentes. Reutilización de código, se pueden añadir y/o redefinir nuevas variables y métodos
 - Interfaces
-  - Se puede realizar herencia múltiple utilizando interfaces. 
+  - Se puede realizar herencia múltiple utilizando interfaces.
   - Interfaces contienen declaraciones de métoods sin definición y constantes
   - Una clase puede implementar una o varias interfaces
 - Niveles
@@ -119,11 +109,9 @@ Ampliamente exendido gracias a:
 
 ## 8. Otras
 
-- Persistencia:
-  - Capacidad de objetos de mantener su valor cuando termina la ejecución del programa
-  - El objeto debe ser serializado (flujo de caracteres) para poder ser almacenado en disco o BD
-- Extensibilidad
-- Reutilización
+La **persistencia** permite que los objetos mantengan su valor cuando finaliza la ejecución del programa, para lo cual se deben serializar en un flujo de caracteres y almacenar en un disco o base de datos.
+
+a extensibilidad y la reutilización permiten a los programadores añadir nuevas funcionalidades a los objetos existentes o reutilizarlos en otros proyectos.
 
 ## 9. Agrupación de clases
 

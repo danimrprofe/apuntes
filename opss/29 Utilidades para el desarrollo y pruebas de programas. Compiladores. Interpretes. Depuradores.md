@@ -1,20 +1,18 @@
 # Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores
 
 - [Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores](#utilidades-para-el-desarrollo-y-pruebas-de-programas-compiladores-interpretes-depuradores)
-- [Introducción](#introducci%C3%B3n)
+- [Introducción](#introducción)
   - [Compiladores](#compiladores)
     - [Ventajas](#ventajas)
     - [Tipos de compiladores](#tipos-de-compiladores)
-    - [Etapas del proceso de traducción](#etapas-del-proceso-de-traducci%C3%B3n)
-    - [Etapa de análisis](#etapa-de-an%C3%A1lisis)
-    - [Etapa de síntesis](#etapa-de-s%C3%ADntesis)
+    - [Etapas del proceso de traducción](#etapas-del-proceso-de-traducción)
     - [Elementos importantes en las etapas](#elementos-importantes-en-las-etapas)
-    - [Módulos externos al compilador](#m%C3%B3dulos-externos-al-compilador)
-  - [3. Intérpretes](#3-int%C3%A9rpretes)
-    - [Estructura de un intérprete](#estructura-de-un-int%C3%A9rprete)
-    - [Tipos de intérpretes](#tipos-de-int%C3%A9rpretes)
+    - [Módulos externos al compilador](#módulos-externos-al-compilador)
+  - [3. Intérpretes](#3-intérpretes)
+    - [Estructura de un intérprete](#estructura-de-un-intérprete)
+    - [Tipos de intérpretes](#tipos-de-intérpretes)
   - [4. Depuradores](#4-depuradores)
-    - [Herramientas de depuración](#herramientas-de-depuraci%C3%B3n)
+    - [Herramientas de depuración](#herramientas-de-depuración)
     - [Tipos de depuradores](#tipos-de-depuradores)
   - [5. Entornos de desarrollo](#5-entornos-de-desarrollo)
     - [Componentes de un IDE](#componentes-de-un-ide)
@@ -26,7 +24,7 @@
 - Lenguajes de programación formado por símbolos y reglas que permiten escribir programas
 - Creados para facilitar la tarea de programación
 - Compuestos por un léxico, sintaxis y semántica
-- Necesidad de traducir de un programa escrito en un lenguaje fuente a un lenguaje máquina. 
+- Necesidad de traducir de un programa escrito en un lenguaje fuente a un lenguaje máquina.
 
 Tipos de traductores:
 
@@ -59,27 +57,15 @@ Tipos de traductores:
 
 ### Etapas del proceso de traducción
 
-Las etapas son:
+El proceso de traducción consta de dos etapas principales: análisis y síntesis.
 
-- Análisis
-- Síntesis
+La **etapa de análisis** incluye un análisis léxico, un análisis sintáctico mediante parsers, y un análisis semántico.
 
-### Etapa de análisis
-
-- Análisis léxico
-- Análisis sintáctico (parsers)
-- Análisis semántico
-
-### Etapa de síntesis
-
--	Código intermedio
--	Optimización de código
--	Generación de código
+Por su parte, la **etapa de síntesis** comprende la generación de un código intermedio, la optimización del mismo y la generación de código.
 
 ### Elementos importantes en las etapas
 
-- Tabla de símbolos:
-	Estructura de datos que guarda información generada durante el proceso de compilación
+- Tabla de símbolos: Estructura de datos que guarda información generada durante el proceso de compilación
 - Manejador de errores: decide acciones a realizar al encontrar un error en el proceso de compilación
 - Gestión de errores
 - Errores léxicos, semánticos o sintácticos
@@ -108,10 +94,7 @@ Las etapas son:
 
 ## 4. Depuradores
 
-- Algunos erroes no se detectan durante la compiación, sino durante la ejecución.
-- Necesidad de herramienta para localizar errores en tiempo de ejecución
-- Ejecutan un programa y permiten detener ejecución y observar lo que ocurre dentro de el
-- Situación de variables, por ejemplo
+Los **depuradores** son herramientas esenciales para localizar errores durante la ejecución de un programa. Estos permiten detener la ejecución temporalmente y observar la situación de las variables, entre otras cosas. De esta forma, los errores que no se detectaron durante la compilación pueden ser identificados y corregidos.
 
 ### Herramientas de depuración
 
@@ -131,7 +114,7 @@ Herramientas que ofrecen al programador:
 
 - Combinación de herramientas para autmoatizar y simplificar desarrollo de software.
 - Etapas: escribir código fuente. Compilar. Enlazar código y librerías, y depurar
-- Antiguamente con herramientas diferentes para cada proceso. Un IDE combina las herramientas conjuntamente 
+- Antiguamente con herramientas diferentes para cada proceso. Un IDE combina las herramientas conjuntamente
 - Editor comprende sintaxis y marca partes del código y reconoce errores
 - El editor permite situarse en los diferentres puntos del programa al depurarlo
 

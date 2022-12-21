@@ -87,7 +87,7 @@ Por ejemplo, si no especificamos protocolo se entenderá que es HTTP. Si no espe
 
 * Las URL se codifican acorde a la norma RFC 1738 ([https://www.ietf.org/rfc/rfc1738.txt](https://www.ietf.org/rfc/rfc1738.txt))
 * Únicamente se pueden utilizar los siguientes caracteres dentro de la URL
-  
+
 ```
 [0-9a-zA-Z], $, -, _, . , +, *, ', (, ), ,, !
 ```
@@ -95,15 +95,15 @@ Por ejemplo, si no especificamos protocolo se entenderá que es HTTP. Si no espe
 * Si queremos utilizar en la URL un carácter no válido, se pueden indicar codificados precedidos por  **%\+ un código hexadecimal**
 * No están permitidos los espacios en una URL, para indicarlo utilizaríamos el carácter %20
 
-| Char | URL<br /> Encoding |
-| :-: | :-: |
-| space | %20 |
-| щ | %D1%89 |
-| " | %22 |
-| # | %23 |
-| $ | %24 |
-| % | %25 |
-| & | %26 |
+| Char  | URL<br /> Encoding |
+| :---: | :----------------: |
+| space |        %20         |
+|   щ   |       %D1%89       |
+|   "   |        %22         |
+|   #   |        %23         |
+|   $   |        %24         |
+|   %   |        %25         |
+|   &   |        %26         |
 
 URL según diferentes protocolos
 
@@ -201,7 +201,7 @@ Formato de la petición
 
 * _Línea de petición_
 * Es la primera línea de una petición. Por ejemplo:
-```  
+```
 GET  /Ciclos/CFGS/DAW.html   HTTP/1.1
 ```
 * _Formato_
@@ -300,7 +300,6 @@ Los códigos de estado se dividen en 5  **clases**  diferentes, según el primer
 
 ![](img%5Cteoria-http17.png)
 
-Códigos de estado
 
 * _Los otros 2 dígitos proporcionan información adicional_
 * **200  OK: ** Todo funcionó bien, aquí están los datos
@@ -318,14 +317,16 @@ También nos informa de la nueva  **dirección**  en la que podemos encontrarlo.
 
 El navegador hace la redirección  **automáticamente** , sin que el usuario intervenga.
 
-```
+```http
 GET / HTTP/1.1
 Host: http://softuni.org
 User-Agent: Gecko/20100115 Firefox/3.6
 <CRLF>
 ```
 
-```
+Redirección
+
+```http
 HTTP/1.1 301 Moved Permanently
 Location: http://softuni.bg
 ```

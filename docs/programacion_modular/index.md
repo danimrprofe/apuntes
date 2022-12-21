@@ -1,25 +1,5 @@
 # Programación modular
 
-- [Programación modular](#programaci%C3%B3n-modular)
-  - [1. Introducción](#1-introducci%C3%B3n)
-  - [2. Programación modular](#2-programaci%C3%B3n-modular)
-    - [Ventajas](#ventajas)
-  - [3. Diseño descendente TOP-DOWN](#3-dise%C3%B1o-descendente-top-down)
-  - [4. Clasificación de módulos](#4-clasificaci%C3%B3n-de-m%C3%B3dulos)
-    - [Según el módulo que lo invoca](#seg%C3%BAn-el-m%C3%B3dulo-que-lo-invoca)
-    - [Según retorno de valores](#seg%C3%BAn-retorno-de-valores)
-    - [Según cuando ha sido desarrollado](#seg%C3%BAn-cuando-ha-sido-desarrollado)
-    - [Según el número de módulos que realizan la llamada](#seg%C3%BAn-el-n%C3%BAmero-de-m%C3%B3dulos-que-realizan-la-llamada)
-  - [5. Estructura modular](#5-estructura-modular)
-  - [6. Diseño de funciones](#6-dise%C3%B1o-de-funciones)
-    - [Parámetros](#par%C3%A1metros)
-    - [Ámbito de identificadores](#%C3%A1mbito-de-identificadores)
-  - [7. Recursividad](#7-recursividad)
-  - [8. Librerías](#8-librer%C3%ADas)
-    - [Tipos de librerías](#tipos-de-librer%C3%ADas)
-    - [Características](#caracter%C3%ADsticas)
-    - [Ejemplos (Java, C)](#ejemplos-java-c)
-
 ## 1. Introducción
 
 - Programación estructurada: todo el código dentro de un mismo bloque
@@ -44,10 +24,10 @@
 
 ## 3. Diseño descendente TOP-DOWN
 
--  Descomposición de problemas en sucesivos niveles 
+-  Descomposición de problemas en sucesivos niveles
 	-  Cada módulo tiene una función lo más específica posible
 	-  Reducción del tamaño de los subproblemas. Minimizar duplicidad de código. Módulos reutilizables
-	-  Se agrupan módulos comunes según funcionalidad o temática 
+	-  Se agrupan módulos comunes según funcionalidad o temática
 
 ## 4. Clasificación de módulos
 

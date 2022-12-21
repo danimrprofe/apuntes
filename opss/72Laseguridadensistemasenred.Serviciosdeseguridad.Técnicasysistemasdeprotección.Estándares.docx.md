@@ -10,30 +10,30 @@
   - [Componentes a proteger](#componentes-a-proteger)
     - [Hardware](#hardware)
     - [Software](#software)
-    - [Información](#informaci%C3%B3n)
-  - [Clasificación de amenazas](#clasificaci%C3%B3n-de-amenazas)
-  - [Clasificación de seguridad](#clasificaci%C3%B3n-de-seguridad)
-    - [Física o lógica](#f%C3%ADsica-o-l%C3%B3gica)
+    - [Información](#información)
+  - [Clasificación de amenazas](#clasificación-de-amenazas)
+  - [Clasificación de seguridad](#clasificación-de-seguridad)
+    - [Física o lógica](#física-o-lógica)
     - [Activa o pasiva](#activa-o-pasiva)
-  - [Seguridad física](#seguridad-f%C3%ADsica)
-    - [Amenazas según origen](#amenazas-seg%C3%BAn-origen)
+  - [Seguridad física](#seguridad-física)
+    - [Amenazas según origen](#amenazas-según-origen)
       - [Incendio](#incendio)
-      - [Inundación](#inundaci%C3%B3n)
+      - [Inundación](#inundación)
       - [Desastres naturales](#desastres-naturales)
       - [Electromagnetismo](#electromagnetismo)
     - [Protecciones TEMPEST](#protecciones-tempest)
-    - [Interferencias electromagnéticas](#interferencias-electromagn%C3%A9ticas)
+    - [Interferencias electromagnéticas](#interferencias-electromagnéticas)
     - [Factores humanos](#factores-humanos)
-    - [Alimentación eléctrica (problemas)](#alimentaci%C3%B3n-el%C3%A9ctrica-problemas)
-    - [Amenazas según objetivo](#amenazas-seg%C3%BAn-objetivo)
-  - [Seguridad lógica:](#seguridad-l%C3%B3gica)
-    - [Nivel físico](#nivel-f%C3%ADsico)
+    - [Alimentación eléctrica (problemas)](#alimentación-eléctrica-problemas)
+    - [Amenazas según objetivo](#amenazas-según-objetivo)
+  - [Seguridad lógica:](#seguridad-lógica)
+    - [Nivel físico](#nivel-físico)
     - [Nivel enlace](#nivel-enlace)
     - [Nivel de red](#nivel-de-red)
     - [Nivel de transporte](#nivel-de-transporte)
-    - [Nivel de aplicación](#nivel-de-aplicaci%C3%B3n)
-    - [Nivel de meta aplicación](#nivel-de-meta-aplicaci%C3%B3n)
-  - [Legislación](#legislaci%C3%B3n)
+    - [Nivel de aplicación](#nivel-de-aplicación)
+    - [Nivel de meta aplicación](#nivel-de-meta-aplicación)
+  - [Legislación](#legislación)
 
 ## Seguridad
 
@@ -116,12 +116,12 @@ Activa:
 - Medidas que intentan prevenir y evitar daños en sistemas informáticos
 - ACL, contraseñas, encriptación, firmas, cuotas, encriptación
 
-Pasiva: 
+Pasiva:
 
 - Minimizar los efectos ocasionados
 - SAI, backups, RAID
 
-## Seguridad física 
+## Seguridad física
 
 Trata de proteger el hardware de amenazas o desastres
 naturales.
@@ -216,32 +216,10 @@ Pasivas: no intervienen en el sistema
 
 ### Interferencias electromagnéticas
 
-Orientadas a la denegación de servicio
 
-Intenta evitar que la organización realice su actividad normal
+Las interferencias electromagnéticas orientadas a la denegación de servicio pretenden evitar que una organización lleve a cabo su actividad normal. Para proteger los sistemas de las interferencias en una determinada banda de frecuencias típicas en comunicaciones radio se deben tomar medidas como la emisión con salto de frecuencias y crear un entorno físico libre de interferencias electromagnéticas.
 
-Protección
-
-Defender sistema de interferencias en una determinada banda de frecuencias
-
-Típicas en comunicaciones radio
-
-Medidas de protección
-
-Emisión con salto de frecuencias
-
-Resumen
-
-Entorno físico libre de interferencias electromagnéticas
-
-Disponer de
-
-- Controles de temperatura y humedad
-- Alimentación con UPS (SAI)
-
-Ubicación
-
-Espacio controlado, bajo llave y accesible a personal autorizado
+Además, se deben instalar controles de temperatura y humedad, alimentar el sistema con un UPS (SAI) y ubicarlo en un espacio controlado, bajo llave y accesible solo al personal autorizado.
 
 ### Factores humanos
 
@@ -262,25 +240,12 @@ Recomendaciones:
 
 ### Alimentación eléctrica (problemas)
 
-Disponer de sistemas alimentación suplementaria o ininterrumpida (UPS/SAI)
+La alimentación eléctrica es un tema crítico en los sistemas de información, ya que una interrupción inesperada puede provocar pérdidas de información y corrupción en los sistemas. Para evitar esto hay varias soluciones, como por ejemplo:
 
-Baterías que suministran energía durante un cierto tiempo
-
-Da tiempo a solucionar emergencia o realizar cierres ordenados
-
-Evitar pérdidas de información o corrupción en los sistemas
-
-Grupos electrógenos u otras fuentes
-
-Motores alimentados con gasóleo u otros combustibles
-
-Generan electricidad para mantener los sistemas durante un tiempo adicional
-
-Sistemas de protección eléctrica incluyen
-
-Filtrado (picos de tensión)
-
-Protección contra sobretensiones
+- Disponer de sistemas de alimentación suplementaria o ininterrumpida (UPS/**SAI**)
+- **baterías** que suministran energía durante un tiempo y dan tiempo a solucionar una emergencia o realizar cierres ordenados;
+- **grupos electrógenos** u otras fuentes que generan electricidad para mantener los sistemas durante un tiempo adicional;
+- **sistemas de protección eléctrica** como filtrado para evitar picos de tensión, protección contra sobretensiones y protección contra cortocircuitos.
 
 ### Amenazas según objetivo
 
@@ -298,7 +263,7 @@ Riesgos físicos según su objetivo
 - Acceso a la información
 - Modificación y borrado malintencionado de datos
 
-## Seguridad lógica: 
+## Seguridad lógica:
 
 - Protege el software de los sistemas informáticos
 
@@ -336,9 +301,9 @@ Riesgos físicos según su objetivo
 
 Herramientas WAF
 
-DNS spoofing: 
+DNS spoofing:
 
-- Falsear respuesta del servidor DNS sobre una petición 
+- Falsear respuesta del servidor DNS sobre una petición
 - Darle una IP diferente a la real
 
 ### Nivel de meta aplicación

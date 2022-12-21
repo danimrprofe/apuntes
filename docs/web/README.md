@@ -1,27 +1,15 @@
-- [Introducció](#introducció)
-- [Continguts](#continguts)
-- [Editors de pàgines web](#editors-de-pàgines-web)
-- [Llenguatges per crear webs](#llenguatges-per-crear-webs)
-- [Llenguatge HTML](#llenguatge-html)
-- [Formularis](#formularis)
-- [Àudio i vídeo](#àudio-i-vídeo)
-- [Imatges](#imatges)
-- [Personalització d’estil: CSS](#personalització-destil-css)
-- [Javascript](#javascript)
-
 # Introducció
 
 En aquest tema farem una introducció a la creació web, amb un poc de HTML inicial i realització de pàgines web a nivell visual. També es treballen  fulls d’estil, javascript y disseny responsive
 
-
-# Continguts
+## Continguts
 
 - Pàgines web. Lloc web (website), tipus de pàgines (estàtiques i dinàmiques)
-- Hipertext. 
+- Hipertext.
 - Navegadors  Adreces URL, HTTP i HTTPS.
 - Cookies
 
-# Editors de pàgines web
+## Editors de pàgines web
 
 - De text (Brackets, sublime text, atom)
 - Visuals WYSIWYG (Kompozer)
@@ -30,9 +18,9 @@ En aquest tema farem una introducció a la creació web, amb un poc de HTML inic
 - Creació en línia (Google sites)
 - Instal·lació VS Code i extensions per a HTML. Previsualització
 
-# Llenguatges per crear webs
+## Llenguatges per crear webs
 
-- Funcionament web. Client, navegador, URL, peticions. 
+- Funcionament web. Client, navegador, URL, peticions.
 - Estructura Client-servidor
 - Servidor: Java, SQL
 - Client: HTML, CSS, Javascript
@@ -40,16 +28,19 @@ En aquest tema farem una introducció a la creació web, amb un poc de HTML inic
 - Estructura. Extensió .html
 - Veure el codi font d’una pàgina
 
-# Llenguatge HTML
+## Llenguatge HTML
 
 - Crear una pàgina web senzilla. Treballar amb pàgines web
 - Etiquetes i atributs. Apertura i tancament. Minúscules. Anidament. Sagnat
 - Cos i capçalera. Títols, paràgrafs, salts de línia
 - Comentaris
-- Imatges. Hipervincles. Estils.
-- Taules. 
+- Imatges.
+- Crear [hipervínculos](html/7._Enlaces.md)
+- Organizar información en [listas](html/6._Listas.md)
+- Creación de [tablas](html/9._Tablas.md)
+- Estils.
 
-# Formularis
+## Formularis
 
 - Input
 - Form
@@ -58,7 +49,7 @@ En aquest tema farem una introducció a la creació web, amb un poc de HTML inic
 - Atributo autofocus
 - Validación restringida
 
-# Àudio i vídeo
+## Àudio i vídeo
 
 El elemento **video** nos permite incrustar video fácilmente. Un ejemplo muy simple luce como lo siguiente:
 
@@ -81,12 +72,12 @@ El elemento **audio** funciona exactamente de la misma forma que el elemento **v
   <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
 </audio>
 
-# Imatges
-- Utilitzar taules. 
-- Agregar imatges. 
+## Imatges
+- Utilitzar taules.
+- Agregar imatges.
 - Crear enllaços
 
-# Personalització d’estil: CSS
+## Personalització d’estil: CSS
 
-# Javascript
+## Javascript
 

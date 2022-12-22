@@ -13,7 +13,7 @@ HTML define varios tipos de listas: **ordenadas** y **no ordenadas**
 ## Listas no ordenadas
 
 ```html
-<UL> Elementos de la lista </UL>
+<ul> Elementos de la lista </ul>
 ```
 
 Los elementos de la lista irán precedidos por un símbolo (fijo por defecto) que

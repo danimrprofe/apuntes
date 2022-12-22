@@ -32,31 +32,19 @@ Tipos de fuentes
 
 ### Fuentes AT
 
-Creado en 1984 por IBM como estándar para el IBM AT
+Las Fuentes AT fueron creadas en 1984 por IBM como un estándar para el IBM AT. Esta fuente de alimentación brindaba salida eléctrica para el monitor, sin embargo presentaba dos inconvenientes: un interruptor externo problemático por el que circulaba gran cantidad de voltaje y conectores a la placa base poco diferenciables.
 
-Salida eléctrica para el monitor
-
-_Inconvenientes_
-
-Interruptor externo problemático  por el que circulaba gran cantidad de voltaje
-
-Conectores a la placa base poco diferenciables \(solucionado mediante 4 pines centrales negros\)
-
-Reemplazada con la salida de ATX
+Esto último fue solucionado mediante 4 pines centrales negros. Finalmente esta fuente fue reemplazada con la salida de ATX.
 
 ![](img/32_Fuentes_de_alimentacion6.png)
 
 ### Fuentes ATX
 
-* _Advanced_  _ _  _Technology_  _ _  _Extended_
-* Creado por Intel, 1995\. Actualmente v2\.2
-* Siempre hay energía circulando para encendido por SW
-  * wake\-on\-lan, wake\-on\-ring, Hibernar
-* Compatibilidad
-  * DDR2, PCI Express, SATA,etc\.
-* Conectores
-  * 1 conector de 24 en lugar de 2
-  * __A partir del 2000: __ Conector directo a gráfica \(6 u 8 pines\)
+Las Fuentes ATX ("Advanced Technology Extended"), creadas por Intel en 1995, son actualmente de la versión 2.2.
+
+Siempre hay energía circulando para encendido por software, como el wake-on-lan, wake-on-ring y la hibernación.
+
+Estas fuentes tienen una alta compatibilidad con DDR2, PCI Express, SATA, entre otros. A diferencia de las anteriores, las fuentes ATX tienen un solo conector de 24 en lugar de dos, y a partir de 2000, también tienen un conector directo a la tarjeta gráfica, pudiendo ser de 6 o 8 pines.
 
 ![](img/32_Fuentes_de_alimentacion7.png)
 
@@ -90,21 +78,19 @@ Otra gran ventaja de la tecnología modular es la posibilidad de utilizar **adap
 
 Además, las fuentes modulares ofrecen una mayor **eficiencia**. Esto se debe a que solo se conectan los cables que realmente necesitamos. Esto significa que no hay cables innecesarios que consuman potencia. Esto hace que la computadora sea más eficiente y no desperdicie energía.
 
-_Fuentes semimodulares_
+## Fuentes semimodulares
+
+Las fuentes de alimentación semimodulares son un tipo de fuente de alimentación con una cierta cantidad de cables preinstalados para una configuración básica, pero también incluye una sección modular para conectar cables adicionales para satisfacer la configuración personalizada del usuario.
+
+Esta característica ofrece la ventaja de no tener que trabajar con todos los cables al mismo tiempo y de no tener que lidiar con los cables sueltos en la parte trasera del chasis.
 
 ![](img/32_Fuentes_de_alimentacion8.jpg)
 
 ## Fuentes redundantes
 
-* _Sistemas redundantes _
-* __Tienen los datos o el hardware __ repetidos
-* En sistemas  __críticos__  \(no pueden fallar/dejar de funcionar\)
-* Asegura el funcionamiento ante los posibles fallos
-  * Si deja de funcionar alguno, el otro ocupa su lugar
-* _Ejemplo en servidores_
-* Traen por lo menos 2 fuentes de alimentación
-* Conectadas a  __diferentes sistemas eléctricos__
-* Puede fallar la propia fuente o del sistema eléctrico
+Los sistemas redundantes tienen los datos y/o el hardware repetidos. Esto es especialmente importante en sistemas críticos, ya que aseguran su funcionamiento ante posibles fallos. Si uno de los elementos deja de funcionar, el otro ocupa su lugar.
+
+Un ejemplo de esto es el uso de dos fuentes de alimentación en servidores, conectadas a diferentes sistemas eléctricos, con el fin de minimizar el riesgo de fallos, ya sea por la propia fuente o por el sistema eléctrico.
 
 ![](img/32_Fuentes_de_alimentacion10.png)
 

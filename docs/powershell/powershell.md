@@ -11,32 +11,55 @@ habilitada por defecto.
 
 Para crear una sesión remota de powershell:
 
-    new-pssession -computername rtmsvrd
+```ps
+new-pssession -computername rtmsvrd
+```
 
 Una vez creada la sesión, para conectar a ella se utiliza:
 
-    Enter-PsSession 3 (identificador de sesión)
+```ps
+Enter-PsSession 3 (identificador de sesión)
+```
 
 ## Configuración de red
 
 Para conocer los adaptadores de red
 
-```poweshell
+```ps
 Get-netadapter
 ```
 
-Configurar una interfaz
+```
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+VirtualBox Host-Only N... VirtualBox Host-Only Ethernet Adapter        12 Up           0A-00-27-00-00-0C         1 Gbps
+Ethernet                  Intel(R) Ethernet Connection (12) I2...       4 Up           2C-F0-5D-E5-5F-B3         1 Gbps
+```
 
+## Configurar una interfaz
+
+Este código es un comando de PowerShell que se usa para crear una nueva dirección IP, asignar una máscara de subred, y establecer una puerta de enlace predeterminada.
+
+```ps
 new-netipaddress -interfaceindex 6 -ipaddress 192.168.0.200
 -prefixlength 24 -defaultgateway 192.168.0.1
+```
 
-Configurar direcciones DNS
+## Configurar direcciones DNS
 
+Este código establece la dirección del servidor DNS para la interfaz de red con índice 6. Establece las direcciones del servidor DNS en "192.168.0.1" y "192.168.0.2". Esto le permite al dispositivo enviar solicitudes DNS a estos servidores específicos.
+
+```ps
 Set-dnsclientserveraddress -interfaceindex 6 –serveraddresses
 ("192.168.0.1","192.168.0.2")
+```
 
+## Quitar espacios en nombres de carpetas y archivos
 
-## Quitar espacios en nombres de carpetas y archivosa
+Este código usa los cmdlets de PowerShell para buscar dentro de todos los directorios y subdirectorios de la ubicación actual (-Recurse) y busca cualquier nombre de archivo que contenga un espacio.
+
+Estos archivos se guardan en una variable y luego se renombran con el comando Rename-Item. El espacio se reemplazará con un guión bajo (-replace).
+
 
 ```ps
 Get-ChildItem . -Recurse | Where-Object { $_.Name.Contains(' ') } | Rename-Item -NewName { $_.Name -replace ' ', '_' }

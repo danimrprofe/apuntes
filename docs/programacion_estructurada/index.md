@@ -1,25 +1,10 @@
 # Programación estructurada
 
-- [Programación estructurada](#programaci%C3%B3n-estructurada)
-  - [Introducción](#introducci%C3%B3n)
-  - [Programación convencional](#programaci%C3%B3n-convencional)
-  - [Programación estructurada](#programaci%C3%B3n-estructurada-1)
-    - [Características de un programa propio](#caracter%C3%ADsticas-de-un-programa-propio)
-    - [Teorema de la estructura](#teorema-de-la-estructura)
-    - [Herramientas](#herramientas)
-  - [Estructuras básicas](#estructuras-b%C3%A1sicas)
-    - [Estructuras de control](#estructuras-de-control)
-    - [Estructura de selección](#estructura-de-selecci%C3%B3n)
-    - [Estructura de repetición](#estructura-de-repetici%C3%B3n)
-  - [5. Programación modular](#5-programaci%C3%B3n-modular)
-    - [Ventajas respecto a estructurada.](#ventajas-respecto-a-estructurada)
-    - [Subprogramas](#subprogramas)
-
 ## Introducción
 
 - Programación convencional, programas que funcionen sin importar mantenimiento
-- Nuevos programas: facilidad de entender y ampliar o modificar programas 
-- Código fácil de entender. Programas sencillos y fáciles de mantener 
+- Nuevos programas: facilidad de entender y ampliar o modificar programas
+- Código fácil de entender. Programas sencillos y fáciles de mantener
 
 ## Programación convencional
 
@@ -63,9 +48,11 @@
 
 ### Estructura de selección
 
-a.	Simple
-b.	Doble
-c.	Múltiple
+La estructura de selección **simple** es una estructura de control que evalúa una condición para determinar si se ejecuta una sentencia o un bloque de sentencias. Si la condición se evalúa como verdadera, se ejecuta la sentencia o el bloque de sentencias.
+
+**Doble**: Si la condición se evalúa como verdadera, se ejecuta la primera sentencia o bloque de sentencias; de lo contrario, se ejecuta la segunda sentencia o bloque de sentencias.
+
+**Múltiple**: Si la condición se evalúa como verdadera, se ejecuta la primera sentencia o bloque de sentencias; de lo contrario, se evalúan otras condiciones en secuencia para determinar cuál sentencia o bloque de sentencias se ejecutará.
 
 ### Estructura de repetición
 
@@ -75,7 +62,7 @@ c.	Para
 
 ## 5. Programación modular
 
-### Ventajas respecto a estructurada.
+### Ventajas respecto a estructurada
 
 - División en módulos en diferentes archivos
 - Resueltos independientemente
@@ -83,17 +70,11 @@ c.	Para
 
 ### Subprogramas
 
-	- Funciones
-		- Definir una función
-		- Llamar a la función
-	- Procedimientos
-		- No devuelven valor
-		- Parámetros entrada, salida o ambos
-		- Partes
-a.	Cabecera
-b.	Cuerpo
-	- Subrutinas
-- Ámbito de identificadores
-- Parámetros
-- Recursividad
-- Compilación separada
+Subprogramas son bloques de código reutilizables que se utilizan para realizar tareas comunes.
+
+Estos subprogramas se dividen en tres categorías principales: funciones, procedimientos y subrutinas.
+
+- Las **funciones** son subprogramas que devuelven un valor una vez que se completa la ejecución.
+- Los **procedimientos** son subprogramas que no devuelven un valor, sino que realizan una tarea determinada.
+- Finalmente, las **subrutinas** son subprogramas que se combinan con otros para realizar una tarea más grande
+

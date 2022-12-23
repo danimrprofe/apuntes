@@ -93,7 +93,9 @@ Estupendo. Ahora cómo calculamos la edad. Bueno, pues sabemos que la edad será
 
 Pero fíjate, esa resta nos da un valor, que es justo lo que queremos, pero que…
 
-<img src="media/image7.png" id="image7">Cálculos con variables
+<img src="media/image7.png" id="image7">
+
+## Cálculos con variables
 
 El siguiente paso será calcular nuestra edad.
 

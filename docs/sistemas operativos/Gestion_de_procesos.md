@@ -8,9 +8,7 @@ Un proceso necesitará ciertos **recursos** -como tiempo de CPU, memoria, archiv
 
 Estos recursos se asignan al proceso ya sea cuando se crea o mientras se está ejecutando.
 
-Un proceso es la unidad de trabajo en la mayoría de los sistemas. Los sistemas consisten en una
-colección de procesos: los procesos del SO ejecutan el código del sistema y los procesos del usuario
-ejecutan el código del usuario.
+Un proceso es la unidad de trabajo en la mayoría de los sistemas. Los sistemas consisten en una colección de procesos: los procesos del SO ejecutan el código del sistema y los procesos del usuario ejecutan el código del usuario.
 
 Todos estos procesos pueden ejecutarse **simultáneamente**.
 

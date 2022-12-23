@@ -11,7 +11,7 @@ Se espera que estos problemas actuales se solucionen una vez que se haya implant
 
 # Protocolo CIDR
 
-Mientras tanto, una solución a corto plazo consiste en utilizar el protocolo CIDR 
+Mientras tanto, una solución a corto plazo consiste en utilizar el protocolo CIDR
 Classless Inter Domain Routing o Encaminamiento entre Dominios sin Clases).
 
 Con este protocolo
@@ -67,7 +67,7 @@ Se necesita menor tiempo de cálculo de las rutas (la red funcionará de una for
 
 El encaminador tiene menos requerimientos de procesador y memoria
 
-Superredes
+## Superredes
 
 El esquema de direccionamiento CIDR está enfocado al aprovechamiento de las
 direcciones disponibles, evitando despilfarros.
@@ -127,13 +127,13 @@ Solamente puedan “verse” las estaciones que tienen una misma máscara, es de
 Esta situación se puede solucionar con el uso de encaminadores dentro de la misma red, colocando las estaciones que
 tienen el mismo prefijo de red extendido y la misma máscara dentro del mismo segmento.
 
-# Algoritmos de encaminamiento
+## Algoritmos de encaminamiento
 
 Algoritmos de encaminamiento asociados a IPv4, `RIPv1`, no permiten el uso de múltiples máscaras de subred dentro de una misma red.
 
 Para soportar VLSM, se necesita utilizar un protocolo más avanzado, como `RIPv2` (RFC 1388) u `OSPF`.
 
-Máscaras de red de longitud variable
+## Máscaras de red de longitud variable
 
 Ventajas por las que es preferible usar más de una máscara de subred para una dirección IP
 dada.

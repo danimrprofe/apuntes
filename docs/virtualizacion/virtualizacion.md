@@ -1,25 +1,5 @@
 # Virtualización
 
-- [Virtualización](#virtualizaci%C3%B3n)
-  - [Concepto de virtualización](#concepto-de-virtualizaci%C3%B3n)
-    - [De qué se trata](#de-qu%C3%A9-se-trata)
-    - [Usos de la virtualización](#usos-de-la-virtualizaci%C3%B3n)
-    - [Ventajas de virtualizar](#ventajas-de-virtualizar)
-  - [Componentes de la virtualizción](#componentes-de-la-virtualizci%C3%B3n)
-    - [Anfitrión (HOST)](#anfitri%C3%B3n-host)
-    - [Huésped (GUEST)](#hu%C3%A9sped-guest)
-    - [Hypervisor (VMM)](#hypervisor-vmm)
-  - [Tipos de virtualización](#tipos-de-virtualizaci%C3%B3n)
-    - [Virtualización de recursos](#virtualizaci%C3%B3n-de-recursos)
-    - [Virtualización de plataforma](#virtualizaci%C3%B3n-de-plataforma)
-  - [Tipos de virtualización de plataforma](#tipos-de-virtualizaci%C3%B3n-de-plataforma)
-    - [Emulación](#emulaci%C3%B3n)
-    - [Virtualización nativa](#virtualizaci%C3%B3n-nativa)
-    - [Virtualización asistida por hardware](#virtualizaci%C3%B3n-asistida-por-hardware)
-  - [Tipos de hipervisor](#tipos-de-hipervisor)
-    - [Tipo 1: Hipervisor alojado o hosted](#tipo-1-hipervisor-alojado-o-hosted)
-    - [Tipo 2: Hipervisor nativo o bare metal](#tipo-2-hipervisor-nativo-o-bare-metal)
-
 ## Concepto de virtualización
 
 ![](2019-05-16-08-40-46.png)

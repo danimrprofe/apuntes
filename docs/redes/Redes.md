@@ -53,23 +53,6 @@
 
 # Teoría redes
 
-# Dirección MAC
-
-- Direcciones físicas exclusivas de cada - tarjeta de red. 
-- Todas las tarjetas de red tienen un - identificador único denominado dirección - MAC (independiente del medio) 
-- Formato
-- Formada por 48 bits
-- 24 primeros = fabricante 
-- 24 siguientes = número de serie que el - fabricante  ha asignado a la tarjeta de red
-- No pueden existir en el mundo dos tarjetas de red con igual MAC.
-
-![redes](redes-img/image4.png)
-
-![redes](redes-img/image5.png)
-
-# Estructura dirección MAC
-
-![redes](redes-img/image6.png)
 
 # Direccion IP
 
@@ -87,7 +70,7 @@
 
 ## Direección IPv4
 
-- Dirección IPv4 está formada por un número de 32 bits (4 bytes) 
+- Dirección IPv4 está formada por un número de 32 bits (4 bytes)
 - 4 numeros deciimalees separados por puntos
 - Por ejemplo: 192.168.0.2.
 - Cada byte representado como en decimal
@@ -95,7 +78,7 @@
 ## Dirección IPv6
 
 - Número de 128 bits (16 bytes) separado por - dos puntos
-- Por ejemplo: `8000:0000:0000:0000:0123:4567:89AB:CDEF`. 
+- Por ejemplo: `8000:0000:0000:0000:0123:4567:89AB:CDEF`.
 - Usualmente cada byte es representado por su equivalente hexadecimal y cada dos bytes se utiliza el símbolo como separador.
 
 # Formato dirección IPv4
@@ -124,11 +107,11 @@
 
 # Interfaz de red
 
-- Una interfaz de red es una conexión entre 
+- Una interfaz de red es una conexión entre
   - un host
   - Un enlace físico conectado a la red (ejemplo: entre ordenador y cable de - red)
 - Interfaz de red = NIC = tarjeta de red
-- Un dispositivo puede tener una o más 
+- Un dispositivo puede tener una o más
 
 ![](2019-05-08-08-42-11.png)
 
@@ -154,7 +137,7 @@ Problemática
 
 # Classes de direcciones
 
-- Una red con clase (classful) es una arquitectura de direccionamiento de red utilizada en Internet desde 1981 
+- Una red con clase (classful) es una arquitectura de direccionamiento de red utilizada en Internet desde 1981
 - A partir de 1993 se introduce el enrutamiento entre dominios sin clase en 1993 (CIDR)
 
 ## ¿Cómo se divide el espacio de direcciones?
@@ -178,7 +161,7 @@ Problemática
 # CLASE A
 
 - El primer bit es un 0, así quedarán 7 bits - para definir la red.
-- Empiezan por un valor entre 00000000 y - 01111111. 
+- Empiezan por un valor entre 00000000 y - 01111111.
 - Es decir 0 y 127
 - 0 y el 127 reservados (entre 1 y 126 en realidad).
 - La red 127.0.0.1 es para loopback.
@@ -219,9 +202,9 @@ Públicas y privadas
 
 ## Direcciones IP privadas (reservadas)
 
-- Son visibles únicamente por otros hosts de su propia red o de otras redes privadas interconectadas por routers. 
-- Se utilizan en las empresas para los - puestos de trabajo. 
-- Los ordenadores con direcciones IP privadas - pueden salir a Internet por medio de un - router (o proxy) que tenga una IP pública. 
+- Son visibles únicamente por otros hosts de su propia red o de otras redes privadas interconectadas por routers.
+- Se utilizan en las empresas para los - puestos de trabajo.
+- Los ordenadores con direcciones IP privadas - pueden salir a Internet por medio de un - router (o proxy) que tenga una IP pública.
 - Desde Internet no se puede acceder a ordenadores con direcciones IP privadas.
 
 ### Bloques de redes privadas
@@ -256,15 +239,15 @@ Estas direcciones IP:
 
 Host siempre se conecta a la red con una misma IP.
 
-Las direcciones IP públicas estáticas son las que utilizan los servidores de Internet con objeto de que estén siempre localizables por los usuarios de Internet 
+Las direcciones IP públicas estáticas son las que utilizan los servidores de Internet con objeto de que estén siempre localizables por los usuarios de Internet
 
 Estas direcciones hay que contratarlas
 
 ## Direcciones dinámicas
 
-Un host que se conecte a la red cada vez lo hará con una dirección IP distinta. 
+Un host que se conecte a la red cada vez lo hará con una dirección IP distinta.
 
-Las direcciones IP públicas dinámicas son las que se utilizan en las conexiones a Internet mediante un módem. 
+Las direcciones IP públicas dinámicas son las que se utilizan en las conexiones a Internet mediante un módem.
 
 Los proveedores de Internet utilizan direcciones IP dinámicas debido a que tienen más clientes que direcciones IP (es muy improbable que todos se conecten a la vez).
 
@@ -329,7 +312,7 @@ El router debe realizar un AND lógico binario entre la dirección IP de destino
 
 La máscara de red se puede representar:
 
-1. En formato IP decimal (255.255.255.0) 
+1. En formato IP decimal (255.255.255.0)
 2. Con la notación / en la que se especifican los bits de red (/24)
 
 #### Utilización de la máscara
@@ -391,84 +374,12 @@ Asignación IANA: https://www.iana.org/assignments/ipv4-address-space/ipv4-addre
 
 Cómo calcular las direcciones:
 
-- La dirección de la red o subred: 
+- La dirección de la red o subred:
   - Todos los bits de host a 0 (en la máscara de Subred)
-- La dirección de broadcast: 
+- La dirección de broadcast:
   - Todos los bits de host a 0 (en la máscara de Subred)
-- El primer host de la subred: 
+- El primer host de la subred:
   - Todos los bits de host a 0 (en la máscara de Subred) menos el último a 1
-- El último host de la subred: 
+- El último host de la subred:
   - Todos los bits de host a 1 (en la máscara de Subred) menos el último a 0
 
-# Subredes
-
-# Problemática
-
-- Sistema de direcciones de clase A, B y C poco flexible.
-- Empresa 300 ordenadores = red de clase B 
-- Desperdicio de IPs
-- Se soluciona con la creación de subredes
-
-# Segmentación
-
-- Mediante el uso de dispositivos físicos de interconexión 
-- Podemos dividir una red tipo A, B o C en segmentos más pequeños para incrementar su eficacia.
-- Los segmentos de red separados por routers reciben el nombre de subredes. 
-
-# Subnetting o creación de subredes
-
-- Método para administrar las direcciones IP.
-- Dividir clases de direcciones de red en partes de menor tamaño.
-- Dividir una red en subredes significa:
-  - Utilizar una máscara de subred para dividir la red.
-  - Convertir una gran red en segmentos más pequeños, eficientes y administrables.ç
-
-![](2019-05-08-08-49-20.png)
-
-# Máscara de subred
-
-Podemos coger tantos bits de la parte de host para hacer subredes como queramos
-
-# Subredes posibles clase C
-
-Las combinaciones posibles para una IP de clase C son:
-
-![](2019-05-08-08-50-03.png)
-
-# Agotamiento del espacio de direcciones
-
-¿Por qué no quedan direcciones IP disponibles?
-
-IPv4 se diseñó antes de que se produjera la gran demanda de direcciones que existe en la actualidad.
-
-El crecimiento de Internet lleva muchos años amenazando con agotar el suministro de direcciones IP.
-
-La división en subredes, la traducción NAT y el direccionamiento IP han sido algunas soluciones (más bien parches) para extender el direccionamiento sin agotar el suministro.
-
-Por ello existe IPv6, un espacio de direccionamiento mayor.
-
-# Preguntas
-
-- ¿A qué subred pertenece la IP 195.85.8.87?
-- ¿Qué tipo de IP es 195.85.8.95?¿ y 195.85.8.96?
-- ¿Pertenecen a la misma subred?
-- ¿A qué IP tengo que enviar un paquete para que llegue a todos los hosts de la subred 195.85.8.96?
-- ¿A cuantos hosts puedo asignar IP en toda la red?
-
-# Ejercicio
-
-Para los siguientes supuestos:
-
-- IP asignada: 218.35.50.0. Necesitamos 5 subredes
-- IP asignada: 195.100.5.0. 50 máquinas en cada subred
-- IP asignada: 140.10.0.0. Necesitamos 8 subredes
-- IP asignada: 172.59.0.0. Necesitamos 10 subredes
-- IP asignada: 195.85.8.0. Necesitamos 8 subredes
-
-Calcular los siguientes parámetros.
-
-- Clase de dirección:
-- Máscara de red por defecto:
-- Máscara de subred:
-- Cantidad de subredes:
-- Cantidad de direcciones:

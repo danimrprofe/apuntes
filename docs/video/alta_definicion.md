@@ -24,4 +24,6 @@ Para poder ver películas o series en 4K o superior, necesitamos:
 
 Como los discos Blu-ray no tienen capacidad suficiente para guardar una película en formato 4K (es mucho más grande), se inventó el formato **Blu-ray Ultra HD**. Las películas grabadas en un Blu-ray convencional, solo pueden almacenar video en FullHD (1080).
 
+ Además, los discos Blu-ray Ultra HD también pueden almacenar contenido de audio en alta definición, como el formato **Dolby Atmos**, y contenido extra, como comentarios de director, escenas eliminadas y más. Esto hace que los discos Blu-ray Ultra HD sean ideales para aquellos que quieren disfrutar de la calidad de imagen y sonido de la mejor manera posible.
+
 ![](img/2020-04-03-15-11-13.png)

@@ -31,16 +31,18 @@ Los parámetros se separan con comas, como una lista de la compra. Aquí print u
 
 En la función PRINT debe ponerse dentro del paréntesis lo que quieras que aparezca en pantalla. También podemos hacer esto:
 
-INPUT. El usuario también tiene cosas que decir
+## Input
+
 A veces necesitamos que el usuario nos escriba datos como un nombre, un número, etc. para guardarlo en algún sitio, o hacer operaciones. Para eso usamos la función input.
 Cómo utilizar input
+
 Como es una función, ya sabes que debe ir seguida de unos paréntesis, así que escribiremos:
 
 Esta función hará aparecer en pantalla un cursor parpadeante y la posibilidad de que escribamos algo.  Hasta que no le des a la tecla intro, él espera pacientemente.
 
 Pero claro... ¿dónde va a guardarse lo que yo escriba? Necesitamos reservar un espacio de memoria donde podamos guardar lo que escriba el usuario y un “indicador” para poder ir luego a buscarlo si queremos usar ese dato.
 
-Las variables
+## Las variables
 Y así llegamos al concepto de variable. Digamos que una variable es una CAJA donde voy a almacenar un dato.
 Vamos a ver este ejemplo:
 

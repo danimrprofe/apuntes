@@ -6,7 +6,7 @@ Nuestros programas, hasta ahora, hacen siempre lo mismo, sean cuales sean los da
 
 Por ejemplo, recordemos un programa que nos pregunte el año de nacimiento y nos diga “Hola Javi tienes 47 años”, podría ser divertido que nos diese diferentes respuestas según los años que nos calcule (por ejemplo, si somos mayores de edad o no). Para eso necesitamos los CONDICIONALES.
 
-PARTES DE UN CONDICIONAL
+## Partes de un condicional
 
 Un condicional tiene tres “partes”.
 
@@ -110,13 +110,10 @@ Con la altura y la edad que he puesto, el programa me dice que ‘pasa’, porqu
 
 A mí me salen cuatro (refiriéndome a edad y altura):
 
-menos-menos
-
-menos-más
-
-más-menos
-
-más-más
+- menos-menos
+- menos-más
+- más-menos
+- más-más
 
 Debéis cambiar a mano (es un ejemplo sencillo) los valores para ejemplificar los cuatro casos y ver que se comporta adecuadamente. Y esto, sí que es comprobar que un programa funciona debidamente.
 
@@ -138,11 +135,9 @@ Lo correcto es, por ejemplo:
 
 Podemos usar también en lugar de ==:
 
-Mayor o igual (>=)
-
-Menor o igual (>=)
-
-Distinto (!=).
+- Mayor o igual (>=)
+- Menor o igual (>=)
+- Distinto (!=).
 
 Actividad 6: modifica el programa anterior para que mire si el nombre es distinto del tuyo y, si lo es, te diga “No te llamas igual que yo”.
 

@@ -1,24 +1,6 @@
-- [Introducción##](#introducci%C3%B3n)
-- [Hardware de E/S##](#hardware-de-es)
-- [Proceso genérico E/S##](#proceso-gen%C3%A9rico-es)
-- [Comunicación con el dispositivo##](#comunicaci%C3%B3n-con-el-dispositivo)
-- [Tipos de dispositivos según el acceso al sistema##](#tipos-de-dispositivos-seg%C3%BAn-el-acceso-al-sistema)
-- [Tipos de E/S en función de la sincronización del controlador##](#tipos-de-es-en-funci%C3%B3n-de-la-sincronizaci%C3%B3n-del-controlador)
-- [Técnicas para gestionar E/S y salidas##](#t%C3%A9cnicas-para-gestionar-es-y-salidas)
-- [Software de E/S##](#software-de-es)
-- [Objetivos##](#objetivos)
-- [Independencia de procesos E/S##](#independencia-de-procesos-es)
-- [Gestión de errores##](#gesti%C3%B3n-de-errores)
-- [Manejo de dispositivos compatibles y dedicados##](#manejo-de-dispositivos-compatibles-y-dedicados)
-- [Gestor se estructura en niveles##](#gestor-se-estructura-en-niveles)
-- [E/S en espacio de usuario##](#es-en-espacio-de-usuario)
-- [E/S independiente de dispositivo##](#es-independiente-de-dispositivo)
-- [Manejadores de dispositivo##](#manejadores-de-dispositivo)
-- [Manejadores de interrupciones##](#manejadores-de-interrupciones)
-- [Estancamientos##](#estancamientos)
-- [Ejemplo de elemento de E/S##](#ejemplo-de-elemento-de-es)
+# Gestión de entrada / salida
 
-## Introducción## 
+## Introducción
 
 Gestión de dispositios E/S muy importante para el SO. Substistemas de
 E/s dedicadas a esto.
@@ -26,7 +8,7 @@ E/s dedicadas a esto.
 Rango muy amplio de dispositivos en ordenador (teclado, disco duro,
 monitor, impresoras)
 
-## Hardware de E/S## 
+## Hardware de E/S
 
 Dispositivos se categorizan en almacenamiento, comunicaciones, interfaz
 de usuario
@@ -58,7 +40,7 @@ Registros
 
 Protocolos de comunicaciones
 
-## Proceso genérico E/S## 
+## Proceso genérico E/S
 
 SO escribe comando en registro de la tarjeta cfontroladora
 
@@ -72,7 +54,7 @@ SO recibe interrupción y CPU atiende en función de prioridad
 
 Datos leídos se colocan en registros de la tarjeta para SO los lea
 
-## Comunicación con el dispositivo## 
+## Comunicación con el dispositivo
 
 A través de registros
 
@@ -89,13 +71,13 @@ como gráficos
 
 Es necesario proteger los spacios de memoria entre procesos
 
-## Tipos de dispositivos según el acceso al sistema## 
+## Tipos de dispositivos según el acceso al sistema##
 
 Dispositivos de bloque
 
 Dispositivos de carácter
 
-## Tipos de E/S en función de la sincronización del controlador## 
+## Tipos de E/S en función de la sincronización del controlador##
 
 E/S programada
 
@@ -118,42 +100,44 @@ Controladora se encarga de la transferencia cuando el bus esá libre
 
 Cuando termina de enviar datos, genera interrupción atendida por el SO
 
-## Técnicas para gestionar E/S y salidas## 
+## Técnicas para gestionar E/S y salidas
 
-Buffering
+Las técnicas de gestión de E/S y salidas son fundamentales para mejorar el rendimiento de los sistemas informáticos.
 
-Spooling
+Una de las técnicas más comunes es el **Buffering**. Esta técnica se usa para almacenar temporalmente los datos en la memoria RAM, para reducir el tiempo de acceso a los dispositivos de E/S.
 
-Cache
+El **Spooling** es otra técnica de gestión de E/S. Utiliza una memoria intermedia para almacenar datos antes de que se procesen. Esto permite a los dispositivos de E/S trabajar de forma independiente y permite a los usuarios realizar otras tareas mientras se procesan los datos.
 
-## Software de E/S## 
+Por último, la **Cache** es un almacén temporal de datos que se almacena en la memoria RAM con el objetivo de mejorar el rendimiento. La información se almacena en la memoria RAM, lo que permite a los sistemas informáticos acceder a los datos más rápidamente. Estas tres técnicas juntas mejoran la eficiencia de los sistemas informáticos, permitiendo una mejor gestión de E/S y salidas.
+
+## Software de E/S##
 
 Gestor de E/S. Parte del SO que realiza la gestión de los distintos
 periféricos
 
-## Objetivos## 
+## Objetivos##
 
-## Independencia de procesos E/S## 
+## Independencia de procesos E/S##
 
-## Gestión de errores## 
+## Gestión de errores##
 
-## Manejo de dispositivos compatibles y dedicados## 
+## Manejo de dispositivos compatibles y dedicados##
 
-## Gestor se estructura en niveles## 
+## Gestor se estructura en niveles##
 
-## E/S en espacio de usuario## 
+## E/S en espacio de usuario##
 
 Funciones de biblioteca de programación que permiten realizar acciones
 de E/S
 
 Programas completos fuera del núcleo: sistema de spooling de impresora
 
-## E/S independiente de dispositivo## 
+## E/S independiente de dispositivo##
 
-## Manejadores de dispositivo## 
+## Manejadores de dispositivo##
 
-## Manejadores de interrupciones## 
+## Manejadores de interrupciones##
 
-## Estancamientos## 
+## Estancamientos##
 
-## Ejemplo de elemento de E/S## 
+## Ejemplo de elemento de E/S##

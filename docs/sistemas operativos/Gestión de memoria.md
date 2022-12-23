@@ -1,26 +1,6 @@
-# SO. Gestión de memoria
+# Gestión de memoria
 
-- [SO. Gestión de memoria](#so-gestión-de-memoria)
-  - [Conceptos generales##](#conceptos-generales)
-    - [Funciones de gestión de memoria](#funciones-de-gestión-de-memoria)
-    - [Jerarquía de memoria](#jerarquía-de-memoria)
-    - [Principio de localidad](#principio-de-localidad)
-    - [Protección de memoria](#protección-de-memoria)
-    - [Control de memoria](#control-de-memoria)
-  - [Fragmentación](#fragmentación)
-  - [Tipos de fragmentación](#tipos-de-fragmentación)
-  - [Modelos de gestión de memoria##](#modelos-de-gestión-de-memoria)
-  - [Asignación contigua](#asignación-contigua)
-    - [Multiprogramación con número fijo de tareas (MFT)](#multiprogramación-con-número-fijo-de-tareas-mft)
-    - [Multiprogramación con número variable de tareas (MVT)](#multiprogramación-con-número-variable-de-tareas-mvt)
-  - [Asignación dispersa](#asignación-dispersa)
-    - [Segmentación](#segmentación)
-    - [Paginación](#paginación)
-    - [Segmentación paginada](#segmentación-paginada)
-    - [Paginación multinivel](#paginación-multinivel)
-  - [Memoria virtual](#memoria-virtual)
-
-## Conceptos generales##
+## Conceptos generales
 
 ### Funciones de gestión de memoria
 

@@ -1,40 +1,5 @@
 # SO. Gestión de procesos
 
-- [SO. Gestión de procesos](#SO-Gesti%C3%B3n-de-procesos)
-  - [Introducción](#Introducci%C3%B3n)
-    - [Relación entre el SO y los procesos](#Relaci%C3%B3n-entre-el-SO-y-los-procesos)
-  - [Concepto de proceso](#Concepto-de-proceso)
-    - [Ejecución de un proceso](#Ejecuci%C3%B3n-de-un-proceso)
-    - [Partes de un proceso](#Partes-de-un-proceso)
-  - [Estados de un proceso##](#Estados-de-un-proceso)
-  - [Características de un proceso](#Caracter%C3%ADsticas-de-un-proceso)
-  - [Procesos padres e hijos](#Procesos-padres-e-hijos)
-  - [Bloque de control de procesos](#Bloque-de-control-de-procesos)
-    - [Control de procesos](#Control-de-procesos)
-    - [Estructura del bloque de control de procesos](#Estructura-del-bloque-de-control-de-procesos)
-    - [En programas multihilo o multihebra:](#En-programas-multihilo-o-multihebra)
-  - [Cambio de contexto](#Cambio-de-contexto)
-  - [Planificación de procesos](#Planificaci%C3%B3n-de-procesos)
-    - [Fases de la planificación](#Fases-de-la-planificaci%C3%B3n)
-    - [Planificación](#Planificaci%C3%B3n)
-    - [Planificador](#Planificador)
-    - [Prioridades](#Prioridades)
-    - [Aspectos a comparar](#Aspectos-a-comparar)
-    - [Algoritmos de planificación](#Algoritmos-de-planificaci%C3%B3n)
-      - [Tipos](#Tipos)
-        - [Algoritmo FIFO (First In First Out) o FCFS (First Come First Serve)](#Algoritmo-FIFO-First-In-First-Out-o-FCFS-First-Come-First-Serve)
-        - [Algoritmo Round Robin](#Algoritmo-Round-Robin)
-        - [Colas multinivel](#Colas-multinivel)
-    - [Selección del algoritmo optimo](#Selecci%C3%B3n-del-algoritmo-optimo)
-  - [Comunicación entre procesos](#Comunicaci%C3%B3n-entre-procesos)
-    - [Sección crítica](#Secci%C3%B3n-cr%C3%ADtica)
-    - [Exclusión mutua](#Exclusi%C3%B3n-mutua)
-    - [Semáforos](#Sem%C3%A1foros)
-    - [Interbloqueos](#Interbloqueos)
-    - [Sincronización en Java](#Sincronizaci%C3%B3n-en-Java)
-  - [Threads o hilos](#Threads-o-hilos)
-    - [Ejemplo (Word)](#Ejemplo-Word)
-
 ## Introducción
 
 Un **proceso** puede ser pensado como un programa en ejecución.
@@ -100,7 +65,7 @@ Cuando se ejecuta un programa:
 
 Procesos padres e hijos
 
-## Estados de un proceso## 
+## Estados de un proceso
 
 - Nuevo: si es admitido pasa al estado de preparado
 - Preparado: procesos admitidos,  interrumpidos o que vienen de estar en bloqueo
@@ -130,17 +95,17 @@ denominado proceso padre. Así, al nuevo proceso lanzado se le denomina proceso 
 
 ### Control de procesos
 
-Los sistemas operativos disponen de los servicios necesarios para la gestión de los procesos, tales como su creación, terminación, ejecución periódica, cambio de prioridad, etc. 
+Los sistemas operativos disponen de los servicios necesarios para la gestión de los procesos, tales como su creación, terminación, ejecución periódica, cambio de prioridad, etc.
 
 Durante su existencia, los procesos pasan por distintos estados cuyas transiciones están controladas por el SO.
 
-Toda la información de un proceso que el SO necesita para controlarlo se mantiene en una estructura de datos: el bloque de control de procesos o BCP. 
+Toda la información de un proceso que el SO necesita para controlarlo se mantiene en una estructura de datos: el bloque de control de procesos o BCP.
 
 En SO multiproceso, el SO mantiene listas de bloques de control de procesos para cada uno de los estados del sistema.
 
 ### Estructura del bloque de control de procesos
 
-Esta estructura de datos, que es única para cada proceso, identifica el proceso respecto de los demás y sirve para controlar su correcta ejecución. 
+Esta estructura de datos, que es única para cada proceso, identifica el proceso respecto de los demás y sirve para controlar su correcta ejecución.
 Es lo que se llama el bloque de control del proceso
 
 Partes:
@@ -159,13 +124,11 @@ Partes:
 
 ### En programas multihilo o multihebra:
 
-El BCP puede contener además el PPID, o Process Parent IDentif¡catión. 
+El BCP puede contener además el PPID, o Process Parent IDentif¡catión.
 
 Este dato referencia el PID del proceso padre dentro del BCP, de tal forma que desde el propio BCP se pueden identificar todos los procesos que son hijos de otro, siempre y cuando tengan el mismo PPID.
 
 En procesos convencionales, este dato en el BCP no existirá.
-
-
 
 ## Cambio de contexto
 
@@ -186,26 +149,26 @@ El cambio de contexto puede ser
 
 ### Fases de la planificación
 
-Una vez cargado el proceso, el SO asigna a través del planificador la prioridad 
+Una vez cargado el proceso, el SO asigna a través del planificador la prioridad
 del nuevo proceso respecto de los que hay en ejecución.
 
-De esta forma, cada proceso atraviesa varias fases. En un momento dado, el 
-proceso se estará ejecutando; posteriormente estará en espera, mientras la UCP 
-ejecuta otro; otros procesos estarán preparados para ser lanzados; otros podrán 
-estar bloqueados, etc. 
+De esta forma, cada proceso atraviesa varias fases. En un momento dado, el
+proceso se estará ejecutando; posteriormente estará en espera, mientras la UCP
+ejecuta otro; otros procesos estarán preparados para ser lanzados; otros podrán
+estar bloqueados, etc.
 
-En estos cambios de proceso, el SO tiene que saber qué ficheros están abiertos 
+En estos cambios de proceso, el SO tiene que saber qué ficheros están abiertos
 en cada proceso, qué periféricos se están utilizando, etc.
 
 Cuando se están ejecutando varias tareas a la vez (procesos)
 
-Es necesario compartir el tiempo de trabajo de la CPU. 
+Es necesario compartir el tiempo de trabajo de la CPU.
 
 El tiempo compartido consiste en dividir el tiempo de ejecución del procesador en minúsculos intervalos de tiempo (quantum) e ir asignando cada uno de esos intervalos de ejecución a cada proceso que está en ejecución.
 
 ### Planificación
 
-Con esta técnica conseguimos indicar al ordenador los procesos que deben ejecutarse y los estados que estos deben adoptar. Gracias a los algoritmos de planificación podemos decidir qué proceso ha de ejecutarse en cada momento y por qué. 
+Con esta técnica conseguimos indicar al ordenador los procesos que deben ejecutarse y los estados que estos deben adoptar. Gracias a los algoritmos de planificación podemos decidir qué proceso ha de ejecutarse en cada momento y por qué.
 
 Algunas características de estos algoritmos son la imparcialidad, la equidad, la eficiencia, el tiempo de respuesta y el rendimiento
 
@@ -216,12 +179,11 @@ Se denomina planificador a aquella parte del SO encargada de asignar los recurso
 ### Prioridades
 
 - Los diferentes estados tienen una relación directa con lo que vamos a denominar prioridades
-- Son aquellas que el administrador del sistema, o el propio sistema, asignan a cada proceso. 
+- Son aquellas que el administrador del sistema, o el propio sistema, asignan a cada proceso.
 - De ello dependerá que un proceso se ejecute en más o menos tiempo.
 - Se pueden establecer prioridades en función de la necesidad de ejecución de - algunos programas.
 - Los programas que más se ejecutan, es decir, los más necesarios, tendrán prioridad de ejecución sobre aquellos que se ejecutan muy de cuando en cuando.
 Es ahora cuando hemos de hablar de la planificación
-
 
 ### Aspectos a comparar
 
@@ -231,10 +193,10 @@ Es ahora cuando hemos de hablar de la planificación
 
 ### Algoritmos de planificación
 
-Gracias a los algoritmos de planificación, especialmente en sistemas operativos multi-proceso o en sistemas operativos en red, 
-Siempre y cuando se ejecuten varios procesos en el mismo equipo, 
+Gracias a los algoritmos de planificación, especialmente en sistemas operativos multi-proceso o en sistemas operativos en red,
+Siempre y cuando se ejecuten varios procesos en el mismo equipo,
 
-La CPU se encarga de asignar tiempos de ejecución a cada proceso según 
+La CPU se encarga de asignar tiempos de ejecución a cada proceso según
 
 - El tipo de algoritmo
 - La prioridad de cada proceso
@@ -249,18 +211,23 @@ La CPU se encarga de asignar tiempos de ejecución a cada proceso según
 
 ##### Algoritmo FIFO (First In First Out) o FCFS (First Come First Serve)
 
-Los ciclos de UCP asignados a cada proceso se asignan en función de una cola FIFO. 
-Al primer proceso que llega se le asignan tiempos o ciclos de UCP hasta que termina completamente. 
-A continuación, se ejecuta completo el siguiente proceso que hay en la cola FIFO y así sucesivamente hasta terminar con el último proceso. 
+Los ciclos de UCP asignados a cada proceso se asignan en función de una cola FIFO.
+Al primer proceso que llega se le asignan tiempos o ciclos de UCP hasta que termina completamente.
+A continuación, se ejecuta completo el siguiente proceso que hay en la cola FIFO y así sucesivamente hasta terminar con el último proceso.
 Este algoritmo de planificación normalmente se utiliza para la gestión de trabajos en colas de impresión, respecto de los trabajos que van llegando a la impresora.
 
 ##### Algoritmo Round Robin
 
-Asigna rotativamente tiempos de ejecución a los diferentes procesos. 
-También se llama algoritmo de Round-Robin y en él la asignación de tiempos de ejecución a los procesos es la misma y de forma secuencial. 
-A cada uno se le asigna el mismo quantum o intervalo de tiempo de ejecución. 
-Selección de proceso mediante cola FIFO 
-Es el algoritmo utilizado normalmente en la asignación de tiempos en sistemas operativos multiusuario y multiproceso 
+Asigna **rotativamente** tiempos de ejecución a los diferentes procesos.
+
+También se llama algoritmo de Round-Robin y en él la asignación de tiempos de ejecución a los procesos es la misma y de forma secuencial.
+
+A cada uno se le asigna el mismo quantum o intervalo de tiempo de ejecución.
+
+Selección de proceso mediante cola FIFO
+
+Es el algoritmo utilizado normalmente en la asignación de tiempos en sistemas operativos multiusuario y multiproceso
+
 En la actualidad se puede decir que es el utilizado en sistemas operativos monousuario y que trabajan en multitarea.
 
 ##### Colas multinivel
@@ -281,29 +248,19 @@ Definir cuando un proceso puede cambiar de tipo de cola
 
 ## Comunicación entre procesos
 
-Variables compartidas
+Los procesos pueden comunicarse entre sí a través de variables compartidas o condiciones de carrera. Esto les permite compartir información y coordinar su ejecución.
 
-Condiciones de carrera
+Las **variables compartidas** son recursos compartidos entre procesos, mientras que las **condiciones de carrera** son mecanismos de sincronización entre procesos para garantizar que se ejecuten de manera ordenada. Estas dos herramientas permiten a los procesos trabajar juntos de manera eficiente y segura.
 
 ### Sección crítica
 
-Secuencia de instrucciones que se debe ejecutar de forma indivisible.
+La **sección crítica** es una secuencia de instrucciones que se debe ejecutar de forma indivisible, sin entrelazarse con otras operaciones respecto a la misma variable.
 
-Operaciones de 2 secciones críticas respecto a la misma variable no se deben entrelazar
+La **exclusión mutua** es una forma de sincronización para proteger esta sección crítica.
 
-### Exclusión mutua
+Para esto, se utilizan los **semáforos**, que son variables que toman valores enteros no negativos y que tienen dos operaciones (up y down), tomados valores 0 o 1. Cuando un semáforo tiene valor 0 ó 1 se llama mutex.
 
-Forma de sincronización para proteger sección crítica
-
-### Semáforos
-
-- Variable que toma valores enteros no negativos. 2 operaciones (up y down)
-- Toma valores 0 o 1
-- Un semáforo binario se llama mutex
-
-### Interbloqueos
-
-Cuando cada proceso espera una condición o recurso que depende del otro
+Si dos procesos esperan una condición o recurso que dependen el uno del otro, se produce un **interbloqueo**.
 
 ### Sincronización en Java
 

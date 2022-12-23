@@ -1,21 +1,4 @@
-# SO. Componentes y estructura
-
-- [SO. Componentes y estructura](#so-componentes-y-estructura)
-  - [Sistemas operativos](#sistemas-operativos)
-  - [Componentes](#componentes)
-    - [Gestión de procesos](#gesti%C3%B3n-de-procesos)
-    - [Entrada/salida](#entradasalida)
-    - [Gestión de memoria](#gesti%C3%B3n-de-memoria)
-    - [Gestión del sistema de archivos](#gesti%C3%B3n-del-sistema-de-archivos)
-      - [Estructura](#estructura)
-      - [Funciones](#funciones)
-  - [Estructura](#estructura-1)
-    - [Sistema monitor monolítico](#sistema-monitor-monol%C3%ADtico)
-    - [Sistemas kernel](#sistemas-kernel)
-    - [Sistemas estructurados jerárquicamente](#sistemas-estructurados-jer%C3%A1rquicamente)
-  - [Funciones primordiales del SO](#funciones-primordiales-del-so)
-    - [Carga inicial del sistema](#carga-inicial-del-sistema)
-  - [Tipos](#tipos)
+# Componentes y estructura
 
 ## Sistemas operativos
 
@@ -76,7 +59,7 @@ Directorios, archivos
 
 ### Sistemas estructurados jerárquicamente
 
-- Estructura de capas. 
+- Estructura de capas.
 - Mejor mantenimiento y actualización
 
 ## Funciones primordiales del SO

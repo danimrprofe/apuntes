@@ -1,28 +1,14 @@
 # Ansible
 
-- [Ansible](#ansible)
-- [Funcionamiento](#funcionamiento)
-- [SSH](#ssh)
-- [Formas de configuracion](#formas-de-configuracion)
-- [Modo ad-hoc](#modo-ad-hoc)
-- [Comandos](#comandos)
-- [Playbooks](#playbooks)
-  - [Estructura de un playbook](#estructura-de-un-playbook)
-  - [Módulos](#m%C3%B3dulos)
-  - [Facts](#facts)
-  - [Handlers](#handlers)
-  - [Disparar handlers individualmente](#disparar-handlers-individualmente)
-  - [Disparar handlers con una sola llamada](#disparar-handlers-con-una-sola-llamada)
-  - [Trabajo con playbooks](#trabajo-con-playbooks)
-- [Ejecucion de comandos](#ejecucion-de-comandos)
-- [Actualizacioon del sistema](#actualizacioon-del-sistema)
-- [Instalar o desinstalar paquetes](#instalar-o-desinstalar-paquetes)
-- [Inventario](#inventario)
-- [Roles](#roles)
-  - [Creando roles](#creando-roles)
-- [Reutilización de componentes](#reutilizaci%C3%B3n-de-componentes)
+Ansible es una herramienta de automatización de infraestructura de código abierto. Está diseñada para ayudar a los administradores de TI y a los desarrolladores a automatizar el despliegue, la configuración y la gestión de la infraestructura de la computadora.
 
-# Funcionamiento
+Ansible se puede usar para administrar sistemas de servidor Linux, Windows, máquinas virtuales, sistemas de almacenamiento y más.
+
+Utiliza un lenguaje de configuración sencillo basado en **YAML** para describir los objetivos de configuración y administración de la infraestructura.
+
+Ansible también cuenta con una gran biblioteca de **módulos** que se pueden usar para automatizar tareas comunes.
+
+## Funcionamiento
 
 El funcionamiento es el siguiente:
 
@@ -31,19 +17,19 @@ El funcionamiento es el siguiente:
 - Estos módulos se ejecutan sobre SSH
 - Los módulos definen estados en los que queremos encontrar el sistema
 
-# SSH
+## SSH
 
 A la hora de conectar con los nodos para hacer cosas tenemos varias posibilidades:
 
 - Se pueden utilizar passwords
 - Se recomienda utilizar claves SSH
 
-# Formas de configuracion
+## Formas de configuracion
 
 - Mediante un unico archivo playbook que contiene las tareas
 - Mediante una estructura de directorios por cada proyecto
 
-# Modo ad-hoc
+## Modo ad-hoc
 
 Este modo permite ejecutar directamente comandos en una sola línea
 
@@ -54,7 +40,7 @@ Se utiliza cuando queremos realizar una acción simple como:
 
 Si queremos realizar configuraciones complejas, son más útiles los playbooks.
 
-# Comandos
+## Comandos
 
 Podemos hace rping a todos los hosts:
 
@@ -68,7 +54,7 @@ Reiniciar una máquina:
 
     ansible maquina -m -a "/usr/sbin/reboot"
 
-# Playbooks
+## Playbooks
 
 - Ansible trabaja con playbooks
 - Son ficheros de texto plano escritos en yaml
@@ -77,7 +63,7 @@ Reiniciar una máquina:
   - En un solo archivo
   - En varios archivos siguiendo un modelo estructurado
 
-## Estructura de un playbook
+### Estructura de un playbook
 
 - Un playbook contiene una lista de plays
 - Un play contiene una lista de tasks
@@ -85,7 +71,7 @@ Reiniciar una máquina:
 
 Cuando ejecutamos un playbook, los módulos se ejecutan sobre los hosts remotos
 
-## Módulos
+### Módulos
 
 - Los módulos son trozos de código que se ejecutan cuando ejecutamos un playbook
 - Permiten realizar tareas de sistema
@@ -96,7 +82,7 @@ Cuando ejecutamos un playbook, los módulos se ejecutan sobre los hosts remotos
 - Existen módulos ya creados (built-in)
 - Se pueden crear manualmente
 
-## Facts
+### Facts
 
 Se trata de información sobre el sistema que se está aprovisionando que Ansible recoge antes de ejecutar determinadas tareas.
 
@@ -107,7 +93,7 @@ Por ejemplo:
 - Discos montados
 - Distribución de linux
 
-## Handlers
+### Handlers
 
 - Son tareas que se ejecutan al dispararse un evento concreto
 - Se ejecutan siempre al final de un play
@@ -125,7 +111,7 @@ handlers:
     service:
       name: memcached
       state: restarted
-    listen: "restart web services" # group handlers in one call
+    listen: "restart web services" ## group handlers in one call
   - name: restart apache
     service:
       name: apache
@@ -133,7 +119,7 @@ handlers:
     listen: "restart web services"
 ```
 
-## Disparar handlers individualmente
+### Disparar handlers individualmente
 
 - En este caso todas las acciones se van a realizar sobre el cluste webservers
 - Una vez se ejecuta la tarea, hacemos 2 notify
@@ -152,7 +138,7 @@ handlers:
        - restart apache
 ```
 
-## Disparar handlers con una sola llamada
+### Disparar handlers con una sola llamada
 
 ```yaml
 tasks:
@@ -161,7 +147,7 @@ tasks:
       notify: "restart web services"
 ```
 
-## Trabajo con playbooks
+### Trabajo con playbooks
 
 Ejecutar un playbook:
 
@@ -177,15 +163,15 @@ Si necesitamos solicitar contrasena de root:
 
     ansible-playbook playbook.yaml -k
 
-# Ejecucion de comandos
+## Ejecucion de comandos
 
 Existe un modulo `shell` para ejecutar comandos de la shell directamente.
 
-# Actualizacioon del sistema
+## Actualizacioon del sistema
 
 Para tareas de mantenimiento de paquetes, tenemos el modulo `apt`.
 
-Podemos forzar un upgrade. 
+Podemos forzar un upgrade.
 
 
 Ejemplo:
@@ -205,7 +191,7 @@ Ejecutamos:
 
     ansible-playbook playbook.yaml -k
 
-# Instalar o desinstalar paquetes
+## Instalar o desinstalar paquetes
 
 Para desinstalar: absent
 
@@ -220,13 +206,13 @@ Para desinstalar: absent
             state: 'present'
 ```
 
-# Inventario
+## Inventario
 
 Podemos definir que nodos queremos que gestione Ansible
 
 Los módulos se pueden agrupar en grupos
 
-La lista de hosts representa el inventario 
+La lista de hosts representa el inventario
 Podemos asignar variables por host o por grupos
 Para ello, deberemos crear un archivo `hosts` que incluira la lista de nodos y sus direcciones
 
@@ -247,7 +233,7 @@ Imaginemos que queremos ejecutar el playbook siguiente:
     - webserver
 ```
 
-# Roles
+## Roles
 
 La idea es incluir archivos y combinarlos para crear abstracciones limpias y reusables
 Es necesario crear una estructura de carpetas y subcarpetas
@@ -255,7 +241,7 @@ Las carpetas se pueden crear de forma manual o a partir de ansible-galaxy.
 Ansible-galaxy es un sitio para buscar, reutilizar e intercambiar roles desarrollados por la comunidad
 
 
-## Creando roles
+### Creando roles
 
 Podemos utilizar ansible-galaxy:
 
@@ -263,7 +249,7 @@ Podemos utilizar ansible-galaxy:
 
 Una vez ejecutado, se nos creará una estructura de carpetas y archivos
 
-# Reutilización de componentes
+## Reutilización de componentes
 
 Dos modos para reutilizar contenido: dinámico y estático
 

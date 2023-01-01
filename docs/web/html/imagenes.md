@@ -12,7 +12,7 @@ sirve para indicar donde se encuentra la imagen. La estructura de la etiqueta es
 frase breve) indicativa de la imagen.
 
 ```html
-<IMG SRC="imagen.gif" ALT="descripción">
+![](imagen.gif)
 ```
 
 ## Alinear imágenes
@@ -22,19 +22,19 @@ línea de texto en la que está. Puede tomar los siguientes valores:
 - TOP: Alinea la parte superior de la imagen con la línea actual.
 
 ```html
-<IMG SRC="images/flor.gif" ALIGN="top">
+![](images/flor.gif)
 ```
 
 - MIDDLE: Alinea el centro de la imagen con la línea actual.
 
 ```html
-<IMG SRC="images/flor.gif" ALIGN="middle">
+![](images/flor.gif)
 ```
 
 - BOTTOM: Alinea la base de la imagen con la línea actual.
 
 ```html
-<IMG SRC="images/flor.gif" ALIGN="bottom">
+![](images/flor.gif)
 ```
 
 ## Modificar dimensiones
@@ -43,13 +43,13 @@ línea de texto en la que está. Puede tomar los siguientes valores:
 - HEIGHT: Redefine el alto de la imagen.
 -
 ```html
-<IMG SRC="images/flor.gif" ALIGN="right" WIDTH=30 HEIGHT=30>
+![](images/flor.gif)
 ```
 
 - BORDER: Dibuja un marco alrededor de la imagen.
 -
 ```html
-<IMG SRC="images/flor.gif" ALIGN="right" BORDER=2>
+![](images/flor.gif)
 ```
 
 ## Imágenes y enlaces
@@ -62,5 +62,5 @@ las páginas HTML. Una imagen que actúa de hipervínculo se distingue mediante 
 borde de color alrededor de ésta.
 
 ```html
-<A HREF="forms.htm"><IMG SRC="images/boton1.gif"></A>
+<A HREF="forms.htm">![](images/boton1.gif)</A>
 ```

@@ -8,7 +8,7 @@ Un torn permet mecanitzar peces amb formes cilíndriques, còniques i esfèrique
 
 En funció de la duresa de la fusta usada i de l'operació que s'executarà, es regula la velocitat del gir de la peça i del moviment de l'eina de tall.
 
-<img src="media/image51.png" id="image52">
+![](media/image51.png)
 
-<img src="media/image52.png" id="image53">
+![](media/image52.png)
 

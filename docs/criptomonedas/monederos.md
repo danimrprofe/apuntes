@@ -1,37 +1,31 @@
 # Monederos (wallets)
 
-Las claves se guardan en una **monedero digital** (wallet software)
+Para almacenar bitcoin, necesitamos una dirección, y asociada a alle unas **claves**. Estas claves, se guardan en un **monedero digital**, también llamado **wallet**.
 
 ![](img/2022-11-06-22-53-24.png)
 
-El monedero se guarda en un programa, app o web Se accede a él con una cuenta de usuario.
+El monedero se guarda en un programa, app o web Se accede a él con una cuenta de usuario. También puede puede guardarse en smartphone, PC o USB.
+
+!!  warning
+
+    Es importante recordar que nosotros no guardamos dinero, que se guarda en forma de apuntes en la blockchain, sino que guardamos las claves que nos permiten acceder a nuestra cuenta y operar con ella.
 
 ![](img/2022-11-06-22-53-30.png)
-
-- Para almacenar bitcoin, necesitamos unas **claves**
-- Estas claves, se guardan en un monedero (**wallet**)
-- Este monedero puede guardarse en smartphone, PC o USB
-- Nosotros no guardamos dinero, sino las claves para acceder a él
 
 https://bitcoin.org/es/elige-tu-monedero?step=1
 
 ![](img/2022-11-06-22-53-46.png)
 
-# Algunos problemas
+Es importante recordar que en ningún momento se asocia esta cuenta con unos datos reales, salvo la información que tengamos que dar en caso de contratar los servicios de un **exchange**.
 
-En ningún momento se asocia esta cuenta con unos datos reales
-Si se pierden las claves, se pierde el acceso a la cuenta y, por tanto, el acceso al dinero
+Si se pierden las claves, se pierde el acceso a la cuenta y, por tanto, el acceso al dinero.
 
-![](img/2022-11-06-22-53-53.png)
+![](img/2022-12-30-16-41-21.png)
 
-
-# Monederos (wallets)
 Del mismo modo que podemos tener varias monedas distintas en una cartera
 Podemos tener claves de varias criptomonedas en un misma billetera.
 
 ![](img/2022-11-06-22-53-59.png)
-
-
 
 ## Bitcoin wallet
 

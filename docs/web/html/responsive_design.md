@@ -16,7 +16,7 @@
         <source srcset="img/minionpequeño.png" media="(max-width: 600px)">
         <source srcset="img/minionmediano.jpg" media="(max-width: 1000px)">
         <source srcset="img/miniongrande.jpg">
-        <img src="img/minionmediano.jpg" alt="Flowers" style="width:auto;">
+        ![](img/minionmediano.jpg)
     </picture>
 </body>
 </html>

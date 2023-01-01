@@ -6,7 +6,7 @@ Los **mandos a distancia** infrarrojos son simples y fáciles de usar. En este t
 
 En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
 
-<img width="400" src="media/image103.jpeg" id="image103">
+![](media/image103.jpeg)
 
 ### Componentes necesarios
 ```
@@ -18,11 +18,11 @@ x F-M cables (cables de hembra a macho DuPont)ç
 
 ### Sensor receptor de infrarrojos
 
-Los detectores infrarrojos son pequeños microchips con una célula fotoeléctrica que están configurados para recibir a la luz infrarroja. 
+Los detectores infrarrojos son pequeños microchips con una célula fotoeléctrica que están configurados para recibir a la luz infrarroja.
 
-Casi siempre se utilizan para la detección de control remoto - cada TV y reproductor de DVD tiene uno de estos en la parte delantera para escuchar la señal de IR desde el clicker. 
+Casi siempre se utilizan para la detección de control remoto - cada TV y reproductor de DVD tiene uno de estos en la parte delantera para escuchar la señal de IR desde el clicker.
 
-Dentro del control remoto es un juego IR LED, que emite pulsos IR para comunicar al televisor para encender, apagar o cambiar de canal. 
+Dentro del control remoto es un juego IR LED, que emite pulsos IR para comunicar al televisor para encender, apagar o cambiar de canal.
 
 La luz infrarroja no es visible para el ojo humano.
 
@@ -30,19 +30,19 @@ Detectores infrarrojos son especialmente filtrados para IR ligero, no son buenos
 
 Detectores infrarrojos tienen un demodulador en ese aspecto para IR modulada a 38 KHz. Sólo brilla un LED IR no detectada, tiene que ser PWM intermitente en 38 KHz. fotocélulas no tienen ningún tipo de demodulador y puede detectar cualquier frecuencia (incluyendo CC) dentro de la velocidad de respuesta de la fotocélula (que es aproximadamente 1KHz)
 
-Detectores infrarrojos son salida digital - tampoco detectan señal 38KHz IR y salida bajo (0V) o no detecta ninguno y salida alto (5V). 
+Detectores infrarrojos son salida digital - tampoco detectan señal 38KHz IR y salida bajo (0V) o no detecta ninguno y salida alto (5V).
 
 Las fotocélulas actúan como resistencias, los cambios de resistencia dependiendo de cuánto se exponen a la luz
 
 ## ¿Qué podemos medir?
 
-<img width="400" src="media/image104.jpeg" id="image104">
+![](media/image104.jpeg)
 
 Como se puede ver en estos gráficos de hoja de datos, la detección de frecuencia de peak es a 38 KHz y el pico color del LED es de 940 nm. Se puede usar desde unos 35 KHz kHz 41 pero la sensibilidad se desprenderá para que no detecte asídesde lejos. Asimismo, puede utilizar LEDs de 850 a 1100 nm pero no funcionan tan bien como 900 a 1000nm asíque asegúrese de obtener coincidencia de LEDs! Compruebe la ficha técnica para su IR LED verificar la longitud de onda.
 
 ## Esquema de conexiones
 
-<img width="400" src="media/image105.jpeg" id="image105">
+![](media/image105.jpeg)
 
 ## Diagrama de cableado
 
@@ -51,7 +51,7 @@ Hay 3 conexiones para el receptor de infrarrojos.
 Las conexiones son: señal, voltaje y tierra.
 
 - El "-" es la tierra
-- "S" es señal 
+- "S" es señal
 - El del medio corresponde a 5V.
 
 ![](media/image106.jpeg)
@@ -98,9 +98,9 @@ void translateIR()
   case 0xFF42BD: Serial.println("7");    break;
   case 0xFF4AB5: Serial.println("8");    break;
   case 0xFF52AD: Serial.println("9");    break;
-  case 0xFFFFFFFF: Serial.println(" REPEAT");break;  
+  case 0xFFFFFFFF: Serial.println(" REPEAT");break;
 
-  default: 
+  default:
     Serial.println(" other button   ");
 
   }// End Case
@@ -112,7 +112,7 @@ void translateIR()
 void setup()   /*----( SETUP: RUNS ONCE )----*/
 {
   Serial.begin(9600);
-  Serial.println("IR Receiver Button Decode"); 
+  Serial.println("IR Receiver Button Decode");
   irrecv.enableIRIn(); // Start the receiver
 
 }/*--(end setup )---*/
@@ -123,13 +123,13 @@ void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
   if (irrecv.decode(&results)) // have we received an IR signal?
 
   {
-    translateIR(); 
+    translateIR();
     irrecv.resume(); // receive the next value
-  }  
+  }
 }/* --(end main loop )-- */
 ```
 ## Visualizar datos en el monitor
 
 Haga clic en el botón **Serial Monitor** para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.
 
-<img width="400" src="media/image108.jpeg" id="image108">
+![](media/image108.jpeg)

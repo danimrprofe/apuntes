@@ -6,25 +6,25 @@ Llimes
 
 Les llimes tenen la superfície estriada i permeten arrencar partícules de material a cada passada. Es classifiquen en fines o gruixudes, segons la mida de les estries. Les llimes gruixudes s'utilitzen per treballar fusta, mentre que les fines s'usen per polir.
 
-<img src="media/image23.png" id="image22">
+![](media/image23.png)
 
 Formes de les llimes:
 
-<img src="media/image24.png" id="image23">
+![](media/image24.png)
 
 Raspes
 
 Per treballar i donar forma a la fusta també es fan servir les raspes.  S’assemblen molt a les llimes, però en comptes de tenir la superfície estriada, tenen unes dents de forma triangular que erosionen ràpidament la fusta. Són útils quan cal eliminar una gran quantitat de material. Un cop passada la raspa, s'haurà de llimar la fusta per allisar-la, ja que la raspa deixa un acabat molt bast.
 
-<img src="media/image25.png" id="image24">
+![](media/image25.png)
 
 Tipus de picadura
 
-<img src="media/image26.png" id="image25">
+![](media/image26.png)
 
 Seg
 
-<img src="media/image27.png" id="image26">
+![](media/image27.png)
 
 Normes d'ús de les llimes i les raspes
 
@@ -46,7 +46,7 @@ Eines per polir
 
 Paper de vidre
 
-<img src="media/image28.jpeg" id="image27">
+![](media/image28.jpeg)
 
 Per polir (allisar) la fusta, a més de les llimes, també s'utilitza el paper de vidre. Sovint es fa servir després d'haver passat la llima, per aconseguir un acabat encara més llis.
 
@@ -60,9 +60,9 @@ N'hi ha de diferents tipus, segons la mida de les partícules:
 
 Com més petit sigui el gra, més llis quedarà el material treballat.
 
-<img src="media/image29.png" id="image28">
+![](media/image29.png)
 
-<img src="media/image29.png" id="image29">
+![](media/image29.png)
 
 ## Polidores
 
@@ -80,4 +80,4 @@ El raspallat es fa mitjançant una eina anomenada ribot. Es fa servir molt, per 
 
 Actualment s'usen molt els ribots elèctrics.
 
-<img src="media/image30.png" id="image30">
+![](media/image30.png)

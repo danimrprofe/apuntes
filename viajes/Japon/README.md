@@ -55,7 +55,7 @@
    </td>
    <td>Salida de España. Barcelona y Dubai
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@
    </td>
    <td>Tokio día 1
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@
    </td>
    <td>Nikko
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@
    </td>
    <td>Kamakura
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@
    </td>
    <td>Mt Fuji
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -122,7 +122,7 @@
    </td>
    <td>Kyoto
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@
   <tr>
    <td><strong><a href="#sábado-11-04-tokyo-2º-día">Sábado 11/04</a> </strong>
    </td>
-   <td>Visita Tokyo. Salida de Tokyo a Dubai 
+   <td>Visita Tokyo. Salida de Tokyo a Dubai
    </td>
    <td>Narita Express
    </td>
@@ -149,7 +149,7 @@
    </td>
    <td>Vuelta a España
    </td>
-   <td> 
+   <td>
    </td>
   </tr>
 </table>
@@ -198,18 +198,18 @@ Llegamos a las 9:15 a BCN. Espera en el aeropuerto de El Prat, o bien salir y da
 
 ### Recogida
 
-A las 6.30 nos recoge mi padre y nos lleva al aeropuerto. 
+A las 6.30 nos recoge mi padre y nos lleva al aeropuerto.
 
-Llegamos prácticamente 6.50 y facturamos en vueling. 
+Llegamos prácticamente 6.50 y facturamos en vueling.
 
-Rápida la facturación y el control y el vuelo sale puntual. 
+Rápida la facturación y el control y el vuelo sale puntual.
 
 
 ### Llegada Barcelona
 
-Hemos llegado a Barcelona a las 9.05, hemos ido a recoger maletas y tomado un café en **quasi queviures**, en la planta de facturación. 
+Hemos llegado a Barcelona a las 9.05, hemos ido a recoger maletas y tomado un café en **quasi queviures**, en la planta de facturación.
 
-Toca esperar a la hora de facturación para Dubai 
+Toca esperar a la hora de facturación para Dubai
 
 
 ### Vuelo Barcelona - Dubai
@@ -231,7 +231,7 @@ Toca esperar a la hora de facturación para Dubai
    </td>
   </tr>
   <tr>
-   <td> 
+   <td>
    </td>
    <td>Fri    03/04
    </td>
@@ -249,9 +249,9 @@ Toca esperar a la hora de facturación para Dubai
    </td>
    <td>Connection
    </td>
-   <td> 
+   <td>
    </td>
-   <td>2 hr 15 min   
+   <td>2 hr 15 min
    </td>
    <td>
    </td>
@@ -273,9 +273,9 @@ Toca esperar a la hora de facturación para Dubai
    </td>
   </tr>
   <tr>
-   <td> 
+   <td>
    </td>
-   <td>Fri    03 Apr 
+   <td>Fri    03 Apr
    </td>
    <td>17:35
    </td>
@@ -390,7 +390,7 @@ Cambio zona: metro Hibiya Line → coger H10 Tsukiji hasta H07 Hibiya
 ```
 
 *   **Hibiya:**
-    *   Hibiya Koen (parque) 
+    *   Hibiya Koen (parque)
     *   Distrito Hibiya. Godzilla frente a almacenes Hibiya Chanter.
     *   Posibilidad de ver el centro comercial Yurakucho ITOCiA
 
@@ -406,7 +406,7 @@ Posibilidad bajar a Ginza en metro con Hibiya Line: coger H07 Hibiya hasta H08 G
 *   Edificio de Sony: en su interior hay un showroom con últimas novedades.
 *   Ginza Wako.
 *   Cruce Ginza Yonchome intersection.
-*   Apple Store: conexión gratuita a internet → Ginza shopping street. 
+*   Apple Store: conexión gratuita a internet → Ginza shopping street.
 
 ### Teatro Kabuki-Za (8:30)
 
@@ -414,12 +414,12 @@ Posibilidad bajar a Ginza en metro con Hibiya Line: coger H07 Hibiya hasta H08 G
 Cambio zona: coger metro en H09 Higashiginza St. hasta M16 Ginza St.→ Transbordo: M16 Ginza St. a M17 Tokyo St.
 ```
 
-*   **Estación de Tokyo**. 
+*   **Estación de Tokyo**.
 *   **Palacio Imperial**: la única parte abierta al público es Kokyo Higashi Gyoen (Jardines del Este o Jardines Orientales), abierto todos los días excepto lunes y viernes. PRESCINDIBLE, 6KMS.
 
         		Caminamos hasta el Foro Internacional de Tokio.
 
-*   **Foro Internacional de Tokio**: es una sala de exposiciones y conciertos y centro de conferencias. 
+*   **Foro Internacional de Tokio**: es una sala de exposiciones y conciertos y centro de conferencias.
 *   **Palacio Imperial**: explanada de Kokyo Gaien, donde podemos fotografiar los dos puentes que forman la entrada al Palacio Imperial → Puente Nijubashi.
 
 
@@ -429,7 +429,7 @@ Cambio zona: coger metro en H07 Hibiya Line a G09 Ginza St. → Transbordo:  de 
 
 Uno de los barrios más tradicionales. Desde la estación Asakusa St, caminar por la calle comercial _Nakamise Dori_ y atravesar la puerta de **_Kaminarimon_**. Lo más llamativo de esta puerta es la enorme linterna de 4 metros de altura que cuelga de ella. Subir por la calle Nakamise Shopping Street.
 
-**Templo Sensoji**: 
+**Templo Sensoji**:
 
 Templo budista dedicado a bodhisattva Kannon. Templo más antiguo e importante de Tokio. Formado por la sala principal, reconstruida después de la Segunda Guerra Mundial.
 
@@ -443,7 +443,7 @@ Cambio zona: coger metro en G19 Asakusa St. con destino G16 Ueno St. Transbordo:
 ```
 ## Barrio de Ueno:
 
-    *   **Distrito de Yanaka** es una zona dentro del barrio de Ueno donde se encuentran casas y templos antiguos muy bien conservados. 
+    *   **Distrito de Yanaka** es una zona dentro del barrio de Ueno donde se encuentran casas y templos antiguos muy bien conservados.
             *   Tennoji Temple: gran buda de bronca
             *   Ver cementerio Yanaka.
             *   Templo Jomyoin: famoso por sus 84.000 estatuas de buda.
@@ -470,7 +470,7 @@ De H15 Akihabara St. aS08 Hiwamotocho. Transbordo: de S08 Hiwamotocho St. a S06 
 
 Cerca de Akihabara, está **Jimbocho**, el barrio de los libreros. Si da tiempo, podemos ir. Tiene parada de metro con mismo nombre. Barrio muy bonito y curioso.
 
-Cerca de Jimbocho, a 17 mins caminando, está **<span style="text-decoration:underline;">santuario Yasukuni-jinja</span>**. Al norte de los jardines está el Museo Yushukari: aviones guerra, armas… 
+Cerca de Jimbocho, a 17 mins caminando, está **<span style="text-decoration:underline;">santuario Yasukuni-jinja</span>**. Al norte de los jardines está el Museo Yushukari: aviones guerra, armas…
 
 
 
@@ -514,9 +514,9 @@ FIN PRIMER DÍA, A DORMIR, QUE TENEMOS EL HOTEL AL LADO!!
 
 ## Tren a Nikko
 
-Tokyo - Nikko en tren (5:54 salida hotel - 8:31 llegada Nikko) 
+Tokyo - Nikko en tren (5:54 salida hotel - 8:31 llegada Nikko)
 
-Si posee el[ Japan Rail Pass](http://www.japan-rail-pass.es/jr-pass), podrá ir a Nikko sin gastos adicionales cogiendo el **<span style="text-decoration:underline;">Tohoku Shinkansen</span>**. Coja un Shinkansen « Yamabito » o « Nasuno » a partir de Tokyo o de Ueno, hasta Utsunomiya (unos 50 min), y cámbiese a la línea JR Nikko hasta la estación JR de Nikko (unos 45 min). Puesto que la línea JR Nikko, al ser una línea local, sale con poca frecuencia, le aconsejamos que compruebe los horarios para no tener que esperar mucho. 
+Si posee el[ Japan Rail Pass](http://www.japan-rail-pass.es/jr-pass), podrá ir a Nikko sin gastos adicionales cogiendo el **<span style="text-decoration:underline;">Tohoku Shinkansen</span>**. Coja un Shinkansen « Yamabito » o « Nasuno » a partir de Tokyo o de Ueno, hasta Utsunomiya (unos 50 min), y cámbiese a la línea JR Nikko hasta la estación JR de Nikko (unos 45 min). Puesto que la línea JR Nikko, al ser una línea local, sale con poca frecuencia, le aconsejamos que compruebe los horarios para no tener que esperar mucho.
 
 
 <table>
@@ -534,7 +534,7 @@ Si posee el[ Japan Rail Pass](http://www.japan-rail-pass.es/jr-pass), podrá ir 
    </td>
    <td>
 
-<img src="images/Itinerario-Japan11.png" width="" alt="alt_text" title="image_tooltip">
+![](images/Itinerario-Japan11.png)
 
    </td>
   </tr>
@@ -570,7 +570,7 @@ También podemos bajar en la parada del puente Shinkyo (5mins).
 *   **El mausoleo de Tokugawa lemitsu**: la entrada principal a Taiuin-byo es a través de una puerta Niomon, flanqueada por dos guerreros Nio. La puerta está rodeada de más de cincuenta linternas de piedra, donadas por los señores feudales.
 *   **Santuario Futarasan**: santuario sintoísta al pie del monte Nantai, con una superficie de 3400 hectáreas. Está compuesto por estructuras como Shinkyo, Honden (santuario principal), Santuario Mitomo, Santuario Hie, etc. Gratis.
 *   **Shinkyo**, el puente sagrado: el puente se puede observar desde un puente cerca del Shinkyo o se puede acceder a él pagando entrada. 300 yens
-*   **Oku-Nikko**, Parque Nacional de Nikko: tiene una extensión de 1.400 km2 . Los puntos escénicos más famosos son Lago Chuzenji y las Cataratas de Kegon. 
+*   **Oku-Nikko**, Parque Nacional de Nikko: tiene una extensión de 1.400 km2 . Los puntos escénicos más famosos son Lago Chuzenji y las Cataratas de Kegon.
 
 **Pozas Ganman-ga-fuchi**: girar a la izquierda después del río Shinkyo y seguir río 800m, cruzando otro puente.
 
@@ -584,13 +584,13 @@ Desde la estación de Nishisando→ Bajar del bus en la parada de Akechi-Daira (
 Tarda unos 50 minutos y cuesta unos 1100 Yens hasta el lago Chuzenji y 80 minutos y 1650 Yens hasta Yumoto Onsen. Tomar el autobús número 2.
 ```
 
-**Monte Nantai** (2.486m). 
+**Monte Nantai** (2.486m).
 
 **Teleférico Akechi Daira**: lleva 3 minutos subir desde la meseta de Akechi Daira hasta el observatorio a 1473 metros. Lleva a un mirador, con un paseo de 1.5 Kms, con vistas al largo, cascadas y monte Nantai. Desde aquí se puede bajar andando al lago Chuzenji. 730 yens.
 
-**Cascadas Kegon**: están a 5 minutos a pie desde la parada de autobús de Chuzenji Onsen. Dispone de un ascensor que le lleva a un observatorio. 
+**Cascadas Kegon**: están a 5 minutos a pie desde la parada de autobús de Chuzenji Onsen. Dispone de un ascensor que le lleva a un observatorio.
 
-Tobu Buses : Al lado de la estación de Tobu Nikko 
+Tobu Buses : Al lado de la estación de Tobu Nikko
 
 
 *   2A : va a Yumoto Onsen...para en Chujenzi Onsen.
@@ -729,8 +729,8 @@ Ruta de 2 horas sin contar el tiempo de las visitas en cada templo.
 
 
 
-1. De Kamakura St. coger la Yokosuka Line hasta Shinagawa St. 
-2.  Pasarnos a la Yamanote Line hasta Hamamatsucho St. 
+1. De Kamakura St. coger la Yokosuka Line hasta Shinagawa St.
+2.  Pasarnos a la Yamanote Line hasta Hamamatsucho St.
 3. 9 mins caminando hasta el hotel.
 
 
@@ -747,7 +747,7 @@ Como ir al Monte Fuji propiamente es un poco complicado y la ascensión es muy l
 
 ```
 Caminar hasta Daimon St. (7 mins) y coger la Oedo Line: de E20 hasta E27 Shinjuku St. (16mins, 7 paradas).
-O coger la Yamanote Line en Hamamatsucho St. en andén 3, dirección Shinagawa, hasta Shinjuku St (25 mins, 10 paradas). 
+O coger la Yamanote Line en Hamamatsucho St. en andén 3, dirección Shinagawa, hasta Shinjuku St (25 mins, 10 paradas).
 Desde Shinjuku St, dirección Otsuki:
 Chuo Line (45 mins, 21 paradas).
 Chuo Main Line (34 mins, 8 paradas).
@@ -776,7 +776,7 @@ Chuo Line Limited Express Super Azusa 33 dirección Matsumoto (59 mins).
 ![alt_text](images/Itinerario-Japan30.png "image_tooltip")
 
 
-Llegamos por la zona de **Fujigoko (región de los 5 lagos). **Está en el norte del monte Fuji. Se puede llegar: 
+Llegamos por la zona de **Fujigoko (región de los 5 lagos). **Está en el norte del monte Fuji. Se puede llegar:
 
 1. Desde **<span style="text-decoration:underline;">Shinjuku</span>**, coger la Chuo line y cambiar en **<span style="text-decoration:underline;">Otsuki </span>**(unos 70 minutos). Trenes Azusa, Super Azusa o Kaiji.
 2. Desde **<span style="text-decoration:underline;">Otsuki</span>**, tomar la Fujikyu Railway Line hasta **<span style="text-decoration:underline;">Kawaguchiko </span>**Station:, 1140 yen por trayecto → El “Fujisan Tokkyu” tarda 45 mins y el “Fuji Tozan Densha” tarda 1h.
@@ -794,7 +794,7 @@ Los Retro buses de la línea Kawaguchiko operan dos veces por hora entre la esta
 
 <span style="text-decoration:underline;">Cómo llegar al **teleférico**:</span>
 
-Los Retro buses a lo largo de la Línea Kawaguchiko operan dos veces por hora entre la estación de Kawaguchiko y la **<span style="text-decoration:underline;">estación de teleférico</span>**. Bajar en la parada de autobús de Yuransen Ropeway Iriguchi. El viaje en autobús desde la estación de Kawaguchiko tarda unos 15 minutos y cuesta 210 Yenes por trayecto. Un pase de dos días para la línea de Kawaguchiko está disponible por 1000 yenes, mientras que un pase de 2 días para todos los autobuses retro cuesta 1,300 Yenes. También es posible caminar desde la estación de Kawaguchiko a la estación del teleférico (15-20 minutos). 
+Los Retro buses a lo largo de la Línea Kawaguchiko operan dos veces por hora entre la estación de Kawaguchiko y la **<span style="text-decoration:underline;">estación de teleférico</span>**. Bajar en la parada de autobús de Yuransen Ropeway Iriguchi. El viaje en autobús desde la estación de Kawaguchiko tarda unos 15 minutos y cuesta 210 Yenes por trayecto. Un pase de dos días para la línea de Kawaguchiko está disponible por 1000 yenes, mientras que un pase de 2 días para todos los autobuses retro cuesta 1,300 Yenes. También es posible caminar desde la estación de Kawaguchiko a la estación del teleférico (15-20 minutos).
 
 
 Admisión: 700 Yenes (ida y vuelta), 400 yenes (un trayecto)
@@ -837,13 +837,13 @@ Salida miércoles 8:
 
 8:00			10:17
 
-En 1ª planta de la estación de Kioto hay oficina de turismo → para planos ciudad y bus 
+En 1ª planta de la estación de Kioto hay oficina de turismo → para planos ciudad y bus
 
 ```
 Para llegar al hotel: caminar a la estación de autobuses y coger la línea 50
 ```
 
-Comprar un pase de un día de autobús, que cuesta 500 yens. La tarjeta se puede comprar en oficinas de turismo, algunos hoteles e incluso dentro de algunos buses (aunque se suelen agotar rápido). El día de validez empieza a contar una vez que se utiliza la tarjeta por primera vez, al salir por la puerta delantera del bus, pasándola por una máquina que valida el billete y estampa la fecha. Las siguientes veces no hay que pasarlo por la máquina, sólo enseñárselo al conductor. Las paradas de bus están marcadas con este símbolo :  
+Comprar un pase de un día de autobús, que cuesta 500 yens. La tarjeta se puede comprar en oficinas de turismo, algunos hoteles e incluso dentro de algunos buses (aunque se suelen agotar rápido). El día de validez empieza a contar una vez que se utiliza la tarjeta por primera vez, al salir por la puerta delantera del bus, pasándola por una máquina que valida el billete y estampa la fecha. Las siguientes veces no hay que pasarlo por la máquina, sólo enseñárselo al conductor. Las paradas de bus están marcadas con este símbolo :
 
 <p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Itinerario-Japan35.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -886,7 +886,7 @@ Volver a coger la línea 204 o la 100 hasta la parada Ginkaku-ji michi.
 
 **El camino de la filosofía** (unos 2,5km): al salir, nada más bajar la cuesta a mano izquierda, encontramos el camino de la filosofía → camino que hay **desde el templo Ginkakuji y el Templo Nanzenin** (gratis), siguiendo un canal que está rodeado de cerezos. Se puede empezar desde la parada de Gingakujimae.
 
-Durante el trayecto veremos indicaciones de los templos que vamos atravesando incluido **<span style="text-decoration:underline;">el Eikando</span>** (buenas vistas de la ciudad) y al final llegamos al **<span style="text-decoration:underline;">Templo Nanzenji - abierto hasta las 17h- (acueducto, jardín seco, 12 subtemplos, Konchi-in el más espectacular y al oeste, la villa Nauzen-ji). </span>**Junto al Nanzen-ji, está el **Nanzen-ji Oku-no-in**. Hay una cascada. 
+Durante el trayecto veremos indicaciones de los templos que vamos atravesando incluido **<span style="text-decoration:underline;">el Eikando</span>** (buenas vistas de la ciudad) y al final llegamos al **<span style="text-decoration:underline;">Templo Nanzenji - abierto hasta las 17h- (acueducto, jardín seco, 12 subtemplos, Konchi-in el más espectacular y al oeste, la villa Nauzen-ji). </span>**Junto al Nanzen-ji, está el **Nanzen-ji Oku-no-in**. Hay una cascada.
 
 
 ```
@@ -900,10 +900,10 @@ Aquí ya llegamos al distrito Gion → barrio geishas:
     -	Ne-ne no Michi, callejón Ishibe-Koji, santuario Yasaka
 
 
-    -	Calle Hanamikoji à rest. Caros /elegantes. Es Patrimonio Histórico. Esta calle es perpendicular a Shinbashi. 
+    -	Calle Hanamikoji à rest. Caros /elegantes. Es Patrimonio Histórico. Esta calle es perpendicular a Shinbashi.
 
 
-    -           Calle Shinbashi 
+    -           Calle Shinbashi
 
 
     -	Para comer en las calles Gion Corner y Gion Kaburenjo son más baratas
@@ -1068,7 +1068,7 @@ Caminando 12 mins.
 宿７４宿７５早７７   11 mins
 ```
 
-## **Barrio Coreano o Shin-Okubo Koreatown:** 
+## **Barrio Coreano o Shin-Okubo Koreatown:**
 
 Es una colección de tiendas y restaurantes coreanos que se encuentran a lo largo de las calles de la carretera principal y calles laterales alrededor de la estación de Shin-Okubo, una parada al norte de la estación de Shinjuku. Muchas de las tiendas y los restaurantes son regentados por inmigrantes coreanos y venden variedad de productos coreanos, incluyendo K-Pop música, videos y comestibles.
 
@@ -1119,7 +1119,7 @@ Comer en **Omoide Yokocho**: callejones con pequeños locales tradicionales. (**
 
 
 ```
-Cambio zona con la Yamanote Line: de Shinjuku St. a Shibuya St. 
+Cambio zona con la Yamanote Line: de Shinjuku St. a Shibuya St.
 ```
 
 ## Shibuya
@@ -1128,7 +1128,7 @@ Cambio zona con la Yamanote Line: de Shinjuku St. a Shibuya St.
 
 **El cruce Shibuya o Scramble Koutasen**: uno de los mejores lugares para ver el espectáculo callejero es desde el gran ventanal del Starbucks que hay en el edificio principal del cruce.
 
-**Shibuya 109**: 
+**Shibuya 109**:
 
 Centro comercial más importante de esta zona y popular entre los jóvenes, famoso por ser el origen de la subcultura kogal. Está dedicado exclusivamente al público femenino y las dependientes son la propia atracción.
 

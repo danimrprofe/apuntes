@@ -1,12 +1,12 @@
 # Elegir un equipo
 
-<img src="media/image1.jpg" id="image1">
+![](media/image1.jpg)
 
 ## ¿Cómo elegir qué dispositivo necesito?
 
-El equipo que elijamos lo definen los componentes internos que lo componen. En función de cuáles sean estos y sus características, el equipo será más o menos potente y más adecuado para unos u otros usos.<img src="media/image2.png" id="image2">
+El equipo que elijamos lo definen los componentes internos que lo componen. En función de cuáles sean estos y sus características, el equipo será más o menos potente y más adecuado para unos u otros usos.![](media/image2.png)
 
-El tipo de ordenador que necesitamos es aquel que se adecua más al uso que le vamos a dar. Para ello, es necesario plantear qué tareas son las que queremos llevar a cabo con el ordenador, y esto dependerá de la persona y del uso que ésta le dé. 
+El tipo de ordenador que necesitamos es aquel que se adecua más al uso que le vamos a dar. Para ello, es necesario plantear qué tareas son las que queremos llevar a cabo con el ordenador, y esto dependerá de la persona y del uso que ésta le dé.
 
 Las tareas pueden ser, entre otras:
 
@@ -29,15 +29,15 @@ Cada una de estas aplicaciones tiene diferentes requisitos como:
 
 ## ¿Qué software necesito?
 
-El software nos va a permitir comunicarnos con el hardware para pedirle que haga ciertas cosas. Cada programa o sistema operativo, para poder hacer las diferentes funciones que necesitemos, necesitará unos requisitos. Es decir, unos valores mínimos de ciertos componentes que harán que el software funcione correctamente. 
+El software nos va a permitir comunicarnos con el hardware para pedirle que haga ciertas cosas. Cada programa o sistema operativo, para poder hacer las diferentes funciones que necesitemos, necesitará unos requisitos. Es decir, unos valores mínimos de ciertos componentes que harán que el software funcione correctamente.
 
 ## Requisitos mínimos y recomendados
 
 Algunos productos incluyen requisitos de sistema mínimos y recomendados. Un videojuego, por ejemplo, puede funcionar con el mínimo de CPU y GPU requeridos, pero funcionará mejor con el hardware recomendado. Un procesador y una tarjeta gráfica más potentes pueden producir gráficos mejorados y velocidades de cuadro más rápidas (FPS).
 
-Algunos requisitos del sistema no son flexibles, como los sistemas operativos y el espacio en disco necesarios para la instalación del software. 
+Algunos requisitos del sistema no son flexibles, como los sistemas operativos y el espacio en disco necesarios para la instalación del software.
 
-Otros, como los requisitos de CPU, GPU y RAM pueden variar significativamente entre los requisitos mínimos y recomendados. 
+Otros, como los requisitos de CPU, GPU y RAM pueden variar significativamente entre los requisitos mínimos y recomendados.
 
 Al comprar o actualizar un programa de software, a menudo es aconsejable asegurarse de que su sistema cumpla con los requisitos recomendados para garantizar una buena experiencia de usuario.
 

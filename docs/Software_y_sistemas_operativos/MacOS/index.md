@@ -14,11 +14,11 @@ Versiones de Mac: https://ca.wikipedia.org/wiki/MacOS
 
 Apple es una empresa dedicada a diseñar equipos (iMac, iPhone, Apple Watch), programas (iOS) y servicios online (Apple TV, iCloud). Sus creadores son Steve Wozniak y Steve Jobs.
 
-<img src="media/image1.jpg" id="image1">
+![](media/image1.jpg)
 
 Se trata de una empresa que generalmente ha sido muy innovadora y puntera en su sector, que ha propiciado la invención y expansión de diversos equipos de la propia empresa que han tenido repercusión mundial.
 
-<img src="media/image2.jpg" id="image2">
+![](media/image2.jpg)
 
 ## Productos
 
@@ -35,11 +35,11 @@ A lo largo de la historia, Apple ha ido introduciendo nuevos dispositivos en el 
 | Apple Watch  | 2015               |
 | AirPods      | 2016               |
 
-<img src="media/image3.jpg" id="image3">
+![](media/image3.jpg)
 
 Apple dispone además de tiendas propias o espacios en grandes centros comerciales conocidos como Apple Stores. También podemos comprar la mayoría de sus productos online a través de la página web de Apple.
 
-<img src="media/image4.jpg" id="image4">
+![](media/image4.jpg)
 
 ## Mac OS: el sistema operativo
 
@@ -47,7 +47,7 @@ Los ordenadores de **Apple** suelen ser preferidos por diseñadores gráficos y 
 
 Mac OS es el sistema operativo desarrollado por Apple para sus ordenadores Macintosh o Mac. Es un sistema operativo sencillo y fiable, con pocos fallos. Lo encontraremos en ordenadores de sobremesa y portátiles de Apple.
 
-<img src="media/image5.jpg" id="image5"><img src="media/image6.png" id="image6">
+![](media/image5.jpg)![](media/image6.png)
 
 La última versión se llama **Mac OS Big Sur**. Otras versiones han sido:
 
@@ -71,7 +71,7 @@ La última versión se llama **Mac OS Big Sur**. Otras versiones han sido:
 | macOS 10.15 “Catalina”    | October 7, 2019    |
 | macOS 11 “Big Sur”        | November 12, 2020  |
 
-<img src="media/image7.png" id="image7">
+![](media/image7.png)
 
 ## Programas propios
 
@@ -81,7 +81,7 @@ Apple también desarrolla programas informáticos para Mac OS X. Desarrolla gran
 - Presentación, diseño de página y de procesamiento de textos, está disponible iWork, que incluye Keynote, Pages y Numbers.
 - Otros como **iTunes**, el reproductor de medios **QuickTime** y el navegador **Safari** están disponibles como descargas gratuitas, tanto para macOS como para Windows.
 
-<img src="media/image8.jpg" id="image8">
+![](media/image8.jpg)
 
 ## iMac y macbook
 

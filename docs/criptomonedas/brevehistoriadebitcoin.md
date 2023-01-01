@@ -2,10 +2,11 @@
 
 # Breve historia de Bitcoin. Transacciones, bloques, hashes y recompensas
 
-4 octubre, 2021
+Bitcoin es un conjunto de tecnologías, así como el nombre de la moneda, basados en la tecnología blockchain.
 
-Bitcoin es un conjunto de tecnologías, así como el nombre de la moneda, basados en la tecnología blockchain. Bitcoin se basa en un libro de cuentas distribuido entre múltiples nodos repartidos por Internet, en forma de
- una cadena de bloques llamada Blockchain .Los nodos comparten información y crean bloques, manteniendo toda la estructura de bitcoin.
+Bitcoin se basa en un **libro de cuentas** distribuido entre múltiples nodos repartidos por Internet, en forma de una cadena de bloques llamada **Blockchain** .
+
+Los **nodos** comparten información y crean bloques, manteniendo toda la estructura de bitcoin.
 
 ##  Los bitcoin
 - La moneda se llama bitcoin. Existen unidades más pequeñas que un bitcoin

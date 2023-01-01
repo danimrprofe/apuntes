@@ -8,10 +8,10 @@ Abans de tallar la fusta és imprescindible prendre mides i marcar amb un llapis
 
 Tipus de serra elèctrica més corrent. Talla gràcies a l'acció d'una petita fulla que puja i baixa alternativament. Permet fer talls rectes i corbs.
 
-<img src="media/image20.png" id="image19">
+![](media/image20.png)
 
 A més de la serra de vogir, els petits tallers i les indústries disposen d'altres serres mecàniques per a fusta. N'hi ha diversos tipus, en podem destacar les circulars i les de cinta.
 
-<img src="media/image21.png" id="image20">
+![](media/image21.png)
 
-<img src="media/image22.png" id="image21">
+![](media/image22.png)

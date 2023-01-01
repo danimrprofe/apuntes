@@ -366,7 +366,7 @@ code {
     });
   </script>
 <h1 id="juegos-con-unity">Juegos con Unity</h1>
-<p><img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/img/2022-10-13-00-34-17.png" alt=""></p>
+<p>![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/img/2022-10-13-00-34-17.png)</p>
 <p>Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor Unity, que nos permite crear proyectos 2D y 3D.</p>
 <p>Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los proyectos de Pong y un juego de plataformas 2D. A través de estos proyectos hemos aprendido a:</p>
 <ul>
@@ -378,11 +378,11 @@ code {
 </ul>
 <h2 id="crear-un-proyecto">Crear un proyecto</h2>
 <p>Le damos a lo que tenemos por aquí y vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image1.png" id="image1">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image1.png)
 <p>El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create</p>
 <h2 id="cambiar-layout-de-ventanas">Cambiar layout de ventanas</h2>
 <p>Vamos a cambiar el <strong>layout</strong> así a mí así no me gusta trabajar tengo una distribución de ventanas que ya esté acostumbrado y que siempre pues es la que me pongo para cambiar esto lo que podéis hacer es iraquí arriba y seleccionar puede ser que vosotros se os adapte más a vuestra forma de trabajar y si bien ha visto ha bajado nunca pues yo que se lo recomiendo que voy a utilizar es la de <strong>2 by 3</strong>.</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image2.png" id="image2">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image2.png)
 <h2 id="crear-pelota">Crear pelota</h2>
 <p>Dentro de nuestra ventana lo que vamos a hacer es clic derecho y darle a judíos el spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola para losjugadores para las paredes para todoporque vamos a poder pues escalarlo enlos diferentes ejes y pues nos va aayudar a crear por como comentó el juegoen sí vamos a necesitar ni bajarnosninguna se ni nada va a ser todochocaron aquí en juniti así que buenogenera seguido un primer momento vamos acrear las paredes de arriba y de abajoentonces para ello vamos a laescala y vamos a colocarla en el eje x alo que sería un valor de 18 en este casoahoravamos a colocarlo en la posición 0 y 0en el eje x y y ahora lo que vamos ahacer es subirlo hacia arriba para ellolo que podéis hacer es pulsar w cuandotengáis este objeto seleccionado yentonces pues podréis moverlo en ese ejeen específico pues lo selección eyeshacia arribacomo veis aquí está pasando al mismo unacosa y es que mi ventana de came se estáescalando con lo grande que sea porejemplo si yo hago esto más pequeño másgrande como veis la escala se va un pocoa cuenca entonces</p>
 <h2 id="cambiar-resoluci%C3%B3n">Cambiar resolución</h2>
@@ -438,23 +438,23 @@ code {
 <p>Asignar collider al tilemap</p>
 <p>Asignar rigidbody al personaje</p>
 <p>Crear movimiento lateral del personaje</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image3.png" id="image3">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image3.png)
 <p>Colocar collider al personaje y modificarlo</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image4.png" id="image4">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image4.png)
 <p>Crear salto del personaje</p>
 <p>Necesitaremos un script que compruebe que el personaje está tocando suelo:</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image5.png" id="image5">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image5.png)
 <p>En el script de movimiento del personaje, comprobaremos que pulsamos espacio y, además, que estamos tocando suelo:</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image6.png" id="image6">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image6.png)
 <p>Cambiar material del tilemap para reducir rozamiento y evitar flotar</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image7.png" id="image7">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image7.png)
 <p>Crearemos un material para el mapa, que tendrá 0 fricción, por lo que el personaje se moverá con más suavidad y evitaremos que se enganche a él.</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image8.png" id="image8">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image8.png)
 <p>Mejorar el salto (betterjump)</p>
 <p>Nos tocará crear un boolean para activar un salto mejorado, que dependerá del tiempo de pulsación de la tecla, pudiendo saltar más o menos.</p>
 <p>Recolección de fruta con animación</p>
 <p>Habrá que crear un script que detecte la colisión de la manzana con el player, se va a llamar FruitCollected, y posteriormente destruir el objeto manzana. Este script se lo asignaremos luego a todas las frutas.</p>
-<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image9.png" id="image9">
+![](file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image9.png)
 
 </body>
 </html>

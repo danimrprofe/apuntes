@@ -105,7 +105,7 @@ mkdocs gh-deploy
 
 ## Automatizando cosas
 
-Github Actions nos permite automatizar el despliegue de mkdocs. Vamos a intentar que, tras pushear un commit nuevo a github, se construya y despliegue automáticamente todo directamente en github, en lugar de tener que hacerlo a nivel local.
+**Github Actions** nos permite automatizar el despliegue de mkdocs. Vamos a intentar que, tras pushear un commit nuevo a github, se construya y despliegue automáticamente todo directamente en github, en lugar de tener que hacerlo a nivel local.
 
 Para ello tenemos que crear un workflow en la root de nuestro repo:
 

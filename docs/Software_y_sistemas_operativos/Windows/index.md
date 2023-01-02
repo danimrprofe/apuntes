@@ -1,10 +1,6 @@
-### Windows
+# Windows
 
-Es un sistema operativo propiedad de la empresa MicroSoft que es privativo (de pago).
-
-Diferentes versiones:
-
-- Windows XP, Windows Vista,Windows 7, Windows 8, Windows 10...
+**Windows** es un conjunto de sistemas operativos creado por **Microsoft**, la compañía de tecnología fundada por **Bill Gates** en 1975. Microsoft ha desarrollado y comercializado sistemas operativos Windows desde entonces. Bill Gates es el cofundador y ex director ejecutivo de Microsoft.
 
 # SO Windows
 

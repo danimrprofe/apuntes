@@ -1,12 +1,5 @@
 # Ejercicios raid
 
-- [Ejercicios raid](#ejercicios-raid)
-  - [Cuestionario](#cuestionario)
-  - [Test de RAID](#test-de-raid)
-  - [EJERCICIO 1: RAID 5](#ejercicio-1-raid-5)
-  - [Ejercicio 2](#ejercicio-2)
-  - [Ejercicio 3: raid 6](#ejercicio-3-raid-6)
-
 ## Cuestionario
 
 1. ¿Es posible usar un sistema en RAID 5 para Instalar el sistema operativo?
@@ -55,7 +48,7 @@
     25. **900 GBytes.**
     26. 300 GBytes.
     27. Ninguna es correcta.
-    
+
 ## EJERCICIO 1: RAID 5
 
 Dado el conjunto de 4 discos que monta un volumen RAID 5. Calcula los bloques de paridad y completa la figura
@@ -67,10 +60,10 @@ Dado el conjunto de 4 discos que monta un volumen RAID 5. Calcula los bloques de
 2. Cuando aún no se ha recuperado el disco, llega una petición de escritura para la línea F: hay que escribir el valor 10001111 00001110 01011101. ¿Crees que se podrá realizar esta operación? Haz las modificaciones que sean necesarias.
 
 3. Una vez que se ha conseguido un disco con las características adecuadas, se decide sustituir el disco dañado y recuperar el funcionamiento normal de la unidad utilizando los cuatro discos. Recupera la información de dicho disco utilizando solo la información de los discos 0, 2 y 3.
-    
+
 ## Ejercicio 2
 
-En un servidor, disponemos de 6 discos duros de 100 GB. Necesitamos crear con ellos un volumen RAID con 300 GB de espacio disponible, de manera que se maximice el rendimiento en escrituras aleatorias y los datos estén protegidos contra el fallo total de 1 disco cualquiera. 
+En un servidor, disponemos de 6 discos duros de 100 GB. Necesitamos crear con ellos un volumen RAID con 300 GB de espacio disponible, de manera que se maximice el rendimiento en escrituras aleatorias y los datos estén protegidos contra el fallo total de 1 disco cualquiera.
 
 Se pide: Hacer un diagrama de cómo se debe crear el volumen, usando los niveles RAID clásicos (RAID  0 a RAID 6) y/o sus combinaciones, siguiendo el ejemplo.
 

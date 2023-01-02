@@ -1,24 +1,5 @@
 # RAID
 
-- [RAID](#raid)
-  - [Qué es un sistema RAID](#qu%C3%A9-es-un-sistema-raid)
-  - [Requisitos para montar un RAID](#requisitos-para-montar-un-raid)
-  - [RAID software y hardware](#raid-software-y-hardware)
-    - [RAID por hardware](#raid-por-hardware)
-    - [RAID por software](#raid-por-software)
-  - [Tipos de raid](#tipos-de-raid)
-    - [RAID 0 (Stripping)](#raid-0-stripping)
-    - [RAID 1 (Mirroring)](#raid-1-mirroring)
-    - [Stripping vs mirroring](#stripping-vs-mirroring)
-    - [Raid 5](#raid-5)
-    - [Raid 6](#raid-6)
-  - [Raid anidados](#raid-anidados)
-    - [RAID 0+1](#raid-01)
-    - [RAID 1+0](#raid-10)
-  - [Elección de RAID](#elecci%C3%B3n-de-raid)
-  - [Duplexing vs mirroring](#duplexing-vs-mirroring)
-    - [Diferencia entre duplexing y mirroring](#diferencia-entre-duplexing-y-mirroring)
-
 ## Qué es un sistema RAID
 
 Conjunto redundante de discos independientes
@@ -31,7 +12,7 @@ Se necesita:
 
 En un sistema RAID combinan dos o más discos físicos en una unidad lógica
 
-- Se tratan como si fuera un único disco 
+- Se tratan como si fuera un único disco
 
 Se considera que hay redundancia cuando la misma información se almacena más de una vez en una unidad lógica
 
@@ -44,7 +25,7 @@ Se considera que hay redundancia cuando la misma información se almacena más d
 - No es necesario que sean discos iguales
 - No tienen porque tener la misma capacidad
 
-El equipo (placa y sistema) deben soportar RAID 
+El equipo (placa y sistema) deben soportar RAID
 
 En los sistemas RAID el espacio se sacrifica para:
 
@@ -64,7 +45,7 @@ En los sistemas RAID el espacio se sacrifica para:
 ### RAID por hardware
 
 - La controladora de discos se encarga de que la agregación de discos sea totalmente transparente para el sistema operativo
-- El SO solo ve un disco donde realmente hay varios. 
+- El SO solo ve un disco donde realmente hay varios.
 Todo el trabajo extra de gestión del RAID lo hace la controladora
 - No hay sobrecarga para la CPU.
 
@@ -91,8 +72,8 @@ Todo el trabajo extra de gestión del RAID lo hace la controladora
 
 ### RAID 1 (Mirroring)
 
-Tradicionalmente el RAID 1 está compuesto por dos discos: 
-- Disco principal: donde se aloja la información, 
+Tradicionalmente el RAID 1 está compuesto por dos discos:
+- Disco principal: donde se aloja la información,
 - Disco espejo (mirror): donde se hace una copia exacta de los datos del disco principal
 
 En entornos de alta disponibilidad, donde los sistemas están siempre en funcionamiento
@@ -133,15 +114,15 @@ Inconvenientes:
 
 ## Raid anidados
 
-Los sistemas RAID pueden combinarse generando RAID anidados. 
-Los más utilizados son 
+Los sistemas RAID pueden combinarse generando RAID anidados.
+Los más utilizados son
 
-### RAID 0+1 
+### RAID 0+1
 
 Un RAID 1 compuesto por dos RAID O)
 Para entornos profesionales
 
-### RAID 1+0 
+### RAID 1+0
 
 Un RAID 0 compuesto por dos RAID 1
 Para entornos de alta disponibilidad.

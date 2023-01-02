@@ -4,9 +4,12 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 - [arduino](arduino/index.md)
 
-2º de bachillerato
+## Seguridad informática
 
 - [seguridad informática](Seguridad/index.md)
+
+## Inteligencia artificial
+
 - [inteligencia artificial](inteligencia_artificial/index.md)
 
 1º de bachillerato

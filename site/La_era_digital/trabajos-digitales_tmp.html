@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>trabajos-digitales.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="nuevas-profesiones-y-negocios-en-la-era-digital">Nuevas profesiones y negocios en la era digital</h1>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-29-24.png)</p>
+<h2 id="introducci%C3%B3n">Introducción</h2>
+<ul>
+<li>
+<p>Expansión de las TIC</p>
+</li>
+<li>
+<p>Nuevos modelos de negocio</p>
+</li>
+<li>
+<p>Nuevas profesiones</p>
+</li>
+<li>
+<p>Acceder a servicios en tiempo real</p>
+</li>
+<li>
+<p>A través de <strong>smartphone</strong></p>
+</li>
+<li>
+<p>Nuevo modelo digital</p>
+</li>
+<li>
+<p>Ahorra costes de producción y une a los consumidores</p>
+</li>
+<li>
+<p>Reduce los precios</p>
+</li>
+<li>
+<p>Elimina barreras de entrada al mercado.</p>
+</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-30-17.png)</p>
+<h2 id="ejemplos">Ejemplos</h2>
+<ul>
+<li>Uber es ya una de las mayores empresas de transporte del mundo, sin tener coches en propiedad</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-30-27.png)</p>
+<ul>
+<li>Airbnb es la mayor red de alojamientos sin tener ni una sola habitación de hotel</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-30-33.png)</p>
+<ul>
+<li>Glovo es la mayor red de distribución sin tener trabajadores contratados.</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-30-38.png)</p>
+<h2 id="mobilidad-uber-y-cabify">Mobilidad. Uber y cabify</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-02.png)</p>
+<ul>
+<li>Alquiler de vehículo con conductor (VTC)</li>
+<li>Trayectos relativamente cortos</li>
+<li>Servicio lo presta un conductor profesional (licencia)</li>
+<li>Contratar online mediante apps propias.</li>
+<li>Obligación de contratar siempre con antelación</li>
+<li>30 minutos de antelación en Baleares</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-30-46.png)</p>
+<h2 id="carpooling">Carpooling</h2>
+<ul>
+<li>Viajar en coche compartido (carpooling)</li>
+<li>Sufragar en común los gastos del trayecto</li>
+<li>Conductores son personas particulares.</li>
+<li>En España, plataformas como Amovens o, principalmente, BlaBlaCar</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-16.png)</p>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-23.png)</p>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-26.png)</p>
+<h2 id="delivery">Delivery</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-39.png)</p>
+<p>http://www.youtube.com/watch?v=NL_217-Iygc</p>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-31-59.png)</p>
+<ul>
+<li>Recogida y reparto a domicilio, mayoritariamente de comida, mediante plataformas de reparto.</li>
+<li>Uber Eats, Deliveroo, Glovo y Just Eat</li>
+<li>Emplean a trabajadores llamados riders</li>
+<li>Trabajan como autónomos</li>
+<li>Realizan los repartos en bicicleta, patinete o moto.</li>
+<li>Los riders reciben en el smartphone los pedidos</li>
+<li>Se encargan de la recogida del producto (por ejemplo, en un restaurante), y la entrega a domicilio.</li>
+</ul>
+<h2 id="%C2%BFcu%C3%A1nto-gana-cada-una-de-las-partes">¿Cuánto gana cada una de las partes?</h2>
+<ul>
+<li>Cada una de estas compañías se lleva una comisión</li>
+<li>En torno al 30% del valor de la compra.</li>
+<li>Imaginemos que realizamos un pedido que conste de dos menús y bebida por valor de 20 euros.</li>
+<li>El restaurante al que lo pidamos se quedará con 13,6 euros.</li>
+<li>La empresa de Delivery se queda con 6,4 euros.</li>
+</ul>
+<h2 id="%C2%BFqu%C3%A9-gana-un-rider">¿Qué gana un rider?</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-32-12.png)</p>
+<h3 id="ingresos">Ingresos</h3>
+<ul>
+<li>Salario real de difícil de calcular</li>
+<li>En torno a los 8-10 eur/hora</li>
+<li>Jornadas de entre 40 y 49 h/semana</li>
+<li>Aprox. 4 euros brutos por pedido.</li>
+</ul>
+<h3 id="gastos-descontar-de-los-ingresos">Gastos (descontar de los ingresos)</h3>
+<ul>
+<li>Cuota de autónomos (de 60 euros a 286)</li>
+<li>Pago del IRPF y el IVA -del que algunos gastos son deducibles-</li>
+<li>Mantenimiento, gasolina y seguro del vehículo</li>
+</ul>
+<h2 id="glovo-express">Glovo express</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-32-23.png)</p>
+<ul>
+<li>Tiendas propias en locales bien situadoas</li>
+<li>Productos alimentación/supermercado</li>
+<li>24 horas del día</li>
+<li>Entrega en menos de 10 minutos</li>
+<li>Pedidos de supermercado a través de Glovo Express</li>
+</ul>
+<h2 id="dark-kitchen-cocinas-fantasma">Dark kitchen (cocinas fantasma)</h2>
+<ul>
+<li>Restaurantes dedicados por completo a la venta online</li>
+<li>Sin mesas ni camareros</li>
+<li>Sólo con unos cuantos cocineros, materias primas, unos fogones</li>
+<li>Perfiles en las principales plataformas de comida a domicilio.</li>
+</ul>
+<p>http://www.youtube.com/watch?v=zB9fw3ENbkw</p>
+<h2 id="community-manager">Community manager</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-33-07.png)</p>
+<ul>
+<li>Expansión Internet y RRSS</li>
+<li>Comunicación empresas - consumidores</li>
+<li>Más directa e interactiva</li>
+<li>Gestionar la presencia online de las empresas.</li>
+<li>Gestionar perfiles de la empresa (RRSS)</li>
+<li>Puente entre consumidores y la empresa.</li>
+<li>Especializado en herramientas  2.0</li>
+<li>Da respuesta a los comentarios</li>
+<li>Pone voz a la empresa</li>
+<li>Escucha a quien habla de ella</li>
+</ul>
+<h2 id="airbnb">Airbnb</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-33-15.png)</p>
+<ul>
+<li>Plataforma digital</li>
+<li>Oferta de alojamientos a particulares y turísticos (alquiler vacacional)</li>
+<li>Los anfitriones pueden publicitar y contratar el arriendo de sus propiedades con sus huéspedes</li>
+<li>Anfitriones y huéspedes pueden valorarse mutuamente, como referencia para futuros usuarios</li>
+</ul>
+<h2 id="influencers">Influencers</h2>
+<ul>
+<li>Persona que cuenta con cierta credibilidad sobre un tema concreto</li>
+<li>Presencia en redes sociales</li>
+<li>Tiene una enorme cantidad de seguidores</li>
+<li>Expresa opiniones sobre este tema</li>
+<li>Ejercen una gran influencia sobre muchas personas que la conocen</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-28-33.png)</p>
+<h2 id="esports">eSports</h2>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-33-25.png)</p>
+<ul>
+<li>Competiciones organizadas a nivel profesional de videojuegos</li>
+<li>Competiciones multijugador de diferentes disciplinas</li>
+<li>Cada esport tiene sus propias reglas.</li>
+<li>Primera competición: Universidad de Stanford en 1972.</li>
+<li>Cinco estudiantes compitieron en una “Olimpiada de guerra espacial intergaláctica”</li>
+</ul>
+<p>![](file:///e:/Docencia/apuntes/La era digital/img/2022-11-07-16-33-38.png)</p>
+<p>https://www.owayo.co.uk/magazine/esports-tournaments-popular-en.htm</p>
+<p>https://forbes.es/listas/92832/los-25-jugadores-espanoles-que-conquistan-los-e-sports/</p>
+<h3 id="esports---marcas">eSports - Marcas</h3>
+<ul>
+<li>Fnatic se fundó en 2004</li>
+<li>Es una de las marcas de Esports más exitosas</li>
+<li>Ganados más de 200 campeonatos en 30 juegos diferentes.</li>
+<li>League of Legends, FIFA, CSGO, Dota 2, Fortnite, Rainbow Six Siege y PUBG.</li>
+</ul>
+<p>http://www.youtube.com/watch?v=_Q0RaST09qU</p>
+
+</body>
+</html>

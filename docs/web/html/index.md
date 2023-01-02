@@ -1,6 +1,6 @@
 # HTML
 
-## 1. INTRODUCCIÓN AL LENGUAJE HTML.
+## 1. INTRODUCCIÓN AL LENGUAJE HTML
 
 El lenguaje HTML (Hyper Text Markup Language) es un lenguaje que sirve
 para escribir hipertexto, es decir, documentos de texto presentado de forma
@@ -102,6 +102,7 @@ abrimos con el navegador. Comprueba el resultado.
 ## Títulos
 
 Para crear un título se utilizan las etiquetas h1, h2, etc.
+
 ```html
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -228,9 +229,3 @@ difícil. Más adelante realizaré páginas más completas.
  </BODY>
 </HTML>
 ```
-
-
-
-
-
-

@@ -17,15 +17,14 @@ será el FF
 
 Los colores primarios son:
 
-- #FF0000 - Rojo
-- #00FF00 - Verde
-- #0000FF - Azul
-
-Otros colores son:
-
-- #FFFFFF - Blanco
-- #000000 - Negro
-- #FFFF00 – Amarillo
+| código RGB | color    |
+| ---------- | -------- |
+| #FF0000    | Rojo     |
+| #00FF00    | Verde    |
+| #0000FF    | Azul     |
+| #FFFFFF    | Blanco   |
+| #000000    | Negro    |
+| #FFFF00    | Amarillo |
 
 Oscurecer un color. Para hacer un color más oscuro, hay que reducir el
 número de su componente, dejando los otros dos invariables. Así, el rojo #FF0000 se puede hacer más oscuro con #AA0000, o aún más oscuro con #550000.

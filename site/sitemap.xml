@@ -751,61 +751,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/1.%20Introduccion/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/2.%20Conceptos%20basicos/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/3.%20Movernos%20por%20la%20hoja/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/4.%20Introducir%20datos/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/6.%20Funciones/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/exportar%20e%20imprimir/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/formato%20condicional/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/graficos/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/operadores/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/referencia%20a%20celdas/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/Hojas_de_c%C3%A1lculo/cafeteria/cafeteria/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://danimrprofe.github.io/apuntes/Imagen_digital/1.Imagen_digital/</loc>
          <lastmod>2023-01-02</lastmod>
          <changefreq>daily</changefreq>
@@ -1862,6 +1807,61 @@
     </url>
     <url>
          <loc>https://danimrprofe.github.io/apuntes/herramientas/tornillo_de_banco/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/1.%20Introduccion/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/2.%20Conceptos%20basicos/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/3.%20Movernos%20por%20la%20hoja/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/4.%20Introducir%20datos/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/6.%20Funciones/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/exportar%20e%20imprimir/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/formato%20condicional/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/graficos/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/operadores/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/referencia%20a%20celdas/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/hoja_de_calculo/cafeteria/cafeteria/</loc>
          <lastmod>2023-01-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3006,7 +3006,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://danimrprofe.github.io/apuntes/web/html/</loc>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/1.%20Introduccion/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/2.%20estructura%20html/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/3.%20Ejemplo%20documento%20html/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/4.%20Titulos%20y%20parrafos/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/5.%20Estilos%20de%20texto%20y%20p%C3%A1rrafo/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/7.%20enlaces/</loc>
+         <lastmod>2023-01-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/8.%20imagenes/</loc>
          <lastmod>2023-01-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -3016,12 +3046,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://danimrprofe.github.io/apuntes/web/html/enlaces/</loc>
-         <lastmod>2023-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://danimrprofe.github.io/apuntes/web/html/imagenes/</loc>
+         <loc>https://danimrprofe.github.io/apuntes/web/html/colores/</loc>
          <lastmod>2023-01-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

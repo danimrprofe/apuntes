@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/web/Javascript/">
       
+      
+        <link rel="prev" href="../cookies/">
+      
+      
+        <link rel="next" href="../css/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17407,10 +17414,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/web/Javascript/README.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="javascript">Javascript</h1>
@@ -17435,30 +17441,30 @@
 <p>De esta forma podremos hacer referencia al mismo archivo desde diferentes HTML, y únicamente realizar modificaciones en el archivo javascript.</p>
 <h2 id="arrays">Arrays</h2>
 <p>Los arrays son conjuntos de elementos.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">alumnes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;dani&quot;</span><span class="p">,</span><span class="s2">&quot;manolo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">alumnes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;dani&quot;</span><span class="p">,</span><span class="s2">&quot;manolo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">]</span>
 </code></pre></div>
 <p>Para hacer referencia a los diferentes elementos del array:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;dani&quot;</span><span class="w"></span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;manolo&quot;</span><span class="w"></span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;juan&quot;</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;dani&quot;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;manolo&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">alumno</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="nx">nos</span><span class="w"> </span><span class="nx">devolverá</span><span class="w"> </span><span class="s2">&quot;juan&quot;</span>
 </code></pre></div>
 Si queremos agregar elmentos al array:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">alumno</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;pepe&quot;</span><span class="p">)</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">alumno</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;pepe&quot;</span><span class="p">)</span>
 </code></pre></div>
 Ahora el array tendrá 4 elementos, pepe será <strong>alumno[3]</strong></p>
 <p>Para saber la cantidad de elementos que tiene un array:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">alumno</span><span class="p">.</span><span class="nx">length</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">alumno</span><span class="p">.</span><span class="nx">length</span>
 </code></pre></div>
 Iterar sobre los elementos de un array con for:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">alumnos</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nx">windows</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="nx">alumnos</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span><span class="w"></span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">alumnos</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nx">windows</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="nx">alumnos</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
 </code></pre></div>
 Eliminar el último elemento:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">alumnos</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">alumnos</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
 </code></pre></div>
 <p>Eliminar el primer elemento</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">alumnos</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">alumnos</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="snippets-dexemple">Snippets d'exemple</h2>
 <p>Abrir un mensaje de alerta pulsando un enlace:</p>
@@ -17576,12 +17582,11 @@ Eliminar el último elemento:</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

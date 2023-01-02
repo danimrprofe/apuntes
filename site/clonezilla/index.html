@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/clonezilla/">
       
+      
+        <link rel="prev" href="../basesdedatos/sql_vs_nosql/">
+      
+      
+        <link rel="next" href="../copias-seguridad/copias_linux/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17426,10 +17433,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/clonezilla/index.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="formatear-disco-desde-clonezilla">Formatear disco desde Clonezilla</h1>
@@ -17449,39 +17455,39 @@
 <p>Para ello, entrar en el shell (consola de comandos) desde el menú de Clonezilla y así poder ejecutar los diferentes comandos:</p>
 <h2 id="1-comprobando-el-disco-con-fdisk">1) Comprobando el disco con Fdisk</h2>
 <p>Al crear el disco, no está ni formateado, ni tiene tabla de particiones, ni sistema de archivos, por lo que Clonezilla no lo reconoce.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Command <span class="o">(</span>m <span class="k">for</span> <span class="nb">help</span><span class="o">)</span>: F
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Unpartitioned space /dev/sdb: <span class="m">10</span> GiB, <span class="m">10736369664</span> bytes, <span class="m">20969472</span> sectors
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> Units: sectors of <span class="m">1</span> &gt;k <span class="nv">512</span> <span class="o">=</span> <span class="m">512</span> bytes
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a> Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> Start   End   Sectors    Size
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> <span class="m">2048</span>   <span class="m">20971519</span>    <span class="m">20969472</span> 10G
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>F
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Unpartitioned<span class="w"> </span>space<span class="w"> </span>/dev/sdb:<span class="w"> </span><span class="m">10</span><span class="w"> </span>GiB,<span class="w"> </span><span class="m">10736369664</span><span class="w"> </span>bytes,<span class="w"> </span><span class="m">20969472</span><span class="w"> </span>sectors
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w"> </span>Units:<span class="w"> </span>sectors<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;k<span class="w"> </span><span class="nv">512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w"> </span>Sector<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>logical/physical<span class="o">)</span>:<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>/<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w"> </span>Start<span class="w">   </span>End<span class="w">   </span>Sectors<span class="w">    </span>Size
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w"> </span><span class="m">2048</span><span class="w">   </span><span class="m">20971519</span><span class="w">    </span><span class="m">20969472</span><span class="w"> </span>10G
 </code></pre></div>
 <h2 id="2-crear-tabla-de-particiones-gpt-desde-clonezilla">2) Crear tabla de particiones GPT desde Clonezilla</h2>
 <p>En este caso la crearé del tipo GPT</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Command <span class="o">(</span>m <span class="k">for</span> <span class="nb">help</span><span class="o">)</span>: g
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Created a new GPT disklabel <span class="o">(</span>GUID: 76AAA8AE-BD36-BE42-AE5D-A44852D884E0<span class="o">)</span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>g
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Created<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>GPT<span class="w"> </span>disklabel<span class="w"> </span><span class="o">(</span>GUID:<span class="w"> </span>76AAA8AE-BD36-BE42-AE5D-A44852D884E0<span class="o">)</span>.
 </code></pre></div>
 <h2 id="3-creando-una-particion-que-ocupe-todo-el-disco-en-clonezilla">3) Creando una partición que ocupe todo el disco en Clonezilla</h2>
 <p>Tengo para crear hasta 128 particiones, nada más y nada menos. Elijo los parámetros por defecto porque pretendo ocupar todo el disco</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Command <span class="o">(</span>m <span class="k">for</span> <span class="nb">help</span><span class="o">)</span>: n
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Partition number <span class="o">(</span><span class="m">1</span>-128, default <span class="m">1</span><span class="o">)</span>: <span class="m">1</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>First sector <span class="o">(</span><span class="m">2048</span>-20971486, default <span class="m">2048</span><span class="o">)</span>:
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Last sector, +sectors or +size£K,M,G,T,P<span class="o">}</span> <span class="o">(</span><span class="m">2048</span>-20971486, default <span class="m">20971486</span><span class="o">)</span> Created a new partition <span class="m">1</span> of <span class="nb">type</span> <span class="s1">&#39;Linux filesystem&#39;</span> and of size <span class="m">10</span> GiB.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>n
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Partition<span class="w"> </span>number<span class="w"> </span><span class="o">(</span><span class="m">1</span>-128,<span class="w"> </span>default<span class="w"> </span><span class="m">1</span><span class="o">)</span>:<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>First<span class="w"> </span>sector<span class="w"> </span><span class="o">(</span><span class="m">2048</span>-20971486,<span class="w"> </span>default<span class="w"> </span><span class="m">2048</span><span class="o">)</span>:
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Last<span class="w"> </span>sector,<span class="w"> </span>+sectors<span class="w"> </span>or<span class="w"> </span>+size£K,M,G,T,P<span class="o">}</span><span class="w"> </span><span class="o">(</span><span class="m">2048</span>-20971486,<span class="w"> </span>default<span class="w"> </span><span class="m">20971486</span><span class="o">)</span><span class="w"> </span>Created<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>partition<span class="w"> </span><span class="m">1</span><span class="w"> </span>of<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="s1">&#39;Linux filesystem&#39;</span><span class="w"> </span>and<span class="w"> </span>of<span class="w"> </span>size<span class="w"> </span><span class="m">10</span><span class="w"> </span>GiB.
 </code></pre></div>
 <h2 id="4-mostrar-la-tabla-de-particiones-con-clonezilla">4) Mostrar la tabla de particiones con Clonezilla</h2>
 <p>Vamos a comprobar que ha quedado todo bien. Me ha quedado estupenda. Ojo que de momento hasta que no lo grabe no quedará escrita la tabla de particiones, por lo que aún no es definitivo.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Command <span class="o">(</span>m <span class="k">for</span> <span class="nb">help</span><span class="o">)</span>: p
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Disk /dev/sdb: <span class="m">10</span> GiB, <span class="m">10737418240</span> bytes, <span class="m">20971520</span> sectors Units: sectors of <span class="m">1</span> &gt;k <span class="nv">512</span> <span class="o">=</span> <span class="m">512</span> bytes Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes Disklabel type: gpt
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Disk identifier: 76AAA8AE-BD36-BE42-AE5D-A44852D884E0
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Device Start End Sectors Size Type
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Ddev/sdbl <span class="m">2048</span> <span class="m">20971486</span> <span class="m">20969439</span> 10G Linux filesystem
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>p
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Disk<span class="w"> </span>/dev/sdb:<span class="w"> </span><span class="m">10</span><span class="w"> </span>GiB,<span class="w"> </span><span class="m">10737418240</span><span class="w"> </span>bytes,<span class="w"> </span><span class="m">20971520</span><span class="w"> </span>sectors<span class="w"> </span>Units:<span class="w"> </span>sectors<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;k<span class="w"> </span><span class="nv">512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>Sector<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>logical/physical<span class="o">)</span>:<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>/<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>I/O<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>minimum/optimal<span class="o">)</span>:<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>/<span class="w"> </span><span class="m">512</span><span class="w"> </span>bytes<span class="w"> </span>Disklabel<span class="w"> </span>type:<span class="w"> </span>gpt
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Disk<span class="w"> </span>identifier:<span class="w"> </span>76AAA8AE-BD36-BE42-AE5D-A44852D884E0
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Device<span class="w"> </span>Start<span class="w"> </span>End<span class="w"> </span>Sectors<span class="w"> </span>Size<span class="w"> </span>Type
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Ddev/sdbl<span class="w"> </span><span class="m">2048</span><span class="w"> </span><span class="m">20971486</span><span class="w"> </span><span class="m">20969439</span><span class="w"> </span>10G<span class="w"> </span>Linux<span class="w"> </span>filesystem
 </code></pre></div>
 <h2 id="5-grabo-la-tabla-de-particiones">5. Grabo la tabla de particiones</h2>
 <p>Ahora sí, vamos a grabar la tabla de particiones.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Command <span class="o">(</span>m <span class="k">for</span> <span class="nb">help</span><span class="o">)</span>: w
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>The partition table has been altered.
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Calling ioctlO to re-read partition table.
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Syncing disks.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Command<span class="w"> </span><span class="o">(</span>m<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="o">)</span>:<span class="w"> </span>w
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>The<span class="w"> </span>partition<span class="w"> </span>table<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>altered.
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Calling<span class="w"> </span>ioctlO<span class="w"> </span>to<span class="w"> </span>re-read<span class="w"> </span>partition<span class="w"> </span>table.
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Syncing<span class="w"> </span>disks.
 </code></pre></div>
 <h2 id="6-ultima-comprobacion">6) Última comprobación</h2>
 <p>Con <strong>lsblk</strong> podemos comprobar que todo es correcto. Tengo 2 particiones porque en esta máquina virtual tenía dos discos diferentes, de 10 GiB cada uno:</p>
@@ -17595,12 +17601,11 @@ user@debian:~$ lsblk
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

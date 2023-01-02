@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/proxy-cache/squid/">
       
+      
+        <link rel="prev" href="../../programacion_orientada_a_objetos/">
+      
+      
+        <link rel="next" href="../../python/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17884,10 +17891,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/proxy-cache/squid.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="proxy-cache-squid">Proxy-caché squid</h1>
@@ -17947,12 +17953,12 @@
 <h2 id="7-arranque-y-parada-del-proxy-squid">7. Arranque y parada del proxy squid</h2>
 <p>El servicio squid, al igual que todos los servicios, dispone de <strong>scripts</strong> de arranque y parada en la carpeta /etc/init.d. Debemos ejecutarlos desde una consola de root.</p>
 <p>Arrancar o reiniciar el servidor squid:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo /etc/init.d/squid restart <span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo systemctl start squid
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>/etc/init.d/squid<span class="w"> </span>restart<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>squid
 </code></pre></div>
 <p>// Parar el servidor squid \</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo /etc/init.d/squid stop <span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo systemctl stop squid
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>/etc/init.d/squid<span class="w"> </span>stop<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>squid
 </code></pre></div>
 <p>// Recargar configuración del servidor squid \
 sudo /etc/init.d/squid reload</p>
@@ -17972,8 +17978,8 @@ sudo /etc/init.d/squid reload</p>
 <h2 id="9-configuracion-basica-del-proxy-squid">9. Configuración básica del proxy squid</h2>
 <p>El archivo de configuración del proxy es el archivo <strong>/etc/squid/squid.conf</strong>. Si observamos dicho archivo, veremos que es un archivo muy extenso en el que hay cientos de parámetros que podemos establecer, pero para una utilización básica, son unos pocos los parámetros que debemos configurar.</p>
 <p>Antes de editar el archivo de configuración, es recomendable hacer una copia del archivo original y protegerlo contra escritura para tener el archivo original como referencia, y reutilizarlo si fuese necesario. Se puede hacer con los siguientes comandos:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.original
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo chmod a-w /etc/squid/squid.conf.original
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/squid/squid.conf<span class="w"> </span>/etc/squid/squid.conf.original
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>a-w<span class="w"> </span>/etc/squid/squid.conf.original
 </code></pre></div>
 <p>Deberíamos modificar el fichero para que escuche en IPv4 y en IPv6, cambiando la variable http_port a 0.0.0.0:3128.</p>
 <p>Reiniciamos: systemctl restart squid. Comprobamos que el cambio ha surtido efecto:</p>
@@ -18128,9 +18134,9 @@ sudo iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 -j REDIRECT --to-po
 <p>Tal y como se ha comentado anteriormente, con squid es sencillo permitir o denegar el acceso a Internet por rangos de IPs. Si tenemos nuestra red diseñada de forma que cada aula utiliza un rango concreto, podremos permitir o denegar el acceso a un aula de forma sencilla. \
  \
 Para no tener que tocar el archivo squid.conf, lo mejor es crear una ACL que cargue las aulas desde un archivo externo. Podemos crear con un editor de texto el archivo /etc/squid/aulas-prohibidas.txt en el que indicaremos los rangos de IPs que no queremos que naveguen. Por ejemplo, si no queremos que naveguen las aulas 2 y 3, el contenido del archivo /etc/squid/aulas-prohibidas.txt deberá ser:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="na">//Archivo /etc/squid/aulas-prohibidas.txt \</span><span class="w"></span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="na">10.0.2.0/24 \</span><span class="w"></span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="na">10.0.3.0/24</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="na">//Archivo /etc/squid/aulas-prohibidas.txt \</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="na">10.0.2.0/24 \</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="na">10.0.3.0/24</span>
 </code></pre></div>
 <p>Después tendremos que editar squid.conf para crear una acl que cargue los rangos desde el archivo /etc/squid/daulas-prohibidas.txt y deniegue el acceso a dichos rangos.</p>
 <p>Archivo externo para indicar las aulas a las que no las permitimos navegar \</p>
@@ -18140,12 +18146,12 @@ Para no tener que tocar el archivo squid.conf, lo mejor es crear una ACL que car
 </code></pre></div>
 <p>Por último, tan solo tenemos que recargar la configuración de squid para que entre en funcionamiento la nueva configuración:</p>
 <p>//Recargar la configuración de squid \</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo /etc/init.d/squid reload
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>/etc/init.d/squid<span class="w"> </span>reload
 </code></pre></div>
 <h2 id="19-indicar-url-prohibidas">19. Indicar URL prohibidas</h2>
 <p>Podemos crear ACL para listas de direcciones.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="na">acl urls-prohibidas dst .facebook.com .twitter.com \</span><span class="w"></span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="na">http_access deny urls-prohibidas</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="na">acl urls-prohibidas dst .facebook.com .twitter.com \</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="na">http_access deny urls-prohibidas</span>
 </code></pre></div>
 <p>Las direcciones que comienzan por un punto (.) hacen referencia a cualquier URL que acabe en esta cadena.</p>
 <p>Ejemplo: <code>.facebook.com</code> afecta a <code>static.facebook.com</code></p>
@@ -18185,37 +18191,37 @@ Para no tener que tocar el archivo squid.conf, lo mejor es crear una ACL que car
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1"># Script para prohibir la navegación de un aula \</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># Se creará el rango del aula en /etc/squid/aulas-prohibidas.txt \</span>
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1"># Indicar el número de aula al ejecutar el script \</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a> <span class="se">\</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -ne <span class="m">1</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="se">\</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="nb">echo</span> <span class="s2">&quot;Es necesario introducir el número de aula a prohibir&quot;</span> <span class="se">\</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="nb">exit</span> -1 <span class="se">\</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="k">fi</span> <span class="se">\</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="nb">echo</span> Prohibir navegar aula <span class="nv">$1</span>, subred <span class="m">10</span>.0.<span class="nv">$1</span>.0/24 <span class="se">\</span>
-<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="nb">echo</span> <span class="m">10</span>.0.<span class="nv">$1</span>.0/24 &gt;&gt; /etc/squid/aulas-prohibidas.txt <span class="se">\</span>
-<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>/etc/init.d/squid reload <span class="se">\</span>
-<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="nb">echo</span> subredes denegadas: <span class="se">\</span>
-<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>cat /etc/squid/aulas-prohibidas.txt
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$#</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Es necesario introducir el número de aula a prohibir&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="nb">exit</span><span class="w"> </span>-1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="k">fi</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="nb">echo</span><span class="w"> </span>Prohibir<span class="w"> </span>navegar<span class="w"> </span>aula<span class="w"> </span><span class="nv">$1</span>,<span class="w"> </span>subred<span class="w"> </span><span class="m">10</span>.0.<span class="nv">$1</span>.0/24<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="nb">echo</span><span class="w"> </span><span class="m">10</span>.0.<span class="nv">$1</span>.0/24<span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/squid/aulas-prohibidas.txt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>/etc/init.d/squid<span class="w"> </span>reload<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="nb">echo</span><span class="w"> </span>subredes<span class="w"> </span>denegadas:<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>cat<span class="w"> </span>/etc/squid/aulas-prohibidas.txt
 </code></pre></div>
 <h4 id="script-permitir-aula">Script permitir aula</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>//Nombre del script: **permitir-aula.sh** <span class="se">\</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>//Nombre<span class="w"> </span>del<span class="w"> </span>script:<span class="w"> </span>**permitir-aula.sh**<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1">#/bin/bash \</span>
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1">#  \</span>
 <a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1"># Script para permitir la navegación de un aula \</span>
 <a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1"># Se eliminará el rango del aula de /etc/squid/aulas-prohibidas.txt \</span>
 <a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># Indicar el número de aula al ejecutar el script \</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a> <span class="se">\</span>
-<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -ne <span class="m">1</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="se">\</span>
-<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="nb">echo</span> <span class="s2">&quot;Es necesario introducir el numero de aula&quot;</span> <span class="se">\</span>
-<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="nb">exit</span> -1 <span class="se">\</span>
-<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="k">fi</span> <span class="se">\</span>
-<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nv">subred</span><span class="o">=</span><span class="m">10</span>.0.<span class="nv">$1</span>.0/24 <span class="se">\</span>
-<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="nb">echo</span> Permitir navegar aula <span class="nv">$1</span>, subred <span class="nv">$subred</span> <span class="se">\</span>
-<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="nv">patron</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> /10.0.<span class="nv">$1</span>.0/d<span class="sb">`</span> <span class="se">\</span>
-<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>cat /etc/squid/aulas-prohibidas.txt <span class="p">|</span> sed -e <span class="nv">$patron</span> &gt; /tmp/temp.txt  <span class="se">\</span>
-<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>cat /tmp/temp.txt &gt; /etc/squid/aulas-prohibidas.txt <span class="se">\</span>
-<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>/etc/init.d/squid reload <span class="se">\</span>
-<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="nb">echo</span> Subredes denegadas: <span class="se">\</span>
-<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>cat /etc/squid/aulas-prohibidas.txt
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$#</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Es necesario introducir el numero de aula&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="nb">exit</span><span class="w"> </span>-1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="k">fi</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nv">subred</span><span class="o">=</span><span class="m">10</span>.0.<span class="nv">$1</span>.0/24<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="nb">echo</span><span class="w"> </span>Permitir<span class="w"> </span>navegar<span class="w"> </span>aula<span class="w"> </span><span class="nv">$1</span>,<span class="w"> </span>subred<span class="w"> </span><span class="nv">$subred</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="nv">patron</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span><span class="w"> </span>/10.0.<span class="nv">$1</span>.0/d<span class="sb">`</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>cat<span class="w"> </span>/etc/squid/aulas-prohibidas.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-e<span class="w"> </span><span class="nv">$patron</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/temp.txt<span class="w">  </span><span class="se">\</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>cat<span class="w"> </span>/tmp/temp.txt<span class="w"> </span>&gt;<span class="w"> </span>/etc/squid/aulas-prohibidas.txt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>/etc/init.d/squid<span class="w"> </span>reload<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="nb">echo</span><span class="w"> </span>Subredes<span class="w"> </span>denegadas:<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>cat<span class="w"> </span>/etc/squid/aulas-prohibidas.txt
 </code></pre></div>
 <p>Si deseamos que el aula 1 no navegue, deberíamos ejecutar: prohibir-aula 1. Si luego deseamos permitir que el aula 1 navegue, tendríamos que ejecutar:</p>
 <div class="highlight"><pre><span></span><code>permitir-aula 1
@@ -18345,12 +18351,11 @@ Para no tener que tocar el archivo squid.conf, lo mejor es crear una ACL que car
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

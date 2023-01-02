@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/apache/configuracion-apache-linux/">
       
+      
+        <link rel="prev" href="../../ansible/roles/webservers/">
+      
+      
+        <link rel="next" href="../examen/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17372,10 +17379,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/apache/configuracion-apache-linux.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="instrucciones-para-entregar-la-practica">Instrucciones para entregar la práctica</h1>
@@ -17963,11 +17969,11 @@ tomadas del archivo <code>/etc/apache2/apache2.conf</code>. Partes importantes:<
     de esta carpeta desde el navegador.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&lt;Directory</span> <span class="err">&quot;/usr/share/apache2/icons&quot;</span><span class="nt">&gt;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Options Indexes MultiViews
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>AllowOverride None
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Order allow,deny
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>Allow from all
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&lt;Directory</span><span class="w"> </span><span class="err">&quot;/usr/share/apache2/icons&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Options<span class="w"> </span>Indexes<span class="w"> </span>MultiViews
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>AllowOverride<span class="w"> </span>None
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Order<span class="w"> </span>allow,deny
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>Allow<span class="w"> </span>from<span class="w"> </span>all
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nt">&lt;/Directory&gt;</span>
 </code></pre></div>
 <h3 id="permitir-solo-acceso-a-directorio-a-una-red-concreta">Permitir solo acceso a directorio a una red concreta</h3>
@@ -18054,9 +18060,9 @@ regulares.</p>
 <h2 id="seccion-location">Sección location</h2>
 <p>La sección Location está relacionada con el espacio web y cambia la
 configuración para el contenido del espacio web. Por ejemplo:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">&lt;Location</span> <span class="err">/privado</span><span class="nt">&gt;</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Order Allow,Deny
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Deny from all
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">&lt;Location</span><span class="w"> </span><span class="err">/privado</span><span class="nt">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Order<span class="w"> </span>Allow,Deny
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Deny<span class="w"> </span>from<span class="w"> </span>all
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">&lt;/Location&gt;</span>
 </code></pre></div>
 <p>Esta configuración evita que se acceda a cualquier URL que empiece por
@@ -18068,8 +18074,8 @@ su URL (<a href="http://localhost/privado123">http://localhost/privado123</a>).<
 dado como argumento se compila con Apache2.</p>
 <p>Esta sección solo se comprueba al iniciar el servidor</p>
 <p>Una de las directivas permitidas en IfModule es UserDir.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">&lt;IfModule</span> <span class="err">mod_userdir.c</span><span class="nt">&gt;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Userdir directorio
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">&lt;IfModule</span><span class="w"> </span><span class="err">mod_userdir.c</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Userdir<span class="w"> </span>directorio
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">&lt;/IfModule&gt;</span>
 </code></pre></div>
 <p>En este caso, si el módulo <code>usedir</code> está activado, se aplica la
@@ -18077,7 +18083,7 @@ directiva de dentro. En cambio, si no está activado, se ignora.</p>
 <h2 id="seccion-ifdefine">Sección ifdefine</h2>
 <p>IfDefine engloba directivas que serán procesadas sólo si se cumple una
 determinada condición (test) al iniciar el servidor.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">&lt;IfDefine</span> <span class="err">[!]nombre_parametro</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">&lt;IfDefine</span><span class="w"> </span><span class="err">[!]nombre_parametro</span><span class="nt">&gt;</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nt">&lt;/IfDefine&gt;</span>
 </code></pre></div>
@@ -18110,9 +18116,9 @@ servidor.</p>
 <h1 id="en-el-archivo-apache2conf">en el archivo apache2.conf</h1>
 <p>Como hemos pasado el argumento <code>ReverseProxy</code>, en la sección <code>Ifdefine</code> lo
 verá, y el servidor utilizará las directivas que hay dentro.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">&lt;IfDefine</span> <span class="err">ReverseProxy</span><span class="nt">&gt;</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>LoadModule rewrite_module modules/mod_rewrite.so
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>LoadModule proxy_module modules/libproxy.so
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">&lt;IfDefine</span><span class="w"> </span><span class="err">ReverseProxy</span><span class="nt">&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>LoadModule<span class="w"> </span>rewrite_module<span class="w"> </span>modules/mod_rewrite.so
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>LoadModule<span class="w"> </span>proxy_module<span class="w"> </span>modules/libproxy.so
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nt">&lt;/IfDefine&gt;</span>
 </code></pre></div>
 <p>Indica que se cargan los módulos <code>mod_rewrite</code> y <code>libproxy</code>, ya que, en el
@@ -18847,7 +18853,7 @@ SSLCertificateFile /etc/ssl/private/nombre-sitio.pem
 </code></pre></div>
 <p>Hay que comentar la opción SSLCertificateKeyFile</p>
 <p>Dentro de la carpeta html debe aparecer la siguiente configuración:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">&lt;Directory</span> <span class="err">/var/www/html</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">&lt;Directory</span><span class="w"> </span><span class="err">/var/www/html</span><span class="nt">&gt;</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>SSLRequireSSL
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>...
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nt">&lt;/Directory&gt;</span>
@@ -18970,12 +18976,11 @@ height="0.6956528871391076in"}</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

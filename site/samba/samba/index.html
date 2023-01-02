@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/samba/samba/">
       
+      
+        <link rel="prev" href="../../robotica-lego/Lego_mindstorm/">
+      
+      
+        <link rel="next" href="../../seguridad/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17446,10 +17453,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/samba/samba.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <ul>
@@ -17600,13 +17606,13 @@ Per compartir una carpeta, hem de crear una secció nova. El nom de la secció, 
 <li>És a dir, el propietari tendra control total, però ni els altres membres del grup ni la resta d’usuaris podran accedir a res.</li>
 <li>Es pot canviar a 0755 en cas que volguem que la resta d’usuaris de grup puguin escriure i llegir.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[homes]</span><span class="w"></span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">Comment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Directoris home</span><span class="w"></span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">Browseable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">Read only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span><span class="w"></span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">Create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0700</span><span class="w"></span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="na">Directory mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0700</span><span class="w"></span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="na">valid users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">%S</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[homes]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">Comment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Directoris home</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">Browseable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">Read only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">Create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0700</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="na">Directory mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0700</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="na">valid users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">%S</span>
 </code></pre></div>
 <p>Guardem i reiniciem el servidor:</p>
 <div class="highlight"><pre><span></span><code>sudo systemctl restart smbd
@@ -17623,14 +17629,14 @@ Per compartir una carpeta, hem de crear una secció nova. El nom de la secció, 
 <div class="highlight"><pre><span></span><code>$ sudo chmod 777 /srv/samba/
 </code></pre></div>
 <p>Modifiquem l’ arxiu <code>/etc/samba/smb.conf</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">[public]</span><span class="w"></span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">comment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">accés anònim public</span><span class="w"></span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/srv/samba/</span><span class="w"></span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="s">yes</span><span class="w"></span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="na">create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0660</span><span class="w"></span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="na">directory mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0771</span><span class="w"></span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="na">writable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="na">guest ok</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">[public]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">comment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">accés anònim public</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/srv/samba/</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">browsable</span><span class="w"> </span><span class="o">=</span><span class="s">yes</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="na">create mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0660</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="na">directory mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0771</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="na">writable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="na">guest ok</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yes</span>
 </code></pre></div>
 <p>Reiniciar el servidor:</p>
 <div class="highlight"><pre><span></span><code>sudo systemctl restart smbd
@@ -17728,16 +17734,16 @@ Podemos comprobar que se ha descargado el archivo. Cabe recordar que, cuando est
 <p>Si tenim problemes de bloqueig, podem utilitzar els següents (si no, no fer)</p>
 <p><img alt="" src="../2019-05-10-14-06-51.png" /></p>
 <p>Crear un punt de muntatge a on muntarem el sistema d’arxius de la carpeta compartida per a poder operar des del client.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo mkdir /mnt/sambapublic/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>/mnt/sambapublic/
 </code></pre></div>
 <p>Podem muntar-los en el nostre sistema de fitxers local com si fos un altre sistema d’arxius local o un sistema d’arxius NFS remot. Per a muntar-lo:</p>
 <div class="highlight"><pre><span></span><code>sudo mount -t cifs -v //192.168.1.101/public /mnt/sambapublic
 </code></pre></div>
 <p><img alt="" src="../2019-05-10-14-07-15.png" /></p>
 <p>Si per qualsevol motiu necessitem autenticar-nos (no és el cas), podríem fer-ho així:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo mount -t cifs -v <span class="se">\</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>-o <span class="nv">username</span><span class="o">=</span>sambauser, <span class="nv">password</span><span class="o">=</span>pa<span class="nv">$$</span>w0rd,sec<span class="o">=</span>none <span class="se">\</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>//192.168.1.101/public /mnt/sambapublic
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>cifs<span class="w"> </span>-v<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>-o<span class="w"> </span><span class="nv">username</span><span class="o">=</span>sambauser,<span class="w"> </span><span class="nv">password</span><span class="o">=</span>pa<span class="nv">$$</span>w0rd,sec<span class="o">=</span>none<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>//192.168.1.101/public<span class="w"> </span>/mnt/sambapublic
 </code></pre></div>
 <p>Una vegada connectats, podem operar sobre aquesta carpeta com si fos una carpeta del sistema.</p>
 <p>Amb la comanda <code>mount</code> podríem veure els punts de muntatge del sistema:</p>
@@ -17873,12 +17879,11 @@ Se puede acceder a través de \IPdelServer\isos. Nos llevaría a la carpeta del 
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

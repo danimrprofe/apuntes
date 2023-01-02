@@ -12,6 +12,3 @@ En Junio de 2020 se va a celebrar en el instituto Ramon Llull un festival de mú
 - En el cartel deberán aparecer patrocinadores, que serán empresas que aportan dinero y se anuncian a través del festival.
 - Deberá aparecer una sección informando de los abonos disponibles, así como los precios de cada uno, y los días que incluye.
 - El fondo puede ser una imagen libre de derechos, podéis utilizar una de https://pixabay.com/.
-
-
-

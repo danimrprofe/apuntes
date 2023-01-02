@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/VMware/tarea_5/">
       
+      
+        <link rel="prev" href="../../Thunkable/Readme/">
+      
+      
+        <link rel="next" href="../vSphere_HA_y_FT/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17372,10 +17379,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/VMware/tarea_5.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <ul>
@@ -17394,10 +17400,10 @@ suficiente.</p>
 creo que hubiera tirado la toalla.</p>
 <h1 id="instalacion-guettovcb">Instalación GuettoVCB</h1>
 <p>Conectar con SSH al host y:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir /vcb
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span> /vcb
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget https://github.com/lamw/ghettoVCB/raw/master/vghetto-ghettoVCB-offline-bundle.zip<span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>esxcli software vib install -d /vcb/vghetto-ghettoVCB-offline-bundle.zip –f
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>/vcb
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>/vcb
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget<span class="w"> </span>https://github.com/lamw/ghettoVCB/raw/master/vghetto-ghettoVCB-offline-bundle.zip<span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>esxcli<span class="w"> </span>software<span class="w"> </span>vib<span class="w"> </span>install<span class="w"> </span>-d<span class="w"> </span>/vcb/vghetto-ghettoVCB-offline-bundle.zip<span class="w"> </span>–f
 </code></pre></div>
 No me ha funcionado wget porque por lo visto no soporta https en la version instalada en el hipervisor</p>
 <p>Me voy a descargar el paquete en mi ordenador personaly lo voy a pasar por pscp</p>
@@ -17419,9 +17425,9 @@ No me ha funcionado wget porque por lo visto no soporta https en la version inst
 </code></pre></div>
 Podemos comprobar que esta instalado con esxcli, un pipe y un grep
 para filtrar</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">[</span>root@minint-fhbvlj9:~<span class="o">]</span> esxcli software vib list Igrep ghettoVCB
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ghettoVCB   <span class="m">1</span>.0.0-0.0.0 virtuallyGhetto CommunitySupported <span class="m">2018</span>-04-29
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="o">[</span>root@minint-fhbvlj9:^<span class="o">)</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">[</span>root@minint-fhbvlj9:~<span class="o">]</span><span class="w"> </span>esxcli<span class="w"> </span>software<span class="w"> </span>vib<span class="w"> </span>list<span class="w"> </span>Igrep<span class="w"> </span>ghettoVCB
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ghettoVCB<span class="w">   </span><span class="m">1</span>.0.0-0.0.0<span class="w"> </span>virtuallyGhetto<span class="w"> </span>CommunitySupported<span class="w"> </span><span class="m">2018</span>-04-29
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="o">[</span>root@minint-fhbvlj9:^<span class="o">)</span><span class="w"> </span>
 </code></pre></div>
 
 
@@ -17520,12 +17526,11 @@ para filtrar</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

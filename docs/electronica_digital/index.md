@@ -23,13 +23,16 @@ La puerta lógica es el bloque de construcción básico de los sistemas digitale
 dos o más entradas (A, B, C) y una salida S. Las puertas lógicas operan con números binarios. En los
 circuitos digitales una tensión alta significa un 1 binario y una tensión baja significa un cero binario
 (lógica positiva).
+
 En un montaje real, una puerta lógica será un circuito electrónico que proporciona señales
 digitales en su salida cuando a sus entradas se le aplican también señales digitales. Las señales de
 salida dependen de las señales de entrada.
+
 Todos los sistemas digitales se pueden construir utilizando tres puertas lógicas básicas.
 Estas son las puertas AND, la puerta OR y la puerta NOT.
 Existen otro tipo de puertas que se obtienen combinando las anteriores. De este tipo son las
 puertas NAND, NOR, XOR y XNOR.
+
 El funcionamiento de un circuito digital se refleja en su TABLA DE VERDAD, donde
 representamos las entradas del circuito (A, B, C) y las salidas (normalmente una llamada S).
 Se representan todas las posibles combinaciones de entrada en orden. Recordar que con 2

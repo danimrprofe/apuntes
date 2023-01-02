@@ -1,21 +1,4 @@
 # Programación orientada a objetos
-- [Programación orientada a objetos](#programación-orientada-a-objetos)
-  - [1. Introducción](#1-introducción)
-  - [2. Conceptos básicos](#2-conceptos-básicos)
-    - [Objetos](#objetos)
-    - [Métodos](#métodos)
-    - [Mensajes](#mensajes)
-    - [Clases](#clases)
-  - [3. Propiedades](#3-propiedades)
-  - [4. Herencia](#4-herencia)
-  - [5. Encapsulación](#5-encapsulación)
-  - [6. Polimorfismo](#6-polimorfismo)
-  - [7. Abstracción](#7-abstracción)
-  - [8. Otras](#8-otras)
-  - [9. Agrupación de clases](#9-agrupación-de-clases)
-  - [10. Metodología](#10-metodología)
-  - [11. Diseño orientado a objetos](#11-diseño-orientado-a-objetos)
-  - [12. Lenguajes de programación orientado a objetos](#12-lenguajes-de-programación-orientado-a-objetos)
 
 ## 1. Introducción
 

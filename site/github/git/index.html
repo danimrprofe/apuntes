@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/github/git/">
       
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../herramientas/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17614,10 +17621,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/github/git.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="git">Git</h1>
@@ -17629,8 +17635,8 @@
 <p><img alt="" src="../img/2022-11-19-16-31-50.png" /></p>
 <h2 id="paso-2-configurar-git">Paso 2: Configurar Git</h2>
 <p>Una vez que tengas Git instalado, necesitas configurarlo con tu nombre y dirección de correo electrónico. Esto se hace para que Git pueda asociar tus commits con tu identidad:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git config --global user.name <span class="s2">&quot; tu nombre &quot;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git config --global user.email <span class="s2">&quot; tu@email.com &quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot; tu nombre &quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot; tu@email.com &quot;</span>
 </code></pre></div>
 <h2 id="paso-3-crear-un-repositorio">Paso 3: Crear un repositorio</h2>
 <p>Para empezar a trabajar con Git, lo primero que necesitas hacer es crear un <strong>repositorio</strong>. Un repositorio de Git es un espacio en el que se almacenan los archivos de un proyecto y todo su historial de cambios. Puedes crear un repositorio de dos maneras: mediante la interfaz gráfica de Git o mediante la línea de comandos.</p>
@@ -17660,16 +17666,16 @@
 <p>Si trabajas en un repositorio remoto, necesitarás pushear tus cambios al repositorio para que otros usuarios puedan acceder a ellos. Pushear es el equivalente de hacer un commit en el repositorio remoto.</p>
 <p>Ejemplo:</p>
 <p>Vamos a enviar (sincronizar) los cambios realizados en el repositorio <strong>local</strong> al repositorio <strong>remoto</strong>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>E:<span class="se">\D</span>ocencia<span class="se">\a</span>puntes&gt;git push origin master
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Enumerating objects: <span class="m">36</span>, <span class="k">done</span>.
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Counting objects: <span class="m">100</span>% <span class="o">(</span><span class="m">36</span>/36<span class="o">)</span>, <span class="k">done</span>.
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Delta compression using up to <span class="m">8</span> threads
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Compressing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">30</span>/30<span class="o">)</span>, <span class="k">done</span>.
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Writing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">30</span>/30<span class="o">)</span>, <span class="m">1</span>.97 MiB <span class="p">|</span> <span class="m">3</span>.53 MiB/s, <span class="k">done</span>.
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>Total <span class="m">30</span> <span class="o">(</span>delta <span class="m">4</span><span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta <span class="m">0</span><span class="o">)</span>, pack-reused <span class="m">0</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>remote: Resolving deltas: <span class="m">100</span>% <span class="o">(</span><span class="m">4</span>/4<span class="o">)</span>, completed with <span class="m">4</span> <span class="nb">local</span> objects.
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>To https://github.com/danimrprofe/apuntes
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>   9118fa98..a8c5f455  master -&gt; master
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>E:<span class="se">\D</span>ocencia<span class="se">\a</span>puntes&gt;git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Enumerating<span class="w"> </span>objects:<span class="w"> </span><span class="m">36</span>,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Counting<span class="w"> </span>objects:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">36</span>/36<span class="o">)</span>,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Delta<span class="w"> </span>compression<span class="w"> </span>using<span class="w"> </span>up<span class="w"> </span>to<span class="w"> </span><span class="m">8</span><span class="w"> </span>threads
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Compressing<span class="w"> </span>objects:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">30</span>/30<span class="o">)</span>,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Writing<span class="w"> </span>objects:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">30</span>/30<span class="o">)</span>,<span class="w"> </span><span class="m">1</span>.97<span class="w"> </span>MiB<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span>.53<span class="w"> </span>MiB/s,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>Total<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="o">(</span>delta<span class="w"> </span><span class="m">4</span><span class="o">)</span>,<span class="w"> </span>reused<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span>delta<span class="w"> </span><span class="m">0</span><span class="o">)</span>,<span class="w"> </span>pack-reused<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>remote:<span class="w"> </span>Resolving<span class="w"> </span>deltas:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">4</span>/4<span class="o">)</span>,<span class="w"> </span>completed<span class="w"> </span>with<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="nb">local</span><span class="w"> </span>objects.
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>To<span class="w"> </span>https://github.com/danimrprofe/apuntes
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">   </span>9118fa98..a8c5f455<span class="w">  </span>master<span class="w"> </span>-&gt;<span class="w"> </span>master
 </code></pre></div>
 <p>El comando se compone de las siguientes partes:</p>
 <ul>
@@ -17789,12 +17795,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

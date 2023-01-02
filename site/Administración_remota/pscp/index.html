@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/Administraci%C3%B3n_remota/pscp/">
       
+      
+        <link rel="prev" href="../mremote/">
+      
+      
+        <link rel="next" href="../putty/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17528,10 +17535,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/Administración_remota/pscp.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="pscp">PSCP</h1>
@@ -17546,9 +17552,9 @@ También podemos  agregar dicho directorio a la variable PATH, supongamos que es
 </code></pre></div>
 <p>Debe cambiarse el usuario de acuerdo a la configuración particular de cada PC.</p>
 <h2 id="uso-de-pscp">Uso de pscp</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pscp <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>user@<span class="o">]</span>host:source target
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pscp <span class="o">[</span>options<span class="o">]</span> <span class="nb">source</span> <span class="o">[</span>source...<span class="o">]</span> <span class="o">[</span>user@<span class="o">]</span>host:target
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pscp <span class="o">[</span>options<span class="o">]</span> -ls <span class="o">[</span>user@<span class="o">]</span>host:filespec
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pscp<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>user@<span class="o">]</span>host:source<span class="w"> </span>target
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pscp<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span><span class="o">[</span>source...<span class="o">]</span><span class="w"> </span><span class="o">[</span>user@<span class="o">]</span>host:target
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pscp<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>-ls<span class="w"> </span><span class="o">[</span>user@<span class="o">]</span>host:filespec
 </code></pre></div>
 <p>Opciones</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>-V        print version information and exit
@@ -17575,11 +17581,11 @@ También podemos  agregar dicho directorio a la variable PATH, supongamos que es
 <h2 id="copiar-archivos">Copiar archivos</h2>
 <h3 id="de-windows-a-linux">De Windows a Linux</h3>
 <p>Se puede utilizar scp para copiar archivos de Windows a Linux</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pscp c:<span class="se">\p</span>ath<span class="se">\t</span>o<span class="se">\f</span>ile user@remote-server:/path/to/remote-folder
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pscp<span class="w"> </span>c:<span class="se">\p</span>ath<span class="se">\t</span>o<span class="se">\f</span>ile<span class="w"> </span>user@remote-server:/path/to/remote-folder
 </code></pre></div>
 <h3 id="de-linux-a-windows">De Linux a Windows</h3>
 <p>Igualmente se puede copiar archivos de Linux (FreeBSD o Max OS X) a Windows.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pscp user@remote-server:/path/to/remote-file c:<span class="se">\p</span>ath<span class="se">\t</span>o<span class="se">\l</span>ocal-folder<span class="se">\</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pscp<span class="w"> </span>user@remote-server:/path/to/remote-file<span class="w"> </span>c:<span class="se">\p</span>ath<span class="se">\t</span>o<span class="se">\l</span>ocal-folder<span class="se">\</span>
 </code></pre></div>
 <h2 id="conexion-a-traves-de-nat">Conexión a través de NAT</h2>
 <p>Cuando la máquina remota a la que queremos acceder está en otra red, y es una red NAT</p>
@@ -17688,12 +17694,11 @@ Configurar la red NAT en VirtualBox</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

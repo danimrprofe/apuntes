@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/vueJS/">
       
+      
+        <link rel="prev" href="../virtualizacion/virtualizacion/">
+      
+      
+        <link rel="next" href="../web/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17440,10 +17447,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/vueJS/index.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="vuejs">Vue.js</h1>
@@ -17489,7 +17495,7 @@ Podemos incluir en nuestro código mixins, que nos permiten almacenar parte de c
 <p>Vamos a ver como arrancar el proyecto una vez descargado en local.</p>
 <h2 id="desplegar-el-proyecto-en-local">Desplegar el proyecto en local</h2>
 <p>Una vez descargados los archivos del proyecto, este se tendrá que instalar. En este proceso se descargarán e instalarán todos los paquetes necesarios para que este funcione (dependencias). Para ello utilizaremos el comando, en la carpeta raíz:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm install
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install
 </code></pre></div>
 <p><img alt="" src="img/2022-12-12-19-09-20.png" /></p>
 <p>Al terminar nos informará de todos los paquetes instalados, y si existe alguna vulnerabilidad en nuestro proyecto. Los paquetes «this version has been deprectated» son versiones obsoletas y que por tanto no se recomienda usar.</p>
@@ -17497,7 +17503,7 @@ Podemos incluir en nuestro código mixins, que nos permiten almacenar parte de c
 <p><img alt="" src="img/2022-12-12-19-09-29.png" /></p>
 <h2 id="arrancar-el-servidor">Arrancar el servidor</h2>
 <p>Para arrancar el proyecto, utilizaremos el siguiente comando, que nos abrirá un servidor escuchando en el puerto 8080 de nuestra máquina, al que accederemos desde el navegador.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm run serve
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>run<span class="w"> </span>serve
 </code></pre></div>
 <p><img alt="" src="img/2022-12-12-19-09-43.png" /></p>
 <p>Como podemos ver, podremos acceder a través de dos direcciones, una de localhost y otra con dirección IP. Podemos pinchar en los enlaces celestes y nos arrancará el proyecto.
@@ -17505,7 +17511,7 @@ Como curiosidad, cada vez que guardemos, «compilará» el proyecto y, si encuen
 <p>Compilar y minimizar el proyecto Vue para producción
 Si queremos desplegar nuestro proyecto para producción, podemos crear una build, es decir, una versión de nuestro proyecto para un entorno de producción.</p>
 <p>Para ello utilizaremos el comando</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm run build
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>run<span class="w"> </span>build
 </code></pre></div>
 <p>Esto nos creará una carpeta nueva llamada dist, y empaquetará la aplicación para que ocupe menos. Nos gzipea los archivos, por lo que el tamaño se reduce considerablemente. De paso, nos mostrará algunos warnings con recomendaciones para optimizar el rendimiento.</p>
 <p><img alt="" src="img/2022-12-12-19-09-59.png" /></p>
@@ -17612,12 +17618,11 @@ Si queremos desplegar nuestro proyecto para producción, podemos crear una build
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

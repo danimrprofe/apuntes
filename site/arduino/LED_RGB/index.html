@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">
       
+      
+        <link rel="prev" href="../LED/">
+      
+      
+        <link rel="next" href="../LED_con_74HC595/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0b4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
     
     
       
@@ -23,11 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.91872f81.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f79797b0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -58,6 +63,8 @@
     
     
       
+    
+    
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
@@ -17542,10 +17549,9 @@
                 
                   
 
-  <a href="https://github.com/danimrprofe/edit/master/docs/arduino/LED_RGB.md" title="Editar esta página" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="led-rgb">LED RGB</h1>
@@ -17661,19 +17667,19 @@ Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 t
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="cp">#define GREEN 5</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cp">#define RED 6</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">}</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">{</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>Una vez probado, puedes intentar estos ejercicios:</p>
 <ol>
@@ -17764,29 +17770,29 @@ Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 t
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="cp">#define GREEN 5</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="cp">#define RED 6</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">{</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">}</span>
 <a id="__codelineno-1-15" name="__codelineno-1-15"></a>
 <a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="c1">// define variables</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="kt">int</span><span class="w"> </span><span class="n">redValue</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="kt">int</span><span class="w"> </span><span class="n">greenValue</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="kt">int</span><span class="w"> </span><span class="n">blueValue</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="kt">int</span><span class="w"> </span><span class="n">redValue</span><span class="p">;</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="kt">int</span><span class="w"> </span><span class="n">greenValue</span><span class="p">;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="kt">int</span><span class="w"> </span><span class="n">blueValue</span><span class="p">;</span>
 <a id="__codelineno-1-20" name="__codelineno-1-20"></a>
 <a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="c1">// main loop</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="p">{</span>
 <a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">  </span><span class="cp">#define delayTime 10 </span><span class="c1">// fading time between colors</span>
 <a id="__codelineno-1-25" name="__codelineno-1-25"></a>
 <a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">  </span><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="c1">// choose a value between 1 and 255 to change the color.</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">  </span><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">  </span><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">  </span><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">  </span><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-1-29" name="__codelineno-1-29"></a>
 <a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">  </span><span class="c1">// this is unnecessary as we&#39;ve either turned on RED in SETUP</span>
 <a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">  </span><span class="c1">// or in the previous loop ... regardless, this turns RED off</span>
@@ -17794,50 +17800,50 @@ Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 t
 <a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">  </span><span class="c1">// delay(1000);</span>
 <a id="__codelineno-1-34" name="__codelineno-1-34"></a>
 <a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">  </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">// fades out red bring green full when i=255</span>
-<a id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">  </span><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">  </span><span class="n">redValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="w">  </span><span class="n">greenValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">  </span><span class="p">{</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">  </span><span class="n">redValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="w">  </span><span class="n">greenValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <a id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="w">  </span><span class="c1">// The following was reversed, counting in the wrong directions</span>
 <a id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="w">  </span><span class="c1">// analogWrite(RED, 255 - redValue);</span>
 <a id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="w">  </span><span class="c1">// analogWrite(GREEN, 255 - greenValue);</span>
-<a id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">redValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">greenValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">redValue</span><span class="p">);</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="w">  </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">greenValue</span><span class="p">);</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="p">}</span>
 <a id="__codelineno-1-46" name="__codelineno-1-46"></a>
-<a id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <a id="__codelineno-1-50" name="__codelineno-1-50"></a>
 <a id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">// fades out green bring blue full when i=255</span>
-<a id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-54" name="__codelineno-1-54"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="p">{</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <a id="__codelineno-1-55" name="__codelineno-1-55"></a><span class="c1">// The following was reversed, counting in the wrong directions</span>
 <a id="__codelineno-1-56" name="__codelineno-1-56"></a><span class="c1">// analogWrite(GREEN, 255 - greenValue);</span>
 <a id="__codelineno-1-57" name="__codelineno-1-57"></a><span class="c1">// analogWrite(BLUE, 255 - blueValue);</span>
-<a id="__codelineno-1-58" name="__codelineno-1-58"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">greenValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-59" name="__codelineno-1-59"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">blueValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-60" name="__codelineno-1-60"></a><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-61" name="__codelineno-1-61"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-58" name="__codelineno-1-58"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="n">greenValue</span><span class="p">);</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">blueValue</span><span class="p">);</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60"></a><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61"></a><span class="p">}</span>
 <a id="__codelineno-1-62" name="__codelineno-1-62"></a>
-<a id="__codelineno-1-63" name="__codelineno-1-63"></a><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-64" name="__codelineno-1-64"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-65" name="__codelineno-1-65"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-63" name="__codelineno-1-63"></a><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-65" name="__codelineno-1-65"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
 <a id="__codelineno-1-66" name="__codelineno-1-66"></a>
 <a id="__codelineno-1-67" name="__codelineno-1-67"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">// fades out blue bring red full when i=255</span>
-<a id="__codelineno-1-68" name="__codelineno-1-68"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-68" name="__codelineno-1-68"></a><span class="p">{</span>
 <a id="__codelineno-1-69" name="__codelineno-1-69"></a><span class="c1">// The following code has been rearranged to match the other two similar sections</span>
-<a id="__codelineno-1-70" name="__codelineno-1-70"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-1-71" name="__codelineno-1-71"></a><span class="n">redValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-70" name="__codelineno-1-70"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71"></a><span class="n">redValue</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <a id="__codelineno-1-72" name="__codelineno-1-72"></a><span class="c1">// The following was reversed, counting in the wrong directions</span>
 <a id="__codelineno-1-73" name="__codelineno-1-73"></a><span class="c1">// analogWrite(BLUE, 255 - blueValue);</span>
 <a id="__codelineno-1-74" name="__codelineno-1-74"></a><span class="c1">// analogWrite(RED, 255 - redValue);1</span>
-<a id="__codelineno-1-75" name="__codelineno-1-75"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">blueValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-76" name="__codelineno-1-76"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">redValue</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-77" name="__codelineno-1-77"></a><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-1-78" name="__codelineno-1-78"></a><span class="p">}</span><span class="w"></span>
-<a id="__codelineno-1-79" name="__codelineno-1-79"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-75" name="__codelineno-1-75"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="n">blueValue</span><span class="p">);</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76"></a><span class="n">analogWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="n">redValue</span><span class="p">);</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77"></a><span class="n">delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78"></a><span class="p">}</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p><img alt="" src="../media/image65.jpeg" /></p>
 <p>Primero especificamos a que pines de Arduino he conectado cada LED.</p>
@@ -17847,26 +17853,26 @@ Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 t
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">#define RED 6</span>
 </code></pre></div>
 <p>En el setup, declaramos estos pines como salidas (OUTPUT) para poder enviar corriente hacia los LED.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span><span class="w"></span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="kr">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span><span class="w"></span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nf">pinMode</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="kr">OUTPUT</span><span class="p">);</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="w"> </span><span class="kr">HIGH</span><span class="p">);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">GREEN</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span><span class="w"> </span><span class="kr">LOW</span><span class="p">);</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
 </code></pre></div>
 <p>Antes de echar un vistazo a la <strong>función loop</strong>, veamos la última función en el proyecto.</p>
 <p>Las variables de definición:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">redValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="c1">// choose a value between 1 and 255 to change the color.</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">greenValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">blueValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </code></pre></div>
 <p>Esta función tiene tres argumentos, uno para el brillo de los LEDs rojos, verdes y azules. En cada caso de que el número será en el rango 0 a 255, donde 0 significa apagado y 255 significa brillo máximo. La función entonces llama 'analogWrite' para ajustar el brillo de cada LED.</p>
 <p>Si nos fijamos en la <strong>función loop</strong> se puede ver que ajuste la cantidad de luz roja, verde y azul que queremos mostrar y luego una pausa por un segundo antes de pasar al siguiente color.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#define delayTime 10 </span><span class="c1">// fading time between colors</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Delay</span><span class="p">(</span><span class="n">delayTime</span><span class="p">);</span>
 </code></pre></div>
 
 
@@ -17965,12 +17971,11 @@ Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 t
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.3de43c86.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "header.autohide", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ce0331ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

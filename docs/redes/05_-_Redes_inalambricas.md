@@ -1,29 +1,6 @@
 
 # REDES INALÁMBRICAS
 
-- [REDES INALÁMBRICAS](#redes-inal%c3%81mbricas)
-  - [1. INTRODUCCIÓN](#1-introducci%c3%93n)
-  - [2. WIFI](#2-wifi)
-    - [2.1	ESTÁNDARES](#21-est%c3%81ndares)
-    - [2.2. DISPOSITIVOS WIFI](#22-dispositivos-wifi)
-    - [2.3	EQUIPOS FINALES](#23-equipos-finales)
-    - [2.4	EQUIPOS DE RED](#24-equipos-de-red)
-    - [2.4.1	PUNTO DE ACCESO](#241-punto-de-acceso)
-      - [2.4.2	REPETIDORES INALÁMBRICOS](#242-repetidores-inal%c3%81mbricos)
-      - [2.4.3	ROUTERS INALÁMBRICOS](#243-routers-inal%c3%81mbricos)
-    - [2.5	SEGURIDAD EN REDES WIFI](#25-seguridad-en-redes-wifi)
-      - [2.5.1	ENCRIPTACIÓN](#251-encriptaci%c3%93n)
-      - [2.5.2	REDES 5 GHZ Y 2.4 GHZ](#252-redes-5-ghz-y-24-ghz)
-      - [2.5.3.	Bloquear el acceso utilizando filtrado MAC](#253-bloquear-el-acceso-utilizando-filtrado-mac)
-      - [2.5.4.	OCULTACIÓN DE RED](#254-ocultaci%c3%93n-de-red)
-  - [3.	BLUETOOTH](#3-bluetooth)
-    - [3.1	INTRODUCCIÓN](#31-introducci%c3%93n)
-    - [3.2	OBJETIVOS](#32-objetivos)
-    - [3.3	CONFIGURACIÓN Y CONEXIÓN DE DISPOSITIVOS](#33-configuraci%c3%93n-y-conexi%c3%93n-de-dispositivos)
-    - [3.4	EJEMPLOS](#34-ejemplos)
-- [4. Internet de las cosas](#4-internet-de-las-cosas)
-- [5. Pago contactless](#5-pago-contactless)
-
 ## 1. INTRODUCCIÓN
 
 En este apartado hablaremos de las redes sin cables o **inalámbricas**. Las redes más extendidas hasta hace años eran las redes conectadas por medio de cables.  Si los ordenadores están relativamente próximos y permanecen siempre en el mismo sitio, esta puede ser la mejor opción. Sin embargo, hoy en día las redes inalámbricas están mucho más extendidas.
@@ -56,7 +33,7 @@ Las redes wifi tienen las siguientes ventajas, con respecto a las conexiones por
 - **Compatibilidad**: En cualquier parte del mundo podremos utilizar la tecnología Wifi.
 Por el contrario, también presentan algunos inconvenientes, como, por ejemplo:
 - **Menor velocidad** en comparación a una conexión cableada, debido a interferencias y pérdidas de señal
-- **Seguridad**. Existen algunos programas capaces de capturar paquetes, de forma que puedan calcular la contraseña de la red y de esta forma acceder a ella. 
+- **Seguridad**. Existen algunos programas capaces de capturar paquetes, de forma que puedan calcular la contraseña de la red y de esta forma acceder a ella.
 - No se puede controlar el área de **cobertura** de una conexión, de manera que un receptor se puede conectar desde fuera de la zona de recepción prevista (e.g. desde fuera de una oficina, desde una vivienda colindante).
 - No es **compatible** con otros tipos de conexiones sin cables como Bluetooth, GPRS, UMTS, etc.
 
@@ -94,14 +71,14 @@ Es importante que los equipos que se desea conectar a una red wifi entiendan el 
 
 Para poder crear una red wifi, necesitamos:
 
-- Dispositivos (smartphones, tablets, TV, ordenadores) 
-- Equipos de conexión (router, punto de acceso, etc.). 
+- Dispositivos (smartphones, tablets, TV, ordenadores)
+- Equipos de conexión (router, punto de acceso, etc.).
 
 En función de la red que queramos montar necesitemos unos u otro. También es posible conectar móviles entre ellos a través de wifi sin necesidad de un router, pero no es lo más habitual.
 
 ### 2.3	EQUIPOS FINALES
 
-En equipos antiguos, fabricados antes de inventarse las redes inalámbricas, necesitamos adaptadores para hacer que estos equipos se puedan conectar a una red wifi. 
+En equipos antiguos, fabricados antes de inventarse las redes inalámbricas, necesitamos adaptadores para hacer que estos equipos se puedan conectar a una red wifi.
 
 ![](img/2020-03-31-14-39-05.png)
 
@@ -109,13 +86,13 @@ Existen diferentes tipos:
 
 **Tarjetas de expansión**
 
-Se agregan (o vienen de fábrica) a los ordenadores de sobremesa. Hoy en día están perdiendo terreno debido a las tarjetas USB. 
+Se agregan (o vienen de fábrica) a los ordenadores de sobremesa. Hoy en día están perdiendo terreno debido a las tarjetas USB.
 
 ![](img/2020-03-31-14-39-22.png)
 
 
 **Tarjetas PCMCIA**
-Modelo que se utilizó mucho en los primeros ordenadores portátiles, Hoy en día internas en estos ordenadores. 
+Modelo que se utilizó mucho en los primeros ordenadores portátiles, Hoy en día internas en estos ordenadores.
 
 ![](img/2020-03-31-14-40-12.png)
 
@@ -156,9 +133,9 @@ Generalmente los equipos no se conectan directamente entre ellos, sino que neces
 
 ### 2.4.1	PUNTO DE ACCESO
 
-Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cobertura de nuestra red. Los **puntos de acceso** generan una Red WiFi a la que se pueden conectar otros dispositivos. 
+Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cobertura de nuestra red. Los **puntos de acceso** generan una Red WiFi a la que se pueden conectar otros dispositivos.
 
-Permiten conectar dispositivos en forma inalámbrica a una red existente. 
+Permiten conectar dispositivos en forma inalámbrica a una red existente.
 
 ![](img/2020-03-31-14-40-40.png)
 
@@ -170,7 +147,7 @@ Pueden agregarse más puntos de acceso a una red para generar redes de cobertura
 
 - Se utilizan para extender la cobertura de una red inalámbrica
 - Se conectan a una red existente que tiene señal más débil
-- Crean una señal limpia a la que se pueden conectar los equipos dentro de su alcance. 
+- Crean una señal limpia a la que se pueden conectar los equipos dentro de su alcance.
 
 ![](img/2020-03-31-14-40-48.png)
 
@@ -180,11 +157,11 @@ Pueden agregarse más puntos de acceso a una red para generar redes de cobertura
 –	Router encargado de interconectar redes con internet
 –	Punto de acceso (explicado más arriba)
 –	Switch Permite la comunicación entre todos los equipos conectados
-- Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos. 
+- Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos.
 
 ![](img/2020-03-31-14-40-54.png)
 
-    Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos. 
+    Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos.
 
     Actividad 8: ¿Cuales de ellos crees que te sería más útil si vivieras en una casa de 3 pisos? ¿Por qué?
 
@@ -223,7 +200,7 @@ Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que t
 
     Actividad 9: adjunta una foto de la etiqueta de tu router. Tapa la clave a ser posible con paint o alguna herramienta de google docs. ¿Cuántas redes wifi tienes y cómo se llaman?¿a cual o cuales te conectas?
 
-#### 2.5.2	REDES 5 GHZ Y 2.4 GHZ 
+#### 2.5.2	REDES 5 GHZ Y 2.4 GHZ
 
 Muchos habréis visto que tenéis en casa o podéis tener dos redes wifi diferentes. Las dos las crea vuestro router. Una funciona con ondas de 5 GHz (Gigaherzios) y otra de 2.4 GHz. Son como diferentes canales de radio. En función de lo que queramos hacer, nos conviene una u otra.
 
@@ -291,8 +268,8 @@ Los principales objetivos que se pretenden son:
 - Facilitar las comunicaciones entre equipos móviles.
 - Eliminar los cables y conectores entre estos.
 - Ofrecer la posibilidad de crear pequeñas redes inalámbricas y facilitar la sincronización de datos entre equipos personales.
-- Bluetooth es particularmente conveniente en ciertas situaciones, por ejemplo, 
-- Al transferir archivos de un teléfono móvil a otro sin cables. 
+- Bluetooth es particularmente conveniente en ciertas situaciones, por ejemplo,
+- Al transferir archivos de un teléfono móvil a otro sin cables.
 - Enviar música y fotos entre una PC y un teléfono móvil es otra aplicación útil.
 
 ### 3.3	CONFIGURACIÓN Y CONEXIÓN DE DISPOSITIVOS
@@ -342,7 +319,7 @@ En este caso, la barra de sonido sí estaría conectada al televisor, pero el su
 
 ![](img/2020-03-31-14-42-30.png)
 
-    Actividad 13: De todos los ejemplos anteriores, explica cuales de ellos tenéis en casa tú o algún miembro de tu familia. 
+    Actividad 13: De todos los ejemplos anteriores, explica cuales de ellos tenéis en casa tú o algún miembro de tu familia.
     Actividad 14: ¿Qué inconvenientes crees que pueden tener los dispositivos anteriores comparándolos con su misma versión pero con cables?
 
 # 4. Internet de las cosas
@@ -353,7 +330,7 @@ Esto, unido a los **asistentes de voz** como Alexa, Siri o Google home, abre un 
 
 ![](img/2020-04-03-11-29-55.png)
 
-    Actividad 15. Si tienes algún asistente de voz explica cual y para qué lo utilizas. 
+    Actividad 15. Si tienes algún asistente de voz explica cual y para qué lo utilizas.
     Actividad 16. ¿Crees qué presentan algún problema en cuanto a la privacidad?
 
 # 5. Pago contactless

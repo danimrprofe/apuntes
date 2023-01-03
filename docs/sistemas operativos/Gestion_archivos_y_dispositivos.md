@@ -27,7 +27,7 @@ Grabación contigua VS división en bloques
 - Lista enlazada uniendo los bloques libres
 - Mapa de bits. 1 bit por bloque determina si está libre o no
 
-## Estructura del directorio##
+## Estructura del directorio
 
 ### Un único directorio (CP/M)
 

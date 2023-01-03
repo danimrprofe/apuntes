@@ -42,7 +42,7 @@ Protocolos de comunicaciones
 
 ## Proceso genérico E/S
 
-SO escribe comando en registro de la tarjeta cfontroladora
+SO escribe comando en registro de la tarjeta controladora
 
 El controlador junto con el dispositivo ejecutan comando
 
@@ -71,13 +71,13 @@ como gráficos
 
 Es necesario proteger los spacios de memoria entre procesos
 
-## Tipos de dispositivos según el acceso al sistema##
+## Tipos de dispositivos según el acceso al sistema
 
 Dispositivos de bloque
 
 Dispositivos de carácter
 
-## Tipos de E/S en función de la sincronización del controlador##
+## Tipos de E/S en función de la sincronización del controlador
 
 E/S programada
 

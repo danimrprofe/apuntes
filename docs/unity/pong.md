@@ -32,11 +32,11 @@ Dentro de nuestra ventana lo que vamos a hacer es clic derecho y darle a judíos
 
 ## Cambiar resolución
 
-Para evitar esto vamos a hacer vamos a poner una resolución que es la típica que se utiliza en pantallas que es la 16:9 que está se adapta muy bien pues ahora que es 1080 720 dos cada4 acá en ese caso que es la resolución este vertical y horizontal porque mantiene un aspecto de relación que cuadra en ese sentido entonces cuando como veis si yo creo a 18 y pongo esto en la posición de y a 4.5 queda perfectoahí en su posición de hecho es lo quevoy a hacer es ponerlo a 5 ya poner un poco más arriba a mí me gusta más que se vea pero que tampoco me ocupe pues media pantalla esa pared perfecto
+Para evitar esto vamos a hacer vamos a poner una resolución que es la típica que se utiliza en pantallas que es la **16:9** que está se adapta muy bien pues ahora que es 1080 720 dos cada4 acá en ese caso que es la resolución este vertical y horizontal porque mantiene un aspecto de relación que cuadra en ese sentido entonces cuando como veis si yo creo a 18 y pongo esto en la posición de y a 4.5 queda perfectoahí en su posición de hecho es lo quevoy a hacer es ponerlo a 5 ya poner un poco más arriba a mí me gusta más que se vea pero que tampoco me ocupe pues media pantalla esa pared perfecto
 
-Ahora lo que vamos a hacer es en vez de crear otro objeto nuevo es duplicar este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o clic derecho duplicate se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
+Ahora lo que vamos a hacer es en vez de crear otro objeto nuevo es **duplicar** este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o clic derecho duplicate se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
 
-## Paredes de los lados
+## Crear paredes de los lados
 
 Ya tengo los dos colocados perfectamente ahora vamosa crear las paredes de los datos para ello pues igual voy a este objeto voy a duplicarlo y ahora lo que pasa esque mi escala en el eje x no va a ser sino que va a ser en el eje y entonces en este caso puedo dejar la escala en el eje x a1 y la escala en el eje y a 10 así pues me quedara más o menos de una manera decente para moveros dentro de la escena si pasáis lo que sería la rueda del ratón en el medio pues lo podéis hacer una especie de paneo también bueno comentaros que si a lo mejor no sabe mucho de unity tampoco estudian en este tutorial yendo muy lentamente en ese sentido así que pues tengo una serie específico de juniti desde principio que os dejaré bleeckere en la descripción y una tarjetita pues si queréis empezar por ahí comentó que este tutorial pues no va a ser muy complicado así que si os vais que podéis ir tranquilamente con el tutorial pues ánimo a heidi y a tope vale hemos creado esta pared
 
@@ -64,7 +64,7 @@ Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos mo
 
 Ahora ++ctrl+++D y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.
 
-Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro unit y su día dietsprite square y si la colocamos en el 0,0.
+Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro unity su día dietsprite square y si la colocamos en el 0,0.
 
 Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos en verdad que tengáis en la escena como veis son de tipo sprite renderer por tanto si lo seleccionas podéis modificar aquí el color con lo que tenéis a la derecha.
 
@@ -76,13 +76,13 @@ Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle u
 
 Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles colliders a nuestros objetos. Los colliders son  componentes que se añaden a estos objetos
 
-Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con++shift++pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente
+Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con ++shift++ pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente
 
 Si que no queréis que alguno por ejemplo en mi caso no que recoger la línea del centro porque no quiero que tenga esa colisión porque imagino que tenemos la bola aquí y conexiones con el centro y puesto que no tendría sentido básicamente porque a lo mejor si vengo desde aquí y colisionó colisión colisión y comisionó mi player uno va a ganar otro rato porque no puede pasar para allá entonces lo que sí vamos a hacer es nombrarlo para que sepamos qué es el centro que en este caso por estirando cuenta que es el goal 2 llamamos centro y a este es al que no tenemos que añadirle colisión.
 
 Seleccionamos todos los demás objetos, añadir componente y añadimos un **box collider 2d** que sé que tenemos por aquí así pues ya tendrán colisiones.
 
-## Rigid bodies
+## Componentes rigidbody
 
 Ahora tenemos que tener otra cosa que son rigid bodies para nuestros players y para nuestra pelota que se encargará del tema de física para el movimiento.
 
@@ -116,51 +116,3 @@ Tenemos que definir pues esos controles y para ello nos vamos a ir a edit > proj
 Vamos a organizar esto un poquillo y dentro de nuestra carpeta assets vamos á hacer clic derecho y folder que vamos a llamar scripts y así tendremos guardados todos nuestros programas en esta carpeta.
 
 Ahora vamos a pasar a crear nuestro script vamos aquí a entrar a la carpeta que acabamos de crear y vamos a hacer clic derecho create C# script. A este script le vamos a llamar players. Podríamos abrirlo y vamos a utilizar el programa visual studio.
-
-## Plataformas 2D
-
-Importar package de asset store (pixel adventure 1)
-
-Crear tilemap
-
-Crear paleta y pintar la escena
-
-Asignar collider al tilemap
-
-Asignar rigidbody al personaje
-
-Crear movimiento lateral del personaje
-
-![imagen](media/image3.png)
-
-Colocar collider al personaje y modificarlo
-
-![imagen](media/image4.png)
-
-Crear salto del personaje
-
-Necesitaremos un script que compruebe que el personaje está tocando suelo:
-
-![imagen](media/image5.png)
-
-En el script de movimiento del personaje, comprobaremos que pulsamos espacio y, además, que estamos tocando suelo:
-
-![imagen](media/image6.png)
-
-Cambiar material del tilemap para reducir rozamiento y evitar flotar
-
-![imagen](media/image7.png)
-
-Crearemos un material para el mapa, que tendrá 0 fricción, por lo que el personaje se moverá con más suavidad y evitaremos que se enganche a él.
-
-![imagen](media/image8.png)
-
-Mejorar el salto (betterjump)
-
-Nos tocará crear un boolean para activar un salto mejorado, que dependerá del tiempo de pulsación de la tecla, pudiendo saltar más o menos.
-
-Recolección de fruta con animación
-
-Habrá que crear un script que detecte la colisión de la manzana con el player, se va a llamar FruitCollected, y posteriormente destruir el objeto manzana. Este script se lo asignaremos luego a todas las frutas.
-
-![imagen](media/image9.png)

@@ -5,7 +5,7 @@
 - El sistema es de código abierto
 - Desde 2009. Creado Satoshi Nakamoto (individuo/grupo anónimo)
 
-![](img/2022-11-06-22-52-15.png)
+![imagen](img/2022-11-06-22-52-15.png)
 
 ## Funcionamiento
 
@@ -15,7 +15,7 @@
 - El libro se divide en bloques
 - Los bloques se une entre ellos formando una cadena (Blockchain)
 
-![](img/2022-11-06-22-52-21.png)
+![imagen](img/2022-11-06-22-52-21.png)
 
 ## ¿Quién controla el sistema?
 
@@ -33,7 +33,7 @@
 - Los nodos comparten información y crean bloques, manteniendo toda la estructura de bitcoin
 - La red comienza a funcionar el 3 de Enero de 2009, con el bloque génesis
 
-![](img/2022-11-06-22-52-35.png)
+![imagen](img/2022-11-06-22-52-35.png)
 
 https://academy.bit2me.com/que-es-bloque-genesis/
 
@@ -46,7 +46,7 @@ https://academy.bit2me.com/que-es-bloque-genesis/
 - Cada bloque contiene una referencia al bloque anterior
 - Se puede rastrear cada transacción desde 2009
 
-![](img/2022-11-06-22-52-41.png)
+![imagen](img/2022-11-06-22-52-41.png)
 
 ## Dónde se guarda todo esto
 
@@ -56,7 +56,7 @@ https://academy.bit2me.com/que-es-bloque-genesis/
 - Si un ordenador está apagado, cuando se reinicie, enviará un mensaje para obtener los bloques creados cuando la computadora estaba inactiva.
 - Tamaño actual de blockchain es de 400 GB
 
-![](img/2022-11-06-22-52-47.png)
+![imagen](img/2022-11-06-22-52-47.png)
 
 
 # Cómo se lleva la contabilidad
@@ -85,7 +85,7 @@ Cualquiera, en cualquier lugar con acceso a Internet, puede recibir, enviar y ma
 - Actualmente cada 10 minutos se crean 6.25 bitcoin
 - Se ingresan en la cuenta del minero que crea el bloque correcto
 
-![](img/2022-11-06-22-52-59.png)
+![imagen](img/2022-11-06-22-52-59.png)
 
 ## ¿Cuántos bitcoin existen?
 
@@ -94,4 +94,4 @@ Cualquiera, en cualquier lugar con acceso a Internet, puede recibir, enviar y ma
 - En **2140** se estima que se habrán creado todos los bitcoin
 - El máximo de monedas que habrá serán **21.000.000 de bitcoin**. Ni más ni menos.
 
-![](img/2022-11-06-22-53-04.png)
+![imagen](img/2022-11-06-22-53-04.png)

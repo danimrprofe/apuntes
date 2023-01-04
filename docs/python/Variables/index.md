@@ -50,7 +50,7 @@ es_mayor_de_edad = True
 
 Según cómo escribimos las cosas, Python interpreta si esa variable contiene un número, una letra, un decimal, una palabra, etc. En nuestro ejemplo, la variable nombre era de tipo string.
 
-<div class="break"></div>
+
 
 ## ¿Cómo podemos llamar a nuestras variables?
 
@@ -70,11 +70,11 @@ Aunque se pueden usar mayúsculas, y Python es muy cuidadoso con eso, entendiend
 
 Fijaos en el ejemplo:
 
-![](media/image4.png)
+![imagen](media/image4.png)
 
 También es típico empezar con minúsculas, como hicimos en nombre. Y usar alguno de estos dos estilos para separar palabras:
 
-![](media/image5.png)
+![imagen](media/image5.png)
 
 Consejos
 
@@ -109,7 +109,7 @@ Pero fíjate, esa resta nos da un valor, que es justo lo que queremos, pero que�
 edad = 2022 - anyo
 ```
 
-![](media/image7.png)
+![imagen](media/image7.png)
 
 ## Cálculos con variables
 
@@ -119,7 +119,7 @@ Con esto creamos la variable edad y le ASIGNAMOS el valor de la resta entre el a
 
 Pintar información por pantalla
 
-![](media/image8.png)
+![imagen](media/image8.png)
 
 Escribe y ejecuta el código anterior junto y adjunta una captura de pantalla. Te dará error, pero es normal. Luego lo arreglaremos
 
@@ -127,7 +127,7 @@ Arreglar errores
 
 Al ejecutar el programa veremos que nos aparece en rojo un error. LOS ERRORES SON NORMALES. Leamos el mensaje de error.
 
-![](media/image9.png)
+![imagen](media/image9.png)
 
 La línea 8 es donde yo tengo escrita la operación edad= 2019 -year. En la última línea me dice que el operador “menos” no puede trabajar con un tipo entero y un tipo string a la vez.
 
@@ -143,11 +143,11 @@ Las variables pueden ser de diferentes tipos, y podemos transformar una variable
 
 Hay que usar la función int(). Convierte, si se puede, una cadena de caracteres en un número entero. Veamos el siguiente ejemplo. Edad contiene un string, es decir, las “letras” 3 y 5. Por eso va entre comillas. Cuando queremos sumar una palabra y un número no podemos (no es posible). Los dos objetos a sumar deben ser números o floats (decimales), por eso falla.
 
-![](media/image10.png)
+![imagen](media/image10.png)
 
 En este otro caso, veréis que la variable edad no lleva comillas. Ahora está guardando 35 como número, no como palabra. Por ello, cuando quiero sumar la variable edad y el número 5, al ser ambos números, funciona.
 
-![](media/image11.png)
+![imagen](media/image11.png)
 
 ## Convertir tipos de variables
 
@@ -170,7 +170,7 @@ print ('Hola', nombre, 'tienes', edad, 'años')
 
 Hagámonos una pregunta, ¿después de unas semanas te acordarás qué significaba esta línea?
 
-![](media/image12.png)
+![imagen](media/image12.png)
 
 Sería estupendo poder incluir algo en los programas que nos explicara qué están haciendo, pero si escribimos texto en castellano, Python nos dará un error porque se pensará que son instrucciones de Python.
 
@@ -178,17 +178,17 @@ El símbolo # nos permite añadir comentarios al programa y que Python sepa que 
 
 Por ejemplo, en nuestro programa podríamos.
 
-![](media/image13.png)
+![imagen](media/image13.png)
 
 Al leer los comentarios, entendemos el programa si no es nuestro, o recordamos qué habíamos hecho si somos los autores.
 
 Con esto en mente el programa de antes quedaría así:
 
-![](media/image14.png)
+![imagen](media/image14.png)
 
 Quizá te suene muy lioso, sobre todo porque estamos explicando cosas que ya son bien conocidas. Igual podíamos dejarlo en:
 
-![](media/image15.png)
+![imagen](media/image15.png)
 
 Más sencillo y con información suficiente para entenderlo.
 
@@ -198,7 +198,7 @@ Has visto también que cuando vamos a poner un comentario que ocupa más de una 
 
 Actividad 3. Modifica el código anterior para que calcule el año en que te vas a jubilar (supuestamente) a partir de tu edad. Piensa que hoy en día la edad de jubilación es 65. En mi caso, yo le escribiré 35 años con el teclado y el me dirá que me quedan 30 años para la jubilación. Adjunta una captura
 
-<div class="break"></div>
+
 
 ## Operaciones matemáticas
 
@@ -236,7 +236,7 @@ Las operaciones con números te son conocidas… pero también pueden hacerse op
 
 Aquí tienes un resumen con los símbolos de las principales operaciones matemáticas:
 
-![](media/image16.png)
+![imagen](media/image16.png)
 
 Actividad 4. Escribe un programa en que dados dos números (el día de mes de tu cumpleaños y el número de personas que viven en tu casa), muestre:
 
@@ -260,7 +260,7 @@ En mi caso estos números son 13 (13 de septiembre) y 3 (mi mujer y mi hija) y l
 
 Adjunta una captura de la pantalla
 
-<div class="break"></div>
+
 
 Operaciones con cadenas de caracteres
 
@@ -268,16 +268,16 @@ Concatenación
 
 Por ejemplo, ¿qué pasará si escribes ‘Mamá’ + ‘Papá’? Prueba… Efectivamente, concatena (junta) las dos cadenas, haciendo una cadena mayor.
 
-![](media/image17.png)
+![imagen](media/image17.png)
 
 Repetición
 
 Intenta hacer ‘Mamá’*5 a ver qué pasa…
 
-![](media/image18.png)
+![imagen](media/image18.png)
 
 También podemos obtener partes de un string. Para ello utilizaremos [ ]. Si dentro colocamos un número, nos dará la letra que ocupa esa posición. En informática, comenzamos a contar por el 0. Por lo tanto, la D ocupará la posición 0, y la a la posición 1, etc.
 
-![](media/image19.png)
+![imagen](media/image19.png)
 
 Actividad 5. Crea un programa que te pida tu nombre y tus dos apellidos  uno a uno, los guarde en 3 variables y te pida por pantalla las iniciales. En mi caso, saldría por pantalla DMR. Necesitarás utilizar las operaciones anteriores y lo estudiado anteriormente

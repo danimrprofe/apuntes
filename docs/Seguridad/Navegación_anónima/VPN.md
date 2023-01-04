@@ -4,7 +4,7 @@ Las VPN se utilizan para proporcionar una conexión segura a una red privada a t
 
 Esta conexión segura ayuda a proteger la privacidad y seguridad de la información transmitida entre los puntos.
 
-![](img/2022-12-11-22-16-18.png)
+![imagen](img/2022-12-11-22-16-18.png)
 
 - VPN de acceso remoto: acceso a una red privada con una red pública. Ejemplos son conexiones desde lugares públicos como hoteles o cafeterías.
 - VPN de sitio a sitio: conectar redes a través de internet, pudiendo comunicarse entre ellas.

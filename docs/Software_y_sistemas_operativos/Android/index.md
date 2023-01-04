@@ -2,23 +2,23 @@
 
 **Android** es un sistema operativo móvil desarrollado por Google y la **Open Handset Alliance**. Es el más extendido actualmente y está integrado en la mayoría de los teléfonos (Samsung, LG, Sony, Huawei, ...).
 
-![](media/image2.png)
+![imagen](media/image2.png)
 
 Es un sistema operativo cuya filosofía parte de ser un entorno abierto para que cualquier programador y fabricante pueda modificarlo a su gusto para posteriormente distribuirlo.
 
-![](media/image3.png)
+![imagen](media/image3.png)
 
 ## Store
 
 La tienda de apps de Android es llamada Play Store o Google Play. En principio no se aconseja instalar apps que no se descarguen de ahí, pero se puede hacer a través de otros programas.
 
-![](media/image4.png)
+![imagen](media/image4.png)
 
 ## Versiones
 
 Ha visto un gran número de actualizaciones a su sistema operativo base desde su lanzamiento original. Estas actualizaciones típicamente corrigen fallos de programa y agregan nuevas funcionalidades
 
-![](media/image5.png)
+![imagen](media/image5.png)
 
 Desde abril de 2009, las versiones de Android han sido desarrolladas bajo un nombre en clave y sus nombres siguen un orden alfabético:
 
@@ -48,7 +48,7 @@ Desde abril de 2009, las versiones de Android han sido desarrolladas bajo un nom
 
 **Android 12** es la actual última versión para Android, a falta de que la beta de Android 13 siga evolucionando hasta alcanzar la madurez y ser lanzada oficialmente.
 
-![](media/image6.gif)
+![imagen](media/image6.gif)
 
 ## Capa de personalización
 
@@ -56,11 +56,11 @@ Cada fabricante tiene una visión de Android diferente y, basándose en ella, de
 
 Una capa de personalización es un componente de software que proporciona una experiencia de usuario personalizada al personalizar la presentación del contenido al usuario.
 
-![](media/image7.png)
+![imagen](media/image7.png)
 
 Los principales son:
 
-![](media/image8.png)
+![imagen](media/image8.png)
 
 ## Nube de Android
 
@@ -76,15 +76,15 @@ Todas las cuentas de Google empiezan con 15 GB de almacenamiento gratuito en Goo
 
 Podéis consultar el espacio que tenéis usado aquí: https://one.google.com/u/0/
 
-![](media/image9.png)
+![imagen](media/image9.png)
 
 Copia de seguridad del smartphone
 
-![](media/image10.png)
+![imagen](media/image10.png)
 
 Aumentar el espacio de almacenamiento
 
-![](media/image11.png)
+![imagen](media/image11.png)
 
 Google One es un plan de suscripción (de pago)  que te proporciona más espacio de almacenamiento en Google Fotos, Drive y Gmail.
 
@@ -98,7 +98,7 @@ Los miembros de tu familia comparten el espacio de almacenamiento de tu plan de 
 
 ## Google Workspace
 
-![](media/image12.png)
+![imagen](media/image12.png)
 
 Google Workspace for Education es un conjunto de herramientas y servicios de Google ideados para centros educativos tradicionales y otras instituciones que imparten educación en casa. Está disponible para todas las instituciones educativas que cumplan los requisitos.
 
@@ -109,5 +109,3 @@ Education Fundamentals proporciona 10.000 licencias de usuario
 En todas las ediciones, elcentro educativo obtiene 100 TB de almacenamiento conjunto
 
 https://workspace.google.com/intl/es/features/
-
-<div class="break"></div>

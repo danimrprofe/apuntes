@@ -7,7 +7,7 @@ Código de programación abierto
 Gratuito
 No hay que pagar nada por el
 
-![](2019-06-28-08-44-14.png)
+![imagen](2019-06-28-08-44-14.png)
 
 FSF y proyecto GNU
 
@@ -19,7 +19,7 @@ Entre otros, un SO
 GNU
 SO libre y gratuito
 
-![](2019-06-28-08-44-31.png)
+![imagen](2019-06-28-08-44-31.png)
 
 ## ¿Cómo se mantiene?
 
@@ -29,7 +29,7 @@ Esta comunidad también recibe el apoyo de **empresas**, quienes patrocinan algu
 
 ##  Historia del software libre y distribuciones
 
-![](2019-06-28-08-44-58.png)
+![imagen](2019-06-28-08-44-58.png)
 
 ##  Componentes de Linux
 
@@ -44,7 +44,7 @@ Necesario para que el usuario lo use
 Diferentes entornos:
 Gnome, KDE, Beryl, Unity
 
-![](2019-06-28-08-45-15.png)
+![imagen](2019-06-28-08-45-15.png)
 
 ##  Sistemas Linux
 
@@ -54,9 +54,9 @@ Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos 
 Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesidades de los usuarios.
 
 
-![](2019-06-28-08-45-37.png)
+![imagen](2019-06-28-08-45-37.png)
 
-![](2019-06-28-08-45-41.png)
+![imagen](2019-06-28-08-45-41.png)
 
 ##  Distribuciones Linux
 
@@ -81,7 +81,7 @@ Ofimática, facturación, etc
 Crea una distribución propia
 Linex,guadalinex,lliurex,max,linkat,etc
 
-![](2019-06-28-08-46-25.png)
+![imagen](2019-06-28-08-46-25.png)
 
 ##  Distribuciones CCAA más importantes
 
@@ -98,7 +98,7 @@ Lista completa de distribuciones CCAA
 
 Ubuntu es un sistema operativo de código abierto basado en GNU/Linux y que se distribuye gratuitamente. Fue creado en 2004 por la compañía sudafricana **Canonical** Ltd. y se ha convertido en una de las distribuciones más populares de GNU/Linux.
 
-![](2019-06-28-08-47-04.png)
+![imagen](2019-06-28-08-47-04.png)
 
 Es la distribución más popular hoy en día
 Basada en debian
@@ -118,8 +118,8 @@ Otra opción es utilizar un **LiveCD**, el cual no instala nada en el disco duro
 
 Finalmente, es posible instalar Linux desde **Windows**, descargando un programa que se instala como una aplicación más, y que se puede desinstalar cuando se quiera.
 
-![](2019-06-28-08-47-24.png)
+![imagen](2019-06-28-08-47-24.png)
 
 ## Versiones Ubuntu
 
-![](2019-06-28-08-47-53.png)
+![imagen](2019-06-28-08-47-53.png)

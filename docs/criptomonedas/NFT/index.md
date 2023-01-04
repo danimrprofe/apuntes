@@ -12,7 +12,7 @@ Esto significa que si **posees un NFT**, tienes un activo único que puedes vend
 
 Un mercado de NFT (marketplace) es una plataforma en la que puedes comprar y vender NFTs. Algunos de los principales mercados de NFT son OpenSea, Rarible y Nifty Gateway.
 
-![](img/2022-12-15-18-15-29.png)
+![imagen](img/2022-12-15-18-15-29.png)
 
 - Dichos mercados conectan a los compradores con los vendedores
 - En ellos el valor de cada token es único.

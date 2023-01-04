@@ -19,7 +19,7 @@ Subnetting es un método para administrar las direcciones IP. Esto se logra divi
 
 Para hacer esto se usa una **máscara** de subred. Esto permite a los administradores dividir la red en subredes separadas con direcciones IP separadas, lo que ayuda a ahorrar direcciones IP y hace que la administración de la red sea más sencilla.
 
-![](img/2019-05-08-08-49-20.png)
+![imagen](img/2019-05-08-08-49-20.png)
 
 ## Máscara de subred
 
@@ -31,7 +31,7 @@ La máscara de subred especifica **cuántos bits de la dirección IP se usan par
 
 Las combinaciones posibles para una IP de clase C son:
 
-![](img/2019-05-08-08-50-03.png)
+![imagen](img/2019-05-08-08-50-03.png)
 
 ## Agotamiento del espacio de direcciones
 

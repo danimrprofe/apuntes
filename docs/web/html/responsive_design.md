@@ -16,7 +16,7 @@
         <source srcset="img/minionpequeño.png" media="(max-width: 600px)">
         <source srcset="img/minionmediano.jpg" media="(max-width: 1000px)">
         <source srcset="img/miniongrande.jpg">
-        ![](img/minionmediano.jpg)
+        ![imagen](img/minionmediano.jpg)
     </picture>
 </body>
 </html>

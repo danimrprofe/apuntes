@@ -20,7 +20,7 @@ En general, el renderizado 3D es un proceso largo y complejo. Sin embargo, exist
 
 Para renderizar estamos usando el motor de renderizado **eevee** que es el más rápido, aunque también tendríamos el **cicles** que éste es más realista pero también lleva mucho más tiempo de renderizado
 
-![](media/image40.png)
+![imagen](media/image40.png)
 
 ## Parámetros de renderizado
 
@@ -36,10 +36,10 @@ Vamos a configurar los siguientes parámetros
 - Códec de video
 - Calidad
 
-![](media/image41.png)
+![imagen](media/image41.png)
 
 ## Renderizar animación
 
 Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar más o menos tiempo, en función de la duración del vídeo, calidad y la tasa de frames, entre otros factores.
 
-![](media/image43.png)
+![imagen](media/image43.png)

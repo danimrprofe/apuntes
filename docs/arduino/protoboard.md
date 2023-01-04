@@ -1,20 +1,20 @@
 # Protoboard
 
-Un **protoboard** permite crear prototipos de circuitos de forma rápida, sin necesidad de soldar las  conexiones. A continuación un ejemplo. 
+Un **protoboard** permite crear prototipos de circuitos de forma rápida, sin necesidad de soldar las  conexiones. A continuación un ejemplo.
 
-![](media/image52.jpeg)
+![imagen](media/image52.jpeg)
 
 ## Tipos
 
-Las **protoboard** vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas. 
+Las **protoboard** vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas.
 
-![](img/2022-12-13-10-23-10.png)
+![imagen](img/2022-12-13-10-23-10.png)
 
-Conectando las patillas de dos componentes diferentes de la **misma fila** quedan unidos eléctricamente. 
+Conectando las patillas de dos componentes diferentes de la **misma fila** quedan unidos eléctricamente.
 
 ## Canales centrales
 
-Los canales centrales indican que no están conectados ambos lados. Lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos. 
+Los canales centrales indican que no están conectados ambos lados. Lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos.
 
 ## Tiras laterales
 

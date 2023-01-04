@@ -2,11 +2,11 @@
 
 Las cookies son pequeños trozos de información que las webs guardan en nuestro ordenador, a modo de recordar cosas sobre nosotros la siguiente vez que nos conectemos a ella u otras páginas. Pinchando en el candado que aparece al lado de la dirección URL, podemos ver la información de cookies para esta página.
 
-![](img/2022-12-14-09-12-10.png)
+![imagen](img/2022-12-14-09-12-10.png)
 
 Hoy en día es obligatorio que cualquier sitio web nos informe sobre qué información almacena en cookies y para qué, y somos nosotros si permitimos o no usarlas.
 
-![](img/2022-12-14-09-12-28.png)
+![imagen](img/2022-12-14-09-12-28.png)
 
 ## Ejemplo de cookies en YouTube
 

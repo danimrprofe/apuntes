@@ -5,7 +5,7 @@
 - Una misma aplicación se puede distribuir con diferentes licencias
 - Las aplicaciones **multilicencia** permite vertiente libre y propietaria
 
-![](2019-06-28-09-14-21.png)
+![imagen](2019-06-28-09-14-21.png)
 
 # Tipos de licencias
 
@@ -15,7 +15,7 @@ MPL (Mozilla public license)
 Copyleft
 Apache
 
-![](2019-06-28-09-14-40.png)
+![imagen](2019-06-28-09-14-40.png)
 
 # GNU / GPL 3.0
 
@@ -24,7 +24,7 @@ Permite redistribuir el código objeto, siempre acompañado de las fuentes corre
 No obliga a divulgar las modificaciones hechas en el ámbito privado
 El software carece de garantía y la licencia tiene una cláusula de limitación de responsabilidad
 Se han de mantener intactos todos los textos relativos a los derechos de copyright sobre el código y la licencia
-Incluye cláusulas de protección respecto a demandas por infracción de patentes 
+Incluye cláusulas de protección respecto a demandas por infracción de patentes
 
 # Licencia Apache 2.0
 
@@ -35,10 +35,10 @@ Señalar cambios en los ficheros modificados
 Compatible con GPLv3, (no anteriores)
 Provisiones de protección respecto a patentes
 
-![](2019-06-28-09-15-18.png)
+![imagen](2019-06-28-09-15-18.png)
 # Licencias de sistemas operativos
 
-## EULA 
+## EULA
 
 - End User License Agreement
 - Solo usuario que lo ha adquirido
@@ -47,7 +47,7 @@ Provisiones de protección respecto a patentes
 - Derechos de autor y patentes
 - El propietario puede recoger información
 
-![](2019-06-28-09-13-09.png)
+![imagen](2019-06-28-09-13-09.png)
 
 ## GNU/GPL
 
@@ -57,7 +57,7 @@ Sin costo por licencia
 No ofrece garantías
 Puede venderse o cobrar por servicios sobre software
 
-![](2019-06-28-09-13-21.png)
+![imagen](2019-06-28-09-13-21.png)
 
 
 # Distribución de licencias propietarias
@@ -69,7 +69,7 @@ Puede venderse o cobrar por servicios sobre software
 - Podemos venderla o cederla para otro equipo
 - El soporte lo da el fabricante del SO
 
-![](2019-06-28-09-12-10.png)
+![imagen](2019-06-28-09-12-10.png)
 
 ## OEM (Original Equipment Manufacturer)
 
@@ -79,8 +79,8 @@ Puede venderse o cobrar por servicios sobre software
 - El soporte lo da el vendedor del equipo
 - Software preinstalado: OEM por lotes
 
-![](2019-06-28-09-12-04.png)
+![imagen](2019-06-28-09-12-04.png)
 
 ## Comparativa
 
-![](2019-06-28-09-12-23.png)
+![imagen](2019-06-28-09-12-23.png)

@@ -4,13 +4,13 @@ UNIDAD CENTRAL DE PROCESOS\)
 
 Un poco de historia
 
-![](img/Historia_microprocesadores5.png)
+![imagen](img/Historia_microprocesadores5.png)
 
-![](img/Historia_microprocesadores6.gif)
+![imagen](img/Historia_microprocesadores6.gif)
 
-![](img/Historia_microprocesadores7.gif)
+![imagen](img/Historia_microprocesadores7.gif)
 
-![](img/Historia_microprocesadores8.jpg)
+![imagen](img/Historia_microprocesadores8.jpg)
 
 ## ¿QUE ES EL MICROPROCESADOR?
 
@@ -22,31 +22,31 @@ Un poco de historia
 
   La función de los microprocesadores es la de ejecutar e interpretar las instrucciones     de los ordenadores    .
 
-![](img/Historia_microprocesadores9.png)
+![imagen](img/Historia_microprocesadores9.png)
 
-![](img/Historia_microprocesadores10.jpg)
+![imagen](img/Historia_microprocesadores10.jpg)
 
 
 
  La velocidad de un microprocesador se mide en mega hertzios \(MHz\) o giga hertzios \(1 GHz = 1.000 MHz\). Debido a la extrema dificultad de fabricar componentes electrónicos que funcionen a las inmensas velocidades de MHz habituales hoy en día, todos los microprocesadores modernos tienen 2 velocidades:
 
-![](img/Historia_microprocesadores11.png)
+![imagen](img/Historia_microprocesadores11.png)
 
 VELOCIDAD INTERNA:
 
  La velocidad a la que funciona el microprocesador internamente \(1.8, 2.1, 2.3... GHz\).
 
-![](img/Historia_microprocesadores12.png)
+![imagen](img/Historia_microprocesadores12.png)
 
 VELOCIDAD EXTERNA O DEL BUS:
 
  La velocidad a la que se comunican el micro y la placa base, típicamente a 1033, 2066…     MHz.
 
-![](img/Historia_microprocesadores13.jpg)
+![imagen](img/Historia_microprocesadores13.jpg)
 
 2. PARTES BÁSICAS DE UN MICROPROCESADOR
 
-![](img/Historia_microprocesadores14.png)
+![imagen](img/Historia_microprocesadores14.png)
 
 2.1   <span style="color:#5A83E0"> UC \(Unidad de Control\)   :
 
@@ -74,59 +74,59 @@ Una memoria intermedia ultrarrápida que sirve al microprocesador para tener a m
 
 Es lo que se conoce como caché de primer nivel; es decir, la que está más cerca del microprocesador, tanto que está encapsulada junto a él, también llamada caché interna.
 
-![](img/Historia_microprocesadores15.jpg)
+![imagen](img/Historia_microprocesadores15.jpg)
 
 ## 2. PARTES BÁSICAS DE UN MICROPROCESADOR
 
-![](img/Historia_microprocesadores16.png)
+![imagen](img/Historia_microprocesadores16.png)
 
 Bus de Direcciones:
 
 Transporta las direcciones de los datos manejados por la CPU
 
-![](img/Historia_microprocesadores17.png)
+![imagen](img/Historia_microprocesadores17.png)
 
 Bus de Datos Externos:
 
 Transporta hacia y desde el exterior de la PCU \(cache L2, chipset, RAM…\).  También se le denomina bus frontal o bus del sistema.
 
-![](img/Historia_microprocesadores18.png)
+![imagen](img/Historia_microprocesadores18.png)
 
 Bus de Datos Internos:
 
 Transporta los datos dentro de la CPU, es decir entre registros, cache L1, etc.
 
-![](img/Historia_microprocesadores19.png)
+![imagen](img/Historia_microprocesadores19.png)
 
 Marca la frecuencia del funcionamiento del microprocesador y los distintos buses del sistema.
 
-![](img/Historia_microprocesadores20.jpg)
+![imagen](img/Historia_microprocesadores20.jpg)
 
 3. PARTES ELEMENTALES  DE UN MICROPROCESADOR
 
-![](img/Historia_microprocesadores21.png)
+![imagen](img/Historia_microprocesadores21.png)
 
-![](img/Historia_microprocesadores22.jpg)
+![imagen](img/Historia_microprocesadores22.jpg)
 
-![](img/Historia_microprocesadores23.png)
+![imagen](img/Historia_microprocesadores23.png)
 
 ESQUEMA DE LOS MICROPROCESADORES
 
-![](img/Historia_microprocesadores24.png)
+![imagen](img/Historia_microprocesadores24.png)
 
-![](img/Historia_microprocesadores25.jpg)
-
-ESQUEMA DE LA UNIDAD ARITMÉTICO – LÓGICA \(UAL\)
-
-![](img/Historia_microprocesadores26.png)
-
-![](img/Historia_microprocesadores27.jpg)
-
-![](img/Historia_microprocesadores28.png)
+![imagen](img/Historia_microprocesadores25.jpg)
 
 ESQUEMA DE LA UNIDAD ARITMÉTICO – LÓGICA \(UAL\)
 
-![](img/Historia_microprocesadores29.png)
+![imagen](img/Historia_microprocesadores26.png)
+
+![imagen](img/Historia_microprocesadores27.jpg)
+
+![imagen](img/Historia_microprocesadores28.png)
+
+ESQUEMA DE LA UNIDAD ARITMÉTICO – LÓGICA \(UAL\)
+
+![imagen](img/Historia_microprocesadores29.png)
 
 * _Componentes de la ALU_
   * Registros de entrada \(A, B\):
@@ -143,13 +143,13 @@ ESQUEMA DE LA UNIDAD ARITMÉTICO – LÓGICA \(UAL\)
 
 ESQUEMA DE LA UNIDAD DE CONTROL  \(UC\)
 
-![](img/Historia_microprocesadores30.png)
+![imagen](img/Historia_microprocesadores30.png)
 
-![](img/Historia_microprocesadores31.png)
+![imagen](img/Historia_microprocesadores31.png)
 
-![](img/Historia_microprocesadores32.png)
+![imagen](img/Historia_microprocesadores32.png)
 
-![](img/Historia_microprocesadores33.png)
+![imagen](img/Historia_microprocesadores33.png)
 
 UNIDAD DE CONTROL  \(UC\)
 
@@ -165,9 +165,9 @@ UNIDAD DE CONTROL  \(UC\)
   * Secuenciador
     * Genera las microinstrucciones para la ejecución paso a paso de la instrucción interpretada por el decodificador.
 
-![](img/Historia_microprocesadores34.jpg)
+![imagen](img/Historia_microprocesadores34.jpg)
 
-![](img/Historia_microprocesadores35.png)
+![imagen](img/Historia_microprocesadores35.png)
 
 UNIDAD DE CONTROL  \(UC\)
 
@@ -179,17 +179,17 @@ UNIDAD DE CONTROL  \(UC\)
     * <span style="color:#002060">Cableadas \(máquinas sencillas\).
     * <span style="color:#002060">Microprogramadas  <span style="color:#002060"> \(máquinas complejas\).
 
-![](img/Historia_microprocesadores36.png)
+![imagen](img/Historia_microprocesadores36.png)
 
-![](img/Historia_microprocesadores37.png)
+![imagen](img/Historia_microprocesadores37.png)
 
-![](img/Historia_microprocesadores38.jpg)
+![imagen](img/Historia_microprocesadores38.jpg)
 
-![](img/Historia_microprocesadores39.png)
+![imagen](img/Historia_microprocesadores39.png)
 
 EJECUCIÓN DE UNA INSTRUCCIÓN
 
-![](img/Historia_microprocesadores40.png)
+![imagen](img/Historia_microprocesadores40.png)
 
   * Se recibe la instrucción desde la UC.
   * Se comprueba el estado de la ALU.
@@ -198,16 +198,16 @@ EJECUCIÓN DE UNA INSTRUCCIÓN
   * Se guarda el resultado en el acumulador.
   * Se guarda el estado de la ALU al final.
 
-![](img/Historia_microprocesadores41.png)
+![imagen](img/Historia_microprocesadores41.png)
 
   * Búsqueda de la instrucción \( fetch \).
   * Decodificación de la instrucción \( decode \) y carga de operandos \( load \).
   * Ejecución de las operaciones \( execute \).
   * Escritura de resultados \( store \).
 
-![](img/Historia_microprocesadores42.png)
+![imagen](img/Historia_microprocesadores42.png)
 
-![](img/Historia_microprocesadores43.jpg)
+![imagen](img/Historia_microprocesadores43.jpg)
 
 4. TIPOS DE DISEÑO DE LOS MICROPROCESADORES
 
@@ -215,7 +215,7 @@ Computación con una colección de instrucciones reducida\): se basan en la idea
 
 Computación con una colección de instrucciones compleja\): al contrario, tienen una gran cantidad de instrucciones y por tanto son muy rápidos procesando código complejo. Se trata de extender el conjunto de instrucciones de la CPU para que trabaje más eficientemente con tratamiento de imágenes y aplicaciones en 3D. Compañías   Cirix   y AMD
 
-![](img/Historia_microprocesadores44.png)
+![imagen](img/Historia_microprocesadores44.png)
 
 \-Ejecutar más instrucciones por ciclo.
 
@@ -225,7 +225,7 @@ Computación con una colección de instrucciones compleja\): al contrario, tiene
 
 CPU.
 
-![](img/Historia_microprocesadores45.jpg)
+![imagen](img/Historia_microprocesadores45.jpg)
 
 ## 5. DISEÑO DE LOS MICROPROCESADORES – Aumento de prestaciones
 
@@ -235,13 +235,13 @@ INEFICIENCIA =>   La mayoría de los componentes estaban ociosos más del 90% de
 
  Conexiones pensadas para permitir el trabajo en paralelo de TODOS ellos.
 
-![](img/Historia_microprocesadores46.png)
+![imagen](img/Historia_microprocesadores46.png)
 
 \-La   _arquitectura_   del ordenador ha aportado más al rendimiento que la miniaturización.
 
 \-La   _refrigeración_   se ha convertido en algo crucial.
 
-![](img/Historia_microprocesadores47.jpg)
+![imagen](img/Historia_microprocesadores47.jpg)
 
 5. DISEÑO DE LOS MICROPROCESADORES – Aumento de prestaciones
 
@@ -253,22 +253,22 @@ Cada componente de la CPU puede estar ocupado por una fase distinta de una instr
 
   Se pretende usar todos los componentes de la CPU, el 100% del tiempo.
 
-![](img/Historia_microprocesadores48.png)
+![imagen](img/Historia_microprocesadores48.png)
 
-![](img/Historia_microprocesadores49.jpg)
+![imagen](img/Historia_microprocesadores49.jpg)
 
 5. DISEÑO DE LOS MICROPROCESADORES – Aumento de prestaciones
 
 HYPER\-THREADING \(HT   Technology  \)
 
-![](img/Historia_microprocesadores50.png)
+![imagen](img/Historia_microprocesadores50.png)
 
   * Se simula, de cara a los programas, como si el PC tuviera dos CPU’s, en lugar de una solo.
   * Lo inventó Intel y mejora el rendimiento un 30%.
   * Permite procesar en paralelo, sobre una misma CPU, la ejecución de varios programas “multihilo”.
   * Invisible para el SO y los programas. Solo se requiere “multiprocesamiento simétrico” \(SMP\).
 
-![](img/Historia_microprocesadores51.jpg)
+![imagen](img/Historia_microprocesadores51.jpg)
 
 5. DISEÑO DE LOS MICROPROCESADORES – Aumento de prestaciones
 
@@ -282,9 +282,9 @@ HYPER\-  Transport   \(HT\) o   Lightning   Data   Transport   \(LDT\)
   * Utiliza líneas de 32 bits.
   * Usado por AMD en procesadores y chipsets.
 
-![](img/Historia_microprocesadores52.png)
+![imagen](img/Historia_microprocesadores52.png)
 
-![](img/Historia_microprocesadores53.jpg)
+![imagen](img/Historia_microprocesadores53.jpg)
 
 5. DISEÑO DE LOS MICROPROCESADORES – Aumento de prestaciones
 
@@ -293,21 +293,21 @@ Intel   QuickPath     Inteconnect   \(QPI\)
   * Desarrollado por Intel para competir con HyperTransport.
   * Reemplaza FSB en procesadores \(p.ej, Core i7\) y chipsets \(X58\).
 
-![](img/Historia_microprocesadores54.png)
+![imagen](img/Historia_microprocesadores54.png)
 
-![](img/Historia_microprocesadores55.png)
+![imagen](img/Historia_microprocesadores55.png)
 
-![](img/Historia_microprocesadores56.jpg)
+![imagen](img/Historia_microprocesadores56.jpg)
 
 ## 6. EVOLUCIÓN DE LOS MICROPROCESADORES
 
  1. Microprocesadores de Intel más antiguos:
 
-![](img/Historia_microprocesadores57.png)
+![imagen](img/Historia_microprocesadores57.png)
 
-![](img/Historia_microprocesadores58.jpg)
+![imagen](img/Historia_microprocesadores58.jpg)
 
-![](img/Historia_microprocesadores59.png)
+![imagen](img/Historia_microprocesadores59.png)
 
  1972: Intel 8008
 
@@ -315,47 +315,47 @@ Intel   QuickPath     Inteconnect   \(QPI\)
 
  1971: Intel 4004
 
-![](img/Historia_microprocesadores60.jpg)
+![imagen](img/Historia_microprocesadores60.jpg)
 
-![](img/Historia_microprocesadores61.jpg)
+![imagen](img/Historia_microprocesadores61.jpg)
 
  1978: Intel 8086
 
  1979: Intel 8088
 
-![](img/Historia_microprocesadores62.gif)
+![imagen](img/Historia_microprocesadores62.gif)
 
-![](img/Historia_microprocesadores63.gif)
+![imagen](img/Historia_microprocesadores63.gif)
 
-![](img/Historia_microprocesadores64.jpg)
+![imagen](img/Historia_microprocesadores64.jpg)
 
  2. Microprocesadores antiguos de otros fabricantes:
 
-![](img/Historia_microprocesadores65.png)
+![imagen](img/Historia_microprocesadores65.png)
 
-![](img/Historia_microprocesadores66.png)
+![imagen](img/Historia_microprocesadores66.png)
 
  1975:     Signetics     2650
 
-![](img/Historia_microprocesadores67.png)
+![imagen](img/Historia_microprocesadores67.png)
 
-![](img/Historia_microprocesadores68.png)
+![imagen](img/Historia_microprocesadores68.png)
 
-![](img/Historia_microprocesadores69.png)
+![imagen](img/Historia_microprocesadores69.png)
 
  1975: Motorola 6800
 
  1978: Motorola 68000
 
-![](img/Historia_microprocesadores70.jpg)
+![imagen](img/Historia_microprocesadores70.jpg)
 
  3. Siguiente generación de Intel:
 
-![](img/Historia_microprocesadores71.jpg)
+![imagen](img/Historia_microprocesadores71.jpg)
 
-![](img/Historia_microprocesadores72.jpg)
+![imagen](img/Historia_microprocesadores72.jpg)
 
-![](img/Historia_microprocesadores73.jpg)
+![imagen](img/Historia_microprocesadores73.jpg)
 
  1982: Intel 80286
 
@@ -363,11 +363,11 @@ Intel   QuickPath     Inteconnect   \(QPI\)
 
  1985: Intel 80386
 
-![](img/Historia_microprocesadores74.jpg)
+![imagen](img/Historia_microprocesadores74.jpg)
 
-![](img/Historia_microprocesadores75.jpg)
+![imagen](img/Historia_microprocesadores75.jpg)
 
-![](img/Historia_microprocesadores76.png)
+![imagen](img/Historia_microprocesadores76.png)
 
 1997: Intel Pentium II
 
@@ -375,27 +375,27 @@ Intel   QuickPath     Inteconnect   \(QPI\)
 
 1995: Intel Pentium Pro
 
-![](img/Historia_microprocesadores77.jpg)
+![imagen](img/Historia_microprocesadores77.jpg)
 
  4. Un nuevo competidor en el mercado, AMD:
 
-![](img/Historia_microprocesadores78.png)
+![imagen](img/Historia_microprocesadores78.png)
 
-![](img/Historia_microprocesadores79.png)
+![imagen](img/Historia_microprocesadores79.png)
 
-![](img/Historia_microprocesadores80.png)
+![imagen](img/Historia_microprocesadores80.png)
 
-![](img/Historia_microprocesadores81.png)
+![imagen](img/Historia_microprocesadores81.png)
 
-![](img/Historia_microprocesadores82.png)
+![imagen](img/Historia_microprocesadores82.png)
 
-![](img/Historia_microprocesadores83.png)
+![imagen](img/Historia_microprocesadores83.png)
 
-![](img/Historia_microprocesadores84.jpg)
+![imagen](img/Historia_microprocesadores84.jpg)
 
 5. Microprocesadores modernos \- 1999
 
-![](img/Historia_microprocesadores85.png)
+![imagen](img/Historia_microprocesadores85.png)
 
 VELOCIDAD DEL CPU DESDE 266\-550 MHZ
 
@@ -409,7 +409,7 @@ SOCKET 7 O SÚPER SOCKET 7 .
 
 Intel Pentium III
 
-![](img/Historia_microprocesadores86.png)
+![imagen](img/Historia_microprocesadores86.png)
 
 Velocidad de bus a 266   MHz.
 
@@ -419,13 +419,13 @@ Cache L2 512 KB
 
 Socket de 370   pins  .
 
-![](img/Historia_microprocesadores87.png)
+![imagen](img/Historia_microprocesadores87.png)
 
 5. Microprocesadores modernos \- 2000
 
-![](img/Historia_microprocesadores88.jpg)
+![imagen](img/Historia_microprocesadores88.jpg)
 
-![](img/Historia_microprocesadores89.png)
+![imagen](img/Historia_microprocesadores89.png)
 
 ANCHO DE BANDA 2.1 GB/SEG.
 
@@ -449,13 +449,13 @@ CACHE L1 DE 8 KB
 
 CACHE L2 DE 512 KB ,
 
-![](img/Historia_microprocesadores90.png)
+![imagen](img/Historia_microprocesadores90.png)
 
 5. Microprocesadores modernos \- 2003
 
-![](img/Historia_microprocesadores91.png)
+![imagen](img/Historia_microprocesadores91.png)
 
-![](img/Historia_microprocesadores92.jpg)
+![imagen](img/Historia_microprocesadores92.jpg)
 
 CPU   900 MHz
 
@@ -471,13 +471,13 @@ Cache L2 64 KB
 
 Socket 370 pins.
 
-![](img/Historia_microprocesadores93.png)
+![imagen](img/Historia_microprocesadores93.png)
 
 5. Microprocesadores modernos \- 2005
 
-![](img/Historia_microprocesadores94.png)
+![imagen](img/Historia_microprocesadores94.png)
 
-![](img/Historia_microprocesadores95.png)
+![imagen](img/Historia_microprocesadores95.png)
 
 2 CPUs \(Pentium 4\) a   2,66\-3,6 GHz
 
@@ -489,15 +489,15 @@ CPU   1,0\-3,2 GHz
 
 Velocidad     HyperTransport     800\-1000 MT/s
 
-![](img/Historia_microprocesadores96.png)
+![imagen](img/Historia_microprocesadores96.png)
 
 5. Microprocesadores modernos \- 2006
 
-![](img/Historia_microprocesadores97.png)
+![imagen](img/Historia_microprocesadores97.png)
 
-![](img/Historia_microprocesadores98.png)
+![imagen](img/Historia_microprocesadores98.png)
 
-![](img/Historia_microprocesadores99.png)
+![imagen](img/Historia_microprocesadores99.png)
 
 AMD   Athlon   64 FX
 
@@ -515,15 +515,15 @@ Bus de   sistema   a 2 GHz
 
 64 bits
 
-![](img/Historia_microprocesadores100.png)
+![imagen](img/Historia_microprocesadores100.png)
 
 5. Microprocesadores modernos \- 2007
 
-![](img/Historia_microprocesadores101.png)
+![imagen](img/Historia_microprocesadores101.png)
 
-![](img/Historia_microprocesadores102.png)
+![imagen](img/Historia_microprocesadores102.png)
 
-![](img/Historia_microprocesadores103.png)
+![imagen](img/Historia_microprocesadores103.png)
 
 Intel Core 2 Quad
 
@@ -535,17 +535,17 @@ Velocidad   de FSB 1066\-1333 MT/s
 
 Bus de   sistema   a 2 GHz
 
-![](img/Historia_microprocesadores104.jpg)
+![imagen](img/Historia_microprocesadores104.jpg)
 
 5. Los microprocesadores más modernos de Intel
 
-![](img/Historia_microprocesadores105.png)
+![imagen](img/Historia_microprocesadores105.png)
 
-![](img/Historia_microprocesadores106.jpg)
+![imagen](img/Historia_microprocesadores106.jpg)
 
-![](img/Historia_microprocesadores107.jpg)
+![imagen](img/Historia_microprocesadores107.jpg)
 
-![](img/Historia_microprocesadores108.jpg)
+![imagen](img/Historia_microprocesadores108.jpg)
 
    2 ó 4 núcleos
 
@@ -567,7 +567,7 @@ Bus de   sistema   a 2 GHz
 
  Velocidad QPI: 4,8\-6,4 GT/s
 
-![](img/Historia_microprocesadores109.png)
+![imagen](img/Historia_microprocesadores109.png)
 
 - 1971:  Intel 4004  \(primer microprocesador comercial\)
 - 1972:  Intel 8008
@@ -581,7 +581,7 @@ Bus de   sistema   a 2 GHz
 - 1987:  Motorola 68030
 - 1989:  Intel 80486 , AMD Am486
 
-![](img/Historia_microprocesadores110.png)
+![imagen](img/Historia_microprocesadores110.png)
 
 - 1993:  Intel Pentium ,  AMD K5
 - 1995: Intel Pentium Pro
@@ -599,17 +599,17 @@ Bus de   sistema   a 2 GHz
 
 2008\-…:  Intel   Core   i3,   Intel   Core   i5, Intel   Core   i7,                 AMD Athlon II, AMD Phenom II, AMD Turion II,…
 
-![](img/Historia_microprocesadores111.jpg)
+![imagen](img/Historia_microprocesadores111.jpg)
 
 ## 7.CARACTERÍSTICAS TÉCNICAS DE ALGUNOS MICROS
 
 Pentium   Classic  :
 
-![](img/Historia_microprocesadores112.png)
+![imagen](img/Historia_microprocesadores112.png)
 
 Está optimizado para aplicaciones de 16 bits.  Dispone de 8Kb de caché de instrucciones \+ 8Kb de caché de datos.  Utiliza el zócalo de tipo 5 \(socket 5\) o el de los MMX \(tipo 7\). También es conocido por su nombre clave P54C.  Está formado por 3,3 millones de transistores
 
-![](img/Historia_microprocesadores113.gif)
+![imagen](img/Historia_microprocesadores113.gif)
 
 | Especificaciones de la gama Pentium |            |            |         |       |               |        |
 | :---------------------------------: | :--------: | :--------: | :-----: | :---: | :-----------: | :----: |
@@ -625,9 +625,9 @@ Está optimizado para aplicaciones de 16 bits.  Dispone de 8Kb de caché de inst
 |                P166                 |   166Mhz   |   0,35 µ   |  3,52v  | 66Mhz |      2,5      |   7    |
 |                P200                 |   200Mhz   |   0,35 µ   |  3,52v  | 66Mhz |       3       |   7    |
 
-![](img/Historia_microprocesadores114.jpg)
+![imagen](img/Historia_microprocesadores114.jpg)
 
-![](img/Historia_microprocesadores115.png)
+![imagen](img/Historia_microprocesadores115.png)
 
 La memoria de segundo nivel trabaja a la misma velocidad que la CPU.  Utilizan el zócalo super7 a 100   Mhz.  64 KB   de caché L1 \(32 para datos y 32 para instrucciones\)  256 KB   de caché L2.  Fabricados con 21,3 millones de transistores y tecnología de 0,25 micras.  Soporte para AGP.
 

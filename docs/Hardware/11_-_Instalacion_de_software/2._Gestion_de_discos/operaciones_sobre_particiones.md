@@ -8,7 +8,7 @@ __ __ La capacidad depende del espacio del disco y de la ubicación y tamaño de
 
 Si va a contener un sistema operativo debe estar en los primeros 2 GB del disco\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria14.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria14.jpg)
 
 __Creación de particiones lógicas__
 
@@ -16,13 +16,13 @@ __ __ Solamente si van a albergar particiones extendidas\.
 
 No hay límite para la creación de particiones lógicas en una primaria\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria15.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria15.jpg)
 
 __Redimensión y desplazamiento de particiones__
 
 __ __ Debe existir espacio disponible en los extremos\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria16.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria16.jpg)
 
 __Uso de espacio no asignado__
 
@@ -34,7 +34,7 @@ Las dos particiones deben estar una junto a otra\.
 
 Las dos particiones deben tener sistemas de archivos compatibles entre sí\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria17.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria17.jpg)
 
 __Copia de particiones__
 
@@ -42,7 +42,7 @@ __ __ Genera una partición con el mismo tamaño, sistema de archivos y contenid
 
 Pueden copiarse particiones en varios discos\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria18.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria18.jpg)
 
 __Eliminación y recuperación de particiones__
 
@@ -50,7 +50,7 @@ Eliminar una partición destruye los datos sobrescribiendo los sectores del disc
 
 La recuperación no siempre puede llevarse a cabo\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria19.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria19.jpg)
 
 * Cambiar el sistema de archivos de una partición
   * Conversión de particiones: modificación de un sistema de archivos a otro\.
@@ -62,7 +62,7 @@ La recuperación no siempre puede llevarse a cabo\.
   * Existe la posibilidad de  _convertir una partición _  _primaria_  _ en _  _lógica_  y viceversa\.
   * Este cambio es bastante útil cuando se agota el cupo de cuatro particiones primarias en el disco
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria20.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria20.jpg)
 
 ## Formateo de una partición
 
@@ -74,7 +74,7 @@ La recuperación no siempre puede llevarse a cabo\.
     * Alto nivel \(lógico\)
     * Bajo nivel \(físico\)
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria21.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria21.jpg)
 
 * Formateo  _alto nivel \(formateo lógico\)_
   * Borra solo tabla de acceso a los archivos almacenados \(no los datos\)
@@ -93,7 +93,7 @@ La recuperación no siempre puede llevarse a cabo\.
   * Desde un  __disco de arranque __ \(a todos los discos del equipo\)
     * Mediante cualquiera de las  __aplicaciones de gestión de discos__ \.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria22.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria22.jpg)
 
 * Formateo a  _bajo nivel \(o formateo físico\)_
   * __Elimina: __  _particiones de disco \+ datos \+ tablas de archivos_
@@ -111,4 +111,4 @@ La recuperación no siempre puede llevarse a cabo\.
     * _HDD Low _  _Level_  _ Format Tool _ \(gratuita\)
     * _KillDisk_  \(de pago\)\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria23.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria23.jpg)

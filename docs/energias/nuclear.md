@@ -1,18 +1,18 @@
 # Energía nuclear
 
-Se basa en la desintegración radiactiva de los átomos de Uranio. Estos átomos son inestables y se rompen o fisionan produciendo: 
+Se basa en la desintegración radiactiva de los átomos de Uranio. Estos átomos son inestables y se rompen o fisionan produciendo:
 
 - núcleos más ligeros
 - radiactividad
-- GRANDES CANTIDADES DE CALOR, que es lo que aprovecha del proceso. 
+- GRANDES CANTIDADES DE CALOR, que es lo que aprovecha del proceso.
 
-![](img/2022-11-19-15-02-57.png)
+![imagen](img/2022-11-19-15-02-57.png)
 
 Es el combustible de las centrales nucleares, donde el calor producido por la reacción se utiliza para producir **vapor**, con el cual se mueve unas **turbinas** y se genera energía eléctrica.
 
-![](img/image.png.png)
+![imagen](img/image.png.png)
 
-En la **fisión** se liberan también 2 -3 nuevos neutrones que producen nuevas fisiones: es una **reacción en cadena** que si no se controla produciría una explosión atómica. 
+En la **fisión** se liberan también 2 -3 nuevos neutrones que producen nuevas fisiones: es una **reacción en cadena** que si no se controla produciría una explosión atómica.
 
 ## Moderador
 
@@ -27,10 +27,10 @@ Para controlar la reacción, se introduce en el reactor un **moderador** que “
 Para extraer el calor producido hay un SISTEMA DE REFRIGERACIÓN POR AGUA que consta de 3 circuitos independientes entre sí (por seguridad):
 
 - **Circuito primario**: En contacto con el material radiactivo, está confinado dentro de l  vasija del reactor y esta agua se recicla (no sale nunca)
-- **Circuito secundario**: Enfría al primario y es el que genera el VAPOR que mueve las turbinas 
+- **Circuito secundario**: Enfría al primario y es el que genera el VAPOR que mueve las turbinas
 - **Circuito terciario**: Licua el vapor del 2º. Esta agua entra y sale del exterior (río, mar) y genera el vapor que vemos salir por la torres de refrigeración
 
-![](img/2022-11-19-15-04-17.png)
+![imagen](img/2022-11-19-15-04-17.png)
 
 ## Impacto ambiental
 
@@ -48,7 +48,7 @@ Actualmente, con la crisis medioambiental, hay muchos partidarios de la energía
 
 ## IMPACTO AMBIENTAL DE LA ENERGÍA DE FISIÓN NUCLEAR
 
-1) El combustible se extrae de grandes cantidades de mineral de uranio (pechblenda o uraninita, UO2) que se procesa en plantas de enriquecimiento. En ellas se separa el isótopo U-235 del resto (por métodos físicos, ya que químicamente los isótopos del uranio son indistinguibles). 
+1) El combustible se extrae de grandes cantidades de mineral de uranio (pechblenda o uraninita, UO2) que se procesa en plantas de enriquecimiento. En ellas se separa el isótopo U-235 del resto (por métodos físicos, ya que químicamente los isótopos del uranio son indistinguibles).
 2) A continuación se enriquece añadiendo plutonio-239 (mejora la reacción de fisión) y se fabrican las barras de combustible, que se sumergen en los reactores intercaladas con las barras de moderador. Éstas pueden estar más o menos introducidas  (para bajar o subir la potencia de la central)
 3) A los 3-4 años, la concentración de U-235 de las barras ha bajado y es demasiado baja para mantener la reacción (combustible gastado). Las barras se extraen (operación de recarga) y son almacenadas en piscinas de enfriamiento dentro del propio reactor durante años hasta que su temperatura baje lo suficiente.
 4) Cuando hay sufrientes barras, se transportan a centrales de reciclaje donde se extrae: el Pu-239 para reutilizarlo y otros isótopos de vida corta (residuos). El resto continúa activo  como  mínimo de 10.000-100.000 años (residuos radiactivos de alta actividad). El Plutonio es el principal componente del armamento nuclear y bombas atómicas (peligrosidad por terrorismo)
@@ -58,9 +58,9 @@ Nota: Las reservas actuales de mineral de uranio están calculadas en 2 millones
 
 Las centrales nucleares no producen contaminantes atmosféricos, pero generan una gran cantidad de residuos radiactivos peligrosos para la salud y el medio ambiente, por lo que deben ser almacenados de forma segura durante centenares o miles de años que dura su radiactividad:
 
-1) El combustible gastado primero se enfría durante 4-10 años en piscinas de agua pura situadas en el interior de la propia central. 
+1) El combustible gastado primero se enfría durante 4-10 años en piscinas de agua pura situadas en el interior de la propia central.
 2) Después deben ser trasladados a un almacén temporal en superficie y vigilado. Puede ser centralizado (ATC), donde se almacenan los residuos de muchas centrales. Esto tiene el peligro de ser posible diana de terrorismo y el rechazo de la población próxima. Algunos proponen pequeños almacenes de superficie diseminados o incluso dentro del territorio de la propia central donde ya existe una fuerte vigilancia.
-3) Almacenamiento geológico definitivo, enterrado a profundidad en zonas adecuadas: macizos graníticos o salinos de grosor suficiente para absorber posibles fugas, estables sísmicamente, impermeables y sin contacto con los acuíferos. 
+3) Almacenamiento geológico definitivo, enterrado a profundidad en zonas adecuadas: macizos graníticos o salinos de grosor suficiente para absorber posibles fugas, estables sísmicamente, impermeables y sin contacto con los acuíferos.
 
 Almacén de residuos de baja y media actividad de El Cabril, (Córdoba)
 Actualmente se está investigando un proceso de fisión basado en el Torio- 232 que no se activa por sí mismo (necesita de un acelerador de partículas haga que los protones choquen con el combustible). Ventajas:
@@ -72,7 +72,7 @@ CICLO VITAL DEL URANIO:
 
 
 
-			
+
 
 MINERAL
 URANINITA/PECHBLENDA
@@ -124,4 +124,4 @@ CERRADO”
 
 ### Bombas nucleares
 
-![](img/2022-11-19-15-02-37.png)
+![imagen](img/2022-11-19-15-02-37.png)

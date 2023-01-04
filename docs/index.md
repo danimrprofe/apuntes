@@ -16,7 +16,7 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 - [Libreoffice base](base/index.md)
 
-![](img/2022-11-25-17-49-34.png)
+![imagen](img/2022-11-25-17-49-34.png)
 
 !!! note
 

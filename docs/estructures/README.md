@@ -5,9 +5,9 @@ Les forces són elements que poden:
 - Deformar un cos (efecte estàtic)
 - Canviar el seu estat de moviment (efecte dinàmic)
 
-![](img/2019-10-24-08-54-02.png)
+![imagen](img/2019-10-24-08-54-02.png)
 
-![](img/2019-10-24-08-54-07.png)
+![imagen](img/2019-10-24-08-54-07.png)
 
 ## 1.1 Exemples de forces
 
@@ -20,9 +20,9 @@ Les forces són elements que poden:
 
 ¿Quines forces actuen sobre aquests objectes?
 
-![](img/2019-10-24-08-55-51.png)
-![](img/2019-10-24-09-07-00.png)
-![](img/2019-10-24-09-08-34.png)
+![imagen](img/2019-10-24-08-55-51.png)
+![imagen](img/2019-10-24-09-07-00.png)
+![imagen](img/2019-10-24-09-08-34.png)
 
 # 2. Estructures
 
@@ -37,21 +37,21 @@ Tots els objectes necessiten una estructura que els permeti resistir els efectes
 - Conxes
 - Nius
 
-![](img/2019-10-24-08-43-42.png)
-![](img/2019-10-24-09-00-53.png)
-![](img/2019-10-24-09-00-59.png)
-![](img/2019-10-24-08-43-47.png)
-![](img/2019-10-24-09-04-11.png)
+![imagen](img/2019-10-24-08-43-42.png)
+![imagen](img/2019-10-24-09-00-53.png)
+![imagen](img/2019-10-24-09-00-59.png)
+![imagen](img/2019-10-24-08-43-47.png)
+![imagen](img/2019-10-24-09-04-11.png)
 
 ## Artificials
 
 - Gratacels
 - Torres elèctriques
 
-![](img/2019-10-24-08-43-54.png)
-![](img/2019-10-24-08-43-59.png)
-![](img/2019-10-24-09-01-12.png)
-![](img/2019-10-24-09-04-26.png)
+![imagen](img/2019-10-24-08-43-54.png)
+![imagen](img/2019-10-24-08-43-59.png)
+![imagen](img/2019-10-24-09-01-12.png)
+![imagen](img/2019-10-24-09-04-26.png)
 
 # Càrregues
 
@@ -76,14 +76,14 @@ Exemples:
 - Neu sobre un terrat
 - Pressió de l'aigua sobre una presa
 
-![](img/2019-10-24-08-45-30.png)
-![](img/2019-10-24-09-07-51.png)
+![imagen](img/2019-10-24-08-45-30.png)
+![imagen](img/2019-10-24-09-07-51.png)
 
 # Esforços
 
 Es tracta de tensions internes que sofreixen els objectes que estan sotmessos a l'acció de una o més forces.
 
-![](img/2019-10-24-08-46-11.png)
+![imagen](img/2019-10-24-08-46-11.png)
 
 ## Tipus d'esforços
 
@@ -91,25 +91,25 @@ Es tracta de tensions internes que sofreixen els objectes que estan sotmessos a 
 
 Forces intenten estirar l'objecte.
 
-![](img/2019-10-24-08-58-43.png)
+![imagen](img/2019-10-24-08-58-43.png)
 
 - Flexió
 
-![](img/2019-10-24-08-46-34.png)
-![](img/2019-10-24-09-08-50.png)
+![imagen](img/2019-10-24-08-46-34.png)
+![imagen](img/2019-10-24-09-08-50.png)
 
 - Compressió
 
-![](img/2019-10-24-08-46-43.png)
+![imagen](img/2019-10-24-08-46-43.png)
 - Torsió
 
-![](img/2019-10-24-08-46-57.png)
+![imagen](img/2019-10-24-08-46-57.png)
 
 - Cizalla
 
 Dues forces actuen com les fulles d'una tissora. Una es mou cap a dalt i l'altra cap abaix, com si tractessin de tallar un objecte.
 
-![](img/2019-10-24-08-47-10.png)
+![imagen](img/2019-10-24-08-47-10.png)
 
 Quins esforços diries que sofreixen els següents objectes:
 
@@ -131,58 +131,58 @@ Quins esforços diries que sofreixen els següents objectes:
 Materials: roca, pedres
 Exemples: piràmides
 
-![](img/2019-10-24-08-49-19.png)
+![imagen](img/2019-10-24-08-49-19.png)
 
 ## Vaulted
 
 Materials: pedra, roca o ciment
 Exemples: basíliques, panteons i catedrals
 
-![](img/2019-10-24-08-49-49.png)
+![imagen](img/2019-10-24-08-49-49.png)
 
 ## Entramades
 
 Materials: ciment i metall
 Exemples: blocs i pisos
 
-![](img/2019-10-24-08-50-16.png)
+![imagen](img/2019-10-24-08-50-16.png)
 
 ## Triangulades
 
 Materials: metall o fusta
 Exemples: sostres, ponts
 
-![](img/2019-10-24-08-50-43.png)
+![imagen](img/2019-10-24-08-50-43.png)
 
-![](img/2019-10-24-08-58-02.png)
+![imagen](img/2019-10-24-08-58-02.png)
 
 ## Penjants
 
 Materials: metall i ciment
 Exemples: ponts,  antennes i torres
 
-![](img/2019-10-24-08-51-17.png)
+![imagen](img/2019-10-24-08-51-17.png)
 
 ## Pneumàtiques
 
 Materials: plàstic
 Exemples: castell inflable
 
-![](img/2019-10-24-08-51-42.png)
+![imagen](img/2019-10-24-08-51-42.png)
 
 ## Rolled and plate
 
 Materials: metall, plàstic i altres materials sintètics
 Exemples: cotxe
 
-![](img/2019-10-24-08-52-23.png)
+![imagen](img/2019-10-24-08-52-23.png)
 
 ## Geodèsiques
 
 Materials: metall i alumini
 Exemples: tetrahedre
 
-![](img/2019-10-24-08-52-42.png)
+![imagen](img/2019-10-24-08-52-42.png)
 
 # Elements d'una estructura
 

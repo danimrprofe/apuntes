@@ -2,7 +2,7 @@
 
 Els acabats més comuns són les pintures i els vernissos. La seva funció és recobrir la fusta per protegir-la dels agents externs, com la humitat, els fongs o els insectes. També es fan servir per millorar-ne l'aspecte, modificant-ne el color, el to i la lluentor.
 
-![](media/image54.png)
+![imagen](media/image54.png)
 
 ## Pîntura
 
@@ -14,13 +14,13 @@ Es la mescla de 3 components:
 
 Quan el dissolvent s'evapora, la pintura s'asseca, deixant una capa protectora sobre la fusta que, a més, hi dona color.
 
-![](media/image55.jpeg)Les pintures solen ser a l'oli o esmaltades i acríliques. Aquestes últimes es s'assequen ràpidament i s'adhereixen a tot tipus de superfícies.
+![imagen](media/image55.jpeg)Les pintures solen ser a l'oli o esmaltades i acríliques. Aquestes últimes es s'assequen ràpidament i s'adhereixen a tot tipus de superfícies.
 
 ## Vernís
 
 És una pintura transparent. Està compost per resines (normalment artificials, com el poliuretà) dissoltes en dissolvent. Quan el dissolvent s'evapora, queda una capa de resina que protegeix la fusta. El vernís manté l'aspecte natural de la fusta: se'n veuen les vetes i els nusos, encara que l'hi canviï el to i la lluentor.
 
-![](media/image56.png)
+![imagen](media/image56.png)
 
 ## Pinzells i brotxes
 
@@ -30,7 +30,7 @@ Es fabriquen de diferents mides i qualitats.
 
 Les truges o metxes poden ser d'esquirol, bou, porc, teixó, mostela o marta.  No obstant això, totes elles estan sent substituïdes gradualment per materials sintètics.
 
-![](media/image57.png)
+![imagen](media/image57.png)
 
 Les pintures solen ser a l'oli o esmaltades i acríliques. Aquestes últimes es s'assequen ràpidament i s'adhereixen a tot tipus de superfícies.
 

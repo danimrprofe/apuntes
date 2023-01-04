@@ -9,14 +9,14 @@ H2 + ½ O2 = H2O (g) + Energía
 ## Características
 
 - El hidrógeno es muy abundante (75% Universo), pero en la Tierra se encuentra combinado formando agua y otras moléculas.
-- Debido a su abundancia se considera un combustible eterno y también muy eficiente, ya que produce el **triple de energía calorífica que el petróleo**. 
-- Su combustión no produce residuos, solo agua. 
+- Debido a su abundancia se considera un combustible eterno y también muy eficiente, ya que produce el **triple de energía calorífica que el petróleo**.
+- Su combustión no produce residuos, solo agua.
 
 ## Obtención del hidrógeno
 
-El hidrógeno se puede obtener por la **hidrólisis** del agua, mediante una corriente continua, pero generar esta corriente requiere energía. 
+El hidrógeno se puede obtener por la **hidrólisis** del agua, mediante una corriente continua, pero generar esta corriente requiere energía.
 
-![](img/2022-10-06-17-07-57.png)
+![imagen](img/2022-10-06-17-07-57.png)
 
 El problema es que se gasta más energía en descomponer el agua y producir hidrógeno de la se extrae luego en la combustión y no rentable cuando esta energía viene de combustibles fósiles.
 
@@ -31,12 +31,12 @@ La ventaja que presenta es que permite utilizar toda la infraestructura actual d
 
 ## Pilas de combustible
 
-Otra forma de utilización del H2 es en la pilas de combustible. Son una especie de **baterías** que no se gastan porque convierten en electricidad la energía química del combustible, el H2,  que entra en ellas junto con el O2 (aire). 
+Otra forma de utilización del H2 es en la pilas de combustible. Son una especie de **baterías** que no se gastan porque convierten en electricidad la energía química del combustible, el H2,  que entra en ellas junto con el O2 (aire).
 
-- En el cátodo (polo-) se produce la ruptura del H2 en H+ y electrones. 
-- Los electrones son conducidos al ánodo produciendo una corriente eléctrica. 
+- En el cátodo (polo-) se produce la ruptura del H2 en H+ y electrones.
+- Los electrones son conducidos al ánodo produciendo una corriente eléctrica.
 - Los H+ atraviesan la pila y reaccionan con el O2 liberando agua
 
-![](img/2022-10-06-17-03-36.png)
+![imagen](img/2022-10-06-17-03-36.png)
 
-![](img/2022-10-06-17-03-43.png)
+![imagen](img/2022-10-06-17-03-43.png)

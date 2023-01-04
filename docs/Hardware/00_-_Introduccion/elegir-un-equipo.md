@@ -1,10 +1,10 @@
 # Elegir un equipo
 
-![](media/image1.jpg)
+![imagen](media/image1.jpg)
 
 ## ¿Cómo elegir qué dispositivo necesito?
 
-El equipo que elijamos lo definen los componentes internos que lo componen. En función de cuáles sean estos y sus características, el equipo será más o menos potente y más adecuado para unos u otros usos.![](media/image2.png)
+El equipo que elijamos lo definen los componentes internos que lo componen. En función de cuáles sean estos y sus características, el equipo será más o menos potente y más adecuado para unos u otros usos.![imagen](media/image2.png)
 
 El tipo de ordenador que necesitamos es aquel que se adecua más al uso que le vamos a dar. Para ello, es necesario plantear qué tareas son las que queremos llevar a cabo con el ordenador, y esto dependerá de la persona y del uso que ésta le dé.
 

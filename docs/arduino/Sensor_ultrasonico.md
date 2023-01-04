@@ -4,7 +4,7 @@ El **sensor ultrasónico** es ideal para todo tipo de proyectos que necesitan me
 
 El HC-SR04 incorpora una **librería** diseñada  específicamente para estos sensores.
 
-![](2022-12-05-10-31-48.png)
+![imagen](2022-12-05-10-31-48.png)
 
 ## Componentes necesarios
 
@@ -49,33 +49,33 @@ Pulgadas:  us / 148 = inch; O: el rango = tiempo de alto nivel * velocidad (340M
 ```
 Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la señal de disparo a la señal de eco.
 
-![](media/image88.jpeg)
+![imagen](media/image88.jpeg)
 
 ## Pines del sensor
 
-![](img/2022-11-20-17-18-13.png)
+![imagen](img/2022-11-20-17-18-13.png)
 
 ## Conexión
 
 Aquí podemos ver como conectar los cuatro pines del sensor al Arduino Uno.
 
-![](media/image89.jpeg)
+![imagen](media/image89.jpeg)
 
 ### Diagrama de cableado
 
 El diagrama de cableado es el siguiente. Recordad que utilizamos en general rojo para cables conectados a 5V y negro para 0V o tierra (GND).
 
-![](media/image90.jpeg)
+![imagen](media/image90.jpeg)
 
 ### Montaje
 
-![](media/image91.jpeg)
+![imagen](media/image91.jpeg)
 
 ### Código
 
 Necesitaremos una **librería** para poder utilizar algunas funciones y comunicarnos con el sensor. Para ello, deberemos de incluirla en nuestro proyecto, de la siguiente forma:
 
-![](img/2022-10-17-15-41-18.png)
+![imagen](img/2022-10-17-15-41-18.png)
 
 Una vez incluída, ya la podemos utilizar en nuestro programa.
 
@@ -106,6 +106,6 @@ void loop() {
 
 Abriendo el monitor y podemos ver los datos que vamos imprimiendo desde el programa
 
-![](media/image92.jpeg)
+![imagen](media/image92.jpeg)
 
 Una vez detectados los valores, con estructuras **if-else** podríamos tomar decisiones en nuestro programa para realizar ciertas acciones.

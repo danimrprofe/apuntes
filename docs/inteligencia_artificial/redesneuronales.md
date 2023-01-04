@@ -6,7 +6,7 @@ Redes neuronales artificiales (ANN) son modelos de computación basados en la es
 
 Las **redes neuronales artificiales** están compuestas de una gran cantidad de unidades de procesamiento simples, llamados **neuronas**, que se conectan entre sí y trabajan en conjunto para realizar tareas de procesamiento de información.
 
-![](2022-12-20-11-58-27.png)
+![imagen](2022-12-20-11-58-27.png)
 
 Estas redes pueden ser entrenadas para realizar una amplia variedad de tareas de **procesamiento** de información, como:
 
@@ -19,7 +19,7 @@ Estas redes pueden ser entrenadas para realizar una amplia variedad de tareas de
 
 Los redes neuronales son herramientas poderosas para el aprendizaje, y el aprendizaje por refuerzo es una técnica poderosa para entrenarlos. En el aprendizaje por refuerzo, se entrena a una red neuronal para que realice una tarea aprendiendo a maximizar una señal de recompensa. La señal de recompensa suele ser una función del rendimiento de la red en la tarea, y el proceso de entrenamiento suele ser un proceso iterativo de ensayo y error.
 
-![](2022-12-20-12-04-03.png)
+![imagen](2022-12-20-12-04-03.png)
 
 ## Ventajas
 

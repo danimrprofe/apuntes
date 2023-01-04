@@ -1,6 +1,6 @@
 # Fuente de alimentación
 
-![](img/32_Fuentes_de_alimentacion1.png)
+![imagen](img/32_Fuentes_de_alimentacion1.png)
 
 * 1\) Transforma
   * __Corriente eléctrica \(AC\) __ alterna procedente del sistema eléctrico
@@ -8,7 +8,7 @@
 * 2\) Permite alimentar diferentes circuitos y dispositivos del ordenador
   * Voltajes que proporciona la fuente:  __ __  <span style="color:#FF0000"> __\-12 V, \-5 V, 0 V, \+3,3 V, \+5 V,\+12 V__ </span>
 
-![](img/32_Fuentes_de_alimentacion2.png)
+![imagen](img/32_Fuentes_de_alimentacion2.png)
 
 * _Posibilidades de expansión_
 * Potencia \(W\) determina la cantidad de componentes
@@ -20,13 +20,13 @@
     * Conector Berg de 4 pines minimolex
     * Conector de 15 pines Serial ATA
 
-![](img/32_Fuentes_de_alimentacion3.jpg)
+![imagen](img/32_Fuentes_de_alimentacion3.jpg)
 
-![](img/32_Fuentes_de_alimentacion4.png)
+![imagen](img/32_Fuentes_de_alimentacion4.png)
 
 Tipos de fuentes
 
-![](img/32_Fuentes_de_alimentacion5.jpg)
+![imagen](img/32_Fuentes_de_alimentacion5.jpg)
 
 ## Tipos de fuente de alimentación
 
@@ -36,7 +36,7 @@ Las Fuentes AT fueron creadas en 1984 por IBM como un estándar para el IBM AT. 
 
 Esto último fue solucionado mediante 4 pines centrales negros. Finalmente esta fuente fue reemplazada con la salida de ATX.
 
-![](img/32_Fuentes_de_alimentacion6.png)
+![imagen](img/32_Fuentes_de_alimentacion6.png)
 
 ### Fuentes ATX
 
@@ -46,7 +46,7 @@ Siempre hay energía circulando para encendido por software, como el wake-on-lan
 
 Estas fuentes tienen una alta compatibilidad con DDR2, PCI Express, SATA, entre otros. A diferencia de las anteriores, las fuentes ATX tienen un solo conector de 24 en lugar de dos, y a partir de 2000, también tienen un conector directo a la tarjeta gráfica, pudiendo ser de 6 o 8 pines.
 
-![](img/32_Fuentes_de_alimentacion7.png)
+![imagen](img/32_Fuentes_de_alimentacion7.png)
 
 ## Posibles averías
 
@@ -72,7 +72,7 @@ Estas fuentes tienen una alta compatibilidad con DDR2, PCI Express, SATA, entre 
 
 Los sistemas de fuentes modulares ofrecen una gran cantidad de beneficios para los usuarios. Estas fuentes son una excelente opción para los usuarios que desean la **comodidad** de conectar solo los cables que realmente van a utilizar. Esto reduce significativamente el **desorden** de los cables, lo que mejora la estética de la computadora y reduce el riesgo de sobrecalentamiento.
 
-![](img/32_Fuentes_de_alimentacion9.jpg)
+![imagen](img/32_Fuentes_de_alimentacion9.jpg)
 
 Otra gran ventaja de la tecnología modular es la posibilidad de utilizar **adaptadores** para convertir los conectores no estándar en conectores estándar. Esto significa que los usuarios no tienen que volverse locos tratando de encontrar el conector correcto para un dispositivo en particular. Esto simplifica el proceso de instalación de los dispositivos y la conexión de cables en la computadora.
 
@@ -84,7 +84,7 @@ Las fuentes de alimentación semimodulares son un tipo de fuente de alimentació
 
 Esta característica ofrece la ventaja de no tener que trabajar con todos los cables al mismo tiempo y de no tener que lidiar con los cables sueltos en la parte trasera del chasis.
 
-![](img/32_Fuentes_de_alimentacion8.jpg)
+![imagen](img/32_Fuentes_de_alimentacion8.jpg)
 
 ## Fuentes redundantes
 
@@ -92,7 +92,7 @@ Los sistemas redundantes tienen los datos y/o el hardware repetidos. Esto es esp
 
 Un ejemplo de esto es el uso de dos fuentes de alimentación en servidores, conectadas a diferentes sistemas eléctricos, con el fin de minimizar el riesgo de fallos, ya sea por la propia fuente o por el sistema eléctrico.
 
-![](img/32_Fuentes_de_alimentacion10.png)
+![imagen](img/32_Fuentes_de_alimentacion10.png)
 
 En la actualidad se aplican las fuentes de alimentación redundantes a los  __servidores, routers, switches, etcétera\. __
 
@@ -110,7 +110,7 @@ No obstante, el circuito electrónico es mucho más complejo y, además, como fu
 
 ## Fuentes de alimentación conmutadas
 
-![](img/32_Fuentes_de_alimentacion11.png)
+![imagen](img/32_Fuentes_de_alimentacion11.png)
 
 
 ## Conectores de la fuente
@@ -124,11 +124,11 @@ No obstante, el circuito electrónico es mucho más complejo y, además, como fu
 - ATX 4 pines \(procesador\)
 - ATX 24 pines \(o ATX 20\+4\)
 
-![](img/32_Fuentes_de_alimentacion12.jpg)
+![imagen](img/32_Fuentes_de_alimentacion12.jpg)
 
 ## Distribución de pines
 
-![](img/32_Fuentes_de_alimentacion13.png)
+![imagen](img/32_Fuentes_de_alimentacion13.png)
 
 ## Características eléctricas
 
@@ -145,14 +145,14 @@ En la actualidad, existen dos rangos principales de voltajes eléctricos comunes
 
 Estos rangos de voltajes se utilizan en combinación con diferentes **frecuencias** eléctricas.
 
-![](img/32_Fuentes_de_alimentacion14.png)
+![imagen](img/32_Fuentes_de_alimentacion14.png)
 
 Por ejemplo:
 
 - América del Norte usa una frecuencia de 60  Hz
 - Europa y Asia usan una frecuencia de 50 Hz.
 
-![](img/32_Fuentes_de_alimentacion15.png)
+![imagen](img/32_Fuentes_de_alimentacion15.png)
 
 ## Selector
 
@@ -168,7 +168,7 @@ Por el contrario, si una fuente con un voltaje de 230V se usa con un sistema de 
 
 Podemos encontrar las características eléctricas en la **etiqueta** de la fuente.
 
-![](img/32_Fuentes_de_alimentacion16.jpg)
+![imagen](img/32_Fuentes_de_alimentacion16.jpg)
 
 ## Consumo eléctrico y coste
 
@@ -189,11 +189,11 @@ A mayor eficiencia, se gasta menos energía en calor (menos desperdicio), se req
 
 Sin embargo, hay que tener en cuenta que la eficiencia varía en función de la carga, siendo que a bajas cargas, la eficiencia disminuye drásticamente y la eficiencia más alta se suele producir entre el 50-75% de carga.
 
-![](img/32_Fuentes_de_alimentacion17.jpg)
+![imagen](img/32_Fuentes_de_alimentacion17.jpg)
 
 ## Ejemplo de especificaciones técnicas
 
-![](img/32_Fuentes_de_alimentacion18.jpg)
+![imagen](img/32_Fuentes_de_alimentacion18.jpg)
 
 |   Model   | EP-550P5-T1 |       |       |       |       |       |       |
 | :-------: | :---------: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -277,11 +277,11 @@ Equipos portátiles
   * Permiten regular el voltaje en función del equipo
   * Permiten utilizarse en diferentes gamas de equipos portátiles
 
-![](img/32_Fuentes_de_alimentacion19.jpg)
+![imagen](img/32_Fuentes_de_alimentacion19.jpg)
 
-![](img/32_Fuentes_de_alimentacion20.jpg)
+![imagen](img/32_Fuentes_de_alimentacion20.jpg)
 
-![](img/32_Fuentes_de_alimentacion21.jpg)
+![imagen](img/32_Fuentes_de_alimentacion21.jpg)
 
 ## Baterías
 
@@ -290,9 +290,9 @@ Las baterías se componen de celdas electroquímicas, las cuales almacenan corri
 
 Estas permiten trabajar sin necesidad de estar conectado a una toma de corriente, y se recargan mediante adaptador. La capacidad de una batería se mide en miliamperios hora (mah) y densidad de energía (mWh).
 
-![](img/32_Fuentes_de_alimentacion22.jpg)
+![imagen](img/32_Fuentes_de_alimentacion22.jpg)
 
-![](img/32_Fuentes_de_alimentacion23.png)
+![imagen](img/32_Fuentes_de_alimentacion23.png)
 
 Equipos portátiles
 
@@ -311,7 +311,7 @@ Equipos portátiles
 
 Las baterías deben estar etiquetadas con un código de referencia, su voltaje, su capacidad mínima (en mAh y/o mWh) y la tecnología (Ni-Cd, Li-Ion).
 
-![](img/32_Fuentes_de_alimentacion24.jpg)
+![imagen](img/32_Fuentes_de_alimentacion24.jpg)
 
 ## Equipos portátiles
 
@@ -330,5 +330,5 @@ Algunas estrategias para alargar la vida de la batería pueden ser:
 - No dejar descargar por completo el resto
 - Utilizar modo ahorro de energía
 
-![](img/32_Fuentes_de_alimentacion25.jpg)
+![imagen](img/32_Fuentes_de_alimentacion25.jpg)
 

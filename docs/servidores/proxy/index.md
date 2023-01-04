@@ -6,7 +6,7 @@ Un proxy-caché es un servidor que actúa como pasarela entre Internet y una red
 
 El uso de un proxy caché ofrece muchas ventajas, como mayor velocidad de navegación, uso más eficiente de la línea de conexión con Internet, **cortafuegos** de contenidos y **filtrado** de servicios. Esto proporciona una mejor seguridad y protección, así como una mejor experiencia de usuario al navegar por la web.
 
-![](2019-05-08-08-08-08.png)
+![imagen](2019-05-08-08-08-08.png)
 
 ## ¿Cómo funciona?
 
@@ -15,7 +15,7 @@ El uso de un proxy caché ofrece muchas ventajas, como mayor velocidad de navega
 - Posteriormente, el proxy enviará los datos al PC del usuario para que los muestre en su pantalla.
 - El PC del usuario no tendrá conexión directa con el router, sino que accederá a Internet por medio del proxy.
 
-![](2019-05-08-08-08-42.png)
+![imagen](2019-05-08-08-08-42.png)
 
 ## Posibilidades del proxy
 
@@ -47,7 +47,7 @@ Los PCs de nuestra red están más seguros de ataques externos ya que el proxy h
 
 ## Ejemplo de funcionamiento
 
-![](2019-05-08-08-07-34.png)
+![imagen](2019-05-08-08-07-34.png)
 
 ## Proxy squid
 
@@ -75,4 +75,4 @@ Las líneas de este archivo de log contienen una serie de códigos que empiezan 
 
 Los códigos más usuales son los siguientes:
 
-![](2019-05-08-08-09-41.png)
+![imagen](2019-05-08-08-09-41.png)

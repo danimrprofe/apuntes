@@ -106,7 +106,7 @@ Todo el trayecto de Palma a Ho Chi Minh City durará 22h 50 min
 
 ### Vuelo Palma - Abu Dhabi
 
-![](2019-06-10-01-00-19.png)
+![imagen](2019-06-10-01-00-19.png)
 
 - 14:45 a 18:25 - Vuelo Palma a Berlin (Air Berlin)
 - 21:50 a 06:00 - Vuelo Berlín a Abu Dhabi (Etihad airways)
@@ -130,7 +130,7 @@ Check in en Hong Vina Luxury - (145 Ky Con , District 1, Ho Chi Minh, Vietnam)
 
 Cenamos de 2 Pho en un restaurante cercano. (132.000 VND)
 
-![](2019-07-08-16-21-28.png)
+![imagen](2019-07-08-16-21-28.png)
 
 22:00 - Dormir en el hotel
 
@@ -154,11 +154,11 @@ Detalles del vuelo:
 
 Damos una vuelta alrededor del lago Kiem
 
-![](2019-07-08-16-24-53.png)
+![imagen](2019-07-08-16-24-53.png)
 
 Nos tomamos un café en Highlands Coffee Hoan Kiem Lake
 
-![](2019-07-08-16-27-05.png)
+![imagen](2019-07-08-16-27-05.png)
 
 
 
@@ -168,7 +168,7 @@ Dormir en Hanoi Charming 2 Hotel (31 Hang Ga Street, Hoan Kiem, Hanoi)
 
 ## Día 05 (23/06/16) - Pagoda del perfume
 
-![](2019-07-08-16-23-24.png)
+![imagen](2019-07-08-16-23-24.png)
 
 Dormir en Hanoi Charming 2 Hotel (31 Hang Ga Street, Hoan Kiem, Hanoi)
 
@@ -258,7 +258,7 @@ Al dejarnos comemos de puestos callejeros (bocata con pinchos). Nos comemos unos
 
 ## Día 13 (01/07/16) - Hanoi
 
-![](2019-07-08-15-37-02.png)
+![imagen](2019-07-08-15-37-02.png)
 
 10:30 a 11:10 - Café en Giang Cafe (39 Nguyễn Hữu Huân, Lý Thái Tổ, Hoàn Kiếm, Hà Nội, Vietnam)
 
@@ -276,7 +276,7 @@ Tomamos café con huevo
 
 ### Vuelo Hanoi - Hue
 
-![](2019-07-08-16-36-32.png)
+![imagen](2019-07-08-16-36-32.png)
 
 Datos del vuelo:
 
@@ -287,7 +287,7 @@ Datos del vuelo:
 
 Ya en Hue tomamos un café en **The One Coffee & Bakery** porque hacía mucho calor fuera.
 
-![](2019-07-08-16-29-19.png)
+![imagen](2019-07-08-16-29-19.png)
 
 ### Comida
 
@@ -304,7 +304,7 @@ Comida en Golden Rice
 
 ## Día 16 (04/07/16) - De Hue (III) a Hoi an
 
-![](2019-07-08-16-40-39.png)
+![imagen](2019-07-08-16-40-39.png)
 
 - 7.00. Vamos a desayunar en la cafetería del hotel. Hoy dejamos el hotel pilgrimage
 - 8.00. Recogida coche y tumbas Nos pasa a recoger un coche privado de classy Travel para ir a ver algunas de las tumbas de Hué
@@ -378,7 +378,7 @@ Aprovechamos para comprar un juego de tazas
 
 ### Vuelo Da Nang - Ho Chi Minh
 
-![](2019-07-08-16-43-45.png)
+![imagen](2019-07-08-16-43-45.png)
 
 - Comemos en el Burger King del aeropuerto
 - 13.20 - 14.35	"Vuelo Danang – Ho Chi Minh. (1h20m)
@@ -469,7 +469,7 @@ A las 4:45 de la mañana nos recogen para ir a ver el amanecer en los templos de
 
 ## Vuelta a España
 
-![](2019-06-10-01-00-50.png)
+![imagen](2019-06-10-01-00-50.png)
 
 - 17.00 Hotel Ho Chi Minh a Aeropuerto
 - 20.30 Ho Chi Min - Abu Dhabi

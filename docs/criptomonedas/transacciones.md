@@ -1,7 +1,7 @@
 # Transacciones
 Cómo se intercambian criptomonedas
 
-![](img/2022-11-06-22-54-04.png)
+![imagen](img/2022-11-06-22-54-04.png)
 
 ## Transacciones
 
@@ -11,12 +11,12 @@ Cómo se intercambian criptomonedas
 - El dinero se mueve de una cuenta a otra mediante transacciones
 - Las transacciones son públicas, y cualquiera puede verlas
 
-![](img/2022-12-15-17-22-05.png)
+![imagen](img/2022-12-15-17-22-05.png)
 
 - Deben ser confirmadas para que tengan efecto.
 - Parte del dinero pagado se descuenta para luego repartirse como recompensa (como una comisión)
 
-![](img/2022-11-06-22-54-19.png)
+![imagen](img/2022-11-06-22-54-19.png)
 
 ## Validación de transacciones
 
@@ -35,4 +35,4 @@ Cómo se intercambian criptomonedas
 - Los pagos tardan un tiempo en hacerse efectivos
 - Se paga una comisión a cambio
 
-![](img/2022-11-06-22-54-30.png)
+![imagen](img/2022-11-06-22-54-30.png)

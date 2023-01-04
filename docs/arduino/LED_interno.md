@@ -8,7 +8,7 @@ Componente necesario:
 
 - [x] (1) x Arduino Uno R3
 
-![](img/2022-11-29-16-46-42.png)
+![imagen](img/2022-11-29-16-46-42.png)
 
 ## Placa Arduino UNO R3
 
@@ -24,28 +24,28 @@ El IDE de Arduino incluye una gran colección de dibujos de ejemplo, se puede ca
 
 Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo archivo >  ejemplos > 01 conceptos básicos
 
-![](media/image39.jpeg)
+![imagen](media/image39.jpeg)
 
 Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo completo en la ventana.
 
-![](media/image40.jpeg)
+![imagen](media/image40.jpeg)
 
 Los dibujos de ejemplo incluidos con el IDE de Arduino son de 'sólo lectura'. Es decir, puedes subir a una Junta de UNO R3, pero si cambia, no se puede guardar como el archivo  mismo.
 Puesto que vamos a cambiar este programa, lo primero que tienes que hacer es guardar su propia copia.
 
 En el menú archivo en el IDE de Arduino, seleccione `Guardar como.` y guarde el dibujo con  el nombre 'MyBlink'
 
-![](media/image41.jpeg)
+![imagen](media/image41.jpeg)
 
-![](media/image42.jpeg)
+![imagen](media/image42.jpeg)
 
 Ha guardado su copia de 'Blink' en su programabook. Esto significa que si alguna vez quiere encontrar otra vez, puede simplemente abrir usando el archivo > opción de menú de Sketchbook.
 
-![](media/image43.jpeg)
+![imagen](media/image43.jpeg)
 
 Conecte la placa de Arduino al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
 
-![](media/image44.png)
+![imagen](media/image44.png)
 
 Nota:
 
@@ -54,27 +54,27 @@ Nota:
 
 El IDE de Arduino mostrará la configuración actual en la parte inferior de la  ventana.
 
-![](media/image45.jpeg)
+![imagen](media/image45.jpeg)
 
 Haga clic en el botón **subir**. El segundo botón de la izquierda en la barra de herramientas.
 
-![](media/image46.jpeg)
+![imagen](media/image46.jpeg)
 
 Si usted mira el área de estado del IDE, verá una barra de progreso y una serie de mensajes. Al principio, que dice 'Bosquejo compilar...'. Esto convierte el dibujo en un formato adecuado para subir a la Junta.
 
-![](media/image47.jpeg)
+![imagen](media/image47.jpeg)
 
 A continuación, el estado cambiará a **subir**. En este punto, los LEDs de la Arduino deben comenzar a parpadear como se transfiere el dibujo.
 
-![](media/image48.jpeg)
+![imagen](media/image48.jpeg)
 
 Por último, el estado cambiará a 'Done'.
 
-![](media/image49.jpeg)
+![imagen](media/image49.jpeg)
 
 El otro mensaje nos dice que el **programa** está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:
 
-![](media/image50.jpeg)
+![imagen](media/image50.jpeg)
 
 Puede significar que su Junta no está conectado a todos, o no se ha instalado los drivers (si es necesario) o que se ha seleccionado el puerto serial incorrecto.
 
@@ -126,7 +126,7 @@ Dentro de la función **loop**, los comandos en primer lugar activar el pin del 
 
 Ahora vas a que el LED parpadee más rápido. Como puede haber adivinado, la clave de esto radica en cambiar el parámetro () para el comando 'retardo'.
 
-![](media/image51.jpeg)
+![imagen](media/image51.jpeg)
 
 Este período de retardo en milisegundos, así que si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.
 

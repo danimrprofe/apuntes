@@ -1,29 +1,29 @@
 # PeriféricosRed
 
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29115.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29115.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29116.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29116.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29117.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29117.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29118.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29118.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29119.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29119.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29120.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29120.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29121.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29121.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29122.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29122.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29123.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29123.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29124.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29124.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29125.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29125.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29126.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29126.jpg)
 
 ## Necesidad
   * _Conectar ordenadores _ entre sí
@@ -36,7 +36,7 @@
   * También redes Wi\-Fi\.
   * Placas base integran conector RJ\-45
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29127.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29127.jpg)
 
 ## Tarjetas de red
 
@@ -48,7 +48,7 @@
   * Comunica un ordenador con una red local
   * _Ranura_  <span style="color:#FFC000"> </span>  _PCI_  <span style="color:#FFC000"> </span> \(Placa base\) o integrada en  <span style="color:#FFC000">placa </span>  _base_
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29128.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29128.jpg)
 
 ## Puertos
 
@@ -59,9 +59,9 @@
 * _Leds_  muestran actividad de la tarjeta
 * Tarjetas de red  _híbridas_  \(dos sistemas\)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29129.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29129.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29130.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29130.jpg)
 
 ## Dirección MAC
 
@@ -74,7 +74,7 @@
   * Escritas en el hardware en su momento de fabricación\.
   * Se conoce también como dirección física
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29131.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29131.jpg)
 
 * MAC determinada y configurada por
   * _IEEE_  \(los últimos 24 bits\)
@@ -86,7 +86,7 @@
 * No necesaria para montar una red doméstica ni configurar conexión a Internet\.
 * Se puede “modificar”, pero al arrancar el equipo, la MAC volverá siempre a su estado original\.
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29132.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29132.jpg)
 
 ## Velocidades
 
@@ -104,7 +104,7 @@
   * Soportan dos o tres velocidades
   * Se adaptan a la velocidad del resto de la red
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29133.gif)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29133.gif)
 
 ## Tarjetas de red Wi\-Fi
 
@@ -120,7 +120,7 @@
   * Facilidad de instalación y portabilidad\.
 * Tarjetas expansión Wi\-Fi: también tienen dirección MAC\.
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29134.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29134.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29135.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29135.png)
 

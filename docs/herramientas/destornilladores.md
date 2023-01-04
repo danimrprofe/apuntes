@@ -58,4 +58,4 @@ gos con formas especiales.
 En el taller de reparaciones no debe faltar un utensilio denominado «magnetizador-
 desmagnetizador», que permite magnetizar y desmagnetizar la punta de los destornilladores según las necesidades.
 
-![](img/2022-12-14-15-23-25.png)
+![imagen](img/2022-12-14-15-23-25.png)

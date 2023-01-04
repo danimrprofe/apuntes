@@ -4,7 +4,7 @@
 
 Los LED RGB son una forma divertida y fácil para agregar color a sus proyectos. Puesto  que es como regular 3 LED en uno, el uso y conenxión no es muy diferente.
 
-![](img/ledrgbtransicion.gif)
+![imagen](img/ledrgbtransicion.gif)
 
 Existen 2 versiones:
 
@@ -30,7 +30,7 @@ En nuestro **programa**, se comienzan con el LED en el estado de color rojo, ent
 
 A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo, dentro del paquete del LED generalmente, hay realmente tres LEDs, uno rojo, uno verde y sí, uno azul. Controlando el **brillo** de cada uno de los LEDs individuales, podemos mezclar prácticamente cualquier color.
 
-![](2022-12-05-10-13-27.png)
+![imagen](2022-12-05-10-13-27.png)
 
 Mezclamos colores del mismo modo que sería mezclar pintura en una paleta - ajustando el brillo de cada uno de los tres LEDs.
 
@@ -38,7 +38,7 @@ Arduino tiene una función **analogWrite** que se puede utilizar con pines marca
 
 El LED RGB tiene **cuatro pines**. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
 
-![](2022-12-05-10-14-02.png)
+![imagen](2022-12-05-10-14-02.png)
 
 - Cada pin separado de color verde o azul o de rojo se llama ánodo.
 
@@ -46,11 +46,11 @@ El LED RGB tiene **cuatro pines**. Hay un cable a la conexión positiva de cada 
 
 Los colores los conseguiremos mezclando diferentes cantidades de cada color primario.
 
-![](2022-12-05-10-20-15.png)
+![imagen](2022-12-05-10-20-15.png)
 
 La mezcla creará la sensación del color elegido. Podemos controlar el brillo de cada una de las partes de rojas, verdes y azules del LED por separado, lo que es posible mezclar cualquier color que nos gusta.
 
-![](media/media/image61.jpeg)
+![imagen](media/media/image61.jpeg)
 
 Ejemplos:
 
@@ -65,7 +65,7 @@ El color **Negro** no es tanto un color como una ausencia de luz. Por lo tanto, 
 
 Modulación de ancho de pulso (PWM) es una técnica para el control de potencia. También utilizamos aquí para controlar el brillo de cada uno de los LEDs. El siguiente diagrama muestra que la señal de uno de lo PWM pines en la UNO.
 
-![](media/image62.jpeg)
+![imagen](media/image62.jpeg)
 
 Aproximadamente cada 1/500 de segundo, la salida PWM producirá un pulso. La  duración de este pulso es controlada por la función 'analogWrite'. Así:
 
@@ -83,17 +83,17 @@ Los LED se encenderán y apagarán en esos periodos, pero nosotros percibiremos 
 
 El esquema eléctrico que seguiremos es el siguente:
 
-![](media/image63.jpeg)
+![imagen](media/image63.jpeg)
 
 1. El cátodo o conexión común es el segundo pin, que también es el **más largo** de las cuatro patas y se conectarán a la **tierra** (GND).
 2. Cada LED requiere su propia **resistencia de 220 Ω** para prevenir demasiada corriente que fluye a través de él.
 3. Los 3 pines de color (uno rojo, uno verde y uno azul) están conectados a los pines de salida UNO con estas resistencias.
 
-![](2022-12-05-10-18-36.png)
+![imagen](2022-12-05-10-18-36.png)
 
 Una vez conectado, debería quedar de la siguiente forma:
 
-![](2022-12-05-10-24-29.png)
+![imagen](2022-12-05-10-24-29.png)
 
 ### Código programa 1
 
@@ -207,7 +207,7 @@ delay(delayTime);
 }
 ```
 
-![](media/image65.jpeg)
+![imagen](media/image65.jpeg)
 
 Primero especificamos a que pines de Arduino he conectado cada LED.
 

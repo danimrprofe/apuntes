@@ -8,11 +8,11 @@ Para animar nuestro personaje tendremos que dotarle, además del modelo, de un e
 
 Con **shift**+a vamos a abrir el menú y vamos a crear el primer hueso en modo objeto.
 
-![](media/image67.png)
+![imagen](media/image67.png)
 
 El hueso ahora no lo veremos porque está dentro de mi figura. Vamos a activar esta opción para que se vea siempre por delante del personaje, aunque no lo está realmente.
 
-![](media/image68.png)
+![imagen](media/image68.png)
 
 Desde la vista frontal con el hueso seleccionado y la **tecla s** lo vamos a escalar hasta que tenga el tamaño del cuerpo
 
@@ -20,13 +20,13 @@ Desde la vista frontal con el hueso seleccionado y la **tecla s** lo vamos a esc
 
 Ahora para editar el hueso hay que entrar en el **edit mode**. Lo que quiero es hacer lo que sería la columna vertebral así que vamos a seleccionar el hueso y **clic derecho** le vamos a dar a subdivide por defecto sólo se subdivide una vez.
 
-![](media/image69.png)
+![imagen](media/image69.png)
 
 Aquí abajo podemos cambiar el número de subdivisiones en total le vamos a dejar tres huesos para el cuerpo. O sea, le metemos dos subdivisiones desde la vista frontal pulsando 1 del teclado numérico
 
-![](media/image70.png)
+![imagen](media/image70.png)
 
-![](media/image70.png)
+![imagen](media/image70.png)
 
 ## Cadera
 

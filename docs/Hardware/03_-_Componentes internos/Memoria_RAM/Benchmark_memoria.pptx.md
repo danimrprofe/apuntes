@@ -10,5 +10,5 @@ Desde algún programa de benchmark o desde Windows, podemos obtener más informa
 
 La **memoria virtual** es un espacio de disco duro reservado que se utiliza a modo de memoria RAM.  **Pagefile.sys** es un archivo en el sistema de Windows que sirve como una ubicación para la memoria virtual y la memoria intercambiable. La memoria virtual se usa para permitir que los programas funcionen con más memoria de la que el sistema físico tiene disponible. Esto permite que los programas utilicen memoria temporalmente mientras están en ejecución. La memoria intercambiable se usa para almacenar contenido de la memoria RAM cuando ésta se encuentra llena. Esto ayuda a acelerar el rendimiento del sistema, almacenando contenido en el disco duro en lugar de tener que recrearlo cada vez que se necesita. El tamaño del archivo pagefile.sys se ajusta automáticamente según las necesidades de memoria del sistema, pero los usuarios pueden cambiar el tamaño para mejorar el rendimiento.
 
-![](img/Benchmark_memoria0.png)
+![imagen](img/Benchmark_memoria0.png)
 

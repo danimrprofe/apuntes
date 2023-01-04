@@ -4,7 +4,7 @@ Una página web consiste en al menos un **archivo HTML** que puede incluir refer
 
 Cada objeto se puede acceder a través de internet mediante una dirección única a nivel mundial llamada **URL**.
 
-![](img/teoria-http0.png)
+![imagen](img/teoria-http0.png)
 
 Los contenidos de las páginas web pueden ser de diferentes tipos: textos, elementos multimedia, como imágenes, vídeos, etc.
 
@@ -19,9 +19,9 @@ Su reproducción o visualización requiere de otros  **complementos**  que son a
   * Suelen ser en PHP, Perl, Python, etc.
   * Al ejecutarse estos programas generan un código HTML que es enviado al navegador. Este lo interpreta y lo muestra al usuario.
 
-![](img/teoria-http1.jpg)
+![imagen](img/teoria-http1.jpg)
 
-![](img/teoria-http2.png)
+![imagen](img/teoria-http2.png)
 
 ## Estructura de la WWW
 
@@ -29,15 +29,15 @@ La  _WWW_  es un entramado de documentos escrito en un formato de texto llamado 
 
 El  _hipertexto_  es un sistema de organización de la información basado en la posibilidad de moverse por dentro de un texto y hacia otros textos diferentes mediante palabras clave
 
-![](img/2022-12-03-16-34-13.png)
+![imagen](img/2022-12-03-16-34-13.png)
 
 El lenguaje basado en hipertexto más conocido es el lenguaje  _HTML_  (Hyper\-text markup language). La versión más actual de HTML es la 5
 
-![](img/2022-12-03-16-34-21.png)
+![imagen](img/2022-12-03-16-34-21.png)
 
 ## Comparativa de versiones
 
-![](img/2022-12-03-16-33-13.png)
+![imagen](img/2022-12-03-16-33-13.png)
 
 ## Estructura de la WWW
 
@@ -47,7 +47,7 @@ El lenguaje basado en hipertexto más conocido es el lenguaje  _HTML_  (Hyper\-t
   * _Anclajes_ : se utilizan para marcar el inicio y destino de cada enlace
 * Todos estos elementos permiten acceder a la información a través de la  _navegación_  entre diferentes páginas
 
-![](img/teoria-http5.png)
+![imagen](img/teoria-http5.png)
 
 ## Direcciones URL
 
@@ -59,4 +59,4 @@ No es obligatorio especificar todos los componentes de la URL. En caso de no hac
 
 Por ejemplo, si no especificamos protocolo se entenderá que es HTTP. Si no especificamos un puerto, será en puerto 80.
 
-![](img/teoria-http6.png)
+![imagen](img/teoria-http6.png)

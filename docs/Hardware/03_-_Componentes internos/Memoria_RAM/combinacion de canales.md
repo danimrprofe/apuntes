@@ -15,10 +15,10 @@ Esto tiene como consecuencia una mejora en el **ancho de banda**, lo que se trad
 
 El tipo de canal de memoria a utilizar depende del entorno en el que se encuentre. En entornos domésticos, se suele usar dual channel, mientras que para Core i7 y algunos Xeon se usan tri channel y quad channel para servidores.
 
-![](img/34_Memoria_RAM48.gif)
+![imagen](img/34_Memoria_RAM48.gif)
 
 
-![](img/34_Memoria_RAM49.jpg)
+![imagen](img/34_Memoria_RAM49.jpg)
 
 * __Para poder utilizar configuración dual/triple/__  __quad__  __ channel__
   * La placa base lo tiene que soportar
@@ -30,10 +30,10 @@ El tipo de canal de memoria a utilizar depende del entorno en el que se encuentr
   * No son obligatorios para utilizar esta tecnología
   * Nos garantizan que han sido probados
 
-![](img/34_Memoria_RAM50.png)
+![imagen](img/34_Memoria_RAM50.png)
 
 
-![](img/34_Memoria_RAM51.jpg)
+![imagen](img/34_Memoria_RAM51.jpg)
 
 ## Dual channel
 
@@ -46,15 +46,15 @@ El tipo de canal de memoria a utilizar depende del entorno en el que se encuentr
   * __2 módulos de memoria __ de misma capacidad, velocidad y tipo
   * Colocados en  __2 zócalos de igual color__
 
-![](img/34_Memoria_RAM52.jpg)
+![imagen](img/34_Memoria_RAM52.jpg)
 
-![](img/34_Memoria_RAM53.jpg)
+![imagen](img/34_Memoria_RAM53.jpg)
 
-![](img/34_Memoria_RAM54.jpg)
+![imagen](img/34_Memoria_RAM54.jpg)
 
-![](img/34_Memoria_RAM55.jpg)
+![imagen](img/34_Memoria_RAM55.jpg)
 
-![](img/34_Memoria_RAM56.jpg)
+![imagen](img/34_Memoria_RAM56.jpg)
 
 ## Triple channel
 
@@ -64,15 +64,15 @@ El tipo de canal de memoria a utilizar depende del entorno en el que se encuentr
   * 3 módulos de memoria de la misma capacidad, velocidad y tipo
   * Colocados en 3 ranuras de igual color
 
-![](img/34_Memoria_RAM57.jpg)
+![imagen](img/34_Memoria_RAM57.jpg)
 
 ## Quad channel
 
-![](img/34_Memoria_RAM58.jpg)
+![imagen](img/34_Memoria_RAM58.jpg)
 
-![](img/34_Memoria_RAM59.jpg)
+![imagen](img/34_Memoria_RAM59.jpg)
 
-![](img/34_Memoria_RAM60.png)
+![imagen](img/34_Memoria_RAM60.png)
 
 * Este modo da como resultado la operación dual y de un solo canal en toda la memoria DRAM
 * La operación es la siguiente:
@@ -80,11 +80,11 @@ El tipo de canal de memoria a utilizar depende del entorno en el que se encuentr
     * Funcionan conjuntamente en modo de doble canal\.
   * 2 GB \(DIMM2\) restante funciona en modo monocanal\.
 
-![](img/34_Memoria_RAM61.jpg)
+![imagen](img/34_Memoria_RAM61.jpg)
 
 ## Multicanal
 
 Ejemplo configuraciones
 
-![](img/34_Memoria_RAM62.png)
+![imagen](img/34_Memoria_RAM62.png)
 

@@ -4,11 +4,11 @@ Define el máximo detalle que se puede obtener de la imagen y determina su calid
 
 Estas dos imágenes tienen una resolución de 3x3 y 6x6 píxeles.
 
-![](img/2020-03-31-15-27-43.png)
+![imagen](img/2020-03-31-15-27-43.png)
 
 Estas dos, de 10x10 y 15x15.
 
-![](img/2020-03-31-15-27-47.png)
+![imagen](img/2020-03-31-15-27-47.png)
 
 Si tuviéramos más píxeles, como en una imagen de 1280 x 720, la calidad sería mucho mejor y tendría más definición. Por contra, ocuparía más espacio. Esta imagen tendría una resolución de 921.600‬ de píxeles. A llegar a 1.000.000, se cuentan por millones de píxeles o **megapíxels**.
 
@@ -19,4 +19,4 @@ Para indicar la resolución de una imagen se utiliza habitualmente solo los **p�
 
 Por ejemplo, los vídeos en fullHD tienen una resolución de 1080p. Esto significa que la imagen mide 1080 píxeles en vertical y el video es del tipo progresivo.
 
-![](img/2020-03-31-15-21-59.png)
+![imagen](img/2020-03-31-15-21-59.png)

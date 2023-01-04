@@ -10,11 +10,11 @@ Las prácticas que han realizado son:
 
 1. Parpadeo del LED incluído en el arduino
 
-![](2022-12-19-13-50-45.png)
+![imagen](2022-12-19-13-50-45.png)
 
 2. Parpadeo de un LED Rojo conectado a arduino.
 
-![](2022-12-19-13-51-14.png)
+![imagen](2022-12-19-13-51-14.png)
 
 3. Encender y apagar un LED Rojo a través de un botón
 4. Encender y apagar un LED Rojo con dos botones
@@ -27,10 +27,10 @@ Las prácticas que han realizado son:
 
 Se deberá realizar una simulación con Tinkercad circuits de todo el montaje, así como del código necesario.
 
-![](2022-12-19-13-28-36.png)
+![imagen](2022-12-19-13-28-36.png)
 
 Una vez que la simulación sea correcta, pasaremos a implementar el circuito físicamente y programarlo.
 
-![](2022-12-19-13-30-50.png)
+![imagen](2022-12-19-13-30-50.png)
 
 Es importante que cada grupo guarde una **foto o video** del circuito para poder valorarlo a posteriori.

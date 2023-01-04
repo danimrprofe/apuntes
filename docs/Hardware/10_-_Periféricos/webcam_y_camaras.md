@@ -1,10 +1,10 @@
 # Webcam
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29102.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29102.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29103.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29103.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29104.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29104.png)
 
 ## Cámaras IP
 
@@ -22,7 +22,7 @@ Incorpora su propio miniordenador, lo que le permite emitir vídeo por sí misma
 
 Podemos encontrarnos cámaras IP  _cableadas_  e  _inalámbricas_  \(Wi\-Fi\)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29105.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29105.png)
 
 __Una cámara IP \(o una cámara de red\) es un dispositivo que contiene:__
 

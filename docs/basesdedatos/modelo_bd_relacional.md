@@ -153,7 +153,7 @@ Impedir que ciertos atributos se repitan
 
 Las **relaciones** son la asociación entre diferentes entidades y se identifican por un nombre de verbo representado por un rombo. Normalmente, no tienen atributos, a no ser que exista una entidad asociada que, al generar una tabla, contenga los atributos de dicha relación. Esto se hace en el modelo relacional para representar los datos.
 
-![](2019-05-13-13-59-23.png)
+![imagen](2019-05-13-13-59-23.png)
 
 ### Conjunto de relaciones
 

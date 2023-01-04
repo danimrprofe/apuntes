@@ -48,8 +48,8 @@ Samba és una col·lecció de diferents aplicacions que quan s’utilitzen al ma
 - Autenticar-se
 - Resolució de noms
 - Serveis d’impressió.
-  
-Samba implementa el protocol SMB, que permet als clients Windows accedir transparentment a carpetes, impressores i arxius d’un sistema Linux, tal com si estiguessin parlant amb un servidor de Windows. 
+
+Samba implementa el protocol SMB, que permet als clients Windows accedir transparentment a carpetes, impressores i arxius d’un sistema Linux, tal com si estiguessin parlant amb un servidor de Windows.
 
 Existeix una implementació de Samba a Linux, així com a molts altres sistemes operatius. Per a utilitzar samba, és necessari instal·lar els paquets samba i samba-doc.
 
@@ -59,11 +59,11 @@ Les comandes per a treballar amb recursos compartits de SAMBA també es poden ut
 
 ## Dimonis de samba
 
-Essencialment, Samba el constitueix dos dimonis: 
+Essencialment, Samba el constitueix dos dimonis:
 
 - smdb
 - nmdb
-  
+
 Aquests dos processos han d’estar en execució per a que samba funcioni correctament.
 
 # Instal·lació del servidor
@@ -90,7 +90,7 @@ Comprobación:
 
     sudo netstat -plunt
 
-![](2019-05-10-13-56-56.png)
+![imagen](2019-05-10-13-56-56.png)
 
 ## Comprovació del tallafocs
 
@@ -98,7 +98,7 @@ Si ens trobem darrera un tallafocs, convé comprovar si és actiu i si permet o 
 
     sudo ufw app info Samba
 
-![](2019-05-10-13-57-11.png)
+![imagen](2019-05-10-13-57-11.png)
 
 ## Arxiu de configuració de Samba
 
@@ -108,7 +108,7 @@ Samba, igual que gairebé totes les aplicacions per a Linux, disposa d'un arxiu 
 
     /etc/samba/smb.conf
 
-Tot i que el fitxer de configuració de samba és força extens, per començar a utilitzar  samba, hem de fer molt pocs canvis. 
+Tot i que el fitxer de configuració de samba és força extens, per començar a utilitzar  samba, hem de fer molt pocs canvis.
 
 ### Crear una còpia de seguretat
 
@@ -170,14 +170,14 @@ Amb la comanda:
     sudo pdbedit -v -L
 
 
-![](2019-05-10-13-59-36.png)
+![imagen](2019-05-10-13-59-36.png)
 
 ## 3.3	Eliminar un usuari de samba
 
 Per eliminar un usuari de samba hem d'executar smbpasswd amb l'opció -x, exemple:
 
     sudo smbpasswd -x sambauser
-  
+
 Immediatament l'usuari haurà desaparegut de la base de dades de 'usuaris samba' tot i que seguirà sent un usuari de Linux
 
 ## 3.4	Creació de recursos compartits
@@ -212,7 +212,7 @@ Podem comprovar si hi tenim accés des d’un equip Windows, accedint a:
 
     \\servidor\sambauser\
 
-![](2019-05-10-14-00-09.png)
+![imagen](2019-05-10-14-00-09.png)
 
 ##	Crear un recurs compartit anònim
 
@@ -256,7 +256,7 @@ Una vegada creats, podem veure si s’han creat correctament o no:
 
     smbclient -L localhost
 
-![](2019-05-10-14-02-38.png)
+![imagen](2019-05-10-14-02-38.png)
 
 Podem crear qualcuns arxius de proves. Una vegada que haguem muntat correctament els nostres recursos compartits de samba, els arxius haurien d’estar accessibles
 
@@ -264,27 +264,27 @@ Podem crear qualcuns arxius de proves. Una vegada que haguem muntat correctament
 
 ## 3.8 Accés a la carpeta pública des de Windows
 
-![](2019-05-10-14-03-10.png)
+![imagen](2019-05-10-14-03-10.png)
 
 Comprovem que podem accedir sense contrasenya
 
-![](2019-05-10-14-03-23.png)
+![imagen](2019-05-10-14-03-23.png)
 
 ### Crear unitat de xarxa
 
 Pot ser convenient crear una unitat de xarxa connectada a aquesta carpeta del servidor, per a tenir-la disponible com a unitat d’emmagatzemament.
 
-![](2019-05-10-14-03-41.png)
+![imagen](2019-05-10-14-03-41.png)
 
 Al finalitzar, la carpeta ens apareixerà com una ubicació de xarxa:
 
-![](2019-05-10-14-03-53.png)
+![imagen](2019-05-10-14-03-53.png)
 
 ## 3.9	Crear arxius a la carpeta compartida
 
 Podem comprovar si es poden crear arxius dins la carpeta.
 
-![](2019-05-10-14-04-08.png)
+![imagen](2019-05-10-14-04-08.png)
 
 ## 3.10	Comprovar permisos
 
@@ -296,7 +296,7 @@ Podem veure que els permisos son `660` i, per tant:
 - Els membres del grup el poden veure i escriure
 - Però no la resta d’usuaris.
 
-![](2019-05-10-14-04-27.png)
+![imagen](2019-05-10-14-04-27.png)
 
 ## 3.11	Connectar a un recurs des de Linux
 
@@ -306,11 +306,11 @@ Es pot posar directament l'adreça IP en lloc del nom del PC. Si està protegit 
 
 Ens connectarà amb la carpeta remota i ens donarà una consola per executar comandes?
 
-![](2019-05-10-14-04-55.png)
+![imagen](2019-05-10-14-04-55.png)
 
 ## 3.12	Pujar un arxiu
 
-![](2019-05-10-14-05-06.png)
+![imagen](2019-05-10-14-05-06.png)
 
 ## 3.13	Utilitzant l’eina smbclient
 
@@ -331,7 +331,7 @@ smbclient //servidor/public -c 'ls'
 
 ```
 smb:\> get archivo
-getting file \archivo of size 0 as archivo (0,0 KiloBytes/sec) (average 0.0 KiloBytes/sec) 
+getting file \archivo of size 0 as archivo (0,0 KiloBytes/sec) (average 0.0 KiloBytes/sec)
 ```
 Podemos comprobar que se ha descargado el archivo. Cabe recordar que, cuando estamos conectados utilizando el cliente samba, los comandos para listar contenidos son:
 
@@ -353,13 +353,13 @@ Per escanejar la xarxa i trobar hosts SMB:
 
     sudo findsmb
 
-![](2019-05-10-14-05-46.png)
+![imagen](2019-05-10-14-05-46.png)
 
-Per tal de veure una representació textual dels veïnats de xarxa que tenen carpetes i impressores compartits: 
+Per tal de veure una representació textual dels veïnats de xarxa que tenen carpetes i impressores compartits:
 
     sudo smbtree
 
-![](2019-05-10-14-06-05.png)
+![imagen](2019-05-10-14-06-05.png)
 
 ## 3.16	Llistar serveis oferts per un servidor
 
@@ -373,7 +373,7 @@ Per a un usuari en concret:
 
     smbclient -L servidor -U sambauser
 
-![](2019-05-10-14-06-22.png)
+![imagen](2019-05-10-14-06-22.png)
 
 ## 3.17	Muntar recursos compartits amb samba
 
@@ -385,7 +385,7 @@ Necessitem instal·lar un ajudant per a muntar sistemes d’arxius CIFS:
 
 Si tenim problemes de bloqueig, podem utilitzar els següents (si no, no fer)
 
-![](2019-05-10-14-06-51.png)
+![imagen](2019-05-10-14-06-51.png)
 
 Crear un punt de muntatge a on muntarem el sistema d’arxius de la carpeta compartida per a poder operar des del client.
 
@@ -396,8 +396,8 @@ sudo mkdir /mnt/sambapublic/
 Podem muntar-los en el nostre sistema de fitxers local com si fos un altre sistema d’arxius local o un sistema d’arxius NFS remot. Per a muntar-lo:
 
     sudo mount -t cifs -v //192.168.1.101/public /mnt/sambapublic
-    
-![](2019-05-10-14-07-15.png)
+
+![imagen](2019-05-10-14-07-15.png)
 
 Si per qualsevol motiu necessitem autenticar-nos (no és el cas), podríem fer-ho així:
 
@@ -411,7 +411,7 @@ Una vegada connectats, podem operar sobre aquesta carpeta com si fos una carpeta
 
 Amb la comanda `mount` podríem veure els punts de muntatge del sistema:
 
-![](2019-05-10-14-07-44.png)
+![imagen](2019-05-10-14-07-44.png)
 
 A partir de aquí, una vez montada la carpeta, podemos acceder a ella en `/mnt/sambapublic`, como si de una carpeta local se tratara. Para desmontar el recurso:
 

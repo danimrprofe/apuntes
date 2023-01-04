@@ -1,4 +1,4 @@
-# 13. Módulo de receptor IR
+# Módulo de receptor IR
 
 ## Resumen
 
@@ -6,7 +6,7 @@ Los **mandos a distancia** infrarrojos son simples y fáciles de usar. En este t
 
 En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
 
-![](media/image103.jpeg)
+![imagen](media/image103.jpeg)
 
 ### Componentes necesarios
 ```
@@ -36,13 +36,13 @@ Las fotocélulas actúan como resistencias, los cambios de resistencia dependien
 
 ## ¿Qué podemos medir?
 
-![](media/image104.jpeg)
+![imagen](media/image104.jpeg)
 
 Como se puede ver en estos gráficos de hoja de datos, la detección de frecuencia de peak es a 38 KHz y el pico color del LED es de 940 nm. Se puede usar desde unos 35 KHz kHz 41 pero la sensibilidad se desprenderá para que no detecte asídesde lejos. Asimismo, puede utilizar LEDs de 850 a 1100 nm pero no funcionan tan bien como 900 a 1000nm asíque asegúrese de obtener coincidencia de LEDs! Compruebe la ficha técnica para su IR LED verificar la longitud de onda.
 
 ## Esquema de conexiones
 
-![](media/image105.jpeg)
+![imagen](media/image105.jpeg)
 
 ## Diagrama de cableado
 
@@ -54,11 +54,11 @@ Las conexiones son: señal, voltaje y tierra.
 - "S" es señal
 - El del medio corresponde a 5V.
 
-![](media/image106.jpeg)
+![imagen](media/image106.jpeg)
 
 ## Montaje
 
-![](media/image107.jpeg)
+![imagen](media/image107.jpeg)
 
 ### Código
 
@@ -107,7 +107,6 @@ void translateIR()
 
   delay(500); // Do not get immediate repeat
 
-
 } //END translateIR
 void setup()   /*----( SETUP: RUNS ONCE )----*/
 {
@@ -116,7 +115,6 @@ void setup()   /*----( SETUP: RUNS ONCE )----*/
   irrecv.enableIRIn(); // Start the receiver
 
 }/*--(end setup )---*/
-
 
 void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
 {
@@ -132,4 +130,4 @@ void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
 
 Haga clic en el botón **Serial Monitor** para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.
 
-![](media/image108.jpeg)
+![imagen](media/image108.jpeg)

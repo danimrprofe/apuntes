@@ -10,7 +10,7 @@ Esta tecnología se utiliza para **identificar** rápidamente a un individuo, pa
 
 La huella dactilar es una de las técnicas de biometría más antiguas y ampliamente usadas. Esta técnica se basa en el uso de un dispositivo que escanea la huella dactilar del usuario y la compara con una base de datos para verificar la identidad del usuario.
 
-![](img/2022-12-13-13-59-45.png)
+![imagen](img/2022-12-13-13-59-45.png)
 
 Se considera una de las técnicas más confiables de biometría debido a que la huella dactilar de una persona nunca cambia y es única para cada persona.
 

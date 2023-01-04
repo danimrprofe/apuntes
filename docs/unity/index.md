@@ -1,6 +1,6 @@
 # Juegos con Unity
 
-![](img/2022-10-13-00-34-17.png)
+![imagen](img/2022-10-13-00-34-17.png)
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor Unity, que nos permite crear proyectos 2D y 3D.
 
@@ -16,7 +16,7 @@ Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los 
 
 Le damos a lo que tenemos por aquí y vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d
 
-![](media/image1.png)
+![imagen](media/image1.png)
 
 El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create
 
@@ -24,7 +24,7 @@ El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tut
 
 Vamos a cambiar el **layout** así a mí así no me gusta trabajar tengo una distribución de ventanas que ya esté acostumbrado y que siempre pues es la que me pongo para cambiar esto lo que podéis hacer es iraquí arriba y seleccionar puede ser que vosotros se os adapte más a vuestra forma de trabajar y si bien ha visto ha bajado nunca pues yo que se lo recomiendo que voy a utilizar es la de **2 by 3**.
 
-![](media/image2.png)
+![imagen](media/image2.png)
 
 ## Crear pelota
 
@@ -131,29 +131,29 @@ Asignar rigidbody al personaje
 
 Crear movimiento lateral del personaje
 
-![](media/image3.png)
+![imagen](media/image3.png)
 
 Colocar collider al personaje y modificarlo
 
-![](media/image4.png)
+![imagen](media/image4.png)
 
 Crear salto del personaje
 
 Necesitaremos un script que compruebe que el personaje está tocando suelo:
 
-![](media/image5.png)
+![imagen](media/image5.png)
 
 En el script de movimiento del personaje, comprobaremos que pulsamos espacio y, además, que estamos tocando suelo:
 
-![](media/image6.png)
+![imagen](media/image6.png)
 
 Cambiar material del tilemap para reducir rozamiento y evitar flotar
 
-![](media/image7.png)
+![imagen](media/image7.png)
 
 Crearemos un material para el mapa, que tendrá 0 fricción, por lo que el personaje se moverá con más suavidad y evitaremos que se enganche a él.
 
-![](media/image8.png)
+![imagen](media/image8.png)
 
 Mejorar el salto (betterjump)
 
@@ -163,4 +163,4 @@ Recolección de fruta con animación
 
 Habrá que crear un script que detecte la colisión de la manzana con el player, se va a llamar FruitCollected, y posteriormente destruir el objeto manzana. Este script se lo asignaremos luego a todas las frutas.
 
-![](media/image9.png)
+![imagen](media/image9.png)

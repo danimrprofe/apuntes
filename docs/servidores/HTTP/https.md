@@ -2,19 +2,19 @@
 
 ## Protocolo HTTPS
 
-![](img/2022-12-03-16-42-46.png)
+![imagen](img/2022-12-03-16-42-46.png)
 
 El objetivo de este protocolo es realizar una  _transferencia_  de datos de forma  _segura_
 
 Las transacciones bancarias o de pago, o en general cualquier servicio que requiera el envío de datos personales y contraseñas
 
-![](img/teoria-http24.jpg)
+![imagen](img/teoria-http24.jpg)
 
-![](img/2022-12-03-16-43-01.png)
+![imagen](img/2022-12-03-16-43-01.png)
 
 El formato de la URL es igual al de  **HTTP** , excepto que el nombre del protocolo cambia por  **HTTPS**
 
-![](img/teoria-http25.png)
+![imagen](img/teoria-http25.png)
 
 ## Características
 
@@ -33,7 +33,7 @@ HTTPS opera  _cifrando_  el mensaje antes de ser enviado y decodificándolo ante
 
 Para cifrar los mensajes se utiliza un  _sistema de clave pública _ (pública\-privada)
 
-![](img/teoria-http26.gif)
+![imagen](img/teoria-http26.gif)
 
 ## Obtener un certificado
 

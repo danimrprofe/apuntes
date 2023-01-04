@@ -7,6 +7,6 @@
   * Varía su valor desde 0 a un valor máximo  y luego disminuye hasta llegar a 0\.
   * Posteriormente cambia de sentido y  decrece desde 0 hasta un valor mínimo y  aumenta hasta llegar a 0\.
 
-![](img/1_Magnitudes_electricas18.png)
+![imagen](img/1_Magnitudes_electricas18.png)
 
-![](img/1_Magnitudes_electricas19.png)
+![imagen](img/1_Magnitudes_electricas19.png)

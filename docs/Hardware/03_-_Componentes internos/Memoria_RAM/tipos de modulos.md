@@ -15,7 +15,7 @@
   * SO\-DIMM: Portátiles
   * FB\-DIMM: Servidores
 
-![](img/34_Memoria_RAM33.jpg)
+![imagen](img/34_Memoria_RAM33.jpg)
 
 Módulos físicos \(línea temporal\)
 
@@ -43,9 +43,9 @@ Se deben instalar 2 módulos a la vez
 
 Bus de 32 bits\.
 
-![](img/34_Memoria_RAM34.png)
+![imagen](img/34_Memoria_RAM34.png)
 
-![](img/34_Memoria_RAM35.gif)
+![imagen](img/34_Memoria_RAM35.gif)
 
 ## Módulos DIMM \(Dual In\-line _  _Memory_  _ Module\)
 
@@ -63,11 +63,11 @@ Bus de 32 bits\.
   * SO\-DIMM de 200 contactos : DDR2
   * SO\-DIMM de 204 contactos: DDR3
 
-![](img/34_Memoria_RAM36.jpg)
+![imagen](img/34_Memoria_RAM36.jpg)
 
-![](img/34_Memoria_RAM37.png)
+![imagen](img/34_Memoria_RAM37.png)
 
-![](img/34_Memoria_RAM38.png)
+![imagen](img/34_Memoria_RAM38.png)
 
 ## RIMM \(_  _Rambus_  _ In\-line _  _Memory_  _ Module\)_
 
@@ -76,4 +76,4 @@ Bus de 32 bits\.
   * Altas frecuencias de trabajo —> requieren disipadores de calor \(placa metálica que recubre los chips del módulo\)
   * Todos los zócalos de un banco deben estar ocupados y si no, habrá que instalar un módulo de continuidad para cerrar el canal
 
-![](img/34_Memoria_RAM39.png)
+![imagen](img/34_Memoria_RAM39.png)

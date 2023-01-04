@@ -22,16 +22,16 @@ Un caragol, cargol o vis és un cilindre metàl·lic que té una rosca mascle (c
 
 Els tirafons són autoenroscants, que vol dir que no és necessari fer una rosca femella (cap a l'interior) al material, sinó que ells mateixos, en fer-los girar, van creant la pròpia rosca a la fusta. Hi ha diferents tipus de caragols en funció del sistema
 
-![](media/image43.png)
+![imagen](media/image43.png)
 
 ## Martells
 
 
-![](media/image44.png)
+![imagen](media/image44.png)
 
-![](media/image45.png)
+![imagen](media/image45.png)
 
-![](media/image46.png)
+![imagen](media/image46.png)
 
 ## Unions mitjançant frontisses
 
@@ -39,7 +39,7 @@ Les unions mitjançant frontisses són desmuntables. Una frontissa consta de due
 
 Un full va lligada a una peça de fusta fixa, i l'altra, a una peça mòbil com, per exemple, la tapa d'una caixa, una porta o una finestra.
 
-![](media/image47.png)
+![imagen](media/image47.png)
 
 ## Unions amb encoblaments
 
@@ -47,10 +47,10 @@ La forma d'aconseguir una unió no desmuntable més corrent a la fusta és utili
 
 Per fer aquests rebaixaments, els fusters usen l’enformador, una eina que té un mànec i una fulla d’acer bisellada (amb un tall diagonal). A continuació pots veure alguns exemples dels acoblaments més utilitzats:
 
-![](media/image48.png)
+![imagen](media/image48.png)
 
-![](media/image49.png)
+![imagen](media/image49.png)
 
 ## Unions encolades
 
-![](media/image50.png)
+![imagen](media/image50.png)

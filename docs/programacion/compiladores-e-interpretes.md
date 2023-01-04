@@ -11,7 +11,7 @@ Como una parte fundamental de este proceso de traducción, el compilador le hace
 
 Los lenguajes C y C++ son lenguajes que utilizan un compilador. El trabajo del compilador y su función es llevar el código fuente escrito en C/C++ a un programa escrito en lenguaje máquina. Entrando en más detalle, un programa en código fuente es compilado obteniendo un archivo parcial (un objeto) que tiene extensión obj. Luego  el compilador invoca al “linker” que convierte al archivo objeto en un ejecutable con extensión exe; este último archivo es un archivo en formato binario (ceros y unos) y puede funcionar por sí sólo.
 
-![](2019-06-21-08-30-28.png)
+![imagen](2019-06-21-08-30-28.png)
 
 ## Intérprete
 

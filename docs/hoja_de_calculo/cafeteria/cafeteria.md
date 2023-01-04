@@ -1,6 +1,6 @@
 # Instrucciones cafetería
- 
-![](img/2022-11-30-09-40-14.png)
+
+![imagen](img/2022-11-30-09-40-14.png)
 
 ## Paso 1: Calcular columna de importe según unidades y precio por unidad
 
@@ -20,25 +20,25 @@ Prueba a cambiar la cantidad entregada por 20 o 50 euros y comprueba que se calc
 
 A partir de la hoja de cálculo como está, vienen dos amigos vuestros y pidan lo siguiente. Tenéis que cambiar las cantidades para añadir lo que consumen ellos, ¡no borrar lo que había!
 ●	Dos helados (2.10 por helado)
-●	Dos croissant (1,70) y otro café con leche. 
+●	Dos croissant (1,70) y otro café con leche.
 ●	La cuenta se paga con un billete de 20.
 
 Tenemos que arreglar la hoja para incluir estos cambios. Para eso tenemos que añadir los productos que no están, y cambiar el número de unidades cada uno.
 
-## Paso 5: Incluir el mensaje de gracias por su visita 
+## Paso 5: Incluir el mensaje de gracias por su visita
 
-Si solo usamos ++enter++, nos moveremos a la siguiente celda. Para escribir más de una línea en una celda, se utiliza ++ctrl+++enter++++ al mismo tiempo. 
+Si solo usamos ++enter++, nos moveremos a la siguiente celda. Para escribir más de una línea en una celda, se utiliza ++ctrl+++enter++++ al mismo tiempo.
 
-![](img/2022-11-30-09-47-47.png)
+![imagen](img/2022-11-30-09-47-47.png)
 
 También podemos combinar varias celdas para crear una sola. En este caso, seleccionamos varias celdas y:
 
-![](img/2022-11-30-09-49-21.png)
+![imagen](img/2022-11-30-09-49-21.png)
 
 
 ## Paso 6: Calcular el IVA. Mira el ejemplo y adáptalo a tu práctica
 
-El **IVA** es un impuesto que calcula como un porcentaje, que depende del producto que compremos o consumamos. 
+El **IVA** es un impuesto que calcula como un porcentaje, que depende del producto que compremos o consumamos.
 
 En restauración, es del **10%**. Es decir, por cada 100 Euros que gastemos, 10 Euros corresponden a impuestos que se utilizan para pagar los servicios públicos (hospitales, colegios, policía, etc).
 
@@ -51,19 +51,19 @@ Si me compro un croissant que vale 2 euros, puedo calular los impuestos de dos f
 
 Es decir, 20 céntimos de euro es la parte del precio que corresponde a impuestos.
 
-![](img/2022-11-30-09-40-27.png)
+![imagen](img/2022-11-30-09-40-27.png)
 
 ## Paso 7. Crea el siguiente gráfico
 
- ![](img/2022-11-30-09-40-32.png)
+ ![imagen](img/2022-11-30-09-40-32.png)
 
 Para crear un gráfico:
 
- ![](img/2022-11-30-09-50-15.png)
+ ![imagen](img/2022-11-30-09-50-15.png)
 
 ## Paso 8
 
-Incluye en la práctica, a la derecha del nombre de la cafetería, la fecha de la factura. La fórmula que puedes utilizar es 
+Incluye en la práctica, a la derecha del nombre de la cafetería, la fecha de la factura. La fórmula que puedes utilizar es
 ```
 =HOY()
 ```
@@ -72,12 +72,12 @@ Incluye en la práctica, a la derecha del nombre de la cafetería, la fecha de l
 
 Crea dos celdas que indiquen lo que se ha gastado en total en comida y en bebida, de modo que quede así:
 
- ![](img/2022-11-30-09-40-41.png)
+ ![imagen](img/2022-11-30-09-40-41.png)
 
 ## Paso 10
 
 Realiza los siguientes cambios en tu hoja de cálculo:
 
-1. Los helados a partir de hoy tendrán un descuento del 10%, y las ensaimadas del 5%. 
+1. Los helados a partir de hoy tendrán un descuento del 10%, y las ensaimadas del 5%.
 
 Agrega una columna en la que pondremos el porcentaje de descuento para que se pueda modificar, y necesitaréis otra columna en la que se haga el cálculo del precio final.

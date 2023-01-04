@@ -8,7 +8,7 @@
   * _Cadena query_  <span style="color:#FFC000"> </span> ( **?id=27&lang=en** )
   * _Fragmento_  ( **\#lectures** ) – usado en el cliente para navegar a alguna sección
 
-![](img/teoria-http7.png)
+![imagen](img/teoria-http7.png)
 
 **URL válidas y no válidas**
 
@@ -34,7 +34,7 @@
 
 URL según diferentes protocolos
 
-![](img/2022-12-03-16-35-50.png)
+![imagen](img/2022-12-03-16-35-50.png)
 
 ## El protocolo HTTP
 
@@ -44,7 +44,7 @@ HTTP fue desarrollado por la W3C y la IETF en 1999 a través de la especificaci�
 
 Las  _versiones_  de HTTP son HTTP/1.0, 1.1, 1.2 y 2
 
-![](img/teoria-http8.png)
+![imagen](img/teoria-http8.png)
 
 ## Clientes y servidores
 
@@ -52,7 +52,7 @@ Los **clientes web** son máquinas que acceden a la información en la web a tra
 
 El **servidor web**, por otro lado, proporciona contenido web a través del protocolo HTTP. Para ello, se debe instalar algún programa que actúe como servidor web en la máquina, como por ejemplo Apache.
 
-![](img/teoria-http9.png)
+![imagen](img/teoria-http9.png)
 
 ## ¿Qué es una página web?
 
@@ -81,13 +81,13 @@ Una **sesión** HTTP consiste en una secuencia de transacciones solicitud y resp
 
 Después de establecer la conexión, el navegador envía la **petición HTTP** solicitando la URL; el servidor responde con un **código de estado** y el **recurso** solicitado. Este proceso es completamente transparente al usuario, que únicamente ve la carga de la página, que en realidad fue realizada por el navegador.
 
-![](img/teoria-http10.png)
+![imagen](img/teoria-http10.png)
 
-![](img/teoria-http11.png)
+![imagen](img/teoria-http11.png)
 
 Cuando una página web es visitada, el navegador debe solicitar todos los **objetos externos** que la componen, como una hoja de estilos CSS para definir la apariencia de la página, un archivo de script JavaScript para hacerla dinámica, e incluso una imagen en formato png.
 
-![](img/teoria-http12.png)
+![imagen](img/teoria-http12.png)
 
 # Peticiones HTTP
 
@@ -99,7 +99,7 @@ Cuando una página web es visitada, el navegador debe solicitar todos los **obje
   * Una línea en blanco separa las cabeceras del cuerpo del mensaje
   * Un cuerpo de mensaje, si fuese necesario especificar algo más.
 
-![](img/2022-12-03-16-37-01.png)
+![imagen](img/2022-12-03-16-37-01.png)
 
 ## Formato de la petición
 
@@ -167,15 +167,15 @@ GET  /Ciclos/CFGS/DAW.html   HTTP/1.1
 
 Ejemplo de sesión
 
-![](img/teoria-http15.png)
+![imagen](img/teoria-http15.png)
 
 Cabeceras de petición
 
-![](img/2022-12-03-16-39-46.png)
+![imagen](img/2022-12-03-16-39-46.png)
 
 ### Formato de petición HTTP
 
-![](img/2022-12-03-16-40-38.png)
+![imagen](img/2022-12-03-16-40-38.png)
 
 ## Respuestas HTTP
 
@@ -184,9 +184,9 @@ La petición realizada fue satisfactoria ya que el servidor respondió con un c�
 
 Finalmente, el servidor entregó el contenido pedido, en este caso el archivo index.html.
 
-![](img/teoria-http16.png)
+![imagen](img/teoria-http16.png)
 
-![](img/2022-12-03-16-41-03.png)
+![imagen](img/2022-12-03-16-41-03.png)
 
 ## Códigos de estado
 
@@ -196,7 +196,7 @@ Los códigos de estado están formados por 3 dígitos y incluyen una descripció
 
 Los códigos de estado se dividen en 5  **clases**  diferentes, según el primer dígito:
 
-![](img/teoria-http17.png)
+![imagen](img/teoria-http17.png)
 
 
 Los códigos de estado HTTP son números de 3 dígitos que indican el resultado de una solicitud. Los primeros dígitos indican el estado general de la solicitud, mientras que los otros 2 dígitos proporcionan información adicional. Por ejemplo:
@@ -231,9 +231,9 @@ Location: http://softuni.bg
 
 Las puede incluir el servidor en sus mensajes de respuesta
 
-![](img/teoria-http18.png)
+![imagen](img/teoria-http18.png)
 
-![](img/teoria-http19.jpg)
+![imagen](img/teoria-http19.jpg)
 
 # Cookies
 
@@ -256,7 +256,7 @@ Cuando un cliente solicita una página web, el servidor le puede enviar  _inform
 
 Una cookie es una  _cadena de texto _ (máximo 4 KB) que el servidor puede asociar al navegador
 
-![](img/teoria-http20.jpg)
+![imagen](img/teoria-http20.jpg)
 
 Las cookies permiten que el sitio web  **recuerde**  las acciones y preferencias de un usuario
 
@@ -270,7 +270,7 @@ Antes de que el navegador envíe una petición para una página a un website, mi
 
 El servidor recibe la petición junto a la cookie y las interpreta.
 
-![](img/teoria-http21.jpg)
+![imagen](img/teoria-http21.jpg)
 
 El navegador guarda las cookies durante un tiempo determinado en el disco duro del cliente.
 
@@ -278,7 +278,7 @@ Un campo  _expires_  especifica cuando  _caduca_ .
 
 Para eliminar una cookie del disco duro del cliente, el servidor la vuelve a enviar de nuevo, con una fecha de expiración pasada.
 
-![](img/teoria-http22.png)
+![imagen](img/teoria-http22.png)
 
 
 

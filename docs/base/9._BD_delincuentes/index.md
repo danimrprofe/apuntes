@@ -11,6 +11,6 @@ En esta práctica deberéis diseñar vosotros solos una base de datos para el FB
 
 La base de datos se podría llamar **delincuentes**.
 
-![](img/2022-12-01-09-16-47.png)
+![imagen](img/2022-12-01-09-16-47.png)
 
 A continuación os explico qué contenido debe tener vuestra base de datos. Vosotros decidiréis que tablas y relaciones deberíais crear.

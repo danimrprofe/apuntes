@@ -43,7 +43,7 @@ Sobre red eléctrica convencional
 
 # Tecnologia fibra-coaxial
 
-![](2019-05-14-13-50-02.png)
+![imagen](2019-05-14-13-50-02.png)
 
 - Las redes HFC son redes formadas por una parte de fibra óptica y una parte de cable coaxial
 - El abonado se conecta por cable coaxial a un nodo de zona
@@ -52,13 +52,13 @@ Sobre red eléctrica convencional
 - El dispositivo en la casa del abonado se conoce como cablemódem
 - La velocidad real se aproxima mucho a las velocidades contratadas y baja latencia (ping)
 
-![](2019-05-08-08-16-21.png)
+![imagen](2019-05-08-08-16-21.png)
 
 # Tecnología FTTH
 
-Enlaza nuestra casa y la centralita de la operadora mediante un cable de fibra óptica.  
+Enlaza nuestra casa y la centralita de la operadora mediante un cable de fibra óptica.
 Anteriormente, se realizaba con cable de cobre
-Hoy en día uso extendido de fibra para  conexiones domésticas. 
+Hoy en día uso extendido de fibra para  conexiones domésticas.
 Alcanzan velocidades muy superiores al par de cobre (ADSL, etc.)
 
 La fibra óptica:
@@ -67,41 +67,41 @@ La fibra óptica:
 - Es más resistente a interferencias
 - Más segura
 
-![](2019-05-14-13-49-46.png)
+![imagen](2019-05-14-13-49-46.png)
 
 Sin embargo, la fibra es más cara y la instalación es más compleja y las herramientas para la instalación son más caras.
 
-![](2019-05-08-08-16-54.png)
-![](2019-05-08-08-17-02.png)
-![](2019-05-08-08-17-08.png)
+![imagen](2019-05-08-08-16-54.png)
+![imagen](2019-05-08-08-17-02.png)
+![imagen](2019-05-08-08-17-08.png)
 
 # Arquitectura GPON
 
 Tecnología PON
 Las redes FTTH se basan en una tecnología de redes ópticas pasivas conocida como PON (finales 90)
-Se crearon varios estándares derivados, en función del funcionamiento, velocidad, etc: 
+Se crearon varios estándares derivados, en función del funcionamiento, velocidad, etc:
 APON, BPON, GPON y EPON
 Tecnología GPON
-La más habitual es la GPON = Gigabit-capable passive optical network. 
+La más habitual es la GPON = Gigabit-capable passive optical network.
 Es una red óptica pasiva con capacidad gigabit (1Gbps)
 
 # Enlace de conexión GPON
 
 Enlace de conexión GPON
 
-Un dispositivo situado en la centralita 
+Un dispositivo situado en la centralita
 telefónica llamado OLT
 
-Un dispositivo colocado en nuestra casa 
+Un dispositivo colocado en nuestra casa
 llamado ONT o ONU
 
 Entre ellos se colocan unos divisores de fibra (splitters)
 
-![](2019-05-08-08-17-44.png)
+![imagen](2019-05-08-08-17-44.png)
 
-![](2019-05-08-08-18-02.png)
+![imagen](2019-05-08-08-18-02.png)
 
-![](2019-05-08-08-18-07.png)
+![imagen](2019-05-08-08-18-07.png)
 
 # Arquitectura conexión
 
@@ -111,9 +111,9 @@ Cada fibra que sale del OLT se va dividiendo a través de repartidores ópticos 
 
 Al llegar al usuario, donde se instala un conversor óptico/eléctrico llamado ONT (normalmente integrado en el router)
 
-![](2019-05-08-08-18-31.png)
+![imagen](2019-05-08-08-18-31.png)
 
-![](2019-05-08-08-18-36.png)
+![imagen](2019-05-08-08-18-36.png)
 
 # Instalación en edificios
 
@@ -137,52 +137,52 @@ ICT = Infraestructura común de telecomunicaciones
 - En la vivienda se coloca una roseta de fibra con 2 conectores
 - Solo la fibra de color verde será la activada y se conectará al ONT. La otra queda de reserva
 
-![](2019-05-08-08-19-03.png)
+![imagen](2019-05-08-08-19-03.png)
 
-![](2019-05-08-08-19-08.png)
+![imagen](2019-05-08-08-19-08.png)
 
-![](2019-05-08-08-19-14.png)
+![imagen](2019-05-08-08-19-14.png)
 
 # Ventajas de GPON
 
-Permite conexiones hasta 20 km 
+Permite conexiones hasta 20 km
 
-Entre OLT y ONT. Antiguas xDSL hasta 5,5 km y 
-velocidad caía rápidamente con la distancia. 
-Usuarios alejados sufrían peor conexión en 
+Entre OLT y ONT. Antiguas xDSL hasta 5,5 km y
+velocidad caía rápidamente con la distancia.
+Usuarios alejados sufrían peor conexión en
 comparación con la velocidad contratada
 
-No necesita equipos intermedios activos 
+No necesita equipos intermedios activos
 
-Entre el OLT y el ONT. Simplifica despliegue 
-de la fibra y permite tipologías de red más 
+Entre el OLT y el ONT. Simplifica despliegue
+de la fibra y permite tipologías de red más
 sencillas y baratas
 
 Reducción de costes
 
-Permite envío de muchos servicios por la misma 
+Permite envío de muchos servicios por la misma
 conexión de fibra
 
-Más seguro 
+Más seguro
 
-Puesta que la información viaja encriptada por 
+Puesta que la información viaja encriptada por
 la fibra (AES)
 
-Mantenimiento y operativa 
+Mantenimiento y operativa
 
 Más sencilla por parte de la operadora.
 Permite gestión remota del ONT (equipo usuario), descarga de actualizaciones, configuración de parámetros de funcionamiento, etc.
 
 # Ventajas frente a DSL
 
-![](2019-05-08-08-19-59.png)
+![imagen](2019-05-08-08-19-59.png)
 
 # Inconvenientes
 
 - Instalación
 - Hardware
 
-# Instaladores 
+# Instaladores
 
 - Deben tener cuidado con los empalmes. Se pueden producir pérdidas y atenuaciones
 - Necesita personal especializado para trabajar con fibra
@@ -190,7 +190,7 @@ Permite gestión remota del ONT (equipo usuario), descarga de actualizaciones, c
 
 # Hardware
 
-- No podemos colocar el hardware que queramos.  
+- No podemos colocar el hardware que queramos.
 - En xDSL se podía comprar cualquier router.
 - El ONT debe estar registrado en al OLT y no vale cualquier hardware
 - Es necesario obtener claves de configuración y seguir un proceso para sustituir el router de la operadora por uno propio

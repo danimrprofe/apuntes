@@ -14,7 +14,7 @@ Los servos son un tipo especial de motor de c.c. que se caracterizan por su capa
 
 El servo tiene un eje que puede girar y que es accionado por un motor. La posición del eje puede ser controlada con una señal analógica.
 
-![](img/2022-11-13-13-03-54.png)
+![imagen](img/2022-11-13-13-03-54.png)
 
 Para ello, el servomotor espera un tren de pulsos que se corresponde con el movimiento a realizar.
 
@@ -41,33 +41,33 @@ El Servo tiene tres cables:
 
 El servo viene con diferentes accesorios que se pueden utilizar para sujetarlo a otras piezas.
 
-![](media/image83.png)
+![imagen](media/image83.png)
 
 ## Esquema de conexión
 
-![](media/image84.jpeg)
+![imagen](media/image84.jpeg)
 
 ## Diagrama de cableado
 
-![](media/image85.jpeg)
+![imagen](media/image85.jpeg)
 
 ## Montaje
 
 Necesitaremos 3 **jumpers** para conectar el servo a la placa.
 
-![](media/image86.jpeg)
+![imagen](media/image86.jpeg)
 
 ## Código
 
 Antes de ejecutar esto, debemos incluir la **biblioteca servo**. Esta librería incorpora funciones que nos permitirán manejar de forma más sencilla el comportamiento del motor.
 
-![](img/2022-10-17-15-28-13.png)
+![imagen](img/2022-10-17-15-28-13.png)
 
 En caso de no tenerla, podríamos incluirla descargando el archivo .zip y seguir los siguientes pasos:
 
-![](img/2022-10-17-15-30-21.png)
+![imagen](img/2022-10-17-15-30-21.png)
 
-![](img/2022-10-17-15-29-45.png)
+![imagen](img/2022-10-17-15-29-45.png)
 
 Un código de ejemplo sería el siguiente. Este código mueve el eje del motor 180 grados en una dirección y luego en la contraria, indefinidamente
 

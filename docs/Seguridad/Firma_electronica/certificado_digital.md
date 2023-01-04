@@ -5,17 +5,17 @@ Para poder realizar firma electrónica necesitamos tener un **certificado digita
 
 El certificado autentica\, mediante una pareja de  __claves __ en un fichero software o en tarjeta la identidad del firmante\.
 
-![](img%5CCertificado%20digital2.png)
+![imagen](img%5CCertificado%20digital2.png)
 
-![](img%5CCertificado%20digital3.png)
+![imagen](img%5CCertificado%20digital3.png)
 
 
-![](img/2022-11-26-15-04-58.png)
+![imagen](img/2022-11-26-15-04-58.png)
 
 
 ## Ejemplo de certificado electrónico
 
-![](img%5CCertificado%20digital8.png)
+![imagen](img%5CCertificado%20digital8.png)
 
 ## Cómo conseguir un certificado
 
@@ -55,9 +55,9 @@ Paso 1\. Realizar una solicitud online\.
 - Utilizando el **navegador** que queramos\.
 - Al final de este proceso se obtiene un código que será necesario para poder acreditar tu identidad\.
 
-![](img%5CCertificado%20digital12.png)
+![imagen](img%5CCertificado%20digital12.png)
 
-![](img%5CCertificado%20digital13.png)
+![imagen](img%5CCertificado%20digital13.png)
 
 Paso 2\. Acreditar identidad
 
@@ -66,7 +66,7 @@ Paso 2\. Acreditar identidad
 
 _[http://mapaoficinascert\.appspot\.com/\#](http://mapaoficinascert.appspot.com/#)_
 
-![](img/2022-12-13-17-03-20.png)
+![imagen](img/2022-12-13-17-03-20.png)
 
 Paso 3\. Descargar certificado
 
@@ -75,14 +75,14 @@ Paso 3\. Descargar certificado
 - Con esto podremos descargar el certificado vía Internet\.
 - El certificado quedará instalado en ese navegador y PC utilizado
 
-![](img%5CCertificado%20digital15.png)
+![imagen](img%5CCertificado%20digital15.png)
 
 ## Utilización
 
 La mayoría de administraciones públicas tienen un portal telemático en el que realizar trámites y solicitudes, utilizando el certificado electrónico o la clave para identificarnos.
 
-![](img%5CCertificado%20digital9.png)
+![imagen](img%5CCertificado%20digital9.png)
 
 Una vez entremos, si tenemos nuestro certificado digital instalado, nos permitirá seleccionarlo (podríamos tener varios en el equipo).
 
-![](img%5CCertificado%20digital10.png)
+![imagen](img%5CCertificado%20digital10.png)

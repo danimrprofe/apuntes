@@ -8,7 +8,7 @@ Las listas se utilizan para dividir el documento así como para efectuar numerac
 
 HTML define varios tipos de listas: **ordenadas** y **no ordenadas**
 
-![](img/2022-12-20-12-34-33.png)
+![imagen](img/2022-12-20-12-34-33.png)
 
 ## Listas no ordenadas
 

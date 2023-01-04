@@ -8,7 +8,7 @@ También denominado «cinta métrica», está formado por una fina chapa metáli
 
 Se enrolla en el interior de una carcasa metálica o de plástico. Es la herramienta de medida más usada debido a su flexibilidad, pequeño tamaño y facilidad de uso. Se fabrican con diversas longitudes (3 m, 5 m, 8 m, etc.).
 
-![](img/2022-12-23-09-46-45.png)
+![imagen](img/2022-12-23-09-46-45.png)
 
 ## Calibre
 

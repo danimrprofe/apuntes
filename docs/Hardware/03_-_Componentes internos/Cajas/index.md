@@ -6,13 +6,13 @@ Existen diferentes formatos y medidas para albergar placas bases de distintos ta
 
 Las cajas de aluminio son las más recomendables para esta función debido a su diseño y peso.
 
-![](img/31_Caja0.jpg)
+![imagen](img/31_Caja0.jpg)
 
 Al momento de comprar una caja, hay que tomar en consideración varios factores como su tamaño, rigidez, ventilación, peso, bahías de expansión, fuente de alimentación y conexiones frontales como USB y audio.
 
 Estos aspectos son fundamentales para asegurar la compatibilidad y amplicación de los equipos informáticos.
 
-![](img/31_Caja2.jpg)
+![imagen](img/31_Caja2.jpg)
 
 Caja con chapa troquelada
 
@@ -20,17 +20,17 @@ Las cajas de  __chapa troquelada __ \(chapa gris\) son las más comunes en el me
 
 Hay que evitar las cajas de bajo coste con chapa muy fina en las que la gran parte de la rigidez la proporcionan los paneles laterales, frontales y elementos que se fijan en su interior \(placa base, lectores, etc\.\)
 
-![](img/31_Caja3.jpg)
+![imagen](img/31_Caja3.jpg)
 
 La **caja de aluminio** es una solución que cada vez se usa más, ya que reúne unas características óptimas para el chasis. Además, suele combinar aluminio en los frontales y partes más visibles con chapa troquelada en otras zonas. Esto hace que la caja resulte ser una solución muy interesante.
 
-![](img/31_Caja4.jpg)
+![imagen](img/31_Caja4.jpg)
 
-![](img/31_Caja5.jpg)
+![imagen](img/31_Caja5.jpg)
 
 Formatos más usuales
 
-![](img/31_Caja6.jpg)
+![imagen](img/31_Caja6.jpg)
 
 * __Semitorre ATX__ :
   * Dimensiones de 44x21x51 cm\.
@@ -39,9 +39,9 @@ Formatos más usuales
 * __Micro ATX__ :
   * Ocupan muy poco espacio, suelen llevar una sola bahía externa de 5 ¼
 
-![](img/31_Caja7.jpg)
+![imagen](img/31_Caja7.jpg)
 
-![](img/31_Caja8.jpg)
+![imagen](img/31_Caja8.jpg)
 
 Formatos más usuales
 
@@ -50,7 +50,7 @@ Formatos más usuales
   * Las placas soportadas son las mini\-ITX\.
   * Las fuentes de alimentación suelen ser de baja potencia \(150W\)\.
 
-![](img/31_Caja9.jpg)
+![imagen](img/31_Caja9.jpg)
 
 Distribución de componentes
 
@@ -71,15 +71,15 @@ Estas bahías se clasifican en dos tipos:
 
 La fijación más común para los slots de expansión es mediante tornillería, aunque en cajas de mayor calidad es posible encontrar sistemas de guías que permiten una instalación más rápida.
 
-![](img/31_Caja10.jpg)
+![imagen](img/31_Caja10.jpg)
 
 La caja de un ordenador está equipada con varias características que permiten al usuario operar el ordenador de manera segura y eficiente.
 
 Estas características incluyen botones de encendido y reset, bahías para dispositivos de almacenamiento, un panel de conectores extra y controles de temperatura del ventilador
 
-![](img/31_Caja11.png)
+![imagen](img/31_Caja11.png)
 
-![](img/31_Caja12.jpg)
+![imagen](img/31_Caja12.jpg)
 
 _Partes principales_
 
@@ -91,5 +91,5 @@ Conectores externos
 
 Ventilación
 
-![](img/31_Caja13.png)
+![imagen](img/31_Caja13.png)
 

@@ -4,21 +4,21 @@ Existen muchos tipos de equipos informáticos diferentes. Según el uso que le q
 
 ## Ordenadores de sobremesa o PC
 
-Los primeros ordenadores eran muy caros y grandes y las familias no podían permitirse tener uno en su casa. Con el paso del tiempo, los ordenadores personales, de sobremesa o PC se vuelven más asequibles. A esto se suma el hecho de que se pueden personalizar, y cambiar gran parte de sus componentes para mejorar su rendimiento o añadir nuevas funciones. ![](media/image5.jpg)
+Los primeros ordenadores eran muy caros y grandes y las familias no podían permitirse tener uno en su casa. Con el paso del tiempo, los ordenadores personales, de sobremesa o PC se vuelven más asequibles. A esto se suma el hecho de que se pueden personalizar, y cambiar gran parte de sus componentes para mejorar su rendimiento o añadir nuevas funciones. ![imagen](media/image5.jpg)
 
 Estos ordenadores de sobremesa pueden ser montados por piezas, comprándolas y ensamblándolas entre ellas, o bien comprar el ordenador montado de fábrica.
 
-![](media/image6.png)
+![imagen](media/image6.png)
 
 ## Portátiles1
 
 Con el paso del tiempo, los componentes se vuelven cada vez más pequeños y el tamaño se reduce, dando lugar a ordenadores portátiles. Nos permiten llevarlos con nosotros y utilizarlos dónde queramos, en función de la batería.
 
-![](media/image7.jpg)
+![imagen](media/image7.jpg)
 
 ## Netbooks
 
-Características![](media/image8.jpg)
+Características![imagen](media/image8.jpg)
 
 Suelen ser de tamaño muy reducido y fácil de guardar y transportar.
 
@@ -32,17 +32,17 @@ Los más habituales hoy en día son los Chromebooks
 
 ## Tablets
 
-Las tablets suponen una evolución de los ordenadores portátiles. En este caso tenemos pantallas táctiles, por lo que no necesitamos ningún teclado, aunque se le puede añadir.![](media/image9.png)
+Las tablets suponen una evolución de los ordenadores portátiles. En este caso tenemos pantallas táctiles, por lo que no necesitamos ningún teclado, aunque se le puede añadir.![imagen](media/image9.png)
 
 Tienen una pantalla superior a la de los teléfonos móviles, por lo que permiten trabajar más cómodamente, así como ser utilizados para ver video y jugar, principalmente. Son ligeros y con suficiente autonomía
 
 Algunas de las tablets más utilizadas son los IPad, fabricados por Apple. Utilizan el sistema operativos iOS actualmente, el mismo utilizado en los iPhone.
 
-![](media/image10.jpg)
+![imagen](media/image10.jpg)
 
 Microsoft también tiene su propia gama de tablets, Surface. Actualmente la tendencia es la de sustituir algunos portátiles por tablets y añadirles un teclado, en muchas ocasiones integrado en una funda.
 
-![](media/image11.jpg)
+![imagen](media/image11.jpg)
 
 ## E-readers y Kindle
 
@@ -50,7 +50,7 @@ Amazon, que originalmente era una tienda online de libros, crea el Kindle, uno d
 
 Uno de los más populares es el Kindle de Amazon.
 
-![](media/image12.jpg)
+![imagen](media/image12.jpg)
 
 ## SMARTPHONES
 
@@ -58,21 +58,21 @@ Se trata de teléfonos que tienen un sistema operativo móvil como Android, iOS,
 
 También tienen procesadores potentes, abundante memoria RAM. Disponen también de componentes adicionales integrados como cámaras, Leds, Wi-fi, pantalla táctil, GPS, etc.
 
-![](media/image13.jpg)
+![imagen](media/image13.jpg)
 
 Como podéis ver, la evolución hizo que los móviles cada vez fueran más pequeños y ligeros, pero con la mejora de las pantallas se hicieron cada vez más grandes.La mayoría de smartphones son de dos tipos: Android o iPhones.
 
 Los primeros suelen ser más baratos y cada marca fabrica el suyo, incluyendo como sistema operativo una versión de Android.
 
-![](media/image14.jpg)
+![imagen](media/image14.jpg)
 
 Los smartphones de la marca Apple son los iPhones, y en general tienen mejores características y gama alta.
 
-![](media/image15.jpg)
+![imagen](media/image15.jpg)
 
 ## SMART TVS
 
-Con el paso del tiempo, las televisiones se convierten también en pequeños ordenadores, con su sistema operativo, y nos permiten muchas más aplicaciones que simplemente ver la tele.![](media/image16.jpg)
+Con el paso del tiempo, las televisiones se convierten también en pequeños ordenadores, con su sistema operativo, y nos permiten muchas más aplicaciones que simplemente ver la tele.![imagen](media/image16.jpg)
 
 Otra característica importante es que nos permiten también instalar aplicaciones, de un modo similar al smartphone, y gracias a ellas podemos, entre otras cosas, ver contenido de plataformas de Streaming como Netflix, HBO, etc.
 
@@ -80,13 +80,13 @@ Otra característica importante es que nos permiten también instalar aplicacion
 
 Los dispositivos del tipo Chromecast nos permiten dotar a las televisiones las funcionalidades de una smartwatch. Se conectan por HDMI, y se sintonizan como una consola a través de uno de los puertos HDMI. Desde un móvil Android podemos controlar el contenido que le enviamos, utilizándolo como si de un mando a distancia se tratara.
 
-![](media/image17.jpg)
+![imagen](media/image17.jpg)
 
 ## Pulsómetros y relojes deportivos
 
 Los relojes deportivos incorporan seguimiento GPS y utilizan poca batería, para cronometrar actividades deportivas y, posteriormente, poderlas traspasar a alguna app o web y llevar un seguimiento de nuestra actividad física.
 
-![](media/image18.png)
+![imagen](media/image18.png)
 
 ## Smartwatch
 
@@ -94,13 +94,13 @@ Un reloj inteligente, en términos generales, es un dispositivo multipropósito,
 
 Un reloj inteligente es que aprovecha una tecnología inalámbrica para comunicarse con un smartphone. Los relojes inteligentes están diseñados para conectarse en red e integrarse con otros dispositivos personales a través de la tecnología Wi-Fi y Bluetooth.
 
-![](media/image19.png)
+![imagen](media/image19.png)
 
 Algunos están diseñados solo para Android, mientras que otros funcionan con Android y iPhone. Todos ofrecen una amplia variedad de funciones, donde algunos solo le alertarán cuando llegue un nuevo mensaje de texto o correo electrónico, y otros le permitirán leerlos.
 
 Los smartwatch fabricados por Apple se conocen como iWatch, y existen varias generaciones.
 
-![](media/image20.png)
+![imagen](media/image20.png)
 
 Algunos relojes inteligentes ofrecen funciones de redes sociales y algunos ofrecen funciones de calendario. Pero esto depende del fabricante y del modelo.
 
@@ -115,23 +115,23 @@ Videos:
 
 Los VR headset son dispositivos electrónicos en forma de casco o gafas que cuentan con un visor a través del cual es posible visualizar entornos virtuales en tres dimensiones. Este visor, normalmente integra una pantalla en el que se reproducen imágenes generadas por ordenador y con las que se consigue crear una sensación de total inmersión.
 
-![](media/image21.png)
+![imagen](media/image21.png)
 
 Algunos de los modelos actuales son las Oculus Quest 2, la Valve Index o las Oculus Rift.
 
-![](media/image22.png)
+![imagen](media/image22.png)
 
 ## Action cams (GoPro, keymission) y drones
 
 Las Action Cam permiten su uso en condiciones difíciles e incluso extremas. Estas cámaras, que sirven tanto para grabar como para hacer fotos, son muy ligeras. La mayoría de ellas son impermeables, resistentes a bajas temperaturas y golpes, entre otras cosas.
 
-Pueden fijarse con distintos kits para permitir poder hacer fotos y grabaciones sin necesidad de emplear las manos. Su versatilidad ha sido lo que las ha convertido en unas cámaras muy populares.![](media/image23.jpg)
+Pueden fijarse con distintos kits para permitir poder hacer fotos y grabaciones sin necesidad de emplear las manos. Su versatilidad ha sido lo que las ha convertido en unas cámaras muy populares.![imagen](media/image23.jpg)
 
 ## Consolas
 
 Las videoconsolas nos permiten jugar a videojuegos solos o online, así como compartir información con otros jugadores, ver multimedia, etc.
 
-![](media/image24.png)
+![imagen](media/image24.png)
 
 ### Consolas actuales
 
@@ -143,13 +143,13 @@ Playstation 5 (Sony) y la Xbox series X (Microsoft) en sobremesa
 
 Nintendo switch en portátiles
 
-![](media/image25.png)
+![imagen](media/image25.png)
 
 ### Servicios de suscripción
 
 También se ofrecen servicios de suscripción como Playstation Plus o Game Pass, que dan acceso a jugar a ciertos juegos gratuitamente que cada mes se amplían.
 
-![](media/image26.jpg)
+![imagen](media/image26.jpg)
 
 ## Plataforma PC
 
@@ -157,4 +157,4 @@ Los usuarios de ordenador también pueden jugar a juegos, siempre que sus caract
 
 También existen plataformas como Steam o Epic que nos permiten comprar y tener organizada dentro de ellas nuestra colección de juegos, así como las partidas, asociadas a una cuenta.
 
-![](media/image27.png)
+![imagen](media/image27.png)

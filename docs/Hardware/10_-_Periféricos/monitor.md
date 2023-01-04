@@ -1,10 +1,10 @@
 # Monitor
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2938.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2938.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2939.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2939.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2940.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2940.png)
 
 __Tamaño__  \(pulgadas\): Distancia entre esquinas opuestas
 
@@ -24,14 +24,14 @@ __Área útil__ : tamaño que utiliza el monitor para representar datos
 
 __Consumo__ : cantidad de energía que consume el monitor
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2941.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2941.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2942.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2942.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2943.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2943.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2944.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2944.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2945.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2945.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2946.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2946.png)

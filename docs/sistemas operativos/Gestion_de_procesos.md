@@ -118,7 +118,7 @@ Partes:
   - Puntero a los recursos asignados
 - Zona de almacenamiento de registros en CPU
 
-![](2019-05-13-13-20-59.png)
+![imagen](2019-05-13-13-20-59.png)
 
 ### En programas multihilo o multihebra:
 
@@ -141,7 +141,7 @@ El cambio de contexto puede ser
   - En caso de que el cambio de contexto sea entre hilos de diferentes procesos
   - El cambio afectará a memoria, hardware, ficheros comunes, etc.
 
-![](2019-05-13-13-20-02.png)
+![imagen](2019-05-13-13-20-02.png)
 
 ## Planificación de procesos
 

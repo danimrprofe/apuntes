@@ -22,7 +22,7 @@ En última estancia, los ISP reparten las direcciones IP a los usuarios finales.
 
 Como curiosidad, en la propia página del RIPE podemos introducir una IP pública y conocer, entre otros datos, a que ISP pertenece. También podemos ver un mapa de geolocalización de las IP de la red al que pertenece la nuestra.
 
-![](img/2023-01-03-08-48-18.png)
+![imagen](img/2023-01-03-08-48-18.png)
 
 Por lo visto parecen bloques destinados a la zona del levante Español. Pertenece a un bloque asignado al operador de /14, que daría espacio para más de 260.000 direcciones.
 

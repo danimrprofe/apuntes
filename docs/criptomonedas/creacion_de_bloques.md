@@ -6,7 +6,7 @@ Una vez que el bloque es creado, se confirma y se añade a la cadena de bloques,
 
 Si miramos el bloque superior, vemos que está conformado por **737** transacciones. En este caso, **F2Pool** es quien ha minado este bloque con éxito.
 
-![](img/2022-12-15-17-22-55.png)
+![imagen](img/2022-12-15-17-22-55.png)
 
 ## Pools
 
@@ -27,7 +27,7 @@ A día de hoy (octubre de 2021) existen alrededor de 700.000 bloques creados
 - El bloque original es el bloque 0.
 - En este bloque, la primera transacción es una cantidad de bitcoins creados nuevos a su cuenta.
 
-![](img/2022-11-06-22-55-15.png)
+![imagen](img/2022-11-06-22-55-15.png)
 
 ## Cadena de bloques (blockchain)
 

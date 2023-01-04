@@ -6,21 +6,21 @@
 - Esta cuenta a nuestro nombre, vinculada a nuestro DNI.
 - El banco guarda la información sobre la cuenta, así como las operaciones que se han realizado
 
-![](img/2022-11-06-22-53-12.png)
+![imagen](img/2022-11-06-22-53-12.png)
 
 ## Cuenta en bitcoin
 
 Cada persona crea al menos una dirección. Una dirección de Bitcoin es un identificador de **33 caracteres** que representa una cuenta de Bitcoin. Las direcciones se generan usando una clave privada, que es un número aleatorio de 32 bytes.
 
-![](img/2022-11-06-22-53-18.png)
+![imagen](img/2022-11-06-22-53-18.png)
 
 Aquí podéis ver las 3 direcciones de bitcoin con mayor cantidad de monedas en la actualidad. La primera de ellas contiene cerca de 250.000 bitcoin, lo que supone alrededor del 1,3% de monedas existentes a dia de hoy. (https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html)
 
-![](img/2022-12-15-17-41-02.png)
+![imagen](img/2022-12-15-17-41-02.png)
 
 Cada dirección de bitcoin tiene un asocidadas un par de claves: una pública y otra privada, que nunca revelaremos a nadie.
 
-![](img/2022-12-15-17-46-59.png)
+![imagen](img/2022-12-15-17-46-59.png)
 
 
 
@@ -35,10 +35,10 @@ Puedes comprar bitcoin a través de **exchanges** online o a través de platafor
 - El tipo de cambio varía con el tiempo.
 - Las personas que minan un bloque con éxito (mineros), se “autotransfieren” una cantidad fija de la nada
 
-![](img/2022-11-06-22-54-51.png)
+![imagen](img/2022-11-06-22-54-51.png)
 
 ¿Existen unidades más pequeñas que un bitcoin?
 
-![](img/2022-11-06-22-54-57.png)
+![imagen](img/2022-11-06-22-54-57.png)
 
-![](img/2022-11-06-22-55-02.png)
+![imagen](img/2022-11-06-22-55-02.png)

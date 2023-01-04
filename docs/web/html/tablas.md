@@ -58,7 +58,7 @@ Podemos cambiar el espacio dentro de las celdas o entre celdas con estas dos pro
 <table cellspacing="2" cellpadding="3">
 ```
 
-![](img/2022-12-21-09-45-37.png)
+![imagen](img/2022-12-21-09-45-37.png)
 
 - **width**: Establece el tamaño de la tabla.
 - **align**: Establece la alineación de la tabla.

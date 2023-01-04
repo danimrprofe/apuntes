@@ -8,7 +8,7 @@ Vamos a aprender como medir la intensidad de la luz utilizando una entrada anal�
 
 Los componentes que utilizaremos son los siguientes:
 
-![](media/image124.jpeg)
+![imagen](media/image124.jpeg)
 
 - [x] Elegoo Uno R3
 - [x] Protoboard
@@ -26,7 +26,7 @@ Esta tiene una resistencia de cerca de 50 kΩ en cerca de oscuridad y Ω 500 en 
 
 La forma más sencilla de hacerlo es combinar con una resistencia fija.
 
-![](media/image125.jpeg)
+![imagen](media/image125.jpeg)
 
 La resistencia y fotocélula junto se comportan como una sola. Cuando la luz es muy brillante, entonces la resistencia de la fotocélula es muy baja en comparación con la resistencia de valor fijo, y asíes como si el bote se dio vuelta a máximo.
 
@@ -34,11 +34,11 @@ Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la r
 
 ## Conexión
 
-![](img/2022-10-20-22-13-48.png)
+![imagen](img/2022-10-20-22-13-48.png)
 
 ## Diagrama de cableado
 
-![](img/2022-10-20-22-14-10.png)
+![imagen](img/2022-10-20-22-14-10.png)
 
 ## Código para leer valor de un LDR
 

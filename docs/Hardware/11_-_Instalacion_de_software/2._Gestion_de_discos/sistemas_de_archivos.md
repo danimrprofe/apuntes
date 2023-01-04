@@ -25,9 +25,9 @@
 * Tipos de FAT
   * Existen  __3__  modalidades de FAT
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria10.png)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria10.png)
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria11.png)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria11.png)
 
 * Sistema de archivos  <span style="color:#FF0000">NTFS</span>
   * Diseñado para versiones modernas de Windows \(NT \- Windows 8\.1\)
@@ -41,7 +41,7 @@
   * Necesita  __mucho espacio en disco __ para gestión de los archivos\.
   * No recomendable para discos o particiones < 10 GB\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria12.png)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria12.png)
 
 __Mac OS X __ sólo puede leer las unidades NTFS, no escribirlas\.
 
@@ -62,4 +62,4 @@ __Xbox 360__  no puede leer las unidades NTFS, Xbox One puede
     * Particiones <  __1 EB __ \(exabyte\)
   * Linux utiliza un espacio en el disco denominado  __swap__ , mediante el cual puede guardar información que no se mantiene en memoria\.
 
-![](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria13.jpg)
+![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria13.jpg)

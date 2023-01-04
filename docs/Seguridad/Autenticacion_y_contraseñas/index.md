@@ -2,15 +2,15 @@
 
 Se trata de un sitio web que permite a los usuarios de Internet comprobar si sus datos personales se han visto comprometidos por violaciones de datos. El servicio recopila y analiza cientos de volcados y pastas de bases de datos que contienen información sobre miles de millones de cuentas filtradas y permite a los usuarios buscar su propia información ingresando su nombre de usuario o correo electrónico.
 
-![](img/2022-12-11-22-22-11.png)
+![imagen](img/2022-12-11-22-22-11.png)
 
 Si tenemos suerte, veremos un mensaje positivo que nos informará que no ha habido filtraciones.
 
-![](img/2022-12-11-22-22-19.png)
+![imagen](img/2022-12-11-22-22-19.png)
 
 En caso contrario, nos mostrará en qué sitios web, entre los que nos hemos registrado con esa dirección de correo, ha habido filtraciones de datos
 
-![](img/2022-12-11-22-22-30.png)
+![imagen](img/2022-12-11-22-22-30.png)
 
 ## Autenticación de dos factores
 
@@ -24,13 +24,13 @@ La forma más común de autenticación de dos factores al iniciar sesión en una
 2. Recibir un código temporal por mensaje de texto en su teléfono
 3. Ingresar este código en la página.
 
-![](img/2022-12-11-22-22-51.png)
+![imagen](img/2022-12-11-22-22-51.png)
 
 ## ¿Por qué nos proporciona más seguridad?
 
 La segunda capa en la autenticación de dos factores significa que un pirata informático necesitaría robar tu contraseña junto con tu teléfono para acceder a su cuenta.
 
-Después de ingresar su contraseña, el primer factor de autenticación, el segundo factor generalmente llega por SMS. Es decir, recibirá un texto con un código numérico que luego deberá ingresar para iniciar sesión en su cuenta. 
+Después de ingresar su contraseña, el primer factor de autenticación, el segundo factor generalmente llega por SMS. Es decir, recibirá un texto con un código numérico que luego deberá ingresar para iniciar sesión en su cuenta.
 
 ## ¿Qué diferencia esto de un código PIN normal?
 

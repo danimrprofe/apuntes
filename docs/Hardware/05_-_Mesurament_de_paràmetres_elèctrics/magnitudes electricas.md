@@ -6,7 +6,7 @@ Cuando se conectan ambos cuerpos se trata de compensar la diferencia de potencia
 
 Al representar la corriente eléctrica por convenio se asigna el signo contrario al desplazamiento de los electrones\.
 
-![](img/1_Magnitudes_electricas0.png)
+![imagen](img/1_Magnitudes_electricas0.png)
 
 ## ¿Cómo medimos la electricidad?
 

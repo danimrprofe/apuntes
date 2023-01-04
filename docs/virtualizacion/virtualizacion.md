@@ -2,7 +2,7 @@
 
 ## Concepto de virtualización
 
-![](2019-05-16-08-40-46.png)
+![imagen](2019-05-16-08-40-46.png)
 
 ### De qué se trata
 
@@ -23,11 +23,11 @@ Creación a través de **software** de una versión virtual de un **recurso** te
 - Copias de seguridad sencillas
 - Seguridad
 
-![](2019-05-16-08-42-01.png)
+![imagen](2019-05-16-08-42-01.png)
 
 ## Componentes de la virtualizción
 
-![](2019-05-16-08-42-51.png)
+![imagen](2019-05-16-08-42-51.png)
 
 ### Anfitrión (HOST)
 
@@ -113,7 +113,7 @@ Los ejemplos más habituales de hipervisores de este tipo son:
 - Virtual PC (Microsoft)
 - VirtualBox (Oracle)
 
-![](2019-05-16-08-44-14.png)
+![imagen](2019-05-16-08-44-14.png)
 
 ### Tipo 2: Hipervisor nativo o bare metal
 
@@ -125,4 +125,4 @@ Los ejemplos más habituales de hipervisores de este tipo son:
   - Citrix XenServer
   - Oracle VM
 
-![](2019-05-16-08-44-34.png)
+![imagen](2019-05-16-08-44-34.png)

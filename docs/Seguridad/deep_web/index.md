@@ -8,7 +8,7 @@
 
 ## Las 3 capas de la web
 
-![](img/2022-11-06-23-09-10.png)
+![imagen](img/2022-11-06-23-09-10.png)
 
 - WEB SUPERFICIAL
 - DEEP WEB

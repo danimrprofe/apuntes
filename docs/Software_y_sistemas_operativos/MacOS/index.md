@@ -6,7 +6,7 @@ Es un sistema operativo propiedad de la empresa Apple.
 - Suelen estar más optimizados para el hardware que están creados
 - Son menos vulnerables a virus informáticos.
 
-![](2019-10-24-14-11-06.png)
+![imagen](2019-10-24-14-11-06.png)
 
 Versiones de Mac: https://ca.wikipedia.org/wiki/MacOS
 
@@ -14,11 +14,11 @@ Versiones de Mac: https://ca.wikipedia.org/wiki/MacOS
 
 Apple es una empresa dedicada a diseñar equipos (iMac, iPhone, Apple Watch), programas (iOS) y servicios online (Apple TV, iCloud). Sus creadores son Steve Wozniak y Steve Jobs.
 
-![](media/image1.jpg)
+![imagen](media/image1.jpg)
 
 Se trata de una empresa que generalmente ha sido muy innovadora y puntera en su sector, que ha propiciado la invención y expansión de diversos equipos de la propia empresa que han tenido repercusión mundial.
 
-![](media/image2.jpg)
+![imagen](media/image2.jpg)
 
 ## Productos
 
@@ -35,11 +35,11 @@ A lo largo de la historia, Apple ha ido introduciendo nuevos dispositivos en el 
 | Apple Watch  | 2015               |
 | AirPods      | 2016               |
 
-![](media/image3.jpg)
+![imagen](media/image3.jpg)
 
 Apple dispone además de tiendas propias o espacios en grandes centros comerciales conocidos como Apple Stores. También podemos comprar la mayoría de sus productos online a través de la página web de Apple.
 
-![](media/image4.jpg)
+![imagen](media/image4.jpg)
 
 ## Mac OS: el sistema operativo
 
@@ -47,7 +47,7 @@ Los ordenadores de **Apple** suelen ser preferidos por diseñadores gráficos y 
 
 Mac OS es el sistema operativo desarrollado por Apple para sus ordenadores Macintosh o Mac. Es un sistema operativo sencillo y fiable, con pocos fallos. Lo encontraremos en ordenadores de sobremesa y portátiles de Apple.
 
-![](media/image5.jpg)![](media/image6.png)
+![imagen](media/image5.jpg)![imagen](media/image6.png)
 
 La última versión se llama **Mac OS Big Sur**. Otras versiones han sido:
 
@@ -71,7 +71,7 @@ La última versión se llama **Mac OS Big Sur**. Otras versiones han sido:
 | macOS 10.15 “Catalina”    | October 7, 2019    |
 | macOS 11 “Big Sur”        | November 12, 2020  |
 
-![](media/image7.png)
+![imagen](media/image7.png)
 
 ## Programas propios
 
@@ -81,14 +81,14 @@ Apple también desarrolla programas informáticos para Mac OS X. Desarrolla gran
 - Presentación, diseño de página y de procesamiento de textos, está disponible iWork, que incluye Keynote, Pages y Numbers.
 - Otros como **iTunes**, el reproductor de medios **QuickTime** y el navegador **Safari** están disponibles como descargas gratuitas, tanto para macOS como para Windows.
 
-![](media/image8.jpg)
+![imagen](media/image8.jpg)
 
 ## iMac y macbook
 
 El iMac es una computadora de escritorio todo en uno con una pantalla de gran tamaño y un procesador potente. El MacBook es una computadora portátil de tamaño medio con una pantalla de 13 pulgadas.
 
-![](img/2022-12-30-09-56-27.png)
+![imagen](img/2022-12-30-09-56-27.png)
 
 El **MacBook Air** es una computadora portátil ultra liviana con una pantalla de 13 pulgadas. El **MacBook Pro** es una computadora portátil profesional con una pantalla de 15 o 17 pulgadas y un procesador más potente.
 
-![](img/2022-12-30-09-56-04.png)
+![imagen](img/2022-12-30-09-56-04.png)

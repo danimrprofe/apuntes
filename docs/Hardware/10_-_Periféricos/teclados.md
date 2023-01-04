@@ -17,19 +17,19 @@ Tipos de conexiones:
 
 El conector DIN de 5 pines es el más antiguo y actualmente está en desuso\. Existen adaptadores DIN para poder conectar un teclado con conector DIN de 5 pines en un puerto PS/2 del ordenador
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%292.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%292.png)
 
 ## Sobremesa y portátil
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%293.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%293.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%294.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%294.png)
 
 Teclado de interruptores
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%295.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%295.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%296.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%296.png)
 
 Tipos de teclado
 
@@ -61,15 +61,15 @@ abrir el navegador o el correo electrónico
 
 controlar el volumen de sonido o los controles de CD
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%297.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%297.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%298.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%298.jpg)
 
 ## Teclados inalámbricos
 
 Un teclado inalámbrico es una gran opción si quieres liberarte de los cables y disfrutar de la tecnología Wi-Fi o Bluetooth. Estos teclados se pueden comprar con pilas o con baterías, aunque la última opción es más costosa pero te permitirá evitar cambiar las pilas cada poco tiempo.
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%299.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%299.png)
 
   * __Wi\-Fi orientada al tráfico de grandes cantidades de datos__
   * __B__  __uetooth __  __a__  __náloga al USB \(en cuanto a conectividad\), __
@@ -79,7 +79,7 @@ Un teclado inalámbrico es una gran opción si quieres liberarte de los cables y
 
 Los teclados para portátiles están integrados en la unidad, por lo que pueden ser difíciles de reemplazar. Son más pequeños que los teclados de escritorio, con las teclas más cercanas entre sí. La disposición de las teclas puede variar de un fabricante a otro, y algunas de ellas tienen más de una función.
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2910.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2910.jpg)
 
 ## Teclados proyectados
 
@@ -93,11 +93,11 @@ Al pulsar cada tecla, la información se manda al dispositivo
 
 Pequeño dispositivo Bluetooth a un aparato electrónico
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2911.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2911.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2912.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2912.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2913.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2913.png)
 
 ## Disposición de teclas
 
@@ -107,14 +107,14 @@ Pequeño dispositivo Bluetooth a un aparato electrónico
 
 3. Teclado AZERTY: este tipo de teclado se caracteriza por una disposición similar a la del teclado QWERTY, con la diferencia de que la primera fila de letras dice AZERTY. Esta disposición se utiliza principalmente en Francia, Bélgica y otros países de habla francesa.
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2914.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2914.png)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2915.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2915.png)
 
 Teclado más común:  __QWERTY__
 
 El teclado de sobremesa tiene alrededor de 104 teclas \(90 en portátil\)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2916.jpg)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2916.jpg)
 
-![](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2917.png)
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%2917.png)

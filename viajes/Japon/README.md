@@ -534,7 +534,7 @@ Si posee el[ Japan Rail Pass](http://www.japan-rail-pass.es/jr-pass), podrá ir 
    </td>
    <td>
 
-![](images/Itinerario-Japan11.png)
+![imagen](images/Itinerario-Japan11.png)
 
    </td>
   </tr>

@@ -53,7 +53,7 @@ De forma general, sus características son las siguientes:
 
 Elemento identificador de un usuario
 
-![](2019-06-03-08-44-33.png)
+![imagen](2019-06-03-08-44-33.png)
 
 ### Buzón de usuario
 
@@ -73,7 +73,7 @@ La cuenta `informacion@dominio.es` puede tener los siguientes alias
 - Engloba a varios usuarios, en lugar de hacerlo individualmente, para intercambiar información de forma simultánea.
 - Se pueden utilizar para suscripción a diferentes temáticas.
 
-![](2019-06-03-08-45-24.png)
+![imagen](2019-06-03-08-45-24.png)
 
 ## Componentes principales
 
@@ -83,7 +83,7 @@ La cuenta `informacion@dominio.es` puede tener los siguientes alias
 - Mail Transfer Agent (MTA)
 - Mail delivery Agent (MDA)
 
-![](2019-06-03-08-45-52.png)
+![imagen](2019-06-03-08-45-52.png)
 
 ### MUA o agente de usaurio
 
@@ -95,26 +95,26 @@ Un MUA para funcionar necesita:
 Un servidor de correo saliente para enviar mensajes
 Un servidor de correo entrante para leerlos
 
-![](2019-06-03-08-46-15.png)
+![imagen](2019-06-03-08-46-15.png)
 
 #### Tipos de clientes
 
-##### Clientes instalados en el ordenador: 
+##### Clientes instalados en el ordenador:
 Se ejecutan directamente desde el ordenador y permiten la descarga de correo al equipo local desde el servidor
 
-![](2019-06-03-08-46-41.png)
+![imagen](2019-06-03-08-46-41.png)
 
 ##### Clientes vía web:
 
 Desde el navegador se accede a una página correspondiente al servidor y se puede acceder a los mensajes recibidos, así como enviar nuevos
 
-![](2019-06-03-08-46-46.png)
+![imagen](2019-06-03-08-46-46.png)
 
 ##### Cliente en el servidor
 
 Para leer el correo hace falta conectarse al servidor mediante una conexión segura como ssh o una conexión simple como telnet.
 
-![](2019-06-03-08-46-51.png)
+![imagen](2019-06-03-08-46-51.png)
 
 ### MTA o agente de transferencia de correo
 
@@ -130,15 +130,15 @@ Ejemplos:
 - qmail
 - exim
 
-![](2019-06-03-08-47-48.png)
+![imagen](2019-06-03-08-47-48.png)
 
-![](2019-06-03-08-47-52.png)
+![imagen](2019-06-03-08-47-52.png)
 
 ### MDA o agente de entrega
 
 - No transporta mensajes entre sistemas, ni es una interficie de usuario
 - Actua como puente entre el MTA y el MUA
-- Es el encargado de copiar  los mensajes de correo del servidor al buzón del usuario 
+- Es el encargado de copiar  los mensajes de correo del servidor al buzón del usuario
 - Ejemplos: qpopper, Cyrus, etc
 
 ## Ejemplo de transmisión
@@ -150,7 +150,7 @@ Ejemplos:
 - El servidor de correo de Manolo coloca el mensaje en el buzón de correo de Manolo.
 Manolo, a través de su cliente de correo accede a los mensajes entrantes (utilizando IMAP o POP3)
 
-![](2019-06-03-08-48-31.png)
+![imagen](2019-06-03-08-48-31.png)
 
 ## Protocolos de correo electrónico
 
@@ -169,12 +169,12 @@ Puertos utilizados por los diferentes protocolos:
 - El primer número es el protocolo no seguro
 - El segundo es el protocolo seguro (similar a HTTPS
 
-![](2019-06-03-08-49-06.png)
+![imagen](2019-06-03-08-49-06.png)
 
 ### SMTP
 
 - Protocolo cliente-servidor basado en texto para el envío de correo electrónico.
-- Conexión a través de puerto TCP 25 
+- Conexión a través de puerto TCP 25
 - Se utiliza para intercambio de mensajes de correo electrónico entre ordenadores o diferentes tipos de dispositivos electrónicos
 - SMTP permite no mantener una conexión online para almacenar los correos y poderlos enviar de forma diferida.
 
@@ -196,7 +196,7 @@ Respuesta:
 - 4XX error temporal
 - 5XX error permanente
 
-![](2019-06-03-08-49-47.png)
+![imagen](2019-06-03-08-49-47.png)
 
 ### IMF
 
@@ -215,15 +215,15 @@ Permiten identificar información de un mensaje, independientemente del idioma.
 
 Texto simple ASCII hasta 998 caracteres
 
-![](2019-06-03-08-50-09.png)
+![imagen](2019-06-03-08-50-09.png)
 
 #### Campos relacionados con el transporte
 
-![](2019-06-03-08-50-29.png)
+![imagen](2019-06-03-08-50-29.png)
 
 #### Campos relacionados con el mensaje
 
-![](2019-06-03-08-50-46.png)
+![imagen](2019-06-03-08-50-46.png)
 
 ### MIME
 
@@ -241,7 +241,7 @@ Texto simple ASCII hasta 998 caracteres
 
 #### Tipos y subtipos MIME
 
-![](2019-06-03-08-51-36.png)
+![imagen](2019-06-03-08-51-36.png)
 
 ### POP (Post office protocol)
 
@@ -285,7 +285,7 @@ El usuario se desconecta y el servidor actualiza su buzón, elimina los mensajes
 
 ### IMAP (Internet message Access protocol)
 
-![](2019-06-03-08-53-07.png)
+![imagen](2019-06-03-08-53-07.png)
 
 - Protocolo de descarga de correo. Similar a POP3, pero con más características, más potente y complejo
 - El usuario puede comprobar las cabeceras de correos antes de descargarlos.

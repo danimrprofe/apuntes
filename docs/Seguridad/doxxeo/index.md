@@ -2,11 +2,11 @@
 
 # ¿Qué es el doxxeo?
 
-![](img/2022-11-25-17-39-11.png)
+![imagen](img/2022-11-25-17-39-11.png)
 
 ## Introducción
 
-![](img/2022-11-25-17-39-35.png)
+![imagen](img/2022-11-25-17-39-35.png)
 
 ## Qué es el doxxeo
 
@@ -20,15 +20,15 @@
 - Venganza
 - Justicia extrajudicial
 
-![](img/2022-11-25-17-40-13.png)
+![imagen](img/2022-11-25-17-40-13.png)
 
 - Dañar a persona con notoriedad
 
-![](img/2022-11-25-17-40-03.png)
+![imagen](img/2022-11-25-17-40-03.png)
 
 - Dañar a personas con opiniones o puntos de vista opuestos
 
-![](img/2022-11-25-17-40-09.png)
+![imagen](img/2022-11-25-17-40-09.png)
 
 # ¿Cuales son sus propósitos?
 
@@ -39,24 +39,24 @@
 
 FASE 1
 
-- Recopilan toda la información que puedan encontrar 
+- Recopilan toda la información que puedan encontrar
 - Redes sociales, páginas webs, bases de datos
-- Buscan teléfonos y direcciones, pirateo de bases de datos, ataques de ingeniería social. 
+- Buscan teléfonos y direcciones, pirateo de bases de datos, ataques de ingeniería social.
 Objetivo: reunir toda la información posible sobre la víctima, su entorno y su vida.
 
 FASE 2
 
 - Difusión de información recopilada
-- Todos los medios y plataformas disponibles en la Red. 
+- Todos los medios y plataformas disponibles en la Red.
 - Objetivo: llegar al mayor número de personas y estas sigan difundiéndola.
 - Incitación al acoso y amenazas
 
 
 # ¿Cómo conseguir información?
 
-Hay una variedad de estrategias de doxing que se pueden usar para recopilar información sobre un individuo. 
+Hay una variedad de estrategias de doxing que se pueden usar para recopilar información sobre un individuo.
 
-![](img/2022-11-28-20-14-29.png)
+![imagen](img/2022-11-28-20-14-29.png)
 
 Algunas estrategias comunes de doxing incluyen:
 
@@ -78,7 +78,7 @@ Algunas estrategias comunes de doxing incluyen:
 Facilita identificación en mundo real / familiares
 Dirección, trabajo, teléfono
 
-![](img/2022-11-25-17-40-38.png)
+![imagen](img/2022-11-25-17-40-38.png)
 
 # Posibles resultados
 
@@ -87,7 +87,7 @@ Dirección, trabajo, teléfono
 - Suplantación de identidad
 - Swatting (denuncias falsas)
 
-Consecuencias: 
+Consecuencias:
 
 - Puede llevar al acoso y hasta las amenazas de violencia.
 - Puede dañar la reputación de una persona.
@@ -102,11 +102,11 @@ Consecuencias:
 
 # ¿Cómo protegerse
 
-- La mejor forma de protegerse del doxxeo es ser cuidadoso con la información que se comparte en línea. 
+- La mejor forma de protegerse del doxxeo es ser cuidadoso con la información que se comparte en línea.
 - No publicar información personal en sitios web públicos o en redes sociales
-- Tener cuidado de no revelar demasiada información en conversaciones en línea. 
-- No abrir enlaces sospechosos o adjuntos de correo electrónico, ya que esto podría permitir que un atacante ingrese a su sistema. 
-- Googlearnos. 
+- Tener cuidado de no revelar demasiada información en conversaciones en línea.
+- No abrir enlaces sospechosos o adjuntos de correo electrónico, ya que esto podría permitir que un atacante ingrese a su sistema.
+- Googlearnos.
 - justdelete.me
 - No reutilizar contraseñas
 - Habilitar autenticación de doble factor

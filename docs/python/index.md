@@ -8,7 +8,7 @@ Existen muchos lenguajes de programación, que son como diferentes idiomas. Cada
 
 Para crear nuestros programas vamos a usar un entorno de programación online. En nuestro caso, [Repl.it](http://www.repl.it) donde podéis crear programas utilizando cualquier lenguaje a través de un navegador sin necesidad de instalar nada, y todos los proyectos que hagáis se guardarán ahí automáticamente.
 
-![](img/2023-01-02-16-00-35.png)
+![imagen](img/2023-01-02-16-00-35.png)
 
 ## Elementos de un programa
 

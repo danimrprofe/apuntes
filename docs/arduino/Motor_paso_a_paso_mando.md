@@ -8,13 +8,13 @@ e tutorial explicará cómo funciona el motor de pasos de 4 fases **ULN2003 28BY
 
 El motor de pasos de 4 fases ULN2003 28BYJ-48 es un motor de pasos pequeño y económico que se puede controlar con un microcontrolador. El motor tiene 4 fases, cada una con 2 polos. Cada fase requiere energía para que el imán se atraiga o se repulse. Los 4 imanes del motor de pasos están dispuestos de forma que se atraigan y se repulsen en secuencia, lo que hace que el eje del motor gire.
 
-![](img/2022-11-20-17-13-11.png)
+![imagen](img/2022-11-20-17-13-11.png)
 
 ## El controlador
 
 Para controlar el motor de pasos de 4 fases, se necesita un controlador de motor. El controlador de motor de 5V es un circuito integrado que se usa para controlar el motor de pasos.
 
-![](img/2022-11-20-17-12-52.png)
+![imagen](img/2022-11-20-17-12-52.png)
 
 El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor. Para hacer que el motor gire, se activan las salidas en secuencia.
 
@@ -35,11 +35,11 @@ El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor
 
 ### Esquema
 
-![](media/image163.jpeg)
+![imagen](media/image163.jpeg)
 
 ### Diagrama de cableado
 
-![](media/image164.jpeg)
+![imagen](media/image164.jpeg)
 
 Estamos utilizando 4 pines para controlar el paso a paso y el 1 pin del sensor IR. Pernos 8-11 controlan el motor paso a paso y pin 12 recibe la información de IR. Conectamos los 5V y la tierra de la ONU en el sensor. Como medida de precaución, usar un protoboard alimentación potencia el motor paso a paso ya que puede utilizar más energía y no queremos dañar la fuente de alimentación de la UNO.
 
@@ -53,7 +53,7 @@ Biblioteca de < paso a paso > o volver a instalarlo, si es necesario. De lo cont
 
 Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
-![](media/image165.jpeg)
+![imagen](media/image165.jpeg)
 
 El código reconoce sólo 2 valores desde el control remoto IR: VOL + y VOL-.
 - Presionando VOL + del control remoto el motor hará un giro completo hacia la derecha.

@@ -6,13 +6,13 @@ Una forma de detectar qué componentes tiene nuestro ordenador consiste en utili
 
 En este caso, podemos saber qué tipo de sistema operativo tenemos y su versión, cual es el modelo de procesador (o CPU), así como la memoria RAM (16 GB)
 
-![](media/image1.png)
+![imagen](media/image1.png)
 
 ## Cómo saber qué unidades de almacenamiento tenemos
 
 Para comprobar el disco duro o discos duros que tenemos en nuestro ordenador, podemos buscar también en mi equipo (ver animación abajo):
 
-![](media/image2.gif)
+![imagen](media/image2.gif)
 
 Utilizando el programa CPU-Z, indica todos los componentes que puedas encontrar de tu ordenador, así como el sistema operativo que utiliza. Realiza una tabla.
 
@@ -20,7 +20,7 @@ Para descargar el programa:
 
  https://www.cpuid.com/downloads/cpu-z/cpu-z_1.90-en.zip
 
-![](media/image3.png)
+![imagen](media/image3.png)
 
 Buscáis en descargas, y descomprimís el archivo
 
@@ -54,40 +54,40 @@ En una imagen de la placa, señalar todos los componentes que reconozcas en la p
 
 En la primera pestaña, llamada CPU, veréis información del procesador. La información más importante es el nombre (Name) y también Specification.
 
-![](media/image4.png)
+![imagen](media/image4.png)
 
 La siguiente es la pestaña de la caché, y de momento la podéis saltar.
 
-![](media/image5.png)
+![imagen](media/image5.png)
 
 ## Placa base
 
 En esta pestaña podemos ver que placa base tiene vuestro ordenador. Manufacturer es el fabricante,y model el modelo concreto de la placa.
 
-![](media/image6.png)
+![imagen](media/image6.png)
 
 ## Memoria
 
 Aquí podréis ver la información de la memoria RAM que tiene instalada vuestro ordenador en la placa base. Type es el tipo de memoria, y size la cantidad de memoria.
 
-![](media/image7.png)
+![imagen](media/image7.png)
 
 Aquí muestra que el ordenador tiene solamente 4 GB de RAM.
 
-![](media/image8.png)
+![imagen](media/image8.png)
 
 ## Tarjeta gráfica
 
 En graphics podremos encontrar información sobre la tarjeta gráfica.
 
-![](media/image9.png)
+![imagen](media/image9.png)
 
 Aquí muestra la información de la tarjeta gráfica.
 
-![](media/image10.png)
+![imagen](media/image10.png)
 
-![](media/image11.png)
+![imagen](media/image11.png)
 
-![](media/image12.png)
+![imagen](media/image12.png)
 
 Aquí habla sobre el programa CPU-Z.

@@ -10,7 +10,7 @@ Canviant la forma de la fresa podem fer diferents operacions a la fusta:
 - Ranures
 - Rebaixos, xamfrans, etc.
 
-![](media/image53.png) ![](media/image53.png)
+![imagen](media/image53.png) ![imagen](media/image53.png)
 
 ## Fresadores CNC
 

@@ -9,4 +9,4 @@ Els 3 motors mouen l'extrussor en les 3 dimensions conegudes per a dipositar el 
 
 La **base** s'encalenteix per a millorar l'adderència del plàstic fus.
 
-![](img/2022-12-15-16-51-02.png)
+![imagen](img/2022-12-15-16-51-02.png)

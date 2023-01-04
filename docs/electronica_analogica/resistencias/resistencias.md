@@ -12,17 +12,17 @@ Actualizado: 16 de diciembre de 2016
   * Dificultad ver números grandes en resistores pequeños
   * Dificultad de visión según posición en el circuito
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%290.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%290.png)
 
 # Identificación de resistencias4 bandas
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%291.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%291.png)
 
 # Identificación de resistenciasCódigo alfanumérico
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%292.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%292.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%293.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%293.png)
 
 # Tipos de resistencias
 
@@ -40,9 +40,9 @@ Actualizado: 16 de diciembre de 2016
   * Desde cero hasta un valor máximo
   * Mediante un elemento desplazable o cursor\.
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%294.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%294.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%295.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%295.png)
 
 * <span style="color:#FFC000">Resistencias dependientes </span>
   * Resistencias  _no lineales _
@@ -52,7 +52,7 @@ Actualizado: 16 de diciembre de 2016
     * Temperatura
     * Voltaje\.
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%296.jpg)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%296.jpg)
 
 # Potencia disipada
 
@@ -67,7 +67,7 @@ A mayor potencia\, más grandes son las resistencias
 
 Unidades: vatio o fracción de vatio
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%297.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%297.png)
 
 # Tipos de resistencia
 
@@ -76,7 +76,7 @@ Unidades: vatio o fracción de vatio
     * Componentes fijados atravesando la placa de circuito impreso
   * De montaje superficial
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%298.gif)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%298.gif)
 
 # Resistencias de película de carbón
 
@@ -92,19 +92,19 @@ Esmaltado y pintado
 
 Gran estabilidad térmica
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%299.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%299.png)
 
 Se fabrican para pequeñas potencias
 
 Entre 1/10 W y 2 W
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2910.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2910.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2911.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2911.png)
 
 # Resistencias de pel·lícula metálica
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2912.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2912.png)
 
 Tira metálica que se deposita y se enrolla sobre un soporte cilindrico cerámico\.
 
@@ -120,17 +120,17 @@ Las resistencias de película metálica se fabrican normalmente para 1/4 Wy 1/2 
 
 Las resistencias de película metálica son utilizadas para aplicaciones donde se requiera una  __disipación elevada __ y gran  __estabilidad__  frente a los cambios de temperatura y al propio  __paso del tiempo__ \. Están hechas con una película microscópica de metal\, la cual es bobinada sobre un sustrato cerámico
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2913.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2913.png)
 
 # Resistencias en electrodomésticos
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2914.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2914.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2915.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2915.png)
 
 # Resistencias variables
 
-# 
+#
 
 # Resistencias variables
 
@@ -142,25 +142,25 @@ Resistencias dependientes de la luz
 
 Resistencias dependientes de la temperatura
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2916.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2916.png)
 
 # Potenciómetros
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2917.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2917.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2918.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2918.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2919.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2919.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2920.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2920.png)
 
 # Resistencias ajustables
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2921.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2921.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2922.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2922.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2923.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2923.png)
 
 # Trimmers
 
@@ -204,7 +204,7 @@ Los trimmers se diferencian de los potenciómetros
 
 Su ajuste es definitivo en eicircuito donde van aplicados
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2924.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2924.png)
 
 Las resistencias ajustables multivuelta tienen características similares a las anteriores\, pero en este caso el eje gira sobre ia parte fija en forma de muelle\, para obtener un efecto mecánico de desmultiplicación\. Posee un tornillo que ralentiza ei giro de su eje\, para lograr mayor resolución en su escala resistiva\.
 
@@ -216,7 +216,7 @@ En los anteriores la variación se realiza con un solo giro del eje\.
 
 # Resistencias dependientes
 
-# 
+#
 
 # Resistencias dependientes
 
@@ -227,7 +227,7 @@ En los anteriores la variación se realiza con un solo giro del eje\.
   * Varistores \(VDR\): Tensión
   * Magneto resistores \(MDR\): Flujo magnético
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2925.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2925.png)
 
 # Fotorresistencias
 
@@ -238,7 +238,7 @@ En los anteriores la variación se realiza con un solo giro del eje\.
   * Sulfuro de plomo \(sensible a radiaciones infrarrojas\)\.
 * Se coloca en un encapsulado de vidrio o de resina\.
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2926.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2926.png)
 
 Las flechas que representan la luz que incide sobre ellas\. Su valor se medirá Igualmente en fl o Kíl\, como cualquier resistencia\.
 
@@ -248,15 +248,15 @@ Medición con el ohmímetro
 
 Similar a las resistencias
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2927.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2927.png)
 
 # Resistencias dependientes de la temperatura
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2928.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2928.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2929.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2929.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2930.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2930.png)
 
 * Resistencias TDR
 * Valor óhmico varía en función de la temperatura
@@ -268,11 +268,11 @@ Similar a las resistencias
     * Respuesta positiva
     * Valor óhmico desciende cuando disminuye la temperatura
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2931.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2931.png)
 
 # Magneto resistores (MDR)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2932.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2932.png)
 
 RESUMEN
 
@@ -282,11 +282,11 @@ DEPENDIENTES
 
 # TIPOS DE RESISTENCIAS
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2933.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2933.png)
 
-# 
+#
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2934.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2934.png)
 
-![](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2935.png)
+![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2935.png)
 

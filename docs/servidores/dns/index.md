@@ -12,7 +12,7 @@ A principios de los años 80, cuando existían muy pocos servidores, todos los h
 
  El servicio DNS permite traducir un nombre a una dirección IP. Esto fue definido por primera vez en 1984, en los RFC 1034 y 1035. La información de los nombres de dominio e IP ya no se almacena en un solo servidor, sino que está **distribuida** en varios. Estos servidores forman una base de datos distribuida en la que se almacenan las asociaciones entre nombres de dominio y direcciones IP de una **zona** en particular.
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%290.jpg)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%290.jpg)
 
 __EJEMPLO__
 
@@ -35,7 +35,7 @@ __EJEMPLO__
 
 Espacio de nombres de dominio
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%291.jpg)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%291.jpg)
 
 Zona cont\.ficticio\.es
 
@@ -47,7 +47,7 @@ Por debajo puede existir un número indeterminado de nodos\. Normalmente se util
 
 Se asemeja a una estructura de directorio que nos podemos encontrar en Linux o en Windows
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%292.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%292.png)
 
 Espacio de nombres de dominio
 
@@ -81,9 +81,9 @@ Espacio de nombres de dominio
     * Dominios genéricos \(gTLD\, Generic Top\-Level Domain\)
     * Dominios geográficos \(ccTLD\, Country\-Code Top\-Level Domain\)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%293.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%293.png)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%294.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%294.png)
 
 ## Dominios genéricos
 
@@ -111,7 +111,7 @@ La autoridad que se hace cargo de la delegación debe asumir también la respons
 ### Dominios y zonas
 
 Cada servidor se encarga de los nombres de su zona
-![](img/2022-12-03-16-17-07.png)
+![imagen](img/2022-12-03-16-17-07.png)
 
 Dominios y zonas
 
@@ -127,7 +127,7 @@ __¿Qué datos hay en la zona marca\.es? __
 
 Las direcciones IP de los ordenadores dentro de ese dominio\.
 
-![](img/2022-12-03-16-17-34.png)
+![imagen](img/2022-12-03-16-17-34.png)
 
 
 * __Sin delegación__
@@ -142,7 +142,7 @@ Las direcciones IP de los ordenadores dentro de ese dominio\.
 
 Una zona en realidad es un  __archivo__  que contiene determinados  __registros__  de la base de datos del espacio de nombres de dominio\.
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2914.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2914.png)
 
 ## Dominio ARPA
 
@@ -161,7 +161,7 @@ Una zona en realidad es un  __archivo__  que contiene determinados  __registros_
   * Los usuarios solo pueden comprar dominios de segundo nivel
 * No puede encargarse de atender todas las compras de los dominios
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2915.jpg)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2915.jpg)
 
 * __Registro de dominios \(registry\)__
   * Institución a la que le cede el control técnico y burocrático\, una vez que ha creado un TLD\.
@@ -179,9 +179,9 @@ Una zona en realidad es un  __archivo__  que contiene determinados  __registros_
   * Solicitan la petición al registro de dominios correspondiente\, para lo que deben de abonar una tasa
   * Los registradores deben estar acreditados\, ya sea por ICANN o por el registro que les corresponde
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2916.jpg)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2916.jpg)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2917.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2917.png)
 
 ## Clasificación de servidores
 
@@ -197,9 +197,9 @@ Contiene una  <span style="color:#0070C0">copia</span>  de solo lectura de los a
 
 Las zonas siguen disponibles incluso si el servidor primario no está online
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2918.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2918.png)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2919.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2919.png)
 
 
 ### Servidor caché
@@ -212,7 +212,7 @@ Buscará la respuesta a una consulta DNS y recordará la respuesta para la sigui
 
 Se reduce el ancho de banda y la latencia
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2920.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2920.png)
 
 ## Tipos de consultas
 
@@ -225,7 +225,7 @@ Se reduce el ancho de banda y la latencia
   * __Autoritaria: __ Cuando se puede realizar a través de la información contenida en la base de datos de la zona
   * __No autoritaria:__  Se puede hacer consultando respuestas anteriores de otros servidores dejadas en la caché
 
-![](img/2022-12-03-16-21-05.png)
+![imagen](img/2022-12-03-16-21-05.png)
 
 Tipos de consultas
 
@@ -237,9 +237,9 @@ Tipos de consultas
 
 El cliente consulta la dirección “delegado\.google\.es”
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2921.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2921.png)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2922.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2922.png)
 
 Las respuestas que se reciben por parte de un servidor DNS son válidas durante un tiempo que este servidor determina \(TTL\)
 
@@ -299,7 +299,7 @@ Base de datos del protocolo DNS
 
 __Propietario 	TTL 	Clase 	Tipo 	RDATA__
 
-![](img/2022-12-03-16-22-54.png)
+![imagen](img/2022-12-03-16-22-54.png)
 
 __Campos de los registros de recursos__
 
@@ -346,7 +346,7 @@ Tipos de registros de recursos
   * Indica la dirección del servidor principal de esa zona y datos sobre como se sincronizan los secundarios con el primario\.
   * Un solo registro SOA por zona\.
 
-![](img/2022-12-03-16-23-39.png)
+![imagen](img/2022-12-03-16-23-39.png)
 
 Tipos de registros de recursos
 
@@ -372,7 +372,7 @@ Tipos de registros de recursos
     * _Pri_ : Prioridad de ese servidor \(cuanto más bajo\, mayor prioridad\)\.
     * _FQDN\_Servidor: _ Nombre completamente cualificado del servidor de email\.
 
-![](img/2022-12-03-16-25-06.png)
+![imagen](img/2022-12-03-16-25-06.png)
 
 Tipos de registros de recursos
 
@@ -383,7 +383,7 @@ Tipos de registros de recursos
     * Un nombre relativo \(no termina en “\.”\) en cuyo caso se añade el nombre de la zona al final de ese nombre relativo\.
   * Debemos de indicar direcciones públicas\.
 
-![](img/2022-12-03-16-25-20.png)
+![imagen](img/2022-12-03-16-25-20.png)
 
 * __Registros CNAME__
   * Se usan cuando quiero que varios nombres apunten al mismo ordenador\.
@@ -391,7 +391,7 @@ Tipos de registros de recursos
   * Ejemplo:  Servidor web con el nombre ldap\.mi\-empresa\-sa\.es \(con su correspondiente registro A\) y quiero que  sea servidor POP3\, IMAP y SMTP\.
   * Ojo\! Los CNAME pueden apuntar a algo en otro dominio\.
 
-![](img/2022-12-03-16-25-34.png)
+![imagen](img/2022-12-03-16-25-34.png)
 
 Tipos de registros de recursos
 
@@ -402,7 +402,7 @@ Tipos de registros de recursos
   * Ejemplo:
     * Dirección IP 150\.214\.7\.10 se corresponde con:
 
-![](img/2022-12-03-16-25-47.png)
+![imagen](img/2022-12-03-16-25-47.png)
 
 # Base de datos del protocolo DNS
 
@@ -418,7 +418,7 @@ Los servidores de nombre secundarios solicitan una transferencia de zona periód
 
 En caso de fallo del servidor DNS primario\, el secundario atiende las peticiones de resolución de nombres puesto que tendrá una  __copia de la zona__ \.
 
-![](img/2022-12-03-16-26-19.png)
+![imagen](img/2022-12-03-16-26-19.png)
 
 Sincronización de datos entre servidores
 
@@ -434,7 +434,7 @@ Cuando pasen 1 semana \( __604800__ \) \, se declarará no autoritativo
 
 Si el servidor devuelve una respuesta negativa \(por ejemplo\, NXDOMAIN o NODATA\)\, deberá esperar 1min \( __60__ \) antes de volver a intentar la solicitud
 
-![](img/2022-12-03-16-26-47.png)
+![imagen](img/2022-12-03-16-26-47.png)
 
 Tipos de registros de recursos
 
@@ -473,9 +473,9 @@ DNS dinámico en internet
   * También se modifica en la web del proveedor \(no\-ip\)
   * Siempre tendremos actualizada IP que cambia un nombre de dominio
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2923.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2923.png)
 
-![](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2924.png)
+![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2924.png)
 
 DNS dinámico en internet
 

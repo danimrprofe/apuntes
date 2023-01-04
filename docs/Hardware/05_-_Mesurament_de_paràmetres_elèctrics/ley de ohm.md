@@ -7,15 +7,15 @@
   * Proporcional a la tensión que aplicamos en él
   * Inversamente proporcional a la resistencia que opone a dicha corriente\.
 
-![](img/1_Magnitudes_electricas4.png)
+![imagen](img/1_Magnitudes_electricas4.png)
 
-![](img/1_Magnitudes_electricas5.gif)
+![imagen](img/1_Magnitudes_electricas5.gif)
 
-![](img/1_Magnitudes_electricas6.png)
+![imagen](img/1_Magnitudes_electricas6.png)
 
-![](img/1_Magnitudes_electricas7.png)
+![imagen](img/1_Magnitudes_electricas7.png)
 
-![](img/1_Magnitudes_electricas8.png)
+![imagen](img/1_Magnitudes_electricas8.png)
 
-![](img/1_Magnitudes_electricas9.png)
+![imagen](img/1_Magnitudes_electricas9.png)
 

@@ -1,6 +1,6 @@
 # Permisos en unidades compartidas: colaborador, comentador, lector y administrador
 
-![](img/2023-01-03-08-42-31.png)
+![imagen](img/2023-01-03-08-42-31.png)
 
 A modo de resumen, en unidades compartidas, de más a menos restrictivo, tenemos los siguientes roles:
 
@@ -36,7 +36,7 @@ Al pasar el ratón por encima del botón se puede ver con cuántas personas la h
 Dando a la rueda dentada (configuración) en esta pantalla arriba del todo, podemos cambiar alguno opciones, que son las siguientes. Desmarcando las casillas, podemos hacer que los lectores no puedan descargar, imprimir o copiar (por defecto si pueden), o que los editores puedan compartir el archivo otra vez, por ejemplo.
 
 
-![](img/2023-01-03-08-42-13.png)
+![imagen](img/2023-01-03-08-42-13.png)
 
 ## Posible organización
 

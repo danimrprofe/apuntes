@@ -1,7 +1,6 @@
 
 # Instrucciones para entregar la práctica
 
-
 Tenéis que demostrar que habéis realizado las prácticas de la 4 a la 15.
 
 **Corrección**
@@ -71,7 +70,7 @@ Para ello, seguiremos una serie de pasos:
 
     c.  Apagamos la MV
 
-![](./media/image1.tmp){width="2.7948720472440947in"
+![imagen](./media/image1.tmp){width="2.7948720472440947in"
 height="0.9857436570428696in"}
 
 **Ojo cambiar:** dns-nameservers 172.16.254.1 8.8.8.8
@@ -84,17 +83,17 @@ height="0.9857436570428696in"}
 
 5.  Comprobamos que la interfaz está habilitada desde VBox
 
-![](./media/image2.png){width="2.5169772528433945in"
+![imagen](./media/image2.png){width="2.5169772528433945in"
 height="0.5833333333333334in"}
 
 6.  Lanzamos ping contra el servidor DNS (172.16.254.1)
 
-![](./media/image3.tmp){width="3.8269225721784776in"
+![imagen](./media/image3.tmp){width="3.8269225721784776in"
 height="0.8294805336832896in"}
 
 7.  Intentamos resolver la IP de un nombre de dominio
 
-![](./media/image4.tmp){width="3.961538713910761in"
+![imagen](./media/image4.tmp){width="3.961538713910761in"
 height="0.7618339895013123in"}
 
 Configuración del cliente Ubuntu Desktop
@@ -103,13 +102,13 @@ Configuración del cliente Ubuntu Desktop
 Repetimos los pasos con un cliente Ubuntu Desktop, y configuramos sus
 parámetros IP:
 
-![](./media/image5.tmp){width="4.735999562554681in"
+![imagen](./media/image5.tmp){width="4.735999562554681in"
 height="1.641227034120735in"}
 
 No está de más comprobar que no tenemos un proxy configurado en Firefox
 que nos esté impidiendo que todo funcione.
 
-![](./media/image6.tmp){width="5.025640857392826in"
+![imagen](./media/image6.tmp){width="5.025640857392826in"
 height="2.6824300087489066in"}
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -141,28 +140,28 @@ Instalar apache
 
 Comprobar si apache está instalado
 
-![](./media/image7.tmp){width="5.905555555555556in"
+![imagen](./media/image7.tmp){width="5.905555555555556in"
 height="0.6479166666666667in"}
 
 Actualizamos la información de los paquetes para comprobar las últimas
 versiones
 
-![](./media/image8.tmp){width="5.905555555555556in"
+![imagen](./media/image8.tmp){width="5.905555555555556in"
 height="2.629166666666667in"}
 
 Instalamos apache
 
-![](./media/image9.tmp){width="5.905555555555556in"
+![imagen](./media/image9.tmp){width="5.905555555555556in"
 height="1.9986111111111111in"}
 
 Podemos comprobar versión de apache que tenemos instalada
 
-![](./media/image10.tmp){width="3.1119991251093615in"
+![imagen](./media/image10.tmp){width="3.1119991251093615in"
 height="0.5607917760279965in"}
 
 Instalamos opcionalmente paquete de documentación
 
-![](./media/image11.tmp){width="5.905555555555556in"
+![imagen](./media/image11.tmp){width="5.905555555555556in"
 height="2.3402777777777777in"}
 
 usuario www-data y el grupo www-data
@@ -180,7 +179,7 @@ del usuario y grupo www-data.
 -   cat /etc/group | grep www-data para comprobar la creación del grupo
     www-data
 
-![](./media/image12.png){width="5.905555555555556in"
+![imagen](./media/image12.png){width="5.905555555555556in"
 height="0.6180555555555556in"}
 
 Directorio contenedor de páginas
@@ -195,7 +194,7 @@ fuera. Por ejemplo:
 
 -   Se vería accediendo a: http://localhost/ hola/quetal.html
 
-![](./media/image13.png){width="2.383999343832021in"
+![imagen](./media/image13.png){width="2.383999343832021in"
 height="1.015566491688539in"}
 
 Configuración
@@ -221,45 +220,45 @@ Mods disponibles
 
     /etc/apache2/mods-available/
 
-![](./media/image14.png){width="4.60799978127734in"
+![imagen](./media/image14.png){width="4.60799978127734in"
 height="0.23462707786526685in"}
 
-![](./media/image15.png){width="5.103999343832021in"
+![imagen](./media/image15.png){width="5.103999343832021in"
 height="2.348535651793526in"}
 
 Mods habilitados
 
     /etc/apache2/mods-enable/
 
-![](./media/image16.png){width="5.905555555555556in"
+![imagen](./media/image16.png){width="5.905555555555556in"
 height="4.072916666666667in"}
 
 ### Directorios de configuración de sitios virtuales
 
 Sites available
 
-![](./media/image17.tmp){width="5.905555555555556in" height="0.90625in"}
+![imagen](./media/image17.tmp){width="5.905555555555556in" height="0.90625in"}
 
 Sites enabled
 
-![](./media/image18.tmp){width="5.905555555555556in"
+![imagen](./media/image18.tmp){width="5.905555555555556in"
 height="0.7756944444444445in"}
 
 ### Directorio de configuraciones locales
 
     /etc/apache2/conf-available/
 
-![](./media/image19.tmp){width="5.905555555555556in"
+![imagen](./media/image19.tmp){width="5.905555555555556in"
 height="1.3756944444444446in"}
 
     /etc/apache2/conf-enabled/
 
-![](./media/image20.tmp){width="5.905555555555556in"
+![imagen](./media/image20.tmp){width="5.905555555555556in"
 height="1.5902777777777777in"}
 
     /etc/apache2/envars
 
-![](./media/image21.tmp){width="5.905555555555556in" height="4.05625in"}
+![imagen](./media/image21.tmp){width="5.905555555555556in" height="4.05625in"}
 
 Estado del servicio
 -------------------
@@ -270,7 +269,7 @@ Podemos comprobar listando los procesos en ejecución y filtrando con
 pipes, que existen varios procesos Apache abiertos, síntoma de que está
 en marcha el servidor.
 
-![](./media/image22.tmp){width="5.905555555555556in"
+![imagen](./media/image22.tmp){width="5.905555555555556in"
 height="0.9152777777777777in"}
 
 ### Arrancar, parar y estado del servicio
@@ -278,7 +277,7 @@ height="0.9152777777777777in"}
 Existen scripts en /etc/init.d/ que nos permiten arrancar, parar y
 reiniciar el servicio apache2, entre otras cosas.
 
-![](./media/image23.tmp){width="5.905555555555556in"
+![imagen](./media/image23.tmp){width="5.905555555555556in"
 height="3.011111111111111in"}
 
 ### Reiniciar y recargar servicio
@@ -288,7 +287,7 @@ Diferencia:
 - Restart: para e inicia el servicio
 - Reload: el servicio sigue funcionando y se vuelven a leer los archivos de configuración
 
-![](./media/image24.tmp){width="5.905555555555556in"
+![imagen](./media/image24.tmp){width="5.905555555555556in"
 height="1.0222222222222221in"}
 
 ### Reinicio del servidor con apachectl
@@ -300,7 +299,7 @@ Apache.
 
 El programa `/usr/sbin/apache2ctl` es el programa de línea de comandos
 para manejar Apache en Ubuntu. La sintaxis del comando es bastante
-sencilla. 
+sencilla.
 
 También se puede lograr la misma funcionalidad con el script
 de inicio apache2. Por lo tanto, los tres comandos que hacen la misma
@@ -314,12 +313,12 @@ sudo service apache2 restart
 
 Parar servicio
 
-![](./media/image25.tmp){width="5.905555555555556in"
+![imagen](./media/image25.tmp){width="5.905555555555556in"
 height="0.5840277777777778in"}
 
 Arrancar servicio
 
-![](./media/image26.tmp){width="5.905555555555556in"
+![imagen](./media/image26.tmp){width="5.905555555555556in"
 height="0.5458333333333333in"}
 
 Puertos
@@ -333,7 +332,7 @@ Comprobación de puertos
 -   Podemos comprobar con netstat que el servidor está escuchando
     peticiones en ese puerto
 
-![](./media/image27.tmp){width="5.905555555555556in"
+![imagen](./media/image27.tmp){width="5.905555555555556in"
 height="1.4631944444444445in"}
 
 Configuración de puertos
@@ -403,7 +402,7 @@ puertos específicos, usar
 - Listen 192.168.1.1:80
 - Listen 192.168.1.5:8000
 
-![](./media/image28.png){width="5.28in" height="2.335145450568679in"}
+![imagen](./media/image28.png){width="5.28in" height="2.335145450568679in"}
 
 En este caso, Apache escuchará en todas las IP de sus adaptadores:
 
@@ -422,10 +421,10 @@ concreto, y tiene que poder atravesar el Firewall.
 
 -   Comprobamos que se crean 3 apps para Apache
 
-![](./media/image29.tmp){width="5.905555555555556in"
+![imagen](./media/image29.tmp){width="5.905555555555556in"
 height="0.78125in"}Información de la configuración de app
 
-![](./media/image30.png){width="5.9006944444444445in"
+![imagen](./media/image30.png){width="5.9006944444444445in"
 height="1.0069444444444444in"}
 
 Sitios web
@@ -450,7 +449,7 @@ sites de ejemplo creados:
 
 Mostrar carpeta de sitios disponibles
 
-![](./media/image31.png){width="5.303999343832021in"
+![imagen](./media/image31.png){width="5.303999343832021in"
 height="1.0016721347331583in"}
 
 Estos sites que aparecen en esta carpeta están creados y disponibles,
@@ -462,7 +461,7 @@ Ver el contenido del sitio por defecto
 
 Abrimos el primer site y podemos ver la configuración del mismo.
 
-![](./media/image32.tmp){width="5.905555555555556in" height="4.35625in"}
+![imagen](./media/image32.tmp){width="5.905555555555556in" height="4.35625in"}
 
 ### Sites habilitados
 
@@ -481,7 +480,7 @@ Podemos comprobar que en /etc/apache2/sites-enabled existe el fichero
 **000-default.conf** y es un enlace simbólico al que se encuentra en
 **sites-available**
 
-![](./media/image33.png){width="5.905555555555556in"
+![imagen](./media/image33.png){width="5.905555555555556in"
 height="0.7729166666666667in"}
 
 ### Habilitar y deshabilitar sites
@@ -491,8 +490,8 @@ los comandos 'a2ensite' y 'a2dissite', respectivamente. Ambos
 comandos usan esencialmente la misma sintaxis:
 
 ```
-a2ensite 
-a2dissite 
+a2ensite
+a2dissite
 ```
 
 donde `` es el nombre del archivo de configuración del host
@@ -504,12 +503,12 @@ extensión `.conf`.
 Vamos a copiar el site de ejemplo y vamos a crear uno nuestro, que
 llevará como nombre el nombre de nuestro subdominio.
 
-![](./media/image34.tmp){width="4.127999781277341in"
+![imagen](./media/image34.tmp){width="4.127999781277341in"
 height="0.8845713035870516in"}
 
 Lo vamos a modificar para que coincida con nuestra configuración.
 
-![](./media/image35.tmp){width="5.383999343832021in"
+![imagen](./media/image35.tmp){width="5.383999343832021in"
 height="1.2934514435695539in"}
 
 Necesitaremos crear la carpeta `/var/www/xxx.smx2.org/` y copiar dentro un
@@ -519,12 +518,12 @@ archivo HTML
 
 Deshabilitamos el site por defecto y recargamos
 
-![](./media/image36.tmp){width="5.905555555555556in"
+![imagen](./media/image36.tmp){width="5.905555555555556in"
 height="1.3972222222222221in"}
 
 Habilitamos el site nuevo que hemos creado:
 
-![](./media/image37.tmp){width="5.905555555555556in"
+![imagen](./media/image37.tmp){width="5.905555555555556in"
 height="1.2583333333333333in"}
 
 Accedemos desde un navegador para ver que funciona todo correctamente.
@@ -538,7 +537,7 @@ enviar la imagen que necesita el html para mostrarse correctamente.
 Por otro lado, podemos ver los códigos de estado y la IP del ordenador
 que ha hecho la solicitud
 
-![](./media/image38.tmp){width="5.84799978127734in"
+![imagen](./media/image38.tmp){width="5.84799978127734in"
 height="0.7084711286089239in"}
 
 Acceder desde el navegador al servidor
@@ -582,7 +581,7 @@ En cualquier caso, al principio y hasta que lo cambiemos, el navegador
 nos mostrará la página que trae por defecto Apache, la cual podremos
 cambiar posteriormente.
 
-![](./media/image39.tmp){width="5.905555555555556in"
+![imagen](./media/image39.tmp){width="5.905555555555556in"
 height="2.0159995625546805in"}
 
 Configurar un hostname para el servidor
@@ -590,7 +589,7 @@ Configurar un hostname para el servidor
 
 Editar `/etc/hostname` y `/etc/hosts` configurar el nombre FQDN del equipo.
 
-![](./media/image40.tmp){width="5.905555555555556in"
+![imagen](./media/image40.tmp){width="5.905555555555556in"
 height="1.2465277777777777in"}
 
 Crear estructura de páginas web
@@ -599,7 +598,7 @@ Crear estructura de páginas web
 Comprobar archivo de índice
 ---------------------------
 
-![](./media/image41.tmp){width="4.975694444444445in"
+![imagen](./media/image41.tmp){width="4.975694444444445in"
 height="0.5833333333333334in"}Acceder a /var/www/xxx.smx2.org/ y
 comprobar de que existe index.html. Este es el archivo que se sirve por
 defecto si no se especifica en el navegador ninguno.
@@ -614,7 +613,7 @@ Crear archivo red.html
 
 Crear el fichero de texto /var/www/xxx.smx2.org/red.html
 
-![](./media/image42.tmp){width="5.905555555555556in"
+![imagen](./media/image42.tmp){width="5.905555555555556in"
 height="1.7777777777777777in"}
 
 Crear un nuevo directorio
@@ -624,9 +623,9 @@ archivo datos1.html
 
 Crear el archivo datos.html
 
-![](./media/image43.tmp){width="5.6in" height="2.0841961942257217in"}
+![imagen](./media/image43.tmp){width="5.6in" height="2.0841961942257217in"}
 
-Comprobar funcionamiento desde cliente 
+Comprobar funcionamiento desde cliente
 ---------------------------------------
 
 Podemos comprobar si la web está funcionando correctamente desde un
@@ -673,7 +672,7 @@ Si no disponemos de navegador, podemos
 utilizar WGET. Wget es un paquete de software gratuito para recuperar
 archivos usando HTTP, HTTPS, FTP y FTPS.
 
-![](./media/image44.tmp){width="5.905555555555556in"
+![imagen](./media/image44.tmp){width="5.905555555555556in"
 height="1.4041666666666666in"}
 
 ### Navegador en shell
@@ -681,7 +680,7 @@ height="1.4041666666666666in"}
 Podemos también utilizar un navegador para shell, como Lynx, si queremos
 ver de una manera aproximada como queda la página.
 
-Secciones 
+Secciones
 ==========
 
 Las directivas presentes en los ficheros de configuración pueden ser de
@@ -760,13 +759,13 @@ Si hacemos esto, todos los equipos desde 172.16.254.1 hasta
 172.16.254.255 podrán ver la carpeta. El resto, no. Para ello editamos
 el archivo **apache2.conf**
 
-![](./media/image45.tmp){width="4.471999125109361in"
+![imagen](./media/image45.tmp){width="4.471999125109361in"
 height="0.7920166229221347in"}
 
 Si probamos a acceder desde el navegador desde un ordenador fuera de
 esta red:
 
-![](./media/image46.tmp){width="2.83200021872266in"
+![imagen](./media/image46.tmp){width="2.83200021872266in"
 height="1.1404888451443569in"}
 
 ### Permitir solo acceso a directorio a un equipo concreto
@@ -774,13 +773,13 @@ height="1.1404888451443569in"}
 Puedo hacer que solo yo pueda ver esta carpeta desde un equipo en
 concreto:
 
-![](./media/image47.tmp){width="2.903999343832021in"
+![imagen](./media/image47.tmp){width="2.903999343832021in"
 height="0.8519630358705161in"}
 
 En este caso, el equipo 192.168.1.2 será el único que tenga acceso a la
 carpeta.
 
-![](./media/image48.tmp){width="2.6718339895013123in"
+![imagen](./media/image48.tmp){width="2.6718339895013123in"
 height="1.327584208223972in"}
 
 Sección files
@@ -799,7 +798,7 @@ el acceso:
 
 A cualquier archivo llamado **privado.html** de cualquier carpeta
 
-![](./media/image49.tmp){width="3.3919991251093613in"
+![imagen](./media/image49.tmp){width="3.3919991251093613in"
 height="0.6134470691163605in"}
 
 Podéis crear varios archivos privado.html en diferentes carpetas y
@@ -818,7 +817,7 @@ determinado lugar del sistema de archivos. Por ejemplo:
     `/var/www/xxx.smx2.org/` o cualquiera de sus subdirectorios si que se
     mostrará.
 
-![](./media/image50.tmp){width="4.655999562554681in"
+![imagen](./media/image50.tmp){width="4.655999562554681in"
 height="0.8801979440069991in"}
 
 ### Especificar un conjunto de archivos al que aplicará una configuración
@@ -918,7 +917,7 @@ servicio. El argumento nombre-parámetro se define cuando se ejecuta
 Apache2 por la línea de órdenes con la opción -Dparametro, al iniciar el
 servidor.
 
-Ejemplo: 
+Ejemplo:
 
     apache2 -DReverseProxy ...
 
@@ -966,7 +965,7 @@ responde al considerar dónde desea que una directiva sea efectiva.
     una sección <Directory> que se refiera a ese directorio, y así
     sucesivamente.
 
-Directiva ServerRoot 
+Directiva ServerRoot
 ---------------------
 
 La directiva ServerRoot es el directorio raíz donde se almacenan los
@@ -975,7 +974,7 @@ rutas absolutas como se indicaba con anterioridad.
 
 Podemos comprobar la directiva en `/etc/apache2/apache2.conf`
 
-![](./media/image51.tmp){width="4.895999562554681in"
+![imagen](./media/image51.tmp){width="4.895999562554681in"
 height="1.6782502187226596in"}
 
 Conexiones persistentes
@@ -985,7 +984,7 @@ KeepAlive indica si se permiten o no las conexiones persistentes, es
 decir más de una petición por conexión. Puede tomar los valores On u
 Off. El valor predeterminado es On.
 
-![](./media/image52.tmp){width="4.703999343832021in"
+![imagen](./media/image52.tmp){width="4.703999343832021in"
 height="2.115250437445319in"}
 
 Ficheros a servir por defecto (Directory Index)
@@ -998,7 +997,7 @@ Acceder a http://IPdelServidor y mirar qué página se está sirviendo por
 defecto. Podemos utilizar el comando wget para descargar un contenido
 web a través de HTTP
 
-![](./media/image53.tmp){width="5.905555555555556in"
+![imagen](./media/image53.tmp){width="5.905555555555556in"
 height="1.3611111111111112in"}
 
 Renombrar fichero de índice
@@ -1006,13 +1005,13 @@ Renombrar fichero de índice
 
 Renombrar el fichero index.html a indice.html
 
-![](./media/image54.tmp){width="5.905555555555556in"
+![imagen](./media/image54.tmp){width="5.905555555555556in"
 height="0.17430555555555555in"}
 
 Acceder a http://IPdelServidor. Como no se encuentra index.html, muestra
 una lista con el contenido del directorio.
 
-![](./media/image55.tmp){width="3.855999562554681in"
+![imagen](./media/image55.tmp){width="3.855999562554681in"
 height="2.2580850831146106in"}
 
 Cambiar directiva DirectoryIndex
@@ -1021,7 +1020,7 @@ Cambiar directiva DirectoryIndex
 Podemos configurar un índice de directorio para llamar a varios archivos
 usando el siguiente texto:
 
-Ejemplo: 
+Ejemplo:
 
     DirectoryIndex index.html index.cgi index.php
 
@@ -1040,7 +1039,7 @@ Editar `/etc/apache2/sites-available/xxx.smx2.org.conf` e incluir la
 directiva `DirectoryIndex` para que muestre como índice el archivo
 índice.html
 
-![](./media/image56.tmp){width="4.903999343832021in"
+![imagen](./media/image56.tmp){width="4.903999343832021in"
 height="2.3009120734908137in"}
 
 Reiniciamos el servidor: `sudo systemctl restart apache2`
@@ -1058,7 +1057,7 @@ defecto sea red.html
 
 Aquí debajo cambiar `/var/www/` por `/var/www/xxx.smx2.org/`
 
-![](./media/image57.tmp){width="3.135513998250219in"
+![imagen](./media/image57.tmp){width="3.135513998250219in"
 height="0.8720002187226596in"}
 
 Tal como indica la sección, a no ser que otra diga lo contrario, todas
@@ -1081,7 +1080,7 @@ Al acceder a la carpeta datos, <http://IPdelServidor/datos/>, al no
 existir ningún documento dentro llamado **red.html**, muestra el
 contenido del directorio.
 
-![](./media/image58.png){width="3.0833333333333335in"
+![imagen](./media/image58.png){width="3.0833333333333335in"
 height="1.2762981189851268in"}
 
 Configurar la carpeta DATOS para mostrar index.html y no listar contenido de la carpeta
@@ -1093,7 +1092,7 @@ para `/var/www/datos`. Todo lo que pongamos aquí, afectará ahora a la
 carpeta datos y todas sus subcarpetas. Si alguna directiva no la
 ponemos, aplicará las opciones de la carpeta padre (/var/www)
 
-![](./media/image59.tmp){width="2.863999343832021in"
+![imagen](./media/image59.tmp){width="2.863999343832021in"
 height="0.9288462379702537in"}
 
 **En este caso:**
@@ -1177,14 +1176,14 @@ Conocer donde se guardan los archivos de log
 El lugar donde se guardan los archivos de log está configurado dentro
 del fichero `/etc/apache2/sites-available/xxx.smx2.org.conf`
 
-![](./media/image60.tmp){width="5.905555555555556in"
+![imagen](./media/image60.tmp){width="5.905555555555556in"
 height="1.1659722222222222in"}
 
 En general, los ficheros de log se encuentran por defecto en
 /var/log/apache2/ (la localización habitual). $(APACHE_LOG_DIR) hace
 referencia a esta carpeta.
 
-![](./media/image61.tmp){width="5.905555555555556in"
+![imagen](./media/image61.tmp){width="5.905555555555556in"
 height="1.2666666666666666in"}
 
 Consulta del fichero log de errores
@@ -1197,7 +1196,7 @@ para navegar por el resultado.
 
 El log de errores general se suele llamar error.log
 
-![](./media/image62.tmp){width="5.905555555555556in"
+![imagen](./media/image62.tmp){width="5.905555555555556in"
 height="0.9256944444444445in"}
 
 Consulta del fichero log de accesos
@@ -1208,7 +1207,7 @@ junto con las peticiones y respuestas.
 
 El log de accesos se suele llamar `accesos.log`
 
-![](./media/image63.tmp){width="5.72967738407699in"
+![imagen](./media/image63.tmp){width="5.72967738407699in"
 height="0.6783617672790901in"}
 
 Como podemos ver en este caso, las últimas solicitudes han sido
@@ -1224,7 +1223,7 @@ se nos mostrará un aviso en el navegador ligado al error HTTP 404.
 Configurar directiva ErrorDocument
 ----------------------------------
 
-### Configurar mensaje 
+### Configurar mensaje
 
 Podemos configurar el servidor virtual por defecto cambiando la
 directiva ErrorDocument para que presente un texto de aviso.
@@ -1234,9 +1233,9 @@ Para ello se debe modificar
 el código de error 404 (página no encontrada) envíe el texto "Página no
 encontrada en el servidor de la red".
 
-![](./media/image64.tmp){width="5.905555555555556in" height="0.76in"}
+![imagen](./media/image64.tmp){width="5.905555555555556in" height="0.76in"}
 
-Reiniciamos el servidor: 
+Reiniciamos el servidor:
 
     sudo systemctl restart apache2
 
@@ -1247,7 +1246,7 @@ hemos hecho.
 
 Nos debería mostrar el mensaje personalizado para el error.
 
-![](./media/image65.tmp){width="5.905555555555556in"
+![imagen](./media/image65.tmp){width="5.905555555555556in"
 height="0.7520002187226597in"}
 
 ### Crear archivo para error no encontrado
@@ -1263,7 +1262,7 @@ Crear fichero personalizado
 - Crearemos el archivo en `/var/www/xxx.smx2.org/no_encontrada.html`
 - Escribiremos su contenido en lenguaje HTML
 
-![](./media/image66.tmp){width="5.207999781277341in"
+![imagen](./media/image66.tmp){width="5.207999781277341in"
 height="1.4453062117235345in"}
 
 Modificar archivo de configuración del site
@@ -1273,7 +1272,7 @@ Deberemos de modificar el archivo de configuración
 el código de error 404 (página no encontrada) presente el contenido del
 archivo /var/www/no_encontrada.html
 
-![](./media/image67.tmp){width="5.905555555555556in"
+![imagen](./media/image67.tmp){width="5.905555555555556in"
 height="0.8208333333333333in"}
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1284,7 +1283,7 @@ Podemos acceder a una página que no exista, como
 <http://IPdelServidor/noesta.html> y comprobar que se muestra el archivo
 creado para este fin.
 
-![](./media/image68.tmp){width="5.905555555555556in"
+![imagen](./media/image68.tmp){width="5.905555555555556in"
 height="1.2948720472440944in"}
 
 Directorios virtuales
@@ -1319,12 +1318,12 @@ Pasos
 -   Dentro crear una página `wiki1.html` que contenga "PÁGINA WIKI
     1"
 
-![](./media/image69.tmp){width="5.905555555555556in"
+![imagen](./media/image69.tmp){width="5.905555555555556in"
 height="0.26319444444444445in"}
 
 Documento /home/alumno/wiki/wiki1.html
 
-![](./media/image70.tmp){width="5.905555555555556in"
+![imagen](./media/image70.tmp){width="5.905555555555556in"
 height="1.5027777777777778in"}
 
 ### Iniciar sesión como administrador y crear el Alias /wiki {#iniciar-sesión-como-administrador-y-crear-el-alias-wiki .ListParagraph}
@@ -1333,13 +1332,13 @@ Gracias al alias, cuando visitemos
 [http://IPdelServidor/wiki](http://xxx.smx2.org/wiki), nos redirigirá al
 contenido de la carpeta /home/alumno/wiki.
 
-![](./media/image71.tmp){width="3.504348206474191in"
+![imagen](./media/image71.tmp){width="3.504348206474191in"
 height="1.1405653980752406in"}
 
 Además, deberemos buscar y cambiar en la sección directory / (raíz) de
 apache2.conf para que ponga require from all. Sino no funcionará
 
-Reiniciamos el servidor: 
+Reiniciamos el servidor:
 
     sudo systemctl restart apache2
 
@@ -1352,7 +1351,7 @@ Nos daremos cuenta de que aparece el listado del directorio
 **index.html** y al no existir el archivo index.html, siguiendo la
 directiva Indexes lista el directorio.
 
-![](./media/image72.tmp){width="3.9239905949256344in"
+![imagen](./media/image72.tmp){width="3.9239905949256344in"
 height="1.9439993438320209in"}
 
 Directorios Virtuales (usando enlaces simbólicos)
@@ -1369,7 +1368,7 @@ Sintaxis:
 
     ln -s <destination file or directory> <name of the symlink>
 
--   **Para borrarlo:** 
+-   **Para borrarlo:**
 
     rm <name of the symlink>
 
@@ -1381,7 +1380,7 @@ Pasos a realizar:
 2.  Crear directorio `/home/alumno/blog/`
 3.  Dentro crear el archivo blog1.html con el texto "PÁGINA BLOG 1"
 
-![](./media/image73.tmp){width="5.905555555555556in"
+![imagen](./media/image73.tmp){width="5.905555555555556in"
 height="0.29930555555555555in"}
 
 4.  Iniciar sesión como administrador
@@ -1398,13 +1397,13 @@ height="0.29930555555555555in"}
 
 7.  A continuación, podemos ver el enlace creado
 
-![](./media/image74.tmp){width="5.0175448381452314in"
+![imagen](./media/image74.tmp){width="5.0175448381452314in"
 height="0.8195395888013999in"}
 
 Modificar /etc/apache2/sites-available/xxx.smx2.org.conf y configurar el
 sitio para el directorio /home/alumno/blog
 
-![](./media/image75.tmp){width="4.7894739720035in"
+![imagen](./media/image75.tmp){width="4.7894739720035in"
 height="1.0188331146106737in"}
 
 Opción followsymlinks
@@ -1412,7 +1411,7 @@ Opción followsymlinks
 Verificar que está definida la opción FollowSymLinks en la configuración
 del directorio `/var/www`
 
-![](./media/image76.tmp){width="4.930435258092738in"
+![imagen](./media/image76.tmp){width="4.930435258092738in"
 height="0.8337215660542432in"}
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1449,10 +1448,10 @@ Instalación y carga de módulos
 Iniciar sesión como Administrador y comprobar los módulos estáticos que
 se han cargado
 
-![](./media/image77.tmp){width="5.8863243657042865in"
+![imagen](./media/image77.tmp){width="5.8863243657042865in"
 height="1.4944444444444445in"}
 
-### Comprobar los módulos que se han cargado dinámicamente 
+### Comprobar los módulos que se han cargado dinámicamente
 
 Los módulos dinámicos cargados se comprueban consultando el directorio
 `/etc/apache2/mods-enabled`, que son enlaces simbólicos a ficheros de
@@ -1477,7 +1476,7 @@ un enlace simbólico en este directorio a los
 Por defecto la instalación de Apache2 deja 'activados' un grupo de
 módulos.
 
-![](./media/image78.tmp){width="5.905555555555556in"
+![imagen](./media/image78.tmp){width="5.905555555555556in"
 height="3.902083333333333in"}
 
 ### Directiva LoadModule
@@ -1485,7 +1484,7 @@ height="3.902083333333333in"}
 Editar un archivo. load. Observar cómo se utiliza la directiva
 LoadModule
 
-![](./media/image79.tmp){width="5.905555555555556in"
+![imagen](./media/image79.tmp){width="5.905555555555556in"
 height="0.4284722222222222in"}
 
 ### Archivos de configuración de módulos
@@ -1494,7 +1493,7 @@ Editar un fichero .conf y observar cómo se añaden directivas dentro de
 una declaración <IfModule nombre modulo>...</IfModule> que se
 ejecutarán si se carga el módulo
 
-![](./media/image80.tmp){width="5.905555555555556in"
+![imagen](./media/image80.tmp){width="5.905555555555556in"
 height="3.001388888888889in"}
 
 Este es el módulo gracias al cual hemos podido crear alias en ejercicios
@@ -1506,7 +1505,7 @@ Consultar el directorio /usr/lib/apache2/modules para ver los módulos
 disponibles para cargar. Estos módulos están instalados, pero no tienen
 por qué estar habilitados.
 
-![](./media/image81.tmp){width="5.905555555555556in"
+![imagen](./media/image81.tmp){width="5.905555555555556in"
 height="1.6847222222222222in"}
 
 No son los únicos mods disponibles, puesto que se pueden descargar e
@@ -1519,7 +1518,7 @@ cargar módulos adicionales en Apache.
 
 Apt-cache search libapache2-mod
 
-![](./media/image82.tmp){width="5.905456036745407in"
+![imagen](./media/image82.tmp){width="5.905456036745407in"
 height="1.2260564304461943in"}
 
 Mod USEDIR
@@ -1546,7 +1545,7 @@ el módulo userdir no está habilitado.
 En esta carpeta nunca tocaremos nada, puesto que todo lo que hay en ella
 lo crea automáticamente Apache.
 
-![](./media/image83.tmp){width="5.905555555555556in"
+![imagen](./media/image83.tmp){width="5.905555555555556in"
 height="1.8830413385826772in"}
 
 ### Habilitar el módulo ejecutando el comando: a2enmod userdir
@@ -1560,29 +1559,29 @@ debemos utilizar los comandos:
 Los módulos disponibles se encuentran en el directorio
 /etc/apache2/mods-available
 
-![](./media/image84.tmp){width="5.905555555555556in"
+![imagen](./media/image84.tmp){width="5.905555555555556in"
 height="0.3611111111111111in"}
 
 Vamos a buscarlo
 
-![](./media/image85.tmp){width="5.905555555555556in"
+![imagen](./media/image85.tmp){width="5.905555555555556in"
 height="0.5027777777777778in"}
 
-Y lo instalamos: 
+Y lo instalamos:
 
     sudo apt install libapache2-mod-ldap-usedir
 
-![](./media/image86.tmp){width="5.905555555555556in"
+![imagen](./media/image86.tmp){width="5.905555555555556in"
 height="2.2472222222222222in"}
 
 Vemos que me los ha creado:
 
-![](./media/image87.tmp){width="5.905555555555556in"
+![imagen](./media/image87.tmp){width="5.905555555555556in"
 height="0.49583333333333335in"}
 
 Lo cargamos
 
-![](./media/image88.tmp){width="5.905555555555556in"
+![imagen](./media/image88.tmp){width="5.905555555555556in"
 height="0.6423611111111112in"}
 
 ### Verificar que se ha cargado el módulo
@@ -1591,10 +1590,10 @@ Verificar dentro del directorio /etc/apache2/mods-enabled que se han
 creado enlaces simbólicos del módulo userdir (ficheros .conf y. load)
 hacia /etc/apache2/mods-available
 
-![](./media/image89.tmp){width="5.905555555555556in"
+![imagen](./media/image89.tmp){width="5.905555555555556in"
 height="0.7208333333333333in"}
 
-Reiniciamos el servidor: 
+Reiniciamos el servidor:
 
     sudo systemctl restart apache2
 
@@ -1602,7 +1601,7 @@ Reiniciamos el servidor:
 
 Consultar el fichero /etc/apache2/mod_enabled/userdir.conf
 
-![](./media/image90.tmp){width="5.905555555555556in" height="1.575in"}
+![imagen](./media/image90.tmp){width="5.905555555555556in" height="1.575in"}
 
 ### Crear directorio personal
 
@@ -1619,7 +1618,7 @@ Es necesario asignar permisos 755 para que el grupo de usuarios y el
 resto de usuarios tengan acceso de lectura y puedan visualizar las
 páginas allí almacenadas.
 
-Para cambiar permisos: 
+Para cambiar permisos:
 
     chmod -R 755 /home/pepe/public_html
 
@@ -1672,7 +1671,7 @@ Autenticación HTTP Basic
 Miramos en `/etc/apache2/mods-enabled`, que el módulo **auth_basic** está
 habilitado
 
-![](./media/image91.tmp){width="5.905555555555556in"
+![imagen](./media/image91.tmp){width="5.905555555555556in"
 height="2.144000437445319in"}
 
 ### Usar autenticación básica en Apache
@@ -1682,12 +1681,12 @@ Crear el fichero `/etc/apache2/passwd `y añadir el usuario mortadelo.
 Ejecutando el comando `htpasswd -c mortadelo`. La opción -c creará el
 fichero.
 
-![](./media/image92.tmp){width="5.905555555555556in"
+![imagen](./media/image92.tmp){width="5.905555555555556in"
 height="0.8173611111111111in"}
 
 Fichero passwd creado en `/etc/apache2`
 
-![](./media/image93.tmp){width="5.905555555555556in"
+![imagen](./media/image93.tmp){width="5.905555555555556in"
 height="2.3569444444444443in"}
 
 **Añadir el usuario filemon**
@@ -1695,7 +1694,7 @@ height="2.3569444444444443in"}
 Ejecutando el comando htpasswd. La opción c ya no es necesaria para
 añadir nuevos usuarios al fichero passwd
 
-![](./media/image94.tmp){width="5.905555555555556in"
+![imagen](./media/image94.tmp){width="5.905555555555556in"
 height="1.0993055555555555in"}
 
 **Permitir accesos a mortadelo y filemon**
@@ -1705,7 +1704,7 @@ height="1.0993055555555555in"}
 -   Permitir el acceso al directorio `/var/www/privado` a los usuarios
     mortadelo y filemon
 
-![](./media/image95.tmp){width="5.905555555555556in"
+![imagen](./media/image95.tmp){width="5.905555555555556in"
 height="1.6381944444444445in"}
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1715,7 +1714,7 @@ Reiniciamos el servidor: sudo systemctl restart apache2
 Accediendo a la página web, veremos que no nos dejará acceder a ella, y
 nos pedirá un usuario y contraseña válidos para dejarnos continuar.
 
-![](./media/image96.tmp){width="4.792173009623797in"
+![imagen](./media/image96.tmp){width="4.792173009623797in"
 height="2.72799978127734in"}
 
 **Acceso con usuario no autorizado **
@@ -1726,7 +1725,7 @@ Conectando a
 En caso de que los datos proporcionados no sean correctos, nos mostrará
 una captura indicando que el acceso no ha sido autorizado.
 
-![](./media/image97.tmp){width="5.905555555555556in"
+![imagen](./media/image97.tmp){width="5.905555555555556in"
 height="1.2236111111111112in"}
 
 Habilitar uso de .htaccess
@@ -1757,7 +1756,7 @@ acceso al fichero principal de configuración del servidor.
 **AllowOverride** va a permitir que se puedan sobrescribir parámetros
 desde un archivo externo
 
-![](./media/image98.tmp){width="5.905555555555556in"
+![imagen](./media/image98.tmp){width="5.905555555555556in"
 height="0.7340277777777777in"}
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1789,16 +1788,16 @@ criptográficos Secure Sockets Layer) y Transport Layer Security.
 
 ### Habilitar mod_ssl
 
-![](./media/image99.tmp){width="5.905555555555556in"
+![imagen](./media/image99.tmp){width="5.905555555555556in"
 height="1.5391305774278214in"}
 
-Reiniciamos el servidor: 
+Reiniciamos el servidor:
 
     sudo systemctl restart apache2
 
 ### Comprobar carga del módulo
 
-![](./media/image100.tmp){width="5.905555555555556in" height="1.2in"}
+![imagen](./media/image100.tmp){width="5.905555555555556in" height="1.2in"}
 
 ### Ver contenido de port.conf
 
@@ -1808,27 +1807,27 @@ abrirá, además del puerto 80, el puerto 443.
 -   Las peticiones HTTP llegarán por defecto por el puerto 80
 -   Las peticiones HTTPS llegarán por defecto por el puerto 443
 
-![](./media/image101.tmp){width="5.0879997812773405in"
+![imagen](./media/image101.tmp){width="5.0879997812773405in"
 height="1.9474879702537182in"}
 
 ### Comprobar puertos con netstat
 
-![](./media/image102.tmp){width="4.751999125109362in"
+![imagen](./media/image102.tmp){width="4.751999125109362in"
 height="0.9890682414698163in"}
 
 ### Comprobar puertos con nmap
 
 Nmap es un programa de código abierto que sirve para efectuar rastreo de
-puertos. Instalar si no lo está: 
+puertos. Instalar si no lo está:
 
     sudo apt install nmap
 
-![](./media/image103.tmp){width="5.905555555555556in"
+![imagen](./media/image103.tmp){width="5.905555555555556in"
 height="1.8076388888888888in"}
 
 Con la opción -A podéis averiguar mucha más información:
 
-![](./media/image104.png){width="5.793556430446194in"
+![imagen](./media/image104.png){width="5.793556430446194in"
 height="5.560416666666667in"}
 
 Para más información y comandos de nmap:
@@ -1839,17 +1838,17 @@ Para más información y comandos de nmap:
 Comprobamos que existe un site por defecto para SSL, pero no está
 habilitado. Se llama default-ssl
 
-![](./media/image105.tmp){width="5.905555555555556in"
+![imagen](./media/image105.tmp){width="5.905555555555556in"
 height="1.46875in"}
 
 Habilitamos y comprobamos que se carga el site.
 
-![](./media/image106.tmp){width="5.905555555555556in"
+![imagen](./media/image106.tmp){width="5.905555555555556in"
 height="1.5348337707786526in"}
 
 Comprobar si puedo cargar la página web por HTTPS
 
-![](./media/image107.tmp){width="5.905555555555556in"
+![imagen](./media/image107.tmp){width="5.905555555555556in"
 height="1.2347222222222223in"}
 
 Comprobaremos que no podemos descargar la página
@@ -1863,7 +1862,7 @@ envíe.
 
 **Conectar al site SSL sin comprobar certificado**
 
-![](./media/image108.tmp){width="5.905555555555556in"
+![imagen](./media/image108.tmp){width="5.905555555555556in"
 height="1.8434787839020121in"}
 
 Crear un servidor virtual https
@@ -1882,19 +1881,19 @@ Creo un certificado digital auto firmado usado openssl. Para ello:
 -   Me voy al directorio home del usuario
 -   Creo una clave privada RSA (en este caso de 2048 bits)
 
-![](./media/image109.tmp){width="5.905555555555556in"
+![imagen](./media/image109.tmp){width="5.905555555555556in"
 height="0.7930555555555555in"}
 
 Una vez generada la clave privada, puedo generar una solicitud de
 certificado csr (relleno los datos)
 
-![](./media/image110.tmp){width="5.905555555555556in"
+![imagen](./media/image110.tmp){width="5.905555555555556in"
 height="2.6493055555555554in"}
 
 Esta solicitud de certificado creada, la podría enviar a una autoridad
 de certificación para generase el certificado crt. En este caso lo
 firmamos nosotros, es decir creamos un certificado auto firmado usando
-la clave privada. ![](./media/image111.tmp){width="5.905555555555556in"
+la clave privada. ![imagen](./media/image111.tmp){width="5.905555555555556in"
 height="0.75in"}
 
 Lo siguiente que haremos es mover la clave y el certificado creados a
@@ -1902,7 +1901,7 @@ los directorios que utiliza por defecto apache y configurar los permisos
 adecuados (se habrán creado en el directorio en el que estuviéramos al
 ejecutar los comandos anteriores).
 
-![](./media/image112.tmp){width="5.905555555555556in"
+![imagen](./media/image112.tmp){width="5.905555555555556in"
 height="0.8076388888888889in"}
 
 Cat seguro.key seguro.crt > nombre-sitio.pem
@@ -1914,7 +1913,7 @@ Copy nombre-sitio.pem /etc/ssl/private/
 Creo el archivo de configuración seguro (hago una copia del default-ssl
 con el nombre seguro)
 
-![](./media/image113.tmp){width="5.905555555555556in"
+![imagen](./media/image113.tmp){width="5.905555555555556in"
 height="0.5541666666666667in"}
 
 Configuración del nuevo site
@@ -1923,7 +1922,7 @@ Modificar la configuración del site **seguro.** Dado que lleva la
 sección ifmodule delante, este site no se cargará si el módulo SSL no
 está cargado, pese a que si aparezca en sites-enabled.
 
-![](./media/image114.tmp){width="5.905555555555556in"
+![imagen](./media/image114.tmp){width="5.905555555555556in"
 height="2.73043416447944in"}
 
 Agregar las directivas dentro de virtualhost:
@@ -1945,31 +1944,31 @@ SSLRequireSSL
 Por defecto tenemos activado el site HTTPS que viene por defecto con
 apache, por lo que deberemos deshabilitarlo y habilitar el site nuevo:
 
-Deshabilito el servidor virtual SSL que venía por defecto (default-ssl): 
-    
+Deshabilito el servidor virtual SSL que venía por defecto (default-ssl):
+
     a2dissite default-ssl
 
-Habilitamos el site que hemos creado (seguro): 
+Habilitamos el site que hemos creado (seguro):
 
     a2ensite seguro
 
 ####  Conexión al servidor HTTPS desde el navegador
 
-![](./media/image115.tmp){width="5.21599956255468in"
+![imagen](./media/image115.tmp){width="5.21599956255468in"
 height="2.5994127296587926in"}
 
 Como el certificado es autofirmado nos saltará un aviso, y podremos
 comprobar el certificado antes de darle validez
 
-![](./media/image116.tmp){width="4.5759995625546805in"
+![imagen](./media/image116.tmp){width="4.5759995625546805in"
 height="2.661979440069991in"}
 
 Consultar certificado en el cliente
 
-![](./media/image117.tmp){width="4.0879997812773405in"
+![imagen](./media/image117.tmp){width="4.0879997812773405in"
 height="2.879271653543307in"}
 
 Una vez aceptado el certificado, podemos acceder a la página
 
-![](./media/image118.tmp){width="5.905555555555556in"
+![imagen](./media/image118.tmp){width="5.905555555555556in"
 height="0.6956528871391076in"}

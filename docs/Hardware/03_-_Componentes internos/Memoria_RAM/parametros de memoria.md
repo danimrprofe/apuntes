@@ -4,7 +4,7 @@ Los parámetros más importantes de un módulo de memoria RAM son: Tipo de memor
 
 ## Velocidad y ancho de banda
 
-![](img/34_Memoria_RAM27.png)
+![imagen](img/34_Memoria_RAM27.png)
 
 * _Frecuencia de trabajo_
 * Mide la  _cantidad de operaciones que realiza la memoria en cada segundo_
@@ -13,7 +13,7 @@ Los parámetros más importantes de un módulo de memoria RAM son: Tipo de memor
   * Cuanta más alta es, mayor es la tasa de transferencia \(MB/s\) entre la memoria y la CPU
 * Ejemplo:  _2\.133 MHz_
 
-![](img/34_Memoria_RAM28.gif)
+![imagen](img/34_Memoria_RAM28.gif)
 
 __Memoria DDR2\-600 / PC2\-5300__
 
@@ -30,7 +30,7 @@ Velocidad y ancho de banda
 * Se expresa en MB/s o GB/s
 * __Ejemplo: __  _17\.000 MB/s_
 
-![](img/34_Memoria_RAM29.gif)
+![imagen](img/34_Memoria_RAM29.gif)
 
 __Memoria DDR2\-600 / PC2\-5300__
 
@@ -48,7 +48,7 @@ Transmite 5\.300 MB por segundo entre RAM y CPU
   * _CL14_ : 14 ciclos de reloj
   * _10 ns_ : tiempo de respuesta
 
-![](img/34_Memoria_RAM30.gif)
+![imagen](img/34_Memoria_RAM30.gif)
 
 __Memoria DDR2\-600 / PC2\-5300__
 
@@ -74,7 +74,7 @@ KVR13S9S8/4 \- 4 GB \(1333 MHz, DDR3,  _Non\-ECC_ , CL9, SODIMM 204\-pin, 1\.5 V
 
 KVR16E11/8 \- 8 GB \(1600 MHz DDR3  <span style="color:#00B050">ECC</span>  CL11 DIMM 240\-pin\)
 
-![](img/34_Memoria_RAM31.gif)
+![imagen](img/34_Memoria_RAM31.gif)
 
 ## Buffered y registered
 
@@ -89,7 +89,7 @@ KVR16E11/8 \- 8 GB \(1600 MHz DDR3  <span style="color:#00B050">ECC</span>  CL11
   * Ubicadas para identificar las tecnologías que admite el módulo\.
   * Posición también evita que el tipo incorrecto de módulo se use en una placa base\.
 
-![](img/34_Memoria_RAM32.png)
+![imagen](img/34_Memoria_RAM32.png)
 
 ## Características y efectos en el rendimiento
 

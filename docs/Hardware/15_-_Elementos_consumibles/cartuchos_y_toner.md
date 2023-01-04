@@ -19,17 +19,17 @@
   * Cuanta menos tinta quede, se seca con más facilidad
   * Cartuchos con circuitería, descargarse de electricidad estática antes
 
-![](img/15_Elementos_consumibles5.jpg)
+![imagen](img/15_Elementos_consumibles5.jpg)
 
-![](img/15_Elementos_consumibles6.jpg)
+![imagen](img/15_Elementos_consumibles6.jpg)
 
-![](img/15_Elementos_consumibles7.jpg)
+![imagen](img/15_Elementos_consumibles7.jpg)
 
 ## Cartuchos y tóners
 
 __Contenedores del producto de impresión__
 
-![](img/15_Elementos_consumibles8.png)
+![imagen](img/15_Elementos_consumibles8.png)
 
 ## Conservación de tóner
 
@@ -44,9 +44,9 @@ __Contenedores del producto de impresión__
   * Utilizar un paño húmedo o papel secante\.
 * Nunca desarmes el cartucho, y menos aún cuando esté colocado en la impresora o tenga tinta\.
 
-![](img/15_Elementos_consumibles9.png)
+![imagen](img/15_Elementos_consumibles9.png)
 
-![](img/15_Elementos_consumibles10.jpg)
+![imagen](img/15_Elementos_consumibles10.jpg)
 
 ## Reciclaje de cartuchos y tóner
 
@@ -66,7 +66,7 @@ __Contenedores del producto de impresión__
     * El proceso de reciclaje es complejo
     * Puede exigir resetear su circuito\.
 
-![](img/15_Elementos_consumibles11.jpg)
+![imagen](img/15_Elementos_consumibles11.jpg)
 
 * Reciclaje consumibles
   * Estados Unidos \- 65 %

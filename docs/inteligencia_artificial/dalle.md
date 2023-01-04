@@ -2,7 +2,7 @@
 
 Dall-e es una aplicación de inteligencia artificial creada por OpenAI. Dall-e genera imágenes a partir de texto, lo que le permite crear imágenes de objetos que no existen en la realidad.
 
-![](img/2022-12-23-13-30-50.png)
+![imagen](img/2022-12-23-13-30-50.png)
 
 Por ejemplo, si se le pide que genere una imagen de un "perro volador", Dall-e creará una imagen de un perro con alas.
 

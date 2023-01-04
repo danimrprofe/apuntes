@@ -113,9 +113,9 @@
 - Interfaz de red = NIC = tarjeta de red
 - Un dispositivo puede tener una o más
 
-![](2019-05-08-08-42-11.png)
+![imagen](2019-05-08-08-42-11.png)
 
-![](2019-05-08-08-42-35.png)
+![imagen](2019-05-08-08-42-35.png)
 
 # Sistema con clases (direccionamiento classful)
 
@@ -133,7 +133,7 @@ Problemática
 - Amplia proliferación de redes LAN
 - Espacio de direcciones solo admite 254 redes independientes
 
-![](2019-05-08-08-42-46.png)
+![imagen](2019-05-08-08-42-46.png)
 
 # Classes de direcciones
 
@@ -150,13 +150,13 @@ Problemática
 
 ## Diagrama de clases
 
-![](2019-05-08-08-43-18.png)
+![imagen](2019-05-08-08-43-18.png)
 
-![](2019-05-08-08-43-27.png)
+![imagen](2019-05-08-08-43-27.png)
 
-![](2019-05-08-08-44-02.png)
+![imagen](2019-05-08-08-44-02.png)
 
-![](2019-05-08-08-44-30.png)
+![imagen](2019-05-08-08-44-30.png)
 
 # CLASE A
 
@@ -166,7 +166,7 @@ Problemática
 - 0 y el 127 reservados (entre 1 y 126 en realidad).
 - La red 127.0.0.1 es para loopback.
 
-![](2019-05-08-08-43-36.png)
+![imagen](2019-05-08-08-43-36.png)
 
 # CLASE B
 
@@ -174,7 +174,7 @@ Problemática
 - IP de clase B empezarán por un valor entre 10000000 y 10111111
 - Direcciones que comienzan entre 128 y 191.
 
-![](2019-05-08-08-43-44.png)
+![imagen](2019-05-08-08-43-44.png)
 
 # CLASE C
 
@@ -232,7 +232,7 @@ Estas direcciones IP:
   - Así saber dónde deben regresar los paquetes de respuesta.
 - En general es el router quien realiza esta traducción NAT.
 
-![](2019-05-08-08-44-45.png)
+![imagen](2019-05-08-08-44-45.png)
 
 
 ## Direcciones estáticas (fijas)
@@ -265,7 +265,7 @@ Esta dirección, representa la red en la que están los hosts:
 
 Los datos enviados a cualquier host de dicha red se verán desde fuera de la red LAN con la dirección 198.159.11.0
 
-![](2019-05-08-08-45-12.png)
+![imagen](2019-05-08-08-45-12.png)
 
 ### Dirección del router o puerta de enlace
 
@@ -273,7 +273,7 @@ Los datos enviados a cualquier host de dicha red se verán desde fuera de la red
 - Generalmente realizando para ello operaciones de traducción de direcciones IP
 - Ejemplo: 198.150.12.1
 
-![](2019-05-08-08-45-17.png)
+![imagen](2019-05-08-08-45-17.png)
 
 ### Dirección broadcast
 
@@ -287,9 +287,9 @@ Broadcasts son necesarios para:
 - Establecer comunicación inicial con otro cliente, ejemplo, resolución de direcciones
 - Para DHCP y asignación de direcciones
 
-![](2019-05-08-08-45-27.png)
+![imagen](2019-05-08-08-45-27.png)
 
-![](2019-05-08-08-45-57.png)
+![imagen](2019-05-08-08-45-57.png)
 
 ### Máscara de red
 
@@ -306,7 +306,7 @@ El router debe realizar un AND lógico binario entre la dirección IP de destino
 - Clase C: 255.255.255.0
 - Clase D i E: no tienen
 
-![](2019-05-08-08-46-40.png)
+![imagen](2019-05-08-08-46-40.png)
 
 #### Representación de la máscara
 
@@ -317,13 +317,13 @@ La máscara de red se puede representar:
 
 #### Utilización de la máscara
 
-![](2019-05-08-08-47-12.png)
+![imagen](2019-05-08-08-47-12.png)
 
 ## Direcciones reservadas
 
-![](2019-05-08-08-47-22.png)
+![imagen](2019-05-08-08-47-22.png)
 
-![](2019-05-08-08-47-34.png)
+![imagen](2019-05-08-08-47-34.png)
 
 # Interfaces loopback
 
@@ -350,7 +350,7 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 
 ## ICANN (IANA)
 
-![](2019-05-08-08-47-47.png)
+![imagen](2019-05-08-08-47-47.png)
 
 - ICANN = Corporación de Internet para la Asignación de Nombres y Números
 - Organización responsable de la asignación de direcciones IP a los distintos proveedores
@@ -360,7 +360,7 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 
 ## RIR
 
-![](2019-05-08-08-48-48.png)
+![imagen](2019-05-08-08-48-48.png)
 
 Asignación IANA: https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 

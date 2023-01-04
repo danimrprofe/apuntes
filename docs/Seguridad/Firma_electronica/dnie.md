@@ -8,7 +8,7 @@ Entró en funcionamiento un 2 de marzo: los primeros documentos de identidad no 
 
 Los tres primeros números le correspondieron a Franco y su familia
 
-![](img/2022-12-13-16-35-04.png)
+![imagen](img/2022-12-13-16-35-04.png)
 
 Del 10 al 99, reservados para miembros de la Casa Real. Además, no existe el número 13 en los DNIs -por superstición.
 
@@ -19,7 +19,7 @@ El primer DNI informatizado regulado por Orden del ministerio del Interior de fe
 
 No figura impresión dactilar y si dos líneas de caracteres OCR.
 
-![](img/2022-12-13-16-37-31.png)
+![imagen](img/2022-12-13-16-37-31.png)
 
 ## Primer DNI electrónico
 
@@ -30,15 +30,15 @@ Se trata además de una tarjeta de policarbonato grabada con láser, con las mis
 
 Permite la conexión a servicios telemáticos, a través de un lector de tarjetas conectado al ordenador.
 
-![](img/2022-12-13-16-39-35.png)
+![imagen](img/2022-12-13-16-39-35.png)
 
 ## Máquina para crear DNI
 
-![](img%5CDNIe0.png)
+![imagen](img%5CDNIe0.png)
 
 ## DNIe
 
-![](img%5CDNIe1.png)
+![imagen](img%5CDNIe1.png)
 
 __El DNIe es el carnet de identidad de siempre\, con un chip incluido en su interior\. Este chip guarda información nuestra que nos permite utilizarlo también para autenticarnos en Internet\. __
 
@@ -51,7 +51,7 @@ El DNIe me permite:
 1. Acreditar electrónicamente identidad
 2. Firmar digitalmente documentos electrónicos
 
-![](img%5CDNIe2.png)
+![imagen](img%5CDNIe2.png)
 
 ## ¿Qué información contiene el chip?
 
@@ -63,7 +63,7 @@ El chip integrado contiene la siguiente información nuestra:
 - Huella dactilar
 - Certificados de autenticación y firma electrónica
 
-![](img/2022-12-13-16-42-43.png)
+![imagen](img/2022-12-13-16-42-43.png)
 
 ## DNI 3.0
 
@@ -75,15 +75,15 @@ Disponer de un chip dual\-interface que permite su utilización con contacto y t
 
 Elimina la necesidad de un lector de tarjetas o drivers\, facilitando la conexión online y la autenticación del ciudadano\.
 
-![](img%5CDNIe4.png)
+![imagen](img%5CDNIe4.png)
 
 _[https://www\.dnielectronico\.es/PDFs/Historia\_de\_los\_documentos\_de\_identidad\.pdf](https://www.dnielectronico.es/PDFs/Historia_de_los_documentos_de_identidad.pdf)_
 
-![](img%5CDNIe5.png)
+![imagen](img%5CDNIe5.png)
 
-![](img%5CDNIe6.png)
+![imagen](img%5CDNIe6.png)
 
-![](img%5CDNIe7.png)
+![imagen](img%5CDNIe7.png)
 
 ## DNIe
 
@@ -94,7 +94,7 @@ También necesitaremos:
 - Lector de tarjetas
 - Software de acceso a la tarjeta
 
-![](img%5CDNIe8.png)
+![imagen](img%5CDNIe8.png)
 
 ## PIN
 
@@ -118,7 +118,7 @@ Podremos hacerlo nosotros mismos a través de las máquinas que se encuentran a 
 - Banca online
 - Firma de contratos
 
-![](img%5CDNIe9.png)
+![imagen](img%5CDNIe9.png)
 
 ## Pagar tasas o impuestos
 
@@ -135,10 +135,10 @@ __Los tipos de lectores más habituales son:__
 - Smartphone mediante la tecnología NFC
 - La necesidad de tener este hardware ha sido uno de los principales problemas a la hora de implantar el DNI electrónico
 
-![](img%5CDNIe10.png)
+![imagen](img%5CDNIe10.png)
 
 _[https://www\.youtube\.com/watch?v=kTC\-xxdTufA](https://www.youtube.com/watch?v=kTC-xxdTufA)_
 
 ## Partes DNIe
 
-![](img%5CDNIe11.png)
+![imagen](img%5CDNIe11.png)

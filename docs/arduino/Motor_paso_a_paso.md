@@ -17,7 +17,7 @@ El paso a paso que estamos utilizando viene con su propio tablero de conductor, 
 - x F-M cables (cables de hembra a macho DuPont)
 - M-M wire (hilo puente de macho a macho)
 
-![](media/image155.jpeg)
+![imagen](media/image155.jpeg)
 
 ## ¿Cómo funciona un motor paso a paso?
 
@@ -42,12 +42,12 @@ Modelo: 28BYJ-48
 
 ## Esquema de circuitos
 
-![](media/image156.jpeg)
+![imagen](media/image156.jpeg)
 
 El motor de pasos bipolar tiene generalmente cuatro cables que salen de él. A diferencia de los motores PAP unipolares, steppers bipolares no tienen ninguna conexión común de centro. Tienen dos juegos independientes de bobinas en lugar de otro. Se pueden distinguir de steppers unipolares midiendo la resistencia entre los cables. Debe encontrar dos pares de cables de igual resistencia. Si tienes las puntas de su medidor conectado a dos cables que no están conectados (es decir, no conectada a la bobina del mismo), debería ver resistencia infinita (o sin continuidad).
 ## ULN2003 Placa conductora
 
-![](media/image157.jpeg)
+![imagen](media/image157.jpeg)
 
 Descripción del producto
 
@@ -64,21 +64,21 @@ Para controlar el paso a paso, aplicamos tensión a cada una de las bobinas en u
 
 La secuencia iría así:
 
-![](media/image158.jpeg)
+![imagen](media/image158.jpeg)
 
 Estos son esquemas que muestran cómo un paso a paso unipolar de interfaz motor a cuatro pines controlador utilizando un ULN2003A y mostrando cómo la interfaz usando cuatro com
 
-![](media/image159.jpeg)
+![imagen](media/image159.jpeg)
 
 ## Conexión
 
 ## Esquema
 
-![](media/image160.jpeg)
+![imagen](media/image160.jpeg)
 
 ## Diagrama de cableado
 
-![](media/image161.jpeg)
+![imagen](media/image161.jpeg)
 
 Estamos utilizando 4 pines para controlar el paso a paso.
 
@@ -87,4 +87,4 @@ Estamos utilizando 4 pines para controlar el paso a paso.
 
 ## Código
 
-![](media/image162.jpeg)
+![imagen](media/image162.jpeg)

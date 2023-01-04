@@ -80,10 +80,10 @@ Si contamos con un **certificado digital**, podemos comenzar a firmar documentos
 - Online, a través de un servicio de verificación y generación de firmas electrónicas como es VALIDe
 - A través de aplicaciones de firma electrónica o de ofimática que, tras ser descargadas y ejecutadas en un ordenador, permitirán realizar firmas de documentación sin la necesidad de estar conectado a Internet.
 
-![](img/2022-12-13-16-45-53.png)
+![imagen](img/2022-12-13-16-45-53.png)
 
 ## Sellado en el tiempo
 
 Una de las características más útiles que puede ir asociada a la firma electrónica es lo que se conoce como "sellado en el tiempo"\. Se trata de un método para probar que un conjunto de datos \(en este caso\, la firma que se ha realizado\) existió en un momento determinado \(fecha y hora\)\.
 
-![](img%5CFirma%20digital1.png)
+![imagen](img%5CFirma%20digital1.png)

@@ -20,7 +20,7 @@ Las **tecnologías** de redes inalámbricas más extendidas son:
 
 En general todos utilizamos una combinación de ellas, puesto que según el uso que queramos dar y dónde nos encontremos, nos serán más o menos convenientes.
 
-![](img/2020-04-01-11-50-12.png)
+![imagen](img/2020-04-01-11-50-12.png)
 
     Actividad 1 ¿Cuales de las tecnologías inalámbricas utilizas en casa y en qué situaciones? Imagina cómo pasarías el día de hoy si no tuvieras ninguna de ellas y cómo lo solucionarías.
 
@@ -44,11 +44,11 @@ Por el contrario, también presentan algunos inconvenientes, como, por ejemplo:
 Un estándar son una serie de normas que definen las características de una red de área local inalámbrica (WLAN).
 Las redes Wifi también se agrupan en el estándar 802.11. Una red Wifi es una red que cumple con el estándar 802.11.
 
-![](img/2020-03-31-14-38-23.png)
+![imagen](img/2020-03-31-14-38-23.png)
 
 A los dispositivos certificados por la “WiFi Alliance” usan un logotipo como el siguiente, e indica que son compatibles con la tecnología Wifi.
 
-![](img/2020-03-31-14-38-15.png)
+![imagen](img/2020-03-31-14-38-15.png)
 
     Actividad 3: adjunta una captura de las redes wifi que detectas con tu móvil
 
@@ -61,7 +61,7 @@ Según el tipo de conexión Wifi, tenemos diferentes “estándares” o version
 
 A medida que la investigación avanza, se crean versiones nuevas, que proporcionan más velocidad y/o cobertura, entre otras. En este recuadro podéis ver las diferencias entre algunas de las versiones:
 
-![](img/2020-03-31-14-38-38.png)
+![imagen](img/2020-03-31-14-38-38.png)
 
 Es importante que los equipos que se desea conectar a una red wifi entiendan el mismo “idioma” y por tanto utilicen versiones de wifi que entiendan todos.
 
@@ -80,7 +80,7 @@ En función de la red que queramos montar necesitemos unos u otro. También es p
 
 En equipos antiguos, fabricados antes de inventarse las redes inalámbricas, necesitamos adaptadores para hacer que estos equipos se puedan conectar a una red wifi.
 
-![](img/2020-03-31-14-39-05.png)
+![imagen](img/2020-03-31-14-39-05.png)
 
 Existen diferentes tipos:
 
@@ -88,28 +88,28 @@ Existen diferentes tipos:
 
 Se agregan (o vienen de fábrica) a los ordenadores de sobremesa. Hoy en día están perdiendo terreno debido a las tarjetas USB.
 
-![](img/2020-03-31-14-39-22.png)
+![imagen](img/2020-03-31-14-39-22.png)
 
 
 **Tarjetas PCMCIA**
 Modelo que se utilizó mucho en los primeros ordenadores portátiles, Hoy en día internas en estos ordenadores.
 
-![](img/2020-03-31-14-40-12.png)
+![imagen](img/2020-03-31-14-40-12.png)
 
 Como véis en la imagen, los ordenadores y portátiles más antiguos necesitan estos accesorios para poderse conectar a una red WiFi.
 
 
-![](img/2020-04-01-11-49-31.png)
+![imagen](img/2020-04-01-11-49-31.png)
 
 **Antenas USB**
 
 Más adelante, y aprovechando que todos los equipos traían de serie puertos USB, estas tarjetas se fabricaron con forma de **pendrive**, más sencillo de conectar a un pc, ya sea de sobremesa o portátil. Haciendo uso de todas las ventajas que tiene la tecnología USB.
 
-![](img/2020-03-31-14-39-45.png)
+![imagen](img/2020-03-31-14-39-45.png)
 
 También se popularizaron los adaptadores USB para conectarse a redes de datos móviles, llamados **modem USB**. Estos nos permitían conectarnos a una red móvil desde un ordenador portátil, por ejemplo.
 
-![](img/2020-04-03-11-22-12.png)
+![imagen](img/2020-04-03-11-22-12.png)
 
 **Circuitos internos**
 
@@ -120,7 +120,7 @@ La mayoría de dispositivos hoy en día disponen de adaptadores Wi-Fi en los cir
 - Portátiles
 - Consolas
 
-![](img/2020-03-31-14-40-01.png)
+![imagen](img/2020-03-31-14-40-01.png)
 
 
     Actividad 5: explica qué equipos de tu casa están conectados a través de Wifi.
@@ -137,11 +137,11 @@ Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cober
 
 Permiten conectar dispositivos en forma inalámbrica a una red existente.
 
-![](img/2020-03-31-14-40-40.png)
+![imagen](img/2020-03-31-14-40-40.png)
 
 Pueden agregarse más puntos de acceso a una red para generar redes de cobertura más amplia. Suelen estar en las paredes de los pasillos en edificios grandes.
 
-![](img/2020-03-31-14-40-29.png)
+![imagen](img/2020-03-31-14-40-29.png)
 
 #### 2.4.2	REPETIDORES INALÁMBRICOS
 
@@ -149,7 +149,7 @@ Pueden agregarse más puntos de acceso a una red para generar redes de cobertura
 - Se conectan a una red existente que tiene señal más débil
 - Crean una señal limpia a la que se pueden conectar los equipos dentro de su alcance.
 
-![](img/2020-03-31-14-40-48.png)
+![imagen](img/2020-03-31-14-40-48.png)
 
 #### 2.4.3	ROUTERS INALÁMBRICOS
 
@@ -159,7 +159,7 @@ Pueden agregarse más puntos de acceso a una red para generar redes de cobertura
 –	Switch Permite la comunicación entre todos los equipos conectados
 - Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos.
 
-![](img/2020-03-31-14-40-54.png)
+![imagen](img/2020-03-31-14-40-54.png)
 
     Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos.
 
@@ -173,11 +173,11 @@ Las redes wifi, al transmitirse por el aire, son especialmente sensibles a ataqu
 
 Los datos transmitidos por wifi se envían por el aire, por lo que cualquier persona con una antena podría capturarlos y ver lo que estamos enviando (fotos, correos, etc.). Por ello es importante cifrar la información o encriptarla, utilizando algún tipo de contraseña.
 
-![](img/2020-03-31-14-41-05.png)
+![imagen](img/2020-03-31-14-41-05.png)
 
 Algunos tipos de encriptación Wi-Fi son WEP y WPA, encargados de la codificación de la información transmitida para proteger su confidencialidad. Estos mecanismos transforman lo que estamos enviando para que nadie lo pueda entender salvo el ordenador al que lo enviamos. Utilizaremos para ello una contraseña, que solo sabrán los usuarios autorizados de esa red.
 
-![](img/2020-03-31-14-41-13.png)
+![imagen](img/2020-03-31-14-41-13.png)
 
 Entrando en el router podemos cambiar el tipo de encriptación (modo de seguridad), cambiar el nombre de nuestra red o la contraseña. Esto solo lo puede hacer el administrador de red. En general, viene ya configurado, y solo usuarios con conocimientos lo pueden cambiar.
 
@@ -187,7 +187,7 @@ En nuestro router, podemos ver en la parte posterior la información para conect
 
 También podemos ver la clave, necesaria para podernos conectar. También tenemos unos códigos QR que, en función del dispositivo, le podemos hacer una foto y se conecta a la red sin tener que buscar el nombre ni escribir la contraseña a mano.
 
-![](img/2020-03-31-14-41-29.png)
+![imagen](img/2020-03-31-14-41-29.png)
 
 Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que tenemos a nuestro alcance y también podremos saber si:
 
@@ -195,7 +195,7 @@ Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que t
 - Nos llega señal suficiente
 - Tenemos algún problema de conexión a Internet
 
-![](img/2020-05-06-10-14-27.png)
+![imagen](img/2020-05-06-10-14-27.png)
 
 
     Actividad 9: adjunta una foto de la etiqueta de tu router. Tapa la clave a ser posible con paint o alguna herramienta de google docs. ¿Cuántas redes wifi tienes y cómo se llaman?¿a cual o cuales te conectas?
@@ -207,11 +207,11 @@ Muchos habréis visto que tenéis en casa o podéis tener dos redes wifi diferen
 - La de 5 GHz nos ofrece más velocidad, pero llega menos lejos, por lo que es conveniente si estamos cerca. Funciona muy bien para jugar online, o servicios de Streaming (Netflix, HBO)
 - La de 2.4 GHz es mejor para chatear, enviar emails o navegar por la red.
 
-![](img/2020-03-31-14-41-36.png)
+![imagen](img/2020-03-31-14-41-36.png)
 
 En la parte trasera del router suele aparecer la información con los nombres de las dos redes.
 
-![](img/2020-05-06-10-23-24.png)
+![imagen](img/2020-05-06-10-23-24.png)
 
     Actividad 10. ¿Cuales de estas redes tienes en casa?¿Cómo se llaman?
 
@@ -229,7 +229,7 @@ En el router se crea una lista de direcciones permitidas, las de cada dispositiv
 
 En primer lugar, se crea una lista en el router, donde agregaremos todas las direcciones MAC que queramos restringir. Podremos elegir si lo que queremos es permitir solo esos ordenadores y no dejar conectarse a nadie más o, por el contrario, dejar conectar a todo el mundo menos a esos.
 
-![](img/2020-03-31-14-41-48.png)
+![imagen](img/2020-03-31-14-41-48.png)
 
     Actividad 11: imagina que quieres bloquear el móvil de tus padres para que no se conecten a la wifi. Qué información necesitas saber de sus teléfonos y del router y qué pasos tienes que seguir para hacerlo?
 
@@ -237,17 +237,17 @@ En primer lugar, se crea una lista en el router, donde agregaremos todas las dir
 
 Una forma de evitar que alguien se conecte a mi red wifi es ocultarla. Si nadie ve el nombre de la Wifi de nuestra casa, es más difícil que puedan conectarse a ella. Esto se llama ocultación del punto de acceso (ocultación SSID). De este modo, la red no se muestra en la lista de redes wifi para conectarse y por tanto es invisible a otros usuarios.
 
-![](img/2020-04-01-12-15-52.png)
+![imagen](img/2020-04-01-12-15-52.png)
 
 Los que sí conocen el nombre de la red wifi la pueden **escribir a mano el nombre de la red wifi** y conectarse, por lo que necesitan saber el nombre de antemano.
 
 También podríamos directamente desactivar la red wifi si solo conectamos al router con cables. De este modo, nadie se podrá conectar por wifi a nuestra red.
 
-![](img/2020-03-31-14-41-57.png)
+![imagen](img/2020-03-31-14-41-57.png)
 
 ## 3.	BLUETOOTH
 
-![](img/2020-04-03-11-44-23.png)
+![imagen](img/2020-04-03-11-44-23.png)
 
 ### 3.1	INTRODUCCIÓN
 
@@ -282,7 +282,7 @@ Para el funcionamiento se sigue una estructura maestro-esclavo y funciona del si
 2. El maestro (auriculares) debe estar visibles en un radio inferior de 10 m.
 3. El esclavo (smartphone) se encarga de buscar otros dispositivos dentro del radio.
 
-![](img/2020-04-03-11-40-55.png)
+![imagen](img/2020-04-03-11-40-55.png)
 
 Cuando se encuentra un dispositivo, se inicia un protocolo de seguridad basado en código. En ocasiones se nos pedirá un código. Se comprueba el código en el dispositivo maestro y en el esclavo. Si es el mismo, se establece el emparejamiento y comienza el traspaso de información.
 
@@ -297,19 +297,19 @@ La mayoría de coches disponen de un sistema de navegación integrado que permit
 - Hacer llamadas utilizando la función de manos libres. Podemos acceder a la agenda de contactos del móvil a través de la consola.
 - Reproducir música desde el móvil.
 
-![](img/2020-03-31-14-42-07.png)
+![imagen](img/2020-03-31-14-42-07.png)
 
 **Auriculares inalámbricos**
 
 Otro ejemplo lo podemos encontrar en auriculares inalámbricos, que nos permiten escuchar la música de un dispositivo cercano sin necesidad de cables. Un ejemplo es el de los Airpods de Apple.
 
-![](img/2020-03-31-14-42-12.png)
+![imagen](img/2020-03-31-14-42-12.png)
 
 **Teclados, ratones y mandos**
 
 La mayoría de los teclados y ratones hoy en día son inalámbricos, pues nos permiten evitar tener cables por en medio, y poder conectar un ratón o teclado a diferentes dispositivos según lo necesitemos.
 
-![](img/2020-03-31-14-42-17.png)
+![imagen](img/2020-03-31-14-42-17.png)
 
 **Equipos de sonido**
 
@@ -317,7 +317,7 @@ Otro caso interesante es el de los sistemas de sonido home cinema, en los que te
 
 En este caso, la barra de sonido sí estaría conectada al televisor, pero el subwoofer se conectaría con la barra a través de Bluetooth.
 
-![](img/2020-03-31-14-42-30.png)
+![imagen](img/2020-03-31-14-42-30.png)
 
     Actividad 13: De todos los ejemplos anteriores, explica cuales de ellos tenéis en casa tú o algún miembro de tu familia.
     Actividad 14: ¿Qué inconvenientes crees que pueden tener los dispositivos anteriores comparándolos con su misma versión pero con cables?
@@ -328,7 +328,7 @@ En la actualidad y en un futuro próximo, cualquier equipo eléctrico y electró
 
 Esto, unido a los **asistentes de voz** como Alexa, Siri o Google home, abre un nuevo mundo de posibilidades, puesto que podemos dar órdenes con nuestra voz y así conseguir que otros equipos hagan ciertas cosas, como encender las luces, o ponernos una película en la televisión, por ejemplo.
 
-![](img/2020-04-03-11-29-55.png)
+![imagen](img/2020-04-03-11-29-55.png)
 
     Actividad 15. Si tienes algún asistente de voz explica cual y para qué lo utilizas.
     Actividad 16. ¿Crees qué presentan algún problema en cuanto a la privacidad?
@@ -337,7 +337,7 @@ Esto, unido a los **asistentes de voz** como Alexa, Siri o Google home, abre un 
 
 Es un sistema de pago inalámbrico utilizando la **tecnología NFC** que nos permite realizar pagos con solo aproximar el medio de pago (tarjeta, móvil, smartwatch...) al terminal de pago (datáfono) compatible con esta tecnología.
 
-![](img/2020-04-20-08-57-04.png)
+![imagen](img/2020-04-20-08-57-04.png)
 
 Para poder usar estos servicios necesitamos:
 
@@ -350,14 +350,14 @@ Así podemos utilizar, como forma de pago, nuestro móvil junto con alguna de la
 - Apple Pay
 - Samsung Pay
 
-![](img/2020-04-01-12-01-25.png)
+![imagen](img/2020-04-01-12-01-25.png)
 
 Los bancos tienen también sus propias apps para los diferentes sistemas operativos:
 
 - BBVA Wallet
 - La-Caixa Wallet
 
-![](img/2020-05-06-10-12-30.png)
+![imagen](img/2020-05-06-10-12-30.png)
 
 Actividad 17: averigua si tu móvil tiene o no NFC y adjunta si es así una captura del menú de tu móvil donde se activa.
 

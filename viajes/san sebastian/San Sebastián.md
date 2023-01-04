@@ -21,7 +21,7 @@ Viaje San Sebastián
 
 # 3 de junio
 
-- Cogemos la furgoneta en Avis 
+- Cogemos la furgoneta en Avis
 - Nos vamos hasta el hotel Olarraín de San Sebastián.
 
 # 4 de junio
@@ -31,7 +31,7 @@ Viaje San Sebastián
 - Vamos con el coche hasta el centro Tolosaldea
 - Nos hacen una visita a las diferentes instalaciones que tienen para formación profesional.
 
-![](2019-06-08-15-38-21.png)
+![imagen](2019-06-08-15-38-21.png)
 
 ## Vuelta a San Sebastián
 
@@ -54,7 +54,7 @@ Viaje San Sebastián
 
 ## monte urgull
 
-- Hemos subido al monte urgull caminando 
+- Hemos subido al monte urgull caminando
 - Hemos visitado la exposición que hay arriba y hemos subido a para ver las vistas luego
 - Hemos vuelto caminando por otro lado de la montaña que lleva hasta el puerto y el principio de la plaza de la concha.
 - Finalmente hemos caminado toda la playa en dirección al hotel.
@@ -62,11 +62,11 @@ Viaje San Sebastián
 
 ## Cena en arrak
 
-![](2019-06-08-15-22-14.png)
+![imagen](2019-06-08-15-22-14.png)
 
 - Para cenar hemos ido al `restaurante Arrak`
-- Está en la zona de el hotel tiene parte de bar y parte del restaurante 
-- Hemos estado en la parte del restaurante se puede comer un chuletón con patatas fritas y ensalada por unos 15 € con un par de cañas salido unos 20 
+- Está en la zona de el hotel tiene parte de bar y parte del restaurante
+- Hemos estado en la parte del restaurante se puede comer un chuletón con patatas fritas y ensalada por unos 15 € con un par de cañas salido unos 20
 - Los bocatas también eran muy grandes y muy buenos por unos 6 €
 - Finalmente hemos vuelto caminando al hotel
 
@@ -81,7 +81,7 @@ Viaje San Sebastián
 
 ## Comida
 
-![](2019-06-08-15-21-23.png)
+![imagen](2019-06-08-15-21-23.png)
 
 - Comemos en  `restaurante gandarias` de pinchos en una de las barras de fuera.
 - Hemos pedido unos cuántos pinchos calientes y fríos y unos txakolis y nos ha salido sobre unos 25 o 30 € en función de lo que quieras comer
@@ -91,7 +91,7 @@ Viaje San Sebastián
 
 ## Cena
 
-- A las 6 hemos vuelto a quedar para subir al `monte Igueldo` seguramente subiremos con el funicular (2,2 euros) 
+- A las 6 hemos vuelto a quedar para subir al `monte Igueldo` seguramente subiremos con el funicular (2,2 euros)
 - Yo bajo corriendo pero los demás bajan a pie. Hay unos 2-3 km hasta abajo del funicular
 - Vamos a tomar algo al `bar campus`, que tenemos frente al hotel.
 - Cenamos allí de hamburguesas y bocatas.
@@ -114,7 +114,7 @@ Viaje San Sebastián
 - Caminamos por la ría y hacia el Guggenheim (una media hora)
 - Finalmente cogemos un autobús detrás del hotel Domine que nos lleva al aeropuerto en unos 15 minutos por 3 euros cada uno.
 
-![](2019-06-08-15-37-48.png)
+![imagen](2019-06-08-15-37-48.png)
 
 ## Avion
 

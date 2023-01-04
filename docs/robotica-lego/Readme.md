@@ -7,15 +7,15 @@
 
 # Principales características
 
-![](img/2019-12-12-17-03-27.png)
+![imagen](img/2019-12-12-17-03-27.png)
 
 El kit básico de LEGO MINDSTORMS NXT está compuesto (Ver figura 5)por:
 
 - Un controlador
 - Cuatro sensores (ultrasonidos, contacto, micrófono y luz)
-- 3 servomotores 
+- 3 servomotores
 - Un conjunto de piezas para crear estructuras mecánicas compatibles con las de otros productos LEGO.
-- 
+-
 
 # Brick
 
@@ -28,7 +28,7 @@ Además, la plataforma cuenta con un coprocesador, Atmel AVR de 8 bits, y con:
 
 # Comunicaciones
 
-Con respecto a las comunicaciones, el controlador soporta tanto comunicaciones inalámbricas con Bluetooth (especificación v2.0 EDR) como comunicación por cable usando tecnología USB (estándar 2.0) que soportan tasas de trasferencia de datos de hasta 2.1 y 12 Mbits/s respectivamente. 
+Con respecto a las comunicaciones, el controlador soporta tanto comunicaciones inalámbricas con Bluetooth (especificación v2.0 EDR) como comunicación por cable usando tecnología USB (estándar 2.0) que soportan tasas de trasferencia de datos de hasta 2.1 y 12 Mbits/s respectivamente.
 
 # Puertos
 
@@ -37,11 +37,11 @@ El bloque NXT cuenta también con:
 - 4 puertos de entrada con conexión RJ12 (conector telefónico de 6 hilos),que permiten conectar sensores tanto digitales como analógicos.
 - 3 puertos de salida RJ12 que se utilizan para conectar diferentes tipos de actuadores, normalmente servomotores.
 
-![](img/2019-12-12-17-41-15.png)
+![imagen](img/2019-12-12-17-41-15.png)
 
 La conexión de los motores y sensores al ladrillo NXT se realizará mediante unos cables proporcionados en el kit de Lego.
 
-![](img/2019-12-12-17-42-59.png)
+![imagen](img/2019-12-12-17-42-59.png)
 
 # Pantalla, altavoz y botones
 
@@ -60,7 +60,7 @@ Dos de los suministradores más frecuentes de estos sensores son:
 - HiTechnic(http://www.hitechnic.com/)
 - MindSensors (http://www.mindsensors.com/)
 
-No sólo ofertan sensores sino otros componentes compatibles con la plataforma LEGOMINDSTORMS. 
+No sólo ofertan sensores sino otros componentes compatibles con la plataforma LEGOMINDSTORMS.
 
 También existe un adaptador para conectar sensores Vernier (http://www.vernier.com/probes/) que amplía aún más el rango de sensores disponibles para medir magnitudes con la plataforma LEGO.
 

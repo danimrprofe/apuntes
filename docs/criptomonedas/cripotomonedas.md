@@ -1,6 +1,6 @@
 # Criptomonedas
 
-![](img/2022-11-06-22-48-44.png)
+![imagen](img/2022-11-06-22-48-44.png)
 
 ¿Conocéis a alguien que tenga bitcoin u otro tipo de criptomoneda?
 ¿Qué pensáis que es una criptomoneda?
@@ -13,7 +13,7 @@ Una criptomoneda es una **moneda digital** diseñada para funcionar como un medi
 
 Son activos digitales que se pueden usar para realizar **transacciones** financieras, como **comprar y vender** bienes o servicios. Están respaldadas por tecnologías de cadena de bloques o **blockchain**, que son una forma segura y distribuida de almacenar y transferir datos.
 
-![](img/2022-11-06-22-49-03.png)
+![imagen](img/2022-11-06-22-49-03.png)
 
 ## ¿Qué criptomonedas existen?
 
@@ -21,7 +21,7 @@ Existen muchísimas criptomonedas, cada una con una forma de funcionar ligeramen
 
 Aquí podéis ver el valor actual de algunas criptomonedas (2022):
 
-![](img/2022-12-15-17-18-00.png)
+![imagen](img/2022-12-15-17-18-00.png)
 
 ## ¿Por qué se han vuelto tan populares?
 
@@ -29,11 +29,11 @@ Las criptomonedas se han vuelto tan populares debido a la facilidad y rapidez co
 
 Por último, existe un fuerte componente especulativo que ha provocado la entrada en el mercado de muchos inversores.
 
-![](img/2022-11-06-22-49-17.png)
+![imagen](img/2022-11-06-22-49-17.png)
 
 En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido considerablemente.
 
-![](img/2022-12-15-17-09-31.png)
+![imagen](img/2022-12-15-17-09-31.png)
 
 ## Sistema financiero actual
 
@@ -41,7 +41,7 @@ En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido
 - Las transferencias se realizan a través de bancos
 - Sistema monetario protegido y respaldado
 
-![](img/2022-11-06-22-49-34.png)
+![imagen](img/2022-11-06-22-49-34.png)
 
 
 ## ¿Por qué se inventan las criptomonedas?
@@ -52,7 +52,7 @@ En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido
 - Estos ordenadores se conectan entre ellos a través de internet
 - Comparten la información de las transacciones entre ellos
 
-![](img/2022-11-06-22-50-28.png)
+![imagen](img/2022-11-06-22-50-28.png)
 
 
 ## ¿Qué hacen los ordenadores que están en esta red?
@@ -63,7 +63,7 @@ En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido
 
 ## Nodos de bitcoin
 
-![](img/2022-11-06-22-50-34.png)
+![imagen](img/2022-11-06-22-50-34.png)
 
 ## ¿Cómo hacer que sea seguro?
 
@@ -81,17 +81,17 @@ En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido
 - Criptomonedas. Han existido desde 1980. Los primeros, Digicash y Ecash
 - Fallaron porque no proporcionaron una solución al problema del "doble gasto"
 
-![](img/2022-11-06-22-51-00.png)
+![imagen](img/2022-11-06-22-51-00.png)
 
 Bitcoin (2009) resuelve el problema
 A partir de entonces, aparecen muchas más criptomonedas.
 
-![](img/2022-11-06-22-51-10.png)
+![imagen](img/2022-11-06-22-51-10.png)
 
 ¿De qué depende el valor de una criptomoneda?
 El valor de la moneda depende de la oferta y la demanda
 
-![](img/2022-11-06-22-51-14.png)
+![imagen](img/2022-11-06-22-51-14.png)
 
 ## ¿Qué beneficio aportan las criptomonedas?
 
@@ -99,7 +99,7 @@ El valor de la moneda depende de la oferta y la demanda
 - Reduce tiempo de transacción
 - Elimina la necesidad de agentes financieros
 
-![](img/2022-11-06-22-51-38.png)
+![imagen](img/2022-11-06-22-51-38.png)
 
 ## ¿Qué problemas generan las criptomonedas?
 
@@ -107,4 +107,4 @@ Las criptomonedas han experimentado un rápido crecimiento en los últimos años
 
 A medida que la tecnología avanza, estas barreras se van reduciendo. No obstante, aún queda mucho por hacer para que las criptomonedas sean aceptadas a nivel mundial.
 
-![](img/2022-11-06-22-51-58.png)
+![imagen](img/2022-11-06-22-51-58.png)

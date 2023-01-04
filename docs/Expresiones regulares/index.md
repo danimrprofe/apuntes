@@ -17,5 +17,5 @@ En este ejemplo vamos a buscar todas las etiquetas `<img>` en varios archivos pa
 Podremos reutilizar en la parte de reemplazar el argumento $1 que contendrá la ruta de la imagen
 
 ```bash
-![]($1)
+![imagen]($1)
 ```

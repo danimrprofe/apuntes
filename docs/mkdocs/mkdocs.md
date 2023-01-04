@@ -10,7 +10,7 @@ Yo creo documentación **markdown**, la controlo con git y la almaceno en github
 
 Además de este paquete, también utilizo el tema **mkdocs-material** para la interfaz de usuario.
 
-![](img/2022-12-02-08-05-55.png)
+![imagen](img/2022-12-02-08-05-55.png)
 
 ## ¿Qué podemos hacer?
 
@@ -109,7 +109,7 @@ mkdocs gh-deploy
 
 Para ello tenemos que crear un workflow en la root de nuestro repo:
 
-![](img/2022-12-02-07-55-57.png)
+![imagen](img/2022-12-02-07-55-57.png)
 
 El contenido dependerá de lo que queramos hacer. En mi caso:
 
@@ -135,15 +135,15 @@ jobs:
 ```
 Cada vez que hagamos cambios, pusheamos primero.
 
-![](img/2022-12-02-08-08-49.png)
+![imagen](img/2022-12-02-08-08-49.png)
 
 Una vez pusheados los cambios, Github automáticamente detectará la configuración del yaml y comenzará el despliegue. Para comprobarlo iremos a la pestaña **actions**:
 
-![](img/2022-12-02-07-57-47.png)
+![imagen](img/2022-12-02-07-57-47.png)
 
 Se nos mostrarán los **workflow run** ejecutados cronológicamente:
 
-![](img/2022-12-02-07-58-15.png)
+![imagen](img/2022-12-02-07-58-15.png)
 
 Podemos ver última **run** a la fecha y hora del último pusheo, y el despliegue ha durado cerca de 5 minutos. Esto dependerá del tamaño del proyecto y la potencia de la máquina virtual.
 
@@ -151,7 +151,7 @@ Como vemos, el deploy es disparado via github pages, y podemos ver las fases de 
 
 El estado y los checks nos confirman que la run ha sido correcta.
 
-![](img/2022-12-02-07-59-09.png)
+![imagen](img/2022-12-02-07-59-09.png)
 
 Gracias a todo esto:
 

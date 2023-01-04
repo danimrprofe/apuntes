@@ -3,7 +3,7 @@
 
 [Thispersondoesntexist](https://thispersondoesnotexist.com/) es un sitio web que genera imágenes de personas artificiales usando una red neuronal generativa.
 
-![](2022-12-20-12-06-52.png)
+![imagen](2022-12-20-12-06-52.png)
 
 Al entrenar la red neuronal con millones de imágenes reales de personas, el sitio web puede generar imágenes de personas que parecen reales, pero que en realidad no existen.
 

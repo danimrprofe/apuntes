@@ -19,7 +19,7 @@ Las tiras **WS2812B** pueden alimentarse a través de una batería o de una fuen
 
 ## Conexión
 
-![](img/2022-10-12-16-11-20.png)
+![imagen](img/2022-10-12-16-11-20.png)
 
 
 ## Cabecera

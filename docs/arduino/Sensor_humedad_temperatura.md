@@ -4,7 +4,7 @@
 
 En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura **DHT11**.
 
-![](img/2022-12-12-18-42-31.png)
+![imagen](img/2022-12-12-18-42-31.png)
 
 Otra vez vamos a usar una **librería** diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.
 
@@ -63,15 +63,15 @@ Descripción de pines
 
 ### Esquema de conexión
 
-![](media/image94.jpeg)
+![imagen](media/image94.jpeg)
 
 ### Diagrama de cableado
 
-![](media/image95.jpeg)
+![imagen](media/image95.jpeg)
 
 ## Montaje físico
 
-![](media/image96.jpeg)
+![imagen](media/image96.jpeg)
 
 Como se puede ver que sólo necesitamos 3 conexiones al sensor, ya que uno de lo pin no se utiliza.
 
@@ -141,4 +141,4 @@ void loop( )
 
 Los valores medidos se mostrarán por pantalla en el monitor serie:
 
-![](media/image97.jpeg)
+![imagen](media/image97.jpeg)

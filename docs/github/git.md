@@ -10,7 +10,7 @@ Para usar git, primero debe instalarlo en su computadora. Luego, debe configurar
 
 Antes de nada, necesitas tener Git instalado en tu sistema Windows.
 
-![](img/2022-11-19-16-31-50.png)
+![imagen](img/2022-11-19-16-31-50.png)
 
 ## Paso 2: Configurar Git
 

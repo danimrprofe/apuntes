@@ -1,6 +1,6 @@
 # Eines per trepat
 
-![](media/image31.png)Trepant
+![imagen](media/image31.png)Trepant
 
 El trepant consisteix en fer perforacions cilíndriques en un material utilitzant una eina anomenada trepant.
 
@@ -8,25 +8,25 @@ L'accessori que, girant, realitza la perforació es diu broca.
 
 Els trepants percutors, a més de foradar, permeten fer força simulant un martell al mateix temps. D’aquesta forma poden travessar parets i superfícies dures que d’altra forma serien molt difícils de foradar.
 
-![](media/image32.png)![](media/image33.png)
+![imagen](media/image32.png)![imagen](media/image33.png)
 
 Els trepants portàtils poden ser transportats fàcilment fins on siguin necessaris, fins i tot hi ha models amb bateries (de potència menor) que no necessiten una presa de corrent.
 
 Incorporen unes bateries recarregables per poder donar-los l’electricitat que necessiten per funcionar.
 
-![](media/image34.png)Altres trepants més petits s’utilitzen per petites feines, així com a muntar i desmuntar mobles d’una forma més fàcil.
+![imagen](media/image34.png)Altres trepants més petits s’utilitzen per petites feines, així com a muntar i desmuntar mobles d’una forma més fàcil.
 
-![](media/image35.png)Trepants de columna
+![imagen](media/image35.png)Trepants de columna
 
 Els trepants de taula o de columna s'instal·len fixos en un banc de treball. Són més potents que els trepants portàtils i, com que estan quiets, permeten treballar amb més precisió.
 
 Els components són els següents:
 
-![](media/image36.png)
+![imagen](media/image36.png)
 
 ## Barrina
 
-![](media/image37.png)A més dels trepants elèctrics, de vegades també s'utilitza la barrina. És una eina de perforació més senzilla, n'hi ha prou que es faci girar manualment per foradar el material.
+![imagen](media/image37.png)A més dels trepants elèctrics, de vegades també s'utilitza la barrina. És una eina de perforació més senzilla, n'hi ha prou que es faci girar manualment per foradar el material.
 
 Es sol utilitzar per:
 
@@ -34,7 +34,7 @@ Perforar fusta i materials tous
 
 Per iniciar el cargolament dels cargols
 
-![](media/image38.png)Broques
+![imagen](media/image38.png)Broques
 
 ## Tipus de broques
 
@@ -45,7 +45,7 @@ En funció del tipus de material que s’ha de foradar:
 - Per a plàstic: broques d’acer ràpid
 - Per a obra: broques de vídia
 
-![](media/image39.png)
+![imagen](media/image39.png)
 
 ## Capses de broques
 
@@ -55,14 +55,14 @@ Les broques habitualment es guarden en capses, on les broques s’ordenen segons
 
 Aquest accessori permet apretar i amollar les broques amb més facilitat i força. Solen venir amb el trepant.
 
-![](media/image40.png)
+![imagen](media/image40.png)
 
 Col·locar broques
 
 Per a col·locar les broques, hem de tenir el trepant desconnectat i aturat, i obrir el portabroques fins que hi càpiga la broca. Una vegada col·locada, es torna a girar fins que no es pugui més i es fixa amb la clau.
 
-![](media/image41.png)
+![imagen](media/image41.png)
 
 ## Corones
 
-![](media/image42.jpeg)
+![imagen](media/image42.jpeg)

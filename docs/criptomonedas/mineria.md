@@ -11,7 +11,7 @@
 - Incremento en el número de mineros aumenta complejidad de la generación de hashes
 - Mineros invierten grandes cantidades de dinero en máquinas especializadas.
 
-![](img/2022-11-06-22-55-30.png)
+![imagen](img/2022-11-06-22-55-30.png)
 
 ## Recompensas
 
@@ -25,7 +25,7 @@ La primera recompensa fue de 50 bitcoin y fue a parar a la dirección:
 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
 ```
 
-![](img/2022-11-06-22-55-36.png)
+![imagen](img/2022-11-06-22-55-36.png)
 
 ## El reto
 

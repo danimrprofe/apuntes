@@ -20,7 +20,7 @@ LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  
 1) El  LED tiene un positivo y un negativo llevar y no se encenderá si se coloca mal y debe utilizarse
 2) Un LED con una resistencia para limitar o 'ahogar' la cantidad de corriente que fluye a través de él; ¡de lo contrario, quemará
 
-![](media/image53.jpeg)
+![imagen](media/image53.jpeg)
 
 Si no utilizas un resistencia con un LED, entonces se puede quemar casi de inmediato, como demasiada corriente fluirá a través, calienta y destruye al 'cruce' donde se produce la luz. Hay dos maneras de saber cual es el positivo del LED y que la negativa. En primer lugar, el positivo es más largo.
 
@@ -32,7 +32,7 @@ Si le sucede que tiene un LED que tiene un lado plano al lado del cable más lar
 
 Como su nombre lo indica, resistencias de resisten el flujo de electricidad. Cuanto mayor sea el valor de la resistencia, resiste más y la menos corriente fluirá a través de él. Vamos a usar esto para controlar Cuánta electricidad fluye a través del LED y por lo tanto, como claramente brilla.
 
-![](media/image54.jpeg)
+![imagen](media/image54.jpeg)
 
 Pero primero, más sobre resistencias...
 
@@ -48,7 +48,7 @@ Estas resistencias todas se ven iguales, excepto que tienen rayas de colores dif
 
 El código de color resistor tiene tres franjas de colores y luego una banda de oro en un extremo.
 
-![](media/image55.jpeg)
+![imagen](media/image55.jpeg)
 
 A diferencia de los LEDs, resistencias no tienen un cable positivo y negativo. Se puede conectar de cualquier manera alrededor.
 
@@ -58,11 +58,11 @@ Si encuentra este método de enfoque demasiado complicada, puedes leer la bander
 
 ### Esquema
 
-![](media/image56.jpeg)
+![imagen](media/image56.jpeg)
 
 ### Diagrama de Cableado
 
-![](media/image57.jpeg)
+![imagen](media/image57.jpeg)
 
 La **placa de desarrollo Arduino UNO** es una conveniente fuente de 5 voltios, que vamos a utilizar para alimentar el LED y la resistencia. No necesita hacer nada con su UNO, salvo que lo conecte un cable USB.
 
@@ -72,7 +72,7 @@ La **placa de desarrollo Arduino UNO** es una conveniente fuente de 5 voltios, q
 
 Por el momento, tienes 5V va a una pata de la resistencia, la otra pata de la resistencia va al lado positivo del LED y el otro lado del LED va a GND. Sin embargo, si nos mudamos la resistencia por lo que vino después el LED, como se muestra abajo, el LED seguirá la luz.
 
-![](img/2022-12-05-16-15-28.png)
+![imagen](img/2022-12-05-16-15-28.png)
 
 Probablemente desee volver a colocar el resistor 220Ω.
 

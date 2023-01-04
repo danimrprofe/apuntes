@@ -41,7 +41,7 @@ esto?
 
 - **Multiusuario**: Un sistema operativo es multiusuario cuando puedes tener configurados en él varios usuarios distintos. Por ejemplo en casa, un usuario para ti, otro para tu hermano y otro para tus padres.
 
-![](img/2019-09-16-16-42-33.png)
+![imagen](img/2019-09-16-16-42-33.png)
 
 - **Multitarea**: Un Sistema operativo es multitarea cuando puede ejecutar varios programas a la vez. Está claro que Windows lo es ya que, por ejemplo, mientras escribes un texto en el Word, puedes estar escuchando música y navegando por Internet.
 

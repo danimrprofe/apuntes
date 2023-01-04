@@ -42,7 +42,7 @@ Cada vez que se hace un desplazamiento, la llave debe rotarse sobre sí misma pa
 
 También conocida como «llave inglesa», permite, mediante un tornillo sin fin, ajustar la apertura de la boca facilitando así su adaptación a diferentes medidas de tuercas y tornillos.
 
-![](img/2022-12-23-09-55-24.png)
+![imagen](img/2022-12-23-09-55-24.png)
 
 El uso de la llave inglesa es similar al de la llave de boca fija.
 
@@ -57,7 +57,7 @@ Se utilizan como complemento o en sustitución de las llaves de boca fija. Recib
 
 En su cuerpo tienen un par de orificios para meter un pasador y así poder girar la llave.
 
-![](img/Figura%201.21.%20Llave%20de%20tubo..png)
+![imagen](img/Figura%201.21.%20Llave%20de%20tubo..png)
 
 ## Llaves de carraca
 
@@ -69,4 +69,4 @@ Disponen de un mango al que se le pueden acoplar diferentes tipos de vástagos (
 
 Un gatillo, tipo palanca, permite seleccionar el funcionamiento de la carraca, bien para apretar, o bien para aflojar.
 
-![](img/2022-12-23-09-54-04.png)
+![imagen](img/2022-12-23-09-54-04.png)

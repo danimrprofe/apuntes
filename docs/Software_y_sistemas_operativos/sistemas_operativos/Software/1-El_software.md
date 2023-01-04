@@ -2,7 +2,7 @@
 
 El software es la parte lógica del ordenador, formada por programas, instrucciones, reglas informáticas y datos asociados. Esta información es procesada por el ordenador para realizar tareas específicas.
 
-![](2019-06-28-08-35-25.png)
+![imagen](2019-06-28-08-35-25.png)
 
 ## Tipos de software
 
@@ -10,7 +10,7 @@ Software de base
 Software de programación
 Software de aplicación
 
-![](2019-06-28-08-37-39.png)
+![imagen](2019-06-28-08-37-39.png)
 
 ## Software de sistema
 
@@ -23,7 +23,7 @@ Instala el resto de tipos de software
 Drivers o controladores de dispositivos
 Permiten que el SO se comunique con los periféricos
 
-![](2019-06-28-08-38-04.png)
+![imagen](2019-06-28-08-38-04.png)
 
 ## Software de desarrollo
 
@@ -33,7 +33,7 @@ Estos lenguajes permiten escribir un código específico para crear un programa 
 
 Un ejemplo es Visual studio code.
 
-![](img/2022-12-13-18-37-51.png)
+![imagen](img/2022-12-13-18-37-51.png)
 
 ## Software de aplicación
 
@@ -41,7 +41,7 @@ Los software de aplicación son programas informáticos que se ejecutan sobre el
 
 Estos programas incluyen procesadores de textos, bases de datos, hojas de cálculo, presentaciones, Internet, compresores y programas educativos, entre otros. Además, hay software específicos para finanzas que pueden ayudar a los usuarios a administrar su dinero de manera más eficiente.
 
-![](2019-06-28-08-38-40.png)
+![imagen](2019-06-28-08-38-40.png)
 
 ## Software libre y propietario
 
@@ -49,11 +49,11 @@ El **software libre** ofrece al usuario libertad para usar, copiar, estudiar, mo
 
 Por otro lado, el **software propietario** limita la copia, modificación o distribución del mismo, y no cumple con las condiciones establecidas para el software libre.
 
-![](2019-06-28-08-35-57.png)
+![imagen](2019-06-28-08-35-57.png)
 
 ## Las 4 libertades
 
-![](2019-06-28-08-36-17.png)
+![imagen](2019-06-28-08-36-17.png)
 
 Libertad 0:
 Uso programa con cualquier propósito
@@ -65,7 +65,7 @@ Libertad 3:
 Modificar y mejorar el programa
 Haciendo público
 
-![](2019-06-28-08-36-11.png)
+![imagen](2019-06-28-08-36-11.png)
 
 ## Libertad de uso
 

@@ -8,9 +8,9 @@
 - IPv6 debería proporcionar una cantidad de direcciones suficiente para las necesidades - de crecimiento futuras de Internet durante muchos años más.
 - La cantidad de direcciones IPv6 disponibles permiten asignar a cada persona del planeta un espacio de direcciones de Internet equivalente al espacio total de IPv4.
 
-![](2019-05-08-08-52-56.png)
+![imagen](2019-05-08-08-52-56.png)
 
-![](2019-05-08-08-53-05.png)
+![imagen](2019-05-08-08-53-05.png)
 
 ## IPv4 vs IPv6
 
@@ -41,11 +41,11 @@ El formato de las direcciones IPv6 es el siguiente:
 
 # Creación de una dirección IPv6
 
-![](2019-05-08-08-54-04.png)
+![imagen](2019-05-08-08-54-04.png)
 
 ## Encabezado IPv4 vs IPv6
 
-![](2019-05-08-08-53-42.png)
+![imagen](2019-05-08-08-53-42.png)
 
 ### Ventajas del encabezado de IPv6
 
@@ -71,7 +71,7 @@ Las direcciones en IPv6 se pueden simplificar.
 - 2031:0:130F::9C0:876A:130B.
 - Una dirección no especificada se escribe "::" porque sólo contiene ceros
 
-![](2019-05-08-08-54-41.png)
+![imagen](2019-05-08-08-54-41.png)
 
 El uso de la notación "::" reduce el tamaño de la mayoría de direcciones
 Un analizador de direcciones identifica la cantidad de ceros faltantes
@@ -99,9 +99,9 @@ Un analizador de direcciones identifica la cantidad de ceros faltantes
 
 ### Espacio de direcciones
 
-![](2019-05-08-08-55-01.png)
+![imagen](2019-05-08-08-55-01.png)
 
-![](2019-05-08-08-55-10.png)
+![imagen](2019-05-08-08-55-10.png)
 
 - La IANA divide el espacio disponible en **8 segmentos** iguales
 - Los grupos están basados en los **3 primeros bits** de dirección
@@ -127,7 +127,7 @@ En el IPv6 no existen direcciones broadcast, su funcionalidad ha sido  mejorada 
 
 ### Formato de tipos de direcciones
 
-![](2019-05-08-08-56-45.png)
+![imagen](2019-05-08-08-56-45.png)
 
 #### Dirección de enlace local (link local)
 
@@ -137,7 +137,7 @@ En el IPv6 no existen direcciones broadcast, su funcionalidad ha sido  mejorada 
 - Desde Windows Vista, los clientes de Windows han generado un número aleatorio de 64 bits
 - Los SO antiguos usan la dirección MAC de un dispositivo para crear un identificador único ampliado (EUI-64)
 
-![](2019-05-08-08-56-53.png)
+![imagen](2019-05-08-08-56-53.png)
 
 ##### Comprobación de dirección de enlace local
 
@@ -170,7 +170,7 @@ Adaptador de Ethernet Ethernet:
 - Las organizaciones individuales pueden utilizar un campo de subred de 16 bits para - crear su propia jerarquía de direccionamiento local (hasta 65.535 subredes)
 - IANA está asignando espacio de direcciones IPv6 en los rangos de `2001::/16` a los cinco -registros RIR (ARIN, RIPE, APNIC, LACNIC y AfriNIC).
 
-![](2019-05-08-08-57-05.png)
+![imagen](2019-05-08-08-57-05.png)
 
 #### Dirección unicast global (ejemplo de funcionamiento)
 
@@ -179,13 +179,13 @@ Adaptador de Ethernet Ethernet:
 - El ordenador coge el prefijo y le añade el identificador de interfaz o una dirección - EUI-64. Ejemplo EUI-64: 20C:29FF:FE53:45CA
 - La dirección global unicast es el resultado de combinar ambas: 2001:470:B8F9:1:20C:29FF:FE53:45CA
 
-![](2019-05-08-08-57-19.png)
+![imagen](2019-05-08-08-57-19.png)
 
 # Ejemplos de configuración
 
-![](2019-05-08-08-57-40.png)
+![imagen](2019-05-08-08-57-40.png)
 
-![](2019-05-08-08-57-46.png)
+![imagen](2019-05-08-08-57-46.png)
 
 #### Direcciones anycast
 
@@ -199,7 +199,7 @@ Adaptador de Ethernet Ethernet:
 - Se puede usar para descubrir servicios de red (DNS, proxies)
 - Garantizan la redundancia y/o balanceo de carga, entre otros usos
 
-![](2019-05-08-08-58-00.png)
+![imagen](2019-05-08-08-58-00.png)
 
 #### Direcciones multicast
 
@@ -213,11 +213,11 @@ Adaptador de Ethernet Ethernet:
 - 112 bits restantes identifican al grupo multicast
 - Posibles aplicaciones: video bajo demanda, actualizaciones de software, juegos
 
-![](2019-05-08-08-58-07.png)
+![imagen](2019-05-08-08-58-07.png)
 
 Direcciones multicast reservadas:
 
-![](2019-05-08-08-58-24.png)
+![imagen](2019-05-08-08-58-24.png)
 
 #### Direcciones especiales
 
@@ -236,7 +236,7 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 
 ## Transición de IPv4 a IPv6
 
-![](2019-05-08-08-58-54.png)
+![imagen](2019-05-08-08-58-54.png)
 
 - ¿Qué va a pasar ahora?
 - IPv4 coexistirá durante un tiempo con IPv6
@@ -250,7 +250,7 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 
 ### Estrategias
 
-![](2019-05-08-08-59-35.png)
+![imagen](2019-05-08-08-59-35.png)
 
 ### Dual stack
 
@@ -265,7 +265,7 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 IP versión 6
 
 
-![](2019-05-08-08-59-05.png)
+![imagen](2019-05-08-08-59-05.png)
 
 ### Tunneling
 
@@ -274,11 +274,11 @@ IP versión 6
 - Técnica de integración y transición intermedia (no definitiva)
 - El objetivo final debe ser una arquitectura IPv6 nativa.
 
-![](2019-05-08-08-59-14.png)
+![imagen](2019-05-08-08-59-14.png)
 
 ### Correspondencia direcciones especiales
 
-![](2019-05-08-09-00-52.png)
+![imagen](2019-05-08-09-00-52.png)
 
 ## Loopback en IPv6
 

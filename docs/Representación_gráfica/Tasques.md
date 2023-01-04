@@ -9,7 +9,7 @@
 
 5.	Dibuixa sis quadrats iguals en un full DIN A4 i traça:
 
-![](img/2019-10-10-08-30-41.png)
+![imagen](img/2019-10-10-08-30-41.png)
 
 - a)	Línies horitzontals paral·leles amb una separació de lOmm.
 - b)	Línies horitzontals paral·leles amb una separació de 5mm.
@@ -20,15 +20,15 @@
 
 6. Mesura els següents angles amb el transportador: a) b) c)
 
-![](img/2019-10-10-08-28-23.png)
+![imagen](img/2019-10-10-08-28-23.png)
 
 7. Dibuixa amb el transportador els següents angles: a) 36° b) 40° c) 154°.
 
 8. Digues la mesura dels segments en mil·límetres i en centímetres.
 
-![](img/2019-10-10-08-27-06.png)
+![imagen](img/2019-10-10-08-27-06.png)
 
-9. Amb l’escaire o el cartabó traça els següents angles: 
+9. Amb l’escaire o el cartabó traça els següents angles:
 
 a) 150°
 b) 120°

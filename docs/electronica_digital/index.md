@@ -67,7 +67,7 @@ S = A·B + A·B
 
 El circuito lógico equivalente será:
 
-![](img/2022-12-21-09-24-47.png)
+![imagen](img/2022-12-21-09-24-47.png)
 
 ## 6. Circuitos integrados
 

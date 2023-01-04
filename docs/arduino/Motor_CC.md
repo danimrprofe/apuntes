@@ -18,7 +18,7 @@ En esta lección, aprenderá a controlar un pequeño motor DC (corriente continu
 
 El pequeño motor de corriente continua es probable que use más energía que la que Arduino puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
 
-![](media/image139.jpeg)
+![imagen](media/image139.jpeg)
 
 **Especificaciones del producto:**
 
@@ -32,11 +32,11 @@ El pequeño motor de corriente continua es probable que use más energía que la
 
 Configuración de voltaje de salida:
 
-![](media/image140.jpeg)
+![imagen](media/image140.jpeg)
 
 La izquierda y derecha de la tensión de salida puede configurarse independientemente. Para seleccionar la tensión de salida, mover el puente a los pines correspondientes. Nota: indicador de energía LED y los carriles de la energía de protoboard no se enciende si ambos puentes están en la posición "OFF".
 
-![](media/image141.jpeg)
+![imagen](media/image141.jpeg)
 
 Nota IMPORTANTE:
 
@@ -49,7 +49,7 @@ Asegúrese de alinear el módulo correctamente en la placa de pruebas.
 
 Este es un chip muy útil, pues puede controlar dos motores **independientemente**. Estamos usando sólo la mitad del chip en esta lección, la mayoría de los pines en el lado derecho del chip son para el control de un segundo motor.
 
-![](media/image142.jpeg)
+![imagen](media/image142.jpeg)
 
 Especificaciones del producto:
 
@@ -61,7 +61,7 @@ Especificaciones del producto:
 
 ## Diagrama de pines
 
-![](media/image143.jpeg)
+![imagen](media/image143.jpeg)
 
 ## Descripción
 
@@ -81,7 +81,7 @@ Con las entradas de datos adecuadas, cada par de conductores forma una unidad re
 
 ### Diagrama de bloques
 
-![](media/image144.png)
+![imagen](media/image144.png)
 
 Me harté de diagramas de pinout indescifrables dentro de las hojas de datos, por lo que han diseñado mi propio que creo que da más información pertinente.
 
@@ -93,7 +93,7 @@ Ocupa el lado izquierdo con el primer motor, el lado derecho trata con un segund
 
 Sí, usted puede funcionar con solamente un motor conectado.
 
-![](media/image145.jpeg)
+![imagen](media/image145.jpeg)
 
 ## Control de la velocidad
 
@@ -105,7 +105,7 @@ Sí, usted puede funcionar con solamente un motor conectado.
 
 Según el valor se generará una señal PWM diferente.
 
-![](img/2022-11-13-13-35-36.png)
+![imagen](img/2022-11-13-13-35-36.png)
 
 ## Cambiar la dirección de giro
 
@@ -115,15 +115,15 @@ Entradas de dirección de **M1 0/1** y **M1 1/0**
 - Un pin de salida tan alto y el otro pin como baja y el motor girará en un sentido.
 - Revertir las salidas a baja y alta, y el motor girará en sentido contrario.
 
-![](img/2022-11-13-13-34-44.png)
+![imagen](img/2022-11-13-13-34-44.png)
 
 ### Conexión
 
-![](media/image146.jpeg)
+![imagen](media/image146.jpeg)
 
 ### Esquema
 
-![](media/image147.jpeg)
+![imagen](media/image147.jpeg)
 
 ### Diagrama de cableado
 
@@ -131,7 +131,7 @@ El código siguiente no utiliza una fuente de alimentación separada (es decir, 
 
 Nunca debería conectar un motor directamente al Arduino, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su Arduino, y con un motor grande, usted puede mirar un efecto interesante de la llama y de las chispas.
 
-![](media/image148.jpeg)
+![imagen](media/image148.jpeg)
 
 ### Código
 
@@ -147,7 +147,7 @@ Programa de carga, después de encender todos los interruptores de potencia.
 - A continuación, la tarjeta controladora enviará la señal PWM para el motor, el motor lentamente reducir su máxima RPM al mínimo y aumentar al máximo otra vez.
 - Por último, se trata de una parada para 10s hasta que comience el siguiente ciclo.
 
-![](media/image149.jpeg)
+![imagen](media/image149.jpeg)
 
 ## Código
 

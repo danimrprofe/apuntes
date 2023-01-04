@@ -10,7 +10,7 @@ Si queréis ver una muestra de una web hecha con Vue (tendréis que esperar un p
 
 https://codesandbox.io/s/github/danimrprofe/cursVueFinal
 
-![](img/2022-12-12-19-08-52.png)
+![imagen](img/2022-12-12-19-08-52.png)
 
 ## ¿Qué puedo hacer con Vue?
 
@@ -73,13 +73,13 @@ Una vez descargados los archivos del proyecto, este se tendrá que instalar. En 
 npm install
 ```
 
-![](img/2022-12-12-19-09-20.png)
+![imagen](img/2022-12-12-19-09-20.png)
 
 Al terminar nos informará de todos los paquetes instalados, y si existe alguna vulnerabilidad en nuestro proyecto. Los paquetes «this version has been deprectated» son versiones obsoletas y que por tanto no se recomienda usar.
 
 Vemos también que no existe ninguna vulnerabilidad conocida en nuestro proyecto
 
-![](img/2022-12-12-19-09-29.png)
+![imagen](img/2022-12-12-19-09-29.png)
 
 ## Arrancar el servidor
 
@@ -89,7 +89,7 @@ Para arrancar el proyecto, utilizaremos el siguiente comando, que nos abrirá un
 npm run serve
 ```
 
-![](img/2022-12-12-19-09-43.png)
+![imagen](img/2022-12-12-19-09-43.png)
 
 Como podemos ver, podremos acceder a través de dos direcciones, una de localhost y otra con dirección IP. Podemos pinchar en los enlaces celestes y nos arrancará el proyecto.
 Como curiosidad, cada vez que guardemos, «compilará» el proyecto y, si encuentra algún fallo, no nos dejará testearlo hasta que no lo hayamos arreglado. Si no hay errores, ser «refrescará» el proyecto y veremos en el navegador siempre la última versión guardada.
@@ -105,11 +105,11 @@ npm run build
 
 Esto nos creará una carpeta nueva llamada dist, y empaquetará la aplicación para que ocupe menos. Nos gzipea los archivos, por lo que el tamaño se reduce considerablemente. De paso, nos mostrará algunos warnings con recomendaciones para optimizar el rendimiento.
 
-![](img/2022-12-12-19-09-59.png)
+![imagen](img/2022-12-12-19-09-59.png)
 
 Mirando el contenido el contenido de la carpeta dist, vemos que nos crea un HTML, una carpeta CSS y otra para el código Javascript
 
-![](img/2022-12-12-19-10-06.png)
+![imagen](img/2022-12-12-19-10-06.png)
 
 ## Linting de nuestro proyecto Vue
 
@@ -117,4 +117,4 @@ También tenemos un comando que nos busca errores y malas prácticas dentro de n
 
 npm run lint
 
-![](img/2022-12-12-19-10-15.png)
+![imagen](img/2022-12-12-19-10-15.png)

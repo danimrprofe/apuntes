@@ -1,29 +1,27 @@
 # Carbón
 
-Es un material combustible, sólido, frágil y poroso, con un alto porcentaje de carbono. 
+Es un material combustible, sólido, frágil y poroso, con un alto porcentaje de carbono.
 
+Se produce mediante el calentamiento de la madera o residuos vegetales en ausencia de aire (carbonización) a temperaturas que oscilan entre los 400 y los 700 ºC.
 
-Se produce mediante el calentamiento de la madera o residuos vegetales en ausencia de aire (carbonización) a temperaturas que oscilan entre los 400 y los 700 ºC. 
-
-![](img/2022-11-19-15-29-19.png)
+![imagen](img/2022-11-19-15-29-19.png)
 
 Su poder calorífico suele oscilar entre los 25.000 y 35.000 kj/kg, llegando a tener hasta 3 veces más que el de la leña.
 
-# Carbón vegetal
+## Carbón vegetal
 
-![](img/2022-11-19-15-29-50.png)
-![](img/2022-11-19-15-29-57.png)
+![imagen](img/2022-11-19-15-29-50.png)
+![imagen](img/2022-11-19-15-29-57.png)
 
+## Creación de carbón vegetal
 
-# Creación de carbón vegetal
-
-![](img/2022-11-19-15-31-12.png)
+![imagen](img/2022-11-19-15-31-12.png)
 
 - Primera etapa: hasta alcanzar los 170ºC, mayormente se produce la deshidratación de la madera y la destilación de algunos aceites esenciales; unido todo ello a una pequeña degradación de la madera. Hasta los 270ºC.
 - Segunda etapa: existe unos abundantes desprendimientos de gases como el carbono dióxido y el carbono monóxido y también líquidos acuosos.
 - Tercera etapa: se llegan a alcanzar temperaturas superiores a 600ºC donde se produce la carbonización, el desprendimiento de sustancias volátiles es máximo, y el residuo sólido resultante es el carbón vegetal.
 
-## CARBÓN MINERAL
+### CARBÓN MINERAL
 
 Existen distintos tipos de carbón según su antigüedad: A mayor antigüedad, mayor transformación, mayor % de C y menor % de otros elementos como N, S  y agua. Mayor calidad y poder calorífico.
 
@@ -32,19 +30,19 @@ Existen distintos tipos de carbón según su antigüedad: A mayor antigüedad, m
 - La **HULLA**  tiene un poder calorífico de 7000-8000 Kcal/kg y su aspecto es más compacto y con cierto brillo.
 - La **ANTRACITA** es la de mayor poder calorífico (8500 Kcal/Kg). Su aspecto es duro y seco y con intenso brillo metálico. Si las condiciones de presión y temperatura siguen aumentando, se transforma en GRAFITO (condiciones de metamorfismo)
 
-![](img/2022-11-19-15-32-01.png)
+![imagen](img/2022-11-19-15-32-01.png)
 
-## Ventajas
+### Ventajas
 
 El carbón es un combustible de alto poder calorífico y abundante (existen reservas para unos 220 años al ritmo de consumo actual), pero también es un combustible muy **sucio**, con alto contenido en **azufre** que al quemarse produce SOX (lluvia ácida y smog clásico). Además emite el **doble de CO2** que el petróleo.
 
-## Extracción del carbón
+### Extracción del carbón
 
 Dependiendo de la profundidad del carbón, se extrae de explotaciones a cielo abierto o de minas subterráneas:
 
 **EXPLOTACIONES A CIELO ABIERTO**
 
-![](img/2022-11-19-15-32-14.png)
+![imagen](img/2022-11-19-15-32-14.png)
 
 - Económicas
 - Gran impacto ambiental y paisajístico
@@ -52,13 +50,13 @@ Dependiendo de la profundidad del carbón, se extrae de explotaciones a cielo ab
 
 **MINAS SUBTERRÁNEAS**
 
-![](img/2022-11-19-15-32-41.png)
+![imagen](img/2022-11-19-15-32-41.png)
 
 - Alto coste económico
 - Alto riesgo de accidentes (explosiones, colapso de galerías, etc.)
 - Alto riesgo de enfermedades derivadas (silicosis, pulmones negros)
 
-## Impactos de la minería en general
+### Impactos de la minería en general
 
 Las minas generan:
 
@@ -66,17 +64,17 @@ Las minas generan:
 - Contaminación del aire por polvo
 - Contaminación del agua por lixiviados de las balsas de lavado
 
-# CENTRALES TÉRMICAS
+## CENTRALES TÉRMICAS
 
-En las centrales térmicas se produce el 30% de la electricidad mundial. Existen varios tipos: 
+En las centrales térmicas se produce el 30% de la electricidad mundial. Existen varios tipos:
 
-## 1) CENTRAL CLÁSICA: 
+### 1) CENTRAL CLÁSICA
 
 El carbón se quema para generar vapor, que hace girar unas turbinas que mueven los alternadores, donde se transforma la E. mecánica en E. eléctrica que va ya a la red de distribución.
 
-![](img/2022-11-19-15-33-08.png)
+![imagen](img/2022-11-19-15-33-08.png)
 
-Este proceso es muy poco eficiente (aprox. 32% de la E. del carbón se transforma en E. eléctrica) y de alto grado de impacto ambiental (produce gran cantidad de CO2, SOx y NOx y los impactos de la minería). 
+Este proceso es muy poco eficiente (aprox. 32% de la E. del carbón se transforma en E. eléctrica) y de alto grado de impacto ambiental (produce gran cantidad de CO2, SOx y NOx y los impactos de la minería).
 Para minimizar los efectos nocivos, se han buscado alternativas:
 
 - Preprocesado del carbón: Triturarlo y lavarlo para eliminar el azufre. (Genera grave contaminación del agua)
@@ -88,22 +86,23 @@ Actualmente se sustituye el carbón por derivados del petróleo (fuel) y sobre t
 Productos derivados del carbón
 PRINCIPAL USO DEL CARBÓN: CENTRALES TÉRMICAS
 
-## 2) Centrales termoeléctricas de ciclo combinado
+### 2) Centrales termoeléctricas de ciclo combinado
 
 Funcionan con 2 turbinas:
+
 - Una TURBINA DE GAS que utiliza gas natural o carbón gasificado como combustible, pero en lugar de calentar agua, se aprovechan los propios gases dela combustión para accionar una turbina y un generador eléctrico.
 - Una TURBINA DE VAPOR clásica
 
 En algunos casos también se aprovecha el calor de los gases de la combustión (600ºC) para general vapor de alta presión, que mueve una tercera turbina
 
-![](img/2022-11-19-15-33-24.png)
+![imagen](img/2022-11-19-15-33-24.png)
 
 Con este método se consiguen eficiencias mucho más altas (hasta 55%) y se produce menor contaminación.
 
-## 3) SISTEMAS DE COGENERACIÓN
+### 3) SISTEMAS DE COGENERACIÓN
 
 Son sistemas de alta eficiencia donde se aprovecha el mismo combustible para generar 2 o  más productos: electricidad y calor aprovechable (hornos, agua caliente, etc.) o electricidad y E. mecánica (movimiento de una máquina). Es muy útil en industrias Ej. Azulejeras de Castellón: aprovechan el calor de los hornos para generar vapor y mover una turbina (se autoabastecen de electricidad), pero también en viviendas, ej: calderas para generar electricidad, agua caliente sanitaria y calefacción
 
-![](img/2022-11-19-15-33-34.png)
+![imagen](img/2022-11-19-15-33-34.png)
 
 Su filosofía consiste en recuperar la E. útil del combustible para aprovecharla al máximo.

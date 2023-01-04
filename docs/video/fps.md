@@ -7,15 +7,15 @@
 
 Los vídeos no son más que secuencias de fotos, una después de la otra, que al reproducirse dan sensación de movimiento. Antiguamente estas fotos (fotogramas) se grababan en rollos de cinta.
 
-![](media/image66.png)
+![imagen](media/image66.png)
 
 Cada fotograma (frame) se divide en líneas horizontales y líneas verticales. Cada puntito donde se junta una línea vertical y una horizontal se llama **píxel** y, por tanto, un conjunto de píxels conforman un fotograma o frame.
 
-![](img/2020-03-31-16-53-07.png)
+![imagen](img/2020-03-31-16-53-07.png)
 
 Los frames por segundo indican la cantidad de fotos o fotogramas (frames) que se han grabado en cada segundo de ese vídeo
 
-![](media/image67.png)
+![imagen](media/image67.png)
 
 ¿Cuáles son los valores de FPS más habituales?
 
@@ -41,4 +41,4 @@ De todos modos, podemos seleccionarla manualmente, bien para mejorar la calidad 
 
 Youtube por el momento no permite tasas de más de 60 FPS.
 
-![](media/image68.png)
+![imagen](media/image68.png)

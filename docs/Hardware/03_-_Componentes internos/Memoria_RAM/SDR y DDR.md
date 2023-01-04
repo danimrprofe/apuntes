@@ -9,7 +9,7 @@
   * PC100: 8 bytes/Hz x 100 MHz =  _800 MB/s_
   * PC133: 8 bytes/Hz x 133 MHz =  _1\.066 MB/s_
 
-![](img/34_Memoria_RAM40.jpg)
+![imagen](img/34_Memoria_RAM40.jpg)
 
 _DDR2_
 
@@ -27,7 +27,7 @@ __Módulos: __ DIMM con 184 pines
 
 __Multicanal__ : Soporta dual channel
 
-![](img/34_Memoria_RAM41.png)
+![imagen](img/34_Memoria_RAM41.png)
 
 _DDR2_
 
@@ -47,7 +47,7 @@ __Capacidad:__  hasta 2 GB por módulo
 
 __Multicanal__ : Soporta dual channel
 
-![](img/34_Memoria_RAM42.png)
+![imagen](img/34_Memoria_RAM42.png)
 
 _DDR3_
 
@@ -67,11 +67,11 @@ __Capacidad:__  hasta 16 GB por módulo
 
 __Multicanal__ : Soporta dual y triple channel
 
-![](img/34_Memoria_RAM43.png)
+![imagen](img/34_Memoria_RAM43.png)
 
 __Nota__ : Los módulos de memoria DDR, DDR2 y DDR3 no son compatibles entre sí\. Físicamente es imposible por la posición de las muesca que evita su inserción\.
 
-![](img/34_Memoria_RAM44.png)
+![imagen](img/34_Memoria_RAM44.png)
 
 Funciona a más velocidad que la DDR
 
@@ -83,9 +83,9 @@ __Módulos:__  DIMM con 288 pines
 
 __Capacidad:__  hasta 64 GB por módulo
 
-![](img/34_Memoria_RAM45.png)
+![imagen](img/34_Memoria_RAM45.png)
 
-![](img/34_Memoria_RAM46.jpg)
+![imagen](img/34_Memoria_RAM46.jpg)
 
 * _GDDR_
 * Son  __chips de memoria insertados __
@@ -96,7 +96,7 @@ __Capacidad:__  hasta 64 GB por módulo
 * Se los conoce como RAM DDR para gráficos\.
 * Consolas de videojuegos como la Xbox 360 o la Playstation 3 utilizan este tipo de memoria RAM\.
 
-![](img/34_Memoria_RAM47.jpg)
+![imagen](img/34_Memoria_RAM47.jpg)
 
 ## Parámetros memoria RAM
 

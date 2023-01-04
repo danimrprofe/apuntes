@@ -3,7 +3,7 @@
 
 Nuestro juego tendrá 3 pantallas.
 
-![](img/2022-11-07-15-40-05.png)
+![imagen](img/2022-11-07-15-40-05.png)
 
 ## Componente canva
 
@@ -14,27 +14,27 @@ Crearemos dentro de la pantalla **screengame** un componente canvas.
 
 Tendremos un tipo de sprite SpritePelotas, que contendrá uno elemento de este tipo, llamado SpritePelota.
 
-![](img/2022-11-07-15-43-10.png)
+![imagen](img/2022-11-07-15-43-10.png)
 
 ## Acelerómetro
 
 Crearemos uno sensor acelerómetro, que utilizaremos en nuestro proyecto. El acelerómetro nos permitirá obtener datos sobre la rotación de la pantalla en las 3 dimensiones.
 
-![](img/2022-11-07-15-46-41.png)
+![imagen](img/2022-11-07-15-46-41.png)
 
 Lo habilitaremos y le ajustaremos la sensibilidad a high.
 
-![](img/2022-11-07-15-47-18.png)
+![imagen](img/2022-11-07-15-47-18.png)
 
 ## Etiquetas para comprobar el acelerómetro
 
 Colocaremos dos etiquetas abajo de la pantalla donde mostraremos los valores obtenidos con el acelerómetro para los ejes x e y.
 
-![](img/2022-11-07-15-41-11.png)
+![imagen](img/2022-11-07-15-41-11.png)
 
 Les cambiaremos el nombre a las etiquetas.
 
-![](img/2022-11-07-15-41-56.png)
+![imagen](img/2022-11-07-15-41-56.png)
 
 
 ## Movimiento de pelota con acelerómetro
@@ -43,18 +43,18 @@ El evento **changes** nos permitirá recalcular la posición de la pelota cada v
 
 Las piezas verdes que tiene este componente contendrán los valores X, Y y Z que nos de el acelerómetro. Las podremos utilizar dentro de este bloque para actualizar la posición de nuestra pelota.
 
-![](img/2022-11-07-15-49-26.png)
+![imagen](img/2022-11-07-15-49-26.png)
 
 A continuación mostraremos la información del acelerómetro por pantalla, para comprobar su funcionamiento.
 
-![](img/2022-11-07-15-52-06.png)
+![imagen](img/2022-11-07-15-52-06.png)
 
 Comprobado que el acelerómetro funciona y proporciona los valores correctos, vamos a hacer que las velocidades X e Y del objeto pelota correspondan a los valores proporcionados por el sensor.
 
-![](img/2022-11-07-15-55-29.png)
+![imagen](img/2022-11-07-15-55-29.png)
 
 Dado que los valores dados por el sensor son muy pequeños en comparación con las proporciones de la pantalla, será recomendable multiplicar los valores obtenidos para obtener una velocidad más elevada.
 
 Así mismo, comprobaremos que conviene invertir el signo del valor eje X para que se mueva en el mismo sentido en el que estamos inclinando el dispositivo.
 
-![](img/2022-11-07-15-45-47.png)
+![imagen](img/2022-11-07-15-45-47.png)

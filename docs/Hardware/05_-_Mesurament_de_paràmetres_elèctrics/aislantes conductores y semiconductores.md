@@ -1,6 +1,6 @@
 # Materiales aislantes y materiales conductores
 
-![](img/1_Magnitudes_electricas1.jpg)
+![imagen](img/1_Magnitudes_electricas1.jpg)
 
 _Aislantes_
 
@@ -20,6 +20,6 @@ Un material con poca resistividad es buen conductor de la electricidad
 
 Un material con mucha resistividad es mal conductor de la electricidad
 
-![](img/1_Magnitudes_electricas2.jpg)
+![imagen](img/1_Magnitudes_electricas2.jpg)
 
-![](img/1_Magnitudes_electricas3.jpg)
+![imagen](img/1_Magnitudes_electricas3.jpg)

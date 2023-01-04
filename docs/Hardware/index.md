@@ -4,4 +4,4 @@ El hardware es la **parte física** de un sistema informático, que incluye todo
 
 Estos **componentes** incluyen: procesadores, tarjetas de memoria, unidades de disco, tarjetas de red, tarjetas de sonido, tarjetas de video, unidades de almacenamiento, teclados, mouse y otros dispositivos.
 
-![](img/2023-01-02-10-01-57.png)
+![imagen](img/2023-01-02-10-01-57.png)

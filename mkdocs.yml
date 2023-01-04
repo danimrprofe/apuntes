@@ -16,8 +16,8 @@ theme:
   features:
     - navigation.top
     - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs
+    #- navigation.tabs.sticky
     - navigation.instant
     - navigation.indexes
     - header.autohide

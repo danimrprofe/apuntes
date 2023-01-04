@@ -37,11 +37,9 @@ El funcionamiento de un circuito digital se refleja en su TABLA DE VERDAD, donde
 representamos las entradas del circuito (A, B, C) y las salidas (normalmente una llamada S).
 Se representan todas las posibles combinaciones de entrada en orden. Recordar que con 2
 entradas hay 4 combinaciones posibles, con 3 entradas existen 8 combinaciones posibles, con n
-entradas existen 2
-n
-combinaciones.
-Puertas elementales: OR, AND y NOT.
+entradas existen 2n combinaciones.
 
+## Puertas elementales: OR, AND y NOT.
 
 
 El funcionamiento de cada una de estas puertas se puede comprender fácilmente observando la

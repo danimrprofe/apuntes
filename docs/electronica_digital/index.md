@@ -1,21 +1,25 @@
 # Electrònica digital
 
+Hemos visto algunos componentes utilizados en los circuitos de electrónica analógica (resistencias, condensadores, diodos, etc.), esta tecnología se caracteriza porque las señales físicas (temperatura, sonido, imagen, etc.) se convierten en una señal eléctrica para poder realizar un circuito que controle una calefacción, un ventilador, una bombilla, etc.
 
+En electrónica digital sólo existen dos niveles de tensión:
 
+- 0 voltios (que se representa mediante el número 0)
+- 5 voltios (que se representa con el número 1)
+
+PoUna señal digital sólo puede tener dos valores, 0 y 1.
 
 ## Operacions lògiques
 
-## Circuits amb portes lògiques
+En el álgebra de Boole existen tres operaciones lógicas básicas:
 
-1. Fer operacions lògiques emprant l’àlgebra de Boole en la resolució de problemes tecnològics senzills.
-1.1. Fa operacions lògiques emprant l’àlgebra de Boole.
-1.2. Relaciona plantejaments lògics amb processos tècnics.
-2. Resoldre problemes tecnològics senzills mitjançant portes lògiques.
-2.1. Resol problemes tecnològics senzills mitjançant portes lògiques.
-3. Analitzar sistemes automàtics i descriure’n els components.
-3.1. Analitza sistemes automàtics i en descriu els components.
-4. Muntar circuits senzills.
-4.1. Munta circuits senzills.
+- AND
+- OR
+- NOT
+
+Como en el álgebra de Boole hay pocos dígitos y pocas operaciones, es fácil probar las operaciones y funciones mediante las llamadas "tablas de verdad", que son tablas en las que se representan todos los valores posibles.
+
+Se puede construir una tabla de verdad para cada operación lógica básica: (a y b son los operandos o Entradas y S es el resultado o Salida)
 
 ## 4. Puertas lògicas
 
@@ -40,7 +44,6 @@ entradas hay 4 combinaciones posibles, con 3 entradas existen 8 combinaciones po
 entradas existen 2n combinaciones.
 
 ## Puertas elementales: OR, AND y NOT.
-
 
 El funcionamiento de cada una de estas puertas se puede comprender fácilmente observando la
 equivalencia con el circuito de interruptores. El interruptor abierto simboliza la entrada a nivel 0,
@@ -71,13 +74,10 @@ El circuito lógico equivalente será:
 
 ## 6. Circuitos integrados
 
-- CIRCUITOS INTEGRADOS FAMILIA TTL.
-Cuando diseñamos un sistema digital, el último paso es realizar el montaje práctico con puertas
-lógicas. Recordar que en un montaje real, una puerta lógica será un circuito electrónico que
-proporciona señales digitales en su salida cuando a sus entradas se le aplican también señales
-digitales. Las señales de salida dependen de las señales de entrada.
-Los circuitos integrados se realizan utilizando transistores. Existen distintas tecnologías de
-fabricación, de las cuales la más empleada es la lógica TTL (Transistor Transistor Logic). Se emplea
-por su rapidez y por su alimentación a 5 voltios de corriente continua.
-El circuito integrado se designa con el código 74 (indicativo de la familia TTL) seguido de dos o
-tres números que identifican el tipo de puerta o bloque que lleva en su interior
+En tiendas de electrónica podemos comprar **circuitos integrados** con varias puertas lógicas en su interior, cuyas entradas y salidas se pueden conectar a través de las patillas para formar cualquier circuito.
+
+![](img/2023-01-07-16-24-12.png)
+
+Por ejemplo, este circuito integrado tiene en su interior cuatro puertas del tipo AND.
+
+![](img/2023-01-07-16-24-44.png)

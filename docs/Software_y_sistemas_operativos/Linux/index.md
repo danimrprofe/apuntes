@@ -27,32 +27,25 @@ Linux es mantenido principalmente por la **comunidad** de desarrollo de código 
 
 Esta comunidad también recibe el apoyo de **empresas**, quienes patrocinan algunos proyectos de desarrollo de Linux. Además, la comunidad de Linux también recibe donaciones de usuarios que apoyan el desarrollo del sistema.
 
-##  Historia del software libre y distribuciones
+## Historia del software libre y distribuciones
 
 ![imagen](2019-06-28-08-44-58.png)
 
-##  Componentes de Linux
+## Kernel
 
-## ##  Kernel
+El kernel de Linux es el **núcleo** del sistema operativo, responsable de administrar sus recursos como memoria, procesadores y dispositivos I/O. Es un programa de bajo nivel que controla el hardware y los programas.
 
-Núcleo del S.O.
-Permite controlar el hardware de la máquina
+## Entorno gráfico (DE)
 
-## ##  Entorno gráfico (DE)
-
-Necesario para que el usuario lo use
-Diferentes entornos:
-Gnome, KDE, Beryl, Unity
+Los entornos gráficos como GNOME y KDE proporcionan una interfaz gráfica para interactuar con un sistema operativo. Estos entornos ofrecen herramientas para navegar por la web, ver archivos multimedia, editar documentos, etc. Otros entornos como LXDE y Xfce son más ligeros.
 
 ![imagen](2019-06-28-08-45-15.png)
 
-##  Sistemas Linux
-
+## Sistemas Linux
 
 Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos son usados por empresas, asociaciones y colectivos de personas. El núcleo (Kernel) es la base del sistema operativo y a partir de él se desarrollan diferentes versiones.
 
 Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesidades de los usuarios.
-
 
 ![imagen](2019-06-28-08-45-37.png)
 
@@ -106,20 +99,18 @@ Instalado salas de informática
 Gestor de arranque
 Versión que utiliza consellería en los colegios y en los IES
 
-## arranque DUAL
+## Arranque DUAL
 
-El arranque dual es una característica que permite a un usuario iniciar un sistema operativo (OS) desde dos dispositivos de almacenamiento diferentes. Esto significa que un usuario puede elegir entre dos sistemas operativos diferentes al iniciar una computadora; por ejemplo, un usuario puede iniciar una computadora con Windows u otro sistema operativo, como Linux. El sistema operativo seleccionado se cargará **automáticamente** y se ejecutará.
+El arranque dual es una característica que permite a un usuario iniciar un sistema operativo (OS) desde dos dispositivos de almacenamiento diferentes. Esto significa que un usuario puede elegir entre dos sistemas operativos diferentes al iniciar una computadora; por ejemplo, un usuario puede iniciar una computadora con Windows u otro sistema operativo, como Linux.
 
-## instalación de Linux
+El sistema operativo seleccionado se cargará **automáticamente** y se ejecutará.
 
-Para instalar Linux, existen diferentes opciones. Una de ellas es **descargar una imagen** CD/DVD, grabarla y arrancar desde el CD/DVD para completar la instalación. Esta instalación requiere modificar el disco duro.
+## Instalación de Linux
 
-Otra opción es utilizar un **LiveCD**, el cual no instala nada en el disco duro, sino que permite probar una versión de Linux y al apagar, todo vuelve a su estado original.
+Para instalar Linux, existen diferentes opciones.
 
-Finalmente, es posible instalar Linux desde **Windows**, descargando un programa que se instala como una aplicación más, y que se puede desinstalar cuando se quiera.
+- Una de ellas es **descargar una imagen** CD/DVD, grabarla y arrancar desde el CD/DVD para completar la instalación. Esta instalación requiere modificar el disco duro.
+- Otra opción es utilizar un **LiveCD**, el cual no instala nada en el disco duro, sino que permite probar una versión de Linux y al apagar, todo vuelve a su estado original.
+- Finalmente, es posible instalar Linux desde **Windows**, descargando un programa que se instala como una aplicación más, y que se puede desinstalar cuando se quiera.
 
 ![imagen](2019-06-28-08-47-24.png)
-
-## Versiones Ubuntu
-
-![imagen](2019-06-28-08-47-53.png)

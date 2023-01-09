@@ -1,36 +1,12 @@
-## Código ASCII
+# Código ASCII
 
-Ascii fue creado en 1963, y es una correspondencia entre cadenas de bits y una serie de símbolos (alfanuméricos y otros).
 
-Esto permite comunicación entre dispositivos digitales, así como procesar y almacenar la información.
+Cada vez que un carácter es escrito en un teclado, se transmite un número de código al computador. Estos números de código se almacenan en binario en los computadores como conjuntos de caracteres llamados ASCII.
 
-Caracteres:
 
-![imagen](img/5_Codificacion_de_caracteres4.png)
+El Código ASCII fue creado en 1963 como una tabla que asignaba un código binario a cada letra y una serie de símbolos (alfanuméricos y otros). Esta tabla representaba caracteres utilizando 7 bits, lo que permitía 128 caracteres posibles, enumerados del 0 al 127. Los caracteres de control (códigos 0 al 31) tienen efecto sobre cómo se procesa el texto. Además, los códigos 65 al 90 representan las letras mayúsculas, mientras que los códigos 97 al 122 representan las letras minúsculas.
 
-Ejemplo:
-
-![imagen](img/5_Codificacion_de_caracteres5.png)
-
-* Representaba caracteres utilizando __ 7 bits __
-* 128 caracteres posibles, enumerados del 0 al 127
-  * _Códigos 0 al 31 _
-    * Se denominan  _caracteres de control_
-    * Tienen efecto sobre cómo se procesa el texto\.
-  * _Códigos 65 al 90 _
-    * Representan las letras  _mayúsculas_
-  * _Códigos 97 al 122 _
-    * Representan las letras  _minúsculas_
-
-![imagen](img/5_Codificacion_de_caracteres6.png)
-
-![imagen](img/5_Codificacion_de_caracteres7.png)
-
-![imagen](img/5_Codificacion_de_caracteres8.png)
-
-![imagen](img/5_Codificacion_de_caracteres9.jpg)
-
-![imagen](img/5_Codificacion_de_caracteres10.jpg)
+![](img/2023-01-09-18-48-04.png)
 
 ## Código ASCII Extendido
 
@@ -38,24 +14,10 @@ Los problemas con el ASCII original eran que fue desarrollado para utilizarse co
 
 La solución fue la extensión del código ASCII para 8 bits (byte) y la codificación de hasta 256 caracteres (ASCII extendido).  Esto permitió añadir caracteres acentuados, símbolos y otras letras de idiomas distintos al inglés.
 
+![imagen](img/5_Codificacion_de_caracteres6.png)
+
+El código ASCII extendido asigna valores del 0 al 255 a mayúsculas, minúsculas, dígitos, marcas de puntuación y otros símbolos. Para mantener la compatibilidad con ASCII, el primer bit del byte es 0 para caracteres ASCII, y 1 para caracteres ASCII extendidos.
+
+Los caracteres ASCII extendidos incluyen letras alfabéticas no inglesas, símbolos de moneda no ingleses, letras griegas, símbolos matemáticos, caracteres para gráficos, caracteres para gráficos de barras y caracteres sombreados.
+
 Sin embargo, el ASCII extendido sigue siendo limitado y no soporta caracteres complejos como los usados en el **chino o el japonés**, para los cuales se usan otros sistemas de codificación.
-
-![imagen](img/5_Codificacion_de_caracteres11.jpg)
-
-* Este código asigna los valores del  __0 al 255 __ para las mayúsculas, las minúsculas, los dígitos, las marcas de puntuación y otros símbolos\.
-* _Compatibilidad con ASCII_
-* Para no romper la compatibilidad con ASCII, se hace que el primer bit signifique
-  * 0: Los 7 bits inferiores siguen la tabla ASCII
-  * 1: Los 7 bits inferiores siguen otra tabla
-* _Caracteres ASCII extendido_
-  * Caracteres alfabéticos no ingleses
-  * Símbolos de moneda no ingleses
-  * Letras griegas
-  * Símbolos matemáticos
-  * Caracteres para gráficos
-  * Caracteres para gráficos de barras
-  * Caracteres sombreados
-
-![imagen](img/5_Codificacion_de_caracteres12.png)
-
-![imagen](img/5_Codificacion_de_caracteres13.png)

@@ -18,5 +18,3 @@ Para indicar la resolución de una imagen se utiliza habitualmente solo los **p�
 - I si el video es entrelazado
 
 Por ejemplo, los vídeos en fullHD tienen una resolución de 1080p. Esto significa que la imagen mide 1080 píxeles en vertical y el video es del tipo progresivo.
-
-![imagen](img/2020-03-31-15-21-59.png)

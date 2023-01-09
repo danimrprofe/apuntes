@@ -15,10 +15,10 @@ Otro paquete útil para hacer pruebas y resolver problemas DNS es el paquete dns
 
 Las principales utilidades que usaremos para hacer pruebas son:
 
-*   **dig**, hace peticiones al DNS de varias manera
-*   **nslookup**, la manera antigua de hacerlo
+* **dig**, hace peticiones al DNS de varias manera
+* **nslookup**, la manera antigua de hacerlo
 
-## 2. Herramientas de comprobación del funcionamiento DNS {#2-herramientas-de-comprobación-del-funcionamiento-dns}
+## 2. Herramientas de comprobación del funcionamiento DNS
 
 ### Comando nslookup {#comando-nslookup}
 
@@ -57,9 +57,9 @@ Es un protocolo que permite realizar consultas para obtener información sobre u
 
 ![alt_text](images/Pr-ctica-DNS4.png "image_tooltip")
 
-También podríamos instalar el paquete **whois **en Linux para realizar consultas.
+También podríamos instalar el paquete **whois** en Linux para realizar consultas.
 
-## 3. Archivos de configuración de BIND {#3-archivos-de-configuración-de-bind}
+## 3. Archivos de configuración de BIND
 
 ### Principales archivos de configuración
 
@@ -118,17 +118,19 @@ file "db.iesdmoreno.org"; // en este archivo crearemos los registros de la zona
 
 A continuación crearemos en **/etc/bind/cache** el archivo de zona.
 
-    mkdir /etc/bind/cache
-    cd /etc/bind/cache/
-    nano db.iesdmoreno.org
+```
+mkdir /etc/bind/cache
+cd /etc/bind/cache/
+nano db.iesdmoreno.org
+```
 
 ## 6. Creación de la BD de zona  {#6-creación-de-la-bd-de-zona}
 
-Crearemos un archivo para la zona iesdmoreno.org llamado “db.iesdmoreno.org”. Si tenemos la configuración por defecto, o crearemos en la carpeta **/etc/bind/cache/.**Añadimos el registro SOA al archivo db.iesdmoreno.org.
+Crearemos un archivo para la zona iesdmoreno.org llamado “db.iesdmoreno.org”. Si tenemos la configuración por defecto, o crearemos en la carpeta ``/etc/bind/cache/`` .Añadimos el registro SOA al archivo db.iesdmoreno.org.
 
 Este registro describe las propiedades globales de la zona o dominio. Solo debe haber un registro _SOA_ en un fichero de zona y tiene que ser el primer RR.
 
-```
+```dns
 iesdmoreno.org. 	**IN SOA** 	ns1.iesdmoreno.org. dmoreno.iesdmoreno.org. (
 2018111901;
 3h;
@@ -140,17 +142,23 @@ iesdmoreno.org. 	**IN SOA** 	ns1.iesdmoreno.org. dmoreno.iesdmoreno.org. (
 
 Agregamos los RR del tipo nameserver NS. Uno por cada servidor de nombres autoritativo en la zona.
 
-    iesdmoreno.org.	IN	NS	ns1.iesdmoreno.org.
+```
+iesdmoreno.org.	IN	NS	ns1.iesdmoreno.org.
+```
 
 Estos registros indican que tenemos dos nameservers para la zona iesdmoreno.org. Los dos nameservers son ns1.iesdmoreno.org y ns2.iesdmoreno.org.
 
 Posteriormente, mapeamos los nombres a direcciones. Añadimos los siguientes RR del tipo A al archivo db.iesdmoreno.org.
 
-    ns1.iesdmoreno.org.		IN	A	192.168.X.10
+```
+ ns1.iesdmoreno.org.		IN	A	192.168.X.10
+```
 
 Reiniciar servidor:
 
-    systemctl restart bind9
+```
+systemctl restart bind9
+```
 
 ## 7. Configurar DNS en clientes {#7-configurar-dns-en-clientes}
 
@@ -194,21 +202,11 @@ Recargamos para que los cambios tengan efecto
 
 Comprobación con nslookup
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/Pr-ctica-DNS7.png "image_tooltip")
-
-Comprobación con dig
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS8.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/Pr-ctica-DNS8.png "image_tooltip")
-
 ## 9. Agregación de registros del tipo A {#9-agregación-de-registros-del-tipo-a}
 
 Estos registros, relacionarán un nombre de dominio con una IP de host
 
-```
+```dns
 server						IN	A	192.168.0.10
 ns2.iesdmoreno.org.				IN	A	192.168.1.2
 peluqueria.fp.iesdmoreno.org.		IN	A	192.168.0.3
@@ -248,12 +246,6 @@ eso.iesdmoreno.org.        	**IN**    CNAME     eso.secundaria.iesdmoreno.org.
 ```
 
 #### Comprobación del alias {#comprobación-del-alias}
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS9.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/Pr-ctica-DNS9.png "image_tooltip")
-
-###
 
 ## 11. Creación de zonas inversas {#11-creación-de-zonas-inversas}
 
@@ -406,12 +398,4 @@ A continuación, ejecute named-checkzone para cada uno de sus archivos de zona:
 
 Desde un cliente, podemos conectar al servidor HTTP (Apache) para que nos muestre una página web utilizando la IP donde se encuentra instalado.
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/Pr-ctica-DNS10.png "image_tooltip")
-
 ### Modificar el archivo de configuración de la zona {#modificar-el-archivo-de-configuración-de-la-zona}
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS11.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/Pr-ctica-DNS11.png "image_tooltip")

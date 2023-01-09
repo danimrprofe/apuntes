@@ -1,6 +1,6 @@
 # Roles
 
-Un **rol** es una combinación predefinida de varios servicios. 
+Un **rol** es una combinación predefinida de varios servicios.
 
 * Controlador de dominio
 * Servidor DNS

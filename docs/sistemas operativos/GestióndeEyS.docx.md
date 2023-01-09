@@ -2,57 +2,21 @@
 
 ## Introducción
 
-Gestión de dispositios E/S muy importante para el SO. Substistemas de
-E/s dedicadas a esto.
-
-Rango muy amplio de dispositivos en ordenador (teclado, disco duro,
-monitor, impresoras)
+La gestión de entrada/salida es muy importante para un sistema operativo. Existe una amplia variedad de dispositivos que se conectan a los ordenadores, tales como teclado, disco duro, monitor, impresoras, etc.
 
 ## Hardware de E/S
 
-Dispositivos se categorizan en almacenamiento, comunicaciones, interfaz
-de usuario
+Estos dispositivos se clasifican en **almacenamiento**, **comunicaciones** e **interfaz** de usuario, y se comunican con el ordenador a través de señales de cables o aire.
 
-Se comunican con el ordenador por señales a través de cables o aire
+Los dispositivos se conectan al PC a través de los **puertos**. Un conjunto común de cables conectando múltiples dispositivos se conoce como un **bus**.
 
-Los dispositivos se comunican con el PC a través de puertos
-
-Un conjunto común de cables conectando múltiples dispositivos se llama
-un bus
-
-Periféricos formados por
-
-Dispositivo físico
-
-Tarjeta controladora
-
-Tarjeta controladora
-
-Interzaz entre ordenador y dispositivo
-
-Componentes
-
-Sincronización
-
-Conversores AD y DA (ratón, altavoces)
-
-Registros
-
-Protocolos de comunicaciones
+Los dispositivos están formados por un dispositivo físico, una tarjeta controladora, una interfaz entre el ordenador y el dispositivo, componentes, sincronización, conversores AD y DA, registros y protocolos de comunicación.
 
 ## Proceso genérico E/S
 
-SO escribe comando en registro de la tarjeta controladora
+El sistema operativo escribe un comando en el registro de la tarjeta controladora, la cual junto con el dispositivo ejecutan el comando. Mientras tanto, el sistema operativo y la CPU siguen con la ejecución de otros procesos.
 
-El controlador junto con el dispositivo ejecutan comando
-
-SO y CPU siguen ejecutando otros procesos.
-
-Comando finaliza, controlador genera interrupción
-
-SO recibe interrupción y CPU atiende en función de prioridad
-
-Datos leídos se colocan en registros de la tarjeta para SO los lea
+Cuando el comando finaliza, el controlador genera una interrupción que el sistema operativo recibe. La CPU atiende la interrupción en función de la prioridad. Los datos leídos se colocan en los registros de la tarjeta para que el sistema operativo los lea.
 
 ## Comunicación con el dispositivo
 
@@ -73,32 +37,15 @@ Es necesario proteger los spacios de memoria entre procesos
 
 ## Tipos de dispositivos según el acceso al sistema
 
-Dispositivos de bloque
-
-Dispositivos de carácter
+Existen dos tipos de dispositivos según el acceso al sistema: dispositivos de bloque y dispositivos de carácter.
 
 ## Tipos de E/S en función de la sincronización del controlador
 
-E/S programada
+También se pueden clasificar en función de la sincronización del controlador: E/S programada, E/S por interrupciones, acceso directo a memoria y DMA.
 
-E/S por interrupciones
+El acceso directo a memoria es ineficiente para los periféricos que generan grandes cantidades de datos.
 
-Acceso directo a memoria
-
-Proceso anterior ineficiente para periféricos que generan gran cantidad
-de datos
-
-Procesador contínuamente antendiendo E/S en lugar de ejecutar tareas
-
-DMA
-
-Tarjeta controladora realiza las transferencias
-
-Se añaden registros al controlador (Dirección comienzo y tamaño total)
-
-Controladora se encarga de la transferencia cuando el bus esá libre
-
-Cuando termina de enviar datos, genera interrupción atendida por el SO
+El acceso por **DMA** permite que la tarjeta controladora realice las transferencias de datos cuando el bus está libre y una vez que se han enviado los datos, genera una interrupción que el sistema operativo atiende.
 
 ## Técnicas para gestionar E/S y salidas
 
@@ -112,8 +59,7 @@ Por último, la **Cache** es un almacén temporal de datos que se almacena en la
 
 ## Software de E/S##
 
-Gestor de E/S. Parte del SO que realiza la gestión de los distintos
-periféricos
+El gestor de E/S forma parte del sistema operativo y permite la gestión de los distintos periféricos. El objetivo del gestor es lograr la independencia de procesos E/S, gestionar los errores, controlar los dispositivos compatibles y dedicados, estructurarse en niveles, permitir la E/S en espacio de usuario y manejar los dispositivos de forma independiente.
 
 ## Objetivos##
 
@@ -134,9 +80,13 @@ Programas completos fuera del núcleo: sistema de spooling de impresora
 
 ## E/S independiente de dispositivo##
 
-## Manejadores de dispositivo##
+## Manejadores de dispositivo
 
-## Manejadores de interrupciones##
+Como ejemplo de un elemento de E/S, podemos nombrar a los **manejadores de dispositivo**, los cuales permiten el acceso directo a los dispositivos y ayudan a controlar la transferencia de los datos.
+
+## Manejadores de interrupciones
+
+Los manejadores de interrupciones son los encargados de manejar las interrupciones generadas por los dispositivos en el sistema, mientras que los estancamientos permiten la detección y solución de los problemas con los dispositivos de E/S.
 
 ## Estancamientos##
 

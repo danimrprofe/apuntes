@@ -1,14 +1,3 @@
-- [Usuarios](#Usuarios)
-- [Perfil de usuario](#Perfil-de-usuario)
-- [Ventajas de disponer de un perfil de usuario](#Ventajas-de-disponer-de-un-perfil-de-usuario)
-- [Qué se guarda en un perfil](#Qu%C3%A9-se-guarda-en-un-perfil)
-- [Tipos de perfiles](#Tipos-de-perfiles)
-  - [Tipos de perfil de red](#Tipos-de-perfil-de-red)
-    - [Perfil móvil](#Perfil-m%C3%B3vil)
-    - [Perfil obligatorio](#Perfil-obligatorio)
-    - [Perfil súper-obligatorio](#Perfil-s%C3%BAper-obligatorio)
-  - [Ver el perfil de un usuario](#Ver-el-perfil-de-un-usuario)
-
 # Usuarios
 
 En un controlador de dominio con Windows Server se crean cuentas de usuario y de grupo que sirven para:
@@ -16,19 +5,19 @@ En un controlador de dominio con Windows Server se crean cuentas de usuario y de
 1. Identificar y autentificar las personas o usuarios que podrán acceder a los recursos del sistema.
 2. Administrar y gestionar los permisos y privilegios que servirán para controlar los recursos de los usuarios a los recursos del sistema.
 
-# Perfil de usuario
+## Perfil de usuario
 
 - Un perfil es un entorno personalizado específicamente para un usuario.
 - Contiene configuración del escritorio y de los programas del usuario.
 - Cuando se inicia sesión en un equipo por primera vez, se crea automáticamente un perfil para ese usuario.
 
-# Ventajas de disponer de un perfil de usuario
+## Ventajas de disponer de un perfil de usuario
 
 - Múltiples usuarios pueden utilizar el mismo equipo, con la configuración de cada uno recuperada al iniciar la sesión al mismo estado en que estaba cuando cerró la sesión
 - Los cambios hechos por un usuarios en el escritorio no afectan a otro usuario.
 - Si los perfiles de usuarios se almacenan en un servidor pueden seguir a los usuarios a cualquier equipo de la red que ejecute Windows Server u otras versiones de Windows.
 
-# Qué se guarda en un perfil
+## Qué se guarda en un perfil
 
 - Configuración local: Datos de programa, historial y archivos temp.
 - Cookies.
@@ -43,7 +32,7 @@ En un controlador de dominio con Windows Server se crean cuentas de usuario y de
 - Reciente: Archivos más recientes utilizados.
 - SendTo: Elementos del menú Enviar a.
 
-# Tipos de perfiles
+## Tipos de perfiles
 
 - Perfil **local**: Solo accesible desde la estación de trabajo donde se ha creado
 - Perfil **temporal**: Se crea por error en la carga del perfil de usuario
@@ -52,7 +41,7 @@ En un controlador de dominio con Windows Server se crean cuentas de usuario y de
   - Obligatorio
   - Superobligatorio
 
-## Tipos de perfil de red
+### Tipos de perfil de red
 
 Existen 3 tipos principales de perfil de red:
 
@@ -60,7 +49,7 @@ Existen 3 tipos principales de perfil de red:
 - Perfil obligatorio
 - Perfil superobligatorio
 
-### Perfil móvil
+#### Perfil móvil
 
 - Gran ventaja para usuarios que utilizan habitualmente más de un equipo
 - Permite que un usuario tenga el mismo escritorio, configuración de aplicaciones y configuración local en cualquier ordenador que ejecute Windows
@@ -69,7 +58,7 @@ Existen 3 tipos principales de perfil de red:
 - Los cambios en el perfil del usuario permanecen disponibles desde cualquier equipo
 - Después de iniciar sesión el usuario, se copia la información del perfil al equipo local desde el servidor
 
-### Perfil obligatorio
+#### Perfil obligatorio
 
 Características:
 
@@ -80,13 +69,13 @@ Características:
 - Los perfiles de usuario se convierten en perfiles obligatorios cuando el administrador cambia el nombre del archivo NTuser.dat (el subárbol del Registro) de cada perfil de usuario en el sistema de archivos del servidor de perfiles de NTuser.dat a NTuser.man.
 - La .man extensión hace que el perfil de usuario sea un perfil de solo lectura.
 
-### Perfil súper-obligatorio
+#### Perfil súper-obligatorio
 
 - Se incorpora a partir de Windows Server 2008
 - La diferencia es que, si se produce un error que impide cargar el perfil, el usuario no podrá iniciar sesión
 - Este perfil impedirá que se cargue un perfil temporal cuando exista algún motivo que impida cargar el perfil super-obligatorio
 
-## Ver el perfil de un usuario
+### Ver el perfil de un usuario
 
 Para ver el tipo de perfil de un usuario:
 

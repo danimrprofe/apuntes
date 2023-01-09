@@ -1,20 +1,6 @@
 
 # Instalación de paquetes
 
-- [Instalación de paquetes](#instalación-de-paquetes)
-- [1. Noción de paquete](#1-noción-de-paquete)
-- [2. Gestor de paquetes DPKG](#2-gestor-de-paquetes-dpkg)
-- [Ejemplo: instalación de google chrome](#ejemplo-instalación-de-google-chrome)
-- [Gestion de dependencias](#gestion-de-dependencias)
-- [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gestión-de-paquetes-avanzada-apt-y-yum)
-- [4. Repositorios](#4-repositorios)
-  - [Lista de repositorios](#lista-de-repositorios)
-- [5. Prácticas con el gestor APT](#5-prácticas-con-el-gestor-apt)
-- [Mostrar que paquetes se pueden actualizar:](#mostrar-que-paquetes-se-pueden-actualizar)
-- [Tareas](#tareas)
-- [6. Cliente gráfico synaptic](#6-cliente-gráfico-synaptic)
-- [7. Aptitude](#7-aptitude)
-
 # 1. Noción de paquete
 
 En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de **paquetes** (packages).
@@ -83,7 +69,7 @@ Para modificar el repositorio:
 ## Lista de repositorios
 
 ```bash
-deb http://ftp.cixug.es/mint/packages tessa main upstream import backport 
+deb http://ftp.cixug.es/mint/packages tessa main upstream import backport
 
 deb http://mirror.tedra.es/ubuntu bionic main restricted universe multiverse
 deb http://mirror.tedra.es/ubuntu bionic-updates main restricted universe multiverse
@@ -112,7 +98,7 @@ Codename:	tessa
 - Para buscar un paquete: `apt-cache search nombre`
 - Actualizar lista de paquetes: `apt update`
 
-# Mostrar que paquetes se pueden actualizar: 
+# Mostrar que paquetes se pueden actualizar:
 
 Para mostrar los paquetes:
 
@@ -142,7 +128,7 @@ Buscar paquetes que comienzan con apache:
 ```bash
 aptitude search ^apache
 ```
-  
+
 # 6. Cliente gráfico synaptic
 
 **Synaptic** es un front-end o interfaz gráfica que llama a las funciones de APT.
@@ -150,4 +136,3 @@ aptitude search ^apache
 # 7. Aptitude
 
 Es un administrador de paquetes con una interfaz en modo texto.
-

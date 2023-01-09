@@ -1,46 +1,4 @@
 
-- [1. Instalación de BIND {#1-instalación-de-bind}](#1-instalaci%C3%B3n-de-bind-1-instalaci%C3%B3n-de-bind)
-  - [Paquete servidor bind {#paquete-servidor-bind}](#paquete-servidor-bind-paquete-servidor-bind)
-  - [Paquete dnsutils {#paquete-dnsutils}](#paquete-dnsutils-paquete-dnsutils)
-- [2. Herramientas de comprobación del funcionamiento DNS {#2-herramientas-de-comprobación-del-funcionamiento-dns}](#2-herramientas-de-comprobaci%C3%B3n-del-funcionamiento-dns-2-herramientas-de-comprobaci%C3%B3n-del-funcionamiento-dns)
-  - [Comando nslookup {#comando-nslookup}](#comando-nslookup-comando-nslookup)
-  - [Comando dig {#comando-dig}](#comando-dig-comando-dig)
-  - [Whois](#whois)
-- [3. Archivos de configuración de BIND {#3-archivos-de-configuración-de-bind}](#3-archivos-de-configuraci%C3%B3n-de-bind-3-archivos-de-configuraci%C3%B3n-de-bind)
-  - [Principales archivos de configuración](#principales-archivos-de-configuraci%C3%B3n)
-- [4. Dominio de la práctica y escenario a implementar](#4-dominio-de-la-pr%C3%A1ctica-y-escenario-a-implementar)
-  - [Escenario de la práctica {#escenario-de-la-práctica}](#escenario-de-la-pr%C3%A1ctica-escenario-de-la-pr%C3%A1ctica)
-  - [Configuración de opciones {#configuración-de-opciones}](#configuraci%C3%B3n-de-opciones-configuraci%C3%B3n-de-opciones)
-- [5. Creación de la zona principal {#5-creación-de-la-zona-principal}](#5-creaci%C3%B3n-de-la-zona-principal-5-creaci%C3%B3n-de-la-zona-principal)
-  - [En mi caso, crearemos la zona de la siguiente forma (archivo named.conf.local) {#en-mi-caso-crearemos-la-zona-de-la-siguiente-forma-archivo-named-conf-local}](#en-mi-caso-crearemos-la-zona-de-la-siguiente-forma-archivo-namedconflocal-en-mi-caso-crearemos-la-zona-de-la-siguiente-forma-archivo-named-conf-local)
-- [6. Creación de la BD de zona {#6-creación-de-la-bd-de-zona}](#6-creaci%C3%B3n-de-la-bd-de-zona-6-creaci%C3%B3n-de-la-bd-de-zona)
-- [7. Configurar DNS en clientes {#7-configurar-dns-en-clientes}](#7-configurar-dns-en-clientes-7-configurar-dns-en-clientes)
-  - [Configurar cliente con IP del servidor DNS {#configurar-cliente-con-ip-del-servidor-dns}](#configurar-cliente-con-ip-del-servidor-dns-configurar-cliente-con-ip-del-servidor-dns)
-  - [Configuración automática por DHCP {#configuración-automática-por-dhcp}](#configuraci%C3%B3n-autom%C3%A1tica-por-dhcp-configuraci%C3%B3n-autom%C3%A1tica-por-dhcp)
-  - [Configuración manual por interfaz gráfica {#configuración-manual-por-interfaz-gráfica}](#configuraci%C3%B3n-manual-por-interfaz-gr%C3%A1fica-configuraci%C3%B3n-manual-por-interfaz-gr%C3%A1fica)
-  - [Configuración manual por comandos {#configuración-manual-por-comandos}](#configuraci%C3%B3n-manual-por-comandos-configuraci%C3%B3n-manual-por-comandos)
-- [8. Comprobación de resolución petición DNS](#8-comprobaci%C3%B3n-de-resoluci%C3%B3n-petici%C3%B3n-dns)
-- [9. Agregación de registros del tipo A {#9-agregación-de-registros-del-tipo-a}](#9-agregaci%C3%B3n-de-registros-del-tipo-a-9-agregaci%C3%B3n-de-registros-del-tipo-a)
-- [10. Agregar registros de alias {#10-agregar-registros-de-alias}](#10-agregar-registros-de-alias-10-agregar-registros-de-alias)
-    - [Comprobación del alias {#comprobación-del-alias}](#comprobaci%C3%B3n-del-alias-comprobaci%C3%B3n-del-alias)
-  - [](#)
-- [11. Creación de zonas inversas {#11-creación-de-zonas-inversas}](#11-creaci%C3%B3n-de-zonas-inversas-11-creaci%C3%B3n-de-zonas-inversas)
-  - [Zona 192.168.0 {#zona-192-168-0}](#zona-1921680-zona-192-168-0)
-    - [Agregar zona al archivo named.conf.local {#agregar-zona-al-archivo-named-conf-local}](#agregar-zona-al-archivo-namedconflocal-agregar-zona-al-archivo-named-conf-local)
-    - [Agregar registros al archivo db.192.168.0 {#agregar-registros-al-archivo-db-192-168-0}](#agregar-registros-al-archivo-db1921680-agregar-registros-al-archivo-db-192-168-0)
-    - [Comprobar la zona inversa {#comprobar-la-zona-inversa}](#comprobar-la-zona-inversa-comprobar-la-zona-inversa)
-  - [Zona 192.168.1 {#zona-192-168-1}](#zona-1921681-zona-192-168-1)
-    - [Agregar zona al archivo named.conf.local {#agregar-zona-al-archivo-named-conf-local}](#agregar-zona-al-archivo-namedconflocal-agregar-zona-al-archivo-named-conf-local-1)
-    - [Archivo db.192.168.1 {#archivo-db-192-168-1}](#archivo-db1921681-archivo-db-192-168-1)
-    - [Comprobar la zona inversa {#comprobar-la-zona-inversa}](#comprobar-la-zona-inversa-comprobar-la-zona-inversa-1)
-- [12. Archivo de configuración de BIND incluyendo todas las zonas (named.conf.local) {#12-archivo-de-configuración-de-bind-incluyendo-todas-las-zonas-named-conf-local}](#12-archivo-de-configuraci%C3%B3n-de-bind-incluyendo-todas-las-zonas-namedconflocal-12-archivo-de-configuraci%C3%B3n-de-bind-incluyendo-todas-las-zonas-named-conf-local)
-- [13. Comprobar las configuraciones {#13-comprobar-las-configuraciones}](#13-comprobar-las-configuraciones-13-comprobar-las-configuraciones)
-  - [Comprobación del archivo de configuración](#comprobaci%C3%B3n-del-archivo-de-configuraci%C3%B3n)
-  - [Comprobación de zona {#comprobación-de-zona}](#comprobaci%C3%B3n-de-zona-comprobaci%C3%B3n-de-zona)
-- [Conectar al servidor apache utilizando DNS](#conectar-al-servidor-apache-utilizando-dns)
-  - [Conectar desde el cliente al servidor HTTP](#conectar-desde-el-cliente-al-servidor-http)
-  - [Modificar el archivo de configuración de la zona {#modificar-el-archivo-de-configuración-de-la-zona}](#modificar-el-archivo-de-configuraci%C3%B3n-de-la-zona-modificar-el-archivo-de-configuraci%C3%B3n-de-la-zona)
-
 ## 1. Instalación de BIND {#1-instalación-de-bind}
 
 ### Paquete servidor bind {#paquete-servidor-bind}
@@ -49,7 +7,7 @@ En un terminal, introduzca el siguiente comando para instalar dns:
 
     sudo apt install bind9
 
-Otro paquete útil para hacer pruebas y resolver problemas DNS es el paquete dnsutils. 
+Otro paquete útil para hacer pruebas y resolver problemas DNS es el paquete dnsutils.
 
 ### Paquete dnsutils {#paquete-dnsutils}
 
@@ -61,7 +19,6 @@ Las principales utilidades que usaremos para hacer pruebas son:
 *   **nslookup**, la manera antigua de hacerlo
 
 ## 2. Herramientas de comprobación del funcionamiento DNS {#2-herramientas-de-comprobación-del-funcionamiento-dns}
-
 
 ### Comando nslookup {#comando-nslookup}
 
@@ -104,7 +61,7 @@ También podríamos instalar el paquete **whois **en Linux para realizar consult
 
 ## 3. Archivos de configuración de BIND {#3-archivos-de-configuración-de-bind}
 
-### Principales archivos de configuración 
+### Principales archivos de configuración
 
 Los archivos de configuración se suelen encontrar en `/etc/bind/`.
 
@@ -119,9 +76,9 @@ El archivo de configuración del DNS es el archivo `/etc/bind/named.conf`, pero 
 
 No necesitamos modificar todos los archivos, solo algunos de ellos
 
-## 4. Dominio de la práctica y escenario a implementar 
+## 4. Dominio de la práctica y escenario a implementar
 
-Por razones de accesibilidad y organizativas, deseamos asignar un nombre a todos los equipos de nuestra red, para lo que instalaremos un servidor DNS privado con un **dominio ficticio**, por ejemplo 'iesdmoreno.org'. Todos los PCs de nuestra red pertenecerán a dicho dominio ficticio que funcionará solo en nuestra red interna, no en Internet. 
+Por razones de accesibilidad y organizativas, deseamos asignar un nombre a todos los equipos de nuestra red, para lo que instalaremos un servidor DNS privado con un **dominio ficticio**, por ejemplo 'iesdmoreno.org'. Todos los PCs de nuestra red pertenecerán a dicho dominio ficticio que funcionará solo en nuestra red interna, no en Internet.
 
 ### Escenario de la práctica {#escenario-de-la-práctica}
 
@@ -133,8 +90,8 @@ En tal caso el nombre completo de los PCs terminará con 'iesdmoreno.org''. Lo i
 
 Nuestro servidor DNS maestro para nuestro dominio ficticio interno 'iesdmoreno.org'' será capaz de resolver peticiones internas de nombres de este dominio, tanto de forma directa como de forma inversa, es decir:
 
-*   Si recibe una consulta acerca de quién es **eso.secundaria.iesdmoreno.org** deberá devolver su IP, pongamos por ejemplo **192.168.1.3**. 
-*   Si la consulta es una consulta DNS inversa acerca de quién es **192.168.0.4**, deberá responder **informatica.fp.iesdmoreno.org.** 
+*   Si recibe una consulta acerca de quién es **eso.secundaria.iesdmoreno.org** deberá devolver su IP, pongamos por ejemplo **192.168.1.3**.
+*   Si la consulta es una consulta DNS inversa acerca de quién es **192.168.0.4**, deberá responder **informatica.fp.iesdmoreno.org.**
 
 Por ello deberemos añadir en el archivo /etc/bind/named.conf.local la especificación de maestro para el dominio y para la resolución inversa, por ejemplo
 
@@ -146,7 +103,7 @@ Las opciones de configuración las podemos encontrar en `/etc/bind/named.conf.op
 
 ## 5. Creación de la zona principal {#5-creación-de-la-zona-principal}
 
-La siguiente entrada es el registro SOA. Indica que este servidor es la mejor fuente de información para los datos de esta zona. Nuestro servidor es autoritativo para la zona **iesdmoreno.org** debido a que incluiremos este registro SOA. 
+La siguiente entrada es el registro SOA. Indica que este servidor es la mejor fuente de información para los datos de esta zona. Nuestro servidor es autoritativo para la zona **iesdmoreno.org** debido a que incluiremos este registro SOA.
 
 Debe haber uno, y solo un registro SOA en cada archivo de zona.
 
@@ -159,7 +116,7 @@ file "db.iesdmoreno.org"; // en este archivo crearemos los registros de la zona
 };
 ```
 
-A continuación crearemos en **/etc/bind/cache** el archivo de zona. 
+A continuación crearemos en **/etc/bind/cache** el archivo de zona.
 
     mkdir /etc/bind/cache
     cd /etc/bind/cache/
@@ -169,7 +126,7 @@ A continuación crearemos en **/etc/bind/cache** el archivo de zona.
 
 Crearemos un archivo para la zona iesdmoreno.org llamado “db.iesdmoreno.org”. Si tenemos la configuración por defecto, o crearemos en la carpeta **/etc/bind/cache/.**Añadimos el registro SOA al archivo db.iesdmoreno.org.
 
-Este registro describe las propiedades globales de la zona o dominio. Solo debe haber un registro _SOA_ en un fichero de zona y tiene que ser el primer RR. 
+Este registro describe las propiedades globales de la zona o dominio. Solo debe haber un registro _SOA_ en un fichero de zona y tiene que ser el primer RR.
 
 ```
 iesdmoreno.org. 	**IN SOA** 	ns1.iesdmoreno.org. dmoreno.iesdmoreno.org. (
@@ -191,7 +148,7 @@ Posteriormente, mapeamos los nombres a direcciones. Añadimos los siguientes RR 
 
     ns1.iesdmoreno.org.		IN	A	192.168.X.10
 
-Reiniciar servidor: 
+Reiniciar servidor:
 
     systemctl restart bind9
 
@@ -215,7 +172,6 @@ Aprovechando que los clientes obtienen sus parámetros de red mediante DHCP, pod
 
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS6.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/Pr-ctica-DNS6.png "image_tooltip")
 
 ### Configuración manual por interfaz gráfica {#configuración-manual-por-interfaz-gráfica}
@@ -234,12 +190,11 @@ Recargamos para que los cambios tengan efecto
 
     resolvconf -u
 
-## 8. Comprobación de resolución petición DNS 
+## 8. Comprobación de resolución petición DNS
 
 Comprobación con nslookup
 
 <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/Pr-ctica-DNS7.png "image_tooltip")
 
@@ -247,10 +202,7 @@ Comprobación con dig
 
 <p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS8.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/Pr-ctica-DNS8.png "image_tooltip")
-
-
 
 ## 9. Agregación de registros del tipo A {#9-agregación-de-registros-del-tipo-a}
 
@@ -301,7 +253,7 @@ eso.iesdmoreno.org.        	**IN**    CNAME     eso.secundaria.iesdmoreno.org.
 
 ![alt_text](images/Pr-ctica-DNS9.png "image_tooltip")
 
-### 
+###
 
 ## 11. Creación de zonas inversas {#11-creación-de-zonas-inversas}
 
@@ -347,13 +299,11 @@ $TTL **_3h_** \
 4.0.168.192.in-addr.arpa. IN PTR informatica.fp.iesdmoreno.org. \
 ```
 
-
 #### Comprobar la zona inversa {#comprobar-la-zona-inversa}
 
     named-checkzone 0.168.192.in-addr.arpa db.192.168.0
 
 ### Zona 192.168.1 {#zona-192-168-1}
-
 
 #### Agregar zona al archivo named.conf.local {#agregar-zona-al-archivo-named-conf-local}
 
@@ -398,7 +348,7 @@ _1h_ ) ; Negative caching TTL of 1 hour \
 
 ## 12. Archivo de configuración de BIND incluyendo todas las zonas (named.conf.local) {#12-archivo-de-configuración-de-bind-incluyendo-todas-las-zonas-named-conf-local}
 
-De forma predeterminada, BIND espera que el archivo de configuración se llame /etc/named.conf. Los archivos de datos de zona para nuestro ejemplo están en el directorio /etc/bind/cache. 
+De forma predeterminada, BIND espera que el archivo de configuración se llame /etc/named.conf. Los archivos de datos de zona para nuestro ejemplo están en el directorio /etc/bind/cache.
 
 Archivo named.conf.local completo:
 
@@ -428,7 +378,7 @@ Si olvidamos algún punto y coma, dará errores y no funcionará correctamente. 
 
 Estas herramientas residen en `/usr/local/sbin`.
 
-### Comprobación del archivo de configuración 
+### Comprobación del archivo de configuración
 
 Primero, ejecute **named-checkconf**, que verifica /etc/named.conf por defecto. El comando **_named-checkconf_** sirve para chequear la sintaxis de los ficheros de configuración de BIND. En el chequeo incluye aquellos ficheros de la instrucción _include_. Su sintaxis es la siguiente:
 
@@ -442,7 +392,7 @@ Si no se especifica ningún fichero, chequeara el fichero _named.conf_ junto con
 
 ### Comprobación de zona {#comprobación-de-zona}
 
-El comando named-checkzone se utiliza para chequear la sintaxis de un fichero de zona. Su sintaxis es la siguiente: 
+El comando named-checkzone se utiliza para chequear la sintaxis de un fichero de zona. Su sintaxis es la siguiente:
 
     named-checkzone nombre-zona fichero
 
@@ -450,25 +400,18 @@ A continuación, ejecute named-checkzone para cada uno de sus archivos de zona:
 
     named-checkzone iesdmoreno.org db.iesdmoreno.org
 
-## Conectar al servidor apache utilizando DNS 
+## Conectar al servidor apache utilizando DNS
 
-### Conectar desde el cliente al servidor HTTP 
+### Conectar desde el cliente al servidor HTTP
 
 Desde un cliente, podemos conectar al servidor HTTP (Apache) para que nos muestre una página web utilizando la IP donde se encuentra instalado.
 
 <p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/Pr-ctica-DNS10.png "image_tooltip")
-
-
 
 ### Modificar el archivo de configuración de la zona {#modificar-el-archivo-de-configuración-de-la-zona}
 
-
-
 <p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Pr-ctica-DNS11.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/Pr-ctica-DNS11.png "image_tooltip")
-

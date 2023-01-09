@@ -1,13 +1,5 @@
 # vSphere HA y FT
 
-- [vSphere HA y FT](#vsphere-ha-y-ft)
-  - [1) vSphere HA](#1-vsphere-ha)
-    - [Arquitectura de vSphere HA](#arquitectura-de-vsphere-ha)
-      - [vSphere HA: latidos de red](#vsphere-ha-latidos-de-red)
-      - [vSphere HA: latidos de almacén de datos (este no me ha quedado muy claro por lo que he investigado un poco)](#vsphere-ha-latidos-de-almac%C3%A9n-de-datos-este-no-me-ha-quedado-muy-claro-por-lo-que-he-investigado-un-poco)
-    - [Escenarios de errores de vSphere HA](#escenarios-de-errores-de-vsphere-ha)
-  - [2) vSphere Fault Tolerance FT](#2-vsphere-fault-tolerance-ft)
-
 En el entorno empresarial es muy importante que los servidores y otros sistemas informáticos funcionen ininterrumpidamente,
 pues el tiempo de inactividad lleva a perder productividad y perder ingresos. O eso o al menos que el tiempo que están sin
 funcionar sea el menor posible para reducir las pérdidas.
@@ -29,11 +21,11 @@ Para garantizar que un componente situado entre otros dos deje de propagar las s
 
 ### Arquitectura de vSphere HA
 
-Existe un servicio FDM, que se inicia en todos los hosts que pertenecen al mismo clúster. 
-Todos los hosts que pertenecen al mismo clúster están en el mismo “dominio de errores”. 
+Existe un servicio FDM, que se inicia en todos los hosts que pertenecen al mismo clúster.
+Todos los hosts que pertenecen al mismo clúster están en el mismo “dominio de errores”.
 Para gestionarlo todo uno de los hosts será el host principal. El resto serán hosts secundarios.
 
-Dentro de cada host se ejecuta un agente que imagino será un proceso en segundo plano que maneja los aspectos de alta 
+Dentro de cada host se ejecuta un agente que imagino será un proceso en segundo plano que maneja los aspectos de alta
 disponibilidad. Estos agentes de los diferentes hosts se comunican entre ellos.
 
 Existen 2 tipos de latidos, que son complementarios para el funcionamiento de HA.
@@ -43,21 +35,21 @@ Existen 2 tipos de latidos, que son complementarios para el funcionamiento de HA
 
 #### vSphere HA: latidos de red
 
-El host principal envía latidos a todos los hosts secundarios. Si alguno de estos no responde, se le declara inaccesible, 
-por el motivo que sea. El host principal intenta adivinar si el host ha dejado de funcionar, tiene problemas de red o es 
+El host principal envía latidos a todos los hosts secundarios. Si alguno de estos no responde, se le declara inaccesible,
+por el motivo que sea. El host principal intenta adivinar si el host ha dejado de funcionar, tiene problemas de red o es
 inaccesible.
 
 #### vSphere HA: latidos de almacén de datos (este no me ha quedado muy claro por lo que he investigado un poco)
 
-Cuando el host principal del clúster no se puede comunicar con un host secundario a través de la red de administración, 
-daríamos al host por muerto y arrancaríamos las MV en otro host. Pero es posible que fuera un error de conectividad (externo) 
+Cuando el host principal del clúster no se puede comunicar con un host secundario a través de la red de administración,
+daríamos al host por muerto y arrancaríamos las MV en otro host. Pero es posible que fuera un error de conectividad (externo)
 y no un fallo en el funcionamiento del host.
 
-Para intentar averiguar si el host secundario ha fallado realmente existen unos latidos a través del almacén de datos (DS). 
-Es decir, se crea un segundo canal de comunicación entre hosts a través del DS. Si no se reciben latidos de red, pero sí 
+Para intentar averiguar si el host secundario ha fallado realmente existen unos latidos a través del almacén de datos (DS).
+Es decir, se crea un segundo canal de comunicación entre hosts a través del DS. Si no se reciben latidos de red, pero sí
 latidos de almacén de datos, significa que el servidor sigue funcionando, únicamente que ha quedado aislado de la red.
 
-Para que esto funcione se tienen que utilizar datastores que estén conectados al menos a dos hosts. Básicamente con este 
+Para que esto funcione se tienen que utilizar datastores que estén conectados al menos a dos hosts. Básicamente con este
 mecanismo nos ahorramos reiniciar las MV del host en otro host distinto que igual están funcionando estupendamente.
 
 ### Escenarios de errores de vSphere HA
@@ -71,13 +63,13 @@ Hay varios tipos de escenarios que se pueden dar:
 
 ## 2) vSphere Fault Tolerance FT
 
-En el caso de HA, cuando cae un componente lo levantamos en otro sitio y listo, pero esto provoca un downtime en el 
+En el caso de HA, cuando cae un componente lo levantamos en otro sitio y listo, pero esto provoca un downtime en el
 cual servicio esté caído con las consiguientes pérdidas. En sistemas críticos que no pueden parar se puede utilizar el FT.
 
-Este mecanismo de tolerancia a fallos intenta que debido a un fallo no se produzca inactividad, 
-no se pierdan datos ni conexiones. Para ello la estrategia que sigue es duplicar la MV en concreto en otro host, 
+Este mecanismo de tolerancia a fallos intenta que debido a un fallo no se produzca inactividad,
+no se pierdan datos ni conexiones. Para ello la estrategia que sigue es duplicar la MV en concreto en otro host,
 de tal manera que si se produce un fallo en la MV original se conmuta a la MV secundaria inmediatamente. Al ya estar esta MV en funcionamiento en otro host, no se pierde tiempo y por tanto no se interrumpe el servicio.
 
-Obviamente las 2 MV no se pueden ejecutar en el mismo host puesto que en caso de fallo en el host perderíamos las 2 máquinas. 
-Se aconseja también que ambas MV estén en diferentes almacenes de datos para evitar que si este falla las dos queden 
+Obviamente las 2 MV no se pueden ejecutar en el mismo host puesto que en caso de fallo en el host perderíamos las 2 máquinas.
+Se aconseja también que ambas MV estén en diferentes almacenes de datos para evitar que si este falla las dos queden
 inutilizados.

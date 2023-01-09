@@ -26,7 +26,6 @@ Existen sistemas operativos en casi cualquier dispositivo electrónico. En dispo
 
 En ordenadores de sobremesa o portátiles tendremos otros sistemas operativos:
 
-
 | Nombre                      | Desarrollador         | Fecha de lanzamiento |
 | --------------------------- | :-------------------- | :------------------: |
 | [Windows](windows/index.md) | Microsoft             |         1985         |

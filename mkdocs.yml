@@ -1,6 +1,5 @@
 site_name: Mis apuntes
 
-
 site_author: danimrprofe
 site_description: >-
   página con apuntes de informática
@@ -19,7 +18,8 @@ theme:
     #- navigation.tabs
     #- navigation.tabs.sticky
     - navigation.instant
-    - navigation.indexes
+    - toc.follow
+    - toc.integrate
     - header.autohide
     - content.code.copy
     - navigation.footer
@@ -46,6 +46,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.keys
+  - toc:
+      toc_depth: 3
 
 plugins:
   - search

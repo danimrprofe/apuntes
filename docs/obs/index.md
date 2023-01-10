@@ -6,7 +6,9 @@ OBS es un programa gratuito y libre que nos permite capturar diferentes fuentes 
 
 Este streaming se puede emitir a través de una plataforma como Twitch, YouTube o Facebook, por ejemplo.
 
-Se puede descargar aquí: Download OBS Studio
+Se puede descargar aquí: [OBS Studio](https://obsproject.com/es)
+
+## Streamlabs
 
 Actualmente, también existe una versión de OBS llamada streamlabs, que integra OBS con plataformas de streaming y nos ofrecen contenido para crear nuestras escenas a partir de plantillas, entre otras opciones.
 

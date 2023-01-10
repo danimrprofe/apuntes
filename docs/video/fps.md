@@ -1,9 +1,6 @@
-
-
 # FPS
 
 ## Frames
-
 
 Los vídeos no son más que secuencias de fotos, una después de la otra, que al reproducirse dan sensación de movimiento. Antiguamente estas fotos (fotogramas) se grababan en rollos de cinta.
 

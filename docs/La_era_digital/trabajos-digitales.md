@@ -1,57 +1,46 @@
 # Nuevas profesiones y negocios en la era digital
 
-![imagen](img/2022-11-07-16-29-24.png)
-
 ## Introducción
 
-- Expansión de las TIC
-- Nuevos modelos de negocio
-- Nuevas profesiones
-- Acceder a servicios en tiempo real
-- A través de **smartphone**
+En la era digital, el ecosistema de negocios está cambiando rápidamente. Estamos asistiendo a la expansión de las Tecnologías de la Información y la Comunicación (TIC) que permiten a las empresas crear **nuevos modelos de negocio, profesiones y ofrecer servicios en tiempo real** a través de los smartphones.
 
-- Nuevo modelo digital
-- Ahorra costes de producción y une a los consumidores
-- Reduce los precios
-- Elimina barreras de entrada al mercado.
+Esto está generando un nuevo modelo digital que ahorra costes de producción, une a los consumidores, reduce los precios y elimina barreras de entrada al mercado. Estos cambios están abriendo la puerta a nuevas profesiones y oportunidades de negocio en la era digital.
 
 ![imagen](img/2022-11-07-16-30-17.png)
 
-
 ## Ejemplos
 
-- Uber es ya una de las mayores empresas de transporte del mundo, sin tener coches en propiedad
+- **Uber** es ya una de las mayores empresas de transporte del mundo, sin tener coches en propiedad
+- **Airbnb** es la mayor red de alojamientos sin tener ni una sola habitación de hotel
+- **Glovo** es la mayor red de distribución sin tener trabajadores contratados.
 
-![imagen](img/2022-11-07-16-30-27.png)
-- Airbnb es la mayor red de alojamientos sin tener ni una sola habitación de hotel
+## Mobilidad
 
-![imagen](img/2022-11-07-16-30-33.png)
+### VTC
 
-- Glovo es la mayor red de distribución sin tener trabajadores contratados.
+La mobilidad se ha visto revolucionada en los últimos años con la llegada de empresas como Uber y Cabify, que ofrecen un servicio de alquiler de vehículo con conductor (VTC) para trayectos relativamente cortos. El servicio se presta por un conductor profesional con licencia y se puede contratar directamente desde sus aplicaciones. Es importante mencionar que es obligatorio contratar el servicio con antelación, siendo necesario un mínimo de 30 minutos previos en Baleares.
 
-![imagen](img/2022-11-07-16-30-38.png)
+### Bicicletas y patinetes eléctricos
 
-## Mobilidad. Uber y cabify
+Además de estos servicios de transporte, también se está haciendo cada vez más popular el uso de las bicicletas para la movilidad en grandes ciudades, gracias a la llegada de empresas como Lime, Ofo o Mobike, entre otras. Estas empresas ofrecen alquiler de bicicletas de forma temporal y puntual, y es posible contratarlas desde sus aplicaciones.
 
-![imagen](img/2022-11-07-16-31-02.png)
+Los usuarios pueden encontrar bicicletas a su alrededor y devolverlas cuando hayan llegado a su destino.
 
-- Alquiler de vehículo con conductor (VTC)
-- Trayectos relativamente cortos
-- Servicio lo presta un conductor profesional (licencia)
-- Contratar online mediante apps propias.
-- Obligación de contratar siempre con antelación
-- 30 minutos de antelación en Baleares
+Por último, también se ha introducido el uso de los patinetes eléctricos para la movilidad. Estas empresas ofrecen alquiler de patinetes eléctricos para desplazamientos cortos, y se pueden contratar directamente desde sus aplicaciones. Esta modalidad de transporte se ha convertido en una de las opciones más utilizadas para los desplazamientos dentro de las ciudades, ya que es una forma rápida, económica y sostenible. Los usuarios pueden encontrar patinetes a su alrededor y devolverlos cuando hayan llegado a su destino.
 
-![imagen](img/2022-11-07-16-30-46.png)
+![](img/2023-01-10-10-29-58.png)
 
 ## Carpooling
 
-- Viajar en coche compartido (carpooling)
-- Sufragar en común los gastos del trayecto
-- Conductores son personas particulares.
-- En España, plataformas como Amovens o, principalmente, BlaBlaCar
+Carpooling es una práctica que consiste en compartir el coche para desplazarse entre dos o más personas. Se trata de una forma de viajar económica, ya que se sufragan en común los gastos del trayecto.
+
+![imagen](img/2022-11-07-16-31-02.png
+
+Los conductores son personas particulares, que suelen publicar sus viajes en plataformas como Amovens o, principalmente, **BlaBlaCar**, que se encargan de poner en contacto a los usuarios.
 
 ![imagen](img/2022-11-07-16-31-16.png)
+
+En España, este tipo de plataformas están muy extendidas y cada vez son más personas las que se animan a compartir el coche con otros usuarios.
 
 ![imagen](img/2022-11-07-16-31-23.png)
 
@@ -59,19 +48,11 @@
 
 ## Delivery
 
+Delivery es un servicio de recogida y reparto a domicilio, mayoritariamente de comida, que se realiza a través de plataformas como **Uber Eats, Deliveroo, Glovo y Just Eat**. Estas plataformas emplean a trabajadores a los que se conoce como riders, los cuales trabajan como autónomos y realizan los repartos en bicicleta, patinete o moto, recibiendo en el teléfono los pedidos que deben recoger (por ejemplo, en un restaurante) y entregar a domicilio.
+
 ![imagen](img/2022-11-07-16-31-39.png)
 
 http://www.youtube.com/watch?v=NL_217-Iygc
-
-![imagen](img/2022-11-07-16-31-59.png)
-
-- Recogida y reparto a domicilio, mayoritariamente de comida, mediante plataformas de reparto.
-- Uber Eats, Deliveroo, Glovo y Just Eat
-- Emplean a trabajadores llamados riders
-- Trabajan como autónomos
-- Realizan los repartos en bicicleta, patinete o moto.
-- Los riders reciben en el smartphone los pedidos
-- Se encargan de la recogida del producto (por ejemplo, en un restaurante), y la entrega a domicilio.
 
 ## ¿Cuánto gana cada una de las partes?
 
@@ -100,47 +81,33 @@ http://www.youtube.com/watch?v=NL_217-Iygc
 
 ## Glovo express
 
-![imagen](img/2022-11-07-16-32-23.png)
+Glovo Express ofrece un servicio de entrega **24 horas del día**, con productos en **locales bien situados** como alimentación y supermercado. A través de esta plataforma, los usuarios pueden solicitar pedidos de supermercado y recibirlos en menos de 10 minutos. Esto hace que sea una opción ideal para aquellos que necesitan recibir su compra de forma rápida y eficiente.
 
-- Tiendas propias en locales bien situadoas
-- Productos alimentación/supermercado
-- 24 horas del día
-- Entrega en menos de 10 minutos
-- Pedidos de supermercado a través de Glovo Express
+![imagen](img/2022-11-07-16-32-23.png)
 
 ## Dark kitchen (cocinas fantasma)
 
-- Restaurantes dedicados por completo a la venta online
-- Sin mesas ni camareros
-- Sólo con unos cuantos cocineros, materias primas, unos fogones
-- Perfiles en las principales plataformas de comida a domicilio.
+Dark Kitchen son restaurantes dedicados por completo a la venta online. Estos restaurantes no cuentan con mesas ni camareros, sino sólo con unos cuantos cocineros, materias primas y unos fogones. Estos restaurantes tienen perfiles en las principales plataformas de comida a domicilio para llegar a más gente.
+
+![](img/2023-01-10-10-38-23.png)
 
 http://www.youtube.com/watch?v=zB9fw3ENbkw
 
 ## Community manager
 
+Un community manager es un profesional especializado en la expansión de internet y las redes sociales que se encarga de crear un puente entre las empresas y los consumidores para que la comunicación entre ambos sea más directa e interactiva.
+
+Su trabajo consiste en gestionar la presencia online de la empresa, llevar a cabo la **gestión de los perfiles** de la empresa en las redes sociales, dar **respuesta** a los comentarios y **poner voz** a la empresa para que escuche a quienes hablan de ella. Su trabajo se realiza con herramientas 2.0 que ayudan a conectar y a crear una comunidad que sea fiel a la marca.
+
 ![imagen](img/2022-11-07-16-33-07.png)
-
-- Expansión Internet y RRSS
-- Comunicación empresas - consumidores
-- Más directa e interactiva
-- Gestionar la presencia online de las empresas.
-- Gestionar perfiles de la empresa (RRSS)
-- Puente entre consumidores y la empresa.
-- Especializado en herramientas  2.0
-- Da respuesta a los comentarios
-- Pone voz a la empresa
-- Escucha a quien habla de ella
-
 
 ## Airbnb
 
-![imagen](img/2022-11-07-16-33-15.png)
+Airbnb es una plataforma digital que ofrece alojamientos a particulares y turísticos para **alquiler vacacional**. Los **anfitriones** tienen la opción de publicitar y contratar el arriendo de sus propiedades con sus huéspedes.
 
-- Plataforma digital
-- Oferta de alojamientos a particulares y turísticos (alquiler vacacional)
-- Los anfitriones pueden publicitar y contratar el arriendo de sus propiedades con sus huéspedes
-- Anfitriones y huéspedes pueden valorarse mutuamente, como referencia para futuros usuarios
+Además, tanto los anfitriones como los huéspedes pueden **valorarse** mutuamente como referencia para futuros usuarios.
+
+![imagen](img/2022-11-07-16-33-15.png)
 
 ## Influencers
 
@@ -154,25 +121,16 @@ http://www.youtube.com/watch?v=zB9fw3ENbkw
 
 ## eSports
 
-![imagen](img/2022-11-07-16-33-25.png)
+Los eSports son competiciones organizadas a nivel profesional de videojuegos, donde los jugadores compiten en multijugador de diferentes disciplinas. Cada esport cuenta con sus propias reglas y la primera competición fue organizada en la Universidad de Stanford en 1972, donde cinco estudiantes compitieron en una “**Olimpiada de guerra espacial intergaláctica**”.
 
-- Competiciones organizadas a nivel profesional de videojuegos
-- Competiciones multijugador de diferentes disciplinas
-- Cada esport tiene sus propias reglas.
-- Primera competición: Universidad de Stanford en 1972.
-- Cinco estudiantes compitieron en una “Olimpiada de guerra espacial intergaláctica”
+![](img/2023-01-10-10-34-46.png)
+
+Una de las marcas de eSports más exitosas es Fnatic, que se fundó en 2004. Han ganado más de 200 campeonatos en 30 juegos diferentes, como League of Legends, FIFA, CSGO, Dota 2, Fortnite, Rainbow Six Siege y PUBG.
 
 ![imagen](img/2022-11-07-16-33-38.png)
 
 https://www.owayo.co.uk/magazine/esports-tournaments-popular-en.htm
 
 https://forbes.es/listas/92832/los-25-jugadores-espanoles-que-conquistan-los-e-sports/
-
-### eSports - Marcas
-
-- Fnatic se fundó en 2004
-- Es una de las marcas de Esports más exitosas
-- Ganados más de 200 campeonatos en 30 juegos diferentes.
-- League of Legends, FIFA, CSGO, Dota 2, Fortnite, Rainbow Six Siege y PUBG.
 
 http://www.youtube.com/watch?v=_Q0RaST09qU

@@ -1,4 +1,4 @@
-## 3. Instalación de un sistema de gestión de contenidos
+# CMS
 
 Preparación del entorno
 

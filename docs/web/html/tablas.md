@@ -26,16 +26,16 @@ Indicamos el comienzo de la primera fila con la etiqueta ``<tr>``, y después ma
 
 ```html
 <TABLE BORDER=1>
-<TR>
-<TD>fila1-celda1</TD>
-<TD>fila1-celda2</TD>
-<TD>fila1-celda3</TD>
-</TR>
-<TR>
-<TD>fila2-celda1</TD>
-<TD>fila2-celda2</TD>
-<TD>fila2-celda3</TD>
-</TR>
+  <TR>
+    <TD>fila1-celda1</TD>
+    <TD>fila1-celda2</TD>
+    <TD>fila1-celda3</TD>
+  </TR>
+  <TR>
+    <TD>fila2-celda1</TD>
+    <TD>fila2-celda2</TD>
+    <TD>fila2-celda3</TD>
+  </TR>
 </TABLE>
 ```
 

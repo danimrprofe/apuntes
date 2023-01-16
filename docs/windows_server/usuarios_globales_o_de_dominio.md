@@ -7,7 +7,7 @@ Los **usuarios globales** son conocidos por todos los ordenadores del dominio (e
 
 Los usuarios globales pueden convivir con los usuarios locales.
 
-Estos usuarios sólo son visibles en el ordenador donde se han creado y se validan en la base de datos local del ordenador en cuestión, pero no se podrán asignar permisos de acceso a recursos del dominio, ya que no hay técompte.
+Estos usuarios sólo son visibles en el ordenador donde se han creado y se validan en la base de datos local del ordenador en cuestión, pero no se podrán asignar permisos de acceso a recursos del dominio.
 
 ## Creación de usuarios globales o del dominio
 

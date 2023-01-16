@@ -6,7 +6,9 @@ En HTML, el atributo **style** es una forma de especificar los estilos de un ele
 
 La sintaxis para el atributo style es la siguiente:
 
-`<elemento style ="propiedad: valor; propiedad: valor; ...">`
+```html
+<elemento style ="propiedad: valor; propiedad: valor; ...">
+```
 
 En esta sintaxis, el elemento representa el elemento HTML al que se le aplicarán los estilos especificados.
 
@@ -18,25 +20,33 @@ A continuación se presentan algunos ejemplos de uso del atributo style en HTML.
 
 Para cambiar el color de fondo de un elemento, puede usar el atributo style con la propiedad de fondo. Por ejemplo, para cambiar el color de fondo de un elemento a azul, se puede usar el siguiente código:
 
-`<p style="background-color: blue;">Texto aquí</p>`
+```html
+<p style="background-color: blue;">Texto aquí</p>
+```
 
 ### Cambiar el Color de Letra de un Elemento
 
 Para cambiar el color de letra de un elemento, puede usar el atributo style con la propiedad de color. Por ejemplo, para cambiar el color de letra de un elemento p a rojo, se puede usar el siguiente código:
 
-`<p style="color: red;">Texto aquí</p>`
+```html
+<p style="color: red;">Texto aquí</p>
+```
 
 ### Cambiar el Tamaño de Letra de un Elemento
 
 Para cambiar el tamaño de letra de un elemento, puede usar el atributo style con la propiedad font-size. Por ejemplo, para cambiar el tamaño de letra de un elemento h1 a 20px, se puede usar el siguiente código:
 
-`<h1 style="font-size: 20px;">Texto aquí</h1>`
+```html
+<h1 style="font-size: 20px;">Texto aquí</h1>
+```
 
 ### Alinear un Elemento a la Derecha
 
 Para alinear un elemento a la derecha, puede usar el atributo style con la propiedad text-align. Por ejemplo, para alinear un elemento p a la derecha, se puede usar el siguiente código:
 
-`<p style="text-align: right;">Texto aquí</p>`
+```html
+<p style="text-align: right;">Texto aquí</p>
+```
 
 ## Color de fondo
 

@@ -39,17 +39,43 @@ Luego, debe confirmar los cambios con el comando `git commit`. Este comando le p
 
 Para ver un historial de los cambios que ha hecho en un archivo, puede usar el comando "git log". Este comando le mostrará todos los commits que ha hecho en el archivo. También puede ver qué líneas de código han cambiado en cada commit.
 
+Aquí podéis ver 3 commits, el último de ellos del 16 de enero.
+
+```git
+z:\apuntes>git log
+commit 4094d00115cb9d888352a3a46a3ad528280b9a31 (HEAD -> master, origin/master, origin/HEAD)
+Author: Daniel Moreno <danimr@gmail.com>
+Date:   Mon Jan 16 08:10:38 2023 +0100
+
+    fdfd
+
+commit 02033a82395a0957e47fd659a0fe429360f62fbd
+Merge: 2d9dfa7b 3c064471
+Author: Daniel Moreno <danimr@gmail.com>
+Date:   Sun Jan 15 20:17:41 2023 +0100
+
+    Merge branch 'master' of https://github.com/danimrprofe/apuntes into master
+
+commit 2d9dfa7b939e6b47e9dd825724788586b9301a99
+Author: Daniel  <danimr@gmail.com>
+Date:   Sun Jan 15 20:17:26 2023 +0100
+
+    fdfd
+```
+
 ## Paso 4: Clonar un repositorio
 
-Si ya existe un repositorio de Git que deseas utilizar, puedes clonarlo en tu sistema local. Clonar un repositorio crea una copia local del repositorio remoto, lo que te permite tener acceso a todos los archivos del repositorio, así como su historial de cambios.
+Si ya existe un repositorio de Git que deseas utilizar, puedes **clonarlo** en tu sistema local. Clonar un repositorio crea una copia local del repositorio remoto, lo que te permite tener acceso a todos los archivos del repositorio, así como su historial de cambios.
 
 
 1. Abra la terminal.
 2. Vaya a la carpeta en la que desea almacenar el repositorio clonado.
 3. Escriba el siguiente comando y presione Enter:
-   ```
+
+```
    git clone https://github.com/nombre-de-usuario/nombre-repositorio.git
-   ```
+```
+
 4. El repositorio se ha clonado en su computadora.
 
 ## Paso 5: Crear y confirmar commits
@@ -112,4 +138,3 @@ En Git, hay varias formas de deshacer cambios. La forma más sencilla de deshace
 ## Paso 12: Revertir commits
 
 A veces, puede que quieras revertir un commit anterior, de forma que los cambios que se hicieron en ese commit se eliminen. Esto se hace mediante el comando "git revert".
-

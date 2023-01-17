@@ -19,7 +19,7 @@ En la **fisión** se liberan también 2 -3 nuevos neutrones que producen nuevas 
 Para controlar la reacción, se introduce en el reactor un **moderador** que “enfría” la reacción (absorbe los neutrones en exceso). Este moderador puede ser:
 
 - Agua ligera (75% de los reactores)
-- Agua pesada (20%)
+- Agua pesada (20%). El agua pesada es una forma especial de agua que contiene isótopos de oxígeno e hidrógeno pesados. Esta forma es especialmente rica en el isótopo de hidrógeno llamado deuterio, que es una forma de hidrógeno con un neutrón adicional.
 - Grafito (5%)
 
 ## Sistema de refrigeración
@@ -48,13 +48,17 @@ Actualmente, con la crisis medioambiental, hay muchos partidarios de la energía
 
 ## IMPACTO AMBIENTAL DE LA ENERGÍA DE FISIÓN NUCLEAR
 
-1) El combustible se extrae de grandes cantidades de mineral de uranio (pechblenda o uraninita, UO2) que se procesa en plantas de enriquecimiento. En ellas se separa el isótopo U-235 del resto (por métodos físicos, ya que químicamente los isótopos del uranio son indistinguibles).
-2) A continuación se enriquece añadiendo plutonio-239 (mejora la reacción de fisión) y se fabrican las barras de combustible, que se sumergen en los reactores intercaladas con las barras de moderador. Éstas pueden estar más o menos introducidas  (para bajar o subir la potencia de la central)
-3) A los 3-4 años, la concentración de U-235 de las barras ha bajado y es demasiado baja para mantener la reacción (combustible gastado). Las barras se extraen (operación de recarga) y son almacenadas en piscinas de enfriamiento dentro del propio reactor durante años hasta que su temperatura baje lo suficiente.
-4) Cuando hay sufrientes barras, se transportan a centrales de reciclaje donde se extrae: el Pu-239 para reutilizarlo y otros isótopos de vida corta (residuos). El resto continúa activo  como  mínimo de 10.000-100.000 años (residuos radiactivos de alta actividad). El Plutonio es el principal componente del armamento nuclear y bombas atómicas (peligrosidad por terrorismo)
-Nota: Las reservas actuales de mineral de uranio están calculadas en 2 millones de toneladas, suficientes para unos 60 años al ritmo actual de consumo.
+Actualmente, la energía nuclear se genera a partir de la fisión del uranio-235, un mineral con una vida útil relativamente corta. El proceso comienza con la extracción de grandes cantidades de mineral de uranio (pechblenda o uraninita, UO2). Estas reservas se procesan en plantas de enriquecimiento, donde se separa el isótopo U-235 del resto mediante métodos físicos. A continuación, el U-235 se enriquece añadiendo plutonio-239 para mejorar la reacción de fisión. Esta mezcla se fabrica en barras de combustible, que se sumergen en los reactores intercaladas con las barras de moderador.
 
-## LOS RESIDUOS RADIACTIVOS DE ALTA ACTIVIDAD (COMBUSTIBLE GASTADO)
+Las barras de combustible se extraen de los reactores cada 3-4 años, ya que su concentración de U-235 ha bajado demasiado para mantener la reacción. Estas barras se almacenan en **piscinas de enfriamiento** dentro del propio reactor, hasta que su temperatura baje lo suficiente.
+
+![](img/2023-01-17-13-27-38.png)
+
+Una vez hay suficientes barras, éstas se transportan a centrales de reciclaje, donde se extrae el Plutonio-239 para reutilizarlo, así como los isótopos de vida corta (residuos). El resto continúa activo como residuos radiactivos de alta actividad durante un periodo de 10.000-100.000 años.
+
+Las reservas actuales de mineral de uranio están calculadas en 2 millones de toneladas, suficientes para unos 60 años al ritmo actual de consumo. Además, el Plutonio usado en el combustible nuclear puede ser usado como componente del armamento nuclear o el de las bombas atómicas, lo cual aumenta el riesgo de terrorismo.
+
+## Residuos de alta actividad
 
 Las centrales nucleares no producen contaminantes atmosféricos, pero generan una gran cantidad de residuos radiactivos peligrosos para la salud y el medio ambiente, por lo que deben ser almacenados de forma segura durante centenares o miles de años que dura su radiactividad:
 
@@ -67,12 +71,7 @@ Actualmente se está investigando un proceso de fisión basado en el Torio- 232 
 Sustitución de los residuos por otros menos peligrosos
 La reacción se para automáticamente en caso de accidente
 
-
 CICLO VITAL DEL URANIO:
-
-
-
-
 
 MINERAL
 URANINITA/PECHBLENDA
@@ -100,6 +99,7 @@ Formado por:  95,6 % de URANIO NO GASTADO
 
 ## PISCINAS DE ENFRIAMIENTO
 (Hormigón revestido de acero y agua ligera pura (5-10años)
+
 ## ALMACEN TEMPORAL EN SUPERFICIE “CONTENEDORES SECOS (50-60años)
 
 - In situ (junto al reactor en cada central)
@@ -108,20 +108,18 @@ Grandes contenedores de hormigón donde se almacenan manguitos de acero   sellad
 
 ## CENTRAL DE RECICLAJE
 
-Se recupera el plutonio y el uranio (90%) (riesgo de proliferación de armas nucleares) y se desecha los productos de fisión de vida corta
-CONFINAMIENTO GEOLÓGICO PROFUNDO (Definitivo)
-- Zonas de gran estabilidad sísmica y geotérmica
-- Impermeables y sin contacto con aguas subterráneas
-- Grosor suficiente para absorber posibles fugas
-MACIZOS GRANÍTICOS
-DOMOS SALINOS
-DEPÓSITOS ARCILLOSOS
-“CICLO ABIERTO”
-“CICLO
-CERRADO”
+Se trata de una forma de almacenamiento seguro de residuos radiactivos, con el objetivo de limitar el riesgo de proliferación de armas nucleares. Los residuos recuperados, como el plutonio y el uranio (90%), se eliminan con un confinamiento geológico profundo, que es definitivo.
+
+El confinamiento se lleva a cabo en zonas de gran **estabilidad sísmica y geotérmica**, que son impermeables y sin contacto con aguas subterráneas, con un grosor suficiente para absorber posibles fugas. Se han utilizado macizos graníticos, domos salinos y depósitos arcillosos. Estas técnicas se conocen como "ciclo abierto" y "ciclo cerrado".
 
 ## Curiosidades
 
 ### Bombas nucleares
+
+Las bombas atómicas más importantes son la bomba atómica Fat Man y la bomba atómica Little Boy. La bomba atómica Fat Man fue utilizada en la ciudad japonesa de Nagasaki el 9 de agosto de 1945. La bomba atómica Little Boy fue utilizada en Hiroshima el 6 de agosto de 1945.
+
+![](img/2023-01-17-13-34-44.png)
+
+La estructura interna de una bomba atómica está compuesta por una cápsula de uranio o plutonio con un núcleo de uranio enriquecido, una caja de explosivos, una cápsula de iniciación y una batería. La cápsula de uranio o plutonio contiene el material fisionable que es la fuente de energía de la bomba. La caja de explosivos se utiliza para comprimir el material fisionable y aumentar su temperatura y presión para iniciar la reacción nuclear. La cápsula de iniciación contiene una mezcla de combustible y oxígeno para asegurar la reacción nuclear. La batería alimenta el circuito eléctrico para activar la cápsula de iniciación.
 
 ![imagen](img/2022-11-19-15-02-37.png)

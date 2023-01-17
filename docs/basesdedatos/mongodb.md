@@ -1,18 +1,22 @@
-# Introducción a mongoDB
+# MongoDB
+
+## Introducción
 
 **Mongodb** es una base de datos NoSQL que se utiliza para almacenar y recuperar datos de forma rápida y sencilla. No requiere un esquema predefinido, por lo que es ideal para aplicaciones en las que los datos pueden cambiar con frecuencia.
 
-# Características
+## Características
 
-Se trata de una base datos NoSQL, por lo que no se realizan consultas utilizando lenguaje SQL.
+NoSQL se ha convertido en una de las principales opciones para los desarrolladores que buscan una base de datos **flexible** y **escalable**.
 
-Mongodb se ejecuta en un servidor y se puede acceder a él a través de una conexión de red. Los datos se almacenan en formato JSON, lo que hace que sea muy fácil de leer y escribir.
+Esto se debe a algunas características únicas que ofrece NoSQL, como un diseño sin esquemas, una mayor escalabilidad y una mejor capacidad de respuesta.
 
-* No se definen esquemas como en las BD relacionales
-* Las BD se crean en el momento que se inserta el primer registro
-* No soporta joins del lado del servidor
+En primer lugar, una base de datos NoSQL **no requiere un esquema** predefinido para almacenar los datos. Esto significa que los desarrolladores pueden agregar nuevos campos a un documento sin tener que redefinir el esquema de la base de datos. Esto facilita la creación de aplicaciones en las que los requisitos de datos cambian constantemente.
 
-# Cómo se guardan las cosas
+Además, la escalabilidad es una de las principales ventajas de NoSQL. Esto se debe a que la base de datos se distribuye en varios servidores, lo que permite a los desarrolladores escalar la capacidad de almacenamiento y procesamiento de datos de forma sencilla. Esto significa que una base de datos NoSQL puede crecer sin afectar el rendimiento.
+
+Por último, una base de datos NoSQL también ofrece una mejor capacidad de respuesta. Esto se debe a que los datos se almacenan en formato JSON, lo que hace que sea muy fácil de leer y escribir. Esto significa que los datos se pueden recuperar y almacenar de forma más rápida, lo que mejora el rendimiento de la aplicación.
+
+## Cómo se guardan las cosas
 
 * `MongoDB` permite almacenar `datos estructurados` en forma de `documentos`.
 * Los `documentos` se almacenan dentro de `colecciones`, las cuales a su vez pertenecen a una `base de datos`.
@@ -26,7 +30,7 @@ Ejemplo:
 
 * Base de datos: `tienda`
 * Colección: `productos`
-* Documento: 
+* Documento:
 
 ```json
     {
@@ -35,8 +39,8 @@ Ejemplo:
         "descripcion" : "TV LED de 50 pulgadas",
         "precio" : 500,
         "categoria" : "electronica",
-        "tags" : [ 
-            "tv", 
+        "tags" : [
+            "tv",
             "led"
         ]
     }
@@ -49,7 +53,7 @@ En cuanto a los documentos:
 * No todos los documentos tienen porqué tener los mismos campos, por lo que se pueden agregar documentos con campos nuevos en cualquier momento.
 * Los campos pueden estar anidados, por lo que un campo puede contener a su vez más de un campo.
 
-# Instalación
+## Instalación
 
 Se puede descargar un instalable para Windows, y se puede instalar o no como un servicio. En función de la decisión que tomemos deberemos agregar al path las rutas a los ejecutables de MongoDB que son, principalmente:
 

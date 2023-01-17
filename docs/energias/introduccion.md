@@ -18,58 +18,16 @@ La evolución de los recursos energéticos utilizados a lo largo de la historia 
 1. Madera (leña)
 2. Carbón
 3. Petróleo
-4. Gas natural 
+4. Gas natural
 5. ¿H2, energías alternativas, fusión nuclear?
 
 El consumo de energía de un país es un índice que refleja el grado de desarrollo y bienestar de la sociedad
 
-TIPOS DE ENERGÍAS
-CONVENCIONALES
-ALTERNATIVAS
 
-NO RENOVABLES
-
-- Combustibles fósiles:
-  - Carbón
-  - Petróleo
-  - Gas natural
-  - Fisión nuclear
-- Geotérmica
-- Fusión nuclear
-
-RENOVABLES
-
-- Hidráulica
-- Eólica
-- Solar térmica
-- Solar fotovoltaica
-- Biomasa
-- Mareomotriz
-
-## NO RENOVABLES
-
-- Alta calidad (E. concentrada)
-- Producción continua “a demanda”
-
-- Recurso limitado (agotamiento)
-- Son E. sucias: Causan graves problemas ambientales (calentamiento global, lluvia ácida, smog, etc.)
-- Crea gran dependencia económica de países extranjeros
-
-## RENOVABLES
-
-- Inagotables
-- Son E. limpias: causan impactos ambientales leves
-- Son autóctonas (no crean dependencia económica externa)
-- Son E. diversificada
-- Contribuyen al desarrollo sostenible
-- Crean puestos de trabajo
-
-- Son intermitentes
-- Son difíciles de almacenar
 
 # 1. USO DE LA ENERGÍA
 
-Llamamos calidad de la energía a la capacidad para producir trabajo útil por unidad de masa o volumen. Cuanto más concentrada sea, más calidad posee: 
+Llamamos calidad de la energía a la capacidad para producir trabajo útil por unidad de masa o volumen. Cuanto más concentrada sea, más calidad posee:
 Para valorar la calidad de la energía utilizamos 2 unidades básicas:
 - TEC (Tonelada Equivalente de Carbón): Es la energía liberada por la combustión de una tonelada de carbón (aprox. 7 · 106 Kcal)
 -  TEP (Tonelada Equivalente de Petróleo): Es la energía liberada en la combustión de una tonelada de petróleo (aprox. 10 · 106 Kcal)
@@ -77,9 +35,9 @@ Para valorar la calidad de la energía utilizamos 2 unidades básicas:
 Se denomina SISTEMA ENERGÉTICO al conjunto de operaciones necesarias para la utilización de la energía:
 
 - ENERGÍA PRIMARIA: Es la energía procedente del medio natural, la cual no puede ser aprovechada de forma directa si antes de ser utilizada no sufre un proceso de transformación Ej , Carbón
-- ENERGÍA SECUNDARIA O FINAL: Es la energía útil obtenida por transformación de la energía primaria. Esta energía ya puede ser utilizada para producir calor, trabajo, luz, etc. 
+- ENERGÍA SECUNDARIA O FINAL: Es la energía útil obtenida por transformación de la energía primaria. Esta energía ya puede ser utilizada para producir calor, trabajo, luz, etc.
 
-La cadena energética está formada por 4 operaciones: 
+La cadena energética está formada por 4 operaciones:
 
 En cada fase se pierde parte de la energía en forma de calor o de residuos no utilizados
 
@@ -92,7 +50,7 @@ Un convertidor es cualquier componente que permite transformar una forma de ener
 
 En todos los casos, hay pérdidas y el rendimiento es menor al  100%
 
-Se denomina RENDIMIENTO ENERGÉTICO al cociente E. Obtenida/E. suministrada (%). Es decir, es el porcentaje de E. aprovechada del total suministrada. Su valor es siempre <100%, debido a las pérdidas. 
+Se denomina RENDIMIENTO ENERGÉTICO al cociente E. Obtenida/E. suministrada (%). Es decir, es el porcentaje de E. aprovechada del total suministrada. Su valor es siempre <100%, debido a las pérdidas.
 Ej. Coche = 19 %, sistema energético de EEUU = 16 % (se despilfarra gran cantidad de energía)
 Cuando la energía es barata, no se suelen tener en cuenta las pérdidas, pero actualmente se intenta mejorar la eficiencia de todos los sistema energéticos
 
@@ -112,7 +70,7 @@ LAS ENERGÍAS CONVENCIONALES:
 Fuentes de energía en el mundo:
 
 LOS COMBUSTIBLES FÓSILES
-- Representan el 80 % de la energía utilizada en el mundo. 
+- Representan el 80 % de la energía utilizada en el mundo.
 - Causan graves problemas m.a. (calentamiento global, lluvia ácida, smog, etc.), sin embargo no disponemos de energías sustitutivas adecuadas, por el momento
 Solución: sustituirlas progresivamente por fuentes de energía alternativas, ya que amenazan con agotarse a medio plazo al ritmo de consumo actual. ¿Cuánto combustible fósil queda?
 

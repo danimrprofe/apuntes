@@ -1,8 +1,8 @@
 # Git
 
-Git es un software de control de versiones diseñado por Linus Torvalds, quien también creó Linux. Git permite a los desarrolladores llevar un seguimiento de las diferentes versiones de un archivo o conjunto de archivos mientras se crea un nuevo software.
+Git es un software de **control de versiones** que permite a los desarrolladores llevar un seguimiento de las diferentes **versiones** de un archivo o conjunto de archivos mientras se crea un nuevo software.
 
-Esto es útil porque permite a los desarrolladores volver a una versión anterior de un archivo si hicieron un cambio que resultó en un error. También permite a los desarrolladores colaborar en el mismo proyecto al mismo tiempo.
+Esto es útil porque permite a los desarrolladores volver a una **versión anterior** de un archivo si hicieron un cambio que resultó en un error. También permite a los desarrolladores colaborar en el mismo proyecto al mismo tiempo.
 
 Para usar git, primero debe instalarlo en su computadora. Luego, debe configurarlo para que sepa quién está haciendo cambios en qué archivos. Esto se hace mediante el uso de una cuenta de git. Una vez que haya configurado git, puede empezar a usarlo para controlar las versiones de sus archivos.
 
@@ -20,16 +20,17 @@ Una vez que tengas Git instalado, necesitas configurarlo con tu nombre y direcci
 git config --global user.name " tu nombre "
 git config --global user.email " tu@email.com "
 ```
+
 ## Paso 3: Crear un repositorio
 
 Para empezar a trabajar con Git, lo primero que necesitas hacer es crear un **repositorio**. Un repositorio de Git es un espacio en el que se almacenan los archivos de un proyecto y todo su historial de cambios. Puedes crear un repositorio de dos maneras: mediante la interfaz gráfica de Git o mediante la línea de comandos.
 
-1. Abrir una terminal y navegar hasta la carpeta "git".
-2. A continuación, debe escribir el comando "git init". Este comando creará un repositorio git en su carpeta.
+1. Abrir una terminal y navegar hasta la carpeta.
+2. A continuación, debe escribir el comando ``git init``. Este comando creará un repositorio git en su carpeta.
 
 ## Añadir cambios
 
-Ahora, cada vez que haga un cambio en uno de sus archivos, debe agregar el archivo al repositorio git. Esto se hace con el comando "git add".
+Ahora, cada vez que haga un cambio en uno de sus archivos, debe agregar el archivo al repositorio git. Esto se hace con el comando `git add`.
 
 ## Confirmar cambios (commit)
 
@@ -67,7 +68,6 @@ Date:   Sun Jan 15 20:17:26 2023 +0100
 
 Si ya existe un repositorio de Git que deseas utilizar, puedes **clonarlo** en tu sistema local. Clonar un repositorio crea una copia local del repositorio remoto, lo que te permite tener acceso a todos los archivos del repositorio, así como su historial de cambios.
 
-
 1. Abra la terminal.
 2. Vaya a la carpeta en la que desea almacenar el repositorio clonado.
 3. Escriba el siguiente comando y presione Enter:
@@ -82,9 +82,23 @@ Si ya existe un repositorio de Git que deseas utilizar, puedes **clonarlo** en t
 
 Cada vez que haces cambios en los archivos de tu proyecto, necesitas confirmarlos (hacer un "commit") para que queden registrados en el historial de cambios de Git. Esto se hace mediante el comando "git commit".
 
+```cmd
+Z:\apuntes> git commit -m "cambios realizados"
+[master 462d4c51] cambios realizados
+ 6 files changed, 47 insertions(+), 5 deletions(-)
+ create mode 100644 docs/Imagen_digital/2023-01-13-10-27-18.png
+ create mode 100644 docs/Imagen_digital/2023-01-13-10-27-41.png
+ create mode 100644 docs/Imagen_digital/2023-01-13-10-28-14.png
+ create mode 100644 docs/Seguridad/doxxeo/osint.md
+```
+
+En este commit se han incorporado 4 archivos nuevos al proyecto. En total, han sido modificados 6 archivos.
+
 ## Paso 6: Pushear y pullar cambios
 
-Si trabajas en un repositorio remoto, necesitarás pushear tus cambios al repositorio para que otros usuarios puedan acceder a ellos. Pushear es el equivalente de hacer un commit en el repositorio remoto.
+Todo este control de versiones que hemos hecho con el comando ``git`` se hacen en local, es decir, en el ordenador en el que estamos trabajando. Si queremos alojar nuestro proyecto, por ejemplo, en ``github``, necesitaremos enviar los cambios realizados para que se guarden en el repositorio remoto. De esta forma otros usuarios puedan acceder a ellos.
+
+A esta acción se le llama ``pushear``.  Pushear es el equivalente de hacer un commit en el repositorio remoto.
 
 Ejemplo:
 
@@ -103,10 +117,12 @@ To https://github.com/danimrprofe/apuntes
    9118fa98..a8c5f455  master -> master
 ```
 
+Ahora sí, nuestros cambios se han guardado correctamente en la nube de github, y podremos descargarlos desde cualquier dispositivo conectdo a Internet.
+
 El comando se compone de las siguientes partes:
 
 - **git push**: este es el comando para enviar cambios al repositorio remoto.
-- **origin**: Este es el nombre del repositorio remoto.
+- **origin**: Este es el nombre del repositorio remoto. En teoría lo hemos indicado previamente. Si el repositorio fue clonado, ya aparece. Si fue creado desde nuestro pc, tendremos que agregarlo nosotros.
 - **master**: este es el nombre de la rama que se enviará al repositorio remoto.
 
 En este ejemplo, los cambios realizados en el repositorio local (E:\Docencia\apuntes) se envían al repositorio remoto (https://github.com/danimrprofe/apuntes) en la rama maestra.
@@ -118,6 +134,32 @@ También puedes pullear cambios del repositorio remoto, lo que es equivalente a 
 ## Paso 7: Ramas
 
 Una rama de Git es un conjunto de commits que se encuentran en una línea separada de desarrollo. Las ramas se utilizan para desarrollar funcionalidades independientes, para hacer correcciones de errores o para experimentar con nuevas ideas.
+
+En general, la rama por defecto se llamará ``main`` o ``master``.
+
+Para mostrar las ramas que tiene un repositorio:
+
+```
+z:\apuntes>git branch
+* master
+```
+
+## Crear una rama nueva
+
+De manera predeterminada existe una rama master, que es la principal, si queremos modificar algo del código y queremos crear una rama distinta, llamada por ejemplo prueba, lo podremos hacer así:
+
+```
+git switch -c prueba
+```
+Con el argumento -c (crear) git creará la nueva rama y cambiará a ella
+
+## Cambiar a un otro commit
+
+También puedes cambiar a un **commit** específico en vez de HEAD con git switch y la opción -d (detached)
+
+```
+git switch -d 67e01b9
+```
 
 ## Paso 8: Fusionar ramas
 

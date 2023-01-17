@@ -16,7 +16,7 @@ Actualmente, también existe una versión de OBS llamada streamlabs, que integra
 
 ## Escenas
 
-OBS funciona a través de una estructura de escenas. Se pueden crear varias, pero solo una escena se transmitirá a la vez.
+OBS funciona a través de una estructura de **escenas**. Se pueden crear varias, pero solo una escena se transmitirá a la vez.
 
 Las escenas definen los diferentes escenarios que vamos a crear para utilizar en nuestro video. Una vez definidas, podemos cambiar de escena en cualquier momento sin tener que cambiar nada.
 
@@ -26,7 +26,7 @@ Aquí debajo puedes ver una escena compuesta de dos fuentes, una página web y u
 
 ## Fuentes
 
-Las fuentes son los orígenes de nuestra grabación. Pueden ser cámaras, ventanas, imágenes, juegos, etc. Cada fuente la podemos colocar en diferentes partes de la pantalla para configurar nuestra escena.
+Las fuentes son los orígenes de nuestra grabación. Pueden ser **cámaras, ventanas, imágenes, juegos, etc**. Cada fuente la podemos colocar en diferentes partes de la pantalla para configurar nuestra escena.
 
 ![imagen](media/image51.png)
 

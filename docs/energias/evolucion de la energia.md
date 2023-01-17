@@ -1,0 +1,7 @@
+# Evolución de la energía
+
+El ser humano ha estado buscando formas de obtener energía desde sus inicios en la prehistoria. Inicialmente, la madera (leña) fue el combustible principal para obtener calor y luz. Esto fue reemplazado posteriormente por el carbón, el cual fue utilizado durante varios siglos y se convirtió en el combustible principal a nivel industrial. Posteriormente, el petróleo y el gas natural tomaron el lugar del carbón, lo cual permitió la producción de energía a una mayor escala, contribuyendo a la modernización de muchas naciones.
+
+En la actualidad, el petróleo y el gas natural siguen siendo los combustibles principales a nivel mundial, y se está avanzando hacia la implementación de formas de energía más limpias y renovables como la energía eólica, solar, la energía de mareas, etc. Además, se está investigando el uso de las reacciones de fusión nuclear como fuente de energía, lo cual podría representar un cambio radical en la forma en que se genera actualmente la energía.
+
+En la actualidad, el consumo de energía de un país es un índice que refleja el grado de desarrollo y bienestar de la sociedad. Esto es debido a que el aumento de la producción de energía se traduce en aumentos en la producción industrial, el uso de la tecnología, la mejora de los servicios públicos, y el aumento del bienestar social. Por lo tanto, el avance tecnológico en el campo de la generación de energía no sólo es importante para el desarrollo económico, sino también para el bienestar social.

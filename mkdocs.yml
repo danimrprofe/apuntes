@@ -18,8 +18,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.instant
-    - toc.follow
-    - toc.integrate
+    - navigation.indexes
     - header.autohide
     - content.code.copy
     - navigation.footer

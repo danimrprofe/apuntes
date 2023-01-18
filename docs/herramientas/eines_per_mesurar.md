@@ -1,34 +1,54 @@
 # Eines per mesurar i marcar
 
-![imagen](media/image6.jpeg)L'esquadra metàl·lica s'empra per a comprovar amb exactitud els angles rectes
+## Esquadra metàl·lica
+
+L'esquadra metàl·lica s'empra per a comprovar amb exactitud els angles rectes
 
 Els seus braços permeten traçar rectes paral·leles i perpendiculars, ja que formen un angle de 90 °.
+
+![imagen](media/image6.jpeg)
+
+## Metro de fuster
 
 El metro de fuster  o plegable és rígid i fàcil de transportar i guardar a una butxaca.
 
 ![imagen](media/image7.png)
 
-![imagen](media/image8.png)El flexòmetre, també denominat cinta mètrica, està format per una fina xapa metàl·lica sobre la qual es troben impreses les divisions de centímetres i mil·límetres.
+## Flexòmetre
+
+El flexòmetre, també denominat cinta mètrica, està format per una fina xapa metàl·lica sobre la qual es troben impreses les divisions de centímetres i mil·límetres.
+
+![imagen](media/image8.png)
 
 S'enrotlla a l'interior d'una carcassa metàl·lica o de plàstic. És l'eina de mesura més usada causa de la seva flexibilitat, mida petita i facilitat d'ús.
 
 Es fabriquen amb diverses longituds (3 m, 5 m, 8 m, etc.).
 
-![imagen](media/image9.jpeg)Per marcar les mesures a la fusta es sol utilitzar un llapis de fuster.  La seva forma és ovalada i, la seva mina, plana. Per esmolar-se necessita una fulla especial.
+## Llapis de fuster
+
+Per marcar les mesures a la fusta es sol utilitzar un llapis de fuster.  La seva forma és ovalada i, la seva mina, plana. Per esmolar-se necessita una fulla especial.
+
+![imagen](media/image9.jpeg)
+
+## Compàs de puntes d'acer
 
 El compàs de puntes d'acer  ens permet traçar circumferències i arcs en la fusta, així com per transportar mesures d’un lloc a un altre de la fusta, o a una altra fusta.
 
 ![imagen](media/image10.jpeg)
 
-![imagen](media/image11.jpeg)La alena o punxó consta d'un mànec de plàstic o de fusta unit a una agulla de punta cònica metàl·lica.
+## Punxó
+
+La alena o punxó consta d'un mànec de plàstic o de fusta unit a una agulla de punta cònica metàl·lica.
 
 S'utilitza per practicar una petita esquerda sobre la superfície de la fusta, que indica el punt exacte on s'ha de realitzar una perforació.
 
-![imagen](media/image12.png)
+![imagen](media/image11.jpeg)
 
 ## Peu de rei
 
-El peu de rei, calibre o Vernier, és un instrument de mesura de precisió capaç d’apreciar dècimes i centèsimes de mm en mesurar un objecte. Pot realitzar mesures exteriors, interiors i de profunditats en qualsevol objecte
+El peu de rei, calibre o Vernier, és un instrument de mesura de precisió capaç d’apreciar dècimes i centèsimes de mm en mesurar un objecte. Pot realitzar mesures exteriors, interiors i de profunditats en qualsevol objecte.
+
+![imagen](media/image12.png)
 
 Aquí podem comprovar les diferents parts que té un peu de rei i la seva utilitat.
 
@@ -44,7 +64,7 @@ Mesurar amb peu de rei
 
 ![imagen](media/image16.png)
 
-# Micròmetre
+## Micròmetre
 
 El Pàlmer o micròmetre és també un instrument de mesura de molta precisió. Amb aquest aparell podem realitzar amidaments de fins una cinquantena part de mil·límetre.
 

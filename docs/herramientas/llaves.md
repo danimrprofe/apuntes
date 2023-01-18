@@ -10,8 +10,7 @@ Son llaves que sustituyen en algunos casos a los destornilladores convencionales
 No disponen de mango. Presentan forma de ángulo recto, de cuyos lados uno es más corto que el otro, pudiéndose utilizar indistintamente por ambos.
 Las más habituales son las de tipo Allen (hexagonales interiores) y las de cabeza TORX.
 
-Figura 1.13. Juego de llaves Allen.
-Figura 1.14. Juego de llaves TORX.
+![](img/2023-01-18-16-28-38.png)
 
 ## Llaves para sistemas tornillo-tuerca hexagonales
 
@@ -22,20 +21,21 @@ Pueden ser fijas o ajustables.
 ## Llaves de boca fija
 
 Existen muchas formas y tamaños, pero las más conocidas son las de tipo plano.
+Estas suelen disponer de dos bocas abiertas con medidas contiguas ubicadas en cada uno de los extremos de la llave.
 
-Estas suelen disponer de dos bocas abiertas con medidas
-contiguas ubicadas en cada uno de los extremos de la llave.
-La medida de la boca se da en milímetros según el Sistema Internacio-
-nal de Unidades (SI), aunque es habitual encontrar las dimensiones en
+![](img/2023-01-18-16-27-14.png)
+
+La medida de la boca se da en **milímetros** según el Sistema Internacional de Unidades (SI), aunque es habitual encontrar las dimensiones en
 pulgadas.
+
 En el taller de reparación es aconsejable disponer de un set de llaves que abarquen desde los números más bajos (4-5) hasta números más altos (16-17).
 
 También existen modelos combinados, que en un lado disponen de una boca fija de tipo abierto, y en el otro extremo, de una boca cerrada de la misma medida.
 
-Figura 1.15. Llave fija (Bellota).
-Figura 1.16. Llave mixta (RATIO).
+![llave mixta](img/2023-01-18-16-27-42.png)
 
-Las llaves fijas están diseñadas para usarse con desplazamientos de 30°.
+Las **llaves fijas** están diseñadas para usarse con desplazamientos de 30°.
+
 Cada vez que se hace un desplazamiento, la llave debe rotarse sobre sí misma para embocar la tuerca de forma correcta. De esta forma se pueden realizar operaciones de ajuste en lugares con poca libertad de movimiento.
 
 ## Llave de boca ajustable

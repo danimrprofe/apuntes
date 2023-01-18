@@ -31,8 +31,7 @@ sentido contrario.
 
 #### Cabeza
 
-La cabeza es la parte que se apoya en la ranura del tornillo. Sobre ella se ejerce la fuerza para su atornillado o desatornillado y puede tener diferentes formas. A continuación se muestran algunas de ellas, pero
-no son las únicas.
+La cabeza es la parte que se apoya en la ranura del tornillo. Sobre ella se ejerce la fuerza para su atornillado o desatornillado y puede tener diferentes formas. A continuación se muestran algunas de ellas, pero no son las únicas.
 
 La cabeza del destornillador debe ser del mismo tipo y de la misma medida que la del tornillo sobre el que se va a trabajar. De lo contrario, además de no conseguir atornillar o desatornillar el tornillo, el destornillador y la cabeza se pueden deteriorar.
 

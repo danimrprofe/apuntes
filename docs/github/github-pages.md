@@ -1,14 +1,4 @@
-# Github. Gestión de versiones
-
-
-## Crear una cuenta en github
-## Explicación de lo que es un repositorio.
-## Repositorios públicos y privados
-## Crear un repositorio nuevo
-## Subir un documento HTML
-## Modificar el documento HTML y volverlo a subir
-## Visualizar versiones y cambios (rojo y verde)
-
+# 6. Github pages
 
 ## Crear un repositorio de página web y subir la web allí
 

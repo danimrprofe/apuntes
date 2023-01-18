@@ -1,4 +1,4 @@
-# 6. Github pages
+# 17. Github pages
 
 ## Crear un repositorio de página web y subir la web allí
 

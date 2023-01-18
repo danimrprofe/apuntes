@@ -15,8 +15,8 @@ theme:
   features:
     - navigation.top
     - navigation.sections
-    #- navigation.tabs
-    #- navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.instant
     - toc.follow
     - toc.integrate
@@ -46,8 +46,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.keys
-  - toc:
-      toc_depth: 0
+  #- toc:
+  #    toc_depth: 0
 
 plugins:
   - search

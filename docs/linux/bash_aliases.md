@@ -1,8 +1,15 @@
 # Alias para bash
 
+Es un comando en Linux que nos permite asignar un nombre alternativo (alias) a un comando para que sea más fácil de recordar. Por ejemplo, podemos crear un alias llamado ll para el comando ls -l, con el cual podremos listar los contenidos de un directorio con mayor facilidad.
 
+Para crear un alias en Linux se usa el comando alias seguido del nombre del alias y luego el comando, de la siguiente manera:
 
-##  Alias para DIRECTORIOS
+```
+alias ll='ls -l'
+```
+
+## Navegar entre directorios
+
 ```
 alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
@@ -18,7 +25,7 @@ alias cd..='cd ..'
 alias CD='cd'
 alias home='cd ~ && ll;'
 ```
-## alias cleanPC='sudo apt-get -y autoclean && sudo apt-get -y clean && sudo apt-get -y autoremove'
+
 ```
 alias display='eog -w'
 alias e='exit'
@@ -26,16 +33,23 @@ alias egrep='egrep --color=auto'
 alias emptyDir='find . -empty -type d -delete'
 alias fgrep='fgrep --color=auto'
 ```
-## alias -g A="| awk"
-## alias -g C="| wc -l"
-## alias -g G="| grep"
-## alias -g H="| head"
-## alias -g L="| less"
-alias grep='grep --color=auto'
-## alias -g S="| sed -e"
-## alias -g T="| tail"
 
-##  Alias HISTORY
+## Pipes
+
+El comando pipe (|) se utiliza para conectar dos o más comandos en una sola línea de comandos. Esto permite a los usuarios realizar tareas más complejas al permitir que los resultados de un comando se pasen como la entrada de otro comando.
+
+```
+alias -g A="| awk"
+alias -g C="| wc -l"
+alias -g G="| grep"
+alias -g H="| head"
+alias -g L="| less"
+alias grep='grep --color=auto'
+alias -g S="| sed -e"
+alias -g T="| tail"
+```
+
+## Alias HISTORY
 
 ```
 alias hg='history | sort -u | grep'
@@ -57,15 +71,24 @@ alias l='ls -CF'
 alias lsdir='ls -ld */'
 alias ls='ls --color=auto'
 ```
+
+## Alias media
+
+```
 alias media='sshfs -o reconnect media@192.168.1.10:/mnt /home/"${USER}"/mnt/media_srv'
 alias meng='cd ${HOME}/Dropbox/MEng_Stuff/MEng-Progress'
+```
 
+## Alias de procesos
 
+```
 alias paux='ps aux | grep'
-alias pg='ping -c 5 www.google.com'
+```
 
 ##  Alias de RED
+
 ```
+alias pg='ping -c 5 www.google.com'
 alias port='netstat -tulanp'
 alias q='exit'
 alias reboot='sudo shutdown -r now'
@@ -84,19 +107,27 @@ alias sstart='sudo systemctl start'
 alias sstop='sudo systemctl stop'
 ```
 
-##  Alias para LOGS
+## Alias para LOGS
+
+Tail muestra las últimas lineas de una archivo. Es especialmente útil para mostrar solo las últimas acciones registradas en un log.
+
 ```
 alias t10='tail -10'
 alias t50='tail -50'
 alias tf='tail -f'
 alias t='tree -uRD'
+```
+
+## Alias gestión de paquetes
+
+```
 alias uninstall='sudo apt-get --purge autoremove '
 alias update='sudo apt -y update'
 alias upgrade-pips='sudo pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U
 alias upgrade='sudo apt-get -y update && sudo apt-get -y --allow-unauthenticated upgrade && sudo apt-get autoclean && sudo apt-get autoremove && exit 0'
-    ## alias vdir='vdir --color=auto'
-alias youtube="youtube-dl"
+```
 ##  Apt
+```
 ccd() { builtin cd "$@" && clear && pwd && ll; }
         echo
         echo -e "\nAdditionnal information:$NC " ; uname -a
@@ -107,16 +138,4 @@ ccd() { builtin cd "$@" && clear && pwd && ll; }
         echo -e "\n${RED}Public facing IP Address :$NC " ;myip
         echo -e "\n${RED}Users logged on:$NC " ; w -h
         echo -e "\nYou are logged on ${RED}$HOST"
-##  Editores de texto
-##  enable color support of ls and also add handy aliases
-fi
-if [ -x /usr/bin/dircolors ]; then
-    ii() {
-##    ii:  display useful host related informaton
-##  Install and Remove Packages
-##  Log into to Server
-##  Network Start, Stop, and Restart
-##  Redefinir para pedir confirmación
-##  some more ls aliases
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-##  Useful Alias
+```

@@ -1,6 +1,3 @@
-- [Consideraciones previas](#consideraciones-previas)
-- [Instalación GuettoVCB](#instalaci%C3%B3n-guettovcb)
-- [Instalación del paquete](#instalaci%C3%B3n-del-paquete)
 
 # Consideraciones previas
 
@@ -32,7 +29,7 @@ No me ha funcionado wget porque por lo visto no soporta https en la version inst
 Me voy a descargar el paquete en mi ordenador personaly lo voy a pasar por pscp
 
 ```console
-C:\Users\dnick\Desktop>pscp vghetto-ghettoVCB-offline-bundle.zip rootgl92.168.1.116:vcb 
+C:\Users\dnick\Desktop>pscp vghetto-ghettoVCB-offline-bundle.zip rootgl92.168.1.116:vcb
 Using keyboard-interactive authentication.
 Password:
 vghetto-ghettoVCB-offline | 23 kB |	23.0 kB/s | ETA: 00:00:00 | 100%
@@ -43,7 +40,7 @@ C:\Users\dnick\Pesktop>
 Una vez copiado remotamente, me conecto por consola y lo instalo
 
 ```console
-[root0minint-fhbvlj9:~] esxcli software vib install -d /vcb/vghetto-ghettoVCB-offline-bundle.zip -f 
+[root0minint-fhbvlj9:~] esxcli software vib install -d /vcb/vghetto-ghettoVCB-offline-bundle.zip -f
 Installation Result
 Message: Operation finished successfully.
 Reboot Required: false
@@ -57,5 +54,5 @@ para filtrar
 ```bash
 [root@minint-fhbvlj9:~] esxcli software vib list Igrep ghettoVCB
 ghettoVCB	1.0.0-0.0.0	virtuallyGhetto CommunitySupported 2018-04-29
-[root@minint-fhbvlj9:^) 
+[root@minint-fhbvlj9:^)
 ```

@@ -9,5 +9,3 @@ Si se interrumpe una conexión, al reiniciar la transferencia de datos, rsync tr
 rsync transfiere solo las partes cambiadas reales de un archivo (en lugar de de transferir un archivo completo)
 
 Este método selectivo de transferencia de datos puede ser mucho más eficiente que scp porque reduce la cantidad de datos enviados a través de la red
-
-

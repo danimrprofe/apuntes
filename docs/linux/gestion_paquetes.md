@@ -1,13 +1,12 @@
-
 # Instalación de paquetes
 
-# 1. Noción de paquete
+## 1. Noción de paquete
 
 En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de **paquetes** (packages).
 
 Un **paquete** es un archivo que contiene un software a instalar y unas reglas. Suele tener una extensión .rpm, .deb, en función del tipo de paquete. Cada tipo de distribución puede funcionar con un tipo de paquetes diferentes. Los paquetes son incompatibles entre sí, pero se pueden convertir.
 
-# 2. Gestor de paquetes DPKG
+## 2. Gestor de paquetes DPKG
 
 El comando **dpkg** permite instalar, crear, eliminar y gestionar paquetes debian. Estos paquetes llevan una extensión .deb. El paquete se tiene que descargar manualmente y si existen dependencias incumplidas, se deben resolver previamente.
 
@@ -17,7 +16,7 @@ Comandos comunes:
 - Listar paquetes instalados: `dpkg -l`
 - Borrar paquetes: `dpkg -r`
 
-# Ejemplo: instalación de google chrome
+## Ejemplo: instalación de google chrome
 
 Descarga del paquete:
 
@@ -31,7 +30,7 @@ Borrar el paquete descargado (si queremos)
 
 `rm google-chrome-stable_current_amd64.deb`
 
-# Gestion de dependencias
+## Gestion de dependencias
 
 Los paquetes generalmente dependen de otros paquetes mas basicos para funcionar. Estos paquetes necesarios se llaman `dependencias`. Pueden suceder dos cosas:
 
@@ -39,7 +38,7 @@ Los paquetes generalmente dependen de otros paquetes mas basicos para funcionar.
 - Que falte alguna dependencia. Deberemos instalar primero los paquetes necesarios previamente.
 - Por ultimo, puede ser que el paquete necesario se encuentre instalado pero no en la version necesaria. Para ello deberemo actualizarlo primero.
 
-# 3. Programa de gestión de paquetes avanzada APT y YUM
+## 3. Programa de gestión de paquetes avanzada APT y YUM
 
 Tanto `dpkg` como `rpm` detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete no se encuentra, se deben instalar previamente.
 
@@ -48,7 +47,7 @@ Tanto `dpkg` como `rpm` detectan dependencias de paquetes para autorizar o no la
 - **YUM** se utiliza en distribuciones Red Hat, Fedora, etc y gestiona paquetes **.rpm**
 - **APT** se utiliza en sistemas Debian y derivados y gestiona paquetes **.deb**
 
-# 4. Repositorios
+## 4. Repositorios
 
 Un `repositorio` es un lugar que contiene un conjunto de paquetes. Los repositorios de paquetes pueden estar situados en diferentes sitios, como pueden ser:
 
@@ -66,7 +65,7 @@ Para modificar el repositorio:
 
 `nano /etc/apt/sources.list`
 
-## Lista de repositorios
+### Lista de repositorios
 
 ```bash
 deb http://ftp.cixug.es/mint/packages tessa main upstream import backport
@@ -93,12 +92,12 @@ Release:	19.1
 Codename:	tessa
 ```
 
-# 5. Prácticas con el gestor APT
+## 5. Prácticas con el gestor APT
 
 - Para buscar un paquete: `apt-cache search nombre`
 - Actualizar lista de paquetes: `apt update`
 
-# Mostrar que paquetes se pueden actualizar:
+## Mostrar que paquetes se pueden actualizar:
 
 Para mostrar los paquetes:
 
@@ -117,7 +116,7 @@ firefox/tessa 66.0.3+linuxmint1+tessa amd64 [actualizable desde: 66.0.2+linuxmin
 - Desinstalar borrando archivos de configuración: `apt purge`
 - Borrar paquetes no necesarios: `sudo apt autoremove`
 
-# Tareas
+## Tareas
 
 Las **tareas** son grupos de paquetes que proporcionan un modo sencillo de seleccionar un conjunto predefinido de paquetes.
 
@@ -129,10 +128,10 @@ Buscar paquetes que comienzan con apache:
 aptitude search ^apache
 ```
 
-# 6. Cliente gráfico synaptic
+## 6. Cliente gráfico synaptic
 
 **Synaptic** es un front-end o interfaz gráfica que llama a las funciones de APT.
 
-# 7. Aptitude
+## 7. Aptitude
 
 Es un administrador de paquetes con una interfaz en modo texto.

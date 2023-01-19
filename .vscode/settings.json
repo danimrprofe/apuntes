@@ -47,5 +47,13 @@
   ],
   "gpt3.apiKey": "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",
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "spellright.language": [
+    "ca"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ]
 }

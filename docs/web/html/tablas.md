@@ -97,3 +97,40 @@ Podemos romper la organización de filas y columnas combinando celdas para forma
 
 - ``colspan``: define una celda con una anchura múltiplo de la columna básica.
 - ``rowspan``: define una celda con una anchura múltiplo de la fila básica.
+
+## Estilos de tablas con CSS
+
+Podemos crear estilos para nuestra tabla utilizando estilos CSS, definiéndolos en el HEAD de nuestro documento:
+
+Si queremos poner un color de borde determinado:
+
+```css
+th, td{
+  border-color: #96D4D4;
+}
+```
+
+Si queremos que todos los bordes se junten en uno solo, podemos agregar la propedad `border-collapse`.
+
+```css
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+```
+
+Con ``padding``, podemos aumentar el espacio que queremos que haya entre el borde de la tabla y el texto:
+
+```css
+th, td{
+  padding: 15px;
+}
+```
+
+Utilizando la propiedad `border-spacing`, podemos separar las celdas entre ellas:
+
+```css
+table{
+  border-spacing: 30px;
+}
+```

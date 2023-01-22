@@ -1,15 +1,15 @@
 # 1. INTRODUCCIÓN AL LENGUAJE HTML
 
-El lenguaje HTML (Hyper Text Markup Language) es un lenguaje que sirve
+El lenguaje ``HTML`` (Hyper Text Markup Language) es un lenguaje que sirve
 para escribir hipertexto, es decir, documentos de texto presentado de forma
-estructurada, con enlaces (links) que conducen a otros documentos o a otras
+estructurada, con ``enlaces`` (links) que conducen a otros documentos o a otras
 fuentes de información (por ejemplo bases de datos) que pueden estar en tu propia
 máquina o en máquinas remotas de la red. Todo ello se puede presentar
 acompañado de cuantos gráficos estáticos o animados y sonidos seamos capaces
 de imaginar.
 
 Todas las codificaciones de efectos en el texto que forman el lenguaje HTML
-no son más que instrucciones para el visualizador (navegador o browser).
+no son más que instrucciones para el visualizador (``navegador`` o browser).
 Actualmente existen multitud de ellos, aunque los más conocidos son el Internet
 Explorer de Microsoft (IE), el Google Chrome, o el Mozilla Firefox, y sin olvidar el navegador Opera.
 

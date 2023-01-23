@@ -21,7 +21,7 @@ A tener en cuenta:
 - Si queremos agrupar 2 instrucciones en una línea (;)
 
 ```python linenums="1"
-print("cada línea temrina en ;");
+print("cada línea termina en ;");
 print("esta línea está mal")
 print("la línea anterior tendria que terminar en ;");
 ```

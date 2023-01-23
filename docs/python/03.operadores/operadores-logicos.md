@@ -68,3 +68,7 @@ b = 4
 c = (a <= b)
 print(c) # imprime True
 ```
+
+## Ejercicios
+
+Crea un programa que te pida una contraseña. A continuación, te debería pedir que la vuelvas a escribir. Si las dos contraseñas escritas no coinciden, mostrar un mensaje informando de que las contraseñas introducidas no son iguales. Si coinciden, mostrar un mensaje informando que se ha cambiado la contraseña.

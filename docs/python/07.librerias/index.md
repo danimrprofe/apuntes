@@ -36,3 +36,5 @@ pyplot.show()
 Se nos mostrará la siguiente figura:
 
 ![imagen](img/2023-01-03-09-05-28.png)
+
+## Ejercicio

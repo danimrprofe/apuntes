@@ -1,20 +1,8 @@
 # Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores
 
-- [Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores](#utilidades-para-el-desarrollo-y-pruebas-de-programas-compiladores-interpretes-depuradores)
-- [Introducción](#introducción)
-  - [Compiladores](#compiladores)
-    - [Ventajas](#ventajas)
-    - [Tipos de compiladores](#tipos-de-compiladores)
-    - [Etapas del proceso de traducción](#etapas-del-proceso-de-traducción)
-    - [Elementos importantes en las etapas](#elementos-importantes-en-las-etapas)
-    - [Módulos externos al compilador](#módulos-externos-al-compilador)
-  - [6. Bibliografia](#6-bibliografia)
-
-# Introducción
-
-- Lenguaje ordenadores formado por nistrucciones codificadas en código binario
+- Lenguaje ordenadores formado por instrucciones codificadas en código binario
 - Lenguajes de programación formado por símbolos y reglas que permiten escribir programas
-- Creados para facilitar la tarea de programación
+- Creados para facilitar la tarea de la programación
 - Compuestos por un léxico, sintaxis y semántica
 - Necesidad de traducir de un programa escrito en un lenguaje fuente a un lenguaje máquina.
 
@@ -69,5 +57,3 @@ Por su parte, la **etapa de síntesis** comprende la generación de un código i
 - Preprocesador: por ejemplo incluir código de librerías
 - Ensamblador: traduce a código máquina
 - Enlazador: crea ejecutables a partir de código objeto y librerías
-
-## 6. Bibliografia

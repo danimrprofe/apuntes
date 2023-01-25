@@ -18,6 +18,13 @@ while contador < 5:
 
 En este ejemplo, el bucle `while` se ejecutará mientras la variable `contador` sea menor a 5. Cada vez que el bucle se ejecuta, el valor de la variable `contador` aumenta en 1, hasta llegar a 5. Una vez que el valor de `contador` llega a 5, la condición de parada se cumple y el bucle se detiene.
 
+Un caso especial que podríamos estudiar es un bucle ``while True``. Esto hará que el bucle se repita indefinidamente, a menos que salgamos del programa.
+
+```python
+while True:
+    print("Este bucle no termina nunca")
+```
+
 ## Bucle `for`
 
 El bucle `for` se utiliza para iterar sobre los elementos de una secuencia (por ejemplo, una lista, una tupla, un diccionario, etc.). Veamos un ejemplo.

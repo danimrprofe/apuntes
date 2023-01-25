@@ -51,4 +51,4 @@ Sobre el sistema operativo se instalan los programas que vaya a usar el usuario.
 Ejemplo:
 
 - El procesador de textos Word en un ordenador con Windows
-- La aplicación de mensajería Whatsapp en un móvil con Android o IOS.
+- La aplicación de mensajería WhatsApp en un móvil con Android o IOS.

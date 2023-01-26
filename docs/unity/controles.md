@@ -16,7 +16,7 @@ Por ejemplo, para el eje **horizontal**, está asignado a las teclas de flechas 
 
 Tenemos que crear el elemento vertical2 que es para nuestro player2. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
 
-Lo que faltaría es cambiarle los controlessi el player1 juega con la flecha de arriba y hacia abajo. Nosotros con el jugador 2 jugaremos con la W y S. En negativo ponemos S y en positivo W. Dentro del objeto player, en función de si es el 1 o el 2, seleccionaremos el control oportuno.
+Lo que faltaría es cambiarle los controles del player1 juega con la flecha de arriba y hacia abajo. Nosotros con el jugador 2 jugaremos con la W y S. En negativo ponemos S y en positivo W. Dentro del objeto player, en función de si es el 1 o el 2, seleccionaremos el control oportuno.
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos14.png)
 

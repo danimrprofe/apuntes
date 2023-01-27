@@ -1,4 +1,4 @@
-# 16. Youtube
+# YouTube
 
 ## Creación de un canal
 
@@ -64,10 +64,11 @@ Para emitir desde el móvil, debes:
 
 - Tener al menos 1000 suscriptores
 - Tener el canal verificado.
+- Dar permiso a la aplicación para utilizar la cámara y/o el micrófono.
 
-![imagen](media/image28.png)Dar permiso a la aplicación para utilizar la cámara y/o el micrófono.
+![imagen](media/image28.png)
 
-## CAPÍTULOS
+## Capítulos
 
 Podemos dividir nuestro vídeo en capítulos, editando la descripción y agregando marcas de tiempo.
 
@@ -82,8 +83,9 @@ De este modo, los espectadores podrán moverse entre las diferentes secciones de
 Es necesario:
 
 - Crear una marca inicial
-- Crear al menos 3 marcas temporales
-- Crear una playlist colaborativa
+- Crear al menos tres marcas temporales
+
+## Crear una playlist colaborativa
 
 Podemos crear una playlist a la que varios usuarios puedan agregar vídeos.  Aquí podéis ver una de ejemplo:
 
@@ -91,25 +93,21 @@ https://www.youtube.com/watch?v=Fr3iBtRdIU4&list=PLs4HvJtsfmePRkD5EVKFyf29dzmeuT
 
 Para ello, tendremos que:
 
-Crear la playlist
-
-Activar que sea colaborativa
+1. Crear la playlist
+2. Activar que sea colaborativa
+3. Los usuarios recibirán un correo y tendrán que confirmarse como colaboradores antes de poder agregar vídeo.
 
 ![imagen](media/image31.png)
 
-Los usuarios recibirán un correo y tendrán que confirmarse como colaboradores antes de poder agregar vídeo.
-
 ![imagen](media/image32.png)
 
-Reproducir en bucle
-
-Podemos activar una opción para que se reproduzcan los videos de la playlist de forma indefinida
+Reproducir en bucle: Podemos activar una opción para que se reproduzcan los videos de la playlist de forma indefinida
 
 ![imagen](media/image33.png)
 
-Emitir en Youtube
+## Emitir en directo a través de YouTube
 
-Una vez configurado OBS, podemos decirle que emita hacia un canal nuestro de YouTube. Para esto necesitamos una clave de retransmisión, que YouTube nos facilita. Esta clave la insertamos en OBS, y así este se comunicará con YouTube.
+Una vez configurado ``OBS``, podemos decirle que emita hacia un canal nuestro de YouTube. Para esto necesitamos una clave de retransmisión, que YouTube nos facilita. Esta clave la insertamos en OBS, y así este se comunicará con YouTube.
 
 El mecanismo es idéntico en el caso de Twitch.
 

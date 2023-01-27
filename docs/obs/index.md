@@ -26,7 +26,7 @@ Aquí debajo puedes ver una escena compuesta de dos fuentes, una página web y u
 
 ## Fuentes
 
-Las fuentes son los orígenes de nuestra grabación. Pueden ser **cámaras, ventanas, imágenes, juegos, etc**. Cada fuente la podemos colocar en diferentes partes de la pantalla para configurar nuestra escena.
+Las fuentes son los orígenes de nuestra grabación. Pueden ser **cámaras, ventanas, imágenes, juegos, etc.**. Cada fuente la podemos colocar en diferentes partes de la pantalla para configurar nuestra escena.
 
 ![imagen](media/image51.png)
 
@@ -36,6 +36,6 @@ En este caso, únicamente tenemos una escena, con 3 fuentes diferentes. Se super
 
 Podéis utilizar diferentes overlays para las transmisiones. Los overlays son imágenes prediseñadas con zonas transparentes, que podemos colocar encima de la escena, y utilizarla de marco de fotos.
 
-Podéis descargar uno de ejemplo aquí: Imagen overlay png
+Podéis descargar uno de ejemplo aquí: Imagen overlay png.
 
 ![imagen](media/image52.png)

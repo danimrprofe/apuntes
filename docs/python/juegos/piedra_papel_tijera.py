@@ -1,28 +1,30 @@
 import random
-
+import time
 
 def jugar_partida():
     print("Vamos a jugar piedra, papel o tijeras!")
-    opciones = ["piedra", "papel", "tijeras"]
-    eleccion_jugador = input("Elige piedra, papel o tijeras: ").lower()
-    eleccion_computadora = random.choice(opciones)
-    print(f"La computadora eligió {eleccion_computadora}.")
-    if eleccion_jugador == eleccion_computadora:
+    ordenador = random.choice(["piedra", "papel", "tijeras"])
+    jugador = input("Elige piedra, papel o tijeras: ").lower()
+
+    print(f"La computadora eligió {ordenador}.")
+    if jugador == ordenador:
         print("Empate!")
-    elif eleccion_jugador == "piedra" and eleccion_computadora == "tijeras":
+        resultado = "han empatado"
+    elif jugador == "piedra" and ordenador == "tijeras" or \
+            jugador == "papel" and ordenador == "piedra" or \
+            jugador == "tijeras" and ordenador == "papel":
         print("Ganaste!")
-    elif eleccion_jugador == "papel" and eleccion_computadora == "piedra":
-        print("Ganaste!")
-    elif eleccion_jugador == "tijeras" and eleccion_computadora == "papel":
-        print("Ganaste!")
+        resultado = "gana el jugador"
     else:
         print("Perdiste!")
-    play_again = input("¿Quieres jugar de nuevo? (s/n) ").lower()
-    if play_again == 's':
+        resultado = "gana el ordenador"
+    with open("game_history.txt", "a") as f:
+        f.write(
+            f"{time.ctime()} - Player: {jugador} vs Computer: {ordenador} - Result: {resultado}\n")
+    if input("¿Quieres jugar de nuevo? (s/n) ").lower() == "s":
         jugar_partida()
     else:
         print("Gracias por jugar!")
-
 
 if __name__ == '__main__':
     jugar_partida()

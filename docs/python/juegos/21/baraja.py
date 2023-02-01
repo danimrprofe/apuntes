@@ -22,3 +22,7 @@ class Baraja:
 
     def repartir(self):
         return self.cartas.pop()
+
+    def quedan_cartas(self):
+        """Devuelve True si quedan cartas en la baraja, False si no."""
+        return len(self.cartas) != 0

@@ -1,5 +1,4 @@
 # Esta clase define el objeto Mano, el cual representa un conjunto de cartas.
-
 class Mano:
 
     # El método __init__ establece la lista de cartas como una lista vacía y el valor como 0.

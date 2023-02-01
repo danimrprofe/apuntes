@@ -11,8 +11,8 @@ class Deck:
             for rank in ranks:
                 self.cards.append(Card(suit, rank))
 
-    def shuffle(self):
-        random.shuffle(self.cards)
+    def barajar(self):
+        random.barajar(self.cards)
 
     def __repr__(self):
         return f"Deck of {self.count()} cards"

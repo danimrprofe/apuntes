@@ -1,31 +1,34 @@
-from deck import Deck
-from hand import Hand
+from baraja import Baraja
+from mano import Mano
 
-class Game:
+class Juego:
     def __init__(self):
-        self.deck = Deck()
-        self.deck.shuffle()
+        self.baraja = Baraja()
+        self.baraja.barajar()
 
-    def play(self):
-        player_hand = Hand()
-        player_hand.add_card(self.deck.deal())
-        print("Tu mano es: ", player_hand.cards,
-              "lo que hace un total de: ", player_hand.calculate_value())
-        while player_hand.value < 21:
-            action = input("Quieres hit o stay? ").lower()
-            if action == "hit":
-                player_hand.add_card(self.deck.deal())
-                print("Tu mano es: ", player_hand.cards,
-                      "lo que hace un total de: ", player_hand.calculate_value())
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
             else:
                 print("Tu puntuación final es de",
-                      player_hand.calculate_value())
+                      mano_jugador.calcular_valor())
                 return
-        print("has PERDIDO.")
+        if mano_jugador.valor == 21:
+            print("has GANADO.")
+        else:
+            print("has PERDIDO.")
         print("Tu puntuación final es de",
-              player_hand.calculate_value())
+              mano_jugador.calcular_valor())
 
 if __name__ == '__main__':
     print("hola")
-    game = Game()
-    game.play()
+    juego = Juego()
+    juego.jugar()

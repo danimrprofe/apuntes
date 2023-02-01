@@ -1,3 +1,7 @@
 Mon Jan 30 18:59:59 2023 - Player: papel vs Computer: papel - Result: han empatado
 Mon Jan 30 19:00:27 2023 - Player: piedra vs Computer: piedra - Result: han empatado
 Mon Jan 30 19:00:30 2023 - Player: tijeras vs Computer: piedra - Result: gana el ordenador
+Wed Feb  1 09:49:32 2023 - Player: piedra vs Computer: papel - Result: gana el ordenador
+Wed Feb  1 09:49:39 2023 - Player: papel vs Computer: tijeras - Result: gana el ordenador
+Wed Feb  1 09:49:42 2023 - Player: papel vs Computer: tijeras - Result: gana el ordenador
+Wed Feb  1 09:49:44 2023 - Player: papel vs Computer: piedra - Result: gana el jugador

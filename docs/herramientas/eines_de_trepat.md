@@ -1,18 +1,26 @@
 # Eines per trepat
 
-![imagen](media/image31.png)Trepant
+## Trepant
 
 El trepant consisteix en fer perforacions cilíndriques en un material utilitzant una eina anomenada trepant.
 
+![imagen](media/image31.png)
+
 L'accessori que, girant, realitza la perforació es diu broca.
 
-Els trepants percutors, a més de foradar, permeten fer força simulant un martell al mateix temps. D’aquesta forma poden travessar parets i superfícies dures que d’altra forma serien molt difícils de foradar.
-
-![imagen](media/image32.png)![imagen](media/image33.png)
+## Trepant portàtil
 
 Els trepants portàtils poden ser transportats fàcilment fins on siguin necessaris, fins i tot hi ha models amb bateries (de potència menor) que no necessiten una presa de corrent.
 
 Incorporen unes bateries recarregables per poder donar-los l’electricitat que necessiten per funcionar.
+
+![imagen](media/image32.png)
+
+## Trepant percutor
+
+Els trepants percutors, a més de foradar, permeten fer força simulant un martell al mateix temps. D’aquesta forma poden travessar parets i superfícies dures que d’altra forma serien molt difícils de foradar.
+
+![imagen](media/image33.png)
 
 ![imagen](media/image34.png)Altres trepants més petits s’utilitzen per petites feines, així com a muntar i desmuntar mobles d’una forma més fàcil.
 

@@ -44,5 +44,4 @@ def juego_3_en_raya():
     if input("¿Quieres jugar de nuevo? (s/n)").lower() != "s":
         juego_3_en_raya()
 
-
 juego_3_en_raya()

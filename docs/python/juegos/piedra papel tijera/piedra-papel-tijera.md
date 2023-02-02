@@ -1,4 +1,12 @@
-# Fases del juego
+# Piedra papel o tijera
+
+## Fases del juego
+
+1. Jugador 1 elige
+2. Ordenador elige
+3. Decidir ganador
+4. Jugar otra partida (opcional)
+5. Guardar partidas en fichero (opcional)
 
 ## 1. Elección del jugador
 
@@ -32,13 +40,17 @@ Para poder utilizar la función ``random.choice``, debemos importar al comienzo 
 import random
 ```
 
-## 3. Decisión de ganador.
+## 3. Decisión de ganador
 
 Existen 9 combinaciones posibles de resultados, por lo que, en cada uno de ellos, deberemos decidir el ganador, teniendo en cuenta que:
 
-- Piedra gana a tijeras
-- Tijeras gana a papel
-- Papel gana a piedra
+- **Piedra** gana a **tijeras**
+- **Tijeras** gana a **papel**
+- **Papel** gana a **piedra**
+
+Existen 9 combinaciones posibles:
+
+![](img/2023-02-02-09-36-22.png)
 
 A continuación deberíamos calcular quien gana la partida:
 

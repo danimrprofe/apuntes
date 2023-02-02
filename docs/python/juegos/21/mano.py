@@ -24,3 +24,7 @@ class Mano:
                 self.valor += int(carta.valor)
 
         return self.valor
+
+    def mostrar_mano(self):
+        for carta in self.cartas:
+            print(carta)

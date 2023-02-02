@@ -20,9 +20,16 @@ class Baraja:
     def contar(self):
         return len(self.cartas)
 
-    def repartir(self):
-        return self.cartas.pop()
+    def sacar_carta(self):
+        if len(self.cartas) > 0:
+            return self.cartas.pop()
+        else:
+            return None
 
     def quedan_cartas(self):
         """Devuelve True si quedan cartas en la baraja, False si no."""
         return len(self.cartas) != 0
+
+    def mostrar_cartas(self):
+        for carta in self.cartas:
+            print(carta)

@@ -2,8 +2,9 @@ import random
 
 def juego_3_en_raya():
     tablero = [" " for x in range(9)]
-    turno = "X"
-    contador = 0
+    simbolo = "X"
+    turno = 0
+    MAXIMO_TURNOS = 9
     libres = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
     def imprimir_tablero():
@@ -13,27 +14,29 @@ def juego_3_en_raya():
         print("| {} | {} | {} |".format(tablero[6], tablero[7], tablero[8]))
         print()
 
-    while True:
+    while turno < MAXIMO_TURNOS:
         imprimir_tablero()
 
         # Turno del jugador
 
-        eleccion = int(input("Elige una casilla (1-9): ".format(turno)))
-        if eleccion not in libres:
-            print("casilla no válida")
+        eleccion = int(input("Elige una casilla (1-9): ".format(simbolo)))
+        posicion = eleccion - 1
+
+        if posicion not in libres:
+            print("casilla ", posicion, " no válida")
             continue
 
-        if tablero[eleccion - 1] == " ":
-            tablero[eleccion - 1] = turno
-            libres.remove(eleccion)
-            contador += 1
+        if tablero[posicion] == " ":
+            tablero[posicion] = simbolo
+            libres.remove(posicion)
+            turno += 1
         else:
             print("Casilla ocupada, elige otra.")
             continue
 
-        # No puede haber un ganador antes del quinto turno
+        # No puede haber un ganador antes del quinto simbolo
 
-        if contador >= 5:
+        if turno >= 5:
             if (tablero[0] == tablero[1] == tablero[2] != " ") or \
                (tablero[3] == tablero[4] == tablero[5] != " ") or \
                (tablero[6] == tablero[7] == tablero[8] != " ") or \
@@ -43,16 +46,16 @@ def juego_3_en_raya():
                (tablero[0] == tablero[4] == tablero[8] != " ") or \
                (tablero[2] == tablero[4] == tablero[6] != " "):
                 imprimir_tablero()
-                print("¡Jugador {} gana!".format(turno))
+                print("¡Jugador {} gana!".format(simbolo))
                 break
 
         # Turno del ordenador
 
-        eleccion = random.choice(libres)
-        print("Ordenador elige casilla ", eleccion)
-        tablero[eleccion - 1] = "O"
-        libres.remove(eleccion)
-        contador += 1
+        posicion = random.choice(libres)
+        print("Ordenador elige casilla ", posicion)
+        tablero[posicion] = "O"
+        libres.remove(posicion)
+        turno += 1
 
     if input("¿Quieres jugar de nuevo? (s/n)").lower() == "s":
         juego_3_en_raya()

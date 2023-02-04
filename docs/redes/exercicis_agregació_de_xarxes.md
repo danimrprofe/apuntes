@@ -2,7 +2,7 @@
 
 Obtenir la super xarxa / es que resumeix les xarxes indicades a continuació:
 
-Conjunt A
+## Conjunt A
 
 - 195.100.16.0/24
 - 195.100.17.0/24
@@ -13,7 +13,11 @@ Conjunt A
 - 195.100.22.0/24
 - 195.100.23.0/24
 
-Conjunt B
+La primera etapa es identificar el prefijo de red común a todas las direcciones IP. En este caso, el prefijo común es 195.100.16.0/20.
+
+Luego, se puede crear una superred utilizando ese prefijo común. La dirección de la superred sería 195.100.16.0/20.
+
+## Conjunt B
 
 - 10.2.4.0/24
 - 10.2.5.0/24
@@ -29,7 +33,9 @@ Conjunt B
 - 10.2.15.0/24
 - 10.2.16.0/24
 
-Conjunt C
+## Conjunto C
+
+Para crear una superred a partir de las siguientes redes, se puede utilizar la técnica de **agregación de direcciones IP**.
 
 - 192.168.0.0/24
 - 192.168.1.0/24
@@ -37,14 +43,22 @@ Conjunt C
 - 192.168.4.0/24
 - 192.168.5.0/24
 
-Conjunt D
+La primera etapa es identificar el prefijo de red común a todas las direcciones IP. En este caso, el prefijo común es ``192.168.0.0/16``.
+
+Luego, se puede crear una superred utilizando ese prefijo común. La dirección de la superred sería 192.168.0.0/16. Esta dirección describirá todas las direcciones IP dentro de ese rango, incluyendo las direcciones IP individuales 192.168.0.0/24, 192.168.1.0/24, 192.168.3.0/24, 192.168.4.0/24 y 192.168.5.0/24.
+
+**Conclusión:**
+
+De esta manera, la superred 192.168.0.0/16 es una forma más eficiente de describir y manejar un grupo de direcciones IP en una red de computadoras.
+
+## Conjunto D
 
 - 172.16.0.0/16
 - 172.17.0.0/16
 - 172.18.0.0/16
 - 172.19.0.0/16
 
-Conjunt E
+## Conjunto E
 
 - 10.0.0.0/24
 - 10.0.1.0/24
@@ -53,7 +67,7 @@ Conjunt E
 - 10.0.8.0/23
 - 10.0.10.0/23
 
-Conjunt F
+## Conjunt F
 
 - 10.1.0.0/24
 - 10.1.1.0/24
@@ -64,7 +78,7 @@ Conjunt F
 - 10.1.6.0/24
 - 10.1.7.0/24
 
-Conjunt G
+## Conjunto G
 
 - 192.168.0.0/23
 - 192.168.2.0/23

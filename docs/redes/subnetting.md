@@ -9,9 +9,9 @@
 
 ## Segmentación
 
-- Mediante el uso de dispositivos físicos de interconexión
-- Podemos dividir una red tipo A, B o C en segmentos más pequeños para incrementar su eficacia.
-- Los segmentos de red separados por routers reciben el nombre de subredes.
+La solución a esta problemática es la **segmentación** de la red mediante el uso de dispositivos físicos de interconexión, como routers, para dividir la red en **subredes** más pequeñas y así aumentar su eficiencia.
+
+La creación de subredes permitirá un mejor control y organización de la dirección IP y una mayor flexibilidad en el sistema de direcciones.
 
 ## Subnetting
 

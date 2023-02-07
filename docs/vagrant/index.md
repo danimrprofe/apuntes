@@ -1,52 +1,25 @@
 # Vagrant
 
-- [Vagrant](#vagrant)
-- [Introducción](#introducci%C3%B3n)
-- [Características](#caracter%C3%ADsticas)
-- [Cómo instalarlo](#c%C3%B3mo-instalarlo)
-- [Boxes](#boxes)
-- [Creación de boxes](#creaci%C3%B3n-de-boxes)
-- [Cosas que puedes hacer con Vagrant](#cosas-que-puedes-hacer-con-vagrant)
-- [Vagrantfiles](#vagrantfiles)
-- [Comandos vagrant](#comandos-vagrant)
-  - [Version utilizada](#version-utilizada)
-- [Descargando boxes](#descargando-boxes)
-- [Inicializando configuraciones (Vagrantfile)](#inicializando-configuraciones-vagrantfile)
-- [Conectando con las máquinas virtuales](#conectando-con-las-m%C3%A1quinas-virtuales)
-- [Parando máquinas](#parando-m%C3%A1quinas)
-- [Configuraciones de Vagrant](#configuraciones-de-vagrant)
-- [Aprovisionamiento](#aprovisionamiento)
-- [Herramientas de aprovisionamiento](#herramientas-de-aprovisionamiento)
-- [Ejemplos de aprovisionamiento](#ejemplos-de-aprovisionamiento)
-      - [shell](#shell)
-      - [script](#script)
-      - [ansible](#ansible)
-- [Ejecucion de un playbook](#ejecucion-de-un-playbook)
-  - [Proyectos en este repositorio](#proyectos-en-este-repositorio)
-  - [vagrant-ansible](#vagrant-ansible)
-  - [vagrant-mult](#vagrant-mult)
-  - [vagrant-wordpress](#vagrant-wordpress)
+## Introducción
 
-# Introducción
-
-`Vagrant` es una herramienta que permite crear entornos de desarrollo basados en 
-máquinas virtuales. 
+`Vagrant` es una herramienta que permite crear entornos de desarrollo basados en
+máquinas virtuales.
 
 La idea es crear entornos que sean lo más parecido o idénticos
-a los servidores de producción. 
+a los servidores de producción.
 
-El objetivo es solucionar el problema de  "en mi máquina funciona". 
+El objetivo es solucionar el problema de  "en mi máquina funciona".
 
 Si definimos un entorno determinado, lo podemos ejecutar
 en cualquier lugar, sabiendo que cada vez que implemente en un sitio diferente
 se crearán las mismas máquinas y funcionarán de la misma forma.
 
-# Características
+## Características
 
 Características de Vagrant:
 
 - Agrega una capa por encima del software de virtualización (Virtualbox, VMware, etc).
-- Está escrito en Ruby 
+- Está escrito en Ruby
 - Inicialmente se construyó para ser utilizado con VirtualBox como hipervisor
 - Actualmente soporta muchos más.
 
@@ -56,7 +29,7 @@ Vagrant permite crear entornos de desarrollo:
 * Portables
 * Ligeros
 
-# Cómo instalarlo
+## Cómo instalarlo
 
 Para poner en macha Vagrant necesitaremos, por lo menos:
 
@@ -74,10 +47,10 @@ En caso de aprovisionamiento con ansible:
 
     apt install ansible
 
-# Boxes
+## Boxes
 
 Una `box` es un archivo (tareado y gzipeado) parecida a una imagen de máquina
-virtual, lista para ejecutarse (sin necesidad de instalación). 
+virtual, lista para ejecutarse (sin necesidad de instalación).
 
 Las podemos:
 
@@ -91,14 +64,14 @@ Cada box contiene:
 * Un archivo `OVF` que define el hardware virtual del box
 * Un archivo `JSON` que define que proveedor trabaja con la caja
 
-# Creación de boxes
+## Creación de boxes
 
 Las boxes se pueden crear:
 
 * Utilizando herramientas (packer.io, imagefactory)
-* Manualmente a través del comando vagrant package. 
+* Manualmente a través del comando vagrant package.
 
-# Cosas que puedes hacer con Vagrant
+## Cosas que puedes hacer con Vagrant
 
 Redactando correctamenteun archivo de configuración podemos:
 
@@ -108,7 +81,7 @@ Redactando correctamenteun archivo de configuración podemos:
 * Aprovisionar las máquinas con todo lo que se necesite, utilizando
 Puppet, chef, ansible, shell, etc.
 
-# Vagrantfiles
+## Vagrantfiles
 
 La configuración del entorno que queremos implementar se realiza en un archivo
 de texto plano escrito en Ruby llamado `Vagrantfile` (similar a los Dockerfiles).
@@ -117,16 +90,16 @@ A través de este archivo podemos definir el entorno que queramos, y podemos:
 
 * Configurar máquinas virtuales
 
-# Comandos vagrant
+## Comandos vagrant
 
-## Version utilizada
+#### Version utilizada
 
 Para conocer la versión de Vagrant instalada:
 ```
 vagrant version
 ```
 
-# Descargando boxes
+## Descargando boxes
 
 Podemos consultar las boxes que hay publicadas en: https://app.vagrantup.com/boxes/search
 
@@ -138,7 +111,7 @@ Podemos listar las boxes que tenemos descargadas. Si una box no está descargada
 ```
 vagrant box list
 ```
-# Inicializando configuraciones (Vagrantfile)
+## Inicializando configuraciones (Vagrantfile)
 
 Creamos una carpeta para guardar los archivos de configuración, y una vez dentro inicializamos vagrant en esta carpeta:
 ```
@@ -168,7 +141,7 @@ Podemos ver qué MV tenemos levantadas con:
 ```
 vagrant status
 ```
-# Conectando con las máquinas virtuales
+## Conectando con las máquinas virtuales
 
 Podemos conectar a la máquina con la un comando SSH de vagrant. Otra opción es desocultar la MV (que habrá arrancado en Virtualbox en modo oculto), o bien tirar de putty.
 ```
@@ -176,13 +149,13 @@ vagrant ssh
 ```
 Mágicamente se nos meterá por ssh en la MV, sin pedir contraseña. Una vez dentro podemos hacer lo que queramos.
 
-Si solo tenemos una MV levantada, se conectará a esta. Si tenemos más de una, pedirá el nombre de la MV. 
+Si solo tenemos una MV levantada, se conectará a esta. Si tenemos más de una, pedirá el nombre de la MV.
 
 Salimos con
 ```
 exit
 ```
-# Parando máquinas
+## Parando máquinas
 
 Para cerrar las máquinas virtuales por las buenas:
 ```
@@ -196,13 +169,13 @@ Para destruir la máquina virtual (veremos que ya no aparece en Virtualbox)
 vagrant destroy
 ```
 
-# Configuraciones de Vagrant
+## Configuraciones de Vagrant
 
 Todas las configuraciones se guardan en una carpeta oculta llamada .vagrant. Estas configuraciones se pueden subir a github y llevar un control de versiones, al ser la configuración guardada en archivos de texto plano.
 
 Las boxes se meten en la carpeta que tengamos definida en Virtualbox para almacenar las MV.
 
-# Aprovisionamiento
+## Aprovisionamiento
 
 Cuando preparamos un entorno de desarrollo, se suele hacer de forma manual.
 Se ejecutan los comandos necesarios en el SO guest para personalizar nuestro entorno.
@@ -213,7 +186,7 @@ Estos scripts son los que se ejecutarán automáticamente al levantar las MV.
 
 Este proceso de instalar y configurar software dentro del SO guest automáticamente se conoce como `aprovisionamiento`.
 
-# Herramientas de aprovisionamiento
+## Herramientas de aprovisionamiento
 
 Existen diferentes herramientas para ello:
 
@@ -222,13 +195,13 @@ Existen diferentes herramientas para ello:
 * Ansible
 * Chef
 
-# Ejemplos de aprovisionamiento
+## Ejemplos de aprovisionamiento
 
-#### shell
+######## shell
 To-do
-#### script
+######## script
 To-do
-#### ansible
+######## ansible
 
 Para aprovisionar con Ansible, podemos tener un playbook creado en la misma carpeta. Lo habitual es crear un archivo hosts para ello.
 
@@ -236,7 +209,7 @@ Si no le decimos nada, en distribuciones linux buscará el archivo en `/etc/ansi
 
     ansible-playbook instrucciones.yml -i hosts
 
-# Ejecucion de un playbook
+## Ejecucion de un playbook
 
 La primera vez nos pedirá confirmación:
 
@@ -246,16 +219,16 @@ PLAY [Configurar webserver con nginx] ******************************************
 TASK [Gathering Facts] *****************************************************************************************
 The authenticity of host '[127.0.0.1]:2222 ([127.0.0.1]:2222)' can't be established.
 ECDSA key fingerprint is SHA256:MGWE4lf8Hgq9vYEe4Qr52RJNKpM9mfN124g96Y/xc2Y.
-Are you sure you want to continue connecting (yes/no)? 
+Are you sure you want to continue connecting (yes/no)?
 ```
 
-## Proyectos en este repositorio
+#### Proyectos en este repositorio
 
-## vagrant-ansible
+#### vagrant-ansible
 La idea es aprovisionar máquinas virtuales a través de un playbook de ansible.
 
-## vagrant-mult
+#### vagrant-mult
 Automatizar el aprovisionamiento de varias MV en un único Vagrantfile
 
-## vagrant-wordpress
+#### vagrant-wordpress
 Automatizar y aprovisionar una MV con wordpress

@@ -1,30 +1,34 @@
-# Pensamiento computacional
+# Introducción a la programación
 
-## Actividad 1. Seguir instrucciones
+## Actividades de iniciación
 
-La siguiente página nos propone una serie de actividades para comprobar que sabemos seguir las instrucciones y funcionamiento de un programa sencillo.
-Cuando termines la actividad, adjunta debajo de este párrafo una foto como la siguiente de la pantalla principal (enfocando con tu smartphone al monitor) y con un papelito al lado del monitor con tu nombre, para comprobar que lo has hecho tú.
+Para introducirnos en el mundo de la programación, os propongo varios ejercicios online que os ayudarán a razonar cómo funciona un programa informático.
 
-http://compute-it.toxicode.fr/?hour-of-code
+Por ahora, lo importante es que te familiarices con los programas informáticos, cómo se crean y cómo funcionan. Para ello te he preparado algunas actividades que ya han sido creadas en Internet que creo que te pueden ayudar a introducirte en la programación.
 
-![](img/2023-02-01-09-29-46.png)
+## Actividad 1
 
-## Actividad 2. Introducción a las variables
+[Compute it](http://compute-it.toxicode.fr/?hour-of-code) nos propone una serie de actividades para comprobar que sabemos seguir las instrucciones y funcionamiento de un programa sencillo.
 
-En la siguiente actividad aprenderemos a tratar con variables. Las variables son como cajitas donde podemos guardar ciertos valores, como números, letras o palabras, y darles un nombre.
+![imagen](img/2022-12-13-19-13-22.png)
 
-http://silentteacher.toxicode.fr/hourofcode
+Cuando termines la actividad, adjunta una foto como la siguiente de la pantalla principal (enfocando con tu smartphones al monitor) y con un papelito al lado del monitor con tu nombre, para comprobar que lo has hecho tú.
 
-![](img/2023-02-01-09-29-18.png)
+![imagen](img/2022-12-13-19-15-20.png)
+
+## Actividad 2
+
+En la siguiente actividad aprenderemos a tratar con **variables**. Las variables son como cajitas donde podemos guardar ciertos valores, como números, letras o palabras, y darles un nombre.
+
+![imagen](img/2022-12-13-19-14-07.png)
+
+![Silent teacher](http://silentteacher.toxicode.fr/hourofcode)
 
 ## Actividad 3
 
-En este juego deberás ayudar al lince a recoger la piña. Para ello, deberás colocar las instrucciones en unas casillas en el orden determinado.
+Juego del lince. En este juego tenéis que colocar diferentes bloques de instrucciones en los huecos, para conseguir que el lince consiga recoger piñas o abrir un cofre.
 
-https://www.w3schools.com/codegame/
+![imagen](img/2022-12-13-19-17-17.png)
 
-![](img/2023-02-01-09-28-39.png)
-
-Disponéis de 27 niveles diferentes. Al terminar, deberéis tomar una captura de pantalla para demostrar que lo habéis terminado:
-
-![](img/2023-02-01-09-32-21.png)
+[Help the Lynx collect
+pine cones!](https://www.w3schools.com/codegame/)

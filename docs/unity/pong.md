@@ -12,18 +12,6 @@ Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los 
 - Asignar componentes rigidbody para agregar respuesta a físicas en nuestros sprites
 - Agregar colliders a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
 
-## Crear un proyecto
-
-Le damos a lo que tenemos por aquí y vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d
-
-![imagen](media/image1.png)
-
-El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create
-
-## Cambiar layout de ventanas
-
-Vamos a cambiar el **layout** así a mí así no me gusta trabajar tengo una distribución de ventanas que ya esté acostumbrado y que siempre pues es la que me pongo para cambiar esto lo que podéis hacer es iraquí arriba y seleccionar puede ser que vosotros se os adapte más a vuestra forma de trabajar y si bien ha visto ha bajado nunca pues yo que se lo recomiendo que voy a utilizar es la de **2 by 3**.
-
 ![imagen](media/image2.png)
 
 ## Crear pelota

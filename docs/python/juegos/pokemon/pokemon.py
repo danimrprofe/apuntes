@@ -1,5 +1,3 @@
-import turtle
-
 
 class Pokemon:
     def __init__(self, nombre, nivel, tipo, salud_maxima, salud_actual, ataque, defensa):
@@ -12,7 +10,7 @@ class Pokemon:
         self.defensa = defensa
 
     def __repr__(self):
-        return f"{self.nombre} (Nivel {self.nivel} Pokemon {self.tipo})\nSalud: {self.salud_actual}/{self.salud_maxima}\nAtaque: {self.ataque}\nDefensa: {self.defensa}"
+        return f"{self.nombre} (Nivel {self.nivel} Pokemon {self.tipo.value})\nSalud: {self.salud_actual}/{self.salud_maxima}\nAtaque: {self.ataque}\nDefensa: {self.defensa}"
 
     def atacar_oponente(self, oponente):
         daño = self.ataque - oponente.defensa

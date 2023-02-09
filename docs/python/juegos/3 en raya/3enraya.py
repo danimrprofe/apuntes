@@ -9,7 +9,10 @@ def pintar_tablero():
 
 pintar_tablero()
 
-while True:
+seguir_partida = True
+turnos = 0
+
+while seguir_partida:
     # pedir jugador 1
 
     casilla = int(input("elige una casilla: "))
@@ -20,8 +23,12 @@ while True:
         print("esta casilla está ocupada")
     else:
         tablero[casilla] = "X"
+        turnos = turnos + 1
+        print(turnos)
 
     pintar_tablero()
+    if turnos == 9:
+        break
 
     # pedir jugador 2
 
@@ -33,5 +40,9 @@ while True:
         print("esta casilla está ocupada")
     else:
         tablero[casilla] = "O"
+        turnos = turnos + 1
+        print(turnos)
 
     pintar_tablero()
+
+print("fin de la partida")

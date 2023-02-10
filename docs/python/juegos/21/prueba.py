@@ -1,8 +1,5 @@
-from carta import Carta
 from baraja import Baraja
 from mano import Mano
-
-cartaprueba = Carta("tréboles", 2)
 
 mibaraja = Baraja()
 print(mibaraja.contar())

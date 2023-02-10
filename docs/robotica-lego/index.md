@@ -113,6 +113,63 @@ El sensor traduce la información que le llega del exterior en un impulso eléct
 
 ![imagen](media/image12.png)
 
+### Sensores de ultrasonidos
+
+Los "Sensores de ultrasonidos" o "Sensores Ultrasónicos" son detectores de proximidad detectan objetos a distancias que van desde pocos centímetros hasta varios metros.
+
+![](img/2023-02-10-06-06-51.png)
+
+Estos sensores trabajan sólo en el aire, y pueden detectar objetos con diferentes formas, distintos colores, superficies y de distintos materiales.
+Los materiales pueden ser sólidos, líquidos o polvorientos, pero deben ser deflectores de sonido.
+
+Los ``ultrasonidos`` son ondas mecánicas. La frecuencia está por encima del umbral de audición del oído humano (aproximadamente 20 000 Hz).
+Algunas especies del reino animal como ciertos insectos y mamíferos (delfines y murciélagos) lo utilizan de forma parecida a un radar para su orientación; a este fenómeno se le conoce como ``ecolocalización``.
+
+![](img/2023-02-10-06-07-09.png)
+
+Los sensores de ultrasonidos trabajan según el tiempo de transcurso del eco, es decir, se valora la distancia temporal entre el impulso de emisión y el impulso del eco.
+
+![](img/2023-02-10-06-07-34.png)
+
+Aplicaciones prácticas:
+
+- Control de niveles en depósitos
+- Antichoques
+- Detección objetos
+- Recuento de objetos (fábricas)
+
+### Sensor de contacto
+
+Se utilizan para detectar el final del recorrido o la posición límite de componentes mecánicos. Por ejemplo: saber cuándo una puerta o ventana que se abren automáticamente están ya completamente abiertas y por tanto el motor que las acciona debe detenerse.
+
+![](img/2023-02-10-06-07-49.png)
+
+Los principales son los llamados ``finales de carrera``. Se trata de un interruptor que consta de una pequeña pieza móvil que al ser accionada corta o abre el paso de corriente.
+
+![](img/2023-02-10-06-07-58.png)
+
+Aplicaciones:
+
+- Puertas de garaje
+- Ascensores
+- Industria
+- Robótica
+
+### Sensor de luz - fotoeléctrico
+
+Permite distinguir entre luz y oscuridad. El ``LED emisor`` integrado posibilita medir la intensidad de luz reflejada sobre objetos.
+
+Puede diferenciar objetos mediante su color (clasificación a nivel de escala de grises) o para poder seguir una línea de color negro.
+
+![](img/2023-02-10-06-08-09.png)
+
+Algunas aplicaciones:
+
+- Detectores de movimiento
+- Detectores de luz/oscuridad
+- Recuento de objetos (fábricas)
+- Domótica (movimiento, luces, etc...)
+
 ## Montaje
 
 Pasos:

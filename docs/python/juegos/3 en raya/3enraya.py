@@ -30,6 +30,11 @@ while seguir_partida:
     if turnos == 9:
         break
 
+    if tablero[0] == tablero[1] == tablero[2]:
+        print("Ha ganado jugador 1")
+        break
+
+
     # pedir jugador 2
 
     casilla = int(input("elige una casilla: "))

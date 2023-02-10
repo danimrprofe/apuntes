@@ -25,9 +25,13 @@ def juego_3_en_raya():
             print("Casilla ocupada, elige otra.")
             continue
         if contador >= 5:
-            if (tablero[0] == tablero[1] == tablero[2] != " ") or \
-               (tablero[3] == tablero[4] == tablero[5] != " ") or \
-               (tablero[6] == tablero[7] == tablero[8] != " ") or \
+            if tablero[0] == tablero[1] == tablero[2] != " ":
+                print("has ganado")
+                break
+            if tablero[3] == tablero[4] == tablero[5] != " ":
+                print("has ganado")
+                break
+            if tablero[6] == tablero[7] == tablero[8] != " "  or \
                (tablero[0] == tablero[3] == tablero[6] != " ") or \
                (tablero[1] == tablero[4] == tablero[7] != " ") or \
                (tablero[2] == tablero[5] == tablero[8] != " ") or \

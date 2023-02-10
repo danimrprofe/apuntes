@@ -1,3 +1,6 @@
+# Ejercicios
+
+## 1. Prueba motores
 
 ```c
 task main()
@@ -10,7 +13,7 @@ task main()
 }
 ```
 
-Utilización de constantes
+## 2. Utilización de constantes
 
 ```c
 #define MOVE_TIME 1000
@@ -25,7 +28,7 @@ task main()
 }
 ```
 
-Repeticiones
+## 3. Repeticiones
 
 ```c
 #define MOVE_TIME 500
@@ -42,6 +45,8 @@ task main()
     Off(OUT_AC);
     }
 ```
+
+## 4. Repeticiones 2
 
 ```c
 #define MOVE_TIME 500
@@ -62,9 +67,7 @@ task main()
 }
 ```
 
-# Apartado 3
-
-## Sentencia repeat
+## 5. Repeticiones 3
 
 ```c
 #define TURN_TIME 360
@@ -86,7 +89,7 @@ task main()
 }
 ```
 
-## Sentencia if-else
+## 6. Condicional if-else
 
 A veces queremos que una parte de nuestro programa se ejecute solamente en ciertas situaciones. En esos casos se usa la sentencia if. Vamos a ver un ejemplo. Vamos a modificar el programa con el que hemos estado trabajando, pero queremos que gire bien a la derecha o a la izquierda, y que haga esa elección de modo aleatorio. Elegiremos al azar un número que puede ser positivo o negativo, y si es positivo el robot girará a la derecha y si no, girará hacia la izquierda.
 
@@ -109,9 +112,9 @@ Fíjate que la sentencia if tiene dos partes. La parte inmediatamente después d
 
 La palabra clave else y la parte que le sigue son opcionales, de manera que puedes omitirlas si no hay nada que hacer en caso de que la condición sea falsa.
 
-![](img/2023-02-09-17-06-12.png)
+![imagen](img/2023-02-09-17-06-12.png)
 
-## Sentencia while
+## 7. Bucles while
 
 ```c
 int move_time, turn_time;
@@ -129,7 +132,7 @@ task main()
 }
 ```
 
-## Apartado 4
+## 8. Bucle while y condicional combinados
 
 ```c
 #define MOVE_TIME 500
@@ -152,11 +155,12 @@ task main()
     }
 }
 ```
-## Bucles do-while
+
+## 9. Bucles do-while
 
 Hay otra estructura de control, la sentencia do. Tiene la siguiente forma:
 
-![](img/2023-02-09-17-07-42.png)
+![imagen](img/2023-02-09-17-07-42.png)
 
 Las instrucciones entre llaves que hay después del do se ejecutan mientras la condición sea cierta. La condición tiene la misma forma que el if. Éste es un ejemplo de un programa. El robot da vueltas de modo aleatorio durante 20 segundos y después se para.
 
@@ -184,7 +188,7 @@ task main()
 ```
 Fíjate que la sentencia do es casi igual que la sentencia while. Pero en el while, la condición se comprueba antes de entrar en las instrucciones, mientras que en el do, se comprueba al final. En el caso del while puede ocurrir que las sentencias no se ejecuten nunca, pero en el do, se ejecutarán al menos una vez.
 
-## Apartado 5
+## 10. Sensor contacto
 
 ```c
 task main()
@@ -213,7 +217,7 @@ task main()
 }
 ```
 
-## Luz
+## 11. Sensor de luz
 
 ```c
 #define SPEED 60
@@ -239,7 +243,7 @@ task main ()
 }
 ```
 
-## Sonido
+## 12. Sensor de sonido
 
 ```c
 #define THRESHOLD 40
@@ -259,7 +263,7 @@ task main()
 }`
 ```
 
-## Ultrasonidos
+## 13. Sensor de ultrasonidos
 
 ```c
 #define NEAR 15
@@ -278,7 +282,7 @@ task main()
 }
 ```
 
-## 6. Subrutinas
+## 14. Subrutinas
 
 ```c
 sub turn_around(int pwr) //Anlegen einer Subroutine
@@ -300,7 +304,7 @@ task main()
 }
 ```
 
-## 7. Música
+## 15. Música
 
 ```c
 #define VOL 3
@@ -314,32 +318,38 @@ PlayToneEx(262,1600,VOL,FALSE); Wait(2000);
 }
 ```
 
+## 16. Música y movimiento
+
 ```c
 task music()
 {
-while (true)
-{
-PlayTone(262,400); Wait(500);
-PlayTone(294,400); Wait(500);
-PlayTone(330,400); Wait(500);
-PlayTone(294,400); Wait(500);
-}
+    while (true)
+    {
+        PlayTone(262,400); Wait(500);
+        PlayTone(294,400); Wait(500);
+        PlayTone(330,400); Wait(500);
+        PlayTone(294,400); Wait(500);
+    }
 }
 task movement()
 {
-while(true)
-{
-OnFwd(OUT_AC, 75); Wait(3000);
-OnRev(OUT_AC, 75); Wait(3000);
-}
+    while(true)
+    {
+        OnFwd(OUT_AC, 75); Wait(3000);
+        OnRev(OUT_AC, 75); Wait(3000);
+    }
 }
 task main()
 {
-Precedes(music, movement);
+    Precedes(music, movement);
 }
 ```
 
-## 8. Motores
+## 17. Motores con inercia
+
+La función ``coast`` se utiliza para detener los motores mientras todavía se les permite girar libremente. Esto se utiliza a menudo cuando el robot necesita disminuir o detenerse de repente, pero sin aplicar los frenos a los motores, lo que causaría que el robot se detenga de repente.
+
+La función ``float`` se utiliza para hacer que un motor flote, lo que significa que el motor continuará girando a su velocidad actual sin ser influenciado por el programa
 
 ```c
 task main()

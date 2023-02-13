@@ -167,3 +167,160 @@ mano_J1.mostrar_mano()
 
 print("En la baraja quedan", mibaraja.contar(), "cartas")
 ```
+
+## Juego completo
+
+A continuación mostraremos el juego completo del 21.
+
+- El ``Juego`` será también una clase
+- La única propiedad del juego será  ``self.baraja``, que contendrá la baraja con la que vamos a jugar.
+
+### Paso 1. Importar las clases que vamos a utilizar
+
+```python
+from baraja import Baraja
+from mano import Mano
+```
+
+### Paso 2. Crear la clase ``Juego``
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+
+```
+
+### Paso 3. constructor
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+```
+
+### Paso 4. método jugar
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+```
+
+### Paso 5. Cálculo de valor de la mano
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+
+```
+
+### Paso 6. Cálculo de fin del juego
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+        if mano_jugador.valor == 21:
+            print("has GANADO.")
+        else:
+            print("has PERDIDO.")
+        print("Tu puntuación final es de",
+              mano_jugador.calcular_valor())
+```
+
+### Paso 7. Comienzo de la partida (main)
+
+```python
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+        if mano_jugador.valor == 21:
+            print("has GANADO.")
+        else:
+            print("has PERDIDO.")
+        print("Tu puntuación final es de",
+              mano_jugador.calcular_valor())
+
+if __name__ == '__main__':
+    print("hola")
+    juego = Juego()
+    juego.jugar()
+```

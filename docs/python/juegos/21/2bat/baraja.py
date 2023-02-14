@@ -14,16 +14,10 @@ class Baraja:
                 self.cartas.append(cartanueva)
     def mezclar(self):
         random.shuffle(self.cartas)
-
     def contar(self):
         return len(self.cartas)
-
-
-mibaraja = Baraja()
-'''
-print(mibaraja.cartas)
-mibaraja.mezclar()
-print(mibaraja.cartas)
-'''
-numero_cartas = mibaraja.contar()
-print(numero_cartas)
+    def coger_carta(self):
+        return self.cartas.pop()
+    def mostrar(self):
+        for carta in self.cartas:
+            print(carta)

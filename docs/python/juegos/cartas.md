@@ -15,7 +15,7 @@ Comenzaremos creando la clase ``Carta``. Cada carta tendrá dos propiedades, el 
 - También tendremos 2 métodos: el primero de ellos es el ``constructor``, que será el encargado de crear el objeto
 - El segundo es el método que nos ofrecerá una representación del objeto en formato de texto al hacer ``print()`` sobre el objeto.
 
-```python
+``` py linenums="1"
 class Carta:
     def __init__(self, palo, valor):
         self.palo = palo
@@ -30,14 +30,14 @@ Si utilizamos la clase en el mismo archivo, podemos crear objetos del tipo ``Car
 - La primera línea llamará al método ``__init__`` (constructor)de la clase.
 - La segunda línea llamará al método ``__repr__`` para imprimir información sobre la carta.
 
-```python
+``` py linenums="1"
 cartaprueba = Carta("tréboles", 2)
 print(cartaprueba)
 ```
 
 Guardaremos la clase ``Carta`` en un archivo ``carta.py``. Si queremos utilizar esta clase dentro de otro archivo, tendremos que importarla en primer lugar.
 
-```python
+``` py linenums="1"
 from carta import Carta
 cartaprueba = Carta("tréboles", 2)
 print(cartaprueba)
@@ -54,7 +54,7 @@ La baraja de póker se compone de 52 cartas. Para ello crearemos la clase ``Bara
 - ``Baraja.contar()`` nos dirá cuantas cartas quedan en la baraja
 - ``Baraja.quedan_cartas()`` devolverá ``True`` en caso de que queden cartas en la lista ``Baraja.cartas``. En caso contrario, ``False``.
 
-```python
+``` py linenums="1"
 import random
 from carta import Carta
 
@@ -94,7 +94,7 @@ class Baraja:
 
 Para probar este nuevo objeto podemos hacer lo siguiente:
 
-```python
+``` py linenums="1"
 mibaraja = Baraja()
 print("La baraja tiene", mibaraja.contar(), " cartas")
 print(mibaraja.quedan_cartas())
@@ -149,7 +149,7 @@ class Mano:
 
 Pruebas:
 
-```python
+``` py linenums="1"
 from baraja import Baraja
 from mano import Mano
 
@@ -166,4 +166,165 @@ if mibaraja.quedan_cartas():
 mano_J1.mostrar_mano()
 
 print("En la baraja quedan", mibaraja.contar(), "cartas")
+```
+
+## Juego completo
+
+A continuación mostraremos el juego completo del 21.
+
+- El ``Juego`` será también una clase
+- La única propiedad del juego será  ``self.baraja``, que contendrá la baraja con la que vamos a jugar.
+
+### Paso 1. Importar las clases que vamos a utilizar
+
+Importamos las clases Baraja y Mano desde los módulos baraja y mano, respectivamente. Esto permite al programa usar los métodos y atributos definidos en estas clases.
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+```
+
+### Paso 2. Crear la clase ``Juego``
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+
+```
+
+### Paso 3. constructor
+
+El método ``__init__()`` se ejecuta al crear una nueva **instancia** de la clase. Este método crea una nueva baraja y la baraja utilizando el método barajar().
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+```
+
+### Paso 4. método jugar
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+```
+
+### Paso 5. Cálculo de valor de la mano
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+
+```
+
+### Paso 6. Cálculo de fin del juego
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+        if mano_jugador.valor == 21:
+            print("has GANADO.")
+        else:
+            print("has PERDIDO.")
+        print("Tu puntuación final es de",
+              mano_jugador.calcular_valor())
+```
+
+### Paso 7. Comienzo de la partida (main)
+
+``` py linenums="1"
+from baraja import Baraja
+from mano import Mano
+
+class Juego:
+    def __init__(self):
+        self.baraja = Baraja()
+        self.baraja.barajar()
+
+    def jugar(self):
+        mano_jugador = Mano()
+        mano_jugador.añadir_carta(self.baraja.repartir())
+        print("Tu mano es: ", mano_jugador.cartas,
+              "lo que hace un total de: ", mano_jugador.calcular_valor())
+        while mano_jugador.valor < 21:
+            action = input("Quieres PEDIR carta o PASAR? ").lower()
+            if action == "pedir":
+                mano_jugador.añadir_carta(self.baraja.repartir())
+                print("Tu mano es: ", mano_jugador.cartas,
+                      "lo que hace un total de: ", mano_jugador.calcular_valor())
+            else:
+                print("Tu puntuación final es de",
+                      mano_jugador.calcular_valor())
+                return
+        if mano_jugador.valor == 21:
+            print("has GANADO.")
+        else:
+            print("has PERDIDO.")
+        print("Tu puntuación final es de",
+              mano_jugador.calcular_valor())
+
+if __name__ == '__main__':
+    print("hola")
+    juego = Juego()
+    juego.jugar()
 ```

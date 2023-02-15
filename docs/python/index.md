@@ -2,6 +2,10 @@
 
 En este apartado nos vamos a centrar en aprender nosotros a crear un programa para hacer una determinada tarea.
 
+Aquí podrás encontrar los [Juegos](juegos/) que creamos en las clases.
+
+## El lenguaje Python
+
 Existen muchos lenguajes de programación, que son como diferentes idiomas. Cada uno tiene unas palabras propias y una determinada forma de escribirse, y se utilizan para tareas muy variadas. Nosotros vamos a aprender a utilizar **Python**, uno de los lenguajes más populares, pero hay muchos más.
 
 ![imagen](img/2023-01-19-10-21-27.png)
@@ -26,7 +30,7 @@ print("esta línea está mal")
 print("la línea anterior tendria que terminar en ;");
 ```
 
-- Si no cabe toda la instrucción, ontinuar en siguiente línea (/)
+- Si no cabe toda la instrucción, continuar en siguiente línea (/)
 - Al final de las líneas no se coloca ; ni se utilizan { }
 
 En un programa, las líneas están numeradas para conocer en qué lugar del programa nos encontramos, pero los números no tienen ningún efecto en especial.

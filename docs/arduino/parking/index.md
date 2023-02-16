@@ -1,6 +1,6 @@
 # Objetivo
 
-La idea de este proyecto es crear un sistema automático de control de un aparcamiento utilizando Arduino
+La idea de este proyecto es crear un sistema automático de control de un aparcamiento utilizando``Arduino``
 
 ![imagen](img/2022-11-13-11-36-13.png)
 

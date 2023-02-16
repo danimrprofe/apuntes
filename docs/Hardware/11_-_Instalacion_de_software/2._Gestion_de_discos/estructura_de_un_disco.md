@@ -47,7 +47,3 @@ Primer bloque:  __0 \- 0 \- 1__
   * No contiene datos ni programas de ningún tipo\.
 
 ![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria4.png)
-
-
-
-

@@ -26,7 +26,7 @@ https://sites.google.com/site/saratecnoeso/1o-bachillerato/writer
 
 - App inventor
 - Sketchup
-- GIMP
+- ``GIMP``
 - Inkscape
 
 # TIC 4 ESO

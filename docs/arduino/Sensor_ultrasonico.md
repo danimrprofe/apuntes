@@ -11,7 +11,7 @@ El HC-SR04 incorpora una **librería** diseñada  específicamente para estos se
 Para hacer una prueba sencilla de funcionamiento del sensor, necesitaremos:
 
 ```
-(1) x Placa Arduino UNO
+(1) x Placa``Arduino`` UNO
 (1) x Módulo de sensor ultrasónico
 (4) x F M cables (cables de hembra a macho DuPont)
 ```
@@ -57,7 +57,7 @@ Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la s
 
 ## Conexión
 
-Aquí podemos ver como conectar los cuatro pines del sensor al Arduino Uno.
+Aquí podemos ver como conectar los cuatro pines del sensor al``Arduino`` Uno.
 
 ![imagen](media/image89.jpeg)
 

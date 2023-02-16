@@ -24,7 +24,7 @@ Yo aprendí a crear webs a torta limpia. Es decir, bloc de notas, html, javascri
 
 Esto es otro nivel, JavaScript está hasta en la sopa y la web completa se crea con JavaScript , tanto en cliente como en servidor. A esto nos ayudan los frameworks, para no tener que hacer las webs de cero, y nos dan muchas herramientas ya prefabricadas, con las que nosotros nos podemos montar nuestra web.
 
-Pero vamos, que si no sabes nada de javascript, has vendido cromos. Por lo menos lo básico de su funcionamiento. Por suerte, existe: una web oficial con documentación a cascoporro, guías, faqs que, junto con youtube y stackoverflow os pueden ayudar a salir adelante.
+Pero vamos, que si no sabes nada de javascript, has vendido cromos. Por lo menos lo básico de su funcionamiento. Por suerte, existe: una web oficial con documentación a cascoporro, guías, faqs que, junto con``YouTube`` y stackoverflow os pueden ayudar a salir adelante.
 
 ## Componentes Vue.js
 

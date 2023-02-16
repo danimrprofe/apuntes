@@ -1,8 +1,8 @@
 # Sistemas de partículas
 
-Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En Blender, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
+Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
 
-Los sistemas de partículas en Blender se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
+Los sistemas de partículas en ``Blender`` se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
 
 ![imagen](media/image1.png)
 
@@ -36,13 +36,13 @@ Le damos material y color para que se vea. Vamos a crear un material nuevo y le 
 
 Le damos las características que queramos, que hagan que los copos se vean lo más similares posibles a la nieve real.
 
-Metálico y especular son ambos tipos de materiales que se pueden usar en Blender. Los materiales **metálicos** generalmente se usan para crear objetos metálicos, mientras que los materiales **especulares** se usan para crear objetos más brillantes o reflectantes.
+Metálico y especular son ambos tipos de materiales que se pueden usar en ``Blender``. Los materiales **metálicos** generalmente se usan para crear objetos metálicos, mientras que los materiales **especulares** se usan para crear objetos más brillantes o reflectantes.
 
 ![imagen](media/image6.png)
 
 ## 2. Crear un plano con emisiones
 
-Los sistemas de partículas en Blender se pueden controlar usando **emisores**, que son objetos que se usan para generar las partículas.
+Los sistemas de partículas en ``Blender`` se pueden controlar usando **emisores**, que son objetos que se usan para generar las partículas.
 
 Los **emisores** pueden estar configurados para emitir partículas de forma continua o bajo ciertas condiciones, como cuando se colisionan con otro objeto.
 

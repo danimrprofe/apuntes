@@ -19,7 +19,7 @@
   - [Lugar de ejecución](#Lugar-de-ejecuci%C3%B3n)
   - [CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS](#CARACTER%C3%8DSTICAS-DE-LOS-LENGUAJES-M%C3%81S-DIFUNDIDOS)
     - [C](#C)
-    - [C++](#C)
+    - [``C++``](#C)
     - [`Java`,](#Java)
     - [`PHP`,](#PHP)
     - [Python](#Python)
@@ -153,7 +153,7 @@ como MOV, ADD, CALL o JMP.
 
 ### C
 
-- Uno de los mejor considerados actualmente (junto con C++ y `Java`, que
+- Uno de los mejor considerados actualmente (junto con ``C++`` y `Java`, que
 mencionaremos a continuación), porque no es demasiado difícil de aprender y
 - Permite un grado de control del ordenador muy alto, combinando características de lenguajes de
 alto y bajo nivel.
@@ -161,7 +161,7 @@ alto y bajo nivel.
 - Asegura que se pueden convertir programas en C de un ordenador a otro o de un sistema
 operativo a otro con bastante menos esfuerzo que en otros lenguajes.
 
-### C++
+### ``C++``
 
 - Un lenguaje desarrollado a partir de C, que
 - permite Programación Orientada a Objetos, por lo que resulta más adecuado para proyectos de una cierta envergadura.
@@ -169,7 +169,7 @@ operativo a otro con bastante menos esfuerzo que en otros lenguajes.
 
 ### `Java`,
 
-- Desarrollado a su vez a partir de C++
+- Desarrollado a su vez a partir de ``C++``
 - Elimina algunos de sus inconvenientes
 - Ha alcanzado una gran difusión gracias a su empleo en Internet.
 
@@ -242,4 +242,3 @@ propia bien formada al respecto, pero es aconsejable no perder la pista de lengu
 como `Haskell` e intentar comprender el paradigma de la programación declarativa para
 crecer como profesionales del desarrollo de software y sobre todo mantener una postura
 abierta y alejar los talibanismos y la polémica estéril.
-

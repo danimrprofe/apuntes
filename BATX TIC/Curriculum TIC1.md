@@ -156,45 +156,45 @@
 
 ### Unidad 1. Nuevas tecnologías de la información y la comunicación en la sociedad
 
-- 1. Introducción 
-  - 1.1. Los medios técnicos en las TIC 
-- 2. Historia de la informática 
-  - 2.1. El cálculo y el tratamiento de la información en la Edad Antigua 
-  - 2.2. La era de las máquinas 
-  - 2.3. Los orígenes de la programación 
-  - 2.4. Evolución de los ordenadores 
-- 3. El lenguaje de los ordenadores 
-  - 3.1. El código binario natural 
-  - 3.2. El código BCD 
-  - 3.3. El código ASCII 
-- 4. La globalización de la información y del conocimiento 
-  - 4.1. Los antecedentes de la globalización del conocimiento 
-  - 4.2. El negocio informático global 
-  - 4.3. La difusión del conocimiento 
-- 5. Nuevos sectores laborales. Los cambios de las TIC 
-  - 5.1. La aparición de nuevos sectores 
-  - 5.2. El e-business o negocio electrónico 
-  - 5.3. Nuevas aplicaciones de las TIC para el día a día 
-- 6. La brecha digital 
-  - 6.1. ¿Qué elementos intervienen en la brecha digital? 
-  - 6.2. Hacia la reducción de la brecha digital 
-- 7. Tendencias evolutivas de las TIC Unidad 
+- 1. Introducción
+  - 1.1. Los medios técnicos en las TIC
+- 2. Historia de la informática
+  - 2.1. El cálculo y el tratamiento de la información en la Edad Antigua
+  - 2.2. La era de las máquinas
+  - 2.3. Los orígenes de la programación
+  - 2.4. Evolución de los ordenadores
+- 3. El lenguaje de los ordenadores
+  - 3.1. El código binario natural
+  - 3.2. El código BCD
+  - 3.3. El código ASCII
+- 4. La globalización de la información y del conocimiento
+  - 4.1. Los antecedentes de la globalización del conocimiento
+  - 4.2. El negocio informático global
+  - 4.3. La difusión del conocimiento
+- 5. Nuevos sectores laborales. Los cambios de las TIC
+  - 5.1. La aparición de nuevos sectores
+  - 5.2. El e-business o negocio electrónico
+  - 5.3. Nuevas aplicaciones de las TIC para el día a día
+- 6. La brecha digital
+  - 6.1. ¿Qué elementos intervienen en la brecha digital?
+  - 6.2. Hacia la reducción de la brecha digital
+- 7. Tendencias evolutivas de las TIC Unidad
 
 ### Unidad 2. Hardware. Componentes físicos
 
 - 1. Hardware básico de un ordenador
-- 2. Cajas y fuentes 
+- 2. Cajas y fuentes
 - 3. Memoria del ordenador
   - 3.1. Jerarquía de memoria
-  - 3.2. La memoria principal 
-- 4. Unidad central de proceso 
+  - 3.2. La memoria principal
+- 4. Unidad central de proceso
   - 4.1. Registros
   - 4.2. Unidad aritmético-lógica
   - 4.3. Unidad de control
   - 4.4. Microprocesadores
 - 5. Buses de comunicación
-  - 5.1. Tipos de buses de entrada/salida 
-- 6. La placa base 
+  - 5.1. Tipos de buses de entrada/salida
+- 6. La placa base
   - 6.1. Factor de forma
   - 6.2. Chipset
   - 6.3. Canales de memoria
@@ -204,16 +204,16 @@
   - 7.2. Periféricos de salida
   - 7.3. Conexión de los periféricos
   - 7.4. Dispositivos de almacenamiento
-- 8. Estado de la técnica 
+- 8. Estado de la técnica
   - 8.1. Componentes
   - 8.2. Dispositivos inteligentes (smart devices)
   - 8.3. Periféricos
 
 ### Unidad 3. Software,interfaz con el usuario
 
-- 1. Introducción 
+- 1. Introducción
 - 2. Tipos de software
-  - 2.1. Según su funcionalidad 
+  - 2.1. Según su funcionalidad
   - 2.2. Según sus limitaciones de uso
 - 3. Licencias
 - 4. El sistema operativo
@@ -230,31 +230,31 @@
 
 ### Unidad 4. Redes de comunicaciones
 
-- 1. Introducción 
-  - 1.1. Red de ordenadores 
-- 2. Tipos de redes 
-  - 2.1. Según la cobertura 
-  - 2.2. Según el propietario 
-  - 2.3. Según el medio de transmisión 
-  - 2.4. Según el modelo de transmisión 
-  - 2.5. Según la topología 
-- 3. Arquitectura de red 
-  - 3.1. Modelo de referencia OSI 
-  - 3.2. Arquitectura TCP/IP 
-- 4. Redes de área local 
-  - 4.1. Hardware de una LAN 
-  - 4.2. Topología en estrella 
-  - 4.3. Conexión a Internet 
-  - 4.4. Seguridad en una LAN 
-- 5. Redes inalámbricas 
-  - 5.1. WLAN 
-  - 5.2. WPAN 
-- 6. Trabajo en red 
-  - 6.1. Red entre iguales y red cliente/servidor 
-  - 6.2. Configuración de la red 
-  - 6.3. Usuarios y grupos 
-  - 6.4. Permisos 
-  - 6.5. El reparto de recursos 
+- 1. Introducción
+  - 1.1. Red de ordenadores
+- 2. Tipos de redes
+  - 2.1. Según la cobertura
+  - 2.2. Según el propietario
+  - 2.3. Según el medio de transmisión
+  - 2.4. Según el modelo de transmisión
+  - 2.5. Según la topología
+- 3. Arquitectura de red
+  - 3.1. Modelo de referencia OSI
+  - 3.2. Arquitectura TCP/IP
+- 4. Redes de área local
+  - 4.1. Hardware de una LAN
+  - 4.2. Topología en estrella
+  - 4.3. Conexión a Internet
+  - 4.4. Seguridad en una LAN
+- 5. Redes inalámbricas
+  - 5.1. WLAN
+  - 5.2. WPAN
+- 6. Trabajo en red
+  - 6.1. Red entre iguales y red cliente/servidor
+  - 6.2. Configuración de la red
+  - 6.3. Usuarios y grupos
+  - 6.4. Permisos
+  - 6.5. El reparto de recursos
 
 ### Unidad 5. Procesamiento de textos, autoedición y presentaciones
 
@@ -269,8 +269,8 @@
 - 4. Maquetación
 - 5. Conversión de documentos de texto al formato de documento portátil (PDF)
   - 5.1. Opciones de conversión de LibreOffice
-- 6. Autoedición con Scribus 
-2. El asistente de presentaciones 
+- 6. Autoedición con Scribus
+2. El asistente de presentaciones
    - 7.1. Consejos para la realización de presentaciones
    - 7.2. Primer contacto con LibreOffice Impress
    - 7.3. El entorno de trabajo
@@ -279,39 +279,39 @@
 
 ### Unidad 6. Edición y diseño asistido por ordenador
 
-- 1. Edición de imágenes digitales 
-  - 1.1. Tipos de imágenes 
-  - 1.2. Color de una imagen 
-  - 1.3. Resolución de impresión 
-  - 1.4. Tamaño del archivo 
-  - 1.5. Dispositivos para obtener imágenes digitales 
-  - 1.6. Software para el tratamiento de imágenes digitales 
-  - 1.7. Animaciones 
-- 2. Fotografía digital. Formatos 
+- 1. Edición de imágenes digitales
+  - 1.1. Tipos de imágenes
+  - 1.2. Color de una imagen
+  - 1.3. Resolución de impresión
+  - 1.4. Tamaño del archivo
+  - 1.5. Dispositivos para obtener imágenes digitales
+  - 1.6. Software para el tratamiento de imágenes digitales
+  - 1.7. Animaciones
+- 2. Fotografía digital. Formatos
   - 2.1. Tamaño
   - 2.2. Ajustes de la imagen
 - 3. Edición de sonido y vídeo digitales
-  - 3.1. Sonido digital 
+  - 3.1. Sonido digital
   - 3.2. Vídeo digital
-  - 3.3. Formatos de sonido y vídeo digital 
-  - 3.4. Dispositivos de captura de sonido y vídeo digitales 
+  - 3.3. Formatos de sonido y vídeo digital
+  - 3.4. Dispositivos de captura de sonido y vídeo digitales
   - 3.5. Aplicaciones de edición
 
 ### Unidad 7. Hojas de cálculo y softwarede análisis de datos numéricos
 
-- 1. Hojas de cálculo: Calculo 
-  - 1.1. Operadores, fórmulas y funciones 
-  - 1.2. Referencias relativas y absolutas 
-  - 1.3. Búsqueda de objetivos 
-  - 1.4. Confección de gráficos 
+- 1. Hojas de cálculo: Calculo
+  - 1.1. Operadores, fórmulas y funciones
+  - 1.2. Referencias relativas y absolutas
+  - 1.3. Búsqueda de objetivos
+  - 1.4. Confección de gráficos
   - 1.5. Resolución de problemas mediante hojas de cálculo
-  - 1.6. Tablas dinámicas 
-- 2. Software de análisis. GeoGebra 
-  - 2.1. El entorno de trabajo 
-  - 2.2. Primeros pasos 
-  - 2.3. Geometría 
-  - 2.4. Polinomios 
-  - 2.5. Funciones 
+  - 1.6. Tablas dinámicas
+- 2. Software de análisis. GeoGebra
+  - 2.1. El entorno de trabajo
+  - 2.2. Primeros pasos
+  - 2.3. Geometría
+  - 2.4. Polinomios
+  - 2.5. Funciones
   - 2.6. Ecuaciones
 
 ### Unidad 8. Bases de datos
@@ -326,29 +326,29 @@
 - 5. Creación de tablas con LibreOffice: BASE
   - 5.1. La creación de la base de datos
   - 5.2. Creación de tablas
-  - 5.3. Configurando las relaciones entre tablas 
-- 6. Selección de información y consultas 
-  - 6.1. La realización de consultas sencillas 
-  - 6.2. Análisis del lenguaje SQL 
-  - 6.3. Consultas compuestas con operativa matemática 
-- 7. Formularios e informes 
-  - 7.1. Empleo de formularios 
-  - 7.2. Los informes 
+  - 5.3. Configurando las relaciones entre tablas
+- 6. Selección de información y consultas
+  - 6.1. La realización de consultas sencillas
+  - 6.2. Análisis del lenguaje SQL
+  - 6.3. Consultas compuestas con operativa matemática
+- 7. Formularios e informes
+  - 7.1. Empleo de formularios
+  - 7.2. Los informes
 
 ### Unidad 9. Lenguajes de programación
 
-- 1. Historia de los lenguajes de programación 
-- 2. Clasificación de los lenguajes de programación 
-- 2.1. Clasificación por nivel de abstracción 
-- 2.2. Clasificación por el modo de ejecución 
-- 2.3. Clasificación por el paradigma de programación 
-- 2.4. Clasificación por el lugar de ejecución 
-- 3. Elementos de los lenguajes de programación 
-- 4. Diagramas de flujo 
-- 4.1. Estructuras de control: selección 
-- 4.2. Estructuras de control: repetición 
-- 5. El lenguaje de programación C 
-- 5.1. Elementos de C 
+- 1. Historia de los lenguajes de programación
+- 2. Clasificación de los lenguajes de programación
+- 2.1. Clasificación por nivel de abstracción
+- 2.2. Clasificación por el modo de ejecución
+- 2.3. Clasificación por el paradigma de programación
+- 2.4. Clasificación por el lugar de ejecución
+- 3. Elementos de los lenguajes de programación
+- 4. Diagramas de flujo
+- 4.1. Estructuras de control: selección
+- 4.2. Estructuras de control: repetición
+- 5. El lenguaje de programación C
+- 5.1. Elementos de C
 - 5.2. Estructura de un programa en C
 
 
@@ -424,14 +424,14 @@
 
 Propuesta de temporalización de los distintos bloques y unidades didácticas  Cronograma de temporalización de clases de 2º de Bachillerato (basado en un año escolar estándar de 33 semanas (2 horas /semana)
 
-### Unidad 1. Programación algorítmica.  Estructuras de datos 
+### Unidad 1. Programación algorítmica.  Estructuras de datos
 
 - 1. Computación y tipos de datos
 - 2. Uso avanzado de C
 - 3. Creación de algoritmos
-- 4. Complejidad de algoritmos 
-- 5. Estructuras de datos básicas 
-- 6. Recursividad 
+- 4. Complejidad de algoritmos
+- 5. Estructuras de datos básicas
+- 6. Recursividad
 
 ### Unidad 2. Programación práctica
 
@@ -439,15 +439,15 @@ Propuesta de temporalización de los distintos bloques y unidades didácticas  C
 - 2. Lenguaje de programación Java
 - 3. Entornos de desarrollo integrado IDE
 - 4. Elaboración de programas en Eclipse
-- 5. Depuración de programas en Eclipse 
+- 5. Depuración de programas en Eclipse
 
 ### Unidad 3. Lenguajes de programación. Control de procesos
 
 - 1. Los sistemas de control
 - 2. La computación física y el Internet de las Cosas (IoT)
-- 3. Arduino. Entorno de programación, simulación y control 
+- 3.``Arduino``. Entorno de programación, simulación y control
 
-### Unidad 4. Simulación 
+### Unidad 4. Simulación
 
 - 1. ¿Qué es simulación?
 - 2. Simulación y modelado por ordenador
@@ -463,7 +463,7 @@ Propuesta de temporalización de los distintos bloques y unidades didácticas  C
 
 ### Unidad 6. Los servicios
 
-- 1. Introducción a la web. web y el trabajo con redes sociales 
+- 1. Introducción a la web. web y el trabajo con redes sociales
 - 2. Los servicios de Internet
 - 3. El trabajo colaborativo y las herramientas de trabajo en grupo
 - 4. Las Aplicaciones web
@@ -474,7 +474,7 @@ Propuesta de temporalización de los distintos bloques y unidades didácticas  C
 - 1. El lenguaje de marcas de hipertexto HTML
 - 2. El protocolo de transferencia de ficheros FTP
 - 3. Los estándares de accesibilidad de la información
-- 4. El lenguaje de marcas XML 
+- 4. El lenguaje de marcas XML
 
 ### Unidad 8. Seguridad informática
 

@@ -4,7 +4,7 @@
 
 | Cant | Elemento                                     |
 | ---- | -------------------------------------------- |
-| 1    | Placa Arduino UNO                            |
+| 1    | Placa``Arduino`` UNO                         |
 | 1    | Servo (SG90)                                 |
 | 1    | M cables (cables de puente de macho a macho) |
 

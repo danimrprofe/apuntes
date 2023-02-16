@@ -2,11 +2,10 @@
 
 ## ¿Qué es SSH?
 
-En la actualidad se utiliza Secure SHell (SSH).
+``SSH`` permite abrir una sesión de terminal desde un
+cliente remoto sobre el sistema servidor, como ``telnet``, pero sobre una conexión cifrada y segura.
 
-SSH permite abrir una sesión de terminal desde un
-cliente remoto sobre el sistema servidor, como el
-telnet, pero sobre una conexión cifrada y segura.
+![](img/2023-02-16-16-54-16.png)
 
 - SSH utiliza por defecto el puerto 22.
 - Usa el modelo cliente-servidor y la seguridad se
@@ -35,13 +34,13 @@ Podemos hacero con systemctl start [stop | restart | status] ssh
 
 ## Configuración de puertos
 
-El protocolo SSH tiene asignado el puerto 22, por lo que por defecto cliente y servidor van a intentar utilizar este puerto, a no ser que lo cambiemos. 
+El protocolo SSH tiene asignado el puerto 22, por lo que por defecto cliente y servidor van a intentar utilizar este puerto, a no ser que lo cambiemos.
 
-En el archivo de configuración de openSSH podemos cambiar el puerto por el que nosotros queramos. 
+En el archivo de configuración de openSSH podemos cambiar el puerto por el que nosotros queramos.
 
-El servidor deberá tener abierto el puerto 22 o el que hayamos cambiado, para que pueda escuchar peticiones y se puedan conectar los clientes. 
+El servidor deberá tener abierto el puerto 22 o el que hayamos cambiado, para que pueda escuchar peticiones y se puedan conectar los clientes.
 
-Al conectar con el cliente, deberemos especificar también el nuevo puerto al que nos queremos conectar. 
+Al conectar con el cliente, deberemos especificar también el nuevo puerto al que nos queremos conectar.
 
 ## Archivos de configuración
 
@@ -60,10 +59,10 @@ Los archivos de configuración se encuentran en `/etc/ssh/`
 Indicar en que dirección escuchar, el puerto y qué versión del protocolo utilizar:
 
 ```properties linenums="1" title="config"
-Port 22 
+Port 22
 #ListenAddress :: (IPv6)
 #ListenAddress 0.0.0.0 (todas las interfaces)
-ListenAddress 192.168.100.100 
+ListenAddress 192.168.100.100
 Protocol 2
 ```
 
@@ -99,14 +98,14 @@ En la máquina servidor tendrá que haber un usuario llamado pepe, y tendremos q
 ### Configuración del cliente
 
 Necesitamos crear un archivo de configuración /home/john/.ssd/config
-Si no existe la carpeta: 
+Si no existe la carpeta:
 
 ```shell
 john@elmuro$ cd ~
 john@elmuro$ mkdir .ssh
 ```
 
-Crear archivo de configuración: 
+Crear archivo de configuración:
 
 ```shell
 john@elmuro$ nano config
@@ -119,8 +118,8 @@ Si queremos tener opciones que apliquen a todos los host: Host *
 ```shell
 john@elmuro$ cat .ssh/config
 Host internalia
-    Hostname 172.0.0.9 
-    User sansa 
+    Hostname 172.0.0.9
+    User sansa
     Port 22
 john@elmuro$ ssli invernalia sansaP172.0.0.9’s password:
 Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-39-generic x86_64)
@@ -162,16 +161,16 @@ Especificando el comand a continuación de ssh
 
 ## Editar archivos remotamente
 
-También podemos editar archivos remotamente: 
+También podemos editar archivos remotamente:
 
     vim scp://remotehost/remotefile
 
-La ruta base será la de home del usuario (`/home/usuario/remotefile`). 
+La ruta base será la de home del usuario (`/home/usuario/remotefile`).
 Desde VIM podemos navegar por el sistema de ficheros a través de las carpetas.
 
 ## Autenticación por clave pública
 
-Ssh-keygen es una herramienta para crear nuevos pares de claves de autenticación para SSH. 
+Ssh-keygen es una herramienta para crear nuevos pares de claves de autenticación para SSH.
 Dichos pares de claves se utilizan para automatizar inicios de sesión
 Generar un par de claves:
 
@@ -180,7 +179,7 @@ Generar un par de claves:
 La pública se guardará en `~/.ssh/id_rsa.pub`
 La privada se guardará en `~/.ssh/id_rsa`
 
-### Copiar clave pública 
+### Copiar clave pública
 
 Ahora deberíamos copiar la clave pública en todas las máquinas a las que quiera conectar:
 Copiarlas en la carpeta ~/.ssh/authorized_keys a mano. Para ello:
@@ -199,7 +198,7 @@ Podemos utilizar el comando who para ver cuántos usuarios están conectados al 
 
     who
 
-También podemos consultar los accesos en el archivo: 
+También podemos consultar los accesos en el archivo:
 
     tail -10 /var/log/auth.log
 
@@ -211,7 +210,7 @@ Los usuarios que pueden ejecutar comandos SUDO tienen que pertenecer al grupo SU
 
 Tenemos que iniciar sesión con un usuario que pueda hacer sudos.
 
-Agregar un usuario al grupo: 
+Agregar un usuario al grupo:
 
     sudo adduser sansa sudo
 
@@ -239,7 +238,7 @@ Podemos crear archivos de diferentes tamaños para hacer pruebas.
 Truncate hace más grande o más pequeño un archivo.
 Con -s le indicaremos el tamaño en bytes
 
-    truncate -s 200MB backup01  
+    truncate -s 200MB backup01
 
 ### Copiar varios archivos al mismo tiempo
 
@@ -287,7 +286,7 @@ Al tratarse de un servicio tan delicado, conviene hacer una serie de modificacio
 
 ### Putty
 
-Cliente SSH, entre otros 
+Cliente SSH, entre otros
 Se usa para interactuar con el servidor directamente, a través de una interfaz de comandos.
 
 - https://www.solvetic.com/tutoriales/article/787-primeros-pasos-con-putty-y-su-configuracion/
@@ -300,7 +299,7 @@ https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/primeros-pasos-con
 
 ### mRemote
 
-Administrador de conexiones remotas 
+Administrador de conexiones remotas
 De código abierto
 Con pestañas
 Multiprotocolo

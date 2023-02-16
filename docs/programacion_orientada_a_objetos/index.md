@@ -4,7 +4,6 @@
 
 La Programación Orientada a Objetos (POO) es un paradigma de programación que ha supuesto un cambio radical respecto a la programación tradicional. El desarrollo de software gira entorno a los objetos, encapsulando métodos y variables en módulos llamados **objetos**, los cuales pueden modificar de forma indirecta sus variables mediante operaciones. Los objetos se utilizan para construir programas.
 
-
 Ampliamente extendido gracias a:
 
 - Alta reutilización de código
@@ -55,26 +54,17 @@ Existen **clases abstractas**, aquellas que no tendrán instancias. Para facilit
 
 ## 4. Herencia
 
-- Se pueden definir nuevas clases basadas en clases existentes. Reutilización de código, se pueden añadir y/o redefinir nuevas variables y métodos
-- Interfaces
-  - Se puede realizar herencia múltiple utilizando interfaces.
-  - Interfaces contienen declaraciones de métoods sin definición y constantes
-  - Una clase puede implementar una o varias interfaces
-- Niveles
-  - Raíz
-  - Intermedios
-  - Terminales
-- Simple y múltiple (solo se hereda de una clase o de varias)
-- Estricta y no estricta (se pueden heredar métodos y redefinirlos)
-- Selectiva y no selectiva (se tienen que heredar todos los elementos de una clase)
+La ``herencia`` es un mecanismo de programación orientada a objetos que permite definir nuevas clases basadas en clases existentes. Esto permite reutilizar el código al añadir y/o redefinir nuevas variables y métodos.
+
+La ``herencia múltiple`` se realiza mediante ``interfaces``, que contienen declaraciones de métodos sin definición y constantes, y que pueden ser implementadas por una o varias clases.
+
+Existen varios ``tipos de herencia`` que se clasifican en términos de los niveles de herencia, la cantidad de clases de las que se hereda, la estrictura con la que se hereda y la selectividad con la que se hereda. Estos tipos incluyen herencia raíz, intermedios y terminales, simple y múltiple, estricta y no estricta y selectiva y no selectiva.
 
 ## 5. Encapsulación
 
-- Ocultar información que no es pertinente o necesaria para otro objeto
-- Se puede implementar mediante permisos
-- Clases pueden ser declaradas como públicas o package
-- Las variables pueden ser public, private, protected, package
-- Se puede controlar el acceso y uso inadecuado
+La programación orientada a objetos permite ocultar información que no es pertinente o necesaria para otro objeto. Esto se puede implementar mediante permisos aplicando diferentes niveles de acceso.
+
+Por ejemplo, en Java, las clases se pueden declarar como públicas o package, mientras que las variables pueden ser public, private, protected o package. Esto permite controlar el acceso y evitar el uso inadecuado de los datos.
 
 ## 6. Polimorfismo
 
@@ -115,6 +105,6 @@ a extensibilidad y la reutilización permiten a los programadores añadir nuevas
 
 ## 12. Lenguajes de programación orientado a objetos
 
-- Puros e hibridos
-- C++
-- Java
+Existen dos tipos de lenguajes orientados a objetos: ``puros`` e híbridos. Los lenguajes de programación puramente orientados a objetos, como ``C++`` y Java, están diseñados para construir aplicaciones orientadas a objetos desde el principio.
+
+Los lenguajes ``híbridos``, como Python, permiten programar tanto en un estilo orientado a objetos como en un estilo de programación de procedimientos. Esto les permite a los desarrolladores aprovechar las ventajas de ambos enfoques.

@@ -1,6 +1,6 @@
 # Trabajo 4º ESO.
 
-Los alumnos de 4º ESO han trabajado el tema de eletrónica analógica utilizando Arduino.
+Los alumnos de 4º ESO han trabajado el tema de eletrónica analógica utilizando``Arduino``.
 
 Para ello, han aprendido a diseñar, programar y simular circuitos variados utilizando principalmente resistencias, LEDs y botones.
 
@@ -8,11 +8,11 @@ Para ello, han aprendido a diseñar, programar y simular circuitos variados util
 
 Las prácticas que han realizado son:
 
-1. Parpadeo del LED incluído en el arduino
+1. Parpadeo del LED incluído en el``Arduino``
 
 ![imagen](2022-12-19-13-50-45.png)
 
-2. Parpadeo de un LED Rojo conectado a arduino.
+2. Parpadeo de un LED Rojo conectado a``Arduino``.
 
 ![imagen](2022-12-19-13-51-14.png)
 
@@ -25,7 +25,7 @@ Las prácticas que han realizado son:
 
 ## Procedimiento
 
-Se deberá realizar una simulación con Tinkercad circuits de todo el montaje, así como del código necesario.
+Se deberá realizar una simulación con``Tinkercad`` circuits de todo el montaje, así como del código necesario.
 
 ![imagen](2022-12-19-13-28-36.png)
 

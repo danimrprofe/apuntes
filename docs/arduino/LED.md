@@ -5,7 +5,7 @@
 En esta lección, usted aprenderá cómo cambiar el brillo de un LED usando diferentes valores  de resistencia.
 Componente necesario:
 ```
-- [x] (1) x Placa Arduino UNO
+- [x] (1) x Placa``Arduino`` UNO
 - [x] 1 LED rojo de 5 mm
 - [x] (1) x resistencia de 220 ohmios
 - [x] (1) x resistencia de 1 k ohm
@@ -64,7 +64,7 @@ Si encuentra este método de enfoque demasiado complicada, puedes leer la bander
 
 ![imagen](media/image57.jpeg)
 
-La **placa de desarrollo Arduino UNO** es una conveniente fuente de 5 voltios, que vamos a utilizar para alimentar el LED y la resistencia. No necesita hacer nada con su UNO, salvo que lo conecte un cable USB.
+La **placa de desarrollo``Arduino`` UNO** es una conveniente fuente de 5 voltios, que vamos a utilizar para alimentar el LED y la resistencia. No necesita hacer nada con su UNO, salvo que lo conecte un cable USB.
 
 - Con la resistencia de **220 Ω** en su lugar, el LED debe ser bastante brillante.
 - Si cambia  la resistencia 220  Ω para la resistencia de **1 kΩ**, el LED aparecerá regulador un  poco.
@@ -77,4 +77,3 @@ Por el momento, tienes 5V va a una pata de la resistencia, la otra pata de la re
 Probablemente desee volver a colocar el resistor 220Ω.
 
 No importa qué lado del LED que ponemos la resistencia, siempre y cuando está allí en algún lugar
-

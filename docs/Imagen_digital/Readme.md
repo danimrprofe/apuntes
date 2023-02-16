@@ -2,7 +2,7 @@
 
 # Imatge digital
 
-## Obtenció d'imatges digitals 
+## Obtenció d'imatges digitals
 
 - Taller fotografia
 - Smartphone y cámaras. Reflex y compactas
@@ -28,17 +28,14 @@ Sistemes de color: RGB, CMYK. Profunditat de color. Pantone
 
 - Visualitzadors.
 - Fotos al núvol: Google Photos, iCloud, Flickr
-- Eines CAD: Autocad, Sketchup, Tinkercad
+- Eines CAD: Autocad, Sketchup,``Tinkercad``
 - Il·lustració: Inkscape, Adobe Illustrator
 
-## Muntatges i edició amb GIMP. 
+## Muntatges i edició amb ``GIMP``.
 
 
 
-- Modificar la lluminositat i el color.  
-- Treballar amb seleccions, Màscares i capes. 
-- Composició de fotografies.  Treballar amb textos.  
+- Modificar la lluminositat i el color.
+- Treballar amb seleccions, Màscares i capes.
+- Composició de fotografies.  Treballar amb textos.
 - Aplicar filtres i estils de capa. Capes y máscares
-
-
-

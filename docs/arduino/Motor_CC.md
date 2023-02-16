@@ -6,7 +6,7 @@ En esta lección, aprenderá a controlar un pequeño motor DC (corriente continu
 
 ### Componentes necesarios
 
-- (1) x Arduino
+- (1) x``Arduino``
 - x Protoboard
 - x L293D IC
 - (1) x Aspa de ventilador y motor de3-6v
@@ -16,7 +16,7 @@ En esta lección, aprenderá a controlar un pequeño motor DC (corriente continu
 
 ## Fuente de alimentación de la placa
 
-El pequeño motor de corriente continua es probable que use más energía que la que Arduino puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
+El pequeño motor de corriente continua es probable que use más energía que la que``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
 
 ![imagen](media/image139.jpeg)
 
@@ -85,7 +85,7 @@ Con las entradas de datos adecuadas, cada par de conductores forma una unidad re
 
 Me harté de diagramas de pinout indescifrables dentro de las hojas de datos, por lo que han diseñado mi propio que creo que da más información pertinente.
 
-Hay 3 cables conectados al Arduino, 2 cables conectados al motor y 1 alambre conectado a una batería.
+Hay 3 cables conectados al``Arduino``, 2 cables conectados al motor y 1 alambre conectado a una batería.
 
 Para utilizar este pin:
 
@@ -97,7 +97,7 @@ Sí, usted puede funcionar con solamente un motor conectado.
 
 ## Control de la velocidad
 
-**M1 PWM** lo conectaremos a un pin PWM de Arduino. Está marcados en la ONU, el pin 5 es un ejemplo. Cualquier número entero entre 0 y 255, donde:
+**M1 PWM** lo conectaremos a un pin PWM de``Arduino``. Está marcados en la ONU, el pin 5 es un ejemplo. Cualquier número entero entre 0 y 255, donde:
 
 - 0 es apagado1
 - 128 es la mitad de velocidad
@@ -111,7 +111,7 @@ Según el valor se generará una señal PWM diferente.
 
 Entradas de dirección de **M1 0/1** y **M1 1/0**
 
-- Conectar estos pines de Arduino digitales dos a dos.
+- Conectar estos pines de``Arduino`` digitales dos a dos.
 - Un pin de salida tan alto y el otro pin como baja y el motor girará en un sentido.
 - Revertir las salidas a baja y alta, y el motor girará en sentido contrario.
 
@@ -127,9 +127,9 @@ Entradas de dirección de **M1 0/1** y **M1 1/0**
 
 ### Diagrama de cableado
 
-El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del Arduino. Tenga en cuenta que esto sería arriesgado sin que el L293D lo controlara.
+El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del``Arduino``. Tenga en cuenta que esto sería arriesgado sin que el L293D lo controlara.
 
-Nunca debería conectar un motor directamente al Arduino, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su Arduino, y con un motor grande, usted puede mirar un efecto interesante de la llama y de las chispas.
+Nunca debería conectar un motor directamente al``Arduino``, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su``Arduino``, y con un motor grande, usted puede mirar un efecto interesante de la llama y de las chispas.
 
 ![imagen](media/image148.jpeg)
 

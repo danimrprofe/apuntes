@@ -1,10 +1,4 @@
-![imagen](img/Gestion_de_copias_de_seguridad0.png)
-
-## Montaje y mantenimiento de sistemas y componentes informáticos
-
-_Implantación de sistemas operativos_
-
-## Gestión de copias de seguridad
+# Gestión de copias de seguridad
 
 * La copia de seguridad
   * Respaldo de la información
@@ -74,9 +68,8 @@ _Implantación de sistemas operativos_
 
 ![imagen](img/Gestion_de_copias_de_seguridad6.png)
 
-## Tipos de copia de seguridad
+## ¿Qué tipo de copia elegir?
 
-* ¿Qué tipo de copia elegir?
   * __Volumen de datos bajo__ : realizar siempre copias totales\.
   * __Volumen de datos alto y volumen de datos modificados bajo__
     * Una copia total y posteriormente copias diferenciales\.
@@ -162,4 +155,3 @@ __Tener 3 copias de seguridad diferentes \(original y 2 copias\)\.__
 __Tener 2 soportes diferentes__
 
 __Tener 1 copia fuera de la empresa\.__
-

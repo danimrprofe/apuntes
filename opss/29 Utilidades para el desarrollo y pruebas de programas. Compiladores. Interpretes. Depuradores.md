@@ -11,7 +11,7 @@ Tipos de traductores:
 - Compiladores
 - Intérpretes
 - Según lenguajes de programación uno u otro
-- C++ compilado
+- ``C++`` compilado
 - Java compilado e interpretado
 - SQL, interpretado
 

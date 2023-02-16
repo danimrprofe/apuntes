@@ -2,15 +2,15 @@
 
 ## Resumen
 
-En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R3 a parpadear el LED integrado de Arduino y cómo descargar programas pasos básicos
+En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R3 a parpadear el LED integrado de``Arduino`` y cómo descargar programas pasos básicos
 
 Componente necesario:
 
-- [x] (1) x Arduino Uno R3
+- [x] (1) x``Arduino`` Uno R3
 
 ![imagen](img/2022-11-29-16-46-42.png)
 
-## Placa Arduino UNO R3
+## Placa``Arduino`` UNO R3
 
 La placa de UNO R3 tiene unas filas de conectores a ambos lados que se utilizan para  conectar varios dispositivos electrónicos y plug-in **shields** que amplían su capacidad. También tiene un LED luminoso podemos controlar. Este  LED está construido sobre el UNO R3 y se refiere a menudo como la 'L' LED.
 
@@ -18,9 +18,9 @@ Este LED parpadea cuando se conecta a un enchufe del USB. Esto es porque las pla
 
 En esta lección, vamos a reprogramar el tablero UNO R3 con nuestro propio directorio de Blink y luego cambiar la tasa a la que parpadea.
 
-En la lección 0, configurar el IDE de Arduino y aseguró que podría encontrar el puerto serie correcto para conectarse a la placa UNO R3. Ahora ha llegado el momento para poner el  programa de prueba y la placa de UNO R3.
+En la lección 0, configurar el IDE de``Arduino`` y aseguró que podría encontrar el puerto serie correcto para conectarse a la placa UNO R3. Ahora ha llegado el momento para poner el  programa de prueba y la placa de UNO R3.
 
-El IDE de Arduino incluye una gran colección de dibujos de ejemplo, se puede cargar y usar.  Esto incluye un directorio de ejemplo para hacer el parpadeo del LED de 'L'.
+El IDE de``Arduino`` incluye una gran colección de dibujos de ejemplo, se puede cargar y usar.  Esto incluye un directorio de ejemplo para hacer el parpadeo del LED de 'L'.
 
 Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo archivo >  ejemplos > 01 conceptos básicos
 
@@ -30,10 +30,10 @@ Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo co
 
 ![imagen](media/image40.jpeg)
 
-Los dibujos de ejemplo incluidos con el IDE de Arduino son de 'sólo lectura'. Es decir, puedes subir a una Junta de UNO R3, pero si cambia, no se puede guardar como el archivo  mismo.
+Los dibujos de ejemplo incluidos con el IDE de``Arduino`` son de 'sólo lectura'. Es decir, puedes subir a una Junta de UNO R3, pero si cambia, no se puede guardar como el archivo  mismo.
 Puesto que vamos a cambiar este programa, lo primero que tienes que hacer es guardar su propia copia.
 
-En el menú archivo en el IDE de Arduino, seleccione `Guardar como.` y guarde el dibujo con  el nombre 'MyBlink'
+En el menú archivo en el IDE de``Arduino``, seleccione `Guardar como.` y guarde el dibujo con  el nombre 'MyBlink'
 
 ![imagen](media/image41.jpeg)
 
@@ -43,7 +43,7 @@ Ha guardado su copia de 'Blink' en su programabook. Esto significa que si alguna
 
 ![imagen](media/image43.jpeg)
 
-Conecte la placa de Arduino al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
+Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
 
 ![imagen](media/image44.png)
 
@@ -52,7 +52,7 @@ Nota:
 - El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen. Si usas 2560, entonces usted tendrá que elegir Mega 2560 como el tipo de Junta, otras opciones se pueden hacer de la misma manera.
 - El puerto serie (COM) puede ser diferente, del tipo COM3 o COM4 en su ordenador. Un puerto COM correcto se supone que es COMX (arduino XXX), que es por los criterios de  certificación.
 
-El IDE de Arduino mostrará la configuración actual en la parte inferior de la  ventana.
+El IDE de``Arduino`` mostrará la configuración actual en la parte inferior de la  ventana.
 
 ![imagen](media/image45.jpeg)
 
@@ -64,7 +64,7 @@ Si usted mira el área de estado del IDE, verá una barra de progreso y una seri
 
 ![imagen](media/image47.jpeg)
 
-A continuación, el estado cambiará a **subir**. En este punto, los LEDs de la Arduino deben comenzar a parpadear como se transfiere el dibujo.
+A continuación, el estado cambiará a **subir**. En este punto, los LEDs de la``Arduino`` deben comenzar a parpadear como se transfiere el dibujo.
 
 ![imagen](media/image48.jpeg)
 
@@ -106,9 +106,9 @@ pinMode(led, OUTPUT);
 }
 ```
 
-Cada programa Arduino debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.
+Cada programa``Arduino`` debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.
 
-En este caso, es un comando, que, como dice el comentario dice la placa Arduino que vamos  a utilizar el pin LED como salida.
+En este caso, es un comando, que, como dice el comentario dice la placa``Arduino`` que vamos  a utilizar el pin LED como salida.
 
 También es obligatorio para un boceto tener una función de **loop**. A diferencia de la función  de **setup** que se ejecuta sólo una vez, después de un reset, la función **loop**, después que haya terminado de ejecutar sus comandos, empezar inmediatamente otra vez.
 

@@ -1,4 +1,4 @@
-# YouTube
+#``YouTube``
 
 ## Creación de un canal
 
@@ -8,17 +8,17 @@ El paso final es distribuir el vídeo para que todo el mundo lo pueda ver, compa
 
 El canal asociado a nuestra cuenta de Google
 
-Si sois usuarios de Google (cuenta del instituto, Gmail) ya tenéis acceso a YouTube con esta cuenta, con la que veis vídeos, los guardáis, creáis listas de favoritos, etc.
+Si sois usuarios de Google (cuenta del instituto, Gmail) ya tenéis acceso a``YouTube`` con esta cuenta, con la que veis vídeos, los guardáis, creáis listas de favoritos, etc.
 
 ![imagen](media/image22.png)
 
-Si con esta cuenta queréis ser vosotros los que publiquéis vídeos, necesitaréis un canal de YouTube. Por defecto vuestra cuenta ya tiene un canal, que podéis utilizar. A continuación, deberéis subir el vídeo a vuestra cuenta de YouTube y compartirla en esta tarea.
+Si con esta cuenta queréis ser vosotros los que publiquéis vídeos, necesitaréis un canal de``YouTube``. Por defecto vuestra cuenta ya tiene un canal, que podéis utilizar. A continuación, deberéis subir el vídeo a vuestra cuenta de``YouTube`` y compartirla en esta tarea.
 
 Primeros pasos para crear un canal
 
 Podéis seguir para ello los siguientes vídeos que os pueden ayudar si no sabéis cómo comenzar:
 
-Guía de inicio rápido de YouTube - YouTube
+Guía de inicio rápido de``YouTube`` -``YouTube``
 
 ![imagen](media/image23.png)
 
@@ -26,17 +26,17 @@ Guía de inicio rápido de YouTube - YouTube
 
 ![imagen](media/image24.png)
 
-En general, YouTube nos permite subir vídeos o emitir en directo. Arriba de la pantalla, tenemos acceso a las dos acciones.
+En general,``YouTube`` nos permite subir vídeos o emitir en directo. Arriba de la pantalla, tenemos acceso a las dos acciones.
 
 Los directos están limitados bajo ciertas condiciones, por número de suscriptores y por edad, por lo que es muy posible que por defecto no podáis hacerlos.
 
-Desde la app de YouTube en nuestro smartphone, además, podremos crear videos cortos o shorts, similares a los stories de Instagram.
+Desde la app de``YouTube`` en nuestro smartphone, además, podremos crear videos cortos o shorts, similares a los stories de Instagram.
 
 ![imagen](media/image25.png)
 
-## YouTube studio
+##``YouTube`` studio
 
-Para gestionar nuestro canal, ver nuestros vídeos y sus estadísticas, u organizarlos en playlists, tenemos YouTube Studio. Existe una app de play store YouTube studio para smartphones Android.
+Para gestionar nuestro canal, ver nuestros vídeos y sus estadísticas, u organizarlos en playlists, tenemos``YouTube`` Studio. Existe una app de play store``YouTube`` studio para smartphones Android.
 
 Desde aquí podemos gestionar nuestro canal de una forma más sencilla. Tendremos un panel general que nos muestra una vista general del estado del canal.
 
@@ -105,14 +105,14 @@ Reproducir en bucle: Podemos activar una opción para que se reproduzcan los vid
 
 ![imagen](media/image33.png)
 
-## Emitir en directo a través de YouTube
+## Emitir en directo a través de``YouTube``
 
-Una vez configurado ``OBS``, podemos decirle que emita hacia un canal nuestro de YouTube. Para esto necesitamos una clave de retransmisión, que YouTube nos facilita. Esta clave la insertamos en OBS, y así este se comunicará con YouTube.
+Una vez configurado ``OBS``, podemos decirle que emita hacia un canal nuestro de``YouTube``. Para esto necesitamos una clave de retransmisión, que``YouTube`` nos facilita. Esta clave la insertamos en OBS, y así este se comunicará con``YouTube``.
 
-El mecanismo es idéntico en el caso de Twitch.
+El mecanismo es idéntico en el caso de``Twitch``.
 
 ![imagen](media/image53.png)
 
-Aquí podéis ver cómo queda el canal una vez comenzamos a emitir en él, visto desde Twitch.
+Aquí podéis ver cómo queda el canal una vez comenzamos a emitir en él, visto desde``Twitch``.
 
 ![imagen](media/image54.png)

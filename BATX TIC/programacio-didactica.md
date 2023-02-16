@@ -1,4 +1,4 @@
---- 
+---
 title:
 - Programació didàctica
 subtitle:
@@ -7,7 +7,7 @@ author:
 - Daniel Moreno
 institute:
 - IES Ramon Llull
-date: 
+date:
 - \today
 theme:
 - metropolis
@@ -154,18 +154,18 @@ El departament de tecnologia de l'IES Ramon Llull està conformat, al començame
 
 El departament imparteix docència als 3 nivells d'estudis que ofereix el centre: ESO, batxillerat i formació professional. Els mòduls i matèries corresponents al departament són:
 
-Estudis | Nivell | Matèria o mòdul
---- | ---| ---
-ESO | 2n | Tecnologia
-ESO | 3r | Tecnologia
-ESO | 4t | Tecnologia
-ESO | 4t | Tecnologies de la informació i comunicació 
-Batxillerat | 1r | Tecnologies de la informació i comunicació I
-Batxillerat | 1r | Tecnologia industrial I
-Batxillerat | 2n | Tecnologies de la informació i comunicació II
-Batxillerat | 2n | Tecnologia industrial II
-FP Bàsica | 1r
-FP Bàsica | 2n
+| Estudis     | Nivell | Matèria o mòdul                               |
+| ----------- | ------ | --------------------------------------------- |
+| ESO         | 2n     | Tecnologia                                    |
+| ESO         | 3r     | Tecnologia                                    |
+| ESO         | 4t     | Tecnologia                                    |
+| ESO         | 4t     | Tecnologies de la informació i comunicació    |
+| Batxillerat | 1r     | Tecnologies de la informació i comunicació I  |
+| Batxillerat | 1r     | Tecnologia industrial I                       |
+| Batxillerat | 2n     | Tecnologies de la informació i comunicació II |
+| Batxillerat | 2n     | Tecnologia industrial II                      |
+| FP Bàsica   | 1r     |
+| FP Bàsica   | 2n     |
 
 # 2. ADEQUACIÓ I SEQÜENCIACIÓ DELS OBJECTIUS ESPECÍFICS DE LA MATÈRIA
 
@@ -277,25 +277,25 @@ interaccions a Internet i en la gestió de recursos i aplicacions locals.
 
 ## 2n ESO
 
-1a Avaluació | Unitat | Duració
--- | -- | --
-UD 1 | El procés tecnològic | 10 sessions
-UD 2 | Dibuix tècnic, vistes i perspectives | 10 sessions
-UD 3 | Propietats dels materials | 4 sessions
-Projecte | Desenvolupament del primer projecte. | 8 sessions
+| 1a Avaluació | Unitat                               | Duració     |
+| ------------ | ------------------------------------ | ----------- |
+| UD 1         | El procés tecnològic                 | 10 sessions |
+| UD 2         | Dibuix tècnic, vistes i perspectives | 10 sessions |
+| UD 3         | Propietats dels materials            | 4 sessions  |
+| Projecte     | Desenvolupament del primer projecte. | 8 sessions  |
 
-2a Avaluació | Unitat | Duració
--- | -- | --
-UD 3 | Propietats dels materials | 4 sessions
-UD 4 | Materials: Fusta, metalls i plàstics | 12 sessions
-UD 5 | Estructures | 8 sessions
-Projecte | Desenvolupament del segon projecte | 10 sessions
+| 2a Avaluació | Unitat                               | Duració     |
+| ------------ | ------------------------------------ | ----------- |
+| UD 3         | Propietats dels materials            | 4 sessions  |
+| UD 4         | Materials: Fusta, metalls i plàstics | 12 sessions |
+| UD 5         | Estructures                          | 8 sessions  |
+| Projecte     | Desenvolupament del segon projecte   | 10 sessions |
 
-3a Avaluació | Unitat | Duració
--- | -- | --
-UD 6 | Màquines simples | 6 sessions
-UD 7 | Energia i electricitat. | 8 sessions
-Projecte | Desenvolupament del projecte final | 12 sessions
+| 3a Avaluació | Unitat                             | Duració     |
+| ------------ | ---------------------------------- | ----------- |
+| UD 6         | Màquines simples                   | 6 sessions  |
+| UD 7         | Energia i electricitat.            | 8 sessions  |
+| Projecte     | Desenvolupament del projecte final | 12 sessions |
 
 ## 3r ESO
 
@@ -368,58 +368,58 @@ CONTROL I ROBÒTICA
 
 ## TIC 4t ESO
 
-1a Avaluació | Unitat | Duració
--- | -- | --
-UD1 | Sistemes operativos | 10 sesiones
-UD2 | Redes y su seguridad | 12 sesiones?
-UD3 | Presentación de contenidos
-2a Avaluació | Unitat | Duració
--- | -- | --
-UD4 | Fotografía digital
-UD5 | Publicación web
-UD6 | Internet y redes sociales
-UD7 | Audio y video digital
-UD8 | Comercio electrónico y fraude en la red
-UD9 | Un mundo de descargas
+| 1a Avaluació | Unitat                                  | Duració      |
+| ------------ | --------------------------------------- | ------------ |
+| UD1          | Sistemes operativos                     | 10 sesiones  |
+| UD2          | Redes y su seguridad                    | 12 sesiones? |
+| UD3          | Presentación de contenidos              |
+| 2a Avaluació | Unitat                                  | Duració      |
+| --           | --                                      | --           |
+| UD4          | Fotografía digital                      |
+| UD5          | Publicación web                         |
+| UD6          | Internet y redes sociales               |
+| UD7          | Audio y video digital                   |
+| UD8          | Comercio electrónico y fraude en la red |
+| UD9          | Un mundo de descargas                   |
 
 
 # UD 1 Sistemas operativos
 
 Sesiones: 10
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Presentación de la asignatura | Creación de grupos y del blog de grupo | 1,2 y 3
-Sistema operativos (Sesión teórica) | Clasificación y funciones. S.O. más habituales. |	1
-Historia de los sistemas operativos (1,9) |
-Evolución de los microprocesadores | Buscar información SO y procesador en Mi PC. Comprobar programas accesorios. 
-Gestor de arranque | 1
-Práctica Windows XP | Explorador. Carpetas. Eliminación de archivos. Atajos de teclado.	| 
-GNU/Linux (Sesión teórica) | Características. Windows vs Linux. distribuciones. Software libre.	| 1
-Práctica GNU/Linux | Elementos principales. Apariencia. Instalación de aplicaciones. OpenOffice.	| 1
-Almacenamiento de información. | Discos duros. Estructura física y lógica.  Particiones	| 1
-Examen teórico | Sistemas operativos, Linux, almacenamiento información	| 1
+| Contenidos                                | Actividades                                                                  | Sesiones |
+| ----------------------------------------- | ---------------------------------------------------------------------------- | -------- |
+| Presentación de la asignatura             | Creación de grupos y del blog de grupo                                       | 1,2 y 3  |
+| Sistema operativos (Sesión teórica)       | Clasificación y funciones. S.O. más habituales.                              | 1        |
+| Historia de los sistemas operativos (1,9) |
+| Evolución de los microprocesadores        | Buscar información SO y procesador en Mi PC. Comprobar programas accesorios. |
+| Gestor de arranque                        | 1                                                                            |
+| Práctica Windows XP                       | Explorador. Carpetas. Eliminación de archivos. Atajos de teclado.            |
+| GNU/Linux (Sesión teórica)                | Características. Windows vs Linux. distribuciones. Software libre.           | 1        |
+| Práctica GNU/Linux                        | Elementos principales. Apariencia. Instalación de aplicaciones. OpenOffice.  | 1        |
+| Almacenamiento de información.            | Discos duros. Estructura física y lógica.  Particiones                       | 1        |
+| Examen teórico                            | Sistemas operativos, Linux, almacenamiento información                       | 1        |
 
 # UD2 Redes y su seguridad
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Red informática | Clasificación y topologías de red | 1
-Dispositivos físicos. | Tarjetas, cables, switch, router, etc	| 1
-Redes inalámbricas | | 1
-Práctica compra de dispositivos | | 1
-Práctica carteles red del colegio | | 1
-Wifi | Tarea WiFi | 1
-Seguridad informática | Amenazas. Seguridad activa y pasiva. Backups
-Seguridad informática | Antivirus, cortafuegos. SPAM | 1
-Tarea privacidad historial + herramientas de seguridad	| | 2
-Almacenamiento en la nube | Respaldo de información (backup) mediante almacenamiento en la nube (con Dropbox)	| 1
-Examen teórico | | 1
+| Contenidos                                             | Actividades                                                                       | Sesiones |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------- | -------- |
+| Red informática                                        | Clasificación y topologías de red                                                 | 1        |
+| Dispositivos físicos.                                  | Tarjetas, cables, switch, router, etc                                             | 1        |
+| Redes inalámbricas                                     |                                                                                   | 1        |
+| Práctica compra de dispositivos                        |                                                                                   | 1        |
+| Práctica carteles red del colegio                      |                                                                                   | 1        |
+| Wifi                                                   | Tarea WiFi                                                                        | 1        |
+| Seguridad informática                                  | Amenazas. Seguridad activa y pasiva. Backups                                      |
+| Seguridad informática                                  | Antivirus, cortafuegos. SPAM                                                      | 1        |
+| Tarea privacidad historial + herramientas de seguridad |                                                                                   | 2        |
+| Almacenamiento en la nube                              | Respaldo de información (backup) mediante almacenamiento en la nube (con Dropbox) | 1        |
+| Examen teórico                                         |                                                                                   | 1        |
 
 # UD3 Presentación de contenidos
 
-Contenidos | Actividades | Sesiones
--- | -- | --
+| Contenidos | Actividades | Sesiones |
+| ---------- | ----------- | -------- |
 Prácticas básicas (4 en total) con powerpoint (tablas, diagramas, estilos)
 Terminar prácticas powerpoint.
 Práctica de grupo: Pensar y definir la estructura de la presentación, tema, etc.
@@ -434,90 +434,90 @@ Corrección de diapositivas. Rellenar formulario de reflexión. Tarea tipos de a
 
 # Fotografía digital
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Cámaras y escáner | Características
-Otros dispositivos | móviles, webcams, cámaras de video.
-Soportes de  almacenamiento | Tarjetas. Almacenamiento en la nube
-Transferir fotografías a dispositivos | Cable, lector de tarjetas, infrarrojos, bluetooth. NFC.
-Características de la imagen | Profundidad, resolución, tamaño. Relación tamaño y peso. Formatos
-Tratamiento de la imagen | Brillo y contraste, curvas, colorear, umbral
-Trabajo con capas | | 1
-Gráficos vectoriales | | 1
-Práctica gráficos vectoriales. Inkscape | | 1
-Editores online | |
-Códigos QR | Práctica creación de código QR y lectura con móvil | 1
+| Contenidos                              | Actividades                                                       | Sesiones |
+| --------------------------------------- | ----------------------------------------------------------------- | -------- |
+| Cámaras y escáner                       | Características                                                   |
+| Otros dispositivos                      | móviles, webcams, cámaras de video.                               |
+| Soportes de  almacenamiento             | Tarjetas. Almacenamiento en la nube                               |
+| Transferir fotografías a dispositivos   | Cable, lector de tarjetas, infrarrojos, bluetooth. NFC.           |
+| Características de la imagen            | Profundidad, resolución, tamaño. Relación tamaño y peso. Formatos |
+| Tratamiento de la imagen                | Brillo y contraste, curvas, colorear, umbral                      |
+| Trabajo con capas                       |                                                                   | 1        |
+| Gráficos vectoriales                    |                                                                   | 1        |
+| Práctica gráficos vectoriales. Inkscape |                                                                   | 1        |
+| Editores online                         |                                                                   |
+| Códigos QR                              | Práctica creación de código QR y lectura con móvil                | 1        |
 
 # UD4 - Publicación web
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-World Wide Web | Terminología básica.
-Funcionamiento básico. Sesión teórica con proyector	| 1
-Software Kompozer | El lenguaje HTML | 1
-Prácticas guiadas con HTML | | 4
-Accesibilidad web | | 1
+| Contenidos                                          | Actividades          | Sesiones |
+| --------------------------------------------------- | -------------------- | -------- |
+| World Wide Web                                      | Terminología básica. |
+| Funcionamiento básico. Sesión teórica con proyector | 1                    |
+| Software Kompozer                                   | El lenguaje HTML     | 1        |
+| Prácticas guiadas con HTML                          |                      | 4        |
+| Accesibilidad web                                   |                      | 1        |
 
 # Internet y redes sociales
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Internet | Posibilidades. Breve historia de Internet | 1
-Funcionamiento | IP, TCP, UDP. Puertos del ordenador | 1
-Internet en España y en el mundo. EGM | |
-Comunidades virtuales | Mundos virtuales. Chats y mensajería. | 1
-Foros. Blogs.Wikis | | 1
-Redes sociales | Facebook, tuenti, twitter | 1
-Redes de trabajo | Slack, Github, Google drive. Trabajo con documentos compartidos | 1
-Mensajería instantánea | Whatsapp, telegram | 1
-Servicios en Internet | Búsqueda de empleo, formación a distancia, compras | 1
-Community manager | Cómo harías de community manager del IES? |  1
+| Contenidos                            | Actividades                                                     | Sesiones |
+| ------------------------------------- | --------------------------------------------------------------- | -------- |
+| Internet                              | Posibilidades. Breve historia de Internet                       | 1        |
+| Funcionamiento                        | IP, TCP, UDP. Puertos del ordenador                             | 1        |
+| Internet en España y en el mundo. EGM |                                                                 |
+| Comunidades virtuales                 | Mundos virtuales. Chats y mensajería.                           | 1        |
+| Foros. Blogs.Wikis                    |                                                                 | 1        |
+| Redes sociales                        | Facebook, tuenti, twitter                                       | 1        |
+| Redes de trabajo                      | Slack, Github, Google drive. Trabajo con documentos compartidos | 1        |
+| Mensajería instantánea                | Whatsapp, telegram                                              | 1        |
+| Servicios en Internet                 | Búsqueda de empleo, formación a distancia, compras              | 1        |
+| Community manager                     | Cómo harías de community manager del IES?                       | 1        |
 
 
 # Audio y video digital
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Captura del sonido. | | 1
-Características del sonido digital | | 1
-Redes de intercambio de archivos. | | 1
-Formatos principales de audio. | | 1
-Video digital. Proporcionalidad. Resolución. Flujo de bits. FPS. | | 1
-Tipos de archivos de video. Codecs. DIVX | | 1
-Práctica: Explicación, planificación y búsqueda de ideas. | | 1
-Práctica: Grabación. | | 1
-Práctica: Transferencia de videos. Edición | | 1
-Práctica: Edición | | 1
-Práctica: Publicación en youtube y actualización del blog | | 1
-Redes de intercambio | | 1
-Examen | | 1
+| Contenidos                                                       | Actividades | Sesiones |
+| ---------------------------------------------------------------- | ----------- | -------- |
+| Captura del sonido.                                              |             | 1        |
+| Características del sonido digital                               |             | 1        |
+| Redes de intercambio de archivos.                                |             | 1        |
+| Formatos principales de audio.                                   |             | 1        |
+| Video digital. Proporcionalidad. Resolución. Flujo de bits. FPS. |             | 1        |
+| Tipos de archivos de video. Codecs. DIVX                         |             | 1        |
+| Práctica: Explicación, planificación y búsqueda de ideas.        |             | 1        |
+| Práctica: Grabación.                                             |             | 1        |
+| Práctica: Transferencia de videos. Edición                       |             | 1        |
+| Práctica: Edición                                                |             | 1        |
+| Práctica: Publicación en``YouTube`` y actualización del blog     |             | 1        |
+| Redes de intercambio                                             |             | 1        |
+| Examen                                                           |             | 1        |
 
 # Comercio electrónico y fraude en la red
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Comercio electrónico | Compra por Internet.Tipos de comercio. Tiendas online. Formas de pago. | 1
-Fraude en la red | Tipos de fraude.| 1
-Medidas de protección | Encriptación, claves seguras https://haveibeenpwned.com/| 1
-Firma digital | certificados personales. DNIe (DNI electrónico) | 1
-Distribución de software | Propiedad, tipos de licencias | 1
-Software libre | Creative commons  | 1
-Informática distribuida |
-Práctica proteger y comprimir archivos |
-Práctica por determinar |
-Examen |
+| Contenidos                             | Actividades                                                            | Sesiones |
+| -------------------------------------- | ---------------------------------------------------------------------- | -------- |
+| Comercio electrónico                   | Compra por Internet.Tipos de comercio. Tiendas online. Formas de pago. | 1        |
+| Fraude en la red                       | Tipos de fraude.                                                       | 1        |
+| Medidas de protección                  | Encriptación, claves seguras https://haveibeenpwned.com/               | 1        |
+| Firma digital                          | certificados personales. DNIe (DNI electrónico)                        | 1        |
+| Distribución de software               | Propiedad, tipos de licencias                                          | 1        |
+| Software libre                         | Creative commons                                                       | 1        |
+| Informática distribuida                |
+| Práctica proteger y comprimir archivos |
+| Práctica por determinar                |
+| Examen                                 |
 
 # Un mundo de descargas
 
-Contenidos | Actividades | Sesiones
--- | -- | --
-Acceso a servicios de ocio | TV, música. Spotify. Netflix. HBO | 1
-Compartir videos en Internet | Youtube, twitch | 1 
-Descarga directa de contenidos | | 1
-Gestores de descarga | | 1
-Disco duro en Internet  | Dropbox, onedrive | 1
-Redes P2P | Ares, Bittorrent, emule... | 1
-Examen | | 1
+| Contenidos                     | Actividades                       | Sesiones |
+| ------------------------------ | --------------------------------- | -------- |
+| Acceso a servicios de ocio     | TV, música. Spotify. Netflix. HBO | 1        |
+| Compartir videos en Internet   | ``YouTube``,``Twitch``            | 1        |
+| Descarga directa de contenidos |                                   | 1        |
+| Gestores de descarga           |                                   | 1        |
+| Disco duro en Internet         | Dropbox, onedrive                 | 1        |
+| Redes P2P                      | Ares, Bittorrent, emule...        | 1        |
+| Examen                         |                                   | 1        |
 
 
 --- BORRAR
@@ -544,7 +544,7 @@ ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
 ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
 
 - Tractament bàsic de la imatge digital
-- GIMP
+- ``GIMP``
 - Inkscape
 - Edició i muntatge d’àudio i vídeo per crear continguts multimèdia.
 - Audacity
@@ -642,22 +642,22 @@ CONTROL I PROGRAMACIÓ DE SISTEMES AUTOMÀTICS
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I
 
-1a avaluació | Unitat | Sessions
--- | -- | --
-UD 1 | Nuevas tecnologías de la información y la comunicación en la sociedad
-UD 2 | Hardware. Componentes físicos
-UD 3 | Software. Interfaz con el usuario
-UD 4 | Redes de comunicaciones
-UD 5 | Procesamiento de textos, autoedición y presentaciones
-UD 6 | Edición y diseño asistido por ordenador
-UD 7 | Hojas de cálculo
-UD 8 | Bases de datos
-UD 9 | Programació web
+| 1a avaluació | Unitat                                                                | Sessions |
+| ------------ | --------------------------------------------------------------------- | -------- |
+| UD 1         | Nuevas tecnologías de la información y la comunicación en la sociedad |
+| UD 2         | Hardware. Componentes físicos                                         |
+| UD 3         | Software. Interfaz con el usuario                                     |
+| UD 4         | Redes de comunicaciones                                               |
+| UD 5         | Procesamiento de textos, autoedición y presentaciones                 |
+| UD 6         | Edición y diseño asistido por ordenador                               |
+| UD 7         | Hojas de cálculo                                                      |
+| UD 8         | Bases de datos                                                        |
+| UD 9         | Programació web                                                       |
 
 **1a avaluació**
 
 LA SOCIETAT DE LA INFORMACIÓ I L’ORDINADOR
-  
+
 - 1.- Concepte de Tecnologies de la Informació i Comunicació (TIC).
 - 2.- L'ús de les TIC. Societat de la informació i Societat del coneixement.
 - 3.- Característiques de les TIC.
@@ -708,23 +708,23 @@ PROGRAMACIÓ
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II
 
-Avaluació | Continguts | Continguts
--- | -- | -- 
-| Primera avaluació |  BLOC 1: LA ERA DIGITAL | 1.- Les TIC. Conceptes.
-| | |  2.- Internet. Protocols. Serveis.
-| | |  3.- Treball col·laboratiu en la web. Evolució de la web. Aplicacions web.
-| | |  4.- Selecció de la informació. Fiabilitat de les fonts.
-| | |  5.- Xarxes socials. Tipus. Gestió.
-| | |  6.-Riscos del mon de Internet. Bretxa digital. Plagi. Pirateria
-| | BLOC 2: PROGRAMACIÓ
-| | |    1.- Conceptes bàsics.
-| | |    2.- Estructures d’emmagatzematge. Diferents tipus.
-| | |  3.- Algorísmia i codificació.
-| | |  4.- Estructures de control. Diagrames de flux.
-| | |  5.- Codificació de programes amb un llenguatge d’alt nivell.
-| | |  6.- Traçabilitat, depuració i optimització d’un codi de programació.
-| Segona avaluació  |  BLOC 3: PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS
-|                   |  1.- Publicació i difusió de continguts.
+| Avaluació         | Continguts                                 | Continguts                                                                |
+| ----------------- | ------------------------------------------ | ------------------------------------------------------------------------- |
+| Primera avaluació | BLOC 1: LA ERA DIGITAL                     | 1.- Les TIC. Conceptes.                                                   |
+|                   |                                            | 2.- Internet. Protocols. Serveis.                                         |
+|                   |                                            | 3.- Treball col·laboratiu en la web. Evolució de la web. Aplicacions web. |
+|                   |                                            | 4.- Selecció de la informació. Fiabilitat de les fonts.                   |
+|                   |                                            | 5.- Xarxes socials. Tipus. Gestió.                                        |
+|                   |                                            | 6.-Riscos del mon de Internet. Bretxa digital. Plagi. Pirateria           |
+|                   | BLOC 2: PROGRAMACIÓ                        |
+|                   |                                            | 1.- Conceptes bàsics.                                                     |
+|                   |                                            | 2.- Estructures d’emmagatzematge. Diferents tipus.                        |
+|                   |                                            | 3.- Algorísmia i codificació.                                             |
+|                   |                                            | 4.- Estructures de control. Diagrames de flux.                            |
+|                   |                                            | 5.- Codificació de programes amb un llenguatge d’alt nivell.              |
+|                   |                                            | 6.- Traçabilitat, depuració i optimització d’un codi de programació.      |
+| Segona avaluació  | BLOC 3: PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS |
+|                   | 1.- Publicació i difusió de continguts.    |
 2.- Disseny de pàgines web. El llenguatge HTML.
 3.- Els gestors de continguts.
 Tercera avaluació
@@ -810,15 +810,15 @@ La distribució del temps ha d’anar en funció de:
 
 Distribució:
 
-Grup | hores | espais
--- | -- | --
-Tecnologia 2n d'ESO | 3h (2+1) | Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller, projectes i informàtica. Les altres dues hores es faran al taller.
-Tecnologia 3r d'ESO | 2h (1+1)| Una d'aquestes hores està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. L'altra hora es farà a l'aula d'informàtica.
-Tecnologia 4t d'ESO | 3h (2+1)| Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. Les altres dues hores es faran o bé al taller o a l'aula d'informàtica.
-Informàtica 4t d'ESO | 3h | A la Biblioteca del centre, ja que és l'aula d'informàtica amb més ordinadors.
-Tecnologia industrial I | 3h | Disposa de 2 llocs per fer feina, l'aula d'informàtica de tecnologia i auna aula de les quals disposem durant dos dies setmanals.
-Tecnologia industrial II | 4h | Aula d'informàtica dues hores a la setmana i les altres dues es faran a l'aula del grup.
-TIC I i TIC II | 3 i 4h | Es faran totes a la Biblioteca.
+| Grup                     | hores    | espais                                                                                                                                                                                       |
+| ------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tecnologia 2n d'ESO      | 3h (2+1) | Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller, projectes i informàtica. Les altres dues hores es faran al taller.                  |
+| Tecnologia 3r d'ESO      | 2h (1+1) | Una d'aquestes hores està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. L'altra hora es farà a l'aula d'informàtica.                           |
+| Tecnologia 4t d'ESO      | 3h (2+1) | Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. Les altres dues hores es faran o bé al taller o a l'aula d'informàtica. |
+| Informàtica 4t d'ESO     | 3h       | A la Biblioteca del centre, ja que és l'aula d'informàtica amb més ordinadors.                                                                                                               |
+| Tecnologia industrial I  | 3h       | Disposa de 2 llocs per fer feina, l'aula d'informàtica de tecnologia i auna aula de les quals disposem durant dos dies setmanals.                                                            |
+| Tecnologia industrial II | 4h       | Aula d'informàtica dues hores a la setmana i les altres dues es faran a l'aula del grup.                                                                                                     |
+| TIC I i TIC II           | 3 i 4h   | Es faran totes a la Biblioteca.                                                                                                                                                              |
 
 # 5. ACTIVITATS D'AMPLIACIÓ I DE REFORÇ
 
@@ -882,41 +882,41 @@ netejar el que s’embruti al taller...).
 
 En les avaluacions ordinàries durant el curs es puntuaran.
 
-Apartat | Percentatge 
--- | --
-Continguts          | 40%
-Projectes           | 30%
-tasques i exercicis | 20% 
-actitud             | 10%
+| Apartat             | Percentatge |
+| ------------------- | ----------- |
+| Continguts          | 40%         |
+| Projectes           | 30%         |
+| tasques i exercicis | 20%         |
+| actitud             | 10%         |
 
 ## Tecnologies de la informació 4t d'ESO
 
 En el cas dels alumnes d' informàtica la distribució és una mica diferent:
 
-Apartat | Percentatge
--- | --
-Continguts | 25%
-Tasques | 65%
-Actituds | 10%
+| Apartat    | Percentatge |
+| ---------- | ----------- |
+| Continguts | 25%         |
+| Tasques    | 65%         |
+| Actituds   | 10%         |
 
 ## Tecnologia industrial I i II
 
 Per als alumnes de 1r i 2n de batxiller de Tecnologia Industrial
 
-Apartat | Percentatge
--- | --
-Exàmens | 70 %
-Tasques, apunts i problemes | 30%
+| Apartat                     | Percentatge |
+| --------------------------- | ----------- |
+| Exàmens                     | 70 %        |
+| Tasques, apunts i problemes | 30%         |
 
 ## Tecnologies de la informació i comunicació I i II
 
 Pels alumnes de 1r i 2n de Batxiller TIC :
 
-Apartat | Percentatge
--- | --
-Continguts | 25%
-Tasques | 65%
-Actitud | 10%
+| Apartat    | Percentatge |
+| ---------- | ----------- |
+| Continguts | 25%         |
+| Tasques    | 65%         |
+| Actitud    | 10%         |
 
 # 7. ESTÀNDARDS D'APRENENTATGES AVALUABLES
 
@@ -1660,7 +1660,7 @@ tècniques de càlcul i també representar i interpretar la realitat a partir de
 
 ## Competència digital
 
-La matèria de tecnologia contribueix a la competència digital mitjançant diversos blocs específics de continguts. Es desenvolupen les habilitats per localitzar, processar, elaborar, emmagatzemar i presentar informació emprant les tecnologies de la informació i la comunicació. 
+La matèria de tecnologia contribueix a la competència digital mitjançant diversos blocs específics de continguts. Es desenvolupen les habilitats per localitzar, processar, elaborar, emmagatzemar i presentar informació emprant les tecnologies de la informació i la comunicació.
 
 L’ús de l’ordinador pren protagonisme en aquesta matèria com a eina per simular processos tecnològics i, a més, contribueix a adquirir destreses en llenguatges específics com l’icònic o el gràfic.
 

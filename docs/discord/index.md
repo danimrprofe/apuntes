@@ -2,7 +2,7 @@
 
 ## Introducción
 
-El funcionamiento de Twitch va muy ligado a Discord, una herramienta de chat y voz para comunidades virtual.
+El funcionamiento de``Twitch`` va muy ligado a Discord, una herramienta de chat y voz para comunidades virtual.
 
 Sirve de herramienta de comunicación entre los seguidores de un determinado canal, fundamentalmente cuando este no está emitiendo. De este modo comparten dudas, archivos, y hablan entre ellos.
 

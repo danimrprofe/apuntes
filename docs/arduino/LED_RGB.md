@@ -18,13 +18,13 @@ En nuestro **programa**, se comienzan con el LED en el estado de color rojo, ent
 
 ## Componentes necesarios
 
-| cantidad | componente|
-| --- | --- |
-| 1 | placa arduino |
-| 1 | protoboard |
-| 4 | cables jumper |
-| 1 | LED RGB|
-| 3 | resistencias de 220 ohmios |
+| cantidad | componente                 |
+| -------- | -------------------------- |
+| 1        | placa``Arduino``           |
+| 1        | protoboard                 |
+| 4        | cables jumper              |
+| 1        | LED RGB                    |
+| 3        | resistencias de 220 ohmios |
 
 ## RGB
 
@@ -209,7 +209,7 @@ delay(delayTime);
 
 ![imagen](media/image65.jpeg)
 
-Primero especificamos a que pines de Arduino he conectado cada LED.
+Primero especificamos a que pines de``Arduino`` he conectado cada LED.
 
 ```arduino
 // Define Pins

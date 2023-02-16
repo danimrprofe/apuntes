@@ -8,13 +8,13 @@ Importar package de asset store (pixel adventure 1)
 
 ## 3. Crear tilemap
 
-Un Tilemap es una herramienta de Unity que permite crear ambientes de juego mediante el uso de gráficos tiles. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
+Un Tilemap es una herramienta de ``Unity`` que permite crear ambientes de juego mediante el uso de gráficos tiles. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
 
 ## 4. Crear paleta y pintar la escena
 
 ## 5. Asignar collider al tilemap
 
-Para asignar un collider al tilemap, primero necesitamos habilitar el tilemap colisiones en el editor de Unity. Esto se puede hacer en el inspector del tilemap, seleccionando la carpeta "Tilemap Collider 2D". Luego, seleccione todas las capas de su tilemap y active la casilla "Generar Colliders". Esto generará automáticamente un collider en el tilemap.
+Para asignar un collider al tilemap, primero necesitamos habilitar el tilemap colisiones en el editor de ``Unity``. Esto se puede hacer en el inspector del tilemap, seleccionando la carpeta "Tilemap Collider 2D". Luego, seleccione todas las capas de su tilemap y active la casilla "Generar Colliders". Esto generará automáticamente un collider en el tilemap.
 
 ## 6. Asignar rigidbody al personaje
 

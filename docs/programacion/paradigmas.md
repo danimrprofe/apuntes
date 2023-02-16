@@ -3,7 +3,7 @@
 El paradigma de programación es el estilo de programación empleado. Algunos lenguajes soportan varios paradigmas, y otros sólo uno.
 
 - Lenguajes de programación **estructurado**: Divide el problema en partes más pequeñas, que serán realizadas por subprogramas (subrutinas, funciones, procedimientos), que se llaman unas a otras para ser ejecutadas. Ejemplos: C, Pascal.
-- Lenguajes de programación **orientada a objetos**: Crean un sistema de clases y objetos siguiendo el ejemplo del mundo real, en el que unos objetos realizan acciones y se comunican con otros objetos. Ejemplos: C++, `Java`.
+- Lenguajes de programación **orientada a objetos**: Crean un sistema de clases y objetos siguiendo el ejemplo del mundo real, en el que unos objetos realizan acciones y se comunican con otros objetos. Ejemplos: ``C++``, `Java`.
 - Lenguajes de programación **funcional**: La tarea se realiza evaluando funciones, (como en Matemáticas), de manera recursiva. Ejemplo: Lisp, Scala.
 - Lenguajes de programación **lógica**: La tarea a realizar se expresa empleando lógica formal matemática. Expresa qué computar. Ejemplo: Prolog.
 
@@ -36,7 +36,7 @@ Dentro de esta categoría podemos encontrar nuevas caras y viejos conocidos:
 - `Java`Script: Imperativo, orientado a objetos (prototipos) y funcional
 - `Java`: Imperativo, orientado a objetos, reflexivo y genérico
 - Python y Ruby: Imperativo, orientado a objetos, reflexivo y funcional
-- C++: Imperativo, orientado a objetos, funcional y genérico
+- ``C++``: Imperativo, orientado a objetos, funcional y genérico
 - C#: Imperativo, orientado a objetos, funcional (lambda), reflexivo y genérico
 
 ### Lenguajes que soportan muchos paradigmas de programación

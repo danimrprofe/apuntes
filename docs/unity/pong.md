@@ -1,8 +1,8 @@
-# Juegos con Unity
+# Juegos con ``Unity``
 
 ![imagen](img/2022-10-13-00-34-17.png)
 
-Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor Unity, que nos permite crear proyectos 2D y 3D.
+Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
 Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los proyectos de Pong y un juego de plataformas 2D. A través de estos proyectos hemos aprendido a:
 
@@ -52,7 +52,7 @@ Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos mo
 
 Ahora ++ctrl+++D y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.
 
-Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro unity su día dietsprite square y si la colocamos en el 0,0.
+Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro ``Unity`` su día dietsprite square y si la colocamos en el 0,0.
 
 Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos en verdad que tengáis en la escena como veis son de tipo sprite renderer por tanto si lo seleccionas podéis modificar aquí el color con lo que tenéis a la derecha.
 

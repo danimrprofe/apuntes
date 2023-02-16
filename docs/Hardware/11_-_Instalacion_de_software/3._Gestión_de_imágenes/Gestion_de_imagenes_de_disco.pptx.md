@@ -1,10 +1,4 @@
-![imagen](img/Gestion_de_imagenes_de_disco0.png)
-
-## Montaje y mantenimiento de sistemas y componentes informáticos
-
-_Implantación de sistemas operativos_
-
-## Gestión de imágenes de disco
+# Gestión de imágenes de disco
 
 ## Introducción
 
@@ -18,7 +12,7 @@ _Implantación de sistemas operativos_
 
 ![imagen](img/Gestion_de_imagenes_de_disco2.jpg)
 
-## Gestión de imágenes de disco
+## Imágenes de disco
 
 * Imagen de un disco
   * El producto de hacer una copia, sector por sector
@@ -31,6 +25,8 @@ _Implantación de sistemas operativos_
   * __Imaging__
 
 ![imagen](img/Gestion_de_imagenes_de_disco3.jpg)
+
+## Cloning
 
 * Clonación de un disco a otro disco
   * Copia el contenido completo de una unidad a otra
@@ -46,6 +42,8 @@ _Implantación de sistemas operativos_
 
 ![imagen](img/Gestion_de_imagenes_de_disco4.jpg)
 
+## Imaging
+
 * Creación de una imagen a partir del disco \(Imaging\)
   * A partir de  __unidad o partición __ de un HD, DVD, pendrive, etc\.
   * Copia todos los datos  _a un solo archivo: _  __imagen de disco \(ISO\)__
@@ -60,7 +58,8 @@ _Implantación de sistemas operativos_
 
 ![imagen](img/Gestion_de_imagenes_de_disco5.png)
 
-* ¿Para qué se usan las imágenes de un disco?
+## ¿Para qué se usan las imágenes de un disco?
+
   * __Copia de seguridad__
     * Se hace una imagen, utilizando el procedimiento de  _Imaging_
     * Disponer de ella si el disco original sufriera algún problema\.
@@ -220,4 +219,3 @@ _Implantación de sistemas operativos_
 ![imagen](img/Gestion_de_imagenes_de_disco22.png)
 
 ![imagen](img/Gestion_de_imagenes_de_disco23.png)
-

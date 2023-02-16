@@ -28,7 +28,7 @@ Las tiras **WS2812B** pueden alimentarse a través de una batería o de una fuen
 #include<FastLED.h> // header file
 
 #define NUM_LEDS 60 // number of led present in your strip
-#define DATA_PIN 6 // digital pin of your arduino
+#define DATA_PIN 6 // digital pin of your``Arduino``
 
 CRGB leds[NUM_LEDS];
 

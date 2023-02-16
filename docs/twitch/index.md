@@ -1,8 +1,8 @@
-# Twitch
+#``Twitch``
 
-Aunque no es obligatorio, otra herramienta muy útil sobre todo para directos es Twitch. Es algo más complejo de crear y editar, pero muy interesante.
+Aunque no es obligatorio, otra herramienta muy útil sobre todo para directos es``Twitch``. Es algo más complejo de crear y editar, pero muy interesante.
 
-Podéis verlo en [twitch.tv](http://twitch.tv) o instalar la app de Twitch desde la Play Store.
+Podéis verlo en [twitch.tv](http://twitch.tv) o instalar la app de``Twitch`` desde la Play Store.
 
 Twitch nace como un servicio de vídeo online para retransmitir en directo partidas de videojuegos, desde personales a grandes torneos.
 
@@ -12,7 +12,7 @@ Hoy en día, se ha expandido para incluir también otras disciplinas como músic
 
 ![imagen](media/image35.png)
 
-La mayoría de la comunidad de Twitch únicamente visualiza vídeos, y comenta a través de un canal de chat, entre otras opciones.
+La mayoría de la comunidad de``Twitch`` únicamente visualiza vídeos, y comenta a través de un canal de chat, entre otras opciones.
 
 ## Los canales
 

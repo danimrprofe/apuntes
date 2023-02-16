@@ -1,10 +1,10 @@
-# Tinkercad
+#``Tinkercad``
 
 Tinkercad es un programa de diseño en 3D que tiene múltiples aplicaciones. Podemos diseñar con él cualquier figura y, si queremos, imprimirla utilizando una impresora 3D.
 
 ![imagen](img/2022-11-29-16-14-47.png)
 
-Podéis acceder a Tinkercad aquí 👉 https://www.tinkercad.com/
+Podéis acceder a``Tinkercad`` aquí 👉 https://www.tinkercad.com/
 
 markdown-index directory/fulla/markdowns > index.md
 
@@ -20,5 +20,3 @@ markdown-index directory/fulla/markdowns > index.md
 - [19_tinkercad_codeblocks](./1.9._Tinkercad_codeblocks.md)
 - [20_cohete](./2.0._Cohete.md)
 - [21_portavelas](./2.1._Portavelas.md)
-
-

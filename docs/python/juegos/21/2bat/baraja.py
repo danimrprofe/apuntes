@@ -5,7 +5,7 @@ class Baraja:
     def __init__(self):
         self.cartas = []
 
-        valores = ["As","2","3","4","5","6","7","8","9","10","jota","reina","rey"]
+        valores = ["As","2","3","4","5","6","7","8","9","10","Jota","Reina","Rey"]
         palos = ["picas","corazones","tréboles","diamantes"]
 
         for palo in palos:

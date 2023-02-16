@@ -10,7 +10,7 @@ Si miramos el bloque superior, vemos que está conformado por **737** transaccio
 
 ## Pools
 
-Los **Pools** de Bitcoin son grupos de mineros que se unen para aumentar la probabilidad de encontrar un bloque y recibir una recompensa. Los mineros comparten su **potencia de procesamiento** y reciben una porción proporcional de la recompensa según la cantidad de trabajo que realizan.
+Los **Pools** de ``Bitcoin`` son grupos de mineros que se unen para aumentar la probabilidad de encontrar un bloque y recibir una recompensa. Los mineros comparten su **potencia de procesamiento** y reciben una porción proporcional de la recompensa según la cantidad de trabajo que realizan.
 
 Además, los mineros a menudo comparten los costos relacionados con los equipos de minería y electricidad a compartir. El objetivo de los pools de minería es maximizar la tasa de éxito de los mineros al encontrar un bloque.
 
@@ -25,7 +25,7 @@ A día de hoy (octubre de 2021) existen alrededor de 700.000 bloques creados
 - El 3 de enero de 2009 se crea el primer bloque.
 - Los bloques tienen un número que los identifica.
 - El bloque original es el bloque 0.
-- En este bloque, la primera transacción es una cantidad de bitcoins creados nuevos a su cuenta.
+- En este bloque, la primera transacción es una cantidad de ``Bitcoin``s creados nuevos a su cuenta.
 
 ![imagen](img/2022-11-06-22-55-15.png)
 

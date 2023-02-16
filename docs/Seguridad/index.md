@@ -8,4 +8,4 @@ El [ransomware](Malware/3.6_Ransomware.md) es una de las principales amenazas pa
 
 La criptografía de clave pública ha posibilitado la creación del [certificado digital](Firma_electronica/certificado_digital.md), así como su inclusión en el [DNI electrónico](Firma_electronica/dnie.md). Gracias a ello, podemos acreditar nuestra identidad a través de internet y [firmar digitalmente](Firma_electronica/firma_electronica.md) cualquier documento electrónico.
 
-Las [criptomonedas](../criptomonedas/cripotomonedas.md) surgen y se popularizan desde 2009 gracias a la [criptografía de clave pública](Criptografia/6.4._criptografia_asimetrica.md). Se crea la tecnología blockchain que da soporte a criptomonedas como bitcoin y posteriormente a los [NFT](../criptomonedas/NFT/index.md).
+Las [criptomonedas](../criptomonedas/cripotomonedas.md) surgen y se popularizan desde 2009 gracias a la [criptografía de clave pública](Criptografia/6.4._criptografia_asimetrica.md). Se crea la tecnología blockchain que da soporte a criptomonedas como ``Bitcoin`` y posteriormente a los [NFT](../criptomonedas/NFT/index.md).

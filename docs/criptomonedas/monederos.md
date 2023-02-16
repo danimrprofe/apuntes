@@ -1,6 +1,6 @@
 # Monederos (wallets)
 
-Para almacenar bitcoin, necesitamos una dirección, y asociada a alle unas **claves**. Estas claves, se guardan en un **monedero digital**, también llamado **wallet**.
+Para almacenar ``Bitcoin``, necesitamos una dirección, y asociada a alle unas **claves**. Estas claves, se guardan en un **monedero digital**, también llamado **wallet**.
 
 ![imagen](img/2022-11-06-22-53-24.png)
 
@@ -27,7 +27,7 @@ Podemos tener claves de varias criptomonedas en un misma billetera.
 
 ![imagen](img/2022-11-06-22-53-59.png)
 
-## Bitcoin wallet
+## ``Bitcoin`` wallet
 
 1. Monederos de escritorio: Los monederos de escritorio se instalan en una computadora portátil o de escritorio y le dan al usuario el control completo del monedero. Solo son accesibles desde la computadora individual en la que se descargan. Los monederos de escritorio ofrecen uno de los niveles de seguridad más altos, pero si su computadora es pirateada o obtiene un virus, es posible que pierda todos sus fondos.
 

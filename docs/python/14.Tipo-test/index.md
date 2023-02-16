@@ -1,3 +1,13 @@
+GENERALES
+=========
+
+¿Cual es la extensión de un archivo de python?
+
+    a) .python
+    b) .py
+    c) .pl
+    d) .p
+
 INPUT
 =====
 
@@ -56,6 +66,32 @@ P07. ¿Qué argumento se puede pasar a print() para agregar un salto de línea a
 VARIABLES
 =========
 
+P8. ¿Cuál de los siguientes operadores se utiliza para asignar un valor a una variable?
+
+a) +
+b) -
+c) *
+d) =
+
+P3. ¿Cuál de estos es un operador de comparación en Python?
+a) =
+b) ==
+c) +
+d) +=
+
+P2. ¿Cómo se declara una variable en Python?
+a) set x
+b) var x
+c) x =
+d) define x
+
+P4. ¿Qué método se utiliza para convertir una cadena en un número entero en Python?
+
+    A. to_int()
+    B. int()
+    C. num()
+    D. to_num()
+
 ¿Cuál es el resultado de la siguiente expresión en Python?
 
     a = "hola"
@@ -81,50 +117,53 @@ VARIABLES
 IF-ELSE
 =======
 
-1. ¿Cómo se define una sentencia if-else?
+P1. ¿Cómo se define una sentencia if-else?
 
     a) Un bloque de código que se ejecuta si una condición es verdadera
     b) Un bloque de código que se ejecuta siempre
     c) Un bloque de código que se ejecuta si una condición es falsa
     d) Un bloque de código que se ejecuta si una condición es igual
 
-1. ¿Cuál es la sintaxis correcta para usar una sentencia if-else?
+P1. ¿Cuál es la sintaxis correcta para usar una sentencia if-else?
 
     a. if (expresión) {sentencia} else {sentencia}
     b. if (expresión): sentencia else: sentencia
     c. if (expresión) {sentencia}; else {sentencia}
     d. if (expresión); sentencia else sentencia
 
-2. ¿Cuál de los siguientes fragmentos de código representa una sentencia if-elif-else?
-a. if (expresión): sentencia elif (expresión): sentencia else: sentencia
-b. if (expresión): sentencia; else (expresión): sentencia
-c. if (expresión) {sentencia} else {sentencia}
-d. if (expresión): sentencia; elif (expresión): sentencia else: sentencia
+P2. ¿Cuál de los siguientes fragmentos de código representa una sentencia if-elif-else?
 
-¿Qué hace el siguiente fragmento de código?
-if x > 10:
-    print("x es mayor que 10")
-else:
-    print("x es menor o igual que 10")
+    a. if (expresión): sentencia elif (expresión): sentencia else: sentencia
+    b. if (expresión): sentencia; else (expresión): sentencia
+    c. if (expresión) {sentencia} else {sentencia}
+    d. if (expresión): sentencia; elif (expresión): sentencia else: sentencia
 
-a. Imprime "x es mayor que 10" si x es mayor que 10
-b. Imprime "x es mayor que 10" si x es menor que 10
-c. Establece x como 10
-d. Establece x como mayor que 10
+P3.¿Qué hace el siguiente fragmento de código?
 
-¿Cuál de las siguientes líneas de código es válida para una sentencia condicional if-else?
-a. if x == 10:
-   print("x es 10")
-b. if x == 10
-   	print("x es 10")
-   else
-   	print("x no es 10")
-c. if x == 10
-   	print(x es 10)
-d. if x == 10:
-   	print("x es 10")
-   else:
-   	print("x no es 10")
+    if x > 10:
+        print("x es mayor que 10")
+    else:
+        print("x es menor o igual que 10")
+
+    a. Imprime "x es mayor que 10" si x es mayor que 10
+    b. Imprime "x es mayor que 10" si x es menor que 10
+    c. Establece x como 10
+    d. Establece x como mayor que 10
+
+P4.¿Cuál de las siguientes líneas de código es válida para una sentencia condicional if-else?
+
+    a. if x == 10:
+    print("x es 10")
+    b. if x == 10
+        print("x es 10")
+    else
+        print("x no es 10")
+    c. if x == 10
+        print(x es 10)
+    d. if x == 10:
+        print("x es 10")
+    else:
+        print("x no es 10")
 
 MODULOS
 =======
@@ -145,6 +184,13 @@ P ¿Cuál es la sintaxis correcta para crear una lista vacía en Python?
     B. lista = list()
     C. lista = {}
     D. lista = list{}
+
+P2. ¿Cuál de las siguientes opciones define una lista en Python?
+
+    a) my_list = "Hola Mundo"
+    b) my_list = (1,2,3,4)
+    c) my_list = {1,2,3,4}
+    d) my_list = [1,2,3,4]
 
 P ¿Cuál es el resultado del siguiente código?
 
@@ -213,7 +259,7 @@ D. None
 FUNCIONES
 =========
 
-4. ¿Cuál es la sintaxis correcta para definir una función en Python?
+1. ¿Cuál es la sintaxis correcta para definir una función en Python?
 
 A. def my_function()
 B. function my_function

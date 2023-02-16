@@ -20,9 +20,9 @@ Cómo se intercambian criptomonedas
 
 ## Validación de transacciones
 
-- Cada vez que alguien quiere enviar bitcoin a otra cuenta, la transacción es validada por la red:
-- Asegurarse de que la persona tenga los bitcoins para transferir
-- Si la persona tiene los bitcoins, se agregan al libro
+- Cada vez que alguien quiere enviar ``Bitcoin`` a otra cuenta, la transacción es validada por la red:
+- Asegurarse de que la persona tenga los ``Bitcoin``s para transferir
+- Si la persona tiene los ``Bitcoin``s, se agregan al libro
 - Para asegurar el libro mayor, los mineros lo sellan detrás de un código computacional
 - No puede haber doble gasto ni falsificación.
 

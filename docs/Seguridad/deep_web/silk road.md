@@ -4,7 +4,7 @@ Silk Road era una plataforma en línea que operaba en la parte oscura de la web 
 
 ![](img/2023-01-10-16-31-26.png)
 
-Silk Road se lanzó en 2011 y se convirtió rápidamente en uno de los principales mercados en línea para la compra y venta de drogas ilegales, así como de otras mercancías ilegales y contrabando. La plataforma utilizaba Bitcoin como moneda de pago y se promocionaba como un lugar seguro y anónimo para realizar transacciones ilegales.
+Silk Road se lanzó en 2011 y se convirtió rápidamente en uno de los principales mercados en línea para la compra y venta de drogas ilegales, así como de otras mercancías ilegales y contrabando. La plataforma utilizaba ``Bitcoin`` como moneda de pago y se promocionaba como un lugar seguro y anónimo para realizar transacciones ilegales.
 
 Sin embargo, en 2013 la plataforma fue cerrada por el FBI y su fundador, **Ross Ulbricht**, fue detenido y acusado de varios cargos relacionados con el tráfico de drogas y la conspiración para cometer fraude electrónico. Ulbricht fue condenado a cadena perpetua sin libertad condicional en 2015.
 

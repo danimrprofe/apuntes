@@ -2,7 +2,7 @@
 
 ![imagen](img/2022-11-06-22-48-44.png)
 
-¿Conocéis a alguien que tenga bitcoin u otro tipo de criptomoneda?
+¿Conocéis a alguien que tenga ``Bitcoin`` u otro tipo de criptomoneda?
 ¿Qué pensáis que es una criptomoneda?
 
 Bitcoin es a la vez el nombre de una red de ordenadores y el nombre de la moneda digital o criptomoneda.
@@ -17,7 +17,7 @@ Son activos digitales que se pueden usar para realizar **transacciones** financi
 
 ## ¿Qué criptomonedas existen?
 
-Existen muchísimas criptomonedas, cada una con una forma de funcionar ligeramente diferente. Cualquiera puede crear una criptomoneda. Las criptomonedas más populares son **Bitcoin**, **Ethereum**, Ripple, Litecoin, **Cardano**, Bitcoin Cash y Tether.
+Existen muchísimas criptomonedas, cada una con una forma de funcionar ligeramente diferente. Cualquiera puede crear una criptomoneda. Las criptomonedas más populares son **Bitcoin**, **Ethereum**, Ripple, Litecoin, **Cardano**, ``Bitcoin`` Cash y Tether.
 
 Aquí podéis ver el valor actual de algunas criptomonedas (2022):
 
@@ -31,7 +31,7 @@ Por último, existe un fuerte componente especulativo que ha provocado la entrad
 
 ![imagen](img/2022-11-06-22-49-17.png)
 
-En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido considerablemente.
+En los últimos tiempos, el valor de ``Bitcoin`` y otras criptomonedas ha disminuido considerablemente.
 
 ![imagen](img/2022-12-15-17-09-31.png)
 
@@ -61,13 +61,13 @@ En los últimos tiempos, el valor de bitcoin y otras criptomonedas ha disminuido
 - Comparten entre ellos toda la información
 - Si un ordenador se apaga, el resto siguen funcionando
 
-## Nodos de bitcoin
+## Nodos de ``Bitcoin``
 
 ![imagen](img/2022-11-06-22-50-34.png)
 
 ## ¿Cómo hacer que sea seguro?
 
-- La red de Bitcoin está "garantizada" por algoritmos criptográficos
+- La red de ``Bitcoin`` está "garantizada" por algoritmos criptográficos
 - Cada cuenta tiene asociadas unas claves que solo tiene el propietario de la cuenta
 - Los ordenadores verifican y protegen la red
 - A cambio, estos ordenadores reciben recompensas en forma de criptomoneda

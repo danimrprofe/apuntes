@@ -1,6 +1,6 @@
 # Exchange
 
-Un **exchange** de criptomonedas es una plataforma en línea que permite a los usuarios comprar, vender y intercambiar criptomonedas por otras criptomonedas o por monedas fiduciarias como el dólar estadounidense. Los exchanges de criptomonedas se parecen a los corredores de bolsa tradicionales, ya que permiten a los usuarios comprar y vender activos financieros. Sin embargo, en lugar de acciones, bonos u otros instrumentos financieros, los exchanges de criptomonedas ofrecen criptomonedas como Bitcoin, Ethereum y Litecoin. Binance es una de las plataformas de intercambio de criptomonedas más populares en el mundo.
+Un **exchange** de criptomonedas es una plataforma en línea que permite a los usuarios comprar, vender y intercambiar criptomonedas por otras criptomonedas o por monedas fiduciarias como el dólar estadounidense. Los exchanges de criptomonedas se parecen a los corredores de bolsa tradicionales, ya que permiten a los usuarios comprar y vender activos financieros. Sin embargo, en lugar de acciones, bonos u otros instrumentos financieros, los exchanges de criptomonedas ofrecen criptomonedas como ``Bitcoin``, Ethereum y Litecoin. Binance es una de las plataformas de intercambio de criptomonedas más populares en el mundo.
 
 ![imagen](img/2022-12-30-16-48-49.png)
 

@@ -19,7 +19,7 @@
 - Los mineros dedican potencia de ordenadores a crear bloques a cambio de la posibilidad de ganar dinero
 - Para este minado se necesita cada vez más potencia de computación
 
-La primera recompensa fue de 50 bitcoin y fue a parar a la dirección:
+La primera recompensa fue de 50 ``Bitcoin`` y fue a parar a la dirección:
 
 ```
 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
@@ -29,7 +29,7 @@ La primera recompensa fue de 50 bitcoin y fue a parar a la dirección:
 
 ## El reto
 
-El sistema de Bitcoin intenta crear bloques de forma regular cada diez minutos aproximadamente. Para ello, se establece un reto de dificultad que debe ser resuelto mediante criptografía. Esta criptografía consiste en generar un código **hash** específico mediante información del bloque actual y del bloque anterior.
+El sistema de ``Bitcoin`` intenta crear bloques de forma regular cada diez minutos aproximadamente. Para ello, se establece un reto de dificultad que debe ser resuelto mediante criptografía. Esta criptografía consiste en generar un código **hash** específico mediante información del bloque actual y del bloque anterior.
 
 El código hash del bloque génesis fue:
 ```

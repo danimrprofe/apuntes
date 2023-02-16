@@ -1,23 +1,22 @@
 
-
-# Breve historia de Bitcoin. Transacciones, bloques, hashes y recompensas
+# Breve historia de ``Bitcoin``. Transacciones, bloques, hashes y recompensas
 
 Bitcoin es un conjunto de tecnologías, así como el nombre de la moneda, basados en la tecnología blockchain.
 
 Bitcoin se basa en un **libro de cuentas** distribuido entre múltiples nodos repartidos por Internet, en forma de una cadena de bloques llamada **Blockchain** .
 
-Los **nodos** comparten información y crean bloques, manteniendo toda la estructura de bitcoin.
+Los **nodos** comparten información y crean bloques, manteniendo toda la estructura de ``Bitcoin``.
 
-##  Los bitcoin
-- La moneda se llama bitcoin. Existen unidades más pequeñas que un bitcoin
-- Las monedas se van creando poco a poco. Cada vez que se crea un bloque se generan bitcoin
-- Actualmente cada 10 minutos se crean 6.25 bitcoin, que se ingresan en la cuenta del minero que crea el bloque correcto
-- En 2140 se estima que se habrán creado todos los bitcoin
-- El máximo de monedas que habrá serán 21.000.000 de bitcoin. Ni más ni menos.
-- Un satoshi es equivalente a 0.00000001 bitcoins
-- Podemos comprar bitcoin con nuestro dinero, y venderlo a cambio de dinero.
-- La cantidad de euros a que equivale el bitcoin cambia con el tiempo.
-- Los bitcoin no existen, solo existen como anotaciones en el libro de cuentas
+##  Los ``Bitcoin``
+- La moneda se llama ``Bitcoin``. Existen unidades más pequeñas que un ``Bitcoin``
+- Las monedas se van creando poco a poco. Cada vez que se crea un bloque se generan ``Bitcoin``
+- Actualmente cada 10 minutos se crean 6.25 ``Bitcoin``, que se ingresan en la cuenta del minero que crea el bloque correcto
+- En 2140 se estima que se habrán creado todos los ``Bitcoin``
+- El máximo de monedas que habrá serán 21.000.000 de ``Bitcoin``. Ni más ni menos.
+- Un satoshi es equivalente a 0.00000001 ``Bitcoin``s
+- Podemos comprar ``Bitcoin`` con nuestro dinero, y venderlo a cambio de dinero.
+- La cantidad de euros a que equivale el ``Bitcoin`` cambia con el tiempo.
+- Los ``Bitcoin`` no existen, solo existen como anotaciones en el libro de cuentas
 - Las personas que minan un bloque con éxito, se «autotransfieren» una cantidad fija de la nada
 - Las cuentas
 - Cada persona crea al menos una cuenta, identificada con un código
@@ -40,7 +39,7 @@ Al hacer una transacción, parte del dinero pagado se descuenta para luego repar
 - Una vez se crea un bloque válido, se agrega a la cadena de bloques existente.
 - El 3 de enero de 2009 se crea el primer bloque.
 - Los bloques tienen un número que los identifica. El bloque original es el bloque 0.
-- En este bloque, la primera transacción es una cantidad de bitcoins creados nuevos a su cuenta
+- En este bloque, la primera transacción es una cantidad de ``Bitcoin``s creados nuevos a su cuenta
 - Si su bloque sale adelante, las transferencias de dentro se confirman, y se lleva la recompensa.
 - Las recompensas van disminuyendo cada 4 años (50,25, 12.5, 6.25, etc).
 - A día de hoy (octubre de 2021) existen alrededor de 700.000 bloques creados
@@ -50,7 +49,7 @@ Al hacer una transacción, parte del dinero pagado se descuenta para luego repar
 - Esta cadena de bloques se llama blockchain
 - Toda esta información, que ocupa actualmente 400 GB, se guarda en múltiples ordenadores
 - Estos ordenadores se llaman nodos, y se van intercambiando la información
-- Bitcoin existe mientras todos estos nodos guardan copias de la información
+- ``Bitcoin`` existe mientras todos estos nodos guardan copias de la información
 - Las recompensas
 - El sistema se sostiene gracias a recompensas. Las transacciones y los bloques dan recompensas.
 - Los mineros dedican potencia de ordenadores a crear bloques, a cambio de la posibilidad de ganar dinero

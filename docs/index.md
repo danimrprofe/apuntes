@@ -2,6 +2,18 @@
 
 Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de la informática durante los años que he dedicado a aprender y dar clase.
 
+## Diseño gráfico
+
+- [Tinkercad](tinkercad/index.md)
+- [Blender](blender/index.md)
+- [Diseño vectorial](diseño_vectorial/index.md)
+- [Imagen digital](imagen_digital/)
+- [Impresión 3d](impresión3D/)
+
+## Hardware
+
+- [Hardware](hardware/index.md)
+
 ## Robótica
 
 - [arduino](arduino/index.md)
@@ -10,22 +22,36 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 ## Administración de sistemas
 
+- [Administración remota](administración_remota/index.md)
 - [virtualizacion](virtualizacion/index.md)
+- [VMware](vmware/index.md)
 - [vagrant](vagrant/index.md)
 - [ansible](ansible/index.md)
+- [azure](azure/index.md)
 - [powershell](powershell/index.md)
+- [Windows server](windows_server/)
+- [terraform](terraform/index.md)
+- [Kubernetes](kubernetes/1._kubernetes.md)
+- [samba](samba/)
 
 ## Programación
 
+- [Pensamiento computacional](pensamiento_computacional/index.md)
+- [Programación orientada a objetos](programacion_orientada_a_objetos/index.md)
+- [Programación modular](programacion_modular/index.md)
+- [Programación estructurada](programacion_estructurada/index.md)
 - [python](python/index.md)
+- [pip](pip/index.md)
 - [pygame](pygame/index.md)
 - [git](git/index.md)
-- [thunkable](thunkable/index.md)
-- [``Unity``](``Unity``/index.md)
+- [App Inventor](appinventor/)
+- [``thunkable``](thunkable/index.md)
+- [``Unity``](unity/index.md)
 
 ## Seguridad
 
 - [seguridad informática](seguridad/index.md)
+- [criptomonedas](criptomonedas/)
 
 ## Ofimática
 
@@ -36,6 +62,7 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 ## Video
 
 - [Video](video/index.md)
+- [Edición de video](video%20edicion/)
 - [Twitch](twitch/index.md)
 - [Youtube](youtube/index.md)
 - [OBS](obs/index.md)

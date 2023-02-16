@@ -22,37 +22,19 @@ Tienen una escala graduada \(analógico\) o una pantalla de visualización \(dig
 
 El amperímetro de gancho que utiliza pinzas en lugar de cables\.
 
-![imagen](img/2_Aparatos_de_medida0.jpg)
-
-![imagen](img/2_Aparatos_de_medida1.jpg)
-
 ![imagen](img/2_Aparatos_de_medida2.jpg)
 
-Aparatos de medida
+## Osciloscopio
 
-__Multímetro, polímetro __ o  __téster __ es un aparato para realizar diferentes mediciones: voltaje, resistencia, frecuencia…
-
-__Osciloscopio __ permite visualizar gráficamente un gran número de variables en circuitos eléctricos y electrónicos\.
-
-![imagen](img/2_Aparatos_de_medida3.jpg)
+Un ``osciloscopio`` es un instrumento de medición eléctrico que visualiza y analiza ondas electromagnéticas, permitiendo ver y medir la forma, amplitud, frecuencia y duración de una señal. Estos se usan en una variedad de aplicaciones que incluyen la prueba de circuitos, la reparación de equipos electrónicos y la verificación de la calidad de productos. Los osciloscopios modernos pueden mostrar gráficos en tres dimensiones para ayudar a los técnicos a identificar problemas rápidamente.
 
 ![imagen](img/2_Aparatos_de_medida4.jpg)
 
-Selección de magnitud, rango y conexión
+## Multímetro
 
-Multímetro es utilizado para medir:
+Un multímetro, también conocido como polímetro o téster, es un aparato utilizado para realizar diversas mediciones, como voltaje, resistencia, frecuencia, entre otras. El multímetro puede usarse para medir voltaje en corriente continua y alterna (voltímetro), intensidad en corriente continua (amperímetro) y resistencia (óhmetro). Además, también se pueden probar diodos y transistores, así como comprobar la continuidad de un circuito.
 
-__Voltaje__  en corriente  continúa y alterna  \(voltímetro\)
-
-__Intensidad__  en corriente  continúa \(Amperímetro\)
-
-__Resistencia__  \(Óhmetro\)
-
-Probar  __diodos__  y  __transistores__
-
-Probar la  __continuidad__  de un circuito
-
-![imagen](img/2_Aparatos_de_medida5.png)
+![imagen](img/2_Aparatos_de_medida3.jpg)
 
 ## Selección de magnitud, rango y conexión
 

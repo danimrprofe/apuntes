@@ -13,6 +13,8 @@
     * Las limitaciones en cuanto al  __tamaño de archivos __
     * Las  __compatibilidades__
 
+## FAT
+
 * Sistema de archivos  <span style="color:#FF0000">FAT</span>
   * Desarrollados para Windows pero  _compatibles con entornos Linux_ \.
   * Crean una  __tabla de asignación __ de archivos \(File Allocation Table\)
@@ -28,6 +30,8 @@
 ![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria10.png)
 
 ![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria11.png)
+
+## NTFS
 
 * Sistema de archivos  <span style="color:#FF0000">NTFS</span>
   * Diseñado para versiones modernas de Windows \(NT \- Windows 8\.1\)
@@ -50,6 +54,8 @@ __Linux__  Algunas distribuciones pueden habilitar el soporte de escritura NTFS,
 __PlayStation__  Ninguna de las consolas PlayStation de Sony admite NTFS\.
 
 __Xbox 360__  no puede leer las unidades NTFS, Xbox One puede
+
+## EXT
 
 * Sistema de archivos extendido  <span style="color:#FF0000">EXT</span>
   * Sistema característico de los entornos  __Linux__

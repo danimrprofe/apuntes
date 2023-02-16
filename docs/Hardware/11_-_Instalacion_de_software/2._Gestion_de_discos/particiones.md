@@ -1,13 +1,8 @@
 # Particiones
 
-* Unidades físicas y lógicas
-  * Cada disco duro constituye una  __unidad física__
-  * Cada unidad física puede contener una o más  __unidades lógicas__ , denominadas  _particiones_ \.
-* Tabla de particiones
-  * Contiene el registro de las particiones de un disco
-  * Está en el sector  __MBR__
-  * Se indica cuál es la  __partición activa __ del disco\.
-    * A la que se dirige el bootstrap para iniciar el arranque del sistema\.
+Cada disco duro es una unidad física que puede contener una o más ``unidades lógicas`` denominadas ``particiones``. Para llevar un control de estas particiones, se encuentra en el sector ``MBR`` (Master Boot Record) una tabla con los registros de las particiones de un disco llamada ``tabla de particiones``.
+
+Esta tabla también indica cuál es la ``partición activa`` del disco, la cual es a la que se dirige el bootstrap para iniciar el arranque del sistema.
 
 ![imagen](img/Discos%2C_particiones_y_sistemas_de_archivo_-_teoria5.gif)
 

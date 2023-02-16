@@ -1,12 +1,12 @@
 # Potencia y energía
 
-_Potencia_
+## Potencia
 
 La potencia es la energía consumida en un momento puntual\. Se mide en vatios \(W\)
 
 Los equipos electrónicos consumen X vatios a la hora\.
 
-_Energía_
+## Energía
 
 Es lo que se consume cuando tenemos un receptor conectado durante un tiempo\.
 

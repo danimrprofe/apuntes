@@ -1,10 +1,4 @@
-## Aparatos de medida
-
-```
-
-```
-
-## Aparatos de medición
+# Aparatos de medida
 
 _Tensión o voltaje_
 
@@ -122,4 +116,3 @@ Selección de magnitud, rango y conexión
 - En ningún caso se debería puentear la conexión
 
 ![imagen](img/2_Aparatos_de_medida12.png)
-

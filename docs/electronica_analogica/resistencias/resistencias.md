@@ -1,11 +1,7 @@
-# Unidad 5: Componentes pasivos
 
-# Equipos eléctricos y electrónicos
-1º FP Básica Informática y comunicaciones
-IES Porto Cristo
-Actualizado: 16 de diciembre de 2016
+# Resistencias
 
-# Identificación del valor de las resistencias
+## Identificación del valor de las resistencias
 
 * Bandas de colores
 * Resuelve 2 problemas
@@ -14,17 +10,17 @@ Actualizado: 16 de diciembre de 2016
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%290.png)
 
-# Identificación de resistencias4 bandas
+## Identificación de resistencias4 bandas
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%291.png)
 
-# Identificación de resistenciasCódigo alfanumérico
+## Identificación de resistenciasCódigo alfanumérico
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%292.png)
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%293.png)
 
-# Tipos de resistencias
+## Tipos de resistencias
 
 * Según la clasificiación funcional
   * Lineales
@@ -54,7 +50,7 @@ Actualizado: 16 de diciembre de 2016
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%296.jpg)
 
-# Potencia disipada
+## Potencia disipada
 
 * Según potencia disipada
   * De precisión: hasta 0\,5 W \(tolerancias <= 1%\)
@@ -69,7 +65,7 @@ Unidades: vatio o fracción de vatio
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%297.png)
 
-# Tipos de resistencia
+## Tipos de resistencia
 
 * Según su montaje en el circuito
   * De inserción
@@ -78,7 +74,7 @@ Unidades: vatio o fracción de vatio
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%298.gif)
 
-# Resistencias de película de carbón
+## Resistencias de película de carbón
 
 Tira o película de  _carbón _
 
@@ -102,7 +98,7 @@ Entre 1/10 W y 2 W
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2911.png)
 
-# Resistencias de pel·lícula metálica
+## Resistencias de pel·lícula metálica
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2912.png)
 
@@ -122,17 +118,17 @@ Las resistencias de película metálica son utilizadas para aplicaciones donde s
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2913.png)
 
-# Resistencias en electrodomésticos
+## Resistencias en electrodomésticos
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2914.png)
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2915.png)
 
-# Resistencias variables
+## Resistencias variables
 
 #
 
-# Resistencias variables
+## Resistencias variables
 
 Potenciómetros
 
@@ -144,7 +140,7 @@ Resistencias dependientes de la temperatura
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2916.png)
 
-# Potenciómetros
+## Potenciómetros
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2917.png)
 
@@ -154,7 +150,7 @@ Resistencias dependientes de la temperatura
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2920.png)
 
-# Resistencias ajustables
+## Resistencias ajustables
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2921.png)
 
@@ -162,7 +158,7 @@ Resistencias dependientes de la temperatura
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2923.png)
 
-# Trimmers
+## Trimmers
 
 Los trimmers \(o resistencias ajustables\)
 
@@ -214,11 +210,11 @@ Entre los extremos máximo y mínimo de la resistencia el eje da  <span style="c
 
 En los anteriores la variación se realiza con un solo giro del eje\.
 
-# Resistencias dependientes
+## Resistencias dependientes
 
 #
 
-# Resistencias dependientes
+## Resistencias dependientes
 
 * Componentes fabricados con  <span style="color:#FFC000">semiconductores</span>
 * Valor óhmico varía en función de características
@@ -229,7 +225,7 @@ En los anteriores la variación se realiza con un solo giro del eje\.
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2925.png)
 
-# Fotorresistencias
+## Fotorresistencias
 
 * Resistencias  <span style="color:#FFC000">LDR</span>  \(Light Dependent Resistor\)
 * Valor  <span style="color:#FFC000">óhmico varía en </span>  <span style="color:#FFC000">función </span>  <span style="color:#FFC000">de la luz</span>  que reciben en su superficie\.
@@ -250,7 +246,7 @@ Similar a las resistencias
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2927.png)
 
-# Resistencias dependientes de la temperatura
+## Resistencias dependientes de la temperatura
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2928.png)
 
@@ -270,7 +266,7 @@ Similar a las resistencias
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2931.png)
 
-# Magneto resistores (MDR)
+## Magneto resistores (MDR)
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2932.png)
 
@@ -280,7 +276,7 @@ RESISTENCIAS
 
 DEPENDIENTES
 
-# TIPOS DE RESISTENCIAS
+## TIPOS DE RESISTENCIAS
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2933.png)
 
@@ -289,4 +285,3 @@ DEPENDIENTES
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2934.png)
 
 ![imagen](img%5CUd%205%20-%20Componentes%20pasivos%20%28Resistencias%2935.png)
-

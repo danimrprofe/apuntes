@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>estructura_de_un_disco.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,208 +365,74 @@ code {
           : 'default'
     });
   </script>
-<pre><code>____        __  __
-</code></pre>
-<p>/ __ __  <strong>/ /<em>/ /</em>  ____  ____
-/ /<em>/ / / / / __/ __ / __ / __ <br>
-/ <em><em><em><em>/ /</em>/ / /</em>/ / / / /</em>/ / / / /
-/</em>/    _</em>, /_<em>/</em>/ /<em>/_</em></strong>/<em>/ /</em>/
-/____/</p>
-<ol>
-<li>
-<p>¿Qué es Python?</p>
-<p>a) Un lenguaje de programación
-b) Un sistema operativo
-c) Un sistema criptográfico
-d) Un fabricante de ordenadores</p>
+<h1 id="estructura-de-un-disco">Estructura de un disco</h1>
+<h2 id="estructura-f%C3%ADsica-del-disco-duro">Estructura física del disco duro</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/07_-_Unidades_de_almacenamiento/estructura-logica/img/Discos,_particiones_y_sistemas_de_archivo_-_teoria1.jpg" alt="imagen"></p>
+<ul>
+<li>Estructura física del disco
+<ul>
+<li>Un disco duro puede contar con uno o varios  <strong>discos</strong> .</li>
+<li>Cada disco suele contar con dos  <strong>caras</strong> .</li>
+<li>Cada cara es leída por un  <strong>cabeza de lectura/escritura</strong></li>
+<li>Un disco tiene tantas  <strong>cabezas</strong>  como caras</li>
+<li>Cada una de las caras se divide en anillos llamados  <strong>pistas</strong> .</li>
+<li>La misma pista de cada una de las cabezas se llama  <strong>cilindro</strong> .</li>
+<li>Cada pista se divide en  <strong>sectores</strong> .</li>
+</ul>
 </li>
-<li>
-<p>¿Cual es la extensión de un archivo de python?</p>
-<p>a) .python
-b) .py
-c) .pl
-d) .p</p>
+<li>Sectores
+<ul>
+<li>Un  <strong>sector</strong>  es el trozo más pequeño que se puede leer o escribir</li>
+<li>En cada sector se almacenan 512 Bytes de información. (En SSD 4-16 KB)</li>
+<li>La agrupación de varios sectores se denomina  <strong>clúster</strong> .</li>
+</ul>
 </li>
-<li>
-<p>¿Qué argumento se debe pasar a la función input() para mostrar un texto en pantalla?</p>
-<p>a) input(Mal)
-b) input = (&quot;Regular&quot;)
-c) input.(&quot;Casi&quot;)
-d) input(&quot;Bien&quot;)</p>
+<li>Para localizar la información en un disco
+<ul>
+<li><strong>Identificación:</strong>  Cabeza - Cilindro - Sector</li>
+<li>Las cabezas y los cilindros se comienzan a numerar desde el «0» y los sectores desde el «1», así que el primer bloque de información estará situado en la posición «0-0-1».</li>
+</ul>
 </li>
-<li>
-<p>¿Cómo se imprimen los valores de &quot;la&quot; y &quot;suma&quot; en una misma línea?</p>
-<p>a) print(&quot;la&quot; - &quot;suma&quot;)
-b) print(&quot;la&quot; * &quot;suma&quot;)
-c) print(&quot;la&quot; + &quot;suma&quot;)
-d) print(&quot;la&quot; &quot;suma&quot;)</p>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/07_-_Unidades_de_almacenamiento/estructura-logica/img/Discos,_particiones_y_sistemas_de_archivo_-_teoria2.jpg" alt="imagen"></p>
+<p>Cabeza – Cilindro – Sector</p>
+<p>Primer bloque:  <strong>0 - 0 - 1</strong></p>
+<h2 id="estructura-l%C3%B3gica-del-disco-duro">Estructura lógica del disco duro</h2>
+<ul>
+<li>MBR
+<ul>
+<li>Es el  __primer sector __ de cualquier disco duro</li>
+<li>En él se almacenan
+<ul>
+<li>La  <strong>tabla de particiones</strong></li>
+<li>Un programa de inicialización del sistema ( <strong>bootstrap</strong>  <strong>)</strong></li>
+</ul>
 </li>
-<li>
-<p>¿Cómo se usa la función print() correcta para mostrar un mensaje en pantalla?</p>
-<p>a) print(&quot;Los huargos no tienen pelo&quot;)
-b) print.(&quot;Los huargos son Targaryen&quot;)
-c) print(&quot;Los huargos son perros&quot;)
-d) print(&quot;Los huargos son lobos&quot;)</p>
+<li>Los más conocidos son:
+<ul>
+<li><em>NTLDR:</em>  para sistemas Windows modernos</li>
+<li><em>LILO y GRUB</em> : para sistemas Linux</li>
+<li><em>PXE</em> : para arranque a través de un entorno de red.</li>
+</ul>
 </li>
-<li>
-<p>¿Cuál es la sintaxis correcta para imprimir un valor de &quot;x&quot; en una línea?</p>
-<p>a) print(x)
-b) x.print()
-c) print.x()
-d) x.print</p>
+</ul>
 </li>
-<li>
-<p>¿Qué argumento se puede pasar a print() para agregar un salto de línea al final?</p>
-<p>a) \n
-b) \t
-c) end=&quot;\n&quot;
-d) end=&quot;\t&quot;</p>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/07_-_Unidades_de_almacenamiento/estructura-logica/img/Discos,_particiones_y_sistemas_de_archivo_-_teoria3.jpg" alt="imagen"></p>
+<ul>
+<li>__Espacio particionado: __
+<ul>
+<li>Espacio que ya se ha asignado para almacenar datos o programas</li>
+</ul>
 </li>
-<li>
-<p>¿Cuál de los siguientes operadores se utiliza para asignar un valor a una variable?</p>
+<li>__Espacio no asignado: __
+<ul>
+<li>Zona no accesible del disco a la que todavía no se le ha asignado un fin.</li>
+<li>No contiene datos ni programas de ningún tipo.</li>
+</ul>
 </li>
-</ol>
-<p>a) +
-b) -
-c) *
-d) =</p>
-<ol start="9">
-<li>¿Cuál de estos es un operador de comparación en Python?</li>
-</ol>
-<p>a) =
-b) ==
-c) +
-d) +=</p>
-<ol start="10">
-<li>¿Cómo se declara una variable en Python?</li>
-</ol>
-<p>a) set x
-b) var x
-c) x =
-d) define x</p>
-<ol start="11">
-<li>
-<p>¿Qué método se utiliza para convertir una cadena en un número entero en Python?</p>
-<p>A. to_int()
-B. int()
-C. num()
-D. to_num()</p>
-</li>
-<li>
-<p>¿Cuál es el resultado de la siguiente expresión en Python?</p>
-<p>a = &quot;todo&quot;
-b = &quot;junto&quot;
-a + b</p>
-<p>A) &quot;todojunto&quot;
-B) &quot;todo junto&quot;
-C) &quot;junto todo&quot;
-D) TypeError</p>
-</li>
-<li>
-<p>¿Cuál es la salida de este fragmento de código?</p>
-<p>x = 5
-y = 10
-print(x + y*2)</p>
-<p>A) 5
-B) 25
-C) 15
-D) Error</p>
-</li>
-<li>
-<p>¿Cómo se define una sentencia if-else?</p>
-<p>a) Un bloque de código que se ejecuta si una condición es verdadera
-b) Un bloque de código que se ejecuta siempre
-c) Un bloque de código que se ejecuta si una condición es falsa
-d) Un bloque de código que se ejecuta si una condición es igual</p>
-</li>
-<li>
-<p>¿Cuál es la sintaxis correcta para usar una sentencia if-else?</p>
-<p>a. if (expresión) {sentencia} else {sentencia}
-b. if (expresión): sentencia else: sentencia
-c. if (expresión) {sentencia}; else {sentencia}
-d. if (expresión); sentencia else sentencia</p>
-</li>
-<li>
-<p>¿Cuál de los siguientes fragmentos de código representa una sentencia if-elif-else?</p>
-<p>a. if (expresión): sentencia elif (expresión): sentencia else: sentencia
-b. if (expresión): sentencia; else (expresión): sentencia
-c. if (expresión) {sentencia} else {sentencia}
-d. if (expresión): sentencia; elif (expresión): sentencia else: sentencia</p>
-</li>
-</ol>
-<p>17.¿Qué hace el siguiente fragmento de código?</p>
-<pre><code>if x &gt; 10:
-    print(&quot;x es mayor que 10&quot;)
-else:
-    print(&quot;x es menor o igual que 10&quot;)
-
-a. Imprime &quot;x es mayor que 10&quot; si x es mayor que 10
-b. Imprime &quot;x es mayor que 10&quot; si x es menor que 10
-c. Establece x como 10
-d. Establece x como mayor que 10
-</code></pre>
-<p>18.¿Cuál de las siguientes líneas de código es válida para una sentencia condicional if-else?</p>
-<pre><code>a. if x == 10:
-print(&quot;x es 10&quot;)
-b. if x == 10
-    print(&quot;x es 10&quot;)
-else
-    print(&quot;x no es 10&quot;)
-c. if x == 10
-    print(x es 10)
-d. if x == 10:
-    print(&quot;x es 10&quot;)
-else:
-    print(&quot;x no es 10&quot;)
-</code></pre>
-<ol start="19">
-<li>
-<p>¿Cuál es la sintaxis correcta para importar un módulo en Python?</p>
-<p>A. import modulo
-B. import modulo.py
-C. require modulo
-D. require modulo.py</p>
-</li>
-<li>
-<p>¿Cuál es la sintaxis correcta para crear una lista vacía en Python?</p>
-<p>A. lista = []
-B. lista = list()
-C. lista = {}
-D. lista = list{}</p>
-</li>
-<li>
-<p>¿Cuál de las siguientes opciones define una lista en Python?</p>
-<p>a) my_list = &quot;Hola Mundo&quot;
-b) my_list = (1,2,3,4)
-c) my_list = {1,2,3,4}
-d) my_list = [1,2,3,4]</p>
-</li>
-<li>
-<p>¿Cuál es el resultado de la siguiente expresión en Python?</p>
-</li>
-</ol>
-<p>numeros = [1, 2, 3, 4]
-numeros[3] = 5</p>
-<p>A) [1, 2, 3, 5]
-B) [1, 2, 3, 4, 5]
-C) [1, 2, 5, 4]
-D) [1, 2, 3, 4]</p>
-<ol start="23">
-<li>¿Cuál es el resultado del siguiente código?</li>
-</ol>
-<p>for elemento in [1, 2, 3]:
-print(elemento)</p>
-<p>A. 1 2 3
-B. [1,2,3]
-C. Error
-D. None</p>
-<ol start="24">
-<li>¿Cuál es la sintaxis correcta para definir una función en Python?</li>
-</ol>
-<p>A. def my_function()
-B. function my_function
-C. def my_function
-D. function: my_function</p>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/07_-_Unidades_de_almacenamiento/estructura-logica/img/Discos,_particiones_y_sistemas_de_archivo_-_teoria4.png" alt="imagen"></p>
 
 </body>
 </html>

@@ -15,22 +15,27 @@ Para que los miembros del grupo de marketing también tengan acceso a la impreso
 ## Tipos de grupos
 
 Hay dos clasificaciones de grupo en Windows Server:
-Tipo de grupo
-Ámbito de grupo.
+
+- Tipo de grupo
+- Ámbito de grupo.
+
 El tipo de grupo define cómo se usa un grupo dentro de Active Directory.
 
 Los dos tipos de grupos de Windows Server 2012 R2 son los siguientes:
 
-* Grupos de distribución Grupos no relacionados con la seguridad creados para la distribución de Información a una o más personas.
-* Grupos de seguridad Grupos relacionados con la seguridad creados para otorgar permisos de acceso a recursos a múltiples usuarios
+- ``Grupos de distribución``: grupos no relacionados con la seguridad creados para la distribución de Información a una o más personas.
+- ``Grupos de seguridad``: grupos relacionados con la seguridad creados para otorgar permisos de acceso a recursos a múltiples usuarios
 
 ### Grupos de distribución
 
-Las aplicaciones compatibles con Active Directory pueden usar grupos de distribución para funciones no relacionadas con la seguridad
+Las aplicaciones compatibles con Active Directory pueden usar grupos de distribución para funciones no relacionadas con la seguridad.
+
 Por ejemplo, Microsoft Exchange usa grupos de distribución para enviar mensajes a múltiples usuarios.
 
 ### Grupos de seguridad
 
 Los grupos que utiliza para asignar permisos a los recursos se denominan grupos de seguridad.
+
 Los administradores hacen que los usuarios que necesitan acceso a los mismos recursos sean miembros de un grupo de seguridad.
+
 Luego otorgan permiso al grupo de seguridad para acceder al recurso.

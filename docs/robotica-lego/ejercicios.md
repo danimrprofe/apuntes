@@ -266,7 +266,7 @@ task main()
 ## 13. Sensor de ultrasonidos
 
 ```c
-#define NEAR 15
+#define DISTANCIA 15
 
 task main()
 {
@@ -274,7 +274,7 @@ task main()
     while(true)
     {
     OnFwd(OUT_AC,50);
-    while(SensorUS(IN_4)>NEAR);
+    while(SensorUS(IN_4)>DISTANCIA);
     Off(OUT_AC);
     OnRev(OUT_C,100);
     Wait(800);
@@ -284,27 +284,58 @@ task main()
 
 ## 14. Subrutinas
 
+Podemos crear subrutinas o funciones para no tener que repetir el código muchas veces. En este ejemplo, creamos una función llamada ``girar`` a la que le pasaremos como parámetro la potencia.
+
+El código de la función no se ejecuta de primeras, sólo cuando se la llama dentro de la función.
+
+El programa siempre comienza a ejecutarse en ``task main()``
+
 ```c
-sub turn_around(int pwr) //Anlegen einer Subroutine
+sub girar(int potencia)
 {
-    OnRev(OUT_C, pwr);
+    OnRev(OUT_C, potencia);
     Wait(900);
-    OnFwd(OUT_AC, pwr);
+    OnFwd(OUT_AC, potencia);
 }
 task main()
 {
     OnFwd(OUT_AC, 75);
     Wait(1000);
-    turn_around(75); //Aufruf der Subroutine
+    girar(75); //Aufruf der Subroutine
     Wait(2000);
-    turn_around(75); //Aufruf der Subroutine
+    girar(75); //Aufruf der Subroutine
     Wait(1000);
-    turn_around(75); //Aufruf der Subroutine
+    girar(75); //Aufruf der Subroutine
     Off(OUT_AC);
 }
 ```
 
 ## 15. Música
+
+El robot nos permite reproducir sonido. Para ello podemos utilizar la función ``PlayToneEx``. Si le pasamos como argumentos una frecuencia de sonido y una duración, nos generará dicho sonido.
+
+Las frecuencias de las notas son las siguientes:
+
+![imagen](2023-02-20-11-49-49.png)
+
+
+Si queremos que un sonido dure un segundo, utilizaríamos el valor 1000, 500 para medio segundo, etc.
+
+Veamos un ejemplo
+
+``PlayToneEx(262,400,3,FALSE);``
+
+En este caso se reproduce un do (C), durante 400 milisegundos, a volumen 3. False indica que no se repetirá.
+
+Si queremos crear silencios:
+
+``Wait(500);``
+
+Prueba a crear la siguiente canción
+
+![imagen](2023-02-20-11-50-56.png)
+
+Podéis coger este ejemplo de referencia
 
 ```c
 #define VOL 3
@@ -319,6 +350,8 @@ PlayToneEx(262,1600,VOL,FALSE); Wait(2000);
 ```
 
 ## 16. Música y movimiento
+
+Podemos hacer que dos ``task`` (tareas) se ejecuten al mismo tiempo. Por ejemplo, podemos mover el robot al mismo tiempo que suena la música.
 
 ```c
 task music()

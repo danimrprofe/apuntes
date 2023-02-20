@@ -287,7 +287,11 @@ task main()
 
 ## 13. Sensor de ultrasonidos
 
-Tenemos que comprobar que tenemos conectado el sensor de ultrasonidos en el puerto correcto. En este caso, ``IN_4``. Con la función siguiente, le indicamos al programa que lo vamos a utilzar, y le decimos donde lo hemos conectado.
+Tenemos que comprobar que tenemos conectado el sensor de ultrasonidos en el puerto correcto. En este caso, ``IN_4``.
+
+![](2023-02-20-12-14-46.png)
+
+Con la función siguiente, le indicamos al programa que lo vamos a utilzar, y le decimos donde lo hemos conectado.
 
 ``SetSensorLowspeed(IN_4);``
 

@@ -190,6 +190,15 @@ Fíjate que la sentencia do es casi igual que la sentencia while. Pero en el whi
 
 ## 10. Sensor contacto
 
+
+Cada sensor lo tenéis que conectar a uno de los puertos de entrada:
+
+![](2023-02-20-12-08-49.png)
+
+En este ejemplo, el sensor de contacto es el botón que tenéis detrás en el robot. Debería conectarse al puerto ``IN_1``.
+
+![](2023-02-20-12-11-25.png)
+
 ```c
 task main()
 {
@@ -199,6 +208,8 @@ task main()
     Off(OUT_AC);
 }
 ```
+
+Otro ejemplo:
 
 ```c
 task main()
@@ -218,6 +229,10 @@ task main()
 ```
 
 ## 11. Sensor de luz
+
+Comprobad que tenéis conectado el sensor de luz en el puerto ``IN_3``.
+
+![](2023-02-20-12-12-01.png)
 
 ```c
 #define SPEED 60
@@ -245,18 +260,25 @@ task main ()
 
 ## 12. Sensor de sonido
 
+Comprobad que tenéis el sensor de sonido conectado al puerto ``IN_2``.
+
+![](2023-02-20-12-12-38.png)
+
+En este caso, le tenemos que decir a partir de qué valor va a decirnos que detecta un sonido, en función del volumen, indicado de 0 a 100.
+
+En este caso, está fijado en 40 decibelios.
+
 ```c
-#define THRESHOLD 40
-#define MIC SENSOR_2
+#define UMBRAL 40
 task main()
 {
     SetSensorSound(IN_2);
     while(true)
     {
-        until(MIC > THRESHOLD);
+        until(MIC > UMBRAL);
         OnFwd(OUT_AC, 75);
         Wait(300);
-        until(MIC > THRESHOLD);
+        until(MIC > UMBRAL);
         Off(OUT_AC);
         Wait(300);
     }
@@ -264,6 +286,12 @@ task main()
 ```
 
 ## 13. Sensor de ultrasonidos
+
+Tenemos que comprobar que tenemos conectado el sensor de ultrasonidos en el puerto correcto. En este caso, ``IN_4``. Con la función siguiente, le indicamos al programa que lo vamos a utilzar, y le decimos donde lo hemos conectado.
+
+``SetSensorLowspeed(IN_4);``
+
+Definiremos la distancia a la que queremos que detecte un objeto. En este caso, serán 15 cm, pero lo podéis modificar.
 
 ```c
 #define DISTANCIA 15

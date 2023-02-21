@@ -14,6 +14,16 @@ Un Tilemap es una herramienta de ``Unity`` que permite crear ambientes de juego 
 
 ## 5. Asignar collider al tilemap
 
+## Colisiones
+
+Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles colliders a nuestros objetos. Los colliders son  componentes que se añaden a estos objetos
+
+Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con ++shift++ pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente
+
+Si que no queréis que alguno por ejemplo en mi caso no que recoger la línea del centro porque no quiero que tenga esa colisión porque imagino que tenemos la bola aquí y conexiones con el centro y puesto que no tendría sentido básicamente porque a lo mejor si vengo desde aquí y colisionó colisión colisión y comisionó mi ``Player1`` va a ganar otro rato porque no puede pasar para allá entonces lo que sí vamos a hacer es nombrarlo para que sepamos qué es el centro que en este caso por estirando cuenta que es el ``Goal2`` llamamos centro y a este es al que no tenemos que añadirle colisión.
+
+Seleccionamos todos los demás objetos, añadir componente y añadimos un ``box collider 2D`` que sé que tenemos por aquí así pues ya tendrán colisiones.
+
 Para asignar un collider al tilemap, primero necesitamos habilitar el tilemap colisiones en el editor de ``Unity``. Esto se puede hacer en el inspector del tilemap, seleccionando la carpeta "Tilemap Collider 2D". Luego, seleccione todas las capas de su tilemap y active la casilla "Generar Colliders". Esto generará automáticamente un collider en el tilemap.
 
 ## 6. Asignar rigidbody al personaje

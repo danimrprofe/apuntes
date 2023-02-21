@@ -157,3 +157,148 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ```
+
+## Crear script player
+
+## Asignar script al jugador
+
+Una vez terminado, podemos asignar el script ``player.cs`` a los objetos ``player1`` y ``player2``, arrastrándolos y soltándolos sobre estos objetos.
+
+## Cambiar el booleano para player2
+
+![](2023-02-21-11-25-50.png)
+
+## Asignar rigidbody al script
+
+![](2023-02-21-11-26-35.png)
+
+## Crear método reset en el script
+
+![](2023-02-21-11-28-04.png)
+
+## Crear script para la pelota
+
+Crearemos un script para la pelota al que llamaremos ``ball.cs``.
+
+## Asignar script a la bola
+
+## Asignar el rigibody
+
+![](2023-02-21-11-36-16.png)
+
+## Crear material para la pelota
+
+![](2023-02-21-11-36-57.png)
+
+![](2023-02-21-11-37-23.png)
+
+## Restringir movimientos en los players
+
+Solo queremos que los jugadores se muevan en un eje, por lo que restringimos los otros dos.
+
+![](2023-02-21-11-38-12.png)
+
+## Reorganizar archivos
+
+![](2023-02-21-11-45-01.png)
+
+## Crear interfaz puntuación
+
+Crearemos las puntuaciones. Al crear una UI, este objeto se nos pondrá dentro de una carpeta ``canvas``.
+
+![](2023-02-21-11-46-04.png)
+
+## Cambiar posición
+
+![](2023-02-21-11-47-30.png)
+
+Una vez creado el texto y colocado, lo duplicaremos para tener dos objetos texto, a los que modificaremos el nombre y se llamarán ``Player1Text`` y ``Player2Text``.
+
+## Cambiar pelota y hacerla redonda
+
+En el ``Sprite Renderer`` tenéis que cambiar la propiedad ``Sprite`` por un círculo.
+
+## Crear el script del juego
+
+Crearemos un ``script`` que llamaremos ``GameManager`` (veréis que cambia el icono por un engranaje).
+
+Borraremos los métodos ``start()`` y ``update()``.
+
+Crearemos los métodos ``Player1Scored()`` y ``Player1Scored()``.
+
+Al marcar un gol:
+
+1. La pelota vuelve al centro
+2. Las palas vuelven a su posición iniciar
+3. Cambiamos los valores del marcador
+
+``ResetPosition()`` será un método que resteará los objetos.
+
+## Añadir las referencias a objetos
+
+Arrastraremos todos los objetos a las propiedades del script ``GameManager``.
+
+## Marcar trigger en las porterías
+
+Necesitamos marcar la opción ``is Trigger`` del componente ``Box Collider 2D``.
+
+## Crear script para las porterías
+
+Creamos un script llamado ``Goal.cs``.  Utilizaremos el método ``OnTriggerEnter2D()`` para detectar colisión entre la pelota y alguna de las porterías.
+
+``CompareTag`` comprobará si el objeto que colisiona es la bola y, en caso de ser así, según si colisiona con ``Goal1`` o con ``Goal2`` cambiaremos la puntuación correspondiente.
+
+## Asignar scripts
+
+Vamos a asignar el script creado a ``Goal1`` y a ``Goal2`` y marcamos en ``Goal1`` el check player1goal.
+
+## Asignar etiqueta a la bola
+
+Necesitamos asignar el ``tag`` que llamaremos ``ball`` al objeto pelota, seleccionando en ``Tag`` y ``Add Tag``.
+
+## Crear referencias
+
+Nos hemos dejado crear referencias en el script ``Goal.cs``. Una vez lo hayamos hecho, arrastramos ``GameManager`` a las referencias.
+
+## Cambiar colores
+
+Utilizar la págin ``coolors`` para elegir paletas.
+
+## Inteligencia artificial
+
+Vamos a hacer que un jugador sea controlado por la máquina.
+Crear el script ``IA.cs`` y la completamos.
+
+Una vez completado el script.
+
+Asignamos el script ``IA.cs`` a ``Player1`` y desamarcamos el checkbox del scripts ``Players`` para que no interfiera.
+
+Arrastramos la referencia de ``Bola`` al script.
+
+Crear variable en ``GameManager`` para decidir si el juego es PvP o PvsPC. Será un booleano. En ``ResetPosition()`` miraremos este valor para decidir resetear o no.
+
+Seleccionar el objeto ``GameManager``  y marcar la opción ``IA Game``.
+
+## Crear menú
+
+Necesitaremos 3 escenas. Ahora solo tenemos la escena ``Main``. La vamos a llamar ``PlayerVSIA`` para diferenciarla.
+
+La duplicamos y le llamamos ``PlayerVSPlayer``. En esta escena, desmarcamos el check de ``IA Game``.
+
+Creamos una escena 2D nueva yendo a ``File > New scene > 2D``.
+
+Crear botón. Clic derecho en Hierarchy y ``Create > UI > Button``.
+
+El botón se hará grande o pequeño según la resolución y el aspect ratio. Si queremos fijar su tamaño, haremos lo siguiente.
+
+Iremos al objeto Canvas en el que se ha creado el botón y en el componente ``Canvas Scaler`` vamos a la propiedad ``UI Scale Mode`` y elegimos ``Scale With Screen Size``.
+
+Duplicamos el botón y le colocmos el ltexto ``Player VS Player``. Lo movemos y lo situamos.
+
+Pondremos un texto y le cambiaremos el texto por PONG, y lo haremos más grande. Para evitar problemas al hacerlo grande o pequeño, vamos al ``inspector`` y buscamos en paragraph las opciones ``horizontal overflow`` y ``vertical overflow ``y les asignamos el valor ``overflow``.
+
+Lo hacemos grande y lo situamos.
+
+Guardamos la escena (que ahora se llama ``Untitled*``) con +ctrl+ y +s+  y le llamaremos ``MainMenu``.
+
+## Crear script MainMenu.cs

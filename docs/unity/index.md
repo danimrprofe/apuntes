@@ -213,6 +213,49 @@ Algunas de las formas más comunes de solucionar estos errores son comprobar el 
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos27.png)
 
+### Crear script players
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Players : MonoBehaviour
+{
+
+    public bool player1;
+    public float speed = 3;
+    public Rigidbody2D rb;
+
+    private float move;
+    private Vector2 startPos;
+
+    void Start()
+    {
+        startPos = transform.position;
+    }
+    void Update()
+    {
+        if(player1)
+        {
+            move = Input.GetAxisRaw("Vertical");
+        }
+
+        else
+        {
+            move = Input.GetAxisRaw("Vertical2");
+        }
+
+        rb.velocity = new Vector2(rb.velocity.x, move*speed );
+    }
+    public void Reset()
+    {
+        rb.velocity = Vector2.zero;
+        transform.position = startPos;
+    }
+}
+```
+
 ## 14. Asignar script al jugador
 
 Para que un script tenga efecto, hay que ``asignar`` el script a uno o más objetos. Para ello los scripts se arrastran y sueltan sobre los objetos que queremos que los utilicen.
@@ -238,6 +281,35 @@ Una vez terminado, podemos asignar el script ``player.cs`` a los objetos ``playe
 ## Crear script para la pelota
 
 Crearemos un script para la pelota al que llamaremos ``ball.cs``.
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Goal : MonoBehaviour
+{
+    public bool player1Goal;
+    public GameObject gameManager;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Ball"))
+        {
+
+            if (player1Goal)
+            {
+                gameManager.GetComponent<GameManager>().Player1Scored();
+            }
+
+            else
+            {
+                gameManager.GetComponent<GameManager>().Player2Scored();
+            }
+        }
+    }
+}
+```
 
 ## Asignar script a la bola
 
@@ -293,6 +365,75 @@ Al marcar un gol:
 
 ``ResetPosition()`` será un método que resteará los objetos.
 
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class GameManager : MonoBehaviour
+{
+    public GameObject bola;
+    public GameObject player1;
+    public GameObject player1goal1;
+    public GameObject player2;
+    public GameObject player2goal2;
+
+    public Text player1Text;
+    public Text player2Text;
+
+    private int player1Score;
+    private int player2Score;
+
+    public bool IAGame;
+
+    public int maxScore = 7;
+
+    public void CheckVictory()
+    {
+        if(player1Score >= maxScore){
+            SceneManager.LoadScene("VictoryPlayer1");
+        }
+
+        if(player2Score >= maxScore){
+            SceneManager.LoadScene("VictoryPlayer2");
+        }
+    }
+
+    public void Player1Scored()
+    {
+        player1Score++;
+        player1Text.text = player1Score.ToString();
+        CheckVictory();
+        ResetPosition();
+    }
+
+    public void Player2Scored()
+    {
+        player2Score++;
+        player2Text.text = player2Score.ToString();
+        CheckVictory();
+        ResetPosition();
+    }
+
+    private void ResetPosition()
+    {
+        if (IAGame)
+        {
+            bola.GetComponent<Ball>().Reset();;
+            player2.GetComponent<Players>().Reset();
+        }
+        else
+        {
+            bola.GetComponent<Ball>().Reset();;
+            player2.GetComponent<Players>().Reset();
+            player1.GetComponent<Players>().Reset();
+        }
+    }
+}
+```
+
 ## Añadir las referencias a objetos
 
 Arrastraremos todos los objetos a las propiedades del script ``GameManager``.
@@ -306,6 +447,35 @@ Necesitamos marcar la opción ``is Trigger`` del componente ``Box Collider 2D``.
 Creamos un script llamado ``Goal.cs``.  Utilizaremos el método ``OnTriggerEnter2D()`` para detectar colisión entre la pelota y alguna de las porterías.
 
 ``CompareTag`` comprobará si el objeto que colisiona es la bola y, en caso de ser así, según si colisiona con ``Goal1`` o con ``Goal2`` cambiaremos la puntuación correspondiente.
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Goal : MonoBehaviour
+{
+    public bool player1Goal;
+    public GameObject gameManager;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Ball"))
+        {
+
+            if (player1Goal)
+            {
+                gameManager.GetComponent<GameManager>().Player1Scored();
+            }
+
+            else
+            {
+                gameManager.GetComponent<GameManager>().Player2Scored();
+            }
+        }
+    }
+}
+```
 
 ## Asignar scripts
 
@@ -327,6 +497,38 @@ Utilizar la página ``coolors`` para elegir paletas.
 
 Vamos a hacer que un jugador sea controlado por la máquina.
 Crear el script ``IA.cs`` y la completamos.
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class IA : MonoBehaviour
+{
+    public float speed=3;
+    public GameObject ball;
+    private Vector2 ballPos;
+
+    void Update()
+    {
+        Move();
+    }
+
+    void Move() {
+        ballPos = ball.transform.position;
+
+        if (transform.position.y > ballPos.y)
+        {
+            transform.position += new Vector3(0, -speed*Time.deltaTime);
+        }
+
+        if (transform.position.y < ballPos.y)
+        {
+            transform.position += new Vector3(0, speed*Time.deltaTime);
+        }
+    }
+}
+```
 
 Una vez completado el script.
 
@@ -365,3 +567,30 @@ Lo hacemos grande y lo situamos.
 Guardamos la escena (que ahora se llama ``Untitled*``) con +ctrl+ y +s+  y le llamaremos ``MainMenu``.
 
 ## Crear script MainMenu.cs
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenu : MonoBehaviour
+{
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
+    public void PlayerVSIA(){
+        SceneManager.LoadScene("PlayerVSIA");
+    }
+
+    public void PlayerVSPlayer(){
+        SceneManager.LoadScene("PlayerVSPlayer");
+    }
+}
+```

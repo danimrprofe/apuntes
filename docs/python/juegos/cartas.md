@@ -8,7 +8,7 @@ Para ello, vamos a crear los siguientes objetos:
 - Baraja (conjunto de 52 cartas diferentes)
 - Mano (conjunto de cartas de un jugador en una partida)
 
-## Clase Carta
+## 1. Clase Carta
 
 Comenzaremos creando la clase ``Carta``. Cada carta tendrá dos propiedades, el ``palo`` (tréboles, corazones) y el ``valor`` (7,8, as, etc.).
 
@@ -43,7 +43,7 @@ cartaprueba = Carta("tréboles", 2)
 print(cartaprueba)
 ```
 
-## Clase baraja
+## 2. Clase baraja
 
 La baraja de póker se compone de 52 cartas. Para ello crearemos la clase ``Baraja`` lo tanto, contendrá 52 objetos ``Carta``.
 
@@ -107,7 +107,7 @@ while mibaraja.quedan_cartas():
 mibaraja.barajar()
 ```
 
-## Clase Mano
+## 3. Clase Mano
 
 En la clase ``Mano`` guardaremos las cartas que tiene cada jugador durante una partida concreta.
 
@@ -168,7 +168,7 @@ mano_J1.mostrar_mano()
 print("En la baraja quedan", mibaraja.contar(), "cartas")
 ```
 
-## Juego completo
+## 4. Juego completo
 
 A continuación mostraremos el juego completo del 21.
 

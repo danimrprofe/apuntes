@@ -190,7 +190,6 @@ Fíjate que la sentencia do es casi igual que la sentencia while. Pero en el whi
 
 ## 10. Sensor contacto
 
-
 Cada sensor lo tenéis que conectar a uno de los puertos de entrada:
 
 ![](2023-02-20-12-08-49.png)
@@ -266,23 +265,47 @@ Comprobad que tenéis el sensor de sonido conectado al puerto ``IN_2``.
 
 En este caso, le tenemos que decir a partir de qué valor va a decirnos que detecta un sonido, en función del volumen, indicado de 0 a 100.
 
-En este caso, está fijado en 40 decibelios.
+```c
+task main()
+{
+    SetSensorSound(IN_2);
+    while(true)
+    until(SENSOR_2 > 40);
+    OnFwd(OUT_AC, 75);
+}
+```
+
+Una versión un poco más compleja:
 
 ```c
-#define UMBRAL 40
+task main()
+{
+    SetSensorSound(IN_2);
+    until(SENSOR_2 > 40);
+    OnFwd(OUT_AC, 75);
+    Wait(300);
+    until(SENSOR_2 > 40);
+    Off(OUT_AC);
+    Wait(300);
+}
+```
+
+Si incluimos un bucle del tipo ``while(true)``, se repetirá el ciclo indefinidamente.
+
+```c
 task main()
 {
     SetSensorSound(IN_2);
     while(true)
     {
-        until(MIC > UMBRAL);
+        until(SENSOR_2 > 40);
         OnFwd(OUT_AC, 75);
         Wait(300);
-        until(MIC > UMBRAL);
+        until(SENSOR_2 > 40);
         Off(OUT_AC);
         Wait(300);
     }
-}`
+}
 ```
 
 ## 13. Sensor de ultrasonidos
@@ -291,25 +314,38 @@ Tenemos que comprobar que tenemos conectado el sensor de ultrasonidos en el puer
 
 ![](2023-02-20-12-14-46.png)
 
-Con la función siguiente, le indicamos al programa que lo vamos a utilzar, y le decimos donde lo hemos conectado.
+Con la función siguiente, le indicamos al programa que lo vamos a utilizar, y le decimos donde lo hemos conectado.
 
 ``SetSensorLowspeed(IN_4);``
 
 Definiremos la distancia a la que queremos que detecte un objeto. En este caso, serán 15 cm, pero lo podéis modificar.
 
+## Programa 13.1
+
 ```c
-#define DISTANCIA 15
+task main()
+{
+    SetSensorLowspeed(IN_4);
+    OnFwd(OUT_AC,50);
+    while(SensorUS(IN_4)>15);
+    Off(OUT_AC);
+}
+```
+
+## Programa 13.2
+
+```c
 
 task main()
 {
     SetSensorLowspeed(IN_4);
     while(true)
     {
-    OnFwd(OUT_AC,50);
-    while(SensorUS(IN_4)>DISTANCIA);
-    Off(OUT_AC);
-    OnRev(OUT_C,100);
-    Wait(800);
+        OnFwd(OUT_AC,50);
+        while(SensorUS(IN_4)>15);
+        Off(OUT_AC);
+        OnRev(OUT_C,100);
+        Wait(800);
     }
 }
 ```
@@ -349,7 +385,6 @@ El robot nos permite reproducir sonido. Para ello podemos utilizar la función `
 Las frecuencias de las notas son las siguientes:
 
 ![imagen](2023-02-20-11-49-49.png)
-
 
 Si queremos que un sonido dure un segundo, utilizaríamos el valor 1000, 500 para medio segundo, etc.
 
@@ -414,6 +449,15 @@ task main()
 
 La función ``coast`` se utiliza para detener los motores mientras todavía se les permite girar libremente. Esto se utiliza a menudo cuando el robot necesita disminuir o detenerse de repente, pero sin aplicar los frenos a los motores, lo que causaría que el robot se detenga de repente.
 
+```c
+task main()
+{
+    OnFwd(OUT_AC, 75);
+    Wait(500);
+    Coast(OUT_AC);
+}
+```
+
 La función ``float`` se utiliza para hacer que un motor flote, lo que significa que el motor continuará girando a su velocidad actual sin ser influenciado por el programa
 
 ```c
@@ -421,10 +465,8 @@ task main()
 {
     OnFwd(OUT_AC, 75);
     Wait(500);
-    Off(OUT_AC);
-    Wait(1000);
-    OnFwd(OUT_AC, 75);
-    Wait(500);
     Float(OUT_AC);
+    OnFwd(OUT_B, 75);
+    Wait(2000);
 }
 ```

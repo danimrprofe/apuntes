@@ -55,6 +55,7 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 ## Ofimática
 
+- [Mecanografía](mecanografia/index.md)
 - [Libreoffice base](base/index.md)
 - [Hoja de cálculo](hoja_de_calculo/index.md)
 - [Procesador de textos](procesador_de_textos/index.md)

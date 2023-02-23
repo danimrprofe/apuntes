@@ -548,6 +548,10 @@ La duplicamos y le llamamos ``PlayerVSPlayer``. En esta escena, desmarcamos el c
 
 Creamos una escena 2D nueva yendo a ``File > New scene > 2D``.
 
+Las escenas deberán estar todas dentro de la carpeta ``Scenes``. Haciendo clic en cada una de ellas, podremos abrirlas y modificarlas
+
+![](img/2023-02-22-18-31-45.png)
+
 ### Crear botones
 
 Crear botón. Clic derecho en ``Hierarchy`` y ``Create > UI > Button``.
@@ -594,3 +598,29 @@ public class MainMenu : MonoBehaviour
     }
 }
 ```
+
+## Asignar script
+
+Tendremos que asignar el script ``MainMenu.cs`` al ``canvas`` de la escena del menú.
+
+Por último tendremos que arrastrar ``canvas`` a las referencias de los dos botones, y cambiar el onclick para que llame a las funciones correspondientes.
+
+![](img/2023-02-22-18-35-22.png)
+
+![](img/2023-02-22-18-35-48.png)
+
+Elegimos la función correspondiente:
+
+![](img/2023-02-22-18-36-27.png)
+
+## Modificación de build settings
+
+Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
+
+![](img/2023-02-22-18-38-01.png)
+
+![](img/2023-02-22-18-38-41.png)
+
+## Comprobación
+
+Comprobaremos que ejecutando el juego, podemos pasar del menú a cada una de las dos escenas siguientes.

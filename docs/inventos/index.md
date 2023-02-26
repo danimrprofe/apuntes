@@ -98,18 +98,24 @@ inventa el telar en pedal.
 
 ## Siglo XV
 
-1400 Rueda de hilar
-1420 Pinturas al óleo
-1450 Velocípedo
-1492 Descubrimiento de América.
 Siglo XV Imprenta de tipos móviles
 Laúd
 
-Algunas de estas innovaciones marcaron una gran diferencia en la forma en que se hacían las cosas y cambiaron el curso de la historia. Una de las principales innovaciones de este período fue la invención de la rueda de hilar en 1400. Esta rueda mejoró significativamente la productividad de la industria textil.
+Algunas de estas innovaciones marcaron una gran diferencia en la forma en que se hacían las cosas y cambiaron el curso de la historia.
+
+### 1400 Rueda de hilar
+
+Una de las principales innovaciones de este período fue la invención de la rueda de hilar en 1400. Esta rueda mejoró significativamente la productividad de la industria textil.
+
+### 1420 Pinturas al óleo
 
 Otra innovación importante del siglo XV fue el desarrollo de la pintura al óleo. Esta nueva técnica permitió a los pintores crear una variedad de hermosas obras de arte con una gran profundidad de color. Esta técnica se desarrolló en 1420 y se ha convertido en una técnica muy popular en la pintura moderna.
 
+### 1450 Velocípedo
+
 Otro importante invento del siglo XV fue el velocípedo, inventado en 1450. Esta bicicleta fue una de las primeras bicicletas de tres ruedas y se convirtió rápidamente en una forma popular de transporte. Esto permitió a la gente recorrer distancias más largas y más rápido que antes.
+
+### 1492 Descubrimiento de América
 
 En 1492, el descubrimiento de América trajo consigo una serie de cambios e innovaciones. Esto incluyó el comercio de alimentos, especias, metales preciosos y textiles. Esto tuvo un gran impacto en la economía europea y cambió el curso de la historia.
 
@@ -118,11 +124,10 @@ En 1492, el descubrimiento de América trajo consigo una serie de cambios e inno
 El siglo XVI fue un periodo de gran actividad científica y tecnológica, a lo que contribuyeron los avances en la navegación, la imprenta, la minería, la industria textil y otros campos. Esta era una época en la que la ciencia moderna emergía, y los inventos y descubrimientos cambiaban la forma en que la gente vivía.
 
 1500 Reloj
-1500 Puntilla
+
 1522 Sebastián Elcano completa el viaje por todo el mundo
 1530 Empieza el comercio de esclavos
-1565 Lápices
-1581 Péndulo
+
 1569 Mapa en proyección
 1589 Telar
 1589: Sir John Harrington (GB) inventa el inodoro con
@@ -134,15 +139,23 @@ o foso
 
 Uno de los principales avances tecnológicos de este siglo fue la invención del reloj. A principios del siglo XVI, el ingeniero alemán Peter Henlein inventó el primer reloj de bolsillo, y el reloj de pared fue inventado en 1510. Estos relojes eran imprescindibles para la navegación, permitiendo a los navegantes medir con precisión la longitud de sus viajes.
 
+### 1500 Puntilla
+
 Otra invención importante de este siglo fue la puntilla, inventada por la artesana italiana Isabella Cataneo. Esta técnica permitió la elaboración de prendas de vestir con detalles finos y decorados. A partir de entonces, la puntilla se convirtió en una forma de arte y se extendió por toda Europa.
 
 En 1522, el navegante español Sebastián Elcano completó el primer viaje alrededor del mundo. Este logro contribuyó a la expansión del comercio marítimo y la apertura de nuevos mercados. Esto también permitió a los europeos traer esclavos de África para trabajar en sus colonias. Esta práctica fue muy común en el siglo XVI y contribuyó a la economía europea.
 
+### 1565 Lápices
+
 En 1565, el alemán Faber-Castell inventó el lápiz, revolucionando el proceso de escritura. Esto permitió el uso generalizado de escritura a mano y la producción de documentos y obras de arte.
+
+### 1581 Péndulo
 
 Otro avance importante en el siglo XVI fue la invención del péndulo por el físico italiano Galileo Galilei, en 1581. Esta invención permitió la medición precisa del tiempo y el desarrollo de relojes de precisión.
 
 En 1569, el cartógrafo alemán Gerardus Mercator inventó el mapa en proyección cilíndrica, que permitió la representación de los mares y continentes con mayor precisión. Esto contribuyó a la navegación y la exploración marítima.
+
+![](img/2023-02-26-17-39-41.png)
 
 En 1589, el inglés Sir John Harrington inventó el inodoro con depósito. Aunque este avance fue importante, tardó mucho tiempo en imponerse y se siguieron usando bacinas y inodoros con agujeros hacia pozos o fosos.
 
@@ -177,19 +190,25 @@ Por último, en 1687, Gabriel Fahrenheit inventó el higrómetro, un dispositivo
 
 ## Siglo XVIII
 
-1709 Piano
-1710 Termómetro de alcohol
+### 1709 Piano
+
+Uno de estos inventos fue el piano de 1709. Esta maravilla de la ingeniería permitió a los músicos tocar una amplia variedad de melodías. El uso de pianos se ha extendido hasta el día de hoy y se utiliza en muchos géneros diferentes.
+
+### 1710 Termómetro de alcohol
+
+Otro invento importante fue el termómetro de alcohol de 1710. Esta herramienta de medición permitió a los médicos controlar la temperatura de los pacientes con precisión. Esto permitió que los médicos pudieran detectar y tratar enfermedades con mayor precisión.
+
 1740 Estufa Franklin
+
 1740 Imprenta en colores
 1742 Escalera centígrada
 1745 Condensador eléctrico
 1752 Pararrayos
-1757 Sextante
+
 1761 Cronómetro
 1763 Reflectores parabólicos
 1769 Automóvil de vapor
-1776 Volando
-1782 Máquina de vapor Watt
+
 1783 Globo de aire caliente
 1784 Lámpara de aceite, con mecha vacía, electróforo
 1785 Helix
@@ -197,19 +216,17 @@ Por último, en 1687, Gabriel Fahrenheit inventó el higrómetro, un dispositivo
 1790 Sistema métrico
 1796 Litografía
 
-Uno de estos inventos fue el piano de 1709. Esta maravilla de la ingeniería permitió a los músicos tocar una amplia variedad de melodías. El uso de pianos se ha extendido hasta el día de hoy y se utiliza en muchos géneros diferentes.
-
-Otro invento importante fue el termómetro de alcohol de 1710. Esta herramienta de medición permitió a los médicos controlar la temperatura de los pacientes con precisión. Esto permitió que los médicos pudieran detectar y tratar enfermedades con mayor precisión.
-
-Un avance importante en la tecnología fue la estufa Franklin de 1740. Esta estufa permitió a las personas calentar sus casas de manera segura y eficiente. Esta fue una de las primeras formas de calefacción utilizada en el hogar.
-
 En 1740, también se inventó la imprenta en colores. Esta innovación permitió a los impresores imprimir documentos con mayor nitidez y detalle. Esto permitió a los artistas y escritores mejorar la calidad de sus trabajos.
 
 Un año después, en 1741, se inventó la escalera centígrada. Esta herramienta permitió a los médicos medir la temperatura del cuerpo humano con precisión. Esto ayudó a los médicos a diagnosticar y tratar enfermedades mucho más rápido y con mayor precisión.
 
 En 1745, se inventó el condensador eléctrico. Esta innovación permitió a los científicos controlar la cantidad de corriente eléctrica que circulaba por un circuito. Esto permitió a los científicos estudiar la electricidad de manera más precisa y segura.
 
+### Pararrayos
+
 En 1752, se inventó el pararrayos. Esta innovación ayudó a las personas a protegerse de los efectos dañinos de los rayos. Esto permitió a las personas construir edificios y otras estructuras con mayor seguridad.
+
+### 1757 Sextante
 
 El año 1757 vio el invento del sextante. Esta herramienta permitió a los marineros navegar de manera más segura al permitirles calcular su posición en el océano de manera precisa.
 
@@ -221,17 +238,19 @@ En 1769, se inventó el automóvil de vapor. Esta innovación permitió a las pe
 
 En 1776, se inventaron los globos, lo que permitió a las personas volar y ver el mundo desde una perspectiva diferente. Esto abrió la puerta a la exploración aérea y el descubrimiento de nuevos lugares.
 
+### 1782 Máquina de vapor Watt
+
 En 1782, James Watt inventó la máquina de vapor. Esta innovación cambió la forma en que se producían los productos al permitir a las personas producir productos en mayor cantidad y con mayor rapidez.
 
 En 1783, se inventó el globo de aire caliente. Esta innovación permitió a las personas volar más alto y con mayor seguridad. Esto permitió a las personas ver el mundo desde nuevas perspectivas.
 
-En 1784, se inventó la lámpara de aceite con mecha vacía. Esta innovación permitió a las personas iluminar sus hogares con mayor seguridad. Esto permitió a las personas ver y trabajar aún mejor en la oscuridad.
+En 1784, se inventó la lámpara de aceite con mecha vacía.
+
+Esta innovación permitió a las personas iluminar sus hogares con mayor seguridad. Esto permitió a las personas ver y trabajar aún mejor en la oscuridad.
 
 En 1785, se inventó la hélice. Esta innovación permitió a los científicos estudiar el movimiento de los fluidos de manera más precisa. Esto permitió a los científicos entender mejor la física y desarrollar tecnologías más avanzadas.
 
 En 1789, estalló la Revolución Francesa. Esta revolución cambió el curso de la historia y abrió la puerta a nuevos cambios sociales y políticos.
-
-En 17
 
 ## Siglo XIX
 
@@ -304,7 +323,11 @@ En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y repro
 1890 El tubo de Crookes
 1894 Radio
 1894 Primer periscopio
-1897 Motor Diesel
+
+### 1897 Motor Diesel
+
+El primer motor Diesel fue construido por el inventor alemán Rudolf Diesel en 1897. El motor fue una innovación importante porque eliminaba la necesidad de usar combustibles volátiles como el carbón y el petróleo para generar energía. Esto permitió una mayor eficiencia energética, ya que el motor convertía el combustible directamente en energía mecánica. El motor también fue mucho más silencioso que los motores de combustión interna anteriores
+
 1897 Motor eléctrico compacto
 
 ## Siglo XX
@@ -324,14 +347,22 @@ En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y repro
 1903 Electrocardiograma
 1903 Cinturón de seguridad
 1903 Osito de peluche
-1904 Se abre el canal de panamá
+
+### 1904 Se abre el canal de panamá
+
+El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de construcción. El canal, que une el Océano Atlántico con el Océano Pacífico, fue hecho para permitir que los barcos naveguen más directamente entre los dos océanos. El canal fue construido por la Compañía del Canal de Panamá, una empresa estadounidense, y fue comprado por los Estados Unidos en el año de 1914. Desde entonces, el Canal de Panamá ha sido administrado por el gobierno de los Estados Unidos. El canal ha sido una importante vía navegable en el comercio internacional desde su apertura.
+
 1906 Luz termoiónico
 1907 Lavadora
 1910 Modelo nuclear del átomo
 1911 Acero inoxidable
 1913 Cadena de montaje
 1913 Heladera eléctrica
-1913 Cremallera
+
+### 1913 Cremallera
+
+La primera patente de un dispositivo de cremallera fue presentada en 1913 por Gideon Sundback, un ingeniero sueco. Se le atribuye el haber creado la cremallera moderna, un dispositivo fácil de usar con una combinación de dientes de metal y una solapa. Sundback también inventó el cierre de plástico, que se utilizó para la primera vez en 1933
+
 1914 Primera guerra mundial
 
 ### 1914 Semáforos Luminosos
@@ -390,7 +421,10 @@ El radar fue inventado en 1935 por Robert Watson-Watt. Esta innovación fue uno 
 
 1936 Guerra Civil Española
 1938 Café instantáneo
-1938 Fotocopiadora
+
+### 1938 Fotocopiadora
+
+La primera fotocopiadora fue inventada en 1938 por el químico suizo, Albert Gyorgy. Utilizaba una lámpara de arco para concentrar la luz en un papel fotográfico sensibilizado y un cristal fotoconductivo para hacer una copia de la imagen original. Esta primera máquina fue llamada Copiadora Österreich
 
 ### 1938 Bolígrafo
 
@@ -419,8 +453,16 @@ En 1941, el químico estadounidense Lloyd Nelson inventó un aerosol basado en e
 
 En 1953, el alpinista Edmund Hillary y el sherpa Tenzing Norgay hicieron historia cuando ascendieron la cumbre del Monte Everest, convirtiéndose en los primeros humanos en alcanzar la cima más alta de la Tierra. La expedición británica, dirigida por el almirante John Hunt, partió de Katmandú, Nepal, el 10 de marzo de 1953. Después de meses de preparación, la expedición de alpinistas inició su ascenso a la cumbre del Monte Everest el 26 de mayo. Luego de muchos intentos infructuosos, Hillary y Tenzing finalmente lograron el éxito el 29 de mayo de 1953.
 
-1954 Central nuclear
-1954 Radio a transistores
+### 1954 Central nuclear
+
+![](img/2023-02-26-17-19-26.png)
+
+La primera central nuclear en el mundo fue la Central Nuclear de Obninsk, cerca de Moscú, Rusia, que comenzó a operar el 27 de junio de 1954. Esta central nuclear fue el primer reactor nuclear de agua ligera del mundo. Fue diseñado para producir energía eléctrica para uso civil, y su potencia fue de 5 megavatios.
+
+### 1954 Radio a transistores
+
+Apareció en el año 1954 y fue un cambio drástico en los sistemas de radio. Esto se debe a que los transistores eran más pequeños, más baratos y también más fiables que los tubos de vacío que se usaban antes. Esto significaba que los radios a transistores podían ser más pequeños y portátiles. También eran más eficientes energéticamente, lo que significaba que eran más baratos de fabricar
+
 1955 Plancha de vapor
 
 ### 1956 Velcro
@@ -461,9 +503,9 @@ Teflón fue una sustancia química desarrollada por DuPont que se usó por prime
 
 El primer avión jumbo fue el Boeing 747, que entró en servicio el 9 de febrero de 1970. El 747 fue diseñado para transportar grandes cantidades de pasajeros y carga a largas distancias. Está equipado con cuatro motores turbofan y tiene capacidad para hasta 400 pasajeros. El 747 se ha convertido en el avión de pasajeros más vendido de la historia, con más de 1550 aviones entregados desde su lanzamiento.
 
-1969 Los astronautas estadounidenses llegan a la Luna
-1971 Rellotge digital
-1972 Escàner
+### 1969 Los astronautas estadounidenses llegan a la Luna
+### 1971 Rellotge digital
+### 1972 Escàner
 
 ### 1972 Rayos X
 

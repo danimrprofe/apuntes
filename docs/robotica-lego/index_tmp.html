@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="rob%C3%B3tica-con-lego-mindstorms-nxt">ROBÓTICA CON LEGO MINDSTORMS NXT</h1>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-09-17-20-01.png" alt="imagen"></p>
+<h2 id="1-introducci%C3%B3n">1. INTRODUCCIÓN</h2>
+<p>En este tema trabajaremos la programación y montaje de robots, utilizando sensores y motores y coordinando su funcionamiento para realizar diferentes tareas.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image2.png" alt="imagen"></p>
+<h2 id="2-rob%C3%B3tica">2. ROBÓTICA</h2>
+<p>La robótica es una ciencia o rama de la tecnología, que estudia el análisis, diseño, construcción y aplicación de robots,</p>
+<h2 id="m%C3%A1quinas-aut%C3%B3matas-y-robots">Máquinas, autómatas y robots</h2>
+<p>Una <code>máquina</code> es capaz de realizar una tarea siendo dirigida por un usuario, pero no es capaz de realizar una tarea sencillamente si no está dirigida por un usuario.</p>
+<p>El <code>autómata</code> es capaz de realizar un trabajo sencillo y repetitivo sin supervisión.</p>
+<p>El <code>robot</code> es capaz de decidir cuál es la tarea a realizar y realizarla sin necesidad de una persona.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image3.png" alt="imagen"></p>
+<h2 id="inteligencia-artificial-y-autonom%C3%ADa">Inteligencia artificial y autonomía</h2>
+<p>Se dice que un robot tiene inteligencia artificial (IA) cuando tiene la capacidad de obtener información de su entorno y en función de esta actuar. Es decir, decidir por sí mismo.</p>
+<p>Se considera a un robot como un agente autónomo inteligente cuando cumple los requisitos siguientes:</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image4.png" alt="imagen"></p>
+<p><code>Autonomía</code>: El sistema de control / movilidad reside en la propia máquina, que debe operar sin conexión física a equipos externos.</p>
+<p><code>Inteligencia</code>: El robot tiene capacidad de razonar hasta el punto de ser capaz de tomar sus propias decisiones y de seleccionar, fusionar e integrar las medidas de sus sensores.</p>
+<h2 id="3-kits-de-lego">3. KITS DE LEGO</h2>
+<p>En el instituto disponemos de <code>kits</code> de Lego de la serie <code>Mindstorms NXT</code>. Se trata de un sistema programable creado por Lego en 2006. En total hay 6 kits de robots y una caja de ampliación.</p>
+<p>Los <code>kits</code> incluyen piezas de Lego, controladores y sensores, y una variedad de herramientas de programación.</p>
+<h3 id="sensores-y-actuadores">Sensores y actuadores</h3>
+<p>Los <code>sensores</code> incluyen un sensor de línea, un sensor de luz, un sensor de distancia, un sensor de temperatura y más.</p>
+<p>Los <code>actuadores</code> incluyen motores, servos, motores paso a paso y más.</p>
+<p>Aviso: Normalmente utilizamos en clase solo 4 robots simultáneos, y el resto queda para piezas de recambio. Hemos hecho un fondo común de piezas,  los alumnos las van cogiendo de allí.</p>
+<h3 id="kit-b%C3%A1sico">Kit básico</h3>
+<p>El <code>kit básico</code> es el de las cajas con el código 9797. Contienen las piezas para fabricar y probar un robot básico.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image5.png" alt="imagen"></p>
+<h2 id="principales-caracter%C3%ADsticas">Principales características</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2019-12-12-17-03-27.png" alt="imagen"></p>
+<p>El <code>kit básico</code> está compuesto por:</p>
+<ul>
+<li>Un controlador</li>
+<li>Cuatro sensores (ultrasonidos, contacto, micrófono y luz)</li>
+<li>3 servomotores</li>
+<li>Un conjunto de piezas para crear estructuras mecánicas compatibles con las de otros productos LEGO.</li>
+</ul>
+<p>Las piezas vienen colocadas en dos cajas independientes, una dentro de la otra. El contenido de cada kit es el siguiente:</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image6.png" alt="imagen"></p>
+<p>En la bandeja naranja tenemos todas las piezas de montaje de Lego para crear la estructura del robot.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image7.png" alt="imagen"></p>
+<p>AVISO: La caja número 5 está incompleta pues faltan algunas piezas y una bandeja de color naranja.</p>
+<h3 id="kit-de-ampliaci%C3%B3n">Kit de ampliación</h3>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image8.png" alt="imagen"></p>
+<p>La caja azul trae piezas nuevas para crear nuevos robots.</p>
+<h2 id="unidad-de-control">Unidad de control</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image9.png" alt="imagen"></p>
+<p>El cerebro o unidad de control del robot es el <code>brick</code>. Está alimentado por 6 pilas de 1.5V, aunque también puede utilizar una batería que viene con el kit.</p>
+<h3 id="brick-entradas-y-salidas">Brick. Entradas y salidas</h3>
+<p>Tiene 3 salidas que controlan los motores (A, B y C)</p>
+<p>Tiene 4 entradas para adquirir datos de los sensores que se le añadan.</p>
+<h3 id="brick-pantalla">Brick. Pantalla</h3>
+<p>Tiene una <code>pantalla LCD</code> en la que se puede observar el estado del Microbot así como acceder a programas cargados en memoria. Los programas se tienen que cargar desde el ordenador, por lo que trae un puerto USB</p>
+<h3 id="brick-procesador">Brick. Procesador</h3>
+<p>Cuenta con un microprocesador Atmel ARM7 de 32 bits a 48 MHz. Se trata de un microprocesador utilizado extensivamente en electrónica de consumo (PDAs, teléfonos móviles,reproductores digitales multimedia,...) así como en otras aplicaciones empotradas como por ejemplo en la industria del automóvil.</p>
+<h3 id="brick-memoria">Brick. Memoria</h3>
+<p>Además, la plataforma cuenta con un coprocesador, Atmel AVR de 8 bits, y con:</p>
+<ul>
+<li>una memoria Flash de 256 KB</li>
+<li>una memoria RAM de 64 KB</li>
+</ul>
+<h2 id="bater%C3%ADas">Baterías</h2>
+<p>Las baterías recargables proporcionan hasta 2.200 mAh. Se cargan a 9v a unos 500 mA.</p>
+<p>Hay 2 cargadores de voltaje variable ajustados a 9v.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image10.png" alt="imagen"></p>
+<h2 id="recarga">Recarga</h2>
+<p>Dejamos siempre uno de los robots cargando, y al gastar la batería de uno que estamos utilizando cogemos este y el gastado lo ponemos a cargar.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image11.png" alt="imagen"></p>
+<p>Se puede configurar el <code>brick</code> un periodo de espera y entrar en suspensión transcurrido este periodo para ahorrar batería.</p>
+<p>Tenemos también una serie de cargadores variados. Ahora mismo tenemos 2 que funcionan.</p>
+<h2 id="sensores">Sensores</h2>
+<p>El sensor traduce la información que le llega del exterior en un impulso eléctrico, normalmente digital (pasa o no pasa corriente), que puede ser analizado y procesado por la unidad de control del sistema</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image12.png" alt="imagen"></p>
+<h3 id="sensores-de-ultrasonidos">Sensores de ultrasonidos</h3>
+<p>Los &quot;Sensores de ultrasonidos&quot; o &quot;Sensores Ultrasónicos&quot; son detectores de proximidad detectan objetos a distancias que van desde pocos centímetros hasta varios metros.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-06-51.png" alt=""></p>
+<h4 id="caracter%C3%ADsticas">Características</h4>
+<p>Estos sensores trabajan sólo en el aire, y pueden detectar objetos con diferentes formas, distintos colores, superficies y de distintos materiales. Los materiales pueden ser sólidos, líquidos o polvorientos, pero deben ser deflectores de sonido.</p>
+<h4 id="ultrasonidos">Ultrasonidos</h4>
+<p>Los <code>ultrasonidos</code> son ondas mecánicas. La frecuencia está por encima del umbral de audición del oído humano (aproximadamente 20 000 Hz).
+Algunas especies del reino animal como ciertos insectos y mamíferos (delfines y murciélagos) lo utilizan de forma parecida a un radar para su orientación; a este fenómeno se le conoce como <code>ecolocalización</code>.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-07-09.png" alt=""></p>
+<p>Los sensores de ultrasonidos trabajan según el tiempo de transcurso del eco, es decir, se valora la distancia temporal entre el impulso de emisión y el impulso del eco.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-07-34.png" alt=""></p>
+<p>Aplicaciones prácticas:</p>
+<ul>
+<li>Control de niveles en depósitos</li>
+<li>Antichoques</li>
+<li>Detección objetos</li>
+<li>Recuento de objetos (fábricas)</li>
+</ul>
+<h3 id="sensor-de-contacto">Sensor de contacto</h3>
+<p>Se utilizan para detectar el final del recorrido o la posición límite de componentes mecánicos. Por ejemplo: saber cuándo una puerta o ventana que se abren automáticamente están ya completamente abiertas y por tanto el motor que las acciona debe detenerse.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-07-49.png" alt=""></p>
+<p>Los principales son los llamados <code>finales de carrera</code>. Se trata de un interruptor que consta de una pequeña pieza móvil que al ser accionada corta o abre el paso de corriente.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-07-58.png" alt=""></p>
+<p>Aplicaciones:</p>
+<ul>
+<li>Puertas de garaje</li>
+<li>Ascensores</li>
+<li>Industria</li>
+<li>Robótica</li>
+</ul>
+<h3 id="sensor-de-luz---fotoel%C3%A9ctrico">Sensor de luz - fotoeléctrico</h3>
+<p>Permite distinguir entre luz y oscuridad. El <code>LED emisor</code> integrado posibilita medir la intensidad de luz reflejada sobre objetos.</p>
+<p>Puede diferenciar objetos mediante su color (clasificación a nivel de escala de grises) o para poder seguir una línea de color negro.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-10-06-08-09.png" alt=""></p>
+<p>Algunas aplicaciones:</p>
+<ul>
+<li>Detectores de movimiento</li>
+<li>Detectores de luz/oscuridad</li>
+<li>Recuento de objetos (fábricas)</li>
+<li>Domótica (movimiento, luces, etc...)</li>
+</ul>
+<h2 id="montaje">Montaje</h2>
+<p>Pasos:</p>
+<ol>
+<li>Revisar las cajas y organizar las piezas</li>
+<li>Montar los robots y hacer las primeras comprobaciones.</li>
+<li>Una vez montados se guardan las cajas y los robots por separado ya montados.</li>
+</ol>
+<h2 id="mejoras">Mejoras</h2>
+<p>Sería interesante etiquetar con cintas de colores los cables RJ-12 de diferentes longitudes para que sea más fácil montarlos</p>
+<h2 id="4-montaje-b%C3%A1sico">4. MONTAJE BÁSICO</h2>
+<p>El kit de Lego nos permite crear diferentes robots. Además de estos, se pueden hacer todos los que se quiera o incluso coger ideas de Internet.</p>
+<p>Montar nuestro robot será el primer paso que necesitaremos. Para ello hay un libro de instrucciones, que podemos seguir para ir creando una estructura básica con 2 motores y varios sensores.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image13.png" alt="imagen"></p>
+<p>A la vez que vamos agregando sensores, podemos comenzar a programar sencillos programas directamente desde el robot (las instrucciones explican cómo).</p>
+<h2 id="montaje-robot-b%C3%A1sico-y-ejercicios">MONTAJE ROBOT BÁSICO Y EJERCICIOS</h2>
+<p>Lo primero que hay que hacer es montar y programar el robot básico, con sensores de luz y ultrasonidos. Las instrucciones del kit tienen montajes diferentes para realizar.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image14.png" alt="imagen"></p>
+<p>Una vez montados los robots, los podéis programar desde el propio menú del robot para comprobar que todo funciona.</p>
+<h2 id="5-programaci%C3%B3n-avanzada-con-nxc">5. PROGRAMACIÓN AVANZADA CON NXC</h2>
+<p><code>Lego Mindstorms</code> se puede programar mediante un entorno gráfico visual, que es la forma oficial. También podemos programarlo de otras formas y lenguajes no oficiales, gracias a gente que crea programas y librerías para ello.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image15.png" alt="imagen"></p>
+<h3 id="51-el-lenguaje-nxc">5.1. El lenguaje NXC</h3>
+<p>NXC es un lenguaje de programación, inventado por John Hansen, que fue especialmente diseñado para los robots de Lego.</p>
+<p>Para facilitar aún más la escritura de programas, está el Centro de Comando Bricx (<code>BricxCC</code> ). Esta utilidad ayuda a escribir sus programas, descargarlos al robot, iniciarlos y detenerlos, explorar la memoria flash NXT, convertir archivos de sonido para usar con el ladrillo y mucho más.</p>
+<h3 id="52-instalaci%C3%B3n">5.2. Instalación</h3>
+<p>La instalación del software de LEGO Mindstorms NXT para este curso se divide en 2 partes:</p>
+<ol>
+<li>La instalación del driver. El controlador para el NXT se puede descargar desde el CD de instalación o buscándolo en internet</li>
+<li>La instalación del Bricx Command Center. Se puede descargar aquí: <code>BricxCC</code>.</li>
+</ol>
+<p><code>BricxCC</code> funciona casi como un procesador de texto, pero con algunos extras. Se trata de un entorno de desarrollo integrado (IDE).</p>
+<h3 id="53-funcionamiento-del-lenguaje-nxc">5.3. Funcionamiento del lenguaje NXC</h3>
+<h4 id="tareas-definici%C3%B3n">Tareas: definición</h4>
+<p>Los programas de NXC consisten en <code>tareas</code>. Nuestro programa tiene una única tarea, llamada <code>main</code>. El programa siempre debe tener una tarea principal llamada <code>main</code>, que siempre ejecuta el robot.</p>
+<pre class="hljs"><code><div><span class="hljs-function">task <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+
+}
+</div></code></pre>
+<h4 id="tareas-contenido">Tareas: contenido</h4>
+<p>Una tarea consiste en una serie de órdenes, también denominadas instrucciones. Hay paréntesis alrededor de estos bloques de órdenes de forma que quede claro a qué tarea pertenecen.</p>
+<p>Todas las instrucciones terminan con un punto y coma.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image16.png" alt="imagen"></p>
+<h4 id="ejemplo-de-programa">Ejemplo de programa</h4>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-09-17-41-43.png" alt=""></p>
+<p>Antes de compilar tenéis que guardar el archivo del programa en el ordenador como .NXC. Si no, os dará error.</p>
+<h3 id="54-ejercicios-b%C3%A1sicos">5.4. EJERCICIOS BÁSICOS</h3>
+<p>En esta página tenéis varios ejercicios básicos para probar con el robot. Podéis ir haciéndolos hasta donde lleguéis.</p>
+<p><a href="ejercicios.md">ejercicios</a></p>
+<h3 id="55-programas-de-a%C3%B1os-anteriores">5.5. PROGRAMAS DE AÑOS ANTERIORES</h3>
+<p>En esta página podéis encontrar códigos de programación que hemos ido haciendo en cursos anteriores:</p>
+<p><a href="https://github.com/danimrprofe/lego-nxt">Repositorio de programas en GitHub</a></p>
+<h2 id="6-proyectos-de-nxtprogramscom-ampliaci%C3%B3n">6. Proyectos de NXTprograms.com (AMPLIACIÓN)</h2>
+<p>En esta web <a href="http://www.nxtprograms.com">NXTprograms</a> se pueden encontrar otras ideas NO OFICIALES para construir y programar otros robots, así como guías y instrucciones</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-09-17-40-54.png" alt="imagen"></p>
+<p>Hay dos robots principales:</p>
+<ul>
+<li>Express-bot (no té programes)</li>
+<li>Multi-bot (inclou exemples de programes)</li>
+</ul>
+<h2 id="7-instalaci%C3%B3n-y-uso-del-bricx-command-center-bricx-cc">7. INSTALACIÓN Y USO DEL BRICX COMMAND CENTER (BRICX CC)</h2>
+<h3 id="%C2%BFqu%C3%A9-es-bricxcc">¿Qué es BricxCC?</h3>
+<p><a href="http://bricxcc.sourceforge.net/">Bricx Command Center</a> es el software que provee de una interfaz y de los programas necesarios para programar el NXT.  Aquí crearemos nuestros programas y los cargaremos en el robot.</p>
+<h3 id="paso-1-conectar-el-robot">Paso 1: Conectar el robot</h3>
+<p>Al ejecutar <code>BricxCC</code> , lo primero que observamos es una ventana de diálogo la cual configuraremos de la siguiente forma:</p>
+<ul>
+<li>Port: USB</li>
+<li>Brick Type: NXT</li>
+<li>Firmware: Standard</li>
+</ul>
+<p>Si lo hacemos correctamente, en el robot aparecerán las letras USB.</p>
+<h3 id="paso-2-crear-el-programa">Paso 2: Crear el programa</h3>
+<p>Buscamos el programa <code>BricxCC</code>  en alguno de los ordenadores, y pegamos el código que vamos a programar.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/img/2023-02-09-17-42-29.png" alt=""></p>
+<h3 id="paso-3-compilar-el-programa">Paso 3: Compilar el programa</h3>
+<p>Para compilar el programa presione el botón <code>Compile Program</code> ++F5++, la compilación no debe de producir errores.</p>
+<h3 id="paso-4-cargar-el-programa-en-el-robot">Paso 4: Cargar el programa en el robot</h3>
+<p>Ahora que tenemos compilado el programa, es posible cargarlo al NXT. Basta con presionar <code>Download Program</code> ++F6++, para que comience a descargarlo.</p>
+<h3 id="paso-5-ejecutar-el-programa">Paso 5:  Ejecutar el programa</h3>
+<p>Una vez cargado el programa en el Robot, tenemos que seleccionarlo desde el propio robot para poder ejecutarlo.</p>
+<ol>
+<li>Ahora, en el menú del robot NXT seleccione <code>My Files</code>, esta opción contiene los archivos que se han cargado a la memoria del NXT.</li>
+<li>Seleccione <code>Software Files</code> y luego el nombre que elegimos para el programa que creamos anteriormente.</li>
+<li>Finalmente, <code>Run</code>, para correr el programa.</li>
+</ol>
+<h2 id="8-proyecto-guitarra-el%C3%A9ctrica">8. PROYECTO GUITARRA ELÉCTRICA</h2>
+<p>Buscando en Internet podemos encontrar muchos proyectos realizados por usuarios en su tiempo libre. Uno de los más interesantes es el de fabricar una guitarra eléctrica.</p>
+<h3 id="explicaci%C3%B3n-del-proyecto">Explicación del proyecto</h3>
+<p>En este video grabado por la promoción 19/20 de 2º de bachillerato se explica el funcionamiento general del proyecto:
+Video explicativo del proyecto guitarra con Lego (marzo de 2020)</p>
+<h3 id="prueba-de-funcionamiento-con-la-canci%C3%B3n-de-deep-purple-smoke-on-the-water">Prueba de funcionamiento con la canción de Deep Purple, smoke on the water</h3>
+<p>Guitarra lego mindstorms nxt - Smoke on the water</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image19.png" alt="imagen"></p>
+<h2 id="montaje-de-la-guitarra">Montaje de la guitarra</h2>
+<p>Una vez montada, la guitarra quedará de esta forma:</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image20.png" alt="imagen"></p>
+<h3 id="explicaci%C3%B3n-musical">Explicación musical</h3>
+<p>Dividiremos el mástil en 5 zonas para cada una de las notas del riff principal. Separamos las zonas con cinta aislante para separar el mástil en trastes y saber dónde estamos tocando</p>
+<p>La secuencia del riff principal de la canción es la siguiente:</p>
+<p>D4 F4 G4 - | D4 F4 G#4 G4 | D4 F4 G4 - | F4 D4</p>
+<p>Para ello necesitaremos las siguientes notas:</p>
+<ul>
+<li>D4 para distancias entre 5 y 8</li>
+<li>F4 para distancias entre 9 y 13</li>
+<li>G4 para distancias entre 14 y 18</li>
+<li>G#4 para distancias entre 18 y 21</li>
+</ul>
+<p>Correspondencia entre tonos y notas</p>
+<p>Las posiciones más cercanas al sensor serán las notas más graves.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image21.png" alt="imagen"></p>
+<h3 id="mejoras">Mejoras</h3>
+<p>Sería ideal que hubiera un decaimiento del volumen poco a poco</p>
+<p>Podríamos intentar que en vez de que suenen notas sueltas suenen acordes</p>
+<p>Intentar grabar en un iPad con la guitarra y probar de distorsionar. Para ello necesitaríamos grabar el sonido con un micrófono y meterlo con una tarjeta de sonido externa en el Garageband.</p>
+<h2 id="9-proyecto-mindcuber">9. PROYECTO MINDCUBER</h2>
+<p>Este proyecto no lo pudimos terminar por falta de tiempo y alguna que otra pieza que no teníamos.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/robotica-lego/media/image22.jpg" alt="imagen"></p>
+<h2 id="10-ejercicios-rob%C3%B3tica-propuestos">10. EJERCICIOS ROBÓTICA PROPUESTOS</h2>
+<p>Estos ejercicios los realizaremos con el montaje básico del robot.</p>
+<h3 id="ejercicio-1">Ejercicio 1</h3>
+<p>Crear la función mover_tiempo (int tiempo, int velocidad, char sentido)</p>
+<p>Tiempo indica el tiempo que se moverá</p>
+<p>Velocidad indica la velocidad a la que se moverá</p>
+<p>Sentido indicará si se mueve hacia adelante o hacia atrás (D o A)</p>
+<h3 id="ejercicio-2">Ejercicio 2</h3>
+<p>Crear una función girar sobre sí mismo llamada darvueltas (int tiempo, char sentido). Para ello, una rueda debe de girar y otra no.</p>
+<p>Le pasaremos 2 parámetros:</p>
+<p>Duración, que determinará el tiempo que da vueltas.</p>
+<p>Sentido: indicaremos H para horario y A para antihorario</p>
+<h3 id="ejercicio-3">Ejercicio 3</h3>
+<p>Crear una función que sea girar (char direccion, char sentido, int tiempo, int velocidad), donde:</p>
+<p>Dirección: indica si gira a derecha o izquierda</p>
+<p>Sentido: indica si gira hacia delante o hacia atrás</p>
+<p>Velocidad: indica lo rápido que gira</p>
+<p>Tiempo: es el tiempo durante el cual girará</p>
+<p>Dirección será un char valdrá:</p>
+<p>I para girar a la izquierda</p>
+<p>D para girar a la derecha</p>
+<p>Sentido valdrá:</p>
+<p>D para ir hacia Delante</p>
+<p>A para ir hacia Atrás</p>
+<p>Nota: para girar una rueda debe girar más rápido que la otra. En función de la diferencia entre las dos velocidades, el giro será más abierto o más cerrado.</p>
+<p>Modificar la función para que funcione correctamente y probar las cuatro combinaciones de dirección y sentido.</p>
+<h3 id="ejercicio-4">Ejercicio 4</h3>
+<p>En este ejercicio crearemos una función que nos permita avanzar una distancia especificada en cm. La nueva función se llamará mover_distancia(int distancia, int velocidad, char sentido).</p>
+<p>Función RotateMotor</p>
+<p>Dentro de la función creada utilizaremos la función RotateMotor, ya incluida en las librerías, que nos permite girar el motor por ángulo en lugar de por tiempo.</p>
+<p>Por ejemplo: RotateMotor(OUT_AB, 75, 360) nos permitiría</p>
+<p>Mover los motores conectados a A y B</p>
+<p>A una potencia de 75</p>
+<p>Girar la rueda una vuelta (360 grados)</p>
+<p>Calcular la distancia</p>
+<p>Para ello, necesitamos calcular los grados que tenemos que girar las ruedas para avanzar x distancia. Dependerá del tipo de rueda (tamaño).</p>
+<p>Necesitamos saber cuánto avanza una rueda en 1 vuelta (360 grados). Esta distancia se corresponde con el perímetro de la rueda, que se calculará como:</p>
+<p>2 · pi · radio</p>
+<p>diámetro · pi</p>
+<p>Una vez calculada la distancia, con una regla de 3:</p>
+<p>360 grados corresponden a pi · diámetro</p>
+<p>ángulo grados corresponden a dist cm</p>
+<p>Donde Y es la distancia que queremos que recorra.</p>
+<p>Así pues, ángulo = (dist * 360)/(pi * diámetro)</p>
+<p>Necesitaremos crear las 3 variables: ángulo, dist y diámetro</p>
+<h3 id="resumen">Resumen</h3>
+<p>Al finalizar vuestra práctica, deberéis tener las siguientes funciones:</p>
+<p>mover_tiempo (int tiempo, int velocidad, char sentido)</p>
+<p>mover_distancia (int distancia, int velocidad, char sentido)</p>
+<p>dar_vueltas (int tiempo, char sentido)</p>
+<p>girar (char direccion, char sentido, int tiempo, int velocidad)</p>
+<p>Prueba final</p>
+<p>Programar el robot para que realice la siguiente secuencia (en la task main):</p>
+<p>Moverse 2 segundos adelante a la velocidad máxima</p>
+<p>Moverse 1 segundo hacia atrás a la mitad de velocidad</p>
+<p>Dar vueltas en sentido horario</p>
+<p>Dar vueltas en sentido antihorario</p>
+<p>Girar hacia adelante y a la izquierda 2 segundos</p>
+<p>Girar hacia atrás y a la derecha 2 segundos</p>
+<p>Dar vueltas 5 segundos</p>
+
+</body>
+</html>

@@ -36,11 +36,15 @@ Se considera a un robot como un agente autónomo inteligente cuando cumple los r
 
 ## 3. KITS DE LEGO
 
-En el instituto disponemos de kits de Lego de la serie ``Mindstorms NXT``. Se trata de un sistema programable creado por Lego en 2006. En total hay 6 kits de robots y una caja de ampliación.
+En el instituto disponemos de ``kits`` de Lego de la serie ``Mindstorms NXT``. Se trata de un sistema programable creado por Lego en 2006. En total hay 6 kits de robots y una caja de ampliación.
 
-Los kits incluyen piezas de Lego, controladores y sensores, y una variedad de herramientas de programación. Los sensores incluyen un sensor de línea, un sensor de luz, un sensor de distancia, un sensor de temperatura y más.
+Los ``kits`` incluyen piezas de Lego, controladores y sensores, y una variedad de herramientas de programación.
 
-Los actuadores incluyen motores, servos, motores paso a paso y más.
+### Sensores y actuadores
+
+Los ``sensores`` incluyen un sensor de línea, un sensor de luz, un sensor de distancia, un sensor de temperatura y más.
+
+Los ``actuadores`` incluyen motores, servos, motores paso a paso y más.
 
 Aviso: Normalmente utilizamos en clase solo 4 robots simultáneos, y el resto queda para piezas de recambio. Hemos hecho un fondo común de piezas,  los alumnos las van cogiendo de allí.
 
@@ -83,11 +87,26 @@ La caja azul trae piezas nuevas para crear nuevos robots.
 
 El cerebro o unidad de control del robot es el `brick`. Está alimentado por 6 pilas de 1.5V, aunque también puede utilizar una batería que viene con el kit.
 
+### Brick. Entradas y salidas
+
 Tiene 3 salidas que controlan los motores (A, B y C)
 
 Tiene 4 entradas para adquirir datos de los sensores que se le añadan.
 
-Tiene una pantalla LCD en la que se puede observar el estado del Microbot así como acceder a programas cargados en memoria. Los programas se tienen que cargar desde el ordenador, por lo que trae un puerto USB
+### Brick. Pantalla
+
+Tiene una ``pantalla LCD`` en la que se puede observar el estado del Microbot así como acceder a programas cargados en memoria. Los programas se tienen que cargar desde el ordenador, por lo que trae un puerto USB
+
+### Brick. Procesador
+
+Cuenta con un microprocesador Atmel ARM7 de 32 bits a 48 MHz. Se trata de un microprocesador utilizado extensivamente en electrónica de consumo (PDAs, teléfonos móviles,reproductores digitales multimedia,...) así como en otras aplicaciones empotradas como por ejemplo en la industria del automóvil.
+
+### Brick. Memoria
+
+Además, la plataforma cuenta con un coprocesador, Atmel AVR de 8 bits, y con:
+
+- una memoria Flash de 256 KB
+- una memoria RAM de 64 KB
 
 ## Baterías
 
@@ -119,8 +138,11 @@ Los "Sensores de ultrasonidos" o "Sensores Ultrasónicos" son detectores de prox
 
 ![](img/2023-02-10-06-06-51.png)
 
-Estos sensores trabajan sólo en el aire, y pueden detectar objetos con diferentes formas, distintos colores, superficies y de distintos materiales.
-Los materiales pueden ser sólidos, líquidos o polvorientos, pero deben ser deflectores de sonido.
+#### Características
+
+Estos sensores trabajan sólo en el aire, y pueden detectar objetos con diferentes formas, distintos colores, superficies y de distintos materiales. Los materiales pueden ser sólidos, líquidos o polvorientos, pero deben ser deflectores de sonido.
+
+#### Ultrasonidos
 
 Los ``ultrasonidos`` son ondas mecánicas. La frecuencia está por encima del umbral de audición del oído humano (aproximadamente 20 000 Hz).
 Algunas especies del reino animal como ciertos insectos y mamíferos (delfines y murciélagos) lo utilizan de forma parecida a un radar para su orientación; a este fenómeno se le conoce como ``ecolocalización``.
@@ -223,6 +245,8 @@ La instalación del software de LEGO Mindstorms NXT para este curso se divide en
 
 ### 5.3. Funcionamiento del lenguaje NXC
 
+#### Tareas: definición
+
 Los programas de NXC consisten en ``tareas``. Nuestro programa tiene una única tarea, llamada ``main``. El programa siempre debe tener una tarea principal llamada ``main``, que siempre ejecuta el robot.
 
 ```c
@@ -231,13 +255,15 @@ task main() {
 }
 ```
 
+#### Tareas: contenido
+
 Una tarea consiste en una serie de órdenes, también denominadas instrucciones. Hay paréntesis alrededor de estos bloques de órdenes de forma que quede claro a qué tarea pertenecen.
 
 Todas las instrucciones terminan con un punto y coma.
 
 ![imagen](media/image16.png)
 
-Ejemplo de programa
+#### Ejemplo de programa
 
 ![](img/2023-02-09-17-41-43.png)
 
@@ -268,7 +294,7 @@ Hay dos robots principales:
 
 ## 7. INSTALACIÓN Y USO DEL BRICX COMMAND CENTER (BRICX CC)
 
-Aviso: Este programa solo está instalado en los ordenadores 1, 2, 5, 19 y 30 de la sala de informática. El ordenador del profesor no lo tiene.
+### ¿Qué es BricxCC?
 
 [Bricx Command Center](http://bricxcc.sourceforge.net/) es el software que provee de una interfaz y de los programas necesarios para programar el NXT.  Aquí crearemos nuestros programas y los cargaremos en el robot.
 

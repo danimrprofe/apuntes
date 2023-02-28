@@ -254,29 +254,48 @@ En 1789, estalló la Revolución Francesa. Esta revolución cambió el curso de 
 
 ## Siglo XIX
 
-1800 Martillo pilón
-1801 Pila eléctrica
-1801 Electróforo
-1801 Endiómetro
-1802 Locomotora de vapor
-1803 Acumulador eléctrico
-1805 Telar Jacquard
-1815 Napoleón es derrotado en Waterloo
-1816 Lámpara de seguridad para mineros, termoelectricidad
-1827 Cortadora de césped
-1830 Dínamo eléctrica
-1831 Cosechadora
-1834 Telégrafo eléctrico
-1837 Alfabeto Morse
-1837 Estereoscopio
-1838 Bicicleta
-1839 Estampilla de correos
+### 1800 Martillo pilón
+### 1801 Pila eléctrica
+### 1801 Electróforo
+### 1801 Endiómetro
+### 1802 Locomotora de vapor
+### 1803 Acumulador eléctrico
+### 1805 Telar Jacquard
+### 1815 Napoleón es derrotado en Waterloo
+### 1816 Lámpara de seguridad para mineros, termoelectricidad
+### 1827 Cortadora de césped
+### 1830 Dínamo eléctrica
+### 1831 Cosechadora
+
+### 1834 Telégrafo eléctrico
+
+![](img/2023-02-28-11-29-04.png)
+
+### 1837 Alfabeto Morse
+
+### 1837 Estereoscopio
+
+### 1838 Bicicleta
+
+### 1839 Estampilla de correos
 
 Los barcos con casco de hierro fueron inventados en 1840 por la Compañía Naval de Scott. Estos barcos revolucionarios fueron diseñados para navegar a velocidades mucho más altas que los barcos de madera. Esto abrió nuevas formas de transporte y comercio.
 
-1840 Reloj eléctrico: El reloj eléctrico fue inventado en 1840 por Alexander Bain. Esta innovación tecnológica permitió a las personas medir el tiempo con precisión y exactitud. Esto ayudó a mejorar la eficiencia y la productividad en muchos campos.
+### 1840 Reloj eléctrico
 
-En 1842, el cirujano británico James Simpson descubrió el uso de los anestésicos, permitiendo a los cirujanos realizar procedimientos quirúrgicos sin provocar dolor a los pacientes. Esta innovación revolucionó el campo de la medicina, cambiando para siempre la naturaleza de los procedimientos quirúrgicos.
+El reloj eléctrico fue inventado en 1840 por Alexander Bain. Esta innovación tecnológica permitió a las personas medir el tiempo con precisión y exactitud. Esto ayudó a mejorar la eficiencia y la productividad en muchos campos.
+
+### 1842. Anestésicos
+
+En 1842, el cirujano británico ``James Simpson`` descubrió el uso de los anestésicos, permitiendo a los cirujanos realizar procedimientos quirúrgicos sin provocar dolor a los pacientes.
+
+Por aquel entonces, los cirujanos habían empezado a usar éter como anestésico.
+
+El 4 de noviembre de 1847, los tres médicos quedaron en casa de Simpson para inhalar ``cloroformo`` que les dejó en un estado inconsciente hasta la mañana siguiente. A partir de ese momento, Simpson lo empezó a usar en algunas cirugías menores y en varios partos con excelentes resultados.
+
+![](img/2023-02-28-11-26-39.png)
+
+Esta innovación revolucionó el campo de la medicina, cambiando para siempre la naturaleza de los procedimientos quirúrgicos.
 
 En 1846, el inventor alemán Adolph Sax inventó el saxofón, un instrumento musical de viento que combina la potencia del clarinete y la afinación del oboe. Esto abrió la puerta a nuevas formas de expresión musical, y el saxofón se ha convertido en uno de los instrumentos más populares en la música de jazz y pop moderna.
 
@@ -290,39 +309,71 @@ En 1851, el inventor francés Louis Daguerre inventó la cámara de placas, un d
 
 1860 Esquiladora: La esquiladora fue inventada en 1860 por Hiram Moore. Esta máquina revolucionaria permitió a los agricultores cortar el pelo de los animales domésticos y cosecharlo para usarlo como materiales para ropa y otros productos. Esta importante innovación modernizó el proceso de producción de lanas.
 
-1876 Teléfono: El teléfono fue inventado por Alexander Graham Bell en 1876. Esta innovación revolucionaria permitió a las personas comunicarse a largas distancias a través de una línea telefónica. El teléfono se convirtió en una herramienta esencial para comunicaciones interpersonales, de negocios y militares.
+### 1876 Teléfono
 
-1876 Frigorífico: El frigorífico fue inventado por Carl von Linde en 1876. Esta importante innovación permitió que los alimentos se conservaran a temperaturas más bajas, evitando así el deterioro de los alimentos. El frigorífico cambió la forma en que las personas almacenaban los alimentos, permitiendo una mayor duración de la comida.
+El teléfono fue inventado por Alexander Graham Bell en 1876. Esta innovación revolucionaria permitió a las personas comunicarse a largas distancias a través de una línea telefónica. El teléfono se convirtió en una herramienta esencial para comunicaciones interpersonales, de negocios y militares.
 
-1877 Fonógrafo: El fonógrafo fue inventado por Thomas Edison en 1877. Esta innovación permitió capturar la voz humana y almacenarla en un dispositivo mecánico para su posterior reproducción. El fonógrafo revolucionó el mundo de la música y la tecnología de la información, transformando la forma en que las personas escuchaban y compartían la música.
+### 1876 Frigorífico
 
-1877 Motor de cuatro tiempos: El motor de cuatro tiempos fue inventado por Nikolaus Otto en 1877. Esta innovación permitió la producción automatizada de motores de combustión interna, los cuales se usan en una amplia variedad de vehículos. Esta importante innovación dio lugar a la era de la automatización, lo que permitió la fabricación de productos de manera más eficiente y asequible.
+El frigorífico fue inventado por Carl von Linde en 1876. Esta importante innovación permitió que los alimentos se conservaran a temperaturas más bajas, evitando así el deterioro de los alimentos. El frigorífico cambió la forma en que las personas almacenaban los alimentos, permitiendo una mayor duración de la comida.
+
+![](img/2023-02-28-11-22-59.png)
+
+### 1877 Fonógrafo
+
+El fonógrafo fue inventado por Thomas Edison en 1877. Esta innovación permitió capturar la voz humana y almacenarla en un dispositivo mecánico para su posterior reproducción. El fonógrafo revolucionó el mundo de la música y la tecnología de la información, transformando la forma en que las personas escuchaban y compartían la música.
+
+### 1877 Motor de cuatro tiempos
+
+El motor de cuatro tiempos fue inventado por Nikolaus Otto en 1877. Esta innovación permitió la producción automatizada de motores de combustión interna, los cuales se usan en una amplia variedad de vehículos. Esta importante innovación dio lugar a la era de la automatización, lo que permitió la fabricación de productos de manera más eficiente y asequible.
+
+![](img/2023-02-28-11-20-40.png)
 
 ### 1881 Luis Pasteur, comenzó sus experimentos contra la rabia
 
 Luis Pasteur comenzó sus experimentos en 1881 contra la rabia, creando una vacuna que luego salvó la vida de muchas personas. Estos experimentos comenzaron con la inoculación de una bacteria extraída del cerebro de un animal infectado. Esto fue seguido por la inoculación de la bacteria a un perro, que resultó ser exitoso después de seis meses. Esto demostró que la bacteria de la rabia podía ser inactivada y no causaría la enfermedad. Pasteur luego desarrolló una vacuna para prevenir la rabia.
 
+![](img/2023-02-28-11-19-15.png)
+
 La vacuna consistía en usar la misma bacteria inactivada para inocular a los animales. Esto significaba que el sistema inmunológico del animal podría producir anticuerpos específicos para la bacteria, lo que significaba que el animal quedaría protegido de la enfermedad en caso de una infección posterior.
 
 Esta fue la primera vacuna exitosa para una enfermedad infecciosa y se convirtió en la base para el desarrollo de vacunas posteriores.
 
-### 1884 Generador de turbina de vapor
+### 1884. Generador de turbina de vapor
 
-En 1884, inventó el primer generador de turbina de vapor que permitió la producción a gran escala de energía eléctrica.
+En 1884, se inventó el primer generador de turbina de vapor que permitió la producción a gran escala de energía eléctrica.
+
+La turbina de vapor fue inventada en 1884 por Sir Charles Parsons , cuyo primer modelo estaba conectado a una dinamo que generaba 7,5 kW (10 hp) de electricidad. La turbina de vapor es una característica común de todas las centrales térmicas modernas.
+
+![](img/2023-02-28-11-18-11.png)
+
+### 1885. Primer automóvi
 
 En 1885, los hermanos Daimler y Maybach inventaron el primer automóvil de motor de gasolina. Esta innovación revolucionó los transportes y cambió para siempre la forma en que nos movíamos. El automóvil abrió la puerta a nuevas posibilidades de viajar, y su diseño técnico y su rendimiento mejoraron de forma constante durante el siglo XX. Su impacto fue enorme y ha tenido una enorme influencia en la forma en que vivimos nuestra vida diaria.
 
-1885 Bicicleta de pedales
+### 1885 Bicicleta de pedales
 
 ### 1888 Gramófono
 
 En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y reproducir música. Estos inventos revolucionaron los campos de la medicina, transporte, energía y entretenimiento para siempre.
 
-1889 Ascensor eléctrico
-1890 Rayos X
-1890 El tubo de Crookes
-1894 Radio
-1894 Primer periscopio
+![](img/2023-02-28-11-21-36.png)
+
+https://artsandculture.google.com/story/awUBd0WvqVFpLg?hl=en
+
+### 1889 Ascensor eléctrico
+
+![](img/2023-02-28-11-14-56.png)
+
+### 1890 El tubo de Crookes
+### 1894 Radio
+### 1894 Primer periscopio
+
+### 1895 Rayos X
+
+El 8 de noviembre de 1895 el físico alemán Wilhelm Conrad Roentgen descubrió los rayos X mientras realizaba experimentos con tubos de vacío y un generador eléctrico. Con el hallazgo de este haz de luz capaz de atravesar la materia, nació el diagnóstico médico por imágenes que mejoró considerablemente el ejercicio de la medicina.
+
+![](img/2023-02-28-11-32-19.png)
 
 ### 1897 Motor Diesel
 
@@ -332,7 +383,11 @@ El primer motor Diesel fue construido por el inventor alemán Rudolf Diesel en 1
 
 ## Siglo XX
 
-1900 El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entrar en servicio, construido por el ingeniero alemán Ferdinand von Zeppelin. Esta innovadora nave llevó a cabo el primer vuelo de pasajeros comercial exitoso, estableciendo un precedente para la navegación aérea moderna.
+### 1900. Zeppelin
+
+El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entrar en servicio, construido por el ingeniero alemán Ferdinand von Zeppelin. Esta innovadora nave llevó a cabo el primer vuelo de pasajeros comercial exitoso, estableciendo un precedente para la navegación aérea moderna.
+
+![](img/2023-02-28-11-33-21.png)
 
 1900 El tractor fue una innovación importante en la agricultura, permitiendo a los agricultores trabajar grandes extensiones de tierra y aumentar la productividad. Esto representó una revolución en la agricultura, ya que hasta entonces los agricultores dependían de bueyes y caballos para la preparación de la tierra.
 
@@ -377,6 +432,12 @@ Los primeros limpiaparabrisas fueron inventados en 1914 por Mary Anderson. Su in
 
 1920 Secador de pelo: El primer secador de pelo fue inventado en 1920 por Alexander Godefroy. Utilizaba un ventilador para hacer circular aire caliente, lo que ayudaba a secar el cabello de forma más eficiente.
 
+### 1915. Tanque
+
+![](img/2023-02-28-11-35-54.png)
+
+http://infografias.elmercurio.com/20160910-CAB-historiatanque/
+
 ### 1921 Autopistas
 
 En 1921, el ingeniero Edward de Bono diseñó la primera autopista del mundo, la Autopista del Sol, en Nueva York. Esta autopista fue diseñada para permitir una mayor velocidad y seguridad al conducir, así como un mejor flujo de tráfico.
@@ -397,9 +458,19 @@ La tostadora fue inventada en 1926 por Charles Strite. Esta herramienta utiliza 
 
 ### 1927 Antibióticos:
 
-Los antibióticos fueron inventados en 1927 por el bioquímico Alexander Fleming. Estos medicamentos son utilizados para tratar infecciones bacterianas, impidiendo el crecimiento y reproducción de las bacterias dañinas.
+Los ``antibióticos`` fueron inventados en 1927 por el bioquímico ``Alexander Fleming``. Estos medicamentos son utilizados para tratar infecciones bacterianas, impidiendo el crecimiento y reproducción de las bacterias dañinas.
 
-1928 Ciclotrón: El ciclotrón fue una invención creada en 1928 por Ernest Lawrence, un físico de la Universidad de California. Esta invención fue una de las primeras máquinas de aceleración de partículas, la cual permitió a los científicos explorar los átomos y sus partículas elementales que los componen.
+![](img/2023-02-28-11-38-57.png)
+
+La ``amoxicilina`` es un antibiótico semisintético derivado de la ``penicilina``. Se emplea a menudo como primer fármaco en infecciones de diferente gravedad, tanto en medicina humana como también en veterinaria.
+
+### 1928 Ciclotrón
+
+ El ciclotrón fue una invención creada en 1928 por Ernest Lawrence, un físico de la Universidad de California. Esta invención fue una de las primeras máquinas de aceleración de partículas, la cual permitió a los científicos explorar los átomos y sus partículas elementales que los componen.
+
+ ![](img/2023-02-28-11-40-54.png)
+
+ Un ciclotrón es un tipo de ``acelerador de partículas``, de trayectoria circular, capaz de imprimir un movimiento en espiral cada vez más veloz a partículas subatómicas cargadas como, por ejemplo, los protones. Las partículas, que se mueven en el vacío siguiendo una trayectoria curva gracias al efecto de un campo magnético uniforme, son aceleradas paulatinamente a partir de las oscilaciones de alta frecuencia que generan un campo eléctrico oscilante.
 
 ### 1930 Motor a reacción
 
@@ -407,13 +478,21 @@ El motor a reacción fue inventado en 1930 por Frank Whittle, un científico bri
 
 ### 1932 Guitarra eléctrica
 
-La primera guitarra eléctrica fue inventada en 1932 por George Beauchamp y Adolph Rickenbacker. Esta invención permitió a los músicos amplificar su sonido sin tener que mover los brazos para tocar. La guitarra eléctrica revolucionó la industria musical y abrió nuevas posibilidades creativas.
+La primera guitarra eléctrica fue inventada en 1932 por George Beauchamp y Adolph Rickenbacker. Esta invención permitió a los músicos amplificar su sonido sin tener que mover los brazos para tocar.
 
-1933 Grabaciones estéreo: Las primeras grabaciones estéreo fueron inventadas en 1933 por Alan Blumlein. Esta innovación permitió a los músicos grabar una grabación en dos canales, lo que resultó en un sonido mucho más vivo y realista. Esta innovación permitió a los artistas tener un mayor control sobre la producción de sus grabaciones.
+![](img/2023-02-28-11-51-27.png)
 
-1933 Polietileno: El polietileno fue inventado en 1933 por Eric Fawcett y Reginald Gibson. Esta invención fue uno de los primeros materiales sintéticos y fue ampliamente utilizado como material de embalaje y para la fabricación de productos plásticos.
+1933 Grabaciones estéreo:
 
-1934 Nylon: El nylon fue inventado en 1934 por Wallace Carothers. Esta invención revolucionó la industria textil, ya que fue el primer material sintético utilizado para hacer telas. El nylon fue ampliamente utilizado para la fabricación de ropa, zapatos y otros productos textiles.
+Las primeras grabaciones estéreo fueron inventadas en 1933 por Alan Blumlein. Esta innovación permitió a los músicos grabar una grabación en dos canales, lo que resultó en un sonido mucho más vivo y realista. Esta innovación permitió a los artistas tener un mayor control sobre la producción de sus grabaciones.
+
+### 1933 Polietileno
+
+El polietileno fue inventado en 1933 por Eric Fawcett y Reginald Gibson. Esta invención fue uno de los primeros materiales sintéticos y fue ampliamente utilizado como material de embalaje y para la fabricación de productos plásticos.
+
+### 1934 Nylon
+
+El nylon fue inventado en 1934 por Wallace Carothers. Esta invención revolucionó la industria textil, ya que fue el primer material sintético utilizado para hacer telas. El nylon fue ampliamente utilizado para la fabricación de ropa, zapatos y otros productos textiles.
 
 ### 1935 Radar
 
@@ -436,22 +515,57 @@ La invención del bolígrafo se atribuye a John J. Loud, un fabricante de calzad
 
 La invención de aerosoles se atribuye a Eric Rotheim, un inventor noruego, quien patentó el primer aerosol en 1927. Originalmente se llamaba "Aerosolv", y funcionaba con un gas licuado como propelente. El primer aerosol fue creado para la aplicación de insecticidas.
 
+![](img/2023-02-28-11-56-28.png)
+
 En 1941, el químico estadounidense Lloyd Nelson inventó un aerosol basado en el uso de un compuesto orgánico como propelente. Esta fue la primera vez que se usó un compuesto orgánico como propelente. El aerosol se popularizó durante la década de 1950, cuando se comenzó a usar como aerosoles para la aplicación de pintura, en aerosoles para el cabello y en aerosoles para la limpieza.
 
-1942 Reactor nuclear
-1942 Equipo de inmersión
-1943 Turbina de reacción para aviones
-1945 La Bomba atómica destruye Hiroshima y Nagasaki
-1946 Horno de microondas
-1946 Calculadora electrònica
-1946 Ordinadora
-1947 Transistor
-1948 Long Play - Disc de llarga durada; neumáticos radiales
-1950 Tarjeta de crédito
+### 1942 Napalm
+
+Durante la Segunda Guerra Mundial, los Aliados y la Alemania nazi utilizaron la gasolina como arma en lanzallamas, ya que solamente la gasolina era un rápido y eficaz dispositivo incendiario. Una sustancia adicional era necesaria para producir una combustión de gran alcance y persistencia pero que no se consumiera velozmente.
+
+![](img/2023-02-28-11-58-46.png)
+
+Aunque los investigadores habían encontrado maneras de hacer gasolina convertida en gelatina, muchas de ellas requirieron de caucho como componente principal, que durante tiempos de guerra era una materia escasa. En 1942, investigadores de la Universidad de Harvard (conducida por Louis Fieser) y el cuerpo químico del Ejército de los Estados Unidos encontró la solución: el napalm.
+
+### 1942 Reactor nuclear
+
+### 1942 Equipo de inmersión
+
+### 1943 Turbina de reacción para aviones
+
+![](img/2023-02-28-12-04-28.png)
+
+Los motores a reacción hicieron posible que los aviones volaran a mayores altitudes y velocidades de crucero, lo que significa que los vuelos se pueden realizar con mayor rapidez, economía y seguridad. Los motores a reacción también son más fiables que los motores de hélice, lo que significa que los aviones pueden volar por más tiempo sin necesidad de un mantenimiento frecuente.
+
+### 1945 La Bomba atómica destruye Hiroshima y Nagasaki
+
+### 1946 Horno de microondas
+
+### 1946 Calculadora electrònica
+
+### 1946 Ordenador
+
+### 1947 Transistor
+
+### 1948 Long Play - Disc de llarga durada; neumáticos radiales
+
+### 1958. Primer radar de velocidad
+
+![](img/2023-02-28-11-53-48.png)
+
+El holandés Maurice Gatsonides (1911-1998), quien para mejorar sus tiempos decidió que más que conocer a qué velocidad máxima llegaba al final de las rectas, necesitaba saber a qué velocidad pasaba por las curvas, para mejorar su técnica en el paso por curva.
+
+Así que comenzó a idear un artilugio basado en la tecnología del radar que, como sabéis, es un dispositivo emisor y receptor de ondas que se aprovecha del efecto Doppler.
+
+### 1950 Tarjeta de crédito
+
+En el año 1949 Frank McNamara pensó en una tarjeta que permitiera pagar en cualquier establecimiento.  Esto se le ocurrió en una cena con otros 2 comensales. A McNamara se le olvidó la cartera y tuvo que telefonear a su mujer para que se la trajera. Junto a los otros dos decidieron crear un método para poder pagar con una sola tarjeta en diferentes establecimientos de forma personal y segura. De aquí surgió la Diners’ Club, la primera tarjeta de crédito.
 
 ### 1953 Hillary y Tenzing ascienden el everest
 
 En 1953, el alpinista Edmund Hillary y el sherpa Tenzing Norgay hicieron historia cuando ascendieron la cumbre del Monte Everest, convirtiéndose en los primeros humanos en alcanzar la cima más alta de la Tierra. La expedición británica, dirigida por el almirante John Hunt, partió de Katmandú, Nepal, el 10 de marzo de 1953. Después de meses de preparación, la expedición de alpinistas inició su ascenso a la cumbre del Monte Everest el 26 de mayo. Luego de muchos intentos infructuosos, Hillary y Tenzing finalmente lograron el éxito el 29 de mayo de 1953.
+
+![](img/2023-02-28-12-14-03.png)
 
 ### 1954 Central nuclear
 

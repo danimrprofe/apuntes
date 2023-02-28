@@ -1,5 +1,7 @@
 # Cronología de los inventos
 
+## Antes de cristo
+
 20.000 aC Agujas de hueso
 18.000 aC Pinceles
 18.000 aC Cabañas de hueso de mamut
@@ -25,14 +27,17 @@ Se realizan las primeras herramientas de piedra
 1.747 aC Calendario
 1.500 aC Foneria del Hierro
 600 aC Monedas
-Siglo III
+
+## Siglo III
+
 La palanca
 El caracol sin fin
 Caracol elevador de agua
 La rueda dentada
 La balanza hidrostática
 Los espejos ustorios
-150 aC Sismoscopio
+
+### 150 aC Sismoscopio
 
 Un sismoscopio es un dispositivo usado para registrar los sismos y temblores. Está formado por una placa sísmica conectada a un dispositivo electrónico para registrar y medir los movimientos sísmicos. El sismoscopio se utiliza para medir la intensidad de los temblores y los sismos, así como su ubicación y profundidad.
 
@@ -51,7 +56,15 @@ Fines del Siglo V: Caída del Imperio Romano de Occidente
 650 Molino de viento
 800-900 Papel moneda
 800 Partituras
-800 a 900 Pólvora
+
+### 800 a 900 Pólvora
+
+La ``pólvora`` está compuesta por salitre (nitrato de potasio), azufre y carbón vegetal. Estos ingredientes se mezclan en diferentes proporciones para producir una mezcla explosiva.
+
+Cuando se enciende la mezcla, el calor generado por la combustión del carbón hace que el nitrato de potasio se descomponga en nitrógeno y oxígeno. Esto provoca una reacción exotérmica que libera grandes cantidades de gas a alta presión. Esta presión hace que la mezcla explote, liberando energía en forma de ondas de choque. Estas ondas de choque son las que proporcionan la fuerza necesaria para propulsar proyectiles, como balas de cañón.
+
+https://www.youtube.com/watch?v=XCaPo6fzcnw
+
 868 Impresión de libros
 
 ## Siglo X
@@ -67,13 +80,15 @@ En el S. X aparece la herradura para caballos y un arnés
 
 ## Siglo XII
 
-1100 Brújula magnética
+### 1100 Brújula magnética
 
 La primera brújula magnética conocida en navegación marítima, está señalada en Europa en 1187, por el inglés Alexander Neckham. Describe una aguja transportada a bordo, que permite seguir un rumbo, incluso cuando la estrella polar está cubierta por las nubes.
 
-1105 Primer molino de viento en Francia
-1118 Cañón (Usado por los moros)
-1121 Clavecín
+### 1105 Primer molino de viento en Francia
+
+### 1118 Cañón (Usado por los moros)
+
+### 1121 Clavecín
 
 La invención del clavecín supuso un gran cambio en la música. Esta nueva tecnología permitió a los músicos y compositores crear música de una forma más precisa y controlada. El clavecín fue el precursor de los instrumentos de teclado modernos, como el piano. Además, el clavecín también fue una fuente importante de innovación en la composición y la interpretación musical. Esto se debe a sus características únicas, como la capacidad de ajustar los tonos y la facilidad de producir una melodía más compleja. Estas características permitieron a los compositores crear obras más complejas con más detalle y profundidad. Además, también ayudó a desarrollar el concepto de la tonalidad.
 
@@ -110,6 +125,10 @@ Una de las principales innovaciones de este período fue la invención de la rue
 ### 1420 Pinturas al óleo
 
 Otra innovación importante del siglo XV fue el desarrollo de la pintura al óleo. Esta nueva técnica permitió a los pintores crear una variedad de hermosas obras de arte con una gran profundidad de color. Esta técnica se desarrolló en 1420 y se ha convertido en una técnica muy popular en la pintura moderna.
+
+### 1439 La imprenta
+
+La imprenta fue inventada por Johannes Gutenberg en 1439. Fue una de las mayores innovaciones en el campo de la comunicación y el intercambio de información. Anteriormente, todos los libros estaban escritos a mano, lo que era un proceso muy lento y costoso. La imprenta permitió la producción masiva de libros a un costo mucho más bajo.
 
 ### 1450 Velocípedo
 
@@ -153,7 +172,7 @@ En 1565, el alemán Faber-Castell inventó el lápiz, revolucionando el proceso 
 
 Otro avance importante en el siglo XVI fue la invención del péndulo por el físico italiano Galileo Galilei, en 1581. Esta invención permitió la medición precisa del tiempo y el desarrollo de relojes de precisión.
 
-En 1569, el cartógrafo alemán Gerardus Mercator inventó el mapa en proyección cilíndrica, que permitió la representación de los mares y continentes con mayor precisión. Esto contribuyó a la navegación y la exploración marítima.
+En 1569, el cartógrafo alemán ``Gerardus Mercator`` inventó el mapa en proyección cilíndrica, que permitió la representación de los mares y continentes con mayor precisión. Esto contribuyó a la navegación y la exploración marítima.
 
 ![](img/2023-02-26-17-39-41.png)
 
@@ -165,24 +184,23 @@ En 1593, el físico italiano Galileo Galilei inventó el termómetro de agua, lo
 
 ## Siglo XVII
 
-1605 / 1615: Cervantes publica "El Ingenioso Hidalgo Don
-Quijote de la Mancha"
-1609 Telescopio refractor
-1620: Arriba el "Maryflower" en Norteamérica
-1640 Bayoneta
-1642 Calculadora de Pascal
-1657 Reloj de péndulo
-1665 Microscopio mejorado
-1668 Telescopio reflector
-1672 Bomba neumática
-1682 Halley descubre el cometa llamado con su nombre
-1687 Higrómetro
+En 1605, Miguel de Cervantes publicó su famosa obra "El Ingenioso Hidalgo Don Quijote de la Mancha", una novela que sigue siendo una de las más respetadas y admiradas de todos los tiempos.
 
-En 1605, Miguel de Cervantes publicó su famosa obra "El Ingenioso Hidalgo Don Quijote de la Mancha", una novela que sigue siendo una de las más respetadas y admiradas de todos los tiempos. En 1609, se inventó el telescopio refractor, un instrumento que permitió a la humanidad ver detalles de los cuerpos celestes que antes eran invisibles. En 1620, el barco inglés "Mayflower" llegó a América del Norte, iniciando el proceso de colonización europea de aquel continente.
+En 1609, se inventó el telescopio refractor, un instrumento que permitió a la humanidad ver detalles de los cuerpos celestes que antes eran invisibles.
+
+En 1620, el barco inglés "Mayflower" llegó a América del Norte, iniciando el proceso de colonización europea de aquel continente.
+
+### 1640 Bayoneta
 
 En 1640, se inventó la bayoneta, un arma diseñada para ser usada con fusiles y pistolas. En 1642, Blaise Pascal inventó la primera calculadora mecánica, una herramienta revolucionaria para el cálculo matemático.
 
-En 1657, Christiaan Huygens inventó el reloj de péndulo, una herramienta que permitió la medición precisa del tiempo. En 1665, Robert Hooke construyó un microscopio mejorado, lo que permitió a la gente ver detalles mínimos del mundo de la microscopia. En 1668, Isaac Newton construyó un telescopio reflector, una herramienta que permitió la exploración de los cuerpos celestes más lejanos. En 1672, Otto Von Guericke inventó la primera bomba neumática, una herramienta revolucionaria para comprender los principios de la física.
+En 1657, Christiaan Huygens inventó el reloj de péndulo, una herramienta que permitió la medición precisa del tiempo.
+
+En 1665, Robert Hooke construyó un microscopio mejorado, lo que permitió a la gente ver detalles mínimos del mundo de la microscopia.
+
+En 1668, Isaac Newton construyó un telescopio reflector, una herramienta que permitió la exploración de los cuerpos celestes más lejanos.
+
+En 1672, Otto Von Guericke inventó la primera bomba neumática, una herramienta revolucionaria para comprender los principios de la física.
 
 En 1682, Edmund Halley descubrió el cometa que lleva su nombre, un descubrimiento que ayudó a la gente a comprender la naturaleza de los cuerpos celestes.
 
@@ -199,22 +217,6 @@ Uno de estos inventos fue el piano de 1709. Esta maravilla de la ingeniería per
 Otro invento importante fue el termómetro de alcohol de 1710. Esta herramienta de medición permitió a los médicos controlar la temperatura de los pacientes con precisión. Esto permitió que los médicos pudieran detectar y tratar enfermedades con mayor precisión.
 
 1740 Estufa Franklin
-
-1740 Imprenta en colores
-1742 Escalera centígrada
-1745 Condensador eléctrico
-1752 Pararrayos
-
-1761 Cronómetro
-1763 Reflectores parabólicos
-1769 Automóvil de vapor
-
-1783 Globo de aire caliente
-1784 Lámpara de aceite, con mecha vacía, electróforo
-1785 Helix
-1789 Revolución francesa
-1790 Sistema métrico
-1796 Litografía
 
 En 1740, también se inventó la imprenta en colores. Esta innovación permitió a los impresores imprimir documentos con mayor nitidez y detalle. Esto permitió a los artistas y escritores mejorar la calidad de sus trabajos.
 
@@ -240,7 +242,9 @@ En 1776, se inventaron los globos, lo que permitió a las personas volar y ver e
 
 ### 1782 Máquina de vapor Watt
 
-En 1782, James Watt inventó la máquina de vapor. Esta innovación cambió la forma en que se producían los productos al permitir a las personas producir productos en mayor cantidad y con mayor rapidez.
+En 1782, James Watt inventó la ``máquina de vapor``. Esta innovación cambió la forma en que se producían los productos al permitir a las personas producir productos en mayor cantidad y con mayor rapidez.
+
+### Globo de aire caliente
 
 En 1783, se inventó el globo de aire caliente. Esta innovación permitió a las personas volar más alto y con mayor seguridad. Esto permitió a las personas ver el mundo desde nuevas perspectivas.
 
@@ -255,17 +259,56 @@ En 1789, estalló la Revolución Francesa. Esta revolución cambió el curso de 
 ## Siglo XIX
 
 ### 1800 Martillo pilón
+
+![](img/2023-02-28-15-14-58.png)
+
+El martillo pilón fue una herramienta mecánica inventada en 1800 que se usaba para forjar metales. Esta herramienta era una parte esencial de la industria y se utilizaba para fabricar y reparar diferentes tipos de herramientas y objetos metálicos.
+
 ### 1801 Pila eléctrica
+
+1801 Pila eléctrica: La primera pila eléctrica fue inventada por Alessandro Volta en 1801. Esta fue la primera fuente de energía eléctrica que funcionaba sin la necesidad de una fuente externa de energía. Esta pila producía energía eléctrica a partir de la reacción química de dos electrodos inmersos en una solución conductora.
+
+![](img/2023-02-28-15-14-00.png)
+
 ### 1801 Electróforo
+
+1801 Electróforo: El electróforo fue inventado por William Nicholson en 1801. Esta era una herramienta eléctrica que se usaba para generar electricidad estática. Esta herramienta estaba formada por una placa metálica conectada a una fuente de energía, una varilla metálica, y un recipiente de líquido aislante.
+
 ### 1801 Endiómetro
+
+1801 Endiómetro: El endiómetro fue inventado por Henry Cavendish en 1801. Esta herramienta se usaba para medir la capacitancia de un condensador. Esta herramienta fue un avance muy importante en el campo de la medición eléctrica.
+
 ### 1802 Locomotora de vapor
+
+1802 Locomotora de vapor: La primera locomotora de vapor fue inventada por George Stephenson en 1802. Esta locomotora fue una revolución en el transporte y abrió la puerta a una nueva era de transporte seguro y rápido.
+
 ### 1803 Acumulador eléctrico
+
+1803 Acumulador eléctrico: El primer acumulador eléctrico fue inventado por Alessandro Volta en 1803. Esta herramienta fue la primera batería capaz de almacenar energía eléctrica y fue un avance muy importante en el campo de la energía eléctrica.
+
 ### 1805 Telar Jacquard
+
+1805 Telar Jacquard: El telar Jacquard fue inventado por Joseph-Marie Jacquard en 1805. Esta máquina fue una innovación en el campo de la fabricación textil. Esta máquina estaba equipada con una tarjeta perforada que permitía que se tejan patrones de tejido complicados.
+
 ### 1815 Napoleón es derrotado en Waterloo
+
+1815 Napoleón es derrotado en Waterloo: En 1815, Napoleón fue derrotado en la batalla de Waterloo por una coalición de fuerzas lideradas por el duque de Wellington. Esta fue la última batalla de Napoleón y marcó el fin de su reinado.
+
 ### 1816 Lámpara de seguridad para mineros, termoelectricidad
+
+1816 Lámpara de seguridad para mineros, termoelectricidad: En 1816, Sir Humphry Davy inventó la lámpara de seguridad para mineros. Esta lámpara funcionaba con una pila eléctrica basada en la termoelectricidad. Esta herramienta fue una importante innovación para la industria minera.
+
 ### 1827 Cortadora de césped
+
+1827 Cortadora de césped: La primera cortadora de césped fue inventada por Edwin Budding en 1827. Esta herramienta fue una innovación importante en el campo de la jardinería y permitió que los jardines se mantuvieran limpios y bien cuidados.
+
 ### 1830 Dínamo eléctrica
+
+1830 Dínamo eléctrica: La primera dínamo eléctrica fue inventada por Michael Faraday en 1830. Esta herramienta fue un avance importante en el campo de la energía eléctrica y permitió que la electricidad se produjera de forma continua y fiable.
+
 ### 1831 Cosechadora
+
+1831 Cosechadora: La primera cosechadora fue inventada por Cyrus McCormick en 1831. Esta herramienta fue una innovación importante en el campo de la agricultura y fue una de las primeras herramientas mecánicas usadas para cosechar. Esta herramienta permitió que la cosecha se realizara de forma más rápida y eficiente.
 
 ### 1834 Telégrafo eléctrico
 
@@ -305,9 +348,11 @@ En 1846, el inventor británico Linus Yale inventó la cerradura de seguridad, u
 
 En 1851, el inventor francés Louis Daguerre inventó la cámara de placas, un dispositivo diseñado para tomar fotografías. Esta innovación permitió a la gente capturar momentos especiales de una manera nunca antes vista, cambiando para siempre la forma en que la gente ve el mundo.
 
-1860 Linóleo
+### 1860 Linóleo
 
-1860 Esquiladora: La esquiladora fue inventada en 1860 por Hiram Moore. Esta máquina revolucionaria permitió a los agricultores cortar el pelo de los animales domésticos y cosecharlo para usarlo como materiales para ropa y otros productos. Esta importante innovación modernizó el proceso de producción de lanas.
+### 1860 Esquiladora
+
+La esquiladora fue inventada en 1860 por Hiram Moore. Esta máquina revolucionaria permitió a los agricultores cortar el pelo de los animales domésticos y cosecharlo para usarlo como materiales para ropa y otros productos. Esta importante innovación modernizó el proceso de producción de lanas.
 
 ### 1876 Teléfono
 
@@ -320,6 +365,8 @@ El frigorífico fue inventado por Carl von Linde en 1876. Esta importante innova
 ![](img/2023-02-28-11-22-59.png)
 
 ### 1877 Fonógrafo
+
+![](img/2023-02-28-15-09-01.png)
 
 El fonógrafo fue inventado por Thomas Edison en 1877. Esta innovación permitió capturar la voz humana y almacenarla en un dispositivo mecánico para su posterior reproducción. El fonógrafo revolucionó el mundo de la música y la tecnología de la información, transformando la forma en que las personas escuchaban y compartían la música.
 
@@ -366,8 +413,16 @@ https://artsandculture.google.com/story/awUBd0WvqVFpLg?hl=en
 ![](img/2023-02-28-11-14-56.png)
 
 ### 1890 El tubo de Crookes
+
+![](img/2023-02-28-15-08-01.png)
+
+El tubo de Crookes es un dispositivo de vacío desarrollado por el físico británico William Crookes en 1878. Estaba diseñado para estudiar el comportamiento de los rayos catódicos, una forma de radiación electromagnética. El tubo contenía una lámpara de descarga con un filamento calentador en su centro, una cámara de vacío para albergar la lámpara, una lámina metálica para producir un campo eléctrico, y una pantalla con una placa de plomo en la parte delantera para producir un campo magnético. Cuando el filamento se calentaba, emitía electrones que se desplazaban hacia la superficie de la lámina. Estos electrones eran entonces acelerados y desviados por los campos eléctrico y magnético. El resultado era una descarga visible que se podía ver en la pantalla.
+
 ### 1894 Radio
+
 ### 1894 Primer periscopio
+
+![](img/2023-02-28-15-05-43.png)
 
 ### 1895 Rayos X
 
@@ -416,9 +471,11 @@ El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de co
 
 ### 1913 Cremallera
 
+![](img/2023-02-28-15-04-48.png)
+
 La primera patente de un dispositivo de cremallera fue presentada en 1913 por Gideon Sundback, un ingeniero sueco. Se le atribuye el haber creado la cremallera moderna, un dispositivo fácil de usar con una combinación de dientes de metal y una solapa. Sundback también inventó el cierre de plástico, que se utilizó para la primera vez en 1933
 
-1914 Primera guerra mundial
+### 1914 Primera guerra mundial
 
 ### 1914 Semáforos Luminosos
 
@@ -428,7 +485,9 @@ Los primeros semáforos luminosos fueron instalados en 1914 en Cleveland, Ohio. 
 
 Los primeros limpiaparabrisas fueron inventados en 1914 por Mary Anderson. Su invento consistía en una palanca que se manejaba desde el interior de un vehículo para activar un brazo con una goma, que se movía de un lado a otro para limpiar el parabrisas.
 
-1915 Albert Einstein desarrolla y enuncia su teoría de la Relatividad: En 1915, Albert Einstein desarrolló y enunció su teoría de la Relatividad, la cual revolucionó la física moderna. Esta teoría explica la relación entre la gravitación y la energía, y cómo el universo se comporta en diferentes situaciones.
+### 1915 Teoría de la relatividad
+
+En 1915, ``Albert Einstein`` desarrolló y enunció su teoría de la Relatividad, la cual revolucionó la física moderna. Esta teoría explica la relación entre la gravitación y la energía, y cómo el universo se comporta en diferentes situaciones.
 
 1920 Secador de pelo: El primer secador de pelo fue inventado en 1920 por Alexander Godefroy. Utilizaba un ventilador para hacer circular aire caliente, lo que ayudaba a secar el cabello de forma más eficiente.
 
@@ -463,6 +522,12 @@ Los ``antibióticos`` fueron inventados en 1927 por el bioquímico ``Alexander F
 ![](img/2023-02-28-11-38-57.png)
 
 La ``amoxicilina`` es un antibiótico semisintético derivado de la ``penicilina``. Se emplea a menudo como primer fármaco en infecciones de diferente gravedad, tanto en medicina humana como también en veterinaria.
+
+### 1926 Plancha de vapor
+
+![](img/2023-02-28-15-01-54.png)
+
+Fue en 1926 cuando la empresa Elder Co. puso a la venta la primera plancha de vapor de uso doméstico, esto en la ciudad de Nueva York.
 
 ### 1928 Ciclotrón
 
@@ -575,11 +640,13 @@ La primera central nuclear en el mundo fue la Central Nuclear de Obninsk, cerca 
 
 ### 1954 Radio a transistores
 
-Apareció en el año 1954 y fue un cambio drástico en los sistemas de radio. Esto se debe a que los transistores eran más pequeños, más baratos y también más fiables que los tubos de vacío que se usaban antes. Esto significaba que los radios a transistores podían ser más pequeños y portátiles. También eran más eficientes energéticamente, lo que significaba que eran más baratos de fabricar
+Apareció en el año 1954 y fue un cambio drástico en los sistemas de radio. Esto se debe a que los transistores eran más pequeños, más baratos y también más fiables que los tubos de vacío que se usaban antes. Esto significaba que los radios a transistores podían ser más pequeños y portátiles. También eran más eficientes energéticamente, lo que significaba que eran más baratos de fabricar.
 
-1955 Plancha de vapor
+![](img/2023-02-28-15-00-38.png)
 
 ### 1956 Velcro
+
+![](img/2023-02-28-14-59-36.png)
 
 Velcro fue inventado en 1956 por el ingeniero suizo George de Mestral, quien se dio cuenta de que los granos de la hierba se adhirían a su perro y a su ropa. Inspirado por esta naturaleza, inventó una tela con un cierre de gancho y bucle que se conoce como Velcro. El nombre "Velcro" surgió de la combinación de las palabras francesas "velours" (terciopelo) y "crochet" (ganchos).
 
@@ -587,21 +654,31 @@ Velcro fue inventado en 1956 por el ingeniero suizo George de Mestral, quien se 
 
 ### 1957 Satélite espacial
 
+![](img/2023-02-28-14-53-10.png)
+
 El primer satélite artificial en orbitar la Tierra. Fue lanzado por la Unión Soviética el 4 de octubre de 1957 y se conoció como Sputnik 1. Estaba equipado con un emisor de radio y su señal fue recibida por estaciones de radio en todo el mundo. El satélite era una esfera de metal de 58 cm de diámetro, con cuatro antenas y una batería para alimentar el emisor de radio. El peso total del satélite era de 83.6 kg.
 
 El lanzamiento de Sputnik 1 fue un hito importante en la historia de la humanidad. La carrera espacial entre la Unión Soviética y los Estados Unidos comenzó con el lanzamiento del satélite
 
 ### 1958 Aerodeslizador
 
-El Aerodeslizador de 1958 fue un vehículo de transporte inventado por el ingeniero William Blanchard. Estaba diseñado para ser una alternativa a los helicópteros, ya que era más barato y fácil de construir. Estaba compuesto por una serie de alas y una hélice para proporcionar propulsión al vehículo. El Aerodeslizador de 1958 fue uno de los primeros vehículos de transporte aéreo no tripulados y fue diseñado para ser una alternativa a los aviones comerciales. Estaba equipado con una hélice en la parte superior para proporcionar el impulso y una serie de alas que permitían al vehículo volar en línea recta. El Aerodeslizador era capaz de alcanzar velocidades de hasta 160 km/h.
+![](img/2023-02-28-14-57-16.png)
 
-1959 Chip de silicio
+El Aerodeslizador de 1958 fue un vehículo de transporte inventado por el ingeniero William Blanchard. Estaba diseñado para ser una alternativa a los helicópteros, ya que era más barato y fácilinvencion de construir. Estaba compuesto por una serie de alas y una hélice para proporcionar propulsión al vehículo. El Aerodeslizador de 1958 fue uno de los primeros vehículos de transporte aéreo no tripulados y fue diseñado para ser una alternativa a los aviones comerciales. Estaba equipado con una hélice en la parte superior para proporcionar el impulso y una serie de alas que permitían al vehículo volar en línea recta. El Aerodeslizador era capaz de alcanzar velocidades de hasta 160 km/h.
+
+### 1959 Chip de silicio
+
+![](img/2023-02-28-14-55-49.png)
 
 ### 1959 Lycra
+
+![](img/2023-02-28-14-55-16.png)
 
 Lycra fue una innovadora fibra sintética desarrollada por DuPont que se utilizó por primera vez para fabricar ropa deportiva y prendas de baño. Esta fibra era extremadamente resistente y elástica, lo que permitió a los diseñadores cambiar el diseño de la ropa para que se ajustara mejor al cuerpo. Además, Lycra también permitió que la ropa fuera mucho más cómoda de usar y durara más tiempo.
 
 ### 1960 Teflón
+
+![](img/2023-02-28-14-54-05.png)
 
 Teflón fue una sustancia química desarrollada por DuPont que se usó por primera vez para revestir utensilios domésticos. Esta sustancia era extremadamente resistente al calor y los alimentos no se adherían a la superficie, lo que hacía que la limpieza fuera mucho más fácil. También fue una innovación en la industria de la cocina, ya que los alimentos no se quemaban ni se adherían a los utensilios.
 

@@ -1,3 +1,10 @@
+---
+title: Windows
+subtitle: Arranque, apagado y sesiones
+author: Daniel Moreno
+date: hoy
+---
+
 # ARRANQUE, APAGADO Y SESIONES
 
 ## Familiarización con el PC
@@ -109,7 +116,7 @@ En ordenadores con teclados preparados para ello, podemos utilizar ciertos atajo
 
 ![imagen](media/image12.jpg)
 
-## Arranque
+## ARRANQUE
 
 Una vez arrancamos el PC, suceden varias cosas antes de llegar a arrancar el sistema operativo. En primer lugar, el PC comprueba que todos los componentes están funcionando correctamente y, si no es así, se para y muestra un error.
 
@@ -143,7 +150,7 @@ Importante: cada vez que iniciamos sesión en un ordenador en el que nunca nos h
 
 ![imagen](media/image16.png)
 
-## Cuentas de usuario
+## CUENTAS DE USUARIO
 
 Una cuenta de usuario es una colección de información que indica al sistema operativo:
 
@@ -175,7 +182,17 @@ Cada espacio personal tiene las mismas carpetas, su propia carpeta de descargas,
 
 ![imagen](media/image21.jpg)
 
-## Inicio de sesión
+## SESIONES
+
+Una sesión de Windows se refiere al período de tiempo en el que un usuario inicia ``sesión`` y utiliza un sistema operativo Windows en una computadora. Cada sesión de Windows es única y está asociada con una cuenta de usuario específica que tiene sus propios permisos y configuraciones.
+
+Cuando un usuario inicia sesión en un ordenador con Windows, se crea una ``sesión`` de Windows que permanece activa hasta que el usuario ``cierra sesión`` o se apaga la computadora.
+
+ Durante la ``sesión`` de Windows, el usuario puede acceder a sus archivos y aplicaciones, personalizar la configuración del sistema y realizar tareas en la computadora.
+
+Si hay múltiples usuarios que comparten la misma computadora, cada uno de ellos puede tener su propia sesión de Windows abierta al mismo tiempo, para mantener su espacio de trabajo.
+
+### Inicio de sesión
 
 Al arrancar un ordenador, automáticamente se ejecuta el sistema operativo instalado en el mismo. Pero para que un usuario pueda comenzar a operar con el sistema, debe iniciar una sesión de trabajo introduciendo un nombre de usuario y una contraseña válidos. Iniciar sesión también se conoce como loguearse, logging in o log in
 
@@ -207,7 +224,7 @@ En cualquier momento, podemos acceder al menú con ``Ctrl + Alt + Supr`` para:
 
 ![imagen](media/image24.jpg)
 
-## Administrador de tareas
+## ADMINISTRADOR DE TAREAS
 
 El sistema operativo por sí solo no permite hacer gran cosa. Trae algunos programas de serie, pero otros los tendremos que instalar nosotros para poder trabajar.
 
@@ -226,6 +243,12 @@ Los procesos en segundo plano los ejecuta el sistema operativo sin nosotros ped�
 En ocasiones, algún programa no responde, o está consumiendo demasiados recursos, y queremos ver qué pasa, o directamente forzar su cierre. En ese caso, podemos consultar los programas que se están ejecutando y qué uso hacen de los recursos.
 
 ![](img/2023-02-22-12-01-02.png)
+
+### Cerrar un proceso
+
+Cuando tenemos una aplicación que no responde, podemos cerrarla desde aquí, haciendo clic con botón derecho en el nobmre de la aplicación, y eligiendo ``finalizar tarea``. Esto forzará el cierre de la aplicación, pero con gran probabilidad perderemos los cambios no guardados y el programa, al volver a arrancar, nos notificará que ha ocurrido un error y se ha cerrado de forma inesperada.
+
+![](img/2023-03-01-16-45-33.png)
 
 También podemos, en la pestaña ``rendimiento``, visualizar el funcionamiento de los principales componentes del ordenador.
 

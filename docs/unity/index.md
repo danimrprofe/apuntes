@@ -570,7 +570,7 @@ Lo hacemos grande y lo situamos.
 
 Guardamos la escena (que ahora se llama ``Untitled*``) con +ctrl+ y +s+  y le llamaremos ``MainMenu``.
 
-## Crear script MainMenu.cs
+### Crear script MainMenu.cs
 
 ```c#
 using System.Collections;
@@ -599,7 +599,7 @@ public class MainMenu : MonoBehaviour
 }
 ```
 
-## Asignar script
+### Asignar script al canvas
 
 Tendremos que asignar el script ``MainMenu.cs`` al ``canvas`` de la escena del menú.
 
@@ -613,14 +613,20 @@ Elegimos la función correspondiente:
 
 ![](img/2023-02-22-18-36-27.png)
 
-## Modificación de build settings
+### Modificación de build settings
 
-Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
+Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto.
+
+Para agregar escenas, sigue estos pasos:
+
+1. Ve al menú ``File`` (Archivo) y selecciona ``Build Settings`` (Configuración de compilación).
 
 ![](img/2023-02-22-18-38-01.png)
 
+2. En la ventana Build Settings, verás una lista de escenas. En la parte inferior deberemos colocar las escenas que van a formar parte de nuestra ``build``.
+
 ![](img/2023-02-22-18-38-41.png)
 
-## Comprobación
+### Comprobación
 
 Comprobaremos que ejecutando el juego, podemos pasar del menú a cada una de las dos escenas siguientes.

@@ -28,7 +28,7 @@ También podremos apreciar las rejillas de ventilación de la caja.
 
 Adjunta una captura de la parte de atrás de tu ordenador e identifica los cables que van conectados a él.
 
-A la derecha veréis que hay unos tornillos. Quitándolos podemos sacar la tapa lateral para poder manipular los componentes internos del pc.
+A la derecha veréis que hay unos ``tornillos``. Quitándolos podemos sacar la tapa lateral para poder manipular los componentes internos del pc.
 
 ![imagen](media/image3.png)
 
@@ -38,8 +38,8 @@ Veremos que para arrancar el PC tenemos varios botones. Según nuestro modelo, e
 
 ![imagen](media/image4.png)
 
-- El botón power enciende el ordenador y si lo mantenemos pulsado también lo apaga.
-- El botón reset reinicia el ordenador sin apagarlo del todo.
+- El botón ``power`` enciende el ordenador y si lo mantenemos pulsado también lo apaga.
+- El botón ``reset`` reinicia el ordenador sin apagarlo del todo.
 
 En ocasiones veremos luces LED que parpadean y nos indican si el ordenador está haciendo cosas o no (HDD es el disco duro).
 

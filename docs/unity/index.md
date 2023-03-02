@@ -1,30 +1,48 @@
-# Pong
+# Creación de videojuegos
 
 ## 01. Unity
 
-![imagen](img/2022-10-13-00-34-17.png)
+![logo de unity](img/2022-10-13-00-34-17.png)
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
-Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los proyectos de Pong y un juego de plataformas 2D. A través de estos proyectos hemos aprendido a:
+### Posibilidades de Unity
 
-- Crear objetos de sprite 2D y colocarlos en escena
-- Programar scripts que, asignados a los objetos, controlen su comportamiento
-- Utilizar controles de teclado para mover los objetos
-- Asignar componentes rigidbody para agregar respuesta a físicas en nuestros sprites
-- Agregar colliders a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
+En este proyecto aprenderemos a realizar lo siguiente:
 
-![imagen](media/image2.png)
+- Crear ``objetos`` de sprite 2D y colocarlos en escena
+- Programar ``scripts`` que, asignados a los objetos, controlen su comportamiento
+- Utilizar ``controles`` de teclado para mover los objetos
+- Asignar ``componentes`` rigidbody para agregar respuesta a físicas en nuestros ``sprites``
+- Agregar ``colliders`` a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
 
 ## 02. Instalación
 
+### Unity hub
+
+En primer lugar nos descargaremos el ``Unity hub``, una aplicación desde la que podremos gestionar las instalaciones y actualizaciones de todos los programas relacionados con Unity. También se nos mostrarán los proyectos que tenemos creados.
+
+![](img/2023-03-02-08-13-56.png)
+
+### Cuenta de usuario
+
+Para gestionar nuestras instalaciones, necesitaremos crear una cuenta de usuario de ``Unity``, que deberemos crear para poder iniciar sesión y trabajar en nuestros proyectos.
+
+### Editor de unity
+
+Posteriormente, instalaremos el ``editor de unity``, que nos permitirá crear nuestros juegos.
+
 ## 03. Crear un proyecto
 
-Vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d
+Vamos a seleccionar lo importante es el template ``2d core`` que básicamente vamos a hacer el juego en 2d.
 
 ![imagen](media/image1.png)
 
-El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create
+El proyecto el nombre pues le ponéis el que queráis, seleccionar pues una localización y cuando lo tenga listo pues le das a create.
+
+### Cambiar el layout
+
+![imagen](media/image2.png)
 
 ## 04. Crear pelota
 

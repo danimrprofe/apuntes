@@ -143,17 +143,28 @@ De este modo, podremos jugar 2 jugadores en el mismo teclado.
 
 ## 12. Redefinir controles
 
-Tenemos que definir pues esos controles y para ello:
 
-- Nos vamos a ir a ``edit > project settings``.
-- Donde tenemos ``input manager`` tenemos declarado varias cosillas que si no lo vais a expandir el ``axis`` y estos son como ``shortcuts`` o controles que tiene definido djinnit y para diferentes teclas de nuestro teclado.
-- En en este caso tenemos ``horizontal`` que se encarga de saber cuándo estamos pulsando a la izquierda o derecha de las flechas o el add de nuestro teclado que son las típicas teclas que se utilizan para jugar wsb y las flechas de abajo a la derecha entonces pues con esto sabrá cuando llamemos a la horizontal pues si estamos yendo hacia la izquierda o hacia la derecha pasó lo mismo con arriba o abajo pero en este caso tendríamos el ws y la flecha de arriba y hacia abajo entonces tenemos el vertical y
+## Redefinir controles
 
-Tendremos que crear el ``vertical2`` que es para nuestro ``jugador2`` y tenemos que diferenciar pues que uno utilice el ws y el otro utilice la flecha hacia arriba y hacia abajo espero que me haya explicado lo mismo escribano con el culo pero bueno podéis seguir tranquilamente con el vídeo y pues si no queda claro pues lo vamos a ir viendo y seguramente que se entienda entonces seguramente a vosotros os haga aquí ``down`` y ``up`` y w no y yo salgo aquí s&w y esto es porque el vertical ya pilla directamente tanto la parte izquierda de teclado como la de la derecha pero aquí lo tenemos que diferenciar
+Para redefinir los controles, vamos a ir a ``Edit > Project Settings > Input Manager``. Aquí vemos que hay varias cosas declaradas, como **Axis**. Estos son los controles que ``Unity`` tiene asignados por defecto para las teclas de nuestro teclado.
 
-En ``vertical`` vais a borrar el sw que tenemos aquí y lo que vamos a hacer es ``duplicarlo`` para tener un ``vertical2`` para nuestro ``jugador2`` en cáceres clic derecho duplicate a ride element y se duplicará que vendrá por aquí otra como vertical.
+Por ejemplo, para el eje **horizontal**, está asignado a las teclas de flechas o el número 'A' para izquierda y derecha. Y para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flechas de arriba y abajo. Así que si queremos cambiar estos controles, podemos hacerlo en el Input Manager.
 
-Entonces le vamos a hacer este más blog ``vertical2`` y entonces ahora aquí lo que faltaría es cambiarle los controles si ni si el ``player1`` juega con la flecha de arriba y hacia abajo nosotros con el ``jugador2`` jugaremos con la s w entonces en negativo button tenéis que poner ese y en positivo ton tenía que poner ++w++ ycon eso cuando pasemos al código será muchísimo más sencillo porque además sólo tendremos que hacer un script para los dos players.
+![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos13.png)
+
+## Controles para segundo jugador
+
+Tenemos que crear el elemento vertical2 que es para nuestro player2. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
+
+Lo que faltaría es cambiarle los controles del player1 juega con la flecha de arriba y hacia abajo. Nosotros con el jugador 2 jugaremos con la W y S. En negativo ponemos S y en positivo W. Dentro del objeto player, en función de si es el 1 o el 2, seleccionaremos el control oportuno.
+
+![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos14.png)
+
+## Dentro de los scripts, podemos acceder a los diferentes controles por su nombre
+
+![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos15.png)
+
+![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos16.png)
 
 ## 13. Script de programación
 
@@ -601,19 +612,25 @@ public class MainMenu : MonoBehaviour
 
 ## Asignar script
 
-Tendremos que asignar el script ``MainMenu.cs`` al ``canvas`` de la escena del menú.
+Tendremos que asignar el script ``MainMenu.cs`` al ``canvas`` de la escena del menú, arrastrándo el ``script`` y soltando encima de ``canvas``.
 
-Por último tendremos que arrastrar ``canvas`` a las referencias de los dos botones, y cambiar el onclick para que llame a las funciones correspondientes.
+Seleccionamos ``PlayerVSPlayer``.
 
 ![](img/2023-02-22-18-35-22.png)
 
+Por último tendremos que arrastrar ``canvas`` a las referencias de los dos botones.
+
 ![](img/2023-02-22-18-35-48.png)
 
-Elegimos la función correspondiente:
+Cambiamos el ``onclick`` para que llame a las funciones correspondientes. Elegimos la función ``MainMenu > PlayerVSPlayer``:
 
 ![](img/2023-02-22-18-36-27.png)
 
+Repetimos la misma operación pero para el botón PlayerVSIA.
+
 ## Modificación de build settings
+
+Los ``Build Settings`` permiten a los desarrolladores configurar y compilar proyectos de Unity para distintas plataformas de destino.
 
 Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
 

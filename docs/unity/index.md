@@ -1,34 +1,84 @@
-# Pong
-
-## 01. Unity
-
-![imagen](img/2022-10-13-00-34-17.png)
+# Unity
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
-Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los proyectos de Pong y un juego de plataformas 2D. A través de estos proyectos hemos aprendido a:
+![imagen](img/2022-10-13-00-34-17.png)
 
-- Crear objetos de sprite 2D y colocarlos en escena
-- Programar scripts que, asignados a los objetos, controlen su comportamiento
-- Utilizar controles de teclado para mover los objetos
-- Asignar componentes rigidbody para agregar respuesta a físicas en nuestros sprites
-- Agregar colliders a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
+## 01. Unity
 
-![imagen](media/image2.png)
+Con este proyecto aprendremos a:
+
+- Crear ``objetos`` de sprite 2D y colocarlos en escena
+- Programar ``scripts`` que, asignados a los objetos, controlen su comportamiento
+- Utilizar ``controles`` de teclado para mover los objetos
+- Asignar `componentes` como los ``rigidbody`` para agregar respuesta a físicas en nuestros sprites
+- Agregar ``colliders`` a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
 
 ## 02. Instalación
 
+Para instalar necesitaremos seguir los siguientes pasos:
+
+1. Descargar ``unity hub`` desde la página oficial: https://unity.com/download
+2. Crear un ``usuario`` de unity
+3. Instalar el ``editor de unity``
+
 ## 03. Crear un proyecto
 
-Vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d
+### Abrimos unity
+
+Ahora mismo tenemos instalados dos programas: el Hub, y el Unity editor en sí (color negro). Este es el que tenemos que abrir.
+
+![](2023-03-02-12-50-36.png)
+
+### Carga de unity
+
+Se nos abre la pantalla de carga de unity.
+
+![](2023-03-02-12-50-21.png)
+
+Finalmente veremos la ``pantalla de proyectos``, desde la que podremos abrir un proyecto existente o crear un proyecto nuevo.
+
+![](2023-03-02-12-51-44.png)
+
+### Información de proyectos existentes
+
+Podemos observar los proyectos, la carpeta en la que se guarda el proyecto, así como la ``versión del editor`` con el que ha sido creado el proyecto.
+
+![](2023-03-02-12-52-35.png)
+
+### Plantillas
+
+Existen diferentes ``plantillas`` de proyecto que podemos utilizar y que vienen configuradas con diferentes opciones, según el tipo de juego que queramos hacer,
 
 ![imagen](media/image1.png)
 
-El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create
+### Crear nuestro proyecto
+
+En nuestro caso vamos a utilizar la plantilla ``2D core`` y le ponéis el nombre que queráis.
+
+Arriba podréis elegir la versión del editor con la que vais a crear el proyecto.
+
+![plantillas](2023-03-02-12-47-35.png)
+
+### Cambiar resolución
+
+Vamos a cambiar la ``resolución`` por la típica que se utiliza en pantallas que es la **16:9**.
+
+![](2023-03-02-12-54-52.png)
+
+### Cambiar el layout
+
+Podemos personalizar también la disposición de las ventanas en nuestro editor. Elegiremos la disposición ``2 by 3``.
+
+![imagen](media/image2.png)
 
 ## 04. Crear pelota
 
-Dentro de nuestra ventana lo que vamos a hacer es clic derecho y darle a judíos el spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
+Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
+
+![](2023-03-02-12-56-44.png)
+
+## Crear jugadores
 
 Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo enlos diferentes ejes y pues nos va aayudar a crear por como comentó el juegoen sí vamos a necesitar ni bajarnosninguna se ni nada va a ser todochocaron aquí en juniti así que buenogenera seguido un primer momento vamos acrear las paredes de arriba y de abajoentonces para ello
 
@@ -37,9 +87,7 @@ Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo
 3. Ahora lo que vamos ahacer es subirlo hacia arriba para ello
 4. También podéis pulsar +w+ cuando tengáis este objeto seleccionado y entonces pues podréis moverlo en ese eje en específico.
 
-## Cambiar resolución
-
-Vamos a cambiar la ``resolución`` por la típica que se utiliza en pantallas que es la **16:9** que está se adapta muy bien pues ahora que es 1080 720 dos cada4 acá en ese caso que es la resolución este vertical y horizontal porque mantiene un aspecto de relación que cuadra en ese sentido entonces cuando como veis si yo creo a 18 y pongo esto en la posición de y a 4.5 queda perfectoahí en su posición de hecho es lo quevoy a hacer es ponerlo a 5 ya poner un poco más arriba a mí me gusta más que se vea pero que tampoco me ocupe pues media pantalla esa pared perfecto
+## Duplicar objetos
 
 Podemos ``duplicar`` un objeto en lugar de crear uno nuevo. este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o ``clic derecho > duplicate`` se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
 
@@ -57,13 +105,18 @@ Todos los objetos por defecto tienen una posición y un tamaño\. Esto se cambia
 
 ## 06. Crear paredes de los lados
 
-Para ello pues igual voy a ``duplicar`` el objeto y ahora lo que pasa esque mi escala en el eje x no va a ser sino que va a ser en el eje y entonces en este caso puedo dejar la escala en el eje x a1 y la escala en el eje y a
+A partir de un jugador:
+
+1. ``duplicar`` el objeto
+2. Escalar hasta colocarlo como toca
 
 Si pulsáis la ``rueda`` del ratón podéis hacer una especie de ``paneo``.
 
 Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este caso lo que vamos a hacer es poner en la posición de y a 0 y aquí vamos a modificar la posición en el eje x en este caso la podemos poner por ejemplo en ocho y más o menos vemos que se queda cerca de lo que sería pero estas paredes no se tienen que ver tienen que estar por la parte de fuera
 
 Vamos a colocar pues por ejemplo ahí lo quesería pues yo creo que el nueve y medio va bien estas paredes van a ser diferentes a esta nueva entre colisión en el hecho de que no van a hacer que rebote la pelota sino que cuando colisionan con esta pared va a ser como la portería de un jugador o del otro y entonces pues se añadirá un punto cuando colisiones perfecto
+
+### Crear segunda pared
 
 Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente poniéndole un negativo en el 9,5 pues se pondrá justo en el otro lado.
 
@@ -103,9 +156,13 @@ Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle u
 
 ``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D afectado por la gravedad, el empuje, la fricción y otras fuerzas físicas. Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
 
-Asignaremos los componentes `` Rigidbody 2D``  a nuestros jugadores y a la pelota. Podemos seleccionar todos los objetos y seleccionar el componente `` Rigidbody 2D``  para añadirlo. Al dar a play los objetos con Rigidbody caerán, pues sobre ellos actúa la gravedad. Para quitarles el efecto de la gravedad, donde pone gravity podemos ponerlo a 0 y así ya no se caerán.
+Asignaremos los componentes ``Rigidbody 2D``  a nuestros jugadores y a la pelota. Podemos seleccionar todos los objetos y seleccionar el componente ``Rigidbody 2D``  para añadirlo.
 
-![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos8.png)
+### Modificar gravedad
+
+Al dar a ``play`` los objetos con Rigidbody caerán, pues sobre ellos actúa la gravedad. Para quitarles el efecto de la gravedad, donde pone gravity podemos ponerlo a 0 y así ya no se caerán.
+
+![](2023-03-02-13-03-45.png)
 
 Por ejemplo, la __gravedad__ afectará la posición del objeto para simular su efecto, haciendo que caiga hacia abajo en el eje Y.
 
@@ -136,21 +193,28 @@ Para modificarlo, seleccionamos el objeto ``bola`` y en el elemento ``Sprite Ren
 
 Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de nuestros personajes. Vamos a hacerlo con:
 
-- Teclas ++w++ y ++s++ para el jugador 1 (izquierda)
+- Teclas ++w++ y ++s++ para el ``jugador1`` (izquierda)
 - Teclas flecha de arriba y hacia abajo para el ``jugador2`` (derecha)
 
 De este modo, podremos jugar 2 jugadores en el mismo teclado.
 
-## 12. Redefinir controles
+## 12. Controles de juego
 
+Los ``controles`` son las teclas que utilizaremos para las diferentes acciones durante el juego.
 
 ## Redefinir controles
 
-Para redefinir los controles, vamos a ir a ``Edit > Project Settings > Input Manager``. Aquí vemos que hay varias cosas declaradas, como **Axis**. Estos son los controles que ``Unity`` tiene asignados por defecto para las teclas de nuestro teclado.
+Para redefinir los controles, vamos a ir a ``Edit > Project Settings > Input Manager``. Aquí vemos que hay varias cosas declaradas, como ``Axes``. Estos son los controles que ``Unity`` tiene asignados por defecto para las teclas de nuestro teclado.
 
-Por ejemplo, para el eje **horizontal**, está asignado a las teclas de flechas o el número 'A' para izquierda y derecha. Y para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flechas de arriba y abajo. Así que si queremos cambiar estos controles, podemos hacerlo en el Input Manager.
+![input manager](2023-03-02-13-06-37.png)
 
-![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos13.png)
+Por ejemplo, para el eje **horizontal**, está asignado a las teclas de flechas o el número 'A' para izquierda y derecha.
+
+![](2023-03-02-13-08-14.png)
+
+Para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flechas de arriba y abajo. Así que si queremos cambiar estos controles, podemos hacerlo en el Input Manager.
+
+![](2023-03-02-13-08-35.png)
 
 ## Controles para segundo jugador
 

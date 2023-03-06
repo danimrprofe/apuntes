@@ -1,3 +1,13 @@
+h1 {
+    background-color: #ffc9b9;
+    padding: 4px;
+    border-radius: 5px;
+}
+
 h2 {
-    background: #b4f5b3;
+    background: #ffd3a9;
+}
+
+code {
+    background-color: #d8f0ff;
 }

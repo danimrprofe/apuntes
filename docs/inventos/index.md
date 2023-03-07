@@ -496,7 +496,9 @@ El fonógrafo fue inventado por Thomas Edison en 1877. Esta innovación permiti�
 
 El motor de cuatro tiempos fue inventado por Nikolaus Otto en 1877. Esta innovación permitió la producción automatizada de motores de combustión interna, los cuales se usan en una amplia variedad de vehículos. Esta importante innovación dio lugar a la era de la automatización, lo que permitió la fabricación de productos de manera más eficiente y asequible.
 
+---
 ![](img/2023-02-28-11-20-40.png)
+---
 
 ---
 
@@ -504,7 +506,11 @@ El motor de cuatro tiempos fue inventado por Nikolaus Otto en 1877. Esta innovac
 
 Luis Pasteur comenzó sus experimentos en 1881 contra la rabia, creando una vacuna que luego salvó la vida de muchas personas. Estos experimentos comenzaron con la inoculación de una bacteria extraída del cerebro de un animal infectado. Esto fue seguido por la inoculación de la bacteria a un perro, que resultó ser exitoso después de seis meses. Esto demostró que la bacteria de la rabia podía ser inactivada y no causaría la enfermedad. Pasteur luego desarrolló una vacuna para prevenir la rabia.
 
+---
+
 ![](img/2023-02-28-11-19-15.png)
+
+---
 
 La vacuna consistía en usar la misma bacteria inactivada para inocular a los animales. Esto significaba que el sistema inmunológico del animal podría producir anticuerpos específicos para la bacteria, lo que significaba que el animal quedaría protegido de la enfermedad en caso de una infección posterior.
 
@@ -518,11 +524,13 @@ En 1884, se inventó el primer generador de turbina de vapor que permitió la pr
 
 La turbina de vapor fue inventada en 1884 por Sir Charles Parsons , cuyo primer modelo estaba conectado a una dinamo que generaba 7,5 kW (10 hp) de electricidad. La turbina de vapor es una característica común de todas las centrales térmicas modernas.
 
+---
+
 ![](img/2023-02-28-11-18-11.png)
 
 ---
 
-#  1885. Primer automóvi
+#  1885. Primer automóvil
 
 En 1885, los hermanos Daimler y Maybach inventaron el primer automóvil de motor de gasolina. Esta innovación revolucionó los transportes y cambió para siempre la forma en que nos movíamos. El automóvil abrió la puerta a nuevas posibilidades de viajar, y su diseño técnico y su rendimiento mejoraron de forma constante durante el siglo XX. Su impacto fue enorme y ha tenido una enorme influencia en la forma en que vivimos nuestra vida diaria.
 
@@ -536,7 +544,11 @@ En 1885, los hermanos Daimler y Maybach inventaron el primer automóvil de motor
 
 En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y reproducir música. Estos inventos revolucionaron los campos de la medicina, transporte, energía y entretenimiento para siempre.
 
+---
+
 ![](img/2023-02-28-11-21-36.png)
+
+---
 
 https://artsandculture.google.com/story/awUBd0WvqVFpLg?hl=en
 
@@ -570,13 +582,17 @@ El tubo de Crookes es un dispositivo de vacío desarrollado por el físico brit�
 
 El 8 de noviembre de 1895 el físico alemán Wilhelm Conrad Roentgen descubrió los rayos X mientras realizaba experimentos con tubos de vacío y un generador eléctrico. Con el hallazgo de este haz de luz capaz de atravesar la materia, nació el diagnóstico médico por imágenes que mejoró considerablemente el ejercicio de la medicina.
 
+---
+
 ![](img/2023-02-28-11-32-19.png)
 
 ---
 
-#  1897 Motor Diesel
+# 1897 Motor Diesel
 
 El primer motor Diesel fue construido por el inventor alemán Rudolf Diesel en 1897. El motor fue una innovación importante porque eliminaba la necesidad de usar combustibles volátiles como el carbón y el petróleo para generar energía. Esto permitió una mayor eficiencia energética, ya que el motor convertía el combustible directamente en energía mecánica. El motor también fue mucho más silencioso que los motores de combustión interna anteriores
+
+---
 
 1897 Motor eléctrico compacto
 
@@ -596,7 +612,11 @@ El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entr
 
 1901 Mecano fue uno de los primeros juegos de construcción creados para entretener a los niños. Esto permitió a los niños jugar con piezas metálicas, como tuercas y tornillos, para construir máquinas, edificios y otras estructuras.
 
+---
+
 1901 Marconi emitió un mensaje de radio a través del Océano Atlántico, estableciendo las bases para el desarrollo de la tecnología de radio moderna. Esta innovadora tecnología permitió a los operadores de radio enviar y recibir señales de radio a distancias mucho más largas de lo que era posible anteriormente.
+
+---
 
 1902 Los frenos de disco fueron inventados para mejorar la seguridad de los vehículos, permitiendo a los conductores detener su vehículo de manera más rápida y efectiva. Esta tecnología se ha convertido en una característica común en la mayoría de los vehículos modernos, proporcionando una mayor seguridad para los pasajeros.
 
@@ -612,11 +632,27 @@ El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entr
 
 El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de construcción. El canal, que une el Océano Atlántico con el Océano Pacífico, fue hecho para permitir que los barcos naveguen más directamente entre los dos océanos. El canal fue construido por la Compañía del Canal de Panamá, una empresa estadounidense, y fue comprado por los Estados Unidos en el año de 1914. Desde entonces, el Canal de Panamá ha sido administrado por el gobierno de los Estados Unidos. El canal ha sido una importante vía navegable en el comercio internacional desde su apertura.
 
+---
+
 1906 Luz termoiónico
+
+---
+
 1907 Lavadora
+
+---
 1910 Modelo nuclear del átomo
+
+---
+
 1911 Acero inoxidable
+
+---
+
 1913 Cadena de montaje
+
+---
+
 1913 Heladera eléctrica
 
 ---
@@ -624,6 +660,8 @@ El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de co
 #  1913 Cremallera
 
 ![](img/2023-02-28-15-04-48.png)
+
+---
 
 La primera patente de un dispositivo de cremallera fue presentada en 1913 por Gideon Sundback, un ingeniero sueco. Se le atribuye el haber creado la cremallera moderna, un dispositivo fácil de usar con una combinación de dientes de metal y una solapa. Sundback también inventó el cierre de plástico, que se utilizó para la primera vez en 1933
 
@@ -687,11 +725,15 @@ La tostadora fue inventada en 1926 por Charles Strite. Esta herramienta utiliza 
 
 ---
 
-#  1927 Antibióticos:
+#  1927 Antibióticos
 
 Los ``antibióticos`` fueron inventados en 1927 por el bioquímico ``Alexander Fleming``. Estos medicamentos son utilizados para tratar infecciones bacterianas, impidiendo el crecimiento y reproducción de las bacterias dañinas.
 
+---
+
 ![](img/2023-02-28-11-38-57.png)
+
+---
 
 La ``amoxicilina`` es un antibiótico semisintético derivado de la ``penicilina``. Se emplea a menudo como primer fármaco en infecciones de diferente gravedad, tanto en medicina humana como también en veterinaria.
 
@@ -724,10 +766,12 @@ El motor a reacción fue inventado en 1930 por Frank Whittle, un científico bri
 #  1932 Guitarra eléctrica
 
 La primera guitarra eléctrica fue inventada en 1932 por George Beauchamp y Adolph Rickenbacker. Esta invención permitió a los músicos amplificar su sonido sin tener que mover los brazos para tocar.
-
+---
 ![](img/2023-02-28-11-51-27.png)
 
-1933 Grabaciones estéreo:
+---
+
+#  1933 Grabaciones estéreo
 
 Las primeras grabaciones estéreo fueron inventadas en 1933 por Alan Blumlein. Esta innovación permitió a los músicos grabar una grabación en dos canales, lo que resultó en un sonido mucho más vivo y realista. Esta innovación permitió a los artistas tener un mayor control sobre la producción de sus grabaciones.
 
@@ -735,6 +779,7 @@ Las primeras grabaciones estéreo fueron inventadas en 1933 por Alan Blumlein. E
 
 #  1933 Polietileno
 
+---
 El polietileno fue inventado en 1933 por Eric Fawcett y Reginald Gibson. Esta invención fue uno de los primeros materiales sintéticos y fue ampliamente utilizado como material de embalaje y para la fabricación de productos plásticos.
 
 ---
@@ -749,8 +794,9 @@ El nylon fue inventado en 1934 por Wallace Carothers. Esta invención revolucion
 
 El radar fue inventado en 1935 por Robert Watson-Watt. Esta innovación fue uno de los primeros sistemas de detección a distancia, lo que permitió a los militares detectar grandes objetos a largas distancias. Esta invención revolucionó la industria de la defensa y fue una de las principales innovaciones de la Segunda Guerra Mundial.
 
-1936 Guerra Civil Española
-1938 Café instantáneo
+#  1936 Guerra Civil Española
+
+#  1938 Café instantáneo
 
 ---
 
@@ -764,7 +810,7 @@ La primera fotocopiadora fue inventada en 1938 por el químico suizo, Albert Gyo
 
 La invención del bolígrafo se atribuye a John J. Loud, un fabricante de calzado de Massachusetts. En 1888, diseñó un lápiz con una punta de metal recubierta de un material resistente al aceite, lo que permitía que el lápiz escribiera sobre casi cualquier superficie, desde papel hasta metal. Loud patentó su invento en octubre de ese año. El nombre de "bolígrafo" fue acuñado en 1938 por László Bíró, un inventor húngaro que mejoró el diseño de Loud.
 
-1939 Comienza la Segunda Guerra Mundial
+#  1939 Comienza la Segunda Guerra Mundial
 
 ---
 
@@ -772,7 +818,11 @@ La invención del bolígrafo se atribuye a John J. Loud, un fabricante de calzad
 
 La invención de aerosoles se atribuye a Eric Rotheim, un inventor noruego, quien patentó el primer aerosol en 1927. Originalmente se llamaba "Aerosolv", y funcionaba con un gas licuado como propelente. El primer aerosol fue creado para la aplicación de insecticidas.
 
+---
+
 ![](img/2023-02-28-11-56-28.png)
+
+---
 
 En 1941, el químico estadounidense Lloyd Nelson inventó un aerosol basado en el uso de un compuesto orgánico como propelente. Esta fue la primera vez que se usó un compuesto orgánico como propelente. El aerosol se popularizó durante la década de 1950, cuando se comenzó a usar como aerosoles para la aplicación de pintura, en aerosoles para el cabello y en aerosoles para la limpieza.
 
@@ -782,7 +832,11 @@ En 1941, el químico estadounidense Lloyd Nelson inventó un aerosol basado en e
 
 Durante la Segunda Guerra Mundial, los Aliados y la Alemania nazi utilizaron la gasolina como arma en lanzallamas, ya que solamente la gasolina era un rápido y eficaz dispositivo incendiario. Una sustancia adicional era necesaria para producir una combustión de gran alcance y persistencia pero que no se consumiera velozmente.
 
+---
+
 ![](img/2023-02-28-11-58-46.png)
+
+---
 
 Aunque los investigadores habían encontrado maneras de hacer gasolina convertida en gelatina, muchas de ellas requirieron de caucho como componente principal, que durante tiempos de guerra era una materia escasa. En 1942, investigadores de la Universidad de Harvard (conducida por Louis Fieser) y el cuerpo químico del Ejército de los Estados Unidos encontró la solución: el napalm.
 
@@ -798,7 +852,11 @@ Aunque los investigadores habían encontrado maneras de hacer gasolina convertid
 
 #  1943 Turbina de reacción para aviones
 
+---
+
 ![](img/2023-02-28-12-04-28.png)
+
+---
 
 Los motores a reacción hicieron posible que los aviones volaran a mayores altitudes y velocidades de crucero, lo que significa que los vuelos se pueden realizar con mayor rapidez, economía y seguridad. Los motores a reacción también son más fiables que los motores de hélice, lo que significa que los aviones pueden volar por más tiempo sin necesidad de un mantenimiento frecuente.
 
@@ -832,6 +890,8 @@ Los motores a reacción hicieron posible que los aviones volaran a mayores altit
 
 ![](img/2023-02-28-11-53-48.png)
 
+---
+
 El holandés Maurice Gatsonides (1911-1998), quien para mejorar sus tiempos decidió que más que conocer a qué velocidad máxima llegaba al final de las rectas, necesitaba saber a qué velocidad pasaba por las curvas, para mejorar su técnica en el paso por curva.
 
 Así que comenzó a idear un artilugio basado en la tecnología del radar que, como sabéis, es un dispositivo emisor y receptor de ondas que se aprovecha del efecto Doppler.
@@ -848,15 +908,25 @@ En el año 1949 Frank McNamara pensó en una tarjeta que permitiera pagar en cua
 
 En 1953, el alpinista Edmund Hillary y el sherpa Tenzing Norgay hicieron historia cuando ascendieron la cumbre del Monte Everest, convirtiéndose en los primeros humanos en alcanzar la cima más alta de la Tierra. La expedición británica, dirigida por el almirante John Hunt, partió de Katmandú, Nepal, el 10 de marzo de 1953. Después de meses de preparación, la expedición de alpinistas inició su ascenso a la cumbre del Monte Everest el 26 de mayo. Luego de muchos intentos infructuosos, Hillary y Tenzing finalmente lograron el éxito el 29 de mayo de 1953.
 
+---
+
 ![](img/2023-02-28-12-14-03.png)
 
 ---
 
 #  1954 Central nuclear
 
-![](img/2023-02-26-17-19-26.png)
+---
+
+![bg contain](img/2023-02-26-17-19-26.png)
+
+---
 
 La primera central nuclear en el mundo fue la Central Nuclear de Obninsk, cerca de Moscú, Rusia, que comenzó a operar el 27 de junio de 1954. Esta central nuclear fue el primer reactor nuclear de agua ligera del mundo. Fue diseñado para producir energía eléctrica para uso civil, y su potencia fue de 5 megavatios.
+
+---
+
+![](img/2023-02-28-15-00-38.png)
 
 ---
 
@@ -864,13 +934,11 @@ La primera central nuclear en el mundo fue la Central Nuclear de Obninsk, cerca 
 
 Apareció en el año 1954 y fue un cambio drástico en los sistemas de radio. Esto se debe a que los transistores eran más pequeños, más baratos y también más fiables que los tubos de vacío que se usaban antes. Esto significaba que los radios a transistores podían ser más pequeños y portátiles. También eran más eficientes energéticamente, lo que significaba que eran más baratos de fabricar.
 
-![](img/2023-02-28-15-00-38.png)
+![](img/2023-02-28-14-59-36.png)
 
 ---
 
 #  1956 Velcro
-
-![](img/2023-02-28-14-59-36.png)
 
 Velcro fue inventado en 1956 por el ingeniero suizo George de Mestral, quien se dio cuenta de que los granos de la hierba se adhirían a su perro y a su ropa. Inspirado por esta naturaleza, inventó una tela con un cierre de gancho y bucle que se conoce como Velcro. El nombre "Velcro" surgió de la combinación de las palabras francesas "velours" (terciopelo) y "crochet" (ganchos).
 
@@ -882,7 +950,11 @@ Velcro fue inventado en 1956 por el ingeniero suizo George de Mestral, quien se 
 
 #  1957 Satélite espacial
 
+---
+
 ![](img/2023-02-28-14-53-10.png)
+
+---
 
 El primer satélite artificial en orbitar la Tierra. Fue lanzado por la Unión Soviética el 4 de octubre de 1957 y se conoció como Sputnik 1. Estaba equipado con un emisor de radio y su señal fue recibida por estaciones de radio en todo el mundo. El satélite era una esfera de metal de 58 cm de diámetro, con cuatro antenas y una batería para alimentar el emisor de radio. El peso total del satélite era de 83.6 kg.
 
@@ -891,8 +963,10 @@ El lanzamiento de Sputnik 1 fue un hito importante en la historia de la humanida
 ---
 
 #  1958 Aerodeslizador
+---
+![bg contain](img/2023-02-28-14-57-16.png)
 
-![](img/2023-02-28-14-57-16.png)
+---
 
 El Aerodeslizador de 1958 fue un vehículo de transporte inventado por el ingeniero William Blanchard. Estaba diseñado para ser una alternativa a los helicópteros, ya que era más barato y fácilinvencion de construir. Estaba compuesto por una serie de alas y una hélice para proporcionar propulsión al vehículo. El Aerodeslizador de 1958 fue uno de los primeros vehículos de transporte aéreo no tripulados y fue diseñado para ser una alternativa a los aviones comerciales. Estaba equipado con una hélice en la parte superior para proporcionar el impulso y una serie de alas que permitían al vehículo volar en línea recta. El Aerodeslizador era capaz de alcanzar velocidades de hasta 160 km/h.
 
@@ -906,7 +980,11 @@ El Aerodeslizador de 1958 fue un vehículo de transporte inventado por el ingeni
 
 #  1959 Lycra
 
+---
+
 ![](img/2023-02-28-14-55-16.png)
+
+---
 
 Lycra fue una innovadora fibra sintética desarrollada por DuPont que se utilizó por primera vez para fabricar ropa deportiva y prendas de baño. Esta fibra era extremadamente resistente y elástica, lo que permitió a los diseñadores cambiar el diseño de la ropa para que se ajustara mejor al cuerpo. Además, Lycra también permitió que la ropa fuera mucho más cómoda de usar y durara más tiempo.
 
@@ -928,7 +1006,10 @@ Teflón fue una sustancia química desarrollada por DuPont que se usó por prime
 
 #  1969 Avión Jumbo
 
-![](img/2023-02-26-17-04-11.png)
+---
+![bg contain](img/2023-02-26-17-04-11.png)
+
+---
 
 El primer avión jumbo fue el Boeing 747, que entró en servicio el 9 de febrero de 1970. El 747 fue diseñado para transportar grandes cantidades de pasajeros y carga a largas distancias. Está equipado con cuatro motores turbofan y tiene capacidad para hasta 400 pasajeros. El 747 se ha convertido en el avión de pasajeros más vendido de la historia, con más de 1550 aviones entregados desde su lanzamiento.
 
@@ -991,11 +1072,11 @@ Los transbordadores espaciales son naves diseñadas para viajar a y desde la ór
 
 El primer corazón artificial se implantó en 1982 en el paciente Barney Clark, un hombre de 61 años de edad. El corazón artificial era un dispositivo mecánico diseñado por el Dr. Robert Jarvik y se llamaba el Jarvik-7. La cirugía duró unas 8 horas y se llevó a cabo en el Universidad Médica de Utah. El dispositivo fue diseñado para ayudar a bombea la sangre alrededor del cuerpo, y se conectó directamente a la arteria aorta y vena cava inferior de Clark. El dispositivo funcionó durante 112 días antes de que el paciente muriera de una infección.
 
-1982 Discos compactos
-1986 Explosión del reactor nuclear de Chernobyl
-1989 Cae el Muro de Berlín
-1990 Invasión a Kuwait por parte de Irak
-1990 Realitat virtual
-1990 Fusió nuclear
-1990 Identificador de veu
-1995 Internet: se populariza el uso de redes con protocolos TCP/IP
+## 1982 Discos compactos
+## 1986 Explosión del reactor nuclear de Chernobyl
+## 1989 Cae el Muro de Berlín
+## 1990 Invasión a Kuwait por parte de Irak
+## 1990 Realitat virtual
+## 1990 Fusió nuclear
+## 1990 Identificador de veu
+## 1995 Internet: se populariza el uso de redes con protocolos TCP/IP

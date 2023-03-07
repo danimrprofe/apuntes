@@ -1,4 +1,15 @@
+---
+title: Arduino
+footer: Daniel Moreno @ IES Ramon Llull | Departament tecnologia
+_footer: ""
+paginate: true
+_paginate: false
+marp: true
+---
+
 # Arduino
+### Introducción
+---
 
 ## Introducción
 
@@ -17,7 +28,5 @@ La placa ``Arduino`` contiene un microcontrolador, que es una pequeña computado
 ---
 
 ![imagen](img/2022-11-30-15-48-01.png)
-
----
 
 El ``microcontrolador`` también puede ser programado para recibir instrucciones de una computadora. Esto significa que los usuarios pueden programar la placa para que realice cualquier tarea que deseen, desde controlar motores hasta leer datos de sensores.

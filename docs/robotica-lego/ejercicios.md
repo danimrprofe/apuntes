@@ -1,4 +1,16 @@
-# Ejercicios
+---
+title: Arduino
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
+# <!--fit --> Ejercicios LEGO NXT
+
+---
 
 ## 1. Prueba motores
 
@@ -12,6 +24,8 @@ task main()
     Off(OUT_AC);
 }
 ```
+
+---
 
 ## 2. Utilización de constantes
 
@@ -27,6 +41,14 @@ task main()
     Off(OUT_AC);
 }
 ```
+
+---
+
+<!-- _class: invert -->
+
+# <!--fit --> Repeticiones
+
+---
 
 ## 3. Repeticiones
 
@@ -45,6 +67,8 @@ task main()
     Off(OUT_AC);
     }
 ```
+
+---
 
 ## 4. Repeticiones 2
 
@@ -66,6 +90,8 @@ task main()
     }
 }
 ```
+
+---
 
 ## 5. Repeticiones 3
 
@@ -89,13 +115,27 @@ task main()
 }
 ```
 
+---
+
+<!-- _class: invert -->
+
+# <!--fit --> Condicionales
+
+---
+
 ## 6. Condicional if-else
 
 A veces queremos que una parte de nuestro programa se ejecute solamente en ciertas situaciones. En esos casos se usa la sentencia if. Vamos a ver un ejemplo. Vamos a modificar el programa con el que hemos estado trabajando, pero queremos que gire bien a la derecha o a la izquierda, y que haga esa elección de modo aleatorio. Elegiremos al azar un número que puede ser positivo o negativo, y si es positivo el robot girará a la derecha y si no, girará hacia la izquierda.
 
+---
+
 Si la condición entre paréntesis es cierta, se ejecuta la parte entre paréntesis, si no lo es, se ejecutará la parte detrás de la sentencia else.
 
-Prestemos atención a la condición que hemos usado: Random() >= 0, esto significa que Random() debe ser igual o mayor que cero para que la condición sea cierta. Se pueden comparar los valores de otras maneras, aquí vemos las más importantes:
+Prestemos atención a la condición que hemos usado: Random() >= 0, esto significa que Random() debe ser igual o mayor que cero para que la condición sea cierta.
+
+---
+
+Se pueden comparar los valores de otras maneras, aquí vemos las más importantes:
 
 |     |                 |
 | --- | --------------- |
@@ -105,8 +145,11 @@ Prestemos atención a la condición que hemos usado: Random() >= 0, esto signifi
 | >=  | mayor o igual a |
 | ¡=  | no igual a      |
 
-Se pueden combinar condiciones usando &&, que significa “y” o “||” que significa “o”. Veamos algunos ejemplos:
-true siempre cierto
+---
+
+Se pueden combinar condiciones usando &&, que significa “y” o “||” que significa “o”.
+
+---
 
 Fíjate que la sentencia if tiene dos partes. La parte inmediatamente después de la condición, que se ejecuta cuando la condición es cierta, y la parte después del else, que se ejecuta si la condición es falsa.
 
@@ -114,7 +157,15 @@ La palabra clave else y la parte que le sigue son opcionales, de manera que pued
 
 ![imagen](img/2023-02-09-17-06-12.png)
 
-## 7. Bucles while
+---
+
+<!-- _class: invert -->
+
+# <!--fit --> Bucles
+
+---
+
+## . Bucles while
 
 ```c
 int move_time, turn_time;
@@ -132,7 +183,9 @@ task main()
 }
 ```
 
-## 8. Bucle while y condicional combinados
+---
+
+## 7. Bucle while y condicional combinados
 
 ```c
 #define MOVE_TIME 500
@@ -156,15 +209,19 @@ task main()
 }
 ```
 
-## 9. Bucles do-while
+---
+
+## 8. Bucles do-while
 
 Hay otra estructura de control, la sentencia do. Tiene la siguiente forma:
 
 ![imagen](img/2023-02-09-17-07-42.png)
 
+---
+
 Las instrucciones entre llaves que hay después del do se ejecutan mientras la condición sea cierta. La condición tiene la misma forma que el if. Éste es un ejemplo de un programa. El robot da vueltas de modo aleatorio durante 20 segundos y después se para.
 
-Fíjate que la sentencia do es casi igual que la sentencia while. Pero en el while, la condición se comprueba antes de entrar en las instrucciones, mientras que en el do, se comprueba al final. En el caso del while puede ocurrir que las sentencias no se ejecuten nunca, pero en el do, se ejecutarán al menos una vez.
+---
 
 ```c
 int move_time, turn_time, total_time;
@@ -186,13 +243,25 @@ task main()
     Off(OUT_AC);
 }
 ```
+
+---
+
 Fíjate que la sentencia do es casi igual que la sentencia while. Pero en el while, la condición se comprueba antes de entrar en las instrucciones, mientras que en el do, se comprueba al final. En el caso del while puede ocurrir que las sentencias no se ejecuten nunca, pero en el do, se ejecutarán al menos una vez.
 
-## 10. Sensor contacto
+---
+
+<!-- _class: invert -->
+
+# <!--fit --> Sensores
+---
+
+## 9. Sensor contacto
 
 Cada sensor lo tenéis que conectar a uno de los puertos de entrada:
 
 ![](2023-02-20-12-08-49.png)
+
+---
 
 En este ejemplo, el sensor de contacto es el botón que tenéis detrás en el robot. Debería conectarse al puerto ``IN_1``.
 
@@ -207,6 +276,8 @@ task main()
     Off(OUT_AC);
 }
 ```
+
+---
 
 Otro ejemplo:
 
@@ -227,7 +298,9 @@ task main()
 }
 ```
 
-## 11. Sensor de luz
+---
+
+## 1. Sensor de luz
 
 Comprobad que tenéis conectado el sensor de luz en el puerto ``IN_3``.
 
@@ -257,7 +330,9 @@ task main ()
 }
 ```
 
-## 12. Sensor de sonido
+---
+
+## 2. Sensor de sonido
 
 Comprobad que tenéis el sensor de sonido conectado al puerto ``IN_2``.
 
@@ -275,6 +350,8 @@ task main()
 }
 ```
 
+---
+
 Una versión un poco más compleja:
 
 ```c
@@ -289,6 +366,7 @@ task main()
     Wait(300);
 }
 ```
+---
 
 Si incluimos un bucle del tipo ``while(true)``, se repetirá el ciclo indefinidamente.
 
@@ -308,7 +386,9 @@ task main()
 }
 ```
 
-## 13. Sensor de ultrasonidos
+---
+
+## 3. Sensor de ultrasonidos
 
 Tenemos que comprobar que tenemos conectado el sensor de ultrasonidos en el puerto correcto. En este caso, ``IN_4``.
 
@@ -320,7 +400,9 @@ Con la función siguiente, le indicamos al programa que lo vamos a utilizar, y l
 
 Definiremos la distancia a la que queremos que detecte un objeto. En este caso, serán 15 cm, pero lo podéis modificar.
 
-## Programa 13.1
+---
+
+## Ejemplo 1
 
 ```c
 task main()
@@ -332,7 +414,9 @@ task main()
 }
 ```
 
-## Programa 13.2
+---
+
+## Ejemplo 2
 
 ```c
 
@@ -350,13 +434,17 @@ task main()
 }
 ```
 
-## 14. Subrutinas
+---
+
+## 4. Subrutinas
 
 Podemos crear subrutinas o funciones para no tener que repetir el código muchas veces. En este ejemplo, creamos una función llamada ``girar`` a la que le pasaremos como parámetro la potencia.
 
 El código de la función no se ejecuta de primeras, sólo cuando se la llama dentro de la función.
 
 El programa siempre comienza a ejecutarse en ``task main()``
+
+---
 
 ```c
 sub girar(int potencia)
@@ -378,13 +466,20 @@ task main()
 }
 ```
 
-## 15. Música
+---
+
+<!-- _class: invert -->
+
+# <!--fit --> Música
+---
 
 El robot nos permite reproducir sonido. Para ello podemos utilizar la función ``PlayToneEx``. Si le pasamos como argumentos una frecuencia de sonido y una duración, nos generará dicho sonido.
 
 Las frecuencias de las notas son las siguientes:
 
 ![imagen](2023-02-20-11-49-49.png)
+
+---
 
 Si queremos que un sonido dure un segundo, utilizaríamos el valor 1000, 500 para medio segundo, etc.
 
@@ -394,13 +489,19 @@ Veamos un ejemplo
 
 En este caso se reproduce un do (C), durante 400 milisegundos, a volumen 3. False indica que no se repetirá.
 
+---
+
 Si queremos crear silencios:
 
 ``Wait(500);``
 
+---
+
 Prueba a crear la siguiente canción
 
 ![imagen](2023-02-20-11-50-56.png)
+
+---
 
 Podéis coger este ejemplo de referencia
 
@@ -416,9 +517,13 @@ PlayToneEx(262,1600,VOL,FALSE); Wait(2000);
 }
 ```
 
-## 16. Música y movimiento
+---
+
+## 6. Música y movimiento
 
 Podemos hacer que dos ``task`` (tareas) se ejecuten al mismo tiempo. Por ejemplo, podemos mover el robot al mismo tiempo que suena la música.
+
+---
 
 ```c
 task music()
@@ -445,7 +550,9 @@ task main()
 }
 ```
 
-## 17. Motores con inercia
+---
+
+## 7. Motores con inercia
 
 La función ``coast`` se utiliza para detener los motores mientras todavía se les permite girar libremente. Esto se utiliza a menudo cuando el robot necesita disminuir o detenerse de repente, pero sin aplicar los frenos a los motores, lo que causaría que el robot se detenga de repente.
 
@@ -457,6 +564,8 @@ task main()
     Coast(OUT_AC);
 }
 ```
+
+---
 
 La función ``float`` se utiliza para hacer que un motor flote, lo que significa que el motor continuará girando a su velocidad actual sin ser influenciado por el programa
 
@@ -470,3 +579,4 @@ task main()
     Wait(2000);
 }
 ```
+---

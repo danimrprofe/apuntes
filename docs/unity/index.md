@@ -1,11 +1,24 @@
+---
+title: Arduino
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
 
 # Unity
+
+---
 
 ## 1. Introducción
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
 ![logo de unity](img/2022-10-13-00-34-17.png)
+
+---
 
 Con este proyecto aprendremos a:
 
@@ -15,6 +28,8 @@ Con este proyecto aprendremos a:
 - Asignar `componentes` como los ``rigidbody`` para agregar respuesta a físicas en nuestros sprites
 - Agregar ``colliders`` a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
 
+---
+
 ## 2. Instalación y configuración
 
 Para instalar necesitaremos seguir los siguientes pasos:
@@ -23,27 +38,41 @@ Para instalar necesitaremos seguir los siguientes pasos:
 2. Crear un ``usuario`` de unity
 3. Instalar el ``editor de unity``
 
+---
+
 ### Unity Hub
 
 En primer lugar nos descargaremos el ``Unity hub``, una aplicación desde la que podremos gestionar las instalaciones y actualizaciones de todos los programas relacionados con Unity. También se nos mostrarán los proyectos que tenemos creados.
 
+---
+
 ![](img/2023-03-02-08-13-56.png)
+
+---
 
 ### Cuenta de usuario
 
 Para gestionar nuestras instalaciones, necesitaremos crear una cuenta de usuario de ``Unity``, que deberemos crear para poder iniciar sesión y trabajar en nuestros proyectos.
 
+---
+
 ### Editor de Unity
 
 Posteriormente, instalaremos el ``editor de unity``, que nos permitirá crear nuestros juegos.
 
+---
+
 ## 3. Crear un proyecto
+
+---
 
 ### Abrimos unity
 
 Ahora mismo tenemos instalados dos programas: el Hub, y el Unity editor en sí (color negro). Este es el que tenemos que abrir.
 
 ![](2023-03-02-12-50-36.png)
+
+---
 
 ### Carga de unity
 
@@ -55,17 +84,23 @@ Finalmente veremos la ``pantalla de proyectos``, desde la que podremos abrir un 
 
 ![](2023-03-02-12-51-44.png)
 
+---
+
 ### Información de proyectos existentes
 
 Podemos observar los proyectos, la carpeta en la que se guarda el proyecto, así como la ``versión del editor`` con el que ha sido creado el proyecto.
 
 ![](2023-03-02-12-52-35.png)
 
+---
+
 ### Plantillas
 
 Existen diferentes ``plantillas`` de proyecto que podemos utilizar y que vienen configuradas con diferentes opciones, según el tipo de juego que queramos hacer,
 
 ![imagen](media/image1.png)
+
+---
 
 ### Crear nuestro proyecto
 
@@ -75,11 +110,15 @@ Arriba podréis elegir la versión del editor con la que vais a crear el proyect
 
 ![plantillas](2023-03-02-12-47-35.png)
 
+---
+
 ### Cambiar resolución
 
 Vamos a cambiar la ``resolución`` por la típica que se utiliza en pantallas que es la **16:9**.
 
 ![](2023-03-02-12-54-52.png)
+
+---
 
 ### Cambiar el layout
 
@@ -87,11 +126,15 @@ Podemos personalizar también la disposición de las ventanas en nuestro editor.
 
 ![imagen](media/image2.png)
 
+---
+
 ## 4. Crear pelota
 
 Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
 
 ![](2023-03-02-12-56-44.png)
+
+---
 
 ## Crear jugadores
 
@@ -102,9 +145,13 @@ Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo
 3. Ahora lo que vamos ahacer es subirlo hacia arriba para ello
 4. También podéis pulsar +w+ cuando tengáis este objeto seleccionado y entonces pues podréis moverlo en ese eje en específico.
 
+---
+
 ## Duplicar objetos
 
 Podemos ``duplicar`` un objeto en lugar de crear uno nuevo. este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o ``clic derecho > duplicate`` se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
+
+---
 
 ## 05. Sprites
 
@@ -117,6 +164,8 @@ Los sprites se almacenan en el formato .PNG y se pueden manipular fácilmente en
 ![](img/2023-02-07-15-58-21.png)
 
 Todos los objetos por defecto tienen una posición y un tamaño\. Esto se cambia en el ``componente Transform``
+
+---
 
 ## 06. Crear paredes de los lados
 
@@ -131,9 +180,13 @@ Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este 
 
 Vamos a colocar pues por ejemplo ahí lo quesería pues yo creo que el nueve y medio va bien estas paredes van a ser diferentes a esta nueva entre colisión en el hecho de que no van a hacer que rebote la pelota sino que cuando colisionan con esta pared va a ser como la portería de un jugador o del otro y entonces pues se añadirá un punto cuando colisiones perfecto
 
+---
+
 ### Crear segunda pared
 
 Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente poniéndole un negativo en el 9,5 pues se pondrá justo en el otro lado.
+
+---
 
 ## 07. Nombrando los objetos
 
@@ -147,13 +200,19 @@ La escala en el eje x podéis reducir la escala también pulsando la +r+ teniend
 
 Vamos a reducir esto como es si yo cojo lo quees el eje rojo y lo reduzco o el aumento pues ese aumento se reduce y se ve reflejado en la escala aquí en x vamos a colocarlo a 0 con 2.
 
+---
+
 ## 08. Creando los jugadores
 
 Vamos a crear los ``players``. entonces vamos a hacer control de sobre ese amigo aquí de la derecha lo voy a arrastrar a esta posición que de hecho lo vamos a poner en la posición 8 y ahora hay que reducir la escala. Así imaginaros que vuestro ``player`` es así de grande en 3 cuando venga la bola va a rebotar sí o sí, al ser demasiado grande.
 
+---
+
 ### Crear ``jugador2``
 
 Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos modificar elmovimiento de la velocidad de la bolapodemos modificar muchas cosas pues paraque se adapte a lo que cada uno puesesté buscando en este caso como está ala derecha pues lo llamaremos player2.
+
+---
 
 ### Crear jugador 1
 
@@ -167,11 +226,15 @@ Yo lo puedo poner pues este color amarillento a la pelota y sin soluciones cualq
 
 Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle un tono verdoso lo mejor paraje verde parece que es como otro no puedo colocar creo que voy a dejar blanco me está gustando más blanco lo voy a dejarblanco los dos pero bueno:
 
+---
+
 ## 09. Componentes rigidbody
 
 ``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D afectado por la gravedad, el empuje, la fricción y otras fuerzas físicas. Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
 
 Asignaremos los componentes ``Rigidbody 2D``  a nuestros jugadores y a la pelota. Podemos seleccionar todos los objetos y seleccionar el componente ``Rigidbody 2D``  para añadirlo.
+
+---
 
 ### Modificar gravedad
 
@@ -190,6 +253,8 @@ Si dejamos esto así tal cual cuando yo le diera el ``play`` vais a ver qué los
 
 Lo que tenemos que hacer es dentro de nuestro componente ``Rigid Body 2D``  donde pone ``gravity`` es que a uno vamos a ponerlo a 0 y así ya no se caerán.
 
+---
+
 ## 10. Ordenar objetos
 
 tra cosa que modificando que a lo mejor les ocurre es que la línea del centro se está dibujando por encima de nuestra pelota yeso pues la verdad que no queda muy buena lo mejor sí a lo mejor lo queréis vale pues lo dejáis lo dejáis así si os gusta pues lo dejáis pero si no lo que podéis hacer es se detiene al puesto al bola
@@ -204,6 +269,8 @@ La ``línea del centro`` se está dibujando por encima de nuestra ``pelota``.
 
 Para modificarlo, seleccionamos el objeto ``bola`` y en el elemento ``Sprite Renderer`` en el ``orden`` ponemos un número más alto. Esto sirve para diferenciar la altura a la que se dibujan las diferentes elementos dentro de nuestra pantalla. Ahora la ``bola`` se dibuja por encima.
 
+---
+
 ## 11. Movimiento de personajes
 
 Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de nuestros personajes. Vamos a hacerlo con:
@@ -213,9 +280,13 @@ Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de n
 
 De este modo, podremos jugar 2 jugadores en el mismo teclado.
 
+---
+
 ## 12. Controles de juego
 
 Los ``controles`` son las teclas que utilizaremos para las diferentes acciones durante el juego.
+
+---
 
 ## Redefinir controles
 
@@ -231,6 +302,8 @@ Para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flec
 
 ![](2023-03-02-13-08-35.png)
 
+---
+
 ## Controles para segundo jugador
 
 Tenemos que crear el elemento vertical2 que es para nuestro player2. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
@@ -239,11 +312,15 @@ Lo que faltaría es cambiarle los controles del player1 juega con la flecha de a
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos14.png)
 
+---
+
 ## Dentro de los scripts, podemos acceder a los diferentes controles por su nombre
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos15.png)
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos16.png)
+
+---
 
 ## 13. Script de programación
 
@@ -259,16 +336,22 @@ Ahora vamos a pasar a crear nuestro script vamos aquí a entrar a la carpeta que
 
 ![](2023-02-21-09-46-50.png)
 
+---
+
 ### Estructura de un script
 
 Los scripts en ``Unity`` tienen una estructura básica compuesta por dos partes principales: la parte de declaración de variables, y las funciones.
 
 La parte de **declaración de variables** es donde se definen los campos, variables y propiedades que se usarán en el script.
 
+---
+
 La segunda parte es la **sección de funciones**, donde se escribe el código que controla el comportamiento de objetos en el juego.
 
 - La función ``Start()`` se llama al comienzo del juego (una vez) y generalmente se usa para inicializar variables y configurar el estado inicial del objeto.
 - La función ``Update()`` se llama una vez por frame y se usa para actualizar el estado del objeto.
+
+---
 
 Además de estas dos funciones, podemos crear todas las funciones que queramos para controlar el comportamiento de un objeto, desde eventos de entrada (como cuando un usuario presiona una tecla) hasta eventos de salida (como cuando un objeto sale del juego). Estas funciones se pueden llamar en el script para ejecutar el código deseado.
 
@@ -293,15 +376,23 @@ public class NewBehaviourScript : MonoBehaviour
 }
 ```
 
+---
+
 ### Errores de programación
 
 Los errores de programación más comunes en ``Unity`` son errores de sintaxis. Estos se producen cuando el programador escribe algo de forma incorrecta, por ejemplo, olvidarse de poner ; al final de las líneas o cerrar un \}, o escribiendo mal mayúsculas o minúsculas.
+
+---
 
 Si hay errores de sintaxis, ``Unity`` no podrá ejecutar el juego correctamente, por lo que el programador debe solucionar los errores antes de poder continuar.
 
 Algunas de las formas más comunes de solucionar estos errores son comprobar el código con cuidado, revisar la documentación para asegurarse de que está escribiendo cada línea correctamente
 
+---
+
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos27.png)
+
+---
 
 ### Crear script players
 
@@ -346,6 +437,8 @@ public class Players : MonoBehaviour
 }
 ```
 
+---
+
 ## 14. Asignar script al jugador
 
 Para que un script tenga efecto, hay que ``asignar`` el script a uno o más objetos. Para ello los scripts se arrastran y sueltan sobre los objetos que queremos que los utilicen.
@@ -356,17 +449,25 @@ En el caso de haber errores de programación, deberemos primero subsanarlos.
 
 Una vez terminado, podemos asignar el script ``player.cs`` a los objetos ``player1`` y ``player2``, arrastrándolos y soltándolos sobre estos objetos.
 
+---
+
 ## Cambiar el booleano para player2
 
 ![](2023-02-21-11-25-50.png)
+
+---
 
 ## Asignar rigidbody al script
 
 ![](2023-02-21-11-26-35.png)
 
+---
+
 ## Crear método reset en el script
 
 ![](2023-02-21-11-28-04.png)
+
+---
 
 ## Crear script para la pelota
 
@@ -401,11 +502,17 @@ public class Goal : MonoBehaviour
 }
 ```
 
+---
+
 ## Asignar script a la bola
+
+---
 
 ## Asignar el rigibody
 
 ![](2023-02-21-11-36-16.png)
+
+---
 
 ## Crear material para la pelota
 
@@ -413,15 +520,21 @@ public class Goal : MonoBehaviour
 
 ![](2023-02-21-11-37-23.png)
 
+---
+
 ## Restringir movimientos en los players
 
 Solo queremos que los jugadores se muevan en un eje, por lo que restringimos los otros dos.
 
 ![](2023-02-21-11-38-12.png)
 
+---
+
 ## Reorganizar archivos
 
 ![](2023-02-21-11-45-01.png)
+
+---
 
 ## Crear interfaz puntuación
 
@@ -429,15 +542,21 @@ Crearemos las puntuaciones. Al crear una UI, este objeto se nos pondrá dentro d
 
 ![](2023-02-21-11-46-04.png)
 
+---
+
 ## Cambiar posición
 
 ![](2023-02-21-11-47-30.png)
 
 Una vez creado el texto y colocado, lo duplicaremos para tener dos objetos texto, a los que modificaremos el nombre y se llamarán ``Player1Text`` y ``Player2Text``.
 
+---
+
 ## Cambiar pelota y hacerla redonda
 
 En el ``Sprite Renderer`` tenéis que cambiar la propiedad ``Sprite`` por un círculo.
+
+---
 
 ## Crear el script del juego
 
@@ -524,13 +643,19 @@ public class GameManager : MonoBehaviour
 }
 ```
 
+---
+
 ## Añadir las referencias a objetos
 
 Arrastraremos todos los objetos a las propiedades del script ``GameManager``.
 
+---
+
 ## Marcar trigger en las porterías
 
 Necesitamos marcar la opción ``is Trigger`` del componente ``Box Collider 2D``.
+
+---
 
 ## Crear script para las porterías
 
@@ -567,21 +692,31 @@ public class Goal : MonoBehaviour
 }
 ```
 
+---
+
 ## Asignar scripts
 
 Vamos a asignar el script creado a ``Goal1`` y a ``Goal2`` y marcamos en ``Goal1`` el check player1goal.
+
+---
 
 ## Asignar etiqueta a la bola
 
 Necesitamos asignar el ``tag`` que llamaremos ``ball`` al objeto pelota, seleccionando en ``Tag`` y ``Add Tag``.
 
+---
+
 ## Crear referencias
 
 Nos hemos dejado crear referencias en el script ``Goal.cs``. Una vez lo hayamos hecho, arrastramos ``GameManager`` a las referencias.
 
+---
+
 ## Cambiar colores
 
 Utilizar la página ``coolors`` para elegir paletas.
+
+---
 
 ## Inteligencia artificial
 
@@ -630,6 +765,8 @@ Crear variable en ``GameManager`` para decidir si el juego es PvP o PvsPC. Será
 
 Seleccionar el objeto ``GameManager``  y marcar la opción ``IA Game``.
 
+---
+
 ## Crear menú
 
 Necesitaremos 3 escenas. Ahora solo tenemos la escena ``Main``. La vamos a llamar ``PlayerVSIA`` para diferenciarla.
@@ -638,9 +775,13 @@ La duplicamos y le llamamos ``PlayerVSPlayer``. En esta escena, desmarcamos el c
 
 Creamos una escena 2D nueva yendo a ``File > New scene > 2D``.
 
+---
+
 Las escenas deberán estar todas dentro de la carpeta ``Scenes``. Haciendo clic en cada una de ellas, podremos abrirlas y modificarlas
 
 ![](img/2023-02-22-18-31-45.png)
+
+---
 
 ### Crear botones
 
@@ -652,6 +793,8 @@ Iremos al objeto ``Canvas`` en el que se ha creado el botón y en el componente 
 
 Duplicamos el botón y le colocamos el texto ``Player VS Player``. Lo movemos y lo situamos.
 
+---
+
 ### Colocar texto con nombre del juego
 
 Pondremos un texto y le cambiaremos el texto por PONG, y lo haremos más grande. Para evitar problemas al hacerlo grande o pequeño, vamos al ``inspector`` y buscamos en paragraph las opciones ``horizontal overflow`` y ``vertical overflow`` y les asignamos el valor ``overflow``.
@@ -659,6 +802,8 @@ Pondremos un texto y le cambiaremos el texto por PONG, y lo haremos más grande.
 Lo hacemos grande y lo situamos.
 
 Guardamos la escena (que ahora se llama ``Untitled*``) con +ctrl+ y +s+  y le llamaremos ``MainMenu``.
+
+---
 
 ### Crear script MainMenu.cs
 
@@ -689,6 +834,8 @@ public class MainMenu : MonoBehaviour
 }
 ```
 
+---
+
 ### Asignar script al canvas
 
 Tendremos que asignar el script ``MainMenu.cs`` al ``canvas`` de la escena del menú, arrastrándo el ``script`` y soltando encima de ``canvas``.
@@ -697,17 +844,25 @@ Seleccionamos ``PlayerVSPlayer``.
 
 ![](img/2023-02-22-18-35-22.png)
 
+---
+
 Por último tendremos que arrastrar ``canvas`` a las referencias de los dos botones.
 
 ![](img/2023-02-22-18-35-48.png)
+
+---
 
 Cambiamos el ``onclick`` para que llame a las funciones correspondientes. Elegimos la función ``MainMenu > PlayerVSPlayer``:
 
 ![](img/2023-02-22-18-36-27.png)
 
+---
+
 ### Modificación de build settings
 
-Los ``Build Settings`` permiten a los desarrolladores configurar y compilar proyectos de Unity para distintas plataformas de destino. Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
+Los ``Build Settings`` permiten a los desarrolladores configurar y compilar proyectos de Unity para distintas plataformas de destino. Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto.
+
+---
 
 Para agregar escenas, sigue estos pasos:
 
@@ -715,6 +870,8 @@ Para agregar escenas, sigue estos pasos:
 2. En la ventana ``Build Settings``, verás una lista de escenas. En la parte inferior deberemos colocar las escenas que van a formar parte de nuestra ``build``.
 
 ![](img/2023-02-22-18-38-41.png)
+
+---
 
 ### Comprobación
 

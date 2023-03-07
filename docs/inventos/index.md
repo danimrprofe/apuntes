@@ -1,6 +1,18 @@
-# Cronología de los inventos
+---
+title: Arduino
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
 
-## Antes de cristo
+#  Cronología de los inventos
+
+---
+
+#  Antes de cristo
 
 20.000 aC Agujas de hueso
 18.000 aC Pinceles
@@ -28,7 +40,9 @@ Se realizan las primeras herramientas de piedra
 1.500 aC Foneria del Hierro
 600 aC Monedas
 
-## Siglo III
+---
+
+#  Siglo III
 
 La palanca
 El caracol sin fin
@@ -37,7 +51,9 @@ La rueda dentada
 La balanza hidrostática
 Los espejos ustorios
 
-### 150 aC Sismoscopio
+---
+
+#  150 aC Sismoscopio
 
 Un sismoscopio es un dispositivo usado para registrar los sismos y temblores. Está formado por una placa sísmica conectada a un dispositivo electrónico para registrar y medir los movimientos sísmicos. El sismoscopio se utiliza para medir la intensidad de los temblores y los sismos, así como su ubicación y profundidad.
 
@@ -57,7 +73,9 @@ Fines del Siglo V: Caída del Imperio Romano de Occidente
 800-900 Papel moneda
 800 Partituras
 
-### 800 a 900 Pólvora
+---
+
+#  800 a 900 Pólvora
 
 La ``pólvora`` está compuesta por salitre (nitrato de potasio), azufre y carbón vegetal. Estos ingredientes se mezclan en diferentes proporciones para producir una mezcla explosiva.
 
@@ -67,7 +85,9 @@ https://www.youtube.com/watch?v=XCaPo6fzcnw
 
 868 Impresión de libros
 
-## Siglo X
+---
+
+#  Siglo X
 
 950 Arado de ruedas
 999 Cristales coloreados en ventanas de Inglaterra
@@ -78,17 +98,27 @@ En el S. X aparece la herradura para caballos y un arnés
 1000 Lentes
 1000 Cámara oscura
 
-## Siglo XII
+---
 
-### 1100 Brújula magnética
+#  Siglo XII
+
+---
+
+#  1100 Brújula magnética
 
 La primera brújula magnética conocida en navegación marítima, está señalada en Europa en 1187, por el inglés Alexander Neckham. Describe una aguja transportada a bordo, que permite seguir un rumbo, incluso cuando la estrella polar está cubierta por las nubes.
 
-### 1105 Primer molino de viento en Francia
+---
 
-### 1118 Cañón (Usado por los moros)
+#  1105 Primer molino de viento en Francia
 
-### 1121 Clavecín
+---
+
+#  1118 Cañón (Usado por los moros)
+
+---
+
+#  1121 Clavecín
 
 La invención del clavecín supuso un gran cambio en la música. Esta nueva tecnología permitió a los músicos y compositores crear música de una forma más precisa y controlada. El clavecín fue el precursor de los instrumentos de teclado modernos, como el piano. Además, el clavecín también fue una fuente importante de innovación en la composición y la interpretación musical. Esto se debe a sus características únicas, como la capacidad de ajustar los tonos y la facilidad de producir una melodía más compleja. Estas características permitieron a los compositores crear obras más complejas con más detalle y profundidad. Además, también ayudó a desarrollar el concepto de la tonalidad.
 
@@ -98,7 +128,9 @@ Durante el siglo XI, se inventó la brújula magnética, un instrumento que perm
 
 Otro avance tecnológico importante fue el cañón, que fue utilizado por los moros para defender sus territorios. Esta tecnología fue una de las principales razones del éxito de los moros en la conquista de Andalucía. Por último, pero no menos importante, la clavecín fue inventada durante el siglo XI y se convirtió rápidamente en el instrumento musical más popular de la época. Esta nueva tecnología permitió a los músicos crear nuevas melodías y ritmos.
 
-## Siglo XIII
+---
+
+#  Siglo XIII
 
 1200 Timón de popa
 1232 Globo de aire caliente (China)
@@ -111,34 +143,48 @@ Otro avance tecnológico importante fue el cañón, que fue utilizado por los mo
 En el S. XIV se perfecciona la fabricación del vidrio y se
 inventa el telar en pedal.
 
-## Siglo XV
+---
+
+#  Siglo XV
 
 Siglo XV Imprenta de tipos móviles
 Laúd
 
 Algunas de estas innovaciones marcaron una gran diferencia en la forma en que se hacían las cosas y cambiaron el curso de la historia.
 
-### 1400 Rueda de hilar
+---
+
+#  1400 Rueda de hilar
 
 Una de las principales innovaciones de este período fue la invención de la rueda de hilar en 1400. Esta rueda mejoró significativamente la productividad de la industria textil.
 
-### 1420 Pinturas al óleo
+---
+
+#  1420 Pinturas al óleo
 
 Otra innovación importante del siglo XV fue el desarrollo de la pintura al óleo. Esta nueva técnica permitió a los pintores crear una variedad de hermosas obras de arte con una gran profundidad de color. Esta técnica se desarrolló en 1420 y se ha convertido en una técnica muy popular en la pintura moderna.
 
-### 1439 La imprenta
+---
+
+#  1439 La imprenta
 
 La imprenta fue inventada por Johannes Gutenberg en 1439. Fue una de las mayores innovaciones en el campo de la comunicación y el intercambio de información. Anteriormente, todos los libros estaban escritos a mano, lo que era un proceso muy lento y costoso. La imprenta permitió la producción masiva de libros a un costo mucho más bajo.
 
-### 1450 Velocípedo
+---
+
+#  1450 Velocípedo
 
 Otro importante invento del siglo XV fue el velocípedo, inventado en 1450. Esta bicicleta fue una de las primeras bicicletas de tres ruedas y se convirtió rápidamente en una forma popular de transporte. Esto permitió a la gente recorrer distancias más largas y más rápido que antes.
 
-### 1492 Descubrimiento de América
+---
+
+#  1492 Descubrimiento de América
 
 En 1492, el descubrimiento de América trajo consigo una serie de cambios e innovaciones. Esto incluyó el comercio de alimentos, especias, metales preciosos y textiles. Esto tuvo un gran impacto en la economía europea y cambió el curso de la historia.
 
-## Siglo XVI
+---
+
+#  Siglo XVI
 
 El siglo XVI fue un periodo de gran actividad científica y tecnológica, a lo que contribuyeron los avances en la navegación, la imprenta, la minería, la industria textil y otros campos. Esta era una época en la que la ciencia moderna emergía, y los inventos y descubrimientos cambiaban la forma en que la gente vivía.
 
@@ -158,17 +204,23 @@ o foso
 
 Uno de los principales avances tecnológicos de este siglo fue la invención del reloj. A principios del siglo XVI, el ingeniero alemán Peter Henlein inventó el primer reloj de bolsillo, y el reloj de pared fue inventado en 1510. Estos relojes eran imprescindibles para la navegación, permitiendo a los navegantes medir con precisión la longitud de sus viajes.
 
-### 1500 Puntilla
+---
+
+#  1500 Puntilla
 
 Otra invención importante de este siglo fue la puntilla, inventada por la artesana italiana Isabella Cataneo. Esta técnica permitió la elaboración de prendas de vestir con detalles finos y decorados. A partir de entonces, la puntilla se convirtió en una forma de arte y se extendió por toda Europa.
 
 En 1522, el navegante español Sebastián Elcano completó el primer viaje alrededor del mundo. Este logro contribuyó a la expansión del comercio marítimo y la apertura de nuevos mercados. Esto también permitió a los europeos traer esclavos de África para trabajar en sus colonias. Esta práctica fue muy común en el siglo XVI y contribuyó a la economía europea.
 
-### 1565 Lápices
+---
+
+#  1565 Lápices
 
 En 1565, el alemán Faber-Castell inventó el lápiz, revolucionando el proceso de escritura. Esto permitió el uso generalizado de escritura a mano y la producción de documentos y obras de arte.
 
-### 1581 Péndulo
+---
+
+#  1581 Péndulo
 
 Otro avance importante en el siglo XVI fue la invención del péndulo por el físico italiano Galileo Galilei, en 1581. Esta invención permitió la medición precisa del tiempo y el desarrollo de relojes de precisión.
 
@@ -182,7 +234,9 @@ En 1590, el italiano Galileo Galilei inventó el microscopio compuesto, una impo
 
 En 1593, el físico italiano Galileo Galilei inventó el termómetro de agua, lo que permitió la medición de la temperatura con mayor precisión.
 
-## Siglo XVII
+---
+
+#  Siglo XVII
 
 En 1605, Miguel de Cervantes publicó su famosa obra "El Ingenioso Hidalgo Don Quijote de la Mancha", una novela que sigue siendo una de las más respetadas y admiradas de todos los tiempos.
 
@@ -190,7 +244,9 @@ En 1609, se inventó el telescopio refractor, un instrumento que permitió a la 
 
 En 1620, el barco inglés "Mayflower" llegó a América del Norte, iniciando el proceso de colonización europea de aquel continente.
 
-### 1640 Bayoneta
+---
+
+#  1640 Bayoneta
 
 En 1640, se inventó la bayoneta, un arma diseñada para ser usada con fusiles y pistolas. En 1642, Blaise Pascal inventó la primera calculadora mecánica, una herramienta revolucionaria para el cálculo matemático.
 
@@ -206,13 +262,19 @@ En 1682, Edmund Halley descubrió el cometa que lleva su nombre, un descubrimien
 
 Por último, en 1687, Gabriel Fahrenheit inventó el higrómetro, un dispositivo que permitió la medición precisa de la humedad en el aire.
 
-## Siglo XVIII
+---
 
-### 1709 Piano
+#  Siglo XVIII
+
+---
+
+#  1709 Piano
 
 Uno de estos inventos fue el piano de 1709. Esta maravilla de la ingeniería permitió a los músicos tocar una amplia variedad de melodías. El uso de pianos se ha extendido hasta el día de hoy y se utiliza en muchos géneros diferentes.
 
-### 1710 Termómetro de alcohol
+---
+
+#  1710 Termómetro de alcohol
 
 Otro invento importante fue el termómetro de alcohol de 1710. Esta herramienta de medición permitió a los médicos controlar la temperatura de los pacientes con precisión. Esto permitió que los médicos pudieran detectar y tratar enfermedades con mayor precisión.
 
@@ -224,11 +286,15 @@ Un año después, en 1741, se inventó la escalera centígrada. Esta herramienta
 
 En 1745, se inventó el condensador eléctrico. Esta innovación permitió a los científicos controlar la cantidad de corriente eléctrica que circulaba por un circuito. Esto permitió a los científicos estudiar la electricidad de manera más precisa y segura.
 
-### Pararrayos
+---
+
+#  Pararrayos
 
 En 1752, se inventó el pararrayos. Esta innovación ayudó a las personas a protegerse de los efectos dañinos de los rayos. Esto permitió a las personas construir edificios y otras estructuras con mayor seguridad.
 
-### 1757 Sextante
+---
+
+#  1757 Sextante
 
 El año 1757 vio el invento del sextante. Esta herramienta permitió a los marineros navegar de manera más segura al permitirles calcular su posición en el océano de manera precisa.
 
@@ -240,11 +306,15 @@ En 1769, se inventó el automóvil de vapor. Esta innovación permitió a las pe
 
 En 1776, se inventaron los globos, lo que permitió a las personas volar y ver el mundo desde una perspectiva diferente. Esto abrió la puerta a la exploración aérea y el descubrimiento de nuevos lugares.
 
-### 1782 Máquina de vapor Watt
+---
+
+#  1782 Máquina de vapor Watt
 
 En 1782, James Watt inventó la ``máquina de vapor``. Esta innovación cambió la forma en que se producían los productos al permitir a las personas producir productos en mayor cantidad y con mayor rapidez.
 
-### Globo de aire caliente
+---
+
+#  Globo de aire caliente
 
 En 1783, se inventó el globo de aire caliente. Esta innovación permitió a las personas volar más alto y con mayor seguridad. Esto permitió a las personas ver el mundo desde nuevas perspectivas.
 
@@ -256,79 +326,119 @@ En 1785, se inventó la hélice. Esta innovación permitió a los científicos e
 
 En 1789, estalló la Revolución Francesa. Esta revolución cambió el curso de la historia y abrió la puerta a nuevos cambios sociales y políticos.
 
-## Siglo XIX
+---
 
-### 1800 Martillo pilón
+#  Siglo XIX
+
+---
+
+#  1800 Martillo pilón
 
 ![](img/2023-02-28-15-14-58.png)
 
 El martillo pilón fue una herramienta mecánica inventada en 1800 que se usaba para forjar metales. Esta herramienta era una parte esencial de la industria y se utilizaba para fabricar y reparar diferentes tipos de herramientas y objetos metálicos.
 
-### 1801 Pila eléctrica
+---
+
+#  1801 Pila eléctrica
 
 1801 Pila eléctrica: La primera pila eléctrica fue inventada por Alessandro Volta en 1801. Esta fue la primera fuente de energía eléctrica que funcionaba sin la necesidad de una fuente externa de energía. Esta pila producía energía eléctrica a partir de la reacción química de dos electrodos inmersos en una solución conductora.
 
 ![](img/2023-02-28-15-14-00.png)
 
-### 1801 Electróforo
+---
+
+#  1801 Electróforo
 
 1801 Electróforo: El electróforo fue inventado por William Nicholson en 1801. Esta era una herramienta eléctrica que se usaba para generar electricidad estática. Esta herramienta estaba formada por una placa metálica conectada a una fuente de energía, una varilla metálica, y un recipiente de líquido aislante.
 
-### 1801 Endiómetro
+---
+
+#  1801 Endiómetro
 
 1801 Endiómetro: El endiómetro fue inventado por Henry Cavendish en 1801. Esta herramienta se usaba para medir la capacitancia de un condensador. Esta herramienta fue un avance muy importante en el campo de la medición eléctrica.
 
-### 1802 Locomotora de vapor
+---
+
+#  1802 Locomotora de vapor
 
 1802 Locomotora de vapor: La primera locomotora de vapor fue inventada por George Stephenson en 1802. Esta locomotora fue una revolución en el transporte y abrió la puerta a una nueva era de transporte seguro y rápido.
 
-### 1803 Acumulador eléctrico
+---
+
+#  1803 Acumulador eléctrico
 
 1803 Acumulador eléctrico: El primer acumulador eléctrico fue inventado por Alessandro Volta en 1803. Esta herramienta fue la primera batería capaz de almacenar energía eléctrica y fue un avance muy importante en el campo de la energía eléctrica.
 
-### 1805 Telar Jacquard
+---
+
+#  1805 Telar Jacquard
 
 1805 Telar Jacquard: El telar Jacquard fue inventado por Joseph-Marie Jacquard en 1805. Esta máquina fue una innovación en el campo de la fabricación textil. Esta máquina estaba equipada con una tarjeta perforada que permitía que se tejan patrones de tejido complicados.
 
-### 1815 Napoleón es derrotado en Waterloo
+---
+
+#  1815 Napoleón es derrotado en Waterloo
 
 1815 Napoleón es derrotado en Waterloo: En 1815, Napoleón fue derrotado en la batalla de Waterloo por una coalición de fuerzas lideradas por el duque de Wellington. Esta fue la última batalla de Napoleón y marcó el fin de su reinado.
 
-### 1816 Lámpara de seguridad para mineros, termoelectricidad
+---
+
+#  1816 Lámpara de seguridad para mineros, termoelectricidad
 
 1816 Lámpara de seguridad para mineros, termoelectricidad: En 1816, Sir Humphry Davy inventó la lámpara de seguridad para mineros. Esta lámpara funcionaba con una pila eléctrica basada en la termoelectricidad. Esta herramienta fue una importante innovación para la industria minera.
 
-### 1827 Cortadora de césped
+---
+
+#  1827 Cortadora de césped
 
 1827 Cortadora de césped: La primera cortadora de césped fue inventada por Edwin Budding en 1827. Esta herramienta fue una innovación importante en el campo de la jardinería y permitió que los jardines se mantuvieran limpios y bien cuidados.
 
-### 1830 Dínamo eléctrica
+---
+
+#  1830 Dínamo eléctrica
 
 1830 Dínamo eléctrica: La primera dínamo eléctrica fue inventada por Michael Faraday en 1830. Esta herramienta fue un avance importante en el campo de la energía eléctrica y permitió que la electricidad se produjera de forma continua y fiable.
 
-### 1831 Cosechadora
+---
+
+#  1831 Cosechadora
 
 1831 Cosechadora: La primera cosechadora fue inventada por Cyrus McCormick en 1831. Esta herramienta fue una innovación importante en el campo de la agricultura y fue una de las primeras herramientas mecánicas usadas para cosechar. Esta herramienta permitió que la cosecha se realizara de forma más rápida y eficiente.
 
-### 1834 Telégrafo eléctrico
+---
+
+#  1834 Telégrafo eléctrico
 
 ![](img/2023-02-28-11-29-04.png)
 
-### 1837 Alfabeto Morse
+---
 
-### 1837 Estereoscopio
+#  1837 Alfabeto Morse
 
-### 1838 Bicicleta
+---
 
-### 1839 Estampilla de correos
+#  1837 Estereoscopio
+
+---
+
+#  1838 Bicicleta
+
+---
+
+#  1839 Estampilla de correos
 
 Los barcos con casco de hierro fueron inventados en 1840 por la Compañía Naval de Scott. Estos barcos revolucionarios fueron diseñados para navegar a velocidades mucho más altas que los barcos de madera. Esto abrió nuevas formas de transporte y comercio.
 
-### 1840 Reloj eléctrico
+---
+
+#  1840 Reloj eléctrico
 
 El reloj eléctrico fue inventado en 1840 por Alexander Bain. Esta innovación tecnológica permitió a las personas medir el tiempo con precisión y exactitud. Esto ayudó a mejorar la eficiencia y la productividad en muchos campos.
 
-### 1842. Anestésicos
+---
+
+#  1842. Anestésicos
 
 En 1842, el cirujano británico ``James Simpson`` descubrió el uso de los anestésicos, permitiendo a los cirujanos realizar procedimientos quirúrgicos sin provocar dolor a los pacientes.
 
@@ -348,35 +458,49 @@ En 1846, el inventor británico Linus Yale inventó la cerradura de seguridad, u
 
 En 1851, el inventor francés Louis Daguerre inventó la cámara de placas, un dispositivo diseñado para tomar fotografías. Esta innovación permitió a la gente capturar momentos especiales de una manera nunca antes vista, cambiando para siempre la forma en que la gente ve el mundo.
 
-### 1860 Linóleo
+---
 
-### 1860 Esquiladora
+#  1860 Linóleo
+
+---
+
+#  1860 Esquiladora
 
 La esquiladora fue inventada en 1860 por Hiram Moore. Esta máquina revolucionaria permitió a los agricultores cortar el pelo de los animales domésticos y cosecharlo para usarlo como materiales para ropa y otros productos. Esta importante innovación modernizó el proceso de producción de lanas.
 
-### 1876 Teléfono
+---
+
+#  1876 Teléfono
 
 El teléfono fue inventado por Alexander Graham Bell en 1876. Esta innovación revolucionaria permitió a las personas comunicarse a largas distancias a través de una línea telefónica. El teléfono se convirtió en una herramienta esencial para comunicaciones interpersonales, de negocios y militares.
 
-### 1876 Frigorífico
+---
+
+#  1876 Frigorífico
 
 El frigorífico fue inventado por Carl von Linde en 1876. Esta importante innovación permitió que los alimentos se conservaran a temperaturas más bajas, evitando así el deterioro de los alimentos. El frigorífico cambió la forma en que las personas almacenaban los alimentos, permitiendo una mayor duración de la comida.
 
 ![](img/2023-02-28-11-22-59.png)
 
-### 1877 Fonógrafo
+---
+
+#  1877 Fonógrafo
 
 ![](img/2023-02-28-15-09-01.png)
 
 El fonógrafo fue inventado por Thomas Edison en 1877. Esta innovación permitió capturar la voz humana y almacenarla en un dispositivo mecánico para su posterior reproducción. El fonógrafo revolucionó el mundo de la música y la tecnología de la información, transformando la forma en que las personas escuchaban y compartían la música.
 
-### 1877 Motor de cuatro tiempos
+---
+
+#  1877 Motor de cuatro tiempos
 
 El motor de cuatro tiempos fue inventado por Nikolaus Otto en 1877. Esta innovación permitió la producción automatizada de motores de combustión interna, los cuales se usan en una amplia variedad de vehículos. Esta importante innovación dio lugar a la era de la automatización, lo que permitió la fabricación de productos de manera más eficiente y asequible.
 
 ![](img/2023-02-28-11-20-40.png)
 
-### 1881 Luis Pasteur, comenzó sus experimentos contra la rabia
+---
+
+#  1881 Luis Pasteur, comenzó sus experimentos contra la rabia
 
 Luis Pasteur comenzó sus experimentos en 1881 contra la rabia, creando una vacuna que luego salvó la vida de muchas personas. Estos experimentos comenzaron con la inoculación de una bacteria extraída del cerebro de un animal infectado. Esto fue seguido por la inoculación de la bacteria a un perro, que resultó ser exitoso después de seis meses. Esto demostró que la bacteria de la rabia podía ser inactivada y no causaría la enfermedad. Pasteur luego desarrolló una vacuna para prevenir la rabia.
 
@@ -386,7 +510,9 @@ La vacuna consistía en usar la misma bacteria inactivada para inocular a los an
 
 Esta fue la primera vacuna exitosa para una enfermedad infecciosa y se convirtió en la base para el desarrollo de vacunas posteriores.
 
-### 1884. Generador de turbina de vapor
+---
+
+#  1884. Generador de turbina de vapor
 
 En 1884, se inventó el primer generador de turbina de vapor que permitió la producción a gran escala de energía eléctrica.
 
@@ -394,13 +520,19 @@ La turbina de vapor fue inventada en 1884 por Sir Charles Parsons , cuyo primer 
 
 ![](img/2023-02-28-11-18-11.png)
 
-### 1885. Primer automóvi
+---
+
+#  1885. Primer automóvi
 
 En 1885, los hermanos Daimler y Maybach inventaron el primer automóvil de motor de gasolina. Esta innovación revolucionó los transportes y cambió para siempre la forma en que nos movíamos. El automóvil abrió la puerta a nuevas posibilidades de viajar, y su diseño técnico y su rendimiento mejoraron de forma constante durante el siglo XX. Su impacto fue enorme y ha tenido una enorme influencia en la forma en que vivimos nuestra vida diaria.
 
-### 1885 Bicicleta de pedales
+---
 
-### 1888 Gramófono
+#  1885 Bicicleta de pedales
+
+---
+
+#  1888 Gramófono
 
 En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y reproducir música. Estos inventos revolucionaron los campos de la medicina, transporte, energía y entretenimiento para siempre.
 
@@ -408,37 +540,53 @@ En 1888, el gramófono fue inventado, lo que permitió a la gente grabar y repro
 
 https://artsandculture.google.com/story/awUBd0WvqVFpLg?hl=en
 
-### 1889 Ascensor eléctrico
+---
+
+#  1889 Ascensor eléctrico
 
 ![](img/2023-02-28-11-14-56.png)
 
-### 1890 El tubo de Crookes
+---
+
+#  1890 El tubo de Crookes
 
 ![](img/2023-02-28-15-08-01.png)
 
 El tubo de Crookes es un dispositivo de vacío desarrollado por el físico británico William Crookes en 1878. Estaba diseñado para estudiar el comportamiento de los rayos catódicos, una forma de radiación electromagnética. El tubo contenía una lámpara de descarga con un filamento calentador en su centro, una cámara de vacío para albergar la lámpara, una lámina metálica para producir un campo eléctrico, y una pantalla con una placa de plomo en la parte delantera para producir un campo magnético. Cuando el filamento se calentaba, emitía electrones que se desplazaban hacia la superficie de la lámina. Estos electrones eran entonces acelerados y desviados por los campos eléctrico y magnético. El resultado era una descarga visible que se podía ver en la pantalla.
 
-### 1894 Radio
+---
 
-### 1894 Primer periscopio
+#  1894 Radio
+
+---
+
+#  1894 Primer periscopio
 
 ![](img/2023-02-28-15-05-43.png)
 
-### 1895 Rayos X
+---
+
+#  1895 Rayos X
 
 El 8 de noviembre de 1895 el físico alemán Wilhelm Conrad Roentgen descubrió los rayos X mientras realizaba experimentos con tubos de vacío y un generador eléctrico. Con el hallazgo de este haz de luz capaz de atravesar la materia, nació el diagnóstico médico por imágenes que mejoró considerablemente el ejercicio de la medicina.
 
 ![](img/2023-02-28-11-32-19.png)
 
-### 1897 Motor Diesel
+---
+
+#  1897 Motor Diesel
 
 El primer motor Diesel fue construido por el inventor alemán Rudolf Diesel en 1897. El motor fue una innovación importante porque eliminaba la necesidad de usar combustibles volátiles como el carbón y el petróleo para generar energía. Esto permitió una mayor eficiencia energética, ya que el motor convertía el combustible directamente en energía mecánica. El motor también fue mucho más silencioso que los motores de combustión interna anteriores
 
 1897 Motor eléctrico compacto
 
-## Siglo XX
+---
 
-### 1900. Zeppelin
+#  Siglo XX
+
+---
+
+#  1900. Zeppelin
 
 El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entrar en servicio, construido por el ingeniero alemán Ferdinand von Zeppelin. Esta innovadora nave llevó a cabo el primer vuelo de pasajeros comercial exitoso, estableciendo un precedente para la navegación aérea moderna.
 
@@ -458,7 +606,9 @@ El dirigible rígido Zeppelin fue uno de los primeros dirigibles grandes en entr
 1903 Cinturón de seguridad
 1903 Osito de peluche
 
-### 1904 Se abre el canal de panamá
+---
+
+#  1904 Se abre el canal de panamá
 
 El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de construcción. El canal, que une el Océano Atlántico con el Océano Pacífico, fue hecho para permitir que los barcos naveguen más directamente entre los dos océanos. El canal fue construido por la Compañía del Canal de Panamá, una empresa estadounidense, y fue comprado por los Estados Unidos en el año de 1914. Desde entonces, el Canal de Panamá ha sido administrado por el gobierno de los Estados Unidos. El canal ha sido una importante vía navegable en el comercio internacional desde su apertura.
 
@@ -469,53 +619,75 @@ El 15 de agosto de 1904 se abrió el Canal de Panamá después de 10 años de co
 1913 Cadena de montaje
 1913 Heladera eléctrica
 
-### 1913 Cremallera
+---
+
+#  1913 Cremallera
 
 ![](img/2023-02-28-15-04-48.png)
 
 La primera patente de un dispositivo de cremallera fue presentada en 1913 por Gideon Sundback, un ingeniero sueco. Se le atribuye el haber creado la cremallera moderna, un dispositivo fácil de usar con una combinación de dientes de metal y una solapa. Sundback también inventó el cierre de plástico, que se utilizó para la primera vez en 1933
 
-### 1914 Primera guerra mundial
+---
 
-### 1914 Semáforos Luminosos
+#  1914 Primera guerra mundial
+
+---
+
+#  1914 Semáforos Luminosos
 
 Los primeros semáforos luminosos fueron instalados en 1914 en Cleveland, Ohio. Estaban diseñados para ayudar a controlar el tráfico en las principales intersecciones de la ciudad. Estos semáforos usaban luces rojas y verdes para indicar a los conductores cuándo parar y cuándo seguir.
 
-### 1914 Limpiaparabrisas
+---
+
+#  1914 Limpiaparabrisas
 
 Los primeros limpiaparabrisas fueron inventados en 1914 por Mary Anderson. Su invento consistía en una palanca que se manejaba desde el interior de un vehículo para activar un brazo con una goma, que se movía de un lado a otro para limpiar el parabrisas.
 
-### 1915 Teoría de la relatividad
+---
+
+#  1915 Teoría de la relatividad
 
 En 1915, ``Albert Einstein`` desarrolló y enunció su teoría de la Relatividad, la cual revolucionó la física moderna. Esta teoría explica la relación entre la gravitación y la energía, y cómo el universo se comporta en diferentes situaciones.
 
 1920 Secador de pelo: El primer secador de pelo fue inventado en 1920 por Alexander Godefroy. Utilizaba un ventilador para hacer circular aire caliente, lo que ayudaba a secar el cabello de forma más eficiente.
 
-### 1915. Tanque
+---
+
+#  1915. Tanque
 
 ![](img/2023-02-28-11-35-54.png)
 
 http://infografias.elmercurio.com/20160910-CAB-historiatanque/
 
-### 1921 Autopistas
+---
+
+#  1921 Autopistas
 
 En 1921, el ingeniero Edward de Bono diseñó la primera autopista del mundo, la Autopista del Sol, en Nueva York. Esta autopista fue diseñada para permitir una mayor velocidad y seguridad al conducir, así como un mejor flujo de tráfico.
 
-### 1922 Contador Geiger
+---
+
+#  1922 Contador Geiger
 
 El Contador Geiger fue inventado en 1922 por Hans Geiger y Ernest Marsden. Esta herramienta fue diseñada para detectar y contar los rayos cósmicos, y se considera uno de los primeros instrumentos de medición de radiación.
 
-### 1925 Televisor:
+---
+
+#  1925 Televisor:
 
 El televisor fue inventado en 1925 por John Logie Baird. Se trataba de un dispositivo que podía transmitir imágenes en movimiento a través de ondas electromagnéticas, lo que permitió la transmisión de programas de televisión en vivo.
 
-### 1926 Tostadora:
+---
+
+#  1926 Tostadora:
 
 La tostadora fue inventada en 1926 por Charles Strite. Esta herramienta utiliza una resistencia eléctrica para tostar el pan de manera uniforme, lo que hace que sea más fácil preparar el desayuno.
 
 1927 Caucho sintético: El caucho sintético fue inventado en 1927 por el químico aleman Fritz Hofmann. Esta sustancia, que se fabrica a partir de petróleo, es más resistente y duradera que el caucho natural, lo que lo hace ideal para la fabricación de neumáticos y otros productos.
 
-### 1927 Antibióticos:
+---
+
+#  1927 Antibióticos:
 
 Los ``antibióticos`` fueron inventados en 1927 por el bioquímico ``Alexander Fleming``. Estos medicamentos son utilizados para tratar infecciones bacterianas, impidiendo el crecimiento y reproducción de las bacterias dañinas.
 
@@ -523,13 +695,17 @@ Los ``antibióticos`` fueron inventados en 1927 por el bioquímico ``Alexander F
 
 La ``amoxicilina`` es un antibiótico semisintético derivado de la ``penicilina``. Se emplea a menudo como primer fármaco en infecciones de diferente gravedad, tanto en medicina humana como también en veterinaria.
 
-### 1926 Plancha de vapor
+---
+
+#  1926 Plancha de vapor
 
 ![](img/2023-02-28-15-01-54.png)
 
 Fue en 1926 cuando la empresa Elder Co. puso a la venta la primera plancha de vapor de uso doméstico, esto en la ciudad de Nueva York.
 
-### 1928 Ciclotrón
+---
+
+#  1928 Ciclotrón
 
  El ciclotrón fue una invención creada en 1928 por Ernest Lawrence, un físico de la Universidad de California. Esta invención fue una de las primeras máquinas de aceleración de partículas, la cual permitió a los científicos explorar los átomos y sus partículas elementales que los componen.
 
@@ -537,11 +713,15 @@ Fue en 1926 cuando la empresa Elder Co. puso a la venta la primera plancha de va
 
  Un ciclotrón es un tipo de ``acelerador de partículas``, de trayectoria circular, capaz de imprimir un movimiento en espiral cada vez más veloz a partículas subatómicas cargadas como, por ejemplo, los protones. Las partículas, que se mueven en el vacío siguiendo una trayectoria curva gracias al efecto de un campo magnético uniforme, son aceleradas paulatinamente a partir de las oscilaciones de alta frecuencia que generan un campo eléctrico oscilante.
 
-### 1930 Motor a reacción
+---
+
+#  1930 Motor a reacción
 
 El motor a reacción fue inventado en 1930 por Frank Whittle, un científico británico. Esta invención permitió a los aviones volar con más rapidez, mayor alcance y menor consumo de combustible. Esta innovación revolucionó la ingeniería aeronáutica y la tecnología de los aviones.
 
-### 1932 Guitarra eléctrica
+---
+
+#  1932 Guitarra eléctrica
 
 La primera guitarra eléctrica fue inventada en 1932 por George Beauchamp y Adolph Rickenbacker. Esta invención permitió a los músicos amplificar su sonido sin tener que mover los brazos para tocar.
 
@@ -551,32 +731,44 @@ La primera guitarra eléctrica fue inventada en 1932 por George Beauchamp y Adol
 
 Las primeras grabaciones estéreo fueron inventadas en 1933 por Alan Blumlein. Esta innovación permitió a los músicos grabar una grabación en dos canales, lo que resultó en un sonido mucho más vivo y realista. Esta innovación permitió a los artistas tener un mayor control sobre la producción de sus grabaciones.
 
-### 1933 Polietileno
+---
+
+#  1933 Polietileno
 
 El polietileno fue inventado en 1933 por Eric Fawcett y Reginald Gibson. Esta invención fue uno de los primeros materiales sintéticos y fue ampliamente utilizado como material de embalaje y para la fabricación de productos plásticos.
 
-### 1934 Nylon
+---
+
+#  1934 Nylon
 
 El nylon fue inventado en 1934 por Wallace Carothers. Esta invención revolucionó la industria textil, ya que fue el primer material sintético utilizado para hacer telas. El nylon fue ampliamente utilizado para la fabricación de ropa, zapatos y otros productos textiles.
 
-### 1935 Radar
+---
+
+#  1935 Radar
 
 El radar fue inventado en 1935 por Robert Watson-Watt. Esta innovación fue uno de los primeros sistemas de detección a distancia, lo que permitió a los militares detectar grandes objetos a largas distancias. Esta invención revolucionó la industria de la defensa y fue una de las principales innovaciones de la Segunda Guerra Mundial.
 
 1936 Guerra Civil Española
 1938 Café instantáneo
 
-### 1938 Fotocopiadora
+---
+
+#  1938 Fotocopiadora
 
 La primera fotocopiadora fue inventada en 1938 por el químico suizo, Albert Gyorgy. Utilizaba una lámpara de arco para concentrar la luz en un papel fotográfico sensibilizado y un cristal fotoconductivo para hacer una copia de la imagen original. Esta primera máquina fue llamada Copiadora Österreich
 
-### 1938 Bolígrafo
+---
+
+#  1938 Bolígrafo
 
 La invención del bolígrafo se atribuye a John J. Loud, un fabricante de calzado de Massachusetts. En 1888, diseñó un lápiz con una punta de metal recubierta de un material resistente al aceite, lo que permitía que el lápiz escribiera sobre casi cualquier superficie, desde papel hasta metal. Loud patentó su invento en octubre de ese año. El nombre de "bolígrafo" fue acuñado en 1938 por László Bíró, un inventor húngaro que mejoró el diseño de Loud.
 
 1939 Comienza la Segunda Guerra Mundial
 
-### 1941 Aerosoles
+---
+
+#  1941 Aerosoles
 
 La invención de aerosoles se atribuye a Eric Rotheim, un inventor noruego, quien patentó el primer aerosol en 1927. Originalmente se llamaba "Aerosolv", y funcionaba con un gas licuado como propelente. El primer aerosol fue creado para la aplicación de insecticidas.
 
@@ -584,7 +776,9 @@ La invención de aerosoles se atribuye a Eric Rotheim, un inventor noruego, quie
 
 En 1941, el químico estadounidense Lloyd Nelson inventó un aerosol basado en el uso de un compuesto orgánico como propelente. Esta fue la primera vez que se usó un compuesto orgánico como propelente. El aerosol se popularizó durante la década de 1950, cuando se comenzó a usar como aerosoles para la aplicación de pintura, en aerosoles para el cabello y en aerosoles para la limpieza.
 
-### 1942 Napalm
+---
+
+#  1942 Napalm
 
 Durante la Segunda Guerra Mundial, los Aliados y la Alemania nazi utilizaron la gasolina como arma en lanzallamas, ya que solamente la gasolina era un rápido y eficaz dispositivo incendiario. Una sustancia adicional era necesaria para producir una combustión de gran alcance y persistencia pero que no se consumiera velozmente.
 
@@ -592,29 +786,49 @@ Durante la Segunda Guerra Mundial, los Aliados y la Alemania nazi utilizaron la 
 
 Aunque los investigadores habían encontrado maneras de hacer gasolina convertida en gelatina, muchas de ellas requirieron de caucho como componente principal, que durante tiempos de guerra era una materia escasa. En 1942, investigadores de la Universidad de Harvard (conducida por Louis Fieser) y el cuerpo químico del Ejército de los Estados Unidos encontró la solución: el napalm.
 
-### 1942 Reactor nuclear
+---
 
-### 1942 Equipo de inmersión
+#  1942 Reactor nuclear
 
-### 1943 Turbina de reacción para aviones
+---
+
+#  1942 Equipo de inmersión
+
+---
+
+#  1943 Turbina de reacción para aviones
 
 ![](img/2023-02-28-12-04-28.png)
 
 Los motores a reacción hicieron posible que los aviones volaran a mayores altitudes y velocidades de crucero, lo que significa que los vuelos se pueden realizar con mayor rapidez, economía y seguridad. Los motores a reacción también son más fiables que los motores de hélice, lo que significa que los aviones pueden volar por más tiempo sin necesidad de un mantenimiento frecuente.
 
-### 1945 La Bomba atómica destruye Hiroshima y Nagasaki
+---
 
-### 1946 Horno de microondas
+#  1945 La Bomba atómica destruye Hiroshima y Nagasaki
 
-### 1946 Calculadora electrònica
+---
 
-### 1946 Ordenador
+#  1946 Horno de microondas
 
-### 1947 Transistor
+---
 
-### 1948 Long Play - Disc de llarga durada; neumáticos radiales
+#  1946 Calculadora electrònica
 
-### 1958. Primer radar de velocidad
+---
+
+#  1946 Ordenador
+
+---
+
+#  1947 Transistor
+
+---
+
+#  1948 Long Play - Disc de llarga durada; neumáticos radiales
+
+---
+
+#  1958. Primer radar de velocidad
 
 ![](img/2023-02-28-11-53-48.png)
 
@@ -622,37 +836,51 @@ El holandés Maurice Gatsonides (1911-1998), quien para mejorar sus tiempos deci
 
 Así que comenzó a idear un artilugio basado en la tecnología del radar que, como sabéis, es un dispositivo emisor y receptor de ondas que se aprovecha del efecto Doppler.
 
-### 1950 Tarjeta de crédito
+---
+
+#  1950 Tarjeta de crédito
 
 En el año 1949 Frank McNamara pensó en una tarjeta que permitiera pagar en cualquier establecimiento.  Esto se le ocurrió en una cena con otros 2 comensales. A McNamara se le olvidó la cartera y tuvo que telefonear a su mujer para que se la trajera. Junto a los otros dos decidieron crear un método para poder pagar con una sola tarjeta en diferentes establecimientos de forma personal y segura. De aquí surgió la Diners’ Club, la primera tarjeta de crédito.
 
-### 1953 Hillary y Tenzing ascienden el everest
+---
+
+#  1953 Hillary y Tenzing ascienden el everest
 
 En 1953, el alpinista Edmund Hillary y el sherpa Tenzing Norgay hicieron historia cuando ascendieron la cumbre del Monte Everest, convirtiéndose en los primeros humanos en alcanzar la cima más alta de la Tierra. La expedición británica, dirigida por el almirante John Hunt, partió de Katmandú, Nepal, el 10 de marzo de 1953. Después de meses de preparación, la expedición de alpinistas inició su ascenso a la cumbre del Monte Everest el 26 de mayo. Luego de muchos intentos infructuosos, Hillary y Tenzing finalmente lograron el éxito el 29 de mayo de 1953.
 
 ![](img/2023-02-28-12-14-03.png)
 
-### 1954 Central nuclear
+---
+
+#  1954 Central nuclear
 
 ![](img/2023-02-26-17-19-26.png)
 
 La primera central nuclear en el mundo fue la Central Nuclear de Obninsk, cerca de Moscú, Rusia, que comenzó a operar el 27 de junio de 1954. Esta central nuclear fue el primer reactor nuclear de agua ligera del mundo. Fue diseñado para producir energía eléctrica para uso civil, y su potencia fue de 5 megavatios.
 
-### 1954 Radio a transistores
+---
+
+#  1954 Radio a transistores
 
 Apareció en el año 1954 y fue un cambio drástico en los sistemas de radio. Esto se debe a que los transistores eran más pequeños, más baratos y también más fiables que los tubos de vacío que se usaban antes. Esto significaba que los radios a transistores podían ser más pequeños y portátiles. También eran más eficientes energéticamente, lo que significaba que eran más baratos de fabricar.
 
 ![](img/2023-02-28-15-00-38.png)
 
-### 1956 Velcro
+---
+
+#  1956 Velcro
 
 ![](img/2023-02-28-14-59-36.png)
 
 Velcro fue inventado en 1956 por el ingeniero suizo George de Mestral, quien se dio cuenta de que los granos de la hierba se adhirían a su perro y a su ropa. Inspirado por esta naturaleza, inventó una tela con un cierre de gancho y bucle que se conoce como Velcro. El nombre "Velcro" surgió de la combinación de las palabras francesas "velours" (terciopelo) y "crochet" (ganchos).
 
-### 1956 Videocámara
+---
 
-### 1957 Satélite espacial
+#  1956 Videocámara
+
+---
+
+#  1957 Satélite espacial
 
 ![](img/2023-02-28-14-53-10.png)
 
@@ -660,23 +888,31 @@ El primer satélite artificial en orbitar la Tierra. Fue lanzado por la Unión S
 
 El lanzamiento de Sputnik 1 fue un hito importante en la historia de la humanidad. La carrera espacial entre la Unión Soviética y los Estados Unidos comenzó con el lanzamiento del satélite
 
-### 1958 Aerodeslizador
+---
+
+#  1958 Aerodeslizador
 
 ![](img/2023-02-28-14-57-16.png)
 
 El Aerodeslizador de 1958 fue un vehículo de transporte inventado por el ingeniero William Blanchard. Estaba diseñado para ser una alternativa a los helicópteros, ya que era más barato y fácilinvencion de construir. Estaba compuesto por una serie de alas y una hélice para proporcionar propulsión al vehículo. El Aerodeslizador de 1958 fue uno de los primeros vehículos de transporte aéreo no tripulados y fue diseñado para ser una alternativa a los aviones comerciales. Estaba equipado con una hélice en la parte superior para proporcionar el impulso y una serie de alas que permitían al vehículo volar en línea recta. El Aerodeslizador era capaz de alcanzar velocidades de hasta 160 km/h.
 
-### 1959 Chip de silicio
+---
+
+#  1959 Chip de silicio
 
 ![](img/2023-02-28-14-55-49.png)
 
-### 1959 Lycra
+---
+
+#  1959 Lycra
 
 ![](img/2023-02-28-14-55-16.png)
 
 Lycra fue una innovadora fibra sintética desarrollada por DuPont que se utilizó por primera vez para fabricar ropa deportiva y prendas de baño. Esta fibra era extremadamente resistente y elástica, lo que permitió a los diseñadores cambiar el diseño de la ropa para que se ajustara mejor al cuerpo. Además, Lycra también permitió que la ropa fuera mucho más cómoda de usar y durara más tiempo.
 
-### 1960 Teflón
+---
+
+#  1960 Teflón
 
 ![](img/2023-02-28-14-54-05.png)
 
@@ -688,17 +924,27 @@ Teflón fue una sustancia química desarrollada por DuPont que se usó por prime
 1964 Procesador de textos
 1840 Reloj eléctrico: El reloj eléctrico fue inventado en 1840 por Alexander Bain. Esta innovación tecnológica permitió a las personas medir el tiempo con precisión y exactitud. Esto ayudó a mejorar la eficiencia y la productividad en muchos campos.
 
-### 1969 Avión Jumbo
+---
+
+#  1969 Avión Jumbo
 
 ![](img/2023-02-26-17-04-11.png)
 
 El primer avión jumbo fue el Boeing 747, que entró en servicio el 9 de febrero de 1970. El 747 fue diseñado para transportar grandes cantidades de pasajeros y carga a largas distancias. Está equipado con cuatro motores turbofan y tiene capacidad para hasta 400 pasajeros. El 747 se ha convertido en el avión de pasajeros más vendido de la historia, con más de 1550 aviones entregados desde su lanzamiento.
 
-### 1969 Los astronautas estadounidenses llegan a la Luna
-### 1971 Rellotge digital
-### 1972 Escàner
+---
 
-### 1972 Rayos X
+#  1969 Los astronautas estadounidenses llegan a la Luna
+---
+
+#  1971 Rellotge digital
+---
+
+#  1972 Escàner
+
+---
+
+#  1972 Rayos X
 
 Los rayos X son una forma de radiación electromagnética de alta energía con longitudes de onda más cortas que la luz visible. Esta radiación puede atravesar objetos sólidos, lo que permite ver imágenes internas de los cuerpos que no se pueden ver fácilmente de otra manera. Esta tecnología revolucionaria se ha utilizado para detectar fracturas óseas, enfermedades cardíacas y cánceres, entre muchas otras aplicaciones.
 
@@ -706,11 +952,15 @@ Los rayos X son una forma de radiación electromagnética de alta energía con l
 1974 Protocol d'Internet (IP) i Protocol de Control de Transmissió (TCP)
 1978 Codis de barres
 
-### 1978 Nace el primer bebe de probeta
+---
+
+#  1978 Nace el primer bebe de probeta
 
 El primer bebé nacido de un embrión fertilizado fuera del cuerpo de su madre, conocido como bebé de probeta, nació el 25 de julio de 1978 en Oldham, en el Reino Unido. El bebé, llamado Louise Brown, fue creado mediante una técnica de fecundación in vitro. Esto significa que el óvulo de la madre fue fecundado por el espermatozoide del padre en un frasco de laboratorio, antes de ser implantado en el útero de la madre.
 
-### 1975 Ordenador personal
+---
+
+#  1975 Ordenador personal
 
 El primer ordenador personal fue el Altair 8800, que fue lanzado en 1975. Fue creado por una empresa llamada Micro Instrumentation and Telemetry Systems (MITS). Estaba equipado con un microprocesador 8080 de Intel y 256 bytes de memoria RAM. El Altair 8800 fue el principio de la era de los ordenadores personales y su lanzamiento se considera el inicio de la revolución informática. El precio inicial del Altair 8800 fue de $397.
 
@@ -718,11 +968,15 @@ Walkman fue inventada en 1979 por Masaru Ibuka, el fundador de Sony Corporation.
 
 catalitzadors per a automotors
 
-### 1980 Cubo de Rubik
+---
+
+#  1980 Cubo de Rubik
 
 El cubo de Rubik es un puzzle creado por el arquitecto húngaro Ernő Rubik. El cubo de Rubik se inventó en 1974 y se lanzó en el mercado en 1980.
 
-### 1981 Transbordador espacial
+---
+
+#  1981 Transbordador espacial
 
 El primer transbordador espacial fue el Columbia, que fue lanzado el 12 de abril de 1981. El Columbia fue el primer vehículo de lanzamiento de la nave espacial de la NASA. La misión de lanzamiento fue un éxito y el Columbia completó su primera misión orbital el 14 de abril de 1981, con astronautas John W. Young y Robert L. Crippen a bordo.
 
@@ -731,7 +985,9 @@ Los transbordadores espaciales son naves diseñadas para viajar a y desde la ór
 1981 Papeles autoadhesivos
 1982 Tarjeta inteligente
 
-### 1982 Corazón artificial
+---
+
+#  1982 Corazón artificial
 
 El primer corazón artificial se implantó en 1982 en el paciente Barney Clark, un hombre de 61 años de edad. El corazón artificial era un dispositivo mecánico diseñado por el Dr. Robert Jarvik y se llamaba el Jarvik-7. La cirugía duró unas 8 horas y se llevó a cabo en el Universidad Médica de Utah. El dispositivo fue diseñado para ayudar a bombea la sangre alrededor del cuerpo, y se conectó directamente a la arteria aorta y vena cava inferior de Clark. El dispositivo funcionó durante 112 días antes de que el paciente muriera de una infección.
 

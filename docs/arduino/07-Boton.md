@@ -1,3 +1,9 @@
+---
+title: "LED con botón"
+subtitle: "Arduino"
+date: "07/03/2023"
+---
+
 # Boton
 
 ## Resumen
@@ -24,32 +30,43 @@ Antes de comenzar necesitaremos los siguientes componentes:
 
 Los interruptores son componentes muy simples. Cuando pulse un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro conexiones**, que pueden ser un poco confusas.
 
+---
+
 ![imagen](media/image67.jpeg)
+
+---
 
 En realidad, hay realmente dos conexiones eléctricas. Dentro del paquete de interruptor, pins B y C se conectan entre sí, como son A y D.
 
-### Conexión
-
-Aquí podéis ver el esquema de las conexiones:
+## Esquema de conexión
 
 ![imagen](media/image68.jpeg)
 
-Diagrama de cableado
+## Diagrama de cableado
 
 ![imagen](media/image69.jpeg)
 
-Las conexiones que vamos a tener que realizar son las siguientes:
+## Las conexiones que vamos a tener que realizar son las siguientes:
 
 ![imagen](media/image70.jpeg)
 
-Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor. Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas. Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
+---
 
-### Explicación del código
+Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor.
 
-- Pulsando  el botón izquierdo se encenderá el **LED**.
+Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas.
+Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
+
+## Explicación del código
+
+- Pulsando el botón izquierdo se encenderá el **LED**.
 - Pulsando el botón derecho apagará.
 
-La primera parte del proyecto define tres variables para ls tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.
+---
+
+La primera parte del proyecto define tres variables para las tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.
+
+---
 
 La función de **setup** define el ledPin como una salida normal, pero ahora tenemos las dos entradas para ocuparse.
 
@@ -58,9 +75,13 @@ En este caso, utilizamos el conjunto el pinMode ser **INPUT_PULLUP** como este:
 - El modo pin de **INPUT_PULLUP** significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, la entrada tendra el valor **HIGH**.
 - En otras palabras, el valor predeterminado de la entrada es **HIGH**, a menos que se ponga a **LOW** al pulsar el botón.
 
+---
+
 Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
 
 Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
+
+---
 
 En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
 

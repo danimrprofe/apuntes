@@ -1,17 +1,24 @@
 # Monitor serie
 
-Entorno de desarrollo integrado (IDE) de **Arduino** es el software de la plataforma``Arduino``. Y, porque utilizando un terminal es una gran parte del trabajo con``Arduino``s y otros microcontroladores, decidieron incluir un terminal de serie con el software. En el entorno de``Arduino``, esto se llama al Monitor serie.
+## Introducción
+
+El Entorno de desarrollo integrado o ``IDE`` de **Arduino** es el software de la plataforma``Arduino``.
+
+Incluye un `terminal` de serie con el software llamado  monitor serie. El Monitor de serie viene con cualquier versión del ``IDE Arduino``.
+
+El monitor serie nos permite comunicarnos con el ``arduino`` a través de una ventana y recibir datos de él.
 
 ## Realizar la conexión
 
-Monitor de serie viene con cualquier versión del IDE``Arduino``. Para abrirlo, simplemente haga
-clic en el icono Serial Monitor.
+Para abrirlo, simplemente haga clic en el icono ``Serial Monitor``.
 
 ![imagen](media/image33.jpeg)
 
+## Elegir puerto
+
 Seleccionar cuál de los puertos a abrir en el Monitor Serial es lo mismo que seleccionar un puerto para cargar código de``Arduino``. Vaya a herramientas -> Serial Port y seleccione el puerto correcto.
 
-Consejos: Elegir el mismo puerto COM que tienes en el administrador de dispositivos.
+Consejos: Elegir el mismo puerto ``COM`` que tienes en el administrador de dispositivos.
 
 ![imagen](media/image34.jpeg)
 
@@ -31,8 +38,4 @@ Por último, puede establecer el terminal desplazamiento automático o no marcan
 
 ### Pros
 
-El Monitor Serial es una gran manera rápida y fácil para establecer una conexión en serie con  el``Arduino``. Si ya trabaja en el IDE de``Arduino``, no hay realmente ninguna necesidad de abrir un terminal separado para Mostrar datos
-
-### Contras
-
-La falta de valores deja mucho que desear en el Monitor Serial, y, para comunicaciones serie avanzadas, no puede hacer el truco.
+El Monitor Serial es una gran manera rápida y fácil para establecer una conexión en serie con  el``Arduino``.

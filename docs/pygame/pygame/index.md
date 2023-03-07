@@ -1,4 +1,16 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Pygame
+
+---
 
 En este tema, aprenderemos a crear pequeños juegos en Python utilizando una librería llamada Pygame (Pygame.org), que nos permitirá crear gráficos y manipularlos.
 
@@ -6,21 +18,30 @@ En este tema, aprenderemos a crear pequeños juegos en Python utilizando una lib
 - Ventanas
 - Objetos
 - Interacción con el teclado
-- ColisionesSonido
+- Colisiones
+- Sonido
 
-## Ejemplo de programa
+---
+
+# Ejemplo de programa
 
 ![](img/2023-03-02-09-19-59.png)
 
-## Coordenadas de pixels
+---
+
+# Coordenadas de pixels
 
 ![](img/2023-03-02-09-23-11.png)
 
-## Colores
+---
 
-![](img/2023-03-02-09-24-07.png)
+# Colores
 
-## Ejemplo
+![bg contain](img/2023-03-02-09-24-07.png)
+
+---
+
+# Ejemplo (parte 1)
 
 ```py
 
@@ -35,21 +56,41 @@ win_height = 480
 win = pygame.display.set_mode((win_width, win_height))
 pygame.display.set_caption("My Pygame Program")
 
+```
+
+---
+
+# Ejemplo (parte 2)
+
+```py
 # Set up the circle
-circle_color = (0, 0, 255)  # Blue
+circle_color = (0, 0, 255)  ---
+
+# Blue
 circle_radius = 50
 circle_pos = (win_width // 2, win_height // 2)
 
+```
+
+---
+
+# Ejemplo (parte 3)
+
+```py
 # Game loop
 running = True
 while running:
-    # Handle events
+    ---
+
+# Handle events
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Draw the circle
-    win.fill((255, 255, 255))  # Fill the window with white
+# Draw the circle
+    win.fill((255, 255, 255))  ---
+
+# Fill the window with white
     pygame.draw.circle(win, circle_color, circle_pos, circle_radius)
 
     # Update the display
@@ -60,7 +101,9 @@ pygame.quit()
 
 ```
 
-## Pelota que se mueve
+---
+
+# Pelota que se mueve
 
 ```py
 import pygame

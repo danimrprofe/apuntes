@@ -1,18 +1,36 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Android
+
+---
 
 **Android** es un sistema operativo móvil desarrollado por Google y la **Open Handset Alliance**. Es el más extendido actualmente y está integrado en la mayoría de los teléfonos (Samsung, LG, Sony, Huawei, ...).
 
 ![imagen](media/image2.png)
 
+---
+
 Es un sistema operativo cuya filosofía parte de ser un entorno abierto para que cualquier programador y fabricante pueda modificarlo a su gusto para posteriormente distribuirlo.
 
 ![imagen](media/image3.png)
+
+---
 
 ## Store
 
 La tienda de apps de Android es llamada Play Store o Google Play. En principio no se aconseja instalar apps que no se descarguen de ahí, pero se puede hacer a través de otros programas.
 
 ![imagen](media/image4.png)
+
+---
 
 ## Versiones
 
@@ -44,11 +62,15 @@ Desde abril de 2009, las versiones de Android han sido desarrolladas bajo un nom
 | 11.0    | R                  | 09/06/2020  |
 | 12.0    | S                  | 08/09/2020  |
 
+---
+
 ## Última versión estable
 
 **Android 12** es la actual última versión para Android, a falta de que la beta de Android 13 siga evolucionando hasta alcanzar la madurez y ser lanzada oficialmente.
 
 ![imagen](media/image6.gif)
+
+---
 
 ## Capa de personalización
 
@@ -56,8 +78,11 @@ Cada fabricante tiene una visión de Android diferente y, basándose en ella, de
 
 Una capa de personalización es un componente de software que proporciona una experiencia de usuario personalizada al personalizar la presentación del contenido al usuario.
 
+---
+
 ![imagen](media/image7.png)
 
+---
 Los principales son:
 
 ![imagen](media/image8.png)
@@ -90,17 +115,25 @@ Google One es un plan de suscripción (de pago)  que te proporciona más espacio
 
 Cuando te pasas a Google One, el almacenamiento aumenta a 100 GB o más dependiendo del plan que elijas. A cambio, se te cobra una tarifa mensual en función de la opción que elijas.
 
+---
+
 ## Compartir Google One
 
 Puedes compartir Google One con hasta cinco familiares sin coste adicional (es decir, seis en total si te incluyes).
 
 Los miembros de tu familia comparten el espacio de almacenamiento de tu plan de Google One, pero no pueden ver lo que almacenas si no lo compartes con ellos desde Google Drive, Gmail o Google Fotos.
 
+---
+
 ## Google Workspace
 
 ![imagen](media/image12.png)
 
-Google Workspace for Education es un conjunto de herramientas y servicios de Google ideados para centros educativos tradicionales y otras instituciones que imparten educación en casa. Está disponible para todas las instituciones educativas que cumplan los requisitos.
+Google Workspace for Education es un conjunto de herramientas y servicios de Google ideados para centros educativos tradicionales y otras instituciones que imparten educación en casa.
+
+Está disponible para todas las instituciones educativas que cumplan los requisitos.
+
+---
 
 Google Workspace for Education Fundamentals es gratis para las instituciones educativas que cumplan los requisitos.
 

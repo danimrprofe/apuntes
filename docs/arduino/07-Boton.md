@@ -1,10 +1,16 @@
 ---
-title: "LED con botón"
-subtitle: "Arduino"
-date: "07/03/2023"
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
 ---
 
 # Boton
+
+---
 
 ## Resumen
 
@@ -12,6 +18,8 @@ En esta lección, aprenderemos a utilizar los botones con entradas digitales par
 
 - Al presionar el primer botón se encenderá el LED
 - Al pulsar el otro botón se apagará el LED.
+
+---
 
 ## Componentes
 
@@ -26,25 +34,36 @@ Antes de comenzar necesitaremos los siguientes componentes:
 | 2        | interruptores             |
 | 7        | cables jumper             |
 
+---
+
 ### Pulsadores
 
 Los interruptores son componentes muy simples. Cuando pulse un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro conexiones**, que pueden ser un poco confusas.
 
 ---
 
+En realidad, hay realmente dos conexiones eléctricas.
+- Los pines B y C están siempre conectados entre sí, al igual que A y D.
+- Al pulsar el botón, se conectan los 4.
+- En realidad dos de los pines no los necesitamos
+
 ![imagen](media/image67.jpeg)
 
 ---
 
-En realidad, hay realmente dos conexiones eléctricas. Dentro del paquete de interruptor, pins B y C se conectan entre sí, como son A y D.
-
 ## Esquema de conexión
 
-![imagen](media/image68.jpeg)
+---
+
+![bg contain](media/image68.jpeg)
+
+---
 
 ## Diagrama de cableado
 
 ![imagen](media/image69.jpeg)
+
+---
 
 ## Las conexiones que vamos a tener que realizar son las siguientes:
 
@@ -56,6 +75,8 @@ Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen 
 
 Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas.
 Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
+
+---
 
 ## Explicación del código
 
@@ -83,9 +104,12 @@ Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el bot
 
 ---
 
+# Función Loop
 En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
 
 Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces  **digitalWrite** pone el valor HIGH el PIN al que tenemos conectado el LED, y este se enciende.
+
+---
 
 ## Código completo
 

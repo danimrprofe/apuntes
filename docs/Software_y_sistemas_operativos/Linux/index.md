@@ -1,4 +1,16 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Linux
+
+---
 
 Un sistema operativo (como Windows)
 Libre
@@ -7,9 +19,13 @@ Código de programación abierto
 Gratuito
 No hay que pagar nada por el
 
+---
+
 ![imagen](2019-06-28-08-44-14.png)
 
-FSF y proyecto GNU
+---
+
+# FSF y proyecto GNU
 
 Iniciado por Richard Stallman (1984)
 FSF (free software foundation)
@@ -18,6 +34,8 @@ Copiar, modificar y distribuir software
 Entre otros, un SO
 GNU
 SO libre y gratuito
+
+---
 
 ![imagen](2019-06-28-08-44-31.png)
 
@@ -41,15 +59,21 @@ Los entornos gráficos como GNOME y KDE proporcionan una interfaz gráfica para 
 
 ![imagen](2019-06-28-08-45-15.png)
 
+---
+
 ## Sistemas Linux
 
 Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos son usados por empresas, asociaciones y colectivos de personas. El núcleo (Kernel) es la base del sistema operativo y a partir de él se desarrollan diferentes versiones.
 
 Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesidades de los usuarios.
 
+---
+
 ![imagen](2019-06-28-08-45-37.png)
 
 ![imagen](2019-06-28-08-45-41.png)
+
+---
 
 ##  Distribuciones Linux
 
@@ -63,6 +87,8 @@ Crean una distribución y le ponen un nombre
 
 https://distrowatch.com/
 
+---
+
 ##  Distribuciones CCAA
 
 A las CCAA les interesa Linux
@@ -74,7 +100,11 @@ Ofimática, facturación, etc
 Crea una distribución propia
 Linex,guadalinex,lliurex,max,linkat,etc
 
+---
+
 ![imagen](2019-06-28-08-46-25.png)
+
+---
 
 ##  Distribuciones CCAA más importantes
 
@@ -86,6 +116,8 @@ Linex,guadalinex,lliurex,max,linkat,etc
 - Linkat (Generalitat de Catalunya): Suse linux + GNOME
 
 Lista completa de distribuciones CCAA
+
+---
 
 ## Ubuntu
 
@@ -99,11 +131,15 @@ Instalado salas de informática
 Gestor de arranque
 Versión que utiliza consellería en los colegios y en los IES
 
+---
+
 ## Arranque DUAL
 
 El arranque dual es una característica que permite a un usuario iniciar un sistema operativo (OS) desde dos dispositivos de almacenamiento diferentes. Esto significa que un usuario puede elegir entre dos sistemas operativos diferentes al iniciar una computadora; por ejemplo, un usuario puede iniciar una computadora con Windows u otro sistema operativo, como Linux.
 
 El sistema operativo seleccionado se cargará **automáticamente** y se ejecutará.
+
+---
 
 ## Instalación de Linux
 

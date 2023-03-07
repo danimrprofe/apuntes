@@ -1,39 +1,29 @@
-<<<<<<< HEAD
-# Creación de videojuegos
-=======
+
 # Unity
->>>>>>> 62d44e0a967b10c486a8a942650b145d5c6b3bef
+
+## 1. Introducción
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
 ![logo de unity](img/2022-10-13-00-34-17.png)
 
-<<<<<<< HEAD
-Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
-
-### Posibilidades de Unity
-
-En este proyecto aprenderemos a realizar lo siguiente:
-=======
-## 01. Unity
-
 Con este proyecto aprendremos a:
->>>>>>> 62d44e0a967b10c486a8a942650b145d5c6b3bef
 
 - Crear ``objetos`` de sprite 2D y colocarlos en escena
 - Programar ``scripts`` que, asignados a los objetos, controlen su comportamiento
 - Utilizar ``controles`` de teclado para mover los objetos
-<<<<<<< HEAD
-- Asignar ``componentes`` rigidbody para agregar respuesta a físicas en nuestros ``sprites``
-=======
 - Asignar `componentes` como los ``rigidbody`` para agregar respuesta a físicas en nuestros sprites
->>>>>>> 62d44e0a967b10c486a8a942650b145d5c6b3bef
 - Agregar ``colliders`` a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.
 
-## 02. Instalación
+## 2. Instalación y configuración
 
-<<<<<<< HEAD
-### Unity hub
+Para instalar necesitaremos seguir los siguientes pasos:
+
+1. Descargar ``unity hub`` desde la página oficial: https://unity.com/download
+2. Crear un ``usuario`` de unity
+3. Instalar el ``editor de unity``
+
+### Unity Hub
 
 En primer lugar nos descargaremos el ``Unity hub``, una aplicación desde la que podremos gestionar las instalaciones y actualizaciones de todos los programas relacionados con Unity. También se nos mostrarán los proyectos que tenemos creados.
 
@@ -43,28 +33,11 @@ En primer lugar nos descargaremos el ``Unity hub``, una aplicación desde la que
 
 Para gestionar nuestras instalaciones, necesitaremos crear una cuenta de usuario de ``Unity``, que deberemos crear para poder iniciar sesión y trabajar en nuestros proyectos.
 
-### Editor de unity
+### Editor de Unity
 
 Posteriormente, instalaremos el ``editor de unity``, que nos permitirá crear nuestros juegos.
 
-## 03. Crear un proyecto
-
-Vamos a seleccionar lo importante es el template ``2d core`` que básicamente vamos a hacer el juego en 2d.
-
-![imagen](media/image1.png)
-
-El proyecto el nombre pues le ponéis el que queráis, seleccionar pues una localización y cuando lo tenga listo pues le das a create.
-
-### Cambiar el layout
-
-=======
-Para instalar necesitaremos seguir los siguientes pasos:
-
-1. Descargar ``unity hub`` desde la página oficial: https://unity.com/download
-2. Crear un ``usuario`` de unity
-3. Instalar el ``editor de unity``
-
-## 03. Crear un proyecto
+## 3. Crear un proyecto
 
 ### Abrimos unity
 
@@ -74,7 +47,7 @@ Ahora mismo tenemos instalados dos programas: el Hub, y el Unity editor en sí (
 
 ### Carga de unity
 
-Se nos abre la pantalla de carga de unity.
+Se nos abre la pantalla de carga de ``Unity``.
 
 ![](2023-03-02-12-50-21.png)
 
@@ -112,10 +85,9 @@ Vamos a cambiar la ``resolución`` por la típica que se utiliza en pantallas qu
 
 Podemos personalizar también la disposición de las ventanas en nuestro editor. Elegiremos la disposición ``2 by 3``.
 
->>>>>>> 62d44e0a967b10c486a8a942650b145d5c6b3bef
 ![imagen](media/image2.png)
 
-## 04. Crear pelota
+## 4. Crear pelota
 
 Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
 
@@ -733,27 +705,14 @@ Cambiamos el ``onclick`` para que llame a las funciones correspondientes. Elegim
 
 ![](img/2023-02-22-18-36-27.png)
 
-<<<<<<< HEAD
 ### Modificación de build settings
 
-Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto.
+Los ``Build Settings`` permiten a los desarrolladores configurar y compilar proyectos de Unity para distintas plataformas de destino. Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
 
 Para agregar escenas, sigue estos pasos:
 
 1. Ve al menú ``File`` (Archivo) y selecciona ``Build Settings`` (Configuración de compilación).
-=======
-Repetimos la misma operación pero para el botón PlayerVSIA.
-
-## Modificación de build settings
-
-Los ``Build Settings`` permiten a los desarrolladores configurar y compilar proyectos de Unity para distintas plataformas de destino.
-
-Tenemos que agregar las escenas que formarán parte en el juego en el orden correcto:
->>>>>>> 62d44e0a967b10c486a8a942650b145d5c6b3bef
-
-![](img/2023-02-22-18-38-01.png)
-
-2. En la ventana Build Settings, verás una lista de escenas. En la parte inferior deberemos colocar las escenas que van a formar parte de nuestra ``build``.
+2. En la ventana ``Build Settings``, verás una lista de escenas. En la parte inferior deberemos colocar las escenas que van a formar parte de nuestra ``build``.
 
 ![](img/2023-02-22-18-38-41.png)
 

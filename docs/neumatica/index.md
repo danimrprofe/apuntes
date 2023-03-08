@@ -16,17 +16,36 @@ marp: true
 
 L’aire atmosfèric és un element de la natura que es pot fer servir com a agent de transport d’energia en els processos amb aplicacions industrials pneumàtiques, ja que aquest gas no és inflamable i es pot comprimir bé. L’inconvenient més significatiu que té és la presencia de vapor d’aigua que condensa en ser comprimit i que obliga sempre a preveure la seva extracció.
 
-Com tots els gasos, l’aire es pot comprimir notablement a través d’una acció mecànica exterior que el pot fer agafar una pressió determinada.
+---
+
+Com tots els gasos, l’aire es pot comprimir notablement a través d’una acció mecànica exterior que el pot fer agafar una ``pressió`` determinada.
 
 ---
 
-1.2. Magnituds i unitats
+# 1.2. Magnituds i unitats
 
 ---
 
 # Pressió
 
-La pressió de l'aire comprimit es mesura en bar (abreviatura de barra), on 1 bar equival a 100.000 pascals (Pa). Altres unitats comunes inclouen lliures per polzada quadrada (psi) i kilopascals (kPa).
+La pressió de l'aire comprimit es mesura en ``bar`` (abreviatura de barra), on 1 bar equival a 100.000 pascals (Pa).
+Altres unitats comunes inclouen lliures per polzada quadrada (psi) i kilopascals (kPa).
+
+---
+
+![bg contain](img/2023-03-08-11-35-45.png)
+
+---
+
+![bg contain](img/2023-03-08-11-36-56.png)
+
+---
+
+![bg contain](img/2023-03-08-11-38-41.png)
+
+---
+
+![bg contain](img/2023-03-08-11-40-28.png)
 
 ---
 
@@ -49,6 +68,14 @@ El grup compressor és un conjunt de components que treballen junts per comprimi
 # 3.1. El compressor:
 
 El compressor és el cor del grup compressor i és lencarregat de comprimir laire. Hi ha diversos tipus de compressors, com els de pistó, els de cargol i els de paletes, cadascun amb els seus propis avantatges i desavantatges.
+
+---
+
+![bg contain](img/2023-03-08-11-42-26.png)
+
+---
+
+![bg contain](img/2023-03-08-11-45-41.png)
 
 ---
 
@@ -78,29 +105,29 @@ La unitat de manteniment és un conjunt de components que sutilitza per mantenir
 
 ## 4. Canonades
 
----
-
-## 5. Actuadors pneumàtics
+![bg contain](img/2023-03-08-11-45-41.png)
 
 ---
 
-## Motors
-
-5.1. Motors
-5.2 . Cilindres
-5.3. Aplicacions deis actuadors pneumàtics
+## Actuadors
 
 ---
 
-## 6. Elements de distribució o vàlvules
+# Cilindres
 
-Pel control dels actuadors pneumàtics, com els cilindres, és necessari disposar d’elements de comandament com són les vàlvules.
+![](img/2023-03-08-11-51-54.png)
 
-Les vàlvules distribuïdores són les que envien l’aire comprimit a una o altra part de la instal·lacióperquè es faci l’avanç i el retrocés del cilindres pneumàtics en el moment desitjat. També hi ha altres tipus de vàlvules, com són les vàlvules de regulació, de bloqueig, de cabal, etc.
+---
 
-Representació i nomenclatura de les vàlvules
+## 6. Vàlvules
 
-S'utilitzen noms i símbols normalitzats per normes ISO i UNE.
+Pel control dels actuadors pneumàtics, com els cilindres, és necessari disposar d’elements de comandament com són les ``vàlvules``.
+
+![](img/2023-03-08-11-54-24.png)
+
+---
+
+Les vàlvules distribuïdores són les que envien l’aire comprimit a una o altra part de la instal·lacióperquè es faci l’avanç i el retrocés del cilindres pneumàtics en el moment desitjat.
 
 ---
 
@@ -116,20 +143,6 @@ Per representar les vàlvules es fan servir rectangles per les posicions i fletx
 
 ![](img/2023-03-08-08-07-53.png)
 
-En la posició en que està ara la vàlvula, l'aire que arriba de 1 surt cap a l'escapament E, i l'aire que entra per P surt per 2. Quan la vàlvula canviï de posició (i passi a estar actiu el quadrat de l'esquerra), l'aire que entri per P sortirà per 1 i l'aire que arribi de 2 serà el que surti per l'escapament E.
-
-6.1. La válvula 2/2
-6.2. La válvula 3/2
-6.3. La válvula 5/2
-
----
-
-## 7. Altres vàlvules
-
----
-
-## 8. Exemples de circuits
-
 ---
 
 ## 9. Hidràulica
@@ -137,17 +150,22 @@ En la posició en que està ara la vàlvula, l'aire que arriba de 1 surt cap a l
 ---
 
 ### 1. Els líquids no es poden comprimir
-Els sistemes hidràulics són similars als sistemes pneumàtics que hem estudiat a les miniunitats anteriors. Els dos utilitzen els mateixos tipus de components: cilindres i motors rotatius com ara actuadors, canonades i vàlvules que controlen el circuit, i compressors o bombes que transmeten energia als fluids.
+
+Els sistemes hidràulics són similars als sistemes pneumàtics. Però també tenen importants diferències.
 
 ---
 
-Però també tenen importants diferències. La principal és que mentre que els sistemes pneumàtics utilitzen un gas (aire comprimit) per transmetre moviment i força, els sistemes hidràulics utilitzen un líquid, l'oli hidràulic, que és un tipus d'oli mineral (olis extrets del petroli).
+La principal és que mentre que els sistemes ``pneumàtics`` utilitzen un ``gas`` (aire comprimit) per transmetre moviment i força, els sistemes ``hidràulics`` utilitzen un ``líquid``, l'oli hidràulic, que és un tipus d'oli mineral (olis extrets del petroli).
+
+Els dos utilitzen els ``mateixos tipus de components``: cilindres i motors rotatius com ara actuadors, canonades i vàlvules que controlen el circuit, i compressors o bombes que transmeten energia als fluids.
 
 ---
 
-Els líquids no són compressibles: si sotmetem a pressió un líquid tancat en un recipient, aquest no es comprimirà, cosa que sí passarà amb els gasos, com l'aire. Com veurem a les pàgines següents, això confereix molts avantatges als sistemes hidràulics en les seves aplicacions tecnològiques... I també algun desavantatge.
+# Diferència gas i líquid
 
-Els líquids, com l'aigua o l'oli, no es poden comprimir.
+Els líquids no són compressibles: si sotmetem a pressió un líquid tancat en un recipient, aquest no es comprimirà, cosa que sí passarà amb els gasos, com l'aire.
+
+Els líquids, com l'``aigua`` o l'``oli``, no es poden comprimir.
 
 ---
 
@@ -171,29 +189,48 @@ En fer una petita força al cilindre petit (a l'animació, representada pel pes 
 
 ### 4. Els sistemes hidràulics poden generar forces enormes
 
-Aplicant el fenomen que hem vist a la pàgina anterior, els sistemes hidràulics poden generar una força enorme. Aquesta característica s'utilitza en tot tipus de màquines que requereixen gran potència, com excavadores, tractors, maquinària de la construcció, camions, grues, etc. En aquestes màquines, el cilindre de petit diàmetre (veure pàgina anterior) se substitueix per una bomba impulsada per un motor de combustió o un motor elèctric.
+Els sistemes hidràulics poden generar una força enorme. Aquesta característica s'utilitza en tot tipus de màquines que requereixen gran potència, com excavadores, tractors, maquinària de la construcció, camions, grues, etc.
+
+En aquestes màquines, el ``cilindre`` de petit diàmetre se substitueix per una ``bomba`` impulsada per un ``motor`` de combustió o un motor elèctric.
 
 ---
+
+# Excavadora
 
 La ``pala`` d'aquesta excavadora utilitza un sistema hidràulic que és capaç de generar una força enorme.
 En lloc d'utilitzar dos cilindres (un de petit i un de gran) per multiplicar la força, en aquesta màquina el cilindre petit se substitueix per una bomba hidràulica accionada per un motor.
 
 ---
 
-### 5. Els cilindres hidràulics poden aturar-se en qualsevol punt del seu recorregut
+![bg contain](img/2023-03-08-12-12-39.png)
 
-Les imatges corresponen a dues grues, la funció de les quals és aixecar càrregues pesades de forma segura. Això és possible gràcies a l'ús de cilindres hidràulics, que poden aturar-se a qualsevol punt del recorregut, ja que l'oli que hi ha al seu interior no és compressible. Una grua de cilindres pneumàtics no serial segura ja que l'aire pot comprimir-se, per la qual cosa els cilindres es mourien bruscament en agafar o deixar una càrrega.
+---
 
-Els cilindres hidràulics d'aquesta grua poden aixecar molt de pes i aturar-se en qualsevol altura.
-El braç d'aquesta grua funciona gràcies a diversos cilindres hidràulics.
+### Els cilindres hidràulics poden aturar-se en qualsevol punt del seu recorregut
+
+Les imatges corresponen a dues grues, la funció de les quals és aixecar càrregues pesades de forma segura. Això és possible gràcies a l'ús de ``cilindres hidràulics``, que poden aturar-se a ``qualsevol punt` del recorregut, ja que l'oli que hi ha al seu interior no és compressible.
+
+---
+
+![w:700px](img/2023-03-08-12-10-56.png)
+
+Els cilindres hidràulics d'aquesta grua poden aixecar molt de ``pes`` i aturar-se en qualsevol ``altura``. El braç d'aquesta grua funciona gràcies a diversos cilindres hidràulics.
+
+---
+
+Una ``grua de cilindres pneumàtics`` no serial segura ja que l'aire pot comprimir-se, per la qual cosa els cilindres es mourien bruscament en agafar o deixar una càrrega.
 
 ---
 
 ### 6. Els actuadors hidràulics poden executar moviments de gran precisió
 
-Els actuadors hidràulics (cilindres i motors rotatius) es poden moure amb precisió mil·limètrica, aturar-se en qualsevol punt del seu recorregut i exercir o suportar força en una posició estàtica. Això els fa molt útils en el disseny de tot tipus de màquines industrials, com els braços robòtics que apareixen en aquesta pàgina.
+Els actuadors hidràulics (cilindres i motors rotatius) es poden moure amb precisió mil·limètrica, aturar-se en qualsevol punt del seu recorregut i exercir o suportar força en una posició estàtica.
 
-Molts robots industrials es mouen utilitzant actuadors hidràulics (cilindres i motors rotatius).
+---
+
+Això els fa molt útils en el disseny de tot tipus de màquines industrials, com els ``braços robòtics`` que apareixen en aquesta pàgina.
+
+![](img/2023-03-08-12-09-24.png)
 
 Els robots utilitzats en la fabricació en cadena de cotxes han de moure's amb gran precisió, per aquesta raó la majoria d'ells són hidràulics.
 
@@ -201,32 +238,40 @@ Els robots utilitzats en la fabricació en cadena de cotxes han de moure's amb g
 
 ### 7. Funcionament dels sistemes hidràulics accionats per bomba
 
-Alguns sistemes hidràulics funcionen gràcies a la força exercida per una persona (els frens dels automòbils, els gats hidràulics que utilitzen els mecànics per aixecar cotxes als tallers, etc.), tot i que la gran majoria estan accionats per una bomba connectada a un motor. En màquines industrials, com les premses, s'utilitza un motor elèctric i en vehicles pesants, com les excavadores o les grues, és el mateix motor de combustió del vehicle el que impulsa la bomba. Un dels circuits accionats per bomba més senzill és el que hi ha als camions amb bolquet, com el que pots veure en aquesta pàgina.
+Alguns sistemes hidràulics funcionen gràcies a la força exercida per una persona (els frens dels automòbils, els ``gats hidràulics`` que utilitzen els mecànics per aixecar cotxes als tallers, etc.), tot i que la gran majoria estan accionats per una bomba connectada a un motor.
 
-Cilindre
-hidràulic
+![](img/2023-03-08-12-04-40.png)
 
-Detall del cilindre que aixeca el bolquet d'un camió. És un cilindre telescòpic, perquè ocupi poc espai quan està en repòs.
+---
 
-En aquesta animació pots veure l'estructura d'un sistema hidràulic impulsat per bomba. Una bomba hidràulica (una bomba d'engranatges) impulsa l'oli que prové d'un dipòsit. L'oli s'envia als actuadors, en el cas de l'exemple de sota és un cilindre. Una vàlvula distribuïdora controla el moviment del cilindre fent que l'oli circuli en un sentit o en un altre.
+En màquines industrials, com les ``premses hidràuliques``, s'utilitza un motor elèctric i en vehicles pesants, com les excavadores o les grues, és el mateix motor de combustió del vehicle el que impulsa la bomba. Un dels circuits accionats per bomba més senzill és el que hi ha als camions amb bolquet, com el que pots veure en aquesta pàgina.
 
-Per pujar el bolquet cal empènyer la palanca cap endavant. L'oli entra al cilindre per la part inferior i l'èmbol puja, aixecant el bolquet. En arribar al final, s'ha de posar la palanca al centre, posició que talla el flux d'oli al circuit de treball
-de
-l'oli
-i fa que la vàlvula de seguretat permeti la
-la circulació pel circuit principal.
+---
+
+![](img/2023-03-08-12-05-17.png)
+
+---
+
+Detall del cilindre que aixeca el ``bolquet`` d'un camió. És un cilindre telescòpic, perquè ocupi poc espai quan està en repòs.
+
+![w:500px](img/2023-03-08-12-06-05.png)
+
+---
+
+Una ``bomba hidràulica`` (una bomba d'engranatges) impulsa l'oli que prové d'un dipòsit. L'oli s'envia als actuadors, en el cas de l'exemple de sota és un cilindre. Una vàlvula distribuïdora controla el moviment del cilindre fent que l'oli circuli en un sentit o en un altre.
+
+![](img/2023-03-08-12-07-44.png)
 
 ---
 
 ### 8. Inconvenients de la hidràulica respecte de la pneumàtica
 
-El principal inconvenient dels sistemes hidràulics respecte dels pneumàtics és que són circuits tancats.
+El principal inconvenient dels sistemes hidràulics respecte dels pneumàtics és que són circuits ``tancats``.
 
 L'oli no es pot escapar del circuit (sí, però, l'aire comprimit), cosa que provoca que els seus components siguin més difícils i cars de construir i, tinguin un manteniment més complex.
 
 ---
 
-Moltes de les aplicacions hidràuliques són de gran potència, com aral l'excavadora de la foto. Com que ha de suportar majors pressions internes i esforços externs, els seus components han de ser molt més reforçats i per tant més cars, encara que això no és tant un desavantatge, sinó una conseqüència del tipus de tasca per a la qual estan dissenyats.
+Moltes de les aplicacions hidràuliques són de gran potència, com aral l'excavadora. Com que ha de suportar majors pressions internes i esforços externs, els seus components han de ser molt més reforçats i per tant més cars, encara que això no és tant un desavantatge, sinó una conseqüència del tipus de tasca per a la qual estan dissenyats.
 
-Fotografia d'un cilindre hidràulic. Els components hidràulics són més cars i requereixen un manteniment més complex que els que funcionen amb aire comprimit.
-Els sistemes hidràulics de gran potència, com aquesta excavadora, s'han de construir de forma molt robusta perquè puguin resistir esforços enormes.
+![](img/2023-03-08-12-03-43.png)

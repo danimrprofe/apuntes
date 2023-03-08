@@ -1,10 +1,27 @@
-# LED tira
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
+# Tira de LEDs
+## Arduino
+
+---
 
 ## Introducción
 
 Los LEDs se están volviendo cada vez más populares como un medio para iluminar un espacio. Uno de los tipos de LEDs más nuevos y populares es el WS2812B. Estos LEDs ofrecen una serie de ventajas sobre los LEDs tradicionales, como la capacidad de cambiar de color y la capacidad de crear una gran variedad de efectos de iluminación.
 
+---
+
 El **WS2812B** es un tipo de LED direccionable. Esto significa que cada LED individual se puede controlar de forma **independiente**. Esto le da la capacidad de crear algunos efectos de iluminación realmente geniales. Por ejemplo, puede crear un espectáculo de luces en el que cada LED sea de un color diferente y todos cambien de color al mismo tiempo.
+
+---
 
 ## Alimentación
 
@@ -13,14 +30,19 @@ Las tiras **WS2812B** pueden alimentarse a través de una batería o de una fuen
 - El voltaje necesario para que funcione correctamente la tira de led WS2812B es de 5V.
 - Un led WS2812B necesita un mínimo de 60mA para funcionar.
 
+---
+
 ## La librería FASTLED
 
 **FastLED** es una librería de código abierto para programar tira de LEDs RGB direccionables y controladores. Está diseñada para simplificar el proceso de crear efectos de iluminación complejos y se puede usar con una amplia variedad de hardware.
+
+---
 
 ## Conexión
 
 ![imagen](img/2022-10-12-16-11-20.png)
 
+---
 
 ## Cabecera
 
@@ -45,6 +67,8 @@ void loop() {
 }
 ```
 
+---
+
 ## Parpadeo (blink)
 
 ```c  linenums="1" title="parpadeoLED.ino"
@@ -57,12 +81,15 @@ void loop() {
   delay(200);
 }
 ```
+---
 
 Para apagar la luz:
 
 ```c
 leds[0] = CRGB::Black;
 ```
+
+---
 
 # Iluminar todos los LED de golpe
 
@@ -77,6 +104,8 @@ Arcoiris
 ```c
 fill_rainbow(leds, NUM_LEDS, 0,255 / NUM_LEDS);
 ```
+
+---
 
 ## LED Chaser
 
@@ -122,6 +151,8 @@ void loop() {
   }
 }
 ```
+
+---
 
 ## Serial glow
 

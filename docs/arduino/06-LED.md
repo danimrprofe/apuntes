@@ -8,16 +8,16 @@ _class: invert
 marp: true
 ---
 
----
-
 # LED
+## Arduino
 
 ---
 
 # Resumen
 
-En esta lección, usted aprenderá cómo cambiar el brillo de un LED usando diferentes valores  de resistencia.
-Componente necesario:
+Aprenderemos a cambiar el ``brillo`` de un LED usando diferentes valores  de resistencia.
+
+Componentes necesario:
 ```
 - [x] (1) x Placa``Arduino`` UNO
 - [x] 1 LED rojo de 5 mm

@@ -1,4 +1,16 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Sensor humedad temperatura DHT11
+
+---
 
 ## Resumen
 
@@ -8,6 +20,8 @@ En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura 
 
 Otra vez vamos a usar una **librería** diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.
 
+---
+
 ## Componentes necesarios
 
 |     |                                              |
@@ -16,13 +30,17 @@ Otra vez vamos a usar una **librería** diseñada específicamente para estos se
 | (1) | módulo de humedad y temperatura DHT11        |
 | (3) | F M cables (cables de hembra a macho DuPont) |
 
+---
+
 ### Sensor de temperatura y humedad
 
 Sensor digital de temperatura y humedad **DHT11** es un Sensor compuesto que contiene la salida de la señal digital calibrado de la temperatura y la humedad.
 
 Aplicaciones: HVAC, deshumidificador, ensayos e inspección de equipos, bienes de consumo, control automático, automóvil, registradores de datos, estaciones meteorológicas, electrodomésticos, regulador de humedad, humedad médicos y otros medición y control.
 
-## Parámetros del sensor
+---
+
+# Parámetros del sensor
 
 Humedad relativa:
 
@@ -35,7 +53,9 @@ Humedad relativa:
 - Histéresis: < ± 0.3% RH
 - Estabilidad a largo plazo: < ± 0.5% hr / año en
 
-Temperatura:
+---
+
+# Temperatura
 
 |                      |                 |
 | -------------------- | --------------- |
@@ -44,7 +64,9 @@ Temperatura:
 | Rango:               | 25 ° C ±2° c    |
 | Tiempo de respuesta: | 1 / e (63%) 10S |
 
-Características eléctricas
+---
+
+# Características eléctricas
 
 |                         |                                |
 | ----------------------- | ------------------------------ |
@@ -52,7 +74,9 @@ Características eléctricas
 | Corriente:              | medición 0.3mA (60μA en espera |
 | Periodo de muestreo:    | más de 2 segundos              |
 
-Descripción de pines
+---
+
+# Descripción de pines
 
 |      |                          |
 | ---- | ------------------------ |
@@ -61,21 +85,25 @@ Descripción de pines
 | NC   | pin vacío                |
 | GND  | tierra                   |
 
-### Esquema de conexión
+---
 
-![imagen](media/image94.jpeg)
+![bg contain](media/image94.jpeg)
 
-### Diagrama de cableado
+---
 
-![imagen](media/image95.jpeg)
+![bg contain](media/image95.jpeg)
 
-## Montaje físico
+---
 
-![imagen](media/image96.jpeg)
+![bg contain](media/image96.jpeg)
+
+---
 
 Como se puede ver que sólo necesitamos 3 conexiones al sensor, ya que uno de lo pin no se utiliza.
 
 Las conexiones son: voltaje, tierra y señal de que puede conectarse a cualquier Pin en nuestro UNO.
+
+---
 
 ### Código
 
@@ -115,7 +143,6 @@ static bool medir ( float *temperature, float *humidity )
   return( false );
 }
 
-
 /*
  * Main program loop.
  */
@@ -137,8 +164,12 @@ void loop( )
 }
 ```
 
+---
+
 ## Salida en el monitor
 
-Los valores medidos se mostrarán por pantalla en el monitor serie:
+Los valores medidos se mostrarán por pantalla en el monitor serie.
+
+---
 
 ![imagen](media/image97.jpeg)

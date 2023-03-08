@@ -1,14 +1,26 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
+---
+
 # Sensor luz (fotocelula)
 
-## Resumen
+---
+
+# Resumen
 
 Vamos a aprender como medir la intensidad de la luz utilizando una entrada analógica. Con lo que aprenderemos, podremos posteriormente utilizar el nivel de luz para controlar el apagar un LED o encenderlo cuando no haya luz, por ejemplo.
 
-## Componentes necesarios:
+---
 
 Los componentes que utilizaremos son los siguientes:
-
-![imagen](media/image124.jpeg)
 
 - [x] Elegoo Uno R3
 - [x] Protoboard
@@ -18,29 +30,49 @@ Los componentes que utilizaremos son los siguientes:
 - [x] 1 x fotoresistor o LDR (fotocélula)
 - [x] 16 x M M cables (cables de puente de macho a macho)
 
-## Fotocélula
+---
+
+# Fotocélula
 
 Una fotorresistencia o **LDR** (por sus siglas en inglés “light-dependent resistor”) es un componente electrónico cuya resistencia varía en función de la luz. Se trata de un sensor que actúa como una resistencia variable en función de la luz que capta.
+
+---
+
+![imagen](media/image124.jpeg)
+
+---
 
 Esta tiene una resistencia de cerca de 50 kΩ en cerca de oscuridad y Ω 500 en luz brillante. Para convertir este valor variable de la resistencia en algo que podemos medir en la entrada analógica de la Junta de un R3 de UNO, debe ser convertida en un voltaje.
 
 La forma más sencilla de hacerlo es combinar con una resistencia fija.
 
+---
+
 ![imagen](media/image125.jpeg)
+
+---
 
 La resistencia y fotocélula junto se comportan como una sola. Cuando la luz es muy brillante, entonces la resistencia de la fotocélula es muy baja en comparación con la resistencia de valor fijo, y asíes como si el bote se dio vuelta a máximo.
 
+---
+
 Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la resistencia fija de 1 kΩ y es como si el recipiente estuviera girando hacia GND. Cargue el croquis dado en la siguiente sección y trate de cubrir la fotocélula con el dedo y, a continuación, sosténgalo cerca de una fuente de luz.
 
-## Conexión
+---
+
+# Conexión
 
 ![imagen](img/2022-10-20-22-13-48.png)
 
-## Diagrama de cableado
+---
+
+# Diagrama de cableado
 
 ![imagen](img/2022-10-20-22-14-10.png)
 
-## Código para leer valor de un LDR
+---
+
+# Código para leer valor de un LDR
 
 ```c
 int sensorPin = A0; // select the input pin for LDR
@@ -56,13 +88,17 @@ void loop() {
 }
 ```
 
-## Código encender un LED cuando la luz es baja
+---
+
+# Código encender un LED cuando la luz es baja
 
 Encender LED cuando la luz es baja y viceversa.
 
 - Para ello, deberemos colocar un LED en el pin 13, con su correspondiente resistencia.
 - El umbral es el valor a partir del cual vamos a decidir si encender la bombilla o no
 - En este caso está fijado a **100 Ω**.
+
+---
 
 ```c
 const int LEDPin = 13;
@@ -84,6 +120,8 @@ void loop() {
    }
 }
 ```
+
+---
 
 Lo mismo, pero con un valor de umbral fijado por nosotros.
 

@@ -8,13 +8,13 @@ _class: invert
 marp: true
 ---
 
-## 1. Introducció
+# 1. Introducció
 
 ---
 
-## 1.1. Característiques técnlques de I'aire comprimit
+# 1.1. Característiques técniques de I'aire comprimit
 
-L’aire atmosfèric és un element de la natura que es pot fer servir com a agent de transport d’energia en els processos amb aplicacions industrials pneumàtiques, ja que aquest gas no és inflamable i es pot comprimir bé. L’inconvenient més significatiu que té és la presencia de vapor d’aigua que condensa en ser comprimit i que obliga sempre a preveure la seva extracció.
+L’aire atmosfèric és un element de la natura que es pot fer servir com a agent de ``transport d’energia`` en els processos amb aplicacions industrials pneumàtiques, ja que aquest gas no és inflamable i es pot comprimir bé.
 
 ---
 
@@ -72,6 +72,12 @@ El compressor és el cor del grup compressor i és lencarregat de comprimir lair
 ---
 
 ![bg contain](img/2023-03-08-11-42-26.png)
+
+---
+
+Una utilització pràctica del compressor seria per pintar:
+
+![](img/2023-03-08-16-39-21.png)
 
 ---
 
@@ -218,25 +224,25 @@ Els cilindres hidràulics d'aquesta grua poden aixecar molt de ``pes`` i aturar-
 
 ---
 
-Una ``grua de cilindres pneumàtics`` no serial segura ja que l'aire pot comprimir-se, per la qual cosa els cilindres es mourien bruscament en agafar o deixar una càrrega.
+Una ``grua de cilindres pneumàtics`` no seria segura ja que l'aire pot comprimir-se, per la qual cosa els cilindres es mourien bruscament en agafar o deixar una càrrega.
 
 ---
 
-### 6. Els actuadors hidràulics poden executar moviments de gran precisió
+Els actuadors hidràulics (cilindres i motors rotatius) es poden moure amb ``precisió mil·limètrica``
 
-Els actuadors hidràulics (cilindres i motors rotatius) es poden moure amb precisió mil·limètrica, aturar-se en qualsevol punt del seu recorregut i exercir o suportar força en una posició estàtica.
+També poden ``aturar-se en qualsevol punt`` del seu recorregut i exercir o suportar força en una posició estàtica.
 
 ---
 
-Això els fa molt útils en el disseny de tot tipus de màquines industrials, com els ``braços robòtics`` que apareixen en aquesta pàgina.
+Això els fa molt útils en el disseny de tot tipus de màquines industrials, com els ``braços robòtics``.
 
 ![](img/2023-03-08-12-09-24.png)
 
-Els robots utilitzats en la fabricació en cadena de cotxes han de moure's amb gran precisió, per aquesta raó la majoria d'ells són hidràulics.
+Els robots utilitzats en la ``fabricació en cadena de cotxes`` han de moure's amb gran precisió, per aquesta raó la majoria d'ells són hidràulics.
 
 ---
 
-### 7. Funcionament dels sistemes hidràulics accionats per bomba
+# Gats hidràulics
 
 Alguns sistemes hidràulics funcionen gràcies a la força exercida per una persona (els frens dels automòbils, els ``gats hidràulics`` que utilitzen els mecànics per aixecar cotxes als tallers, etc.), tot i que la gran majoria estan accionats per una bomba connectada a un motor.
 
@@ -244,7 +250,9 @@ Alguns sistemes hidràulics funcionen gràcies a la força exercida per una pers
 
 ---
 
-En màquines industrials, com les ``premses hidràuliques``, s'utilitza un motor elèctric i en vehicles pesants, com les excavadores o les grues, és el mateix motor de combustió del vehicle el que impulsa la bomba. Un dels circuits accionats per bomba més senzill és el que hi ha als camions amb bolquet, com el que pots veure en aquesta pàgina.
+# Premses hidràuliques
+
+En màquines industrials, com les ``premses hidràuliques``, s'utilitza un motor elèctric i en vehicles pesants, com les excavadores o les grues, és el mateix motor de combustió del vehicle el que impulsa la bomba.
 
 ---
 

@@ -80,6 +80,8 @@ Se nos abre la pantalla de carga de ``Unity``.
 
 ![](2023-03-02-12-50-21.png)
 
+---
+
 Finalmente veremos la ``pantalla de proyectos``, desde la que podremos abrir un proyecto existente o crear un proyecto nuevo.
 
 ![](2023-03-02-12-51-44.png)
@@ -200,13 +202,7 @@ Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente p
 
 Ahora importante nombrar las cosas porque vamos a empezara tener muchos ``objetos`` y nos podemos confundir. Además, deberemos poder identificarlos en los ``scripts`` que crearemos para manipularlos.
 
-Para renombrar un objeto hacéis doble clic o con +F2+. La portería derecha vamos a llamarle en ``goal1`` porque va a ser la portería en la que tiene que colar el jugador 1 que va a estar a nuestra izquierda.
-
-Este otro lado de la izquierda pues sería **goal2** adiós con lage mayúscula perfecto porque íbamos a pasar a hacerla línea del centro un poco para que sepamos cuál es el centro todo lo que puedes hacer es duplicar un gol que tenéis vosotros aquí colocado en la posición 0 0 y ahora es reducir un poco
-
-La escala en el eje x podéis reducir la escala también pulsando la +r+ teniendo seleccionado huevas y entonces sancionando vuestro jugador y pulsando deseos pondrá aquí lo que sería el ritmo de escala que es lo que tenéis aquí arriba mismo de movimiento rotación escala y luego otro raro que tienen por aquí que es de escala rotación movimiento todo y vamos para ir a colom seleccionar es el de rotación y
-
-Vamos a reducir esto como es si yo cojo lo quees el eje rojo y lo reduzco o el aumento pues ese aumento se reduce y se ve reflejado en la escala aquí en x vamos a colocarlo a 0 con 2.
+Para renombrar un objeto hacéis doble clic o con ``F2``. La portería derecha vamos a llamarle en ``goal1`` porque va a ser la portería en la que tiene que colar el jugador 1 que va a estar a nuestra izquierda.
 
 ---
 
@@ -224,15 +220,17 @@ Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos mo
 
 ### Crear jugador 1
 
-Ahora ++ctrl+D++ y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.
+Duplicamos el jugador con ``Ctrl``+``D`` y lo llevamos a la posición contraria
 
-Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro ``Unity`` su día dietsprite square y si la colocamos en el 0,0.
+---
 
-Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos en verdad que tengáis en la escena como veis son de tipo sprite renderer por tanto si lo seleccionas podéis modificar aquí el color con lo que tenéis a la derecha.
+# Pelota
 
-Yo lo puedo poner pues este color amarillento a la pelota y sin soluciones cualquier otro por ejemplo podéis solucionar asaco y mirar puedo modificar pues todo el mapa en sí de hecho lo vamos a hacer voy a seleccionar el goal escuela y demás y lo vamos a poner en un tono rojizo
+Ahora lo único que ayudaría sería pues nuestra ``pelota`` del medio así que podemos hacer directamente clic derecho dentro de nuestro ``Unity`` su día dietsprite square y si la colocamos en el 0,0.
 
-Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle un tono verdoso lo mejor paraje verde parece que es como otro no puedo colocar creo que voy a dejar blanco me está gustando más blanco lo voy a dejarblanco los dos pero bueno:
+---
+
+Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos
 
 ---
 
@@ -250,12 +248,14 @@ Al dar a ``play`` los objetos con Rigidbody caerán, pues sobre ellos actúa la 
 
 ![](2023-03-02-13-03-45.png)
 
-Por ejemplo, la __gravedad__ afectará la posición del objeto para simular su efecto, haciendo que caiga hacia abajo en el eje Y.
+---
 
 Los ``rigidbodies`` son componentes que añadiremos a nuestros ``players`` y para nuestra ``pelota`` y se encargarán del tema de física para el movimiento.
 
 - Vamos a seleccionar nuestro ``player`` y nuestra ``bola``.
 - A continuación seleccionamos todos en el componente ``Rigid Body 2D`` y ahí le añadimos.
+
+---
 
 Si dejamos esto así tal cual cuando yo le diera el ``play`` vais a ver qué los elementos caen. Esto es porque tienen física y por tanto, les afecta la gravedad. En nuestro caso esto no lo queremos.
 
@@ -267,7 +267,11 @@ Lo que tenemos que hacer es dentro de nuestro componente ``Rigid Body 2D``  dond
 
 tra cosa que modificando que a lo mejor les ocurre es que la línea del centro se está dibujando por encima de nuestra pelota yeso pues la verdad que no queda muy buena lo mejor sí a lo mejor lo queréis vale pues lo dejáis lo dejáis así si os gusta pues lo dejáis pero si no lo que podéis hacer es se detiene al puesto al bola
 
+---
+
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos11.png)
+
+---
 
 En el elemento ``sprite renderer`` podemos cambiar el orden. Esto sirve para diferenciar la altura a la que se dibujan las diferentes elementos dentro de nuestra pantalla porque ahora mismo son todo imágenes entonces para saber diferenciar cuál está por delante de una de otra utilizamos el orden y léger\. __
 
@@ -290,7 +294,9 @@ De este modo, podremos jugar 2 jugadores en el mismo teclado.
 
 ---
 
-## 12. Controles de juego
+<!-- _class: invert -->
+# <!--fit --> CONTROLES
+---
 
 Los ``controles`` son las teclas que utilizaremos para las diferentes acciones durante el juego.
 
@@ -329,6 +335,9 @@ Lo que faltaría es cambiarle los controles del player1 juega con la flecha de a
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos16.png)
 
 ---
+<!-- _class: invert -->
+# <!--fit --> SCRIPTS
+---
 
 ## 13. Script de programación
 
@@ -336,9 +345,13 @@ Los ``scripts`` son pequeños programas que controlan el comportamiento de los o
 
 Estos se crean utilizando el ``lenguaje C#``  y se guardan en archivos con extensión ``.cs``. Para editarlos se utiliza Visual Studio Code, y se guardan dentro de la carpeta ``assets``.
 
+---
+
 Dentro dela carpeta ``assets`` vamos a hacer clic ``derecho > new folder`` que vamos a llamar ``scripts`` y así tendremos guardados todos nuestros programas en esta carpeta. Para crear un ``script``, hacemos clic derecho en la carpeta y elegimos la opción ``create C# script``.
 
 ![](2023-02-21-09-46-09.png)
+
+---
 
 Ahora vamos a pasar a crear nuestro script vamos aquí a entrar a la carpeta que acabamos de crear y vamos a hacer ``clic derecho > create C# script``. A este script le vamos a llamar ``Player.cs``. Podríamos abrirlo y vamos a utilizar el programa visual studio.
 
@@ -724,12 +737,16 @@ Nos hemos dejado crear referencias en el script ``Goal.cs``. Una vez lo hayamos 
 
 Utilizar la página ``coolors`` para elegir paletas.
 
+![w:300px](img/2023-03-08-18-37-06.png)
+
 ---
 
 ## Inteligencia artificial
 
 Vamos a hacer que un jugador sea controlado por la máquina.
 Crear el script ``IA.cs`` y la completamos.
+
+---
 
 ```c#
 using System.Collections;
@@ -763,6 +780,8 @@ public class IA : MonoBehaviour
 }
 ```
 
+---
+
 Una vez completado el script.
 
 Asignamos el script ``IA.cs`` a ``Player1`` y desamarcamos el checkbox del scripts ``Players`` para que no interfiera.
@@ -773,6 +792,9 @@ Crear variable en ``GameManager`` para decidir si el juego es PvP o PvsPC. Será
 
 Seleccionar el objeto ``GameManager``  y marcar la opción ``IA Game``.
 
+---
+<!-- _class: invert -->
+# <!--fit --> ESCENAS
 ---
 
 ## Crear menú

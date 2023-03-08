@@ -39,7 +39,7 @@ Este LED ``parpadea`` cuando se conecta a un enchufe del USB. Esto es porque las
 
 ## Ejemplos
 
-El IDE de``Arduino`` incluye una gran colección de programas de ejemplo, se puede cargar y usar.  Esto incluye un directorio de ejemplo para hacer el parpadeo del ``LED``.
+El IDE de``Arduino`` incluye una gran colección de programas de ejemplo para utilizar directamente.  Esto incluye un ejemplo para hacer el parpadeo del ``LED``.
 
 ---
 
@@ -81,7 +81,7 @@ En el menú archivo en el IDE de``Arduino``, seleccione `Guardar como.` y guarde
 
 ---
 
-Ha guardado su copia de 'Blink' en su programabook. Esto significa que si alguna vez quiere encontrar otra vez, puede simplemente abrir usando el archivo > opción de menú de Sketchbook.
+Para abrir un archivo que hemos guardado con anterioridad, podemos simplemente ir a ``archivo > abrir`` o también a ``archivo > abrir reciente``.
 
 ---
 
@@ -92,6 +92,10 @@ Ha guardado su copia de 'Blink' en su programabook. Esto significa que si alguna
 ## Conectar placa al PC
 
 Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
+
+---
+
+![](img/2023-03-08-17-04-14.png)
 
 ---
 
@@ -158,7 +162,7 @@ Una vez completada la carga, la placa se debe reiniciar y el led comenzar a parp
 
 ---
 
-## Comentarios
+# Comentarios
 
 - Todo entre /* y */ en la parte superior del **programa** es un Comentario de bloque; explica lo que el **programa** es para.
 - Los comentarios de una sola línea comienzan con // y hasta el final de esa línea se considera un comentario.
@@ -179,7 +183,7 @@ Creamos una variable con un nombre y guardamos el número de pin al que el LED e
 
 ## Función Setup
 
-A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de reset. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un **programa** se ha subido
+A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de ``reset``. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un **programa** se ha subido
 
 ---
 

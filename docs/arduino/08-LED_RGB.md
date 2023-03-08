@@ -1,4 +1,17 @@
+---
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # LED RGB
+## Arduino
+
+---
 
 ## Resumen
 
@@ -34,52 +47,72 @@ En nuestro **programa**, se comienzan con el LED en el estado de color rojo, ent
 | 1        | LED RGB                    |
 | 3        | resistencias de 220 ohmios |
 
+---
+
 ## RGB
 
 A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo, dentro del paquete del LED generalmente, hay realmente tres LEDs, uno rojo, uno verde y sí, uno azul. Controlando el **brillo** de cada uno de los LEDs individuales, podemos mezclar prácticamente cualquier color.
 
 ![imagen](2022-12-05-10-13-27.png)
 
+---
+
 Mezclamos colores del mismo modo que sería mezclar pintura en una paleta - ajustando el brillo de cada uno de los tres LEDs.
 
 Arduino tiene una función **analogWrite** que se puede utilizar con pines marcados con un **~** a la salida de una cantidad variable de energía los LEDs apropiados.
+
+---
+
+# Pines
 
 El LED RGB tiene **cuatro pines**. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
 
 ![imagen](2022-12-05-10-14-02.png)
 
-- Cada pin separado de color verde o azul o de rojo se llama ánodo.
-
-## Color
-
-Los colores los conseguiremos mezclando diferentes cantidades de cada color primario.
+Cada pin separado de color verde o azul o de rojo se llama ánodo.
 
 ---
+
+# Color
+
+Los colores los conseguiremos mezclando diferentes cantidades de cada color primario.
 
 ![imagen](2022-12-05-10-20-15.png)
 
 ---
 
-La mezcla creará la sensación del color elegido. Podemos controlar el brillo de cada una de las partes de rojas, verdes y azules del LED por separado, lo que es posible mezclar cualquier color que nos gusta.
+La mezcla creará la ``sensación`` del color elegido. Podemos controlar el brillo de cada una de las partes de rojas, verdes y azules del LED por separado, lo que es posible mezclar cualquier color.
+
+![](img/2023-03-08-16-57-31.png)
+
+---
 
 ## Ejemplos
 
 - Si establece el brillo de todos los tres LEDs al ser el mismo, el color general de la luz  será blanco.
 - Si apagamos el LED azul, para que sólo los LEDs rojo y verdes son el  mismo brillo, la luz aparecerá amarillo.
 
+---
+
 ## ¿Cómo consigo el color negro?
 
 El color **Negro** no es tanto un color como una ausencia de luz. Por lo tanto, lo más cercano  que podemos llegar a negro con el LED es apagar los tres colores, poniendo sus valores a 0.
 
+---
+
 ## Teoría (PWM)
 
-La **modulación de ancho de pulso (PWM)** es una técnica para el control de potencia. También utilizamos aquí para controlar el brillo de cada uno de los LEDs. El siguiente diagrama muestra que la señal de uno de lo PWM pines en la UNO.
+La forma de dar más o menos potencia a cada color es utilizando una señal del tipo ``PWM``.
+
+La **modulación de ancho de pulso (PWM)** es una técnica para el control de potencia. La utilizamos aquí para controlar el brillo de cada uno de los LEDs.
 
 ---
 
 ![imagen](media/image62.jpeg)
 
 ---
+
+# Ciclo de trabajo
 
 Aproximadamente cada 1/500 de segundo, la salida PWM producirá un pulso. La  duración de este pulso es controlada por la función 'analogWrite'. Así:
 
@@ -95,13 +128,20 @@ Si especificamos un valor en el **analogWrite** que está en algún lugar entre 
 
 Los LED se encenderán y apagarán en esos periodos, pero nosotros percibiremos que el brillo del LED cambia.
 
+---
+
 ## Esquema
 
 El esquema eléctrico que seguiremos es el siguente:
 
+- Cada patilla de un color debe conectarse a una salida digital etiquetada como ``PWM``
+- La patilla común, irá conectada a un pin de tierra, etiquetado como ``GND``
+
 ---
 
-![imagen](media/image63.jpeg)
+![bg contain](media/image63.jpeg)
+
+---
 
 ## Conexión
 

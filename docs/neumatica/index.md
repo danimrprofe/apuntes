@@ -10,7 +10,16 @@ marp: true
 
 ## 1. Introducció
 
-1.1. Característiques técnlques de I'aire comprimit
+---
+
+## 1.1. Característiques técnlques de I'aire comprimit
+
+L’aire atmosfèric és un element de la natura que es pot fer servir com a agent de transport d’energia en els processos amb aplicacions industrials pneumàtiques, ja que aquest gas no és inflamable i es pot comprimir bé. L’inconvenient més significatiu que té és la presencia de vapor d’aigua que condensa en ser comprimit i que obliga sempre a preveure la seva extracció.
+
+Com tots els gasos, l’aire es pot comprimir notablement a través d’una acció mecànica exterior que el pot fer agafar una pressió determinada.
+
+---
+
 1.2. Magnituds i unitats
 
 ---
@@ -84,6 +93,30 @@ La unitat de manteniment és un conjunt de components que sutilitza per mantenir
 ---
 
 ## 6. Elements de distribució o vàlvules
+
+Pel control dels actuadors pneumàtics, com els cilindres, és necessari disposar d’elements de comandament com són les vàlvules.
+
+Les vàlvules distribuïdores són les que envien l’aire comprimit a una o altra part de la instal·lacióperquè es faci l’avanç i el retrocés del cilindres pneumàtics en el moment desitjat. També hi ha altres tipus de vàlvules, com són les vàlvules de regulació, de bloqueig, de cabal, etc.
+
+Representació i nomenclatura de les vàlvules
+
+S'utilitzen noms i símbols normalitzats per normes ISO i UNE.
+
+---
+
+# Nomenclatura
+
+Per donar nom a les vàlvules es fa servir el nombre de vies (sortides i entrades) que té i el nombre de posicions que pot adoptar. Així parlem per exemple d'una vàlvula 4/2, que significa que té 4 vies i dues posicions.
+
+---
+
+# Representació
+
+Per representar les vàlvules es fan servir rectangles per les posicions i fletxes o taps a les vies. Una vàlvula 4/2, es representarà amb dos rectangles i quatre punts d'entrada-sortida d'aire, així:
+
+![](img/2023-03-08-08-07-53.png)
+
+En la posició en que està ara la vàlvula, l'aire que arriba de 1 surt cap a l'escapament E, i l'aire que entra per P surt per 2. Quan la vàlvula canviï de posició (i passi a estar actiu el quadrat de l'esquerra), l'aire que entri per P sortirà per 1 i l'aire que arribi de 2 serà el que surti per l'escapament E.
 
 6.1. La válvula 2/2
 6.2. La válvula 3/2

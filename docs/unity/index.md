@@ -155,11 +155,15 @@ Podemos ``duplicar`` un objeto en lugar de crear uno nuevo. este que tenemos y p
 
 ## 05. Sprites
 
-Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para representar personajes, objetos, entornos o cualquier otra imagen.
+Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para ``representar personajes, objetos, entornos`` o cualquier otra imagen.
 
-En ``Unity``, los sprites se usan para crear gráficos 2D, como personajes, fondos, objetos y cualquier otra imagen que se use en un juego 2D. Estos sprites se pueden importar directamente desde un archivo de imagen o se pueden crear desde cero usando ``Unity``.
+---
 
-Los sprites se almacenan en el formato .PNG y se pueden manipular fácilmente en ``Unity``. Los sprites se pueden mover, girar, escalar y rotar fácilmente con ``Unity``. También se pueden usar para crear animaciones y efectos especiales.
+Estos ``sprites`` se pueden importar directamente desde un archivo de imagen o se pueden crear desde cero usando ``Unity``.
+
+Los ``sprites`` se pueden mover, girar, escalar y rotar fácilmente con ``Unity``. También se pueden usar para crear animaciones y efectos especiales.
+
+---
 
 ![](img/2023-02-07-15-58-21.png)
 
@@ -176,7 +180,11 @@ A partir de un jugador:
 
 Si pulsáis la ``rueda`` del ratón podéis hacer una especie de ``paneo``.
 
-Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este caso lo que vamos a hacer es poner en la posición de y a 0 y aquí vamos a modificar la posición en el eje x en este caso la podemos poner por ejemplo en ocho y más o menos vemos que se queda cerca de lo que sería pero estas paredes no se tienen que ver tienen que estar por la parte de fuera
+---
+
+Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este caso lo que vamos a hacer es poner en la posición de y a 0 y aquí vamos a modificar la posición en el eje x en este caso la podemos poner por ejemplo en ocho y más o menos vemos que se queda cerca de lo que sería pero estas paredes no se tienen que ver tienen que estar por la parte de fuera.
+
+---
 
 Vamos a colocar pues por ejemplo ahí lo quesería pues yo creo que el nueve y medio va bien estas paredes van a ser diferentes a esta nueva entre colisión en el hecho de que no van a hacer que rebote la pelota sino que cuando colisionan con esta pared va a ser como la portería de un jugador o del otro y entonces pues se añadirá un punto cuando colisiones perfecto
 

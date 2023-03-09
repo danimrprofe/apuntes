@@ -95,70 +95,16 @@ A continuación, aparece el siguiente icono en el escritorio
 
 Haga doble clic para entrar en el entorno de desarrollo deseado
 
-![imagen](media/image17.jpeg)
-
----
-
-Directamente puede elegir el paquete de instalación para la instalación y omitir los contenidos abajo y saltar a la siguiente sección. Pero si quieres aprender algunos métodos que no sea el paquete de instalación, por favor lea la sección.
-
----
-
-Descomprime el archivo zip descargado, haga doble clic para abrir el programa y entrar en el entorno de desarrollo deseado
-
-![imagen](media/image18.jpeg)
-
----
-
-![imagen](media/image19.png)
-
----
-
-![imagen](media/image20.jpeg)
+![](img/2023-03-09-08-06-00.png)
 
 ---
 
 ## Conexión de placa``Arduino``
 
-Sin embargo, este método de instalación necesita instalación de **drivers**.
-
 La carpeta de``Arduino`` incluye el propio **programa de``Arduino``** y los **controladores** que permiten que el``Arduino`` se conecte al ordenador mediante un cable USB.
 
-Conecte su cable **USB** en el``Arduino`` y en el USB ordenador. La luz en el LED se enciende y usted puede obtener un mensaje de 'Found New Hardware' de Windows. Ignore este mensaje y cancele cualquier intento que Windows hace para tratar de instalar los controladores automáticamente.
+Conecte su cable **USB** en el``Arduino`` y en el USB ordenador.
+
+![](img/2023-03-09-08-09-16.png)
 
 ---
-
-## Instalación de drivers
-
-El mejor método de instalación de los controladores USB debe hacerse desde el administrador de dispositivos. Esto es accesible de diferentes maneras dependiendo de la versión de Windows. En Windows 7, primero tienes que abrir el Panel de Control, luego seleccione la opción de ver los iconos, y usted debe encontrar el administrador de dispositivos en la lista.
-
-En 'Otros dispositivos', debería ver un icono de 'dispositivo desconocido' con un triangulo amarillo de advertencia junto a él. Se trata de tu``Arduino``.
-
-![imagen](media/image21.png)
-
-Haga clic derecho sobre el dispositivo y seleccione la opción del menú superior (Update Driver Software...). Pedirá a 'Buscar automáticamente software de controlador actualizado' o "Examinar mi PC para el software de controlador". Seleccione la opción Buscar en este ordenador en la ruta del CD , por ejemplo en D:\arduino1.8.0\drivers.
-
-![imagen](media/image22.jpeg)
-
-Haga clic en 'Siguiente' y puede obtener una advertencia de seguridad, si es así, permitir que el software a instalar. Una vez instalado el software, usted recibirá un mensaje de confirmación.
-
-![imagen](media/image23.jpeg)
-
-Los usuarios de Windows pueden omitir las instrucciones de instalación, para sistemas Mac y Linux y saltar a la lección 1.
-
-Usuarios de Mac y Linux pueden seguir leyendo esta sección
-
----
-
-## Instalación de``Arduino`` (Mac OS X)
-
-Descargar y descomprimir el archivo zip, haga doble clic en``Arduino``.app para entrar en el IDE de``Arduino``; el sistema le pedirá que instale la **librería** de tiempo de ejecución de Java si no lo tienes en tu ordenador. Una vez finalizada la instalación se puede ejecutar el IDE de``Arduino``.
-
-![imagen](media/image24.jpeg)
-
----
-
-## Instalación de``Arduino`` (Linux)
-
-Usted tendrá que utilizar el comando de instalación. Si está utilizando el sistema de Ubuntu, se recomienda instalar el IDE de``Arduino`` desde el centro de software de Ubuntu.
-
-![imagen](media/image25.jpeg)

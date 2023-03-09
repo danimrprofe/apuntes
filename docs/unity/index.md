@@ -287,7 +287,7 @@ Para modificarlo, seleccionamos el objeto ``bola`` y en el elemento ``Sprite Ren
 
 Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de nuestros personajes. Vamos a hacerlo con:
 
-- Teclas ++w++ y ++s++ para el ``jugador1`` (izquierda)
+- Teclas ``w`` y ``s`` para el ``jugador1`` (izquierda)
 - Teclas flecha de arriba y hacia abajo para el ``jugador2`` (derecha)
 
 De este modo, podremos jugar 2 jugadores en el mismo teclado.
@@ -308,9 +308,13 @@ Para redefinir los controles, vamos a ir a ``Edit > Project Settings > Input Man
 
 ![input manager](2023-03-02-13-06-37.png)
 
+---
+
 Por ejemplo, para el eje **horizontal**, está asignado a las teclas de flechas o el número 'A' para izquierda y derecha.
 
 ![](2023-03-02-13-08-14.png)
+
+---
 
 Para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flechas de arriba y abajo. Así que si queremos cambiar estos controles, podemos hacerlo en el Input Manager.
 
@@ -320,7 +324,10 @@ Para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flec
 
 ## Controles para segundo jugador
 
-Tenemos que crear el elemento vertical2 que es para nuestro player2. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
+Tenemos que crear el elemento ``vertical2`` que es para nuestro ``player2``. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic
+derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
+
+---
 
 Lo que faltaría es cambiarle los controles del player1 juega con la flecha de arriba y hacia abajo. Nosotros con el jugador 2 jugaremos con la W y S. En negativo ponemos S y en positivo W. Dentro del objeto player, en función de si es el 1 o el 2, seleccionaremos el control oportuno.
 
@@ -633,7 +640,7 @@ public class GameManager : MonoBehaviour
 
     public void Player1Scored()
     {
-        player1Score++;
+        player1Score``;
         player1Text.text = player1Score.ToString();
         CheckVictory();
         ResetPosition();
@@ -641,7 +648,7 @@ public class GameManager : MonoBehaviour
 
     public void Player2Scored()
     {
-        player2Score++;
+        player2Score``;
         player2Text.text = player2Score.ToString();
         CheckVictory();
         ResetPosition();
@@ -683,6 +690,8 @@ Necesitamos marcar la opción ``is Trigger`` del componente ``Box Collider 2D``.
 Creamos un script llamado ``Goal.cs``.  Utilizaremos el método ``OnTriggerEnter2D()`` para detectar colisión entre la pelota y alguna de las porterías.
 
 ``CompareTag`` comprobará si el objeto que colisiona es la bola y, en caso de ser así, según si colisiona con ``Goal1`` o con ``Goal2`` cambiaremos la puntuación correspondiente.
+
+---
 
 ```c#
 using System.Collections;

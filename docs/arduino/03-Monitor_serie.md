@@ -1,4 +1,16 @@
+---
+title: Arduino
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Monitor serie
+
+---
 
 ## Introducción
 
@@ -8,11 +20,15 @@ Incluye un `terminal` de serie con el software llamado  monitor serie. El Monito
 
 El monitor serie nos permite comunicarnos con el ``arduino`` a través de una ventana y recibir datos de él.
 
+---
+
 ## Realizar la conexión
 
 Para abrirlo, simplemente haga clic en el icono ``Serial Monitor``.
 
 ![imagen](media/image33.jpeg)
+
+---
 
 ## Elegir puerto
 
@@ -22,9 +38,13 @@ Consejos: Elegir el mismo puerto ``COM`` que tienes en el administrador de dispo
 
 ![imagen](media/image34.jpeg)
 
+---
+
 Una vez abierto, debería ver algo como esto:
 
 ![imagen](media/image35.jpeg)
+
+---
 
 ### Configuración
 
@@ -32,10 +52,12 @@ El Monitor Serial ha limitado opciones, pero lo suficiente para manejar la mayor
 
 ![imagen](media/image36.jpeg)
 
+---
+
 Por último, puede establecer el terminal desplazamiento automático o no marcando la casilla en la esquina inferior izquierda
 
 ![imagen](media/image37.jpeg)
 
-### Pros
+---
 
 El Monitor Serial es una gran manera rápida y fácil para establecer una conexión en serie con  el``Arduino``.

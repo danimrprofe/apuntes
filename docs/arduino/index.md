@@ -1,9 +1,10 @@
 ---
-title: Arduino
-footer: Daniel Moreno @ IES Ramon Llull | Departament tecnologia
+title: Pygame
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true
 _paginate: false
+_class: invert
 marp: true
 ---
 
@@ -15,7 +16,13 @@ marp: true
 
 ``Arduino`` es una plataforma de ``hardware libre``, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.
 
-Está diseñada para permitir que los usuarios creen proyectos con una programación sencilla, sin necesidad de conocimientos previos de electrónica.
+---
+
+Hardware libre es aquel cuyas especificaciones y diagramas esquemáticos son de acceso público
+
+---
+
+Arduino está diseñado para permitir que los usuarios creen proyectos con una programación sencilla, sin necesidad de conocimientos previos de electrónica.
 
 ---
 

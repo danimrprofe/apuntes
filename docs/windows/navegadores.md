@@ -14,9 +14,7 @@ marp: true
 
 ## Páginas y sitios web
 
-![imagen](media/image1.png)
-
-Una web o página web es en realidad un sitio web (website) formado por varias páginas web enlazadas entre sí.
+Una web o página web es en realidad un sitio web (website) formado por varias páginas enlazadas entre sí.
 
 ---
 
@@ -49,6 +47,8 @@ Internet Explorer (ahora Edge), viene instalado con los sistemas operativos Wind
 
 Cada vez que abramos un navegador como Chrome o Firefox, se abrirá una ventana diferente. Las ventanas son independientes unas de otras. Cada programa se ejecuta en su propia ventana, y se pueden ocultar, mostrar, o cambiar de tamaño.
 
+![](img/2023-03-09-17-09-25.png)
+
 Utilizar diversas ventanas suele ser muy incómodo, sobre todo a la hora de movernos por ellas. Para solucionarlo se utilizan las pestañas o ``Tab``s.
 
 ---
@@ -73,6 +73,8 @@ Para moverse a una pestaña concreta: ``Ctrl`` + 1, ``Ctrl`` +2, etc.
 
 Cuando descargamos un archivo, podemos decir que se abra directamente, o bien guardarlo. En el caso de guardarlo, estará en la carpeta ``Descargas`` del usuario en el que estemos (podemos ir con el explorador)
 
+![](img/2023-03-09-17-11-11.png)
+
 ---
 
 Para acceder a todas las descargas en Google Chrome: ``Ctrl`` + J
@@ -92,6 +94,8 @@ Podemos ampliar el navegador para que la página ocupe toda la pantalla con ``F1
 ## Buscar dentro de la página
 
 En ocasiones nos puede resultar útil buscar una palabra en un documento. Para ello, podemos pulsar ``Ctrl``+F.
+
+![](img/2023-03-09-17-12-52.png)
 
 Para pasar entre todos los resultados encontrados podemos utilizar las ``flechas de dirección``.
 
@@ -207,3 +211,15 @@ Para ello, botón derecho en la pestaña y fijar.
 - Un Documento -> http://doc.new
 - Una Hoja de Cálculo -> http://sheets.new
 - Una Presentación -> http://slides.new
+
+---
+
+# Apariencia google chrome
+
+![](img/2023-03-09-17-14-29.png)
+
+---
+
+Podemos escoger un ``tema`` ya creado, con unos colores, fuentes y fondo determinados.
+
+![](img/2023-03-09-17-15-52.png)

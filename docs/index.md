@@ -2,6 +2,18 @@
 
 Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de la informática durante los años que he dedicado a aprender y dar clase.
 
+## Tecnología e ingeniería
+
+Energías:
+
+- [Carbón](energias/carbon.md)
+- [Petróleo](energias/petroleo.md) y [gas natural](energias/gas-natural.md)
+- [Nuclear](energias/nuclear.md) y [fusion nuclear](fusion-nuclear.md)
+- [Eólica](energias/eolica.md), [hidráulica](energias/hidraulica.md) y [solar](energias/solar.md)
+- [Hidrogeno-verde](energias/hidrogeno-verde.md) > [📺 presentación](energias/pdf/hidrogeno-verde.pdf)
+- [Biomasa](energias/biomasa.md)
+- [Geotérmica](energias/geotermica.md)
+
 ## Diseño gráfico
 
 - [Tinkercad](tinkercad/index.md)

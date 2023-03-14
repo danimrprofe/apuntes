@@ -1,5 +1,5 @@
 ---
-title: Arduino
+title: C.Sistemas mecánicos
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true
@@ -259,8 +259,6 @@ Su funcionamiento consiste en aumentar las ``resistencias`` que se producen en u
 
 La energía cinética que poseen los elementos móviles se transforma en trabajo durante la deceleración, generando ``calor``.
 
-
-
 ---
 
 Para prolongar la duración de los elementos de frenado y hacer que los mecanismos vuelvan a estar rápidamente en condiciones de actuar de forma eficaz, se utilizan ``materiales`` adecuados para revestir las superficies de desgaste de los frenos, como el acero con bronce, latón o acero.
@@ -288,12 +286,9 @@ Las ``zapatas`` son piezas de metal en forma de arco que se ajustan dentro del t
 ---
 Cuando se presiona el pedal de freno, una serie de piezas mecánicas y hidráulicas trabajan juntas para empujar las zapatas contra el tambor, lo que crea la fricción necesaria para detener el vehículo.
 
-
 ![imagen](media/image25.gif)
 
 ---
-
-
 
 ---
 
@@ -471,8 +466,6 @@ Aquesta connexió es fa a través del palier de transmissió de les rodes, que s
 
 ---
 
-
-
 Aquesta transmissió està sotmesa a moviments oscil·latoris de la suspensió i moviments giratoris de la direcció, per la qual cosa ha de ser articulada. La junta homocinètica actua com una mena de ròtula complexa que permet aquests moviments sense que les rodes perdin tracció ni les transmissions es vegin afectades.
 
 ---
@@ -502,8 +495,6 @@ https://www.youtube.com/watch?v=4Syt_01ZRzA
 - ``L'accionament mecànic`` es compon de diversos elements que integren el comandament de l'embragatge, com ara el ``pedal`` d'accionament, el ``cable`` que transmet l'esforç, la palanca de dessembragatge i el ``coixinet`` que desplaça els elements de fricció.
 
 - ``L'accionament hidràulic`` s'utilitza quan es necessita realitzar un major esforç o quan la distància entre el pedal i l'embragatge és molt llarga. Aquest sistema es compon de cilindres emissor i receptor, un dipòsit per a líquid hidràulic i una canonada de canalització.
-
-
 
 ---
 # Coixinets

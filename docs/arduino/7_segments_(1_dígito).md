@@ -1,3 +1,12 @@
+---
+title: 7 segments - 1 dígito
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
 # 7 segments (1 dígito)
 
 ## Resumen
@@ -7,6 +16,8 @@ Un **seven segments** es un dispositivo de visualización formado por siete diod
 Estas lámparas se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.
 
 ![imagen](img/2022-12-05-16-21-35.png)
+
+----
 
 Estas son las combinaciones que podemos hacer para mostrar los distintos números:
 
@@ -58,117 +69,7 @@ vamos a utilizar el registro de desplazamiento **74HC595** para controlar la vis
 
 La siguiente tabla muestra la tabla de correspondencias pantalla de siete segmentos 74HC595 pin
 
-<table id="table2">
-<tr>
-<td rowspan="2">74HC595 pin</td>
-<td colspan="2">Seven  shows  remarkable</td>
-<td></td>
-</tr>
-<tr>
-<td colspan="2" rowspan="2">control pin (stroke)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Q0</td>
-<td>7</td>
-<td>(A)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td colspan="2"></td>
-<td></td>
-</tr>
-<tr>
-<td>Q1</td>
-<td colspan="2">6 (B)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td colspan="2"></td>
-<td></td>
-</tr>
-<tr>
-<td>Q2</td>
-<td colspan="2">4 (C)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Q3</td>
-<td>2</td>
-<td>(D)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Q4</td>
-<td>1</td>
-<td>(E)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Q5</td>
-<td>9</td>
-<td>(F)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td colspan="2"></td>
-<td></td>
-</tr>
-<tr>
-<td>Q6</td>
-<td colspan="2">10 (G)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Q7</td>
-<td>5</td>
-<td>(DP)</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
+---
 
 ## Paso uno: conexión 74HC595
 
@@ -183,11 +84,15 @@ Pin conexión DS, ST_CP y SH_CP:
 - ST_CP (pin 12, perno de pestillo) conectado al pin de tablero UNO R3 3 (línea azul de la figura abajo)
 - SH_CP (pin 11, pin de reloj) conectado al pin de tablero UNO R3 4 (figura debajo de la línea blanca)
 
+---
+
 ## Paso 2: conectar el display de siete segmentos
 
 El display de siete segmentos 3, 8 pin a UNO R3 Junta GND (este ejemplo utiliza el cátodo común, si se utiliza el ánodo común, por favor conecte el 3, 8 pines para tablero UNO R3 + 5V)
 
 Según la tabla anterior, conecte el 74HC595 Q0 ~ Q7 a siete segmentos pantalla pin correspondiente (A ~ G y DP) y luego cada pie en una resistencia de 220 ohmios en serie.
+
+---
 
 ## Código
 
@@ -229,3 +134,5 @@ void loop()
   }
 }
 ```
+
+---

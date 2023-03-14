@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: LED RGB
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

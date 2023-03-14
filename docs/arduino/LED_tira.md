@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: LED (tira)
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

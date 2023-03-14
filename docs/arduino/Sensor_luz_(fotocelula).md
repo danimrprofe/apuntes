@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: Sensor de luz
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

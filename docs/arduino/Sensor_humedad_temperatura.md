@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: Sensor humedad temperatura
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

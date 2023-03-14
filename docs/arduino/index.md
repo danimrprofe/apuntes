@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: Arduino
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true
@@ -29,8 +29,6 @@ Arduino está diseñado para permitir que los usuarios creen proyectos con una p
 ![](2023-03-09-10-39-22.png)
 
 ---
-
-
 
 ## Placa Arduino
 

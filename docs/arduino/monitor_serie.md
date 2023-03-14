@@ -1,5 +1,5 @@
 ---
-title: Arduino
+title: Monitor serie
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

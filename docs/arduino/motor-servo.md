@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: Motor servo
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

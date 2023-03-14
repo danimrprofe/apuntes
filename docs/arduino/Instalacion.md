@@ -1,5 +1,5 @@
 ---
-title: Arduino
+title: Instalación
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true

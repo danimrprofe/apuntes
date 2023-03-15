@@ -13,9 +13,59 @@ marp: true
 ## trabajo con carpetas y documentos
 
 ---
+
+# Unidades de disco
+
+Los archivos se guardan en algún componente físico como un disco duro, un pendrive, etc. Incluso lo que guardamos en una nube, como iCloud, Dropbox, etc.
+
+ ---
+
+# ¿Cómo distinguimos las unidades?
+
+En un ordenador podemos tener muchos dispositivos diferentes y, para saber cual es cada uno, se les pone una ``letra``.
+
+Las letras también nos suelen indicar qué ``tipo de dispositivo`` es.
+
+---
+
+![bg contain](img/2023-03-15-09-32-05.png)
+
+---
+
+![bg contain](img/2023-03-15-09-32-37.png)
+
+---
+
+# Unidades de red
+
+Son unidades de almacenamiento a las que Windows asigna una letra de unidad, pero que no están en nuestro equipo, sino en otro equipo de la red.
+
+Se trata de una carpeta compartida en un ordenador remoto a la que tenemos acceso con derechos de lectura, al menos.
+¿Desde dónde podemos acceder a ellas?
+●	Podemos tener acceso a estas unidades desde cualquier lugar de la red iniciando sesión con nuestro usuario.
+●	Si no tenemos internet en el instituto, estas unidades siguen funcionando, puesto que están en un servidor dentro del centro.
+
+---
+
+# Onedrive
+
+``Onedrive`` és una ``carpeta`` de Windows al disc dur que també es guarda al ``núvol`` de Microsoft.
+
+![w:400px](img/2023-03-15-09-34-21.png)
+
+---
+
+# Onedrive
+
+![](img/2023-03-15-09-34-56.png)
+
+---
+
 # Archivos
 
 Cualquier información que queramos guardar, como una canción o un documento de texto, que se guarda en un ordenador se llama archivo. Cuando se trata de texto también se llaman documentos.
+
+---
 
 Toda información ocupa un espacio, en forma de bits. Esta es pues, la unidad de medida que utilizaremos en informática.
 
@@ -31,24 +81,29 @@ Cualquier cosa que guardemos en el ordenador se guarda en forma de archivo. Pode
 ---
 # Cómo se guarda la información
 
-El espacio en informática se mide en bits (1 o 0).   Una letra, por ejemplo, ocupa 8 bits. La D se guarda como: 01100100 (8 bits)
+El espacio en informática se mide en bits (1 o 0).   Una letra, por ejemplo, ocupa 8 bits.
+
+La ``D`` se guarda como: ``01100100`` (8 bits)
 
 Dani en el ordenador se guardaría:
 
-01100100 01100001 01101110 01101001 (32 bits)
+``01100100 01100001 01101110 01101001 ``(32 bits)
 
 ---
-# Medidas mayores
+# Bytes (B)
 
 Como los archivos contienen muchos bits, se agrupan de 8 en 8 y cada 8 bits se le llama 1 Byte (B mayúscula).
 
 “Informática” ocupa 88 bits, pero es más cómodo decir 11 B (Bytes).
 
+---
+
+# Unidades mayores
+
 De la misma forma:
 
-Cada 1000 bytes (B) forman un Kilobyte (KB)
-
-Cada 1.000 Kilobytes es 1 Megabyte (MB), etc.
+- Cada 1000 bytes (B) forman un ``Kilobyte`` (KB)
+- Cada 1.000 Kilobytes es 1 ``Megabyte`` (MB), etc.
 
 ---
 
@@ -76,21 +131,38 @@ Por ejemplo, un disco de 1 TB contiene 1.000 GB, por lo que podría guardar, por
 
 # Espacio en la nube
 
-En 15 GB que nos ofrece gratuitamente la nube de Google, podría guardar, por ejemplo:
+En ``15 GB`` que nos ofrece gratuitamente la nube de Google, podría guardar, por ejemplo:
 
 - 15 películas de 1 GB
 - 1000 fotos de 15 MB
 
 ---
+
+![bg contain](img/2023-03-15-09-39-05.png)
+
+---
+
+![](img/2023-03-15-09-40-35.png)
+
+---
 # Velocidad de descarga
 
-Hoy en día se trabaja a través de Internet, en la nube, y principalmente subiendo y descargando archivos de la red. El tiempo que tarda en subirse o descargar un archivo depende de:
+El tiempo que tarda en subirse o descargar un archivo depende de:
 
-El tamaño del archivo (KB, MB, GB)
+1. El tamaño del archivo (KB, MB, GB)
 
-La velocidad de la conexión a Internet, tanto nuestra como del receptor. Se mide en KB/o MB/s.<br>
+---
 
-![imagen](media/image5.jpg)
+2. La velocidad de la conexión a Internet, tanto nuestra como del receptor. Se mide en KB/o MB/s.
+
+![](img/2023-03-15-09-42-40.png)
+
+---
+
+# Otros factores
+
+3. Cuantas personas están compartiendo esta conexión
+4. Redes móviles o redes wifi dependen de la cobertura y en qué lugar nos encontremos.
 
 ---
 # Ejemplo
@@ -111,19 +183,34 @@ Tan importante es el tamaño de algo, como la velocidad de transferencia. Cuando
 ![imagen](media/image6.png)
 
 ---
+
+# USB
+
+![](img/2023-03-15-09-46-50.png)
+
+---
+
+![bg contain](img/2023-03-15-09-48-25.png)
+
+---
 # Estructura de carpetas
 
 ---
 # Estructura de árbol
 
-Dentro del mismo disco, los archivos se organizan en diferentes carpetas, según la temática, el año, etc. De este modo es más fácil encontrarlos, moverlos, etc.
+Dentro del mismo disco, los archivos se organizan en diferentes ``carpetas``, según la temática, el año, etc. De este modo es más fácil ``encontrarlos``, moverlos, etc.
 
 ![imagen](media/image8.png)
 
 ---
 # Rutas
 
-Para conocer el lugar en que está almacenado un archivo, necesitamos conocer la ruta hasta él. En la ruta tenemos:
+La ``ruta`` es la dirección que tenemos que seguir para encontrar un archivo o una carpeta.
+Para conocer el ``lugar`` en que está almacenado un archivo, necesitamos conocer la ruta hasta él.
+
+---
+
+En la ruta tenemos:
 
 - La unidad en la que está (C,D, E, etc.)
 - El camino hacia la carpeta
@@ -142,16 +229,8 @@ Las principales carpetas que encontraremos en el disco duro principal son:
 - ``Windows``: archivos del sistema operativo
 
 ---
-# Carpetas importantes
 
-![imagen](media/image10.png)
-
----
-# Actividades
-
-1. Entra en la carpeta archivos de programa, y haz una captura. Indica 3 programas que haya instalados.
-2. Entra en usuarios y adjunta una captura del contenido
-3. Entra en la carpeta de tu usuario y adjunta una captura.
+![bg contain](media/image10.png)
 
 ---
 # Papelera
@@ -160,16 +239,15 @@ La Papelera de reciclaje es un área de almacenamiento donde se guardan archivos
 
 ![imagen](media/image11.png)
 
-Crea un documento llamado “borrar”, y bórralo. Adjunta una captura de lo que hay dentro de la papelera.
-
 ---
 # Borrar y recuperar archivos
 
 Podemos borrar temporal o definitivamente
 
-Supr manda el archivo a la Papelera de reciclaje. Desde ahí lo podemos recuperar.
+- ``Supr`` manda el archivo a la Papelera de reciclaje. Desde ahí lo podemos recuperar.
+- ``Shift`` + ``Supr`` borra el archivo de forma definitiva (no se puede recuperar).
 
-``Shift`` + Supr borra el archivo de forma definitiva (no se puede recuperar).
+NOTA: Aunque borremos un archivo, sigue en nuestro disco duro.
 
 ---
 

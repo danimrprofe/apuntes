@@ -22,8 +22,10 @@ Los archivos comprimidos nos permiten guardar varios archivos en uno solo y adem
 
 Las extensiones de estos archivos son ZIP, RAR, etc.
 
-Los archivos de texto en concreto disminuyen mucho su tamaño cuando los comprimimos.
-También podemos poner una contraseña a nuestro archivo para protegerlo y que otras personas no puedan acceder a él.
+![](img/2023-03-15-09-00-36.png)
+
+Los archivos de texto en concreto disminuyen mucho su tamaño cuando los ``comprimimos``.
+También podemos poner una ``contraseña`` a nuestro archivo para protegerlo y que otras personas no puedan acceder a él.
 
 ---
 

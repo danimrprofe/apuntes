@@ -15,7 +15,7 @@ marp: true
 
 ## Resumen
 
-Los LED RGB son una forma divertida y fácil para agregar color a sus proyectos. Puesto  que es como regular 3 LED en uno, el uso y conexión no es muy diferente.
+Los LED RGB permiten iluminar con cualquier color, a través de 3 leds que contiene en su interior: uno rojo, otro verde y otro azul.
 
 ---
 
@@ -23,19 +23,13 @@ Los LED RGB son una forma divertida y fácil para agregar color a sus proyectos.
 
 ---
 
-Existen 2 versiones:
+# Tipos de LED RGB
 
-- Ánodo común
-- Cátodo común.
-
----
-
+- Existen 2 versiones: Ánodo común y cátodo común.
 - Ánodo común utiliza 5V en el pin común, mientras que el cátodo común se conecta  a tierra.
-- Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 total)  así que podemos limitar la corriente absorbida.
+- Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 total)  para limitar la corriente.
 
 ---
-
-En nuestro **programa**, se comienzan con el LED en el estado de color rojo, entonces  se descolora a verde, luego se descolora azul y finalmente hacia el color rojo.  Haciendo esto que nos pasará por la mayor parte del color que se puede lograr.
 
 ## Componentes necesarios
 
@@ -54,12 +48,6 @@ En nuestro **programa**, se comienzan con el LED en el estado de color rojo, ent
 A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo, dentro del paquete del LED generalmente, hay realmente tres LEDs, uno rojo, uno verde y sí, uno azul. Controlando el **brillo** de cada uno de los LEDs individuales, podemos mezclar prácticamente cualquier color.
 
 ![imagen](2022-12-05-10-13-27.png)
-
----
-
-Mezclamos colores del mismo modo que sería mezclar pintura en una paleta - ajustando el brillo de cada uno de los tres LEDs.
-
-Arduino tiene una función **analogWrite** que se puede utilizar con pines marcados con un **~** a la salida de una cantidad variable de energía los LEDs apropiados.
 
 ---
 
@@ -102,9 +90,9 @@ El color **Negro** no es tanto un color como una ausencia de luz. Por lo tanto, 
 
 ## Teoría (PWM)
 
-La forma de dar más o menos potencia a cada color es utilizando una señal del tipo ``PWM``.
-
-La **modulación de ancho de pulso (PWM)** es una técnica para el control de potencia. La utilizamos aquí para controlar el brillo de cada uno de los LEDs.
+- Arduino tiene una función **analogWrite** que se puede utilizar con pines marcados con un **~** a la salida de una cantidad variable de energía los LEDs apropiados.
+- La forma de dar más o menos potencia a cada color es utilizando una señal del tipo ``PWM``.
+- La **modulación de ancho de pulso (PWM)** es una técnica para el control de potencia. La utilizamos aquí para controlar el brillo de cada uno de los LEDs.
 
 ---
 
@@ -116,15 +104,15 @@ La **modulación de ancho de pulso (PWM)** es una técnica para el control de po
 
 Aproximadamente cada 1/500 de segundo, la salida PWM producirá un pulso. La  duración de este pulso es controlada por la función 'analogWrite'. Así:
 
-- 'analogWrite(0)' no producirá ningún pulso.
-- 'analogWrite(255)' producirá un  pulso que dura todo el camino hasta el pulso siguiente vencimiento, para que la  salida es en realidad todo el tiempo.
+- ``analogWrite(0)`` no producirá ningún pulso.
+-  ``analogWrite(255)`` producirá un  pulso que dura todo el camino hasta el pulso siguiente vencimiento, para que la  salida es en realidad todo el tiempo.
 
 ---
 
 Si especificamos un valor en el **analogWrite** que está en algún lugar entre 0 y 255, se producir un pulso.
 
 - Si el pulso de salida es alto para el 5% del tiempo, entonces lo  que nosotros estamos manejando sólo recibirá el 5% de potencia.
-- Si la salida es 5V para el 90% del tiempo, la carga recibirá el 90% de la potencia entregada a él.
+- Si la salida es 5V para el 90% del tiempo, la carga recibirá el 90% .
 
 Los LED se encenderán y apagarán en esos periodos, pero nosotros percibiremos que el brillo del LED cambia.
 
@@ -160,6 +148,8 @@ Una vez conectado, debería quedar de la siguiente forma:
 ---
 
 ![imagen](2022-12-05-10-24-29.png)
+
+---
 
 ## Código programa 1
 

@@ -9,6 +9,8 @@ marp: true
 ---
 # 7 segments (1 dígito)
 
+---
+
 ## Resumen
 
 Un **seven segments** es un dispositivo de visualización formado por siete diodos LED dispuestos en forma de número 8.
@@ -22,6 +24,8 @@ Estas lámparas se utilizan para mostrar números, letras y caracteres especiale
 Estas son las combinaciones que podemos hacer para mostrar los distintos números:
 
 ![imagen](img/2022-12-12-18-32-50.png)
+
+---
 
 ## Componentes necesarios
 

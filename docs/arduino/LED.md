@@ -31,7 +31,7 @@ Componentes necesario:
 
 # ¿Qué es un LED?
 
-LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.
+En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.
 
 ---
 
@@ -39,8 +39,8 @@ LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  
 
 Directamente no se puede conectar un LED a una batería o fuente de tensión porque:
 
-1) El  LED tiene un positivo y un negativo llevar y no se encenderá si se coloca mal y debe utilizarse
-2) Un LED con una resistencia para limitar o 'ahogar' la cantidad de corriente que fluye a través de él; ¡de lo contrario, quemará
+1) El  LED tiene un polo positivo y un negativo y no se encenderá si se conectan mal.
+2) Un LED con una resistencia para limitar la corriente que circula a través de él.
 
 ---
 

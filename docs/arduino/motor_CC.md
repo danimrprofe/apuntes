@@ -96,7 +96,7 @@ Especificaciones del producto:
 
 ## Descripción
 
-El L293 y L293D son cuádruples controladores  de alta corriente.
+El ``L293`` y ``L293D`` son cuádruples controladores  de alta corriente.
 
 - El L293 está diseñado para proporcionar corrientes de transmisión bidireccional de hasta 1 A con tensiones de 4,5 V a 36 V.
 - El L293D está diseñado para proporcionar bidireccional corrientes de impulsión de hasta 600 mA en tensiones de 4,5 V a 36 V.
@@ -121,8 +121,6 @@ Con las entradas de datos adecuadas, cada par de conductores forma una unidad re
 ![imagen](media/image144.png)
 
 ---
-
-Me harté de diagramas de pinout indescifrables dentro de las hojas de datos, por lo que han diseñado mi propio que creo que da más información pertinente.
 
 Hay 3 cables conectados al``Arduino``, 2 cables conectados al motor y 1 alambre conectado a una batería.
 
@@ -178,7 +176,11 @@ El código siguiente no utiliza una fuente de alimentación separada (es decir, 
 
 Nunca debería conectar un motor directamente al``Arduino``, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su``Arduino``, y con un motor grande, usted puede mirar un efecto interesante de la llama y de las chispas.
 
+---
+
 ![imagen](media/image148.jpeg)
+
+---
 
 ### Código
 

@@ -166,15 +166,19 @@ Entradas de dirección de **M1 0/1** y **M1 1/0**
 
 ![imagen](media/image146.jpeg)
 
+---
+
 ### Esquema
 
 ![imagen](media/image147.jpeg)
 
+---
+
 ### Diagrama de cableado
 
-El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del``Arduino``. Tenga en cuenta que esto sería arriesgado sin que el L293D lo controlara.
+El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del``Arduino``. Esto sería arriesgado sin que el L293D lo controlara.
 
-Nunca debería conectar un motor directamente al``Arduino``, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su``Arduino``, y con un motor grande, usted puede mirar un efecto interesante de la llama y de las chispas.
+Nunca debería conectar un motor directamente al``Arduino``, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su``Arduino``.
 
 ---
 
@@ -182,21 +186,19 @@ Nunca debería conectar un motor directamente al``Arduino``, porque al desconect
 
 ---
 
-### Código
-
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta
-
-lección 29 motores y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
-
-Programa de carga, después de encender todos los interruptores de potencia.
+# Funcionamiento
 
 - Ligeramente, el motor girará en sentido horario y antihorario por 5 veces.
 - Luego, seguirá dramáticamente gire hacia la derecha.
 - Tras una breve pausa, lo dramáticamente girará hacia la izquierda.
 - A continuación, la tarjeta controladora enviará la señal PWM para el motor, el motor lentamente reducir su máxima RPM al mínimo y aumentar al máximo otra vez.
-- Por último, se trata de una parada para 10s hasta que comience el siguiente ciclo.
+- Por último, para 10s hasta que comience el siguiente ciclo.
+
+---
 
 ![imagen](media/image149.jpeg)
+
+---
 
 ## Código
 

@@ -1,8 +1,23 @@
+---
+title: Motor CC
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+
+---
+
 # Termómetro
+
+---
 
 ## Resumen
 
-En esta lección, utilizará una pantalla LCD para mostrar la temperatura.
+En esta lección, utilizaremos una pantalla LCD para mostrar la temperatura.
+
+---
 
 ## Componentes necesarios
 
@@ -18,6 +33,8 @@ En esta lección, utilizará una pantalla LCD para mostrar la temperatura.
 
 Un **termistor** es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir.
 
+---
+
 ## Tipos de termistores
 
 Hay dos clases de termistores:
@@ -27,25 +44,19 @@ Hay dos clases de termistores:
 
 En general, usaremos sensores **NTC** para medir la temperatura.
 
-Los **PTC** es de uso frecuente como fusibles Reseteables - un aumento de temperatura aumenta la resistencia que significa que conforme pasa más corriente a través de ellos, se calientan y 'estrangular detrás' la corriente, muy útil para la protección de circuitos.
-
-## Conexión
+---
 
 ![imagen](media/image113.jpeg)
 
-## Esquema
+---
 
-## Diagrama de cableado
+![bg contain](media/image114.jpeg)
 
-![imagen](media/image114.jpeg)
+---
 
 ## Código
 
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 23 termómetro y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
-
 Antes de ejecutar esto, asegúrese de que ha instalado la **librería** <LiquidCrystal> o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
-
-Para obtener más información sobre carga el archivo de **librería**, ver Lección 1. El cableado de esto está basado en la lección 22. Cargar para arriba en su``Arduino`` y encontrará que calienta el sensor de temperatura al poner el dedo en él aumentará la temperatura.
 
 Es útil poner una línea de comentario sobre el comando 'lcd'.
 
@@ -57,6 +68,8 @@ Esto facilita las cosas si decides cambiar que utilizas los pernos.
 
 En la **función loop** ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.
 
+---
+
 En primer lugar, echemos un vistazo a cálculo de la temperatura.
 
 ```c
@@ -67,7 +80,11 @@ float tempC = tempK - 273.15;
 floatfloat tempF = (tempC * 9.0) / 5.0 + 32.0;
 ```
 
+---
+
 Cambio lecturas se muestra en una pantalla LCD puede ser complicado. El principal problema es que la lectura puede no ser siempre el mismo número de dígitos. Por lo tanto, si la temperatura cambia de 101,50 a 99.00 entonces el dígito adicional de la lectura antigua es en peligro de quedar en la pantalla.
+
+---
 
 Para evitar esto, escriba la línea de la pantalla LCD cada vez el bucle.
 
@@ -77,6 +94,8 @@ LCD.Print ("Temp C");
 lcd.setCursor (6, 0);
 LCD.Print(tempF);
 ```
+
+---
 
 El comentario bastante extraño sirve para recordarles de las 16 columnas de la pantalla. Luego puede imprimir una cadena de esa longitud con espacios donde irá la lectura real.
 

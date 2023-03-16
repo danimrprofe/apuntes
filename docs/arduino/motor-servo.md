@@ -40,9 +40,9 @@ Para ello, el servomotor espera un tren de pulsos que se corresponde con el movi
 
 El Servo tiene tres cables:
 
-- Marrón es el cable a tierra y deben conectarse a GND puerto UNO, el r
-- Rojo es el cable de corriente y debe conectarse al puerto de 5v
-- Naranja es el cable de señal y debe conectarse al puerto 9.
+- **Marrón** es el cable a tierra y deben conectarse a GND puerto UNO, el r
+- **Rojo** es el cable de corriente y debe conectarse al puerto de 5v
+- **Naranja** es el cable de señal y debe conectarse al puerto 9.
 
 ---
 
@@ -64,6 +64,8 @@ El Servo tiene tres cables:
 ## Accesorios
 
 El servo viene con diferentes accesorios que se pueden utilizar para sujetarlo a otras piezas.
+
+---
 
 ![imagen](media/image83.png)
 
@@ -93,23 +95,15 @@ Necesitaremos 3 **jumpers** para conectar el servo a la placa.
 
 Antes de ejecutar esto, debemos incluir la **biblioteca servo**. Esta librería incorpora funciones que nos permitirán manejar de forma más sencilla el comportamiento del motor.
 
+---
+
 ![imagen](img/2022-10-17-15-28-13.png)
 
 ---
 
-En caso de no tenerla, podríamos incluirla descargando el archivo .zip y seguir los siguientes pasos:
+# Código de ejemplo
 
----
-
-![imagen](img/2022-10-17-15-30-21.png)
-
----
-
-![imagen](img/2022-10-17-15-29-45.png)
-
----
-
-Un código de ejemplo sería el siguiente. Este código mueve el eje del motor 180 grados en una dirección y luego en la contraria, indefinidamente.
+Este código mueve el eje del motor ``180 grados`` en una dirección y luego en la contraria, indefinidamente.
 
 ---
 

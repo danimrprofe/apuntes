@@ -1,5 +1,5 @@
 ---
-title: Pygame
+title: Mac OS
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true
@@ -12,27 +12,33 @@ marp: true
 
 ---
 
-Es un sistema operativo propiedad de la empresa Apple.
+![](img/2023-03-16-17-13-18.png)
 
-- Los sistemas operativos Mac OS solo funcionan en hardware de Apple.
-- Suelen estar más optimizados para el hardware que están creados
-- Son menos vulnerables a virus informáticos.
+Es un sistema operativo propiedad de la empresa ``Apple``.
 
 ---
 
-![imagen](2019-10-24-14-11-06.png)
+![](img/2023-03-16-17-13-45.png)
 
-Versiones de Mac: https://ca.wikipedia.org/wiki/MacOS
+Los sistemas operativos Mac OS solo funcionan en hardware de Apple.
+
+---
+
+Suelen estar más optimizados para el hardware que están creados
+
+---
+
+Son menos vulnerables a virus informáticos.
 
 ---
 
 ## Apple
 
-Apple es una empresa dedicada a diseñar equipos (iMac, iPhone, Apple Watch), programas (iOS) y servicios online (Apple TV, iCloud). Sus creadores son Steve Wozniak y Steve Jobs.
+``Apple`` es una empresa dedicada a diseñar equipos (iMac, iPhone, Apple Watch), programas (iOS) y servicios online (Apple TV, iCloud). Sus creadores son ``Steve Wozniak y Steve Jobs``.
 
 ![imagen](media/image1.jpg)
 
-Se trata de una empresa que generalmente ha sido muy innovadora y puntera en su sector, que ha propiciado la invención y expansión de diversos equipos de la propia empresa que han tenido repercusión mundial.
+Se trata de una empresa que generalmente ha sido muy ``innovadora`` y puntera en su sector, que ha propiciado la invención y expansión de diversos equipos de la propia empresa que han tenido repercusión mundial.
 
 ---
 
@@ -44,16 +50,15 @@ Se trata de una empresa que generalmente ha sido muy innovadora y puntera en su 
 
 A lo largo de la historia, Apple ha ido introduciendo nuevos dispositivos en el mercado, como por ejemplo:
 
-| Producto     | Año de lanzamiento |
-| ------------ | ------------------ |
-| iPod         | 2001               |
-| iPhone       | 2007               |
-| iPod Touch   | 2007               |
-| MacBook Air  | 2008               |
-| iPad         | 2010               |
-| Apple pencil | Apple Pencil       |
-| Apple Watch  | 2015               |
-| AirPods      | 2016               |
+| Producto    | Año de lanzamiento |
+| ----------- | ------------------ |
+| iPod        | 2001               |
+| iPhone      | 2007               |
+| iPod Touch  | 2007               |
+| MacBook Air | 2008               |
+| iPad        | 2010               |
+| Apple Watch | 2015               |
+| AirPods     | 2016               |
 
 ---
 
@@ -117,22 +122,42 @@ Apple también desarrolla programas informáticos para Mac OS X. Desarrolla gran
 
 ---
 
-![imagen](media/image8.jpg)
+# Final cut pro
+
+![](img/2023-03-16-17-25-44.png)
 
 ---
 
-## iMac y macbook
+# Logic pro
 
-El iMac es una computadora de escritorio todo en uno con una pantalla de gran tamaño y un procesador potente. El MacBook es una computadora portátil de tamaño medio con una pantalla de 13 pulgadas.
-
----
-
-![imagen](img/2022-12-30-09-56-27.png)
+![](img/2023-03-16-17-26-09.png)
 
 ---
 
-El **MacBook Air** es una computadora portátil ultra liviana con una pantalla de 13 pulgadas. El **MacBook Pro** es una computadora portátil profesional con una pantalla de 15 o 17 pulgadas y un procesador más potente.
+El ``iMac`` es una computadora de escritorio todo en uno con una pantalla de gran tamaño y un procesador potente. El MacBook es una computadora portátil de tamaño medio con una pantalla de 13 pulgadas.
+
+![w:500](img/2022-12-30-09-56-27.png)
 
 ---
+
+El **MacBook Air** es una computadora portátil ultra liviana con una pantalla de 13 pulgadas. El **MacBook Pro** es un ordenador portátil profesional con una pantalla de 15 o 17 pulgadas y un procesador más potente.
 
 ![imagen](img/2022-12-30-09-56-04.png)
+
+---
+
+# Vale la pena si...
+
+1. Necesitas un dispositivo que sea ``fácil de usar`` y que tenga una interfaz de usuario ``intuitiva`` y atractiva. El sistema operativo macOS es conocido por su ``facilidad de uso`` y por su integración con otros productos de Apple, como el ``iPhone o el iPad``.
+
+2. Si eres un profesional ``creativo`` que trabaja con aplicaciones exigentes en términos de procesamiento de gráficos, como ``Adobe Photoshop, Illustrator o Final Cut Pro``s.
+
+3. Si valoras el diseño y la calidad de construcción
+
+4. Necesitas un dispositivo que sea compatible con el ``ecosistema de Apple``, como los dispositivos iOS o el Apple Watch, un MacBook es una excelente opción, ya que el sistema operativo macOS y el ecosistema de Apple están integrados.
+
+---
+
+# Conclusión
+
+Los MacBooks suelen ser más ``caros`` que los ordenadores portátiles con Windows de gama similar, por lo que también deberás considerar si estás dispuesto a pagar un poco más por estas ``características y beneficios``.

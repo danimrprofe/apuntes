@@ -47,7 +47,6 @@ Según la extensión que tenga el archivo, al abrirlo lo hará con un programa d
 
 ![](img/2023-03-15-09-22-08.png)
 
-
 ---
 
 # Abrir con otro programa

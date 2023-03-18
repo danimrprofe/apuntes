@@ -108,6 +108,8 @@ La última versión se llama **Mac OS Big Sur**. Otras versiones han sido:
 | macOS 10.15 “Catalina”    | October 7, 2019    |
 | macOS 11 “Big Sur”        | November 12, 2020  |
 
+---
+
 ![imagen](media/image7.png)
 
 ---

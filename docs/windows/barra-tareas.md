@@ -8,7 +8,7 @@ _class: invert
 marp: true
 ---
 
-#  2. BARRA DE TAREAS
+#  BARRA DE TAREAS
 ---
 
 Se denomina barra de tareas a la que aparece en la parte inferior de la pantalla, y sirve para encontrar y controlar aplicaciones de diversos sistemas operativos.

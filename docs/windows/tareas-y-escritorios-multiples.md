@@ -16,13 +16,9 @@ VISTA DE TAREAS Y ESCRITORIOS MÚLTIPLES
 
 Desde el menú de vista de tareas, podemos tener una visión general de todo lo que tenemos abierto, así como si tenemos más de un escritorio, y cambiar entre ellos.
 
-
 Si no véis el icono, deberéis hacer clic con el botón derecho del ratón en la barra de tareas y seleccionar la opción mostrar botón vista de tareas.
 
-
-
 Desde aquí podremos ver las tareas abiertas, o crear un nuevo escritorio independiente para trabajar.
-
 
 ---
 

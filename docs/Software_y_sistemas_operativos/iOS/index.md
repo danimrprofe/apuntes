@@ -12,6 +12,8 @@ marp: true
 
 ---
 
+![](img/2023-03-18-15-06-43.png)
+
 **iOS** es un sistema operativo creado por Apple para su uso en dispositivos portátiles como el iPhone, iPod y iPad. Diseñado para ser intuitivo y fácil de usar, permitiendo al usuario tener una experiencia fluida y sin complicaciones a la hora de utilizar sus dispositivos.
 
 ---
@@ -58,8 +60,20 @@ Tiene aplicaciones exclusivas para iOS y otras multiplataforma (también para An
 
 ---
 
+Apple también tiene sus propios ``conectores``, que no siempre son compatibles con componentes de otras marcas.
+
+![](img/2023-03-18-15-08-35.png)
+
+---
+
 ## iCloud
 
 iCloud es un servicio creado por Apple que ofrece la posibilidad de guardar datos en servidores de Apple (la nube) y sincronizarlos en los diferentes dispositivos Apple usados por una misma persona, además de servir como copia de seguridad.
+
+---
+
+![](img/2023-03-18-15-07-41.png)
+
+---
 
 Como parte de sus beneficios, ofrece 5 GB de almacenamiento gratuito, que se puede ampliar pagando una cuota mensual. De esta manera, los cambios realizados en un dispositivo aparecerán en todos los demás dispositivos. iCloud ofrece diferentes planes y precios para su almacenamiento.

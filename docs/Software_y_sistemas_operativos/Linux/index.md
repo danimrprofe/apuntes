@@ -12,32 +12,17 @@ marp: true
 
 ---
 
-Un sistema operativo (como Windows)
-Libre
-Se puede modificar y mejorar libremente
-Código de programación abierto
-Gratuito
-No hay que pagar nada por el
-
----
-
-![imagen](2019-06-28-08-44-14.png)
-
----
-
-# FSF y proyecto GNU
-
-Iniciado por Richard Stallman (1984)
-FSF (free software foundation)
-Quiere conseguir software que el usuario pueda
-Copiar, modificar y distribuir software
-Entre otros, un SO
-GNU
-SO libre y gratuito
-
----
-
 ![imagen](2019-06-28-08-44-31.png)
+
+La Free Software Foundation (FSF) fue fundada por ``Richard Stallman`` en 1985 para promover el uso y la distribución de software libre.
+
+El ``software libre`` se refiere a aquellos programas de computadora que respetan la libertad de los usuarios para ejecutar, copiar, distribuir, estudiar, cambiar y mejorar el software.
+
+---
+
+El proyecto ``GNU`` es un proyecto de software libre lanzado en 1983 por Richard Stallman con el objetivo de crear un ``sistema operativo completamente libre y gratuito`` llamado GNU.
+
+---
 
 ## ¿Cómo se mantiene?
 
@@ -45,13 +30,13 @@ Linux es mantenido principalmente por la **comunidad** de desarrollo de código 
 
 Esta comunidad también recibe el apoyo de **empresas**, quienes patrocinan algunos proyectos de desarrollo de Linux. Además, la comunidad de Linux también recibe donaciones de usuarios que apoyan el desarrollo del sistema.
 
-## Historia del software libre y distribuciones
-
-![imagen](2019-06-28-08-44-58.png)
+---
 
 ## Kernel
 
 El kernel de Linux es el **núcleo** del sistema operativo, responsable de administrar sus recursos como memoria, procesadores y dispositivos I/O. Es un programa de bajo nivel que controla el hardware y los programas.
+
+---
 
 ## Entorno gráfico (DE)
 
@@ -77,67 +62,51 @@ Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesid
 
 ##  Distribuciones Linux
 
-Linux es libre
-Modificar y mejorar libremente
-Grupos de usuarios
-Modifican a su gusto
-Añaden
-Aplicaciones, utilidades, herramientas de instalación, etc
-Crean una distribución y le ponen un nombre
+Linux es un sistema operativo libre y de código abierto que permite a los usuarios modificar y mejorar el software a su gusto.
+
+Debido a su naturaleza libre, han surgido diferentes grupos de usuarios y desarrolladores que han creado sus propias ``versiones personalizadas`` de Linux, conocidas como ``distribuciones``.
+
+---
+
+Las distribuciones de Linux se diferencian por sus ``características únicas``, como el sistema de gestión de paquetes, el escritorio, las herramientas de configuración y las aplicaciones preinstaladas.
+
+Cada distribución tiene su propia ``comunidad`` de usuarios y ``desarrolladores`` que trabajan juntos para mantener y mejorar el software.
+
+---
+
+Las distribuciones de Linux más populares incluyen ``Debian, Ubuntu, Fedora, CentOS, Arch Linux y openSUSE``, pero hay muchas otras opciones disponibles. Cada distribución tiene su propio enfoque y filosofía, lo que significa que hay una distribución de Linux adecuada para casi cualquier tipo de usuario o caso de uso.
 
 https://distrowatch.com/
 
 ---
 
-##  Distribuciones CCAA
-
-A las CCAA les interesa Linux
-Es gratuito, no tienen que pagar licencias
-Cada comunidad autónoma
-Adapta una versión de linux a sus necesidades (colegios, ayuntamientos)
-Elige las aplicaciones que quiere que tenga
-Ofimática, facturación, etc
-Crea una distribución propia
-Linex,guadalinex,lliurex,max,linkat,etc
-
----
-
-![imagen](2019-06-28-08-46-25.png)
-
----
-
-##  Distribuciones CCAA más importantes
-
-- Guadalinex (Guadalajara): Ubuntù+Gnome
-- Lliurex (Comunitat valenciana): Edubuntu
-- Molinux (Castilla la mancha): Ubuntu+Gnome
-- Linex (Extremadura): Debian
-- Max (Madrid): Ubuntu+GNOME
-- Linkat (Generalitat de Catalunya): Suse linux + GNOME
-
-Lista completa de distribuciones CCAA
-
----
-
 ## Ubuntu
 
-Ubuntu es un sistema operativo de código abierto basado en GNU/Linux y que se distribuye gratuitamente. Fue creado en 2004 por la compañía sudafricana **Canonical** Ltd. y se ha convertido en una de las distribuciones más populares de GNU/Linux.
+Ubuntu es una de las ``distribuciones`` de Linux más populares y ampliamente utilizadas en todo el mundo. Fue lanzada en 2004 y está basada en ``Debian``, otra distribución de Linux muy conocida.
+
+---
+
+Una de las características principales de Ubuntu es su facilidad de uso y su enfoque en la accesibilidad para los usuarios. Viene con una amplia variedad de aplicaciones preinstaladas, incluyendo una suite de oficina, navegador web, reproductor multimedia y mucho más.
+
+---
+
+Ubuntu también cuenta con una gran comunidad de usuarios y desarrolladores, lo que significa que hay una gran cantidad de recursos y soporte disponibles en línea. Además, es conocida por sus actualizaciones regulares y su énfasis en la seguridad.
+
+---
+
+Hay varias ``versiones de Ubuntu`` disponibles, incluyendo la versión principal de escritorio, así como las versiones de servidor y para dispositivos móviles. También existen versiones personalizadas, como ``Kubuntu`` (con el escritorio KDE) y ``Xubuntu`` (con el escritorio XFCE), entre otras.
 
 ![imagen](2019-06-28-08-47-04.png)
-
-Es la distribución más popular hoy en día
-Basada en debian
-Instalado salas de informática
-Gestor de arranque
-Versión que utiliza consellería en los colegios y en los IES
 
 ---
 
 ## Arranque DUAL
 
-El arranque dual es una característica que permite a un usuario iniciar un sistema operativo (OS) desde dos dispositivos de almacenamiento diferentes. Esto significa que un usuario puede elegir entre dos sistemas operativos diferentes al iniciar una computadora; por ejemplo, un usuario puede iniciar una computadora con Windows u otro sistema operativo, como Linux.
+El arranque dual es una característica que permite a un usuario iniciar un sistema operativo (OS) desde dos dispositivos de almacenamiento diferentes.
 
-El sistema operativo seleccionado se cargará **automáticamente** y se ejecutará.
+Podemos elegir entre 2 o más sistemas operativos diferentes al iniciar una ordenador, como por ejemplo Windows y Linux.
+
+![imagen](2019-06-28-08-47-24.png)
 
 ---
 
@@ -148,5 +117,3 @@ Para instalar Linux, existen diferentes opciones.
 - Una de ellas es **descargar una imagen** CD/DVD, grabarla y arrancar desde el CD/DVD para completar la instalación. Esta instalación requiere modificar el disco duro.
 - Otra opción es utilizar un **LiveCD**, el cual no instala nada en el disco duro, sino que permite probar una versión de Linux y al apagar, todo vuelve a su estado original.
 - Finalmente, es posible instalar Linux desde **Windows**, descargando un programa que se instala como una aplicación más, y que se puede desinstalar cuando se quiera.
-
-![imagen](2019-06-28-08-47-24.png)

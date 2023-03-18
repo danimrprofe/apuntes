@@ -12,6 +12,8 @@ marp: true
 
 ---
 
+![](img/2023-03-18-10-21-51.png)
+
 Permite comunicarnos con el SO mediante órdenes o comandos. El intérprete de comandos o consola:
 
 - Interpreta y ejecuta los comandos que le digamos
@@ -20,22 +22,13 @@ Permite comunicarnos con el SO mediante órdenes o comandos. El intérprete de c
 
 ---
 
-Para entrar, podemos ir a ejecutar > cmd. Se nos abrirá la ventana de comandos con la que podremos interactuar.
+Para entrar, podemos ir a ``ejecutar > cmd`` o buscar ``símbolo del sistema``
+
+![](img/2023-03-18-10-22-23.png)
+
+Se nos abrirá la ventana de comandos con la que podremos interactuar.
 
 ![imagen](img/2019-10-15-16-51-36.png)
-
----
-
-- Abrir consola de comandos
-- Conocer en que lugar del disco nos encontramos (ruta)
-- Limpiar consola
-- Listar contenido (dir y comodines)
-- Crear carpetas y copiar
-- Borrar carpetas vacías y llenas
-- Moverse por carpetas
-- Moverse al inicio
-- Comprobar configuración de red
-- Moverse por comandos anteriores
 
 ---
 
@@ -45,9 +38,13 @@ Para entrar, podemos ir a ejecutar > cmd. Se nos abrirá la ventana de comandos 
 
 ## Comandos recientes y autocompletar
 
-Con las teclas arriba y abajo podemos movernos por los diferentes comandos que hemos ejecutado anteriormente.
+Con las teclas ``arriba`` y ``abajo`` podemos movernos por los diferentes comandos que hemos ejecutado anteriormente.
 
-Podemos **autocompletar** nombres de archivos o comandos utilizando la tecla tabulador. Para ello, tendremos que haber escrito parte del nombre para que nos busque las coincidencias.
+---
+
+# Autocompletar
+
+Podemos **autocompletar** nombres de archivos o comandos utilizando la tecla ``tab``. Para ello, tendremos que haber escrito parte del nombre para que nos busque las coincidencias.
 
 ---
 
@@ -63,21 +60,38 @@ El segundo hace lo mismo, pero contando que solo tienen 2 letras detrás, una le
 
 ---
 
-## Comandos
-
-Una vez que nos encontramos delante de la línea de comandos del símbolo del sistema debemos saber que hay ciertos comandos y teclas que nos van a ayudar mucho en el uso del CMD, así como para sacarle el máximo partido.
-
----
-
-## Comandos básicos CMD
+## Comandos básicos
 
 ---
 
 ### Help
 
-El primero comando que debemos aprender es el comando Help. Para ejecutar este comando, lo único que tenemos que hacer es escribir help en la línea de comandos y pulsar Enter.
+El primero comando que debemos aprender es el comando ``Help``. Para ejecutar este comando, lo único que tenemos que hacer es escribir help en la línea de comandos y pulsar Enter.
 
 Automáticamente, veremos cómo nos aparece un listado de los comandos básicos que podemos utilizar en la consola del sistema y para qué sirve cada uno de ellos.
+
+---
+
+```
+Microsoft Windows [Versión 10.0.19045.2728]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\dnick>help
+Para obtener más información acerca de un comando específico, escriba HELP
+seguido del nombre de comando
+ASSOC          Muestra o modifica las asociaciones de las extensiones
+               de archivos.
+ATTRIB         Muestra o cambia los atributos del archivo.
+BREAK          Establece o elimina la comprobación extendida de Ctrl+C.
+BCDEDIT        Establece propiedades en la base de datos de arranque para
+               controlar la carga del arranque.
+CACLS          Muestra o modifica las listas de control de acceso (ACLs)
+               de archivos.
+CALL           Llama a un programa por lotes desde otro.
+CD             Muestra el nombre del directorio actual o cambia a otro
+               directorio.
+
+```
 
 ---
 
@@ -95,6 +109,23 @@ Automáticamente, veremos cómo nos aparece la sintaxis o sintaxis correctas que
 
 ---
 
+```
+C:\Users\dnick>cd /?
+Muestra el nombre del directorio actual o cambia de directorio.
+
+CHDIR [/D] [unidad:][ruta]
+CHDIR [..]
+CD [/D] [unidad:][ruta]
+CD [..]
+
+  ..   Especifica que desea cambiar al directorio superior.
+
+Escriba CD unidad: para ver el directorio actual de la unidad especificada.
+Escriba CD sin parámetros para ver la unidad y el directorio actual.
+```
+
+---
+
 ### CD
 
 Por defecto, el símbolo del sistema se abre en la ruta C:\Users\nombreusuario, sin embargo, puede que necesitemos movernos por otras carpetas o unidades del sistema para realizar las tareas oportunas. Para ello, vamos a usar el comando cd, que permite movernos entre carpetas. Para entrar dentro de una carpeta dentro de la ruta en la que estamos, lo único que tenemos que hacer es ejecutar el comando:
@@ -109,12 +140,27 @@ Para ir directamente a una carpeta dentro de esa ruta sin tener que pasar por la
 
 ---
 
-Si por el contrario queremos retroceder, es decir, salir de una carpeta y volver a la que la contiene, entonces basta con ejecutar el comando cd.., mientras que si queremos salir de una sola vez a la raíz de la unidad donde nos encontramos, entonces tenemos que ejecutar cd\.
-Cambiar de unidad
+Si por el contrario queremos retroceder, es decir, salir de una carpeta y volver a la que la contiene, entonces basta con ejecutar el comando ``cd ..``
+
+```
+C:\Users\dnick>cd ..
+
+C:\Users>
+```
+
+Mientras que si queremos salir de una sola vez a la raíz de la unidad donde nos encontramos, entonces tenemos que ejecutar ``cd \``
 
 ---
 
+# Cambiar de unidad
+
 Si disponemos de varias particiones o unidades en nuestro disco o tenemos conectado algún dispositivo de almacenamiento interno y queremos ir hasta esa unidad desde el símbolo del sistema, lo único que tenemos que hacer es escribir la letra de dicha unidad seguida de dos puntos y pulsar Enter desde la ruta donde estemos y automáticamente se seleccionará dicha unidad, por ejemplo E:.
+
+```
+C:\Users>e:
+
+E:\>
+```
 
 ---
 
@@ -122,9 +168,27 @@ Si disponemos de varias particiones o unidades en nuestro disco o tenemos conect
 
 Cuando estamos en una ruta determinada y queremos saber las carpetas o archivos que hay dentro de ella, al igual que podemos hacer desde el explorador de archivos en la interfaz gráfica de Windows, lo que tenemos que hacer es ejecutar el comando dir.
 
+---
+
 Automáticamente se nos mostrará por línea de comandos todas las carpetas y archivos que contiene la carpeta en la que estamos.
 
-Para identificar lo que es una carpeta y un archivo basta con fijarnos si delante del nombre aparece DIR, lo cual indica que es un directorio o carpeta. Si es un archivo, a la izquierda del nombre aparecerá el tamaño del mismo.
+```
+E:\>c:
+
+C:\Users>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 7A91-9E41
+
+ Directorio de C:\Users
+
+22/10/2022  20:39    <DIR>          .
+22/10/2022  20:39    <DIR>          ..
+12/07/2021  16:27    <DIR>          Admin
+18/03/2023  10:07    <DIR>          Ana
+28/09/2020  16:27    <DIR>          defaultuser0
+```
+
+Para identificar lo que es una carpeta y un archivo basta con fijarnos si delante del nombre aparece ``DIR``, lo cual indica que es un directorio o carpeta. Si es un archivo, a la izquierda aparecerá el tamaño.
 
 ---
 
@@ -138,7 +202,7 @@ Con este comando borramos todo lo que aparece en la línea de comando y quedará
 
 ### EXIT
 
-Si escribimos el comando exit y pulsamos Enter para ejecutarlo desde la línea de comandos, veremos cómo la ventana de CMD o símbolo del sistema se cierra automáticamente. Y es que el comando exit es el que tenemos que utilizar para cerrar la consola.
+Si escribimos el comando ``exit`` y pulsamos Enter para ejecutarlo desde la línea de comandos, veremos cómo la ventana de CMD o símbolo del sistema se cierra automáticamente. Y es que el comando exit es el que tenemos que utilizar para cerrar la consola.
 
 ---
 
@@ -178,7 +242,11 @@ Copy es el comando que nos permite copiar archivos, es decir, copiar un archivo 
 
 ---
 
-El comando copy también nos puede servir para crear un archivo de texto dentro de cualquier carpeta desde el CMD. Para ello, lo único que tendremos que hacer es escribir y ejecutar el comando copy con nombrearchivo.txt. Nada más pulsar la tecla Enter para ejecutar el comando, se nos quedará el cursor justo en la línea de debajo y entonces podemos comenzar a escribir lo que queremos que contenga el archivo txt que vamos a crear. Para indicar que hemos finalizado, pulsamos ++ctrl+++Z y pulsamos Enter y ya podremos comprobar cómo dentro de la ruta indicada ya aparece el fichero de texto que acabamos de crear con el texto indicado.
+El comando copy también nos puede servir para crear un archivo de texto dentro de cualquier carpeta desde el CMD. Para ello, lo único que tendremos que hacer es escribir y ejecutar el comando copy con nombrearchivo.txt.
+
+Nada más pulsar la tecla Enter para ejecutar el comando, se nos quedará el cursor justo en la línea de debajo y entonces podemos comenzar a escribir lo que queremos que contenga el archivo txt que vamos a crear.
+
+Para indicar que hemos finalizado, pulsamos ``ctrl+z`` y pulsamos ``intro`` y ya podremos comprobar cómo dentro de la ruta indicada ya aparece el fichero de texto que acabamos de crear con el texto indicado.
 
 ---
 
@@ -200,6 +268,8 @@ Veremos cómo los archivos de la carpeta1 se copian a la carpeta2.
 El comando move nos permite, como su propio nombre indica, mover archivos y carpetas en CMD. La sintaxis de este comando nos permite mover archivos de una carpeta a otra incluso una carpeta y su contenido dentro de otra carpeta. Si lo que queremos es mover un archivo a otra carpeta, vamos desde el símbolo del sistema a la carpeta donde se encuentra el fichero que queremos cambiar de ubicación y ejecutamos el comando move archivo.ext carpeta1. Si el destino está en una ruta distinta, entonces podemos usar el comando de la siguiente manera:
 
     move archivo.ext c:\rutadestino
+
+---
 
 Move también permite mover un archivo a otra ubicación y a la vez cambiarlo de nombre, el comando en esta ocasión sería:
 

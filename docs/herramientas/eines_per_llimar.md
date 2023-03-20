@@ -34,6 +34,8 @@ S'han de subjectar les peces per evitar vibracions.
 
 S'ha de treballar amb les dues mans
 
+![](img/2023-03-20-15-47-30.png)
+
 Cal netejar les llimadures amb la carda.
 
 El mànec ha d'estar ben subjectat i net de greix.

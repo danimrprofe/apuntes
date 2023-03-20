@@ -16,14 +16,14 @@ diferentes formas y tamaños adaptados a todo tipo de aplicaciones.
 
 El vástago es una varilla de metal que suele ser de acero. Un extremo se inserta en el mango y el otro tiene incorporada la punta para encajar en la cabeza del tornillo.
 
+![](img/2023-03-20-15-29-32.png)
+
 Por lo general se presenta desnudo, pero en
 aplicaciones de electricidad y electrónica es necesario que se encuentre aislado en toda su longitud.
 
 El vástago puede ser fijo o extraíble. El segundo tipo es el utilizado en destornilladores con cabezas intercambiables.
 
 Algunos destornilladores modulares permiten acoplar un vástago flexible, que es de gran utilidad para realizar operaciones de apriete y ajuste de tornillos que se encuentran en lugares poco accesibles.
-Figura 1.5. Destornillador con vástago flexible.
-Recuerda
 
 El atornillado se hace en el sentido de
 las agujas del reloj, y el desatornillado en
@@ -33,6 +33,8 @@ sentido contrario.
 
 La cabeza es la parte que se apoya en la ranura del tornillo. Sobre ella se ejerce la fuerza para su atornillado o desatornillado y puede tener diferentes formas. A continuación se muestran algunas de ellas, pero no son las únicas.
 
+![](img/2023-03-20-15-29-24.png)
+
 La cabeza del destornillador debe ser del mismo tipo y de la misma medida que la del tornillo sobre el que se va a trabajar. De lo contrario, además de no conseguir atornillar o desatornillar el tornillo, el destornillador y la cabeza se pueden deteriorar.
 
 ### Destornilladores eléctricos
@@ -40,6 +42,8 @@ La cabeza del destornillador debe ser del mismo tipo y de la misma medida que la
 Son herramientas portátiles que permiten atornillar y desatornillar sin
 apenas esfuerzo. Funcionan mediante una batería o por conexión directa
 a la red.
+
+![](img/2023-03-20-15-29-57.png)
 
 Los hay de muchos tamaños y formas, pero todos tienen en común que
 las cabezas y los vástagos son intercambiables, pudiéndose utilizar para

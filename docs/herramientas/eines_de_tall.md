@@ -15,3 +15,9 @@ A més de la serra de vogir, els petits tallers i les indústries disposen d'alt
 ![imagen](media/image21.png)
 
 ![imagen](media/image22.png)
+
+## Cutter
+
+Un cutter és una eina de tall manual que s'utilitza per tallar materials com paper, cartró, teles, cuir, plàstics, entre d'altres. Consisteix en una fulla afilada muntada en un mànec, generalment de plàstic o metall.
+
+![](img/2023-03-20-15-27-11.png)

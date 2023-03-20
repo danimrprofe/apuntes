@@ -73,4 +73,6 @@ Per a col·locar les broques, hem de tenir el trepant desconnectat i aturat, i o
 
 ## Corones
 
+Les corones d'un trepant són eines utilitzades per fer forats de gran diàmetre en materials com ara fusta, metall, plàstic, ceràmica, entre d'altres. Consisteixen en una broca circular amb dents afilades a la vora exterior que es munta en un mandril o adaptador especial al trepant.
+
 ![imagen](media/image42.jpeg)

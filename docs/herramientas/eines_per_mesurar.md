@@ -1,4 +1,16 @@
+---
+title: Mesurar i marcar
+footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+_footer: ""
+paginate: true
+_paginate: false
+_class: invert
+marp: true
+---
+
 # Eines per mesurar i marcar
+
+---
 
 ## Esquadra metàl·lica
 
@@ -8,11 +20,15 @@ Els seus braços permeten traçar rectes paral·leles i perpendiculars, ja que f
 
 ![imagen](media/image6.jpeg)
 
+---
+
 ## Metro de fuster
 
 El metro de fuster  o plegable és rígid i fàcil de transportar i guardar a una butxaca.
 
 ![imagen](media/image7.png)
+
+---
 
 ## Flexòmetre
 
@@ -24,17 +40,23 @@ S'enrotlla a l'interior d'una carcassa metàl·lica o de plàstic. És l'eina de
 
 Es fabriquen amb diverses longituds (3 m, 5 m, 8 m, etc.).
 
+---
+
 ## Llapis de fuster
 
 Per marcar les mesures a la fusta es sol utilitzar un llapis de fuster.  La seva forma és ovalada i, la seva mina, plana. Per esmolar-se necessita una fulla especial.
 
 ![imagen](media/image9.jpeg)
 
+---
+
 ## Compàs de puntes d'acer
 
 El compàs de puntes d'acer  ens permet traçar circumferències i arcs en la fusta, així com per transportar mesures d’un lloc a un altre de la fusta, o a una altra fusta.
 
 ![imagen](media/image10.jpeg)
+
+---
 
 ## Punxó
 
@@ -44,25 +66,39 @@ S'utilitza per practicar una petita esquerda sobre la superfície de la fusta, q
 
 ![imagen](media/image11.jpeg)
 
+---
+
 ## Peu de rei
 
 El peu de rei, calibre o Vernier, és un instrument de mesura de precisió capaç d’apreciar dècimes i centèsimes de mm en mesurar un objecte. Pot realitzar mesures exteriors, interiors i de profunditats en qualsevol objecte.
 
 ![imagen](media/image12.png)
 
+---
+
 Aquí podem comprovar les diferents parts que té un peu de rei i la seva utilitat.
 
 ![imagen](media/image13.png)
 
-![imagen](media/image14.png)També existeixen versions digitals, que indiquen directament en una pantalla la mesura que s’ha pres de forma automàtica.
+---
+
+També existeixen versions digitals, que indiquen directament en una pantalla la mesura que s’ha pres de forma automàtica.
+
+![imagen](media/image14.png)
+
+---
 
 Podem treure 3 tipus de mesures diferents:
 
 ![imagen](media/image15.png)
 
+---
+
 Mesurar amb peu de rei
 
 ![imagen](media/image16.png)
+
+---
 
 ## Micròmetre
 
@@ -71,6 +107,8 @@ El Pàlmer o micròmetre és també un instrument de mesura de molta precisió. 
  El pàlmer utilitza un cargol micromètric per girar i valorar el tamany de l'objecte a mesurar.
 
 ![imagen](media/image17.png)
+
+---
 
 Mesures amb micròmetre
 

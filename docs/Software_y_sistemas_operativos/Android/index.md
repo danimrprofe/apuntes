@@ -38,6 +38,8 @@ Ha visto un gran número de actualizaciones a su sistema operativo base desde su
 
 ![imagen](media/image5.png)
 
+---
+
 Desde abril de 2009, las versiones de Android han sido desarrolladas bajo un nombre en clave y sus nombres siguen un orden alfabético:
 
 | Versión | Nombre Clave       | Lanzamiento |
@@ -87,13 +89,16 @@ Los principales son:
 
 ![imagen](media/image8.png)
 
+---
+
 ## Nube de Android
 
-Se sirve actualmente de la nube de Google (Google drive) para almacenar documentos, fotos, contactos, correo, etc. Y se integra con los productos de la Google Suite.
+Se sirve actualmente de la nube de Google (Google drive) para almacenar documentos, fotos, contactos, correo, etc. Y se integra con los productos de la ``Google Suite``.
 
-Las cuentas personales utilizan el servicio Google One.
+- Las cuentas personales utilizan el servicio ``Google One``.
+- Las cuentas profesionales o de centros educativos utilizan ``Google Workspace``, y por tanto tienen unas características diferentes.
 
-Las cuentas profesionales o de centros educativos utilizan Google Workspace, y por tanto tienen unas características diferentes.
+---
 
 ## Espacio de almacenamiento
 
@@ -101,19 +106,27 @@ Todas las cuentas de Google empiezan con 15 GB de almacenamiento gratuito en Goo
 
 Podéis consultar el espacio que tenéis usado aquí: https://one.google.com/u/0/
 
-![imagen](media/image9.png)
+---
+
+![bg contain](media/image9.png)
+
+---
 
 Copia de seguridad del smartphone
 
 ![imagen](media/image10.png)
 
-Aumentar el espacio de almacenamiento
+---
+
+# Google One
+
+Es un plan de ``suscripción`` (de pago)  que te proporciona más espacio de almacenamiento en Google Fotos, Drive y Gmail.
 
 ![imagen](media/image11.png)
 
-Google One es un plan de suscripción (de pago)  que te proporciona más espacio de almacenamiento en Google Fotos, Drive y Gmail.
+---
 
-Cuando te pasas a Google One, el almacenamiento aumenta a 100 GB o más dependiendo del plan que elijas. A cambio, se te cobra una tarifa mensual en función de la opción que elijas.
+Cuando te pasas a Google One, el almacenamiento aumenta a ``100 GB`` o más dependiendo del plan que elijas. A cambio, se te cobra una ``tarifa mensual`` en función de la opción que elijas.
 
 ---
 

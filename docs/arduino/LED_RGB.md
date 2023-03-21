@@ -1,5 +1,5 @@
 ---
-title: LED RGB
+title: [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
 paginate: true
@@ -8,15 +8,17 @@ _class: invert
 marp: true
 ---
 
-# LED RGB
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
-En este proyecto aprendremos a controlar la iluminación de un LED Rgb con [Arduino](https://danimrprofe.github.io/apuntes/arduino/)
+# [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
+
+En este proyecto aprendremos a controlar la iluminación de un [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) con [Arduino](https://danimrprofe.github.io/apuntes/arduino/)
 
 ---
 
 ## Resumen
 
-Los LED RGB permiten iluminar con cualquier color, a través de 3 leds que contiene en su interior: uno rojo, otro verde y otro azul.
+Los [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) permiten iluminar con cualquier color, a través de 3 leds que contiene en su interior: uno rojo, otro verde y otro azul.
 
 ---
 
@@ -24,7 +26,7 @@ Los LED RGB permiten iluminar con cualquier color, a través de 3 leds que conti
 
 ---
 
-# Tipos de LED RGB
+# Tipos de [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
 
 - Existen 2 versiones: Ánodo común y cátodo común.
 - Ánodo común utiliza 5V en el pin común, mientras que el cátodo común se conecta  a tierra.
@@ -34,13 +36,13 @@ Los LED RGB permiten iluminar con cualquier color, a través de 3 leds que conti
 
 ## Componentes necesarios
 
-| cantidad | componente                 |
-| -------- | -------------------------- |
-| 1        | placa [Arduino](https://danimrprofe.github.io/apuntes/arduino/)           |
-| 1        | protoboard                 |
-| 4        | cables jumper              |
-| 1        | LED RGB                    |
-| 3        | resistencias de 220 ohmios |
+| cantidad | componente                                                        |
+| -------- | ----------------------------------------------------------------- |
+| 1        | placa [Arduino](https://danimrprofe.github.io/apuntes/arduino/)   |
+| 1        | protoboard                                                        |
+| 4        | cables jumper                                                     |
+| 1        | [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) |
+| 3        | resistencias de 220 ohmios                                        |
 
 ---
 
@@ -54,7 +56,7 @@ A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo
 
 # Pines
 
-El LED RGB tiene **cuatro pines**. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
+El [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) tiene **cuatro pines**. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
 
 ![imagen](2022-12-05-10-14-02.png)
 

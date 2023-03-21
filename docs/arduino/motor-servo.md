@@ -8,6 +8,8 @@ _class: invert
 marp: true
 ---
 
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Motor servo
 
 ---
@@ -25,6 +27,8 @@ marp: true
 ## Resumen
 
 Los servos son un tipo especial de motor de c.c. que se caracterizan por su capacidad para posicionarse de forma inmediata en cualquier posición dentro de su intervalo de operación. Se mueven en una precisión de 180º como máximo.
+
+---
 
 El servo tiene un eje que puede girar y que es accionado por un motor. La posición del eje puede ser controlada con una señal analógica.
 
@@ -101,8 +105,27 @@ Antes de ejecutar esto, debemos incluir la **biblioteca servo**. Esta librería 
 
 ---
 
-# Código de ejemplo
+# Ejemplo 1
 
+---
+```c
+#include <Servo.h> // Incluimos la librería Servo
+
+Servo miServo; // Creamos un objeto Servo
+
+void setup() {
+  miServo.attach(9); // Conectamos el servo al pin 9
+}
+
+void loop() {
+  miServo.write(90); // Movemos el servo a 90 grados
+  delay(1000); // Esperamos 1 segundo
+  miServo.write(0); // Movemos el servo a 0 grados
+  delay(1000); // Esperamos 1 segundo
+}
+```
+---
+# Ejemplo 2
 Este código mueve el eje del motor ``180 grados`` en una dirección y luego en la contraria, indefinidamente.
 
 ---

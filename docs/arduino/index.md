@@ -10,8 +10,10 @@ marp: true
 
 ![imagen](img/2022-11-30-15-47-39.png)
 
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Arduino
-### Introducción
+
 ---
 
 ## Introducción

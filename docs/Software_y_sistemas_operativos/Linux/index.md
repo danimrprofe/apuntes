@@ -16,11 +16,26 @@ marp: true
 
 La Free Software Foundation (FSF) fue fundada por ``Richard Stallman`` en 1985 para promover el uso y la distribución de software libre.
 
-El ``software libre`` se refiere a aquellos programas de computadora que respetan la libertad de los usuarios para ejecutar, copiar, distribuir, estudiar, cambiar y mejorar el software.
+![](2023-03-21-12-33-32.png)
 
 ---
 
+# Software libre
+
+El ``software libre`` se refiere a aquellos programas que respetan la libertad de los usuarios para ejecutar, copiar, distribuir, estudiar, cambiar y mejorar el software.
+
+---
+
+# GNU
+
 El proyecto ``GNU`` es un proyecto de software libre lanzado en 1983 por Richard Stallman con el objetivo de crear un ``sistema operativo completamente libre y gratuito`` llamado GNU.
+
+---
+
+# Linux
+
+La mezcla de GNU y Linux se conoce como GNU/Linux. Para abreviar, a los sistemas operativos de este estilo se les llama ``linux``.
+![](2023-03-21-12-37-11.png)
 
 ---
 
@@ -48,15 +63,9 @@ Los entornos gráficos como GNOME y KDE proporcionan una interfaz gráfica para 
 
 ## Sistemas Linux
 
-Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos son usados por empresas, asociaciones y colectivos de personas. El núcleo (Kernel) es la base del sistema operativo y a partir de él se desarrollan diferentes versiones.
+Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos son usados por empresas, asociaciones y colectivos de personas.
 
 Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesidades de los usuarios.
-
----
-
-![imagen](2019-06-28-08-45-37.png)
-
-![imagen](2019-06-28-08-45-41.png)
 
 ---
 
@@ -65,6 +74,9 @@ Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesid
 Linux es un sistema operativo libre y de código abierto que permite a los usuarios modificar y mejorar el software a su gusto.
 
 Debido a su naturaleza libre, han surgido diferentes grupos de usuarios y desarrolladores que han creado sus propias ``versiones personalizadas`` de Linux, conocidas como ``distribuciones``.
+
+![imagen](2019-06-28-08-45-41.png)
+
 
 ---
 
@@ -83,6 +95,8 @@ https://distrowatch.com/
 ## Ubuntu
 
 Ubuntu es una de las ``distribuciones`` de Linux más populares y ampliamente utilizadas en todo el mundo. Fue lanzada en 2004 y está basada en ``Debian``, otra distribución de Linux muy conocida.
+
+![](2023-03-21-12-32-39.png)
 
 ---
 

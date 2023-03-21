@@ -1,49 +1,33 @@
----
-title: Escritorio y ventanas
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
-
 # Software libre y privativo
 
----
+## Software propietario o privativo
 
-## 2.1. Sistema operativos propietario o privativos
+Fueron creados por ``empresas`` para su uso ``comercial``. Tales empresas son sus propietarias y ``cobrar`` por utilizarlo y distribuirlo y aquellos que lo diseñaron y crearon ``ocultan su código original`` para evitar que se altere.
 
-Fueron creados por empresas para su uso comercial. Tales empresas son sus propietarias y cobrar por utilizarlo y distribuirlo y aquellos que lo diseñaron y crearon ocultan su código original para evitar que se altere.
+![](2023-03-21-12-43-10.png)
 
 Sólo la empresa propietaria tiene derecho a modificar el software. Además, queda prohibida su distribución sin un previo pago.
 
----
-
-Ejemplos de SO propietario:
+## Ejemplos de SO propietario
 
 - Windows es un sistema operativo propietario de la empresa MicroSoft.
 - Otro ejemplo de sistema operativo propietario es el Mac OS X, propiedad de  Apple.
 
----
-
-## 2.2. Sistemas operativo libres
+## Software libre
 
 Fueron creados por una **comunidad de programadores** sin fines comerciales. Esta comunidad dispone del código del sistema y lo comparte con quien quiera modificarlo para su mejora, por eso, su uso y distribución es libre y gratuito.
 
-El hecho de que su código esté disponible para cualquiera es lo que hace que estos sistemas sean abiertos. Linux es un ejemplo.
+![](2023-03-21-12-45-29.png)
 
----
+El hecho de que su código esté disponible para cualquiera es lo que hace que estos sistemas sean abiertos.
 
-## 2.3. Software libre o privativo
+## Diferencias
 
 El software **libre**
 
 - Es gratuito (generalmente) y se puede usar y distribuir sin restricciones
 - Su código es abierto, pues está disponible y cualquiera con conocimientos de programación lo puede modificar para adaptarlo a sus necesidades
 - Ejemplo: Gimp.
-
----
 
 El software **privativo**
 
@@ -52,4 +36,6 @@ El software **privativo**
 - Normalmente es de pago, aunque no siempre
 - Ejemplos: PhotoShop.
 
-![imagen](2019-09-16-16-37-22.png)
+## Alternative To
+
+![](2023-03-21-12-47-15.png)

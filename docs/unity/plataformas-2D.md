@@ -8,7 +8,7 @@ Importar package de asset store (pixel adventure 1)
 
 ## 3. Crear tilemap
 
-Un Tilemap es una herramienta de ``Unity`` que permite crear ambientes de juego mediante el uso de gráficos tiles. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
+Un ``tilemap`` es una herramienta de ``Unity`` que permite crear ambientes de juego mediante el uso de gráficos tiles. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
 
 ## 4. Crear paleta y pintar la escena
 

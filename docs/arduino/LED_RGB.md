@@ -9,7 +9,8 @@ marp: true
 ---
 
 # LED RGB
-## Arduino
+
+En este proyecto aprendremos a controlar la iluminación de un LED Rgb con [Arduino](https://danimrprofe.github.io/apuntes/arduino/)
 
 ---
 
@@ -35,7 +36,7 @@ Los LED RGB permiten iluminar con cualquier color, a través de 3 leds que conti
 
 | cantidad | componente                 |
 | -------- | -------------------------- |
-| 1        | placa``Arduino``           |
+| 1        | placa [Arduino](https://danimrprofe.github.io/apuntes/arduino/)           |
 | 1        | protoboard                 |
 | 4        | cables jumper              |
 | 1        | LED RGB                    |
@@ -90,7 +91,7 @@ El color **Negro** no es tanto un color como una ausencia de luz. Por lo tanto, 
 
 ## Teoría (PWM)
 
-- Arduino tiene una función **analogWrite** que se puede utilizar con pines marcados con un **~** a la salida de una cantidad variable de energía los LEDs apropiados.
+- [Arduino](https://danimrprofe.github.io/apuntes/arduino/) tiene una función **analogWrite** que se puede utilizar con pines marcados con un **~** a la salida de una cantidad variable de energía los LEDs apropiados.
 - La forma de dar más o menos potencia a cada color es utilizando una señal del tipo ``PWM``.
 - La **modulación de ancho de pulso (PWM)** es una técnica para el control de potencia. La utilizamos aquí para controlar el brillo de cada uno de los LEDs.
 

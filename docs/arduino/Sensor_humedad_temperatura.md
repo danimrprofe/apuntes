@@ -1,4 +1,4 @@
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
 title: Sensor humedad temperatura
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""

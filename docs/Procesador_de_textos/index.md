@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Introducción
 
 Un **procesador de textos** es un programa informático que permite a los usuarios crear, editar, formatear, imprimir y guardar documentos de texto. Está ampliamente relacionada con la **ofimática**, una palabra que se refiere al uso de la tecnología para mejorar la productividad en el área de escritorio.

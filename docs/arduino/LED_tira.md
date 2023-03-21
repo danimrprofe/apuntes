@@ -6,8 +6,9 @@ paginate: true
 _paginate: false
 _class: invert
 marp: true
-
 ---
+
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Tira de LEDs
 ## Arduino

@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Powershell
 
 PowerShell es un **lenguaje de scripting** de Microsoft que se ejecuta en la línea de comandos. Fue inventado por Jeffrey Snover en 2006 con el fin de ofrecer una herramienta de línea de comandos de alto nivel que sea fácil de usar y tenga una sintaxis intuitiva.
@@ -59,7 +61,6 @@ Set-dnsclientserveraddress -interfaceindex 6 –serveraddresses
 Este código usa los cmdlets de PowerShell para buscar dentro de todos los directorios y subdirectorios de la ubicación actual (-Recurse) y busca cualquier nombre de archivo que contenga un espacio.
 
 Estos archivos se guardan en una variable y luego se renombran con el comando Rename-Item. El espacio se reemplazará con un guión bajo (-replace).
-
 
 ```ps
 Get-ChildItem . -Recurse | Where-Object { $_.Name.Contains(' ') } | Rename-Item -NewName { $_.Name -replace ' ', '_' }

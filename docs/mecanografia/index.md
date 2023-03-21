@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Mecanografía
 
 Webs en las que aprender y practicar:

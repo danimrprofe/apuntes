@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Azure
 
 Azure es una plataforma de computación en la nube de Microsoft que ofrece una variedad de servicios de computación, almacenamiento, redes, análisis, Inteligencia Artificial y más para ayudar a las empresas a mejorar su productividad y competitividad. Azure ofrece escalabilidad, fiabilidad y seguridad, así como soporte para una variedad de lenguajes de programación y herramientas de desarrollo.

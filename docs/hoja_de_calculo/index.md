@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # 1. Introducción
 
 Las hojas de cálculo programas informáticos capaces de trabajar con números de forma sencilla e intuitiva. Sus principales aplicaciones son la realización automática de cálculos, la creación de gráficos, la implementación de bases de datos, etc.

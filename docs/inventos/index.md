@@ -8,6 +8,8 @@ _class: invert
 marp: true
 ---
 
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 #  Cronología de los inventos
 
 ---

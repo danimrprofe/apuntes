@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Expresiones regulares
 
 Las **expresiones regulares**, también llamadas **regex** son un lenguaje de patrones utilizado para coincidir con cadenas de texto. Se utilizan a menudo para validar formularios de entrada, buscar y reemplazar texto y para realizar tareas similares de procesamiento de texto.

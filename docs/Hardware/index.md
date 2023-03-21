@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Hardware
 
 El hardware es la **parte física** de un sistema informático, que incluye todos los componentes físicos y materiales que forman el sistema, como los dispositivos de entrada, salida, almacenamiento, procesamiento y comunicación.

@@ -1,3 +1,4 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Docker
 
@@ -296,8 +297,6 @@ No he tenido tiempo de probarlo, pero el proyecto está en:
 
 <https://github.com/yosifkit/dive>
 
-
-
 ## Multi stage builds
 
 Definimos un **dockerfile** y ponemos en primer lugar una línea FROM. A continuación
@@ -412,4 +411,3 @@ f4a77d5c469c: Pull complete
 Digest: sha256:c0540a9bcce05b35ef3b0738aee2681b78246b91503d0ae25091b52644c4df49
 Status: Downloaded newer image for danimrtic/nodejs-mongodb:latest
 ```
-

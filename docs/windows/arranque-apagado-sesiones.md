@@ -1,4 +1,4 @@
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
 title: Windows
 subtitle: Arranque, apagado y sesiones
 author: Daniel Moreno

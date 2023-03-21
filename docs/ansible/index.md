@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Ansible
 
 Ansible es una herramienta de automatización de infraestructura de código abierto. Está diseñada para ayudar a los administradores de TI y a los desarrolladores a automatizar el despliegue, la configuración y la gestión de la infraestructura de la computadora.
@@ -173,7 +175,6 @@ Para tareas de mantenimiento de paquetes, tenemos el modulo `apt`.
 
 Podemos forzar un upgrade.
 
-
 Ejemplo:
 
 ```yaml
@@ -239,7 +240,6 @@ La idea es incluir archivos y combinarlos para crear abstracciones limpias y reu
 Es necesario crear una estructura de carpetas y subcarpetas
 Las carpetas se pueden crear de forma manual o a partir de ansible-galaxy.
 Ansible-galaxy es un sitio para buscar, reutilizar e intercambiar roles desarrollados por la comunidad
-
 
 ### Creando roles
 

@@ -1,4 +1,4 @@
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
 title: 7 segments - 4 dígitos
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""

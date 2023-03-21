@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # git
 
 Git y GitHub son herramientas de control de versiones y plataformas de desarrollo de software de código abierto respectivamente.

@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Formatear disco desde Clonezilla
 
 ## ¿Qué es Clonezilla y qué puedo hacer con él?

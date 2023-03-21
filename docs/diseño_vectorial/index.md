@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Imágenes vectoriales
 
 Las imágenes vectoriales son un tipo de gráfico que utiliza vectores para representar imágenes y gráficos. Estos vectores se componen de líneas y formas geométricas (como círculos, rectángulos, etc.) para crear imágenes.

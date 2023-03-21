@@ -4,9 +4,9 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 ## Sistemas operativos
 
-- PC y portátiles: Windows, [Linux](https://danimrprofe.github.io/apuntes/Software_y_sistemas_operativos/Linux/) y [MacOS](https://danimrprofe.github.io/apuntes/Software_y_sistemas_operativos/MacOS/)
-- Servdores: [Windows Server](https://danimrprofe.github.io/apuntes/windows_server/2.%20Windows%20server/)
-- Dispositivos móviles: [iOs](https://danimrprofe.github.io/apuntes/Software_y_sistemas_operativos/iOS/), [Android](https://danimrprofe.github.io/apuntes/Software_y_sistemas_operativos/Android/)
+- PC y portátiles: Windows, [Linux](software-sistemas-operativos/Linux/) y [MacOS](software-sistemas-operativos/MacOS/)
+- Servdores: [Windows Server](windows_server/2.%20Windows%20server/)
+- Dispositivos móviles: [iOs](software-sistemas-operativos/iOS/), [Android](software-sistemas-operativos/Android/)
 
 ## Tecnología e ingeniería
 
@@ -25,7 +25,7 @@ Energías:
 - Modelado 3D con [Tinkercad](tinkercad/index.md) y [Blender](blender/index.md)
 - [Diseño vectorial](diseño_vectorial/index.md) con Inkscape
 - Edición y retoque fotografico: [Imagen digital](imagen_digital/)
-- [Impresión 3d](impresión3D/)
+- [Impresión 3d](impresion3D/)
 
 ## Hardware
 
@@ -57,8 +57,6 @@ La [virtualizació](virtualizacion/index.md) és una tecnologia que permet execu
 [terraform](terraform/index.md) és una eina d'automatització que permet la **creació, la gestió i el desplegament d'infraestructures** de núvol (cloud infrastructure) a través de codi.
 
 [Kubernetes](kubernetes/1._kubernetes.md) és una plataforma de **gestió d'orquestació de contenidors**  que permet gestionar i desplegar aplicacions en contenidors a gran escala, en múltiples màquines virtuals o físiques.
-
-
 
 ## Programación
 

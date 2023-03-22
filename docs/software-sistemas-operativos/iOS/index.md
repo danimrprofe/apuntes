@@ -1,4 +1,4 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
+---
 title: Pygame
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
@@ -8,13 +8,11 @@ _class: invert
 marp: true
 ---
 
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # iOS
 
----
-
-![](img/2023-03-18-15-06-43.png)
-
-**iOS** es un sistema operativo creado por Apple para su uso en dispositivos portátiles como el iPhone, iPod y iPad. Diseñado para ser intuitivo y fácil de usar, permitiendo al usuario tener una experiencia fluida y sin complicaciones a la hora de utilizar sus dispositivos.
+**iOS** es un sistema operativo creado por Apple para su uso en dispositivos portátiles como el ``iPhone``, ``iPod`` y ``iPad``.
 
 ---
 
@@ -22,7 +20,7 @@ marp: true
 
 ---
 
-Apple fabrica sus propios smartphones (iPhone) y el sistema operativo que incluye (iOS). De serie, trae un conjunto de programas propios de Apple incluidos, y podemos instalar otras apps de terceros, si queremos.
+``Apple`` fabrica sus propios smartphones (iPhone) y el sistema operativo que incluye (iOS). De serie, trae un conjunto de programas propios de Apple incluidos, y podemos instalar otras apps de terceros, si queremos.
 
 ---
 
@@ -38,8 +36,7 @@ El ecosistema de Apple es una forma de referirse al conjunto de dispositivos y s
 
 ---
 
-Es un sistema operativo muy adaptado para los dispositivos Apple y aprovechan muy bien el hardware. La última versión a día de hoy es el iPhone 12. La última versión es iOS 14. En IPad se ha creado una versión diferente llamada iPadOS, más adaptada a las necesidades de una tablet.
-
+Es un sistema operativo muy adaptado para los dispositivos Apple y aprovechan muy bien el hardware. La última versión a día de hoy es el iPhone 14. La última versión es ``iOS 16``.
 ![imagen](media/image4.png)
 
 ---

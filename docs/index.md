@@ -8,17 +8,11 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 - Servdores: [Windows Server](windows_server/2.%20Windows%20server/)
 - Dispositivos móviles: [iOs](software-sistemas-operativos/iOS/), [Android](software-sistemas-operativos/Android/)
 
-## Tecnología e ingeniería
-
-Energías:
-
-- [Carbón](energias/carbon.md)
-- [Petróleo](energias/petroleo.md) y [gas natural](energias/gas-natural.md)
-- [Nuclear](energias/nuclear.md) y [fusion nuclear](fusion-nuclear.md)
-- [Eólica](energias/eolica.md), [hidráulica](energias/hidraulica.md) y [solar](energias/solar.md)
-- [Hidrogeno-verde](energias/hidrogeno-verde.md) > [📺 presentación](energias/ppt/hidrogeno-verde.pdf)
-- [Biomasa](energias/biomasa.md)
-- [Geotérmica](energias/geotermica.md)
+- [Energias](energias.md)
+- [Hardware](hardware/index.md)
+- [Programació](programacion.md)
+- [seguridad informática](seguridad/index.md)
+- [Video](video.md)
 
 ## Diseño gráfico
 
@@ -26,10 +20,6 @@ Energías:
 - [Diseño vectorial](diseño_vectorial/index.md) con Inkscape
 - Edición y retoque fotografico: [Imagen digital](imagen_digital/)
 - [Impresión 3d](impresion3D/)
-
-## Hardware
-
-- [Hardware](hardware/index.md)
 
 ## Robótica
 
@@ -58,53 +48,8 @@ La [virtualizació](virtualizacion/index.md) és una tecnologia que permet execu
 
 [Kubernetes](kubernetes/1._kubernetes.md) és una plataforma de **gestió d'orquestació de contenidors**  que permet gestionar i desplegar aplicacions en contenidors a gran escala, en múltiples màquines virtuals o físiques.
 
-## Programación
-
-- [Pensamiento computacional](pensamiento_computacional/index.md)
-- [Programación orientada a objetos](programacion_orientada_a_objetos/index.md)
-- [Programación modular](programacion_modular/index.md)
-- [Programación estructurada](programacion_estructurada/index.md)
-
-# Python
-
-- El llenguatge de programació [python](python/index.md)
-- El [pip](pip/index.md) és un instal·lador de paquets per a Python, que permet instal·lar i gestionar fàcilment llibreries i mòduls de tercers per a projectes de Python.
-- [pygame](pygame/index.md) és una biblioteca popular de Python utilitzada per al desenvolupament de jocs i projectes multimèdia.
-
-# Control de versions
-- [Git](git/index.md) és un sistema de control de versions distribuït de codi obert. Es fa servir per al seguiment de canvis en el codi font durant el desenvolupament de software i per a la col·laboració entre programadors.
-
-# Programació mòbil
-- [App Inventor](appinventor/)
-- [``thunkable``](thunkable/index.md)
-
-# Programació de jocs
-
-- [``Unity``](unity/index.md)
-
 ## Seguridad
 
-- [seguridad informática](seguridad/index.md)
 - [criptomonedas](criptomonedas/)
-
-## Ofimática
-
-- [Mecanografía](mecanografia/index.md)
-- [Libreoffice base](base/index.md)
-- [Hoja de cálculo](hoja_de_calculo/index.md)
-- [Procesador de textos](procesador_de_textos/index.md)
-
-## Video
-
-- [Video](video/index.md)
-- [Edición de video](video%20edicion/)
-
-# Streaming
-
-[Twitch](twitch/index.md) és una plataforma de transmissió en viu enfocada a jocs i esports electrònics, on els usuaris poden veure i interactuar amb els seus jugadors preferits en temps real.
-
-[Youtube](youtube/index.md) és una plataforma de vídeo en línia que permet als usuaris pujar, compartir i visualitzar vídeos.
-
-[OBS](obs/index.md) (Open Broadcaster Software) és un programari lliure i de codi obert que permet la captura de pantalla i la transmissió en viu de contingut, inclosos jocs i altres activitats en línia, a través de diverses plataformes de vídeo digital a internet com Twitch i Youtube.
 
 ![imagen](img/2022-11-25-17-49-34.png)

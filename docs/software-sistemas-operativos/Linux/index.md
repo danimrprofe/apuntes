@@ -1,4 +1,4 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
+---
 title: Pygame
 footer: Daniel Moreno 🌐 <github.com/danimrprofe>
 _footer: ""
@@ -7,6 +7,8 @@ _paginate: false
 _class: invert
 marp: true
 ---
+
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Linux
 
@@ -61,22 +63,13 @@ Los entornos gráficos como GNOME y KDE proporcionan una interfaz gráfica para 
 
 ---
 
-## Sistemas Linux
-
-Los sistemas operativos Linux son desarrollados bajo la **Licencia GPL**. Estos son usados por empresas, asociaciones y colectivos de personas.
-
-Actualmente hay más de 400 distribuciones de Linux que se adaptan a las necesidades de los usuarios.
-
----
-
 ##  Distribuciones Linux
 
-Linux es un sistema operativo libre y de código abierto que permite a los usuarios modificar y mejorar el software a su gusto.
+Linux es un sistema operativo libre y de código abierto que permite a los usuarios ``modificar y mejorar`` el software a su gusto.
 
 Debido a su naturaleza libre, han surgido diferentes grupos de usuarios y desarrolladores que han creado sus propias ``versiones personalizadas`` de Linux, conocidas como ``distribuciones``.
 
 ![imagen](2019-06-28-08-45-41.png)
-
 
 ---
 
@@ -100,13 +93,21 @@ Ubuntu es una de las ``distribuciones`` de Linux más populares y ampliamente ut
 
 ---
 
+### Características
+
 Una de las características principales de Ubuntu es su facilidad de uso y su enfoque en la accesibilidad para los usuarios. Viene con una amplia variedad de aplicaciones preinstaladas, incluyendo una suite de oficina, navegador web, reproductor multimedia y mucho más.
 
+![ubuntu](img/ubuntu.gif)
+
 ---
+
+### Comunidad
 
 Ubuntu también cuenta con una gran comunidad de usuarios y desarrolladores, lo que significa que hay una gran cantidad de recursos y soporte disponibles en línea. Además, es conocida por sus actualizaciones regulares y su énfasis en la seguridad.
 
 ---
+
+### Versiones
 
 Hay varias ``versiones de Ubuntu`` disponibles, incluyendo la versión principal de escritorio, así como las versiones de servidor y para dispositivos móviles. También existen versiones personalizadas, como ``Kubuntu`` (con el escritorio KDE) y ``Xubuntu`` (con el escritorio XFCE), entre otras.
 

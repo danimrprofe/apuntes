@@ -1,6 +1,6 @@
-# 14. Pantalla LCD
+# Pantalla LCD
 
-### Resumen
+## Resumen
 
 En esta lección aprendremos a:
 
@@ -13,13 +13,13 @@ En esta lección aprendremos a:
 7. Cómo encender o apagar la luz de fondo.
 8. Cómo crear una animación en la pantalla.
 
-La pantalla tiene una retroiluminación de LED y puede mostrar dos filas con hasta 16 caracteres en cada fila. Puede ver los rectángulos para cada carácter en la pantalla y los píxeles que componen cada carácter. La pantalla es blanca en azul y está diseñada para mostrar texto.
+La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con hasta 16 caracteres`` en cada fila.
 
-![imagen](media/image109.png)
+![](img/2023-03-24-10-17-19.png)
 
 En esta lección, se ejecutará el programa de ejemplo de``Arduino`` para la **librería** de la LCD, pero en la siguiente lección, nos pondremos nuestra pantalla para mostrar la temperatura mediante sensores.
 
-### Componentes necesarios
+## Componentes necesarios
 
 | cantidad | componente                                                                        |
 | -------- | --------------------------------------------------------------------------------- |
@@ -32,19 +32,17 @@ En esta lección, se ejecutará el programa de ejemplo de``Arduino`` para la **l
 
 ### Circuito integrado LCD1602
 
-La mayoria de los LCD1602 tienen 16 patillas, pero algunos de ellos pueden tener 18 patillas. Para el LCD1602 de 16 patillas hay unas patillas llamadas:
+La pantalla está incrustada en un ``circuito integrado ``que la controla, llamado ``LCD1602``.
 
-- **VSS**: Un pin que se conecta a tierra
-- **VDD**: Un pin que se conecta a un + 5V fuente de alimentación
+## Pines
 
-VO: Un pasador que ajusta el contraste de LCD1602
-
-RS: Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.
-
-- R/W: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.
-- D0-D7: Pernos que leer y escribir datos
-
-A y K: Que el control de la retroiluminación LED de los pernos
+- ``VSS`` Un pin que se conecta a tierra
+- ``VDD`` Un pin que se conecta a un + 5V fuente de alimentación
+- ``VO``  ajusta el contraste.
+- ``RS`` Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.
+- ``R/W``: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.
+- ``D0-D7`` son los pines para escribir y leer datos.
+- ``A y K`` controlan de la retroiluminación LED de los pernos
 
 ## Esquema de conexión
 
@@ -62,7 +60,7 @@ Hay bastantes conexiones que hay que hacer. Alinear la pantalla con la parte sup
 
 ## Potenciómetro
 
-El **potenciómetro** se utiliza para controlar el contraste de la pantalla. Es posible que su pantalla se suministre sin pines de cabecera conectados a ella. Si es así, siga las instrucciones de la siguiente sección.
+El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. Es posible que su pantalla se suministre sin pines de cabecera conectados a ella. Si es así, siga las instrucciones de la siguiente sección.
 
 ## Librería
 
@@ -107,48 +105,6 @@ El primero establece la posición del cursor (donde aparecerá el siguiente text
 La segunda línea muestra el número de milisegundos desde que se restableció el``Arduino``.
 
 ```c
-//www.elegoo.com
-//2016.12.9
-
-/*
-  LiquidCrystal Library - Hello World
-
- Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
- library works with all LCD displays that are compatible with the
- Hitachi HD44780 driver. There are many of them out there, and you
- can usually tell them by the 16-pin interface.
-
- This sketch prints "Hello World!" to the LCD
- and shows the time.
-
-  The circuit:
- * LCD RS pin to digital pin 7
- * LCD Enable pin to digital pin 8
- * LCD D4 pin to digital pin 9
- * LCD D5 pin to digital pin 10
- * LCD D6 pin to digital pin 11
- * LCD D7 pin to digital pin 12
- * LCD R/W pin to ground
- * LCD VSS pin to ground
- * LCD VCC pin to 5V
- * 10K resistor:
- * ends to +5V and ground
- * wiper to LCD VO pin (pin 3)
-
- Library originally added 18 Apr 2008
- by David A. Mellis
- library modified 5 Jul 2009
- by Limor Fried (http://www.ladyada.net)
- example added 9 Jul 2009
- by Tom Igoe
- modified 22 Nov 2010
- by Tom Igoe
-
- This example code is in the public domain.
-
- http://www.arduino.cc/en/Tutorial/LiquidCrystal
- */
-
 // include the library code:
 #include <LiquidCrystal.h>
 

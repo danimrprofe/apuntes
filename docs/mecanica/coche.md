@@ -66,7 +66,7 @@ El ``diferencial`` divide esta energía en dos ejes de transmisión, uno para ca
 
 ![](img/2023-03-24-17-47-21.png)
 
-Los gases de escape son producidos por la combustión de la mezcla de combustible y aire en los cilindros del motor y son expulsados del motor a través del sistema de escape.
+Los gases de escape son producidos por la combustión de la mezcla de combustible y aire en los cilindros del motor y son expulsados del motor a través del sistema de escape.pushe
 
 El sistema de escape incluye un ``catalizador``, que es un dispositivo que reduce las emisiones de los gases de escape. El catalizador contiene metales preciosos como el platino y el paladio, que actúan como catalizadores para promover reacciones químicas que convierten los contaminantes nocivos en sustancias menos perjudiciales.
 

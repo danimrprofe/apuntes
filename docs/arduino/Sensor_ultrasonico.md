@@ -20,9 +20,7 @@ Para hacer una prueba sencilla de funcionamiento del sensor, necesitaremos:
 (4) x F M cables (cables de hembra a macho DuPont)
 ```
 
----
-
-# Sensor de ultrasonidos
+## Características técnicas
 
 El módulo **HC-SR04** del sensor ultrasónico nos permite medir distancias entre 2 cm y 400 cm, con una precisión que varía puede alcanzar los 3 mm.
 
@@ -32,9 +30,7 @@ El principio básico del trabajo es el siguiente:
 - El Módulo envía automáticamente ocho señales de 40 kHz y detecta si hay una señal de retorno, por rebotar en alguna superficie.
 - Esta señal de retorno dependerá de la distancia recorrida y, por tanto, de la distancia.
 
----
-
-# ¿Cómo calcula la distancia?
+## ¿Cómo calcula la distancia?
 
 La distancia recorrida se podría calcular en función de:
 
@@ -69,9 +65,7 @@ Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la s
 
 ![bg contain](img/2022-11-20-17-18-13.png)
 
----
-
-# Conexión
+## Conexión
 
 Aquí podemos ver como conectar los cuatro pines del sensor al``Arduino`` Uno.
 
@@ -83,8 +77,6 @@ Aquí podemos ver como conectar los cuatro pines del sensor al``Arduino`` Uno.
 
 El diagrama de cableado es el siguiente. Recordad que utilizamos en general rojo para cables conectados a 5V y negro para 0V o tierra (GND).
 
----
-
 ![imagen](media/image90.jpeg)
 
 ---
@@ -93,21 +85,15 @@ El diagrama de cableado es el siguiente. Recordad que utilizamos en general rojo
 
 ---
 
-# Código
+## Código
 
 Necesitaremos una **librería** para poder utilizar algunas funciones y comunicarnos con el sensor. Para ello, deberemos de incluirla en nuestro proyecto, de la siguiente forma:
 
----
-
 ![imagen](img/2022-10-17-15-41-18.png)
-
----
 
 Una vez incluída, ya la podemos utilizar en nuestro programa.
 
 Vamos a utilizar el monitor serie para mostrar los datos por pantalla, por lo menos mientras probamos el programa.
-
----
 
 ```c
 

@@ -118,12 +118,6 @@ void loop() {
 
 ```
 
----
-
 Abriendo el monitor y podemos ver los datos que vamos imprimiendo desde el programa
 
 ![imagen](media/image92.jpeg)
-
----
-
-Una vez detectados los valores, con estructuras **if-else** podríamos tomar decisiones en nuestro programa para realizar ciertas acciones.

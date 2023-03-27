@@ -1,20 +1,8 @@
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Sensor de luz
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
-
----
 
 # Sensor luz (fotocelula)
 
----
-
-# Resumen
+## Resumen
 
 Vamos a aprender como medir la intensidad de la luz utilizando una entrada analógica. Con lo que aprenderemos, podremos posteriormente utilizar el nivel de luz para controlar el apagar un LED o encenderlo cuando no haya luz, por ejemplo.
 

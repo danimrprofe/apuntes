@@ -6,9 +6,8 @@ Los **mandos a distancia** infrarrojos son simples y fáciles de usar. En este t
 
 En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
 
-![imagen](media/image103.jpeg)
-
 ### Componentes necesarios
+
 ```
 (1) x Elegoo Uno R3
 x IR modulo receptor
@@ -16,23 +15,17 @@ x IR control remoto
 x F-M cables (cables de hembra a macho DuPont)ç
 ```
 
-### Sensor receptor de infrarrojos
+### Detectores IR vs fotocélulas
 
-Los detectores infrarrojos son pequeños microchips con una célula fotoeléctrica que están configurados para recibir a la luz infrarroja.
+Los detectores infrarrojos y las fotocélulas tienen diferentes características y usos específicos.
 
-Casi siempre se utilizan para la detección de control remoto - cada TV y reproductor de DVD tiene uno de estos en la parte delantera para escuchar la señal de IR desde el clicker.
+Los ``detectores infrarrojos`` están diseñados para detectar la luz infrarroja y están configurados para recibir señales moduladas en 38 KHz, como las señales de control remoto. Los detectores infrarrojos tienen una ``salida digital`` que indica si se detecta o no una señal de IR
 
-Dentro del control remoto es un juego IR LED, que emite pulsos IR para comunicar al televisor para encender, apagar o cambiar de canal.
+![](img/2023-03-27-16-23-58.png)
 
-La luz infrarroja no es visible para el ojo humano.
+Por otro lado, las ``fotocélulas`` pueden detectar luz visible en el espectro amarillo/verde y no están diseñadas específicamente para detectar luz infrarroja. Las fotocélulas actúan como resistencias y ``cambian su resistencia`` en función de la cantidad de luz a la que están expuestas.
 
-Detectores infrarrojos son especialmente filtrados para IR ligero, no son buenos para detectar luz visible. Por otro lado, las fotocélulas son buenas para detectar luz visible de amarillo/verde y no son buenas para luz IR.
-
-Detectores infrarrojos tienen un demodulador en ese aspecto para IR modulada a 38 KHz. Sólo brilla un LED IR no detectada, tiene que ser PWM intermitente en 38 KHz. fotocélulas no tienen ningún tipo de demodulador y puede detectar cualquier frecuencia (incluyendo CC) dentro de la velocidad de respuesta de la fotocélula (que es aproximadamente 1KHz)
-
-Detectores infrarrojos son salida digital - tampoco detectan señal 38KHz IR y salida bajo (0V) o no detecta ninguno y salida alto (5V).
-
-Las fotocélulas actúan como resistencias, los cambios de resistencia dependiendo de cuánto se exponen a la luz
+![](img/2023-03-27-16-23-23.png)
 
 ## ¿Qué podemos medir?
 

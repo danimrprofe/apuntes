@@ -1,12 +1,3 @@
----
-title: [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
 
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 

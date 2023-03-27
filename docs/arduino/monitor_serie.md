@@ -1,16 +1,6 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Monitor serie
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Monitor serie
-
----
 
 ## Introducción
 
@@ -20,15 +10,11 @@ Incluye un `terminal` de serie con el software llamado  monitor serie. El Monito
 
 El monitor serie nos permite comunicarnos con el ``arduino`` a través de una ventana y recibir datos de él.
 
----
-
 ## Realizar la conexión
 
 Para abrirlo, simplemente haga clic en el icono ``Serial Monitor``.
 
 ![imagen](media/image33.jpeg)
-
----
 
 ## Elegir puerto
 
@@ -48,16 +34,12 @@ Una vez abierto, debería ver algo como esto:
 
 ### Configuración
 
-El Monitor Serial ha limitado opciones, pero lo suficiente para manejar la mayoría de sus  necesidades de comunicación serial. El primer ajuste que se puede modificar es la velocidad  en baudios. Haga clic en la velocidad en baudios tasa lista desplegable para seleccionar la  velocidad correcta. (9600 baudios)
+El primer ajuste que se puede modificar es la ``velocidad  en baudios``. Haga clic en la velocidad en baudios tasa lista desplegable para seleccionar la  velocidad correcta. (9600 baudios)
 
 ![imagen](media/image36.jpeg)
-
----
 
 Por último, puede establecer el terminal desplazamiento automático o no marcando la casilla en la esquina inferior izquierda
 
 ![imagen](media/image37.jpeg)
-
----
 
 El Monitor Serial es una gran manera rápida y fácil para establecer una conexión en serie con  el``Arduino``.

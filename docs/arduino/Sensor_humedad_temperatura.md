@@ -1,30 +1,27 @@
 
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Sensor humedad temperatura DHT11
 
 ## Resumen
 
-En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura **DHT11**.
+En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura **DHT11**. El sensor digital de temperatura y humedad **DHT11** es un sensor que nos proporciona información de  de la temperatura y la humedad.
 
 ![imagen](img/2022-12-12-18-42-31.png)
-
-Otra vez vamos a usar una **librería** diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.
 
 ## Componentes necesarios
 
 |     |                                              |
 |  | -- |
-| (1) | Elegoo Uno R3                                |
+| (1) | Placa arduino  |
 | (1) | módulo de humedad y temperatura DHT11        |
 | (3) | F M cables (cables de hembra a macho DuPont) |
 
-### Sensor de temperatura y humedad
-
-Sensor digital de temperatura y humedad **DHT11** es un sensor que nos proporciona información de  de la temperatura y la humedad.
-
 ## Parámetros del sensor
 
-Humedad relativa:
+Cualquier magnitud que queramos leer tendrá unas ``características`` de precisión, según el sensor o instrumento que lo mide.
+
+# Humedad relativa
 
 - Resolución: 16 bits
 - Repetibilidad: ±1% H.R.
@@ -35,31 +32,36 @@ Humedad relativa:
 - Histéresis: < ± 0.3% RH
 - Estabilidad a largo plazo: < ± 0.5% hr / año en
 
-# Temperatura
+## Temperatura
 
-|     |  |
-| --- ||
+|                      |                 |
+| -------------------- | --------------- |
 | Resolución:          | 16 bits         |
 | Repetibilidad:       | ±0. 2 ° C       |
 | Rango:               | 25 ° C ±2° c    |
 | Tiempo de respuesta: | 1 / e (63%) 10S |
 
-# Características eléctricas
+## Características eléctricas
 
-|     |  |
-| --- ||
+Para funcionar, el sensor necesita corriente eléctrica.
+
+|                         |                                |
+| ----------------------- | ------------------------------ |
 | Fuente de alimentación: | DC 3.5 ~ 5.5V                  |
 | Corriente:              | medición 0.3mA (60μA en espera |
 | Periodo de muestreo:    | más de 2 segundos              |
 
 # Descripción de pines
 
-|     |  |
-| --- ||
-| VDD  | alimentación 3,5~5.5V DC |
-| DATA | bus de datos             |
-| NC   | pin vacío                |
-| GND  | tierra                   |
+El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con la placa arduino. Estos pines son:
+
+![](img/2023-03-27-11-09-57.png)
+
+|      |                                                    |
+| ---- | -------------------------------------------------- |
+| VDD  | Lo conectaremos a 5 V                              |
+| DATA | Lo conectaremos a un pin de datos. En este caso D2 |
+| GND  | Lo conectaremos a tierra                           |
 
 ![bg contain](media/image94.jpeg)
 
@@ -67,11 +69,9 @@ Humedad relativa:
 
 ![bg contain](media/image96.jpeg)
 
-Como se puede ver que sólo necesitamos 3 conexiones al sensor, ya que uno de lo pin no se utiliza.
+## Código
 
-Las conexiones son: voltaje, tierra y señal de que puede conectarse a cualquier Pin en nuestro UNO.
-
-### Código
+El siguiente código va a utilizar el sensor que hemos conectado para leer la temperatura y la humedad que está midiendo el sensor.
 
 ```c title="sensorHumedadytemperatura.ino"
 #include <dht_nonblocking.h>
@@ -80,18 +80,11 @@ Las conexiones son: voltaje, tierra y señal de que puede conectarse a cualquier
 static const int DHT_SENSOR_PIN = 2;
 DHT_nonblocking dht_sensor( DHT_SENSOR_PIN, DHT_SENSOR_TYPE );
 
-/*
- * Initialize the serial port.
- */
 void setup( )
 {
   Serial.begin( 9600);
 }
 
-/*
- * Poll for a measurement, keeping the state machine alive.  Returns
- * true if a measurement is available.
- */
 static bool medir ( float *temperature, float *humidity )
 {
   static unsigned long measurement_timestamp = millis( );
@@ -109,16 +102,11 @@ static bool medir ( float *temperature, float *humidity )
   return( false );
 }
 
-/*
- * Main program loop.
- */
 void loop( )
 {
   float temperature;
   float humidity;
 
-  /* Measure temperature and humidity.  If the functions returns
-     true, then a measurement is available. */
   if( medir( &temperature, &humidity ) == true )
   {
     Serial.print( "T = " );
@@ -132,6 +120,10 @@ void loop( )
 
 ## Salida en el monitor
 
-Los valores medidos se mostrarán por pantalla en el monitor serie.
+Los valores medidos se mostrarán por pantalla en el monitor serie. El monitor serie lo tenemos que abrir desde el IDE de arduino.
+
+![](img/2023-03-27-11-14-40.png)
+
+A continuación se nos abrirá una pantalla en la que podremos ver los datos que nuestro programa está escribiendo.
 
 ![imagen](media/image97.jpeg)

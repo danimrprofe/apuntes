@@ -1,30 +1,8 @@
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
-# Motor CC
-
-## Resumen
-
-En esta lección, aprenderá a controlar un pequeño motor DC (corriente continua) usando un R3 de UNO y un transistor.
-
----
-
-### Componentes necesarios
-
-- (1) x``Arduino``
-- x Protoboard
-- x L293D IC
-- (1) x Aspa de ventilador y motor de3-6v
-- x M- M cables (cables de puente de macho a macho)
-- x Módulo de alimentación
-- x 9V1A adaptador corriente
-
----
-
 ## Fuente de alimentación de la placa
 
 El pequeño motor de corriente continua es probable que use más energía que la que``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
-
----
 
 **Especificaciones del producto:**
 
@@ -63,7 +41,9 @@ Asegúrese de alinear el módulo correctamente en la placa de pruebas.
 
 ### L293D
 
-Este es un chip muy útil, pues puede controlar dos motores **independientemente**. Estamos usando sólo la mitad del chip en esta lección, la mayoría de los pines en el lado derecho del chip son para el control de un segundo motor.
+El L293D és un circuit integrat que s'utilitza com a controlador de motor i permet controlar la direcció i la velocitat d'un motor DC.
+
+El dispositiu inclou quatre drivers de pont H, que permeten controlar fins a dos motors DC de manera independent.
 
 ![imagen](media/image142.jpeg)
 
@@ -92,104 +72,42 @@ El ``L293`` y ``L293D`` son cuádruples controladores  de alta corriente.
 - El L293 está diseñado para proporcionar corrientes de transmisión bidireccional de hasta 1 A con tensiones de 4,5 V a 36 V.
 - El L293D está diseñado para proporcionar bidireccional corrientes de impulsión de hasta 600 mA en tensiones de 4,5 V a 36 V.
 
----
-
-Ambos dispositivos están diseñados para manejar cargas inductivas como relés, solenoides, dc y motores paso a paso bipolares, así como otras cargas de alta corriente de alta tensión en aplicaciones de suministro de positivo.
-
-Todas las entradas son TTL compatible. Cada salida es un circuito de coche completa totem-pole, con un fregadero de transistor Darlington y una fuente de pseudo-Darlington. Conductores están habilitados en pares, con conductores de 1 y 2 de 1, 2EN y drivers 3 y 4 de 3, 4EN.
-
----
-
-- Cuando una entrada **enable** está en valor alto, están habilitados los controladores asociados, y sus salidas son activas y en fase con sus aportaciones.
-- Cuando la entrada **enable**está en valor bajo, se deshabilitan los controladores y sus salidas quedan en estado de alta impedancia.
-
-Con las entradas de datos adecuadas, cada par de conductores forma una unidad reversible completo-H (o puente) adecuada para aplicaciones de solenoide o motor.
-
----
-
-### Diagrama de bloques
-
-![imagen](media/image144.png)
-
----
-
-Hay 3 cables conectados al``Arduino``, 2 cables conectados al motor y 1 alambre conectado a una batería.
-
-Para utilizar este pin:
-
-Ocupa el lado izquierdo con el primer motor, el lado derecho trata con un segundo motor.
-
-Sí, usted puede funcionar con solamente un motor conectado.
+Els pins IN1, IN2, IN3 i IN4 es fan servir per controlar la direcció del motor, mentre que el pin ENABLE s'utilitza per controlar la seva velocitat.
 
 ![imagen](media/image145.jpeg)
-
----
 
 ## Control de la velocidad
 
 **M1 PWM** lo conectaremos a un pin PWM de``Arduino``. Está marcados en la ONU, el pin 5 es un ejemplo. Cualquier número entero entre 0 y 255, donde:
 
-- 0 es apagado1
-- 128 es la mitad de velocidad
-- 255 es la velocidad máxima de salida.
+- ``0`` significa velocidad 0 (no hay movimiento)
+- ``128`` es la mitad de velocidad
+- ``255`` es la velocidad máxima de salida.
 
----
-
-Según el valor se generará una señal PWM diferente.
+Según el valor que escribamos, se generará una señal PWM diferente.
 
 ![imagen](img/2022-11-13-13-35-36.png)
 
----
-
 ## Cambiar la dirección de giro
 
-Entradas de dirección de **M1 0/1** y **M1 1/0**
+La dirección se controla a través de las entradas de dirección:
 
-- Conectar estos pines de``Arduino`` digitales dos a dos.
-- Un pin de salida tan alto y el otro pin como baja y el motor girará en un sentido.
-- Revertir las salidas a baja y alta, y el motor girará en sentido contrario.
+- **M1 0/1** y **M1 1/0** determinan el sentido de giro del motor 1
+- **M2 0/1** y **M2 1/0** determinan el sentido de giro del motor 2
+
+![](img/2023-03-28-12-14-53.png)
+
+En la siguiente tabla veréis las 4 combinaciones posibles para el motor 1:
 
 ![imagen](img/2022-11-13-13-34-44.png)
-
----
-
-### Conexión
-
-![imagen](media/image146.jpeg)
-
----
 
 ### Esquema
 
 ![imagen](media/image147.jpeg)
 
----
+## Montaje físico
 
-### Diagrama de cableado
-
-El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del``Arduino``. Esto sería arriesgado sin que el L293D lo controlara.
-
-Nunca debería conectar un motor directamente al``Arduino``, porque al desconectar un motor obtendrá una retroalimentación eléctrica. Con un motor pequeño, esto dañará su``Arduino``.
-
----
-
-![imagen](media/image148.jpeg)
-
----
-
-# Funcionamiento
-
-- Ligeramente, el motor girará en sentido horario y antihorario por 5 veces.
-- Luego, seguirá dramáticamente gire hacia la derecha.
-- Tras una breve pausa, lo dramáticamente girará hacia la izquierda.
-- A continuación, la tarjeta controladora enviará la señal PWM para el motor, el motor lentamente reducir su máxima RPM al mínimo y aumentar al máximo otra vez.
-- Por último, para 10s hasta que comience el siguiente ciclo.
-
----
-
-![imagen](media/image149.jpeg)
-
----
+![](img/2023-03-28-12-13-46.png)
 
 ## Código
 

@@ -1,7 +1,4 @@
----
-<!-- _class: invert -->
-# <!--fit --> Mecanismes de lubricació d’eixos
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Lubrificació
 

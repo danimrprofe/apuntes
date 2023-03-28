@@ -1,4 +1,7 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Sistemas de retención
+
 Destinados a ``interrumpir`` a voluntad el ``movimiento`` de rotación del eje.
 
 ---

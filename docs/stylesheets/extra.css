@@ -1,13 +1,10 @@
 h1 {
-    background-color: #ffc9b9;
-    padding: 4px;
-    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    background-color: #01a1ff;
+    padding: 10px;
 }
 
 h2 {
-    background: #ffd3a9;
-}
-
-code {
-    background-color: #d8f0ff;
+    font-weight: 800;
 }

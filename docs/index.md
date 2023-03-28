@@ -4,10 +4,9 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 
 ## Sistemas operativos
 
-- PC y portátiles: Windows, [Linux](software-sistemas-operativos/Linux/) y [MacOS](software-sistemas-operativos/MacOS/)
-- Servdores: [Windows Server](windows_server/2.%20Windows%20server/)
+- PC y portátiles: [Windows](windows/), [Linux](software-sistemas-operativos/Linux/) y [MacOS](software-sistemas-operativos/MacOS/)
+- Servidores: [Windows Server](windows_server/2.%20Windows%20server/)
 - Dispositivos móviles: [iOs](software-sistemas-operativos/iOS/), [Android](software-sistemas-operativos/Android/)
-
 - [Energias](energias.md)
 - [Hardware](hardware/index.md)
 - [Programació](programacion.md)

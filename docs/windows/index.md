@@ -2,21 +2,20 @@
 
 Windows es el sistema operativo más extendido del mundo en ordenadores de sobremesa y portátiles. En este tema aprendremos a manejarnos en este sistema operativo.
 
-- [Instalacion](9.Instalacion-SO.md)
+- [Instalacion](instalacion.md)
 - [abrir-con.md](abrir-con)
-- [accesos-directos.md](accesos directos)
-- [aplicaciones-portables.md]
-- [archivos-comprimidos.md]
-- [arranque-apagado-sesiones.md]
-- [atajos-teclado.md]
-- [barra-tareas.md]
-- [captura-pantalla.md]
-- [carpetas-y-documentos.md]
-- [escritorio y ventanas.md]
-- [formatear-restaurar-sistema.md]
-- [index.md]
-- [linea-comandos.md]
-- [navegadores.md]
+- [accesos directos](accesos-directos.md)
+- [aplicaciones portables](aplicaciones-portables.md)
+- [archivos comprimidos](archivos-comprimidos.md)
+- [Arranque, apagado y sesiones](arranque-apagado-sesiones.md)
+- [Atajoas de teclado](atajos-teclado.md)
+- [Barra de tareas](barra-tareas.md)
+- [Capturar pantalla](captura-pantalla.md)
+- [Carpetas y documentos](carpetas-y-documentos.md)
+- [Escritorio y ventanas](escritorio-y-ventanas.md)
+- [Formatear y restarar sistema](formatear-restaurar-sistema.md)
+- [linea-comandos](linea-comandos.md)
+- [navegadores](navegadores.md)
 - [panel de control](panel-de-control.md)
 - [pantallas](pantallas.md)
-- [tareas-y-escritorios-multiples.md]
+- [Tareas y escritorios múltiples](tareas-y-escritorios-multiples.md)

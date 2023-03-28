@@ -13,6 +13,8 @@ Hi ha dues maneres de subministrar gas a un habitatge:
 - mitjançant gas **canalitzat**
 - mitjançant **bombones** de gas.
 
+![](img/2023-03-28-12-54-02.png)
+
 Els gasos més utilitzats són el gas natural i el butà.
 
 - El **gas natural** es distribueix canalitzat per mitjà d'una xarxa de canonades soterrades.

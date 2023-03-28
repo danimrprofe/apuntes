@@ -1,20 +1,7 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: E.Automatización
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
-# TECNOLOGÍA E INGENIERÍA I
-## Saberes básicos
 
----
-
-<!-- _class: invert -->
-# <!--fit --> Bloque E: automatización
+# Bloque E: automatización
 ---
 
 https://sites.google.com/site/federubiotecindbachillerato/home/2o-bachillerato/control-y-programacin

@@ -1,36 +1,12 @@
 # Pantalla LCD
 
-## Resumen
-
-En esta lección aprendremos a:
-
-1. Conectar la pantalla LCD alfanumérico a su placa de``Arduino``.
-2. Cómo utilizar la función lcd.print () para imprimir datos en la pantalla.
-3. Cómo mover el cursor en la pantalla.
-4. Cómo encender o apagar la pantalla.
-5. Cómo encender o apagar el cursor.
-6. Cómo configurar la dirección del cursor.
-7. Cómo encender o apagar la luz de fondo.
-8. Cómo crear una animación en la pantalla.
+## Introdcción
 
 La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con hasta 16 caracteres`` en cada fila.
 
 ![](img/2023-03-24-10-17-19.png)
 
-En esta lección, se ejecutará el programa de ejemplo de``Arduino`` para la **librería** de la LCD, pero en la siguiente lección, nos pondremos nuestra pantalla para mostrar la temperatura mediante sensores.
-
-## Componentes necesarios
-
-| cantidad | componente                                                                        |
-| -------- | --------------------------------------------------------------------------------- |
-| 1        | placa``Arduino`` Uno                                                              |
-| 1        | protoboard                                                                        |
-| 1        | [Pantalla LCD alfanumérica 1602](https://www.arduino.cc/en/Main/ArduinoLCDShield) |
-| 1        | [Cable USB](https://www.arduino.cc/en/Main/USBCable)                              |
-| 1        | Potenciómetro (10k)                                                               |
-|          | Cables jumper M-m                                                                 |
-
-### Circuito integrado LCD1602
+## Circuito integrado LCD1602
 
 La pantalla está incrustada en un ``circuito integrado ``que la controla, llamado ``LCD1602``.
 
@@ -52,15 +28,16 @@ La pantalla está incrustada en un ``circuito integrado ``que la controla, llama
 
 ![imagen](media/image111.jpeg)
 
-La pantalla LCD necesita seis pines de``Arduino``, todo listo para ser salidas digitales.
+La pantalla LCD necesita:
 
-También necesita 5V y GND conexiones.
-
-Hay bastantes conexiones que hay que hacer. Alinear la pantalla con la parte superior de la placa ayuda a identificar sus pines sin tener que contar demasiado, especialmente si la placa tiene sus filas numeradas con la fila 1 como la fila superior de la placa. No se olvide del cable amarillo largo que conecta el potenciómetro a la patilla 3 de la pantalla.
+- 6 pines digitales de datos de``Arduino``
+- Coneciones de 5V y GND.
 
 ## Potenciómetro
 
-El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. Es posible que su pantalla se suministre sin pines de cabecera conectados a ella. Si es así, siga las instrucciones de la siguiente sección.
+El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. En ocasiones se ajusta con un pequeño destornillador. El potenciómetro utilizado será de ``10 KOhm``
+
+![](img/2023-03-28-12-59-15.png)
 
 ## Librería
 

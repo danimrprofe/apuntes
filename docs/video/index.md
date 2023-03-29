@@ -17,5 +17,5 @@ Edició de vídeo:
 Streaming:
 
 - Youtube
-- Twitch
-- OBS
+- [Twitch](twitch/index.md)
+- [OBS](obs/index.md)

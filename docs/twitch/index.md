@@ -12,9 +12,9 @@ marp: true
 
 ---
 
-Aunque no es obligatorio, otra herramienta muy útil sobre todo para directos es``Twitch``. Es algo más complejo de crear y editar, pero muy interesante.
+Aunque no es obligatorio, otra herramienta muy útil sobre todo para directos es[Twitch](twitch/index.md). Es algo más complejo de crear y editar, pero muy interesante.
 
-Podéis verlo en [twitch.tv](http://twitch.tv) o instalar la app de``Twitch`` desde la Play Store.
+Podéis verlo en [twitch.tv](http://twitch.tv) o instalar la app de[Twitch](twitch/index.md) desde la Play Store.
 
 ---
 
@@ -28,7 +28,7 @@ Hoy en día, se ha expandido para incluir también otras disciplinas como músic
 
 ![imagen](media/image35.png)
 
-La mayoría de la comunidad de``Twitch`` únicamente visualiza vídeos, y comenta a través de un canal de chat, entre otras opciones.
+La mayoría de la comunidad de[Twitch](twitch/index.md) únicamente visualiza vídeos, y comenta a través de un canal de chat, entre otras opciones.
 
 ---
 

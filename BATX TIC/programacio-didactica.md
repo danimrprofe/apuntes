@@ -509,15 +509,15 @@ Corrección de diapositivas. Rellenar formulario de reflexión. Tarea tipos de a
 
 # Un mundo de descargas
 
-| Contenidos                     | Actividades                       | Sesiones |
-| ------------------------------ | --------------------------------- | -------- |
-| Acceso a servicios de ocio     | TV, música. Spotify. Netflix. HBO | 1        |
-| Compartir videos en Internet   | ``YouTube``,``Twitch``            | 1        |
-| Descarga directa de contenidos |                                   | 1        |
-| Gestores de descarga           |                                   | 1        |
-| Disco duro en Internet         | Dropbox, onedrive                 | 1        |
-| Redes P2P                      | Ares, Bittorrent, emule...        | 1        |
-| Examen                         |                                   | 1        |
+| Contenidos                     | Actividades                           | Sesiones |
+| ------------------------------ | ------------------------------------- | -------- |
+| Acceso a servicios de ocio     | TV, música. Spotify. Netflix. HBO     | 1        |
+| Compartir videos en Internet   | ``YouTube``,[Twitch](twitch/index.md) | 1        |
+| Descarga directa de contenidos |                                       | 1        |
+| Gestores de descarga           |                                       | 1        |
+| Disco duro en Internet         | Dropbox, onedrive                     | 1        |
+| Redes P2P                      | Ares, Bittorrent, emule...            | 1        |
+| Examen                         |                                       | 1        |
 
 
 --- BORRAR

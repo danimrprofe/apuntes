@@ -1,28 +1,16 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Youtube
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
-
-![imagen](media/image21.jpeg)
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # YouTube
 
----
+[Youtube](youtube/index.md) és una plataforma de vídeo en línia que permet als usuaris pujar, compartir i visualitzar vídeos.
 
-YouTube es una plataforma en línea que permite a los usuarios subir, ver y compartir videos. Fue fundada en ``2005`` y es propiedad de ``Google``. Es una de las plataformas de video más populares del mundo, con millones de usuarios activos diarios y una amplia gama de contenido disponible en múltiples idiomas.
+Fue fundada en ``2005`` y es propiedad de ``Google``. Es una de las plataformas de video más populares del mundo, con millones de usuarios activos diarios y una amplia gama de contenido disponible en múltiples idiomas.
 
----
+## Canales
 
 - Un ``canal`` de YouTube es una página de usuario en la plataforma de YouTube que se utiliza para subir y compartir videos.
 - Los usuarios pueden ``suscribirse`` a un canal para recibir actualizaciones cuando se publique nuevo contenido.
 - Los canales pueden ser creados por ``individuos, empresas, organizaciones`` y más.
-
----
 
 ## Creación de un canal
 
@@ -36,17 +24,13 @@ Si con esta cuenta queréis ser vosotros los que publiquéis vídeos, necesitar�
 
 ![imagen](media/image22.png)
 
----
-
-# Primeros pasos para crear un canal
+## Primeros pasos para crear un canal
 
 Podéis seguir para ello los siguientes vídeos que os pueden ayudar si no sabéis cómo comenzar:
 
 Guía de inicio rápido de``YouTube`` -``YouTube``
 
 ![imagen](media/image23.png)
-
----
 
 ## Videos y directos
 
@@ -56,13 +40,9 @@ En general,``YouTube`` nos permite subir vídeos o emitir en directo. Arriba de 
 
 Los directos están ``limitados`` bajo ciertas condiciones, por número de suscriptores y por edad, por lo que es muy posible que por defecto no podáis hacerlos.
 
----
-
 Desde la app de``YouTube`` en nuestro smartphone, además, podremos crear videos cortos o shorts, similares a los stories de Instagram.
 
 ![imagen](media/image25.png)
-
----
 
 ## YouTube studio
 
@@ -165,12 +145,12 @@ Una vez configurado ``OBS``, podemos decirle que emita hacia un canal nuestro de
 
 ---
 
-El mecanismo es idéntico en el caso de``Twitch``.
+El mecanismo es idéntico en el caso de[Twitch](twitch/index.md).
 
 ![imagen](media/image53.png)
 
 ---
 
-Aquí podéis ver cómo queda el canal una vez comenzamos a emitir en él, visto desde``Twitch``.
+Aquí podéis ver cómo queda el canal una vez comenzamos a emitir en él, visto desde[Twitch](twitch/index.md).
 
 ![imagen](media/image54.png)

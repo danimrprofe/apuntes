@@ -1,6 +1,6 @@
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
-# 03. FPS
+# FPS
 
 ## Frames
 

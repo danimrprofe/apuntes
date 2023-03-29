@@ -1,18 +1,6 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Motor servo
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
-
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Motor servo
-
----
 
 ## Componentes necesarios
 
@@ -28,7 +16,6 @@ marp: true
 
 Los servos son un tipo especial de motor de c.c. que se caracterizan por su capacidad para posicionarse de forma inmediata en cualquier posición dentro de su intervalo de operación. Se mueven en una precisión de 180º como máximo.
 
----
 
 El servo tiene un eje que puede girar y que es accionado por un motor. La posición del eje puede ser controlada con una señal analógica.
 

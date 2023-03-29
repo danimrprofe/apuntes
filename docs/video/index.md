@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Video digital
 
 Característiques:
@@ -6,7 +8,6 @@ Característiques:
 - [Fotogrames per segon](fps.md)
 - [Taxa de bits](bitrate.md)
 - [Formats](formatos-video.md)
--
 
 Edició de vídeo:
 

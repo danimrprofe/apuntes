@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Bitrate o taxa de bits
 
 La taxa de bits, o ``bitrate`` en anglès, es refereix a la quantitat de dades que s'utilitzen per a representar una unitat de temps de vídeo digital. Es mesura en bits per segon (bps) o en kilobits per segon (kbps) i determina la quantitat de informació que es pot transmetre o emmagatzemar per segon.

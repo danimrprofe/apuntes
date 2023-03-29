@@ -1,12 +1,4 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Escritorio y ventanas
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Licencias de software
 
@@ -19,7 +11,7 @@ marp: true
 
 ---
 
-# Tipos de licencias
+## Tipos de licencias
 
 GNU/GPL
 BSD
@@ -65,8 +57,6 @@ Provisiones de protección respecto a patentes
 - Restricciones de uso
 - Derechos de autor y patentes
 - El propietario puede recoger información
-
-![imagen](img/2019-06-28-09-13-09.png)
 
 ---
 

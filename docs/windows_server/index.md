@@ -1,4 +1,4 @@
-# 2. Windows Server
+# Windows Server
 
 Windows Server es un sistema operativo de servidor desarrollado por Microsoft. Se utiliza para crear y administrar redes de ordenadores basadas en Windows.
 

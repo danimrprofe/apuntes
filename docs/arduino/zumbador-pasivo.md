@@ -6,7 +6,7 @@
 
 ## Resumen
 
-El propósito del experimento es generar ocho sonidos, cada sonido dura 0,5 segundos.
+El propósito del experimento es generar sonidos.
 Cada nota musical tiene una vibra a una frecuencia determinada, por lo que generando una señal con la frecuencia correcta, podremos crear las notas que necesitemos.
 
 | Nota    | Frecuencia (Hz) |
@@ -54,16 +54,21 @@ Cableado el zumbador conectado a la placa UNO R3, rojo (positivo) que el pin8, c
 
 Vamos a ver un programa sencillo que cree una nota musical.
 
+Vamos a crear un ``sketch`` nuevo y lo guardamos con el nombre ``zumbador``:
+
+![](img/2023-03-30-10-06-10.png)
+
+Se os creará una carpeta llamada ``zumbador`` en el escritorio:
+
+![](img/2023-03-30-10-07-37.png)
+
+Dentro de esta carpeta, se habrá creado un archivo tipo ``INO`` que contiene el programa.
+
+![](img/2023-03-30-10-08-19.png)
+
 ### Código
 
-En este programa, utilizaremos la función ``tone`` para crear un sonido.
-
-1. Indicamos que en el ``pin 8`` queremos que se produzca un sonido
-2. Con una frecuencia de ``440 Hz``, que correspondería a un LA.
-3. El sonido durará medio segundo, es decir, ``500 ms``.
-4. A continuación, esperaremos 1 segundo para continuar (``1000 ms)``.
-
-Al tener esta secuencia de paso dentro de la función ``loop``, estos pasos se reproducirán en bucle.
+Vamos a copiar este código para comprobar el funcionamiento del zumbador.
 
 ```c
 void setup() {
@@ -74,6 +79,17 @@ void loop() {
     delay(1000);
 }
 ```
+
+### ¿Qué hace el código?
+
+En este programa, utilizaremos la función ``tone`` para crear un sonido.
+
+1. Indicamos que en el ``pin 8`` queremos que se produzca un sonido
+2. Con una frecuencia de ``440 Hz``, que correspondería a un LA.
+3. El sonido durará medio segundo, es decir, ``500 ms``.
+4. A continuación, esperaremos 1 segundo para continuar (``1000 ms)``.
+
+Al tener esta secuencia de paso dentro de la función ``loop``, estos pasos se reproducirán en bucle.
 
 ## Ejemplo 2: una melodía
 
@@ -103,6 +119,8 @@ En primer lugar crearemos un archivo en el que guardaremos la información de la
 Guardaremos este archivo archivo en la misma carpeta que el programa principal, y le llamaremos ``pitches.h``. En este archivo guardaremos las constantes de cada una de las notas necesarias.
 
 Las líneas que comienzan con ``#define`` son ``constantes``. Son variables que no cambian nunca. Así pues, cuando utilicemos ``NOTE_C2``, en nuestro programa principal, haremos referencia al número 65, que es la frecuencia que genera esta nota. De este modo, no tendremos que memorizar ni buscar todas las frecuencias.
+
+Creamos un sketch nuevo y copiamos lo siguiente:
 
 ```c
 #define NOTE_B0  31
@@ -197,7 +215,30 @@ Las líneas que comienzan con ``#define`` son ``constantes``. Son variables que 
 
 ```
 
-Una vez hayamos copiado esto en el archivo y guardado, crearemos un archivo nuevo en la misma carpeta, que será el que utilizará estas constantes para generar una canción.
+Ahora guardar como, y lo guardamos dentro de la carpeta ``zumbador``, del siguiente modo:
+
+![](img/2023-03-30-10-12-04.png)
+
+Eligiendo all files evitaremos que nos añada ``.ino`` al nombre del archivo.
+
+Ahora en el archivo ``zumbador`` vamos a agregar la primera línea para incluir este archivo que contiene la información de las notas.
+
+```c
+#include "pitches.h"
+void setup() {
+}
+
+void loop() {
+    tone(8, NOTE_G5, 500);
+    delay(1000);
+}
+```
+
+Al escribir en lugar de la frecuencia la variable ``NOTE_G5``, buscará cual es su número de frecuencia en el archivo ``pitches.h``.
+
+## Ejemplo 3: melodía
+
+A partir de aquí, podemos crear una lista en la que guardar una secuencia de notas, para posteriormente recorrer esta lista y tocar cada una de las  notas.
 
 ```c
 #include "pitches.h"

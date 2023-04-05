@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Administración de sistemas
 
 Automatització, la gestió i la distribució d'infraestructures de TI.

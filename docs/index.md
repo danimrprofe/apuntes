@@ -12,6 +12,6 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 - 👩🏻‍💻 [Programació](programacion.md)
 - 🤖 [Robòtica i arduino](robotica.md)
 - 🔒 [Seguretat informàtica i criptoactius](seguridad/index.md)
-- 🎥 [Video digital](video.md)
+- 🎥 [Video digital](video/)
 
 ![imagen](img/2022-11-25-17-49-34.png)

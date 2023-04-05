@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Sistemas operativos
 
 - PC y portátiles: [Windows](windows/), [Linux](software-sistemas-operativos/Linux/) y [MacOS](software-sistemas-operativos/MacOS/)

@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Videoconferencia
 
 Hoy en día existen múltiples herramientas para videoconferencia, que nos permiten hacer videollamadas entre 2 o más personas, como:

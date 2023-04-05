@@ -1,3 +1,5 @@
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # 08. Formatos de vídeo
 
 Muchas veces el problema con todas estas opciones y formatos es la **compatibilidad**. Un dispositivo es compatible con un tipo de vídeo si es capaz de reproducirlo sin problemas. Cada dispositivo graba en un formato diferente y podemos tener problemas a la hora de reproducirlos.

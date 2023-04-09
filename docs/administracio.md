@@ -19,4 +19,4 @@ La [virtualizació](virtualizacion/index.md) és una tecnologia que permet execu
 
 [terraform](terraform/index.md) és una eina d'automatització que permet la **creació, la gestió i el desplegament d'infraestructures** de núvol (cloud infrastructure) a través de codi.
 
-[Kubernetes](kubernetes/1._kubernetes.md) és una plataforma de **gestió d'orquestació de contenidors**  que permet gestionar i desplegar aplicacions en contenidors a gran escala, en múltiples màquines virtuals o físiques.
+[Kubernetes](kubernetes/) és una plataforma de **gestió d'orquestació de contenidors**  que permet gestionar i desplegar aplicacions en contenidors a gran escala, en múltiples màquines virtuals o físiques.

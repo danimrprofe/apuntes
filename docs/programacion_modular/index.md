@@ -24,10 +24,9 @@
 
 ## 3. Diseño descendente TOP-DOWN
 
--  Descomposición de problemas en sucesivos niveles
-	-  Cada módulo tiene una función lo más específica posible
-	-  Reducción del tamaño de los subproblemas. Minimizar duplicidad de código. Módulos reutilizables
-	-  Se agrupan módulos comunes según funcionalidad o temática
+El disseny descendent TOP-DOWN és una **metodologia de disseny de programari** que implica la descomposició d'un problema complex en subproblemes més simples i específics en successius nivells, fins que cada subproblema pugui ser resolt amb una solució clara i concisa. Això permet la reducció de la mida dels subproblemes i, per tant, la minimizació de la duplicitat de codi.
+
+Cada mòdul en el disseny descendent TOP-DOWN ha de tenir una funció el més específica possible i ha de ser reutilitzable en altres projectes, si és possible. El disseny descendent TOP-DOWN també implica l'agrupació de mòduls comuns segons la seva funcionalitat o temàtica, el que facilita la gestió i la resolució de problemes.
 
 ## 4. Clasificación de módulos
 
@@ -88,15 +87,17 @@
 
 ## 8. Librerías
 
-- Conjunto compilado,documentado y probado de procedimientos y funciones
-- Se puede invocar desde otro programa
-- Necesario hacer referencia a la librería
+Les llibreries són conjunts de codi predefinit que inclouen procediments i funcions compilades, documentades i provades, les quals poden ser invocades des d'un altre programa.
 
 ### Tipos de librerías
 
-- Código fuente (necesario compilar)
-- Compiladas (se enlazan)
-- Enlace dinámico: compartidas por varias aplicaciones, reduce tamaño ejecutable, aprovechameitno de memoria
+Hi ha diferents tipus de llibreries, com ara les de codi font, les compilades i les d'enllaç dinàmic, que poden ser compartides per diverses aplicacions.
+
+L'enllaç dinàmic és un mecanisme utilitzat en el desenvolupament de programari que permet que diverses aplicacions comparteixin una mateixa llibreria en temps dexecució, en lloc de tenir una còpia individual de la llibreria per a cada aplicació.
+
+Això vol dir que quan una aplicació necessita utilitzar una determinada funció o procediment que es troba en una llibreria compartida, en lloc d'incloure tot el codi de la llibreria al seu propi codi font, simplement fa referència a la llibreria. En el moment de l'execució, el sistema operatiu carrega la llibreria i totes les aplicacions que la necessiten la poden utilitzar.
+
+Un dels avantatges de l'enllaç dinàmic és que redueix la mida dels executables de les aplicacions, ja que no cal incloure tot el codi de la llibreria a cadascuna. A més, també s'aprofita millor la memòria del sistema, ja que diverses aplicacions poden utilitzar la mateixa llibreria alhora. D'altra banda, si es produeix una actualització a la llibreria compartida, totes les aplicacions que la utilitzen es beneficien automàticament de la millora sense necessitat d'actualitzar individualment cadascuna.
 
 ### Características
 

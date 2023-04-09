@@ -1,5 +1,5 @@
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
-
+pius
 # VMware
 
 La virtualización es una tecnología que permite crear una o más máquinas virtuales en una sola computadora física.

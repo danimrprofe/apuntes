@@ -10,6 +10,7 @@ Aquí encontrarás apuntes sobre diferentes temas relacionados con el mundo de l
 - ⚡ [Energies](energias.md)
 - 💻 [Hardware](hardware/index.md)
 - 👩🏻‍💻 [Programació](programacion.md)
+- [Redes sociales](rrss.md)
 - 🤖 [Robòtica i arduino](robotica.md)
 - 🔒 [Seguretat informàtica i criptoactius](seguridad/index.md)
 - 🎥 [Video digital](video/)

@@ -23,7 +23,7 @@ Por poner un ejemplo, los modelos de iPhone 13 Pro admiten grabación de
 - Video HDR con Dolby Vision a 4K de hasta 60 cuadros por segundo.
 - Video de 1080p y 720p también están disponibles.
 
-![imagen](media/image76.png)
+![](img/2023-04-24-09-22-57.png)
 
 Desde dentro de la propia App de la cámara o en ajustes, podremos elegir la calidad de vídeo que queremos utilizar, en función de la situación y la finalidad del vídeo.
 

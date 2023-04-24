@@ -20,13 +20,13 @@ Si asistimos a clases online o teletrabajamos con un ordenador, lo más práctic
 
 Si queremos streamear, nos conviene una webcam de mayor calidad.
 
-![](img/2023-01-23-18-13-35.png)
+![](img/2023-04-24-09-27-50.png)
 
 ## Drones
 
 También existen **drones** que nos permiten acoplar a ellos una cámara o directamente la incorporan, para tomar imágenes aéreas.
 
-![](img/2023-01-23-18-13-56.png)
+![](img/2023-04-24-09-28-32.png)
 
 ## Smartphone
 
@@ -35,3 +35,15 @@ Lo más habitual es grabar nuestros vídeos o reuniones a través del **smartpho
 ![imagen](media/image73.png)
 
 Los móviles más antiguos incorporaban una cámara trasera para fotografía y una frontal de menor calidad para videollamadas, selfies o faceID.
+
+## Cámaras fijas
+
+![](img/2023-04-24-09-25-08.png)
+
+## GoPro
+
+GoPro és una marca de càmeres d'acció, dissenyades especialment per a la captura de vídeo i fotografia en entorns esportius i d'activitats a l'aire lliure. La càmera GoPro és una càmera compacta, resistenta i portàtil, amb un angle d'enregistrament ample i una resolució d'alta definició.
+
+![](img/2023-04-24-09-29-17.png)
+
+La majoria de les càmeres GoPro són impermeables i es poden utilitzar sota l'aigua, el que les fa populars entre els aficionats a esports aquàtics com surf, busseig, i kayak. Les càmeres GoPro també són populars en esports terrestres com ciclisme, escalada, esquí i molts altres.

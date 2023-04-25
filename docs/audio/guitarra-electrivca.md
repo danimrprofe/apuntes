@@ -1,3 +1,5 @@
+# Guitarra elèctrica
+
 El músic pulsa les cordes de la guitarra elèctrica. A diferència de la guitarra acústica, les cordes de la guitarra elèctrica són més fines i estan fetes d'acer, en lloc de niló o acer entortillat.
 
 Les cordes vibren a través dels píkaps. Els píkaps són bobines magnètiques que es troben sota les cordes. Quan les cordes vibren, generen un camp magnètic al voltant dels píkaps.

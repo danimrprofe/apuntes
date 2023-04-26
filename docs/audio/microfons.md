@@ -8,6 +8,8 @@ Existen multitud de tipos de micrófonos, según su construcción y su uso. En e
 
 ![imagen](img/2020-03-31-10-59-20.png)
 
-También podemos adquirir un set de grabación que también incluye un soporte o trípode, además de diferentes filtros, como los antipop o anti viento.
+## Filtres
+
+Els filtres, com els antipop o anti vent, també són molt útils per millorar la qualitat de les gravacions. L'**antipop** ajuda a reduir els sons de "popping" que es produeixen quan es pronuncien certes lletres, com la "p" o la "b", mentre que **l'anti vent** redueix el soroll del vent en exteriors.
 
 ![imagen](img/2020-03-31-10-59-32.png)

@@ -1,5 +1,7 @@
 # GAS NATURAL
 
+El gas natural és una barreja d'hidrocarburs gasosos que es troba de manera natural en **jaciments subterranis**, sovint associat amb dipòsits de petroli. Està compost principalment per **metà** (CH4), però també pot contenir altres gasos.
+
 ![imagen](img/2022-11-19-15-34-29.png)
 
 ## Usos del gas natural

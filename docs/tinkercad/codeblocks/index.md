@@ -1,5 +1,5 @@
 
-# 1.9.``Tinkercad`` Codeblocks
+# Tinkercad codeblocks
 
 Tinkercad nos permite crear diseños figuras en 3 dimensiones a partir de objetos simples en 3 dimensiones, combinándolos de diferentes formas.
 

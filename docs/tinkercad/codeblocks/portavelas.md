@@ -29,5 +29,3 @@ El código es todo completo, lo he tenido que cortar en trozos para poder mostra
 ## Paso 5. Juntarlo todo
 
 Al agrupar los objetos sólidos y huecos, se harán los agujeros dentro del cilindro. Por último, eliminaremos los objetos que hemos utilizado para crear esta nueva figura.
-
-![imagen](2022-12-05-10-41-43.png)

@@ -1,18 +1,30 @@
-## Vídeo primeros pasos
+# Primeros pasos
+
+## 1. Registro de usuario
+
+En primer lugar, deberéis registraros en **Tinkercad** con una cuenta de usuario, preferiblemente de Google. Una vez registrados, con este usuario se os quedará guardado todo lo que vayáis haciendo en la nube, automáticamente.
+
+## 2. Proyectos
+
+Cada trabajo que realicéis se guardará como un **proyecto**, que podréis modificar, compartir o exportar para imprimirlo en 3D.
+
+## 3. Vídeo primeros pasos
 
 Aquí tenéis un pequeño vídeo donde os explico brevemente los menús, plano de trabajo, cambiar perspectiva e insertar formas en **Tinkercad**. Por favor, miradlo antes de comenzar con las prácticas porque os ayudará a moveros por el programa.
 
 ![imagen](img/2022-11-29-16-15-01.png)
 
-## PRIMEROS PASOS
+## 4. Acciones
+
+### Deshacer y rehacer
 
 Como en otros programas, podemos hacer y rehacer cambios: ++ctrl+z++ y ++ctrl+y++
 
-## El plano de trabajo
+### El plano de trabajo
 
 Todo lo que hagamos se coloca en el plano de trabajo. Es un plano cuadriculado de color azul. Sobre él colocaremos los objetos. La rejilla tiene un tamaño por defecto de 1mm, que se puede cambiar. Cada cuadrado grande representa 1 cm, y el plano completo ocupa 20 x 20 cm.
 
-## Cambiar la perspectiva
+### Cambiar la perspectiva
 
 - Podemos cambiar nuestro punto de vista del proyecto de varias formas:
 - Para moverse alrededor del plano: Botón derecho apretado y mover ratón
@@ -28,7 +40,7 @@ A partir de ahora, las figuras que coloquemos se colocarán encima de este plano
 
 Para quitarlo, hacemos clic en un lugar fuera del plano.
 
-## Figuras
+## 5. Figuras
 
 - Podemos colocar una figura en el plano de trabajo arrastrándolas y soltándolas sobre el plano de trabajo
 - Para mover la figura:
@@ -36,19 +48,19 @@ Para quitarlo, hacemos clic en un lugar fuera del plano.
 - ++ctrl++ + flechas: Para subir y bajar verticalmente la figura,++ctrl++ + flechas de dirección del teclado.
 - Agregar ++shift++ para mover de 10 en 10 unidades
 
-## Cambiar colores
+### Cambiar colores
 
 Podemos cambiar color y propiedades Alternar entre sólido y hueco (S o H). El color no afecta demasiado porque luego se imprimirá del color del plástico que tengamos.
 
 - Cuando queremos que un objeto no se cambie, podemos bloquearlo con: ++ctrl+l++
 - Para hacer una copia de la figura, podemos duplicarla: ++ctrl+d++
 
-## Seleccionar figuras
+### Seleccionar figuras
 
 - Seleccionar solo algunas figuras: Mantener ++shift++ apretado y seleccionar las figuras una a una
 - Seleccionar todas: ++ctrl+A++
 
-## Agrupar figuras:
+### Agrupar figuras:
 
 - Seleccionar varias figuras y ++ctrl+g++
 - Desagrupar ++ctrl+shift+g++
@@ -56,6 +68,6 @@ Podemos cambiar color y propiedades Alternar entre sólido y hueco (S o H). El c
 - (seleccionándolas previamente) con ++l++
 - La función espejo (M) nos permite reflejar o voltear el objeto
 
-## Colocar Regla
+### Colocar Regla
 
 Pulsando ++r++ y pulsar dónde queremos colocar la regla en el plano de trabajo. La podemos eliminar o mover cuando queramos

@@ -1,4 +1,4 @@
-# 2.0. Cohete
+# Cohete
 
 En este caso, deberéis diseñar un cohete en``Tinkercad`` mediante bloques de código.
 

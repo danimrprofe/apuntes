@@ -33,13 +33,12 @@ __EJEMPLO__
 
 <span style="color:#FF0000">a01smx</span> \. <span style="color:#00B050">informática</span> \. _iesfbmoll\.org_
 
-Espacio de nombres de dominio
+
 
 ![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%291.jpg)
 
 Zona cont\.ficticio\.es
 
-## Espacio de nombres de dominio
 
 El comienzo del árbol se denomina la  __raíz__  del sistema DNS \(root\) y tiene una etiqueta vacía \(se puede representar con un punto\)
 
@@ -51,7 +50,8 @@ Se asemeja a una estructura de directorio que nos podemos encontrar en Linux o e
 
 Espacio de nombres de dominio
 
-* __Partes de un nombre de dominio__
+## Partes de un nombre de dominio
+
   * __Raíz: __ La raíz no tiene etiqueta\. Se suele considerar que la etiqueta del elemento raíz es el carácter nulo\.
   * __TLD: __ Dominio de nivel superior \(\.es\, \.com\)
   * __Dominios o subdominios: __ Cada uno de los círculos representa un dominio distinto y comprende a ese elemento y a todos los que “cuelgan” de él
@@ -60,9 +60,8 @@ Espacio de nombres de dominio
   * <span style="color:#0070C0"> __smx__ </span> \.ifbmoll\.org
   * <span style="color:#0070C0"> __smx__ </span> \.informática\.iesfbmoll\.org
 
-Espacio de nombres de dominio
+## Nombres de dominio absolutos y relativos
 
-* __Nombres de dominio absolutos y relativos__
   * Si hacemos referencia a [www\.iesfbmoll\.org](http://www.iesfbmoll.org/) o [www\.google\.com](http://www.google.com/) se trata de máquinas diferentes
   * Si sólo hacemos referencia a www\, podría hacer referencia a un servidor web de cualquier dominio
 * __Para referirnos a un dominio usando un nombre podemos utilizar__
@@ -73,9 +72,8 @@ Espacio de nombres de dominio
     * El nombre del nodo se identifica de manera única dentro de la jerarquía que genera el árbol\.
     * En total\, el FQDN no debe exceder los 255 caracteres y acaba en punto
 
-Espacio de nombres de dominio
+## Dominios de primer nivel \(Top __  __Level__  __ Domain\)
 
-* __Dominios de primer nivel \(Top __  __Level__  __ Domain\)__
   * Los dominios de primer nivel suelen denominarse por sus siglas en inglés: TLD \(Top Level Domain\) y\, a efectos administrativos
   * Los TLD se pueden dividir en
     * Dominios genéricos \(gTLD\, Generic Top\-Level Domain\)
@@ -113,7 +111,7 @@ La autoridad que se hace cargo de la delegación debe asumir también la respons
 Cada servidor se encarga de los nombres de su zona
 ![imagen](img/2022-12-03-16-17-07.png)
 
-Dominios y zonas
+
 
 __¿Qué datos hay en la zona raíz? __
 
@@ -154,65 +152,9 @@ Una zona en realidad es un  __archivo__  que contiene determinados  __registros_
   * ¿Qué nombre de dominio tiene la IP 100\.200\.78\.5?
   * Corresponde al dominio www\.prueba\.com
 
-## Gestión administrativa del DNS
-
-* __ICANN__
-  * Decide qué dominios de primer nivel van a existir
-  * Los usuarios solo pueden comprar dominios de segundo nivel
-* No puede encargarse de atender todas las compras de los dominios
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2915.jpg)
-
-* __Registro de dominios \(registry\)__
-  * Institución a la que le cede el control técnico y burocrático\, una vez que ha creado un TLD\.
-  * Se encarga de mantener en funcionamiento los servidores DNS asociados a ese dominio de primer nivel\.
-  * Da de alta y de baja los dominios de segundo nivel que estén bajo él\.
-  * <span style="color:#FF0000">No se relaciona directamente con los usuarios finales\, sino que lo hace a través de registradores</span>
-
-### Registrador de dominios
-
-* Normalmente el registro no atiende directamente a los usuarios que quieren comprar un dominio  __Usuario registrante__
-  * Persona o empresa que realmente compra el dominio y la que lo va a utilizar para su propio beneficio\.
-* __Los registradores de dominios __
-  * Actúa de intermediario entre registrador y registro
-  * Atienden la petición del cliente\, comprueban que es correcta\, reciben el pago
-  * Solicitan la petición al registro de dominios correspondiente\, para lo que deben de abonar una tasa
-  * Los registradores deben estar acreditados\, ya sea por ICANN o por el registro que les corresponde
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2916.jpg)
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2917.png)
-
-## Clasificación de servidores
-
-### Servidor primario (maestro)
-
-Obtiene la información de sus zonas  <span style="color:#0070C0">de sus archivos locales</span> \.
-
-Todas las modificaciones sobre una zona\, como añadir dominios\, se llevan a cabo en el servidor primario\.
-
-### Servidor secundario (esclavo)
-
-Contiene una  <span style="color:#0070C0">copia</span>  de solo lectura de los archivos de zona del primario
-
-Las zonas siguen disponibles incluso si el servidor primario no está online
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2918.png)
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2919.png)
 
 
-### Servidor caché
 
-Solo atiende consultas de los clientes DNS sobre nombres de dominios\.
-
-No contienen ningún tipo de información acerca de la zona y se utiliza para acelerar las consultas\.
-
-Buscará la respuesta a una consulta DNS y recordará la respuesta para la siguiente consulta
-
-Se reduce el ancho de banda y la latencia
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2920.png)
 
 ## Tipos de consultas
 
@@ -472,10 +414,3 @@ DNS dinámico en internet
 * Cuando el ISP nos cambia la IP al router
   * También se modifica en la web del proveedor \(no\-ip\)
   * Siempre tendremos actualizada IP que cambia un nombre de dominio
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2923.png)
-
-![imagen](img/Teoria%20UD03%20Servicio%20DNS%20%28Serveis%20en%20xarxa%2924.png)
-
-DNS dinámico en internet
-

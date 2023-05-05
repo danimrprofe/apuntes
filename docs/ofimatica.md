@@ -4,5 +4,5 @@
 
 - [Mecanografía](mecanografia/index.md)
 - [Libreoffice base](base/index.md)
-- [Hoja de cálculo](hoja_de_calculo/index.md)
-- [Procesador de textos](procesador_de_textos/index.md)
+- [Hoja de cálculo](../hoja-calculo/)
+- [Procesador de textos](../procesador-textos/)

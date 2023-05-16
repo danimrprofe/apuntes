@@ -1,14 +1,13 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Botón
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
+---
+title: Arduino
+footer: 16 de maig de 2023 | Daniel Moreno 🌐 <github.com/danimrprofe> | **Botones con Arduino**
 _footer: ""
 paginate: true
 _paginate: false
 _class: invert
 marp: true
+headingDivider: 1
 ---
-
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
 
 # Boton
 
@@ -100,15 +99,14 @@ En este caso, utilizamos el conjunto el pinMode ser **INPUT_PULLUP** como este:
 - El modo pin de **INPUT_PULLUP** significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, la entrada tendra el valor **HIGH**.
 - En otras palabras, el valor predeterminado de la entrada es **HIGH**, a menos que se ponga a **LOW** al pulsar el botón.
 
----
+# Conexión a tierra
 
 Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
 
 Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
 
----
-
 # Función Loop
+
 En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
 
 Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces  **digitalWrite** pone el valor HIGH el PIN al que tenemos conectado el LED, y este se enciende.

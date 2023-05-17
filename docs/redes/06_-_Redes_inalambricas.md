@@ -25,11 +25,12 @@ La tecnología inalámbrica es especialmente útil si:
 
 # Tecnologías inalámbricas
 
-Las **tecnologías** de redes inalámbricas más extendidas son:
+Las **tecnologías** de redes inalámbricas más extendidas:
 
 - Bluetooth
 - Telefonía móvil (3G, 4G)
 - Wifi
+- NFC
 
 # Tecnologías inalámbricas
 
@@ -37,13 +38,22 @@ En general todos utilizamos una combinación de ellas, puesto que según el uso 
 
 ![width:300px](img/2020-04-01-11-50-12.png)
 
-# 2. WIFI
+# WIFI
 
 Las redes wifi tienen las siguientes ventajas, con respecto a las conexiones por cable:
 
-- **Comodidad**: muy superior a las redes cableadas. Cualquiera que tenga acceso a la red puede conectarse desde distintos puntos dentro de un rango de espacio
+# WiFi
+
+## Comodidad
+
+Muy superior a las redes cableadas. Cualquiera que tenga acceso a la red puede conectarse desde distintos puntos dentro de un rango de espacio
 - Instalación: permiten el acceso de múltiples ordenadores sin ningún problema ni gasto en infraestructura, ni gran cantidad de cables.
-- **Compatibilidad**: En cualquier parte del mundo podremos utilizar la tecnología Wifi.
+
+# WiFi
+
+## Compatibilidad
+
+En cualquier parte del mundo podremos utilizar la tecnología Wifi.
 
 # Inconvenientes
 
@@ -53,6 +63,9 @@ Por el contrario, también presentan algunos inconvenientes, como, por ejemplo:
 # Inconvenientes
 
 - **Seguridad**. Existen algunos programas capaces de capturar paquetes, de forma que puedan calcular la contraseña de la red y de esta forma acceder a ella.
+
+# Inconvenientes
+
 - No se puede controlar el área de **cobertura** de una conexión, de manera que un receptor se puede conectar desde fuera de la zona de recepción prevista (e.g. desde fuera de una oficina, desde una vivienda colindante).
 
 # Estándares wifi
@@ -68,7 +81,7 @@ A los dispositivos certificados por la “WiFi Alliance” usan un logotipo como
 
 ![imagen](img/2020-03-31-14-38-15.png)
 
-# Estámdares wifi
+# Estándares wifi
 
 Según el tipo de conexión Wifi, tenemos diferentes “estándares” o versiones, que permiten diferentes tipos de conexiones, con velocidades y distancias diferentes. Algunas de ellas son:
 

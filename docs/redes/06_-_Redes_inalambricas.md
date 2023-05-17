@@ -3,7 +3,7 @@ marp: true
 theme: uncover
 paginate: true
 headingDivider: 1
-footer: '**Inteligencia artificial** _IES Ramon Llull_'
+footer: '**Redes inalámbricas** _IES Ramon Llull_'
 ---
 
 # <!-- fit --> REDES INALÁMBRICAS
@@ -92,11 +92,11 @@ Según el tipo de conexión Wifi, tenemos diferentes “estándares” o version
 
 # Estándares wifi
 
-A medida que la investigación avanza, se crean versiones nuevas, que proporcionan más velocidad y/o cobertura, entre otras. En este recuadro podéis ver las diferencias entre algunas de las versiones:
+Continuamente se crean **versiones** nuevas, que proporcionan más velocidad y/o cobertura, entre otras.
 
 ![imagen](img/2020-03-31-14-38-38.png)
 
-Es importante que los equipos que se desea conectar a una red wifi entiendan el mismo “idioma” y por tanto utilicen versiones de wifi que entiendan todos.
+Los equipos deberían utilizar las mismas versiones.
 
 # 2.2. DISPOSITIVOS WIFI
 
@@ -105,7 +105,11 @@ Para poder crear una red wifi, necesitamos:
 - Dispositivos (smartphones, tablets, TV, ordenadores)
 - Equipos de conexión (router, punto de acceso, etc.).
 
-En función de la red que queramos montar necesitemos unos u otro. También es posible conectar móviles entre ellos a través de wifi sin necesidad de un router, pero no es lo más habitual.
+En función de la red que queramos montar necesitemos unos u otro.
+
+# WiFi Direct
+
+También es posible conectar móviles entre ellos a través de wifi sin necesidad de un router, pero no es lo más habitual.
 
 # 2.3	EQUIPOS FINALES
 
@@ -127,15 +131,19 @@ Modelo que se utilizó mucho en los primeros ordenadores portátiles, Hoy en dí
 
 ![imagen](img/2020-03-31-14-40-12.png)
 
-Como véis en la imagen, los ordenadores y portátiles más antiguos necesitan estos accesorios para poderse conectar a una red WiFi.
+# Tarjetas PCMCIA
+
+Los ordenadores y portátiles más antiguos necesitan estos accesorios para poderse conectar a una red WiFi.
 
 ![imagen](img/2020-04-01-11-49-31.png)
 
 # Antenas USB
 
-Más adelante, y aprovechando que todos los equipos traían de serie puertos USB, estas tarjetas se fabricaron con forma de **pendrive**, más sencillo de conectar a un pc, ya sea de sobremesa o portátil. Haciendo uso de todas las ventajas que tiene la tecnología USB.
+Aprovechando que todos los equipos traían de serie puertos **USB**, estas tarjetas se fabricaron con forma de **pendrive**, más sencillo de conectar a un pc, ya sea de sobremesa o portátil. Haciendo uso de todas las ventajas que tiene la tecnología USB.
 
 ![imagen](img/2020-03-31-14-39-45.png)
+
+# Módem USB
 
 También se popularizaron los adaptadores USB para conectarse a redes de datos móviles, llamados **modem USB**. Estos nos permitían conectarnos a una red móvil desde un ordenador portátil, por ejemplo.
 
@@ -143,7 +151,7 @@ También se popularizaron los adaptadores USB para conectarse a redes de datos m
 
 # Circuitos internos
 
-La mayoría de dispositivos hoy en día disponen de adaptadores Wi-Fi en los circuitos internos de. Los podemos encontrar en:
+La mayoría de dispositivos hoy en día disponen de adaptadores Wi-Fi en los circuitos internos de la placa:
 
 - Televisiones
 - Móviles y tablets
@@ -158,67 +166,95 @@ Generalmente los equipos no se conectan directamente entre ellos, sino que neces
 
 # Punto de acceso
 
-Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cobertura de nuestra red. Los **puntos de acceso** generan una Red WiFi a la que se pueden conectar otros dispositivos.
+Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cobertura de nuestra red.
 
 # Punto de acceso
+
+Los **puntos de acceso** generan una Red WiFi a la que se pueden conectar otros dispositivos.
 
 Permiten conectar dispositivos en forma inalámbrica a una red existente.
 
-![imagen](img/2020-03-31-14-40-40.png)
+![](img/2023-05-17-09-25-26.png)
 
 # Punto de acceso
 
-Pueden agregarse más puntos de acceso a una red para generar redes de cobertura más amplia. Suelen estar en las paredes de los pasillos en edificios grandes.
+Pueden agregarse más puntos de acceso a una red para generar redes de cobertura más amplia.
+
+Suelen estar en las **paredes o techos** de los pasillos en edificios grandes.
 
 ![imagen](img/2020-03-31-14-40-29.png)
 
-# 2.4.2	REPETIDORES INALÁMBRICOS
+# REPETIDORES INALÁMBRICOS
 
-- Se utilizan para extender la cobertura de una red inalámbrica
+- Se utilizan para **extender la cobertura** de una red inalámbrica
 - Se conectan a una red existente que tiene señal más débil
 - Crean una señal limpia a la que se pueden conectar los equipos dentro de su alcance.
 
 ![imagen](img/2020-03-31-14-40-48.png)
 
-# 2.4.3	ROUTERS INALÁMBRICOS
+# Routers inalámbricos
 
-- Dispositivos compuestos, especialmente diseñados para redes pequeñas (hogar o pequeña oficina). Estos dispositivos incluyen:
-–	Router encargado de interconectar redes con internet
-–	Punto de acceso (explicado más arriba)
-–	Switch Permite la comunicación entre todos los equipos conectados
-- Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos.
+Dispositivos compuestos, especialmente diseñados para redes pequeñas (hogar o pequeña oficina).
+
+![](img/2023-05-17-09-28-16.png)
+
+# Routers inalámbricos
+
+Estos dispositivos incluyen:
+
+- **Router** encargado de interconectar redes con internet
+- **Punto de acceso** (explicado más arriba)
+- **Switch** Permite la comunicación entre todos los equipos conectados
+
+# Routers inalámbricos
+
+Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos.
 
 ![imagen](img/2020-03-31-14-40-54.png)
 
-    Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos.
+# Reflexión
 
-    Actividad 8: ¿Cuales de ellos crees que te sería más útil si vivieras en una casa de 3 pisos? ¿Por qué?
+Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos.
 
-# 2.5	SEGURIDAD EN REDES WIFI
+Actividad 8: ¿Cuales de ellos crees que te sería más útil si vivieras en una casa de 3 pisos? ¿Por qué?
+
+# SEGURIDAD EN REDES WIFI
 
 Las redes wifi, al transmitirse por el aire, son especialmente sensibles a ataques y usos indebidos. Es por ello que la seguridad es especialmente importante, por encima de las redes cableadas. Para ello podemos tomar varias medidas:
 
-# 2.5.1	ENCRIPTACIÓN
+# Encriptación
 
-Los datos transmitidos por wifi se envían por el aire, por lo que cualquier persona con una antena podría capturarlos y ver lo que estamos enviando (fotos, correos, etc.). Por ello es importante cifrar la información o encriptarla, utilizando algún tipo de contraseña.
+Los datos transmitidos por wifi se envían por el aire, por lo que cualquier persona con una antena podría capturarlos y ver lo que estamos enviando (fotos, correos, etc.).
 
-![imagen](img/2020-03-31-14-41-05.png)
+# Encriptación
+
+Por ello es importante cifrar la información o encriptarla, utilizando algún tipo de **contraseña**.
+
+![width:500](img/2020-03-31-14-41-05.png)
 
 # WEP y WPA
 
 Algunos tipos de encriptación Wi-Fi son WEP y WPA, encargados de la codificación de la información transmitida para proteger su confidencialidad. Estos mecanismos transforman lo que estamos enviando para que nadie lo pueda entender salvo el ordenador al que lo enviamos. Utilizaremos para ello una contraseña, que solo sabrán los usuarios autorizados de esa red.
 
-![imagen](img/2020-03-31-14-41-13.png)
+# WEP y WPA
+
+![bg contain](img/2020-03-31-14-41-13.png)
+
+# WEP y WPA
 
 Entrando en el router podemos cambiar el tipo de encriptación (modo de seguridad), cambiar el nombre de nuestra red o la contraseña. Esto solo lo puede hacer el administrador de red. En general, viene ya configurado, y solo usuarios con conocimientos lo pueden cambiar.
 
-**Información en el router**
+# Información en el router
 
 En nuestro router, podemos ver en la parte posterior la información para conectarnos. Como podéis ver, la mayoría de routers hoy en día tienen configuradas dos redes Wi-Fi diferentes, cada una con su nombre (SSID).
 
-También podemos ver la clave, necesaria para podernos conectar. También tenemos unos códigos QR que, en función del dispositivo, le podemos hacer una foto y se conecta a la red sin tener que buscar el nombre ni escribir la contraseña a mano.
+# Información en el router
+
+También podemos ver la clave, necesaria para podernos conectar. También tenemos unos **códigos QR** que, en función del dispositivo, le podemos hacer una foto y se conecta a la red sin tener que buscar el nombre ni escribir la contraseña a mano.
 
 ![imagen](img/2020-03-31-14-41-29.png)
+
+# Información en el router
 
 Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que tenemos a nuestro alcance y también podremos saber si:
 
@@ -226,9 +262,17 @@ Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que t
 - Nos llega señal suficiente
 - Tenemos algún problema de conexión a Internet
 
+# Redes wifi accesibles
+
 ![imagen](img/2020-05-06-10-14-27.png)
 
-    Actividad 9: adjunta una foto de la etiqueta de tu router. Tapa la clave a ser posible con paint o alguna herramienta de google docs. ¿Cuántas redes wifi tienes y cómo se llaman?¿a cual o cuales te conectas?
+# Iconos
+
+![width:700](img/2023-05-17-09-33-33.png)
+
+# Reflexión
+
+Actividad 9: adjunta una foto de la etiqueta de tu router. Tapa la clave a ser posible con paint o alguna herramienta de google docs. ¿Cuántas redes wifi tienes y cómo se llaman?¿a cual o cuales te conectas?
 
 # REDES 5 GHZ Y 2.4 GHZ
 
@@ -239,31 +283,56 @@ Muchos habréis visto que tenéis en casa o podéis tener dos redes wifi diferen
 - La de 5 GHz nos ofrece más velocidad, pero llega menos lejos, por lo que es conveniente si estamos cerca. Funciona muy bien para jugar online, o servicios de Streaming (Netflix, HBO)
 - La de 2.4 GHz es mejor para chatear, enviar emails o navegar por la red.
 
-![imagen](img/2020-03-31-14-41-36.png)
+# Diferencias
+
+![width:700](img/2023-05-17-09-35-06.png)
+
+---
+
+![width:1000](img/2020-03-31-14-41-36.png)
 
 # REDES 5 GHZ Y 2.4 GHZ
 
 En la parte trasera del router suele aparecer la información con los nombres de las dos redes.
 
-![imagen](img/2020-05-06-10-23-24.png)
+# REDES 5 GHZ Y 2.4 GHZ
+
+![width:1000](img/2020-05-06-10-23-24.png)
 
 # Filtrado MAC
 
-El **filtrado de MAC** sólo se permite acceso a los dispositivos autorizados. Como esta dirección es fija para cada tarjeta de red, tiene muchas aplicaciones. Por ejemplo, vuestro móvil tiene una tarjeta de red dentro, y por tanto una dirección MAC propia (es única y permite identificar vuestro móvil).
+El **filtrado de MAC** sólo se permite acceso a los dispositivos autorizados.
+
+# Filtrado MAC
+
+Cada móvil tiene una tarjeta de red dentro, y por tanto una dirección MAC propia (es única y permite identificar vuestro móvil).
+
+![width:600](img/2023-05-17-09-40-43.png)
 
 # Filtrado MAC
 
 Como cada teléfono tiene una dirección MAC propia, podemos dejar conectar o no a Internet a los móviles que nosotros queramos. Esto se llama filtrado MAC.
 
-# Filtrado MAC
-
-En el router se crea una lista de direcciones permitidas, las de cada dispositivo que se puede conectar. Si un móvil con esta dirección se conecta al router, este le permitirá conectarse a Internet. En caso contrario, se conectará a la wifi correctamente pero no tendrá internet.
+![width:700](img/2023-05-17-09-42-44.png)
 
 # Filtrado MAC
 
-Ejemplo
+En el router se crea una lista de **direcciones permitidas**, las de cada dispositivo que se puede conectar.
 
-En primer lugar, se crea una lista en el router, donde agregaremos todas las direcciones MAC que queramos restringir. Podremos elegir si lo que queremos es permitir solo esos ordenadores y no dejar conectarse a nadie más o, por el contrario, dejar conectar a todo el mundo menos a esos.
+![](img/2023-05-17-09-43-57.png)
+
+# Filtrado MAC
+
+Si un móvil con esta dirección se conecta al router, este le permitirá conectarse a Internet. En caso contrario, se conectará a la wifi correctamente pero no tendrá internet.
+
+![](img/2023-05-17-09-44-54.png)
+
+# Filtrado MAC
+
+Podremos elegir si lo que queremos es:
+
+- Permitir solo esos ordenadores y no dejar conectarse a nadie más (**lista blanca**)
+- Dejar conectar a todo el mundo menos a esos (**lista negra**)
 
 ---
 
@@ -271,7 +340,9 @@ En primer lugar, se crea una lista en el router, donde agregaremos todas las dir
 
 # OCULTACIÓN DE RED
 
-Una forma de evitar que alguien se conecte a mi red wifi es ocultarla. Si nadie ve el nombre de la Wifi de nuestra casa, es más difícil que puedan conectarse a ella. Esto se llama ocultación del punto de acceso (ocultación SSID). De este modo, la red no se muestra en la lista de redes wifi para conectarse y por tanto es invisible a otros usuarios.
+Una forma de evitar que alguien se conecte a mi red wifi es ocultarla.
+Si nadie ve el nombre de la Wifi de nuestra casa, es más difícil que puedan conectarse a ella. Esto se llama ocultación del punto de acceso (ocultación SSID).
+De este modo, la red no se muestra en la lista de redes wifi para conectarse y por tanto es invisible a otros usuarios.
 
 # OCULTACIÓN DE RED
 
@@ -279,13 +350,13 @@ Una forma de evitar que alguien se conecte a mi red wifi es ocultarla. Si nadie 
 
 # OCULTACIÓN DE RED
 
-Los que sí conocen el nombre de la red wifi la pueden **escribir a mano el nombre de la red wifi** y conectarse, por lo que necesitan saber el nombre de antemano.
+Los que sí conocen el nombre de la red wifi la pueden **escribir a mano el nombre de la red wifi** y conectarse.
 
-# OCULTACIÓN DE RED
+![width:700](img/2020-03-31-14-41-57.png)
+
+# Desactivar WiFi
 
 También podríamos directamente desactivar la red wifi si solo conectamos al router con cables. De este modo, nadie se podrá conectar por wifi a nuestra red.
-
-![imagen](img/2020-03-31-14-41-57.png)
 
 # BLUETOOTH
 

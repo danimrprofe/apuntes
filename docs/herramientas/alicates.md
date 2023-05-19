@@ -1,27 +1,24 @@
-## 1.3. Alicates
+## Alicates
 
-Son herramientas manuales tipo tenaza que se pueden utilizar en cual-
-quier operación de mecanizado, aunque adquieren especialmente
-importancia en el montaje de instalaciones eléctricas y circuitos elec-
-trónicos.
+Son herramientas manuales tipo tenaza que se pueden utilizar en cualquier operación de mecanizado, aunque adquieren especialmente importancia en el montaje de instalaciones eléctricas y circuitos electrónicos.
+
 Un alicate está formado por el mango, la articulación y la boca.
-Se comercializan con muchas formas y tamaños, siendo los tipos men-
-cionados a continuación los más utilizados en electricidad y electrónica.
-Saber más
-En ocasiones las llaves de tubo se pre-
-sentan con forma curvada, denominán-
-dose en este caso «llaves de pipa».
-Figura 1.22. Llave de pipa (Stanley).
-12
-Unidad 1
-## 1.3.1. Alicates universales
+
+Se comercializan con muchas formas y tamaños, siendo los tipos mencionados a continuación los más utilizados en electricidad y electrónica.
+
+![](img/2023-05-19-08-08-31.png)
+
+## Alicates universales
 Muy utilizados por los electricistas, su boca está diseñada para realizar
 diferentes operaciones: agarrar, doblar y cortar.
-1.3.2. Alicates de punta plana
+## Alicates de punta plana
 Su boca es de tipo plano y se utiliza para sujetar cables y pequeñas
 piezas.
-Figura 1.24. Alicate universal y plano (CHAVES).
-1.3.3. Alicates de punta redonda
+
+![](img/2023-05-19-08-06-46.png)
+
+## Alicates de punta redonda
+
 Son de aspecto similar a los anteriores, pero en este caso las puntas son
 redondas o semirredondas.
 Permiten doblar cables rígidos con gran precisión y se pueden utilizar
@@ -44,10 +41,8 @@ Los de mayor tamaño se utilizan en electricidad y los más pequeños en
 operaciones que requieren cortes con mayor precisión, como es el corte
 de las patillas de los componentes electrónicos cuando están soldados
 a la placa de circuito impreso.
-Figura 1.26. Dos tipos de alicates de corte (Torqueleader).
-Figura 1.27. Uso del alicate de corte.
-Herramientas del taller de reparación
-13
+
+![](img/2023-05-19-08-06-18.png)
 
 ## 1.3.6. Alicates Seeger
 
@@ -68,14 +63,12 @@ abre la arandela. Los de interiores hacen lo contrario, al presionar sobre
 el mango cierra la arandela.
 Figura 1.29. Alicates Seeger de interiores y exteriores y su forma de uso (cortesía Torqueleader).
 
-## 1.4. Pinzas
+## Pinzas
 
 La pinza es una herramienta que se utiliza para sujetar y coger objetos.
-En electrónica es especialmente útil para manipular componentes elec-
-trónicos de tamaño reducido.
-Se comercializan en diferentes formas y tamaños, y pueden ser de tipo
-recto, curvo, de puntas, de palas, cruzadas, de metal, aisladas, de plás-
-tico, etc.
+En electrónica es especialmente útil para manipular componentes electrónicos de tamaño reducido.
+
+Se comercializan en diferentes formas y tamaños, y pueden ser de tipo recto, curvo, de puntas, de palas, cruzadas, de metal, aisladas, de plástico, etc.
 Figura 1.31. Diferentes tipos de pinzas.
 Figura 1.28. Arandela o anillo Circlip o Seeger.
 Figura 1.30. Uso de la pinza.

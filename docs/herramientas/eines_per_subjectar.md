@@ -1,12 +1,18 @@
 # Eines per subjectar
 
+S'utilizen para sujetar objetos y piezas con firmeza mientras se realizan operaciones de mecanizado como el aserrado, taladrado, limado, devastado o, incluso, la soldadura.
+
 ## Cargol de banc
 
 Es fixa a la taula de treball. Consta d'una mordassa fixa i una altra mòbil. Aquesta última llisca per una guia quan es gira la palanca, de manera que les peces queden subjectes entre les dues mordasses.
 
+![](img/2023-05-19-08-12-50.png)
+
+Parts:
+
 ![imagen](media/image2.png)!
 
-# Cargol de mà
+## Cargol de mà
 
 Està constituït per un límit fix i un cargol que, a l'ésser girat, pressiona el material que es vol subjectar entre tots dos.
 

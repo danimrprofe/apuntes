@@ -1,12 +1,4 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: Destornilladores
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
+[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n
 
 # Destornilladores
 

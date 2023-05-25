@@ -1,4 +1,4 @@
-# DAWs o estaciones de trabajo
+# DAWs
 
 ![imagen](img/2020-03-31-11-04-53.png)
 

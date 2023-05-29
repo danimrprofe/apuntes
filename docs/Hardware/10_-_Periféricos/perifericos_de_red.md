@@ -1,5 +1,4 @@
-# PeriféricosRed
-
+# Periféricos de red
 
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29115.jpg)
 
@@ -26,15 +25,17 @@
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29126.jpg)
 
 ## Necesidad
-  * _Conectar ordenadores _ entre sí
-  * Compartir recursos \( _impresoras_ , documentos\)
-* Adaptadores de red o  _NIC_  \(Network Interface Card\)
-* Diversos tipos de tarjetas de red,
-  * Tipo de cable o arquitectura red \(coaxial, fibra, UTP\)
-* Más utilizado:
-  * _Ethernet_  con un conector  _RJ\-45_
-  * También redes Wi\-Fi\.
-  * Placas base integran conector RJ\-45
+
+La necesidad de conectar ordenadores entre sí y compartir recursos, como impresoras y documentos, ha llevado al desarrollo de las **tarjetas de red** o NIC (Network Interface Card).
+
+Las tarjetas de red, también conocidas como adaptadores de red, son componentes de hardware que se instalan en los ordenadores para permitirles conectarse a una red. Estas tarjetas son responsables de gestionar la comunicación entre el ordenador y el resto de dispositivos de la red.
+
+Existen diversos tipos de tarjetas de red, que se adaptan al tipo de cable o arquitectura de red utilizada. Algunos de los tipos más comunes son:
+
+- Ethernet: Es el tipo de red más utilizado actualmente. Utiliza cables de par trenzado y conectores RJ-45. Las tarjetas de red Ethernet son compatibles con estándares como 10/100/1000 Mbps (Fast Ethernet y Gigabit Ethernet) y se encuentran integradas en muchas placas base de ordenadores.
+- Wi-Fi: Permite la conexión inalámbrica a una red mediante el uso de antenas y estándares como Wi-Fi 802.11. Las tarjetas de red Wi-Fi se utilizan en ordenadores portátiles y dispositivos móviles para acceder a redes inalámbricas.
+
+Es importante destacar que las placas base de muchos ordenadores modernos ya integran un conector RJ-45 para conexión Ethernet, lo que significa que no es necesario agregar una tarjeta de red adicional en esos casos.
 
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29127.jpg)
 
@@ -52,16 +53,17 @@
 
 ## Puertos
 
-* Salida conexión tarjeta de red = cableado a utilizar
-* Cable y conectores
-  * Conector  _RJ\-45_  y cable  _trenzado_  \(actualidad\)
-  * Conector  _BNC_  y cable  _coaxial_  \(obsoleto\)
-* _Leds_  muestran actividad de la tarjeta
-* Tarjetas de red  _híbridas_  \(dos sistemas\)
+La salida de conexión de una tarjeta de red se realiza a través del cableado adecuado. En la actualidad, el tipo de cable y conector más comúnmente utilizado es el cable trenzado con conector **RJ-45**.
 
-![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29129.png)
+El **cable trenzado** consiste en pares de cables de cobre trenzados entre sí para reducir las interferencias electromagnéticas. Estos cables se conectan a la tarjeta de red mediante el conector RJ-45, que es un conector estándar de ocho pines utilizado para redes Ethernet.
 
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29130.jpg)
+
+El **conector BNC** (Bayonet Neill-Concelman) y el cable **coaxial** eran utilizados en el pasado, pero en la actualidad se consideran obsoletos para la mayoría de las aplicaciones de redes de área local (LAN). El cable coaxial se utiliza comúnmente en redes de cable de televisión, pero su uso en redes informáticas ha sido reemplazado en gran medida por el cable trenzado.
+
+Las tarjetas de red suelen tener LEDs (diodos emisores de luz) que indican la actividad de la tarjeta. Estos LEDs pueden mostrar información como la conexión activa, la transmisión de datos o la presencia de errores. Esto proporciona una retroalimentación visual rápida sobre el estado de la tarjeta de red y su actividad.
+
+![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29129.png)
 
 ## Dirección MAC
 
@@ -90,19 +92,13 @@
 
 ## Velocidades
 
-* Una tarjeta de red puede trabajar a  __distintas velocidades__ , en función de la  __tecnología__  y los estándares que soporte\.
-* Redes tradicionales: entre 4 y 16 Mb/s
-* En la actualidad
-  * Nuevas tecnologías de comunicación
-  * Incremento de la capacidad de almacenamiento
-  * Poder de procesamiento de los ordenadores actuales
-* Los estándares más usados son:
-  * _Ethernet, 10 Mb/s\._
-  * _Fast Ethernet, 100 Mb/s\._
-  * _Gigabit Ethernet, 1\.000 Mb/s \(aprox\. 1 Gb/s\)_
-* Tarjetas de red actuales
-  * Soportan dos o tres velocidades
-  * Se adaptan a la velocidad del resto de la red
+las tarjetas de red actuales son capaces de adaptarse a diferentes velocidades de red para garantizar la compatibilidad con otros dispositivos en la red. Esto se logra mediante la detección automática de la velocidad de la red y ajustando la velocidad de la tarjeta de red en consecuencia.
+
+Las tarjetas de red más comunes en la actualidad son las que soportan **Ethernet, Fast Ethernet y Gigabit Ethernet**. Estos estándares ofrecen velocidades de **10 Mb/s, 100 Mb/s y 1 Gb/s (1.000 Mb/s)** respectivamente.
+
+Algunas tarjetas de red pueden soportar múltiples velocidades, lo que les permite adaptarse a la velocidad de la red a la que están conectadas.
+
+Esto es especialmente útil en entornos de red mixtos, donde puede haber dispositivos con diferentes velocidades de red. La tarjeta de red se ajustará automáticamente a la velocidad más baja compatible con el resto de la red para garantizar la comunicación adecuada.
 
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29133.gif)
 
@@ -123,4 +119,3 @@
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29134.jpg)
 
 ![imagen](img/UD_10_-_Perif%C3%A9ricos_%28tema_completo%29135.png)
-

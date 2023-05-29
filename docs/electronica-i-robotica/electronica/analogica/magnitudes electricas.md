@@ -35,8 +35,6 @@ La intensidad de la corriente eléctrica se designa con la letra \(I\)
 
 Su unidad de medida en el Sistema Internacional \(SI\) es el ampere \(llamado también "amperio"\), que se identifica con la letra \(A\)\.
 
-Magnitudes eléctricas
-
 ## Resistencia \(R\)
 
 La resistencia es la dificultad u oposición  que presenta un material al paso de la  corriente eléctrica\.

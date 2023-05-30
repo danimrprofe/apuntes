@@ -1,51 +1,26 @@
----
-title: Mac OS
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
-
 [🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/)
+
 # Mac OS
 
----
+Mac OS es un sistema operativo propiedad de Apple y está diseñado específicamente para funcionar en hardware de Apple. Esta integración hardware-software puede proporcionar una experiencia más optimizada y eficiente, ya que ambos componentes están diseñados para trabajar en conjunto.
 
 ![](img/2023-03-16-17-13-18.png)
 
-Es un sistema operativo propiedad de la empresa ``Apple``.
-
----
+En comparación con otros sistemas operativos, como Windows, Mac OS ha sido tradicionalmente menos susceptible a virus informáticos y malware. Esto se debe en parte a su menor cuota de mercado en comparación con Windows, lo que ha llevado a que los atacantes se centren más en este último sistema operativo.
 
 ![](img/2023-03-16-17-13-45.png)
-
-Los sistemas operativos Mac OS solo funcionan en hardware de Apple.
-
----
-
-Suelen estar más optimizados para el hardware que están creados
-
----
-
-Son menos vulnerables a virus informáticos.
-
----
 
 ## Apple
 
 ``Apple`` es una empresa dedicada a diseñar equipos (iMac, iPhone, Apple Watch), programas (iOS) y servicios online (Apple TV, iCloud). Sus creadores son ``Steve Wozniak y Steve Jobs``.
 
+Steve Jobs y Steve Wozniak fueron dos visionarios de la tecnología que cofundaron ``Apple`` en 1976. Jobs, un empresario carismático, y Wozniak, un genio de la informática, se conocieron en la Universidad de California y compartieron su pasión por la innovación. Juntos, crearon productos revolucionarios como el ``Apple I`` y el ``Apple II``, sentando las bases para el éxito de Apple como empresa líder en tecnología.
+
 ![imagen](media/image1.jpg)
 
 Se trata de una empresa que generalmente ha sido muy ``innovadora`` y puntera en su sector, que ha propiciado la invención y expansión de diversos equipos de la propia empresa que han tenido repercusión mundial.
 
----
-
 ![imagen](media/image2.jpg)
-
----
 
 ## Productos
 

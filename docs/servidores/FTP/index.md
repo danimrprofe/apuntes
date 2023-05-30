@@ -1,4 +1,8 @@
-## FTP
+# FTP
+
+FTP (File Transfer Protocol) es un protocolo de red utilizado para la **transferencia de archivos** entre sistemas conectados a una red TCP/IP. Fue desarrollado en la década de 1970 y es ampliamente utilizado para el intercambio de archivos en entornos de red.
+
+FTP permite a un cliente FTP conectarse a un servidor FTP para realizar operaciones de transferencia de archivos. Estas operaciones incluyen la **descarga** (transferencia desde el servidor al cliente) y la **carga** (transferencia desde el cliente al servidor) de archivos.
 
 ## 1. Instalación y configuración por defecto del servidor vsftpd
 
@@ -10,7 +14,7 @@ Se puede conectar a un servidor FTP de 3 formas diferentes:
 *   Desde un cliente FTP como FileZilla o gFTP.
 *   Desde un navegador (chrome, Firefox)
 
-## Conexión por navegador a un servidor FTP {#conexión-por-navegador-a-un-servidor-ftp}
+## Conexión por navegador a un servidor FTP
 
 Para conectar a un servidor FTP desde un navegador, deberemos especificar el protocolo, puesto que de no hacerlo el navegador entiende que queremos conectar por HTTP. Por lo tanto, el formato sería:
 
@@ -44,29 +48,21 @@ Comprobar que el servidor está iniciado y puerto de escucha. Podemos comprobar 
 
 El 21 es el puerto FTP para enviar y recibir comandos. Cuando se inicie la transferencia de archivos, veremos que se abre también otro puerto para transferir los datos.
 
-
 ## Carpeta de almacenamiento {#carpeta-de-almacenamiento}
 
 Comprobar que se crea la carpeta /srv/ftp. Por defecto, los archivos a servir mediante el servidor FTP se alojarán en esta carpeta, aunque esto se puede modificar. Podemos comprobar que esta carpeta existe y se encuentra vacía.
-
 
 ## Archivo de configuración {#archivo-de-configuración}
 
 Comprobar la creación y contenido del archivo /etc/vsftpd.conf, así como la configuración que trae por defecto.
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Configuraci-n-FTP1.png "image_tooltip")
-
 
 Siempre es recomendable crear una copia de seguridad del archivo /etc/vsftpd.conf, por lo que guardaremos la copia con la extensión .bak (cualquier extensión es válida).
 
     foo@bar:~$ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak
 
 En el caso de que nuestro archivo de configuración quede inservible, tendremos una copia para restablecerlo.
-
 
 ## Tipos de usuarios {#tipos-de-usuarios}
 
@@ -77,7 +73,6 @@ Vsftpd permite la conexión de diferentes tipos de usuarios:
 *   Usuarios **virtuales**. Los usuarios virtuales son usuarios que no existen en el sistema (no figuran en /etc/passwd ni tienen un directorio home, ni se pueden loguear) pero sí pueden acceder a través del servidor FTP.
 
 ## 2. Conexión con usuario anónimo {#2-conexión-con-usuario-anónimo}
-
 
 ## Creación de archivos en el servidor
 
@@ -110,11 +105,6 @@ Si todo es correcto nos dará un Login successful (código 230). Veremos que no 
 Podemos consultar en el archivo de configuración si está permitido el acceso con usuario anónimo mirando la directiva el valor de la directiva **anonymous_enable.**
 
 Por defecto viene deshabilitado, por lo que tendremos que cambiar el parámetro a YES. De este modo, permite únicamente conexión y descarga de archivos.
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/Configuraci-n-FTP2.png "image_tooltip")
 
@@ -159,22 +149,11 @@ El usuario anónimo está enjaulado en **/srv/ftp**, por lo que no puede salir d
 
 Ojo: el usuario no verá nada fuera de su carpeta, y para él la carpeta base será su raíz. Es decir: el en lugar de ver que está en /srv/ftp (ubicación real en el servidor) verá /. Del mismo modo, cuando esté en /srv/ftp/hola/que/tal.txt él verá la ruta /hola/que/tal.txt
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Configuraci-n-FTP3.png "image_tooltip")
-
 
 Vemos que no nos permite cambiar de directorio. Salimos de la consola FTP con el comando **bye**. También se puede utilizar el comando **quit**.
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Configuraci-n-FTP4.png "image_tooltip")
-
 
 ## 3. Usuarios locales {#3-usuarios-locales}
 
@@ -189,12 +168,9 @@ Crearemos contenido para 2 de los usuarios:
 
 La contraseña será pa$$w0rd. Para crear los usuarios: sudo adduser XXX. Tras crear los usuarios, intentar acceder por FTP con estos.
 
-
 ### Configurar espacio alumno {#configurar-espacio-alumno}
 
 En primer lugar, iniciaremos sesión en el servidor como **alumno **y crearemos en su home las siguientes  carpetas y subcarpetas en su home
-
-
 
 *   Apuntes
     *   sox
@@ -208,12 +184,9 @@ En primer lugar, iniciaremos sesión en el servidor como **alumno **y crearemos 
 
 Comprueba accediendo desde el navegador del cliente que se han creado las carpetas correctamente.
 
-
 ### Carpetas del usuario profesor {#carpetas-del-usuario-profesor}
 
 Iniciar sesión como **profesor **y crear las siguientes carpetas en su carpeta personal
-
-
 
 *   Exámenes
 *   Tutoría
@@ -222,7 +195,6 @@ Iniciar sesión como **profesor **y crear las siguientes carpetas en su carpeta 
 Comprueba accediendo desde el navegador del cliente que se han creado las carpetas correctamente.
 
 Esto dos usuarios no pueden ejecutar comandos con privilegios de administrador, por lo que volvemos a cambiar al usuario principal, puesto que estos usuarios no son **sudoers**.
-
 
 ## Habilitar login con usuarios locales {#habilitar-login-con-usuarios-locales}
 
@@ -234,19 +206,15 @@ Prueba a colocarlo en NO y vuelve a probar de acceder al servidor FTP.
 
 Al final, lo volvemos a dejar en YES y deshabilitamos el usuario anónimo (mirar arriba cuál era el parámetro)
 
-
 ## Acceder al FTP con otros usuarios {#acceder-al-ftp-con-otros-usuarios}
 
 En los siguientes puntos conectaremos como los otros usuarios locales y veremos cómo cada uno de ellos accede a su home. Si todo es correcto, podremos ver el contenido de la carpeta home de cada usuario. Por ejemplo, el usuario profesores accede al conectarse por FTP a su carpeta personal,  **/home/profesores.**
 
 Conéctate al servidor un compañero por consola
 
-
 ### Conectar por consola a un servidor FTP
 
 Para acceder con un usuario, desde una máquina cliente abrir un terminal (shell) de Linux o en el intérprete de comandos de Windows (cmd) y ejecutar:
-
-
 
 *   ftp IPdelServidor (cambiando por la dirección de vuestro servidor).
 *   Nos preguntará usuario y password que le diéramos a este usuario
@@ -269,7 +237,6 @@ Desde el mismo prompt **FTP>, **nos podemos desconectar de un servidor y conecta
 
 Dentro del mismo servidor, podemos cambiar de usuario con la orden **user**, sin salir de él.
 
-
 ## Consultar el fichero de log {#consultar-el-fichero-de-log}
 
 Podemos consultar el archivo de log para comprobar cuáles han sido los últimos acontecimientos. En principio el log se guarda en **/var/log/vsftpd.log**. Lo podemos visualizar:
@@ -287,7 +254,6 @@ xferlog_std_format=NO
 ```
 
 Monitoriza tu log con tail -f /var/log/vsftpd.log y mientras se está ejecutando, pide conectarse a un compañero a tu servidor para ver lo que hace en tiempo real
-
 
 ## Habilitar subida de archivos locales {#habilitar-subida-de-archivos-locales}
 
@@ -307,7 +273,6 @@ Modificar el archivo de configuración del servidor FTP, y:
 Reiniciar el servidor para aplicar cambios
 
 Pídele a un compañero que se conecte a tu servidor y te suba un archivo. Conéctate tú al suyo y haz lo mismo.
-
 
 ## Descarga un archivo fuera de la carpeta del usuario
 
@@ -364,7 +329,6 @@ Podemos limitar a un tiempo máximo de conexión usuario para una descarga que s
 También es  posible configurar el tiempo de espera para mantener establecidas conexiones inactivas (60sg): **idle_session_timeout=600**. Si se supera este tiempo conectado pero sin hacer nada, se termina la conexión.
 
 Configura la sesión para que un usuario pueda estar como máximo 2 minutos conectado al servidor, y no pueda estar más de 30 segundos sin meter algún comando.
-
 
 ## Configuración de número de conexiones {#configuración-de-número-de-conexiones}
 
@@ -520,7 +484,6 @@ Ejecutar el comando ls. Comprobar si deja o no
 Iniciar modo pasivo dentro de la consola FTP utilizando el comando PASSIVE
 
 Ejecutar LS de nuevo
-
 
 ## 8. Configuración TLS/SSL/FTPS (No hacer)
 

@@ -1,6 +1,5 @@
 # Mecanismos de transformación
 
-
 ## Movimiento **circular-rectilíneo**
 
 ---

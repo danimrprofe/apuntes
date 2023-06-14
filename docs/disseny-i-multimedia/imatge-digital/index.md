@@ -23,12 +23,6 @@ Formats d'imatge més habituals
 Qualitat d'imatge: píxels, profunditat de color, compressió, ppp
 Sistemes de color: RGB, CMYK. Profunditat de color. Pantone
 
-## Software de tractament d’imatges
-
-- Visualitzadors.
-- Fotos al núvol: Google Photos, iCloud, Flickr
-- Eines CAD: Autocad, Sketchup,[Tinkercad](../tinkercad/)
-- Il·lustració: [Inkscape](../inkscape/), Adobe Illustrator
 
 ## Muntatges i edició amb ``GIMP``.
 

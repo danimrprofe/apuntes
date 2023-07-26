@@ -1,12 +1,3 @@
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n---
-title: D.Sistemas eléctricos y electrónicos
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
----
 
 # TECNOLOGÍA E INGENIERÍA I
 ## Saberes básicos

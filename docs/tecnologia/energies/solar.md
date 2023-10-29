@@ -18,7 +18,7 @@ Se utiliza, principalmente, para la producción de agua caliente sanitaria (duch
 
 Una instalación solar térmica consiste, básicamente, en:
 
--	Un captador solar (también llamado panel solar) que capta la radiación solar
+- Un captador solar (también llamado panel solar) que capta la radiación solar
 - Un depósito acumulador que almacena la energía térmica obtenida
 - Unos elementos auxiliares (tuberías, bombas, válvulas, etc.) que se encargan de la distribución del calor hasta los sitios de consumo.
 

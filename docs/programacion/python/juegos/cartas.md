@@ -1,6 +1,37 @@
-# Juegos de cartas
+---
+marp: true
+theme: default
+paginate: true
+_paginate: false
+_class: invert
+title: juego de cartas
+author: 'Daniel Moreno'
+header: ''
+_footer: ''
+footer: 'Programació i tractament de dades 2 - Palma - Daniel Moreno'
+
+---
+
+![Alt text](image-2.png)
+# Programación orientada a objetos en Python
+## Programació i tractament de dades II
+IES Ramon Llull
+
+---
+
+# Programación orientada a objetos
+
+- Cada objeto se crea a partir de una ``clase``.
+- Cada clase tiene ``métodos`` y ``propiedades`` que la definen
+- A partir de la clase se crean los ``objetos`` necesarios.
+
+---
 
 Vamos a introducir el concepto de programación orientada a objetos utilizando un juego de cartas.
+
+---
+
+# Objetos necesarios
 
 Para ello, vamos a crear los siguientes objetos:
 
@@ -8,14 +39,18 @@ Para ello, vamos a crear los siguientes objetos:
 - ``Baraja`` (conjunto de 52 objetos ``Carta`` diferentes)
 - ``Mano`` (conjunto de objetos ``Carta`` de un jugador en una partida)
 
-
+---
 
 # 1. Clase Carta
+
+---
 
 Comenzaremos creando la clase ``Carta``. Cada carta tendrá dos propiedades, el ``palo`` (tréboles, corazones) y el ``valor`` (7,8, as, etc.).
 
 - También tendremos 2 métodos: el primero de ellos es el ``constructor``, que será el encargado de crear el objeto
 - El segundo es el método que nos ofrecerá una representación del objeto en formato de texto al hacer ``print()`` sobre el objeto.
+
+---
 
 Guardaremos la clase ``Carta`` en un archivo ``carta.py``.
 
@@ -30,6 +65,8 @@ class Carta:
         return f"{self.valor} de {self.palo}"
 ```
 
+---
+
 Si queremos utilizar esta clase dentro de otro archivo, tendremos que importarla en primer lugar.
 
 #### **`pruebacartas.py`**
@@ -39,6 +76,10 @@ from carta import Carta
 
 La línea de código ``from carta import Carta`` se utiliza en Python para importar una clase llamada ``Carta`` desde un archivo de Python llamado ``carta.py``.
 
+---
+
+# Constructor (init)
+
 La primera línea llamará al método ``__init__`` (constructor) de la clase.
 
 #### **`pruebacartas.py`**
@@ -46,6 +87,20 @@ La primera línea llamará al método ``__init__`` (constructor) de la clase.
 from carta import Carta
 cartaprueba = Carta("tréboles", 2)
 ```
+
+---
+# Pintar un objeto
+
+- No podemos hacer print sobre el objeto
+  - ``print(carta)``
+- Podemos imprimir alguna de sus propiedades:
+  - ``print(carta.valor)``
+  - ``print(carta.palo)``
+
+---
+
+# Representación
+
 - La segunda línea llamará al método ``__repr__`` para imprimir información sobre la carta.
 
 #### **`pruebacartas.py`**
@@ -55,13 +110,17 @@ cartaprueba = Carta("tréboles", 2)
 print(cartaprueba)
 ```
 
+---
 
+# 2. Clase baraja
 
-## 2. Clase baraja
+---
 
 La baraja de póker se compone de 52 cartas. Para ello crearemos la clase ``Baraja`` lo tanto, contendrá 52 objetos ``Carta``.
 
 ![Alt text](image-1.png)
+
+---
 
 - El método constructor nos creará una lista de cartas con todas las combinaciones posibles. ``Baraja.cartas`` contendrá una lista de objetos ``Carta``.
 - ``Baraja.barajar()`` mezclará las cartas de la baraja
@@ -70,11 +129,22 @@ La baraja de póker se compone de 52 cartas. Para ello crearemos la clase ``Bara
 - ``Baraja.contar()`` nos dirá cuantas cartas quedan en la baraja
 - ``Baraja.quedan_cartas()`` devolverá ``True`` en caso de que queden cartas en la lista ``Baraja.cartas``. En caso contrario, ``False``.
 
+---
+
+Creamos la clase baraja
+
 ``` py linenums="1"
 import random
 from carta import Carta
 
 class Baraja:
+```
+
+---
+
+# Constructor
+
+``` py linenums="1"
     def __init__(self):
         self.cartas = []
         palos = ["♥", "♦", "♣", "♠"]
@@ -83,7 +153,9 @@ class Baraja:
         for palo in palos:
             for valor in valores:
                 self.cartas.append(Carta(palo, valor))
-
+```
+---
+``` py linenums="1"
     def barajar(self):
         random.shuffle(self.cartas)
 
@@ -107,6 +179,9 @@ class Baraja:
         for carta in self.cartas:
             print(carta)
 ```
+---
+
+# Prueba de la clase Baraja
 
 Para probar este nuevo objeto podemos hacer lo siguiente:
 
@@ -123,15 +198,23 @@ while mibaraja.quedan_cartas():
 mibaraja.barajar()
 ```
 
-## 3. Clase Mano
+---
+
+# 3. Clase Mano
+
+---
 
 En la clase ``Mano`` guardaremos las cartas que tiene cada jugador durante una partida concreta.
 
 ![Alt text](image.png)
 
+---
+
 - Agregaremos objetos ``Carta`` a la lista ``Mano.cartas`` mediante el método ``añadir_carta()``.
 - Con el método ``mostrar_mano`` mostraremos todos los objetos ``Carta`` de ``Mano.cartas``.
 - ``calcular_valor`` nos dirá el valor que suman todas las cartas de nuestra mano.
+
+---
 
 ```python
 # Esta clase define el objeto Mano, el cual representa un conjunto de cartas.
@@ -164,10 +247,9 @@ class Mano:
         for carta in self.cartas:
             print(carta)
 ```
+---
 
-
-Pruebas:
-
+# Pruebas de la clase Mano
 ``` py linenums="1"
 from baraja import Baraja
 from mano import Mano
@@ -187,12 +269,18 @@ mano_J1.mostrar_mano()
 print("En la baraja quedan", mibaraja.contar(), "cartas")
 ```
 
-## 4. Juego completo
+---
+
+# 4. Juego completo
+
+---
 
 A continuación mostraremos el juego completo del 21.
 
 - El ``Juego`` será también una clase
 - La única propiedad del juego será  ``self.baraja``, que contendrá la baraja con la que vamos a jugar.
+
+---
 
 ### Paso 1. Importar las clases que vamos a utilizar
 
@@ -202,6 +290,8 @@ Importamos las clases Baraja y Mano desde los módulos baraja y mano, respectiva
 from baraja import Baraja
 from mano import Mano
 ```
+
+---
 
 ### Paso 2. Crear la clase ``Juego``
 
@@ -213,6 +303,8 @@ class Juego:
     def __init__(self):
 
 ```
+
+---
 
 ### Paso 3. constructor
 
@@ -227,6 +319,8 @@ class Juego:
         self.baraja = Baraja()
         self.baraja.barajar()
 ```
+
+---
 
 ### Paso 4. método jugar
 
@@ -245,6 +339,8 @@ class Juego:
         print("Tu mano es: ", mano_jugador.cartas,
               "lo que hace un total de: ", mano_jugador.calcular_valor())
 ```
+
+---
 
 ### Paso 5. Cálculo de valor de la mano
 
@@ -274,6 +370,8 @@ class Juego:
                 return
 
 ```
+
+---
 
 ### Paso 6. Cálculo de fin del juego
 
@@ -308,6 +406,8 @@ class Juego:
         print("Tu puntuación final es de",
               mano_jugador.calcular_valor())
 ```
+
+---
 
 ### Paso 7. Comienzo de la partida (main)
 

@@ -2,9 +2,10 @@
 class Mano:
 
     # El método __init__ establece la lista de cartas como una lista vacía y el valor como 0.
-    def __init__(self):
+    def __init__(self, nombre):
         self.cartas = []
         self.valor = 0
+        self.nombre_jugador = nombre
 
     # El método añadir_carta añade una carta a la lista de cartas.
     def añadir_carta(self, carta):

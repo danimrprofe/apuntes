@@ -4,17 +4,22 @@ Vamos a introducir el concepto de programación orientada a objetos utilizando u
 
 Para ello, vamos a crear los siguientes objetos:
 
-- Carta
-- Baraja (conjunto de 52 cartas diferentes)
-- Mano (conjunto de cartas de un jugador en una partida)
+- ``Carta`` es el objeto más básico
+- ``Baraja`` (conjunto de 52 objetos ``Carta`` diferentes)
+- ``Mano`` (conjunto de objetos ``Carta`` de un jugador en una partida)
 
-## 1. Clase Carta
+
+
+# 1. Clase Carta
 
 Comenzaremos creando la clase ``Carta``. Cada carta tendrá dos propiedades, el ``palo`` (tréboles, corazones) y el ``valor`` (7,8, as, etc.).
 
 - También tendremos 2 métodos: el primero de ellos es el ``constructor``, que será el encargado de crear el objeto
 - El segundo es el método que nos ofrecerá una representación del objeto en formato de texto al hacer ``print()`` sobre el objeto.
 
+Guardaremos la clase ``Carta`` en un archivo ``carta.py``.
+
+#### **`carta.py`**
 ``` py linenums="1"
 class Carta:
     def __init__(self, palo, valor):
@@ -25,27 +30,38 @@ class Carta:
         return f"{self.valor} de {self.palo}"
 ```
 
-Si utilizamos la clase en el mismo archivo, podemos crear objetos del tipo ``Carta`` de la siguiente forma:
+Si queremos utilizar esta clase dentro de otro archivo, tendremos que importarla en primer lugar.
 
-- La primera línea llamará al método ``__init__`` (constructor)de la clase.
-- La segunda línea llamará al método ``__repr__`` para imprimir información sobre la carta.
-
+#### **`pruebacartas.py`**
 ``` py linenums="1"
-cartaprueba = Carta("tréboles", 2)
-print(cartaprueba)
+from carta import Carta
 ```
 
-Guardaremos la clase ``Carta`` en un archivo ``carta.py``. Si queremos utilizar esta clase dentro de otro archivo, tendremos que importarla en primer lugar.
+La línea de código ``from carta import Carta`` se utiliza en Python para importar una clase llamada ``Carta`` desde un archivo de Python llamado ``carta.py``.
 
+La primera línea llamará al método ``__init__`` (constructor) de la clase.
+
+#### **`pruebacartas.py`**
+``` py linenums="1"
+from carta import Carta
+cartaprueba = Carta("tréboles", 2)
+```
+- La segunda línea llamará al método ``__repr__`` para imprimir información sobre la carta.
+
+#### **`pruebacartas.py`**
 ``` py linenums="1"
 from carta import Carta
 cartaprueba = Carta("tréboles", 2)
 print(cartaprueba)
 ```
 
+
+
 ## 2. Clase baraja
 
 La baraja de póker se compone de 52 cartas. Para ello crearemos la clase ``Baraja`` lo tanto, contendrá 52 objetos ``Carta``.
+
+![Alt text](image-1.png)
 
 - El método constructor nos creará una lista de cartas con todas las combinaciones posibles. ``Baraja.cartas`` contendrá una lista de objetos ``Carta``.
 - ``Baraja.barajar()`` mezclará las cartas de la baraja
@@ -111,6 +127,8 @@ mibaraja.barajar()
 
 En la clase ``Mano`` guardaremos las cartas que tiene cada jugador durante una partida concreta.
 
+![Alt text](image.png)
+
 - Agregaremos objetos ``Carta`` a la lista ``Mano.cartas`` mediante el método ``añadir_carta()``.
 - Con el método ``mostrar_mano`` mostraremos todos los objetos ``Carta`` de ``Mano.cartas``.
 - ``calcular_valor`` nos dirá el valor que suman todas las cartas de nuestra mano.
@@ -146,6 +164,7 @@ class Mano:
         for carta in self.cartas:
             print(carta)
 ```
+
 
 Pruebas:
 

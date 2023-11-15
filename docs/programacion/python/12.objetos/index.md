@@ -1,49 +1,58 @@
-# Objetos
+# 1. Programación orientada a objetos
 
-## Clases y objetos
+La Programación Orientada a Objetos (POO) es un paradigma que organiza el código alrededor de ``objetos``, que combinan datos y funcionalidad. En Python, todo es un objeto.
 
-Las clases y los objetos son los elementos básicos de la programación orientada a objetos. Una clase es una plantilla para crear objetos. Un objeto es una instancia de una clase.
+## 2. Conceptos Básicos
 
-- Una **clase** define las propiedades y los comportamientos de un conjunto de objetos. Por ejemplo, una clase definiría los atributos y los métodos de todos los objetos "perro" creados a partir de la misma.
-- Un **objeto** es una instancia de una clase. Por ejemplo, el perro Spot es un objeto de la clase "Perro". Spot tendrá todas las propiedades y comportamientos definidos para todos los perros, como la capacidad de ladrar y correr.
+- **Objetos**: Instancias de clases que encapsulan datos y funciones.
+- **Clases**: Plantillas para crear objetos.
 
-# Crear clases
+## 3. Clase
 
-En Python, las clases se definen utilizando la palabra clave **class**, seguida del nombre de la clase. Los objetos se crean a partir de esa clase usando la sintaxis de nombre_de_clase(argumentos).
+Una **clase** define las propiedades y los comportamientos de un conjunto de objetos. Una clase es una plantilla para crear objetos.
 
-# Método init es el constructor de la clase
+La clase puede tener:
 
-```python
-Class Persona:
-  def __init__(self):
-    print("Soy una persona")
+- **Atributos**: Características de un objeto.
+- **Métodos**: Funciones asociadas a una clase.
+
+## 4. Crear una clase
+
+Para crear una clase, utiliza la palabra clave ``class`` seguida del nombre de la clase. Los métodos o funciones se identifican con ``def``.
+
+```py
+class Coche:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+        self.encendido = False
+
+    def encender_apagar(self):
+        self.encendido = not self.encendido
 ```
 
-# Para crear objetos a partir de una clase
+El método ``__init__`` es un método especial llamado **constructor** que inicializa los atributos de la clase.
 
-```python
-peter_parker = Persona()
+Los métodos en una clase se incluyen dentro de la definición de la clase y pueden acceder a los atributos del objeto a través del parámetro ``self``.
+
+## 5. Objetos
+
+Un **objeto** es una instancia de una clase. Cada objeto que creemos tendrá todas las propiedades y comportamientos definidos para su clase.
+
+Los objetos se crean dándole un identificador y asignándole la clase correspondiente. Al indicar la clase, también pasamos los atributos que queremos que tenga.
+
+```py
+mi_coche = Coche("Toyota", "Corolla")
 ```
 
-# A partir de una clase se puede crear otra que la incluya
+## 6. Ejemplo con pokemon
 
-```python
-Class Superheroe(Persona):
-  def __init__(self):
-    super().__init__()
-    print("Tengo superpoderes")
-```
+Aquí podemos ver una **clase** pokemon que tiene:
 
-# Crear objetos
+- Tres **atributos**: nombre, tipo y nivel
+- Tres **métodos**: init, atacar y subir_nivel
 
-A partir de una clase podemos crear tantos objetos (instancias de una clase) como queramos:
-
-```python
-spiderman = Superheroe()
-superman = Superheroe()
-```
-
-## Ejemplo con pokemon
+Todo lo que está dentro de class no se ejecuta, simplemente indica como es esta clase.
 
 ```python
 class Pokemon:
@@ -58,8 +67,16 @@ class Pokemon:
     def subir_nivel(self):
         self.nivel += 1
         print(f"{self.nombre} ha subido al nivel {self.nivel}")
-
+```
+Para crear un objeto:
+```py
 pikachu = Pokemon("Pikachu", "Trueno", 5)
+```
+Si queremos llamar a la función ``atacar()``. Recuerda que ``pikachu`` es un objeto de la clase ``pokemon``, y esta clase tiene definido un método ``atacar()``.
+```py
 pikachu.atacar()
-pikachu.subir_nivel()
+```
+Para acceder al atributo ``tipo``:
+```py
+print(pikachu.tipo)
 ```

@@ -140,7 +140,14 @@ Veamos los bits necesarios para cada profundidad de color.
 |  24   |     16,777,216      |
 |  32   |    4,294,967,296    |
 
-![imagen](img/2021-10-13-09-32-39.png)
+Como podéis comprobar, los primeros ordenadores y consolas tenían una limitación en cuanto a los colores que podían mostrar. En función del número de bits, podían tener más o menos cantidad de colores diferentes.
+
+- 1 bit: 2 colores
+- 2 bits: 4 colores
+- 4 bits: 16 colores
+- 8 bits: 256 colores
+
+![imagen](img/4_Conectores_de_v%C3%ADdeo_I_%28RCA%2C_VGA%2C_DVI%2910.jpg)
 
 ## 4.2. MODOS DE COLOR
 
@@ -183,17 +190,6 @@ Este sistema responde a una idea totalmente opuesta al anterior, puesto que, en 
 Cuando una luz banca incide sobre tintas translúcidas, éstas absorben parte del espectro de modo que el color no absorbido se refleja. En el plano teórico, los pigmentos mezclados de cián, magenta y amarillo deberían absorber todo el espectro, produciendo, en consecuencia, negro.
 
 Por esta razón son llamados "colores sustractivos". En la práctica todas las tintas contienen impurezas y ello ocasiona que la mezcla genere un color marrón oscuro, siendo necesario perfilar con tinta negra para conseguir un color negro auténtico.
-
-![imagen](img/4_Conectores_de_v%C3%ADdeo_I_%28RCA%2C_VGA%2C_DVI%298.jpg)
-
-![imagen](img/4_Conectores_de_v%C3%ADdeo_I_%28RCA%2C_VGA%2C_DVI%299.jpg)
-
-![imagen](img/4_Conectores_de_v%C3%ADdeo_I_%28RCA%2C_VGA%2C_DVI%2910.jpg)
-
-- 1 bit: 2 colores
-- 2 bits: 4 colores
-- 4 bits: 16 colores
-- 8 bits: 256 colores
 
 # 5. Adquisición de imágenes
 

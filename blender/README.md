@@ -64,7 +64,7 @@
 
 ``Blender`` se puede utilizar para la creación de aplicaciones, juegos, películas, producciones de televisión y mucho más.
 
-# 1. Modelado
+# 1. Modelado  🖌️
 
 El modelado 3D es el proceso de crear representaciones tridimensionales de objetos o escenarios mediante software especializado, utilizando diferentes técnicas
 
@@ -78,7 +78,7 @@ https://www.youtube.com/watch?v=kPHf9DlkGro
 
 https://www.youtube.com/watch?v=AW8hmeC5x2c
 
-# 2. Entornos HDRI
+# 2. Entornos HDRI  🏞️
 
 En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los HDRI en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos
 
@@ -86,6 +86,7 @@ En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminac
 
 Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
 Nosotros podemos iluminar nuestra escena poniendo por ejemplo una luz de punto que aquí le podemos cambiar la fuerza le podemos cambiar también el color.
+
 Lo que vamos a usar son los HDRi y resulta que son del mismo creador de poly haven. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
 
 ![](img/2023-12-02-10-12-23.png)
@@ -138,9 +139,8 @@ Si hacemos CBD y shade smooth se vería como una esfera perfecta y ahí veis tod
 
 Esta sería una forma hiperrealista de iluminar nuestra escena
 
-# 3. Animación
+# 3. Animación 🎬
 
-## Introducción
 
 Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo o ``timeline`` y cómo crear fotogramas clave o ``keyframes``.
 
@@ -298,17 +298,19 @@ Video: https://www.youtube.com/watch?v=M9XMEEMnRJk
 
 ![imagen](img/2022-11-01-15-07-48.png)
 
-# 4. Texturas
+# 4. Texturas 🎨
 
 En este video Diseñamos un vaso o taza en ``Blender`` y le aplicamos imágenes en la superficie de un objeto mediante el uso de materiales.
 
 Las imágenes están descargadas de Internet y editadas en Inkscape. Recordad buscar imágenes con transparencias, preferiblemente png.
 
-https://studio.youtube.com/video/P_f4C_0ohw4/edit
+Podéis seguir el siguiente vídeo para realizar esta parte:
 
-# 5. Armadura
+![](img/2023-12-02-19-52-40.png)
 
-## Inicio
+https://www.youtube.com/watch?v=P_f4C_0ohw4
+
+# 5. Armadura 💀
 
 Para animar nuestro personaje tendremos que dotarle, además del modelo, de un esqueleto. Al mover los huesos de este esqueleto, el modelo se moverá acorde a ellos.
 
@@ -356,7 +358,7 @@ Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD 
 
 ## Terminar
 
-ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``shift`` pulsada y por último seleccionamos los huesos.
+ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``⬆️ ``⬆️ shift`` ` pulsada y por último seleccionamos los huesos.
 
 A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
@@ -442,7 +444,7 @@ Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar
 
 ![imagen](img-renderizado/image43.png)
 
-# 7. Sistemas de partículas
+# 7. Sistemas de partículas ❄️
 
 Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
 
@@ -464,7 +466,7 @@ Como simularemos nieve, la partícula fundamental será un **copo de nieve**. Es
 
 ![Alt text](image-3.png)
 
-Colocamos una ``esfera geodésica`` con ``shift``+`a` > ``malla``
+Colocamos una ``esfera geodésica`` con ````⬆️ shift`` `+`a` > ``malla``
 
 ![](img/2023-12-02-11-54-47.png)
 
@@ -488,7 +490,7 @@ Los sistemas de partículas en ``Blender`` se pueden controlar usando **emisores
 
 Los **emisores** pueden estar configurados para emitir partículas de forma continua o bajo ciertas condiciones, como cuando se colisionan con otro objeto.
 
-Colocamos un plano con ``shift``+``a`` > ``plano``.
+Colocamos un plano con ````⬆️ shift`` `+``a`` > ``plano``.
 
 ![](img/2023-12-02-11-57-14.png)
 
@@ -560,7 +562,7 @@ Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos lo
 
 ## Insertar luz de área
 
-Insertar una **luz de área** que esté justo encima de los objetos que queremos iluminar
+Insertar una **luz de área 🌟** que esté justo encima de los objetos que queremos iluminar
 
 ![imagen](img/image18.png)
 
@@ -588,20 +590,22 @@ Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 
 ![imagen](img/image22.png)
 
-![imagen](img/image24.png)
 
 # 8. Crear telón de fondo
 
+![imagen](img/image24.png)
+
+
 ## Paso 1: Crear telón
 
-- Creamos un plano con ``shift`` y a continuación malla y plano.
+- Creamos un plano con ``⬆️ shift`` ` y a continuación malla y plano.
 - Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
 - Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
 - Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con ````ctrl```` + ``B``
 
-## Paso 2: Crear la luz
+## Paso 2: Crear la luz 💡
 
-- Creamos un plano con ``shift`` y a continuación luz plana.
+- Creamos un plano con ``⬆️ shift`` ` y a continuación luz plana.
 - La subimos en eje Z unos 5 metros.
 - La escalamos a 10 metros cuadrados
 - En opciones, le damos una potencia de 10000 Vatios.

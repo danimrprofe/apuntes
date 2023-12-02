@@ -375,16 +375,14 @@ code {
 </li>
 <li><a href="#2-entornos-hdri">2. Entornos HDRI</a>
 <ul>
+<li><a href="#qu%C3%A9-son-los-hdri">¿Qué son los HDRI?</a></li>
 <li><a href="#agregando-el-hdri">Agregando el HDRI</a></li>
 </ul>
 </li>
 <li><a href="#3-animaci%C3%B3n">3. Animación</a>
 <ul>
 <li><a href="#31-c%C3%A1mara-en-trayecto">3.1 Cámara en trayecto</a></li>
-<li><a href="#32-c%C3%A1mara-a-vista">3.2 Cámara a vista</a></li>
-</ul>
-</li>
-<li><a href="#31-animaci%C3%B3n-personalizada-de-c%C3%A1mara">3.1 Animación personalizada de cámara</a>
+<li><a href="#32-animaci%C3%B3n-personalizada-de-c%C3%A1mara">3.2 Animación personalizada de cámara</a>
 <ul>
 <li><a href="#crear-una-c%C3%A1mara">Crear una cámara</a></li>
 <li><a href="#ver-el-punto-de-vista-de-la-c%C3%A1mara">Ver el punto de vista de la cámara</a></li>
@@ -394,11 +392,13 @@ code {
 <li><a href="#insertar-fotogramas-clave">Insertar fotogramas clave</a></li>
 </ul>
 </li>
-<li><a href="#32-animaci%C3%B3n-de-un-objeto">3.2 Animación de un objeto</a>
+<li><a href="#33-animaci%C3%B3n-de-un-objeto">3.3 Animación de un objeto</a>
 <ul>
 <li><a href="#enfoque-y-desenfoque">Enfoque y desenfoque</a></li>
 <li><a href="#renderizar-la-animaci%C3%B3n">Renderizar la animación</a></li>
 <li><a href="#hacer-que-la-c%C3%A1mara-siga-una-curva-y-apunte-a-objeto">Hacer que la cámara siga una curva y apunte a objeto</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#4-texturas">4. Texturas</a></li>
@@ -423,8 +423,7 @@ code {
 <li><a href="#renderizar-animaci%C3%B3n">Renderizar animación</a></li>
 </ul>
 </li>
-<li><a href="#7-sistemas-de-part%C3%ADculas">7. Sistemas de partículas</a></li>
-<li><a href="#sistemas-de-part%C3%ADculas">Sistemas de partículas</a>
+<li><a href="#7-sistemas-de-part%C3%ADculas">7. Sistemas de partículas</a>
 <ul>
 <li><a href="#part%C3%ADculas">Partículas</a></li>
 <li><a href="#1-crear-el-objeto-que-va-a-caer-como-si-fuera-un-copo">1. Crear el objeto que va a caer como si fuera un copo</a></li>
@@ -460,8 +459,8 @@ code {
 <p>https://www.youtube.com/watch?v=AW8hmeC5x2c</p>
 <h1 id="2-entornos-hdri">2. Entornos HDRI</h1>
 <p>En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los HDRI en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos</p>
-<p>Entornos con HDRIs
-Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
+<h2 id="%C2%BFqu%C3%A9-son-los-hdri">¿Qué son los HDRI?</h2>
+<p>Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
 Nosotros podemos iluminar nuestra escena poniendo por ejemplo una luz de punto que aquí le podemos cambiar la fuerza le podemos cambiar también el color.
 Lo que vamos a usar son los HDRi y resulta que son del mismo creador de poly haven. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/2023-12-02-10-12-23.png" alt=""></p>
@@ -501,34 +500,32 @@ Lo que vamos a usar son los HDRi y resulta que son del mismo creador de poly hav
 </ul>
 <p>Video: https://www.youtube.com/watch?v=M9XMEEMnRJk</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/2022-11-01-15-07-48.png" alt="img-animacion"></p>
-<h2 id="32-c%C3%A1mara-a-vista">3.2 Cámara a vista</h2>
-<h1 id="31-animaci%C3%B3n-personalizada-de-c%C3%A1mara">3.1 Animación personalizada de cámara</h1>
+<h2 id="32-animaci%C3%B3n-personalizada-de-c%C3%A1mara">3.2 Animación personalizada de cámara</h2>
 <p>Vamos a hacer que la cámara se mueva alrededor de la escena, mientras que el objeto permanecerá fijo. En este caso, nosotros indicaremos todos los movimientos que va a seguir la cámara.</p>
-<pre class="hljs"><code><div>En resumen, lo que haremos será tomar &quot;fotos&quot; de la escena desde diferentes ángulos
-en momentos determinados, y ``Blender`` calculará los movimientos a realizar entre los dos puntos.
-</div></code></pre>
-<h2 id="crear-una-c%C3%A1mara">Crear una cámara</h2>
-<p>Si necesitamos crear una cámara, para ello hacemos <kbd>shift + a</kbd> y elegimos crear cámara.</p>
+<p>En resumen, lo que haremos será tomar &quot;fotos&quot; de la escena desde diferentes ángulos
+en momentos determinados, y <code>Blender</code> calculará los movimientos a realizar entre los dos puntos.</p>
+<h3 id="crear-una-c%C3%A1mara">Crear una cámara</h3>
+<p>Si necesitamos crear una cámara, para ello hacemos <code>shift + a</code> y elegimos crear cámara.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/2022-11-01-15-10-38.png" alt="imagen"></p>
 <p>Por defecto la cármara nueva <code>Blender</code> la colocará en el centro de la escena. Si tenemos algún objeto ahí puede ser que no veáis la cámara porque este lo esté tapando.</p>
-<h2 id="ver-el-punto-de-vista-de-la-c%C3%A1mara">Ver el punto de vista de la cámara</h2>
+<h3 id="ver-el-punto-de-vista-de-la-c%C3%A1mara">Ver el punto de vista de la cámara</h3>
 <p>Podemos darle al 0 para irnos a la vista desde la cámara. También podemos seleccionar el icono de cámara arriba a la derecha.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/2022-11-01-15-11-38.png" alt="imagen"></p>
 <p>Como veis si intentamos movernos nos salimos de la cámara. También podemos pulsar 0 para salir de la vista.</p>
-<h2 id="modificar-la-posici%C3%B3n">Modificar la posición</h2>
-<p>La cámara la podemos mover como cualquier objeto, por ejemplo haciendo <kbd>g x</kbd> o <kbd>g z</kbd> para moverla en estos ejes.</p>
-<p>También podemos colocarla con la tecla <kbd>n</kbd> y variando los parámetros de posición y rotación a mano. Tal como loe hemos hecho, hemos distanciado la cámara 10 metros en el eje y, y la rotación de 90 grados respecto al eje X.</p>
+<h3 id="modificar-la-posici%C3%B3n">Modificar la posición</h3>
+<p>La cámara la podemos mover como cualquier objeto, por ejemplo haciendo <code>g x</code> o <code>g z</code> para moverla en estos ejes.</p>
+<p>También podemos colocarla con la tecla <code>n</code> y variando los parámetros de posición y rotación a mano. Tal como loe hemos hecho, hemos distanciado la cámara 10 metros en el eje y, y la rotación de 90 grados respecto al eje X.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image27.png" alt="imagen"></p>
 <p>A continuación podéis ver como queda la escena con estos parámetros. Recordad que cada cuadrado mide 1m por lado en <code>Blender</code>, por lo que os podéis hacer una idea de las distancias.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image28.png" alt="imagen"></p>
-<h2 id="mover-la-c%C3%A1mara-con-nosotros">Mover la cámara con nosotros</h2>
-<p>En ocasiones es más fácil animar la cámara si hacemos que nos siga a nosotros. Para ello, con la cámara seleccionada y la tecla <kbd>n</kbd> , a continuación seleccionamos view y lo que es camera to view. Ahora cuándo movamos la vista también se mueve nuestra cámara, que nos seguirá.</p>
+<h3 id="mover-la-c%C3%A1mara-con-nosotros">Mover la cámara con nosotros</h3>
+<p>En ocasiones es más fácil animar la cámara si hacemos que nos siga a nosotros. Para ello, con la cámara seleccionada y la tecla <code>n</code> , a continuación seleccionamos view y lo que es camera to view. Ahora cuándo movamos la vista también se mueve nuestra cámara, que nos seguirá.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image29.png" alt="imagen"></p>
-<h2 id="configuraci%C3%B3n-de-la-c%C3%A1mara">Configuración de la cámara</h2>
+<h3 id="configuraci%C3%B3n-de-la-c%C3%A1mara">Configuración de la cámara</h3>
 <p>En la configuración de cámara le damos poner que queremos una distancia focal de 120 milímetros (mm)</p>
 <p>Vamos a componer nuestra imagen de esta forma vale la animación que quiero que haga la cámara es muy simple simplemente quiero que haga una especie de órbita.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image30.png" alt="imagen"></p>
-<h2 id="insertar-fotogramas-clave">Insertar fotogramas clave</h2>
+<h3 id="insertar-fotogramas-clave">Insertar fotogramas clave</h3>
 <p>Los frames son las fotos que componen un video.</p>
 <ul>
 <li>Cuantos más frames en un segundo, más fluida se verá la animacion.</li>
@@ -553,7 +550,7 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 </ul>
 <p>En medio, <code>Blender</code> calculará (extrapolará) todos los frames intermedios que conducirán al movimiento entre esas dos posiciones.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/media/image35.png" alt="imagen"></p>
-<h1 id="32-animaci%C3%B3n-de-un-objeto">3.2 Animación de un objeto</h1>
+<h2 id="33-animaci%C3%B3n-de-un-objeto">3.3 Animación de un objeto</h2>
 <p>Ahora vamos a hacer que el cubo se haga más pequeño poco a poco. Para ello, en primer lugar, debemos seleccionar el cubo.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image36.png" alt="imagen"></p>
 <p>Veremos que el timeline en la parte inferior está vacío, pues no lo hemos animado todavía el cubo (solo habíamos animado la cámara).</p>
@@ -568,14 +565,14 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 </ul>
 <p>Si seleccionamos tanto la cámara como el cubo, veremos en el timeline ambos objetos, y sus correspondientes keyframes.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/image39.png" alt="imagen"></p>
-<h2 id="enfoque-y-desenfoque">Enfoque y desenfoque</h2>
+<h3 id="enfoque-y-desenfoque">Enfoque y desenfoque</h3>
 <p>Lo que vamos a hacer es que nuestra cámara enfoque y desenfoque. Para ello nos vamos a donde pone cámara y donde pone de <strong>perfil de profundidad de campo</strong> y como veis automáticamente se ha desenfocado todo.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/2022-10-27-17-04-43.png" alt="imagen"></p>
 <p>Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Hará un autofocus hacia el objeto, esté donde esté.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-animacion/2022-10-27-17-05-21.png" alt="imagen"></p>
-<h2 id="renderizar-la-animaci%C3%B3n">Renderizar la animación</h2>
+<h3 id="renderizar-la-animaci%C3%B3n">Renderizar la animación</h3>
 <p>Ya lo tenemos casi todo preparado para irnos a renderizar, pero primero tengo que ajustar como queremos renderizar esta imagen.</p>
-<h2 id="hacer-que-la-c%C3%A1mara-siga-una-curva-y-apunte-a-objeto">Hacer que la cámara siga una curva y apunte a objeto</h2>
+<h3 id="hacer-que-la-c%C3%A1mara-siga-una-curva-y-apunte-a-objeto">Hacer que la cámara siga una curva y apunte a objeto</h3>
 <p>Los pasos seguidos son:</p>
 <ul>
 <li>Crear una curva</li>
@@ -612,14 +609,14 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 <p>Vamos a duplicar los huesos del lado izquierdo, pero para que funcione correctamente se tienen que renombrar en este caso nos sirve esta opción automática 11seleccionamos el hueso pulsamos CBD encima y dentro de names pulsamos en auto name let bright</p>
 <p>Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD encima y le damos a la opción de simetría y ahí lo tenemos le toca un poco el hueso de la columna que creo que está un poco bajo y ya nos queda duplicar el hueso de arriba con sic depara el cristal y duplicar el hueso del medio para poder mover la mochila también esto no tiene que ver con eltuto pero lo voy a poner rápidamente al otro lado por si me está molestando con los cuadrados que salen ahí a veces</p>
 <h2 id="terminar">Terminar</h2>
-<p>ya tenemos todos los huesos necesarios así que vamos a salir del <strong>edit mode</strong> con ++tab++ al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ++shift++ pulsada y por último seleccionamos los huesos.</p>
-<p>A continuación, pulsamos ++ctrl+++P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.</p>
+<p>ya tenemos todos los huesos necesarios así que vamos a salir del <strong>edit mode</strong> con <code>tab</code> al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla <code>shift</code> pulsada y por último seleccionamos los huesos.</p>
+<p>A continuación, pulsamos <code>ctrl</code>+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.</p>
 <p>Comprobamos que todo funciona[Música]y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor</p>
-<p>Cambiamos del modo pose al <strong>edit mode</strong> seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ++ctrl+++P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.</p>
-<p>Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ++ctrl+++z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje</p>
+<p>Cambiamos del modo pose al <strong>edit mode</strong> seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos <code>ctrl</code>+P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.</p>
+<p>Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso <code>ctrl</code>+z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje</p>
 <h2 id="mover-todo-el-personaje">Mover todo el personaje</h2>
 <p>Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a <strong>edit mode</strong> con la parte de abajo del hueso seleccionada pulsamos la E para extruir un nuevo hueso y lo colocamos por aquí.</p>
-<p>Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ++ctrl+++P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el <strong>edit mode</strong> primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ++ctrl+++P y tipo offset desde el pose mode comprobamos que funciona volvemos <strong>edit mode</strong> y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.</p>
+<p>Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos <code>ctrl</code>+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el <strong>edit mode</strong> primero seleccionamos el hueso de la cadera y después el del suelo pulsamos <code>ctrl</code>+P y tipo offset desde el pose mode comprobamos que funciona volvemos <strong>edit mode</strong> y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.</p>
 <h2 id="animaci%C3%B3n">Animación</h2>
 <p>Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo y cómo crear fotogramas clave antes de enseñar cómo animar al personaje corriendo</p>
 <p>Voy aponer un ejemplo con el hueso que mueve todo el personaje con este seleccionado situado en el fotograma 1 vamos a pulsar la I y le damos a la opción location rotation and scale para crear un fotograma.</p>
@@ -658,7 +655,6 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 <p>Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar más o menos tiempo, en función de la duración del vídeo, calidad y la tasa de frames, entre otros factores.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img-renderizado/image43.png" alt="imagen"></p>
 <h1 id="7-sistemas-de-part%C3%ADculas">7. Sistemas de partículas</h1>
-<h1 id="sistemas-de-part%C3%ADculas">Sistemas de partículas</h1>
 <p>Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En <code>Blender</code>, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.</p>
 <p>Los sistemas de partículas en <code>Blender</code> se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image1.png" alt="imagen"></p>
@@ -671,7 +667,7 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 <h2 id="1-crear-el-objeto-que-va-a-caer-como-si-fuera-un-copo">1. Crear el objeto que va a caer como si fuera un copo</h2>
 <p>El copo que vamos a crear es una icosfera y, a partir de ella se crearán múltiples copias.</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image4.png" alt="imagen"></p>
-<p>Colocamos una icosfera con++shift++a mesh</p>
+<p>Colocamos una icosfera con<code>shift</code>a mesh</p>
 <p>Con G nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading</p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image4.png" alt="imagen"></p>
 <p>Le damos material y color para que se vea. Vamos a crear un material nuevo y le vamos a cambiar el nombre a nieve.</p>
@@ -729,26 +725,19 @@ en momentos determinados, y ``Blender`` calculará los movimientos a realizar en
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image21.png" alt="imagen"></p>
 <h2 id="escena-final">Escena final</h2>
 <p>Aquí podéis ver un resumen de como queda la escena, con todos los elementos.</p>
-<p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image22.png" alt="imagen">
-Copo de nieve</p>
-<p>Árbol</p>
-<p>Cámara</p>
-<p>Plano emisor de la nieve</p>
-<p>Luz que ilumina la escena</p>
-<p>Fondo</p>
-<p>Render final</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image22.png" alt="imagen"></p>
 <p><img src="file:///e:/Docencia/apuntes/docs/disseny-i-multimedia/disseny-3D-i-modelat/Blender/img/image24.png" alt="imagen"></p>
 <h1 id="8-crear-tel%C3%B3n-de-fondo">8. Crear telón de fondo</h1>
 <h2 id="paso-1-crear-tel%C3%B3n">Paso 1: Crear telón</h2>
 <ul>
-<li>Creamos un plano con <kbd>shift</kbd> y a continuación malla y plano.</li>
-<li>Escalamos el plano con <kbd>S</kbd>, luego <kbd>2</kbd> ,<kbd>0</kbd> y por último <kbd>++enter++</kbd>. De esta forma tendremos un plano de 20 metros cuadrados</li>
-<li>Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con <kbd>E</kbd> y luego <kbd>Z</kbd>. Estiramos hacia arriba.</li>
-<li>Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con <kbd>++ctrl++</kbd> + <kbd>B</kbd></li>
+<li>Creamos un plano con <code>shift</code> y a continuación malla y plano.</li>
+<li>Escalamos el plano con <code>S</code>, luego <code>2</code> ,<code>0</code> y por último <code>enter</code>. De esta forma tendremos un plano de 20 metros cuadrados</li>
+<li>Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con <code>E</code> y luego <code>Z</code>. Estiramos hacia arriba.</li>
+<li>Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con <code>ctrl</code> + <code>B</code></li>
 </ul>
 <h2 id="paso-2-crear-la-luz">Paso 2: Crear la luz</h2>
 <ul>
-<li>Creamos un plano con <kbd>shift</kbd> y a continuación luz plana.</li>
+<li>Creamos un plano con <code>shift</code> y a continuación luz plana.</li>
 <li>La subimos en eje Z unos 5 metros.</li>
 <li>La escalamos a 10 metros cuadrados</li>
 <li>En opciones, le damos una potencia de 10000 Vatios.</li>

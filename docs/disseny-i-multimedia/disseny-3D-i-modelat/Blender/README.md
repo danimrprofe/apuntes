@@ -3,21 +3,21 @@
   - [Taza](#taza)
   - [Monigote](#monigote)
 - [2. Entornos HDRI](#2-entornos-hdri)
+  - [¿Qué son los HDRI?](#qué-son-los-hdri)
   - [Agregando el HDRI](#agregando-el-hdri)
 - [3. Animación](#3-animación)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
-  - [3.2 Cámara a vista](#32-cámara-a-vista)
-- [3.1 Animación personalizada de cámara](#31-animación-personalizada-de-cámara)
-  - [Crear una cámara](#crear-una-cámara)
-  - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
-  - [Modificar la posición](#modificar-la-posición)
-  - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
-  - [Configuración de la cámara](#configuración-de-la-cámara)
-  - [Insertar fotogramas clave](#insertar-fotogramas-clave)
-- [3.2 Animación de un objeto](#32-animación-de-un-objeto)
-  - [Enfoque y desenfoque](#enfoque-y-desenfoque)
-  - [Renderizar la animación](#renderizar-la-animación)
-  - [Hacer que la cámara siga una curva y apunte a objeto](#hacer-que-la-cámara-siga-una-curva-y-apunte-a-objeto)
+  - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
+    - [Crear una cámara](#crear-una-cámara)
+    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
+    - [Modificar la posición](#modificar-la-posición)
+    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
+    - [Configuración de la cámara](#configuración-de-la-cámara)
+    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
+  - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
+    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
+    - [Renderizar la animación](#renderizar-la-animación)
+    - [Hacer que la cámara siga una curva y apunte a objeto](#hacer-que-la-cámara-siga-una-curva-y-apunte-a-objeto)
 - [4. Texturas](#4-texturas)
 - [5. Armadura](#5-armadura)
   - [Inicio](#inicio)
@@ -35,7 +35,6 @@
   - [Parámetros de renderizado](#parámetros-de-renderizado)
   - [Renderizar animación](#renderizar-animación)
 - [7. Sistemas de partículas](#7-sistemas-de-partículas)
-- [Sistemas de partículas](#sistemas-de-partículas)
   - [Partículas](#partículas)
   - [1. Crear el objeto que va a caer como si fuera un copo](#1-crear-el-objeto-que-va-a-caer-como-si-fuera-un-copo)
   - [2. Crear un plano con emisiones](#2-crear-un-plano-con-emisiones)
@@ -78,7 +77,8 @@ https://www.youtube.com/watch?v=AW8hmeC5x2c
 
 En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los HDRI en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos
 
-Entornos con HDRIs
+## ¿Qué son los HDRI?
+
 Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
 Nosotros podemos iluminar nuestra escena poniendo por ejemplo una luz de punto que aquí le podemos cambiar la fuerza le podemos cambiar también el color.
 Lo que vamos a usar son los HDRi y resulta que son del mismo creador de poly haven. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
@@ -149,26 +149,22 @@ Video: https://www.youtube.com/watch?v=M9XMEEMnRJk
 
 ![img-animacion](img-animacion/2022-11-01-15-07-48.png)
 
-## 3.2 Cámara a vista
-
-# 3.1 Animación personalizada de cámara
+## 3.2 Animación personalizada de cámara
 
 Vamos a hacer que la cámara se mueva alrededor de la escena, mientras que el objeto permanecerá fijo. En este caso, nosotros indicaremos todos los movimientos que va a seguir la cámara.
 
-```
 En resumen, lo que haremos será tomar "fotos" de la escena desde diferentes ángulos
 en momentos determinados, y ``Blender`` calculará los movimientos a realizar entre los dos puntos.
-```
 
-## Crear una cámara
+### Crear una cámara
 
-Si necesitamos crear una cámara, para ello hacemos <kbd>shift + a</kbd> y elegimos crear cámara.
+Si necesitamos crear una cámara, para ello hacemos ``shift + a`` y elegimos crear cámara.
 
 ![imagen](img-animacion/2022-11-01-15-10-38.png)
 
 Por defecto la cármara nueva ``Blender`` la colocará en el centro de la escena. Si tenemos algún objeto ahí puede ser que no veáis la cámara porque este lo esté tapando.
 
-## Ver el punto de vista de la cámara
+###  Ver el punto de vista de la cámara
 
 Podemos darle al 0 para irnos a la vista desde la cámara. También podemos seleccionar el icono de cámara arriba a la derecha.
 
@@ -176,11 +172,11 @@ Podemos darle al 0 para irnos a la vista desde la cámara. También podemos sele
 
 Como veis si intentamos movernos nos salimos de la cámara. También podemos pulsar 0 para salir de la vista.
 
-## Modificar la posición
+###  Modificar la posición
 
-La cámara la podemos mover como cualquier objeto, por ejemplo haciendo <kbd>g x</kbd> o <kbd>g z</kbd> para moverla en estos ejes.
+La cámara la podemos mover como cualquier objeto, por ejemplo haciendo ``g x`` o ``g z`` para moverla en estos ejes.
 
-También podemos colocarla con la tecla <kbd>n</kbd> y variando los parámetros de posición y rotación a mano. Tal como loe hemos hecho, hemos distanciado la cámara 10 metros en el eje y, y la rotación de 90 grados respecto al eje X.
+También podemos colocarla con la tecla ``n`` y variando los parámetros de posición y rotación a mano. Tal como loe hemos hecho, hemos distanciado la cámara 10 metros en el eje y, y la rotación de 90 grados respecto al eje X.
 
 ![imagen](img-animacion/image27.png)
 
@@ -188,13 +184,13 @@ A continuación podéis ver como queda la escena con estos parámetros. Recordad
 
 ![imagen](img-animacion/image28.png)
 
-## Mover la cámara con nosotros
+### Mover la cámara con nosotros
 
-En ocasiones es más fácil animar la cámara si hacemos que nos siga a nosotros. Para ello, con la cámara seleccionada y la tecla <kbd>n</kbd> , a continuación seleccionamos view y lo que es camera to view. Ahora cuándo movamos la vista también se mueve nuestra cámara, que nos seguirá.
+En ocasiones es más fácil animar la cámara si hacemos que nos siga a nosotros. Para ello, con la cámara seleccionada y la tecla ``n`` , a continuación seleccionamos view y lo que es camera to view. Ahora cuándo movamos la vista también se mueve nuestra cámara, que nos seguirá.
 
 ![imagen](img-animacion/image29.png)
 
-## Configuración de la cámara
+### Configuración de la cámara
 
 En la configuración de cámara le damos poner que queremos una distancia focal de 120 milímetros (mm)
 
@@ -202,7 +198,7 @@ Vamos a componer nuestra imagen de esta forma vale la animación que quiero que 
 
 ![imagen](img-animacion/image30.png)
 
-## Insertar fotogramas clave
+### Insertar fotogramas clave
 
 Los frames son las fotos que componen un video.
 
@@ -242,7 +238,7 @@ En medio, ``Blender`` calculará (extrapolará) todos los frames intermedios que
 
 ![imagen](media/image35.png)
 
-# 3.2 Animación de un objeto
+## 3.3 Animación de un objeto
 
 Ahora vamos a hacer que el cubo se haga más pequeño poco a poco. Para ello, en primer lugar, debemos seleccionar el cubo.
 
@@ -267,7 +263,7 @@ Si seleccionamos tanto la cámara como el cubo, veremos en el timeline ambos obj
 
 ![imagen](img-animacion/image39.png)
 
-## Enfoque y desenfoque
+###  Enfoque y desenfoque
 
 Lo que vamos a hacer es que nuestra cámara enfoque y desenfoque. Para ello nos vamos a donde pone cámara y donde pone de **perfil de profundidad de campo** y como veis automáticamente se ha desenfocado todo.
 
@@ -277,11 +273,11 @@ Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Har
 
 ![imagen](img-animacion/2022-10-27-17-05-21.png)
 
-## Renderizar la animación
+###  Renderizar la animación
 
 Ya lo tenemos casi todo preparado para irnos a renderizar, pero primero tengo que ajustar como queremos renderizar esta imagen.
 
-## Hacer que la cámara siga una curva y apunte a objeto
+### Hacer que la cámara siga una curva y apunte a objeto
 
 Los pasos seguidos son:
 
@@ -347,21 +343,21 @@ Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD 
 
 ## Terminar
 
-ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ++tab++ al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ++shift++ pulsada y por último seleccionamos los huesos.
+ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``shift`` pulsada y por último seleccionamos los huesos.
 
-A continuación, pulsamos ++ctrl+++P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
+A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
 Comprobamos que todo funciona[Música]y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
-Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ++ctrl+++P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
+Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
 
-Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ++ctrl+++z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje
+Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ``ctrl``+z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje
 
 ## Mover todo el personaje
 
 Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la E para extruir un nuevo hueso y lo colocamos por aquí.
 
-Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ++ctrl+++P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ++ctrl+++P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
+Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
 
 ## Animación
 
@@ -423,8 +419,6 @@ Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar
 
 # 7. Sistemas de partículas
 
-# Sistemas de partículas
-
 Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
 
 Los sistemas de partículas en ``Blender`` se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
@@ -449,7 +443,7 @@ El copo que vamos a crear es una icosfera y, a partir de ella se crearán múlti
 
 ![imagen](img/image4.png)
 
-Colocamos una icosfera con++shift++a mesh
+Colocamos una icosfera con``shift``a mesh
 
 Con G nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading
 
@@ -566,19 +560,6 @@ La cámara la podéis poner donde queráis. Yo la he modificado a ojo y en una p
 Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 
 ![imagen](img/image22.png)
-Copo de nieve
-
-Árbol
-
-Cámara
-
-Plano emisor de la nieve
-
-Luz que ilumina la escena
-
-Fondo
-
-Render final
 
 ![imagen](img/image24.png)
 
@@ -586,14 +567,14 @@ Render final
 
 ## Paso 1: Crear telón
 
-- Creamos un plano con <kbd>shift</kbd> y a continuación malla y plano.
-- Escalamos el plano con <kbd>S</kbd>, luego <kbd>2</kbd> ,<kbd>0</kbd> y por último <kbd>++enter++</kbd>. De esta forma tendremos un plano de 20 metros cuadrados
-- Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con <kbd>E</kbd> y luego <kbd>Z</kbd>. Estiramos hacia arriba.
-- Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con <kbd>++ctrl++</kbd> + <kbd>B</kbd>
+- Creamos un plano con ``shift`` y a continuación malla y plano.
+- Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
+- Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
+- Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con ````ctrl```` + ``B``
 
 ## Paso 2: Crear la luz
 
-- Creamos un plano con <kbd>shift</kbd> y a continuación luz plana.
+- Creamos un plano con ``shift`` y a continuación luz plana.
 - La subimos en eje Z unos 5 metros.
 - La escalamos a 10 metros cuadrados
 - En opciones, le damos una potencia de 10000 Vatios.

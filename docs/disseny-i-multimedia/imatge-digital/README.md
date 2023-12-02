@@ -29,11 +29,11 @@
 
 # Imagen digital
 
-# 1. Tipos de imágenes
-
 Una imagen digital es una representación visual de información en forma de **píxeles**, que son los elementos más pequeños de una imagen.
 
 Cada píxel tiene un valor numérico que indica su **color** y **posición** en la imagen. Estas imágenes se almacenan y manipulan en **formato digital**, lo que significa que la información se codifica en **formato binario (ceros y unos)** y se puede procesar mediante dispositivos electrónicos, como computadoras.
+
+# 1. Tipos de imágenes
 
 ## 1.1. Imágenes digitales y analógicas
 
@@ -149,6 +149,8 @@ Fundamentalmente existen cuatro modos de color que son:
 - HSB (tono, saturación y brillo)
 - RGB (red, green y blue o RVA, rojo, verde y azul)
 - CMYK (cián, magenta, amarillo y negro)
+
+![](img/2023-12-02-08-17-05.png)
 
 ## 4.3. COLOR HSB
 

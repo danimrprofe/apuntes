@@ -1,13 +1,20 @@
 - [Arduino](#arduino)
-  - [Introducción](#introducción)
   - [Placa Arduino](#placa-arduino)
+  - [Componentes de la placa](#componentes-de-la-placa)
+  - [Microcontrolador](#microcontrolador)
+  - [Pines](#pines)
+  - [Pines de Arduino](#pines-de-arduino)
   - [Instalación IDE](#instalación-ide)
 - [Protoboard](#protoboard)
   - [Zonas](#zonas)
+  - [Canales centrales](#canales-centrales)
+  - [Tiras laterales](#tiras-laterales)
+  - [Desventajas](#desventajas)
 - [Motores](#motores)
   - [Motor de corriente contínua](#motor-de-corriente-contínua)
   - [Motor paso a paso mando](#motor-paso-a-paso-mando)
   - [Motor paso a paso](#motor-paso-a-paso)
+  - [Control mediante bobinas](#control-mediante-bobinas)
   - [Motor servo](#motor-servo)
 - [Luces](#luces)
   - [LED interno](#led-interno)
@@ -18,10 +25,56 @@
   - [7 segments (4 dígitos)](#7-segments-4-dígitos)
   - [Pantalla LCD](#pantalla-lcd)
   - [LED con 74HC595](#led-con-74hc595)
+- [Interruptor de bola](#interruptor-de-bola)
+  - [Componentes Requeridos](#componentes-requeridos)
+  - [Funcionamiento](#funcionamiento)
+  - [Conexión](#conexión-4)
+  - [Esquema](#esquema-5)
+  - [Diagrama de conexiones](#diagrama-de-conexiones)
+  - [Código](#código-5)
+- [Boton](#boton)
+  - [Componentes](#componentes)
+  - [Esquema de conexión](#esquema-de-conexión-1)
+  - [Diagrama de cableado](#diagrama-de-cableado-7)
+  - [Las conexiones que vamos a tener que realizar son las siguientes:](#las-conexiones-que-vamos-a-tener-que-realizar-son-las-siguientes)
+  - [Explicación del código](#explicación-del-código)
+- [Conexión a tierra](#conexión-a-tierra)
+- [Función Loop](#función-loop-1)
+  - [Código completo](#código-completo)
+- [Joystick analógico](#joystick-analógico)
+  - [Pines del Joystick](#pines-del-joystick)
+  - [Esquema](#esquema-6)
+  - [Diagrama de cableado](#diagrama-de-cableado-8)
+  - [Código](#código-6)
+  - [Comprobar funcionamiento](#comprobar-funcionamiento-1)
+- [Módulo de receptor IR](#módulo-de-receptor-ir)
+  - [Resumen](#resumen-1)
+  - [¿Qué podemos medir?](#qué-podemos-medir)
+  - [Esquema de conexiones](#esquema-de-conexiones)
+  - [Diagrama de cableado](#diagrama-de-cableado-9)
+  - [Montaje](#montaje-2)
+  - [Visualizar datos en el monitor](#visualizar-datos-en-el-monitor)
+- [Relé](#relé)
+  - [Relé con motor de coche en``Arduino``](#relé-con-motor-de-coche-enarduino)
+- [Sensors](#sensors)
+  - [Sensor humedad temperatura DHT11](#sensor-humedad-temperatura-dht11)
+  - [Sensor luz (fotocelula)](#sensor-luz-fotocelula)
+  - [Sensor ultrasonico](#sensor-ultrasonico)
+  - [Termistor](#termistor)
+- [ESP8266 NodeMCU](#esp8266-nodemcu)
+  - [Componentes](#componentes-1)
+  - [Aplicaciones principales](#aplicaciones-principales)
+  - [Código fuente](#código-fuente-1)
+  - [Subida](#subida)
+  - [Salida monitor serie](#salida-monitor-serie)
+  - [Wifi bridge](#wifi-bridge)
+- [Projecte WLED](#projecte-wled)
+- [Instal·lació](#installació)
+- [Connexió de la tira](#connexió-de-la-tira)
+- [Programari mòbil](#programari-mòbil)
+- [Control](#control)
 
 # Arduino
-
-## Introducción
 
 ``Arduino`` es una plataforma de ``hardware libre``, basada en una placa con un microcontrolador y un entorno de desarrollo.
 
@@ -35,13 +88,54 @@ Arduino está diseñado para permitir que los usuarios creen proyectos con una p
 
 ## Placa Arduino
 
-La placa ``Arduino`` contiene un microcontrolador, que es una pequeña computadora que puede leer los datos de los sensores que se conectan, realizar algunas operaciones matemáticas y controlar los dispositivos a través de los pines de salida.
+``Arduino Uno`` es una placa de desarrollo que incorpora un microcontrolador.
+
+La placa Arduino contiene un ``microcontrolador``, que es una pequeña computadora que puede leer los datos de los sensores que se conectan, realizar algunas operaciones matemáticas y controlar los dispositivos a través de los pines de salida.
 
 ![imagen](img/2022-11-30-15-48-01.png)
 
+## Componentes de la placa
+
+![](img/2023-12-02-16-00-12.png)
+
+## Microcontrolador
+
 El ``microcontrolador`` puede ser programado para recibir instrucciones. Esto significa que los usuarios pueden ``programar`` la placa para que realice cualquier tarea que deseen, desde controlar motores hasta leer datos de sensores.
 
-![](2023-03-09-10-41-06.png)
+El Arduino Uno utiliza un microcontrolador ``ATmega328P``
+
+![](img/2023-12-02-16-20-00.png)
+
+| Características              | Detalles                                  |
+| ---------------------------- | ----------------------------------------- |
+| Microcontrolador 🕹️           | ATmega328P                                |
+| Arquitectura 🏗️               | AVR (8 bits)                              |
+| Frecuencia de Reloj ⏰        | 16 MHz                                    |
+| Memoria Flash 💾              | 32 kilobytes                              |
+| Memoria RAM 🧠                | 2 kilobytes                               |
+| Memoria EEPROM 📂             | 1 kilobyte                                |
+| Entradas/Salidas Digitales 🧩 | Sí (pines digitales de E/S)               |
+| Entradas Analógicas 📏        | Sí (pines analógicos de E/S)              |
+| Comunicación Serial 🔄        | Sí (pines TX/RX para comunicación serial) |
+
+## Pines
+
+Un "pin" se refiere a un punto de conexión en un dispositivo electrónico que permite la entrada o salida de una señal eléctrica.
+
+![](img/2023-12-02-16-18-00.png)
+
+## Pines de Arduino
+
+Los pines con los que vamos a trabajar nosotros son:
+
+Pines de Alimentación:
+
+- Vin (Voltage In): Este pin se utiliza para alimentar la placa con un voltaje externo cuando no se está utilizando el puerto USB. La tensión recomendada es de 7 a 12V.
+- 5V: Este pin proporciona una salida de 5 voltios cuando la placa está alimentada a través del puerto USB o del conector de alimentación externa.
+- 3.3V: Proporciona una salida de 3.3 voltios.
+- Pines de Tierra (GND): Hay varios pines GND en la placa, que se utilizan como conexiones a tierra.
+- Pines de Entrada/Salida Digital (D2 a D13): Pueden usarse como entradas o salidas digitales. D2 a D13 también pueden utilizarse como salidas PWM (modulación de ancho de pulso) para controlar la intensidad de la señal.
+- Pines Analógicos (A0 a A5): Son pines de entrada analógica que permiten leer señales analógicas, como las provenientes de sensores de luz, temperatura, etc.
 
 ## Instalación IDE
 
@@ -49,7 +143,7 @@ El **Entorno de desarrollo integrado (IDE) de``Arduino``** es el software de la 
 
 Paso 1: Ir a https://www.arduino.cc/en/Main/Software y a continuación de la página.
 
-![imagen](media/image6.jpeg)
+![](img/2023-12-02-15-22-08.png)
 
 La versión disponible en este sitio web es generalmente la última versión y la versión actual puede ser más reciente que la versión en el cuadro.
 
@@ -99,19 +193,30 @@ A continuación, aparece el siguiente icono en el escritorio
 
 Haga doble clic para entrar en el entorno de desarrollo deseado
 
-![](img/2023-03-09-08-06-00.png)
+![Alt text](image.png)
 
-Conexión de placa``Arduino``
+### Conexión de la Placa Arduino al Ordenador
 
-La carpeta de``Arduino`` incluye el propio **programa de``Arduino``** y los **controladores** que permiten que el``Arduino`` se conecte al ordenador mediante un cable USB.
-
-Conecte su cable **USB** en el``Arduino`` y en el USB ordenador.
+Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador. Siga estos pasos para lograr la conexión adecuada:
 
 ![](img/2023-03-09-08-09-16.png)
+
+1. Utilice un ``cable USB`` para conectar la Placa Arduino al puerto USB de su ordenador.
+2. Abra el ``IDE de Arduino`` en su ordenador
+3. Escriba o cargue el ``programa`` que desea transferir a la placa.
+4. Verifique que la Placa Arduino seleccionada en el IDE coincida con el modelo físico que está utilizando. Puede seleccionar la placa desde la pestaña ``"Herramientas" > "Placa"`` en el IDE.
+5. Seleccione el puerto COM al que está conectada la Placa Arduino. Esto también se encuentra en la pestaña ``"Herramientas" > "Puerto"`` en el IDE.
+6. Haga clic en el botón de carga ("Upload") en el IDE para transferir el programa a la Placa Arduino.
+
+![](img/2023-12-02-15-30-38.png)
 
 # Protoboard
 
 Un **protoboard** permite crear prototipos de circuitos de forma rápida, sin necesidad de soldar las  conexiones. A continuación un ejemplo.
+
+![](img/2023-12-02-16-23-12.png)
+
+Las protoboard están compuestas por un número determinado de pines, dispuestos en filas y columnas, a los que podemos conectar diferentes cables y componentes.
 
 ![imagen](media/image52.jpeg)
 
@@ -127,23 +232,25 @@ Existen dos zonas principales. La zona de alimentación, y la zona central. Todo
 
 ![](img/2023-12-02-12-09-09.png)
 
-#Canales centrales
+## Canales centrales
 
 Los canales centrales indican que no están conectados ambos lados. Lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos.
 
-#Tiras laterales
+## Tiras laterales
 
 - Algunos ``protoboards`` tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero.
 - Estas tiras se denominan ``carriles`` y le permiten alimentar a muchos componentes o puntos en el tablero.
 - Proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra.
 
-#Desventajas
+## Desventajas
 
 Si bien son protoboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.
 
 # Motores
 
 Els motors d'Arduino són dispositius que permeten a una placa Arduino controlar el moviment mecànic d'un sistema. Els motors poden ser de diferents tipus i formes, i poden ser controlats per la placa Arduino a través de diferents circuits i protocols.
+
+![](img/2023-12-02-16-24-57.png)
 
 Els motors més comuns utilitzats amb Arduino són els **motors de corrent continu **(DC) i els **servomotors**.
 
@@ -153,31 +260,31 @@ Els motors més comuns utilitzats amb Arduino són els **motors de corrent conti
 
 ## Motor de corriente contínua
 
+![](img/2023-12-02-16-25-39.png)
+
 La fuerza máxima que puede generar un motor pequeño de corriente continua para proyectos de electrónica depende de varios factores, como el diseño y las especificaciones del motor. Sin embargo, en general, los motores pequeños de corriente continua para proyectos de electrónica suelen tener una fuerza máxima relativamente baja.
 
 La fuerza generada por un motor de corriente continua está relacionada con su **torque**. El torque es una medida de la capacidad del motor para generar una fuerza de rotación. Los motores pequeños para proyectos de electrónica generalmente tienen un torque bajo y están diseñados para aplicaciones de baja carga, como mover pequeños mecanismos o generar movimiento en juguetes pequeños.
 
 El **torque máximo** de un motor se especifica en su datasheet o hoja de datos proporcionada por el fabricante. Puede estar en unidades como gramos-centímetro (g·cm) o milinewton-metro (mN·m). Es importante tener en cuenta que el torque máximo disminuye a medida que aumenta la velocidad de rotación del motor.
 
-Fuente de alimentación de la placa
+### Placa de fuente de alimentación
 
-El pequeño motor de corriente continua es probable que use más energía que la que``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
+El pequeño motor de corriente continua es probable que use más energía que la que ``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
 
-Especificaciones
+### Especificaciones
 
-- Voltaje de entrada: 6.5-9v (CC)
-- Voltaje de salida: 3.3V / 5v
-- Máxima corriente de salida: 700 mA
+| Característica             | Valor       |
+| -------------------------- | ----------- |
+| Voltaje de entrada         | 6.5-9v (CC) |
+| Voltaje de salida          | 3.3V / 5v   |
+| Máxima corriente de salida | 700 mA      |
 
-Configuración de voltaje
+### Configuración de voltaje
 
 ![imagen](media/image140.jpeg)
 
 La izquierda y derecha de la tensión de salida puede configurarse independientemente. Para seleccionar la tensión de salida, mover el puente a los pines correspondientes. Nota: indicador de energía LED y los carriles de la energía de protoboard no se enciende si ambos puentes están en la posición "OFF".
-
-Importante
-
-Asegúrese de alinear el módulo correctamente en la placa de pruebas.
 
 ![width:500px](media/image141.jpeg)
 
@@ -191,8 +298,8 @@ El dispositiu inclou quatre drivers de pont H, que permeten controlar fins a dos
 
 **Especificaciones**
 
-| Característica | Valor |
-| -------------- ||
+| Característica             | Valor                                |
+| -------------------------- | ------------------------------------ |
 | Tensión de alimentación    | 4,5 V a 36 V                         |
 | Salida de corriente        | 1 A por canal (600 mA para el L293D) |
 | Máxima salida de corriente | 2 A por canal (1.2 A para L293D)     |
@@ -340,20 +447,22 @@ Para controlar el motor de pasos de 4 fases, se necesita un controlador de motor
 
 El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor. Para hacer que el motor gire, se activan las salidas en secuencia.
 
-#Componentes necesarios
+### Componentes necesarios
 
-> * (1) x Elegoo Uno R3
-> * x 830 tie-points breadboard
-> * x IR receiver module
-> * x IR remote
-> * x ULN2003 stepper motor driver module
-> * x Stepper motor
-> * x Power supply module
-> * x 9V1A Adaptador
-> * x F-M cables (cables de hembra a macho DuPont)
-> * x M-M cable (hilo puente de macho a macho)
+| Cantidad | Característica                                  |
+| -------- | ----------------------------------------------- |
+| 1        | Elegoo Uno R3                                   |
+| x        | Placa de conexiones con 830 puntos              |
+| x        | Módulo receptor infrarrojo (IR)                 |
+| x        | Control remoto infrarrojo (IR)                  |
+| x        | Módulo controlador de motor paso a paso ULN2003 |
+| x        | Motor paso a paso                               |
+| x        | Módulo de fuente de alimentación                |
+| x        | Adaptador de corriente 9V1A                     |
+| x        | Cables hembra-macho (DuPont)                    |
+| x        | Cable macho-macho (hilo de puente)              |
 
-##Esquema
+### Esquema
 
 ![imagen](media/image163.jpeg)
 
@@ -451,14 +560,16 @@ Un motor paso a paso es un dispositivo electromecánico que convierte pulsos el�
 
 ### Componentes necesarios
 
-- (1) x Elegoo Uno R3
-- (1) x 830 tie-points breadboard
-- x módulo de controlador de motor paso a paso de x ULN2003
-- x Motor paso a paso
-- x 9V1A Adaptador
-- x Power supply module
-- x F-M cables (cables de hembra a macho DuPont)
-- M-M wire (hilo puente de macho a macho)
+| Cantidad | Característica                                  |
+| -------- | ----------------------------------------------- |
+| [x]      | Elegoo Uno R3                                   |
+| [x]      | Placa de conexiones con 830 puntos              |
+| [x]      | Módulo controlador de motor paso a paso ULN2003 |
+| [x]      | Motor paso a paso                               |
+| [x]      | Adaptador de corriente 9V1A                     |
+| [x]      | Módulo de fuente de alimentación                |
+| [x]      | Cables hembra-macho (DuPont)                    |
+|          | Hilo macho-macho (hilo de puente)               |
 
 ![](img/2023-12-02-13-47-03.png)
 
@@ -466,42 +577,59 @@ Un motor paso a paso es un dispositivo electromecánico que convierte pulsos el�
 
 El eje o eje de un motor paso a paso gira en incrementos discretos cuando impulsos de mando eléctrico se aplican a él en la secuencia correcta. La rotación de los motores tiene varias relaciones directas a estos pulsos de entrada aplicadas. La secuencia de los pulsos aplicados se relaciona directamente con la dirección de rotación de ejes motor. La velocidad de la rotación de los ejes motor está directamente relacionada con la frecuencia de los pulsos de entrada y la duración de la rotación está directamente relacionada con el número de pulsos de entrada aplicada. Una de las ventajas más importantes de un motor paso a paso es su capacidad para ser controlado con precisión en un sistema de lazo abierto. Control de lazo abierto significa que ninguna información de retroalimentación de posición es necesario. Este tipo de control elimina la necesidad de costosos dispositivos de detección y regeneración como codificadores ópticos. Su posición es conocida simplemente por hacer el seguimiento de los pulsos de entrada de paso
 
-### 28BYJ-48 los parámetros del motor paso a paso
+### 28BYJ-48
 
-Modelo: 28BYJ-48
+ El motor paso a paso "``28BYJ-48``" es un motor bastante común en proyectos de electrónica y robótica debido a su costo asequible y su versatilidad.
 
-> * Tensión nominal: 5 VDC
-> * Número de fase: 4
-> * Cociente de la variación de velocidad: 1/64
-> * Ángulo de paso: 5,625 ° 64
-> * Frecuencia: 100Hz
-> * Resistencia de la C.C.: 50Ω±7 %(25 ° C)
-> * Inactivo en tracción frecuencia: > 600Hz
-> * Frecuencia ociosa de hacia fuera-tracción: > 1000Hz En tracción par > 34.3mN.m(120Hz)
-> * Posicionamiento automático par > 34.3mN.m Par de fricción: 600-1200 gf.cm
-> * Tire un par: 300 gf.cm
-> * Resistencia de aislamiento > 10MΩ(500V) Aislantes de electricidad : 600VAC/1mA/1s Grado de aislamiento : A
-> * Subida de temperatura < 40K(120Hz) Ruido < 35dB (120Hz, No carga, 10cm
+| Característica                            | Valor                                      |
+| ----------------------------------------- | ------------------------------------------ |
+| Tensión nominal                           | 5 VDC                                      |
+| Número de fase                            | 4                                          |
+| Cociente de la variación de velocidad     | 1/64                                       |
+| Ángulo de paso                            | 5,625 ° 64                                 |
+| Frecuencia                                | 100Hz                                      |
+| Resistencia de la C.C.                    | 50Ω±7% (25 ° C)                            |
+| Inactivo en tracción frecuencia           | > 600Hz                                    |
+| Frecuencia ociosa de hacia fuera-tracción | > 1000Hz En tracción par > 34.3mN.m(120Hz) |
+| Posicionamiento automático par            | > 34.3mN.m                                 |
+| Par de fricción                           | 600-1200 gf.cm                             |
+| Tire un par                               | 300 gf.cm                                  |
+| Resistencia de aislamiento                | > 10MΩ(500V)                               |
+| Aislantes de electricidad                 | 600VAC/1mA/1s                              |
+| Grado de aislamiento                      | A                                          |
+| Subida de temperatura                     | < 40K(120Hz)                               |
+| Ruido                                     | < 35dB (120Hz, No carga, 10cm)             |
 
-#Esquema de circuitos
+### Esquema de circuitos
 
 ![imagen](media/image156.jpeg)
 
-El motor de pasos bipolar tiene generalmente cuatro cables que salen de él. A diferencia de los motores PAP unipolares, steppers bipolares no tienen ninguna conexión común de centro. Tienen dos juegos independientes de bobinas en lugar de otro. Se pueden distinguir de steppers unipolares midiendo la resistencia entre los cables. Debe encontrar dos pares de cables de igual resistencia. Si tienes las puntas de su medidor conectado a dos cables que no están conectados (es decir, no conectada a la bobina del mismo), debería ver resistencia infinita (o sin continuidad).
-#ULN2003 Placa conductora
+El motor paso a paso bipolar generalmente cuenta con cuatro cables que se extienden de él. A diferencia de los motores PAP unipolares, los motores paso a paso bipolares no poseen una conexión común en el centro.
+
+En lugar de eso, tienen dos conjuntos independientes de bobinas. Pueden diferenciarse de los motores paso a paso unipolares midiendo la resistencia entre los cables.
+
+Deberías identificar dos pares de cables con resistencias iguales. Si conectas las puntas de tu medidor a dos cables que no están vinculados (es decir, que no están conectados a la misma bobina), deberías observar resistencia infinita (o falta de continuidad).
+
+### ULN2003
+
+La ULN2003 es un popular ``chip de amplificación de corriente`` que se utiliza comúnmente como placa conductora para motores paso a paso. Este chip se utiliza para controlar motores, especialmente los motores paso a paso, y proporciona la capacidad de manejar corrientes más altas de las que un microcontrolador puede manejar directamente.
 
 ![imagen](media/image157.jpeg)
 
-Descripción del producto
+### Descripción del producto
 
-> * Tamaño: 42mmx30mm
-> * Chip de controlador de uso ULN2003, 500mA
-> * A. B. C. D LED que indica las cuatro fases las condiciones de trabajo motor paso a paso.
-> * Blanco jack es el conector estándar motor cuatro fase paso a paso.
-> * Pines de alimentación son separados
-> * Mantuvimos las clavijas del resto de la viruta del ULN2003 para sus prototipos más.
+| Característica                                             | Valor                                                                          |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Tamaño                                                     | 42mmx30mm                                                                      |
+| Chip de controlador de uso                                 | ULN2003, 500mA                                                                 |
+| A. B. C. D                                                 | LED que indica las cuatro fases las condiciones  de trabajo motor paso a paso. |
+| Blanco jack                                                | es el conector estándar motor cuatro fase      paso a paso.                    |
+| Pines de alimentación son separados                        |                                                                                |
+| Mantuvimos las clavijas del resto de la viruta del ULN2003 | para sus prototipos más.                                                       |
 
 La forma más sencilla de conexión un paso a paso unipolar a``Arduino`` es utilizar un desglose para chip de ULN2003A transistor array. El ULN2003A contiene siete controladores de transistor Darlington y es algo asícomo tener siete transistores TIP120 todo en un paquete. El ULN2003A puede pasar hasta 500 mA por canal y tiene una caída de tensión interna de 1V cuando en. También contiene diodos de abrazadera interna para disipar las puntas de tensión al manejar cargas inductivas.
+
+## Control mediante bobinas
 
 Para controlar el paso a paso, aplicamos tensión a cada una de las bobinas en una secuencia específica.
 
@@ -528,7 +656,7 @@ Estamos utilizando 4 pines para controlar el paso a paso.
 - Los pines 8-11 controlan el motor paso a paso.
 - Conectamos la tierra de a UNO para el motor paso a paso.
 
-#Código
+### Código
 
 ![imagen](media/image162.jpeg)
 
@@ -564,8 +692,8 @@ Tiene una salida de 5 V y una corriente máxima de 2 A. Puede alcanzar una veloc
 - También es más económico.
 - El **SG90** tiene un rango de movimiento de aproximadamente 180 grados, mientras que el MG995 tiene un rango de movimiento de aproximadamente 360 grados.
 
-| Parámetro | Valor |
-| --------- ||
+| Parámetro                  | Valor                                                           |
+| -------------------------- | --------------------------------------------------------------- |
 | Longitud del cable:        | 25cm                                                            |
 | Sin carga;                 | Velocidad: 0,12 seg/60 degree (4.8V), 0.10 sec/60 grados (6.0V) |
 | Puesto de par (4.8V):      | 1,6 kg/cm                                                       |
@@ -587,13 +715,13 @@ El servo viene con diferentes accesorios que se pueden utilizar para sujetarlo a
 
 ![imagen](media/image85.jpeg)
 
-#Montaje
+### Montaje
 
 Necesitaremos 3 **jumpers** para conectar el servo a la placa.
 
 ![bg contain](media/image86.jpeg)
 
-#Código
+### Código
 
 Antes de ejecutar esto, debemos incluir la **biblioteca servo**. Esta librería incorpora funciones que nos permitirán manejar de forma más sencilla el comportamiento del motor.
 
@@ -756,7 +884,7 @@ Una vez completada la carga, la placa se debe reiniciar y el led comenzar a parp
 
 La primera línea de código es:
 
-```arduino
+```c
 int led = 13;
 ```
 
@@ -766,7 +894,7 @@ Creamos una variable con un nombre y guardamos el número de pin al que el LED e
 
 A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de ``reset``. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un **programa** se ha subido
 
-```arduino
+```c
 void setup() {
 // Inicializa el pin digital como salida.
 pinMode(led, OUTPUT);
@@ -785,12 +913,12 @@ También es obligatorio para un boceto tener una función de **loop**. A diferen
 
 ### Explicación loop
 
-```arduino
+```c
 void loop() {
-digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)
-delay(1000); // Espere un segundo
-digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja
-delay(1000); // Espere un segundo
+  digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)
+  delay(1000); // Espere un segundo
+  digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja
+  delay(1000); // Espere un segundo
 }
 ```
 
@@ -814,14 +942,14 @@ Aprenderemos a cambiar el ``brillo`` de un LED usando diferentes valores  de res
 
 ### Componentes necesarios
 
-```
-- [x] (1) x Placa``Arduino`` UNO
-- [x] 1 LED rojo de 5 mm
-- [x] (1) x resistencia de 220 ohmios
-- [x] (1) x resistencia de 1 k ohm
-- [x] (1) x resistencia de ohmio 10 k
-- [x] (2) x M M cables (cables de puente de macho a macho)
-```
+| Cantidad | Característica                                   |
+| -------- | ------------------------------------------------ |
+| (1)      | x Placa Arduino UNO                              |
+| (1)      | 1 LED rojo de 5 mm                               |
+| (1)      | x resistencia de 220 ohmios                      |
+| (1)      | x resistencia de 1 k ohm                         |
+| (1)      | x resistencia de ohmio 10 k                      |
+| (2)      | x M M cables (cables de puente de macho a macho) |
 
 **¿Qué es un LED?**
 
@@ -940,7 +1068,7 @@ A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo
 
 ![imagen](2022-12-05-10-13-27.png)
 
-Pines
+### Pines
 
 El [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) tiene **cuatro pines**. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
 
@@ -948,7 +1076,7 @@ El [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/) tiene **cua
 
 Cada pin separado de color verde o azul o de rojo se llama ánodo.
 
-Color
+### Color
 
 Los colores los conseguiremos mezclando diferentes cantidades de cada color primario.
 
@@ -1170,16 +1298,22 @@ Delay(delayTime);
 
 Los LEDs se están volviendo cada vez más populares como un medio para iluminar un espacio. Uno de los tipos de LEDs más nuevos y populares es el ``WS2812B``. Estos LEDs ofrecen una serie de ventajas sobre los LEDs tradicionales, como la capacidad de cambiar de color y la capacidad de crear una gran variedad de efectos de iluminación.
 
-El **WS2812B** es un tipo de LED direccionable. Esto significa que cada LED individual se puede controlar de forma **independiente**. Esto le da la capacidad de crear algunos efectos de iluminación realmente geniales. Por ejemplo, puede crear un espectáculo de luces en el que cada LED sea de un color diferente y todos cambien de color al mismo tiempo.
+![](media/ledanimado.gif)
 
-Alimentación
+### WS2812B
+
+El **WS2812B** es un tipo de LED direccionable. Esto significa que cada LED individual se puede controlar de forma **independiente**. Esto le da la capacidad de crear algunos efectos de iluminación realmente geniales.
+
+![](img/2023-12-02-15-49-51.png)
+
+### Alimentación
 
 Las tiras **WS2812B** pueden alimentarse a través de una batería o de una fuente de alimentación externa.
 
 - El voltaje necesario para que funcione correctamente la tira de led WS2812B es de 5V.
 - Un led WS2812B necesita un mínimo de 60mA para funcionar.
 
-###  La librería FASTLED
+### La librería FASTLED
 
 **FastLED** es una librería de código abierto para programar tira de LEDs RGB direccionables y controladores. Está diseñada para simplificar el proceso de crear efectos de iluminación complejos y se puede usar con una amplia variedad de hardware.
 
@@ -1342,7 +1476,7 @@ Abajo está el diagrama de pines de siete segmentos
 0-9 diez dígitos se corresponden con cada segmento es los siguientes (en la tabla siguiente se aplica común cátodo dispositivo de exhibición de segmento siete, si se utiliza un ánodo común, de la mesa debe ser reemplazado cada 1 0 0 si todos sustituidos por 1):
 
 | dp  | a	b	c	d	e	f	g   |
-|  |  |
+| --- | --------------- |
 | 0   | 0	1	1	1	1	1	1	0 |
 | 1   | 0	0	1	1	0	0	0	0 |
 | 2   | 0	1	1	0	1	1	0	1 |
@@ -1427,15 +1561,6 @@ void loop()
   }
 }
 ```
-
-[🔙 Enrere](../) | [🏠 Pàgina principal](http://danimrprofe.github.io/apuntes/) \n\n
-title: 7 segments - 4 dígitos
-footer: Daniel Moreno 🌐 <github.com/danimrprofe>
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
 
 ## 7 segments (4 dígitos)
 
@@ -1581,11 +1706,11 @@ void loop() {
 
 ## LED con 74HC595
 
-### Resumen
+Veremos cómo utilizar ocho LEDs rojos grandes con un Arduino UNO sin necesidad de sacrificar las 8 salidas disponibles.
 
-En esta lección, usted aprenderá cómo utilizar ocho LEDs rojo grandes con un UNO sin necesidad de renunciar a 8 patas de salida
+Aunque podrías conectar ocho LEDs con una resistencia a pines del Arduino UNO, rápidamente te quedarías sin pines en tu placa si ya tienes varios dispositivos conectados. Si no tienes muchas cosas conectadas al UNO, está bien hacerlo, pero a menudo queremos incorporar botones, sensores, servos, etc. y antes de darte cuenta, te quedas sin pines disponibles.
 
-Aunque usted podría conectar ocho LEDs con una resistencia a un pin UNO rápidamente empezaría a quedarse sin patas en su UNO. Si no tienes un montón de cosas conectadas a la ONU. Está bien hacerlo - pero a menudo tiempos queremos botones, sensores, servos, etc. y antes de saberlo que no tienes pernos de izquierda. Así, en lugar de hacer eso, vas a usar un chip llamado el 74HC595 Serial a paralelo convertidor. Este chip tiene ocho salidas (perfectos) y tres entradas que utilizas para alimentar datos en él un poco a la vez.
+Por lo tanto, en lugar de hacer eso, usarás un chip llamado ``74HC595``, que es un convertidor serial a paralelo. Este chip cuenta con ocho salidas (perfecto) y tres entradas que se utilizan para cargar datos poco a poco.
 
 ![imagen](media/image116.jpeg)
 
@@ -1658,12 +1783,12 @@ leds de byte = 0;
 
 La función de **setup** sólo establece los tres pernos que estamos utilizando para ser de salidas digitales.
 
-```
+```c
 void setup()
 {
-pinMode (latchPin, salida);
-pinMode (dataPin, salida);
-pinMode (clockPin, salida);
+  pinMode (latchPin, salida);
+  pinMode (dataPin, salida);
+  pinMode (clockPin, salida);
 }
 ```
 
@@ -1706,3 +1831,1068 @@ digitalWrite (latchPin, HIGH);
 Si usted deseó dar vuelta a uno de los LED apagado en lugar, llamaría una función similar de``Arduino`` (bitClear) con la variable de 'leds'. Esto ajustará ese poco de 'leds' para ser 0 y entonces sólo necesitará seguir con una llamada a 'updateShiftRegister' para actualizar la actual LED.
 
 ![imagen](media/image120.jpeg)
+
+# Interruptor de bola
+
+Los sensores de inclinación (interruptor de bola de inclinación) permiten detectar orientación o inclinación. Son pequeños, económicos, de bajo consumo y fáciles de usar. Si se usan correctamente, no se desgastarán. Su simplicidad los hace populares para los juguetes, los adminículos y los aparatos. A veces, se conocen como "interruptores de mercurio", "interruptores de inclinación" o "sensores de bola rodante" por razones obvias.
+
+## Componentes Requeridos
+
+```
+(1) x Placa``Arduino`` UNO
+(1) x interruptor de inclinación bola
+(2) x F-M wires (cables de hembra a macho DuPont)
+```
+
+## Funcionamiento
+
+Se componen generalmente de una cavidad de una cierta clase (cilíndrica es popular, aunque no siempre) con una masa libre conductora adentro, tal como una gota del mercurio o bola rodante. Un extremo de la cavidad tiene dos elementos conductores (polos). Cuando el sensor está orientado de tal manera que dicho extremo está hacia abajo, la masa rueda sobre los polos y los cortocircuitos, actuando como un interruptor de tiro.
+
+Aunque no es tan preciso ni flexible como un acelerómetro completo, los interruptores de inclinación pueden detectar movimiento u orientación. Otro beneficio es que los grandes pueden cambiar de energía por su cuenta. Los acelerómetros, por otro lado, producen voltaje digital o analógico que luego deben analizarse utilizando circuitos extra.
+
+## Conexión
+
+## Esquema
+
+![imagen](media/image80.jpeg)
+
+## Diagrama de conexiones
+
+![imagen](media/image81.jpeg)
+
+## Código
+
+Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 8 interruptor de la bola y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
+
+![imagen](media/image82.jpeg)
+
+# Boton
+
+En esta lección, aprenderemos a utilizar los botones con entradas digitales para  encender y apagar un LED.
+
+- Al presionar el primer botón se encenderá el LED
+- Al pulsar el otro botón se apagará el LED.
+
+## Componentes
+
+Antes de comenzar necesitaremos los siguientes componentes:
+
+| cantidad | componente                |
+| -------- | ------------------------- |
+| 1        | Placa``Arduino`` UNO      |
+| 1        | protoboard                |
+| 1        | LED rojo                  |
+| 1        | resistencia de 220 ohmios |
+| 2        | interruptores             |
+| 7        | cables jumper             |
+
+### Pulsadores
+
+Los interruptores son componentes muy simples. Cuando pulse un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro conexiones**, que pueden ser un poco confusas.
+
+En realidad, hay realmente dos conexiones eléctricas.
+
+- Los pines B y C están siempre conectados entre sí, al igual que A y D.
+- Al pulsar el botón, se conectan los 4.
+- En realidad dos de los pines no los necesitamos
+
+![imagen](media/image67.jpeg)
+
+## Esquema de conexión
+
+![bg contain](media/image68.jpeg)
+
+## Diagrama de cableado
+
+![imagen](media/image69.jpeg)
+
+## Las conexiones que vamos a tener que realizar son las siguientes:
+
+![imagen](media/image70.jpeg)
+
+Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor.
+
+Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas.
+Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
+
+## Explicación del código
+
+- Pulsando el botón izquierdo se encenderá el **LED**.
+- Pulsando el botón derecho apagará.
+
+La primera parte del proyecto define tres variables para las tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.
+
+La función de **setup** define el ledPin como una salida normal, pero ahora tenemos las dos entradas para ocuparse.
+
+En este caso, utilizamos el conjunto el pinMode ser **INPUT_PULLUP** como este:
+
+- El modo pin de **INPUT_PULLUP** significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, la entrada tendra el valor **HIGH**.
+- En otras palabras, el valor predeterminado de la entrada es **HIGH**, a menos que se ponga a **LOW** al pulsar el botón.
+
+# Conexión a tierra
+
+Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
+
+Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
+
+# Función Loop
+
+En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
+
+Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces  **digitalWrite** pone el valor HIGH el PIN al que tenemos conectado el LED, y este se enciende.
+
+## Código completo
+
+```c linenums="1" title="pruebaBoton.ino"
+int ledPin = 5; //pin a que hemos conectado el LED
+int pinBotonA = 9; //pin al que hemos conectado el boton A
+int pinBotonB = 8; //pin al que hemos conectado el boton B
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);
+  pinMode(pinBotonA, INPUT_PULLUP);
+  pinMode(pinBotonB, INPUT_PULLUP);
+}
+
+void loop()
+{
+  if (digitalRead(pinBotonA) == LOW)
+  {
+    digitalWrite(ledPin, HIGH);
+  }
+  if (digitalRead(pinBotonB) == LOW)
+  {
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
+# Joystick analógico
+
+Los joysticks analógicos pueden detectar movimientos en múltiples direcciones y con diferentes niveles de intensidad. Esto se logra mediante sensores que registran la posición y la fuerza aplicada al joystick.
+
+![](img/2023-12-02-16-13-12.png)
+
+## Pines del Joystick
+
+Necesitamos 5 conexiones entre el joystick y la placa``Arduino``.
+
+Los pines a conectar son:
+
+- ``Sel`` (Selección): Este pin es el botón de selección o pulsador del joystick.
+Conéctalo a un pin digital en tu Arduino (por ejemplo, pin 2).
+- ``Y`` (Eje Y): Este pin proporciona una salida analógica que varía según el movimiento del joystick en el eje Y (arriba y abajo). Conéctalo a uno de los pines analógicos en tu Arduino (por ejemplo, A0).
+- ``X`` (Eje X): Este pin proporciona una salida analógica que varía según el movimiento del joystick en el eje X (izquierda y derecha). Conéctalo a otro pin analógico en tu Arduino (por ejemplo, A1).
+- ``Voltaje``: Este pin suministra el voltaje de alimentación para el joystick.
+Conéctalo a la fuente de alimentación de 5V en tu Arduino.
+- ``Tierra``: Este pin se conecta a tierra (GND) para completar el circuito.
+Conéctalo al pin de tierra (GND) en tu Arduino.
+
+Tenemos que usar pines``Arduino`` **analógicos** para leer los datos de los pines que reconocen el movimiento X / Y (vertical y horizontal), puesto que puedo tener diferentes valores (por ejemplo, moverse más rápido o lento).
+
+![imagen](img/2022-12-07-09-39-52.png)
+
+En cambio, para detectar si pulsamos o no el botón, es suficiente un pin **digital**, puesto que solo tendremos dos valores (pulsado o no pulsado).
+
+![imagen](media/image98.jpeg)
+
+## Esquema
+
+![imagen](media/image99.jpeg)
+
+## Diagrama de cableado
+
+![imagen](media/image100.jpeg)
+
+## Código
+
+```c
+//``Arduino`` pin numbers
+const int SW_pin = 2; // digital pin connected to switch output
+const int X_pin = 0; // analog pin connected to X output
+const int Y_pin = 1; // analog pin connected to Y output
+
+void setup() {
+  pinMode(SW_pin, INPUT);
+  digitalWrite(SW_pin, HIGH);
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.print("Switch:  ");
+  Serial.print(digitalRead(SW_pin));
+  Serial.print("\n");
+  Serial.print("X-axis: ");
+  Serial.print(analogRead(X_pin));
+  Serial.print("\n");
+  Serial.print("Y-axis: ");
+  Serial.println(analogRead(Y_pin));
+  Serial.print("\n\n");
+  delay(500);
+}
+```
+
+![imagen](media/image101.jpeg)
+
+## Comprobar funcionamiento
+
+Haga clic en el Serial Monitor botón para encender el monitor serie. Se introducen los conceptos básicos sobre el monitor serial en detalles en la lección 1.
+
+![imagen](img/2022-12-07-09-45-06.png)
+
+El rango de valores va de 0 a 1024.
+
+# Módulo de receptor IR
+
+## Resumen
+
+Los **mandos a distancia** infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego usaremos una **librería** que fue diseñada para este sensor en particular.
+
+En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
+
+### Componentes necesarios
+
+```
+(1) x Elegoo Uno R3
+x IR modulo receptor
+x IR control remoto
+x F-M cables (cables de hembra a macho DuPont)ç
+```
+
+### Detectores IR vs fotocélulas
+
+Los detectores infrarrojos y las fotocélulas tienen diferentes características y usos específicos.
+
+Los ``detectores infrarrojos`` están diseñados para detectar la luz infrarroja y están configurados para recibir señales moduladas en 38 KHz, como las señales de control remoto. Los detectores infrarrojos tienen una ``salida digital`` que indica si se detecta o no una señal de IR
+
+![](img/2023-03-27-16-23-58.png)
+
+Por otro lado, las ``fotocélulas`` pueden detectar luz visible en el espectro amarillo/verde y no están diseñadas específicamente para detectar luz infrarroja. Las fotocélulas actúan como resistencias y ``cambian su resistencia`` en función de la cantidad de luz a la que están expuestas.
+
+![](img/2023-03-27-16-23-23.png)
+
+## ¿Qué podemos medir?
+
+![imagen](media/image104.jpeg)
+
+Como se puede ver en estos gráficos de hoja de datos, la detección de frecuencia de peak es a 38 KHz y el pico color del LED es de 940 nm. Se puede usar desde unos 35 KHz kHz 41 pero la sensibilidad se desprenderá para que no detecte asídesde lejos. Asimismo, puede utilizar LEDs de 850 a 1100 nm pero no funcionan tan bien como 900 a 1000nm asíque asegúrese de obtener coincidencia de LEDs! Compruebe la ficha técnica para su IR LED verificar la longitud de onda.
+
+## Esquema de conexiones
+
+![imagen](media/image105.jpeg)
+
+## Diagrama de cableado
+
+Hay 3 conexiones para el receptor de infrarrojos.
+
+Las conexiones son: señal, voltaje y tierra.
+
+- El "-" es la tierra
+- "S" es señal
+- El del medio corresponde a 5V.
+
+![imagen](media/image106.jpeg)
+
+## Montaje
+
+![imagen](media/image107.jpeg)
+
+### Código
+
+```c
+#include "IRremote.h"
+
+int receiver = 11; // Signal Pin of IR receiver
+
+/*--( Declare objects )--*/
+IRrecv irrecv(receiver);     // create instance of 'irrecv'
+decode_results results;      // create instance of 'decode_results'
+
+void translateIR()
+{
+
+  switch(results.value)
+
+  {
+  case 0xFFA25D: Serial.println("POWER"); break;
+  case 0xFFE21D: Serial.println("FUNC/STOP"); break;
+  case 0xFF629D: Serial.println("VOL+"); break;
+  case 0xFF22DD: Serial.println("FAST BACK");    break;
+  case 0xFF02FD: Serial.println("PAUSE");    break;
+  case 0xFFC23D: Serial.println("FAST FORWARD");   break;
+  case 0xFFE01F: Serial.println("DOWN");    break;
+  case 0xFFA857: Serial.println("VOL-");    break;
+  case 0xFF906F: Serial.println("UP");    break;
+  case 0xFF9867: Serial.println("EQ");    break;
+  case 0xFFB04F: Serial.println("ST/REPT");    break;
+  case 0xFF6897: Serial.println("0");    break;
+  case 0xFF30CF: Serial.println("1");    break;
+  case 0xFF18E7: Serial.println("2");    break;
+  case 0xFF7A85: Serial.println("3");    break;
+  case 0xFF10EF: Serial.println("4");    break;
+  case 0xFF38C7: Serial.println("5");    break;
+  case 0xFF5AA5: Serial.println("6");    break;
+  case 0xFF42BD: Serial.println("7");    break;
+  case 0xFF4AB5: Serial.println("8");    break;
+  case 0xFF52AD: Serial.println("9");    break;
+  case 0xFFFFFFFF: Serial.println(" REPEAT");break;
+
+  default:
+    Serial.println(" other button   ");
+
+  }// End Case
+
+  delay(500); // Do not get immediate repeat
+
+} //END translateIR
+void setup()   /*-( SETUP: RUNS ONCE )-*/
+{
+  Serial.begin(9600);
+  Serial.println("IR Receiver Button Decode");
+  irrecv.enableIRIn(); // Start the receiver
+
+}/*--(end setup )*/
+
+void loop()   /*-( LOOP: RUNS CONSTANTLY )-*/
+{
+  if (irrecv.decode(&results)) // have we received an IR signal?
+
+  {
+    translateIR();
+    irrecv.resume(); // receive the next value
+  }
+}/* --(end main loop )-- */
+```
+## Visualizar datos en el monitor
+
+Haga clic en el botón **Serial Monitor** para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.
+
+![imagen](media/image108.jpeg)
+
+# Relé
+
+Un relé es un **interruptor** operado **eléctricamente**. Muchos relés utilizan un electroimán para operar mecánicamente un interruptor, pero otros principios de funcionamiento también se utilizan como relés de estado sólidos.
+
+![imagen](media/image150.jpeg)
+
+### Relé
+
+### Usos
+
+Los relés se utilizan donde es necesario un circuito de control por una señal de baja potencia (con aislamiento eléctrico total entre el control y los circuitos controlados), o donde varios circuitos deben ser controlados por una señal.
+
+En los sistemas modernos de energía eléctrica, estas funciones son realizadas por instrumentos digitales llamados "relés de protección".
+
+## Relé con motor de coche en``Arduino``
+
+A continuación es el esquema de cómo relé de coche con``Arduino``.
+
+Puede ser complicado insertar el relé en la protoboard. Tienes que doblar una de las patillas del relé un poco para poder insertarlo
+
+![imagen](media/image151.jpeg)
+
+### Conexión
+
+![imagen](media/image152.jpeg)
+
+### Esquema
+
+![imagen](media/image153.jpeg)
+
+### Diagrama de cableado
+
+### Código
+
+### Montaje real
+
+Programa de carga, después de encender todos los interruptores de potencia. El relé a recoger con un sonido de timbre. Entonces, el motor girará. Después de un período de tiempo, se liberará el relé y el motor se detiene.
+
+![imagen](media/image154.jpeg)
+
+### Código fuente
+
+```c
+#define ENABLE 5
+#define DIRA 3
+#define DIRB 4
+
+int i;
+
+void setup() {
+  //set pin direction
+  pinMode(ENABLE,OUTPUT);
+  pinMode(DIRA,OUTPUT);
+  pinMode(DIRB,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+//back and forth example
+    Serial.println("One way, then reverse");
+    digitalWrite(ENABLE,HIGH); // enable on
+    for (i=0;i<5;i++) {
+    digitalWrite(DIRA,HIGH); //one way
+    digitalWrite(DIRB,LOW);
+    delay(750);
+    digitalWrite(DIRA,LOW);  //reverse
+    digitalWrite(DIRB,HIGH);
+    delay(750);
+  }
+  digitalWrite(ENABLE,LOW); // disable
+    delay(3000);
+      for (i=0;i<5;i++) {
+    digitalWrite(DIRA,HIGH); //one way
+    digitalWrite(DIRB,LOW);
+    delay(750);
+    digitalWrite(DIRA,LOW);  //reverse
+    digitalWrite(DIRB,HIGH);
+    delay(750);
+  }
+    digitalWrite(ENABLE,LOW); // disable
+    delay(3000);
+}
+
+```
+
+# Sensors
+
+![](img/2023-03-27-16-42-42.png)
+
+Els sensors d'Arduino són dispositius que permeten a una placa Arduino detectar i mesurar diferents **variables** del seu entorn. Aquests sensors poden mesurar coses com la temperatura, la humitat, la llum, la pressió, el moviment, el so, la proximitat, entre d'altres.
+
+Els sensors són un component clau en molts projectes d'Arduino i són utilitzats per recollir dades del món físic per a ser processats per la placa Arduino.
+
+- Ultrasons
+- Llum (fotocèlula)
+- Humitat i temperatura
+
+## Sensor humedad temperatura DHT11
+
+En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura **DHT11**. El sensor digital de temperatura y humedad **DHT11** es un sensor que nos proporciona información de  de la temperatura y la humedad.
+
+![imagen](img/2022-12-12-18-42-31.png)
+
+### Parámetros del sensor
+
+Cualquier magnitud que queramos leer tendrá unas ``características`` de precisión, según el sensor o instrumento que lo mide.
+
+### Humedad relativa
+
+- Resolución: 16 bits
+- Repetibilidad: ±1% H.R.
+- Precisión: 25 ° C ±5% hr
+- Intercambiabilidad: intercambiables
+- Tiempo de respuesta: 1 / e (63%) de 25º c 6s
+- 1m / s de aire 6s
+- Histéresis: < ± 0.3% RH
+- Estabilidad a largo plazo: < ± 0.5% hr / año en
+
+### Temperatura
+
+| Magnitud             | Valor           |
+| -------------------- | --------------- |
+| Resolución:          | 16 bits         |
+| Repetibilidad:       | ±0. 2 ° C       |
+| Rango:               | 25 ° C ±2° c    |
+| Tiempo de respuesta: | 1 / e (63%) 10S |
+
+### Características eléctricas
+
+Para funcionar, el sensor necesita corriente eléctrica.
+
+| Magnitud                | Valor                          |
+| ----------------------- | ------------------------------ |
+| Fuente de alimentación: | DC 3.5 ~ 5.5V                  |
+| Corriente:              | medición 0.3mA (60μA en espera |
+| Periodo de muestreo:    | más de 2 segundos              |
+
+### Descripción de pines
+
+El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con la placa arduino. Estos pines son:
+
+![](img/2023-03-27-11-09-57.png)
+
+|      |                                                    |
+| ---- | -------------------------------------------------- |
+| VDD  | Lo conectaremos a 5 V                              |
+| DATA | Lo conectaremos a un pin de datos. En este caso D2 |
+| GND  | Lo conectaremos a tierra                           |
+
+![bg contain](media/image94.jpeg)
+
+![bg contain](media/image95.jpeg)
+
+![bg contain](media/image96.jpeg)
+
+### Código
+
+El siguiente código va a utilizar el sensor que hemos conectado para leer la temperatura y la humedad que está midiendo el sensor.
+
+```c title="sensorHumedadytemperatura.ino"
+#include <dht_nonblocking.h>
+#define DHT_SENSOR_TYPE DHT_TYPE_11
+
+static const int DHT_SENSOR_PIN = 2;
+DHT_nonblocking dht_sensor( DHT_SENSOR_PIN, DHT_SENSOR_TYPE );
+
+void setup( )
+{
+  Serial.begin( 9600);
+}
+
+static bool medir ( float *temperature, float *humidity )
+{
+  static unsigned long measurement_timestamp = millis( );
+
+  /* Measure once every four seconds. */
+  if( millis( ) - measurement_timestamp > 3000ul )
+  {
+    if( dht_sensor.measure( temperature, humidity ) == true )
+    {
+      measurement_timestamp = millis( );
+      return( true );
+    }
+  }
+
+  return( false );
+}
+
+void loop( )
+{
+  float temperature;
+  float humidity;
+
+  if( medir( &temperature, &humidity ) == true )
+  {
+    Serial.print( "T = " );
+    Serial.print( temperatura, 1 );
+    Serial.print( " deg. C, H = " );
+    Serial.print( humedad, 1 );
+    Serial.println( "%" );
+  }
+}
+```
+
+### Salida en el monitor
+
+Los valores medidos se mostrarán por pantalla en el monitor serie. El monitor serie lo tenemos que abrir desde el IDE de arduino.
+
+![](img/2023-03-27-11-14-40.png)
+
+A continuación se nos abrirá una pantalla en la que podremos ver los datos que nuestro programa está escribiendo.
+
+![imagen](media/image97.jpeg)
+
+## Sensor luz (fotocelula)
+
+### Resumen
+
+Vamos a aprender como medir la intensidad de la luz utilizando una entrada analógica. Con lo que aprenderemos, podremos posteriormente utilizar el nivel de luz para controlar el apagar un LED o encenderlo cuando no haya luz, por ejemplo.
+
+Los componentes que utilizaremos son los siguientes:
+
+- [x] Elegoo Uno R3
+- [x] Protoboard
+- [x] LEDs
+- [x] Resistencias de 220 ohmios
+- [x] Resistencia de 1 kohm (1000 ohms)
+- [x] 1 x fotoresistor o LDR (fotocélula)
+- [x] 16 x M M cables (cables de puente de macho a macho)
+
+### Fotocélula
+
+Una fotorresistencia o **LDR** (por sus siglas en inglés “light-dependent resistor”) es un componente electrónico cuya resistencia varía en función de la luz. Se trata de un sensor que actúa como una resistencia variable en función de la luz que capta.
+
+![imagen](media/image124.jpeg)
+
+Esta tiene una resistencia de cerca de 50 kΩ en cerca de oscuridad y Ω 500 en luz brillante. Para convertir este valor variable de la resistencia en algo que podemos medir en la entrada analógica de la Junta de un R3 de UNO, debe ser convertida en un voltaje.
+
+La forma más sencilla de hacerlo es combinar con una resistencia fija.
+
+![imagen](media/image125.jpeg)
+
+La resistencia y fotocélula junto se comportan como una sola. Cuando la luz es muy brillante, entonces la resistencia de la fotocélula es muy baja en comparación con la resistencia de valor fijo, y asíes como si el bote se dio vuelta a máximo.
+
+Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la resistencia fija de 1 kΩ y es como si el recipiente estuviera girando hacia GND. Cargue el croquis dado en la siguiente sección y trate de cubrir la fotocélula con el dedo y, a continuación, sosténgalo cerca de una fuente de luz.
+
+### Conexión
+
+![imagen](img/2022-10-20-22-13-48.png)
+
+### Diagrama de cableado
+
+![imagen](img/2022-10-20-22-14-10.png)
+
+### Código para leer valor de un LDR
+
+```c
+int sensorPin = A0; // select the input pin for LDR
+
+int sensorValue = 0; // variable to store the value coming from the sensor
+void setup() {
+   Serial.begin(9600); //sets serial port for communication
+}
+void loop() {
+   sensorValue = analogRead(sensorPin); // read the value from the sensor
+   Serial.println(sensorValue); //prints the values coming from the sensor on the screen
+   delay(100);
+}
+```
+
+### Código encender un LED cuando la luz es baja
+
+Encender LED cuando la luz es baja y viceversa.
+
+- Para ello, deberemos colocar un LED en el pin 13, con su correspondiente resistencia.
+- El umbral es el valor a partir del cual vamos a decidir si encender la bombilla o no
+- En este caso está fijado a **100 Ω**.
+
+```c
+const int LEDPin = 13;
+const int LDRPin = A0;
+const int umbral = 100;
+
+void setup() {
+   pinMode(LEDPin, OUTPUT);
+   pinMode(LDRPin, INPUT);
+}
+
+void loop() {
+   int input = analogRead(LDRPin);
+   if (input > umbral) {
+      digitalWrite(LEDPin, HIGH);
+   }
+   else {
+      digitalWrite(LEDPin, LOW);
+   }
+}
+```
+
+Lo mismo, pero con un valor de umbral fijado por nosotros.
+
+```c
+const long A = 1000;     //Resistencia en oscuridad en KΩ
+const int B = 15;        //Resistencia a la luz (10 Lux) en KΩ
+const int Rc = 10;       //Resistencia calibracion en KΩ
+const int LDRPin = A0;   //Pin del LDR
+
+int V;
+int ilum;
+
+void setup()
+{
+   Serial.begin(115200);
+}
+
+void loop()
+{
+   V = analogRead(LDRPin);
+
+   //ilum = ((long)(1024-V)*A*10)/((long)B*Rc*V);  //usar si LDR entre GND y A0
+   ilum = ((long)V*A*10)/((long)B*Rc*(1024-V));    //usar si LDR entre A0 y Vcc (como en el esquema anterior)
+
+   Serial.println(ilum);
+   delay(1000);
+}
+```
+
+## Sensor ultrasonico
+
+El **sensor ultrasónico** es ideal para todo tipo de proyectos que necesitan medidas de distancia, como por ejemplo evitar obstáculos.
+
+![](img/2023-03-27-11-16-57.png)
+
+El sensor que utilizaremos se llama ``HC-SR04``  e incorpora una **librería** diseñada  específicamente para estos sensores.
+
+![imagen](2022-12-05-10-31-48.png)
+
+### Componentes necesarios
+
+Para hacer una prueba sencilla de funcionamiento del sensor, necesitaremos:
+
+```
+(1) x Placa``Arduino`` UNO
+(1) x Módulo de sensor ultrasónico
+(4) x F M cables (cables de hembra a macho DuPont)
+```
+
+### Características técnicas
+
+El módulo **HC-SR04** del sensor ultrasónico nos permite medir distancias entre 2 cm y 400 cm, con una precisión que varía puede alcanzar los 3 mm.
+
+El principio básico del trabajo es el siguiente:
+
+- Dispara una señal de nivel alto de al menos 10us
+- El Módulo envía automáticamente ocho señales de 40 kHz y detecta si hay una señal de retorno, por rebotar en alguna superficie.
+- Esta señal de retorno dependerá de la distancia recorrida y, por tanto, de la distancia.
+
+### ¿Cómo calcula la distancia?
+
+La distancia recorrida se podría calcular en función de:
+
+- La **velocidad** del sonido
+- El **tiempo** que tardará en ir y volver realmente es el doble de la distancia que hay al objeto.
+
+La formula que nos daría la distancia recorrida podría ser:
+
+```math
+distancia = (tiempo  * 340 ) / 2
+```
+
+El diagrama de sincronización se muestra a continuación. Sólo tiene que suministrar un pulso de 10us corto a la entrada de activación para iniciar el rango, y luego el módulo enviará una ráfaga de 8 ciclos de ultrasonido a 40 kHz y aumentar su eco. El Echo es un objeto de distancia que es el ancho de pulso y el rango en proporción.
+
+Se puede calcular el rango a través del intervalo de tiempo entre la señal de disparo de envío y la señal de eco de recepción. La fórmula es la siguiente:
+
+```
+Fórmula centímetros: us / 58 = centímetros
+Pulgadas:  us / 148 = inch; O: el rango = tiempo de alto nivel * velocidad (340M / S) / 2;
+```
+Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la señal de disparo a la señal de eco.
+
+![imagen](media/image88.jpeg)
+
+![bg contain](img/2022-11-20-17-18-13.png)
+
+### Conexión
+
+Aquí podemos ver como conectar los cuatro pines del sensor al``Arduino`` Uno.
+
+![imagen](media/image89.jpeg)
+
+### Diagrama de cableado
+
+El diagrama de cableado es el siguiente. Recordad que utilizamos en general rojo para cables conectados a 5V y negro para 0V o tierra (GND).
+
+![imagen](media/image90.jpeg)
+
+![bg contain](media/image91.jpeg)
+
+### Código
+
+Necesitaremos una **librería** para poder utilizar algunas funciones y comunicarnos con el sensor. Para ello, deberemos de incluirla en nuestro proyecto, de la siguiente forma:
+
+![imagen](img/2022-10-17-15-41-18.png)
+
+Una vez incluída, ya la podemos utilizar en nuestro programa.
+
+Vamos a utilizar el monitor serie para mostrar los datos por pantalla, por lo menos mientras probamos el programa.
+
+```c
+
+#include "SR04.h" //la librería a utilizar
+#define TRIG_PIN 12 //pines donde conectamos
+#define ECHO_PIN 11
+
+SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+long distancia;
+
+void setup() {
+   Serial.begin(9600);
+   delay(1000);
+}
+
+void loop() {
+   distancia=sr04.Distance(); //Devuelve la distancia en Cm.
+   Serial.print(distancia);
+   Serial.println("cm");
+   delay(1000); //Esperaremos 1s entre mediciones
+}
+
+```
+
+Abriendo el monitor y podemos ver los datos que vamos imprimiendo desde el programa
+
+![imagen](media/image92.jpeg)
+
+## Termistor
+
+Un **termistor** es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir.
+
+### Tipos de termistores
+
+Hay dos clases de termistores:
+
+- NTC (coeficiente de temperatura negativo)
+- PTC (coeficiente positivo de temperatura).
+
+En general, usaremos sensores **NTC** para medir la temperatura.
+
+![imagen](media/image113.jpeg)
+
+![bg contain](media/image114.jpeg)
+
+### Código
+
+Antes de ejecutar esto, asegúrese de que ha instalado la **librería** <LiquidCrystal> o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
+
+Es útil poner una línea de comentario sobre el comando 'lcd'.
+
+BSED4D5D6D7
+
+LiquidCrystal lcd (7, 8, 9, 10, 11, 12);
+
+Esto facilita las cosas si decides cambiar que utilizas los pernos.
+
+En la **función loop** ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.
+
+En primer lugar, echemos un vistazo a cálculo de la temperatura.
+
+```c
+int tempReading = analogRead(tempPin);
+doble tempK = log (10000.0 * ((1024.0/tempReading - 1)));
+tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK)) * tempK);
+float tempC = tempK - 273.15;
+floatfloat tempF = (tempC * 9.0) / 5.0 + 32.0;
+```
+
+Cambio lecturas se muestra en una pantalla LCD puede ser complicado. El principal problema es que la lectura puede no ser siempre el mismo número de dígitos. Por lo tanto, si la temperatura cambia de 101,50 a 99.00 entonces el dígito adicional de la lectura antigua es en peligro de quedar en la pantalla.
+
+Para evitar esto, escriba la línea de la pantalla LCD cada vez el bucle.
+
+```c
+lcd.setCursor (0, 0);
+LCD.Print ("Temp C");
+lcd.setCursor (6, 0);
+LCD.Print(tempF);
+```
+
+El comentario bastante extraño sirve para recordarles de las 16 columnas de la pantalla. Luego puede imprimir una cadena de esa longitud con espacios donde irá la lectura real.
+
+![imagen](media/image115.png)
+
+Para rellenar los espacios en blanco, establecer la posición del cursor por donde la lectura debe aparecer y luego imprimirlo.
+
+# ESP8266 NodeMCU
+
+El ``ESP8266 NodeMCU`` es una plataforma de hardware y software open source que permite a los usuarios crear dispositivos conectados a Internet con funciones de red WiFi de forma rápida y fácil.
+
+![](img/2023-03-15-15-24-34.png)
+
+L'``ESP8266`` és un xip ``Wi-Fi`` de baix cost que s'utilitza àmpliament en projectes de bricolatge i aplicacions ``IoT``. El NodeMCU és una placa de desenvolupament popular basada en l'ESP8266, que proporciona una manera senzilla de prototipar i desenvolupar projectes amb aquest xip.
+
+![Alt text](image-1.png)
+
+## Componentes
+
+![bg contain](img/2023-03-15-15-25-29.png)
+
+## Aplicaciones principales
+
+- Dispositivos domésticos inteligentes
+- Dispositivos IoT
+- Wearables
+- Juguetes conectados
+- Sistemas de seguridad
+- Termostatos
+- Sistemas de rociadores
+- Controles remotos
+- Iluminación automatizada
+
+## Código fuente
+
+```c
+/*
+ * ESP8266 NodeMCU LED Control over WiFi Demo
+ *
+ * https://circuits4you.com
+ */
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+
+//ESP Web Server Library to host a web page
+#include <ESP8266WebServer.h>
+
+//---------------------------------------------------------------
+//Our HTML webpage contents in program memory
+const char MAIN_page[] PROGMEM = R"=====(
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h1>WiFi LED on off demo: 1</h1><br>
+Ciclk to turn <a href="ledOn">LED ON</a><br>
+Ciclk to turn <a href="ledOff">LED OFF</a><br>
+<hr>
+<a href="https://circuits4you.com">circuits4you.com</a>
+</center>
+
+</body>
+</html>
+)=====";
+//---------------------------------------------------------------
+//On board LED Connected to GPIO2
+#define LED 2
+
+//SSID and Password of your WiFi router
+const char* ssid = "BONDIATOTLODIA";
+const char* password = "UHYD6VRg";
+
+//Declare a global object variable from the ESP8266WebServer class.
+ESP8266WebServer server(80); //Server on port 80
+
+//===============================================================
+// This routine is executed when you open its IP in browser
+//===============================================================
+void handleRoot() {
+ Serial.println("You called root page");
+ String s = MAIN_page; //Read HTML contents
+ server.send(200, "text/html", s); //Send web page
+}
+
+void handleLEDon() {
+ Serial.println("LED on page");
+ digitalWrite(LED,LOW); //LED is connected in reverse
+ server.send(200, "text/html", "LED is ON"); //Send ADC value only to client ajax request
+}
+
+void handleLEDoff() {
+ Serial.println("LED off page");
+ digitalWrite(LED,HIGH); //LED off
+ server.send(200, "text/html", "LED is OFF"); //Send ADC value only to client ajax request
+}
+//==============================================================
+//                  SETUP
+//==============================================================
+void setup(void){
+  Serial.begin(115200);
+
+  Serial.println("");
+  Serial.println(ssid);
+  Serial.println(password);
+
+  WiFi.begin(ssid, password);     //Connect to your WiFi router
+
+  //Onboard LED port Direction output
+  pinMode(LED,OUTPUT);
+  //Power on LED state off
+  digitalWrite(LED,HIGH);
+
+  // Wait for connection
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  //If connection successful show IP address in serial monitor
+  Serial.println("");
+  Serial.print("Connected to ");
+  Serial.println(ssid);
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());  //IP address assigned to your ESP
+
+  server.on("/", handleRoot);      //Which routine to handle at root location. This is display page
+  server.on("/ledOn", handleLEDon); //as Per  <a href="ledOn">, Subroutine to be called
+  server.on("/ledOff", handleLEDoff);
+
+  server.begin();                  //Start server
+  Serial.println("HTTP server started");
+}
+//==============================================================
+//                     LOOP
+//==============================================================
+void loop(void){
+  server.handleClient();          //Handle client requests
+}
+```
+
+## Subida
+
+![imagen](img/2022-10-17-18-17-40.png)
+
+## Salida monitor serie
+
+![imagen](img/2022-10-17-18-17-12.png)
+
+## Wifi bridge
+
+```c
+#include <ESP8266WiFi.h>
+
+// Set WiFi credentials
+#define WIFI_SSID "YOUR WIFI NETWORK SSID"
+#define WIFI_PASS "YOUR WIFI PASSWORD"
+
+// Set AP credentials
+#define AP_SSID "ESP8266"
+#define AP_PASS "magicword"
+
+void setup()
+{
+  // Setup serial port
+  Serial.begin(115200);
+  Serial.println();
+
+  // Begin Access Point
+  WiFi.mode(WIFI_AP_STA);
+  WiFi.softAP(AP_SSID, AP_PASS);
+
+  // Begin WiFi
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
+
+  // Connecting to WiFi...
+  Serial.print("Connecting to ");
+  Serial.print(WIFI_SSID);
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(100);
+    Serial.print(".");
+  }
+
+  // Connected to WiFi
+  Serial.println();
+  Serial.println("Connected!");
+  Serial.print("IP address for network ");
+  Serial.print(WIFI_SSID);
+  Serial.print(" : ");
+  Serial.println(WiFi.localIP());
+  Serial.print("IP address for network ");
+  Serial.print(AP_SSID);
+  Serial.print(" : ");
+  Serial.print(WiFi.softAPIP());
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+```
+
+https://siytek.com/esp8266-ap-and-station-mode/
+
+# Projecte WLED
+
+Il·luminació de tira de LED i maneig a travér d'app mòbil mitjançant WiFi
+
+El projecte ``WLED`` és un programari de codi obert que us permet controlar tires LED adreçables mitjançant una interfície web. Es pot instal·lar en diverses plataformes de maquinari, inclosa la placa NodeMCU basada en ESP8266.
+
+![w: 80%](img/2023-03-15-15-18-46.png)
+
+https://kno.wled.ge/
+
+# Instal·lació
+
+Per utilitzar el programari ``WLED`` en una placa NodeMCU, primer heu de flashejar la placa amb el microprogramari WLED. Això es pot fer utilitzant l'IDE d'Arduino o altres eines intermitents.
+
+https://install.wled.me/
+
+![](img/2023-03-15-15-20-31.png)
+
+# Connexió de la tira
+
+Un cop instal·lat el microprogramari, podeu connectar la vostra tira de LED a la placa NodeMCU.  Connectarem la tira de led al ``pin D4``.
+
+![](img/2023-03-15-15-29-10.png)
+
+# Programari mòbil
+
+![](img/2023-03-15-15-21-10.png)
+
+https://play.google.com/store/apps/details?id=com.aircoookie.WLED&hl=es&gl=US&pli=1
+
+# Control
+
+Des del mòbil podrem canviar els colors i els efectes.
+
+![w:600](img/2023-03-15-15-22-58.png)

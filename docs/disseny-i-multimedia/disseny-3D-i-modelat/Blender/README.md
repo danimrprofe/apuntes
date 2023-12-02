@@ -494,8 +494,7 @@ Colocamos un plano con ``shift``+``a`` > ``plano``.
 
 Lo pondremos encima del árbol, pero que no salga en el plano de la cámara. con las teclas ``g`` y después ``z`` lo movemos hacia arriba, para colocarlo sobre la escena.
 
-[!NOTE]
-El plano tiene que estar fuera de la vista de la cámara, para que no se vea.
+El plano tiene que estar **fuera de la vista de la cámara**, para que no se vea.
 
 Con ``s`` escalamos para que cubra toda la zona en la que queremos que nieve.
 

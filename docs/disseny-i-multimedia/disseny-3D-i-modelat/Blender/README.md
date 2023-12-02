@@ -6,6 +6,7 @@
   - [¿Qué son los HDRI?](#qué-son-los-hdri)
   - [Agregando el HDRI](#agregando-el-hdri)
 - [3. Animación](#3-animación)
+  - [Introducción](#introducción)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
     - [Crear una cámara](#crear-una-cámara)
@@ -16,27 +17,31 @@
     - [Insertar fotogramas clave](#insertar-fotogramas-clave)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
     - [Enfoque y desenfoque](#enfoque-y-desenfoque)
-    - [Renderizar la animación](#renderizar-la-animación)
     - [Hacer que la cámara siga una curva y apunte a objeto](#hacer-que-la-cámara-siga-una-curva-y-apunte-a-objeto)
 - [4. Texturas](#4-texturas)
 - [5. Armadura](#5-armadura)
   - [Inicio](#inicio)
+  - [Rigging](#rigging)
   - [Crear un hueso](#crear-un-hueso)
   - [Columna vertebral](#columna-vertebral)
   - [Cadera](#cadera)
   - [Pierna](#pierna)
   - [Terminar](#terminar)
   - [Mover todo el personaje](#mover-todo-el-personaje)
-  - [Animación](#animación)
 - [6. Renderizado](#6-renderizado)
 - [Renderizado](#renderizado)
   - [Motor de renderizado](#motor-de-renderizado)
   - [Eligiendo el motor de renderizado](#eligiendo-el-motor-de-renderizado)
   - [Parámetros de renderizado](#parámetros-de-renderizado)
+  - [Dimensiones](#dimensiones)
+  - [Frames y framerate](#frames-y-framerate)
+  - [Output](#output)
+  - [Codificación](#codificación)
   - [Renderizar animación](#renderizar-animación)
 - [7. Sistemas de partículas](#7-sistemas-de-partículas)
-  - [Partículas](#partículas)
-  - [1. Crear el objeto que va a caer como si fuera un copo](#1-crear-el-objeto-que-va-a-caer-como-si-fuera-un-copo)
+  - [¿Qué son los sistemas de partículas?](#qué-son-los-sistemas-de-partículas)
+  - [Vista lateral del resultado](#vista-lateral-del-resultado)
+  - [Crear copo](#crear-copo)
   - [2. Crear un plano con emisiones](#2-crear-un-plano-con-emisiones)
   - [3. Configuramos el plano para que emita partículas](#3-configuramos-el-plano-para-que-emita-partículas)
   - [4. Cambiamos el tipo de emisión para emitir objetos](#4-cambiamos-el-tipo-de-emisión-para-emitir-objetos)
@@ -135,6 +140,10 @@ Esta sería una forma hiperrealista de iluminar nuestra escena
 
 # 3. Animación
 
+## Introducción
+
+Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo o ``timeline`` y cómo crear fotogramas clave o ``keyframes``.
+
 ## 3.1 Cámara en trayecto
 
 Los pasos seguidos son:
@@ -207,13 +216,15 @@ Los frames son las fotos que componen un video.
 
 **¿Qué es un fotograma clave o keyframe?**
 
-Un keyframe es en realidad una marca que guarda la posición, escala, rotación y opacidad de un objeto en un momento específico de la escena. Si creas más de dos keyframes con una variación de posición, escala, rotación y opacidad entre ellos, verás que automáticamente ocurrirá una animación
+Un ``keyframe`` es en realidad una marca que guarda la **posición, escala, rotación y opacidad** de un objeto en un momento específico de la escena.
 
-Si le damos al 0 nos ponemos en la vista la cámara, y veremos que si nos movemos, la cámara nos sigue.
+Si creas más de dos keyframes con una variación de posición, escala, rotación y opacidad entre ellos, verás que automáticamente ocurrirá una animación
+
+Si le damos al ``0`` nos ponemos en la vista la cámara, y veremos que si nos movemos, la cámara nos sigue.
 
 ![imagen](img-animacion/image31.png)
 
-Lo que vamos a hacer para ello va a ser un aquí al primer fotograma le vamos a dar con nuestra cámara seleccionada aquí le damos a la i y esto nos va a insertar un keyframe un fotograma clave le vamos a localización y rotación
+Lo que vamos a hacer para ello va a ser un aquí al primer fotograma le vamos a dar con nuestra cámara seleccionada aquí le damos a la ``i`` y esto nos va a insertar un keyframe un fotograma clave le vamos a ``localización y rotación``
 
 ![imagen](img-animacion/image32.png)
 
@@ -263,7 +274,7 @@ Si seleccionamos tanto la cámara como el cubo, veremos en el timeline ambos obj
 
 ![imagen](img-animacion/image39.png)
 
-###  Enfoque y desenfoque
+### Enfoque y desenfoque
 
 Lo que vamos a hacer es que nuestra cámara enfoque y desenfoque. Para ello nos vamos a donde pone cámara y donde pone de **perfil de profundidad de campo** y como veis automáticamente se ha desenfocado todo.
 
@@ -272,10 +283,6 @@ Lo que vamos a hacer es que nuestra cámara enfoque y desenfoque. Para ello nos 
 Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Hará un autofocus hacia el objeto, esté donde esté.
 
 ![imagen](img-animacion/2022-10-27-17-05-21.png)
-
-###  Renderizar la animación
-
-Ya lo tenemos casi todo preparado para irnos a renderizar, pero primero tengo que ajustar como queremos renderizar esta imagen.
 
 ### Hacer que la cámara siga una curva y apunte a objeto
 
@@ -304,6 +311,12 @@ https://studio.youtube.com/video/P_f4C_0ohw4/edit
 ## Inicio
 
 Para animar nuestro personaje tendremos que dotarle, además del modelo, de un esqueleto. Al mover los huesos de este esqueleto, el modelo se moverá acorde a ellos.
+
+![](img/2023-12-02-11-39-25.png)
+
+## Rigging
+
+En Blender, el "rigging" se refiere al proceso de crear un **esqueleto virtual** (``armadura``) para un modelo 3D. Este esqueleto permite animar el modelo al asignarle huesos y controladores para manipular su forma y movimiento
 
 ## Crear un hueso
 
@@ -349,25 +362,15 @@ A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los hueso
 
 Comprobamos que todo funciona[Música]y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
-Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+P y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
+Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+``P`` y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
 
-Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ``ctrl``+z obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje
+Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ``ctrl``+``z`` obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje
 
 ## Mover todo el personaje
 
 Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la E para extruir un nuevo hueso y lo colocamos por aquí.
 
 Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
-
-## Animación
-
-Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo y cómo crear fotogramas clave antes de enseñar cómo animar al personaje corriendo
-
-Voy aponer un ejemplo con el hueso que mueve todo el personaje con este seleccionado situado en el fotograma 1 vamos a pulsar la I y le damos a la opción location rotation and scale para crear un fotograma.
-
-Como veis se no crea este puntito amarillo es una clave que nos guarda la posición la rotación y la escala actual del hueso que tenemos seleccionado y ahora si nos vamos al fotograma 80 por ejemplo desplazamos el personaje y le creamos otro aquí como antes estaremos guardando esa posición y
-
-Si le damos al **play** vemos cómo el personaje va de una a otra esto funciona igual con todos voy a crear un aquí con todos los huesos seleccionados para que me guarde la pose completa del personaje quieto en el fotograma 1 y en el timeline vamos creando keys por cada movimiento que hacemos.
 
 # 6. Renderizado
 
@@ -409,7 +412,29 @@ Vamos a configurar los siguientes parámetros
 - Códec de video
 - Calidad
 
-![imagen](img-renderizado/image41.png)
+## Dimensiones
+
+![Alt text](image-1.png)
+
+## Frames y framerate
+
+Aquí podemos seleccionar el primer y último frame que queremos renderizar, así como los pasos.
+
+Por otro lado, el framerate nos determinará cuantos frames pondremos en cada segundo. A mayor tasa de frames, más fluída quedará la animación, pero durará menos.
+
+![](img/2023-12-02-11-43-39.png)
+
+## Output
+
+En esta parte elegiremos la carpeta donde queremos guardar el vídeo renderizado, así como el formato. Es importante elegir aquí un formato de vídeo.
+
+![Alt text](image-2.png)
+
+## Codificación
+
+La codificación es un poco más compleja. Podéis dejar estos parámetros por defecto.
+
+![](img/2023-12-02-11-44-50.png)
 
 ## Renderizar animación
 
@@ -423,29 +448,27 @@ Un sistema de partículas es un conjunto de partículas que se mueven de forma c
 
 Los sistemas de partículas en ``Blender`` se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
 
-![imagen](img/image1.png)
+## ¿Qué son los sistemas de partículas?
 
-## Partículas
+La simulación con sistemas de partículas permite obtener animaciones complejas de objetos que responden a **fuerzas gravitatorias** y acciones como las que produce el **viento** o un campo magnético. De esta forma podemos recrear **lluvia, nieve, y otros**.
 
-Crearemos un árbol de navidad y crearemos un efecto de nieve para practicar los sistemas de partículas.
+## Vista lateral del resultado
 
-![imagen](img/image2.png)
-
-La simulación con sistemas de partículas permite obtener animaciones complejas de objetos que responden a fuerzas gravitatorias y acciones como las que produce el viento o un campo magnético. De esta forma podemos recrear lluvia, nieve, y otros.
-
-Vista lateral del resultado
+En este ejemplo podemos ver cómo quedará el plano emisor de las partículas y las propias partículas.
 
 ![imagen](img/image3.png)
 
-## 1. Crear el objeto que va a caer como si fuera un copo
+## Crear copo
 
-El copo que vamos a crear es una icosfera y, a partir de ella se crearán múltiples copias.
+Como simularemos nieve, la partícula fundamental será un **copo de nieve**. Este será el objeto que luego multiplicaremos para crear las demás partículas.
 
-![imagen](img/image4.png)
+![Alt text](image-3.png)
 
-Colocamos una icosfera con``shift``a mesh
+Colocamos una ``esfera geodésica`` con ``shift``+`a` > ``malla``
 
-Con G nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading
+![](img/2023-12-02-11-54-47.png)
+
+Con ``g`` nos la colocamos en un sitio que no vea la cámara,  fuera de plano. Esto que véis es desde  shading
 
 ![imagen](img/image4.png)
 
@@ -465,11 +488,16 @@ Los sistemas de partículas en ``Blender`` se pueden controlar usando **emisores
 
 Los **emisores** pueden estar configurados para emitir partículas de forma continua o bajo ciertas condiciones, como cuando se colisionan con otro objeto.
 
-Shift+a plano, y colocamos un plano
+Colocamos un plano con ``shift``+``a`` > ``plano``.
 
-Lo pondremos encima del árbol, pero que no salga en el plano de la cámara. con GZ lo movemos hacia arriba, para colocarlo sobre la escena.
+![](img/2023-12-02-11-57-14.png)
 
-Con S escalamos para que cubra toda la zona en la que queremos que nieve.
+Lo pondremos encima del árbol, pero que no salga en el plano de la cámara. con las teclas ``g`` y después ``z`` lo movemos hacia arriba, para colocarlo sobre la escena.
+
+[!NOTE]
+El plano tiene que estar fuera de la vista de la cámara, para que no se vea.
+
+Con ``s`` escalamos para que cubra toda la zona en la que queremos que nieve.
 
 ![imagen](img/image7.png)
 
@@ -483,7 +511,7 @@ Seleccionamos el plano generador de nieve
 
 ![imagen](img/image8.png)
 
-Le agregamos un particlesystem y configuramos los parámetros necesarios. Yo le he cambiado el nombre con F2 a partículas de nieve para identificarlo.
+Le agregamos un particlesystem y configuramos los parámetros necesarios. Yo le he cambiado el nombre con ``F2`` a partículas de nieve para identificarlo.
 
 ![imagen](img/image9.png)
 

@@ -284,20 +284,6 @@ Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Har
 
 ![imagen](img-animacion/2022-10-27-17-05-21.png)
 
-### Hacer que la cámara siga una curva y apunte a objeto
-
-Los pasos seguidos son:
-
-- Crear una curva
-- Agregar restricción a la cámara para que siga trayecto
-- Restablecer posición de la cámara
-- Agregar restricción a la cámara para que apunte a objeto
-- Modificar el trayecto de la curva (en edit mode)
-
-Video: https://www.youtube.com/watch?v=M9XMEEMnRJk
-
-![imagen](img/2022-11-01-15-07-48.png)
-
 # 4. Texturas 🎨
 
 En este video Diseñamos un vaso o taza en ``Blender`` y le aplicamos imágenes en la superficie de un objeto mediante el uso de materiales.
@@ -362,7 +348,7 @@ ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** 
 
 A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
-Comprobamos que todo funciona[Música]y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
+Comprobamos que todo funciona y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
 Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+``P`` y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
 
@@ -370,17 +356,20 @@ Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo pone
 
 ## Mover todo el personaje
 
-Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la E para extruir un nuevo hueso y lo colocamos por aquí.
+Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la ``e`` para extruir un nuevo hueso y lo colocamos por aquí.
 
 Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
 
 # 6. Renderizado
 
-# Renderizado
+``Renderizar`` es el proceso mediante el cual se crea un archivo de imagen o película definitivo a partir del diseño que estamos realizando.
 
-Renderizar es el proceso mediante el cual se crea un archivo de imagen o película definitivo a partir del diseño que estamos realizando.
+Mediante renderizad podemos crear:
 
-El proceso de renderización es importante porque nos permite visualizar el resultado final de nuestro trabajo y asegurarnos de que se vea exactamente como lo queremos. También nos permite generar un archivo de imagen o película que se puede compartir con otros o utilizar para otros fines.
+- Imágenes para uno o varios frames
+- Vídeos generados a partir de un conjunto de frames
+
+El proceso de renderización es importante porque nos permite visualizar el resultado final de nuestro trabajo y asegurarnos de que se vea exactamente como lo queremos.
 
 Antes de renderizar es importante elegir los parámetros necesarios como:
 
@@ -490,7 +479,7 @@ Los sistemas de partículas en ``Blender`` se pueden controlar usando **emisores
 
 Los **emisores** pueden estar configurados para emitir partículas de forma continua o bajo ciertas condiciones, como cuando se colisionan con otro objeto.
 
-Colocamos un plano con ````⬆️ shift`` `+``a`` > ``plano``.
+Colocamos un plano con ``⬆️ shift``+``a`` > ``plano``.
 
 ![](img/2023-12-02-11-57-14.png)
 

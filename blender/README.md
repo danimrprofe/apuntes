@@ -1,4 +1,5 @@
 - [``Blender``](#blender)
+- [0. Instalación](#0-instalación)
 - [1. Modelado  🖌️](#1-modelado--️)
   - [Taza](#taza)
   - [Monigote](#monigote)
@@ -8,14 +9,7 @@
 - [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
-    - [Crear una cámara](#crear-una-cámara)
-    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
-    - [Modificar la posición](#modificar-la-posición)
-    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
-    - [Configuración de la cámara](#configuración-de-la-cámara)
-    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
-    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
 - [4. Texturas 🎨](#4-texturas-)
 - [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
@@ -42,12 +36,12 @@
   - [3. Configuramos el plano para que emita partículas](#3-configuramos-el-plano-para-que-emita-partículas)
   - [4. Cambiamos el tipo de emisión para emitir objetos](#4-cambiamos-el-tipo-de-emisión-para-emitir-objetos)
   - [Colisiones y amortiguación](#colisiones-y-amortiguación)
-  - [6. Iluminación](#6-iluminación)
+- [8. Iluminación](#8-iluminación)
   - [Insertar luz de área](#insertar-luz-de-área)
   - [Potencia](#potencia)
   - [Altura de la luz](#altura-de-la-luz)
   - [7. Cámara](#7-cámara)
-- [8. Crear telón de fondo](#8-crear-telón-de-fondo)
+- [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [Escena final](#escena-final)
   - [Ejemplos](#ejemplos)
 
@@ -58,6 +52,34 @@
 ``Blender`` es un software de creación 3D gratuito y de código abierto. Está diseñado para modelado, animación, simulación, renderizado, composición y creación de gráficos interactivos. Se trata de una herramienta completa para la creación de contenido 3D con todo lo que necesita para crear proyectos profesionales.
 
 ``Blender`` se puede utilizar para la creación de aplicaciones, juegos, películas, producciones de televisión y mucho más.
+
+# 0. Instalación
+
+Página de descarga: https://www.blender.org/download/
+
+Utilizaremos la ``versión 4.01``
+
+![Alt text](image-7.png)
+
+Elegiremos la versión portable:
+
+![](img/2023-12-05-15-42-33.png)
+
+Se nos descargará un archivo comprimido ``zip`` con el programa. El archivo se quedará en la carpeta de ``descargas``.
+
+![Alt text](image-8.png)
+
+Abriendo el archivo descargado
+
+![](img/2023-12-05-15-45-17.png)
+
+Lo extraeremos al escritorio:
+
+![](img/2023-12-05-15-46-13.png)
+
+Para abrir blender, buscaremos el siguiente archivo:
+
+![](img/2023-12-05-15-47-42.png)
 
 # 1. Modelado  🖌️
 
@@ -80,9 +102,8 @@ En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminac
 ## ¿Qué son los HDRI?
 
 Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
-Nosotros podemos iluminar nuestra escena poniendo por ejemplo una luz de punto que aquí le podemos cambiar la fuerza le podemos cambiar también el color.
 
-Lo que vamos a usar son los HDRi y resulta que son del mismo creador de poly haven. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
+Lo que vamos a usar son los HDRi y resulta que son del mismo creador de ``poly haven``. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
 
 ![](img/2023-12-02-10-12-23.png)
 
@@ -537,7 +558,7 @@ Ahora los copos ya no atraviesan el plano y no rebotan, sino que se quedan parad
 
 ![imagen](img/image16.png)
 
-## 6. Iluminación
+# 8. Iluminación
 
 Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos.
 
@@ -587,7 +608,7 @@ Tened en cuenta que la cámara tiene:
 
 ![imagen](img/image21.png)
 
-# 8. Crear telón de fondo
+# 9. Crear telón de fondo
 
 A base de combinar dos planos podemos crear un telón de fondo para nuestra escena.
 

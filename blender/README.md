@@ -50,7 +50,6 @@
   - [Escena final](#escena-final)
 - [8. Crear telón de fondo](#8-crear-telón-de-fondo)
   - [Paso 1: Crear telón](#paso-1-crear-telón)
-  - [Paso 2: Crear la luz 💡](#paso-2-crear-la-luz-)
 
 # ``Blender``
 
@@ -542,6 +541,8 @@ Ahora los copos ya no atraviesan el plano y no rebotan, sino que se quedan parad
 
 Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos.
 
+Creamos un plano con ``shift`` ` y ``a`` continuación luz plana.
+
 ![imagen](img/image17.png)
 
 ## Insertar luz de área
@@ -587,13 +588,3 @@ Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 - Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
 - Seleccionamos en ``modo arista`` (tecla numérica 2) dos arista con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
 - Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con ````ctrl```` + ``B``
-
-## Paso 2: Crear la luz 💡
-
-- Creamos un plano con ``⬆️ shift`` ` y a continuación luz plana.
-
-![](img/2023-12-05-11-55-08.png)
-
-- La subimos en eje Z unos 5 metros.
-- La escalamos a 10 metros cuadrados
-- En opciones, le damos una potencia de 10000 Vatios.

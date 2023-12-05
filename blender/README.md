@@ -50,6 +50,7 @@
   - [Escena final](#escena-final)
 - [8. Crear telón de fondo](#8-crear-telón-de-fondo)
   - [Paso 1: Crear telón](#paso-1-crear-telón)
+  - [](#)
 
 # ``Blender``
 
@@ -541,13 +542,12 @@ Ahora los copos ya no atraviesan el plano y no rebotan, sino que se quedan parad
 
 Vamos a colocar una luz sobre la escena a fin de iluminar correctamente todos los objetos.
 
-Creamos un plano con ``shift`` ` y ``a`` continuación luz plana.
-
 ![imagen](img/image17.png)
 
 ## Insertar luz de área
 
-Insertar una **luz de área 🌟** que esté justo encima de los objetos que queremos iluminar
+Insertar una **luz de área 🌟** que esté justo encima de los objetos que queremos iluminar.
+Creamos un plano con ``shift`` ` y ``a`` continuación luz plana.
 
 ![imagen](img/image18.png)
 
@@ -586,5 +586,19 @@ Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 ![](img/2023-12-05-11-45-02.png)
 
 - Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
-- Seleccionamos en ``modo arista`` (tecla numérica 2) dos arista con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
-- Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con ````ctrl```` + ``B``
+
+![](img/2023-12-05-11-59-13.png)
+
+- Seleccionamos en ``modo arista`` (tecla numérica 2) dos arista con mismo vértice
+
+![Alt text](image-4.png)
+
+- Las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
+
+![](img/2023-12-05-12-00-24.png)
+
+Por último, seleccionamos las arista que conecta pared y suelo
+
+![Alt text](image-5.png)
+-
+- y les hacemos bevel con ``ctrl`` + ``B``

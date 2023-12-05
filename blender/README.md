@@ -46,11 +46,10 @@
   - [Insertar luz de área](#insertar-luz-de-área)
   - [Potencia](#potencia)
   - [Altura de la luz](#altura-de-la-luz)
-  - [Cámara](#cámara)
-  - [Escena final](#escena-final)
+  - [7. Cámara](#7-cámara)
 - [8. Crear telón de fondo](#8-crear-telón-de-fondo)
-  - [Paso 1: Crear telón](#paso-1-crear-telón)
-  - [](#)
+  - [Escena final](#escena-final)
+  - [Ejemplos](#ejemplos)
 
 # ``Blender``
 
@@ -551,9 +550,23 @@ Creamos un plano con ``shift`` ` y ``a`` continuación luz plana.
 
 ![imagen](img/image18.png)
 
+La luz creada es de 1m por 1m, demasiado pequeña para nuestra escena.
+
+![](img/2023-12-05-13-39-58.png)
+
+Con `S 2 0` , lo podemos escalar a 20 metros cuadrados. Al ser un objeto plano, solo escalará en los ejes X e Y.
+
+![](img/2023-12-05-13-40-45.png)
+
+Ahora nuestra iluminación está a ras de suelo, por lo que no iluminará nada. Subiremos nuestra luz a la altura que consideréis. Si queréis subirla 10 metros: `G Z 10`.
+
+Pensada que la luz deberá estar debajo del plano emisor de partículas. De lo contrario, el plano emisor bloqueará la luz, al quedar por encima de él.
+
+![](img/2023-12-05-13-42-00.png)
+
 ## Potencia
 
-Propiedades de la luz. En mi caso le he puesto 1000 W de potencia y me ha parecido  suficiente.
+Propiedades de la luz. En mi caso le he puesto 10.000 W de potencia y me ha parecido  suficiente.
 
 ![imagen](img/image19.png)
 
@@ -563,23 +576,22 @@ En mi caso he colocado la luz a 12 metros de altura, como referencia, por si lo 
 
 ![imagen](img/image20.png)
 
-## Cámara
+## 7. Cámara
 
 La cámara la podéis poner donde queráis. Yo la he modificado a ojo y en una posición en la que se vea bien la escena.
 
+Tened en cuenta que la cámara tiene:
+
+- Una posición
+- Una rotación, que habrá que modificar para que enfoque en la dirección correcta.
+
 ![imagen](img/image21.png)
-
-## Escena final
-
-Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
-
-![imagen](img/image22.png)
 
 # 8. Crear telón de fondo
 
-![imagen](img/image24.png)
+A base de combinar dos planos podemos crear un telón de fondo para nuestra escena.
 
-## Paso 1: Crear telón
+![imagen](img/image24.png)
 
 - Creamos un plano con ``⬆️ shift`` ` y a continuación malla y plano.
 
@@ -589,16 +601,63 @@ Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 
 ![](img/2023-12-05-11-59-13.png)
 
-- Seleccionamos en ``modo arista`` (tecla numérica 2) dos arista con mismo vértice
+- Seleccionamos en ``modo vértices`` (tecla numérica 1) y
+![](img/2023-12-05-13-31-23.png)
 
-![Alt text](image-4.png)
+Seleccionamos los dos vértices de la arista que queremos extruir.
 
-- Las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
+![](img/2023-12-05-13-31-54.png)
+
+Los extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
 
 ![](img/2023-12-05-12-00-24.png)
 
 Por último, seleccionamos las arista que conecta pared y suelo
 
 ![Alt text](image-5.png)
--
-- y les hacemos bevel con ``ctrl`` + ``B``
+
+Volvemos a seleccionar los dos vértices
+
+![Alt text](image-6.png)
+
+Les hacemos bevel con ``ctrl`` + ``B``
+
+![](img/2023-12-05-13-30-09.png)
+
+Al mover la rueda del ratón podemos escoger el número de caras que queremos aplicar.
+
+![](img/2023-12-05-13-30-45.png)
+
+En modo objeto seleccionando con botón derecho del ratón podemos elegir `sombrear suave` para suavizar nuestra figura.
+
+![](img/2023-12-05-13-34-06.png)
+
+Vamos al menú materiales para darle un nuevo material a nuestro fondo.
+
+![](img/2023-12-05-13-35-19.png)
+
+Creáis un nuevo material llamado telón con el color que queráis:
+
+![](img/2023-12-05-13-36-35.png)
+
+Deberéis ir a `sombreado de la vista` para ver el resultado:
+
+![](img/2023-12-05-13-37-02.png)
+
+![](img/2023-12-05-13-37-25.png)
+
+## Escena final
+
+Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
+
+![imagen](img/image22.png)
+
+## Ejemplos
+
+![](img/2023-12-05-13-49-29.png)
+
+![](img/2023-12-05-13-49-54.png)
+
+![](img/2023-12-05-13-50-29.png)
+
+![](img/2023-12-05-13-50-54.png)

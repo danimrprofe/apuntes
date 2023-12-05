@@ -1,12 +1,11 @@
 - [``Blender``](#blender)
-- [1. Modelado](#1-modelado)
+- [1. Modelado  🖌️](#1-modelado--️)
   - [Taza](#taza)
   - [Monigote](#monigote)
-- [2. Entornos HDRI](#2-entornos-hdri)
+- [2. Entornos HDRI  🏞️](#2-entornos-hdri--️)
   - [¿Qué son los HDRI?](#qué-son-los-hdri)
   - [Agregando el HDRI](#agregando-el-hdri)
-- [3. Animación](#3-animación)
-  - [Introducción](#introducción)
+- [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
     - [Crear una cámara](#crear-una-cámara)
@@ -17,10 +16,8 @@
     - [Insertar fotogramas clave](#insertar-fotogramas-clave)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
     - [Enfoque y desenfoque](#enfoque-y-desenfoque)
-    - [Hacer que la cámara siga una curva y apunte a objeto](#hacer-que-la-cámara-siga-una-curva-y-apunte-a-objeto)
-- [4. Texturas](#4-texturas)
-- [5. Armadura](#5-armadura)
-  - [Inicio](#inicio)
+- [4. Texturas 🎨](#4-texturas-)
+- [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
   - [Crear un hueso](#crear-un-hueso)
   - [Columna vertebral](#columna-vertebral)
@@ -29,7 +26,6 @@
   - [Terminar](#terminar)
   - [Mover todo el personaje](#mover-todo-el-personaje)
 - [6. Renderizado](#6-renderizado)
-- [Renderizado](#renderizado)
   - [Motor de renderizado](#motor-de-renderizado)
   - [Eligiendo el motor de renderizado](#eligiendo-el-motor-de-renderizado)
   - [Parámetros de renderizado](#parámetros-de-renderizado)
@@ -38,7 +34,7 @@
   - [Output](#output)
   - [Codificación](#codificación)
   - [Renderizar animación](#renderizar-animación)
-- [7. Sistemas de partículas](#7-sistemas-de-partículas)
+- [7. Sistemas de partículas ❄️](#7-sistemas-de-partículas-️)
   - [¿Qué son los sistemas de partículas?](#qué-son-los-sistemas-de-partículas)
   - [Vista lateral del resultado](#vista-lateral-del-resultado)
   - [Crear copo](#crear-copo)
@@ -54,7 +50,7 @@
   - [Escena final](#escena-final)
 - [8. Crear telón de fondo](#8-crear-telón-de-fondo)
   - [Paso 1: Crear telón](#paso-1-crear-telón)
-  - [Paso 2: Crear la luz](#paso-2-crear-la-luz)
+  - [Paso 2: Crear la luz 💡](#paso-2-crear-la-luz-)
 
 # ``Blender``
 
@@ -140,7 +136,6 @@ Si hacemos CBD y shade smooth se vería como una esfera perfecta y ahí veis tod
 Esta sería una forma hiperrealista de iluminar nuestra escena
 
 # 3. Animación 🎬
-
 
 Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo o ``timeline`` y cómo crear fotogramas clave o ``keyframes``.
 
@@ -579,22 +574,26 @@ Aquí podéis ver un resumen de como queda la escena, con todos los elementos.
 
 ![imagen](img/image22.png)
 
-
 # 8. Crear telón de fondo
 
 ![imagen](img/image24.png)
 
-
 ## Paso 1: Crear telón
 
 - Creamos un plano con ``⬆️ shift`` ` y a continuación malla y plano.
+
+![](img/2023-12-05-11-45-02.png)
+
 - Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
-- Seleccionamos en modo arista dos aristas con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
+- Seleccionamos en ``modo arista`` (tecla numérica 2) dos arista con mismo vértice y las extruimos en el eje Z con ``E`` y luego ``Z``. Estiramos hacia arriba.
 - Por último, seleccionamos las dos aristas que conectan pared y suelos y les hacemos bevel con ````ctrl```` + ``B``
 
 ## Paso 2: Crear la luz 💡
 
 - Creamos un plano con ``⬆️ shift`` ` y a continuación luz plana.
+
+![](img/2023-12-05-11-55-08.png)
+
 - La subimos en eje Z unos 5 metros.
 - La escalamos a 10 metros cuadrados
 - En opciones, le damos una potencia de 10000 Vatios.

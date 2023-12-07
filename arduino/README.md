@@ -5,11 +5,17 @@
   - [Pines](#pines)
   - [Pines de Arduino](#pines-de-arduino)
   - [Instalación IDE](#instalación-ide)
+  - [Primeras pruebas: LED](#primeras-pruebas-led)
+  - [Elementos de un programa](#elementos-de-un-programa)
+  - [LED](#led)
 - [Protoboard](#protoboard)
   - [Zonas](#zonas)
   - [Canales centrales](#canales-centrales)
   - [Tiras laterales](#tiras-laterales)
   - [Desventajas](#desventajas)
+- [Conexión de pines](#conexión-de-pines)
+  - [Pinmode](#pinmode)
+  - [Escribir en pines](#escribir-en-pines)
 - [Motores](#motores)
   - [Motor de corriente contínua](#motor-de-corriente-contínua)
   - [Motor paso a paso mando](#motor-paso-a-paso-mando)
@@ -17,8 +23,6 @@
   - [Control mediante bobinas](#control-mediante-bobinas)
   - [Motor servo](#motor-servo)
 - [Luces](#luces)
-  - [LED interno](#led-interno)
-  - [LED](#led)
   - [LED RGB](#led-rgb)
   - [Tira de LEDs](#tira-de-leds)
   - [7 segments (1 dígito)](#7-segments-1-dígito)
@@ -195,6 +199,170 @@ Haga doble clic para entrar en el entorno de desarrollo deseado
 
 ![Alt text](image.png)
 
+## Primeras pruebas: LED
+
+Vamos a aprender a crear un programa y volcarlo en la placa Arduino.
+
+![imagen](img/2022-11-29-16-46-42.png)
+
+La placa Arduino cuenta con un LED luminoso que puede ser controlado. Este LED está integrado en la propia placa.
+
+Cuando la placa se conecta a un enchufe USB, el LED parpadea. Este parpadeo se debe a que las placas suelen ser enviadas con un programa preinstalado llamado "Blink".
+
+### Programas de ejemplo
+
+El IDE de ``Arduino`` incluye una gran colección de programas de ejemplo para utilizar directamente.  Esto incluye un ejemplo para hacer el parpadeo del ``LED``.
+
+### Ejemplo programa Blink
+
+Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo ``archivo >  ejemplos > 01 conceptos básicos``
+
+![imagen](media/image39.jpeg)
+
+### Blink
+
+Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo completo en la ventana.
+
+![imagen](media/image40.jpeg)
+
+Los ``programas de ejemplo`` incluidos con el IDE de``Arduino`` son de 'sólo lectura'. Es decir, puedes subirlo a Arduino, pedo no se pueden guardar una vez modificados.
+
+### Guardar código en otro archivo
+
+En el menú archivo en el IDE de``Arduino``, seleccione `Guardar como.` y guarde el dibujo con  el nombre ``parpadeo``
+
+![imagen](media/image41.jpeg)
+
+A continuación deberemos elegir una carpeta en la que guardar el programa.
+
+![imagen](media/image42.jpeg)
+
+### Abrir un archivo de programa
+
+Para abrir un archivo que hemos guardado con anterioridad, podemos simplemente ir a ``archivo > abrir`` o también a ``archivo > abrir reciente``.
+
+![imagen](media/image43.jpeg)
+
+### Conectar placa al PC
+
+Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
+
+![](img/2023-03-08-17-04-14.png)
+
+![imagen](media/image44.png)
+
+### Nota
+
+- El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen.
+- El puerto serie (``COM``) puede ser diferente, del tipo COM3 o COM4 en su ordenador.
+
+El IDE de``Arduino`` mostrará la configuración actual en la parte inferior de la  ventana.
+
+![imagen](media/image45.jpeg)
+
+### Subir código a Arduino
+
+Para que Arduino lo ejecute, necesitamos enviarle a través del cable USB el código que queremos que haga.
+
+Para ello, debemos hacer clic en el botón **subir**. El segundo botón de la izquierda en la barra de herramientas.
+
+![imagen](media/image46.jpeg)
+
+### Subiendo código
+
+Al cargar el código, al observar el área de estado del IDE, se apreciará una barra de progreso junto con una serie de mensajes. Inicialmente, se mostrará el mensaje 'Compilando bosquejo...'. Este proceso convierte el esbozo en un formato adecuado para cargar en la placa.
+
+![imagen](media/image47.jpeg)
+
+Luego, el estado cambiará a 'Subiendo'. En este momento, los LEDs de la Arduino deberían empezar a parpadear, indicando la transferencia del esbozo.
+
+![imagen](media/image48.jpeg)
+
+Finalmente, el estado cambiará a 'Listo' ('Done').
+
+![imagen](media/image49.jpeg)
+
+### Errores
+
+El otro mensaje nos dice que el **programa** está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:
+
+![imagen](media/image50.jpeg)
+
+Puede significar que su Junta no está conectado a todos, o no se ha instalado los drivers (si es necesario) o que se ha seleccionado el puerto serial incorrecto.
+
+### Comprobar funcionamiento
+
+Una vez completada la carga, la placa se debe reiniciar y el led comenzar a parpadear.
+
+## Elementos de un programa
+
+### Comentarios
+
+- Todo entre /* y */ en la parte superior del **programa** es un Comentario de bloque; explica lo que el **programa** es para.
+- Los comentarios de una sola línea comienzan con // y hasta el final de esa línea se considera un comentario.
+
+### Crear variables
+
+La primera línea de código es:
+
+```c
+int led = 13;
+```
+
+Creamos una variable con un nombre y guardamos el número de pin al que el LED está  conectado.
+
+### Función Setup
+
+A continuación, se presenta la función de 'configuración' en el código. Esta función se ejecuta al presionar el botón de ``reset`` y cada vez que la placa Arduino se reinicia, ya sea por aplicación de energía inicial o después de cargar un nuevo **programa**.
+
+En cada programa de Arduino, es esencial incluir una función **setup** (configuración), y las instrucciones específicas se colocan entre las llaves { y }. En este caso, el comando dentro de la función setup indica a la placa Arduino que el pin LED se usará como salida, según lo señala el comentario.
+
+> Void indica que la función setup no devuelve ningún valor
+
+```c
+void setup() {
+// Inicializa el pin digital como salida.
+pinMode(led, OUTPUT);
+}
+```
+
+Cada programa``Arduino`` debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.
+
+En este caso, es un comando, que, como dice el comentario dice la placa``Arduino`` que vamos  a utilizar el pin LED como salida.
+
+### Función loop
+
+También es obligatorio para un boceto tener una función de **loop**. A diferencia de la función  de **setup** que se ejecuta sólo una vez, después de un reset, la función **loop**, después que haya terminado de ejecutar sus comandos, empezar inmediatamente otra vez.
+
+### Explicación loop
+
+```c
+void loop() {
+  digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)
+  delay(1000); // Espere un segundo
+  digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja
+  delay(1000); // Espere un segundo
+}
+```
+
+Dentro de la función **loop**, los comandos en primer lugar activar el pin del LED (alto), girar a 'retraso' de 1000 milisegundos (1 segundo), entonces el pin LED apagado y pausa para  otro segundo.
+
+### Cambiar la frecuencia de parpadeo
+
+![imagen](media/image51.jpeg)
+
+Ahora vas a que el LED parpadee más rápido. Como puede haber adivinado, la clave de esto radica en cambiar el parámetro () para el comando ``delay``.
+
+### Variar retardo
+
+Este período de retardo en milisegundos, así que si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.
+
+Sube otra vez el **programa** y verás que el LED comienza a parpadear más rápidamente.
+
+## LED
+
+Aprenderemos a cambiar el ``brillo`` de un LED usando diferentes valores  de resistencia.
+
 ### Conexión de la Placa Arduino al Ordenador
 
 Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador. Siga estos pasos para lograr la conexión adecuada:
@@ -245,6 +413,78 @@ Los canales centrales indican que no están conectados ambos lados. Lo que signi
 ## Desventajas
 
 Si bien son protoboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.
+
+# Conexión de pines
+
+## Pinmode
+
+Configuración de Pines (pinMode)
+La función pinMode se utiliza para configurar un pin como entrada o salida. La sintaxis es la siguiente:
+
+```c
+pinMode(pin, mode);
+```
+
+- ``pin``: El número del pin que se va a configurar.
+- ``mode``: Puede ser INPUT para configurar el pin como entrada o OUTPUT para configurarlo como salida.
+
+## Escribir en pines
+
+En Arduino, digitalWrite, analogWrite, y la configuración de pines son funciones clave para controlar la entrada y salida digital y analógica. Aquí tienes una explicación de cada uno:
+
+### digitalWrite(pin, value)
+
+La función digitalWrite se utiliza para establecer el estado de un pin digital en Arduino. Puede ser usado para configurar un pin como alto (HIGH o 1) o bajo (LOW o 0). La sintaxis es la siguiente:
+
+```c
+digitalWrite(pin, value);
+```
+
+- pin: El número del pin al que se le quiere cambiar el estado.
+value: El estado que se desea asignar al pin, que puede ser HIGH (1) o LOW (0).
+
+Ejemplo:
+
+```c
+int ledPin = 13;
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // Configura el pin como salida
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH); // Enciende el LED conectado al pin 13
+  delay(1000);                // Espera 1 segundo
+  digitalWrite(ledPin, LOW);  // Apaga el LED
+  delay(1000);                // Espera 1 segundo
+}
+```
+
+### analogWrite(pin, value)
+
+La función analogWrite se utiliza para generar una señal PWM (Modulación de Ancho de Pulso) en un pin específico. Aunque se le denomina "analogWrite", en realidad está generando una señal digital con una frecuencia determinada. La sintaxis es similar a digitalWrite:
+
+```c
+analogWrite(pin, value);
+```
+
+- pin: El número del pin al que se le quiere aplicar la señal PWM.
+- value: El valor de la amplitud de la señal PWM, que va de 0 (sin señal) a 255 (señal máxima).
+
+Ejemplo:
+
+```c
+int ledPin = 9;
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // Configura el pin como salida
+}
+
+void loop() {
+  analogWrite(ledPin, 128); // Establece la señal PWM al 50%
+  delay(1000);              // Espera 1 segundo
+}
+```
 
 # Motores
 
@@ -779,166 +1019,16 @@ void loop() {
 Els LEDs, els LCD i els displays de set segments són components electrònics que es poden controlar amb una placa Arduino per a mostrar informació o per a indicar l'estat d'un sistema. Cada un d'aquests dispositius té diferents característiques i funcions, i es poden utilitzar en diferents aplicacions.
 
 - Els [LEDs](LED.md) són diodes emissors de llum que es poden utilitzar per a indicar l'estat d'un sistema, per a il·luminar objectes o per a crear efectes de llum.
+
+![](img/2023-12-07-16-47-32.png)
+
 - Els [displays LCD](LCD.md) són pantalles de cristall líquid que es poden utilitzar per a mostrar text o gràfics. Aquests displays són útils en moltes aplicacions, com ara en sistemes de control de temperatura, temporitzadors, termostats, etc.
+
+![](img/2023-12-07-16-48-49.png)
+
 - Els [displays de set segments](7_segments_(1_dígito).md) són displays que mostren dígits o lletres utilitzant set segments de LEDs per a crear la forma desitjada. Aquests displays són utilitzats en moltes aplicacions, com ara rellotges digitals, termòmetres, indicadors de nivell, etc.
 
-## LED interno
-
-En esta lección, haremos parpadear el ``LED integrado`` de``Arduino``. Para ello únicamente necesitaremos la placa ``Arduino Uno R3``.
-
-La placa de UNO R3 tiene unas filas de conectores a ambos lados que se utilizan para  conectar varios dispositivos electrónicos y ``shields`` que amplían su capacidad.
-
-![imagen](img/2022-11-29-16-46-42.png)
-
-### LED integrado
-
-También tiene un ``LED`` luminoso podemos controlar. Este LED está construida sobre la placa.
-
-Este LED ``parpadea`` cuando se conecta a un enchufe del USB. Esto es porque las placas se envían generalmente con un programa llamado ``Blink`` pre-instalado.
-
-### Ejemplos
-
-El IDE de``Arduino`` incluye una gran colección de programas de ejemplo para utilizar directamente.  Esto incluye un ejemplo para hacer el parpadeo del ``LED``.
-
-### Ejemplo programa Blink
-
-Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo ``archivo >  ejemplos > 01 conceptos básicos``
-
-![imagen](media/image39.jpeg)
-
-### Blink
-
-Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo completo en la ventana.
-
-![imagen](media/image40.jpeg)
-
-Los ``programas de ejemplo`` incluidos con el IDE de``Arduino`` son de 'sólo lectura'. Es decir, puedes subirlo a Arduino, pedo no se pueden guardar una vez modificados.
-
-### Guardar código en otro archivo
-
-En el menú archivo en el IDE de``Arduino``, seleccione `Guardar como.` y guarde el dibujo con  el nombre ``parpadeo``
-
-![imagen](media/image41.jpeg)
-
-![imagen](media/image42.jpeg)
-
-Para abrir un archivo que hemos guardado con anterioridad, podemos simplemente ir a ``archivo > abrir`` o también a ``archivo > abrir reciente``.
-
-![imagen](media/image43.jpeg)
-
-### Conectar placa al PC
-
-Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la **Board Type** y **Puerto serie** están ajustados correctamente.
-
-![](img/2023-03-08-17-04-14.png)
-
-![imagen](media/image44.png)
-
-### Nota
-
-- El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen.
-- El puerto serie (``COM``) puede ser diferente, del tipo COM3 o COM4 en su ordenador.
-
-El IDE de``Arduino`` mostrará la configuración actual en la parte inferior de la  ventana.
-
-![imagen](media/image45.jpeg)
-
-### Subir código a Arduino
-
-Para que Arduino lo ejecute, necesitamos enviarle a través del cable USB el código que queremos que haga.
-
-Para ello, debemos hacer clic en el botón **subir**. El segundo botón de la izquierda en la barra de herramientas.
-
-![imagen](media/image46.jpeg)
-
-### Subiendo código
-
-Si usted mira el área de estado del IDE, verá una barra de progreso y una serie de mensajes. Al principio, que dice 'Bosquejo compilar...'. Esto convierte el dibujo en un formato adecuado para subir a la Junta.
-
-![imagen](media/image47.jpeg)
-
-A continuación, el estado cambiará a **subir**. En este punto, los LEDs de la``Arduino`` deben comenzar a parpadear como se transfiere el dibujo.
-
-![imagen](media/image48.jpeg)
-
-Por último, el estado cambiará a 'Done'.
-
-![imagen](media/image49.jpeg)
-
-El otro mensaje nos dice que el **programa** está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:
-
-![imagen](media/image50.jpeg)
-
-Puede significar que su Junta no está conectado a todos, o no se ha instalado los drivers (si es necesario) o que se ha seleccionado el puerto serial incorrecto.
-
-### Comprobar funcionamiento
-
-Una vez completada la carga, la placa se debe reiniciar y el led comenzar a parpadear.
-
-### Comentarios
-
-- Todo entre /* y */ en la parte superior del **programa** es un Comentario de bloque; explica lo que el **programa** es para.
-- Los comentarios de una sola línea comienzan con // y hasta el final de esa línea se considera un comentario.
-
-### Crear variables
-
-La primera línea de código es:
-
-```c
-int led = 13;
-```
-
-Creamos una variable con un nombre y guardamos el número de pin al que el LED está  conectado.
-
-### Función Setup
-
-A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de ``reset``. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un **programa** se ha subido
-
-```c
-void setup() {
-// Inicializa el pin digital como salida.
-pinMode(led, OUTPUT);
-}
-```
-
-### Función setup
-
-Cada programa``Arduino`` debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.
-
-En este caso, es un comando, que, como dice el comentario dice la placa``Arduino`` que vamos  a utilizar el pin LED como salida.
-
-### Función loop
-
-También es obligatorio para un boceto tener una función de **loop**. A diferencia de la función  de **setup** que se ejecuta sólo una vez, después de un reset, la función **loop**, después que haya terminado de ejecutar sus comandos, empezar inmediatamente otra vez.
-
-### Explicación loop
-
-```c
-void loop() {
-  digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)
-  delay(1000); // Espere un segundo
-  digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja
-  delay(1000); // Espere un segundo
-}
-```
-
-Dentro de la función **loop**, los comandos en primer lugar activar el pin del LED (alto), girar a 'retraso' de 1000 milisegundos (1 segundo), entonces el pin LED apagado y pausa para  otro segundo.
-
-### Cambiar la frecuencia de parpadeo
-
-![imagen](media/image51.jpeg)
-
-Ahora vas a que el LED parpadee más rápido. Como puede haber adivinado, la clave de esto radica en cambiar el parámetro () para el comando ``delay``.
-
-### Variar retardo
-
-Este período de retardo en milisegundos, así que si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.
-
-Sube otra vez el **programa** y verás que el LED comienza a parpadear más rápidamente.
-
-## LED
-
-Aprenderemos a cambiar el ``brillo`` de un LED usando diferentes valores  de resistencia.
+![Alt text](image-2.png)
 
 ### Componentes necesarios
 
@@ -1252,26 +1342,27 @@ delay(delayTime);
 
 ![imagen](media/image65.jpeg)
 
-Primero especificamos a que pines de``Arduino`` he conectado cada LED.
+Primero especificamos a que pines de ``Arduino`` he conectado cada LED.
 
-```arduino
+```c
 // Define Pins
-#define BLUE 3
-#define GREEN 5
-#define RED 6
+// Se definen los pines
+#define BLUE 3    // Se asigna el nombre 'BLUE' al pin 3
+#define GREEN 5   // Se asigna el nombre 'GREEN' al pin 5
+#define RED 6     // Se asigna el nombre 'RED' al pin 6
 ```
 
 En el setup, declaramos estos pines como salidas (OUTPUT) para poder enviar corriente hacia los LED.
 
-```arduino
+```c
 void setup()
 {
-pinMode(RED, OUTPUT);
-pinMode(GREEN, OUTPUT);
-pinMode(BLUE,OUTPUT);
-digitalWrite(RED, HIGH);
-digitalWrite(GREEN, LOW);
-digitalWrite(BLUE, LOW);
+  pinMode(RED, OUTPUT);
+  pinMode(GREEN, OUTPUT);
+  pinMode(BLUE,OUTPUT);
+  digitalWrite(RED, HIGH);
+  digitalWrite(GREEN, LOW);
+  digitalWrite(BLUE, LOW);
 }
 ```
 

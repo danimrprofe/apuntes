@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<ul>
+<li><a href="#arduino">Arduino</a>
+<ul>
+<li><a href="#placa-arduino">Placa Arduino</a></li>
+<li><a href="#componentes-de-la-placa">Componentes de la placa</a></li>
+<li><a href="#microcontrolador">Microcontrolador</a></li>
+<li><a href="#pines">Pines</a></li>
+<li><a href="#pines-de-arduino">Pines de Arduino</a></li>
+<li><a href="#instalaci%C3%B3n-ide">Instalación IDE</a></li>
+<li><a href="#primeras-pruebas-led">Primeras pruebas: LED</a></li>
+<li><a href="#elementos-de-un-programa">Elementos de un programa</a></li>
+<li><a href="#led">LED</a></li>
+</ul>
+</li>
+<li><a href="#protoboard">Protoboard</a>
+<ul>
+<li><a href="#zonas">Zonas</a></li>
+<li><a href="#canales-centrales">Canales centrales</a></li>
+<li><a href="#tiras-laterales">Tiras laterales</a></li>
+<li><a href="#desventajas">Desventajas</a></li>
+</ul>
+</li>
+<li><a href="#conexi%C3%B3n-de-pines">Conexión de pines</a>
+<ul>
+<li><a href="#pinmode">Pinmode</a></li>
+<li><a href="#escribir-en-pines">Escribir en pines</a></li>
+</ul>
+</li>
+<li><a href="#motores">Motores</a>
+<ul>
+<li><a href="#motor-de-corriente-cont%C3%ADnua">Motor de corriente contínua</a></li>
+<li><a href="#motor-paso-a-paso-mando">Motor paso a paso mando</a></li>
+<li><a href="#motor-paso-a-paso">Motor paso a paso</a></li>
+<li><a href="#control-mediante-bobinas">Control mediante bobinas</a></li>
+<li><a href="#motor-servo">Motor servo</a></li>
+</ul>
+</li>
+<li><a href="#luces">Luces</a>
+<ul>
+<li><a href="#led-rgb">LED RGB</a></li>
+<li><a href="#tira-de-leds">Tira de LEDs</a></li>
+<li><a href="#7-segments-1-d%C3%ADgito">7 segments (1 dígito)</a></li>
+<li><a href="#7-segments-4-d%C3%ADgitos">7 segments (4 dígitos)</a></li>
+<li><a href="#pantalla-lcd">Pantalla LCD</a></li>
+<li><a href="#led-con-74hc595">LED con 74HC595</a></li>
+</ul>
+</li>
+<li><a href="#interruptor-de-bola">Interruptor de bola</a>
+<ul>
+<li><a href="#componentes-requeridos">Componentes Requeridos</a></li>
+<li><a href="#funcionamiento">Funcionamiento</a></li>
+<li><a href="#conexi%C3%B3n-4">Conexión</a></li>
+<li><a href="#esquema-5">Esquema</a></li>
+<li><a href="#diagrama-de-conexiones">Diagrama de conexiones</a></li>
+<li><a href="#c%C3%B3digo-5">Código</a></li>
+</ul>
+</li>
+<li><a href="#boton">Boton</a>
+<ul>
+<li><a href="#componentes">Componentes</a></li>
+<li><a href="#esquema-de-conexi%C3%B3n-1">Esquema de conexión</a></li>
+<li><a href="#diagrama-de-cableado-7">Diagrama de cableado</a></li>
+<li><a href="#las-conexiones-que-vamos-a-tener-que-realizar-son-las-siguientes">Las conexiones que vamos a tener que realizar son las siguientes:</a></li>
+<li><a href="#explicaci%C3%B3n-del-c%C3%B3digo">Explicación del código</a></li>
+</ul>
+</li>
+<li><a href="#conexi%C3%B3n-a-tierra">Conexión a tierra</a></li>
+<li><a href="#funci%C3%B3n-loop-1">Función Loop</a>
+<ul>
+<li><a href="#c%C3%B3digo-completo">Código completo</a></li>
+</ul>
+</li>
+<li><a href="#joystick-anal%C3%B3gico">Joystick analógico</a>
+<ul>
+<li><a href="#pines-del-joystick">Pines del Joystick</a></li>
+<li><a href="#esquema-6">Esquema</a></li>
+<li><a href="#diagrama-de-cableado-8">Diagrama de cableado</a></li>
+<li><a href="#c%C3%B3digo-6">Código</a></li>
+<li><a href="#comprobar-funcionamiento-1">Comprobar funcionamiento</a></li>
+</ul>
+</li>
+<li><a href="#m%C3%B3dulo-de-receptor-ir">Módulo de receptor IR</a>
+<ul>
+<li><a href="#resumen-1">Resumen</a></li>
+<li><a href="#qu%C3%A9-podemos-medir">¿Qué podemos medir?</a></li>
+<li><a href="#esquema-de-conexiones">Esquema de conexiones</a></li>
+<li><a href="#diagrama-de-cableado-9">Diagrama de cableado</a></li>
+<li><a href="#montaje-2">Montaje</a></li>
+<li><a href="#visualizar-datos-en-el-monitor">Visualizar datos en el monitor</a></li>
+</ul>
+</li>
+<li><a href="#rel%C3%A9">Relé</a>
+<ul>
+<li><a href="#rel%C3%A9-con-motor-de-coche-enarduino">Relé con motor de coche en<code>Arduino</code></a></li>
+</ul>
+</li>
+<li><a href="#sensors">Sensors</a>
+<ul>
+<li><a href="#sensor-humedad-temperatura-dht11">Sensor humedad temperatura DHT11</a></li>
+<li><a href="#sensor-luz-fotocelula">Sensor luz (fotocelula)</a></li>
+<li><a href="#sensor-ultrasonico">Sensor ultrasonico</a></li>
+<li><a href="#termistor">Termistor</a></li>
+</ul>
+</li>
+<li><a href="#esp8266-nodemcu">ESP8266 NodeMCU</a>
+<ul>
+<li><a href="#componentes-1">Componentes</a></li>
+<li><a href="#aplicaciones-principales">Aplicaciones principales</a></li>
+<li><a href="#c%C3%B3digo-fuente-1">Código fuente</a></li>
+<li><a href="#subida">Subida</a></li>
+<li><a href="#salida-monitor-serie">Salida monitor serie</a></li>
+<li><a href="#wifi-bridge">Wifi bridge</a></li>
+</ul>
+</li>
+<li><a href="#projecte-wled">Projecte WLED</a></li>
+<li><a href="#installaci%C3%B3">Instal·lació</a></li>
+<li><a href="#connexi%C3%B3-de-la-tira">Connexió de la tira</a></li>
+<li><a href="#programari-m%C3%B2bil">Programari mòbil</a></li>
+<li><a href="#control">Control</a></li>
+</ul>
+<h1 id="arduino">Arduino</h1>
+<p><code>Arduino</code> es una plataforma de <code>hardware libre</code>, basada en una placa con un microcontrolador y un entorno de desarrollo.</p>
+<p>Hardware libre es aquel cuyas especificaciones y diagramas esquemáticos son de acceso público</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-16-35-45.png" alt=""></p>
+<p>Arduino está diseñado para permitir que los usuarios creen proyectos con una programación sencilla, sin necesidad de conocimientos previos de electrónica.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2023-03-09-10-39-22.png" alt=""></p>
+<h2 id="placa-arduino">Placa Arduino</h2>
+<p><code>Arduino Uno</code> es una placa de desarrollo que incorpora un microcontrolador.</p>
+<p>La placa Arduino contiene un <code>microcontrolador</code>, que es una pequeña computadora que puede leer los datos de los sensores que se conectan, realizar algunas operaciones matemáticas y controlar los dispositivos a través de los pines de salida.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-30-15-48-01.png" alt="imagen"></p>
+<h2 id="componentes-de-la-placa">Componentes de la placa</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-00-12.png" alt=""></p>
+<h2 id="microcontrolador">Microcontrolador</h2>
+<p>El <code>microcontrolador</code> puede ser programado para recibir instrucciones. Esto significa que los usuarios pueden <code>programar</code> la placa para que realice cualquier tarea que deseen, desde controlar motores hasta leer datos de sensores.</p>
+<p>El Arduino Uno utiliza un microcontrolador <code>ATmega328P</code></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-20-00.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Características</th>
+<th>Detalles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontrolador 🕹️</td>
+<td>ATmega328P</td>
+</tr>
+<tr>
+<td>Arquitectura 🏗️</td>
+<td>AVR (8 bits)</td>
+</tr>
+<tr>
+<td>Frecuencia de Reloj ⏰</td>
+<td>16 MHz</td>
+</tr>
+<tr>
+<td>Memoria Flash 💾</td>
+<td>32 kilobytes</td>
+</tr>
+<tr>
+<td>Memoria RAM 🧠</td>
+<td>2 kilobytes</td>
+</tr>
+<tr>
+<td>Memoria EEPROM 📂</td>
+<td>1 kilobyte</td>
+</tr>
+<tr>
+<td>Entradas/Salidas Digitales 🧩</td>
+<td>Sí (pines digitales de E/S)</td>
+</tr>
+<tr>
+<td>Entradas Analógicas 📏</td>
+<td>Sí (pines analógicos de E/S)</td>
+</tr>
+<tr>
+<td>Comunicación Serial 🔄</td>
+<td>Sí (pines TX/RX para comunicación serial)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pines">Pines</h2>
+<p>Un &quot;pin&quot; se refiere a un punto de conexión en un dispositivo electrónico que permite la entrada o salida de una señal eléctrica.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-18-00.png" alt=""></p>
+<h2 id="pines-de-arduino">Pines de Arduino</h2>
+<p>Los pines con los que vamos a trabajar nosotros son:</p>
+<p>Pines de Alimentación:</p>
+<ul>
+<li>Vin (Voltage In): Este pin se utiliza para alimentar la placa con un voltaje externo cuando no se está utilizando el puerto USB. La tensión recomendada es de 7 a 12V.</li>
+<li>5V: Este pin proporciona una salida de 5 voltios cuando la placa está alimentada a través del puerto USB o del conector de alimentación externa.</li>
+<li>3.3V: Proporciona una salida de 3.3 voltios.</li>
+<li>Pines de Tierra (GND): Hay varios pines GND en la placa, que se utilizan como conexiones a tierra.</li>
+<li>Pines de Entrada/Salida Digital (D2 a D13): Pueden usarse como entradas o salidas digitales. D2 a D13 también pueden utilizarse como salidas PWM (modulación de ancho de pulso) para controlar la intensidad de la señal.</li>
+<li>Pines Analógicos (A0 a A5): Son pines de entrada analógica que permiten leer señales analógicas, como las provenientes de sensores de luz, temperatura, etc.</li>
+</ul>
+<h2 id="instalaci%C3%B3n-ide">Instalación IDE</h2>
+<p>El <strong>Entorno de desarrollo integrado (IDE) de<code>Arduino</code></strong> es el software de la plataforma<code>Arduino</code>. En esta lección, usted aprenderá cómo configurar tu ordenador para usar<code>Arduino</code> y cómo establecer sobre las lecciones que siguen.</p>
+<p>Paso 1: Ir a https://www.arduino.cc/en/Main/Software y a continuación de la página.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-15-22-08.png" alt=""></p>
+<p>La versión disponible en este sitio web es generalmente la última versión y la versión actual puede ser más reciente que la versión en el cuadro.</p>
+<p>Paso 2 : Descargar el desarrollo software que es compatible con el sistema operativo del ordenador. Windows tomar como un ejemplo aquí</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image7.jpeg" alt="imagen"></p>
+<p>Haga click en Windows Installer.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image8.jpeg" alt="imagen"></p>
+<p>Haga click en DESCARGAR (JUST DOWNLOAD).</p>
+<p>También está disponible en el material que nos proporciona la versión 1.8.0, y las versiones de nuestros materiales son las últimas versiones cuando se hizo este manual.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image9.jpeg" alt="imagen"></p>
+<p>Instalación de<code>Arduino</code> (Windows)</p>
+<p>Instalar<code>Arduino</code> con el exe. Paquete de instalación.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image10.png" alt="imagen"></p>
+<p>Haga click en I Agree to see de esta ventana</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image11.jpeg" alt="imagen"></p>
+<p>Click Next</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image12.jpeg" alt="imagen"></p>
+<p>Puede pulsar examinar... elegir una ruta de instalación o directamente en el directorio que desee.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image13.jpeg" alt="imagen"></p>
+<p>Haga Click en Install para comenzar la instalación</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image14.jpeg" alt="imagen"></p>
+<p>Por último, aparece la siguiente ventana, haga clic en Install para finalizar la instalación.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image15.jpeg" alt="imagen"></p>
+<p>A continuación, aparece el siguiente icono en el escritorio</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image16.jpeg" alt="imagen"></p>
+<p>Haga doble clic para entrar en el entorno de desarrollo deseado</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/image.png" alt="Alt text"></p>
+<h2 id="primeras-pruebas-led">Primeras pruebas: LED</h2>
+<p>Vamos a aprender a crear un programa y volcarlo en la placa Arduino.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-29-16-46-42.png" alt="imagen"></p>
+<p>La placa Arduino cuenta con un LED luminoso que puede ser controlado. Este LED está integrado en la propia placa.</p>
+<p>Cuando la placa se conecta a un enchufe USB, el LED parpadea. Este parpadeo se debe a que las placas suelen ser enviadas con un programa preinstalado llamado &quot;Blink&quot;.</p>
+<h3 id="programas-de-ejemplo">Programas de ejemplo</h3>
+<p>El IDE de <code>Arduino</code> incluye una gran colección de programas de ejemplo para utilizar directamente.  Esto incluye un ejemplo para hacer el parpadeo del <code>LED</code>.</p>
+<h3 id="ejemplo-programa-blink">Ejemplo programa Blink</h3>
+<p>Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo <code>archivo &gt;  ejemplos &gt; 01 conceptos básicos</code></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image39.jpeg" alt="imagen"></p>
+<h3 id="blink">Blink</h3>
+<p>Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo completo en la ventana.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image40.jpeg" alt="imagen"></p>
+<p>Los <code>programas de ejemplo</code> incluidos con el IDE de<code>Arduino</code> son de 'sólo lectura'. Es decir, puedes subirlo a Arduino, pedo no se pueden guardar una vez modificados.</p>
+<h3 id="guardar-c%C3%B3digo-en-otro-archivo">Guardar código en otro archivo</h3>
+<p>En el menú archivo en el IDE de<code>Arduino</code>, seleccione <code>Guardar como.</code> y guarde el dibujo con  el nombre <code>parpadeo</code></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image41.jpeg" alt="imagen"></p>
+<p>A continuación deberemos elegir una carpeta en la que guardar el programa.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image42.jpeg" alt="imagen"></p>
+<h3 id="abrir-un-archivo-de-programa">Abrir un archivo de programa</h3>
+<p>Para abrir un archivo que hemos guardado con anterioridad, podemos simplemente ir a <code>archivo &gt; abrir</code> o también a <code>archivo &gt; abrir reciente</code>.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image43.jpeg" alt="imagen"></p>
+<h3 id="conectar-placa-al-pc">Conectar placa al PC</h3>
+<p>Conecte la placa de<code>Arduino</code> al ordenador con el cable USB y compruebe que la <strong>Board Type</strong> y <strong>Puerto serie</strong> están ajustados correctamente.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-08-17-04-14.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image44.png" alt="imagen"></p>
+<h3 id="nota">Nota</h3>
+<ul>
+<li>El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen.</li>
+<li>El puerto serie (<code>COM</code>) puede ser diferente, del tipo COM3 o COM4 en su ordenador.</li>
+</ul>
+<p>El IDE de<code>Arduino</code> mostrará la configuración actual en la parte inferior de la  ventana.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image45.jpeg" alt="imagen"></p>
+<h3 id="subir-c%C3%B3digo-a-arduino">Subir código a Arduino</h3>
+<p>Para que Arduino lo ejecute, necesitamos enviarle a través del cable USB el código que queremos que haga.</p>
+<p>Para ello, debemos hacer clic en el botón <strong>subir</strong>. El segundo botón de la izquierda en la barra de herramientas.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image46.jpeg" alt="imagen"></p>
+<h3 id="subiendo-c%C3%B3digo">Subiendo código</h3>
+<p>Al cargar el código, al observar el área de estado del IDE, se apreciará una barra de progreso junto con una serie de mensajes. Inicialmente, se mostrará el mensaje 'Compilando bosquejo...'. Este proceso convierte el esbozo en un formato adecuado para cargar en la placa.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image47.jpeg" alt="imagen"></p>
+<p>Luego, el estado cambiará a 'Subiendo'. En este momento, los LEDs de la Arduino deberían empezar a parpadear, indicando la transferencia del esbozo.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image48.jpeg" alt="imagen"></p>
+<p>Finalmente, el estado cambiará a 'Listo' ('Done').</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image49.jpeg" alt="imagen"></p>
+<h3 id="errores">Errores</h3>
+<p>El otro mensaje nos dice que el <strong>programa</strong> está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image50.jpeg" alt="imagen"></p>
+<p>Puede significar que su Junta no está conectado a todos, o no se ha instalado los drivers (si es necesario) o que se ha seleccionado el puerto serial incorrecto.</p>
+<h3 id="comprobar-funcionamiento">Comprobar funcionamiento</h3>
+<p>Una vez completada la carga, la placa se debe reiniciar y el led comenzar a parpadear.</p>
+<h2 id="elementos-de-un-programa">Elementos de un programa</h2>
+<h3 id="comentarios">Comentarios</h3>
+<ul>
+<li>Todo entre /* y */ en la parte superior del <strong>programa</strong> es un Comentario de bloque; explica lo que el <strong>programa</strong> es para.</li>
+<li>Los comentarios de una sola línea comienzan con // y hasta el final de esa línea se considera un comentario.</li>
+</ul>
+<h3 id="crear-variables">Crear variables</h3>
+<p>La primera línea de código es:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> led = <span class="hljs-number">13</span>;
+</div></code></pre>
+<p>Creamos una variable con un nombre y guardamos el número de pin al que el LED está  conectado.</p>
+<h3 id="funci%C3%B3n-setup">Función Setup</h3>
+<p>A continuación, se presenta la función de 'configuración' en el código. Esta función se ejecuta al presionar el botón de <code>reset</code> y cada vez que la placa Arduino se reinicia, ya sea por aplicación de energía inicial o después de cargar un nuevo <strong>programa</strong>.</p>
+<p>En cada programa de Arduino, es esencial incluir una función <strong>setup</strong> (configuración), y las instrucciones específicas se colocan entre las llaves { y }. En este caso, el comando dentro de la función setup indica a la placa Arduino que el pin LED se usará como salida, según lo señala el comentario.</p>
+<blockquote>
+<p>Void indica que la función setup no devuelve ningún valor</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">// Inicializa el pin digital como salida.</span>
+<span class="hljs-built_in">pinMode</span>(led, <span class="hljs-literal">OUTPUT</span>);
+}
+</div></code></pre>
+<p>Cada programa<code>Arduino</code> debe tener una función de <strong>setup</strong> (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.</p>
+<p>En este caso, es un comando, que, como dice el comentario dice la placa<code>Arduino</code> que vamos  a utilizar el pin LED como salida.</p>
+<h3 id="funci%C3%B3n-loop">Función loop</h3>
+<p>También es obligatorio para un boceto tener una función de <strong>loop</strong>. A diferencia de la función  de <strong>setup</strong> que se ejecuta sólo una vez, después de un reset, la función <strong>loop</strong>, después que haya terminado de ejecutar sus comandos, empezar inmediatamente otra vez.</p>
+<h3 id="explicaci%C3%B3n-loop">Explicación loop</h3>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">digitalWrite</span>(led, <span class="hljs-literal">HIGH</span>); <span class="hljs-comment">// Encienda el LED (alto es el nivel de voltaje)</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">// Espere un segundo</span>
+  <span class="hljs-built_in">digitalWrite</span>(led, <span class="hljs-literal">LOW</span>); <span class="hljs-comment">// Apagar el LED por lo que la tensión baja</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">// Espere un segundo</span>
+}
+</div></code></pre>
+<p>Dentro de la función <strong>loop</strong>, los comandos en primer lugar activar el pin del LED (alto), girar a 'retraso' de 1000 milisegundos (1 segundo), entonces el pin LED apagado y pausa para  otro segundo.</p>
+<h3 id="cambiar-la-frecuencia-de-parpadeo">Cambiar la frecuencia de parpadeo</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image51.jpeg" alt="imagen"></p>
+<p>Ahora vas a que el LED parpadee más rápido. Como puede haber adivinado, la clave de esto radica en cambiar el parámetro () para el comando <code>delay</code>.</p>
+<h3 id="variar-retardo">Variar retardo</h3>
+<p>Este período de retardo en milisegundos, así que si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.</p>
+<p>Sube otra vez el <strong>programa</strong> y verás que el LED comienza a parpadear más rápidamente.</p>
+<h2 id="led">LED</h2>
+<p>Aprenderemos a cambiar el <code>brillo</code> de un LED usando diferentes valores  de resistencia.</p>
+<h3 id="conexi%C3%B3n-de-la-placa-arduino-al-ordenador">Conexión de la Placa Arduino al Ordenador</h3>
+<p>Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador. Siga estos pasos para lograr la conexión adecuada:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-09-08-09-16.png" alt=""></p>
+<ol>
+<li>Utilice un <code>cable USB</code> para conectar la Placa Arduino al puerto USB de su ordenador.</li>
+<li>Abra el <code>IDE de Arduino</code> en su ordenador</li>
+<li>Escriba o cargue el <code>programa</code> que desea transferir a la placa.</li>
+<li>Verifique que la Placa Arduino seleccionada en el IDE coincida con el modelo físico que está utilizando. Puede seleccionar la placa desde la pestaña <code>&quot;Herramientas&quot; &gt; &quot;Placa&quot;</code> en el IDE.</li>
+<li>Seleccione el puerto COM al que está conectada la Placa Arduino. Esto también se encuentra en la pestaña <code>&quot;Herramientas&quot; &gt; &quot;Puerto&quot;</code> en el IDE.</li>
+<li>Haga clic en el botón de carga (&quot;Upload&quot;) en el IDE para transferir el programa a la Placa Arduino.</li>
+</ol>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-15-30-38.png" alt=""></p>
+<h1 id="protoboard">Protoboard</h1>
+<p>Un <strong>protoboard</strong> permite crear prototipos de circuitos de forma rápida, sin necesidad de soldar las  conexiones. A continuación un ejemplo.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-23-12.png" alt=""></p>
+<p>Las protoboard están compuestas por un número determinado de pines, dispuestos en filas y columnas, a los que podemos conectar diferentes cables y componentes.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image52.jpeg" alt="imagen"></p>
+<p>Las <strong>protoboard</strong> vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-13-10-23-10.png" alt="imagen"></p>
+<p>Conectando las patillas de dos componentes diferentes de la <strong>misma fila</strong> quedan unidos eléctricamente.</p>
+<h2 id="zonas">Zonas</h2>
+<p>Existen dos zonas principales. La zona de alimentación, y la zona central. Todo lo que pase por la misma línea, está interconectado eléctricamente.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-12-09-09.png" alt=""></p>
+<h2 id="canales-centrales">Canales centrales</h2>
+<p>Los canales centrales indican que no están conectados ambos lados. Lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos.</p>
+<h2 id="tiras-laterales">Tiras laterales</h2>
+<ul>
+<li>Algunos <code>protoboards</code> tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero.</li>
+<li>Estas tiras se denominan <code>carriles</code> y le permiten alimentar a muchos componentes o puntos en el tablero.</li>
+<li>Proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra.</li>
+</ul>
+<h2 id="desventajas">Desventajas</h2>
+<p>Si bien son protoboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.</p>
+<h1 id="conexi%C3%B3n-de-pines">Conexión de pines</h1>
+<h2 id="pinmode">Pinmode</h2>
+<p>Configuración de Pines (pinMode)
+La función pinMode se utiliza para configurar un pin como entrada o salida. La sintaxis es la siguiente:</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">pinMode</span>(pin, mode);
+</div></code></pre>
+<ul>
+<li><code>pin</code>: El número del pin que se va a configurar.</li>
+<li><code>mode</code>: Puede ser INPUT para configurar el pin como entrada o OUTPUT para configurarlo como salida.</li>
+</ul>
+<h2 id="escribir-en-pines">Escribir en pines</h2>
+<p>En Arduino, digitalWrite, analogWrite, y la configuración de pines son funciones clave para controlar la entrada y salida digital y analógica. Aquí tienes una explicación de cada uno:</p>
+<h3 id="digitalwritepin-value">digitalWrite(pin, value)</h3>
+<p>La función digitalWrite se utiliza para establecer el estado de un pin digital en Arduino. Puede ser usado para configurar un pin como alto (HIGH o 1) o bajo (LOW o 0). La sintaxis es la siguiente:</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">digitalWrite</span>(pin, value);
+</div></code></pre>
+<ul>
+<li>pin: El número del pin al que se le quiere cambiar el estado.
+value: El estado que se desea asignar al pin, que puede ser HIGH (1) o LOW (0).</li>
+</ul>
+<p>Ejemplo:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">13</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(ledPin, <span class="hljs-literal">OUTPUT</span>); <span class="hljs-comment">// Configura el pin como salida</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">HIGH</span>); <span class="hljs-comment">// Enciende el LED conectado al pin 13</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);                <span class="hljs-comment">// Espera 1 segundo</span>
+  <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">LOW</span>);  <span class="hljs-comment">// Apaga el LED</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);                <span class="hljs-comment">// Espera 1 segundo</span>
+}
+</div></code></pre>
+<h3 id="analogwritepin-value">analogWrite(pin, value)</h3>
+<p>La función analogWrite se utiliza para generar una señal PWM (Modulación de Ancho de Pulso) en un pin específico. Aunque se le denomina &quot;analogWrite&quot;, en realidad está generando una señal digital con una frecuencia determinada. La sintaxis es similar a digitalWrite:</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">analogWrite</span>(pin, value);
+</div></code></pre>
+<ul>
+<li>pin: El número del pin al que se le quiere aplicar la señal PWM.</li>
+<li>value: El valor de la amplitud de la señal PWM, que va de 0 (sin señal) a 255 (señal máxima).</li>
+</ul>
+<p>Ejemplo:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">9</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(ledPin, <span class="hljs-literal">OUTPUT</span>); <span class="hljs-comment">// Configura el pin como salida</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">analogWrite</span>(ledPin, <span class="hljs-number">128</span>); <span class="hljs-comment">// Establece la señal PWM al 50%</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);              <span class="hljs-comment">// Espera 1 segundo</span>
+}
+</div></code></pre>
+<h1 id="motores">Motores</h1>
+<p>Els motors d'Arduino són dispositius que permeten a una placa Arduino controlar el moviment mecànic d'un sistema. Els motors poden ser de diferents tipus i formes, i poden ser controlats per la placa Arduino a través de diferents circuits i protocols.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-24-57.png" alt=""></p>
+<p>Els motors més comuns utilitzats amb Arduino són els **motors de corrent continu **(DC) i els <strong>servomotors</strong>.</p>
+<ul>
+<li>Els <a href="motor_CC.md">motors de corrent continu</a> són motors que giren en una direcció o altra depenent del sentit de la corrent que passa per ells, i poden ser controlats a través d'un circuit que permet variar la tensió aplicada al motor.</li>
+<li>Els <a href="motor-servo.md">servomotors</a>, d'altra banda, són motors que poden ser controlats amb precisió per a posicionar-se en un determinat angle, i són utilitzats en molts projectes de robòtica i control de moviment.</li>
+<li>Els <a href="motor_paso_a_paso.md">motors pas a pas</a> són un tipus de motor que es caracteritza per moure's en increments precisos de posició en lloc de girar continuament</li>
+</ul>
+<h2 id="motor-de-corriente-cont%C3%ADnua">Motor de corriente contínua</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-25-39.png" alt=""></p>
+<p>La fuerza máxima que puede generar un motor pequeño de corriente continua para proyectos de electrónica depende de varios factores, como el diseño y las especificaciones del motor. Sin embargo, en general, los motores pequeños de corriente continua para proyectos de electrónica suelen tener una fuerza máxima relativamente baja.</p>
+<p>La fuerza generada por un motor de corriente continua está relacionada con su <strong>torque</strong>. El torque es una medida de la capacidad del motor para generar una fuerza de rotación. Los motores pequeños para proyectos de electrónica generalmente tienen un torque bajo y están diseñados para aplicaciones de baja carga, como mover pequeños mecanismos o generar movimiento en juguetes pequeños.</p>
+<p>El <strong>torque máximo</strong> de un motor se especifica en su datasheet o hoja de datos proporcionada por el fabricante. Puede estar en unidades como gramos-centímetro (g·cm) o milinewton-metro (mN·m). Es importante tener en cuenta que el torque máximo disminuye a medida que aumenta la velocidad de rotación del motor.</p>
+<h3 id="placa-de-fuente-de-alimentaci%C3%B3n">Placa de fuente de alimentación</h3>
+<p>El pequeño motor de corriente continua es probable que use más energía que la que <code>Arduino</code> puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un <strong>módulo de alimentación</strong> que proporciona electricidad al motor.</p>
+<h3 id="especificaciones">Especificaciones</h3>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voltaje de entrada</td>
+<td>6.5-9v (CC)</td>
+</tr>
+<tr>
+<td>Voltaje de salida</td>
+<td>3.3V / 5v</td>
+</tr>
+<tr>
+<td>Máxima corriente de salida</td>
+<td>700 mA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci%C3%B3n-de-voltaje">Configuración de voltaje</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image140.jpeg" alt="imagen"></p>
+<p>La izquierda y derecha de la tensión de salida puede configurarse independientemente. Para seleccionar la tensión de salida, mover el puente a los pines correspondientes. Nota: indicador de energía LED y los carriles de la energía de protoboard no se enciende si ambos puentes están en la posición &quot;OFF&quot;.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image141.jpeg" alt="width:500px"></p>
+<h3 id="l293d">L293D</h3>
+<p>El L293D és un circuit integrat que s'utilitza com a controlador de motor i permet controlar la direcció i la velocitat d'un motor DC.</p>
+<p>El dispositiu inclou quatre drivers de pont H, que permeten controlar fins a dos motors DC de manera independent.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image142.jpeg" alt="imagen"></p>
+<p><strong>Especificaciones</strong></p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tensión de alimentación</td>
+<td>4,5 V a 36 V</td>
+</tr>
+<tr>
+<td>Salida de corriente</td>
+<td>1 A por canal (600 mA para el L293D)</td>
+</tr>
+<tr>
+<td>Máxima salida de corriente</td>
+<td>2 A por canal (1.2 A para L293D)</td>
+</tr>
+</tbody>
+</table>
+<p>Diagrama de pines</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image143.jpeg" alt="imagen"></p>
+<p>L293 y L293D</p>
+<ul>
+<li>El <code>L293</code> está diseñado para proporcionar corrientes de transmisión bidireccional de hasta 1 A con tensiones de 4,5 V a 36 V.</li>
+<li>El <code>L293D</code> está diseñado para proporcionar bidireccional corrientes de impulsión de hasta 600 mA en tensiones de 4,5 V a 36 V.</li>
+</ul>
+<p>Pines</p>
+<ul>
+<li>4 pines per controlar la direcció dels motors</li>
+<li>1 pin s'utilitza per controlar la  velocitat.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-05-15-17-25-39.png" alt=""></p>
+<h3 id="control-de-la-velocidad">Control de la velocidad</h3>
+<p><strong>M1 PWM</strong> lo conectaremos a un pin PWM de<code>Arduino</code>. Está marcados en la ONU, el pin 5 es un ejemplo. Cualquier número entero entre 0 y 255, donde:</p>
+<ul>
+<li><code>0</code> significa velocidad 0 (no hay movimiento)</li>
+<li><code>128</code> es la mitad de velocidad</li>
+<li><code>255</code> es la velocidad máxima de salida.</li>
+</ul>
+<p>Según el valor que escribamos, se generará una señal PWM diferente.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-13-13-35-36.png" alt="imagen"></p>
+<p>Dirección de giro</p>
+<p>La dirección se controla a través de las entradas de dirección:</p>
+<ul>
+<li><strong>M1 0/1</strong> y <strong>M1 1/0</strong> determinan el sentido de giro del motor 1</li>
+<li><strong>M2 0/1</strong> y <strong>M2 1/0</strong> determinan el sentido de giro del motor 2</li>
+</ul>
+<p>Dirección de giro</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-28-12-14-53.png" alt=""></p>
+<p>Dirección de giro</p>
+<p>En la siguiente tabla veréis las 4 combinaciones posibles para el motor 1:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-13-13-34-44.png" alt="imagen"></p>
+<p>Esquema</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image147.jpeg" alt="width:800px"></p>
+<p>Montaje físico</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-28-12-13-46.png" alt=""></p>
+<p>Código</p>
+<pre class="hljs"><code><div>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ENABLE 5</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DIRA 3</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DIRB 4</span>
+
+<span class="hljs-keyword">int</span> i;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">//set pin direction</span>
+  <span class="hljs-built_in">pinMode</span>(ENABLE,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(DIRA,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(DIRB,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">//back and forth example</span>
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"One way, then reverse"</span>);
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">// enable on</span>
+    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++) {
+        <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//one way</span>
+        <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">LOW</span>);
+        <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+        <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">LOW</span>);  <span class="hljs-comment">//reverse</span>
+        <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">HIGH</span>);
+        <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+    }
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">// disable</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"fast Slow example"</span>);
+    <span class="hljs-comment">//fast/slow stop example</span>
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//enable on</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//one way</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">LOW</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">//slow stop</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//enable on</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">//one way</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">HIGH</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">//fast stop</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"PWM full then slow"</span>);
+    <span class="hljs-comment">//PWM example, full speed then slow</span>
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">255</span>); <span class="hljs-comment">//enable on</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//one way</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">LOW</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">180</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">128</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">50</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">128</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">180</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">analogWrite</span>(ENABLE,<span class="hljs-number">255</span>); <span class="hljs-comment">//half speed</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">//all done</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">10000</span>);
+}
+
+</div></code></pre>
+<h2 id="motor-paso-a-paso-mando">Motor paso a paso mando</h2>
+<p>Veremos cómo funciona el motor de pasos de 4 fases <strong>ULN2003 28BYJ-48</strong> y el controlador de motor de 5V.</p>
+<h3 id="el-motor">El motor</h3>
+<p>El motor de pasos de 4 fases ULN2003 28BYJ-48 es un motor de pasos pequeño y económico que se puede controlar con un microcontrolador. El motor tiene 4 fases, cada una con 2 polos. Cada fase requiere energía para que el imán se atraiga o se repulse. Los 4 imanes del motor de pasos están dispuestos de forma que se atraigan y se repulsen en secuencia, lo que hace que el eje del motor gire.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-20-17-13-11.png" alt="imagen"></p>
+<h3 id="controlador">Controlador</h3>
+<p>Para controlar el motor de pasos de 4 fases, se necesita un controlador de motor. El controlador de motor de 5V es un circuito integrado que se usa para controlar el motor de pasos.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-20-17-12-52.png" alt="imagen"></p>
+<p>El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor. Para hacer que el motor gire, se activan las salidas en secuencia.</p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>Cantidad</th>
+<th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Elegoo Uno R3</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Placa de conexiones con 830 puntos</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Módulo receptor infrarrojo (IR)</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Control remoto infrarrojo (IR)</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Módulo controlador de motor paso a paso ULN2003</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Motor paso a paso</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Módulo de fuente de alimentación</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Adaptador de corriente 9V1A</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Cables hembra-macho (DuPont)</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Cable macho-macho (hilo de puente)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="esquema">Esquema</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image163.jpeg" alt="imagen"></p>
+<h4 id="diagrama-de-cableado">Diagrama de cableado</h4>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image164.jpeg" alt="imagen"></p>
+<p>Estamos utilizando 4 pines para controlar el paso a paso y el 1 pin del sensor IR.</p>
+<ul>
+<li>Los <code>pines 8-11</code> controlan el motor paso a paso</li>
+<li>El <code>pin 12</code> recibe la información de IR.</li>
+</ul>
+<p>Conectamos los 5V y la tierra al sensor. Como medida de precaución, usar un protoboard alimentación potencia el motor paso a paso ya que puede utilizar más energía y no queremos dañar la fuente de alimentación del Arduino.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image165.jpeg" alt="bg contain"></p>
+<p><strong>Mando</strong></p>
+<p>El código reconoce sólo 2 valores desde el control remoto IR: VOL + y VOL-.</p>
+<ul>
+<li>Presionando VOL + del control remoto el motor hará un giro completo hacia la derecha.</li>
+<li>VOL- para hacer una rotación completa en sentido antihorario.</li>
+</ul>
+<p>#Ejemplo 1</p>
+<pre class="hljs"><code><div>
+ Este código hace que el motor gire en sentido horario y antihorario.
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">OUTPUT</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-comment">//Gira el motor en sentido horario</span>
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-comment">//Gira el motor en sentido antihorario</span>
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">8</span>, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">9</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">10</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-number">11</span>, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+}
+</div></code></pre>
+<h2 id="motor-paso-a-paso">Motor paso a paso</h2>
+<p>Un motor paso a paso es un dispositivo electromecánico que convierte pulsos eléctricos en movimientos mecánicos discretos.</p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>Cantidad</th>
+<th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[x]</td>
+<td>Elegoo Uno R3</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Placa de conexiones con 830 puntos</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Módulo controlador de motor paso a paso ULN2003</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Motor paso a paso</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Adaptador de corriente 9V1A</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Módulo de fuente de alimentación</td>
+</tr>
+<tr>
+<td>[x]</td>
+<td>Cables hembra-macho (DuPont)</td>
+</tr>
+<tr>
+<td></td>
+<td>Hilo macho-macho (hilo de puente)</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-13-47-03.png" alt=""></p>
+<h3 id="%C2%BFc%C3%B3mo-funciona-un-motor-paso-a-paso">¿Cómo funciona un motor paso a paso?</h3>
+<p>El eje o eje de un motor paso a paso gira en incrementos discretos cuando impulsos de mando eléctrico se aplican a él en la secuencia correcta. La rotación de los motores tiene varias relaciones directas a estos pulsos de entrada aplicadas. La secuencia de los pulsos aplicados se relaciona directamente con la dirección de rotación de ejes motor. La velocidad de la rotación de los ejes motor está directamente relacionada con la frecuencia de los pulsos de entrada y la duración de la rotación está directamente relacionada con el número de pulsos de entrada aplicada. Una de las ventajas más importantes de un motor paso a paso es su capacidad para ser controlado con precisión en un sistema de lazo abierto. Control de lazo abierto significa que ninguna información de retroalimentación de posición es necesario. Este tipo de control elimina la necesidad de costosos dispositivos de detección y regeneración como codificadores ópticos. Su posición es conocida simplemente por hacer el seguimiento de los pulsos de entrada de paso</p>
+<h3 id="28byj-48">28BYJ-48</h3>
+<p>El motor paso a paso &quot;<code>28BYJ-48</code>&quot; es un motor bastante común en proyectos de electrónica y robótica debido a su costo asequible y su versatilidad.</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tensión nominal</td>
+<td>5 VDC</td>
+</tr>
+<tr>
+<td>Número de fase</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Cociente de la variación de velocidad</td>
+<td>1/64</td>
+</tr>
+<tr>
+<td>Ángulo de paso</td>
+<td>5,625 ° 64</td>
+</tr>
+<tr>
+<td>Frecuencia</td>
+<td>100Hz</td>
+</tr>
+<tr>
+<td>Resistencia de la C.C.</td>
+<td>50Ω±7% (25 ° C)</td>
+</tr>
+<tr>
+<td>Inactivo en tracción frecuencia</td>
+<td>&gt; 600Hz</td>
+</tr>
+<tr>
+<td>Frecuencia ociosa de hacia fuera-tracción</td>
+<td>&gt; 1000Hz En tracción par &gt; 34.3mN.m(120Hz)</td>
+</tr>
+<tr>
+<td>Posicionamiento automático par</td>
+<td>&gt; 34.3mN.m</td>
+</tr>
+<tr>
+<td>Par de fricción</td>
+<td>600-1200 gf.cm</td>
+</tr>
+<tr>
+<td>Tire un par</td>
+<td>300 gf.cm</td>
+</tr>
+<tr>
+<td>Resistencia de aislamiento</td>
+<td>&gt; 10MΩ(500V)</td>
+</tr>
+<tr>
+<td>Aislantes de electricidad</td>
+<td>600VAC/1mA/1s</td>
+</tr>
+<tr>
+<td>Grado de aislamiento</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Subida de temperatura</td>
+<td>&lt; 40K(120Hz)</td>
+</tr>
+<tr>
+<td>Ruido</td>
+<td>&lt; 35dB (120Hz, No carga, 10cm)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="esquema-de-circuitos">Esquema de circuitos</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image156.jpeg" alt="imagen"></p>
+<p>El motor paso a paso bipolar generalmente cuenta con cuatro cables que se extienden de él. A diferencia de los motores PAP unipolares, los motores paso a paso bipolares no poseen una conexión común en el centro.</p>
+<p>En lugar de eso, tienen dos conjuntos independientes de bobinas. Pueden diferenciarse de los motores paso a paso unipolares midiendo la resistencia entre los cables.</p>
+<p>Deberías identificar dos pares de cables con resistencias iguales. Si conectas las puntas de tu medidor a dos cables que no están vinculados (es decir, que no están conectados a la misma bobina), deberías observar resistencia infinita (o falta de continuidad).</p>
+<h3 id="uln2003">ULN2003</h3>
+<p>La ULN2003 es un popular <code>chip de amplificación de corriente</code> que se utiliza comúnmente como placa conductora para motores paso a paso. Este chip se utiliza para controlar motores, especialmente los motores paso a paso, y proporciona la capacidad de manejar corrientes más altas de las que un microcontrolador puede manejar directamente.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image157.jpeg" alt="imagen"></p>
+<h3 id="descripci%C3%B3n-del-producto">Descripción del producto</h3>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tamaño</td>
+<td>42mmx30mm</td>
+</tr>
+<tr>
+<td>Chip de controlador de uso</td>
+<td>ULN2003, 500mA</td>
+</tr>
+<tr>
+<td>A. B. C. D</td>
+<td>LED que indica las cuatro fases las condiciones  de trabajo motor paso a paso.</td>
+</tr>
+<tr>
+<td>Blanco jack</td>
+<td>es el conector estándar motor cuatro fase      paso a paso.</td>
+</tr>
+<tr>
+<td>Pines de alimentación son separados</td>
+<td></td>
+</tr>
+<tr>
+<td>Mantuvimos las clavijas del resto de la viruta del ULN2003</td>
+<td>para sus prototipos más.</td>
+</tr>
+</tbody>
+</table>
+<p>La forma más sencilla de conexión un paso a paso unipolar a<code>Arduino</code> es utilizar un desglose para chip de ULN2003A transistor array. El ULN2003A contiene siete controladores de transistor Darlington y es algo asícomo tener siete transistores TIP120 todo en un paquete. El ULN2003A puede pasar hasta 500 mA por canal y tiene una caída de tensión interna de 1V cuando en. También contiene diodos de abrazadera interna para disipar las puntas de tensión al manejar cargas inductivas.</p>
+<h2 id="control-mediante-bobinas">Control mediante bobinas</h2>
+<p>Para controlar el paso a paso, aplicamos tensión a cada una de las bobinas en una secuencia específica.</p>
+<p>La secuencia iría así:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image158.jpeg" alt="imagen"></p>
+<p>Estos son esquemas que muestran cómo un paso a paso unipolar de interfaz motor a cuatro pines controlador utilizando un ULN2003A y mostrando cómo la interfaz usando cuatro com</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image159.jpeg" alt="imagen"></p>
+<p>#Conexión</p>
+<p>#Esquema</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image160.jpeg" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image161.jpeg" alt="imagen"></p>
+<p>Estamos utilizando 4 pines para controlar el paso a paso.</p>
+<ul>
+<li>Los pines 8-11 controlan el motor paso a paso.</li>
+<li>Conectamos la tierra de a UNO para el motor paso a paso.</li>
+</ul>
+<h3 id="c%C3%B3digo">Código</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image162.jpeg" alt="imagen"></p>
+<h2 id="motor-servo">Motor servo</h2>
+<p>Los <code>servos</code> son un tipo especial de motor de c.c. que se caracterizan por su capacidad para posicionarse de forma inmediata en cualquier posición dentro de su intervalo de operación. Se mueven en una precisión de 180º como máximo.</p>
+<p>El servo tiene un <code>eje</code> que puede girar y que es accionado por un motor. La posición del eje puede ser controlada con una señal analógica.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-13-13-03-54.png" alt="imagen"></p>
+<p>Para ello, el servomotor espera un tren de pulsos que se corresponde con el movimiento a realizar.</p>
+<h3 id="cables">Cables</h3>
+<p>El Servo tiene tres cables:</p>
+<ul>
+<li><strong>Marrón</strong> es el cable a tierra y deben conectarse a GND puerto UNO, el r</li>
+<li><strong>Rojo</strong> es el cable de corriente y debe conectarse al puerto de 5v</li>
+<li><strong>Naranja</strong> es el cable de señal y debe conectarse al puerto 9.</li>
+</ul>
+<h3 id="servo-mg995">Servo MG995</h3>
+<p>El servomotor <strong>MG995</strong> es un servomotor digital de alta velocidad y alta precisión. El servomotor está construido con una carcasa de plástico reforzado y un eje de metal.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-07-22-21-33.png" alt=""></p>
+<p>Tiene una salida de 5 V y una corriente máxima de 2 A. Puede alcanzar una velocidad de giro de 0,12 segundos por vuelta.</p>
+<h3 id="servomotor-sg90">Servomotor SG90</h3>
+<ul>
+<li>El <strong>SG90</strong> es un microservo más pequeño y ligero que el MG995.</li>
+<li>También es más económico.</li>
+<li>El <strong>SG90</strong> tiene un rango de movimiento de aproximadamente 180 grados, mientras que el MG995 tiene un rango de movimiento de aproximadamente 360 grados.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Longitud del cable:</td>
+<td>25cm</td>
+</tr>
+<tr>
+<td>Sin carga;</td>
+<td>Velocidad: 0,12 seg/60 degree (4.8V), 0.10 sec/60 grados (6.0V)</td>
+</tr>
+<tr>
+<td>Puesto de par (4.8V):</td>
+<td>1,6 kg/cm</td>
+</tr>
+<tr>
+<td>Temperatura:</td>
+<td>-30 ~ 60' C</td>
+</tr>
+<tr>
+<td>Ancho de banda muerta:</td>
+<td>5 us</td>
+</tr>
+<tr>
+<td>Voltaje de funcionamiento:</td>
+<td>3.5 ~ 6V</td>
+</tr>
+<tr>
+<td>Dimensión:</td>
+<td>1.26 en x 1,18 en x 0,47 en (3,2 x 3 cm x 1.2 cm)</td>
+</tr>
+<tr>
+<td>Peso:</td>
+<td>4,73 onzas (134)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesorios">Accesorios</h3>
+<p>El servo viene con diferentes accesorios que se pueden utilizar para sujetarlo a otras piezas.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image83.png" alt="imagen"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image84.jpeg" alt="bg contain"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image85.jpeg" alt="imagen"></p>
+<h3 id="montaje">Montaje</h3>
+<p>Necesitaremos 3 <strong>jumpers</strong> para conectar el servo a la placa.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image86.jpeg" alt="bg contain"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p>Antes de ejecutar esto, debemos incluir la <strong>biblioteca servo</strong>. Esta librería incorpora funciones que nos permitirán manejar de forma más sencilla el comportamiento del motor.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-17-15-28-13.png" alt="imagen"></p>
+<p>Ejemplo 1</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Servo.h&gt; // Incluimos la librería Servo</span></span>
+
+<span class="hljs-built_in">Servo</span> miServo; <span class="hljs-comment">// Creamos un objeto Servo</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  miServo.<span class="hljs-built_in">attach</span>(<span class="hljs-number">9</span>); <span class="hljs-comment">// Conectamos el servo al pin 9</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  miServo.<span class="hljs-built_in">write</span>(<span class="hljs-number">90</span>); <span class="hljs-comment">// Movemos el servo a 90 grados</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">// Esperamos 1 segundo</span>
+  miServo.<span class="hljs-built_in">write</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// Movemos el servo a 0 grados</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">// Esperamos 1 segundo</span>
+}
+</div></code></pre>
+<p>Ejemplo 2
+Este código mueve el eje del motor <code>180 grados</code> en una dirección y luego en la contraria, indefinidamente.</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Servo.h&gt;</span></span>
+
+<span class="hljs-built_in">Servo</span> myservo;  <span class="hljs-comment">// create servo object to control a servo</span>
+<span class="hljs-comment">// twelve servo objects can be created on most boards</span>
+
+<span class="hljs-keyword">int</span> pos = <span class="hljs-number">0</span>;    <span class="hljs-comment">// variable to store the servo position</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  myservo.<span class="hljs-built_in">attach</span>(<span class="hljs-number">9</span>);  <span class="hljs-comment">// Le asignamos el PIN 9.</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">for</span> (pos = <span class="hljs-number">0</span>; pos &lt;= <span class="hljs-number">180</span>; pos += <span class="hljs-number">1</span>) { <span class="hljs-comment">// goes from 0 degrees to 180 degrees</span>
+    <span class="hljs-comment">// in steps of 1 degree</span>
+    myservo.<span class="hljs-built_in">write</span>(pos);              <span class="hljs-comment">// tell servo to go to position in variable 'pos'</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">15</span>);                       <span class="hljs-comment">// waits 15ms for the servo to reach the position</span>
+  }
+  <span class="hljs-keyword">for</span> (pos = <span class="hljs-number">180</span>; pos &gt;= <span class="hljs-number">0</span>; pos -= <span class="hljs-number">1</span>) { <span class="hljs-comment">// goes from 180 degrees to 0 degrees</span>
+    myservo.<span class="hljs-built_in">write</span>(pos);              <span class="hljs-comment">// tell servo to go to position in variable 'pos'</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">15</span>);                       <span class="hljs-comment">// waits 15ms for the servo to reach the position</span>
+  }
+}
+</div></code></pre>
+<h1 id="luces">Luces</h1>
+<p>Els LEDs, els LCD i els displays de set segments són components electrònics que es poden controlar amb una placa Arduino per a mostrar informació o per a indicar l'estat d'un sistema. Cada un d'aquests dispositius té diferents característiques i funcions, i es poden utilitzar en diferents aplicacions.</p>
+<ul>
+<li>Els <a href="LED.md">LEDs</a> són diodes emissors de llum que es poden utilitzar per a indicar l'estat d'un sistema, per a il·luminar objectes o per a crear efectes de llum.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-07-16-47-32.png" alt=""></p>
+<ul>
+<li>Els <a href="LCD.md">displays LCD</a> són pantalles de cristall líquid que es poden utilitzar per a mostrar text o gràfics. Aquests displays són útils en moltes aplicacions, com ara en sistemes de control de temperatura, temporitzadors, termostats, etc.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-07-16-48-49.png" alt=""></p>
+<ul>
+<li>Els <a href="7_segments_(1_d%C3%ADgito).md">displays de set segments</a> són displays que mostren dígits o lletres utilitzant set segments de LEDs per a crear la forma desitjada. Aquests displays són utilitzats en moltes aplicacions, com ara rellotges digitals, termòmetres, indicadors de nivell, etc.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/image-2.png" alt="Alt text"></p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>Cantidad</th>
+<th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1)</td>
+<td>x Placa Arduino UNO</td>
+</tr>
+<tr>
+<td>(1)</td>
+<td>1 LED rojo de 5 mm</td>
+</tr>
+<tr>
+<td>(1)</td>
+<td>x resistencia de 220 ohmios</td>
+</tr>
+<tr>
+<td>(1)</td>
+<td>x resistencia de 1 k ohm</td>
+</tr>
+<tr>
+<td>(1)</td>
+<td>x resistencia de ohmio 10 k</td>
+</tr>
+<tr>
+<td>(2)</td>
+<td>x M M cables (cables de puente de macho a macho)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>¿Qué es un LED?</strong></p>
+<p>En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.</p>
+<p>¿Cómo se conecta?**</p>
+<p>Directamente no se puede conectar un LED a una batería o fuente de tensión porque:</p>
+<ol>
+<li>El  LED tiene un polo positivo y un negativo y no se encenderá si se conectan mal.</li>
+<li>Un LED con una resistencia para limitar la corriente que circula a través de él.</li>
+</ol>
+<h3 id="ejemplo-de-led">Ejemplo de LED</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image53.jpeg" alt="imagen"></p>
+<h3 id="advertencia">Advertencia</h3>
+<p>Si no utilizas un resistencia con un LED, entonces se puede quemar casi de inmediato, como demasiada corriente fluirá a través, calienta y destruye al 'cruce' donde se produce la luz. Hay dos maneras de saber cual es el positivo del LED y que la negativa. En primer lugar, el positivo es más largo.</p>
+<p>En segundo lugar, donde la pata del negativo entra en el cuerpo del LED, hay un borde plano para el caso del LED.</p>
+<p>La patilla más larga es el <code>positivo</code>.</p>
+<h3 id="resistencias">Resistencias</h3>
+<p>Como su nombre lo indica, resistencias de resisten el flujo de electricidad. Cuanto mayor sea el valor de la resistencia, resiste más y la menos corriente fluirá a través de él. Vamos a usar esto para controlar Cuánta electricidad fluye a través del LED y por lo tanto, como claramente brilla.</p>
+<h3 id="resistencias-ejemplo">Resistencias: ejemplo</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image54.jpeg" alt="imagen"></p>
+<h3 id="resistencias-unidades">Resistencias: unidades</h3>
+<ul>
+<li>La <strong>unidad</strong> de resistencia se denomina Ohm, que se abrevia generalmente a Ω la letra griega Omega.</li>
+<li>1 Ohm es un valor bajo</li>
+<li>Valores de resistencias en kΩ (1.000 Ω) y MΩ (1.000.000 Ω). (kiloohmios y megaohmios).</li>
+</ul>
+<p>Resistencias: valores</p>
+<p>En esta lección, vamos a utilizar tres valores diferentes de resistencia:</p>
+<ul>
+<li><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">220 Ω</label></li>
+<li><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">1 kΩ</label></li>
+<li><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">10 kΩ</label></li>
+</ul>
+<h3 id="resistencias-diferencias">Resistencias: diferencias</h3>
+<p>Estas resistencias todas se ven iguales, excepto que tienen <strong>rayas de colores</strong> diferentes en ellos. Estas rayas decirte el valor de la resistencia.</p>
+<p>El <strong>código</strong> de color resistor tiene tres franjas de colores y luego una banda de oro en un extremo.</p>
+<h3 id="ejemplo-identificaci%C3%B3n-resistencia">Ejemplo identificación resistencia</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image55.jpeg" alt="imagen"></p>
+<h3 id="resistencias-orientaci%C3%B3n">Resistencias: orientación</h3>
+<p>A diferencia de los <strong>LED</strong>, resistencias no tienen un cable positivo y negativo. Se puede conectar de cualquier manera alrededor.</p>
+<h3 id="resistencias-medici%C3%B3n">Resistencias: medición</h3>
+<p>Si desconocemos el valor de una resistencia, también podemos medir su valor utilizando un <code>multímetro</code>.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-07-22-10-36.png" alt=""></p>
+<h3 id="esquema">Esquema</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image56.jpeg" alt="w:500"></p>
+<h3 id="simulaci%C3%B3n">Simulación</h3>
+<p>La <strong>placa de desarrollo<code>Arduino</code> UNO</strong> es una conveniente fuente de 5 voltios, que vamos a utilizar para alimentar el LED y la resistencia. No necesita hacer nada con su UNO, salvo que lo conecte un cable USB.</p>
+<h3 id="simulaci%C3%B3n-ejemplo">Simulación: ejemplo</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image57.jpeg" alt="bg contain"></p>
+<h3 id="resistencias-para-led">Resistencias para LED</h3>
+<ul>
+<li>Con la resistencia de <code>220 Ω</code>,  el LED debe ser bastante brillante.</li>
+<li>Si cambia  la resistencia <code>220 Ω</code> para la resistencia de <code>1 kΩ</code>, brillará menos.</li>
+<li>Por último, con el resistor de <code>10 kΩ</code> en su lugar, el LED será casi invisible.</li>
+</ul>
+<h3 id="montaje">Montaje</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-05-16-15-28.png" alt="imagen"></p>
+<h2 id="led-rgb"><a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a></h2>
+<p>En este proyecto aprendremos a controlar la iluminación de un <a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a> con <a href="https://danimrprofe.github.io/apuntes/arduino/">Arduino</a></p>
+<p>Los <a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a> permiten iluminar con cualquier color, a través de 3 leds que contiene en su interior: uno rojo, otro verde y otro azul.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/ledrgbtransicion.gif" alt="imagen"></p>
+<p>Tipos de <a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a></p>
+<ul>
+<li>Existen 2 versiones: Ánodo común y cátodo común.</li>
+<li>Ánodo común utiliza 5V en el pin común, mientras que el cátodo común se conecta  a tierra.</li>
+<li>Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 total)  para limitar la corriente.</li>
+</ul>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>cantidad</th>
+<th>componente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>placa <a href="https://danimrprofe.github.io/apuntes/arduino/">Arduino</a></td>
+</tr>
+<tr>
+<td>1</td>
+<td>protoboard</td>
+</tr>
+<tr>
+<td>4</td>
+<td>cables jumper</td>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>resistencias de 220 ohmios</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rgb">RGB</h3>
+<p>A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen un LED. Sin embargo, dentro del paquete del LED generalmente, hay realmente tres LEDs, uno rojo, uno verde y sí, uno azul. Controlando el <strong>brillo</strong> de cada uno de los LEDs individuales, podemos mezclar prácticamente cualquier color.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-13-27.png" alt="imagen"></p>
+<h3 id="pines">Pines</h3>
+<p>El <a href="https://danimrprofe.github.io/apuntes/arduino/LED_RGB/">LED RGB</a> tiene <strong>cuatro pines</strong>. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-14-02.png" alt="imagen"></p>
+<p>Cada pin separado de color verde o azul o de rojo se llama ánodo.</p>
+<h3 id="color">Color</h3>
+<p>Los colores los conseguiremos mezclando diferentes cantidades de cada color primario.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-20-15.png" alt="imagen"></p>
+<p>La mezcla creará la <code>sensación</code> del color elegido. Podemos controlar el brillo de cada una de las partes de rojas, verdes y azules del LED por separado, lo que es posible mezclar cualquier color.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-08-16-57-31.png" alt=""></p>
+<h3 id="ejemplos">Ejemplos</h3>
+<ul>
+<li>Si establece el brillo de todos los tres LEDs al ser el mismo, el color general de la luz  será blanco.</li>
+<li>Si apagamos el LED azul, para que sólo los LEDs rojo y verdes son el  mismo brillo, la luz aparecerá amarillo.</li>
+</ul>
+<h3 id="%C2%BFc%C3%B3mo-consigo-el-color-negro">¿Cómo consigo el color negro?</h3>
+<p>El color <strong>Negro</strong> no es tanto un color como una ausencia de luz. Por lo tanto, lo más cercano  que podemos llegar a negro con el LED es apagar los tres colores, poniendo sus valores a 0.</p>
+<h3 id="teor%C3%ADa-pwm">Teoría (PWM)</h3>
+<ul>
+<li><a href="https://danimrprofe.github.io/apuntes/arduino/">Arduino</a> tiene una función <strong>analogWrite</strong> que se puede utilizar con pines marcados con un <strong>~</strong> a la salida de una cantidad variable de energía los LEDs apropiados.</li>
+<li>La forma de dar más o menos potencia a cada color es utilizando una señal del tipo <code>PWM</code>.</li>
+<li>La <strong>modulación de ancho de pulso (PWM)</strong> es una técnica para el control de potencia. La utilizamos aquí para controlar el brillo de cada uno de los LEDs.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image62.jpeg" alt="imagen"></p>
+<p>Ciclo de trabajo</p>
+<p>Aproximadamente cada 1/500 de segundo, la salida PWM producirá un pulso. La  duración de este pulso es controlada por la función 'analogWrite'. Así:</p>
+<ul>
+<li><code>analogWrite(0)</code> no producirá ningún pulso.</li>
+<li><code>analogWrite(255)</code> producirá un  pulso que dura todo el camino hasta el pulso siguiente vencimiento, para que la  salida es en realidad todo el tiempo.</li>
+</ul>
+<p>Si especificamos un valor en el <strong>analogWrite</strong> que está en algún lugar entre 0 y 255, se producir un pulso.</p>
+<ul>
+<li>Si el pulso de salida es alto para el 5% del tiempo, entonces lo  que nosotros estamos manejando sólo recibirá el 5% de potencia.</li>
+<li>Si la salida es 5V para el 90% del tiempo, la carga recibirá el 90% .</li>
+</ul>
+<p>Los LED se encenderán y apagarán en esos periodos, pero nosotros percibiremos que el brillo del LED cambia.</p>
+<h3 id="esquema">Esquema</h3>
+<p>El esquema eléctrico que seguiremos es el siguente:</p>
+<ul>
+<li>Cada patilla de un color debe conectarse a una salida digital etiquetada como <code>PWM</code></li>
+<li>La patilla común, irá conectada a un pin de tierra, etiquetado como <code>GND</code></li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image63.jpeg" alt="bg contain"></p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<ol>
+<li>El cátodo o conexión común es el segundo pin, que también es el <strong>más largo</strong> de las cuatro patas y se conectarán a la <strong>tierra</strong> (GND).</li>
+<li>Cada LED requiere su propia <strong>resistencia de 220 Ω</strong> para prevenir demasiada corriente que fluye a través de él.</li>
+<li>Los 3 pines de color (uno rojo, uno verde y uno azul) están conectados a los pines de salida UNO con estas resistencias.</li>
+</ol>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-18-36.png" alt="imagen"></p>
+<p>Una vez conectado, debería quedar de la siguiente forma:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-24-29.png" alt="imagen"></p>
+<h3 id="c%C3%B3digo-programa-1">Código programa 1</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Define pines</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> BLUE 3</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> GREEN 5</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RED 6</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(RED, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(GREEN, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(BLUE, <span class="hljs-literal">OUTPUT</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">analogWrite</span>(RED, <span class="hljs-number">0</span>);
+  <span class="hljs-built_in">analogWrite</span>(GREEN, <span class="hljs-number">255</span>);
+  <span class="hljs-built_in">analogWrite</span>(BLUE, <span class="hljs-number">0</span>);
+}
+</div></code></pre>
+<p>Una vez probado, puedes intentar estos ejercicios:</p>
+<ol>
+<li>Combinar varios valores para conseguir colores diferentes</li>
+<li>Crear un semáforo utilizando delays y cambiando los valores para producir las luces roja, verde y amarilla.</li>
+</ol>
+<h3 id="c%C3%B3digo-programa-2">Código programa 2</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// Define pines</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> BLUE 3</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> GREEN 5</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RED 6</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(RED, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(GREEN, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(BLUE, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">digitalWrite</span>(RED, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(GREEN, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(BLUE, <span class="hljs-literal">LOW</span>);
+}
+
+<span class="hljs-comment">// define variables</span>
+<span class="hljs-keyword">int</span> redValue;
+<span class="hljs-keyword">int</span> greenValue;
+<span class="hljs-keyword">int</span> blueValue;
+
+<span class="hljs-comment">// main loop</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> delayTime 10 <span class="hljs-comment">// fading time between colors</span></span>
+
+  redValue = <span class="hljs-number">255</span>; <span class="hljs-comment">// choose a value between 1 and 255 to change the color.</span>
+  greenValue = <span class="hljs-number">0</span>;
+  blueValue = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">// this is unnecessary as we've either turned on RED in SETUP</span>
+  <span class="hljs-comment">// or in the previous loop ... regardless, this turns RED off</span>
+  <span class="hljs-comment">// analogWrite(RED, 0);</span>
+  <span class="hljs-comment">// delay(1000);</span>
+
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">255</span>; i += <span class="hljs-number">1</span>) <span class="hljs-comment">// fades out red bring green full when i=255</span>
+  {
+  redValue -= <span class="hljs-number">1</span>;
+  greenValue += <span class="hljs-number">1</span>;
+  <span class="hljs-comment">// The following was reversed, counting in the wrong directions</span>
+  <span class="hljs-comment">// analogWrite(RED, 255 - redValue);</span>
+  <span class="hljs-comment">// analogWrite(GREEN, 255 - greenValue);</span>
+  <span class="hljs-built_in">analogWrite</span>(RED, redValue);
+  <span class="hljs-built_in">analogWrite</span>(GREEN, greenValue);
+  <span class="hljs-built_in">delay</span>(delayTime);
+}
+
+redValue = <span class="hljs-number">0</span>;
+greenValue = <span class="hljs-number">255</span>;
+blueValue = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">255</span>; i += <span class="hljs-number">1</span>) <span class="hljs-comment">// fades out green bring blue full when i=255</span>
+{
+greenValue -= <span class="hljs-number">1</span>;
+blueValue += <span class="hljs-number">1</span>;
+<span class="hljs-comment">// The following was reversed, counting in the wrong directions</span>
+<span class="hljs-comment">// analogWrite(GREEN, 255 - greenValue);</span>
+<span class="hljs-comment">// analogWrite(BLUE, 255 - blueValue);</span>
+<span class="hljs-built_in">analogWrite</span>(GREEN, greenValue);
+<span class="hljs-built_in">analogWrite</span>(BLUE, blueValue);
+<span class="hljs-built_in">delay</span>(delayTime);
+}
+
+redValue = <span class="hljs-number">0</span>;
+greenValue = <span class="hljs-number">0</span>;
+blueValue = <span class="hljs-number">255</span>;
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">255</span>; i += <span class="hljs-number">1</span>) <span class="hljs-comment">// fades out blue bring red full when i=255</span>
+{
+<span class="hljs-comment">// The following code has been rearranged to match the other two similar sections</span>
+blueValue -= <span class="hljs-number">1</span>;
+redValue += <span class="hljs-number">1</span>;
+<span class="hljs-comment">// The following was reversed, counting in the wrong directions</span>
+<span class="hljs-comment">// analogWrite(BLUE, 255 - blueValue);</span>
+<span class="hljs-comment">// analogWrite(RED, 255 - redValue);1</span>
+<span class="hljs-built_in">analogWrite</span>(BLUE, blueValue);
+<span class="hljs-built_in">analogWrite</span>(RED, redValue);
+<span class="hljs-built_in">delay</span>(delayTime);
+}
+}
+</div></code></pre>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image65.jpeg" alt="imagen"></p>
+<p>Primero especificamos a que pines de <code>Arduino</code> he conectado cada LED.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Define Pins</span>
+<span class="hljs-comment">// Se definen los pines</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> BLUE 3    <span class="hljs-comment">// Se asigna el nombre 'BLUE' al pin 3</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> GREEN 5   <span class="hljs-comment">// Se asigna el nombre 'GREEN' al pin 5</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> RED 6     <span class="hljs-comment">// Se asigna el nombre 'RED' al pin 6</span></span>
+</div></code></pre>
+<p>En el setup, declaramos estos pines como salidas (OUTPUT) para poder enviar corriente hacia los LED.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(RED, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(GREEN, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(BLUE,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">digitalWrite</span>(RED, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">digitalWrite</span>(GREEN, <span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(BLUE, <span class="hljs-literal">LOW</span>);
+}
+</div></code></pre>
+<p>Antes de echar un vistazo a la <strong>función loop</strong>, veamos la última función en el proyecto.</p>
+<p>Las variables de definición:</p>
+<pre class="hljs"><code><div>redValue = <span class="hljs-number">255</span>; <span class="hljs-comment">// choose a value between 1 and 255 to change the color.</span>
+greenValue = <span class="hljs-number">0</span>;
+blueValue = <span class="hljs-number">0</span>;
+</div></code></pre>
+<p>Esta función tiene tres argumentos, uno para el brillo de los LEDs rojos, verdes y azules. En cada caso de que el número será en el rango 0 a 255, donde 0 significa apagado y 255 significa brillo máximo. La función entonces llama 'analogWrite' para ajustar el brillo de cada LED.</p>
+<p>Si nos fijamos en la <strong>función loop</strong> se puede ver que ajuste la cantidad de luz roja, verde y azul que queremos mostrar y luego una pausa por un segundo antes de pasar al siguiente color.</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> delayTime 10 <span class="hljs-comment">// fading time between colors</span></span>
+Delay(delayTime);
+</div></code></pre>
+<h2 id="tira-de-leds">Tira de LEDs</h2>
+<p>Los LEDs se están volviendo cada vez más populares como un medio para iluminar un espacio. Uno de los tipos de LEDs más nuevos y populares es el <code>WS2812B</code>. Estos LEDs ofrecen una serie de ventajas sobre los LEDs tradicionales, como la capacidad de cambiar de color y la capacidad de crear una gran variedad de efectos de iluminación.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/ledanimado.gif" alt=""></p>
+<h3 id="ws2812b">WS2812B</h3>
+<p>El <strong>WS2812B</strong> es un tipo de LED direccionable. Esto significa que cada LED individual se puede controlar de forma <strong>independiente</strong>. Esto le da la capacidad de crear algunos efectos de iluminación realmente geniales.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-15-49-51.png" alt=""></p>
+<h3 id="alimentaci%C3%B3n">Alimentación</h3>
+<p>Las tiras <strong>WS2812B</strong> pueden alimentarse a través de una batería o de una fuente de alimentación externa.</p>
+<ul>
+<li>El voltaje necesario para que funcione correctamente la tira de led WS2812B es de 5V.</li>
+<li>Un led WS2812B necesita un mínimo de 60mA para funcionar.</li>
+</ul>
+<h3 id="la-librer%C3%ADa-fastled">La librería FASTLED</h3>
+<p><strong>FastLED</strong> es una librería de código abierto para programar tira de LEDs RGB direccionables y controladores. Está diseñada para simplificar el proceso de crear efectos de iluminación complejos y se puede usar con una amplia variedad de hardware.</p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-12-16-11-20.png" alt="imagen"></p>
+<h3 id="cabecera">Cabecera</h3>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;FastLED.h&gt; // header file</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NUM_LEDS 60 <span class="hljs-comment">// number of led present in your strip</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DATA_PIN 6 <span class="hljs-comment">// digital pin of your``Arduino``</span></span>
+
+CRGB leds[NUM_LEDS];
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  FastLED.addLeds&lt;WS2812B, LED_PIN, GRB&gt;(leds, NUM_LEDS);
+  FastLED.setBrightness(<span class="hljs-number">50</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  leds[<span class="hljs-number">0</span>] = CRGB::Green; <span class="hljs-comment">//glow 1st led as green</span>
+  leds[<span class="hljs-number">1</span>] = CRGB::Blue; <span class="hljs-comment">//glow 2nd led as blue</span>
+  FastLED.show(); <span class="hljs-comment">// apply the function on led strip</span>
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">30</span>);
+}
+</div></code></pre>
+<h3 id="parpadeo-blink">Parpadeo (blink)</h3>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  leds[<span class="hljs-number">0</span>] = CRGB::Blue;
+  FastLED.show();
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">200</span>);
+  leds[<span class="hljs-number">0</span>] = CRGB::Black;
+  FastLED.show();
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">200</span>);
+}
+</div></code></pre>
+<p>Para apagar la luz:</p>
+<pre class="hljs"><code><div>leds[<span class="hljs-number">0</span>] = CRGB::Black;
+</div></code></pre>
+<p>Iluminar todos los LED de golpe</p>
+<p>Para ello podemos utilizar la función <code>fill_solid</code>.</p>
+<pre class="hljs"><code><div>fill_solid(leds, NUM_LEDS, CRGB:Red);
+</div></code></pre>
+<h3 id="arcoiris">Arcoiris</h3>
+<pre class="hljs"><code><div>fill_rainbow(leds, NUM_LEDS, <span class="hljs-number">0</span>,<span class="hljs-number">255</span> / NUM_LEDS);
+</div></code></pre>
+<h3 id="led-chaser">LED Chaser</h3>
+<pre class="hljs"><code><div><span class="hljs-comment">// chase forward</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot = <span class="hljs-number">0</span>;dot &lt; NUM_LEDS; dot++) {
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+}
+
+<span class="hljs-comment">// chase backward</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot=NUM_LEDS ; dot &gt;=<span class="hljs-number">0</span> ; dot--) {
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+}
+
+<span class="hljs-comment">// chase both</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot=(NUM_LEDS<span class="hljs-number">-1</span>) ; dot &gt;=<span class="hljs-number">0</span> ; dot--) {
+    leds[dot] = CRGB::Green;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot = <span class="hljs-number">0</span>;dot &lt; NUM_LEDS; dot++) {
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+}
+</div></code></pre>
+<h3 id="serial-glow">Serial glow</h3>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot=(NUM_LEDS<span class="hljs-number">-1</span>) ; dot &gt;=<span class="hljs-number">0</span> ; dot--) {
+    leds[dot] = CRGB::HotPink;
+    FastLED.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> dot = <span class="hljs-number">0</span>;dot &lt; NUM_LEDS; dot++) {
+    leds[dot] = CRGB::Blue;
+    FastLED.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">300</span>);
+  }
+}
+
+</div></code></pre>
+<h2 id="7-segments-1-d%C3%ADgito">7 segments (1 dígito)</h2>
+<p>Un <strong>seven segments</strong> es un dispositivo de visualización formado por siete diodos LED dispuestos en forma de número 8.</p>
+<p>Estas lámparas se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-05-16-21-35.png" alt="imagen"></p>
+<ul>
+<li></li>
+</ul>
+<p>Estas son las combinaciones que podemos hacer para mostrar los distintos números:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-12-18-32-50.png" alt="imagen"></p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>cantidad</th>
+<th>componente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>placa<code>Arduino</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td>protoboard</td>
+</tr>
+<tr>
+<td>1</td>
+<td>circuito integrado 74HC595</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Pantalla 7 segments</td>
+</tr>
+<tr>
+<td>8</td>
+<td>resistencias de 220 ohm</td>
+</tr>
+<tr>
+<td>1</td>
+<td>M-M cables (cables de puente de macho a macho)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="display-de-siete-segmentos">Display de siete segmentos</h3>
+<p>Abajo está el diagrama de pines de siete segmentos</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image130.jpeg" alt="imagen"></p>
+<p>0-9 diez dígitos se corresponden con cada segmento es los siguientes (en la tabla siguiente se aplica común cátodo dispositivo de exhibición de segmento siete, si se utiliza un ánodo común, de la mesa debe ser reemplazado cada 1 0 0 si todos sustituidos por 1):</p>
+<table>
+<thead>
+<tr>
+<th>dp</th>
+<th>a	b	c	d	e	f	g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0	1	1	1	1	1	1	0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0	0	1	1	0	0	0	0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0	1	1	0	1	1	0	1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0	1	1	1	1	0	0	1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0	0	1	1	0	0	1	1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0	1	0	1	1	0	1	1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0	1	0	1	1	1	1	1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0	1	1	1	0	0	0	0</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0	1	1	1	1	1	1	1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0	1	1	1	1	0	1	1</td>
+</tr>
+</tbody>
+</table>
+<p>vamos a utilizar el registro de desplazamiento <strong>74HC595</strong> para controlar la visualización de un seven segments.</p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image131.jpeg" alt="imagen"></p>
+<h3 id="esquema">Esquema</h3>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image132.jpeg" alt="imagen"></p>
+<p>La siguiente tabla muestra la tabla de correspondencias pantalla de siete segmentos 74HC595 pin</p>
+<h3 id="paso-uno-conexi%C3%B3n-74hc595">Paso uno: conexión 74HC595</h3>
+<p>En primer lugar, el cableado está conectado a la alimentación y tierra:</p>
+<ul>
+<li>VCC (pin 16) y Señor (pin 10) conectado a 5V</li>
+<li>GND (pin 8) y OE (pin 13) a tierra</li>
+</ul>
+<p>Pin conexión DS, ST_CP y SH_CP:</p>
+<ul>
+<li>DS (pin 14) conectado al pin de tablero UNO R3 2 (la cifra por debajo de la línea amarilla)</li>
+<li>ST_CP (pin 12, perno de pestillo) conectado al pin de tablero UNO R3 3 (línea azul de la figura abajo)</li>
+<li>SH_CP (pin 11, pin de reloj) conectado al pin de tablero UNO R3 4 (figura debajo de la línea blanca)</li>
+</ul>
+<h3 id="paso-2-conectar-el-display-de-siete-segmentos">Paso 2: conectar el display de siete segmentos</h3>
+<p>El display de siete segmentos 3, 8 pin a UNO R3 Junta GND (este ejemplo utiliza el cátodo común, si se utiliza el ánodo común, por favor conecte el 3, 8 pines para tablero UNO R3 + 5V)</p>
+<p>Según la tabla anterior, conecte el 74HC595 Q0 ~ Q7 a siete segmentos pantalla pin correspondiente (A ~ G y DP) y luego cada pie en una resistencia de 220 ohmios en serie.</p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image133.jpeg" alt="imagen"></p>
+<pre class="hljs"><code><div>
+<span class="hljs-keyword">int</span> tDelay = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">int</span> latchPin = <span class="hljs-number">11</span>;      <span class="hljs-comment">// (11) ST_CP [RCK] on 74HC595</span>
+<span class="hljs-keyword">int</span> clockPin = <span class="hljs-number">9</span>;      <span class="hljs-comment">// (9) SH_CP [SCK] on 74HC595</span>
+<span class="hljs-keyword">int</span> dataPin = <span class="hljs-number">12</span>;     <span class="hljs-comment">// (12) DS [S1] on 74HC595</span>
+
+<span class="hljs-keyword">byte</span> leds = <span class="hljs-number">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateShiftRegister</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-built_in">digitalWrite</span>(latchPin, <span class="hljs-literal">LOW</span>);
+   <span class="hljs-built_in">shiftOut</span>(dataPin, clockPin, LSBFIRST, leds);
+   <span class="hljs-built_in">digitalWrite</span>(latchPin, <span class="hljs-literal">HIGH</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(latchPin, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(dataPin, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(clockPin, <span class="hljs-literal">OUTPUT</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  leds = <span class="hljs-number">0</span>;
+  updateShiftRegister();
+  <span class="hljs-built_in">delay</span>(tDelay);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++)
+  {
+    <span class="hljs-built_in">bitSet</span>(leds, i);
+    updateShiftRegister();
+    <span class="hljs-built_in">delay</span>(tDelay);
+  }
+}
+</div></code></pre>
+<h2 id="7-segments-4-d%C3%ADgitos">7 segments (4 dígitos)</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-12-18-28-22.png" alt="imagen"></p>
+<h3 id="resumen">Resumen</h3>
+<p>En esta lección, aprendremos a utilizar una pantalla de 7 segmentos de 4 dígitos. Tenemos que tener en cuenta que:</p>
+<ul>
+<li>Si la pantalla es <strong>ánodo común</strong>, el pin común del ánodo se conecta a la fuente de energía</li>
+<li>Si es de <strong>cátodo común</strong>, el pin común del cátodo se conecta a la tierra.</li>
+</ul>
+<p>Cuando se utilizan 4 dígitos de 7 segmentos, el ánodo común o pin de cátodo común se utiliza para controlar qué dígito aparece. A pesar de que hay sólo un dígito de trabajo, el principio de persistencia de la visión le permite ver todos los números de muestra ya que cada uno es tan rápida que apenas notará los intervalos de la velocidad de exploración.</p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<table>
+<thead>
+<tr>
+<th>Cantidad</th>
+<th>Componente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Elegoo Uno R3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>protoboard</td>
+</tr>
+<tr>
+<td>1</td>
+<td>74HC595 IC</td>
+</tr>
+<tr>
+<td>1</td>
+<td>display de 4 dígitos de 7 segmentos</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Resistencias de 220 ohm</td>
+</tr>
+<tr>
+<td>1</td>
+<td>M-M cables (cables de puente de macho a macho)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="muestra-de-4-d%C3%ADgitos-de-7-segmentos">Muestra de 4 dígitos de 7 segmentos</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image136.jpeg" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p>Cada dígito tiene 7 segmentos (A a G) y un punto decimal (D1 a D4).</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image137.jpeg" alt="imagen"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image138.jpeg" alt="imagen"></p>
+<h2 id="pantalla-lcd">Pantalla LCD</h2>
+<p>La pantalla tiene una retroiluminación de LED y puede mostrar <code>dos filas con hasta 16 caracteres</code> en cada fila.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-24-10-17-19.png" alt=""></p>
+<h3 id="circuito-integrado-lcd1602">Circuito integrado LCD1602</h3>
+<p>La pantalla está incrustada en un <code>circuito integrado </code>que la controla, llamado <code>LCD1602</code>.</p>
+<h3 id="pines">Pines</h3>
+<ul>
+<li><code>VSS</code> Un pin que se conecta a tierra</li>
+<li><code>VDD</code> Un pin que se conecta a un + 5V fuente de alimentación</li>
+<li><code>VO</code>  ajusta el contraste.</li>
+<li><code>RS</code> Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.</li>
+<li><code>R/W</code>: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.</li>
+<li><code>D0-D7</code> son los pines para escribir y leer datos.</li>
+<li><code>A y K</code> controlan de la retroiluminación LED de los pernos</li>
+</ul>
+<h3 id="esquema-de-conexi%C3%B3n">Esquema de conexión</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image110.jpeg" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image111.jpeg" alt="imagen"></p>
+<p>La pantalla LCD necesita:</p>
+<ul>
+<li>6 pines digitales de datos de<code>Arduino</code></li>
+<li>Coneciones de 5V y GND.</li>
+</ul>
+<h3 id="potenci%C3%B3metro">Potenciómetro</h3>
+<p>El <strong>potenciómetro</strong> se utiliza para controlar el <code>contraste</code> de la pantalla. En ocasiones se ajusta con un pequeño destornillador. El potenciómetro utilizado será de <code>10 KOhm</code></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-28-12-59-15.png" alt=""></p>
+<h3 id="librer%C3%ADa">Librería</h3>
+<p>Antes de ejecutar esto, asegúrese de que ha instalado la <strong>librería</strong> &lt; LiquidCrystal &gt; o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.</p>
+<p>Lo primero que nota en el dibujo es la línea:</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt; LiquidCrystal.h &gt;</span></span>
+</div></code></pre>
+<p>Esto dice<code>Arduino</code> que queremos utilizar la <strong>librería</strong> de cristal líquido.</p>
+<p>A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de<code>Arduino</code> son para conectarse a que pines de la pantalla.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-built_in">LiquidCrystal</span> <span class="hljs-title">lcd</span> <span class="hljs-params">(<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>)</span></span>;
+</div></code></pre>
+<p>Después de subir este código, asegúrese de que se enciende la retroiluminación y ajustar el potenciómetro de toda la manera alrededor hasta que aparezca el mensaje de texto</p>
+<p>En la función de <strong>setup</strong>, tenemos dos comandos:</p>
+<pre class="hljs"><code><div>LCD.Begin (<span class="hljs-number">16</span>, <span class="hljs-number">2</span>);
+LCD.Print (<span class="hljs-string">"Hola, mundo!"</span>);
+</div></code></pre>
+<p>La primera cuenta la <strong>librería</strong> de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.</p>
+<p>En la función de 'loop', aso tienen dos comandos:</p>
+<pre class="hljs"><code><div>lcd.<span class="hljs-built_in">setCursor</span> (<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+LCD.Print(Millis()/<span class="hljs-number">1000</span>);
+</div></code></pre>
+<p>El primero establece la posición del cursor (donde aparecerá el siguiente texto) columna 0 y fila 1. Los números de columna y fila comienzan en 0 en lugar de 1.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image112.png" alt="imagen"></p>
+<p>La segunda línea muestra el número de milisegundos desde que se restableció el<code>Arduino</code>.</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// include the library code:</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;LiquidCrystal.h&gt;</span></span>
+
+<span class="hljs-comment">// initialize the library with the numbers of the interface pins</span>
+<span class="hljs-function"><span class="hljs-built_in">LiquidCrystal</span> <span class="hljs-title">lcd</span><span class="hljs-params">(<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// set up the LCD's number of columns and rows:</span>
+  lcd.<span class="hljs-built_in">begin</span>(<span class="hljs-number">16</span>, <span class="hljs-number">2</span>);
+  <span class="hljs-comment">// Print a message to the LCD.</span>
+  lcd.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello, World!"</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// set the cursor to column 0, line 1</span>
+  <span class="hljs-comment">// (note: line 1 is the second row, since counting begins with 0):</span>
+  lcd.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+  <span class="hljs-comment">// print the number of seconds since reset:</span>
+  lcd.<span class="hljs-built_in">print</span>(<span class="hljs-built_in">millis</span>() / <span class="hljs-number">1000</span>);
+}
+</div></code></pre>
+<h2 id="led-con-74hc595">LED con 74HC595</h2>
+<p>Veremos cómo utilizar ocho LEDs rojos grandes con un Arduino UNO sin necesidad de sacrificar las 8 salidas disponibles.</p>
+<p>Aunque podrías conectar ocho LEDs con una resistencia a pines del Arduino UNO, rápidamente te quedarías sin pines en tu placa si ya tienes varios dispositivos conectados. Si no tienes muchas cosas conectadas al UNO, está bien hacerlo, pero a menudo queremos incorporar botones, sensores, servos, etc. y antes de darte cuenta, te quedas sin pines disponibles.</p>
+<p>Por lo tanto, en lugar de hacer eso, usarás un chip llamado <code>74HC595</code>, que es un convertidor serial a paralelo. Este chip cuenta con ocho salidas (perfecto) y tres entradas que se utilizan para cargar datos poco a poco.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image116.jpeg" alt="imagen"></p>
+<p>Este chip hace un poco más lento para los LEDs (sólo se puede cambiar el LED unos 500.000 veces por segundo en lugar de 8.000.000 por segundo) pero todavía es muy rápido, forma más rápido que los seres humanos puede detectar, asíque vale!</p>
+<p>Componente necesario:</p>
+<blockquote>
+<ul>
+<li>(1) x Elegoo Uno R3</li>
+<li>Protoboard</li>
+<li>leds</li>
+<li>resistencias de 220 ohmios</li>
+<li>IC x 74hc595</li>
+<li>M M cables (cables de puente de macho a macho)</li>
+</ul>
+</blockquote>
+<h3 id="74hc595-registro-de-desplazamiento">74HC595 Registro de desplazamiento</h3>
+<p>El registro de desplazamiento es un tipo de chip que tiene lo que puede considerarse como posiciones de memoria ocho, cada uno de ellos puede ser un 1 o un 0. Para definir cada uno de estos valores encendido o apagado, alimentamos en los datos mediante los pines del chip 'Datos' y 'El reloj'.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image117.jpeg" alt="imagen"></p>
+<p>El pin de reloj debe recibir ocho pulsos. En cada pulso, si el pin de datos es alto, entonces un 1 obtiene empujado en el registro de desplazamiento; de lo contrario, un 0. Cuando se han recibido los ocho impulsos, permitiendo el pin 'Pestillo' copia esos ocho valores en el registro de cierre. Esto es necesario; de lo contrario, parpadean mal los LEDs como se carga los datos en el registro de desplazamiento.</p>
+<p>El chip también tiene un pin de salida activado (OE), que se utiliza para activar o desactivar las salidas a la vez. Podría conectar esto a un pin PWM capaz UNO y usar 'analogWrite' para controlar el brillo de los LEDs. Este pin es baja activa, por lo que nos ate a la tierra GND.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image118.jpeg" alt="imagen"></p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<h3 id="esquema">Esquema</h3>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image119.jpeg" alt="imagen"></p>
+<p>Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.</p>
+<p>Es probablemente más fácil poner el <strong>chip 74HC595</strong> en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa.</p>
+<p>Pin 1 del chip es a la izquierda de esta muesca.
+Digital 12 del UNO va al pin #14 del registro de desplazamiento
+Digital 11 del UNO va al pin #12 del registro de desplazamiento</p>
+<p>9 digital a partir de la UNO va al pin #11 del registro de desplazamiento</p>
+<p>Todos sino una de las salidas de la IC está en el lado izquierdo del chip. Por lo tanto, para facilitar la conexión, es donde están los LEDs, también.</p>
+<p>Después de la viruta, poner las resistencias en su lugar. Usted necesita tener cuidado de que ninguno de los cables de las resistencias tocan. Usted debe comprobar esto otra vez antes de conectar la energía a la ONU. Si le resulta difícil organizar las resistencias sin sus conductores tocando, entonces ayuda a acortar los cables que están mintiendo más cercanos a la superficie de la placa.</p>
+<p>A continuación, coloque los LEDs en la protoboard. Cuanto más positivo lleva LED debe ser hacia el chip, de cualquier lado de la placa están en.</p>
+<p>Conecte los conductores del puente como se muestra arriba. No olvide que va desde el pin 8 del IC a la columna GND de la placa.</p>
+<p>Carga el bosquejo aparece un poco más adelante y probar. Cada LED debe encenderse alternadamente hasta que todos los LEDs están encendidos y luego se apagara y el ciclo se repite.</p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p>Después de cableado, por favor, abra el programa en el código de carpeta lección 24 8 LED con 74HC595 y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para más detalles sobre el programa cargar si hay algún error.</p>
+<p>Lo primero que hacemos es definir los tres pernos que vamos a utilizar. Estos son los UNO salidas digitales que se conectarán a los pines de datos, reloj y cierre de los 74HC595.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> latchPin = <span class="hljs-number">11</span>;
+clockPin <span class="hljs-keyword">int</span> = <span class="hljs-number">9</span>;
+<span class="hljs-keyword">int</span> dataPin = <span class="hljs-number">12</span>;
+</div></code></pre>
+<p>A continuación, se define una variable llamada 'leds'. Esto se utiliza para sostener el patrón de que LED actualmente es activado o desactivados. Datos de tipo 'byte' representan números de ocho bits. Cada bit puede estar encendido o apagado, esto es perfecto para realizar un seguimiento de cuáles de nuestros ocho LEDs son on u off.</p>
+<p>leds de byte = 0;</p>
+<p>La función de <strong>setup</strong> sólo establece los tres pernos que estamos utilizando para ser de salidas digitales.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span> (latchPin, salida);
+  <span class="hljs-built_in">pinMode</span> (dataPin, salida);
+  <span class="hljs-built_in">pinMode</span> (clockPin, salida);
+}
+</div></code></pre>
+<p>La <strong>función loop</strong> inicialmente apaga todos los LEDs, al darle a los variable 'leds' el valor 0. A continuación, llama 'updateShiftRegister' que enviará el patrón de 'leds' para el registro de desplazamiento para que el LED se apague. Se tratará con 'updateShiftRegister' funcionamiento más adelante.</p>
+<p>La función loop hace una pausa de medio segundo y entonces empieza a contar de 0 a 7 usando el bucle 'for' y la variable 'i'. Cada vez utiliza la función de<code>Arduino</code> 'verdadera' para establecer el bit que controla ese LED en la variable 'leds'. A continuación también llama 'updateShiftRegister' para que los leds actualizar para reflejar lo que está en la variable 'leds'.</p>
+<p>Hay entonces medio segundo de retraso antes de 'i' se incrementa y se ilumina el LED próximo.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  LED = <span class="hljs-number">0</span>;
+  updateShiftRegister();
+  Delay(<span class="hljs-number">500</span>);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i ++)
+    {
+      <span class="hljs-built_in">bitSet</span>(leds, i);
+      updateShiftRegister();
+      Delay(<span class="hljs-number">500</span>);
+    }
+}
+</div></code></pre>
+<p>La función 'updateShiftRegister', en primer lugar se establece la latchPin baja, entonces llama al UNO función 'shiftOut' antes de poner el 'latchPin' alta otra vez. Esto toma cuatro parámetros, los dos primeros son los pines para datos y el reloj respectivamente.</p>
+<p>El tercer parámetro especifica que final de los datos que desea iniciar en el. Vamos a empezar con la derecha más poco, que se conoce como el 'Bit menos significativo' (LSB).</p>
+<p>El último parámetro es los datos reales para ser cambiado de puesto en el registro de desplazamiento, que en este caso es 'leds'.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateShiftRegister</span><span class="hljs-params">()</span>
+</span>{
+<span class="hljs-built_in">digitalWrite</span> (latchPin, bajo);
+<span class="hljs-built_in">shiftOut</span> (dataPin, clockPin, LSBFIRST, leds);
+<span class="hljs-built_in">digitalWrite</span> (latchPin, <span class="hljs-literal">HIGH</span>);
+}
+</div></code></pre>
+<p>Si usted deseó dar vuelta a uno de los LED apagado en lugar, llamaría una función similar de<code>Arduino</code> (bitClear) con la variable de 'leds'. Esto ajustará ese poco de 'leds' para ser 0 y entonces sólo necesitará seguir con una llamada a 'updateShiftRegister' para actualizar la actual LED.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image120.jpeg" alt="imagen"></p>
+<h1 id="interruptor-de-bola">Interruptor de bola</h1>
+<p>Los sensores de inclinación (interruptor de bola de inclinación) permiten detectar orientación o inclinación. Son pequeños, económicos, de bajo consumo y fáciles de usar. Si se usan correctamente, no se desgastarán. Su simplicidad los hace populares para los juguetes, los adminículos y los aparatos. A veces, se conocen como &quot;interruptores de mercurio&quot;, &quot;interruptores de inclinación&quot; o &quot;sensores de bola rodante&quot; por razones obvias.</p>
+<h2 id="componentes-requeridos">Componentes Requeridos</h2>
+<pre class="hljs"><code><div>(1) x Placa``Arduino`` UNO
+(1) x interruptor de inclinación bola
+(2) x F-M wires (cables de hembra a macho DuPont)
+</div></code></pre>
+<h2 id="funcionamiento">Funcionamiento</h2>
+<p>Se componen generalmente de una cavidad de una cierta clase (cilíndrica es popular, aunque no siempre) con una masa libre conductora adentro, tal como una gota del mercurio o bola rodante. Un extremo de la cavidad tiene dos elementos conductores (polos). Cuando el sensor está orientado de tal manera que dicho extremo está hacia abajo, la masa rueda sobre los polos y los cortocircuitos, actuando como un interruptor de tiro.</p>
+<p>Aunque no es tan preciso ni flexible como un acelerómetro completo, los interruptores de inclinación pueden detectar movimiento u orientación. Otro beneficio es que los grandes pueden cambiar de energía por su cuenta. Los acelerómetros, por otro lado, producen voltaje digital o analógico que luego deben analizarse utilizando circuitos extra.</p>
+<h2 id="conexi%C3%B3n">Conexión</h2>
+<h2 id="esquema">Esquema</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image80.jpeg" alt="imagen"></p>
+<h2 id="diagrama-de-conexiones">Diagrama de conexiones</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image81.jpeg" alt="imagen"></p>
+<h2 id="c%C3%B3digo">Código</h2>
+<p>Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 8 interruptor de la bola y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image82.jpeg" alt="imagen"></p>
+<h1 id="boton">Boton</h1>
+<p>En esta lección, aprenderemos a utilizar los botones con entradas digitales para  encender y apagar un LED.</p>
+<ul>
+<li>Al presionar el primer botón se encenderá el LED</li>
+<li>Al pulsar el otro botón se apagará el LED.</li>
+</ul>
+<h2 id="componentes">Componentes</h2>
+<p>Antes de comenzar necesitaremos los siguientes componentes:</p>
+<table>
+<thead>
+<tr>
+<th>cantidad</th>
+<th>componente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Placa<code>Arduino</code> UNO</td>
+</tr>
+<tr>
+<td>1</td>
+<td>protoboard</td>
+</tr>
+<tr>
+<td>1</td>
+<td>LED rojo</td>
+</tr>
+<tr>
+<td>1</td>
+<td>resistencia de 220 ohmios</td>
+</tr>
+<tr>
+<td>2</td>
+<td>interruptores</td>
+</tr>
+<tr>
+<td>7</td>
+<td>cables jumper</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pulsadores">Pulsadores</h3>
+<p>Los interruptores son componentes muy simples. Cuando pulse un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen <strong>cuatro conexiones</strong>, que pueden ser un poco confusas.</p>
+<p>En realidad, hay realmente dos conexiones eléctricas.</p>
+<ul>
+<li>Los pines B y C están siempre conectados entre sí, al igual que A y D.</li>
+<li>Al pulsar el botón, se conectan los 4.</li>
+<li>En realidad dos de los pines no los necesitamos</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image67.jpeg" alt="imagen"></p>
+<h2 id="esquema-de-conexi%C3%B3n">Esquema de conexión</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image68.jpeg" alt="bg contain"></p>
+<h2 id="diagrama-de-cableado">Diagrama de cableado</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image69.jpeg" alt="imagen"></p>
+<h2 id="las-conexiones-que-vamos-a-tener-que-realizar-son-las-siguientes">Las conexiones que vamos a tener que realizar son las siguientes:</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image70.jpeg" alt="imagen"></p>
+<p>Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor.</p>
+<p>Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas.
+Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.</p>
+<h2 id="explicaci%C3%B3n-del-c%C3%B3digo">Explicación del código</h2>
+<ul>
+<li>Pulsando el botón izquierdo se encenderá el <strong>LED</strong>.</li>
+<li>Pulsando el botón derecho apagará.</li>
+</ul>
+<p>La primera parte del proyecto define tres variables para las tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.</p>
+<p>La función de <strong>setup</strong> define el ledPin como una salida normal, pero ahora tenemos las dos entradas para ocuparse.</p>
+<p>En este caso, utilizamos el conjunto el pinMode ser <strong>INPUT_PULLUP</strong> como este:</p>
+<ul>
+<li>El modo pin de <strong>INPUT_PULLUP</strong> significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, la entrada tendra el valor <strong>HIGH</strong>.</li>
+<li>En otras palabras, el valor predeterminado de la entrada es <strong>HIGH</strong>, a menos que se ponga a <strong>LOW</strong> al pulsar el botón.</li>
+</ul>
+<h1 id="conexi%C3%B3n-a-tierra">Conexión a tierra</h1>
+<p>Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.</p>
+<p>Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la <strong>función loop</strong></p>
+<h1 id="funci%C3%B3n-loop">Función Loop</h1>
+<p>En la <strong>función loop</strong> hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.</p>
+<p>Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces  <strong>digitalWrite</strong> pone el valor HIGH el PIN al que tenemos conectado el LED, y este se enciende.</p>
+<h2 id="c%C3%B3digo-completo">Código completo</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">5</span>; <span class="hljs-comment">//pin a que hemos conectado el LED</span>
+<span class="hljs-keyword">int</span> pinBotonA = <span class="hljs-number">9</span>; <span class="hljs-comment">//pin al que hemos conectado el boton A</span>
+<span class="hljs-keyword">int</span> pinBotonB = <span class="hljs-number">8</span>; <span class="hljs-comment">//pin al que hemos conectado el boton B</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-built_in">pinMode</span>(ledPin, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(pinBotonA, <span class="hljs-literal">INPUT_PULLUP</span>);
+  <span class="hljs-built_in">pinMode</span>(pinBotonB, <span class="hljs-literal">INPUT_PULLUP</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">digitalRead</span>(pinBotonA) == <span class="hljs-literal">LOW</span>)
+  {
+    <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">HIGH</span>);
+  }
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">digitalRead</span>(pinBotonB) == <span class="hljs-literal">LOW</span>)
+  {
+    <span class="hljs-built_in">digitalWrite</span>(ledPin, <span class="hljs-literal">LOW</span>);
+  }
+}
+</div></code></pre>
+<h1 id="joystick-anal%C3%B3gico">Joystick analógico</h1>
+<p>Los joysticks analógicos pueden detectar movimientos en múltiples direcciones y con diferentes niveles de intensidad. Esto se logra mediante sensores que registran la posición y la fuerza aplicada al joystick.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-12-02-16-13-12.png" alt=""></p>
+<h2 id="pines-del-joystick">Pines del Joystick</h2>
+<p>Necesitamos 5 conexiones entre el joystick y la placa<code>Arduino</code>.</p>
+<p>Los pines a conectar son:</p>
+<ul>
+<li><code>Sel</code> (Selección): Este pin es el botón de selección o pulsador del joystick.
+Conéctalo a un pin digital en tu Arduino (por ejemplo, pin 2).</li>
+<li><code>Y</code> (Eje Y): Este pin proporciona una salida analógica que varía según el movimiento del joystick en el eje Y (arriba y abajo). Conéctalo a uno de los pines analógicos en tu Arduino (por ejemplo, A0).</li>
+<li><code>X</code> (Eje X): Este pin proporciona una salida analógica que varía según el movimiento del joystick en el eje X (izquierda y derecha). Conéctalo a otro pin analógico en tu Arduino (por ejemplo, A1).</li>
+<li><code>Voltaje</code>: Este pin suministra el voltaje de alimentación para el joystick.
+Conéctalo a la fuente de alimentación de 5V en tu Arduino.</li>
+<li><code>Tierra</code>: Este pin se conecta a tierra (GND) para completar el circuito.
+Conéctalo al pin de tierra (GND) en tu Arduino.</li>
+</ul>
+<p>Tenemos que usar pines<code>Arduino</code> <strong>analógicos</strong> para leer los datos de los pines que reconocen el movimiento X / Y (vertical y horizontal), puesto que puedo tener diferentes valores (por ejemplo, moverse más rápido o lento).</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-07-09-39-52.png" alt="imagen"></p>
+<p>En cambio, para detectar si pulsamos o no el botón, es suficiente un pin <strong>digital</strong>, puesto que solo tendremos dos valores (pulsado o no pulsado).</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image98.jpeg" alt="imagen"></p>
+<h2 id="esquema">Esquema</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image99.jpeg" alt="imagen"></p>
+<h2 id="diagrama-de-cableado">Diagrama de cableado</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image100.jpeg" alt="imagen"></p>
+<h2 id="c%C3%B3digo">Código</h2>
+<pre class="hljs"><code><div><span class="hljs-comment">//``Arduino`` pin numbers</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> SW_pin = <span class="hljs-number">2</span>; <span class="hljs-comment">// digital pin connected to switch output</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> X_pin = <span class="hljs-number">0</span>; <span class="hljs-comment">// analog pin connected to X output</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> Y_pin = <span class="hljs-number">1</span>; <span class="hljs-comment">// analog pin connected to Y output</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(SW_pin, <span class="hljs-literal">INPUT</span>);
+  <span class="hljs-built_in">digitalWrite</span>(SW_pin, <span class="hljs-literal">HIGH</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Switch:  "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-built_in">digitalRead</span>(SW_pin));
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"\n"</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"X-axis: "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-built_in">analogRead</span>(X_pin));
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"\n"</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Y-axis: "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">analogRead</span>(Y_pin));
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"\n\n"</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+}
+</div></code></pre>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image101.jpeg" alt="imagen"></p>
+<h2 id="comprobar-funcionamiento">Comprobar funcionamiento</h2>
+<p>Haga clic en el Serial Monitor botón para encender el monitor serie. Se introducen los conceptos básicos sobre el monitor serial en detalles en la lección 1.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-07-09-45-06.png" alt="imagen"></p>
+<p>El rango de valores va de 0 a 1024.</p>
+<h1 id="m%C3%B3dulo-de-receptor-ir">Módulo de receptor IR</h1>
+<h2 id="resumen">Resumen</h2>
+<p>Los <strong>mandos a distancia</strong> infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego usaremos una <strong>librería</strong> que fue diseñada para este sensor en particular.</p>
+<p>En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla</p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<pre class="hljs"><code><div>(1) x Elegoo Uno R3
+x IR modulo receptor
+x IR control remoto
+x F-M cables (cables de hembra a macho DuPont)ç
+</div></code></pre>
+<h3 id="detectores-ir-vs-fotoc%C3%A9lulas">Detectores IR vs fotocélulas</h3>
+<p>Los detectores infrarrojos y las fotocélulas tienen diferentes características y usos específicos.</p>
+<p>Los <code>detectores infrarrojos</code> están diseñados para detectar la luz infrarroja y están configurados para recibir señales moduladas en 38 KHz, como las señales de control remoto. Los detectores infrarrojos tienen una <code>salida digital</code> que indica si se detecta o no una señal de IR</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-16-23-58.png" alt=""></p>
+<p>Por otro lado, las <code>fotocélulas</code> pueden detectar luz visible en el espectro amarillo/verde y no están diseñadas específicamente para detectar luz infrarroja. Las fotocélulas actúan como resistencias y <code>cambian su resistencia</code> en función de la cantidad de luz a la que están expuestas.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-16-23-23.png" alt=""></p>
+<h2 id="%C2%BFqu%C3%A9-podemos-medir">¿Qué podemos medir?</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image104.jpeg" alt="imagen"></p>
+<p>Como se puede ver en estos gráficos de hoja de datos, la detección de frecuencia de peak es a 38 KHz y el pico color del LED es de 940 nm. Se puede usar desde unos 35 KHz kHz 41 pero la sensibilidad se desprenderá para que no detecte asídesde lejos. Asimismo, puede utilizar LEDs de 850 a 1100 nm pero no funcionan tan bien como 900 a 1000nm asíque asegúrese de obtener coincidencia de LEDs! Compruebe la ficha técnica para su IR LED verificar la longitud de onda.</p>
+<h2 id="esquema-de-conexiones">Esquema de conexiones</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image105.jpeg" alt="imagen"></p>
+<h2 id="diagrama-de-cableado">Diagrama de cableado</h2>
+<p>Hay 3 conexiones para el receptor de infrarrojos.</p>
+<p>Las conexiones son: señal, voltaje y tierra.</p>
+<ul>
+<li>El &quot;-&quot; es la tierra</li>
+<li>&quot;S&quot; es señal</li>
+<li>El del medio corresponde a 5V.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image106.jpeg" alt="imagen"></p>
+<h2 id="montaje">Montaje</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image107.jpeg" alt="imagen"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"IRremote.h"</span></span>
+
+<span class="hljs-keyword">int</span> receiver = <span class="hljs-number">11</span>; <span class="hljs-comment">// Signal Pin of IR receiver</span>
+
+<span class="hljs-comment">/*--( Declare objects )--*/</span>
+<span class="hljs-function">IRrecv <span class="hljs-title">irrecv</span><span class="hljs-params">(receiver)</span></span>;     <span class="hljs-comment">// create instance of 'irrecv'</span>
+decode_results results;      <span class="hljs-comment">// create instance of 'decode_results'</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">translateIR</span><span class="hljs-params">()</span>
+</span>{
+
+  <span class="hljs-keyword">switch</span>(results.value)
+
+  {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFA25D</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"POWER"</span>); <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFE21D</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"FUNC/STOP"</span>); <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF629D</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"VOL+"</span>); <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF22DD</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"FAST BACK"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF02FD</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"PAUSE"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFC23D</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"FAST FORWARD"</span>);   <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFE01F</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"DOWN"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFA857</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"VOL-"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF906F</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"UP"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF9867</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"EQ"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFB04F</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"ST/REPT"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF6897</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"0"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF30CF</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"1"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF18E7</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"2"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF7A85</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"3"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF10EF</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"4"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF38C7</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"5"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF5AA5</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"6"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF42BD</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"7"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF4AB5</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"8"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFF52AD</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"9"</span>);    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">0xFFFFFFFF</span>: <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">" REPEAT"</span>);<span class="hljs-keyword">break</span>;
+
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">" other button   "</span>);
+
+  }<span class="hljs-comment">// End Case</span>
+
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>); <span class="hljs-comment">// Do not get immediate repeat</span>
+
+} <span class="hljs-comment">//END translateIR</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>   <span class="hljs-comment">/*-( SETUP: RUNS ONCE )-*/</span>
+</span>{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"IR Receiver Button Decode"</span>);
+  irrecv.enableIRIn(); <span class="hljs-comment">// Start the receiver</span>
+
+}<span class="hljs-comment">/*--(end setup )*/</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>   <span class="hljs-comment">/*-( LOOP: RUNS CONSTANTLY )-*/</span>
+</span>{
+  <span class="hljs-keyword">if</span> (irrecv.decode(&amp;results)) <span class="hljs-comment">// have we received an IR signal?</span>
+
+  {
+    translateIR();
+    irrecv.resume(); <span class="hljs-comment">// receive the next value</span>
+  }
+}<span class="hljs-comment">/* --(end main loop )-- */</span>
+</div></code></pre>
+<h2 id="visualizar-datos-en-el-monitor">Visualizar datos en el monitor</h2>
+<p>Haga clic en el botón <strong>Serial Monitor</strong> para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image108.jpeg" alt="imagen"></p>
+<h1 id="rel%C3%A9">Relé</h1>
+<p>Un relé es un <strong>interruptor</strong> operado <strong>eléctricamente</strong>. Muchos relés utilizan un electroimán para operar mecánicamente un interruptor, pero otros principios de funcionamiento también se utilizan como relés de estado sólidos.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image150.jpeg" alt="imagen"></p>
+<h3 id="rel%C3%A9">Relé</h3>
+<h3 id="usos">Usos</h3>
+<p>Los relés se utilizan donde es necesario un circuito de control por una señal de baja potencia (con aislamiento eléctrico total entre el control y los circuitos controlados), o donde varios circuitos deben ser controlados por una señal.</p>
+<p>En los sistemas modernos de energía eléctrica, estas funciones son realizadas por instrumentos digitales llamados &quot;relés de protección&quot;.</p>
+<h2 id="rel%C3%A9-con-motor-de-coche-enarduino">Relé con motor de coche en<code>Arduino</code></h2>
+<p>A continuación es el esquema de cómo relé de coche con<code>Arduino</code>.</p>
+<p>Puede ser complicado insertar el relé en la protoboard. Tienes que doblar una de las patillas del relé un poco para poder insertarlo</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image151.jpeg" alt="imagen"></p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image152.jpeg" alt="imagen"></p>
+<h3 id="esquema">Esquema</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image153.jpeg" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<h3 id="c%C3%B3digo">Código</h3>
+<h3 id="montaje-real">Montaje real</h3>
+<p>Programa de carga, después de encender todos los interruptores de potencia. El relé a recoger con un sonido de timbre. Entonces, el motor girará. Después de un período de tiempo, se liberará el relé y el motor se detiene.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image154.jpeg" alt="imagen"></p>
+<h3 id="c%C3%B3digo-fuente">Código fuente</h3>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ENABLE 5</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DIRA 3</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DIRB 4</span>
+
+<span class="hljs-keyword">int</span> i;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">//set pin direction</span>
+  <span class="hljs-built_in">pinMode</span>(ENABLE,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(DIRA,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(DIRB,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+
+<span class="hljs-comment">//back and forth example</span>
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"One way, then reverse"</span>);
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">// enable on</span>
+    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++) {
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//one way</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">LOW</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">750</span>);
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">LOW</span>);  <span class="hljs-comment">//reverse</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">HIGH</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">750</span>);
+  }
+  <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">// disable</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+      <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++) {
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//one way</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">LOW</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">750</span>);
+    <span class="hljs-built_in">digitalWrite</span>(DIRA,<span class="hljs-literal">LOW</span>);  <span class="hljs-comment">//reverse</span>
+    <span class="hljs-built_in">digitalWrite</span>(DIRB,<span class="hljs-literal">HIGH</span>);
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">750</span>);
+  }
+    <span class="hljs-built_in">digitalWrite</span>(ENABLE,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">// disable</span>
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+}
+
+</div></code></pre>
+<h1 id="sensors">Sensors</h1>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-16-42-42.png" alt=""></p>
+<p>Els sensors d'Arduino són dispositius que permeten a una placa Arduino detectar i mesurar diferents <strong>variables</strong> del seu entorn. Aquests sensors poden mesurar coses com la temperatura, la humitat, la llum, la pressió, el moviment, el so, la proximitat, entre d'altres.</p>
+<p>Els sensors són un component clau en molts projectes d'Arduino i són utilitzats per recollir dades del món físic per a ser processats per la placa Arduino.</p>
+<ul>
+<li>Ultrasons</li>
+<li>Llum (fotocèlula)</li>
+<li>Humitat i temperatura</li>
+</ul>
+<h2 id="sensor-humedad-temperatura-dht11">Sensor humedad temperatura DHT11</h2>
+<p>En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura <strong>DHT11</strong>. El sensor digital de temperatura y humedad <strong>DHT11</strong> es un sensor que nos proporciona información de  de la temperatura y la humedad.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-12-12-18-42-31.png" alt="imagen"></p>
+<h3 id="par%C3%A1metros-del-sensor">Parámetros del sensor</h3>
+<p>Cualquier magnitud que queramos leer tendrá unas <code>características</code> de precisión, según el sensor o instrumento que lo mide.</p>
+<h3 id="humedad-relativa">Humedad relativa</h3>
+<ul>
+<li>Resolución: 16 bits</li>
+<li>Repetibilidad: ±1% H.R.</li>
+<li>Precisión: 25 ° C ±5% hr</li>
+<li>Intercambiabilidad: intercambiables</li>
+<li>Tiempo de respuesta: 1 / e (63%) de 25º c 6s</li>
+<li>1m / s de aire 6s</li>
+<li>Histéresis: &lt; ± 0.3% RH</li>
+<li>Estabilidad a largo plazo: &lt; ± 0.5% hr / año en</li>
+</ul>
+<h3 id="temperatura">Temperatura</h3>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resolución:</td>
+<td>16 bits</td>
+</tr>
+<tr>
+<td>Repetibilidad:</td>
+<td>±0. 2 ° C</td>
+</tr>
+<tr>
+<td>Rango:</td>
+<td>25 ° C ±2° c</td>
+</tr>
+<tr>
+<td>Tiempo de respuesta:</td>
+<td>1 / e (63%) 10S</td>
+</tr>
+</tbody>
+</table>
+<h3 id="caracter%C3%ADsticas-el%C3%A9ctricas">Características eléctricas</h3>
+<p>Para funcionar, el sensor necesita corriente eléctrica.</p>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente de alimentación:</td>
+<td>DC 3.5 ~ 5.5V</td>
+</tr>
+<tr>
+<td>Corriente:</td>
+<td>medición 0.3mA (60μA en espera</td>
+</tr>
+<tr>
+<td>Periodo de muestreo:</td>
+<td>más de 2 segundos</td>
+</tr>
+</tbody>
+</table>
+<h3 id="descripci%C3%B3n-de-pines">Descripción de pines</h3>
+<p>El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con la placa arduino. Estos pines son:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-11-09-57.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDD</td>
+<td>Lo conectaremos a 5 V</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>Lo conectaremos a un pin de datos. En este caso D2</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>Lo conectaremos a tierra</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image94.jpeg" alt="bg contain"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image95.jpeg" alt="bg contain"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image96.jpeg" alt="bg contain"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p>El siguiente código va a utilizar el sensor que hemos conectado para leer la temperatura y la humedad que está midiendo el sensor.</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;dht_nonblocking.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DHT_SENSOR_TYPE DHT_TYPE_11</span>
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> DHT_SENSOR_PIN = <span class="hljs-number">2</span>;
+<span class="hljs-function">DHT_nonblocking <span class="hljs-title">dht_sensor</span><span class="hljs-params">( DHT_SENSOR_PIN, DHT_SENSOR_TYPE )</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">( )</span>
+</span>{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>( <span class="hljs-number">9600</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">medir</span> <span class="hljs-params">( <span class="hljs-keyword">float</span> *temperature, <span class="hljs-keyword">float</span> *humidity )</span>
+</span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> measurement_timestamp = <span class="hljs-built_in">millis</span>( );
+
+  <span class="hljs-comment">/* Measure once every four seconds. */</span>
+  <span class="hljs-keyword">if</span>( <span class="hljs-built_in">millis</span>( ) - measurement_timestamp &gt; <span class="hljs-number">3000u</span>l )
+  {
+    <span class="hljs-keyword">if</span>( dht_sensor.measure( temperature, humidity ) == <span class="hljs-literal">true</span> )
+    {
+      measurement_timestamp = <span class="hljs-built_in">millis</span>( );
+      <span class="hljs-keyword">return</span>( <span class="hljs-literal">true</span> );
+    }
+  }
+
+  <span class="hljs-keyword">return</span>( <span class="hljs-literal">false</span> );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">( )</span>
+</span>{
+  <span class="hljs-keyword">float</span> temperature;
+  <span class="hljs-keyword">float</span> humidity;
+
+  <span class="hljs-keyword">if</span>( medir( &amp;temperature, &amp;humidity ) == <span class="hljs-literal">true</span> )
+  {
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( <span class="hljs-string">"T = "</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( temperatura, <span class="hljs-number">1</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( <span class="hljs-string">" deg. C, H = "</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>( humedad, <span class="hljs-number">1</span> );
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>( <span class="hljs-string">"%"</span> );
+  }
+}
+</div></code></pre>
+<h3 id="salida-en-el-monitor">Salida en el monitor</h3>
+<p>Los valores medidos se mostrarán por pantalla en el monitor serie. El monitor serie lo tenemos que abrir desde el IDE de arduino.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-11-14-40.png" alt=""></p>
+<p>A continuación se nos abrirá una pantalla en la que podremos ver los datos que nuestro programa está escribiendo.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image97.jpeg" alt="imagen"></p>
+<h2 id="sensor-luz-fotocelula">Sensor luz (fotocelula)</h2>
+<h3 id="resumen">Resumen</h3>
+<p>Vamos a aprender como medir la intensidad de la luz utilizando una entrada analógica. Con lo que aprenderemos, podremos posteriormente utilizar el nivel de luz para controlar el apagar un LED o encenderlo cuando no haya luz, por ejemplo.</p>
+<p>Los componentes que utilizaremos son los siguientes:</p>
+<ul>
+<li><input type="checkbox" id="checkbox3" checked="true"><label for="checkbox3">Elegoo Uno R3</label></li>
+<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">Protoboard</label></li>
+<li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5">LEDs</label></li>
+<li><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6">Resistencias de 220 ohmios</label></li>
+<li><input type="checkbox" id="checkbox7" checked="true"><label for="checkbox7">Resistencia de 1 kohm (1000 ohms)</label></li>
+<li><input type="checkbox" id="checkbox8" checked="true"><label for="checkbox8">1 x fotoresistor o LDR (fotocélula)</label></li>
+<li><input type="checkbox" id="checkbox9" checked="true"><label for="checkbox9">16 x M M cables (cables de puente de macho a macho)</label></li>
+</ul>
+<h3 id="fotoc%C3%A9lula">Fotocélula</h3>
+<p>Una fotorresistencia o <strong>LDR</strong> (por sus siglas en inglés “light-dependent resistor”) es un componente electrónico cuya resistencia varía en función de la luz. Se trata de un sensor que actúa como una resistencia variable en función de la luz que capta.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image124.jpeg" alt="imagen"></p>
+<p>Esta tiene una resistencia de cerca de 50 kΩ en cerca de oscuridad y Ω 500 en luz brillante. Para convertir este valor variable de la resistencia en algo que podemos medir en la entrada analógica de la Junta de un R3 de UNO, debe ser convertida en un voltaje.</p>
+<p>La forma más sencilla de hacerlo es combinar con una resistencia fija.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image125.jpeg" alt="imagen"></p>
+<p>La resistencia y fotocélula junto se comportan como una sola. Cuando la luz es muy brillante, entonces la resistencia de la fotocélula es muy baja en comparación con la resistencia de valor fijo, y asíes como si el bote se dio vuelta a máximo.</p>
+<p>Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la resistencia fija de 1 kΩ y es como si el recipiente estuviera girando hacia GND. Cargue el croquis dado en la siguiente sección y trate de cubrir la fotocélula con el dedo y, a continuación, sosténgalo cerca de una fuente de luz.</p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-20-22-13-48.png" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-20-22-14-10.png" alt="imagen"></p>
+<h3 id="c%C3%B3digo-para-leer-valor-de-un-ldr">Código para leer valor de un LDR</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> sensorPin = A0; <span class="hljs-comment">// select the input pin for LDR</span>
+
+<span class="hljs-keyword">int</span> sensorValue = <span class="hljs-number">0</span>; <span class="hljs-comment">// variable to store the value coming from the sensor</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>); <span class="hljs-comment">//sets serial port for communication</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+   sensorValue = <span class="hljs-built_in">analogRead</span>(sensorPin); <span class="hljs-comment">// read the value from the sensor</span>
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(sensorValue); <span class="hljs-comment">//prints the values coming from the sensor on the screen</span>
+   <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+}
+</div></code></pre>
+<h3 id="c%C3%B3digo-encender-un-led-cuando-la-luz-es-baja">Código encender un LED cuando la luz es baja</h3>
+<p>Encender LED cuando la luz es baja y viceversa.</p>
+<ul>
+<li>Para ello, deberemos colocar un LED en el pin 13, con su correspondiente resistencia.</li>
+<li>El umbral es el valor a partir del cual vamos a decidir si encender la bombilla o no</li>
+<li>En este caso está fijado a <strong>100 Ω</strong>.</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> LEDPin = <span class="hljs-number">13</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> LDRPin = A0;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> umbral = <span class="hljs-number">100</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+   <span class="hljs-built_in">pinMode</span>(LEDPin, <span class="hljs-literal">OUTPUT</span>);
+   <span class="hljs-built_in">pinMode</span>(LDRPin, <span class="hljs-literal">INPUT</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+   <span class="hljs-keyword">int</span> input = <span class="hljs-built_in">analogRead</span>(LDRPin);
+   <span class="hljs-keyword">if</span> (input &gt; umbral) {
+      <span class="hljs-built_in">digitalWrite</span>(LEDPin, <span class="hljs-literal">HIGH</span>);
+   }
+   <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">digitalWrite</span>(LEDPin, <span class="hljs-literal">LOW</span>);
+   }
+}
+</div></code></pre>
+<p>Lo mismo, pero con un valor de umbral fijado por nosotros.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> <span class="hljs-keyword">long</span> A = <span class="hljs-number">1000</span>;     <span class="hljs-comment">//Resistencia en oscuridad en KΩ</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> B = <span class="hljs-number">15</span>;        <span class="hljs-comment">//Resistencia a la luz (10 Lux) en KΩ</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> Rc = <span class="hljs-number">10</span>;       <span class="hljs-comment">//Resistencia calibracion en KΩ</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> LDRPin = A0;   <span class="hljs-comment">//Pin del LDR</span>
+
+<span class="hljs-keyword">int</span> V;
+<span class="hljs-keyword">int</span> ilum;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+   V = <span class="hljs-built_in">analogRead</span>(LDRPin);
+
+   <span class="hljs-comment">//ilum = ((long)(1024-V)*A*10)/((long)B*Rc*V);  //usar si LDR entre GND y A0</span>
+   ilum = ((<span class="hljs-keyword">long</span>)V*A*<span class="hljs-number">10</span>)/((<span class="hljs-keyword">long</span>)B*Rc*(<span class="hljs-number">1024</span>-V));    <span class="hljs-comment">//usar si LDR entre A0 y Vcc (como en el esquema anterior)</span>
+
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(ilum);
+   <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+}
+</div></code></pre>
+<h2 id="sensor-ultrasonico">Sensor ultrasonico</h2>
+<p>El <strong>sensor ultrasónico</strong> es ideal para todo tipo de proyectos que necesitan medidas de distancia, como por ejemplo evitar obstáculos.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-27-11-16-57.png" alt=""></p>
+<p>El sensor que utilizaremos se llama <code>HC-SR04</code>  e incorpora una <strong>librería</strong> diseñada  específicamente para estos sensores.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/2022-12-05-10-31-48.png" alt="imagen"></p>
+<h3 id="componentes-necesarios">Componentes necesarios</h3>
+<p>Para hacer una prueba sencilla de funcionamiento del sensor, necesitaremos:</p>
+<pre class="hljs"><code><div>(1) x Placa``Arduino`` UNO
+(1) x Módulo de sensor ultrasónico
+(4) x F M cables (cables de hembra a macho DuPont)
+</div></code></pre>
+<h3 id="caracter%C3%ADsticas-t%C3%A9cnicas">Características técnicas</h3>
+<p>El módulo <strong>HC-SR04</strong> del sensor ultrasónico nos permite medir distancias entre 2 cm y 400 cm, con una precisión que varía puede alcanzar los 3 mm.</p>
+<p>El principio básico del trabajo es el siguiente:</p>
+<ul>
+<li>Dispara una señal de nivel alto de al menos 10us</li>
+<li>El Módulo envía automáticamente ocho señales de 40 kHz y detecta si hay una señal de retorno, por rebotar en alguna superficie.</li>
+<li>Esta señal de retorno dependerá de la distancia recorrida y, por tanto, de la distancia.</li>
+</ul>
+<h3 id="%C2%BFc%C3%B3mo-calcula-la-distancia">¿Cómo calcula la distancia?</h3>
+<p>La distancia recorrida se podría calcular en función de:</p>
+<ul>
+<li>La <strong>velocidad</strong> del sonido</li>
+<li>El <strong>tiempo</strong> que tardará en ir y volver realmente es el doble de la distancia que hay al objeto.</li>
+</ul>
+<p>La formula que nos daría la distancia recorrida podría ser:</p>
+<pre class="hljs"><code><div>distancia = (tiempo  * 340 ) / 2
+</div></code></pre>
+<p>El diagrama de sincronización se muestra a continuación. Sólo tiene que suministrar un pulso de 10us corto a la entrada de activación para iniciar el rango, y luego el módulo enviará una ráfaga de 8 ciclos de ultrasonido a 40 kHz y aumentar su eco. El Echo es un objeto de distancia que es el ancho de pulso y el rango en proporción.</p>
+<p>Se puede calcular el rango a través del intervalo de tiempo entre la señal de disparo de envío y la señal de eco de recepción. La fórmula es la siguiente:</p>
+<pre class="hljs"><code><div>Fórmula centímetros: us / 58 = centímetros
+Pulgadas:  us / 148 = inch; O: el rango = tiempo de alto nivel * velocidad (340M / S) / 2;
+</div></code></pre>
+<p>Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la señal de disparo a la señal de eco.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image88.jpeg" alt="imagen"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-11-20-17-18-13.png" alt="bg contain"></p>
+<h3 id="conexi%C3%B3n">Conexión</h3>
+<p>Aquí podemos ver como conectar los cuatro pines del sensor al<code>Arduino</code> Uno.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image89.jpeg" alt="imagen"></p>
+<h3 id="diagrama-de-cableado">Diagrama de cableado</h3>
+<p>El diagrama de cableado es el siguiente. Recordad que utilizamos en general rojo para cables conectados a 5V y negro para 0V o tierra (GND).</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image90.jpeg" alt="imagen"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image91.jpeg" alt="bg contain"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p>Necesitaremos una <strong>librería</strong> para poder utilizar algunas funciones y comunicarnos con el sensor. Para ello, deberemos de incluirla en nuestro proyecto, de la siguiente forma:</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-17-15-41-18.png" alt="imagen"></p>
+<p>Una vez incluída, ya la podemos utilizar en nuestro programa.</p>
+<p>Vamos a utilizar el monitor serie para mostrar los datos por pantalla, por lo menos mientras probamos el programa.</p>
+<pre class="hljs"><code><div>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"SR04.h"</span> <span class="hljs-comment">//la librería a utilizar</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> TRIG_PIN 12 <span class="hljs-comment">//pines donde conectamos</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ECHO_PIN 11</span>
+
+SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+<span class="hljs-keyword">long</span> distancia;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+   <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+   distancia=sr04.Distance(); <span class="hljs-comment">//Devuelve la distancia en Cm.</span>
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(distancia);
+   <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"cm"</span>);
+   <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>); <span class="hljs-comment">//Esperaremos 1s entre mediciones</span>
+}
+
+</div></code></pre>
+<p>Abriendo el monitor y podemos ver los datos que vamos imprimiendo desde el programa</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image92.jpeg" alt="imagen"></p>
+<h2 id="termistor">Termistor</h2>
+<p>Un <strong>termistor</strong> es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir.</p>
+<h3 id="tipos-de-termistores">Tipos de termistores</h3>
+<p>Hay dos clases de termistores:</p>
+<ul>
+<li>NTC (coeficiente de temperatura negativo)</li>
+<li>PTC (coeficiente positivo de temperatura).</li>
+</ul>
+<p>En general, usaremos sensores <strong>NTC</strong> para medir la temperatura.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image113.jpeg" alt="imagen"></p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image114.jpeg" alt="bg contain"></p>
+<h3 id="c%C3%B3digo">Código</h3>
+<p>Antes de ejecutar esto, asegúrese de que ha instalado la <strong>librería</strong> <LiquidCrystal> o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.</p>
+<p>Es útil poner una línea de comentario sobre el comando 'lcd'.</p>
+<p>BSED4D5D6D7</p>
+<p>LiquidCrystal lcd (7, 8, 9, 10, 11, 12);</p>
+<p>Esto facilita las cosas si decides cambiar que utilizas los pernos.</p>
+<p>En la <strong>función loop</strong> ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.</p>
+<p>En primer lugar, echemos un vistazo a cálculo de la temperatura.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> tempReading = <span class="hljs-built_in">analogRead</span>(tempPin);
+doble tempK = <span class="hljs-built_in">log</span> (<span class="hljs-number">10000.0</span> * ((<span class="hljs-number">1024.0</span>/tempReading - <span class="hljs-number">1</span>)));
+tempK = <span class="hljs-number">1</span> / (<span class="hljs-number">0.001129148</span> + (<span class="hljs-number">0.000234125</span> + (<span class="hljs-number">0.0000000876741</span> * tempK * tempK)) * tempK);
+<span class="hljs-keyword">float</span> tempC = tempK - <span class="hljs-number">273.15</span>;
+floatfloat tempF = (tempC * <span class="hljs-number">9.0</span>) / <span class="hljs-number">5.0</span> + <span class="hljs-number">32.0</span>;
+</div></code></pre>
+<p>Cambio lecturas se muestra en una pantalla LCD puede ser complicado. El principal problema es que la lectura puede no ser siempre el mismo número de dígitos. Por lo tanto, si la temperatura cambia de 101,50 a 99.00 entonces el dígito adicional de la lectura antigua es en peligro de quedar en la pantalla.</p>
+<p>Para evitar esto, escriba la línea de la pantalla LCD cada vez el bucle.</p>
+<pre class="hljs"><code><div>lcd.<span class="hljs-built_in">setCursor</span> (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+LCD.Print (<span class="hljs-string">"Temp C"</span>);
+lcd.<span class="hljs-built_in">setCursor</span> (<span class="hljs-number">6</span>, <span class="hljs-number">0</span>);
+LCD.Print(tempF);
+</div></code></pre>
+<p>El comentario bastante extraño sirve para recordarles de las 16 columnas de la pantalla. Luego puede imprimir una cadena de esa longitud con espacios donde irá la lectura real.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/media/image115.png" alt="imagen"></p>
+<p>Para rellenar los espacios en blanco, establecer la posición del cursor por donde la lectura debe aparecer y luego imprimirlo.</p>
+<h1 id="esp8266-nodemcu">ESP8266 NodeMCU</h1>
+<p>El <code>ESP8266 NodeMCU</code> es una plataforma de hardware y software open source que permite a los usuarios crear dispositivos conectados a Internet con funciones de red WiFi de forma rápida y fácil.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-24-34.png" alt=""></p>
+<p>L'<code>ESP8266</code> és un xip <code>Wi-Fi</code> de baix cost que s'utilitza àmpliament en projectes de bricolatge i aplicacions <code>IoT</code>. El NodeMCU és una placa de desenvolupament popular basada en l'ESP8266, que proporciona una manera senzilla de prototipar i desenvolupar projectes amb aquest xip.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/image-1.png" alt="Alt text"></p>
+<h2 id="componentes">Componentes</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-25-29.png" alt="bg contain"></p>
+<h2 id="aplicaciones-principales">Aplicaciones principales</h2>
+<ul>
+<li>Dispositivos domésticos inteligentes</li>
+<li>Dispositivos IoT</li>
+<li>Wearables</li>
+<li>Juguetes conectados</li>
+<li>Sistemas de seguridad</li>
+<li>Termostatos</li>
+<li>Sistemas de rociadores</li>
+<li>Controles remotos</li>
+<li>Iluminación automatizada</li>
+</ul>
+<h2 id="c%C3%B3digo-fuente">Código fuente</h2>
+<pre class="hljs"><code><div><span class="hljs-comment">/*
+ * ESP8266 NodeMCU LED Control over WiFi Demo
+ *
+ * https://circuits4you.com
+ */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ESP8266WiFi.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFiClient.h&gt;</span></span>
+
+<span class="hljs-comment">//ESP Web Server Library to host a web page</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ESP8266WebServer.h&gt;</span></span>
+
+<span class="hljs-comment">//---------------------------------------------------------------</span>
+<span class="hljs-comment">//Our HTML webpage contents in program memory</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> MAIN_page[] PROGMEM = <span class="hljs-string">R"=====(
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;h1&gt;WiFi LED on off demo: 1&lt;/h1&gt;&lt;br&gt;
+Ciclk to turn &lt;a href="ledOn"&gt;LED ON&lt;/a&gt;&lt;br&gt;
+Ciclk to turn &lt;a href="ledOff"&gt;LED OFF&lt;/a&gt;&lt;br&gt;
+&lt;hr&gt;
+&lt;a href="https://circuits4you.com"&gt;circuits4you.com&lt;/a&gt;
+&lt;/center&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+)====="</span>;
+<span class="hljs-comment">//---------------------------------------------------------------</span>
+<span class="hljs-comment">//On board LED Connected to GPIO2</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> LED 2</span>
+
+<span class="hljs-comment">//SSID and Password of your WiFi router</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* ssid = <span class="hljs-string">"BONDIATOTLODIA"</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* password = <span class="hljs-string">"UHYD6VRg"</span>;
+
+<span class="hljs-comment">//Declare a global object variable from the ESP8266WebServer class.</span>
+<span class="hljs-function">ESP8266WebServer <span class="hljs-title">server</span><span class="hljs-params">(<span class="hljs-number">80</span>)</span></span>; <span class="hljs-comment">//Server on port 80</span>
+
+<span class="hljs-comment">//===============================================================</span>
+<span class="hljs-comment">// This routine is executed when you open its IP in browser</span>
+<span class="hljs-comment">//===============================================================</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">handleRoot</span><span class="hljs-params">()</span> </span>{
+ <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"You called root page"</span>);
+ <span class="hljs-keyword">String</span> s = MAIN_page; <span class="hljs-comment">//Read HTML contents</span>
+ server.send(<span class="hljs-number">200</span>, <span class="hljs-string">"text/html"</span>, s); <span class="hljs-comment">//Send web page</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">handleLEDon</span><span class="hljs-params">()</span> </span>{
+ <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"LED on page"</span>);
+ <span class="hljs-built_in">digitalWrite</span>(LED,<span class="hljs-literal">LOW</span>); <span class="hljs-comment">//LED is connected in reverse</span>
+ server.send(<span class="hljs-number">200</span>, <span class="hljs-string">"text/html"</span>, <span class="hljs-string">"LED is ON"</span>); <span class="hljs-comment">//Send ADC value only to client ajax request</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">handleLEDoff</span><span class="hljs-params">()</span> </span>{
+ <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"LED off page"</span>);
+ <span class="hljs-built_in">digitalWrite</span>(LED,<span class="hljs-literal">HIGH</span>); <span class="hljs-comment">//LED off</span>
+ server.send(<span class="hljs-number">200</span>, <span class="hljs-string">"text/html"</span>, <span class="hljs-string">"LED is OFF"</span>); <span class="hljs-comment">//Send ADC value only to client ajax request</span>
+}
+<span class="hljs-comment">//==============================================================</span>
+<span class="hljs-comment">//                  SETUP</span>
+<span class="hljs-comment">//==============================================================</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(ssid);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(password);
+
+  <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(ssid, password);     <span class="hljs-comment">//Connect to your WiFi router</span>
+
+  <span class="hljs-comment">//Onboard LED port Direction output</span>
+  <span class="hljs-built_in">pinMode</span>(LED,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-comment">//Power on LED state off</span>
+  <span class="hljs-built_in">digitalWrite</span>(LED,<span class="hljs-literal">HIGH</span>);
+
+  <span class="hljs-comment">// Wait for connection</span>
+  <span class="hljs-keyword">while</span> (<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED) {
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+  }
+
+  <span class="hljs-comment">//If connection successful show IP address in serial monitor</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Connected to "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(ssid);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"IP address: "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>());  <span class="hljs-comment">//IP address assigned to your ESP</span>
+
+  server.on(<span class="hljs-string">"/"</span>, handleRoot);      <span class="hljs-comment">//Which routine to handle at root location. This is display page</span>
+  server.on(<span class="hljs-string">"/ledOn"</span>, handleLEDon); <span class="hljs-comment">//as Per  &lt;a href="ledOn"&gt;, Subroutine to be called</span>
+  server.on(<span class="hljs-string">"/ledOff"</span>, handleLEDoff);
+
+  server.<span class="hljs-built_in">begin</span>();                  <span class="hljs-comment">//Start server</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"HTTP server started"</span>);
+}
+<span class="hljs-comment">//==============================================================</span>
+<span class="hljs-comment">//                     LOOP</span>
+<span class="hljs-comment">//==============================================================</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>{
+  server.handleClient();          <span class="hljs-comment">//Handle client requests</span>
+}
+</div></code></pre>
+<h2 id="subida">Subida</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-17-18-17-40.png" alt="imagen"></p>
+<h2 id="salida-monitor-serie">Salida monitor serie</h2>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2022-10-17-18-17-12.png" alt="imagen"></p>
+<h2 id="wifi-bridge">Wifi bridge</h2>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ESP8266WiFi.h&gt;</span></span>
+
+<span class="hljs-comment">// Set WiFi credentials</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> WIFI_SSID <span class="hljs-meta-string">"YOUR WIFI NETWORK SSID"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> WIFI_PASS <span class="hljs-meta-string">"YOUR WIFI PASSWORD"</span></span>
+
+<span class="hljs-comment">// Set AP credentials</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> AP_SSID <span class="hljs-meta-string">"ESP8266"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> AP_PASS <span class="hljs-meta-string">"magicword"</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-comment">// Setup serial port</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>();
+
+  <span class="hljs-comment">// Begin Access Point</span>
+  <span class="hljs-built_in">WiFi</span>.mode(WIFI_AP_STA);
+  <span class="hljs-built_in">WiFi</span>.softAP(AP_SSID, AP_PASS);
+
+  <span class="hljs-comment">// Begin WiFi</span>
+  <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(WIFI_SSID, WIFI_PASS);
+
+  <span class="hljs-comment">// Connecting to WiFi...</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Connecting to "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(WIFI_SSID);
+  <span class="hljs-keyword">while</span> (<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED)
+  {
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+  }
+
+  <span class="hljs-comment">// Connected to WiFi</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>();
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Connected!"</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"IP address for network "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(WIFI_SSID);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" : "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>());
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"IP address for network "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(AP_SSID);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" : "</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-built_in">WiFi</span>.softAPIP());
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// put your main code here, to run repeatedly:</span>
+
+}
+</div></code></pre>
+<p>https://siytek.com/esp8266-ap-and-station-mode/</p>
+<h1 id="projecte-wled">Projecte WLED</h1>
+<p>Il·luminació de tira de LED i maneig a travér d'app mòbil mitjançant WiFi</p>
+<p>El projecte <code>WLED</code> és un programari de codi obert que us permet controlar tires LED adreçables mitjançant una interfície web. Es pot instal·lar en diverses plataformes de maquinari, inclosa la placa NodeMCU basada en ESP8266.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-18-46.png" alt="w: 80%"></p>
+<p>https://kno.wled.ge/</p>
+<h1 id="installaci%C3%B3">Instal·lació</h1>
+<p>Per utilitzar el programari <code>WLED</code> en una placa NodeMCU, primer heu de flashejar la placa amb el microprogramari WLED. Això es pot fer utilitzant l'IDE d'Arduino o altres eines intermitents.</p>
+<p>https://install.wled.me/</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-20-31.png" alt=""></p>
+<h1 id="connexi%C3%B3-de-la-tira">Connexió de la tira</h1>
+<p>Un cop instal·lat el microprogramari, podeu connectar la vostra tira de LED a la placa NodeMCU.  Connectarem la tira de led al <code>pin D4</code>.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-29-10.png" alt=""></p>
+<h1 id="programari-m%C3%B2bil">Programari mòbil</h1>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-21-10.png" alt=""></p>
+<p>https://play.google.com/store/apps/details?id=com.aircoookie.WLED&amp;hl=es&amp;gl=US&amp;pli=1</p>
+<h1 id="control">Control</h1>
+<p>Des del mòbil podrem canviar els colors i els efectes.</p>
+<p><img src="file:///e:/Docencia/apuntes/arduino/img/2023-03-15-15-22-58.png" alt="w:600"></p>
+
+</body>
+</html>

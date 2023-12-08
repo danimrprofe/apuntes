@@ -1,31 +1,154 @@
+- [Introducción](#introducción)
+- [Máquinas simples](#máquinas-simples)
+  - [Palanca](#palanca)
+  - [Plano inclinado](#plano-inclinado)
+  - [Rueda](#rueda)
+  - [Cuña](#cuña)
+  - [Tornillo](#tornillo)
 - [Mecanismos de transmisión](#mecanismos-de-transmisión)
-  - [TRANSMISIÓN LINEAL](#transmisión-lineal)
+  - [Poleas](#poleas)
   - [Transmisión circular](#transmisión-circular)
-  - [Mecanismes d’acoblament d’eixos](#mecanismes-dacoblament-deixos)
-  - [Soporte de elementos mecánicos](#soporte-de-elementos-mecánicos)
+  - [Engranajes](#engranajes)
+  - [Planetario](#planetario)
+  - [Diferencial](#diferencial)
+  - [Cadenas](#cadenas)
+- [Mecanismes d’acoblament d’eixos](#mecanismes-dacoblament-deixos)
+  - [Acoblament per maniguet](#acoblament-per-maniguet)
+  - [Junta cardan](#junta-cardan)
+  - [Junta homocinètica](#junta-homocinètica)
+  - [Embrague](#embrague)
+- [Mecanismos de transformación](#mecanismos-de-transformación)
+  - [manivela-torno](#manivela-torno)
+  - [piñón-cremallera](#piñón-cremallera)
+  - [Tornillo-tuerca](#tornillo-tuerca)
+  - [Tornillo sin fin](#tornillo-sin-fin)
+  - [Biela-manivela](#biela-manivela)
+  - [Leva](#leva)
+  - [Excéntrica](#excéntrica)
+  - [Cigüeñal](#cigüeñal)
+  - [Pistones](#pistones)
+- [Soporte de elementos mecánicos](#soporte-de-elementos-mecánicos)
+  - [Cojinetes](#cojinetes)
 - [Sistemas de retención](#sistemas-de-retención)
+  - [Frenos](#frenos)
   - [Pastillas de freno](#pastillas-de-freno)
   - [Frenos de tambor](#frenos-de-tambor)
   - [Frens de disc](#frens-de-disc)
   - [Accionament dels sistemes de frenat](#accionament-dels-sistemes-de-frenat)
   - [Líquidos de freno](#líquidos-de-freno)
   - [Servofrens](#servofrens)
-  - [Trinquets](#trinquets)
+  - [Trinquetes](#trinquetes)
+  - [Ruedas de bicicleta](#ruedas-de-bicicleta)
+  - [Resorte](#resorte)
 - [Lubrificació](#lubrificació)
   - [Mantenimento](#mantenimento)
   - [Aceites](#aceites)
   - [Circuitos](#circuitos)
   - [Filtro](#filtro)
 
+# Introducción
+
+Las herramientas son objetos hechos con el fin de facilitar una tarea mecánica. Requieren que el usuario aplique cierta medida de fuerza y energía para que funcionen.
+
+![](img/2023-12-08-15-48-20.png)
+
+Una máquina es un conjunto de mecanismos formados por elementos fijos y móviles que interactúan entre sí y que es capaz de realizar un trabajo o aplicar una fuerza.
+
+![](img/2023-12-08-15-48-33.png)
+
+Dispositivo o conjunto de dispositivos mecánicos diseñados para realizar una función específica.
+
+Los mecanismos son los elementos de una máquina capaces de transmitir y transformar movimientos y fuerzas desde un elemento motriz o conductor hasta un elemento conducido.
+
+# Máquinas simples
+
+Las seis máquinas clásicas simples son dispositivos mecánicos que pueden darle a uno una ventaja mecánica (es decir, reducir la fuerza requerida para realizar una tarea).
+
+1. La palanca
+2. El eje y la rueda
+3. La polea
+4. El plano inclinado
+5. La cuña
+6. El tornillo.
+
+## Palanca
+
+La palanca es una barra rígida con un punto de apoyo o fulcro, a la que se aplica una fuerza y que, girando sobre el punto de apoyo, vence una resistencia.
+
+![](img/2023-12-08-15-51-12.png)
+
+Se cumple la conservación de la energía y, por tanto, la fuerza aplicada por su espacio recorrido ha de ser igual a la fuerza de resistencia por su espacio recorrido (2π·r).
+
+Tradicionalmente se distinguen existen tres tipos de palancas dependiendo de la posición relativa de las fuerzas aplicada y resistente respecto al fulcro.
+
+- Primer grado
+- Segundo grado
+- Tercer grado
+
+![](img/2023-12-08-15-51-26.png)
+
+## Plano inclinado
+
+Los planos inclinados son útiles ya que pueden reducir la cantidad de fuerza requerida para mover un objeto verticalmente
+
+![](img/2023-12-08-15-51-42.png)
+
+Dada la conservación de la energía, cuando el ángulo del plano inclinado es más pequeño
+
+Se puede levantar más peso con una misma fuerza aplicada
+A cambio, la distancia a recorrer será mayor
+
+![](img/2023-12-08-15-51-50.png)
+
+## Rueda
+
+Junto al fuego, la rueda ha sido uno de los grandes avances prehistóricos de la Humanidad.  La rueda es un elemento circular y mecánico que gira alrededor de un eje.
+
+![](img/2023-12-08-15-51-58.png)
+
+Con las ruedas se consigue vencer el rozamiento cuando se desplaza un objeto, o tener una manivela que se pueda girar de forma continua.
+
+1839 Charles Goodyear descubrió la vulcanización, proceso mediante el cual el caucho se mezcla con azufre y se le aplica calor y presión, lo que mejora su plasticidad y resistencia
+
+![](img/2023-12-08-15-52-09.png)
+
+## Cuña
+
+Transforma una fuerza vertical en dos horizontales antagonistas.
+
+![](img/2023-12-08-15-52-27.png)
+
+El ángulo de la cuña determina la proporción entre las fuerzas aplicada y resultante, de un modo parecido al plano inclinado.
+
+![](img/2023-12-08-15-52-23.png)
+
+## Tornillo
+
+Este mecanismo simple trasforma un movimiento giratorio aplicado al tornillo en otro rectilíneo.
+
+El tornillo viene a ser un plano inclinado, en el que la fuerza aplicada tiene dirección tangencial y la fuerza resultante tiene dirección axial, según el eje del tornillo.
+
+![Alt text](image-5.png)
+
+Por lo tanto, la ventaja mecánica tiene la misma expresión que en el plano inclinado, siendo el ángulo α igual a la inclinación de la rosca.
+
+Cuando únicamente gira, como en el gráfico anterior, el tornillo se denomina husillo, y es común que vaya ligado a una tuerca, que no puede girar y es la que se desplaza:
+
+![](img/2023-12-08-15-48-49.png)
+
 # Mecanismos de transmisión
 
 Los mecanismos de transmisión son dispositivos que transmiten movimiento, fuerza y potencia de un punto a otro.
 
-## TRANSMISIÓN LINEAL
+![](img/2023-12-08-16-13-10.png)
 
-### POLITGES
+## Poleas
 
-Una politja és un element mecànic format per una roda amb una ranura per on passa una corda, cinta o cable. Aquesta corda pot ser arrossegada per una força externa aplicada a l'altre extrem, el que permet desplaçar una càrrega o resistència. Les politges es poden utilitzar en solitari o en conjunt.
+Una polea es un elemento mecánico formado por una rueda con una ranura por la que pasa una cuerda, cinta o cable. Esta cuerda puede ser arrastrada por una fuerza externa aplicada en el otro extremo, lo que permite desplazar una carga o resistencia.
+
+![](img/2023-12-08-16-13-01.png)
+
+El principal objetivo del uso de las poleas es reducir el esfuerzo obteniendo ventaja mecánica, aunque también pueden utilizarse para cambiar la dirección de la fuerza.
 
 <img src="media/image1.gif" id="image1">
 
@@ -39,11 +162,17 @@ L'inconvenient d'aquest muntatge és que per elevar la càrrega hem de fer forç
 
 ### Polipast
 
-Un polipast és un aparell que serveix per elevar o moure càrregues pesades. Aquest aparell està format per un conjunt de polies que van lligades a un ganxo o càrrega.
+Un polipasto es un aparato que sirve para elevar o mover cargas pesadas. Este aparato está formado por un conjunto de poleas que van ligadas a un gancho o carga.
 
-Quan es tira de la corda del polipasto, la càrrega es mou cap amunt, gràcies a la multiplicació de forces que es produeix amb les polies. El polipasto es pot utilitzar en una gran varietat d'activitats, com en la construcció, el trasllat de mercaderies, en tallers mecànics, entre altres.
+![Alt text](image-6.png)
+
+Cuando se tira de la cuerda del polipasto, la carga se mueve hacia arriba, gracias a la multiplicación de fuerzas que se produce con las poleas.
+
+El polipasto puede utilizarse en una gran variedad de actividades, como en la construcción, el traslado de mercancías, en talleres mecánicos, entre otros.
 
 <img src="media/image3.png" id="image3">
+
+![Alt text](image-7.png)
 
 ### Simulador de poleas
 
@@ -55,7 +184,7 @@ https://www.compassproject.net/html5sims/pulleysim/pulley_en.html
 
 ## Transmisión circular
 
-Árboles y ejes
+### Ejes
 
 Un eje es un elemento, normalmente cilíndrico, que gira sobre sí mismo y sirve para sostener diferentes piezas.
 
@@ -63,7 +192,13 @@ Atendiendo a la forma de trabajo, los ejes pueden ser:
 
 Ejes fijos: Permiten el giro de los elementos mecánicos situados sobre ellos, pero no giran solidariamente con ellos, es decir, los elementos mecánicos giran libremente sobre ellos.
 
+![](img/2023-12-08-16-17-06.png)
+
 Ejes giratorios: pueden girar solidariamente con algunos de los elementos situados sobre ellos.
+
+![Alt text](image-8.png)
+
+### Árboles
 
 Un árbol es un elemento de una máquina, cilíndrico o no, sobre el que se montan diferentes piezas mecánicas, por ejemplo, un conjunto de engranajes o poleas, a los que se transmite potencia. Pueden adoptar diferentes formas (rectos, acodados, flexibles,). Los árboles (también llamados árboles de transmisión) giran siempre junto con los órganos soportados.
 
@@ -81,11 +216,9 @@ A este tipo de transmisión también se le conoce como transmisión por fricció
 
 Estas ruedas presentan una serie de características:
 
-Los materiales que se utilizan tienen un alto coeficiente de rozamiento para evitar que las ruedas resbalen entre sí.
-
-Normalmente estas ruedas de fricción se emplean en arboles de transmisión muy cercanos y cuando la potencia que hay que transmitir es pequeña.
-
-Este tipo de transmisión tiene la ventaja de que es muy fácil de fabricar, no necesita apenas mantenimiento y no produce ruidos
+1. Los materiales que se utilizan tienen un alto coeficiente de rozamiento para evitar que las ruedas resbalen entre sí.
+2. Normalmente estas ruedas de fricción se emplean en arboles de transmisión muy cercanos y cuando la potencia que hay que transmitir es pequeña.
+3. Este tipo de transmisión tiene la ventaja de que es muy fácil de fabricar, no necesita apenas mantenimiento y no produce ruidos
 
 <img src="media/image6.jpg" id="image6">
 
@@ -107,11 +240,28 @@ Consiste en una polea que se encuentra conectada al motor y que hace contacto co
 
 Las correas pueden ser de diferentes tipos, como las planas, las trapezoidales o las dentadas, y su elección dependerá del tipo de aplicación.
 
+![Alt text](image-9.png)
+
+Cuando se necesitan varias relaciones de transmisión diferentes se utilizan las poleas escalonadas.
+
+Son especialmente útiles cuando queremos poder cambiar velocidades, ajustando la correa
+
+![Alt text](image-10.png)
+
 Simulador: Simulador de polea y correa
+https://www.blocklayer.com/pulley-belteng
 
 <img src="media/image9.png" id="image9">
 
-Engranajes
+Si se necesita una relación de transmisión muy elevada o muy reducida se utilizan los trenes de poleas.
+
+![](img/2023-12-08-16-18-20.png)
+
+Cuando se necesita una transmisión sin resbalamiento se utilizan las llamadas correas dentadas, que se estudiará más adelante, junto a la transmisión por cadena.
+
+![Alt text](image-11.png)
+
+## Engranajes
 
 Los engranajes de rueda dentada son uno de los mecanismos más utilizados para la transmisión del movimiento. En general, los engranajes de rueda dentada se componen de dos ruedas dentadas que están unidas por un eje. Las ruedas dentadas se encuentran en contacto y los dientes se interbloquean.
 
@@ -125,7 +275,46 @@ Los engranajes de rueda dentada de rueda dentada pueden transmitir un movimiento
 
 https://geargenerator.com/
 
-Cadenas
+![](img/2023-12-08-16-19-47.png)
+
+### Caja de cambios
+
+![Alt text](image-13.png)
+
+## Planetario
+
+Se trata de un sistema
+mecánico con movimiento rotacional
+que, por su diseño, es capaz de
+cambiar, acumular y distribuir
+Velocidades angulares de
+entrada* y/o el par motor a los
+satélites a lo largo del mismo eje
+de rotación.
+
+![](img/planetario.gif)
+
+Incluye también la
+corona, el portasatélites y el piñón
+central o “planeta”.
+
+![Alt text](image-12.png)
+
+Video:
+
+https://www.youtube.com/watch?v=KWTuMyas5wo
+
+## Diferencial
+
+![](img/2023-12-08-16-21-12.png)
+
+![](img/2023-12-08-16-21-20.png)
+
+Video:
+
+https://www.youtube.com/watch?v=NG2z5eFTflw
+
+## Cadenas
 
 Las cadenas son uno de los mecanismos más simples para transmitir el movimiento. Una cadena es una serie de eslabones conectados. Los eslabones pueden girar libremente en torno a su eje.
 
@@ -139,11 +328,11 @@ Simulador de cadenas
 
 <img src="media/image13.png" id="image13">
 
-Calculador motores y cambios de marchas
+### Calculador motores y cambios de marchas
 
 <img src="media/image14.png" id="image14">
 
-Piñones y platos
+### Piñones y platos
 
 Se denomina piñón a la rueda de un mecanismo de cremallera o a la rueda más pequeña de un par de ruedas dentadas
 
@@ -151,17 +340,23 @@ En una etapa de engranaje, la rueda más grande se denomina corona, mientras qu
 
 <img src="media/image15.png" id="image15">
 
-## Mecanismes d’acoblament d’eixos
+# Mecanismes d’acoblament d’eixos
 
-Son dispositivos que se utilizan para conectar dos ejes de manera que puedan transmitir energía mecánica entre ellos. Los acoplamientos pueden ser de diferentes tipos, como acoplamientos rígidos, flexibles, de engranajes, hidráulicos, entre otros, y se utilizan en una amplia gama de aplicaciones mecánicas.
+Son dispositivos que se utilizan para conectar dos ejes de manera que puedan transmitir energía mecánica entre ellos.
 
-Acoblament per maniguet
+Los acoplamientos pueden ser rígidos, flexibles, de engranajes, hidráulicos, entre otros
 
-Acoblament per maniguet és un tipus senzill i tosc d'acoblament adequat per a màquines amb velocitats reduïdes i d'ús ocasional. L'estructura està formada per un maniguet de fundició amb un canal interior que acull dues xavetes, les quals sostenen els extrems dels eixos i es fixen al maniguet mitjançant cargols de cap avellanat. Una protecció de xapa cobreix els talons de les xavetes per a evitar que surtin de les ranures del maniguet.
+![Alt text](image-14.png)
 
-Degut a l'asimetria produïda per les ranures i les xavetes, així com l'excentricitat que es produeix per la introducció forçada de les xavetes, és important allunyar el centre de gravetat de l'acoblament dels arbres per a evitar vibracions i irregularitats en el moviment. A més, es pot assegurar la unió entre el maniguet i els arbres mitjançant clavilla cònica transversal si l'esforç a transmetre és petit.
+## Acoblament per maniguet
 
-Junta cardan
+Tipo de acoplamiento sencillo adecuado para máquinas con velocidades reducidas y de uso ocasional.
+
+![Alt text](image-15.png)
+
+La estructura está formada por un manguito de fundición con un canal interior que acoge dos chavetas, las cuales sostienen los extremos de los ejes y se fijan al manguito mediante tornillos de cabeza avellanada.
+
+## Junta cardan
 
 La junta Cardan és un element mecànic que s'utilitza per a transferir el moviment de rotació d'un eix a un altre quan estan desalineats. Està formada per dues forquilles solidàries als arbres d'entrada i de sortida, i una peça central denominada creueta.
 
@@ -173,7 +368,7 @@ Per evitar aquestes variacions, s'instal·len sempre dues juntes Cardan que es c
 
 <img src="media/image17.png" id="image17">
 
-Junta homocinètica
+## Junta homocinètica
 
 La junta homocinètica té com a finalitat connectar dos eixos situats longitudinalment que no són continus, de manera que la velocitat entre ells sigui sempre igual.
 
@@ -185,9 +380,11 @@ Aquesta transmissió està sotmesa a moviments oscil·latoris de la suspensió i
 
 <img src="media/image19.png" id="image19">
 
+En la siguiente imagen vemos como los palieres se unen a las ruedas mediante juntas homocinéticas.
+
 <img src="media/image20.png" id="image20">
 
-Embrague
+## Embrague
 
 El embrague de un coche es un sistema mecánico que se encuentra entre el motor y la caja de cambios.
 
@@ -201,13 +398,11 @@ https://www.youtube.com/watch?v=WxRq_bNBmjQ
 
 https://www.youtube.com/watch?v=4Syt_01ZRzA
 
-Mecanismos de transformación
+# Mecanismos de transformación
 
 En un gran número de ocasiones será necesario transformar el movimiento rotativo del motor que alimenta el equipo en un movimiento de otro tipo, por ejemplo, lineal o alternativo. Es pues necesario desarrollar múltiples mecanismos transformadores de movimiento. Estos mecanismos pueden llegar a ser muy variados y complejos, pero todos ellos estarán basados en los distintos principios de transmisión que vamos a estudiar a lo largo de este apartado.
 
-Movimiento circular-rectilíneo
-
-manivela-torno
+## manivela-torno
 
 Es un dispositivo que convierte el movimiento circular en movimiento lineal o viceversa. Consiste en una manivela que gira alrededor de un eje y que está conectada a un mecanismo de torno que se encarga de transformar el movimiento.
 
@@ -217,7 +412,7 @@ Es un dispositivo que convierte el movimiento circular en movimiento lineal o vi
 
 <img src="media/image25.png" id="image25">
 
-piñón-cremallera
+## piñón-cremallera
 
 Es un sistema de engranajes que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un piñón que gira alrededor de un eje y que se conecta a una cremallera que se mueve linealmente. Al girar el piñón, la cremallera se desplaza en la dirección deseada.
 
@@ -225,7 +420,7 @@ Es un sistema de engranajes que se utiliza para transformar el movimiento circul
 
 <img src="media/image27.png" id="image27">
 
-Tornillo-tuerca
+## Tornillo-tuerca
 
 Es un sistema de rosca que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un tornillo con una rosca que se conecta a una tuerca con una rosca correspondiente. Al girar el tornillo, la tuerca se desplaza a lo largo del tornillo en la dirección deseada.
 
@@ -235,7 +430,7 @@ Es un sistema de rosca que se utiliza para transformar el movimiento circular en
 
 <img src="media/image30.png" id="image30">
 
-Tornillo sin fin
+## Tornillo sin fin
 
 Es un tipo de engranaje que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un tornillo con una rosca sin fin que se conecta a una rueda dentada que se llama corona. Al girar el tornillo sin fin, la corona se desplaza en la dirección deseada.
 
@@ -245,17 +440,13 @@ Este sistema se utiliza principalmente en maquinaria que requiere un alto grado 
 
 Se trata de un sistema que no es reversible.
 
-Circular-rectilíneo alternativo
-
-Son mecanismos que se utilizan para transformar el movimiento circular en movimiento lineal o viceversa.
-
-Biela-manivela
+## Biela-manivela
 
 Es un mecanismo que se utiliza para transformar el movimiento lineal en movimiento circular o viceversa. Consiste en una biela, que es una barra que se mueve linealmente, conectada a una manivela, que es un brazo que gira alrededor de un eje. Al mover la biela, la manivela gira y viceversa.
 
 <img src="media/image32.gif" id="image32">
 
-Leva
+## Leva
 
 Una leva es una pieza de forma irregular que se mueve en un movimiento circular y que, al hacer contacto con otra pieza, produce un movimiento lineal.
 
@@ -265,7 +456,7 @@ En este ejemplo podemos ver como se utilizan las levas para abrir y cerrar las v
 
 <img src="media/image34.gif" id="image34">
 
-Árbol de levas
+### Árbol de levas
 
 Un árbol de levas es un componente del motor de combustión interna que se encarga de controlar la apertura y cierre de las válvulas de admisión y escape. Es un eje con levas o protuberancias que giran en sincronización con el movimiento del cigüeñal, y que están diseñadas para presionar sobre los taqués o balancines, moviendo a su vez las válvulas.
 
@@ -277,23 +468,23 @@ En los motores de cuatro tiempos, el árbol de levas gira a la mitad de la veloc
 
 <img src="media/image36.gif" id="image36">
 
-Excéntrica
+## Excéntrica
 
 Una excéntrica es una pieza circular que gira alrededor de un eje descentrado y que se utiliza para producir un movimiento lineal.
 
 <img src="media/image37.png" id="image37">
 
-Cigüeñal
+## Cigüeñal
 
 Es un componente importante en la mayoría de los motores de combustión interna. Se utiliza para transformar el movimiento lineal de los pistones en movimiento circular. Consiste en un eje que gira alrededor de un punto central y que tiene una serie de contrapesos y muñequillas en ángulos específicos. <img src="media/image38.png" id="image38">
 
-Pistones
+## Pistones
 
 Los pistones se conectan a las muñequillas y, al girar el cigüeñal, se produce un movimiento circular que impulsa el motor.
 
 <img src="media/image39.gif" id="image39">
 
-## Soporte de elementos mecánicos
+# Soporte de elementos mecánicos
 
 Los cojinetes y rodamientos se utilizan en una gran variedad de máquinas, desde ventiladores y bombas hasta automóviles y aviones.
 
@@ -301,21 +492,17 @@ Los rodamientos son especialmente importantes en las ruedas de los automóvile
 
 <img src="media/image40.png" id="image40">
 
-Coixinets
+## Cojinetes
 
 Els coixinets són elements fonamentals per als mecanismes que necessiten suportar moviments giratoris i realitzar diferents funcions, com sustentar el pes, guiar la rotació i evitar desplaçaments. Aquests coixinets poden ser col·locats en el bastidor de la màquina o suports independents que en facilitin el muntatge.
 
 En funció de la forma en què es produeix el lliscament de l'eix, hi ha dos tipus de coixinets: els de fricció i els de rodaments.
-
-Coixinets de fricció
 
 En els coixinets de fricció, els eixos giren lliscant en el coixinet
 
 <img src="media/image41.png" id="image41">
 
 <img src="media/image42.png" id="image42">
-
-Coixinets de rodament
 
 En els coixinets de rodaments s'interposen una sèrie d'esferes, cilindres i cons, el que fa que el lliscament es produeixi per rodadura i disminueixi el coeficient de fregament.
 
@@ -327,7 +514,7 @@ En resum, els coixinets són elements essencials per als mecanismes que necessit
 
 Destinados a interrumpir a voluntad el movimiento de rotación del eje.
 
-###Frenos
+## Frenos
 
 Los sistemas de frenado son elementos mecánicos que se utilizan para reducir o detener el movimiento de una máquina.
 
@@ -345,7 +532,9 @@ Las pastillas se van desgastando con el uso, y pierden gran parte del material, 
 
 ## Frenos de tambor
 
-El sistema de freno de tambor se compone de un tambor que se encuentra en el interior de la rueda, y que gira junto con ella.<img src="media/image45.jpg" id="image45">
+El sistema de freno de tambor se compone de un tambor que se encuentra en el interior de la rueda, y que gira junto con ella.
+
+<img src="media/image45.jpg" id="image45">
 
 Las zapatas son piezas de metal en forma de arco que se ajustan dentro del tambor, y que se activan para crear fricción y detener la rotación del tambor y, por lo tanto, de la rueda.
 
@@ -399,11 +588,13 @@ Los servofrenos utilizan una fuente externa de energía, como el aire comprimido
 
 Los servofrenos neumáticos son los más habituales y utilizan una válvula para dejar pasar aire comprimido que acciona los émbolos para aplicar la fuerza a los frenos.
 
-## Trinquets
+## Trinquetes
 
-Es un mecanismo que permite que una pieza o componente se mueva en una dirección determinada, pero no en la dirección opuesta. El trinquete generalmente está compuesto por una rueda dentada y una palanca que se encajan entre los dientes de la rueda dentada para evitar que la pieza se mueva hacia atrás.
+Permite que una pieza o componente se mueva en una dirección determinada, pero no en la dirección opuesta.
 
-Permeten rotació d’un eix en un sentit determinat l’impideixen en l’oposat
+El trinquete generalmente está compuesto por una rueda dentada y una palanca que se encajan entre las dientes de la rueda dentada para evitar que la pieza se mueva hacia atrás.
+
+Permiten rotación de un eje en un sentido determinado le impiden en lo opuesto
 
 Sistema de trinquet. Compost de:
 
@@ -411,9 +602,27 @@ Sistema de trinquet. Compost de:
 - Nucli o trinquet. Articulat en una part fixa, encaixa en el costat recte de la dent
 - Bon funcionament quan el trinquet, en contacte amb la dent, tendeix espontàniament a introduir-se a l’espai lliure.
 
-<img src="media/image55.png" id="image55">
+<img src="media/image55.png" id="imag
 
-### Resorte
+### Carraca
+
+![Alt text](image-4.png)
+
+Permite apretar o aflojar tornillos y tuercas, ya que te permite aplicar fuerza en un solo sentido sin tener que levantar y reposicionar la herramienta.
+
+![](img/2023-12-08-15-46-03.png)
+
+## Ruedas de bicicleta
+
+Permite que la rueda gire en una dirección (hacia adelante) mientras el piñón se engancha para impulsar la bicicleta, pero permite que la rueda gire libremente en la dirección opuesta (hacia atrás) sin mover la cadena ni los pedales.
+
+![](img/2023-12-08-15-47-08.png)
+
+Esto es esencial para que puedas dejar de pedalear y la bicicleta pueda avanzar sin forzar la transmisión.
+
+![](img/2023-12-08-15-47-03.png)
+
+## Resorte
 
 Es un componente elástico que se utiliza para almacenar y liberar energía en una variedad de aplicaciones mecánicas.
 
@@ -433,7 +642,9 @@ Sin ella, las piezas se rozan entre sí, lo que genera calor, desgaste y, en úl
 
 ## Mantenimento
 
-Un mantenimiento adecuado del sistema de lubricación y la limpieza también son esenciales para una lubricación eficaz. Si la lubricación es inadecuada o insuficiente, puede provocar un aumento del rozamiento y de la temperatura, lo que puede acelerar el desgaste y afectar negativamente a la vida útil de los mecanismos.<img src="media/image58.png" id="image58">
+Un mantenimiento adecuado del sistema de lubricación y la limpieza también son esenciales para una lubricación eficaz. Si la lubricación es inadecuada o insuficiente, puede provocar un aumento del rozamiento y de la temperatura, lo que puede acelerar el desgaste y afectar negativamente a la vida útil de los mecanismos.
+
+<img src="media/image58.png" id="image58">
 
 ## Aceites
 
@@ -443,11 +654,17 @@ La denominació de l'oli es basa en una escala de viscositat que es mesura a t
 
 En la denominació de l'oli es fa referència a la seva viscositat a 100 graus Celsius, la qual es representa amb la lletra "W" (que significa "Winter" o hivern en anglès). Així, per exemple, un oli 10W-40 té una viscositat de 10 a baixes temperatures (en fred) i de 40 a altes temperatures (en calent).
 
+![](img/2023-12-08-15-42-25.png)
+
 ## Circuitos
 
 Los sistemas de lubricación cuentan con diferentes mecanismos para la recirculación del lubricante. El aceite debe ser bombeado a través del circuito y luego retornado a un recipiente (cárter) donde se recoge.
 
-El carter se encuentra en la parte inferior del motor.<img src="media/image60.png" id="image60">
+<img src="media/image60.png" id="image60">
+
+El carter se encuentra en la parte inferior del motor.
+
+![](img/2023-12-08-15-41-52.png)
 
 ## Filtro
 

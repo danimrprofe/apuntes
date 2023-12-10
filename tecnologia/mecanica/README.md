@@ -279,7 +279,23 @@ https://geargenerator.com/
 
 ### Caja de cambios
 
+La caja de cambios trabaja ajustando la ``relación de transmisión``, que es la proporción entre la velocidad de rotación del cigüeñal del motor y la velocidad de rotación de las ruedas. Esta relación se controla mediante la selección de diferentes ``engranajes`` que conectan el motor con las ruedas. En términos de energía, la caja de cambios ayuda a optimizar la eficiencia del motor y a proporcionar la potencia necesaria para diversas condiciones de conducción.
+
+Reducción de RPM del Motor: Al subir de marcha, el motor opera a un régimen de RPM más bajo en comparación con la marcha anterior. Los motores a menudo son más eficientes en términos de consumo de combustible y desgaste a RPM más bajas. Esto puede mejorar la eficiencia del motor y, en última instancia, la eficiencia general del vehículo.
+
+Aumento de la Eficiencia del Motor en su Rango Óptimo: Los motores tienen un rango de RPM en el que son más eficientes en términos de consumo de combustible y producción de potencia. Al cambiar a una marcha más alta, puedes mantener el motor dentro de este rango óptimo, mejorando así la eficiencia.
+
 ![Alt text](image-13.png)
+
+Vamos a suponer un diámetro de rueda de 50 cm, a fin de determinar cuanto avanza la rueda en una vuelta:
+
+https://www.tecnologia-automovil.com/articulos/tecnologias-limpias/relacion-de-transmision/
+
+https://www.youtube.com/watch?v=QmpB1-DJZY8&t=137s
+
+Calculador motores y cambios de marchas: https://www.blocklayer.com/rpm-gear
+
+<img src="media/image14.png" id="image14">
 
 ## Planetario
 
@@ -306,6 +322,8 @@ https://www.youtube.com/watch?v=KWTuMyas5wo
 
 ## Diferencial
 
+El diferencial permite que las ruedas izquierda y derecha giren a velocidades diferentes. Consiste en una serie de engranajes planetarios que distribuyen el par de manera variable entre las ruedas, permitiendo que cada rueda gire a una velocidad diferente según sea necesario.
+
 ![](img/2023-12-08-16-21-12.png)
 
 ![](img/2023-12-08-16-21-20.png)
@@ -327,10 +345,6 @@ Cadenas: simulación
 Simulador de cadenas
 
 <img src="media/image13.png" id="image13">
-
-### Calculador motores y cambios de marchas
-
-<img src="media/image14.png" id="image14">
 
 ### Piñones y platos
 

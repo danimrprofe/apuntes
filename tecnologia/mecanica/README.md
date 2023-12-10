@@ -128,7 +128,7 @@ Este mecanismo simple trasforma un movimiento giratorio aplicado al tornillo en 
 
 El tornillo viene a ser un plano inclinado, en el que la fuerza aplicada tiene dirección tangencial y la fuerza resultante tiene dirección axial, según el eje del tornillo.
 
-![Alt text](image-5.png)
+![Alt text](img/image-5.png)
 
 Por lo tanto, la ventaja mecánica tiene la misma expresión que en el plano inclinado, siendo el ángulo α igual a la inclinación de la rosca.
 
@@ -164,7 +164,7 @@ L'inconvenient d'aquest muntatge és que per elevar la càrrega hem de fer forç
 
 Un polipasto es un aparato que sirve para elevar o mover cargas pesadas. Este aparato está formado por un conjunto de poleas que van ligadas a un gancho o carga.
 
-![Alt text](image-6.png)
+![Alt text](img/image-6.png)
 
 Cuando se tira de la cuerda del polipasto, la carga se mueve hacia arriba, gracias a la multiplicación de fuerzas que se produce con las poleas.
 
@@ -172,7 +172,7 @@ El polipasto puede utilizarse en una gran variedad de actividades, como en la co
 
 <img src="media/image3.png" id="image3">
 
-![Alt text](image-7.png)
+![Alt text](img/image-7.png)
 
 ### Simulador de poleas
 
@@ -196,7 +196,7 @@ Ejes fijos: Permiten el giro de los elementos mecánicos situados sobre ellos, p
 
 Ejes giratorios: pueden girar solidariamente con algunos de los elementos situados sobre ellos.
 
-![Alt text](image-8.png)
+![Alt text](img/image-8.png)
 
 ### Árboles
 
@@ -240,13 +240,13 @@ Consiste en una polea que se encuentra conectada al motor y que hace contacto co
 
 Las correas pueden ser de diferentes tipos, como las planas, las trapezoidales o las dentadas, y su elección dependerá del tipo de aplicación.
 
-![Alt text](image-9.png)
+![Alt text](img/image-9.png)
 
 Cuando se necesitan varias relaciones de transmisión diferentes se utilizan las poleas escalonadas.
 
 Son especialmente útiles cuando queremos poder cambiar velocidades, ajustando la correa
 
-![Alt text](image-10.png)
+![Alt text](img/image-10.png)
 
 Simulador: Simulador de polea y correa
 https://www.blocklayer.com/pulley-belteng
@@ -259,7 +259,7 @@ Si se necesita una relación de transmisión muy elevada o muy reducida se utili
 
 Cuando se necesita una transmisión sin resbalamiento se utilizan las llamadas correas dentadas, que se estudiará más adelante, junto a la transmisión por cadena.
 
-![Alt text](image-11.png)
+![Alt text](img/image-11.png)
 
 ## Engranajes
 
@@ -299,26 +299,16 @@ Calculador motores y cambios de marchas: https://www.blocklayer.com/rpm-gear
 
 ## Planetario
 
-Se trata de un sistema
-mecánico con movimiento rotacional
-que, por su diseño, es capaz de
-cambiar, acumular y distribuir
-Velocidades angulares de
-entrada* y/o el par motor a los
-satélites a lo largo del mismo eje
+Se trata de un sistema mecánico con movimiento rotacional que, por su diseño, es capaz de cambiar, acumular y distribuir Velocidades angulares de entrada* y/o el par motor a los satélites a lo largo del mismo ejemplo
 de rotación.
 
 ![](img/planetario.gif)
 
-Incluye también la
-corona, el portasatélites y el piñón
-central o “planeta”.
+Incluye también la corona, el portasatélites y el piñón central o “planeta”.
 
-![Alt text](image-12.png)
+![Alt text](img/image-12.png)
 
-Video:
-
-https://www.youtube.com/watch?v=KWTuMyas5wo
+Video: https://www.youtube.com/watch?v=KWTuMyas5wo
 
 ## Diferencial
 
@@ -400,7 +390,20 @@ En la siguiente imagen vemos como los palieres se unen a las ruedas mediante jun
 
 ## Embrague
 
-El embrague de un coche es un sistema mecánico que se encuentra entre el motor y la caja de cambios.
+El embrague es responsable de conectar y desconectar el motor de la caja de cambios. Cuando se presiona el pedal del embrague, se desconecta el motor de la caja de cambios, permitiendo cambiar de marcha sin interrupciones en la rotación del motor.
+
+### Disco de Embrague
+
+El componente clave del sistema de embrague es el disco de embrague. Este disco, situado entre el volante del motor y el platillo de presión, se conecta al motor y a la caja de cambios.
+
+![Alt text](image-18.png)
+
+- Cuando el pedal del embrague se presiona, el disco de embrague se separa del volante del motor, interrumpiendo la transmisión de energía
+- Cuando se libera el pedal del embrague, la presión se aplica al disco, conectando así el motor y la caja de cambios. Al presionar el pedal del embrague, se reduce la presión, desconectando el motor de la caja de cambios.
+
+![](img/2023-12-09-09-05-26.png)
+
+Pedal del Embrague: En un vehículo con transmisión manual, el conductor controla el embrague a través del pedal del embrague. Al presionar este pedal, se desacopla el motor de la caja de cambios, permitiendo cambiar de marcha. Al soltar el pedal, se vuelve a conectar la transmisión.
 
 <img src="media/image21.gif" id="image21">
 
@@ -432,6 +435,8 @@ Es un sistema de engranajes que se utiliza para transformar el movimiento circul
 
 <img src="media/image26.jpg" id="image26">
 
+Podemos encontrar este tipo de mecanismo en una puerta automática:
+
 <img src="media/image27.png" id="image27">
 
 ## Tornillo-tuerca
@@ -440,6 +445,8 @@ Es un sistema de rosca que se utiliza para transformar el movimiento circular en
 
 <img src="media/image28.png" id="image28">
 
+![Alt text](image-19.png)
+
 <img src="media/image29.png" id="image29">
 
 <img src="media/image30.png" id="image30">
@@ -447,8 +454,6 @@ Es un sistema de rosca que se utiliza para transformar el movimiento circular en
 ## Tornillo sin fin
 
 Es un tipo de engranaje que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un tornillo con una rosca sin fin que se conecta a una rueda dentada que se llama corona. Al girar el tornillo sin fin, la corona se desplaza en la dirección deseada.
-
-<img src="media/image31.png" id="image31">
 
 Este sistema se utiliza principalmente en maquinaria que requiere un alto grado de precisión, como los relojes, y también para sistemas reductores de la velocidad.
 
@@ -464,9 +469,13 @@ Es un mecanismo que se utiliza para transformar el movimiento lineal en movimien
 
 Una leva es una pieza de forma irregular que se mueve en un movimiento circular y que, al hacer contacto con otra pieza, produce un movimiento lineal.
 
+La distancia que recorre la varilla es la diferencia entre el radio mayor y el radio menor:
+
+$d = R - r$
+
 <img src="media/image33.png" id="image33">
 
-En este ejemplo podemos ver como se utilizan las levas para abrir y cerrar las válvulas de admisión en un motor.
+En este ejemplo podemos ver como se utilizan las levas para abrir y cerrar las válvulas de admisión en un motor. En este caso, las levas se sincronizan entre sí mediante ``balancines``.
 
 <img src="media/image34.gif" id="image34">
 

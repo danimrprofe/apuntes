@@ -1,64 +1,63 @@
 - [1 Introducción](#1-introducción)
+  - [¿Qué es una base de datos?](#qué-es-una-base-de-datos)
+  - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
+  - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
+- [2. INSTALACIÓN Y ENTORNO BASE](#2-instalación-y-entorno-base)
+  - [Primera ejecución de Base y creación de base de datos](#primera-ejecución-de-base-y-creación-de-base-de-datos)
+- [3. Crear una base de datos de peliculas](#3-crear-una-base-de-datos-de-peliculas)
+  - [¿Dónde guardaremos nuestra base de datos?](#dónde-guardaremos-nuestra-base-de-datos)
+- [4. Creamos nuestra primera tabla](#4-creamos-nuestra-primera-tabla)
+  - [Tipos de datos](#tipos-de-datos)
+  - [La clave primaria](#la-clave-primaria)
+  - [Guardar la tabla](#guardar-la-tabla)
+- [5. Inserción de datos en la tabla películas](#5-inserción-de-datos-en-la-tabla-películas)
+- [6. Ordenar tablas](#6-ordenar-tablas)
+- [7. Filtrado de datos](#7-filtrado-de-datos)
+- [8. Editar y borrar](#8-editar-y-borrar)
+- [9. Crear la tabla intérpretes](#9-crear-la-tabla-intérpretes)
+- [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
+- [11. Relaciones entre tablas](#11-relaciones-entre-tablas)
+  - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
+- [13. Relaciones entre intérprete, protagonistas y películas](#13-relaciones-entre-intérprete-protagonistas-y-películas)
+- [14. Consultas simples](#14-consultas-simples)
+- [15. Consultas sobre varias tablas combinando el asistente con el modo Diseño](#15-consultas-sobre-varias-tablas-combinando-el-asistente-con-el-modo-diseño)
+- [16. CONSULTAS AVANZADAS](#16-consultas-avanzadas)
+- [17. Consultas con funciones](#17-consultas-con-funciones)
+- [18. Vistas. Consultas sobre vistas](#18-vistas-consultas-sobre-vistas)
+- [19. FORMULARIOS](#19-formularios)
+- [20. FAQ](#20-faq)
 
 # 1 Introducción
 
-¿Qué es una base de datos?
+## ¿Qué es una base de datos?
 
 Una base de datos es un sistema organizado para recopilar, almacenar y gestionar datos. Permite a los usuarios almacenar, recuperar y manipular datos de manera eficiente.
 
 Las bases de datos están estructuradas en tablas que contienen filas y columnas. Cada columna representa un tipo de datos específico y cada fila contiene una entrada de datos única.
 
-¿Qué ventajas nos aporta una base datos?
+## ¿Qué ventajas nos aporta una base datos?
 
-Estructura de datos
+**Estructura de datos**: Las bases de datos permiten organizar los datos en estructuras más complejas que los simples archivos de texto. Puedes tener tablas relacionadas entre sí, lo que facilita el manejo de datos complejos y su consulta.
 
-Las bases de datos permiten organizar los datos en estructuras más complejas que los simples archivos de texto. Puedes tener tablas relacionadas entre sí, lo que facilita el manejo de datos complejos y su consulta.
+**Búsqueda eficiente**: Las bases de datos están optimizadas para búsquedas rápidas y eficientes. Puedes buscar información en grandes conjuntos de datos de manera mucho más rápida que si tuvieras que hacerlo en un documento de texto extenso.
 
-Búsqueda eficiente
+**Integridad y consistencia de datos**: Las bases de datos permiten definir reglas para asegurar que los datos sean coherentes y precisos. Se pueden establecer restricciones para evitar inconsistencias en los datos, lo cual es difícil de lograr en un documento de texto.
 
-Las bases de datos están optimizadas para búsquedas rápidas y eficientes. Puedes buscar información en grandes conjuntos de datos de manera mucho más rápida que si tuvieras que hacerlo en un documento de texto extenso.
+**Seguridad**: Las bases de datos pueden tener sistemas de seguridad avanzados para proteger los datos sensibles. Los documentos de texto, por otro lado, suelen estar menos protegidos y son más susceptibles a manipulaciones no autorizadas.
 
-Integridad y consistencia de datos
+**Escalabilidad**: Las bases de datos pueden manejar grandes volúmenes de datos y son escalables. Puedes agregar más datos a medida que tu negocio crece, algo que podría ser problemático en un documento de texto.
 
-Las bases de datos permiten definir reglas para asegurar que los datos sean coherentes y precisos. Se pueden establecer restricciones para evitar inconsistencias en los datos, lo cual es difícil de lograr en un documento de texto.
+**Concurrencia**: Las bases de datos permiten múltiples usuarios acceder y modificar datos simultáneamente sin corromper la información, algo que es difícil de gestionar en un documento de texto compartido.
 
-Seguridad
+**Recuperación de datos**: En caso de pérdida de datos, las bases de datos suelen tener sistemas de copia de seguridad y recuperación que facilitan la restauración de los datos a un estado anterior.
 
-Las bases de datos pueden tener sistemas de seguridad avanzados para proteger los datos sensibles. Los documentos de texto, por otro lado, suelen estar menos protegidos y son más susceptibles a manipulaciones no autorizadas.
-
-Escalabilidad
-
-Las bases de datos pueden manejar grandes volúmenes de datos y son escalables. Puedes agregar más datos a medida que tu negocio crece, algo que podría ser problemático en un documento de texto.
-
-Concurrencia
-
-Las bases de datos permiten múltiples usuarios acceder y modificar datos simultáneamente sin corromper la información, algo que es difícil de gestionar en un documento de texto compartido.
-
-Recuperación de datos
-
-En caso de pérdida de datos, las bases de datos suelen tener sistemas de copia de seguridad y recuperación que facilitan la restauración de los datos a un estado anterior.
-
-# 2. INSTALACIÓN Y ENTORNO BASE
-
-¿Qué programa de bases de datos vamos a utilizar?
-
-Libreoffice
-
-Libreoffice es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo Calc o Writer, que nos ayudan a redactar informes o realizar cálculos.
-
-<img src="media/image1.png" id="image1">
-
-Libreoffice base
-
-Libreoffice base es un programa que nos permite guardar cualquier tipo de información de un tema en concreto en una base de datos, para actualizarla o consultarla en cualquier momento.
-
-<img src="media/image2.png" id="image2">
+## Ejemplos de bases de datos
 
 ¿Qué tipos de bases de datos podemos encontrar?
 
 Ejemplos de bases de datos podrían ser:
 
-Información Académica
+### Información Académica
 
 En este caso, se pueden gestionar datos relacionados con estudiantes, profesores, evaluaciones y amonestaciones, entre otros.
 
@@ -66,7 +65,7 @@ La base de datos puede incluir detalles sobre los alumnos, como nombres, direcci
 
 Además, se pueden registrar evaluaciones, notas y cualquier amonestación disciplinaria que ocurra en el ámbito educativo.
 
-Información Hospitalaria
+### Información Hospitalaria
 
 Las bases de datos también son fundamentales en entornos hospitalarios para organizar información relevante.
 
@@ -74,19 +73,27 @@ Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y 
 
 Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.
 
+# 2. INSTALACIÓN Y ENTORNO BASE
+
+``Libreoffice`` es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo ``Calc`` o ``Writer``, que nos ayudan a redactar informes o realizar cálculos.
+
+<img src="media/image1.png" id="image1">
+
+``Libreoffice base`` es un programa que nos permite guardar cualquier tipo de información de un tema en concreto en una base de datos, para actualizarla o consultarla en cualquier momento.
+
+<img src="media/image2.png" id="image2">
+
 ¿Cómo se guarda toda esta información?
 
-Toda esta información está guardada en forma de tablas que se interrelacionan entre ellas.
+Toda esta información está guardada en forma de ``tablas`` que se interrelacionan entre ellas.
 
-Primera ejecución de Base y creación de base de datos
+## Primera ejecución de Base y creación de base de datos
 
 Base forma parte del paquete de ofimática de Libreoffice. Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.
 
 <img src="media/image3.png" id="image3">
 
-Al entrar en Base nos encontraremos la ventana “Asistente para base de datos” donde se nos da a elegir entre crear una nueva base de datos, abrir una base de datos existente o conectar con una base de datos existente.
-
-<div class="break"></div>
+Al entrar en ``Base`` nos encontraremos la ventana “Asistente para base de datos” donde se nos da a elegir entre crear una nueva base de datos, abrir una base de datos existente o conectar con una base de datos existente.
 
 # 3. Crear una base de datos de peliculas
 
@@ -106,11 +113,11 @@ Para terminar, pulsamos sobre el botón finalizar.
 
 <img src="media/image4.png" id="image6">
 
-¿Dónde guardaremos nuestra base de datos?
+## ¿Dónde guardaremos nuestra base de datos?
 
 Es importante recordar dónde guardamos el archivo, puesto que en las próximas clases lo deberemos buscar para seguir trabajando.
 
-La base de datos se guarda toda dentro de un único archivo en nuestro ordenador como este. La extensión que tienen los tipos de archivo de base de datos es .odb. Aparecerá un icono que nos muestra que este archivo es un archivo de base.
+La base de datos se guarda toda dentro de un único archivo en nuestro ordenador como este. La extensión que tienen los tipos de archivo de base de datos es ``.odb``. Aparecerá un icono que nos muestra que este archivo es un archivo de base.
 
 <img src="media/image6.png" id="image7">
 
@@ -134,37 +141,45 @@ A continuación, nos aparecerá la siguiente ventana. Ahora aparece vacía porqu
 
 <img src="media/image9.png" id="image10">
 
-Crear el primer campo
-
-Comenzamos a definir el primer campo: nos situamos en la primera fila de la rejilla y en la columna Nombre del campo escribimos Id_pelicula. Digamos que es el número que le asignaremos a cada película que luego introduzcamos en la tabla.
+Comenzamos a definir el primer campo: nos situamos en la primera fila de la rejilla y en la columna ``Nombre del campo`` escribimos ``Id_pelicula``. Digamos que es el número que le asignaremos a cada película que luego introduzcamos en la tabla.
 
 <img src="media/image10.png" id="image11">
 
+## Tipos de datos
+
 A continuación, tenemos que especificar qué tipo de datos guarda este campo: ¿un número, un texto, una fecha?
 
-Por defecto, nos indica Texto[VARCHAR] como tipo de dato. En nuestro caso, para este campo vamos a elegir uno de los de tipo numérico llamado Número[Numeric]
+Existen los siguientes tipoos de datos:
+
+| Tipo de Datos | Uso                                                             | Ejemplo                                   | Ejemplo de Declaración                                                                                        |
+| ------------- | --------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Numeric       | Se utiliza para almacenar valores numéricos                     | 1, 3.14, -42, etc.                        | NUMERIC(10, 2) indica un número con hasta 10 dígitos, 2 de los cuales pueden estar después del punto decimal. |
+| Varchar       | Se utiliza para almacenar cadenas de texto de longitud variable | Nombres, descripciones, etc.              | VARCHAR(255) indica una cadena de texto con una longitud máxima de 255 caracteres.                            |
+| Date          | Se utiliza para almacenar valores de fecha                      | 2023-10-22                                | DATE indica un tipo de datos de fecha.                                                                        |
+| Boolean       | Se utiliza para almacenar valores de verdad o falsedad          | Verdadero o falso, activado o desactivado | BOOLEAN o BOOL se utiliza para definir un tipo de datos booleano en algunas bases de datos.                   |
+
+Por defecto, nos indica ``Texto[VARCHAR]`` como tipo de dato. En nuestro caso, para este campo vamos a elegir uno de los de tipo numérico llamado ``Número[Numeric]``
 
 <img src="media/image11.png" id="image12">
 
-A continuación, en la columna Descripción, sería aconsejable que se introdujese un comentario acerca del campo que se acaba de insertar
+A continuación, en la columna ``Descripción``, sería aconsejable que se introdujese un comentario acerca del campo que se acaba de insertar
 
 <img src="media/image12.png" id="image13">
 
-Crear clave primaria
+## La clave primaria
 
-En el caso de nuestra TABLA PELÍCULAS, a priori, no hay ningún campo acerca de una película que podamos utilizar para diferenciar una película de otra.
+En el caso de nuestra tabla ``PELICULAS``, a priori, no hay ningún campo acerca de una película que podamos utilizar para diferenciar una película de otra.
 
 Por ejemplo, podemos tener dos películas con el mismo título o dos películas con el mismo director o dos películas que se produjeron el mismo año.
 
 Para este tipo de tablas se suele definir un campo de tipo numérico (como acabamos de hacer nosotros con nuestro Id_pelicula) que debe cumplir dos condiciones:
 
-Ese campo siempre tiene que tomar un valor para cada fila de la tabla
+1. Ese campo siempre tiene que tomar un valor para cada fila de la tabla
+2. Dicho valor no puede repetirse en ninguna fila.
 
-Dicho valor no puede repetirse en ninguna fila.
+Cuando un campo cumple estas dos propiedades (sin nulos y sin repetidos) se le llama ``clave primaria`` o ``clave principal``. Toda tabla debe tener una.
 
-Cuando un campo cumple estas dos propiedades (sin nulos y sin repetidos) se le llama clave primaria o clave principal. Toda tabla debe tener una.
-
-Para indicar que queremos que el campo Id_pelicula sea nuestra Llave Primaria seguimos los siguientes pasos:
+Para indicar que queremos que el campo ``Id_pelicula`` sea nuestra Llave Primaria seguimos los siguientes pasos:
 
 Nos situamos en la parte izquierda del campo
 
@@ -174,7 +189,7 @@ Pulsamos botón derecho del ratón
 
 <img src="media/image14.png" id="image15">
 
-Seleccionamos la opción Llave primaria
+Seleccionamos la opción ``Llave primaria``
 
 <img src="media/image15.png" id="image16">
 
@@ -182,49 +197,11 @@ Quedando finalmente el campo como se muestra. La llave indica que este campo es 
 
 <img src="media/image16.png" id="image17">
 
-Crear el resto de campos
-
 Una vez insertado este primer campo, insertaríamos el resto de columnas, que van a ser:
 
 <img src="media/image17.png" id="image18">
 
-Tipos de valores
-
-En una base de datos, los tipos de datos son importantes porque definen qué tipo de valores pueden almacenarse en un campo específico de una tabla.
-
-Numeric (Numérico)
-
-Uso: Se utiliza para almacenar valores numéricos, como números enteros o decimales.
-
-Ejemplo: Puedes usar este tipo de datos para almacenar valores como 1, 3.14, -42, etc.
-
-Ejemplo de Declaración: NUMERIC(10, 2) indica un número con hasta 10 dígitos, 2 de los cuales pueden estar después del punto decimal.
-
-Varchar (Variable Character):
-
-Uso: Se utiliza para almacenar cadenas de texto de longitud variable.
-
-Ejemplo: Puedes usar este tipo de datos para almacenar texto como nombres, descripciones, etc.
-
-Ejemplo de Declaración: VARCHAR(255) indica una cadena de texto con una longitud máxima de 255 caracteres.
-
-Date (Fecha)
-
-Uso: Se utiliza para almacenar valores de fecha.
-
-Ejemplo: Puedes usar este tipo de datos para almacenar fechas como 2023-10-22.
-
-Ejemplo de Declaración: DATE indica un tipo de datos de fecha.
-
-Boolean (Booleano):
-
-Uso: Se utiliza para almacenar valores de verdad o falsedad (verdadero o falso).
-
-Ejemplo: Puedes usar este tipo de datos para campos que necesitan representar estados como "activado" o "desactivado".
-
-Ejemplo de Declaración: En algunas bases de datos, BOOLEAN o BOOL se utiliza para definir un tipo de datos booleano.
-
-Guardar la tabla
+## Guardar la tabla
 
 Una vez creados todos los campos con sus propiedades, debemos guardar la tabla. Para ello pulsamos sobre el icono en forma de disquete de la esquina superior izquierda
 
@@ -234,19 +211,15 @@ A continuación, nos aparece una ventana que nos pide que introducimos el nombre
 
 <img src="media/image19.png" id="image20">
 
-Si hemos seguido todos los pasos correctamente, nuestra tabla Peliculas debe aparecer dentro del apartado Tablas en la parte inferior de la ventana principal
+Si hemos seguido todos los pasos correctamente, nuestra ``tabla PELICULAS` debe aparecer dentro del apartado Tablas en la parte inferior de la ventana principal
 
 <img src="media/image20.png" id="image21">
 
 Las tildes pueden producir problemas por lo que es mejor evitar su uso en los nombres.
 
-Cambiar o modificar columnas
-
 Si quisiéramos agregar o modificar columnas, elegimos editar.
 
 <img src="media/image21.png" id="image22">
-
-<div class="break"></div>
 
 # 5. Inserción de datos en la tabla películas
 
@@ -262,15 +235,9 @@ En primer lugar, podemos ver que:
 
 Aparecen las 6 columnas
 
-Ninguna fila insertada
-
-La columna Vista aparece con un cuadrado. Este cuadrado nos indica que es un campo del tipo Sí/No y que aparezca con fondo verde significa que no hay ninguna opción elegida por el momento.
-
-La flecha indica el lugar en el que se va a insertar la información.
-
-Para pasar de una celda a otra, recomiendo utilizar la tecla TAB.
-
-Insertar una nueva fila en la tabla
+- La columna ``Vista`` aparece con un cuadrado. Este cuadrado nos indica que es un campo del tipo Sí/No y que aparezca con fondo verde significa que no hay ninguna opción elegida por el momento.
+- La flecha indica el lugar en el que se va a insertar la información.
+- Para pasar de una celda a otra, recomiendo utilizar la tecla TAB.
 
 A continuación, vamos a introducir la información de nuestra primera fila.
 
@@ -280,11 +247,9 @@ Deberá quedar así:
 
 <img src="media/image24.png" id="image25">
 
-Nota: Como no sabemos el día exacto en el que se estrenó cada una de las películas que tenemos, vamos a indicar siempre el 1 de enero
+**Nota**: Como no sabemos el día exacto en el que se estrenó cada una de las películas que tenemos, vamos a indicar siempre el 1 de enero
 
 Si continuamos insertando filas, hay que hacer un recordatorio: la columna Id_pelicula iba a ser nuestra Llave Primaria; es decir, que los valores de este campo, no podían repetirse para ninguna fila.
-
-Rellenar el resto de películas
 
 A continuación, rellenamos el resto de filas, con la información de las películas, tal como se muestra.
 
@@ -302,21 +267,15 @@ Podemos ordenar las filas según el valor de cualquiera de las columnas, tanto e
 
 Dentro de las opciones de ordenación tenemos tres posibilidades:
 
-Especificar los criterios de clasificación para visualizar los datos
+1. Especificar los criterios de clasificación para visualizar los datos
+2. Ordenar de forma ascendente
+3. Ordenar de forma descendente en función de la columna elegida.
 
-Ordenar de forma ascendente
+Supongamos que deseamos ordenar nuestras filas:
 
-Ordenar de forma descendente en función de la columna elegida.
-
-Ejemplo de ordenación
-
-supongamos que deseamos ordenar nuestras filas:
-
-En primer lugar, en función de la columna Formato de forma ascendente
-
-En el caso de que tengamos valores repetidos para esta columna, queremos que aplique el orden alfabético de los nombres de los directores en el campo director
-
-En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo Año.
+1. En primer lugar, en función de la columna Formato de forma ascendente
+2. En el caso de que tengamos valores repetidos para esta columna, queremos que aplique el orden alfabético de los nombres de los directores en el campo director
+3. En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo Año.
 
 Es decir, los criterios de ordenación serían los que aparecen:
 
@@ -350,45 +309,31 @@ Los datos pueden sufrir variaciones a lo largo del tiempo o incluso desaparecer 
 
 Modificar y eliminar datos de nuestras tablas es un proceso muy habitual y simple de realizar y que no debería entrañar ningún problema.
 
-Borrar una fila entera
-
-No es necesario que borréis nada de momento
-
-Para borrar una fila entera, basta con situarse con el cursor al inicio de la fila y seleccionar eliminar fila. Por ejemplo, imaginemos que la película Rocky que tenía en VHS se ha estropeado y ya no se puede ver, entonces me sitúo al inicio de esa fila y selecciono eliminarla.
+Para borrar una fila entera (no es necesario hacerlo), basta con situarse con el cursor al inicio de la fila y seleccionar ``eliminar fila``. Por ejemplo, imaginemos que la película Rocky que tenía en VHS se ha estropeado y ya no se puede ver, entonces me sitúo al inicio de esa fila y selecciono eliminarla.
 
 <img src="media/image33.png" id="image34">
-
-<div class="break"></div>
 
 # 9. Crear la tabla intérpretes
 
 Las películas están protagonizadas por actores y actrices. Para poder relacionarlo todo, vamos a crear una tabla nueva.
 
-Crear la tabla
-
-Crearemos una tabla llamada Interpretes con los siguientes campos. Al igual que con las películas, crearemos un campo especial que será el número que daremos a cada intérprete.
+Crearemos una tabla llamada ``INTERPRETES`` con los siguientes campos. Al igual que con las películas, crearemos un campo especial que será el número que daremos a cada intérprete.
 
 <img src="media/image34.png" id="image35">
 
-Rellenar la tabla
-
-Una vez creada la estructura de la tabla, deberemos Insertar las siguientes filas en ella.
+Una vez creada la estructura de la tabla, deberemos insertar las siguientes filas en ella.
 
 <img src="media/image35.png" id="image36">
-
-Repaso
 
 Ahora deberíamos tener dos tablas creadas. Repasa que están todos los datos en ella y que no se te ha olvidado nada, antes de continuar.
 
 # 10. Tipos de datos y edición de tablas
 
-Edición de tablas
-
-Para abrir esta tabla para editarla tenemos que situarnos en el apartado de Tablas y hacer un clic con el botón derecho del ratón y seleccionar la opción Editar
+Una vez creada, podemos editar las columnas que tiene una tabla para cambiarlas, agregar o eliminar alguna columna, etc. Para abrir esta tabla para editarla tenemos que situarnos en el apartado de Tablas y hacer un clic con el botón derecho del ratón y seleccionar la opción Editar
 
 <img src="media/image21.png" id="image37">
 
-Agregar o eliminar columnas
+### Agregar o eliminar columnas
 
 Para añadir nuevas columnas a nuestra tabla hay que seguir el mismo proceso que en la creación de una tabla; es decir, introducir un valor para el nombre del campo, elegir un tipo de campo y escribir una descripción de ese campo.
 
@@ -398,7 +343,7 @@ Para eliminar columnas de nuestra tabla nos situamos al inicio del campo y selec
 
 En el caso de haber borrado una columna de la tabla accidentalmente siempre tenemos la opción de cerrar la ventana de edición sin guardar los cambios realizados.
 
-Modificación de columnas existentes
+### Modificación de columnas existentes
 
 Las modificaciones que se pueden realizar sobre las columnas existentes pueden ser de dos tipos:
 
@@ -410,7 +355,7 @@ cambio en las propiedades del campo, desde ser o no clave primaria, a cambiar el
 
 Una de las grandes ventajas de las bases de datos es que podemos tener toda la información que necesitamos almacenar en varias tablas, relacionadas entre ellas, en lugar de una única tabla enorme con toda la información.
 
-Se podría pensar en añadir una nueva columna (no la hagáis) a la tabla Peliculas que se llamara Género, de manera que por cada película almacenada también tuviera su género.
+Se podría pensar en añadir una nueva columna (no la hagáis) a la ``tabla PELICULAS` que se llamara Género, de manera que por cada película almacenada también tuviera su género.
 
 <img src="media/image37.png" id="image39">
 
@@ -420,21 +365,16 @@ Si nos fijamos en esta solución podemos ver que se está repitiendo el mismo va
 
 ¿Qué problemas podemos tener si lo hacemos así?
 
-Que en algún momento nos equivoquemos al teclear, y escribamos, por ejemplo, Ciencia-Fusión.
+1. Que en algún momento nos equivoquemos al teclear, y escribamos, por ejemplo, Ciencia-Fusión.
+2. Qué decidamos cambiar el nombre de un género, y por tanto tendríamos que cambiarlo en todas las filas.
 
-Qué decidamos cambiar el nombre de un género, y por tanto tendríamos que cambiarlo en todas las filas.
-
-Crear tabla de géneros
-
-La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la tabla PELICULAS y de la tabla GENEROS que están relacionadas.
+La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la ``tabla PELICULAS` y de la tabla ``GENEROS`` que están relacionadas.
 
 <img src="media/image38.png" id="image41">
 
 id_genero hay que ponerlo como clave principal.
 
-Valor automático
-
-Seleccionado el campo id_genero, vamos a marcar valor automático a SI. De este modo, no tendremos que rellenar este campo cuando rellenemos información de la tabla. En lugar de esto, se rellenará con el siguiente número disponible.
+Seleccionado el campo id_genero, vamos a marcar ``valor automático`` a SI. De este modo, no tendremos que rellenar este campo cuando rellenemos información de la tabla. En lugar de esto, se rellenará con el siguiente número disponible.
 
 <img src="media/image38.png" id="image42">
 
@@ -448,9 +388,9 @@ Ahora mismo deberíais tener 3 tablas:
 
 <img src="media/image40.png" id="image44">
 
-Rellenar la tabla generos
+Rellenar la ``tabla GENEROS``
 
-Vamos a rellenar la tabla generos. En la primera columna no tenemos que poner nada, siempre se pondrán los valores automáticamente cuando pasemos a la siguiente fila.
+Vamos a rellenar la ``tabla GENEROS``. En la primera columna no tenemos que poner nada, siempre se pondrán los valores automáticamente cuando pasemos a la siguiente fila.
 
 🚩 Si no se autocompletan los números, revisa que id_genero sea clave principal.
 
@@ -460,31 +400,23 @@ Información de intérpretes
 
 También vamos a suponer que quisiéramos almacenar información (apellidos, nombre y nacionalidad) acerca de los principales intérpretes con cada una de nuestras películas.
 
-A pesar de haber creado una tabla INTÉRPRETES  anteriormente, podríamos haber pensado en agregar columnas a la tabla PELICULAS donde guardar la información acerca de sus protagonistas.
+A pesar de haber creado una tabla INTÉRPRETES  anteriormente, podríamos haber pensado en agregar columnas a la ``tabla PELICULAS` donde guardar la información acerca de sus protagonistas.
 
 <img src="media/image42.png" id="image46">
 
 Esta solución es difícil de mantener y puede dar multitud de problemas y errores, por lo ya habíamos creado una tabla INTÉRPRETES
 
-TIPOS DE RELACIONES ENTRE TABLAS
+## Tipos de relaciones entre tablas
 
 Para ver la forma de establecer la relación es necesario decidir, previamente, qué tipo de relación existe entre las tablas. Existen tres tipos básicos de relaciones entre tablas:
 
-Uno a muchos (pelicula y género)
+### Uno a muchos (pelicula y género)
 
 Cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla, pero una fila de la segunda sólo está relacionada con una de la primera.
 
 Una película puede tener un único género pero un género puede serlo de varias películas.
 
-Muchos a muchos
-
-Esta clase de relación ocurre cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla y una fila de la segunda tabla puede estarlo con muchas filas de la primera.
-
-Un ejemplo de este tipo lo tenemos en la relación entre la tabla Peliculas y la tabla Interpretes
-
-Una película en particular puede tener muchos intérpretes y viceversa.
-
-Uno a uno
+### Uno a uno (1:1)
 
 Cuando una fila de la primera tabla sólo puede estar relacionada con una fila de la segunda y viceversa.
 
@@ -496,7 +428,13 @@ En función del tipo de relación, los pasos a realizar para indicarlas son dist
 
 A continuación, se explica al detalle las reglas básicas para los tipos uno a muchos y muchos a muchos.
 
-Relaciones uno a muchos
+### Muchos a muchos (N:M)
+
+Esta clase de relación ocurre cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla y una fila de la segunda tabla puede estarlo con muchas filas de la primera.
+
+Un ejemplo de este tipo lo tenemos en la relación entre la ``tabla PELICULAS` y la tabla Interpretes
+
+Una película en particular puede tener muchos intérpretes y viceversa.
 
 Para este tipo de relaciones la solución siempre es crear una nueva columna en la tabla del lado del muchos, es decir, debemos crear una nueva columna en la tabla cuyas filas sólo pueden estar relacionadas con una fila de la otra tabla, de manera que el valor de ese campo me indique sin lugar a dudas con qué fila está relacionada de la otra tabla.
 
@@ -506,11 +444,11 @@ Por tanto, la columna debe ser del mismo tipo de dato que la columna que sea cla
 
 Crear columna género dentro de la tabla películas
 
-Es decir, en la tabla Peliculas tendremos que crear una columna del mismo tipo que a la que llamaremos Genero.
+Es decir, en la ``tabla PELICULAS` tendremos que crear una columna del mismo tipo que a la que llamaremos Genero.
 
 <img src="media/image43.png" id="image47">
 
-Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la tabla Generos .
+Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la ``tabla GENEROS`` .
 
 Rellenar género de las películas
 
@@ -522,11 +460,11 @@ Herramienta relaciones
 
 Falta indicarle que las dos tablas están relacionadas y que vamos a utilizar para mantener dicha relación la nueva columna id_genero que hemos creado en peliculas.
 
-Para realizar esta operación tenemos que abrir la herramienta QUE SOLO ENCONTRARÉIS EN LA VENTANA PRINCIPAL, llamada Relaciones. <img src="media/image45.png" id="image49">
+Para realizar esta operación tenemos que abrir la herramienta QUE SOLO ENCONTRARÉIS EN LA VENTANA PRINCIPAL, llamada Relaciones.
+
+<img src="media/image45.png" id="image49">
 
 Veréis que se abre una ventana nueva.
-
-Añadir las tablas que vamos a utilizar
 
 Lo primero que nos ocurre nada más entrar en la ventana Relaciones. Seleccionamos cada tabla y le damos a añadir.
 
@@ -548,9 +486,8 @@ Entonces, nos debe aparecer una ventana donde primero debemos indicar las tablas
 
 En la parte inferior de esta ventana veremos que nos pide que indiquemos dos opciones:
 
-la de actualización
-
-la de eliminación
+1. la de actualización
+2. la de eliminación
 
 Nos ofrece cuatro posibilidades para cada una de ellas. Estas opciones sirven para indicar qué hacer si algún valor del campo de clave primaria que está siendo referenciada (en nuestro caso Id_genero) sufre alguna modificación o si esa fila es eliminada.
 
@@ -568,9 +505,8 @@ Una vez hemos terminado de indicar la relación, ésta debe aparecer indicada ta
 
 Ahora aparece una línea uniendo ambas tablas y que en el extremo de esa línea;
 
-En el lado de la tabla Generos aparece el valor 1
-
-En el extremo de la tabla Peliculas, nos aparece el valor n.
+- En el lado de la ``tabla GENEROS`` aparece el valor 1
+- En el extremo de la ``tabla PELICULAS`, nos aparece el valor n.
 
 Estos valores nos están indicando que el tipo de relación es de uno (1) a muchos (n).
 
@@ -578,9 +514,8 @@ RELACIÓN ENTRE PELÍCULAS E INTÉRPRETES
 
 En este caso puede darse el caso de:
 
-1 película que tiene N intérpretes
-
-1 intérprete que participa en N películas
+- 1 película que tiene N intérpretes
+- 1 intérprete que participa en N películas
 
 La relación entre películas e intérpretes es de muchos a muchos (N a N).
 
@@ -592,9 +527,8 @@ Relación entre películas e intérpretes
 
 En este caso puede darse el caso de:
 
-1 película que tiene N intérpretes
-
-1 intérprete que participa en N películas
+- 1 película que tiene N intérpretes
+- 1 intérprete que participa en N películas
 
 La relación entre películas e intérpretes es de muchos a muchos (N a N). Cuando esto pasa, no basta con añadir una columna. Necesitamos crear una nueva tabla.
 
@@ -620,7 +554,7 @@ Etc.
 
 Como veis la tabla protagonistas enlaza las películas con sus intérpretes, y viceversa.
 
-# 13. Crear relaciones entre las tablas intérprete, protagonistas y películas
+# 13. Relaciones entre intérprete, protagonistas y películas
 
 Ahora hemos creado la tabla protagonistas, pero no está relacionada con las tablas PELICULAS y INTERPRETES.  Para asegurarnos que todo funcione y que tengan información correcta, tenemos que relacionarlas.
 
@@ -636,11 +570,9 @@ Aquí veis las dos tablas que hemos añadido, pero que no están conectadas con 
 
 <img src="media/image56.png" id="image59">
 
-<div class="break"></div>
-
 Relación películas y protagonistas
 
-Relacionamos los campos id_pelicula de las dos tablas. Comprobaréis que aparece 1 y n, indicando que un valor de id_pelicula en la tabla PELICULAS aparece más de una vez en la tabla PROTAGONISTAS.
+Relacionamos los campos id_pelicula de las dos tablas. Comprobaréis que aparece 1 y n, indicando que un valor de id_pelicula en la ``tabla PELICULAS` aparece más de una vez en la tabla PROTAGONISTAS.
 
 <img src="media/image58.png" id="image60">
 
@@ -658,17 +590,13 @@ Resumiendo, al final las relaciones tienen que quedar así.
 
 # 14. Consultas simples
 
-Las consultas nos permiten visualizar parte de la información contenida en nuestras bases de datos desde una perspectiva más detallada
+Las consultas nos permiten visualizar parte de la información contenida en nuestras bases de datos desde una perspectiva más detallada. Se pueden realizar sobre una o varias tablas relacionadas. El resultado que devuelven se muestra también en forma de tabla.
 
-Se pueden realizar sobre una o varias tablas relacionadas. El resultado que devuelven se muestra también en forma de tabla.
+Las consultas son muy útiles a la hora de construir formularios y, sobre todo, informes, como veremos más adelante.
 
-Las consultas son muy útiles a la hora de construir formularios y, sobre todo, informes, como ya veremos más adelante.
+La creación de consultas sobre una tabla se realiza utilizando el asistente. Vamos a comenzar realizando una consulta que nos devuelva de la tabla "Interpretes" el nombre, los apellidos y la nacionalidad de aquellos que no son españoles.
 
-Creación de consultas sobre una tabla utilizando el asistente
-
-Vamos a comenzar realizando una consulta que nos devuelva de la tabla Interpretes , el nombre, los apellidos y la nacionalidad de los que no son españoles.
-
-Para ello, teniendo seleccionada la sección “Consultas”, nos situamos sobre el apartado de tareas y elegimos “Usar el asistente para crear consulta…”.
+Para ello, teniendo seleccionada la sección "Consultas", nos situamos sobre el apartado de tareas y elegimos "Usar el asistente para crear consulta...".
 
 <img src="media/image61.png" id="image63">
 
@@ -754,7 +682,7 @@ La única forma de indicar esto es poniendo de nuevo el campo Titulo detrás de 
 
 Ya hemos visto entonces que en el modo Diseño nos aparecen los campos de Peliculas que deseamos pero aún no hemos hecho nada para ver el nombre del género de la película.
 
-Como el nombre del género es un campo de la tabla Generos lo primero que tenemos que hacer es indicar que queremos incluir dicha tabla en la consulta. Para ello, debemos seleccionar el icono “Añadir tablas” (ver Figura 5.14), que es el primero por la izquierda de los iconos de la fila inferior y elegir la tabla Generos.
+Como el nombre del género es un campo de la ``tabla GENEROS`` lo primero que tenemos que hacer es indicar que queremos incluir dicha tabla en la consulta. Para ello, debemos seleccionar el icono “Añadir tablas” (ver Figura 5.14), que es el primero por la izquierda de los iconos de la fila inferior y elegir la ``tabla GENEROS``.
 
 <img src="media/image75.png" id="image77">
 
@@ -770,7 +698,7 @@ Pero al haber indicado que existe la relación y detectarse en el modo Diseño c
 
 <img src="media/image78.png" id="image80">
 
-Una vez hemos añadido la tabla Generos, elegimos qué campos queremos mostrar de ella. En este caso, nos basta con el campo Nombre.
+Una vez hemos añadido la ``tabla GENEROS``, elegimos qué campos queremos mostrar de ella. En este caso, nos basta con el campo Nombre.
 
 <img src="media/image79.png" id="image81">
 
@@ -778,9 +706,7 @@ Una vez que hemos elegido el campo, no debemos olvidar comprobar que la opción 
 
 <img src="media/image80.png" id="image82">
 
-Alias
-
-En la opción “Alias” del campo nombre_genero de la TABLA GENEROS vamos a mostrar la palabra “Género” para que cualquier usuario entienda mejor lo que mostrará esta columna.
+En la opción ``Alias`` del campo nombre_genero de la ``tabla GENEROS`` vamos a mostrar la palabra “Género” para que cualquier usuario entienda mejor lo que mostrará esta columna.
 
 <img src="media/image81.png" id="image83">
 
@@ -834,7 +760,7 @@ A continuación, vamos a especificar que queremos que los resultados de la consu
 
 <img src="media/image87.png" id="image89">
 
-Para incluir los campos de la tabla Peliculas vamos a seleccionar Peliculas:* y así no tenemos que incluir los campos uno a uno
+Para incluir los campos de la ``tabla PELICULAS` vamos a seleccionar Peliculas:* y así no tenemos que incluir los campos uno a uno
 
 <img src="media/image88.png" id="image90">
 
@@ -842,7 +768,7 @@ Para seleccionar los campos de la tabla Interpretes no hemos utilizado la posibi
 
 Como en nuestro caso vamos a mostrar los resultados ordenados en función de los apellidos y el nombre de los intérpretes (ver Figura 6.4) necesitamos seleccionar uno a uno cada campo de Interpretes.
 
-Para terminar, vamos a seleccionar el campo Nombre de la tabla Generos y, en el alias, vamos a poner “NombreGenero”, para distinguirlo de los campos ya seleccionados, Nombre de la tabla Interpretes y genero de la tabla Peliculas.
+Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en el alias, vamos a poner “NombreGenero”, para distinguirlo de los campos ya seleccionados, Nombre de la tabla Interpretes y genero de la ``tabla PELICULAS`.
 
 <img src="media/image89.png" id="image91">
 
@@ -864,7 +790,7 @@ Para empezar, elegimos las tablas sobre las que vamos a realizar la consulta, Ge
 
 <img src="media/image92.png" id="image94">
 
-Los campos que necesitamos son, por un lado, Nombre de Generos, que es sobre el que agruparemos los resultados devueltos y, por otro, un campo de la tabla Peliculas que estemos seguros que siempre tendrá un valor (no estará vacío) para cada fila de Peliculas.
+Los campos que necesitamos son, por un lado, Nombre de Generos, que es sobre el que agruparemos los resultados devueltos y, por otro, un campo de la ``tabla PELICULAS` que estemos seguros que siempre tendrá un valor (no estará vacío) para cada fila de Peliculas.
 
 Por ejemplo, podemos elegir el campo id_pelicula que siempre va a tener valor para cada película. Los campos seleccionados se muestran.
 
@@ -872,9 +798,7 @@ Por ejemplo, podemos elegir el campo id_pelicula que siempre va a tener valor pa
 
 A continuación, debemos asociar la función correspondiente a cada uno de los dos campos.
 
-La función “agrupar”
-
-En primer lugar, hemos dicho que queremos agrupar los resultados en función de cada género, para ello vamos a incluir la función “Agrupar” asociada al campo Nombre de Generos.
+En primer lugar, hemos dicho que queremos agrupar los resultados en función de cada género, para ello vamos a incluir la ``función agrupar`` asociada al campo Nombre de Generos.
 
 <img src="media/image94.png" id="image96">
 

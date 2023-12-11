@@ -9,7 +9,15 @@
 - [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
+    - [Crear una cámara](#crear-una-cámara)
+    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
+    - [Modificar la posición](#modificar-la-posición)
+    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
+    - [Configuración de la cámara](#configuración-de-la-cámara)
+    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
+    - [Analicemos el timeline](#analicemos-el-timeline)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
+    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
 - [4. Texturas 🎨](#4-texturas-)
 - [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
@@ -29,7 +37,6 @@
   - [Codificación](#codificación)
   - [Renderizar animación](#renderizar-animación)
 - [7. Sistemas de partículas ❄️](#7-sistemas-de-partículas-️)
-  - [¿Qué son los sistemas de partículas?](#qué-son-los-sistemas-de-partículas)
   - [Vista lateral del resultado](#vista-lateral-del-resultado)
   - [Crear copo](#crear-copo)
   - [2. Crear un plano con emisiones](#2-crear-un-plano-con-emisiones)
@@ -38,8 +45,10 @@
   - [Colisiones y amortiguación](#colisiones-y-amortiguación)
 - [8. Iluminación](#8-iluminación)
   - [Insertar luz de área](#insertar-luz-de-área)
-  - [Potencia](#potencia)
-  - [Altura de la luz](#altura-de-la-luz)
+    - [Escalar la luz](#escalar-la-luz)
+    - [Subir la luz](#subir-la-luz)
+    - [Potencia](#potencia)
+    - [Altura de la luz](#altura-de-la-luz)
   - [7. Cámara](#7-cámara)
 - [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [Escena final](#escena-final)
@@ -87,27 +96,35 @@ El modelado 3D es el proceso de crear representaciones tridimensionales de objet
 
 ## Taza
 
+El primer objeto que vamos a modelar es una taza. De este modo utilizaremos las herramientas básicas para insertar, escalar y extruir nuestros obetos.
+
 https://www.youtube.com/watch?v=kPHf9DlkGro
 
 ## Monigote
 
+Podemos utilizar una restricción llamada ``mirror`` para crear objetos simétricos, lo que nos permite modelar en un plano y ver reflejado en el otro lo que dibujemos.
+
 ![Alt text](image.png)
+
+En este video podréis encontrar los pasos necesarios:
 
 https://www.youtube.com/watch?v=AW8hmeC5x2c
 
 # 2. Entornos HDRI  🏞️
 
-En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los HDRI en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos
+En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los ``HDRI`` en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos
 
 ## ¿Qué son los HDRI?
 
 Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
 
-Lo que vamos a usar son los HDRi y resulta que son del mismo creador de ``poly haven``. Se trata de una página web en la que podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
+![](img/2023-12-11-10-33-04.png)
+
+El primer caso es descargar un archivo que contenga el ``HDRI`` que queremos utilizar. Para ello podemos ir a la página web de ``poly haven``. En ella podemos encontrar múltiples recursos para nuestros renders, como por ejemplo texturas, entornos, etc.
 
 ![](img/2023-12-02-10-12-23.png)
 
-Entrando a la página veremos que tenemos un montón de HDRi que podemos usar totalmente de forma gratuita en nuestros renders.
+Entrando a la página veremos que tenemos un montón de ``HDRI`` que podemos usar totalmente de forma gratuita en nuestros renders.
 
 ![](img/2023-12-02-10-12-29.png)
 
@@ -137,7 +154,7 @@ Le damos a open y seleccionamos HDRI que acabamos de descargar que es este de aq
 
 ![](img/2023-12-02-10-13-04.png)
 
-Buscamos el archivo exr y lo abrimos.
+El formato ``HDRI`` (High Dynamic Range Image) utiliza archivos con extensión ``.exr`` para proporcionar imágenes de alto rango dinámico. Buscamos el archivo ``exr`` y lo abrimos.
 
 ![](img/2023-12-02-10-13-09.png)
 
@@ -145,11 +162,11 @@ Veremos que ahora nuestro objeto está dentro de un entorno que lo ilumina como 
 
 ![](img/2023-12-02-10-13-14.png)
 
-Si yo por ejemplo ahora añadiese una esfera y la aplicó a esta esfera un material súper metálico básicamente la llevo el metallic al máximo y el roughness se lo bajo
+Por ejemplo, si añado una esfera y le aplico un material súper metálico, esencialmente aumento al máximo la propiedad 'metallic' y reduzco la rugosidad ('roughness').
 
 ![](img/2023-12-02-10-13-19.png)
 
-Si hacemos CBD y shade smooth se vería como una esfera perfecta y ahí veis todo lo que está reflejando. Ahora la esfera estaría reflejando perfectamente este entorno veis que se ve como una bola de disco porque se ven todas sus caras por separado.
+Si aplicamos ``clic derecho`` y sombreado suave (shade smooth), la geometría se mostraría como una esfera perfecta, permitiéndonos observar todos los reflejos de su entorno. En este punto, la esfera reflejaría de manera óptima el entorno, notando cómo cada cara se distingue individualmente y contribuye a la apariencia de una bola de disco.
 
 ![](img/2023-12-02-10-13-25.png)
 
@@ -167,7 +184,7 @@ Los pasos seguidos son:
 - Agregar restricción a la cámara para que siga trayecto
 - Restablecer posición de la cámara
 - Agregar restricción a la cámara para que apunte a objeto
-- Modificar el trayecto de la curva (en edit mode)
+- Modificar el trayecto de la curva (en modo edición)
 
 Video: https://www.youtube.com/watch?v=M9XMEEMnRJk
 
@@ -196,7 +213,7 @@ Podemos darle al 0 para irnos a la vista desde la cámara. También podemos sele
 
 Como veis si intentamos movernos nos salimos de la cámara. También podemos pulsar 0 para salir de la vista.
 
-###  Modificar la posición
+### Modificar la posición
 
 La cámara la podemos mover como cualquier objeto, por ejemplo haciendo ``g x`` o ``g z`` para moverla en estos ejes.
 
@@ -249,7 +266,7 @@ Vamos a avanzar 100 fotograma movemos un poquito la cámara e insertamos otro fo
 
  Si ahora le damos al play ya tendríamos nuestra animación hecha. Veréis que la animación no se detiene en el 100, por lo que la tendremos que parar nosotros.
 
-Analicemos el timeline
+### Analicemos el timeline
 
 Aquí vemos que el único objeto animado ha sido la cámara. De hecho, el cubo sigue en su sitio.
 
@@ -257,8 +274,8 @@ Aquí vemos que el único objeto animado ha sido la cámara. De hecho, el cubo s
 
 Si ampliamos podemos ver la siguiente información. Tenemos dos **keyframes**
 
-- Uno en el 0. Es la "foto" de nuestra escena en ese momento.
-- Otro en el 100. Aquí las posiciones de los objetos habrán cambiado.
+- Uno en el ``frame 0``. Es la "foto" de nuestra escena en ese momento.
+- Otro en el ``frame 100``. Aquí las posiciones de los objetos habrán cambiado.
 
 En medio, ``Blender`` calculará (extrapolará) todos los frames intermedios que conducirán al movimiento entre esas dos posiciones.
 
@@ -282,7 +299,7 @@ Luego nos posicionamos en el 160, escalamos el cubo y fijamos el segundo keyfram
 
 Al tener 160 frames:
 
-- En un video de 24 FPS nuestra animación durará: 160 / 24 = 6,67 s
+- En un video de 24 FPS nuestra animación durará: $160 / 24 = 6,67 s$
 - Si fuera de 60 FPS, duraría 2,6 s
 
 Si seleccionamos tanto la cámara como el cubo, veremos en el timeline ambos objetos, y sus correspondientes keyframes.
@@ -301,7 +318,7 @@ Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Har
 
 # 4. Texturas 🎨
 
-En este video Diseñamos un vaso o taza en ``Blender`` y le aplicamos imágenes en la superficie de un objeto mediante el uso de materiales.
+En este video modelamos un vaso o taza en ``Blender`` y le aplicamos imágenes en la superficie de un objeto mediante el uso de materiales.
 
 Las imágenes están descargadas de Internet y editadas en Inkscape. Recordad buscar imágenes con transparencias, preferiblemente png.
 
@@ -335,7 +352,7 @@ Desde la vista frontal con el hueso seleccionado y la **tecla s** lo vamos a esc
 
 ## Columna vertebral
 
-Ahora para editar el hueso hay que entrar en el **edit mode**. Lo que quiero es hacer lo que sería la columna vertebral así que vamos a seleccionar el hueso y **clic derecho** le vamos a dar a subdivide por defecto sólo se subdivide una vez.
+Ahora para editar el hueso hay que entrar en el **modo edición**. Lo que quiero es hacer lo que sería la columna vertebral así que vamos a seleccionar el hueso y **clic derecho** le vamos a dar a subdivide por defecto sólo se subdivide una vez.
 
 ![imagen](img/image69.png)
 
@@ -359,21 +376,21 @@ Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD 
 
 ## Terminar
 
-ya tenemos todos los huesos necesarios así que vamos a salir del **edit mode** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``⬆️ ``⬆️ shift`` ` pulsada y por último seleccionamos los huesos.
+ya tenemos todos los huesos necesarios así que vamos a salir del **modo edición** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``⬆️ ``⬆️ shift`` ` pulsada y por último seleccionamos los huesos.
 
 A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
 Comprobamos que todo funciona y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
-Cambiamos del modo pose al **edit mode** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+``P`` y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
+Cambiamos del modo pose al **modo edición** seleccionamos el hueso de la mochila y luego el de la espalda. El orden es importante una vez seleccionado pulsamos ``ctrl``+``P`` y le damos aquí offset así cuando movamos ese huevo ese huevo ese huevo y así cuando movamos ese hueso la mochila lo seguirá y con el cristal podemos hacer lo mismo.
 
 Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo ponemos todo un poco para asegurarnos de que funcione bien y para volver atrás pulso ``ctrl``+``z`` obviamente todos los ríos tienen un límite y si hacéis los movimientos muy extremos se os va a romper, pero la verdad que me ha quedado bastante bien y creo que soporta posturas extremas ya podemos mover todas las partes del personaje
 
 ## Mover todo el personaje
 
-Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **edit mode** con la parte de abajo del hueso seleccionada pulsamos la ``e`` para extruir un nuevo hueso y lo colocamos por aquí.
+Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **modo edición** con la parte de abajo del hueso seleccionada pulsamos la ``e`` para extruir un nuevo hueso y lo colocamos por aquí.
 
-Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **edit mode** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **edit mode** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
+Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **modo edición** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **modo edición** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
 
 # 6. Renderizado
 
@@ -388,9 +405,9 @@ El proceso de renderización es importante porque nos permite visualizar el resu
 
 Antes de renderizar es importante elegir los parámetros necesarios como:
 
-- El motor de renderizado
-- La resolución y tasa de frames de renderizado
-- El lugar en el que se guardará el archivo de video final.
+- El ``motor`` de renderizado
+- La ``resolución`` y ``tasa de frames`` de renderizado
+- El ``lugar`` en el que se guardará el archivo de video final.
 
 ## Motor de renderizado
 
@@ -450,11 +467,11 @@ Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar
 
 # 7. Sistemas de partículas ❄️
 
-Un sistema de partículas es un conjunto de partículas que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
+Un sistema de partículas es un conjunto de ``partículas`` que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
 
-Los sistemas de partículas en ``Blender`` se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
+Los sistemas de partículas en ``Blender`` se pueden configurar de forma
 
-## ¿Qué son los sistemas de partículas?
+muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
 
 La simulación con sistemas de partículas permite obtener animaciones complejas de objetos que responden a **fuerzas gravitatorias** y acciones como las que produce el **viento** o un campo magnético. De esta forma podemos recrear **lluvia, nieve, y otros**.
 
@@ -536,7 +553,7 @@ En el submenú object seleccionamos en instance object la icosfera que habíamos
 
 ![imagen](img/image11.png)
 
-También cambiaremos velocity y physics para ajustar el comportamiento de los copos  y que este sea más realista.
+También cambiaremos ``velocity`` y ``physics`` para ajustar el comportamiento de los copos  y que este sea más realista.
 
 ![imagen](img/image12.png)
 
@@ -571,6 +588,8 @@ Creamos un plano con ``shift`` ` y ``a`` continuación luz plana.
 
 ![imagen](img/image18.png)
 
+### Escalar la luz
+
 La luz creada es de 1m por 1m, demasiado pequeña para nuestra escena.
 
 ![](img/2023-12-05-13-39-58.png)
@@ -579,19 +598,22 @@ Con `S 2 0` , lo podemos escalar a 20 metros cuadrados. Al ser un objeto plano, 
 
 ![](img/2023-12-05-13-40-45.png)
 
+### Subir la luz
+
 Ahora nuestra iluminación está a ras de suelo, por lo que no iluminará nada. Subiremos nuestra luz a la altura que consideréis. Si queréis subirla 10 metros: `G Z 10`.
 
 Pensada que la luz deberá estar debajo del plano emisor de partículas. De lo contrario, el plano emisor bloqueará la luz, al quedar por encima de él.
 
 ![](img/2023-12-05-13-42-00.png)
 
-## Potencia
+### Potencia
 
-Propiedades de la luz. En mi caso le he puesto 10.000 W de potencia y me ha parecido  suficiente.
+La potencia de la luz se mide en Vatios (W). A mayor potencia, más iluminará la luz la escen.
+En propiedades de la luz, ajustamos la potencia a ``10.000 W``.
 
 ![imagen](img/image19.png)
 
-## Altura de la luz
+### Altura de la luz
 
 En mi caso he colocado la luz a 12 metros de altura, como referencia, por si lo queréis hacer así, y centrado en origen de coordenadas para la x y la y.
 
@@ -603,8 +625,8 @@ La cámara la podéis poner donde queráis. Yo la he modificado a ojo y en una p
 
 Tened en cuenta que la cámara tiene:
 
-- Una posición
-- Una rotación, que habrá que modificar para que enfoque en la dirección correcta.
+- Una ``posición``
+- Una ``rotación``, que habrá que modificar para que enfoque en la dirección correcta.
 
 ![imagen](img/image21.png)
 
@@ -618,11 +640,12 @@ A base de combinar dos planos podemos crear un telón de fondo para nuestra esce
 
 ![](img/2023-12-05-11-45-02.png)
 
-- Escalamos el plano con ``S``, luego ``2`` ,``0`` y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
+- Escalamos el plano con ``S 2 0``, y por último ````enter````. De esta forma tendremos un plano de 20 metros cuadrados
 
 ![](img/2023-12-05-11-59-13.png)
 
-- Seleccionamos en ``modo vértices`` (tecla numérica 1) y
+Seleccionamos en ``modo vértices`` (tecla numérica 1) y
+
 ![](img/2023-12-05-13-31-23.png)
 
 Seleccionamos los dos vértices de la arista que queremos extruir.
@@ -641,7 +664,7 @@ Volvemos a seleccionar los dos vértices
 
 ![Alt text](image-6.png)
 
-Les hacemos bevel con ``ctrl`` + ``B``
+Hacemos un biselado utilizando ``Ctrl`` + ``B``, lo cual permite suavizar los bordes de la geometría seleccionada y añadir un efecto de chaflán.
 
 ![](img/2023-12-05-13-30-09.png)
 

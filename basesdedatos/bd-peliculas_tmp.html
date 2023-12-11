@@ -375,6 +375,8 @@ code {
 </li>
 <li><a href="#2-instalaci%C3%B3n-y-entorno-base-%EF%B8%8F">2. INSTALACIÓN Y ENTORNO BASE ⚙️</a>
 <ul>
+<li><a href="#libreoffice-base">Libreoffice base</a></li>
+<li><a href="#pasos-para-instalar-libreoffice">Pasos para instalar Libreoffice</a></li>
 <li><a href="#primera-ejecuci%C3%B3n-de-base-y-creaci%C3%B3n-de-base-de-datos">Primera ejecución de Base y creación de base de datos</a></li>
 </ul>
 </li>
@@ -387,12 +389,17 @@ code {
 <ul>
 <li><a href="#tipos-de-datos">Tipos de datos</a></li>
 <li><a href="#la-clave-primaria-">La clave primaria 🔑</a></li>
+<li><a href="#asignar-clave-primaria">Asignar clave primaria</a></li>
 <li><a href="#guardar-la-tabla">Guardar la tabla</a></li>
 </ul>
 </li>
 <li><a href="#5-inserci%C3%B3n-de-datos-en-la-tabla-pel%C3%ADculas">5. Inserción de datos en la tabla películas</a></li>
-<li><a href="#6-ordenar-tablas">6. Ordenar tablas</a></li>
-<li><a href="#7-filtrado-de-datos">7. Filtrado de datos</a></li>
+<li><a href="#6-ordenar-tablas">6. Ordenar tablas</a>
+<ul>
+<li><a href="#ejemplo-de-ordenaci%C3%B3n">Ejemplo de ordenación</a></li>
+</ul>
+</li>
+<li><a href="#7-filtrado-de-datos-">7. Filtrado de datos </a></li>
 <li><a href="#8-editar-y-borrar-%EF%B8%8F">8. Editar y borrar ✏️❌</a></li>
 <li><a href="#9-crear-la-tabla-int%C3%A9rpretes">9. Crear la tabla intérpretes</a></li>
 <li><a href="#10-tipos-de-datos-y-edici%C3%B3n-de-tablas">10. Tipos de datos y edición de tablas</a></li>
@@ -440,12 +447,22 @@ code {
 <p>Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y tratamientos anteriores.</p>
 <p>Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.</p>
 <h1 id="2-instalaci%C3%B3n-y-entorno-base-%E2%9A%99%EF%B8%8F">2. INSTALACIÓN Y ENTORNO BASE ⚙️</h1>
+<h2 id="libreoffice-base">Libreoffice base</h2>
 <p><code>Libreoffice</code> es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo <code>Calc</code> o <code>Writer</code>, que nos ayudan a redactar informes o realizar cálculos.</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image1.png" id="image1">
 <p><code>Libreoffice base</code> es un programa que nos permite guardar cualquier tipo de información de un tema en concreto en una base de datos, para actualizarla o consultarla en cualquier momento.</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image2.png" id="image2">
-<p>¿Cómo se guarda toda esta información?</p>
-<p>Toda esta información está guardada en forma de <code>tablas</code> que se interrelacionan entre ellas.</p>
+<h2 id="pasos-para-instalar-libreoffice">Pasos para instalar Libreoffice</h2>
+<ol>
+<li>Visita el sitio web de LibreOffice: Abre tu navegador web y dirígete al sitio oficial de LibreOffice en https://www.libreoffice.org/.</li>
+<li>Selecciona la opción &quot;Descargar&quot;: En la página principal de LibreOffice, deberías ver un botón o enlace que dice &quot;Descargar&quot; o &quot;Download&quot;. Haz clic en él.</li>
+<li>Elige tu sistema operativo: Selecciona tu sistema operativo. LibreOffice es compatible con Windows, macOS y Linux. Asegúrate de elegir la versión correcta para tu sistema.</li>
+<li>Selecciona la versión de LibreOffice: Verás varias opciones de descarga, incluyendo la suite completa y versiones específicas de cada programa, como Writer, Calc, Impress y Base. Asegúrate de que &quot;Base&quot; esté seleccionado.</li>
+<li>Haz clic en &quot;Descargar&quot;: Después de seleccionar Base y tu sistema operativo, haz clic en el botón &quot;Descargar&quot;. El archivo de instalación se guardará en tu computadora.</li>
+<li>Instala LibreOffice Base: Una vez que se haya descargado el archivo de instalación, ábrelo y sigue las instrucciones del asistente de instalación. Asegúrate de seleccionar la opción para instalar LibreOffice Base durante el proceso de instalación.</li>
+<li>Completa la instalación: Sigue las instrucciones en pantalla para completar la instalación. Puedes personalizar la instalación según tus preferencias.</li>
+<li>Inicia LibreOffice Base: Después de completar la instalación, busca el icono de LibreOffice en tu escritorio o menú de inicio y abre LibreOffice Base.</li>
+</ol>
 <h2 id="primera-ejecuci%C3%B3n-de-base-y-creaci%C3%B3n-de-base-de-datos">Primera ejecución de Base y creación de base de datos</h2>
 <p>Base forma parte del paquete de ofimática de Libreoffice. Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image3.png" id="image3">
@@ -527,6 +544,7 @@ code {
 <li>Dicho valor no puede repetirse en ninguna fila.</li>
 </ol>
 <p>Cuando un campo cumple estas dos propiedades (sin nulos y sin repetidos) se le llama <code>clave primaria</code> o <code>clave principal</code>. Toda tabla debe tener una.</p>
+<h2 id="asignar-clave-primaria">Asignar clave primaria</h2>
 <p>Para indicar que queremos que el campo <code>Id_pelicula</code> sea nuestra Llave Primaria seguimos los siguientes pasos:</p>
 <p>Nos situamos en la parte izquierda del campo</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image13.png" id="image14">
@@ -579,17 +597,18 @@ code {
 <li>Ordenar de forma ascendente</li>
 <li>Ordenar de forma descendente en función de la columna elegida.</li>
 </ol>
+<h2 id="ejemplo-de-ordenaci%C3%B3n">Ejemplo de ordenación</h2>
 <p>Supongamos que deseamos ordenar nuestras filas:</p>
 <ol>
 <li>En primer lugar, en función de la columna Formato de forma ascendente</li>
 <li>En el caso de que tengamos valores repetidos para esta columna, queremos que aplique el orden alfabético de los nombres de los directores en el campo director</li>
-<li>En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo Año.</li>
+<li>En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo <code>Año</code>.</li>
 </ol>
 <p>Es decir, los criterios de ordenación serían los que aparecen:</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image27.png" id="image28">
 <p>El resultado debería ser el siguiente. Si no os cuadra, comprobad que habéis puesto bien la información y los criterios de ordenación.</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image28.png" id="image29">
-<h1 id="7-filtrado-de-datos">7. Filtrado de datos</h1>
+<h1 id="7-filtrado-de-datos-alt-text">7. Filtrado de datos <img src="file:///e:/Docencia/apuntes/basesdedatos/image.png" alt="Alt text"></h1>
 <p>En ocasiones podemos querer buscar únicamente un conjunto de películas que cumplen cierta condición. Las opciones de filtrado de datos nos permiten elegir de forma simple qué datos queremos que se muestren.</p>
 <img src="file:///e:/Docencia/apuntes/basesdedatos/media/image29.png" id="image30">
 <p>Elegid los siguientes valores para visualizar las películas entre 1980 y 1989. Para ello, filtraremos por el campo año.</p>

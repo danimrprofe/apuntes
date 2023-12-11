@@ -3,16 +3,20 @@
   - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
   - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
 - [2. INSTALACIÓN Y ENTORNO BASE ⚙️](#2-instalación-y-entorno-base-️)
+  - [Libreoffice base](#libreoffice-base)
+  - [Pasos para instalar Libreoffice](#pasos-para-instalar-libreoffice)
   - [Primera ejecución de Base y creación de base de datos](#primera-ejecución-de-base-y-creación-de-base-de-datos)
 - [3. Crear una base de datos de peliculas](#3-crear-una-base-de-datos-de-peliculas)
   - [¿Dónde guardaremos nuestra base de datos?](#dónde-guardaremos-nuestra-base-de-datos)
 - [4. Creamos nuestra primera tabla](#4-creamos-nuestra-primera-tabla)
   - [Tipos de datos](#tipos-de-datos)
   - [La clave primaria 🔑](#la-clave-primaria-)
+  - [Asignar clave primaria](#asignar-clave-primaria)
   - [Guardar la tabla](#guardar-la-tabla)
 - [5. Inserción de datos en la tabla películas](#5-inserción-de-datos-en-la-tabla-películas)
 - [6. Ordenar tablas](#6-ordenar-tablas)
-- [7. Filtrado de datos](#7-filtrado-de-datos)
+  - [Ejemplo de ordenación](#ejemplo-de-ordenación)
+- [7. Filtrado de datos ](#7-filtrado-de-datos-)
 - [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
 - [9. Crear la tabla intérpretes](#9-crear-la-tabla-intérpretes)
 - [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
@@ -78,6 +82,8 @@ Además, se pueden gestionar listas de espera para consultas y procedimientos, r
 
 # 2. INSTALACIÓN Y ENTORNO BASE ⚙️
 
+## Libreoffice base
+
 ``Libreoffice`` es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo ``Calc`` o ``Writer``, que nos ayudan a redactar informes o realizar cálculos.
 
 <img src="media/image1.png" id="image1">
@@ -86,9 +92,16 @@ Además, se pueden gestionar listas de espera para consultas y procedimientos, r
 
 <img src="media/image2.png" id="image2">
 
-¿Cómo se guarda toda esta información?
+## Pasos para instalar Libreoffice
 
-Toda esta información está guardada en forma de ``tablas`` que se interrelacionan entre ellas.
+1. Visita el sitio web de LibreOffice: Abre tu navegador web y dirígete al sitio oficial de LibreOffice en https://www.libreoffice.org/.
+2. Selecciona la opción "Descargar": En la página principal de LibreOffice, deberías ver un botón o enlace que dice "Descargar" o "Download". Haz clic en él.
+3. Elige tu sistema operativo: Selecciona tu sistema operativo. LibreOffice es compatible con Windows, macOS y Linux. Asegúrate de elegir la versión correcta para tu sistema.
+4. Selecciona la versión de LibreOffice: Verás varias opciones de descarga, incluyendo la suite completa y versiones específicas de cada programa, como Writer, Calc, Impress y Base. Asegúrate de que "Base" esté seleccionado.
+5. Haz clic en "Descargar": Después de seleccionar Base y tu sistema operativo, haz clic en el botón "Descargar". El archivo de instalación se guardará en tu computadora.
+6. Instala LibreOffice Base: Una vez que se haya descargado el archivo de instalación, ábrelo y sigue las instrucciones del asistente de instalación. Asegúrate de seleccionar la opción para instalar LibreOffice Base durante el proceso de instalación.
+7. Completa la instalación: Sigue las instrucciones en pantalla para completar la instalación. Puedes personalizar la instalación según tus preferencias.
+8. Inicia LibreOffice Base: Después de completar la instalación, busca el icono de LibreOffice en tu escritorio o menú de inicio y abre LibreOffice Base.
 
 ## Primera ejecución de Base y creación de base de datos
 
@@ -182,6 +195,8 @@ Para este tipo de tablas se suele definir un campo de tipo numérico (como acaba
 
 Cuando un campo cumple estas dos propiedades (sin nulos y sin repetidos) se le llama ``clave primaria`` o ``clave principal``. Toda tabla debe tener una.
 
+## Asignar clave primaria
+
 Para indicar que queremos que el campo ``Id_pelicula`` sea nuestra Llave Primaria seguimos los siguientes pasos:
 
 Nos situamos en la parte izquierda del campo
@@ -274,11 +289,13 @@ Dentro de las opciones de ordenación tenemos tres posibilidades:
 2. Ordenar de forma ascendente
 3. Ordenar de forma descendente en función de la columna elegida.
 
+## Ejemplo de ordenación
+
 Supongamos que deseamos ordenar nuestras filas:
 
 1. En primer lugar, en función de la columna Formato de forma ascendente
 2. En el caso de que tengamos valores repetidos para esta columna, queremos que aplique el orden alfabético de los nombres de los directores en el campo director
-3. En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo Año.
+3. En caso de que el nombre del director aparezca repetido, que ordene de la película más reciente a la más antigua usando el campo ``Año``.
 
 Es decir, los criterios de ordenación serían los que aparecen:
 
@@ -288,7 +305,7 @@ El resultado debería ser el siguiente. Si no os cuadra, comprobad que habéis p
 
 <img src="media/image28.png" id="image29">
 
-# 7. Filtrado de datos
+# 7. Filtrado de datos ![Alt text](image.png)
 
 En ocasiones podemos querer buscar únicamente un conjunto de películas que cumplen cierta condición. Las opciones de filtrado de datos nos permiten elegir de forma simple qué datos queremos que se muestren.
 

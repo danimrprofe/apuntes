@@ -2,30 +2,33 @@
   - [¿Qué es una base de datos?](#qué-es-una-base-de-datos)
   - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
   - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
-- [2. INSTALACIÓN Y ENTORNO BASE](#2-instalación-y-entorno-base)
+- [2. INSTALACIÓN Y ENTORNO BASE ⚙️](#2-instalación-y-entorno-base-️)
   - [Primera ejecución de Base y creación de base de datos](#primera-ejecución-de-base-y-creación-de-base-de-datos)
 - [3. Crear una base de datos de peliculas](#3-crear-una-base-de-datos-de-peliculas)
   - [¿Dónde guardaremos nuestra base de datos?](#dónde-guardaremos-nuestra-base-de-datos)
 - [4. Creamos nuestra primera tabla](#4-creamos-nuestra-primera-tabla)
   - [Tipos de datos](#tipos-de-datos)
-  - [La clave primaria](#la-clave-primaria)
+  - [La clave primaria 🔑](#la-clave-primaria-)
   - [Guardar la tabla](#guardar-la-tabla)
 - [5. Inserción de datos en la tabla películas](#5-inserción-de-datos-en-la-tabla-películas)
 - [6. Ordenar tablas](#6-ordenar-tablas)
 - [7. Filtrado de datos](#7-filtrado-de-datos)
-- [8. Editar y borrar](#8-editar-y-borrar)
+- [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
 - [9. Crear la tabla intérpretes](#9-crear-la-tabla-intérpretes)
 - [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
-- [11. Relaciones entre tablas](#11-relaciones-entre-tablas)
+- [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
   - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
 - [13. Relaciones entre intérprete, protagonistas y películas](#13-relaciones-entre-intérprete-protagonistas-y-películas)
-- [14. Consultas simples](#14-consultas-simples)
+- [14. Consultas simples 🔍](#14-consultas-simples-)
 - [15. Consultas sobre varias tablas combinando el asistente con el modo Diseño](#15-consultas-sobre-varias-tablas-combinando-el-asistente-con-el-modo-diseño)
 - [16. CONSULTAS AVANZADAS](#16-consultas-avanzadas)
 - [17. Consultas con funciones](#17-consultas-con-funciones)
 - [18. Vistas. Consultas sobre vistas](#18-vistas-consultas-sobre-vistas)
-- [19. FORMULARIOS](#19-formularios)
-- [20. FAQ](#20-faq)
+- [19. FORMULARIOS 📋](#19-formularios-)
+  - [Controles de formularios](#controles-de-formularios)
+  - [Creación de un formulario básico.](#creación-de-un-formulario-básico)
+  - [Guardar el formulario](#guardar-el-formulario)
+- [20. FAQ ❓🤔](#20-faq-)
 
 # 1 Introducción
 
@@ -73,7 +76,7 @@ Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y 
 
 Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.
 
-# 2. INSTALACIÓN Y ENTORNO BASE
+# 2. INSTALACIÓN Y ENTORNO BASE ⚙️
 
 ``Libreoffice`` es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo ``Calc`` o ``Writer``, que nos ayudan a redactar informes o realizar cálculos.
 
@@ -131,7 +134,7 @@ La base de datos que vamos a crear se llamará Curso y la vamos a guardar en la 
 
 Las bases de datos guardan la información en una o más tablas. Cada tabla guardará un tipo de objeto o una relación entre varios.
 
-Para ello nos situamos en el entorno en el menú de tablas y, dentro de las tareas, pulsamos sobre crear tabla en vista diseño.
+Para ello nos situamos en el entorno en el menú de tablas y, dentro de las tareas, pulsamos sobre crear tabla en ``vista diseño``.
 
 <img src="media/image8.png" id="image9">
 
@@ -166,7 +169,7 @@ A continuación, en la columna ``Descripción``, sería aconsejable que se intro
 
 <img src="media/image12.png" id="image13">
 
-## La clave primaria
+## La clave primaria 🔑
 
 En el caso de nuestra tabla ``PELICULAS``, a priori, no hay ningún campo acerca de una película que podamos utilizar para diferenciar una película de otra.
 
@@ -301,7 +304,7 @@ Tocarían dos resultados, que son los que coinciden con las condiciones que hemo
 
 Lo que estamos viendo es la información filtrada, si volvemos a darle al icono del embudo <img src="media/image32.png" id="image33">, desactivaremos el filtro y veremos todas las películas de nuevo.
 
-# 8. Editar y borrar
+# 8. Editar y borrar ✏️❌
 
 Modificación y eliminación de datos
 
@@ -351,7 +354,7 @@ Cambios de nombre del campo o de la descripción del mismo.
 
 cambio en las propiedades del campo, desde ser o no clave primaria, a cambiar el tipo de campo y las propiedades asociadas a ese tipo de campo.
 
-# 11. Relaciones entre tablas
+# 11. Relaciones entre tablas ↔️
 
 Una de las grandes ventajas de las bases de datos es que podemos tener toda la información que necesitamos almacenar en varias tablas, relacionadas entre ellas, en lugar de una única tabla enorme con toda la información.
 
@@ -588,7 +591,7 @@ Resumiendo, al final las relaciones tienen que quedar así.
 
 <img src="media/image60.png" id="image62">
 
-# 14. Consultas simples
+# 14. Consultas simples 🔍
 
 Las consultas nos permiten visualizar parte de la información contenida en nuestras bases de datos desde una perspectiva más detallada. Se pueden realizar sobre una o varias tablas relacionadas. El resultado que devuelven se muestra también en forma de tabla.
 
@@ -612,11 +615,11 @@ A continuación, podemos elegir si queremos que se muestren ordenados en funció
 
 En el siguiente paso podemos elegir si queremos indicar uno o varios criterios de búsqueda; es decir, si queremos que las filas que se muestran cumplan alguna condición en particular.
 
-Como en nuestro caso el objetivo es mostrar sólo los intérpretes no españoles, debemos indicar que para el campo Nacionalidad no deseamos aquellos que contengan el valor “Español” (ver Figura 5.5).
+Como en nuestro caso el objetivo es mostrar sólo los intérpretes no españoles, debemos indicar que para el campo Nacionalidad no deseamos aquellos que contengan el valor “Español” .
 
 <img src="media/image64.png" id="image66">
 
-A continuación, podemos elegir con qué nombre (alias), se mostrarán las cabeceras de las columnas de los campos que hemos elegido al mostrar el resultado de la consulta. En este caso, como los nombres de los campos son bastante claros simplemente les quitamos el nombre de la tabla que figura delante del nombre (ver Figura 5.6).
+A continuación, podemos elegir con qué nombre (alias), se mostrarán las cabeceras de las columnas de los campos que hemos elegido al mostrar el resultado de la consulta. En este caso, como los nombres de los campos son bastante claros simplemente les quitamos el nombre de la tabla que figura delante del nombre .
 
 <img src="media/image65.png" id="image67">
 
@@ -646,11 +649,11 @@ Ahora, en la ventana inicial del asistente, elegimos los campos Titulo, Director
 
 <img src="media/image70.png" id="image72">
 
-En la siguiente ventana (Figura 5.10) vamos a indicar que queremos que el resultado se ordene, en primer lugar, en función del campo Director, y, en caso de coincidir el director entre distintas películas, en función del campo Titulo.
+En la siguiente ventana  vamos a indicar que queremos que el resultado se ordene, en primer lugar, en función del campo Director, y, en caso de coincidir el director entre distintas películas, en función del campo Titulo.
 
 <img src="media/image71.png" id="image73">
 
-En esta consulta no vamos a poner ninguna condición por la que filtrar los datos, por lo que nos vamos directamente a la ventana “Alias” (Figura 5.11), donde vamos a aprovechar para “maquillar” que el campo Título no tuviera tilde al crear dicho campo y ahora sí se la incluimos. Además, para que el campo Año quede más concreto lo vamos a presentar como Fecha de estreno.
+En esta consulta no vamos a poner ninguna condición por la que filtrar los datos, por lo que nos vamos directamente a la ventana “Alias” , donde vamos a aprovechar para “maquillar” que el campo Título no tuviera tilde al crear dicho campo y ahora sí se la incluimos. Además, para que el campo Año quede más concreto lo vamos a presentar como Fecha de estreno.
 
 <img src="media/image72.png" id="image74">
 
@@ -682,7 +685,7 @@ La única forma de indicar esto es poniendo de nuevo el campo Titulo detrás de 
 
 Ya hemos visto entonces que en el modo Diseño nos aparecen los campos de Peliculas que deseamos pero aún no hemos hecho nada para ver el nombre del género de la película.
 
-Como el nombre del género es un campo de la ``tabla GENEROS`` lo primero que tenemos que hacer es indicar que queremos incluir dicha tabla en la consulta. Para ello, debemos seleccionar el icono “Añadir tablas” (ver Figura 5.14), que es el primero por la izquierda de los iconos de la fila inferior y elegir la ``tabla GENEROS``.
+Como el nombre del género es un campo de la ``tabla GENEROS`` lo primero que tenemos que hacer es indicar que queremos incluir dicha tabla en la consulta. Para ello, debemos seleccionar el icono ``Añadir tablas``, que es el primero por la izquierda de los iconos de la fila inferior y elegir la ``tabla GENEROS``.
 
 <img src="media/image75.png" id="image77">
 
@@ -694,7 +697,7 @@ Podemos observar que automáticamente detecta que estas dos tablas están relaci
 
 Pues lo mismo que si hubiéramos intentado elegir los campos de ambas tablas directamente en el asistente, que la respuesta a la consulta hubiera sido que cada fila de la primera tabla aparecería unida a cada una de las filas de la otra tabla sin ningún criterio, es decir, en nuestro caso tendríamos 90 filas (resultado del producto cartesiano de 10 filas de Peliculas por 9 que tenemos en Generos) de las cuales 80 no significan nada.
 
-Pero al haber indicado que existe la relación y detectarse en el modo Diseño conseguimos, sin necesidad de indicarlo explícitamente, que a la hora de mostrar todas las filas de Peliculas y Géneros, sólo nos muestre aquellas donde el valor para el campo por el que están relacionadas (Genero e Id_genero respectivamente) sea el mismo, es decir, que sólo nos muestre juntas las filas de ambas tablas que realmente están relacionadas.
+Pero al haber indicado que existe la relación y detectarse en el modo Diseño conseguimos, sin necesidad de indicarlo explícitamente, que a la hora de mostrar todas las filas de Peliculas y Géneros, sólo nos muestre aquellas donde el valor para el campo por el que están relacionadas (Genero e ``Id_genero`` respectivamente) sea el mismo, es decir, que sólo nos muestre juntas las filas de ambas tablas que realmente están relacionadas.
 
 <img src="media/image78.png" id="image80">
 
@@ -724,11 +727,11 @@ Si estamos conformes con el resultado, guardamos la consulta y podemos ver en la
 
 # 16. CONSULTAS AVANZADAS
 
-Entorno de trabajo en vista Diseño
+Entorno de trabajo en ``vista diseño``
 
 En la unidad anterior ya trabajamos en modo diseño , pero ahora vamos a ver en detalle todos los elementos de esta forma de realizar consultas.
 
-Primero, podemos observar que la vista diseño está dividida horizontalmente en tres partes:
+Primero, podemos observar que la ``vista diseño`` está dividida horizontalmente en tres partes:
 
 La parte superior, con la barra de herramientas
 
@@ -738,11 +741,9 @@ La inferior, donde cada columna representa cada uno de los campos a mostrar junt
 
 <img src="media/image84.png" id="image86">
 
-2. Creación en vista Diseño de consulta sobre varias tablas
+Vamos a crear nuestra primera consulta completamente en ``vista diseño``. En particular, vamos a crear una consulta que nos muestre todos los actores que protagonizan películas junto con los datos de la película, incluido el nombre del género. Es decir, vamos a construir una consulta que utiliza las cuatro tablas de nuestra base de datos.
 
-Vamos a crear nuestra primera consulta completamente en vista Diseño. En particular, vamos a crear una consulta que nos muestre todos los actores que protagonizan películas junto con los datos de la película, incluido el nombre del género. Es decir, vamos a construir una consulta que utiliza las cuatro tablas de nuestra base de datos.
-
-Para empezar, nos vamos a la ventana principal, a la sección Consultas y seleccionamos la tarea Crear consulta en vista Diseño.
+Para empezar, nos vamos a la ventana principal, a la sección Consultas y seleccionamos la tarea Crear consulta en ``vista diseño``.
 
 <img src="media/image85.png" id="image87">
 
@@ -766,7 +767,7 @@ Para incluir los campos de la ``tabla PELICULAS` vamos a seleccionar Peliculas:*
 
 Para seleccionar los campos de la tabla Interpretes no hemos utilizado la posibilidad “Interpretes.*” porque es necesario seleccionar cada campo individualmente, ya que vamos a establecer algún criterio de ordenación en función de alguno de los campos de la tabla.
 
-Como en nuestro caso vamos a mostrar los resultados ordenados en función de los apellidos y el nombre de los intérpretes (ver Figura 6.4) necesitamos seleccionar uno a uno cada campo de Interpretes.
+Como en nuestro caso vamos a mostrar los resultados ordenados en función de los apellidos y el nombre de los intérpretes  necesitamos seleccionar uno a uno cada campo de Interpretes.
 
 Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en el alias, vamos a poner “NombreGenero”, para distinguirlo de los campos ya seleccionados, Nombre de la tabla Interpretes y genero de la ``tabla PELICULAS`.
 
@@ -818,7 +819,7 @@ Poner título a la columna calculada
 
 Como vemos, la cabecera con el total de películas está mostrando la función que estamos utilizando junto con el nombre del campo.
 
-Si queremos que el resultado aparezca como el que mostraremos en la figura., es decir, con una cabecera significativa, debemos añadir el alias “Total de Peliculas”.
+Si queremos que el resultado aparezca como el que mostraremos en la figura., es decir, con una cabecera significativa, debemos añadir el alias ``Total de Peliculas``.
 
 <img src="media/image95.png" id="image100">
 
@@ -844,25 +845,25 @@ Del menú que se despliega seleccionamos la opción “Crear como vista”.
 
 <img src="media/image97.png" id="image101">
 
-Se nos despliega entonces una ventana donde tenemos que poner un nombre a la vista, escribimos “PeliculasCadaGenero” y aceptamos. Ya hemos convertido la consulta en una vista y podemos ver que ya es así si nos situamos en la sección “Tablas” de la ventana principal (ver Figura 6.15). Podemos observar que se usa un icono distinto para representar vistas y distinguirlas de las tablas.
+Se nos despliega entonces una ventana donde tenemos que poner un nombre a la vista, escribimos ``PeliculasCadaGenero`` y aceptamos. Ya hemos convertido la consulta en una vista y podemos ver que ya es así si nos situamos en la sección “Tablas” de la ventana principal . Podemos observar que se usa un icono distinto para representar vistas y distinguirlas de las tablas.
 
 <img src="media/image98.png" id="image102">
 
 Crear una consulta sobre la vista
 
-Una vez que ya tenemos la vista, vamos a crear una consulta sobre ella. Para empezar, vemos que al entrar en vista Diseño para crear una nueva consulta ya nos aparece PeliculasCadaGenero como si de una tabla más se tratara y la elegimos como única tabla de la consulta.
+Una vez que ya tenemos la vista, vamos a crear una consulta sobre ella. Para empezar, vemos que al entrar en ``vista diseño`` para crear una nueva consulta ya nos aparece PeliculasCadaGenero como si de una tabla más se tratara y la elegimos como única tabla de la consulta.
 
 <img src="media/image99.png" id="image103">
 
-Como sólo queremos que nos devuelva el valor medio de las películas de cada género seleccionamos el campo Total de Peliculas y le asociamos la función “Promedio” junto con el alias “Media de cada género”.
+Como sólo queremos que nos devuelva el valor medio de las películas de cada género seleccionamos el campo Total de Peliculas y le asociamos la función ``Promedio`` junto con el alias “Media de cada género”.
 
 <img src="media/image100.png" id="image104">
 
-Para ver que la consulta hace lo que esperamos en la propia vista Diseño (ver Figura 6.18), la lanzamos antes de guardarla utilizando el botón “Ejecutar” y, si devuelve el valor esperado, ya hemos terminado.
+Para ver que la consulta hace lo que esperamos en la propia ``vista diseño`` , la lanzamos antes de guardarla utilizando el botón “Ejecutar” y, si devuelve el valor esperado, ya hemos terminado.
 
 <img src="media/image101.png" id="image105">
 
-# 19. FORMULARIOS
+# 19. FORMULARIOS 📋
 
 Las bases de datos van a ser usadas por personas que no tienen conocimientos técnicos. Para ello, resulta útil crear formularios que les ayuden en la tarea de rellenar y consultar información.
 
@@ -874,21 +875,18 @@ Un formulario puede tomar varios campos de una tabla o todos; incluso puede toma
 
 Las tablas almacenan la información, los formularios se encargan de recogerla.
 
-Entorno de creación de un formulario
-
 Para crear un formulario nos vamos a encontrar dos posibilidades dentro del apartado de tareas disponibles en la sección formularios:
 
-Creación de formularios en vista Diseño: permite crear un formulario totalmente personalizado.
-
-Usar el asistente para crear formulario: crea automáticamente un formulario con los campos que el usuario seleccione.
+1. Creación de formularios en ``vista diseño``: permite crear un formulario totalmente personalizado.
+2. Usar el asistente para crear formulario: crea automáticamente un formulario con los campos que el usuario seleccione.
 
 <img src="media/image102.png" id="image106">
 
-Nosotros vamos a crear formularios en la vista Diseño porque nos permite configurarlos con más detalles. Para ello pulsamos sobre “Crear formulario en vista Diseño…”. Nos aparece entonces la ventana de diseño de formularios
+Nosotros vamos a crear formularios en la ``vista diseño`` porque nos permite configurarlos con más detalles. Para ello pulsamos sobre ``Crear formulario en ``vista diseño````. Nos aparece entonces la ventana de diseño de formularios
 
 <img src="media/image103.png" id="image107">
 
-Controles de formularios
+## Controles de formularios
 
 Toda la información de un formulario está contenida en los controles.
 
@@ -896,13 +894,11 @@ Los controles son objetos de un formulario que muestran datos, realizan acciones
 
 Los controles pueden ser dependientes, independientes o calculados:
 
-Control dependiente: está unido a un campo de una tabla o consulta. Los controles dependientes se utilizan para mostrar, introducir y actualizar valores de los campos de la base de datos.
+- ``Control dependiente``: está unido a un campo de una tabla o consulta. Los controles dependientes se utilizan para mostrar, introducir y actualizar valores de los campos de la base de datos.
+- ``Control independiente``: no tiene un origen en una tabla o consulta. Los controles independientes se pueden utilizar para mostrar información, líneas, rectángulos e imágenes, independientemente de que estos existan en la tabla creada de antemano.
+- ``Control calculado``: el origen de los datos es una expresión, no un campo. Una expresión es una combinación de operadores (=,+,-,* y /), nombres de controles, nombres de campos, funciones que devuelven un solo valor y valores constantes. La expresión puede incluir datos de un campo de la tabla o consulta del formulario o datos de otro control del formulario.
 
-Control independiente: no tiene un origen en una tabla o consulta. Los controles independientes se pueden utilizar para mostrar información, líneas, rectángulos e imágenes, independientemente de que estos existan en la tabla creada de antemano.
-
-Control calculado: el origen de los datos es una expresión, no un campo. Una expresión es una combinación de operadores (=,+,-,* y /), nombres de controles, nombres de campos, funciones que devuelven un solo valor y valores constantes. La expresión puede incluir datos de un campo de la tabla o consulta del formulario o datos de otro control del formulario.
-
-Los distintos campos de control se encuentran repartidos en las dos barras de herramientas que aparecen resaltadas en la Figura 7.2; por un lado, la barra “Diseño de Formularios” y, por otro, la barra “Campos de control de formulario”.
+Los distintos campos de control se encuentran repartidos en las dos barras de herramientas que aparecen resaltadas; por un lado, la barra ``Diseño de Formularios`` y, por otro, la barra “Campos de control de formulario”.
 
 Si esta última barra no nos apareciera por cualquier motivo, se puede acceder a ella a través del menú “Ver”, eligiendo la opción “Barra de Herramientas” y activando la casilla “Campos de control de formulario”.
 
@@ -914,9 +910,9 @@ En esta última barra, por defecto, no aparecen todos los controles disponibles;
 
 <img src="media/image105.png" id="image109">
 
-Creación de un formulario básico.
+## Creación de un formulario básico.
 
-El primer formulario que vamos a crear en Vista Diseño es uno para la tabla Interpretes que nos va a permitir introducir los intérpretes de una película.
+El primer formulario que vamos a crear en ``vista diseño`` es uno para la tabla Interpretes que nos va a permitir introducir los intérpretes de una película.
 
 Lo primero que vamos a hacer dentro de la ventana de edición de formularios es indicar cómo se va a llamar el formulario y con qué tabla va a estar conectado.
 
@@ -936,7 +932,7 @@ En el cuadro resultante, vamos a la ficha “Datos”, y seleccionamos dentro �
 
 <img src="media/image109.png" id="image113">
 
-Guardar el formulario
+## Guardar el formulario
 
 Cerramos las ventanas “Propiedades del formulario” y “Navegador de formulario” y, antes de continuar, guardamos el formulario pulsando en la pestaña “Archivo” y dentro “Guardar”, y también aquí le nombramos como Form_Interpretes.
 
@@ -988,7 +984,7 @@ Dentro de estas propiedades vemos que hay algunas que nos abren una nueva ventan
 
 <img src="media/image117.png" id="image121">
 
-Una vez que hemos cambiado las propiedades de la etiqueta, nuestro formulario debería. parecerse al de la figura.
+Una vez que hemos cambiado las propiedades de la etiqueta, nuestro formulario debería parecerse al de la figura.
 
 <img src="media/image118.png" id="image122">
 
@@ -1018,7 +1014,7 @@ En cambio, si lo que queremos es ejecutar el formulario para empezar a insertar 
 
 Veréis que abajo aparece el número de registros (filas) que hay guardados en esta tabla y podremos ir viendo la información guardada en el formulario.
 
-# 20. FAQ
+# 20. FAQ ❓🤔
 
 Me aparece un error al intentar guardar información en una tabla.
 

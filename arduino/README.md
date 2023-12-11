@@ -141,6 +141,13 @@ Pines de Alimentación:
 - Pines de Entrada/Salida Digital (D2 a D13): Pueden usarse como entradas o salidas digitales. D2 a D13 también pueden utilizarse como salidas PWM (modulación de ancho de pulso) para controlar la intensidad de la señal.
 - Pines Analógicos (A0 a A5): Son pines de entrada analógica que permiten leer señales analógicas, como las provenientes de sensores de luz, temperatura, etc.
 
+## Simulación
+
+``Tinkercad Circuits`` es una plataforma en línea que te permite simular y diseñar circuitos electrónicos. Es parte de la suite de herramientas de Autodesk llamada Tinkercad, y es especialmente útil para aprender y experimentar con electrónica sin la necesidad de componentes físicos
+
+https://www.youtube.com/watch?v=VU3fiibAnNY
+
+
 ## Instalación IDE
 
 El **Entorno de desarrollo integrado (IDE) de``Arduino``** es el software de la plataforma``Arduino``. En esta lección, usted aprenderá cómo configurar tu ordenador para usar``Arduino`` y cómo establecer sobre las lecciones que siguen.

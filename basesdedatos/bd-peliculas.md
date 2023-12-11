@@ -18,7 +18,7 @@
   - [Ejemplo de ordenación](#ejemplo-de-ordenación)
 - [7. Filtrado de datos ](#7-filtrado-de-datos-)
 - [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
-- [9. Crear la tabla intérpretes](#9-crear-la-tabla-intérpretes)
+- [9. Crear la ``tabla INTERPRETES``](#9-crear-la-tabla-interpretes)
 - [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
 - [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
   - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
@@ -241,7 +241,7 @@ A continuación, nos aparece una ventana que nos pide que introducimos el nombre
 
 <img src="media/image19.png" id="image20">
 
-Si hemos seguido todos los pasos correctamente, nuestra ``tabla PELICULAS` debe aparecer dentro del apartado Tablas en la parte inferior de la ventana principal
+Si hemos seguido todos los pasos correctamente, nuestra ``tabla PELICULAS``debe aparecer dentro del apartado Tablas en la parte inferior de la ventana principal
 
 <img src="media/image20.png" id="image21">
 
@@ -345,7 +345,7 @@ Para borrar una fila entera (no es necesario hacerlo), basta con situarse con el
 
 <img src="media/image33.png" id="image34">
 
-# 9. Crear la tabla intérpretes
+# 9. Crear la ``tabla INTERPRETES``
 
 Las películas están protagonizadas por actores y actrices. Para poder relacionarlo todo, vamos a crear una tabla nueva.
 
@@ -386,7 +386,7 @@ Las modificaciones que se pueden realizar sobre las columnas existentes pueden s
 
 Una de las grandes ventajas de las bases de datos es que podemos tener toda la información que necesitamos almacenar en varias tablas, relacionadas entre ellas, en lugar de una única tabla enorme con toda la información.
 
-Se podría pensar en añadir una nueva columna (no la hagáis) a la ``tabla PELICULAS` que se llamara Género, de manera que por cada película almacenada también tuviera su género.
+Se podría pensar en añadir una nueva columna (no la hagáis) a la ``tabla PELICULAS``que se llamara Género, de manera que por cada película almacenada también tuviera su género.
 
 <img src="media/image37.png" id="image39">
 
@@ -399,7 +399,7 @@ Si nos fijamos en esta solución podemos ver que se está repitiendo el mismo va
 1. Que en algún momento nos equivoquemos al teclear, y escribamos, por ejemplo, Ciencia-Fusión.
 2. Qué decidamos cambiar el nombre de un género, y por tanto tendríamos que cambiarlo en todas las filas.
 
-La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la ``tabla PELICULAS` y de la tabla ``GENEROS`` que están relacionadas.
+La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la ``tabla PELICULAS`` y de la ``tabla GENEROS`` que están relacionadas.
 
 <img src="media/image38.png" id="image41">
 
@@ -427,11 +427,11 @@ Información de intérpretes
 
 También vamos a suponer que quisiéramos almacenar información (apellidos, nombre y nacionalidad) acerca de los principales intérpretes con cada una de nuestras películas.
 
-A pesar de haber creado una tabla INTÉRPRETES  anteriormente, podríamos haber pensado en agregar columnas a la ``tabla PELICULAS` donde guardar la información acerca de sus protagonistas.
+A pesar de haber creado una ``tabla INTERPRETES``  anteriormente, podríamos haber pensado en agregar columnas a la ``tabla PELICULAS``donde guardar la información acerca de sus protagonistas.
 
 <img src="media/image42.png" id="image46">
 
-Esta solución es difícil de mantener y puede dar multitud de problemas y errores, por lo ya habíamos creado una tabla INTÉRPRETES
+Esta solución es difícil de mantener y puede dar multitud de problemas y errores, por lo ya habíamos creado una ``tabla INTERPRETES``
 
 ## Tipos de relaciones entre tablas
 
@@ -457,7 +457,7 @@ A continuación, se explica al detalle las reglas básicas para los tipos uno a 
 
 Esta clase de relación ocurre cuando una fila de la primera tabla puede estar relacionada con muchas filas de la segunda tabla y una fila de la segunda tabla puede estarlo con muchas filas de la primera.
 
-Un ejemplo de este tipo lo tenemos en la relación entre la ``tabla PELICULAS` y la tabla Interpretes
+Un ejemplo de este tipo lo tenemos en la relación entre la ``tabla PELICULAS``y la ``tabla INTERPRETES``
 
 Una película en particular puede tener muchos intérpretes y viceversa.
 
@@ -588,7 +588,7 @@ Aquí veis las dos tablas que hemos añadido, pero que no están conectadas con 
 
 <img src="media/image56.png" id="image59">
 
-Relacionamos los campos ``id_pelicula`` de las dos tablas. Comprobaréis que aparece 1 y n, indicando que un valor de ``id_pelicula`` en la ``tabla PELICULAS` aparece más de una vez en la ``tabla protagonistas``.
+Relacionamos los campos ``id_pelicula`` de las dos tablas. Comprobaréis que aparece 1 y n, indicando que un valor de ``id_pelicula`` en la ``tabla PELICULAS``aparece más de una vez en la ``tabla protagonistas``.
 
 <img src="media/image58.png" id="image60">
 
@@ -612,7 +612,7 @@ Para ello, teniendo seleccionada la sección "Consultas", nos situamos sobre el 
 
 <img src="media/image61.png" id="image63">
 
-Nos aparece entonces la primera ventana del asistente donde debemos elegir qué campos queremos que se muestren, y seleccionamos entonces los campos Nombre, Apellidos,y Nacionalidad de la tabla Interpretes.
+Nos aparece entonces la primera ventana del asistente donde debemos elegir qué campos queremos que se muestren, y seleccionamos entonces los campos Nombre, Apellidos,y Nacionalidad de la ``tabla INTERPRETES``.
 
 Tiene que quedar así:
 
@@ -770,15 +770,15 @@ A continuación, vamos a especificar que queremos que los resultados de la consu
 
 <img src="media/image87.png" id="image89">
 
-Para incluir los campos de la ``tabla PELICULAS` vamos a seleccionar Peliculas:* y así no tenemos que incluir los campos uno a uno
+Para incluir los campos de la ``tabla PELICULAS``vamos a seleccionar Peliculas:* y así no tenemos que incluir los campos uno a uno
 
 <img src="media/image88.png" id="image90">
 
-Para seleccionar los campos de la tabla Interpretes no hemos utilizado la posibilidad ``Interpretes.*`` porque es necesario seleccionar cada campo individualmente, ya que vamos a establecer algún criterio de ordenación en función de alguno de los campos de la tabla.
+Para seleccionar los campos de la ``tabla INTERPRETES`` no hemos utilizado la posibilidad ``Interpretes.*`` porque es necesario seleccionar cada campo individualmente, ya que vamos a establecer algún criterio de ordenación en función de alguno de los campos de la tabla.
 
 Como en nuestro caso vamos a mostrar los resultados ordenados en función de los apellidos y el nombre de los intérpretes  necesitamos seleccionar uno a uno cada campo de Interpretes.
 
-Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en el alias, vamos a poner ``NombreGenero``, para distinguirlo de los campos ya seleccionados, Nombre de la tabla Interpretes y genero de la ``tabla PELICULAS`.
+Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en el alias, vamos a poner ``NombreGenero``, para distinguirlo de los campos ya seleccionados, Nombre de la ``tabla INTERPRETES`` y genero de la ``tabla PELICULAS`.
 
 <img src="media/image89.png" id="image91">
 
@@ -800,7 +800,7 @@ Para empezar, elegimos las tablas sobre las que vamos a realizar la consulta, Ge
 
 <img src="media/image92.png" id="image94">
 
-Los campos que necesitamos son, por un lado, Nombre de Generos, que es sobre el que agruparemos los resultados devueltos y, por otro, un campo de la ``tabla PELICULAS` que estemos seguros que siempre tendrá un valor (no estará vacío) para cada fila de Peliculas.
+Los campos que necesitamos son, por un lado, Nombre de Generos, que es sobre el que agruparemos los resultados devueltos y, por otro, un campo de la ``tabla PELICULAS``que estemos seguros que siempre tendrá un valor (no estará vacío) para cada fila de Peliculas.
 
 Por ejemplo, podemos elegir el campo ``id_pelicula`` que siempre va a tener valor para cada película. Los campos seleccionados se muestran.
 
@@ -916,7 +916,7 @@ En esta última barra, por defecto, no aparecen todos los controles disponibles;
 
 ## Creación de un formulario básico.
 
-El primer formulario que vamos a crear en ``vista diseño`` es uno para la tabla Interpretes que nos va a permitir introducir los intérpretes de una película.
+El primer formulario que vamos a crear en ``vista diseño`` es uno para la ``tabla INTERPRETES`` que nos va a permitir introducir los intérpretes de una película.
 
 Lo primero que vamos a hacer dentro de la ventana de edición de formularios es indicar cómo se va a llamar el formulario y con qué tabla va a estar conectado.
 
@@ -928,7 +928,7 @@ Por defecto, al nuevo formulario lo llama Standard pero nosotros lo vamos a reno
 
 <img src="media/image107.png" id="image111">
 
-Para indicar que el formulario va a estar conectado con la tabla Interpretes hacemos clic con el botón derecho del ratón en el navegador de formulario sobre Form_Interpretes y elegimos ``Propiedades``.
+Para indicar que el formulario va a estar conectado con la ``tabla INTERPRETES`` hacemos clic con el botón derecho del ratón en el navegador de formulario sobre Form_Interpretes y elegimos ``Propiedades``.
 
  <img src="media/image108.png" id="image112">
 
@@ -994,7 +994,7 @@ Una vez que hemos cambiado las propiedades de la etiqueta, nuestro formulario de
 
 Completar el resto de campos del formulario
 
-Si repetimos los pasos realizados para el resto de los campos de la tabla Interpretes podríamos obtener un formulario parecido a este.
+Si repetimos los pasos realizados para el resto de los campos de la ``tabla INTERPRETES`` podríamos obtener un formulario parecido a este.
 
 <img src="media/image119.png" id="image123">
 

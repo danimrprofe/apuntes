@@ -13,7 +13,7 @@
   - [La clave primaria 🔑](#la-clave-primaria-)
   - [Asignar clave primaria](#asignar-clave-primaria)
   - [Guardar la tabla](#guardar-la-tabla)
-- [5. Inserción de datos en la tabla películas](#5-inserción-de-datos-en-la-tabla-películas)
+- [5. Inserción de datos en la ``tabla PELICULAS``](#5-inserción-de-datos-en-la-tabla-peliculas)
 - [6. Ordenar tablas](#6-ordenar-tablas)
   - [Ejemplo de ordenación](#ejemplo-de-ordenación)
 - [7. Filtrado de datos ](#7-filtrado-de-datos-)
@@ -45,6 +45,15 @@
 - [20. FAQ ❓🤔](#20-faq-)
   - [Me aparece un error al intentar guardar información en una tabla.](#me-aparece-un-error-al-intentar-guardar-información-en-una-tabla)
   - [No me deja rellenar una tabla](#no-me-deja-rellenar-una-tabla)
+- [21. Práctica delincuentes](#21-práctica-delincuentes)
+  - [Parte 1. Tabla denominada DELINCUENTES con los siguientes campos: (0.75 puntos)](#parte-1-tabla-denominada-delincuentes-con-los-siguientes-campos-075-puntos)
+  - [Parte 2. Tabla denominada CONDENAS con estos campos (0.75 puntos):](#parte-2-tabla-denominada-condenas-con-estos-campos-075-puntos)
+  - [Parte 3. Vamos a crear 2 tablas adicionales. Separa en tablas diferentes esta información: (1 punto)](#parte-3-vamos-a-crear-2-tablas-adicionales-separa-en-tablas-diferentes-esta-información-1-punto)
+  - [Parte 4. Crea las relaciones que tu creas necesarias, teniendo en cuenta: (1,5 puntos)](#parte-4-crea-las-relaciones-que-tu-creas-necesarias-teniendo-en-cuenta-15-puntos)
+  - [Parte 5. Diseña las siguientes consultas: (2 ptos.)](#parte-5-diseña-las-siguientes-consultas-2-ptos)
+  - [Parte 6. Realiza un formulario que nos permita introducir y actualizar información sobre delincuentes  y otro formulario para insertar condenas (1 punto)](#parte-6-realiza-un-formulario-que-nos-permita-introducir-y-actualizar-información-sobre-delincuentes--y-otro-formulario-para-insertar-condenas-1-punto)
+  - [Parte 7. Diseña los siguientes informes:  (1,5 puntos)](#parte-7-diseña-los-siguientes-informes--15-puntos)
+  - [Parte 8. Conclusiones y dificultades encontradas (1 punto)](#parte-8-conclusiones-y-dificultades-encontradas-1-punto)
 
 # 1 Introducción
 
@@ -251,7 +260,7 @@ Si quisiéramos agregar o modificar columnas, elegimos editar.
 
 <img src="media/image21.png" id="image22">
 
-# 5. Inserción de datos en la tabla películas
+# 5. Inserción de datos en la ``tabla PELICULAS``
 
 Para insertar datos a través de la hoja de datos tenemos que situarnos en la pantalla principal de en el apartado de ``Tablas`` y hacer doble clic con el botón izquierdo del ratón sobre la ``tabla PELICULAS`
 
@@ -473,11 +482,9 @@ En la ``tabla PELICULAS`` tendremos que crear una columna del mismo tipo que a l
 
 Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la ``tabla GENEROS`` .
 
-Como la columna que hemos creado en la tabla películas es nueva, tendremos que completarla con el número correspondiente al género al  que pertenece la película.
+Como la columna que hemos creado en la ``tabla PELICULAS`` es nueva, tendremos que completarla con el número correspondiente al género al  que pertenece la película.
 
 <img src="media/image44.png" id="image48">
-
-Herramienta relaciones
 
 Falta indicarle que las dos tablas están relacionadas y que vamos a utilizar para mantener dicha relación la nueva columna ``genero`` que hemos creado en peliculas.
 
@@ -654,7 +661,7 @@ Por tanto, empezamos de nuevo yendo a la sección tareas del tipo de objeto cons
 
 <img src="media/image69.png" id="image71">
 
-Ahora, en la ventana inicial del asistente, elegimos los campos Titulo, Director, Año y Formato de la tabla Películas
+Ahora, en la ventana inicial del asistente, elegimos los campos ``Titulo, Director, Año y Formato`` de la ``tabla PELICULAS``
 
 <img src="media/image70.png" id="image72">
 
@@ -682,11 +689,10 @@ Nos debe aparecer entonces una ventana que permite crear consultas en modo Dise�
 
 En primer lugar, podemos ver que la ventana aparece dividida en dos partes bien diferenciadas:
 
-Una que contiene la tablas que estamos utilizando en la consulta
+- Una que contiene la tablas que estamos utilizando en la consulta
+- Otra con los campos que ya habíamos seleccionado en el asistente junto con una serie de opciones que podemos indicar para cada uno de ellos.
 
-Otra con los campos que ya habíamos seleccionado en el asistente junto con una serie de opciones que podemos indicar para cada uno de ellos.
-
-Así, podemos ver que aparecen los campos Titulo, Director, Año y Formato junto con los alias que indicamos en el asistente y la opción de que se ordene la consulta en función del campo Director.
+Así, podemos ver que aparecen los campos ``Titulo, Director, Año y Formato`` junto con los alias que indicamos en el asistente y la opción de que se ordene la consulta en función del campo Director.
 
 Algo que seguro nos ha llamado la atención es por qué aparece el campo Titulo dos veces. La respuesta es que, debido a que en el orden en que queremos que se muestren los campos es: primero el campo Titulo, y luego el Director, y en el asistente hemos indicado que primero queremos la ordenación en función del nombre del director, y, en caso de repetirse dicho nombre, ordenar por el título de la película.
 
@@ -1033,3 +1039,90 @@ Es posible que alguno de los campos lo hayamos definido con una longitud corta y
 Comprueba que en la tabla hayas definido un campo como clave principal.
 
 <img src="media/image124.png" id="image128">
+
+# 21. Práctica delincuentes
+
+En esta prácticad deberéis crear una tabla de datos de cero por vuestra cuenta. La base de datos se tiene que llamar ``delincuentes`` y tiene que estar guardada en el archivo ``delincuentes.odb``.
+
+La base de datos contendrá información de los delincuentes más buscados. Podéis inventaros los datos como nombres, fotos, etc. y poner los que queráis.
+
+Al terminar la prácta deberéis entregar:
+
+1. El archivo ``delincuentes.odb`` con vuestra base de datos
+2. Una presentación de ``Google slides`` con capturas de todas las tablas, formularios y consultas, tanto de la definición como de los datos que contienen.
+
+![](img/2023-12-11-16-53-40.png)
+
+Realizado una base de datos para el FBI con los datos de los delincuentes más peligrosos en la que se incluyan los siguientes objetos:
+
+## Parte 1. Tabla denominada DELINCUENTES con los siguientes campos: (0.75 puntos)
+
+- Nº registro preso (clave primaria)
+- Nombre
+- Apellidos
+- Fecha de nacimiento
+- Fotografía (tipo imagen)
+- DNI/Pasaporte
+- ¿Está en la cárcel actualmente?
+
+Rellena la tabla con al menos 10 registros
+
+## Parte 2. Tabla denominada CONDENAS con estos campos (0.75 puntos):
+
+- Nº Registro de condena (clave primaria)
+- Identificación del preso
+- Fecha de entrada
+- Fecha de salida
+- Prisión (Alcatraz, Guantánamo o Sing Sing). Este campo si queréis lo podéis sacar a otra tabla.
+- Tiempo de condena (mejor en meses, a fin de que sea un número entero)
+
+Rellena la tabla con al menos 8 condenas.
+
+## Parte 3. Vamos a crear 2 tablas adicionales. Separa en tablas diferentes esta información: (1 punto)
+
+Tabla nacionalidad. Una idea de tabla podría ser:
+
+![](img/2023-12-11-16-53-59.png)
+
+Tabla actividad delictiva. Una idea de tabla podría ser:
+
+![](img/2023-12-11-16-54-03.png)
+
+Piensa que necesitarás crear o modificar columnas en la tabla delincuentes para relacionar estas nuevas tablas.
+
+No paséis a relaciones hasta que tengáis al menos estas cuatro tablas
+
+## Parte 4. Crea las relaciones que tu creas necesarias, teniendo en cuenta: (1,5 puntos)
+
+Un delincuente puede tener varias actividades delictivas
+
+Una actividad delictiva puede corresponder a varios delincuentes
+
+## Parte 5. Diseña las siguientes consultas: (2 ptos.)
+
+Delincuentes de nacionalidad estadounidense (Nombres yapellidos)
+
+![](img/2023-12-11-16-54-20.png)
+
+Delincuentes nacidos entre los años 1960 y 1970. (Nombre, apellido y fecha de nacimiento)
+
+Delincuentes que viven en Afganistán e Irak.
+Número de delincuentes por nacionalidad.
+Crea una consulta que genere los siguientes resultados:
+
+![](img/2023-12-11-16-54-27.png)
+
+## Parte 6. Realiza un formulario que nos permita introducir y actualizar información sobre delincuentes  y otro formulario para insertar condenas (1 punto)
+
+## Parte 7. Diseña los siguientes informes:  (1,5 puntos)
+
+Si necesitáis usar dos tablas para un informe, necesitaréis primero crear una consulta a partir de esas tablas, y a continuación crear un informe con esa consulta como fuente de datos.
+
+Si tenéis que filtrar una tabla, necesitaréis en primer lugar crear una consulta, que sí nos permite establecer criterios para filtrar, y a continuación crear un informe a partir de los datos que genere esta consulta.
+
+- a) Delincuentes.
+- b) Delincuentes agrupados por prisión.
+- c) Delincuentes agrupados por actividad delictiva
+- d) Delincuentes ondenados por robo
+
+## Parte 8. Conclusiones y dificultades encontradas (1 punto)

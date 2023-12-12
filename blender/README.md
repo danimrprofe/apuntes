@@ -1,3 +1,6 @@
+
+![](img/2023-12-12-06-30-16.png)
+
 - [``Blender``](#blender)
 - [0. Instalación](#0-instalación)
 - [1. Modelado  🖌️](#1-modelado--️)
@@ -9,15 +12,7 @@
 - [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
-    - [Crear una cámara](#crear-una-cámara)
-    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
-    - [Modificar la posición](#modificar-la-posición)
-    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
-    - [Configuración de la cámara](#configuración-de-la-cámara)
-    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
-    - [Analicemos el timeline](#analicemos-el-timeline)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
-    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
 - [4. Texturas 🎨](#4-texturas-)
 - [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
@@ -45,18 +40,12 @@
   - [Colisiones y amortiguación](#colisiones-y-amortiguación)
 - [8. Iluminación](#8-iluminación)
   - [Insertar luz de área](#insertar-luz-de-área)
-    - [Escalar la luz](#escalar-la-luz)
-    - [Subir la luz](#subir-la-luz)
-    - [Potencia](#potencia)
-    - [Altura de la luz](#altura-de-la-luz)
   - [7. Cámara](#7-cámara)
 - [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [Escena final](#escena-final)
   - [Ejemplos](#ejemplos)
 
 # ``Blender``
-
-![imagen](img/2022-11-30-16-17-58.png)
 
 ``Blender`` es un software de creación 3D gratuito y de código abierto. Está diseñado para modelado, animación, simulación, renderizado, composición y creación de gráficos interactivos. Se trata de una herramienta completa para la creación de contenido 3D con todo lo que necesita para crear proyectos profesionales.
 

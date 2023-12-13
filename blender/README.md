@@ -55,6 +55,7 @@
   - [7. Cámara](#7-cámara)
 - [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [10. Texto](#10-texto)
+- [11. Galeria de objetos](#11-galeria-de-objetos)
   - [Escena final](#escena-final)
   - [Ejemplos](#ejemplos)
 
@@ -715,6 +716,18 @@ Por último para extruirlo:
 Rotarlo: ``R X 90``
 
 ![](img/2023-12-13-11-55-13.png)
+
+# 11. Galeria de objetos
+
+![](img/2023-12-13-12-04-08.png)
+
+![](img/2023-12-13-12-05-30.png)
+
+![](img/2023-12-13-12-06-01.png)
+
+Los objetos que no tienen candado los podéis usar sin problema.
+
+![](img/2023-12-13-12-06-39.png)
 
 ## Escena final
 

@@ -719,7 +719,25 @@ Rotarlo: ``R X 90``
 
 # 11. Galeria de objetos
 
+``BlenderKit`` funciona a través de un ``complemento`` dedicado que los usuarios pueden instalar en Blender. El facilita la búsqueda y la importación sencilla de activos directamente dentro de la interfaz de Blender.
+
+Ir a Preferencias:
+
+Ve al menú "Editar" en la esquina superior izquierda de la ventana de Blender.
+Selecciona "Preferencias".
+Ir a la Pestaña de Complementos:
+
 ![](img/2023-12-13-12-04-08.png)
+
+En la ventana de Preferencias, selecciona la pestaña "Complementos" en el lado izquierdo.
+Instalar el Complemento:
+
+En la parte inferior de la ventana de Preferencias, busca el botón que dice "Instalar".
+Selecciona el archivo del complemento BlenderKit que descargaste.
+Activar el Complemento:
+
+Después de instalar el complemento, debería aparecer en la lista de complementos instalados en la ventana de Preferencias.
+Asegúrate de marcar la casilla junto al nombre del complemento para activarlo.
 
 ![](img/2023-12-13-12-05-30.png)
 

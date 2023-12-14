@@ -2,6 +2,8 @@
   - [¿Qué es una base de datos?](#qué-es-una-base-de-datos)
   - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
   - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
+    - [Información Académica](#información-académica)
+    - [Información Hospitalaria](#información-hospitalaria)
 - [2. INSTALACIÓN Y ENTORNO BASE ⚙️](#2-instalación-y-entorno-base-️)
   - [Libreoffice base](#libreoffice-base)
   - [Pasos para instalar Libreoffice](#pasos-para-instalar-libreoffice)
@@ -20,8 +22,13 @@
 - [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
 - [9. Crear la ``tabla INTERPRETES``](#9-crear-la-tabla-interpretes)
 - [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
+    - [Agregar o eliminar columnas](#agregar-o-eliminar-columnas)
+    - [Modificación de columnas existentes](#modificación-de-columnas-existentes)
 - [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
   - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
+    - [Uno a muchos (pelicula y género) 👤 - 👥](#uno-a-muchos-pelicula-y-género----)
+    - [Uno a uno (1:1) 👤 - 👤](#uno-a-uno-11----)
+    - [Muchos a muchos (N:M)  👥 - 👥](#muchos-a-muchos-nm-----)
   - [Selección de tablas](#selección-de-tablas)
   - [Crear relaciones](#crear-relaciones)
   - [Opciones de actualización y eliminación](#opciones-de-actualización-y-eliminación)
@@ -181,6 +188,12 @@ A continuación, nos aparecerá la siguiente ventana. Ahora aparece vacía porqu
 Comenzamos a definir el primer campo: nos situamos en la primera fila de la rejilla y en la columna ``Nombre del campo`` escribimos ``id_pelicula``. Digamos que es el número que le asignaremos a cada película que luego introduzcamos en la tabla.
 
 <img src="media/image10.png" id="image11">
+
+Si queréis cambiar el ancho de las columnas podéis estirar de la siguiente barra y mover el ratón a izquierda o derecha
+
+![](img/2023-12-14-12-30-14.png)
+
+También, si hacéis ``doble clic`` en la línea de separación, se autoajusta el ancho de la columna al contenido de las celdas.
 
 ## Tipos de datos
 

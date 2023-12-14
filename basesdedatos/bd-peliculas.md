@@ -189,12 +189,6 @@ Comenzamos a definir el primer campo: nos situamos en la primera fila de la reji
 
 <img src="media/image10.png" id="image11">
 
-Si queréis cambiar el ancho de las columnas podéis estirar de la siguiente barra y mover el ratón a izquierda o derecha
-
-![](img/2023-12-14-12-30-14.png)
-
-También, si hacéis ``doble clic`` en la línea de separación, se autoajusta el ancho de la columna al contenido de las celdas.
-
 ## Tipos de datos
 
 A continuación, tenemos que especificar qué tipo de datos guarda este campo: ¿un número, un texto, una fecha?
@@ -301,6 +295,12 @@ Deberá quedar así:
 
 **Nota**: Como no sabemos el día exacto en el que se estrenó cada una de las películas que tenemos, vamos a indicar siempre el 1 de enero
 
+Si queréis cambiar el ancho de las columnas podéis estirar de la siguiente barra y mover el ratón a izquierda o derecha
+
+![](img/2023-12-14-12-30-14.png)
+
+También, si hacéis ``doble clic`` en la línea de separación, se autoajusta el ancho de la columna al contenido de las celdas.
+
 Si continuamos insertando filas, hay que hacer un recordatorio: la columna ``id_pelicula`` iba a ser nuestra Llave Primaria; es decir, que los valores de este campo, no podían repetirse para ninguna fila.
 
 A continuación, rellenamos el resto de filas, con la información de las películas, tal como se muestra.
@@ -349,21 +349,22 @@ Elegid los siguientes valores para visualizar las películas entre 1980 y 1989. 
 
 <img src="media/image30.png" id="image31">
 
-Tocarían dos resultados, que son los que coinciden con las condiciones que hemos establecido.+
-
-<img src="media/image31.png" id="image32">
+Tocarían dos resultados, que son los que coinciden con las condiciones que hemos establecido.
 
 Lo que estamos viendo es la información filtrada, si volvemos a darle al icono del embudo <img src="media/image32.png" id="image33">, desactivaremos el filtro y veremos todas las películas de nuevo.
 
+Si queremos modificar el filtro y volverlo a definir:
+
+![](img/2023-12-14-12-49-54.png)
+
 # 8. Editar y borrar ✏️❌
 
-Modificación y eliminación de datos
+Para borrar una fila entera (no es necesario hacerlo), basta con:
 
-Los datos pueden sufrir variaciones a lo largo del tiempo o incluso desaparecer por distintos motivos.
+1. Situarse con el cursor al inicio de la fila
+2. Seleccionar ``eliminar fila``.
 
-Modificar y eliminar datos de nuestras tablas es un proceso muy habitual y simple de realizar y que no debería entrañar ningún problema.
-
-Para borrar una fila entera (no es necesario hacerlo), basta con situarse con el cursor al inicio de la fila y seleccionar ``eliminar fila``. Por ejemplo, imaginemos que la película Rocky que tenía en VHS se ha estropeado y ya no se puede ver, entonces me sitúo al inicio de esa fila y selecciono eliminarla.
+Por ejemplo, imaginemos que la peícula Rocky que tenía en VHS se ha estropeado y ya no se puede ver, entonces me sitúo al inicio de esa fila y selecciono eliminarla.
 
 <img src="media/image33.png" id="image34">
 
@@ -423,9 +424,11 @@ Si nos fijamos en esta solución podemos ver que se está repitiendo el mismo va
 
 La información de géneros la vamos a crear en una nueva tabla e indicaremos de alguna forma que hay filas de la ``tabla PELICULAS`` y de la ``tabla GENEROS`` que están relacionadas.
 
-<img src="media/image38.png" id="image41">
+## Creamos la tabla géneros
 
-``id_genero`` hay que ponerlo como clave principal.
+Crearemos una nueva table y la llamaremos ``GENEROS`` con los siguientes campos. Marcaremos ``id_genero`` hay que ponerlo como clave principal.
+
+<img src="media/image38.png" id="image41">
 
 Seleccionado el campo ``id_genero``, vamos a marcar ``valor automático`` a SI. De este modo, no tendremos que rellenar este campo cuando rellenemos información de la tabla. En lugar de esto, se rellenará con el siguiente número disponible.
 
@@ -445,7 +448,7 @@ Vamos a rellenar la ``tabla GENEROS``. En la primera columna no tenemos que pone
 
 <img src="media/image41.png" id="image45">
 
-Información de intérpretes
+## Información de intérpretes
 
 También vamos a suponer que quisiéramos almacenar información (apellidos, nombre y nacionalidad) acerca de los principales intérpretes con cada una de nuestras películas.
 
@@ -562,28 +565,29 @@ La relación entre películas e intérpretes es de muchos a muchos (N a N).
 
 Cuando esto pasa, no basta con añadir una columna. Necesitamos crear una nueva tabla.
 
-Crear ``tabla protagonistas``
+## Crear tabla PROTAGONISTAS
 
-Relación entre películas e intérpretes
-
-En este caso puede darse el caso de:
+Puede darse el caso de:
 
 - 1 película que tiene N intérpretes
 - 1 intérprete que participa en N películas
 
 La relación entre películas e intérpretes es de muchos a muchos (N a N). Cuando esto pasa, no basta con añadir una columna. Necesitamos crear una nueva tabla.
 
-A esta tabla la llamaremos Protagonistas con, al menos, dos columnas:
+A esta tabla la llamaremos ``PROTAGONISTAS`` con, al menos, dos columnas:
 
-Identificador de película
-
-Identificador de intérprete cada una de ellas para apuntar a cada una de las claves primarias respectivas de las tablas que queremos relacionar
+- Identificador de película
+- Identificador de intérprete cada una de ellas para apuntar a cada una de las claves primarias respectivas de las tablas que queremos relacionar
 
 Cada fila de esta tabla va a representar las relaciones que existen entre las filas de ambas tablas.
 
-<img src="media/image53.png" id="image56">
+![](img/2023-12-14-12-53-11.png)
 
-Rellenar filas de la tabla
+También marcaremos las dos como clave principal. Es decir, se puede repetir el campo película intérprete, pero no la combinación de ambos.
+
+![](img/2023-12-14-12-54-10.png)
+
+Rellenaremos a continuación el resto de la tabla.
 
 <img src="media/image54.png" id="image57">
 
@@ -594,13 +598,17 @@ Rellenaremos la tabla, asignando a cada ``id_película``, un ``id_intérprete``.
 
 Etc.
 
-Como veis la ``tabla protagonistas`` enlaza las películas con sus intérpretes, y viceversa.
+Como veis la ``tabla PROTAGONISTAS`` enlaza las películas con sus intérpretes, y viceversa.
 
 # 13. Relaciones intérprete, protagonistas y películas
 
-Ahora hemos creado la ``tabla protagonistas``, pero no está relacionada con las tablas PELICULAS y INTERPRETES.  Para asegurarnos que todo funcione y que tengan información correcta, tenemos que relacionarlas.
+Ahora hemos creado la ``tabla PROTAGONISTAS``, pero no está relacionada aún con las ``tablas PELICULAS y INTERPRETES``.  Para asegurarnos que todo funcione y que tengan información correcta, tenemos que relacionarlas.
 
-Así, una vez que nos hemos situado de nuevo en la ventana Relaciones y hemos añadido las tablas que queremos relacionar a dicha ventana.
+Así, una vez que nos hemos situado de nuevo en la ventana Relaciones
+
+![](img/2023-12-14-12-56-37.png)
+
+Añadimos las tablas que queremos relacionar a dicha ventana.
 
 <img src="media/image55.png" id="image58">
 

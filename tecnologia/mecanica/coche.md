@@ -10,6 +10,8 @@ En los motores de combustión interna con inyección de combustible, la gasolina
 
 La ``gasolina`` se almacena en un depósito separado del motor y se inyecta directamente en los cilindros en la cantidad y momento adecuados mediante un sistema de inyección controlado por la unidad de control electrónico del motor (ECU).
 
+## Sistema de inyección
+
 El sistema de inyección de combustible está compuesto por:
 
 La ``bomba de combustible`` se encarga de suministrar combustible desde el depósito de combustible hacia el ``regulador de presión`` de combustible, que se encarga de mantener la presión adecuada en el sistema.
@@ -21,6 +23,8 @@ Luego, el combustible es ``inyectado`` en los cilindros en la cantidad y momento
 ![](img/2023-03-24-17-50-46.png)
 
 Los inyectores de combustible son válvulas controladas por la ECU que permiten la inyección de una cantidad precisa de combustible en los cilindros. Esta cantidad se controla mediante el tiempo que permanece abierta la válvula del inyector.
+
+## Mezcla aire-combustible
 
 La ``gasolina`` por sí sola no puede quemarse sin la presencia de ``oxígeno`` del aire. Por lo tanto, se inyecta aire en la gasolina para mezclarlo y formar la mezcla de combustible y aire adecuada para la combustión en el motor.
 

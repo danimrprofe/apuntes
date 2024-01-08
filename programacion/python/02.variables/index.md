@@ -26,7 +26,7 @@ edad = 20
 
 ### Flotantes
 
-Un ejemplo de variable flotante es:
+Un float es un tipo de variable numérica que contiene números decimales. Fíjate que los decimales se excriben con un punto decimal, y no una
 
 ```python
 altura = 1.75
@@ -40,15 +40,18 @@ Un ejemplo de variable cadena es:
 nombre = "Juan"
 ```
 
+Las cadenas se pueden escribir entre `'` o entre `"``. Si no pones comillas antes y despues, Python creerá que se trata de una variable, y no un texto.
+
 ### Booleanos
+
+Un booleano es un tipo de variable que solo puede tener dos valores: verdadero  (``True``) o falso (``False``).
 
 Un ejemplo de variable booleano es:
 
 ```python
 es_mayor_de_edad = True
+tienecarnet = False
 ```
-
-Según cómo escribimos las cosas, Python interpreta si esa variable contiene un número, una letra, un decimal, una palabra, etc. En nuestro ejemplo, la variable nombre era de tipo string.
 
 ## ¿Cómo podemos llamar a nuestras variables?
 
@@ -62,7 +65,7 @@ Por tanto, esto es incorrecto:
 print = 4
 ```
 
-El nombre debe consistir en una sola palabra. Esto sería incorrecto:
+El nombre debe consistir en una sola palabra. No puede haber espacios. Esto sería incorrecto:
 
 ```python
 edad usuario = 10
@@ -170,7 +173,6 @@ nombre = input("como te llamas: ")
 edad = int(input("que edad tienes: ")
 print ('Hola', nombre, 'tienes', edad, 'años')
 ```
-
 
 Actividad. Modifica el código anterior para que calcule el año en que te vas a jubilar (supuestamente) a partir de tu edad. Piensa que hoy en día la edad de jubilación es 65. En mi caso, yo le escribiré 35 años con el teclado y el me dirá que me quedan 30 años para la jubilación. Adjunta una captura
 

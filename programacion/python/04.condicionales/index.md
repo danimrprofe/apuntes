@@ -60,3 +60,8 @@ else:
 ```
 
 En este caso, ninguna de las condiciones anteriores fue verdadera, por lo que el código después del else se ejecutará.
+
+# Actividad
+
+1. Completa la actividad del supermercado para que revise si la cantidad que damos para pagar es suficiente o no y nos avise en tal caso.
+2. Al comienzo del programa deberá pedirnos una contraseña para acceder a la tienda, y solo podremos acceder a ella si escribimos la contraseña correcta.

@@ -170,15 +170,6 @@ Cambiar de un tipo a otro se llama **casting**. Si queremos hacer una operación
 
 ```python
 nombre = input("como te llamas: ")
-edad = int(input("que edad tienes: ")
+edad = int(input("que edad tienes: "))
 print ('Hola', nombre, 'tienes', edad, 'años')
 ```
-
-Actividad. Modifica el código anterior para que calcule el año en que te vas a jubilar (supuestamente) a partir de tu edad. Piensa que hoy en día la edad de jubilación es 65. En mi caso, yo le escribiré 35 años con el teclado y el me dirá que me quedan 30 años para la jubilación. Adjunta una captura
-
-Actividad 4. Escribe un programa en que dados dos números (el día de mes de tu cumpleaños y el número de personas que viven en tu casa), muestre:
-
-- El cociente entero (sin decimales)
-- El resto
-- La división exacta
-- La potencia del primer número elevado al segundo

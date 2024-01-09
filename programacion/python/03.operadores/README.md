@@ -8,7 +8,7 @@
 - [Operadores aritméticos](#operadores-aritméticos)
   - [Orden de operaciones](#orden-de-operaciones)
 - [Operadores lógicos](#operadores-lógicos)
-  - [Ejercicios](#ejercicios)
+- [Crea un programa de supermercado, que cumpla los siguientes requisitos:](#crea-un-programa-de-supermercado-que-cumpla-los-siguientes-requisitos)
 
 # Operadores en Python
 
@@ -243,6 +243,9 @@ c = (a <= b)
 print(c) # imprime True
 ```
 
-## Ejercicios
+# Crea un programa de supermercado, que cumpla los siguientes requisitos:
 
-Crea un programa que te pida una contraseña. A continuación, te debería pedir que la vuelvas a escribir. Si las dos contraseñas escritas no coinciden, mostrar un mensaje informando de que las contraseñas introducidas no son iguales. Si coinciden, mostrar un mensaje informando que se ha cambiado la contraseña.
+1. Nos ofrece 3 productos con 3 precios diferentes
+2. Nos pide cuantos productos queremos de cada tipo
+3. Calcule el precio final
+4. Finalmente nos pide cuanto dinero damos para pagar y nos dice que cambio nos debe devolver

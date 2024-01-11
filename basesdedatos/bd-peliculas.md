@@ -25,6 +25,8 @@
     - [Agregar o eliminar columnas](#agregar-o-eliminar-columnas)
     - [Modificación de columnas existentes](#modificación-de-columnas-existentes)
 - [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
+  - [Creamos la tabla géneros](#creamos-la-tabla-géneros)
+  - [Información de intérpretes](#información-de-intérpretes)
   - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
     - [Uno a muchos (pelicula y género) 👤 - 👥](#uno-a-muchos-pelicula-y-género----)
     - [Uno a uno (1:1) 👤 - 👤](#uno-a-uno-11----)
@@ -33,6 +35,7 @@
   - [Crear relaciones](#crear-relaciones)
   - [Opciones de actualización y eliminación](#opciones-de-actualización-y-eliminación)
   - [Relación 2: películas e intérpretes](#relación-2-películas-e-intérpretes)
+  - [Crear tabla PROTAGONISTAS](#crear-tabla-protagonistas)
 - [13. Relaciones intérprete, protagonistas y películas](#13-relaciones-intérprete-protagonistas-y-películas)
 - [14. Consultas simples 🔍](#14-consultas-simples-)
 - [15. Consultas sobre varias tablas combinando el asistente con el modo Diseño](#15-consultas-sobre-varias-tablas-combinando-el-asistente-con-el-modo-diseño)
@@ -809,9 +812,9 @@ Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en
 
 <img src="media/image89.png" id="image91">
 
-Guardamos la consulta con el nombre ``ConsultaTotal`` y al ejecutarla el resultado es el siguiente:
+Guardamos la consulta con el nombre ``ConsultaTotal`` y al ejecutarla el resultado es el siguiente. Tendrían que apareceros 14 registros.
 
-<img src="media/image90.png" id="image92">
+![](img/2024-01-11-12-55-40.png)
 
 # 17. Consultas con funciones
 
@@ -841,6 +844,10 @@ En primer lugar, hemos dicho que queremos agrupar los resultados en función de 
 
 En segundo lugar, lo que queremos es contar las películas relacionadas con cada género. Esto último lo conseguimos asociando la función ``Cantidad`` al campo ``id_pelicula`` de Peliculas.
 
+**NOTA IMPORTANTE!!!!**
+
+Si no aparece la función ``Cantidad``, elegid la función ``Recuento``.
+
 <img src="media/image94.png" id="image97">
 
 Guardamos entonces la consulta como ``Peliculas de cada Genero``
@@ -851,10 +858,9 @@ Al lanzarla nos encontramos una pantalla como esta:
 
 <img src="media/image96.png" id="image99">
 
-P
-Como vemos, la cabecera con el total de películas está mostrando la función que estamos utilizando junto con el nombre del campo.
+Como vemos arriba, la cabecera con el total de películas está mostrando la función que estamos utilizando junto con el nombre del campo.
 
-Si queremos que el resultado aparezca como el que mostraremos en la figura., es decir, con una cabecera significativa, debemos añadir el alias ``Total de Peliculas``.
+Si queremos que el resultado aparezca como el que mostraremos en la figura., es decir, con una cabecera significativa, debemos añadir el **alias** ``Total de Peliculas``.
 
 <img src="media/image95.png" id="image100">
 
@@ -862,13 +868,13 @@ Si queremos que el resultado aparezca como el que mostraremos en la figura., es 
 
 Las ``vistas`` son un tipo especial de consultas almacenadas que, a nivel de bases de datos, se tratan como una tabla más.
 
-¿Qué ocurre si necesitamos realizar una consulta no sobre una tabla sino sobre los resultados de otra consulta?
+**¿Qué ocurre si necesitamos realizar una consulta no sobre una tabla sino sobre los resultados de otra consulta?**
 
-La respuesta es que debemos convertir la consulta en una vista para que se pueda manejar como si de una tabla se tratara.
+La respuesta es que debemos convertir la consulta en una ``vista`` para que se pueda manejar como si de una tabla se tratara.
 
 Para ver los beneficios de usar vistas, vamos a realizar una consulta que nos devuelva el valor medio de las películas asociadas a cada género.
 
-Esta consulta no se puede realizar directamente sobre las tablas Generos y Peliculas sino sobre la consulta Películas de cada Género una vez convertida en vista.
+Esta consulta no se puede realizar directamente sobre las tablas ``Generos`` y ``Peliculas`` sino sobre la consulta ``Películas de cada Género`` una vez convertida en vista.
 
 ## Convertir una consulta en una vista
 
@@ -900,9 +906,11 @@ Para ver que la consulta hace lo que esperamos en la propia ``vista diseño`` , 
 
 # 19. FORMULARIOS 📋
 
+**Los formularios facilitan la recopilación y entrada de datos de manera más accesible para usuarios no técnicos.**
+
 Los usuarios sin conocimientos técnicos pueden utilizar bases de datos de manera más efectiva mediante la creación de formularios. Estos formularios simplifican la tarea de introducir y consultar información al permitir que los datos se ingresen de manera más organizada y limpia. En lugar de ingresar datos directamente en la tabla, los formularios actúan como interfaz para interactuar con la base de datos.
 
-Es posible crear múltiples formularios para una misma tabla en una base de datos. Los formularios pueden abarcar varios campos de una tabla, incluso todos, y pueden también combinar campos de diferentes tablas o consultas. Mientras las tablas almacenan la información, los formularios facilitan la recopilación y entrada de datos de manera más accesible para usuarios no técnicos.
+Es posible crear múltiples formularios para una misma tabla en una base de datos. Los formularios pueden abarcar varios campos de una tabla, incluso todos, y pueden también combinar campos de diferentes tablas o consultas. Mientras las tablas almacenan la información,
 
 ## Creación de formularios
 
@@ -911,7 +919,7 @@ Para crear un formulario nos vamos a encontrar dos posibilidades dentro del apar
 1. Creación de formularios en ``vista diseño``: permite crear un formulario totalmente personalizado.
 2. Usar el asistente para crear formulario: crea automáticamente un formulario con los campos que el usuario seleccione.
 
-<img src="media/image102.png" id="image106">
+![](img/2024-01-11-13-01-06.png)
 
 Nosotros vamos a crear formularios en la ``vista diseño`` porque nos permite configurarlos con más detalles. Para ello pulsamos sobre ``Crear formulario en ``vista diseño``. Nos aparece entonces la ventana de diseño de formularios
 

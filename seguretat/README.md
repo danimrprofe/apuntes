@@ -40,7 +40,6 @@
   - [Actualización](#actualización)
   - [Ejemplos](#ejemplos)
 - [12.1. Introducción](#121-introducción)
-  - [12.3. Antispyware (antiespías)](#123-antispyware-antiespías)
 - [12.4. Software antispam](#124-software-antispam)
   - [Filtros](#filtros)
 - [12.5. Firewall (cortafuegos)](#125-firewall-cortafuegos)

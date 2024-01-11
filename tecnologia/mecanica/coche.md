@@ -60,6 +60,10 @@ La ``caja de cambios`` permite al conductor seleccionar la marcha adecuada para 
 
 ![](img/2023-03-24-17-44-55.png)
 
+## Transmisión
+
+El movimiento que obtenemos a la salida de la caja de cambios se debe transmitir a las ruedas del coche.
+
 El ``embrague``, que se encuentra entre el motor y la caja de cambios, permite separar temporalmente el motor de la transmisión, lo que permite cambiar de marcha sin detener el motor.
 
 La ``transmisión`` envía la energía a través de un ``eje de transmisión`` que se conecta al diferencial.

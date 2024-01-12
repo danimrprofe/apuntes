@@ -1,11 +1,14 @@
 - [1.0. La seguridad de la información](#10-la-seguridad-de-la-información)
-- [1.1. Principios de la seguridad informática](#11-principios-de-la-seguridad-informática)
-- [1.2. ¿Qué queremos proteger?](#12-qué-queremos-proteger)
-- [1.3. Contra qué nos tenemos que proteger](#13-contra-qué-nos-tenemos-que-proteger)
-- [1.4. La importancia de los datos](#14-la-importancia-de-los-datos)
-- [2. Amenazas y ataques](#2-amenazas-y-ataques)
-- [2.1. Tipos de amenazas](#21-tipos-de-amenazas)
-- [2.2. Conductas de seguridad](#22-conductas-de-seguridad)
+- [PRINCIPIOS DE SEGURIDAD](#principios-de-seguridad)
+- [¿QUÉ DEBEMOS PROTEGER?](#qué-debemos-proteger)
+- [¿CONTRA QUÉ NOS TENEMOS QUE PROTEGER?](#contra-qué-nos-tenemos-que-proteger)
+- [AMENAZAS](#amenazas)
+    - [Amenazas Humanas](#amenazas-humanas)
+    - [Amenazas lógicas](#amenazas-lógicas)
+    - [Amenazas Físicas](#amenazas-físicas)
+- [SEGURIDAD ACTIVA Y PASIVA](#seguridad-activa-y-pasiva)
+    - [Técnicas de seguridad activa](#técnicas-de-seguridad-activa)
+    - [Técnicas o prácticas de seguridad pasiva](#técnicas-o-prácticas-de-seguridad-pasiva)
 - [3. Malware](#3-malware)
 - [3.1. Malware](#31-malware)
   - [¿Qué es el malware?](#qué-es-el-malware)
@@ -18,6 +21,9 @@
   - [Dispositivos extraibles](#dispositivos-extraibles)
   - [Cookies maliciosas](#cookies-maliciosas)
   - [3.3. Tipos de malware más conocidos](#33-tipos-de-malware-más-conocidos)
+    - [Virus](#virus)
+    - [Gusano](#gusano)
+    - [Troyano](#troyano)
 - [3.5. Spyware y adware](#35-spyware-y-adware)
   - [PUAs](#puas)
   - [¿Cómo se instalan?](#cómo-se-instalan)
@@ -26,7 +32,7 @@
   - [Usos del spyware](#usos-del-spyware)
   - [¿Cómo funciona?](#cómo-funciona)
   - [Adware](#adware)
-- [3.6. Ransomware](#36-ransomware)
+- [RANSOMWARE](#ransomware)
   - [Cómo se infectan los equipos](#cómo-se-infectan-los-equipos)
   - [¿Qué hace el ransomware?](#qué-hace-el-ransomware)
   - [Como prevenirlo](#como-prevenirlo)
@@ -99,6 +105,7 @@
   - [DNI y la letra](#dni-y-la-letra)
   - [Cuentas bancarias](#cuentas-bancarias)
 - [Funciones de hash](#funciones-de-hash)
+  - [Usos más habituales](#usos-más-habituales)
   - [Ejemplo emule](#ejemplo-emule)
   - [Ejemplo ``Bitcoin``](#ejemplo-bitcoin)
 - [7. Identidad digital, certificados, firma y DNIe](#7-identidad-digital-certificados-firma-y-dnie)
@@ -133,6 +140,7 @@
 - [Identidad digital](#identidad-digital)
   - [Identificación](#identificación)
   - [HUELLA DACTILAR](#huella-dactilar)
+    - [Firma](#firma)
   - [DNI](#dni)
   - [Documento nacional de identidad](#documento-nacional-de-identidad)
   - [¿Cómo nos identificamos en Internet?](#cómo-nos-identificamos-en-internet)
@@ -206,7 +214,7 @@
 
 La **seguridad informática** es el conjunto de acciones, herramientas y dispositivos cuyo objetivo es dotar a un sistema informático (conjunto de hardware, software, personas y procedimientos) de integridad, confidencialidad y disponibilidad.
 
-# 1.1. Principios de la seguridad informática
+# PRINCIPIOS DE SEGURIDAD
 
 **¿Quién puede modificar la información?**
 
@@ -238,7 +246,7 @@ Ejemplos:
 
 ![imagen](img/2019-11-23-18-02-19.png)
 
-# 1.2. ¿Qué queremos proteger?
+# ¿QUÉ DEBEMOS PROTEGER?
 
 La seguridad informática pretende **proteger recursos** valiosos de una organización. En un sistema informático lo que queremos proteger son sus activos, es decir, los recursos que forman parte del sistema y que podemos agrupar en:
 
@@ -261,58 +269,14 @@ Para ello se establecen **planes de seguridad** que garantizan los tres principi
 
 ![imagen](img/2019-11-23-18-02-55.png)
 
-# 1.3. Contra qué nos tenemos que proteger
+# ¿CONTRA QUÉ NOS TENEMOS QUE PROTEGER?
 
 - **nosotros mismos**: Borramos archivos sin darnos cuenta, eliminamos programas necesarios para la seguridad o aceptamos correos electrónicos perjudiciales para el sistema.
 - **accidentes y averías**: Pueden hacer que se estropee nuestro ordenador y perdamos datos necesarios.
 - **usuarios intrusos**: Bien desde el mismo ordenador, bien desde otro equipo de la red, puedan acceder a datos de nuestro equipo.
 - **software malicioso o malware**: Programas que aprovechan un acceso a nuestro ordenador para instalarse y obtener información, dañar el sistema o incluso llegar a inutilizarlo por completo
 
-# 1.4. La importancia de los datos
-
-La importancia de la información que manejamos será, en gran medida,relativa a nuestro sector de negocio.
-
-**Ámbito sanitario**
-
-Gran volumen de información personal de pacientes, a la que se deben aplicar todas las medidas de seguridad para evitar que se pierda, modifique o se acceda a ella sin autorización.
-
-Suele ser necesario llevar un registro de los accesos y modificaciones.
-
-**Sector financiero**
-
-Se maneja información confidencial tanto de clientes como de operaciones financieras de compras y ventas de activos cuya difusión puede suponer una importante pérdida económica o un perjuicio para nuestros clientes.
-
-**Sectores industriales o de desarrollo de productos**
-
-Confidencialidad de los procesos y procedimientos que nos pueden aportar una mejora de productividad sobre la competencia.
-
-**Hostelería y restauración**
-
-Se maneja, además de un volumen de datos de carácter personal muy significativo, información sobre reservas, cuya pérdida nos podría poner en una situación muy complicada con nuestros clientes.
-
-**Legislación de datos**
-
-La legislación sobre protección de datos de carácter personal, define datos personales como toda información sobre una persona física identificada o identificable.
-
-Una **persona es identificable** si puede determinarse su identidad, directa o indirectamente.
-
-Esta legislación exige la protección de la seguridad de los datos de carácter personal ante posibles riesgos que afecten a la privacidad de las personas por ejemplo: acceso no autorizado, uso ilegítimo, modificación no autorizada, discriminación por perfilado o pérdida de datos.
-
-**Datos sensibles**
-
-Existen categorías especiales de datos, los denominados **datos sensibles** que exigen una protección reforzada y que están sujetos a un régimen jurídico especial.
-
-Estos datos son datos personales que revelan:
-
-- Ideología, afiliación sindical, opiniones políticas
-- Creencias religiosas y otras creencias.
-- Origen racial o étnico
-- Relativos a la salud o la vida sexual y orientación sexual, datos genéticos y biométricos.
-- Datos de condenas penales o administrativas
-
-# 2. Amenazas y ataques
-
-# 2.1. Tipos de amenazas
+# AMENAZAS
 
 Existen 3 tipos de amenazas según su origen:
 
@@ -335,7 +299,7 @@ Tipos de amenazas humanas más habituales:
 - Accidentes
 - Catástrofes Naturales
 
-# 2.2. Conductas de seguridad
+# SEGURIDAD ACTIVA Y PASIVA
 
 ### Técnicas de seguridad activa
 
@@ -530,7 +494,7 @@ Una vez instalado, el software espía generalmente comenzará a **rastrear** las
 
 Software que se esconde en los anuncios de Internet. Tras acceder los equipos y dispositivos, este malware roba la información de las empresas y usuarios.
 
-# 3.6. Ransomware
+# RANSOMWARE
 
 El ransomware es un tipo de **malware** que amenaza con bloquear el acceso a los archivos de un ordenador hasta que una cantidad de dinero es pagada.
 
@@ -550,9 +514,9 @@ Una vez que el ransomware se instala:
 
 Los usuarios pueden prevenir el ransomware:
 
-1. Instalando un buen antivirus
-2. Actualizando regularmente los programas y desactivando la opción de abrir automáticamente los archivos adjuntos en los correos electrónicos.
-3. Evitar descargar archivos de sitios web inseguros.
+1. Instalando un buen ``antivirus``
+2. ``Actualizando`` regularmente los programas y desactivando la opción de abrir automáticamente los archivos adjuntos en los correos electrónicos.
+3. Evitar ``descargar archivos`` de sitios web inseguros.
 
 Si un usuario sospecha que su dispositivo ha sido infectado con ransomware, debe buscar ayuda de un experto informático lo antes posible.
 
@@ -1091,19 +1055,25 @@ La letra del DNI se calcula utilizando el algoritmo de Luhn.
 
 # Funciones de hash
 
-Las funciones hash son algoritmos matemáticos que se usan para convertir datos de cualquier tamaño en una cadena de caracteres de tamaño fijo. Esto permite que los datos sean rápidamente comparados y verificados.
+Las funciones hash son algoritmos matemáticos que se usan para convertir datos de cualquier tamaño en una cadena de caracteres de **tamaño fijo**. Esto permite que los datos sean rápidamente comparados y verificados.
 
 ![imagen](img/2022-12-11-20-19-34.png)
 
 Son útiles para la criptografía, ya que permiten almacenar y transmitir datos de forma segura, ya que los datos cifrados se pueden verificar sin necesidad de descifrarlos.
 
+## Usos más habituales
+
+**Autenticación**
+
 También se usan para la **autenticación** de usuarios, ya que los usuarios pueden verificar su identidad al proporcionar una contraseña cifrada que coincida con una contraseña guardada de forma segura.
+
+**Corrupción de datos**
 
 Además, se usan para detectar la **corrupción de datos**, ya que si los datos cambian, la función hash generará un valor diferente. Esto permite a los usuarios detectar cualquier cambio en los datos sin necesidad de verificarlos manualmente.
 
-Las funciones hash también se usan para detectar la **duplicación de archivos**, ya que los archivos con contenidos idénticos generarán el mismo valor de hash.
+**Detección de archivos iguales o duplicados**
 
-En resumen, las funciones hash son algoritmos matemáticos que se usan para convertir datos de cualquier tamaño en una cadena de caracteres de tamaño fijo. Esto les permite a los usuarios verificar y detectar cambios en los datos de forma rápida y segura, así como detectar la duplicación de archivos.
+Las funciones hash también se usan para detectar la **duplicación de archivos**, ya que los archivos con contenidos idénticos generarán el mismo valor de hash.
 
 ## Ejemplo emule
 
@@ -1130,17 +1100,31 @@ El hash de un bloque nuevo se calcula a partir de 3 cosas:
 
 # 7.1. certificado digital
 
-Para poder realizar firma electrónica necesitamos tener un **certificado digital**. Este certificado es el que acredita nuestra identidad en Internet.
+Para poder realizar firma electrónica o demostrar nuestra identidad necesitamos tener un **certificado digital**. Este certificado es el que acredita nuestra identidad en Internet.
 
-El certificado autentica\, mediante una pareja de  __claves __ en un fichero software o en tarjeta la identidad del firmante\.
-
-![imagen](img/Certificado_digital2.png)
-
-![imagen](img/Certificado_digital3.png)
+En muchas páginas web de organismos públicos podréis encontrar un acceso con certificado digital. Para poder hacerlo, necesitamos tener uno.
 
 ![imagen](img/2022-11-26-15-04-58.png)
 
+En otros casos, también podremos elegir entre acceso con el sistema cl@ve.
+
+![Alt text](image.png)
+
+El certificado es un **documento digital** que autentica, mediante una pareja de **claves** en un fichero software o en tarjeta la identidad del firmante.
+
+Este ejemplo muestra un certificado instalado en un ordenador:
+
+![imagen](img/Certificado_digital2.png)
+
+El certificado, además de nuestra información, fecha de validez y organismo emisor, contiene dos claves de criptografía pública, asociados a la persona.
+
+![imagen](img/Certificado_digital3.png)
+
 ## Ejemplo de certificado electrónico
+
+Al acceder a una página o aplicación en las que se nos solicite un certificado digital nos pedirá seleccionar cual queremos utilizar.
+
+Para ello deberemos disponer de uno, de lo contrario nos dará un error.
 
 ![imagen](img/Certificado_digital8.png)
 
@@ -1148,8 +1132,8 @@ El certificado autentica\, mediante una pareja de  __claves __ en un fichero sof
 
 Estos certificados se pueden conseguir de varias formas:
 
-- El propio DNI electrónico contiene un certificado digital que podemos utilizar.
-- Algunos organismos como la FNMT (Fábrica Nacional de Moneda) también nos pueden hacer un certificado digital.
+1. El propio **DNI** electrónico contiene un certificado digital que podemos utilizar.
+2. Algunos organismos como la FNMT (Fábrica Nacional de Moneda) también nos pueden hacer un certificado digital.
 
  El certificado autentica, mediante una pareja de claves en un fichero software o en tarjeta la identidad del firmante.
 
@@ -1195,7 +1179,7 @@ _[http://mapaoficinascert\.appspot\.com/\#](http://mapaoficinascert.appspot.com/
 
 ![imagen](img/2022-12-13-17-03-20.png)
 
-Paso 3\. Descargar certificado
+**Paso 3. Descargar certificado**
 
 - Antes realizar el registro presencial
 - Tenemos que tener del código obtenido en el primer paso

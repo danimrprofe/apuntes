@@ -923,7 +923,7 @@ Para crear un formulario nos vamos a encontrar dos posibilidades dentro del apar
 
 Nosotros vamos a crear formularios en la ``vista diseño`` porque nos permite configurarlos con más detalles. Para ello pulsamos sobre ``Crear formulario en ``vista diseño``. Nos aparece entonces la ventana de diseño de formularios
 
-<img src="media/image103.png" id="image107">
+![](img/2024-01-12-11-44-08.png)
 
 ## Controles de formularios
 
@@ -955,7 +955,11 @@ El primer formulario que vamos a crear en ``vista diseño`` es uno para la ``tab
 
 Lo primero que vamos a hacer dentro de la ventana de edición de formularios es indicar cómo se va a llamar el formulario y con qué tabla va a estar conectado.
 
-Para ello, pulsamos sobre el icono ``Navegador de formulario`` y hacemos clic con el botón derecho sobre el campo ``Formulario``, elegimos la opción ``Nuevo`` y, dentro de ésta, ``Formulario``.
+Para ello, pulsamos sobre el icono ``Navegador de formulario``
+
+![](img/2024-01-12-11-45-54.png)
+
+Hacemos clic con el botón derecho sobre el campo ``Formulario``, elegimos la opción ``Nuevo`` y, dentro de ésta, ``Formulario``.
 
 <img src="media/image106.png" id="image110">
 
@@ -973,7 +977,7 @@ En el cuadro resultante, vamos a la ficha ``Datos``, y seleccionamos dentro ``Co
 
 ## Guardar el formulario
 
-Cerramos las ventanas ``Propiedades del formulario`` y ``Navegador de formulario`` y, antes de continuar, guardamos el formulario pulsando en la pestaña ``Archivo`` y dentro ``Guardar``, y también aquí le nombramos como Form_Interpretes.
+Cerramos las ventanas ``Propiedades del formulario`` y ``Navegador de formulario`` y, antes de continuar, guardamos el formulario pulsando en la pestaña ``Archivo`` y dentro ``Guardar``, y también aquí le nombramos como ``Form_Interpretes``.
 
 <img src="media/image110.png" id="image114">
 
@@ -981,21 +985,21 @@ Crear campo de texto
 
 Ahora ya podemos continuar con la creación del formulario. En primer lugar, vamos a crear un campo de texto. Para ello,
 
-Seleccionamos ``Campo de texto`` de entre todos los controles disponibles.
+Seleccionamos ``cuadro de texto`` de entre todos los controles disponibles.
+
+![](img/2024-01-12-11-47-18.png)
 
 Veremos que el cursor cambia de forma, y es cuando podemos insertar dicho campo.
 
-Llevamos el cursor a la posición de la zona de trabajo
-
-Lo arrastramos hasta que el campo de texto alcance el tamaño deseado.
+Llevamos el cursor a la posición de la zona de trabajo y lo arrastramos hasta que el campo de texto alcance el tamaño deseado.
 
 <img src="media/image111.png" id="image115">
 
 Ahora tenemos que dar unas propiedades al campo de texto y asignarle la tabla en la que se insertarán los datos introducidos desde este formulario.
 
-Seleccionamos dicho cuadro con el botón derecho y nos sale un cuadro emergente, y dentro de él escogemos ``Campo de Control``.
+Seleccionamos dicho cuadro con el botón derecho y nos sale un cuadro emergente, y dentro de él escogemos ``propiedades del Control``.
 
-<img src="media/image112.png" id="image116">
+![](img/2024-01-12-11-48-13.png)
 
 En el cuadro resultante, vamos a la ficha ``Datos``, y seleccionamos dentro de ``Campo de datos`` el nombre del campo al cual se va a enlazar, en este caso, al campo ``id_interprete``.
 

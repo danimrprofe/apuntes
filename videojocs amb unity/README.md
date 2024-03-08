@@ -187,11 +187,18 @@ Debajo veréis que se pueden agregar más componentes \( __add component__ \) se
 
 En ``Unity``, cada objeto tiene asociados componentes que modifican su comportamiento y cada uno de ellos presenta sus propias opciones. Esto permite personalizar el objeto y darle una funcionalidad específica.
 
- ``Unity`` permite personalizar los objetos para darles una funcionalidad específica mediante el uso de componentes asociados a cada uno. Por ejemplo, para un objeto 'player' los **componentes** incluyen el ``Transform`` para controlar la posición, rotación y la escala, el ``Spriterenderer`` para controlar el color, material y el orden de los objetos, el ``BoxCollider 2D`` para controlar las colisiones y el ``Rigidbody`` para hacer que se apliquen físicas al objeto.
+ ``Unity`` permite personalizar los objetos para darles una funcionalidad específica mediante el uso de componentes asociados a cada uno. Por ejemplo, para un objeto 'player' los **componentes** incluyen:
+ 
+- El componente ``Transform`` para controlar la posición, rotación y la escala,
+- El componente ``Spriterenderer`` para controlar el color, material y el orden de los objetos
+- El componente ``BoxCollider 2D`` para controlar las colisiones
+- El componente ``Rigidbody`` para hacer que se apliquen físicas al objeto.
+
+Los componentes no son obligatorios, sinó que se añaden a cada objeto en función de las características que queramos que tenga.
 
 ## 4. Crear pelota
 
-entro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
+Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a ``spritesquare`` y se pone un cuadrado que es el que vamos a utilizar para la bola.
 
 ![](2023-03-02-12-56-44.png)
 
@@ -208,9 +215,9 @@ Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo
 
 Podemos ``duplicar`` un objeto en lugar de crear uno nuevo. este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o ``clic derecho > duplicate`` se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
 
-## 05. Sprites
+## Sprites
 
-Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para ``representar personajes, objetos, entornos`` o cualquier otra imagen.
+Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para representar **personajes, objetos, entornos** o cualquier otra imagen.
 
 Estos ``sprites`` se pueden importar directamente desde un archivo de imagen o se pueden crear desde cero usando ``Unity``.
 
@@ -220,7 +227,7 @@ Los ``sprites`` se pueden mover, girar, escalar y rotar fácilmente con ``Unity`
 
 Todos los objetos por defecto tienen una posición y un tamaño\. Esto se cambia en el ``componente Transform``
 
-## 06. Crear paredes de los lados
+## Crear paredes de los lados
 
 A partir de un jugador:
 
@@ -239,7 +246,7 @@ Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente p
 
 ## 07. Nombrando los objetos
 
-Ahora importante nombrar las cosas porque vamos a empezara tener muchos ``objetos`` y nos podemos confundir. Además, deberemos poder identificarlos en los ``scripts`` que crearemos para manipularlos.
+Es importante nombrar las cosas porque vamos a empezar a tener muchos ``objetos`` y nos podemos confundir. Además, deberemos poder identificarlos en los ``scripts`` que crearemos para manipularlos.
 
 Para renombrar un objeto hacéis doble clic o con ``F2``. La portería derecha vamos a llamarle en ``goal1`` porque va a ser la portería en la que tiene que colar el jugador 1 que va a estar a nuestra izquierda.
 
@@ -261,9 +268,16 @@ Ahora lo único que ayudaría sería pues nuestra ``pelota`` del medio así que 
 
 Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos
 
-## 09. Componentes rigidbody
+## 09. Componentes Rigid Body
 
-``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D afectado por la gravedad, el empuje, la fricción y otras fuerzas físicas. Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
+``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D ser afectados por:
+
+- La gravedad
+- El empuje
+- La fricción
+- Otras fuerzas físicas.
+
+Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
 
 Asignaremos los componentes ``Rigidbody 2D``  a nuestros jugadores y a la pelota. Podemos seleccionar todos los objetos y seleccionar el componente ``Rigidbody 2D``  para añadirlo.
 

@@ -1133,14 +1133,14 @@ Una actividad delictiva puede corresponder a varios delincuentes
 
 ## Parte 5. Diseña las siguientes consultas: (2 ptos.)
 
-A. Delincuentes de nacionalidad estadounidense (Nombres y apellidos)
+- A. Delincuentes de nacionalidad estadounidense (Nombres y apellidos)
 
 ![](img/2023-12-11-16-54-20.png)
 
-B. Delincuentes nacidos entre los años 1960 y 1970. (Nombre, apellido y fecha de nacimiento)
-C. Delincuentes que viven en Afganistán e Irak.
-D. Número de delincuentes por nacionalidad.
-E. Crea una consulta que genere los siguientes resultados:
+- B. Delincuentes nacidos entre los años 1960 y 1970. (Nombre, apellido y fecha de nacimiento)
+- C. Delincuentes que viven en Afganistán e Irak.
+- D. Número de delincuentes por nacionalidad.
+- E. Crea una consulta que genere los siguientes resultados:
 
 ![](img/2023-12-11-16-54-27.png)
 

@@ -1133,19 +1133,20 @@ Una actividad delictiva puede corresponder a varios delincuentes
 
 ## Parte 5. Diseña las siguientes consultas: (2 ptos.)
 
-Delincuentes de nacionalidad estadounidense (Nombres yapellidos)
+A. Delincuentes de nacionalidad estadounidense (Nombres y apellidos)
 
 ![](img/2023-12-11-16-54-20.png)
 
-Delincuentes nacidos entre los años 1960 y 1970. (Nombre, apellido y fecha de nacimiento)
-
-Delincuentes que viven en Afganistán e Irak.
-Número de delincuentes por nacionalidad.
-Crea una consulta que genere los siguientes resultados:
+B. Delincuentes nacidos entre los años 1960 y 1970. (Nombre, apellido y fecha de nacimiento)
+C. Delincuentes que viven en Afganistán e Irak.
+D. Número de delincuentes por nacionalidad.
+E. Crea una consulta que genere los siguientes resultados:
 
 ![](img/2023-12-11-16-54-27.png)
 
-## Parte 6. Realiza un formulario que nos permita introducir y actualizar información sobre delincuentes  y otro formulario para insertar condenas (1 punto)
+## Parte 6. Formulario
+
+Realiza un formulario que nos permita introducir y actualizar información sobre delincuentes  y otro formulario para insertar condenas (1 punto)
 
 ## Parte 7. Diseña los siguientes informes:  (1,5 puntos)
 

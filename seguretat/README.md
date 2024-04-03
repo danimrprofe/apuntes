@@ -1,11 +1,14 @@
-- [1.0. La seguridad de la información](#10-la-seguridad-de-la-información)
-- [1.1. Principios de la seguridad informática](#11-principios-de-la-seguridad-informática)
-- [1.2. ¿Qué queremos proteger?](#12-qué-queremos-proteger)
-- [1.3. Contra qué nos tenemos que proteger](#13-contra-qué-nos-tenemos-que-proteger)
-- [1.4. La importancia de los datos](#14-la-importancia-de-los-datos)
-- [2. Amenazas y ataques](#2-amenazas-y-ataques)
-- [2.1. Tipos de amenazas](#21-tipos-de-amenazas)
-- [2.2. Conductas de seguridad](#22-conductas-de-seguridad)
+- [1. La seguridad de la información](#1-la-seguridad-de-la-información)
+- [2. Principios de la seguridad informática](#2-principios-de-la-seguridad-informática)
+- [3. ¿Qué queremos proteger?](#3-qué-queremos-proteger)
+- [4. Contra qué nos tenemos que proteger](#4-contra-qué-nos-tenemos-que-proteger)
+- [5. Amenazas y ataques](#5-amenazas-y-ataques)
+  - [Amenazas Humanas](#amenazas-humanas)
+  - [Amenazas lógicas](#amenazas-lógicas)
+  - [Amenazas Físicas](#amenazas-físicas)
+- [6. Seguridad activa y pasiva](#6-seguridad-activa-y-pasiva)
+  - [Técnicas de seguridad activa](#técnicas-de-seguridad-activa)
+  - [Técnicas o prácticas de seguridad pasiva](#técnicas-o-prácticas-de-seguridad-pasiva)
 - [3. Malware](#3-malware)
 - [3.1. Malware](#31-malware)
   - [¿Qué es el malware?](#qué-es-el-malware)
@@ -44,7 +47,7 @@
 - [Usos](#usos)
   - [Servidores de comando y control](#servidores-de-comando-y-control)
   - [Ejemplos](#ejemplos)
-- [4.4. Ingeniería social](#44-ingeniería-social)
+- [INGENIERÍA SOCIAL](#ingeniería-social-1)
   - [Ejemplo](#ejemplo)
   - [Componentes psicológicos](#componentes-psicológicos)
   - [Autoridad](#autoridad)
@@ -74,72 +77,24 @@
 - [5.1. Políticas de seguridad](#51-políticas-de-seguridad)
 - [5.3. Síntomas de una infección](#53-síntomas-de-una-infección)
 - [5.4. Pasos que debe darse en caso de infección](#54-pasos-que-debe-darse-en-caso-de-infección)
-- [6.1. Criptografía](#61-criptografía)
-  - [Terminologia](#terminologia)
-- [6.2. Máquinas de cifrado - Enigma](#62-máquinas-de-cifrado---enigma)
-  - [Sistema de engranajes](#sistema-de-engranajes)
-  - [Compartición de claves](#compartición-de-claves)
-  - [Simulador](#simulador)
-- [6.3. Criptografía simétrica](#63-criptografía-simétrica)
-  - [Usos](#usos-1)
-  - [Inconvenientes](#inconvenientes)
-- [Ejemplo: AES](#ejemplo-aes)
-- [6.4. Criptografía asimétrica o de clave pública](#64-criptografía-asimétrica-o-de-clave-pública)
-  - [¿Qué claves se necesitan?](#qué-claves-se-necesitan)
-  - [¿Qué relación tienen estas 2 claves?](#qué-relación-tienen-estas-2-claves)
-  - [Algoritmo RSA](#algoritmo-rsa)
+- [CRIPTOGRAFÍA](#criptografía)
+  - [MÁQUINAS DE CIFRADO. ENIGMA](#máquinas-de-cifrado-enigma)
+  - [6.3. Criptografía simétrica](#63-criptografía-simétrica)
+  - [6.4. Criptografía asimétrica o de clave pública](#64-criptografía-asimétrica-o-de-clave-pública)
   - [Generación de claves](#generación-de-claves)
   - [Encriptar con clave privada](#encriptar-con-clave-privada)
   - [Webs para practicar](#webs-para-practicar)
-- [6.5. Algoritmos](#65-algoritmos)
-  - [¿Qué son los algoritmos?](#qué-son-los-algoritmos)
-  - [Algoritmos actuales](#algoritmos-actuales)
-  - [El algoritmo es público](#el-algoritmo-es-público)
-- [6.6. Curiosidades](#66-curiosidades)
-  - [DNI y la letra](#dni-y-la-letra)
+  - [6.5. Algoritmos](#65-algoritmos)
+  - [6.6. Curiosidades](#66-curiosidades)
   - [Cuentas bancarias](#cuentas-bancarias)
-- [Funciones de hash](#funciones-de-hash)
-  - [Ejemplo emule](#ejemplo-emule)
-  - [Ejemplo ``Bitcoin``](#ejemplo-bitcoin)
+  - [6.7. Funciones de hash](#67-funciones-de-hash)
 - [7. Identidad digital, certificados, firma y DNIe](#7-identidad-digital-certificados-firma-y-dnie)
-- [7.1. certificado digital](#71-certificado-digital)
-  - [Ejemplo de certificado electrónico](#ejemplo-de-certificado-electrónico)
-  - [Cómo conseguir un certificado](#cómo-conseguir-un-certificado)
-  - [Autoridades de certificación](#autoridades-de-certificación)
-  - [Tipos de certificados](#tipos-de-certificados)
-  - [¿Cómo conseguir un certificado digital?](#cómo-conseguir-un-certificado-digital)
-  - [Utilización](#utilización)
-- [DNI Electrónico](#dni-electrónico)
-  - [Introducción y curiosidades](#introducción-y-curiosidades)
-  - [Primer DNI informatizado](#primer-dni-informatizado)
-  - [Primer DNI electrónico](#primer-dni-electrónico)
-  - [Máquina para crear DNI](#máquina-para-crear-dni)
-  - [DNIe](#dnie)
-  - [¿Qué podemos hacer con el DNIe?](#qué-podemos-hacer-con-el-dnie)
-  - [¿Qué información contiene el chip?](#qué-información-contiene-el-chip)
-  - [DNI 3.0](#dni-30)
-  - [DNIe](#dnie-1)
-  - [PIN](#pin)
-  - [¿Qué podemos hacer?](#qué-podemos-hacer)
-  - [Pagar tasas o impuestos](#pagar-tasas-o-impuestos)
-  - [Lectores](#lectores)
-  - [Partes DNIe](#partes-dnie)
-- [Firma digital](#firma-digital)
-  - [¿Para qué sirve la firma electrónica?](#para-qué-sirve-la-firma-electrónica)
-  - [Mecanismo](#mecanismo)
+  - [7.1. certificado digital](#71-certificado-digital)
+  - [7.2 DNI Electrónico](#72-dni-electrónico)
   - [Envío](#envío)
-  - [Firma de documentos electrónicos](#firma-de-documentos-electrónicos)
-  - [Sellado en el tiempo](#sellado-en-el-tiempo)
-- [Identidad digital](#identidad-digital)
-  - [Identificación](#identificación)
-  - [HUELLA DACTILAR](#huella-dactilar)
-  - [DNI](#dni)
-  - [Documento nacional de identidad](#documento-nacional-de-identidad)
-  - [¿Cómo nos identificamos en Internet?](#cómo-nos-identificamos-en-internet)
-  - [Contraseñas](#contraseñas)
-  - [Formas de demostrar nuestra identidad](#formas-de-demostrar-nuestra-identidad)
-- [11.1 Seguridad en Bluetooth](#111-seguridad-en-bluetooth)
-- [11.2 Wifi](#112-wifi)
+- [11. Seguridad en redes inalámbricas](#11-seguridad-en-redes-inalámbricas)
+  - [11.1 Seguridad en Bluetooth](#111-seguridad-en-bluetooth)
+  - [11.2 Wifi](#112-wifi)
 - [Antivirus](#antivirus)
   - [¿Es importante tener instalado un antivirus?](#es-importante-tener-instalado-un-antivirus)
   - [Actualización](#actualización)
@@ -200,13 +155,13 @@
 - [Bloqueo de rastreadores](#bloqueo-de-rastreadores)
 - [Redes privadas virtuales](#redes-privadas-virtuales)
   - [Algunas ventajas de utilizar una VPN](#algunas-ventajas-de-utilizar-una-vpn)
-  - [Inconvenientes](#inconvenientes-1)
+  - [Inconvenientes](#inconvenientes)
 
-# 1.0. La seguridad de la información
+# 1. La seguridad de la información
 
 La **seguridad informática** es el conjunto de acciones, herramientas y dispositivos cuyo objetivo es dotar a un sistema informático (conjunto de hardware, software, personas y procedimientos) de integridad, confidencialidad y disponibilidad.
 
-# 1.1. Principios de la seguridad informática
+# 2. Principios de la seguridad informática
 
 **¿Quién puede modificar la información?**
 
@@ -238,7 +193,7 @@ Ejemplos:
 
 ![imagen](img/2019-11-23-18-02-19.png)
 
-# 1.2. ¿Qué queremos proteger?
+# 3. ¿Qué queremos proteger?
 
 La seguridad informática pretende **proteger recursos** valiosos de una organización. En un sistema informático lo que queremos proteger son sus activos, es decir, los recursos que forman parte del sistema y que podemos agrupar en:
 
@@ -261,62 +216,18 @@ Para ello se establecen **planes de seguridad** que garantizan los tres principi
 
 ![imagen](img/2019-11-23-18-02-55.png)
 
-# 1.3. Contra qué nos tenemos que proteger
+# 4. Contra qué nos tenemos que proteger
 
 - **nosotros mismos**: Borramos archivos sin darnos cuenta, eliminamos programas necesarios para la seguridad o aceptamos correos electrónicos perjudiciales para el sistema.
 - **accidentes y averías**: Pueden hacer que se estropee nuestro ordenador y perdamos datos necesarios.
 - **usuarios intrusos**: Bien desde el mismo ordenador, bien desde otro equipo de la red, puedan acceder a datos de nuestro equipo.
 - **software malicioso o malware**: Programas que aprovechan un acceso a nuestro ordenador para instalarse y obtener información, dañar el sistema o incluso llegar a inutilizarlo por completo
 
-# 1.4. La importancia de los datos
-
-La importancia de la información que manejamos será, en gran medida,relativa a nuestro sector de negocio.
-
-**Ámbito sanitario**
-
-Gran volumen de información personal de pacientes, a la que se deben aplicar todas las medidas de seguridad para evitar que se pierda, modifique o se acceda a ella sin autorización.
-
-Suele ser necesario llevar un registro de los accesos y modificaciones.
-
-**Sector financiero**
-
-Se maneja información confidencial tanto de clientes como de operaciones financieras de compras y ventas de activos cuya difusión puede suponer una importante pérdida económica o un perjuicio para nuestros clientes.
-
-**Sectores industriales o de desarrollo de productos**
-
-Confidencialidad de los procesos y procedimientos que nos pueden aportar una mejora de productividad sobre la competencia.
-
-**Hostelería y restauración**
-
-Se maneja, además de un volumen de datos de carácter personal muy significativo, información sobre reservas, cuya pérdida nos podría poner en una situación muy complicada con nuestros clientes.
-
-**Legislación de datos**
-
-La legislación sobre protección de datos de carácter personal, define datos personales como toda información sobre una persona física identificada o identificable.
-
-Una **persona es identificable** si puede determinarse su identidad, directa o indirectamente.
-
-Esta legislación exige la protección de la seguridad de los datos de carácter personal ante posibles riesgos que afecten a la privacidad de las personas por ejemplo: acceso no autorizado, uso ilegítimo, modificación no autorizada, discriminación por perfilado o pérdida de datos.
-
-**Datos sensibles**
-
-Existen categorías especiales de datos, los denominados **datos sensibles** que exigen una protección reforzada y que están sujetos a un régimen jurídico especial.
-
-Estos datos son datos personales que revelan:
-
-- Ideología, afiliación sindical, opiniones políticas
-- Creencias religiosas y otras creencias.
-- Origen racial o étnico
-- Relativos a la salud o la vida sexual y orientación sexual, datos genéticos y biométricos.
-- Datos de condenas penales o administrativas
-
-# 2. Amenazas y ataques
-
-# 2.1. Tipos de amenazas
+# 5. Amenazas y ataques
 
 Existen 3 tipos de amenazas según su origen:
 
-### Amenazas Humanas
+## Amenazas Humanas
 
 Tipos de amenazas humanas más habituales:
 
@@ -324,20 +235,20 @@ Tipos de amenazas humanas más habituales:
 - Hackers
 - Antiguos empleados de una Organización
 
-### Amenazas lógicas
+## Amenazas lógicas
 
 - Software Malicioso
 - Vulnerabilidades del software
 
-### Amenazas Físicas
+## Amenazas Físicas
 
 - Fallos en los dispositivos
 - Accidentes
 - Catástrofes Naturales
 
-# 2.2. Conductas de seguridad
+# 6. Seguridad activa y pasiva
 
-### Técnicas de seguridad activa
+## Técnicas de seguridad activa
 
 El fin de las medidas de seguridad activa es evitar daños a los sistemas informáticos.
 
@@ -356,7 +267,7 @@ Enlaces:
 )
 - https://howsecureismypassword.net/
 
-### Técnicas o prácticas de seguridad pasiva
+## Técnicas o prácticas de seguridad pasiva
 
 Su fin es minimizar los efectos causados por un accidente, un usuario o un malware.
 
@@ -438,6 +349,7 @@ medio de la ejecución automática al conectarlo o reproducirse.
 
 Pequeños ficheros que monitorizan y registran las actividades del usuario en
 internet con fines maliciosos, por ejemplo tener hábitos de navegación para empresas de publicidad.
+
 ## 3.3. Tipos de malware más conocidos
 
 Algunos de los tipos de malware más habituales son:
@@ -651,7 +563,7 @@ Ejemplos:
 
 # 4.3. Botnets
 
-Una botnet, o mejor dicho, una red de bots (también conocida como ejército zombi) es una red constituida por un gran número de equipos informáticos que han sido "secuestrados" por malware, que quedan bajo control del atacante.
+Una ``botnet``, o mejor dicho, una red de bots (también conocida como ejército zombi) es una red constituida por un gran número de equipos informáticos que han sido "secuestrados" por malware, que quedan bajo control del atacante.
 
 # Usos
 
@@ -676,7 +588,7 @@ Para que un equipo forme parte de una botnet, primero es necesario que se **infe
 
 ![imagen](img/2022-12-02-06-45-51.png)
 
-# 4.4. Ingeniería social
+# INGENIERÍA SOCIAL
 
 Los **eslabones** más **débiles** de cualquier cadena de seguridad son los seres humanos. La ingeniería social busca explotar este punto débil, apelando a la vanidad, la avaricia, la curiosidad, el altruismo o el respeto o temor a la autoridad de las personas, para conseguir que revele cierta información o que permita el acceso a un sistema informático.
 
@@ -727,6 +639,7 @@ Hay una serie de técnicas de ingeniería social que los ladrones utilizan. Incl
 
 - Educación y capacitación a los usuarios
 - Políticas de seguridad sin excepciones
+
 # 4.5. Ciberacoso
 
 El ciberacoso puede ser el tipo de ataque en línea más pernicioso, ya que los acosadores, que suelen **ocultarse** tras personalidades falsas, tienden a aprovecharse de las **inseguridades** o **debilidades** personales de la víctima para humillarla y causarle daños **psicológicos**.
@@ -923,11 +836,11 @@ Algunos síntomas de infección habituales de que un equipo puede estar infectad
 
 - Ejecutar **utilidades de desinfección específicas**, que eliminas amenazas concretas: esto sirve cuando ya ha sido detectada la amenaza.
 
-# 6.1. Criptografía
-
-![imagen](img/2022-12-11-19-59-11.png)
+# CRIPTOGRAFÍA
 
 La **criptografía** (del griego 'escritura oculta') es la ciencia de cifrar y descifrar información con técnicas especiales, usado frecuentemente en mensajes que solo puedan ser leídos por las personas a las que van dirigidos.
+
+![imagen](img/2022-12-11-19-59-11.png)
 
 Al hablar de este área se debería hablar de criptologia que a su vez engloba:
 
@@ -936,7 +849,7 @@ Al hablar de este área se debería hablar de criptologia que a su vez engloba:
 
 - [Práctica tipos de cifrado](https://cryptii.com/pipes/caesar-cipher)
 
-## Terminologia
+**Terminologia**
 
 - El mensaje original recibe el nombre de texto claro.
 - El mensaje codificado se denomina texto cifrado.
@@ -945,7 +858,7 @@ Al hablar de este área se debería hablar de criptologia que a su vez engloba:
 
 ![imagen](img/2022-12-11-20-00-21.png)
 
-# 6.2. Máquinas de cifrado - Enigma
+## MÁQUINAS DE CIFRADO. ENIGMA
 
 Es en la Segunda Guerra Mundial cuando se hace imprescindible el uso de máquinas que cifren los mensajes para así evitar que el enemigo interceptase información sensible para el desarrollo de las operaciones.
 
@@ -953,7 +866,7 @@ La Máquina Enigma era un dispositivo electromecánico usado para cifrar y desci
 
 ![imagen](img/2022-11-24-21-24-06.png)
 
-## Sistema de engranajes
+**Sistema de engranajes**
 
 El proceso de codificación comenzaba cuando el usuario tecleaba un mensaje en el teclado. Esto producía una serie de pulsos eléctricos que viajaban a través de los cables conectados al panel de lámparas. Estas luces correspondían a las letras del mensaje en clave.
 
@@ -963,31 +876,31 @@ Finalmente, los pulsos eléctricos viajaban a la unidad de conexión, que los co
 
 ![imagen](img/2022-11-25-17-37-25.png)
 
-## Compartición de claves
+**Compartición de claves**
 
 ![imagen](img/2022-11-25-17-37-07.png)
 
-## Simulador
+**Simulador**
 
 https://www.101computing.net/enigma-machine-emulator/
 
-# 6.3. Criptografía simétrica
+## 6.3. Criptografía simétrica
 
 La criptografía simétrica, también conocida como criptografía de clave privada, se utiliza la misma clave para cifrar y descifrar un mensaje.
 
 Esto significa que el remitente y el receptor de un mensaje deben **compartir** la misma **clave** de antemano.
 
-## Usos
+**Usos**
 
 La criptografía simétrica suele utilizarse para proteger las comunicaciones entre dos partes. También se puede usar para almacenar datos, como contraseñas, de forma que solo sea accesible para aquellos con la clave.
 
-## Inconvenientes
+**Inconvenientes**
 
 Un inconveniente de la criptografía simétrica es que, si se pierde o se roba la clave, los datos que protegía también pueden hacerlo. Otra es que puede ser difícil administrar la distribución de claves a varias partes.
 
 ![imagen](img/2019-11-24-09-29-32.png)
 
-# Ejemplo: AES
+**AES**
 
 AES es un tipo de cifrado que se usa para proteger información. El cifrado AES usa una clave que tiene 16, 24 o 32 bytes de largo. La clave se usa para cifrar y descifrar datos.
 
@@ -995,13 +908,13 @@ El cifrado AES es un proceso de dos pasos. En primer lugar, se cifran los datos 
 
 Ejercicio: [encriptacion AES](https://aesencryption.net/)
 
-# 6.4. Criptografía asimétrica o de clave pública
+## 6.4. Criptografía asimétrica o de clave pública
 
 En la criptografía asimétrica tenemos, en lugar de única clave compartida por el emisor y el receptor, 2 claves por cada persona.
 
-![imagen](img/![imagen](img/2022-11-26-15-31-04.png).png)
+![imagen](img/2022-11-26-15-31-04.png)
 
-## ¿Qué claves se necesitan?
+**¿Qué claves se necesitan?**
 
 Cada usuario del sistema criptográfico ha de poseer una pareja de claves, formada por:
 
@@ -1010,7 +923,7 @@ Cada usuario del sistema criptográfico ha de poseer una pareja de claves, forma
 
 ![imagen](img/2022-11-24-21-09-32.png)
 
-## ¿Qué relación tienen estas 2 claves?
+**¿Qué relación tienen estas 2 claves?**
 
 Esta pareja de claves es **complementaria**: lo que cifra una solo lo puede descifrar la otra y viceversa.
 
@@ -1020,7 +933,7 @@ Resulta prácticamente imposible descubrir la clave privada a partir de la públ
 
 ![imagen](img/2019-11-24-09-29-58.png)
 
-## Algoritmo RSA
+**Algoritmo RSA**
 
 RSA es un algoritmo de cifrado basado en la teoría de los números primos. Se utiliza en la mayoría de los sistemas de cifrado de datos, como SSL/TLS, para proporcionar una capa de seguridad adicional.
 
@@ -1029,6 +942,8 @@ RSA es un algoritmo de cifrado basado en la teoría de los números primos. Se u
 Práctica: https://www.devglan.com/online-tools/rsa-encryption-decryption
 
 ## Generación de claves
+
+Curiosidad: La diferencia entre la longitud de la clave pública y la privada en RSA es que **la clave pública es siempre menor que la clave privada**. Esto se debe a que la clave pública se utiliza para cifrar los mensajes, mientras que la clave privada se utiliza para descifrarlos.
 
 ![imagen](img/2022-11-25-17-36-21.png)
 
@@ -1041,9 +956,10 @@ Práctica: https://www.devglan.com/online-tools/rsa-encryption-decryption
 - https://cryptii.com/pipes/caesar-cipher
 - https://cifraronline.com/
 - https://www.devglan.com/online-tools/rsa-encryption-decryption
-# 6.5. Algoritmos
 
-## ¿Qué son los algoritmos?
+## 6.5. Algoritmos
+
+**¿Qué son los algoritmos?**
 
 Los **algoritmos** son los métodos que se utilizan para transformar el texto claro en el texto cifrado.
 
@@ -1054,20 +970,20 @@ Vamos a analizar el cifrado por sustitución del César.
         - Sustituir cada letra del texto sin cifrar por otra letra del mismo alfabeto que se encuentra situada en el orden del diccionario N puestos por delante.
         - N es el valor de la clave, que como podemos ver, junto con el algoritmo, determinará exactamente la letra que sustituirá a la original.
 
-## Algoritmos actuales
+**Algoritmos actuales**
 
 Como podemos imaginar, hoy en día se utilizan diferentes algoritmos, algunos válidos para criptografía de clave privada y otras para criptografía de clave pública.
 
 - **Algoritmos de clave privada**: DES, 3DES, RC4, IDEA Y AES son nombres de algoritmos de clave privada.
 - **Algoritmos de clave pública**: DH, EIGamal, RSA.
 
-## El algoritmo es público
+**El algoritmo es público**
 
 “Suele ser un error muy frecuente pensar que los algoritmos de cifrado deben ser secretos para resultar seguros. Los algoritmos de cifrados utilizados son de dominio público y el código fuente asociado también. Sin embargo, siguen siendo seguros porque requieren que el usuario proporcione la clave secreta”
 
-# 6.6. Curiosidades
+## 6.6. Curiosidades
 
-## DNI y la letra
+### DNI
 
 ![imagen](img/2022-11-25-17-38-04.png)
 
@@ -1089,7 +1005,7 @@ La letra del DNI se calcula utilizando el algoritmo de Luhn.
 
 ![imagen](img/2022-11-25-17-37-47.png)
 
-# Funciones de hash
+## 6.7. Funciones de hash
 
 Las funciones hash son algoritmos matemáticos que se usan para convertir datos de cualquier tamaño en una cadena de caracteres de tamaño fijo. Esto permite que los datos sean rápidamente comparados y verificados.
 
@@ -1105,7 +1021,7 @@ Las funciones hash también se usan para detectar la **duplicación de archivos*
 
 En resumen, las funciones hash son algoritmos matemáticos que se usan para convertir datos de cualquier tamaño en una cadena de caracteres de tamaño fijo. Esto les permite a los usuarios verificar y detectar cambios en los datos de forma rápida y segura, así como detectar la duplicación de archivos.
 
-## Ejemplo emule
+**Ejemplo emule**
 
 El hash en este caso se genera a partir del contenido de un archivo, en bits. Solo de esta forma podemos afirmar que dos o más archivos son exactamente idénticos, puesto que:
 
@@ -1116,7 +1032,7 @@ Compararlos bit a bit no tiene sentido pues es computacionalmente muy costoso. E
 
 ![imagen](img/2022-12-11-20-23-46.png)
 
-## Ejemplo ``Bitcoin``
+**Ejemplo ``Bitcoin``**
 
 El hash de un bloque nuevo se calcula a partir de 3 cosas:
 
@@ -1128,7 +1044,7 @@ El hash de un bloque nuevo se calcula a partir de 3 cosas:
 
 # 7. Identidad digital, certificados, firma y DNIe
 
-# 7.1. certificado digital
+## 7.1. certificado digital
 
 Para poder realizar firma electrónica necesitamos tener un **certificado digital**. Este certificado es el que acredita nuestra identidad en Internet.
 
@@ -1140,11 +1056,11 @@ El certificado autentica\, mediante una pareja de  __claves __ en un fichero sof
 
 ![imagen](img/2022-11-26-15-04-58.png)
 
-## Ejemplo de certificado electrónico
+### Ejemplo de certificado electrónico
 
 ![imagen](img/Certificado_digital8.png)
 
-## Cómo conseguir un certificado
+### Cómo conseguir un certificado
 
 Estos certificados se pueden conseguir de varias formas:
 
@@ -1153,7 +1069,7 @@ Estos certificados se pueden conseguir de varias formas:
 
  El certificado autentica, mediante una pareja de claves en un fichero software o en tarjeta la identidad del firmante.
 
-## Autoridades de certificación
+### Autoridades de certificación
 
 Estos certificados, son emitidos por una entidad emisora de certificados que **dan fe de que el portador del certificado es quien dice ser**.
 
@@ -1164,7 +1080,7 @@ Existen varias autoridades de certificación:
 - Agència Catalana de Certificació
 - Dirección General de la Policía (para el DNI), etc.
 
-## Tipos de certificados
+### Tipos de certificados
 
 Las entidades certificadoras expiden distintos tipos de certificados, dependiendo de si el solicitante es:
 
@@ -1174,7 +1090,7 @@ Las entidades certificadoras expiden distintos tipos de certificados, dependiend
 
 Si disponemos de un certificado y quieres comprobar su validez, firmar, visualizar o validar una firma puedes utilizar los servicios del portal de firma electrónica.
 
-## ¿Cómo conseguir un certificado digital?
+### ¿Cómo conseguir un certificado digital?
 
 Paso 1\. Realizar una solicitud online\.
 
@@ -1204,7 +1120,7 @@ Paso 3\. Descargar certificado
 
 ![imagen](img/Certificado_digital15.png)
 
-## Utilización
+### Utilización
 
 La mayoría de administraciones públicas tienen un portal telemático en el que realizar trámites y solicitudes, utilizando el certificado electrónico o la clave para identificarnos.
 
@@ -1214,9 +1130,9 @@ Una vez entremos, si tenemos nuestro certificado digital instalado, nos permitir
 
 ![imagen](img/Certificado_digital10.png)
 
-# DNI Electrónico
+## 7.2 DNI Electrónico
 
-## Introducción y curiosidades
+### Introducción y curiosidades
 
 Hay que remontarse hasta el año 1944 -en plena época franquista y en los últimos coletazos de la Segunda Guerra Mundial- para conocer el origen de este documento.
 
@@ -1228,7 +1144,7 @@ Los tres primeros números le correspondieron a Franco y su familia
 
 Del 10 al 99, reservados para miembros de la Casa Real. Además, no existe el número 13 en los DNIs -por superstición.
 
-## Primer DNI informatizado
+### Primer DNI informatizado
 
 El primer DNI informatizado regulado por Orden del ministerio del Interior de fecha
 12 de julio de 1990.
@@ -1237,7 +1153,7 @@ No figura impresión dactilar y si dos líneas de caracteres OCR.
 
 ![imagen](img/2022-12-13-16-37-31.png)
 
-## Primer DNI electrónico
+### Primer DNI electrónico
 
 Primer DNI que incorpora CHIP, convirtiendo al Documento Nacional de Identidad en un
 documento electrónico.
@@ -1248,17 +1164,17 @@ Permite la conexión a servicios telemáticos, a través de un lector de tarjeta
 
 ![imagen](img/2022-12-13-16-39-35.png)
 
-## Máquina para crear DNI
+### Máquina para crear DNI
 
 ![imagen](img/DNIe0.png)
 
-## DNIe
+### DNIe
 
 ![imagen](img/DNIe1.png)
 
 __El DNIe es el carnet de identidad de siempre\, con un chip incluido en su interior\. Este chip guarda información nuestra que nos permite utilizarlo también para autenticarnos en Internet\. __
 
-## ¿Qué podemos hacer con el DNIe?
+### ¿Qué podemos hacer con el DNIe?
 
 Este DNI aparece el 2006 y se fabrica hasta el 2015.
 
@@ -1269,7 +1185,7 @@ El DNIe me permite:
 
 ![imagen](img/DNIe2.png)
 
-## ¿Qué información contiene el chip?
+### ¿Qué información contiene el chip?
 
 El chip integrado contiene la siguiente información nuestra:
 
@@ -1281,7 +1197,7 @@ El chip integrado contiene la siguiente información nuestra:
 
 ![imagen](img/2022-12-13-16-42-43.png)
 
-## DNI 3.0
+### DNI 3.0
 
 El DNI 3\.0\. nació en enero del 2015
 
@@ -1301,7 +1217,7 @@ _[https://www\.dnielectronico\.es/PDFs/Historia\_de\_los\_documentos\_de\_identi
 
 ![imagen](img/DNIe7.png)
 
-## DNIe
+### DNIe
 
 Para poder utilizarlo necesitaremos un PIN que nos proporcionarán en la DGP\. Si lo olvidamos\, tendremos que ir presencialmente a conseguir otro\.
 
@@ -1312,15 +1228,15 @@ También necesitaremos:
 
 ![imagen](img/DNIe8.png)
 
-## PIN
+### PIN
 
-El PIN es la contraseña personal que cada DNI electrónico tiene asociado\. Se nos entrega en el momento de expedición del DNIe\, en un sobre sellado\.
+El ``PIN`` es la contraseña personal que cada DNI electrónico tiene asociado\. Se nos entrega en el momento de expedición del DNIe\, en un sobre sellado\.
 
 No podemos cambiar el PIN por Internet\. Si que queremos es modificar nuestro PIN o incluso obtenerlo de nuevo en  __Puntos de Actualización del DNI \(PAD\)\.__  No es necesario que pidamos cita previa
 
 Podremos hacerlo nosotros mismos a través de las máquinas que se encuentran a disposición de los ciudadanos
 
-## ¿Qué podemos hacer?
+### ¿Qué podemos hacer?
 
 - Consultar datos personales
 - Vida laboral
@@ -1336,13 +1252,13 @@ Podremos hacerlo nosotros mismos a través de las máquinas que se encuentran a 
 
 ![imagen](img/DNIe9.png)
 
-## Pagar tasas o impuestos
+### Pagar tasas o impuestos
 
 El DNIe o el certificado electrónico nos permiten también pagar tasas \(por ejemplo\, para que nos den un título o certificado de estudios\) o impuestos\.
 
 En Baleares\, existe la Agencia Tributària o  __Atib__  donde podemos pagar nuestros impuestos\, tanto presencialmente en sus oficinas como online a través de su  __sede electrónica__ \.
 
-## Lectores
+### Lectores
 
 __Los tipos de lectores más habituales son:__
 
@@ -1355,14 +1271,15 @@ __Los tipos de lectores más habituales son:__
 
 _[https://www\.youtube\.com/watch?v=kTC\-xxdTufA](https://www.youtube.com/watch?v=kTC-xxdTufA)_
 
-## Partes DNIe
+### Partes DNIe
 
 ![imagen](img/DNIe11.png)
-# Firma digital
+
+**Firma digital**
 
 La firma digital viene a sustituir a la manuscrita en el mundo de la informática. Es decir, si firmamos de forma digital un documenta, le estaremos dando veracidad y como sucede con la firma manuscrita, no podremos decir que no lo hemos firmado nosotras; por lo tanto, seremos responsables de lo que en él se diga.
 
-## ¿Para qué sirve la firma electrónica?
+**¿Para qué sirve la firma electrónica?**
 
 La firma digital viene a sustituir a la manuscrita en el mundo de la informática\.
 
@@ -1377,7 +1294,7 @@ Una firma electrónica es un conjunto de datos electrónicos que:
 - Certifican la integridad del documento
 - Aseguran que el firmante no puede repudiar lo firmado\.
 
-## Mecanismo
+### Mecanismo
 
 La descripción del mecanismo de firma electrónica es el siguiente texto:
 
@@ -1431,7 +1348,7 @@ El documento firmado contendrá:
 
 Con estos 3 elementos, en cualquier momento podemos comprobar que la firma es auténtica.
 
-## Firma de documentos electrónicos
+##### Firma de documentos electrónicos
 
 Si contamos con un **certificado digital**, podemos comenzar a firmar documentos. La firma electrónica en documentos se puede realizar de dos formas:
 
@@ -1440,16 +1357,16 @@ Si contamos con un **certificado digital**, podemos comenzar a firmar documentos
 
 ![imagen](img/2022-12-13-16-45-53.png)
 
-## Sellado en el tiempo
+### Sellado en el tiempo
 
 Una de las características más útiles que puede ir asociada a la firma electrónica es lo que se conoce como "sellado en el tiempo"\. Se trata de un método para probar que un conjunto de datos \(en este caso\, la firma que se ha realizado\) existió en un momento determinado \(fecha y hora\)\.
 
 ![imagen](img/Firma%20digital1.png)
-# Identidad digital
+### Identidad digital
 
 ![imagen](img/Identidad_digital1.png)
 
-## Identificación
+### Identificación
 
 En nuestro día a día\, necesitamos identificarnos para acceder a servicios. Es decir\, demostrar que somos nosotros realmente.
 
@@ -1473,7 +1390,7 @@ Pero en el mundo digital\, la autenticación se basa en otros métodos como:
 
 ![imagen](img/Identidad%digital3.png)
 
-## HUELLA DACTILAR
+### HUELLA DACTILAR
 
 ![imagen](img/2022-12-13-16-53-30.png)
 
@@ -1491,11 +1408,11 @@ La firma de una persona es una forma de identificación. No es una forma válida
 
 ![imagen](img/Identidad_digital8.png)
 
-## DNI
+### DNI
 
 ![imagen](img/Identidad_digital9.png)
 
-## Documento nacional de identidad
+### Documento nacional de identidad
 
 ![imagen](img/Identidad_digital10.jpg)
 
@@ -1507,11 +1424,11 @@ Presentando este documento con nuestra foto\, demostramos que nuestros  __datos 
 
 ![imagen](img/Identidad_digital11.png)
 
-## ¿Cómo nos identificamos en Internet?
+### ¿Cómo nos identificamos en Internet?
 
 En la actualidad, muchas de las tareas que antes se realizaban de forma presencial ahora se han trasladado al ámbito **digital**, ya sea por comodidad o por imposición legal. Esto conlleva una necesidad de encontrar una forma de acreditar de manera segura nuestra identidad, ya que no podemos mostrar físicamente un documento de identidad como el DNI.
 
-## Contraseñas
+### Contraseñas
 
 La contraseña es el método más ampliamente extendido para proteger nuestros datos, permitiendo una identificación y acceso seguros a nuestra información. Aunque no es el método más seguro, hay algunos elementos clave que debemos tener en cuenta para mejorar su seguridad: utilizar contraseñas largas y complejas, incluir caracteres especiales, mayúsculas o minúsculas, cambiar la contraseña de forma regular y no utilizar la misma contraseña para varias páginas.
 
@@ -1519,7 +1436,7 @@ La contraseña es el método más ampliamente extendido para proteger nuestros d
 
 ![imagen](img/Identidad_digital12.png)
 
-## Formas de demostrar nuestra identidad
+### Formas de demostrar nuestra identidad
 
 Existen multitud de métodos de demostrar nuestra identidad digitalmente:
 
@@ -1530,7 +1447,9 @@ Existen multitud de métodos de demostrar nuestra identidad digitalmente:
 
 Algunas simplemente sirven para proteger algo\, y otras demuestran que somos una persona concreta\.
 
-# 11.1 Seguridad en Bluetooth
+# 11. Seguridad en redes inalámbricas
+
+## 11.1 Seguridad en Bluetooth
 
 **Bluetooth** es la palabra que define un estándar global de comunicaciones inalámbricas para **redes de área persona**l y que permite la transmisión de voz y de datos entre diferentes equipos por medio de un enlace por radiofrecuencia en entornos de comunicaciones móviles.
 
@@ -1553,7 +1472,7 @@ Algunas de ellas son:
 - No emparejar ni aceptar conexiones entrantes de **dispositivos desconocidos**, ya que la información podría estar infectada de software malicioso.
 - Verificar periódicamente la lista de **dispositivos de confianza** para eliminar los que no se utilizan habitualmente.
 
-# 11.2 Wifi
+## 11.2 Wifi
 
 Las redes wifi utilizan una tecnología  inalámbrica  que realiza la conexión entre dispositivos situados en un área relativamente pequeña, como una habitación, una oficina, una casa o un edificio, a través de ondas electromagnéticas.
 

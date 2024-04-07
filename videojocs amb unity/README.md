@@ -12,19 +12,19 @@ s- [Unity](#unity)
   - [4. Crear pelota](#4-crear-pelota)
   - [Crear jugadores](#crear-jugadores)
   - [Duplicar objetos](#duplicar-objetos)
-  - [05. Sprites](#05-sprites)
-  - [06. Crear paredes de los lados](#06-crear-paredes-de-los-lados)
+  - [Sprites](#sprites)
+  - [Crear paredes de los lados](#crear-paredes-de-los-lados)
   - [07. Nombrando los objetos](#07-nombrando-los-objetos)
   - [08. Creando los jugadores](#08-creando-los-jugadores)
 - [Pelota](#pelota)
-  - [09. Componentes rigidbody](#09-componentes-rigidbody)
+  - [09. Componentes Rigid Body](#09-componentes-rigid-body)
   - [10. Ordenar objetos](#10-ordenar-objetos)
   - [11. Movimiento de personajes](#11-movimiento-de-personajes)
-- [ CONTROLES](#-controles)
+- [CONTROLES](#controles)
   - [Redefinir controles](#redefinir-controles)
   - [Controles para segundo jugador](#controles-para-segundo-jugador)
   - [Dentro de los scripts, podemos acceder a los diferentes controles por su nombre](#dentro-de-los-scripts-podemos-acceder-a-los-diferentes-controles-por-su-nombre)
-- [ SCRIPTS](#-scripts)
+- [SCRIPTS](#scripts)
   - [13. Script de programación](#13-script-de-programación)
   - [14. Asignar script al jugador](#14-asignar-script-al-jugador)
   - [Cambiar el booleano para player2](#cambiar-el-booleano-para-player2)
@@ -48,8 +48,8 @@ s- [Unity](#unity)
   - [Crear referencias](#crear-referencias)
   - [Cambiar colores](#cambiar-colores)
   - [Inteligencia artificial](#inteligencia-artificial)
-- [ ESCENAS](#-escenas)
-  - [Crear menú](#crear-menú)
+- [ESCENAS](#escenas)
+  - [Crear botones](#crear-botones)
 - [Plataformas 2D](#plataformas-2d)
   - [1. Crear proyecto](#1-crear-proyecto)
 - [2. Importar assets](#2-importar-assets)
@@ -187,11 +187,18 @@ Debajo veréis que se pueden agregar más componentes \( __add component__ \) se
 
 En ``Unity``, cada objeto tiene asociados componentes que modifican su comportamiento y cada uno de ellos presenta sus propias opciones. Esto permite personalizar el objeto y darle una funcionalidad específica.
 
- ``Unity`` permite personalizar los objetos para darles una funcionalidad específica mediante el uso de componentes asociados a cada uno. Por ejemplo, para un objeto 'player' los **componentes** incluyen el ``Transform`` para controlar la posición, rotación y la escala, el ``Spriterenderer`` para controlar el color, material y el orden de los objetos, el ``BoxCollider 2D`` para controlar las colisiones y el ``Rigidbody`` para hacer que se apliquen físicas al objeto.
+ ``Unity`` permite personalizar los objetos para darles una funcionalidad específica mediante el uso de componentes asociados a cada uno. Por ejemplo, para un objeto 'player' los **componentes** incluyen:
+
+- El componente ``Transform`` para controlar la posición, rotación y la escala,
+- El componente ``Spriterenderer`` para controlar el color, material y el orden de los objetos
+- El componente ``BoxCollider 2D`` para controlar las colisiones
+- El componente ``Rigidbody`` para hacer que se apliquen físicas al objeto.
+
+Los componentes no son obligatorios, sinó que se añaden a cada objeto en función de las características que queramos que tenga.
 
 ## 4. Crear pelota
 
-entro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola.
+Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a ``spritesquare`` y se pone un cuadrado que es el que vamos a utilizar para la bola.
 
 ![](2023-03-02-12-56-44.png)
 
@@ -208,9 +215,9 @@ Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo
 
 Podemos ``duplicar`` un objeto en lugar de crear uno nuevo. este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o ``clic derecho > duplicate`` se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta
 
-## 05. Sprites
+## Sprites
 
-Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para ``representar personajes, objetos, entornos`` o cualquier otra imagen.
+Un ``sprite`` es una imagen bidimensional que se utiliza como elemento gráfico en un videojuego. Se dibuja con herramientas de gráficos vectoriales o bitmap y se usa para representar **personajes, objetos, entornos** o cualquier otra imagen.
 
 Estos ``sprites`` se pueden importar directamente desde un archivo de imagen o se pueden crear desde cero usando ``Unity``.
 
@@ -220,7 +227,7 @@ Los ``sprites`` se pueden mover, girar, escalar y rotar fácilmente con ``Unity`
 
 Todos los objetos por defecto tienen una posición y un tamaño\. Esto se cambia en el ``componente Transform``
 
-## 06. Crear paredes de los lados
+## Crear paredes de los lados
 
 A partir de un jugador:
 
@@ -239,7 +246,7 @@ Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente p
 
 ## 07. Nombrando los objetos
 
-Ahora importante nombrar las cosas porque vamos a empezara tener muchos ``objetos`` y nos podemos confundir. Además, deberemos poder identificarlos en los ``scripts`` que crearemos para manipularlos.
+Es importante nombrar las cosas porque vamos a empezar a tener muchos ``objetos`` y nos podemos confundir. Además, deberemos poder identificarlos en los ``scripts`` que crearemos para manipularlos.
 
 Para renombrar un objeto hacéis doble clic o con ``F2``. La portería derecha vamos a llamarle en ``goal1`` porque va a ser la portería en la que tiene que colar el jugador 1 que va a estar a nuestra izquierda.
 
@@ -261,9 +268,16 @@ Ahora lo único que ayudaría sería pues nuestra ``pelota`` del medio así que 
 
 Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos
 
-## 09. Componentes rigidbody
+## 09. Componentes Rigid Body
 
-``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D afectado por la gravedad, el empuje, la fricción y otras fuerzas físicas. Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
+``Rigid Body 2D`` es un componente de ``Unity`` que se utiliza para añadir físicas a un objeto 2D. Un ``Rigid Body 2D`` le permite a un objeto 2D ser afectados por:
+
+- La gravedad
+- El empuje
+- La fricción
+- Otras fuerzas físicas.
+
+Esto permite a los desarrolladores añadir realismo y jugabilidad a los juegos 2D.
 
 Asignaremos los componentes ``Rigidbody 2D``  a nuestros jugadores y a la pelota. Podemos seleccionar todos los objetos y seleccionar el componente ``Rigidbody 2D``  para añadirlo.
 
@@ -305,8 +319,7 @@ Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de n
 
 De este modo, podremos jugar 2 jugadores en el mismo teclado.
 
-<!-- _class: invert -->
-# <!--fit --> CONTROLES
+# CONTROLES
 
 Los ``controles`` son las teclas que utilizaremos para las diferentes acciones durante el juego.
 
@@ -327,8 +340,8 @@ Para el eje **vertical**, está asignado a las teclas de W, A, S y D, y las flec
 ## Controles para segundo jugador
 
 Tenemos que crear el elemento ``vertical2`` que es para nuestro ``player2``. Tenemos que diferenciar pues que uno utilice el WS y el otro utilice la flecha hacia arriba y hacia abajo. Lo tenemos que diferenciar entonces lo que vamos a hacer es del vertical vamos a borrar el SW que tenemos aquí. Vamos a duplicarlo para tener un vertical2 para nuestro jugador 2; clic
-derecho duplicate element y se duplicará que vendrá por aquí otra como vertical y lo llamamos vertical2.
-
+`derecho duplicate element y se duplicará que vendrá por aquí otra como ``vertical`` y lo llamamos ``vertical2``.
+`
 Lo que faltaría es cambiarle los controles del player1 juega con la flecha de arriba y hacia abajo. Nosotros con el jugador 2 jugaremos con la W y S. En negativo ponemos S y en positivo W. Dentro del objeto player, en función de si es el 1 o el 2, seleccionaremos el control oportuno.
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos14.png)
@@ -339,8 +352,7 @@ Lo que faltaría es cambiarle los controles del player1 juega con la flecha de a
 
 ![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos16.png)
 
-<!-- _class: invert -->
-# <!--fit --> SCRIPTS
+# SCRIPTS
 
 ## 13. Script de programación
 
@@ -684,7 +696,8 @@ Utilizar la página ``coolors`` para elegir paletas.
 
 ## Inteligencia artificial
 
-Vamos a hacer que un jugador sea controlado por la máquina.
+Vamos a hacer que un jugador sea controlado por la máquina. Para ello, debemos crear un programa que siga las instrucciones propias de la IA y simular las acciones de un jugador.
+
 Crear el script ``IA.cs`` y la completamos.
 
 ```c#
@@ -719,7 +732,7 @@ public class IA : MonoBehaviour
 }
 ```
 
-Una vez completado el script.
+Una vez completado el script, necesitamos asignarloo a un objeto.
 
 Asignamos el script ``IA.cs`` a ``Player1`` y desamarcamos el checkbox del scripts ``Players`` para que no interfiera.
 
@@ -729,14 +742,22 @@ Crear variable en ``GameManager`` para decidir si el juego es PvP o PvsPC. Será
 
 Seleccionar el objeto ``GameManager``  y marcar la opción ``IA Game``.
 
-<!-- _class: invert -->
-# <!--fit --> ESCENAS
+# ESCENAS
 
-## Crear menú
+- Un juego suele estar compuesto de múltiples escenas
+- Cada escena tiene sus propios ``objetos``.
 
-Necesitaremos 3 escenas. Ahora solo tenemos la escena ``Main``. La vamos a llamar ``PlayerVSIA`` para diferenciarla.
+Nuestro juego tendrá 3 escenas:
 
-La duplicamos y le llamamos ``PlayerVSPlayer``. En esta escena, desmarcamos el check de ``IA Game``.
+| Nombre | Función |
+| --- | --- |
+| PlasyerVSIA | Juego contra la IA |
+| PlayerVSPlayer | Modo de 2 jugadores |
+| Mainmenu | Menú principal |
+
+ Ahora solo tenemos la escena ``Main``. Le vamos a cambiar el nombre para diferenciarla y la vamos a a llamar ``PlayerVSIA`` para diferenciarla.
+
+La duplicamos y a la copia le llamamos ``PlayerVSPlayer``. En esta escena, desmarcamos el check de ``IA Game``.
 
 Creamos una escena 2D nueva yendo a ``File > New scene > 2D``.
 
@@ -744,9 +765,10 @@ Las escenas deberán estar todas dentro de la carpeta ``Scenes``. Haciendo clic 
 
 ![](img/2023-02-22-18-31-45.png)
 
-### Crear botones
+## Crear botones
 
-Crear botón. Clic derecho en ``Hierarchy`` y ``Create > UI > Button``.
+Para movernos entre escenas utilizaremos botones. Existe un objeto ``button`` para ello.
+Para crear el botón, deberemos hacer clic derecho en ``Hierarchy`` y ``Create > UI > Button``.
 
 El botón se hará grande o pequeño según la resolución y el aspect ratio. Si queremos fijar su tamaño, haremos lo siguiente.
 
@@ -756,13 +778,15 @@ Duplicamos el botón y le colocamos el texto ``Player VS Player``. Lo movemos y 
 
 ### Colocar texto con nombre del juego
 
-Pondremos un texto y le cambiaremos el texto por PONG, y lo haremos más grande. Para evitar problemas al hacerlo grande o pequeño, vamos al ``inspector`` y buscamos en paragraph las opciones ``horizontal overflow`` y ``vertical overflow`` y les asignamos el valor ``overflow``.
+Pondremos un texto y le cambiaremos el texto por **PONG**, y lo haremos más grande. Para evitar problemas al hacerlo grande o pequeño, vamos al ``inspector`` y buscamos en paragraph las opciones ``horizontal overflow`` y ``vertical overflow`` y les asignamos el valor ``overflow``.
 
 Lo hacemos grande y lo situamos.
 
-Guardamos la escena (que ahora se llama ``Untitled*``) con +ctrl+ y +s+  y le llamaremos ``MainMenu``.
+Guardamos la escena (que ahora se llama ``Untitled*``) con **Ctrl + S**  y le llamaremos ``MainMenu``.
 
 ### Crear script MainMenu.cs
+
+A continuación programaremos el comportamiento del menú principal. Para ello, crearemos un script nuevo llamado ``MainMenu.cs``.
 
 ```c#
 using System.Collections;
@@ -830,9 +854,13 @@ Comprobaremos que ejecutando el juego, podemos pasar del menú a cada una de las
 
 Importar package de asset store (pixel adventure 1)
 
+![alt text](image-2.png)
+
 ## 3. Crear tilemap
 
-Un ``tilemap`` es una herramienta de ``Unity`` que permite crear ambientes de juego mediante el uso de gráficos tiles. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
+Un ``tilemap`` es una herramienta de ``Unity`` que permite crear ambientes de juego mediante el uso de gráficos de losetas. Esta herramienta proporciona una manera fácil y eficiente de organizar, crear y modificar grandes áreas de juego usando una variedad de gráficos tiles.
+
+![alt text](image-1.png)
 
 ## 4. Crear paleta y pintar la escena
 
@@ -840,9 +868,11 @@ Un ``tilemap`` es una herramienta de ``Unity`` que permite crear ambientes de ju
 
 ## Colisiones
 
-Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles colliders a nuestros objetos. Los colliders son  componentes que se añaden a estos objetos
+Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles ``colliders`` a nuestros objetos.
 
-Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con ++shift++ pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente
+Los colliders son  componentes que se añaden a estos objetos
+
+Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con **shift** pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente
 
 Si que no queréis que alguno por ejemplo en mi caso no que recoger la línea del centro porque no quiero que tenga esa colisión porque imagino que tenemos la bola aquí y conexiones con el centro y puesto que no tendría sentido básicamente porque a lo mejor si vengo desde aquí y colisionó colisión colisión y comisionó mi ``Player1`` va a ganar otro rato porque no puede pasar para allá entonces lo que sí vamos a hacer es nombrarlo para que sepamos qué es el centro que en este caso por estirando cuenta que es el ``Goal2`` llamamos centro y a este es al que no tenemos que añadirle colisión.
 

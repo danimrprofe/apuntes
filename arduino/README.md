@@ -4,6 +4,7 @@
   - [Microcontrolador](#microcontrolador)
   - [Pines](#pines)
   - [Pines de Arduino](#pines-de-arduino)
+  - [Simulación](#simulación)
   - [Instalación IDE](#instalación-ide)
   - [Primeras pruebas: LED](#primeras-pruebas-led)
   - [Elementos de un programa](#elementos-de-un-programa)
@@ -82,7 +83,7 @@
 
 ``Arduino`` es una plataforma de ``hardware libre``, basada en una placa con un microcontrolador y un entorno de desarrollo.
 
-Hardware libre es aquel cuyas especificaciones y diagramas esquemáticos son de acceso público
+El hardware libre es aquel cuyas especificaciones y diagramas esquemáticos son de acceso público. Cualquiera los puede consultar, mejorar y utilizar libremente.
 
 ![](img/2023-03-27-16-35-45.png)
 
@@ -146,7 +147,6 @@ Pines de Alimentación:
 ``Tinkercad Circuits`` es una plataforma en línea que te permite simular y diseñar circuitos electrónicos. Es parte de la suite de herramientas de Autodesk llamada Tinkercad, y es especialmente útil para aprender y experimentar con electrónica sin la necesidad de componentes físicos
 
 https://www.youtube.com/watch?v=VU3fiibAnNY
-
 
 ## Instalación IDE
 

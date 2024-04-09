@@ -86,8 +86,6 @@ Un "pin" se refiere a un punto de conexión en un dispositivo electrónico que p
 
 ## Pines de Arduino
 
-Los pines con los que vamos a trabajar nosotros son:
-
 Pines de Alimentación:
 
 - ``Vin`` (Voltage In): Este pin se utiliza para alimentar la placa con un voltaje externo cuando no se está utilizando el puerto USB. La tensión recomendada es de 7 a 12V.
@@ -119,17 +117,14 @@ https://www.youtube.com/watch?v=VU3fiibAnNY
 
 ![alt text](webide-deb5e53b6a26234e009c08db93ed95be.png)
 
-## Primeras pruebas: LED
-
-Vamos a aprender a crear un programa y volcarlo en la placa Arduino.
-
-![imagen](img/2022-11-29-16-46-42.png)
+## LED
 
 La placa Arduino cuenta con un LED luminoso que puede ser controlado. Este LED está integrado en la propia placa.
 
-Cuando la placa se conecta a un enchufe USB, el LED parpadea. Este parpadeo se debe a que las placas suelen ser enviadas con un programa preinstalado llamado "Blink".
+![imagen](img/2022-11-29-16-46-42.png)
 
----
+- Cuando la placa se conecta por mediode USB, el LED parpadea.
+- Este parpadeo se debe a que las placas suelen ser enviadas con un programa **preinstalado** llamado "Blink".
 
 ## Programas de ejemplo
 
@@ -140,6 +135,14 @@ El IDE de ``Arduino`` incluye una gran colección de programas de ejemplo para u
 Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo ``archivo >  ejemplos > 01 conceptos básicos``
 
 ![imagen](media/image39.jpeg)
+
+## Crear nuevo programa
+
+![alt text](image-3.png)
+
+## Programas de ejemplo
+
+![alt text](image-4.png)
 
 ## Blink
 
@@ -176,11 +179,9 @@ Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la 
 
 ## Conexión de la Placa Arduino al Ordenador
 
-Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador. Siga estos pasos para lograr la conexión adecuada:
+Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador.
 
 ![](img/2023-03-09-08-09-16.png)
-
----
 
 1. Utilice un ``cable USB`` para conectar la Placa Arduino al puerto USB de su ordenador.
 2. Abra el ``IDE de Arduino`` en su ordenador
@@ -356,9 +357,9 @@ Un **protoboard** permite crear prototipos de circuitos de forma rápida, sin ne
 
 ![](img/2023-12-02-16-23-12.png)
 
----
+# Protoboard
 
-Las protoboard están compuestas por un número determinado de pines, dispuestos en filas y columnas, a los que podemos conectar diferentes cables y componentes.
+Las protoboard están compuestas por un número determinado de **pines**, dispuestos en **filas** y **columnas**, a los que podemos conectar diferentes cables y componentes.
 
 ![imagen](media/image52.jpeg)
 
@@ -391,7 +392,8 @@ Los canales centrales indican que no están conectados ambos lados. Lo que signi
 
 ## Desventajas
 
-Si bien son protoboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.
+- Las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas.
+- Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.
 
 # Conexión de pines
 
@@ -2262,6 +2264,7 @@ void loop()   /*-( LOOP: RUNS CONSTANTLY )-*/
   }
 }/* --(end main loop )-- */
 ```
+
 ## Visualizar datos en el monitor
 
 Haga clic en el botón **Serial Monitor** para encender el monitor serie. De este modo podremos ir viendo los valores recibidos.
@@ -2355,6 +2358,8 @@ void loop() {
 
 Els sensors d'Arduino són dispositius que permeten a una placa Arduino detectar i mesurar diferents **variables** del seu entorn. Aquests sensors poden mesurar coses com la temperatura, la humitat, la llum, la pressió, el moviment, el so, la proximitat, entre d'altres.
 
+# Sensors
+
 Els sensors són un component clau en molts projectes d'Arduino i són utilitzats per recollir dades del món físic per a ser processats per la placa Arduino.
 
 - Ultrasons
@@ -2407,15 +2412,23 @@ El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con
 
 ![](img/2023-03-27-11-09-57.png)
 
+## Descripción de pines
+
 |      |                                                    |
 | ---- | -------------------------------------------------- |
 | VDD  | Lo conectaremos a 5 V                              |
 | DATA | Lo conectaremos a un pin de datos. En este caso D2 |
 | GND  | Lo conectaremos a tierra                           |
 
-![bg contain](media/image94.jpeg)
+## Esquema
 
-![bg contain](media/image95.jpeg)
+![](media/image94.jpeg)
+
+## Diagrama
+
+![](media/image95.jpeg)
+
+## Montaje
 
 ![bg contain](media/image96.jpeg)
 
@@ -2757,7 +2770,7 @@ int tempReading = analogRead(tempPin);
 doble tempK = log (10000.0 * ((1024.0/tempReading - 1)));
 tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK)) * tempK);
 float tempC = tempK - 273.15;
-floatfloat tempF = (tempC * 9.0) / 5.0 + 32.0;
+float tempF = (tempC * 9.0) / 5.0 + 32.0;
 ```
 
 Cambio lecturas se muestra en una pantalla LCD puede ser complicado. El principal problema es que la lectura puede no ser siempre el mismo número de dígitos. Por lo tanto, si la temperatura cambia de 101,50 a 99.00 entonces el dígito adicional de la lectura antigua es en peligro de quedar en la pantalla.
@@ -2778,8 +2791,6 @@ El comentario bastante extraño sirve para recordarles de las 16 columnas de la 
 ## Montaje
 
 ![imagen](media/image115.png)
-
-Para rellenar los espacios en blanco, establecer la posición del cursor por donde la lectura debe aparecer y luego imprimirlo.
 
 # Wi-Fi
 

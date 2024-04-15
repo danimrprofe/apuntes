@@ -10,14 +10,15 @@ Cualquier magnitud que queramos leer tendrá unas ``características`` de precis
 
 ## Humedad relativa
 
-- Resolución: 16 bits
-- Repetibilidad: ±1% H.R.
-- Precisión: 25 ° C ±5% hr
-- Intercambiabilidad: intercambiables
-- Tiempo de respuesta: 1 / e (63%) de 25º c 6s
-- 1m / s de aire 6s
-- Histéresis: < ± 0.3% RH
-- Estabilidad a largo plazo: < ± 0.5% hr / año en
+| Característica            | Descripción                                                               |
+| ------------------------- | ------------------------------------------------------------------------- |
+| Resolución                | Capacidad para medir hasta 16 bits                                        |
+| Repetibilidad             | Precisión dentro de ±1% de humedad relativa                               |
+| Precisión                 | ±5% de humedad relativa a 25°C                                            |
+| Intercambiabilidad        | Sensores intercambiables                                                  |
+| Tiempo de respuesta       | 6 segundos al alcanzar el 63% de la lectura estable a 25°C y 1m/s de aire |
+| Histéresis                | Variación de lectura inferior al ±0.3% de humedad relativa                |
+| Estabilidad a largo plazo | Cambio inferior al ±0.5% de humedad relativa por año                      |
 
 ## Temperatura
 
@@ -44,7 +45,7 @@ El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con
 
 ![](img/2023-03-27-11-09-57.png)
 
-## Descripción de pines
+
 
 |      |                                                    |
 | ---- | -------------------------------------------------- |

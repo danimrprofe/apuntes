@@ -6,7 +6,7 @@ La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con h
 
 ## Circuito integrado LCD1602
 
-La pantalla está incrustada en un ``circuito integrado ``que la controla, llamado ``LCD1602``.
+La pantalla está incrustada en un circuito integrado que la controla, llamado ``LCD1602``. Este circuito integrado se encarga de controlar la visualización de los caracteres en la pantalla, así como la retroiluminación LED.
 
 ## Pines
 
@@ -37,17 +37,20 @@ El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla.
 
 ![](img/2023-03-28-12-59-15.png)
 
-## Librería
+## Bibliotecas o librerías de funciones
+Las **bibliotecas** son conjuntos de funciones predefinidas que permiten a los usuarios realizar tareas específicas sin tener que escribir todo el código desde cero.
 
-Antes de ejecutar esto, asegúrese de que ha instalado la **librería** < LiquidCrystal > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
+Antes de ejecutar este código, asegúrate de haber instalado la biblioteca ``LiquidCrystal`` o de volver a instalarla si es necesario. De lo contrario, el código no funcionará.
 
 Lo primero que nota en el dibujo es la línea:
 
 ```arduino
-#include < LiquidCrystal.h >
+#include <LiquidCrystal.h>
 ```
 
-Esto dice``Arduino`` que queremos utilizar la **librería** de cristal líquido.
+Esta línea le indica al entorno de desarrollo de Arduino que queremos utilizar la biblioteca de cristal líquido.  En este caso, la biblioteca ``LiquidCrystal`` proporciona las funciones necesarias para controlar una pantalla LCD.
+
+Al incluir esta línea al principio de nuestro código, podemos utilizar estas funciones en nuestro programa sin necesidad de definirlas manualmente.
 
 A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de``Arduino`` son para conectarse a que pines de la pantalla.
 

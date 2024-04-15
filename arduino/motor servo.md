@@ -13,9 +13,11 @@ Para ello, el servomotor espera un tren de pulsos que se corresponde con el movi
 
 El Servo tiene tres cables:
 
-- **Marrón** es el cable a tierra y deben conectarse a GND puerto UNO, el r
-- **Rojo** es el cable de corriente y debe conectarse al puerto de 5v
-- **Naranja** es el cable de señal y debe conectarse al puerto 9.
+| Color   | Descripción             | Conexión         |
+| ------- | ----------------------- | ---------------- |
+| Marrón  | Cable a tierra (GND)    | Puerto UNO (GND) |
+| Rojo    | Cable de corriente (5V) | Puerto de 5V     |
+| Naranja | Cable de señal          | Puerto 9         |
 
 ## Servo MG995
 

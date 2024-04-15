@@ -20,13 +20,13 @@ Antes de comenzar necesitaremos los siguientes componentes:
 
 ## Pulsadores
 
-Los interruptores son componentes muy simples. Cuando pulse un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro conexiones**, que pueden ser un poco confusas.
+Los interruptores son componentes muy simples. Al pulsar un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro terminales**, lo cual puede resultar un poco confuso.
 
-En realidad, hay realmente dos conexiones eléctricas.
+En realidad, solo hay dos conexiones eléctricas.
 
-- Los pines B y C están siempre conectados entre sí, al igual que A y D.
-- Al pulsar el botón, se conectan los 4.
-- En realidad dos de los pines no los necesitamos
+- Los terminales B y C están siempre conectados entre sí, al igual que los terminales A y D.
+- Al pulsar el botón, se conectan todos los terminales.
+- En realidad, dos de los terminales no son necesarios.
 
 ![imagen](media/image67.jpeg)
 
@@ -42,36 +42,36 @@ En realidad, hay realmente dos conexiones eléctricas.
 
 ![imagen](media/image70.jpeg)
 
-Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor.
+Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de lados opuestos del interruptor.
 
-Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas.
-Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
+Esto significa que los pines solo estarán correctamente separados cuando se coloquen adecuadamente en la placa de pruebas. Recuerda que el LED debe tener el cable negativo más corto en el lado izquierdo.
 
 ## Explicación del código
 
-- Pulsando el botón izquierdo se encenderá el **LED**.
-- Pulsando el botón derecho apagará.
+- Al pulsar el botón izquierdo, se encenderá el **LED**.
+- Al pulsar el botón derecho, se apagará.
 
-La primera parte del proyecto define tres variables para las tres patas que se van a utilizar. El 'ledPin' es el pin de salida y 'pinBotonA' se refiere al interruptor más cerca de la parte superior de la placa y 'buttonBpin' para el otro interruptor.
+La primera parte del proyecto define tres variables para las tres conexiones que vamos a utilizar.
 
-La función de **setup** define el ledPin como una salida normal, pero ahora tenemos las dos entradas para ocuparse.
+- ``ledPin`` es el pin de salida
+- ``pinBotonA`` se refiere al botón más cercano a la parte superior de la placa.
+- ``buttonBpin`` al otro botón.
 
-En este caso, utilizamos el conjunto el pinMode ser **INPUT_PULLUP** como este:
+La función **setup** configura el pin 'ledPin' como salida, mientras que definimos las otras dos conexiones como entradas. Aquí es donde utilizamos **INPUT_PULLUP** como modo de pin:
 
-- El modo pin de **INPUT_PULLUP** significa que el pin debe ser utilizado como una entrada, pero que si nada mas se conecta a la entrada, la entrada tendra el valor **HIGH**.
-- En otras palabras, el valor predeterminado de la entrada es **HIGH**, a menos que se ponga a **LOW** al pulsar el botón.
+- El modo **INPUT_PULLUP** indica que el pin debe ser utilizado como una entrada, pero cuando no hay nada conectado a la entrada, esta permanece en estado **HIGH**.
+- En otras palabras, la entrada tiene un valor predeterminado de **HIGH**, a menos que se cambie a **LOW** al pulsar el botón. Esto permite que el botón controle la conexión a tierra y active la acción deseada.
 
 # Conexión a tierra
 
-Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
+Los interruptores están conectados a tierra por una razón importante. Cuando se presiona un interruptor, este conecta la clavija de entrada a tierra, cambiando su estado de alto a bajo.
 
-Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
+En la función **setup**, configuramos el pin 'ledPin' como salida y las otras dos conexiones como entradas utilizando el modo **INPUT_PULLUP**.
 
-# Función Loop
+- **INPUT_PULLUP** hace que el pin funcione como una entrada, manteniendo su estado en **HIGH** cuando no hay nada conectado.
+- Cuando se pulsa el botón, la entrada se conecta a tierra y cambia a **LOW**. Esto permite que el botón controle la conexión a tierra y active la acción deseada.
 
-En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
-
-Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces  **digitalWrite** pone el valor HIGH el PIN al que tenemos conectado el LED, y este se enciende.
+La lógica puede parecer un poco invertida, ya que la entrada está normalmente en alto y solo cambia a bajo cuando se presiona el botón. Manejaremos esto en la **función loop**.
 
 ## Código completo
 

@@ -36,7 +36,6 @@ Les cambiaremos el nombre a las etiquetas.
 
 ![imagen](img/2022-11-07-15-41-56.png)
 
-
 ## Movimiento de pelota con acelerómetro
 
 El evento **changes** nos permitirá recalcular la posición de la pelota cada vez que el acelerómetro cambie su valor.

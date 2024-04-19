@@ -9,10 +9,14 @@ Las aplicaciones móviles, o simplemente "apps", son programas diseñados para f
 - **Definición:** Plataformas en línea donde los usuarios pueden buscar, descargar e instalar aplicaciones en sus dispositivos móviles.
 - **Ejemplos:** App Store de Apple, Google Play Store para dispositivos Android, Microsoft Store para dispositivos Windows.
 
+![alt text](image.png)
+
 ## Archivos APK
 
 - **Definición:** Formato de archivo utilizado para distribuir e instalar aplicaciones en dispositivos Android.
 - **Significado:** APK significa "Android Package" y contiene todos los elementos necesarios para la instalación de una aplicación en un dispositivo Android, incluidos los archivos de código, recursos y metadatos.
+
+![](img/2024-04-19-11-21-46.png)
 
 ## Instalación de Aplicaciones
 

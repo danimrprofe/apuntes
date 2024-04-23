@@ -3,7 +3,7 @@
 
 Un **seven segments** es un dispositivo de visualización formado por siete diodos LED dispuestos en forma de número 8.
 
-Estas lámparas se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.
+Se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.
 
 ![imagen](img/2022-12-05-16-21-35.png)
 
@@ -30,7 +30,7 @@ Abajo está el diagrama de pines de siete segmentos
 
 ![imagen](media/image130.jpeg)
 
-0-9 diez dígitos se corresponden con cada segmento es los siguientes (en la tabla siguiente se aplica común cátodo dispositivo de exhibición de segmento siete, si se utiliza un ánodo común, de la mesa debe ser reemplazado cada 1 0 0 si todos sustituidos por 1):
+Los números del 0 al 9 se representan en un display de siete segmentos mediante la activación de segmentos individuales. Cada LED, en caso de recibit un 1, se ilumina. Combinando todos los LED podemos hacer todos los números
 
 | dp  | a	b	c	d	e	f	g   |
 | --- | --------------- |
@@ -45,13 +45,17 @@ Abajo está el diagrama de pines de siete segmentos
 | 8   | 0	1	1	1	1	1	1	1 |
 | 9   | 0	1	1	1	1	0	1	1 |
 
-vamos a utilizar el registro de desplazamiento **74HC595** para controlar la visualización de un seven segments.
+# Registro de desplazamiento
+
+Vamos a utilizar un **circuito integrado** para simplificar el control del seven segments, en concreto se trata de un registro de desplazamiento **74HC595** para controlar la visualización de un seven segments.
+
+![alt text](image-5.png)
+
+El 74HC595 es un registro de desplazamiento de 8 bits que se utiliza comúnmente para controlar múltiples dispositivos, como un display de siete segmentos. Permite la conexión de varios dispositivos en cadena, simplificando la conexión a microcontroladores u otros circuitos de control. El registro de desplazamiento toma datos de entrada serie y los desplaza a través de sus salidas de forma paralela, lo que lo hace ideal para controlar múltiples segmentos de un display de siete segmentos de manera eficiente y con menos pines de control.
 
 ## Conexión
 
 ![imagen](media/image131.jpeg)
-
-## Esquema
 
 ## Diagrama de cableado
 

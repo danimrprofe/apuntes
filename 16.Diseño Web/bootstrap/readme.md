@@ -12,41 +12,40 @@ Características principales:
 - Interactividad mediante plugins de JavaScript.
 
 ##  2. Cómo Incluir Bootstrap en tu Proyecto
-Hay dos formas de añadir Bootstrap a un proyecto: usando un enlace CDN o descargando los
-archivos.
-a) Usar Bootstrap desde un CDN
-Una forma rápida de utilizar Bootstrap es a través de una red de distribución de contenido (CDN).
-Solo necesitas añadir el siguiente enlace en el <head> de tu archivo HTML:
 
-Para habilitar los componentes interactivos de Bootstrap, también es necesario incluir el archivo de
-JavaScript:
+Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta `<meta name="viewport">` para que la página tenga comportamiento responsivo en dispositivos móviles.
 
-b) Descargar Bootstrap Localmente
-Otra opción es descargar Bootstrap desde su página oficial y añadir los archivos CSS y JS
-localmente en tu proyecto. Coloca los archivos en las carpetas adecuadas y enlázalos en tu HTML:
-html
-<!-- Bootstrap CSS --> <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
+```
 
-Copiar código
+A continuación añadimos los enlaces para CSS y código javascript de Bootstrap:
 
-html
-<!-- Bootstrap JS --> <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-</script>
-
-Copiar código
-
-html
-<!-- CSS --> <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- JavaScript -->
-<script src="js/bootstrap.bundle.min.js"></script>
-
-Copiar código
-
-18/9/24, 19:06 ChatGPT
-
-https://chatgpt.com/c/66eb04f9-12f8-8005-a92c-98e7e8332be1 1/3
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
 
 ## 3. Sistema de Cuadrícula (Grid System)
 
@@ -70,6 +69,7 @@ Cards: Una manera fácil de mostrar contenido en cajas.
 
 Bootstrap también ofrece una serie de clases utilitarias que permiten aplicar estilos rápidos sin
 necesidad de CSS personalizado. Algunas de las más utilizadas son:
+
 html
 <div class="container"> <div class="row"> <div class="col-md-6">Columna 1 (50%)</div>
 <div class="col-md-6">Columna 2 (50%)</div> </div> </div>
@@ -87,9 +87,7 @@ html
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand"
 href="#">Mi Sitio</a> </nav>
 
-Copiar código
 
-html
 
 ```html
 <div class="card" style="width: 18rem;">

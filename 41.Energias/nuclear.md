@@ -1,9 +1,4 @@
 
-Energías no renovables
-Energía nuclear
-Tecnologia e ingeniería I - 1º de bachillerato
-Curso 24-25
-
 # Energía nuclear
 
 # El átomo
@@ -15,13 +10,8 @@ El **núcleo** es el centro del átomo, donde se encuentran los protones (partí
 
 ![alt text](image-1.png)
 
-¿Qué es la energía nuclear?
-
-Es la energía que mantiene unidas las partículas en el núcleo de un átomo, es decir, los protones y neutrones.
-
-¿Qué fuerza hace esto?
-
-Esta energía se debe a la fuerza nuclear fuerte, vence la repulsión eléctrica que existiría entre los protones cargados positivamente.
+La energía nuclear es la energía que mantiene **unidas las partículas en el núcleo** de un átomo, es decir, los protones y neutrones.
+Esta energía se debe a la **fuerza nuclear fuerte**, vence la repulsión eléctrica que existiría entre los protones cargados positivamente.
 
 ![alt text](image.png)
 
@@ -29,13 +19,10 @@ La energía almacenada en los núcleos atómicos se libera o se absorbe durante 
 
 La energía nuclear es la energía que se libera:
 
-- Al dividir el núcleo de un átomo (fisión nuclear)
-- Al unir dos átomos para convertirse en un átomo individual (fusión nuclear).
+- Al **dividir** el núcleo de un átomo (**fisión** nuclear)
+- Al **unir** dos átomos para convertirse en un átomo individual (**fusión** nuclear).
 
 ![alt text](image-2.png)
-
-¿Cómo se libera energía nuclear?
-4
 
 ## Fisión nuclear
 
@@ -77,19 +64,17 @@ En la fisión se liberan también 2 -3 nuevos neutrones que producen a su vez nu
 
 Se trata de una reacción en cadena que si no se controla produciría una explosión atómica.
 
-Centrales nucleares
-6. Generación de electricidad
-11
+## Centrales PWR
 
-12
-Los tipos de centrales nucleares más habituales son las de reactor de agua a presión o PWR
+Los tipos de centrales nucleares más habituales son las de **reactor de agua a presión** o **PWR**
 
 ![](img/2024-09-26-16-40-07.png)
 
 Una central PWR tiene 3 circuitos hidráulicos principales.
-El primario extrae la energía calorífica del reactor.
-El secundario refrigera el primario formando vapor, que mueve una turbina antes de reutilizarse.
-El terciario refrigera el secundario y proviene de un río, mar o lago.
+
+- El primario extrae la energía calorífica del reactor.
+- El secundario refrigera el primario formando vapor, que mueve una turbina antes de reutilizarse.
+- El terciario refrigera el secundario y proviene de un río, mar o lago.
 
 ![alt text](image-5.png)
 
@@ -99,41 +84,34 @@ Esta reacción libera grandes cantidades de calor.
 
 Circuito primario: Este calor generado en el reactor se transfiere a un circuito de refrigerante (que puede ser agua o algún otro fluido), que circula a través del núcleo del reactor. El agua en este circuito no hierve, pero se calienta considerablemente debido a la energía de la fisión.
 
-Agua presurizada (155 bar, 300ºC)
-Agua presurizada (70 bar, 300ºC)
-15
+## Generación de vapor
 
-Central nuclear
-Central PWR
-En las plantas nucleares con un diseño de reactor de agua a presión (PWR), el calor del circuito primario se transfiere al circuito secundario a través de un intercambiador de calor llamado generador de vapor. Aquí, el agua del circuito secundario se convierte en vapor debido al calor recibido.
+En las plantas nucleares con un diseño de reactor de agua a presión (PWR), el calor del circuito primario se transfiere al **circuito secundario** a través de un intercambiador de calor llamado **generador de vapor**. Aquí, el agua del circuito secundario se convierte en vapor debido al calor recibido.
 
-Tras pasar por las turbinas, el vapor se enfría y se condensa en agua a través de un condensador a través del circuito terciario.
+## Generación de electricidad
 
-Esta agua se recicla y regresa al sistema para ser calentada nuevamente, completando el ciclo.
-17
+El vapor a alta presión generado en el circuito secundario es dirigido hacia unas **turbinas**.
 
-El vapor a alta presión generado en el circuito secundario es dirigido hacia unas turbinas.
-
-Al pasar por las palas de las turbinas, el vapor hace que estas giren rápidamente, transformando la energía térmica en energía mecánica.
+Al pasar por las **palas** de las turbinas, el vapor hace que estas giren rápidamente, transformando la energía térmica en energía mecánica.
 
 ![alt text](image-6.png)
 
-Las turbinas están conectadas a un generador eléctrico, que convierte la energía mecánica en electricidad mediante la rotación de un rotor dentro de un campo magnético
-Centrales nucleares
-6. Generación de electricidad
-18
+Las turbinas están conectadas a un generador eléctrico, que convierte la energía mecánica en **electricidad** mediante la rotación de un rotor dentro de un campo magnético.
+
+El vapor, trTras pasar por las turbinas, el vapor se enfría y se condensa en agua a través de un condensador a través del **circuito terciario**. Esta agua se recicla y regresa al sistema para ser calentada nuevamente, completando el ciclo.
+
+## Edificio de contención
 
 El edificio de contención se considera el edificio más característico de una central nuclear y alberga el reactor y todos los elementos que contengan material radiactivo.
 Es una estructura hermética de hormigón armado o pretensado, que, por norma general, suele tener forma esférica o cilíndrica rematada en cúpula semiesférica, cuyas paredes interiores van recubiertas de chapas de acero soldadas que aseguran la estanqueidad.
 
 ![alt text](image-7.png)
 
-Su arquitectura está diseñada para soportar, tanto el propio peso, como cargas accidentales como podrían ser
-Terremotos u otros fenómenos naturales
-Escapes de gases radiactivos
-Su misión principal es aislar y proteger el exterior de la emisión de la radiación
-Derivada del funcionamiento del reactor
-De la consecuencia de un accidente.
+Su misión principal es aislar y proteger el exterior de la emisión de la radiación derivada del funcionamiento del reactor
+o consecuencia de un accidente. Su arquitectura está diseñada para soportar, tanto el propio peso, como cargas accidentales como podrían ser
+
+- Terremotos u otros fenómenos naturales
+- Escapes de gases radiactivos
 
 ![alt text](image-8.png)
 
@@ -150,10 +128,11 @@ Se muele y procesa para convertirlo en un concentrado de uranio.
 
 ## ¿Dé donde se obtiene el uranio?
 
-De un mismo elemento químico, en la naturaleza puede haber diferentes **isótopos**, que tienen mismo número de protones pero tienen un número neutrones distinto.
-Al tener composiciones distintas, sus propiedades nucleares también lo son.
+De un mismo elemento químico, en la naturaleza puede haber diferentes **isótopos**, que tienen mismo número de protones pero tienen un número neutrones distinto. Al tener composiciones distintas, sus propiedades nucleares también lo son.
 
 ![](img/2024-09-26-16-43-06.png)
+
+Los isótopos se nombran con su símbolo y el número másico (suma de protones y neutrones).
 
 EL U-235
 
@@ -170,12 +149,7 @@ El U-238
 
 El uranio natural tiene solo alrededor del 0,7% de U-235, pero para su uso en reactores nucleares, se necesita alrededor del 3-5% de U-235.
 
-¿Cómo conseguimos aumentar este porcentaje?
-Para conseguir esto utilizamos un proceso se llama enriquecimiento, con el que aumentar la proporción de uranio-235 en el material.  Esto se realiza por centrifugación.
-
-¿Qué obtenemos al final del proceso?
-El producto se conoce como uranio enriquecido.
-¿Dé donde se obtiene el uranio?
+Para conseguir esto utilizamos un proceso se llama **enriquecimiento**, con el que aumentar la proporción de uranio-235 en el material.  Esto se realiza por centrifugación. El producto se conoce como **uranio enriquecido**.
 
 ![](img/2024-09-26-16-43-36.png)
 
@@ -207,7 +181,6 @@ Estos elementos se insertan y se extraen cuando se hacen operaciones de recarga 
 
 El combustible nuclear ensamblado se transporta con seguridad a la central nuclear.
 En la planta de energía, las varillas de combustible se cargan en el núcleo del reactor, donde se llevarán a cabo las reacciones nucleares para producir energía.
-¿Dé donde se obtiene el uranio?
 
 ## Barras de control
 
@@ -229,13 +202,29 @@ La enorme energía liberada al dividir átomos produjo explosiones devastadoras,
 
 ![alt text](image-16.png)
 
+La estructura interna de una bomba atómica está compuesta por una cápsula de uranio o plutonio con un núcleo de uranio enriquecido, una caja de explosivos, una cápsula de iniciación y una batería. La cápsula de uranio o plutonio contiene el material fisionable que es la fuente de energía de la bomba. La caja de explosivos se utiliza para comprimir el material fisionable y aumentar su temperatura y presión para iniciar la reacción nuclear. La cápsula de iniciación contiene una mezcla de combustible y oxígeno para asegurar la reacción nuclear. La batería alimenta el circuito eléctrico para activar la cápsula de iniciación.
+
+![alt text](image-29.png)
+
 Tras los eventos de Hiroshima y Nagasaki, se comprendió mejor la fisión nuclear. Sin embargo, en lugar de usar este poder para armas, se empezó a investigar su uso con fines pacíficos, como la generación de electricidad.
+
+## Tratado sobre la No Proliferación de las Armas Nucleares (TNP)
+
+Tratado internacional que busca evitar la proliferación de armas nucleares entró en vigor en 1970 y ha sido ratificado por 191 países.
+
+El TNP se divide en tres pilares:
+
+- Prevenir la propagación de **armas nucleares**.
+- Promover la cooperación en el **uso pacífico** de la energía nuclear
+- Impulsar el **desarme nuclear** y el desarme general y completo
+
+## Primera producción de electricidad con energía nuclear
 
 La primera vez que se produjo electricidad en un reactor nuclear fue el 20 de diciembre de **1951** en la estación experimental de **Arco, en Idaho (EEUU)**
 
 ![alt text](image-17.png)
 
-## Primera generación de electricidad
+## Primera central
 
 El 27 de junio de 1954 comenzó a funcionar la primera central nuclear del mundo en Obnisnks (Rusia).
 
@@ -251,11 +240,7 @@ A raíz de los accidentes nucleares de los años 70 y 80, el ritmo de construcci
 
 ## La primera central nuclear de España
 
-La primera central nuclear en España fue la **Central Nuclear José Cabrera**, comúnmente conocida como Zorita.
-
-Comenzó a operar el 13 de agosto de 1968. La planta estuvo operativa **hasta el 30 de abril de 2006**.
-
-Fue la primera instalación de este tipo en el país y marcó el inicio de la energía nuclear en España.
+La primera central nuclear en España fue la **Central Nuclear José Cabrera**, comúnmente conocida como Zorita. Comenzó a operar el 13 de agosto de 1968. La planta estuvo operativa **hasta el 30 de abril de 2006**.  Fue la primera instalación de este tipo en el país y marcó el inicio de la energía nuclear en España.
 
 ![alt text](image-21.png)
 
@@ -269,18 +254,20 @@ Las centrales nucleares de Santa María de Garoña, Jose Cabrera y Vandellós I 
 
 ## Ventajas y desventajas del uso de energía nuclear
 
-Pros
-Es una fuente de energía limpia y eficiente.
-No emite gases de efecto invernadero.
-Puede utilizarse para generar grandes cantidades de electricidad.
-Energía nuclear
-Contras
-Es una fuente de energía peligrosa.
-Los residuos nucleares son radiactivos y requieren un almacenamiento seguro.
-El coste de la construcción y el funcionamiento de las centrales nucleares es elevado.
-Existe la preocupación por la proliferación nuclear y el uso de material nuclear en armas.
-42
-Pros y contras
+Ventajas de la energía nuclear:
+
+- Es una fuente de energía limpia y eficiente.
+- No emite gases de efecto invernadero.
+- Puede utilizarse para generar grandes cantidades de electricidad.
+
+Contras:
+
+- Puede ser una fuente de energía peligrosa.
+- Los residuos nucleares son radiactivos y requieren un almacenamiento seguro.
+- El coste de la construcción y el funcionamiento de las centrales nucleares es elevado.
+- Existe la preocupación por la proliferación nuclear y el uso de material nuclear en armas.
+
+## Gestión de residuos
 
 Las centrales nucleares requieren un **mantenimiento** regular y una **gestión segura de los residuos**.
 
@@ -304,13 +291,6 @@ El agua en estas piscinas actúa como blindaje, reduciendo la dosis radiactiva a
 ![alt text](image-26.png)
 
 Debido al aumento del combustible gastado, se están implementando métodos de almacenamiento a largo plazo.
-Gestión de residuos
-Almacenamiento
-44
-
-Gestión de residuos
-Almacenamiento en piscina
-45
 
 ## Almacenamiento Geológico Profundo
 
@@ -319,15 +299,8 @@ Estos contenedores se almacenan en una instalación subterránea a 500 metros de
 
 ![alt text](image-27.png)
 
-Finlandia está construyendo actualmente una instalación de este tipo.
+**Finlandia** está construyendo actualmente una instalación de este tipo.
 Este método ofrece seguridad a largo plazo, ya que el combustible no puede explotar, fundirse ni disolverse en agua.
-Gestión de residuos
-Soluciones temporales a largo plazo
-46
-
-Gestión de residuos
-47
-Almacenamiento geológico profundo
 
 ## Reciclaje
 
@@ -340,85 +313,40 @@ Esta tecnología tiene el potencial de utilizar hasta el 95% del combustible nuc
 Los submarinos y buques de guerra nucleares están equipados con reactores nucleares que funcionan utilizando la fisión nuclear, similar al proceso en una central nuclear.
 Estos reactores producen calor directamente, que se utiliza para impulsar una turbina conectada a una hélice.
 La propulsión nuclear naval es una tecnología avanzada que se utiliza proporcionarles un mayor alcance, velocidad y capacidad de operación en silencio.
-Energía nuclear
-Aplicaciones
 
 ## Medicina
 
-En diagnóstico, se emplea en técnicas como la Tomografía por Emisión de Positrones (PET) y gammagrafías, utilizando trazadores radiactivos.
+En diagnóstico, se emplea en técnicas como la **Tomografía** por Emisión de Positrones (PET) y gammagrafías, utilizando trazadores radiactivos.
+
+![](img/2024-09-27-08-04-05.png)
+
 En el tratamiento, se utiliza en radioterapia para dañar células cancerosas y en terapia con yodo radiactivo para tratar enfermedades tiroideas.
-Energía nuclear
-Aplicaciones
-51
 
-## Armas nucleares
-
-Reacción en cadena
-La reacción en cadena se produce en fracciones de segundo, liberando una enorme cantidad de energía en forma de explosión nuclear. La energía proviene de la conversión de una pequeña cantidad de masa en energía, según la ecuación de Einstein
-Onda expansiva y radiación:
-La explosión genera una onda expansiva devastadora y una liberación masiva de radiación (rayos gamma y neutrones), que destruyen todo a su alrededor.
-Armas nucleares
-53
-
-Tratado sobre la No Proliferación de las Armas Nucleares (TNP)
-
-Tratado internacional que busca evitar la proliferación de armas nucleares.
-
-El TNP se divide en tres pilares:
-
-- Prevenir la propagación de armas nucleares,
-- Promover la cooperación en el uso pacífico de la energía nuclear y
-- Impulsar el desarme nuclear y el desarme general y completo
-
-El TNP entró en vigor en 1970 y ha sido ratificado por 191 países.
-La función del Organismo Internacional de Energía Atómica (OIEA) en la verificación del cumplimiento del TNP por parte de los estados que no poseen armas nucleares, y en la promoción de la cooperación internacional para el uso pacífico de la energía nuclear.
-Armas nucleares
-Tratado de no proliferación
-54
-
-Efectos en el ser humano
-55
-
-Efectos en el ser humano
-56
-
-## Catástrofes nucleares
+![](img/2024-09-27-08-04-40.png)
 
 ## Central nuclear de Lemóniz
 
-La central nuclear de Lemóniz, ubicada en el País Vasco, España, fue un proyecto ambicioso de la dictadura de Franco para independizar el consumo energético de la región.
-A pesar de la fuerte oposición ciudadana, liderada por grupos ecologistas y antinucleares, la construcción de la central avanzó hasta su finalización en 1982.
-Sin embargo, la presión social, las acciones terroristas de ETA y la posterior moratoria nuclear impidieron su puesta en marcha
-Central de Lemoniz
-País Vasco
-58
+La central nuclear de Lemóniz, ubicada en el País Vasco, España, fue un proyecto ambicioso de la dictadura de Franco para independizar el consumo energético de la región. A pesar de la fuerte oposición ciudadana, liderada por grupos ecologistas y antinucleares, la construcción de la central avanzó hasta su finalización en 1982. Sin embargo, la presión social, las acciones terroristas de ETA y la posterior moratoria nuclear impidieron su puesta en marcha
+
+## Fusión nuclear
+
+La fusión nuclear es el proceso en el que núcleos ligeros, como los del hidrógeno (isótopos deuterio y tritio), se combinan para formar núcleos más pesados, como el helio, liberando enormes cantidades de energía. Este fenómeno ocurre a **temperaturas extremadamente altas**, donde la materia se encuentra en estado de **plasma**, un gas ionizado.
+
+![](img/2024-09-27-07-51-14.png)
+
+Para controlarla, se emplea el **confinamiento magnético** (en reactores como el tokamak) o inercial (láseres). Hoy en día, la fusión aún no es comercialmente viable, pero tiene el potencial de proporcionar energía limpia y casi ilimitada si se resuelven los desafíos tecnológicos del confinamiento estable y el mantenimiento del plasma.
+
+![](img/2024-09-27-07-50-22.png)
 
 El Sol es una gigantesca esfera de plasma que genera su energía a través de la fusión nuclear, un proceso en el que los núcleos de hidrógeno se combinan bajo condiciones extremas de temperatura y presión para formar helio.
 Durante esta fusión, una pequeña cantidad de masa se convierte en una enorme cantidad de energía
 Esta energía es la que emite el Sol en forma de luz y calor, permitiendo que la vida prospere en la Tierra y manteniendo el equilibrio en el sistema solar.
 
-https://nuclearinst.com/nuclear-reactor-simulator
-https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=nuclear-fission&locale=es
-https://dalton-nrs.manchester.ac.uk/#
+## Simuladores
 
-Simuladores
-60
-
-# Energía nuclear (Extra)
-
-Se basa en la desintegración radiactiva de los átomos de Uranio. Estos átomos son inestables y se rompen o fisionan produciendo:
-
-- núcleos más ligeros
-- radiactividad
-- GRANDES CANTIDADES DE CALOR, que es lo que aprovecha del proceso.
-
-![imagen](img/2022-11-19-15-02-57.png)
-
-Es el combustible de las centrales nucleares, donde el calor producido por la reacción se utiliza para producir **vapor**, con el cual se mueve unas **turbinas** y se genera energía eléctrica.
-
-![imagen](img/image.png.png)
-
-En la **fisión** se liberan también 2 -3 nuevos neutrones que producen nuevas fisiones: es una **reacción en cadena** que si no se controla produciría una explosión atómica.
+- https://nuclearinst.com/nuclear-reactor-simulator
+- https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=nuclear-fission&locale=es
+- https://dalton-nrs.manchester.ac.uk/#
 
 ## Moderador
 
@@ -427,105 +355,3 @@ Para controlar la reacción, se introduce en el reactor un **moderador** que “
 - Agua ligera (75% de los reactores)
 - Agua pesada (20%). El agua pesada es una forma especial de agua que contiene isótopos de oxígeno e hidrógeno pesados. Esta forma es especialmente rica en el isótopo de hidrógeno llamado deuterio, que es una forma de hidrógeno con un neutrón adicional.
 - Grafito (5%)
-
-## Sistema de refrigeración
-
-Para extraer el calor producido hay un SISTEMA DE REFRIGERACIÓN POR AGUA que consta de 3 circuitos independientes entre sí (por seguridad):
-
-- **Circuito primario**: En contacto con el material radiactivo, está confinado dentro de l  vasija del reactor y esta agua se recicla (no sale nunca)
-- **Circuito secundario**: Enfría al primario y es el que genera el VAPOR que mueve las turbinas
-- **Circuito terciario**: Licua el vapor del 2º. Esta agua entra y sale del exterior (río, mar) y genera el vapor que vemos salir por la torres de refrigeración
-
-![imagen](img/2022-11-19-15-04-17.png)
-
-## Impacto ambiental
-
-Las centrales nucleares NO PRODUCEN CONTAMINANTES ATMOSFÉRICOS, pero sus principales inconvenientes son:
-
-- Contaminación térmica del agua del río, etc. Que altera el ecosistema acuático (el aumento de tª no debe superar los 3ºC y la Tª máx no debe superar los 30ªC)
-- Alteración del microclima de la zona (más cálido y húmedo) por el vapor de refrigeración
-- Minería, transporte y tratamiento de los productos radiactivos
-- Riesgo de accidentes (Fukushima 2011, Three Mile Island 1979, Chernóbil 1986)
-- Tratamiento de los residuos radiactivos
-
-Instalaciones y mantenimientos muy caros, sobre todo si su funcionamiento se limita a 40 años y luego debe ser desmantelada también con altos costes económicos. Prometía ser barata y resulta tener enormes gastos ocultos.
-
-Actualmente, con la crisis medioambiental, hay muchos partidarios de la energía nuclear (incluidos algunos padres del ecologismo como James Lovelock), ya que no produce CO2 (no contribuye al cambio climático) y se producen grandes cantidades de energía que requiere el modo de vida moderno. Ven la energía nuclear menos peligrosa que un inminente cambio climático catastrófico. Podría ser una solución temporal hasta desarrollar adecuadamente las energías alternativas limpias para su total implantación.  Además, con las mejoras tecnológicas, cada vez podrían ser más seguras y tratar sus residuos más adecuadamente.
-
-## IMPACTO AMBIENTAL DE LA ENERGÍA DE FISIÓN NUCLEAR
-
-Actualmente, la energía nuclear se genera a partir de la fisión del uranio-235, un mineral con una vida útil relativamente corta. El proceso comienza con la extracción de grandes cantidades de mineral de uranio (pechblenda o uraninita, UO2). Estas reservas se procesan en plantas de enriquecimiento, donde se separa el isótopo U-235 del resto mediante métodos físicos. A continuación, el U-235 se enriquece añadiendo plutonio-239 para mejorar la reacción de fisión. Esta mezcla se fabrica en barras de combustible, que se sumergen en los reactores intercaladas con las barras de moderador.
-
-Las barras de combustible se extraen de los reactores cada 3-4 años, ya que su concentración de U-235 ha bajado demasiado para mantener la reacción. Estas barras se almacenan en **piscinas de enfriamiento** dentro del propio reactor, hasta que su temperatura baje lo suficiente.
-
-![](img/2023-01-17-13-27-38.png)
-
-Una vez hay suficientes barras, éstas se transportan a centrales de reciclaje, donde se extrae el Plutonio-239 para reutilizarlo, así como los isótopos de vida corta (residuos). El resto continúa activo como residuos radiactivos de alta actividad durante un periodo de 10.000-100.000 años.
-
-Las reservas actuales de mineral de uranio están calculadas en 2 millones de toneladas, suficientes para unos 60 años al ritmo actual de consumo. Además, el Plutonio usado en el combustible nuclear puede ser usado como componente del armamento nuclear o el de las bombas atómicas, lo cual aumenta el riesgo de terrorismo.
-
-## Residuos de alta actividad
-
-Las centrales nucleares no producen contaminantes atmosféricos, pero generan una gran cantidad de residuos radiactivos peligrosos para la salud y el medio ambiente, por lo que deben ser almacenados de forma segura durante centenares o miles de años que dura su radiactividad:
-
-1) El combustible gastado primero se enfría durante 4-10 años en piscinas de agua pura situadas en el interior de la propia central.
-2) Después deben ser trasladados a un almacén temporal en superficie y vigilado. Puede ser centralizado (ATC), donde se almacenan los residuos de muchas centrales. Esto tiene el peligro de ser posible diana de terrorismo y el rechazo de la población próxima. Algunos proponen pequeños almacenes de superficie diseminados o incluso dentro del territorio de la propia central donde ya existe una fuerte vigilancia.
-3) Almacenamiento geológico definitivo, enterrado a profundidad en zonas adecuadas: macizos graníticos o salinos de grosor suficiente para absorber posibles fugas, estables sísmicamente, impermeables y sin contacto con los acuíferos.
-
-Almacén de residuos de baja y media actividad de El Cabril, (Córdoba)
-Actualmente se está investigando un proceso de fisión basado en el Torio- 232 que no se activa por sí mismo (necesita de un acelerador de partículas haga que los protones choquen con el combustible). Ventajas:
-Sustitución de los residuos por otros menos peligrosos
-La reacción se para automáticamente en caso de accidente
-
-CICLO VITAL DEL URANIO:
-
-MINERAL
-URANINITA/PECHBLENDA
- 99,3 % U- 238
-  0,7 %  U- 235 (útil x fisión)
-
-A continuación, en una planta de enriquecimiento de uranio:
-
-1. Aumento del % U-235 hasta 3-5%  (Uranio enriquecido)
-        ( Met. Físicos: gasificación + centrifugación)
-2. Adición de Plutonio-239 (mejora la reacción de fisión)
-
-BARRAS DE COMBUSTIBLE
-(Largos cilindros de acero rellenos de pastillas  cerámicas)
-
-Reactor
-
-Se colocan en la parte más externa y cada 1-2 años se desplazan hacia el centro. Las barras más antiguas del centro se retiran. Cada barra permanece en el reactor 3 ciclos (3-6 años) antes de ser retiradas. Para entonces el % de U-235 ya no es suficiente para mantener la reacción.
-
-COMBUSTIBLE GASTADO (“residuos nucleares”)
-
-Formado por:  95,6 % de URANIO NO GASTADO
-	3,4 % PRODUCTOS DE FISIÓN (calor)(vida ½)
-	1 % ACTÍNIDOS (U + neutrón) (Larga vida)
-
-## PISCINAS DE ENFRIAMIENTO
-(Hormigón revestido de acero y agua ligera pura (5-10años)
-
-## ALMACEN TEMPORAL EN SUPERFICIE “CONTENEDORES SECOS (50-60años)
-
-- In situ (junto al reactor en cada central)
-- Centralizado (ATC)
-Grandes contenedores de hormigón donde se almacenan manguitos de acero   sellados y refrigerado por la circulación natural del aire (enfriamiento residual)
-
-## CENTRAL DE RECICLAJE
-
-Se trata de una forma de almacenamiento seguro de residuos radiactivos, con el objetivo de limitar el riesgo de proliferación de armas nucleares. Los residuos recuperados, como el plutonio y el uranio (90%), se eliminan con un confinamiento geológico profundo, que es definitivo.
-
-El confinamiento se lleva a cabo en zonas de gran **estabilidad sísmica y geotérmica**, que son impermeables y sin contacto con aguas subterráneas, con un grosor suficiente para absorber posibles fugas. Se han utilizado macizos graníticos, domos salinos y depósitos arcillosos. Estas técnicas se conocen como "ciclo abierto" y "ciclo cerrado".
-
-## Curiosidades
-
-### Bombas nucleares
-
-Las bombas atómicas más importantes son la bomba atómica Fat Man y la bomba atómica Little Boy. La bomba atómica Fat Man fue utilizada en la ciudad japonesa de Nagasaki el 9 de agosto de 1945. La bomba atómica Little Boy fue utilizada en Hiroshima el 6 de agosto de 1945.
-
-![](img/2023-01-17-13-34-44.png)
-
-La estructura interna de una bomba atómica está compuesta por una cápsula de uranio o plutonio con un núcleo de uranio enriquecido, una caja de explosivos, una cápsula de iniciación y una batería. La cápsula de uranio o plutonio contiene el material fisionable que es la fuente de energía de la bomba. La caja de explosivos se utiliza para comprimir el material fisionable y aumentar su temperatura y presión para iniciar la reacción nuclear. La cápsula de iniciación contiene una mezcla de combustible y oxígeno para asegurar la reacción nuclear. La batería alimenta el circuito eléctrico para activar la cápsula de iniciación.
-
-![imagen](img/2022-11-19-15-02-37.png)

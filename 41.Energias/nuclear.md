@@ -182,6 +182,14 @@ Estos elementos se insertan y se extraen cuando se hacen operaciones de recarga 
 El combustible nuclear ensamblado se transporta con seguridad a la central nuclear.
 En la planta de energía, las varillas de combustible se cargan en el núcleo del reactor, donde se llevarán a cabo las reacciones nucleares para producir energía.
 
+## Moderador
+
+Para controlar la reacción, se introduce en el reactor un **moderador** que “enfría” la reacción (absorbe los neutrones en exceso). Este moderador puede ser:
+
+- Agua ligera (75% de los reactores)
+- Agua pesada (20%). El agua pesada es una forma especial de agua que contiene isótopos de oxígeno e hidrógeno pesados. Esta forma es especialmente rica en el isótopo de hidrógeno llamado deuterio, que es una forma de hidrógeno con un neutrón adicional.
+- Grafito (5%)
+
 ## Barras de control
 
 En la parte superior de la vasija se encuentran las barras de control (Control rods)
@@ -326,32 +334,33 @@ En el tratamiento, se utiliza en radioterapia para dañar células cancerosas y 
 
 ## Central nuclear de Lemóniz
 
-La central nuclear de Lemóniz, ubicada en el País Vasco, España, fue un proyecto ambicioso de la dictadura de Franco para independizar el consumo energético de la región. A pesar de la fuerte oposición ciudadana, liderada por grupos ecologistas y antinucleares, la construcción de la central avanzó hasta su finalización en 1982. Sin embargo, la presión social, las acciones terroristas de ETA y la posterior moratoria nuclear impidieron su puesta en marcha
+La central nuclear de Lemóniz, ubicada en el País Vasco, España, fue un proyecto ambicioso de la dictadura de Franco para independizar el consumo energético de la región. A pesar de la fuerte oposición ciudadana, liderada por grupos ecologistas y antinucleares, la construcción de la central avanzó hasta su finalización en 1982. Sin embargo, la presión social, las acciones terroristas de ETA y la posterior moratoria nuclear impidieron su puesta en marcha.
+
+- Video Marc Vilas: https://www.youtube.com/watch?v=1yQk3Qg61sM
+- Vídeo JF Calero: https://www.youtube.com/watch?v=UyaL9KK0C0E
 
 ## Fusión nuclear
 
 La fusión nuclear es el proceso en el que núcleos ligeros, como los del hidrógeno (isótopos deuterio y tritio), se combinan para formar núcleos más pesados, como el helio, liberando enormes cantidades de energía. Este fenómeno ocurre a **temperaturas extremadamente altas**, donde la materia se encuentra en estado de **plasma**, un gas ionizado.
 
+Para que ocurra la fusión, los núcleos de los átomos deben superar la repulsión electrostática entre ellos, lo cual requiere temperaturas extremadamente altas, del orden de **100 a 150 millones de grados Celsius**.
+
 ![](img/2024-09-27-07-51-14.png)
 
-Para controlarla, se emplea el **confinamiento magnético** (en reactores como el tokamak) o inercial (láseres). Hoy en día, la fusión aún no es comercialmente viable, pero tiene el potencial de proporcionar energía limpia y casi ilimitada si se resuelven los desafíos tecnológicos del confinamiento estable y el mantenimiento del plasma.
+Para controlarla, se emplea el **confinamiento magnético** (en reactores como el tokamak) o **inercial** (láseres).  El plasma se mantiene a temperaturas extremadamente altas utilizando campos magnéticos muy fuertes. Estos campos evitan que el plasma toque las paredes del reactor, lo que lo enfriaría rápidamente. Los imanes superconductores generan estos campos.
 
-![](img/2024-09-27-07-50-22.png)
+Hoy en día, la fusión aún no es comercialmente viable, pero tiene el potencial de proporcionar energía limpia y casi ilimitada si se resuelven los desafíos tecnológicos del confinamiento estable y el mantenimiento del plasma.
+
+![alt text](image-30.png)
 
 El Sol es una gigantesca esfera de plasma que genera su energía a través de la fusión nuclear, un proceso en el que los núcleos de hidrógeno se combinan bajo condiciones extremas de temperatura y presión para formar helio.
 Durante esta fusión, una pequeña cantidad de masa se convierte en una enorme cantidad de energía
 Esta energía es la que emite el Sol en forma de luz y calor, permitiendo que la vida prospere en la Tierra y manteniendo el equilibrio en el sistema solar.
+
+![](img/2024-09-27-08-08-27.png)
 
 ## Simuladores
 
 - https://nuclearinst.com/nuclear-reactor-simulator
 - https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=nuclear-fission&locale=es
 - https://dalton-nrs.manchester.ac.uk/#
-
-## Moderador
-
-Para controlar la reacción, se introduce en el reactor un **moderador** que “enfría” la reacción (absorbe los neutrones en exceso). Este moderador puede ser:
-
-- Agua ligera (75% de los reactores)
-- Agua pesada (20%). El agua pesada es una forma especial de agua que contiene isótopos de oxígeno e hidrógeno pesados. Esta forma es especialmente rica en el isótopo de hidrógeno llamado deuterio, que es una forma de hidrógeno con un neutrón adicional.
-- Grafito (5%)

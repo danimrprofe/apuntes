@@ -2,7 +2,21 @@
 
 La función **input()** es una función incorporada en Python 3 que permite al usuario ingresar datos desde el teclado. Esta función se utiliza para obtener la entrada del usuario para que el programa pueda realizar alguna tarea específica.
 
-Ejemplo 1:
+```python
+input()
+```
+
+Al llegar a esta instrucción, el programa se quedará esperando a que se pulse la tecla **intro**. Antes de ello, escribiremos lo que queramos enviar al ordenador.
+
+Si queremos que muestre un mensaje antes, podemos incluirlo entre los paréntesis, usando comillas.
+
+```python
+input("Dime cómo te llamas")
+```
+
+Ahora, primero aparecerá la frase y a continuación, el programa quedará a la espera de que escribamos algo y escribamos **intro** al terminar.
+
+Podemos utilizar variables para guardar la información que devuelve la función input:
 
 ```python
 valor = input("Introduce un valor: ")
@@ -19,30 +33,3 @@ print("Hola " + nombre + ", ¡bienvenido!")
 ```
 
 En este ejemplo, el usuario primero verá el mensaje "¿Cuál es tu nombre?". Después de escribir su nombre, el programa lo saludará con el mensaje "Hola [nombre], ¡bienvenido!".
-
-## Actividades
-
-**Actividad 1:** Crea un programa que escriba en una línea diferente tu nombre y tus apellidos (3 líneas en total) utilizando print (sin utilizar input)
-```
-Daniel
-Moreno
-Rossello
-```
-**Actividad 2**
-
-Crea un programa que te pida introducir los nombres de los miembros de tu familia uno a uno y te imprima una lista. Los nombres que tienen que aparecer se tienen que recoger con input
-```
-Mi padre se llama Juan
-Mi madre se llama Cathelyn
-Mi hermana pequeña se llama Arya
-```
-Actividad 3
-Modifica el programa para que te pida escribir tu nombre y el nombre de tus padres y diga (cambiando los nombres por los de tu familia):
-```
-Me llamo Arya. padre se llama Eddard y mi madre Cathelyn.
-```
-
-
-
-
-

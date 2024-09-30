@@ -1,32 +1,26 @@
 # Variables
 
-En Python, una **variable** es un nombre que se asigna a un valor. Esto significa que cuando creamos una variable, estamos creando un nombre para un valor específico.
+# Variables en Python
 
-La **asignación** de variables nos permite reutilizar ese valor sin tener que escribirlo repetidamente.
+En Python, una **variable** es un nombre que se asocia a un valor, permitiendo almacenar datos para su uso posterior. Cuando creamos una variable, en esencia estamos asignando un nombre simbólico a un valor específico, de modo que podemos reutilizarlo a lo largo de nuestro código.
 
-Por ejemplo, supongamos que queremos guardar el número 5 en una variable llamada "num". Podemos hacer esto de la siguiente manera:
+## Asignación de variables
+
+La **asignación** de variables es el proceso mediante el cual vinculamos un valor a un nombre. Esto nos permite evitar escribir el mismo valor repetidamente, haciendo que el código sea más legible y fácil de mantener.
+
+Por ejemplo, si queremos almacenar el número 5 en una variable llamada `num`, lo hacemos así:
 
 ```python
 num = 5
 ```
 
-Ahora, cada vez que necesitemos usar el número 5, podemos simplemente usar el nombre de la variable "num" en lugar de tener que escribir 5. Esto nos ahorra tiempo y nos permite reutilizar los valores con mayor facilidad.
+En Python, las **variables** no tienen un tipo explícito cuando se declaran, pero los valores que almacenan sí tienen un tipo de dato.
 
-Por ejemplo, podemos sumar el número 5 a otro número y guardar
+A continuación se presenta una lista de los principales tipos de variables (o tipos de datos) en Python:
 
-## Tipos de variables
+## Flotantes
 
-### Enteros
-
-Un ejemplo de variable entera es:
-
-```python
-edad = 20
-```
-
-### Flotantes
-
-Un float es un tipo de variable numérica que contiene números decimales. Fíjate que los decimales se excriben con un punto decimal, y no una
+Un **float** es un tipo de variable numérica que contiene números decimales. Fíjate que los decimales se excriben con un punto decimal.
 
 ```python
 altura = 1.75
@@ -34,13 +28,13 @@ altura = 1.75
 
 ### Cadenas
 
-Un ejemplo de variable cadena es:
+Las cadenas de caracteres son conjuntos de letras, que normalmente suelen asociarse a una palabra o una frase:
 
 ```python
 nombre = "Juan"
 ```
 
-Las cadenas se pueden escribir entre `'` o entre `"``. Si no pones comillas antes y despues, Python creerá que se trata de una variable, y no un texto.
+Las **cadenas**, también llamadas **strings**, se pueden escribir entre `'` o entre `"``. Si no pones comillas antes y despues, Python creerá que se trata de una variable, y no un texto.
 
 ### Booleanos
 

@@ -31,6 +31,8 @@
   - [Estilos de tablas con CSS](#estilos-de-tablas-con-css)
 - [11. Capas](#11-capas)
   - [Ejemplo de página con capas](#ejemplo-de-página-con-capas)
+  - [Formularis](#formularis)
+  - [Àudio i vídeo](#àudio-i-vídeo)
 
 # 1. INTRODUCCIÓN AL LENGUAJE HTML
 
@@ -105,7 +107,7 @@ en la pantalla, veremos que éste se acomoda a ella, sin que tengamos que
 pulsar el retorno del carro. Si queremos separar el texto en distintos párrafos
 debemos usar la etiqueta <P>, (que tiene su correspondiente etiqueta de
 cierre </P>).
-- El texto se puede colocar entre las etiquetas <H1> y </H1>, <H2> y </H2>,
+- El texto se puede colocar entre las etiquetas `<H1>` y </H1>, <H2> y </H2>,
 etc. (hasta el número 6). Este número indica el tamaño del mismo. El tamaño
 mayor es el correspondiente al número 1.
 - La etiqueta para centrar es <CENTER> y </CENTER>. Nos centra todo lo que
@@ -161,6 +163,7 @@ Un párrafo siempre comienza en una nueva línea y los navegadores agregan autom
 <p>Esto es un párrafo</p>
 <p>Esto es otro</p>
 ```
+
 # 5. Estilos de texto y párrafo
 
 ## Estilos
@@ -620,3 +623,34 @@ Con esto, habrás creado una capa div en tu documento HTML.
 </body>
 </html>
 ```
+
+# Formularis
+
+- Input
+- Form
+- Datalist
+- Atributo placeholder
+- Atributo autofocus
+- Validación restringida
+
+# Àudio i vídeo
+
+El elemento **video** nos permite incrustar video fácilmente. Un ejemplo muy simple luce como lo siguiente:
+
+```html
+<video src="rabbit320.webm" controls>
+  <p>Tu navegador no soporta HTML5 video. Aquí está el <a href="rabbit320.webm">enlace del video</a>.</p>
+</video>
+```
+
+https://developer.mozilla.org/es/docs/Web/HTML/Element/video#attr-controls
+
+El elemento **audio** nos permite incrustar video fácilmente. Un ejemplo muy simple luce como lo siguiente:
+
+El elemento **audio** funciona exactamente de la misma forma que el elemento **video**, con algunas pequeñas diferencias como se describe a continuación. Un ejemplo típico podría ser así:
+
+<audio controls>
+  <source src="viper.mp3" type="audio/mp3">
+  <source src="viper.ogg" type="audio/ogg">
+  <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+</audio>

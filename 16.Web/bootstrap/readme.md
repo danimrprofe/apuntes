@@ -68,26 +68,20 @@ Cards: Una manera fácil de mostrar contenido en cajas.
 ## 5. Utilidades de Bootstrap
 
 Bootstrap también ofrece una serie de clases utilitarias que permiten aplicar estilos rápidos sin
-necesidad de CSS personalizado. Algunas de las más utilizadas son:
+necesidad de CSS personalizado.
 
-html
-<div class="container"> <div class="row"> <div class="col-md-6">Columna 1 (50%)</div>
-<div class="col-md-6">Columna 2 (50%)</div> </div> </div>
+## Ejemplo de una fila con dos columnas de igual ancho
 
-Copiar código
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">Columna 1 (50%)</div>
+    <div class="col-md-6">Columna 2 (50%)</div>
+  </div>
+</div>
+```
 
-html
-
-<button class="btn btn-primary">Botón Azul</button> <button class="btn btn-
-danger">Botón Rojo</button>
-
-Copiar código
-
-html
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand"
-href="#">Mi Sitio</a> </nav>
-
-
+## Ejemplo del componente card
 
 ```html
 <div class="card" style="width: 18rem;">
@@ -98,14 +92,38 @@ href="#">Mi Sitio</a> </nav>
 </div>
 ```
 
-Copiar código
+## Margin i Padding
 
-18/9/24, 19:06 ChatGPT
+Bootstrap 5 proporciona classes per ajustar fàcilment el **marge** (m-) i el **farcment** o *padding* (p-). Les classes es basen en un sistema de nombres del 0 al 5, on cada número representa un increment del marge o del *padding* en unitats relatives.
 
-https://chatgpt.com/c/66eb04f9-12f8-8005-a92c-98e7e8332be1 2/3
+- **m-**: ajusta el marge extern.
+- **p-**: ajusta el *padding* o marge intern.
 
-Margen y Padding: Usa las clases m- y p- seguidas de un número del 0 al 5 para ajustar el
-margen y el relleno.
+Exemples:
 
-Texto y Alineación: Clases como text-center , text-left o text-right permiten alinear el
-texto fácilmente.
+- `m-0`: sense marge.
+- `m-3`: marge moderat.
+- `m-5`: marge màxim.
+
+A més, pots ajustar els marges o *padding* de maneres específiques per a cada costat:
+- **m(t/b/l/r/x/y)**: per ajustar només la part superior (**t**), inferior (**b**), esquerra (**l**), dreta (**r**), horitzontal (**x**) o vertical (**y**).
+
+Exemples:
+- `mt-3`: marge només a la part superior.
+- `px-4`: *padding* horitzontal (esquerra i dreta).
+
+## Text i Alineació
+
+Bootstrap ofereix classes per ajustar fàcilment l'alineació del text:
+
+- **text-left**: alinea el text a l'esquerra.
+- **text-center**: alinea el text al centre.
+- **text-right**: alinea el text a la dreta.
+
+També hi ha altres utilitats per estilitzar i modificar el text:
+- **text-uppercase**: converteix el text a majúscules.
+- **text-lowercase**: converteix el text a minúscules.
+- **text-capitalize**: capitalitza només la primera lletra de cada paraula.
+
+Pots ajustar l'alineació del text de manera responsable segons la mida de pantalla:
+- **text-sm-left**, **text-md-center**, **text-lg-right**, etc. Això permet canviar l'alineació del text a mesura que la pantalla canvia de mida.

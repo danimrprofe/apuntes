@@ -106,7 +106,7 @@ Con estos semiconductores se fabrican los **circuitos electrónicos de los chips
 
 ![alt text](image-11.png)
 
-Los dos tipos de semiconductores que usan las placas se obtienen del silicio
+Los tipos de semiconductores que usan mayoritariamente en electrónica se obtienen del **silicio (Si)**. A él le debe el nombre **Silicon valley**, una zona de California en la que se concentran las mayores empresas tecnológicas de Estados Unidos.
 
 ![alt text](image-12.png)
 
@@ -114,17 +114,19 @@ El silicio tiene 4 electrones en la capa de valencia
 
 ![alt text](image-13.png)
 
-Los átomos de Si se combinan mediante enlaces covalentes (compartiendo electrones)
+Los átomos de Si se combinan mediante enlaces covalentes (compartiendo electrones), por lo que cada átomo de Silicio se combina con otros 4 átomos del mismo elemento.
 
 ![alt text](image-14.png)
 
+Para fabricar los semiconductores, con los que haremos componentes como diodos o transistores, vamos a crear dos tipos de materiales diferentes que combinaremos más adelante: el semiconductor tipo N y el semiconductor tipo P.
+
 **Semiconductor tipo N**
 
-Necesitamos transformar el Silicio en 2 tipos de semiconductores. Al primero lo doparemos agregando impurezas (átomos de otros elementos), como por ejemplo  fósforo que tiene 5 electrones en su última capa
+Al primero lo **doparemos** agregando impurezas (átomos de otros elementos), como por ejemplo  **fósforo** que tiene 5 electrones en su última capa.
 
 ![alt text](image-15.png)
 
-De este modo sobrará un electrón por enlace y por tanto el resultado tendrá más electrones de lo normal, formando semiconductor tipo N (negativo)
+De este modo sobrará un electrón por enlace y por tanto el resultado tendrá más electrones de los que tendría si únicamente estuviera formado por silicio., formando semiconductor **tipo N** (negativo).
 
 **Semiconductor tipo P**
 
@@ -132,21 +134,20 @@ Doparemos al segundo tipo con átomos de valencia 3, como por ejemplo  boro. Est
 
 ![alt text](image-16.png)
 
-De este modo faltará un electrón por enlace (eso se llama un hueco) y por tanto el resultado tendrá menos electrones de lo normal, formando semiconductor tipo P (positivo)
+De este modo faltará un electrón por enlace (eso se llama un hueco) y por tanto el resultado tendrá menos electrones de lo normal, formando semiconductor **tipo P** (positivo)
 
-Juntaremos una capa de tipo N con otra de tipo P.
+Ahora que tenemos los materiales tipo P y tipo N, los juntaremos en una capa para crear dispositivos semiconductores.
 
 ![alt text](image-17.png)
 
- La combinación de regiones tipo P y tipo N permite la creación de transistores, diodos y otros componentes electrónicos
+ La combinación de regiones tipo P y tipo N permite la creación de **transistores, diodos** y otros componentes electrónicos. Para obtener **diodos**, juntaremos uno tipo P con uno tipo N.
 
 ![alt text](image-18.png)
 
-Combinando semiconductores N, otro P y otro N obtenemos un transistor.
+Combinando semiconductores N, otro P y otro N obtenemos un **transistor**.
 
 ![alt text](image-19.png)
 
-Semiconductores
 Al juntar una capa N y una P obtenemos un semiconductor N-P
 Los electrones sólo se mueven al aplicar corriente en un sentido
 
@@ -179,9 +180,7 @@ La potencia es la cantidad de energía máxima que pueden proporcionar las placa
 
 ![alt text](image-24.png)
 
-Una instalación doméstica suele tener entre 3 y 5 Kw
-Potencia de una célula
-Una célula individual normal tiene una superficie de 75 cm2 y una potencia aproximada de 1 W para una radiación de 1000 W/m2.
+Una instalación doméstica suele tener entre 3 y 5 Kw. Una célula individual normal tiene una superficie de 75 cm2 y una potencia aproximada de 1 W para una radiación de 1000 W/m2.
 Suele suministrar una tensión de 0,5 V y una corriente continua de unos 2 A.
 
 ## Paneles

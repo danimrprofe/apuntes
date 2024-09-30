@@ -1,8 +1,5 @@
+
 # Python
-
-En este apartado nos vamos a centrar en aprender nosotros a crear un programa para hacer una determinada tarea.
-
-Aquí podrás encontrar los [Juegos](juegos/) que creamos en las clases.
 
 ## El lenguaje Python
 
@@ -10,9 +7,18 @@ Existen muchos lenguajes de programación, que son como diferentes idiomas. Cada
 
 ![imagen](img/2023-01-19-10-21-27.png)
 
-## Herramientas
+## Herramientas online
 
-Para crear nuestros programas vamos a usar un entorno de programación online. En nuestro caso, [Repl.it](http://www.repl.it) donde podéis crear programas utilizando cualquier lenguaje a través de un navegador sin necesidad de instalar nada, y todos los proyectos que hagáis se guardarán ahí automáticamente.
+Para crear nuestros programas podemis usar un entorno de programación online como, por ejemplo, [Repl.it](http://www.repl.it) donde podéis crear programas utilizando cualquier lenguaje a través de un navegador sin necesidad de instalar nada, y todos los proyectos que hagáis se guardarán ahí automáticamente.
+
+Esta opción es la mejor si no queréis o no podéis instalar Python en vuestro ordenador.
+
+## Instalación de Python
+
+Para que un programa escrito en Python se ejecute en un ordenador, es necesario instalar el **intérprete de Python**.
+Python tiene dos versiones principales: Python 2 y Python 3. Hoy en día, se recomienda usar **Python 3**, ya que Python 2 ha sido descontinuado.
+
+Se puede descargar para Windows desde esta página: https://www.python.org/downloads/windows/. A continuación hay que instalarlo en el ordenador para que lea y ejecute los programas escritos en Python.
 
 ![imagen](img/2023-01-02-16-00-35.png)
 

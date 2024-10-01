@@ -1,3 +1,10 @@
+- [Centrales térmicas solares](#centrales-térmicas-solares)
+  - [Tipos](#tipos)
+  - [1. Canales parabólicos](#1-canales-parabólicos)
+  - [2. Heliostatos con receptor central en torre](#2-heliostatos-con-receptor-central-en-torre)
+  - [3. Reflectores lineales Fresnel](#3-reflectores-lineales-fresnel)
+  - [4. Discos parabólicos de Stirling](#4-discos-parabólicos-de-stirling)
+
 # Centrales térmicas solares
 
 En estas centrales convertiremos la luz solar en calor, para posteriormente generar electricidad.
@@ -11,7 +18,7 @@ Actualmente, en España hay exactamente 50 plantas termosolares
 
 ![](img/2024-10-01-10-32-05.png)
 
-## Canales parabólicos
+## 1. Canales parabólicos
 
 ![](img/2024-10-01-10-32-22.png)
 
@@ -25,7 +32,7 @@ Estos espejos cóncavos, son montados sobre una estructura capaz de girarlos. El
 
 ![](img/2024-10-01-10-32-44.png)
 
-## Heliostatos con receptor central en torre
+## 2. Heliostatos con receptor central en torre
 
 Un heliostato es un dispositivo que consiste en un **espejo** animado de un movimiento rotatorio. El helióstato sirve para **dirigir los rayos del Sol** en una determinada dirección, a pesar del movimiento de la Tierra respecto al Sol.
 
@@ -47,7 +54,7 @@ Esto se consigue mediante un control de movimiento de las bases de los heliostat
 Gemasolar, la planta termosolar que almacena la electricidad en Sevilla, España. https://www.youtube.com/watch?v=BY8-V3XEnmQ
 https://www.youtube.com/watch?v=rkusqo9eTSI
 
-## Sales
+### Sales
 
 ![](img/2024-10-01-10-35-41.png)
 
@@ -57,7 +64,7 @@ https://www.youtube.com/watch?v=rkusqo9eTSI
 
 ![](img/2024-10-01-10-34-51.png)
 
-## Reflectores lineales Fresnel
+## 3. Reflectores lineales Fresnel
 
 ![](img/2024-10-01-10-36-18.png)
 
@@ -70,7 +77,7 @@ Los espejos planos abaratan mucho la instalación, puesto que la fabricación es
 Montan los espejos planos sobre una estructura. Permite el giro en un eje del espejo con el fin de seguir la trayectoria solar y focalizar la captación sobre el conducto que contiene el fluido caloportador.
 Industrial Solar Fresnel Collector Video
 
-## Discos parabólicos de Stirling
+## 4. Discos parabólicos de Stirling
 
 Cuentan con concentradores parabólicos independientes. En cuyo foco se coloca un motor Stirling, un motor térmico de combustión externa, el cual transforma la energía recibida térmica en un giro mecánico.
 

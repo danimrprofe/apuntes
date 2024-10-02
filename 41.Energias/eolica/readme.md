@@ -157,7 +157,7 @@ La fórmula para la potencia del viento muestra que la potencia disponible aumen
 
 ![](img/2024-10-01-18-14-39.png)
 
-La góndola: Situada sobre la torre. Es el elemento estructural, y está formado por el bastidor y el armazón. El bastidor es la pieza sobre la que se ensamblan los elementos mecánicos principales.
+La **nacelle** alberga varios componentes importantes, como el generador, la caja de engranajes (si la tiene), y el sistema de control. También contiene el mecanismo que permite rotar el aerogenerador para alinearlo con la dirección del viento.
 
 ![](img/2024-10-01-18-14-44.png)
 
@@ -233,6 +233,3 @@ Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al 
 
 1. [¿Cómo funciona un aerogenerador? | Sostenibilidad - ACCIONA](https://www.youtube.com/watch?v=Hx1cOrIJcpQ)
 2. [SUBIMOS num GERADOR EÓLICO #Boravê](https://www.youtube.com/watch?v=PHdrLRcOGCA)
-
-¿Sabías que la harina es inflamable al volatilizarse?
-¿Qué pasa si combinas HARINA con FUEGO?

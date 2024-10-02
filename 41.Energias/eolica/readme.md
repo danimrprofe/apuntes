@@ -3,11 +3,6 @@
 
 La energía eólica es una forma de **energía cinética** producida por el movimiento del viento. El viento se genera debido a las **diferencias en la insolación** (cantidad de radiación solar recibida) en distintas áreas del planeta. Estas diferencias provocan variaciones de temperatura y presión, que a su vez generan el flujo de aire que conocemos como viento.
 
-Se puede utilizar:
-
-- Directamente (barcos de vela, molinos de viento para moler)
-- Transformada en electricidad, mediante aerogeneradores.
-
 ![](img/2024-10-01-18-11-39.png)
 
 ![](img/2024-10-01-18-11-51.png)
@@ -16,7 +11,7 @@ https://www.windfinder.com/
 
 https://www.aemet.es/es/eltiempo/prediccion/mapa_frentes
 
-La brisa es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
+La **brisa** es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
 
 ![](img/2024-10-01-18-11-57.png)
 
@@ -26,7 +21,31 @@ La brisa es un tipo de viento ligero local motivado por los movimientos de masas
 
 ![](img/2024-10-01-18-12-24.png)
 
+La intensidad del viento varía también geográficamente.
+
 ![](img/2024-10-01-18-12-29.png)
+
+## Molinos antiguos
+
+Antes de la invención de la electricidad los molinos de viento se utilizaban para extraer agua de los pozos, o bien para moler el trigo para hacer harina. En Mallorca todavía se conservan muchos de estos molinos, aunque la mayoría de ellos ya no están operativos.
+
+![](img/2024-10-01-18-13-30.png)
+
+Un molino impulsado por un burro (entrada de energía de 300 W) producía 10-25 kg/h de harina.Las piedras de molino equipadas de una pequeña noria (1,5 kW) molían 80-100 kg/h. La harina se utilizaba para hornear pan, suministrando como mínimo la mitad de toda la energía alimentaria consumida (el pan solía representar más del 70% de la misma). En 10 h un molino producía harina para 2.500-3.000 personas, es decir, una ciudad medieval de tamaño considerable.
+
+![](img/2024-10-01-18-13-42.png)
+
+![](img/2024-10-01-18-13-50.png)
+
+## Molinos de extracción de agua
+
+En Mallorca, los **molins de vent** han sido utilizados desde finales del siglo XIX para extraer agua subterránea con fines agrícolas y de riego. A diferencia de los aerogeneradores modernos, estos molinos tradicionales estaban diseñados para aprovechar la energía del viento para accionar un mecanismo que bombeaba agua desde pozos o acuíferos subterráneos.
+
+![](img/2024-10-01-18-13-57.png)
+
+En la actualidad, existen alrededor de 2.300 **molinos de extracción de agua** por toda Mallorca y los municipios de Campos, sa Pobla, Muro, ses Salines y Palma son aquellos que recogen un mayor número de estos ingenios.
+
+![](img/2024-10-01-18-14-06.png)
 
 ## Densidad del aire
 
@@ -57,28 +76,6 @@ Este fenómeno es importante en el contexto de la energía eólica, ya que la de
 
 ![](img/2024-10-01-18-13-23.png)
 
-## Molinos antiguos
-
-Antes de la invención de la electricidad los molinos de viento se utilizaban para extraer agua de los pozos, o bien para moler el trigo para hacer harina. En Mallorca todavía se conservan muchos de estos molinos, aunque la mayoría de ellos ya no están operativos.
-
-![](img/2024-10-01-18-13-30.png)
-
-Un molino impulsado por un burro (entrada de energía de 300 W) producía 10-25 kg/h de harina.Las piedras de molino equipadas de una pequeña noria (1,5 kW) molían 80-100 kg/h. La harina se utilizaba para hornear pan, suministrando como mínimo la mitad de toda la energía alimentaria consumida (el pan solía representar más del 70% de la misma). En 10 h un molino producía harina para 2.500-3.000 personas, es decir, una ciudad medieval de tamaño considerable.
-
-![](img/2024-10-01-18-13-42.png)
-
-![](img/2024-10-01-18-13-50.png)
-
-## Molinos de extracción de agua
-
-En Mallorca, los **molins de vent** han sido utilizados desde finales del siglo XIX para extraer agua subterránea con fines agrícolas y de riego. A diferencia de los aerogeneradores modernos, estos molinos tradicionales estaban diseñados para aprovechar la energía del viento para accionar un mecanismo que bombeaba agua desde pozos o acuíferos subterráneos.
-
-![](img/2024-10-01-18-13-57.png)
-
-En la actualidad, existen alrededor de 2.300 **molinos de extracción de agua** por toda Mallorca y los municipios de Campos, sa Pobla, Muro, ses Salines y Palma son aquellos que recogen un mayor número de estos ingenios.
-
-![](img/2024-10-01-18-14-06.png)
-
 ## Ventajas y desventajas
 
 ### Ventajas
@@ -95,15 +92,27 @@ En la actualidad, existen alrededor de 2.300 **molinos de extracción de agua** 
 - Los **parques eólicos ocupan grandes extensiones** de terreno, lo que puede generar un impacto visual en el paisaje y también ruido.
 - Pueden generar **interferencias con radares, televisión y radio**, afectando las señales en áreas cercanas a los aerogeneradores.
 
+## Energía eólica en España
+
+En España, la distribución de energía eólica es la siguiente.  En España existen en total **1.345 parques eólicos** que presentan más de 22.000 molinos.
+
+Los parques eólicos en España más importantes contribuyen de manera significativa al mix energético nacional. Según datos recientes, la energía eólica generó alrededor del **21% de la electricidad total** del país.
+
+![](img/2024-10-02-12-04-50.png)
+
 ## Aerogeneradores
+
+Exacto, los aerogeneradores son dispositivos clave en la generación de energía eólica. Sus **palas**, al ser impulsadas por el viento, convierten la energía **cinética** del aire en energía **mecánica**. Esta energía se transforma en energía **eléctrica** a través de un generador interno. La electricidad producida se envía a la **red eléctrica**, donde puede ser utilizada para abastecer hogares, industrias y otros consumos.
 
 ![](img/2024-10-01-18-14-16.png)
 
-Son aparatos que disponen de unas **palas** que giran gracias al viento, y en su interior un generador transforma la energía mecánica del viento en energía eléctrica, que es transferida a la red de distribución.
-
 ### Relación área - potencia
 
-a potencia que un aerogenerador puede generar depende directamente del **área de barrido** de sus aspas y de la **velocidad del viento**. Por lo tanto, al diseñar aerogeneradores, es importante considerar tanto el tamaño de las aspas como las condiciones de viento del sitio donde se instalarán.
+La potencia que un aerogenerador puede generar depende directamente del **área de barrido** de sus aspas y de la **velocidad del viento**. Por lo tanto, al diseñar aerogeneradores, es importante considerar tanto el **tamaño** de las aspas como las **condiciones de viento** del sitio donde se instalarán.
+
+El aerogenerador más grande a día de hoy es este:
+
+![](img/2024-10-02-12-12-00.png)
 
 ### Relación entre área y potencia de aerogeneradores
 
@@ -154,9 +163,11 @@ La góndola: Situada sobre la torre. Es el elemento estructural, y está formado
 
 ![](img/2024-10-01-18-14-48.png)
 
-El funcionamiento de un aerogenerador implica una serie de componentes interrelacionados que trabajan en conjunto para convertir la energía cinética del viento en energía eléctrica. El **eje de baja velocidad** es el primer elemento que recibe el movimiento de las aspas del rotor, que gira lentamente debido a la baja velocidad del viento. Este eje está conectado a una **caja de cambios**, que incrementa la velocidad de rotación del eje antes de que el movimiento se transfiera al **eje de alta velocidad**.
+El funcionamiento de un aerogenerador implica una serie de componentes interrelacionados que trabajan en conjunto para convertir la energía cinética del viento en energía eléctrica.
 
-Gracias a esta transformación de velocidad, el eje de alta velocidad puede girar a una velocidad mucho mayor, lo que es necesario para accionar el **generador**, que convierte la energía mecánica en energía eléctrica. Por último, el **controlador** juega un papel crucial al supervisar y gestionar el funcionamiento del aerogenerador, asegurando que la energía generada se optimice y se ajuste según las variaciones en la velocidad del viento y las condiciones operativas, protegiendo así el sistema de posibles daños.
+- El **eje de baja velocidad** es el primer elemento que recibe el movimiento de las aspas del rotor, que gira lentamente debido a la baja velocidad del viento.
+- Este eje está conectado a una **caja de cambios**, que incrementa la velocidad de rotación del eje antes de que el movimiento se transfiera al **eje de alta velocidad**. Gracias a esta transformación de velocidad, el eje de alta velocidad puede girar a una velocidad mucho mayor, lo que es necesario para accionar el **generador**, que convierte la energía mecánica en energía eléctrica.
+- Por último, el **controlador** juega un papel crucial al supervisar y gestionar el funcionamiento del aerogenerador, asegurando que la energía generada se optimice y se ajuste según las variaciones en la velocidad del viento y las condiciones operativas, protegiendo así el sistema de posibles daños.
 
 ![](img/2024-10-01-18-14-53.png)
 
@@ -188,10 +199,10 @@ La **velocidad de corte** es la velocidad máxima del viento a la que un aerogen
 
 ### Instalaciones aisladas
 
-![](img/2024-10-01-18-15-56.png)
-
 No conectadas a la red eléctrica. Se utilizan para aplicaciones tales como electrificaciones rurales, aplicaciones agrícolas, señalización, repetidores de comunicaciones, bombeo de agua, etc.
-Utilizan, en la mayoría de los casos aerogeneradores de pequeña potencia. Tienen que disponer de un sistema de acumulación (baterías) para asegurar el suministro eléctrico
+Utilizan, en la mayoría de los casos aerogeneradores de pequeña potencia. Tienen que disponer de un sistema de acumulación (**baterías**) para asegurar el suministro eléctrico
+
+![](img/2024-10-01-18-15-56.png)
 
 ### Parques eólicos
 
@@ -199,7 +210,7 @@ Los parques eólicos son un conjunto de aerogeneradores que producen energía el
 
 ![](img/2024-10-01-18-16-06.png)
 
-Parques eólicos que generan importantes cantidades de energía eléctrica, con potencias superiores a 1 MW, también reciben el nombre de centrales eólicas.
+Los parques eólicos que generan importantes cantidades de energía eléctrica, con potencias superiores a 1 MW, también reciben el nombre de **centrales eólicas**. Es vital colocar los aerogeneradores con una distribución específica que garantice la eficiencia y mejor funcionamiento.
 
 ![](img/2024-10-01-18-16-14.png)
 
@@ -207,9 +218,10 @@ Parques eólicos que generan importantes cantidades de energía eléctrica, con 
 
 La energía eólica es más fuerte en el océano que en tierra.
 Hasta hace poco tiempo, al basarse en estructuras fijas, no podían instalarse en lugares de fondos marinos muy profundos o complejos, algo que ha cambiado con la aparición de las estructuras flotantes.
-Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al fondo marino mediante anclajes flexibles, cadenas o cables de acero.
 
 ![](img/2024-10-01-18-16-30.png)
+
+Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al fondo marino mediante anclajes flexibles, cadenas o cables de acero.
 
 ![](img/2024-10-01-18-16-35.png)
 
@@ -224,5 +236,3 @@ Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al 
 
 ¿Sabías que la harina es inflamable al volatilizarse?
 ¿Qué pasa si combinas HARINA con FUEGO?
-
-Curiosidades

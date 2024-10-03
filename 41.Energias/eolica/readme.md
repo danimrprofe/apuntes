@@ -70,9 +70,11 @@ Este fenómeno es importante en el contexto de la energía eólica, ya que la de
 
 ![](img/2024-10-01-18-12-51.png)
 
-![](img/2024-10-01-18-13-04.png)
+En este gráfico podemos comprobar como la potencia que podemos generar (vatios) depende de la velocidad del viento.
 
 ![](img/2024-10-01-18-13-19.png)
+
+El viento no sopla por igual en todas direcciones, por lo que será un aspecto a considerar en la instalación.
 
 ![](img/2024-10-01-18-13-23.png)
 
@@ -140,6 +142,7 @@ P = \frac{1}{2} \cdot \rho \cdot A \cdot v^3
 \]
 
 Donde:
+
 - \(P\) es la potencia del viento (W).
 - \(\rho\) es la densidad del aire (kg/m³).
 - \(A\) es el área de barrido (m²).
@@ -157,7 +160,9 @@ La fórmula para la potencia del viento muestra que la potencia disponible aumen
 
 ![](img/2024-10-01-18-14-39.png)
 
-La **nacelle** alberga varios componentes importantes, como el generador, la caja de engranajes (si la tiene), y el sistema de control. También contiene el mecanismo que permite rotar el aerogenerador para alinearlo con la dirección del viento.
+## Nacelle
+
+La **nacelle** se situa en lo alto de la torre, y alberga varios componentes importantes, como el generador, la caja de engranajes (si la tiene), y el sistema de control. También contiene el mecanismo que permite rotar el aerogenerador para alinearlo con la dirección del viento.
 
 ![](img/2024-10-01-18-14-44.png)
 
@@ -183,7 +188,7 @@ El funcionamiento de un aerogenerador implica una serie de componentes interrela
 
 http://www.youtube.com/watch?v=ACGEJbfWGmA
 
-## Velocidades
+## Velocidad del viento
 
 ![](img/2024-10-01-18-15-08.png)
 
@@ -226,8 +231,6 @@ Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al 
 ![](img/2024-10-01-18-16-35.png)
 
 ![](img/2024-10-01-18-17-16.png)
-
-![](img/2024-10-01-18-17-20.png)
 
 ## Videos
 

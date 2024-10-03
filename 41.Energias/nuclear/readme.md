@@ -8,12 +8,12 @@ Está compuesto por un núcleo central y una nube de electrones que giran alrede
 
 El **núcleo** es el centro del átomo, donde se encuentran los protones (partículas con carga positiva) y los neutrones (partículas sin carga).
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 La energía nuclear es la energía que mantiene **unidas las partículas en el núcleo** de un átomo, es decir, los protones y neutrones.
 Esta energía se debe a la **fuerza nuclear fuerte**, vence la repulsión eléctrica que existiría entre los protones cargados positivamente.
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 La energía almacenada en los núcleos atómicos se libera o se absorbe durante procesos nucleares.
 
@@ -22,21 +22,21 @@ La energía nuclear es la energía que se libera:
 - Al **dividir** el núcleo de un átomo (**fisión** nuclear)
 - Al **unir** dos átomos para convertirse en un átomo individual (**fusión** nuclear).
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 ## Fisión nuclear
 
 Se produce cuando un átomo de un elemento pesado, como el **uranio** o el **plutonio**, es bombardeado con un neutrón.
 El neutrón provoca la división del núcleo en dos núcleos más pequeños, liberando una gran cantidad de energía.
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 ## Fusión nuclear
 
 Se produce cuando dos átomos ligeros, como el **hidrógeno** o el **helio**, se combinan para formar un átomo más pesado.
 La fusión requiere una gran cantidad de energía para iniciarse, pero libera una gran cantidad de energía cuando se produce.
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 ## Centrales nucleares
 
@@ -76,7 +76,7 @@ Una central PWR tiene 3 circuitos hidráulicos principales.
 - El secundario refrigera el primario formando vapor, que mueve una turbina antes de reutilizarse.
 - El terciario refrigera el secundario y proviene de un río, mar o lago.
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 Dentro del reactor nuclear, los núcleos de materiales radiactivos se dividen en una reacción de fisión nuclear.
 
@@ -94,7 +94,7 @@ El vapor a alta presión generado en el circuito secundario es dirigido hacia un
 
 Al pasar por las **palas** de las turbinas, el vapor hace que estas giren rápidamente, transformando la energía térmica en energía mecánica.
 
-![alt text](image-6.png)
+![alt text](img/image-6.png)
 
 Las turbinas están conectadas a un generador eléctrico, que convierte la energía mecánica en **electricidad** mediante la rotación de un rotor dentro de un campo magnético.
 
@@ -105,7 +105,7 @@ El vapor, trTras pasar por las turbinas, el vapor se enfría y se condensa en ag
 El edificio de contención se considera el edificio más característico de una central nuclear y alberga el reactor y todos los elementos que contengan material radiactivo.
 Es una estructura hermética de hormigón armado o pretensado, que, por norma general, suele tener forma esférica o cilíndrica rematada en cúpula semiesférica, cuyas paredes interiores van recubiertas de chapas de acero soldadas que aseguran la estanqueidad.
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 Su misión principal es aislar y proteger el exterior de la emisión de la radiación derivada del funcionamiento del reactor
 o consecuencia de un accidente. Su arquitectura está diseñada para soportar, tanto el propio peso, como cargas accidentales como podrían ser
@@ -113,13 +113,13 @@ o consecuencia de un accidente. Su arquitectura está diseñada para soportar, t
 - Terremotos u otros fenómenos naturales
 - Escapes de gases radiactivos
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 ## Preparación del combustible de las centrales
 
 El uranio es un elemento que se encuentra en la naturaleza en forma de minerales, como la **uranitita**.
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
 La minería se utiliza para extraer el mineral de uranio de depósitos subterráneos o de superficie.
 Se muele y procesa para convertirlo en un concentrado de uranio.
@@ -162,7 +162,7 @@ Una vez que se ha enriquecido el uranio, se convierte en forma de pastillas sól
 Las pastillas de polvo de uranio se conocen como pellets de combustible nuclear.
 Están hechas de uranio enriquecido en forma de dióxido de uranio (UO₂) y se comprimen y sintetizan en cilindros sólidos
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
 ## Formación del combustible
 
@@ -175,7 +175,7 @@ Varios conjuntos de estos elementos combustibles se introducen en la **vasija de
 
 Estos elementos se insertan y se extraen cuando se hacen operaciones de recarga de combustible.
 
-![alt text](image-12.png)
+![alt text](img/image-12.png)
 
 ## Transporte y carga
 
@@ -194,13 +194,13 @@ Para controlar la reacción, se introduce en el reactor un **moderador** que “
 
 En la parte superior de la vasija se encuentran las barras de control (Control rods)
 
-![alt text](image-15.png)
+![alt text](img/image-15.png)
 
 En un reactor nuclear son componentes esenciales que controlan la reacción de fisión al absorber neutrones.
 
 Al introducir o retirar las barras de control, se puede regular la velocidad de la reacción y, por tanto, la energía eléctrica generada.
 
-![alt text](image-14.png)
+![alt text](img/image-14.png)
 
 ## Armamento nuclear
 
@@ -208,11 +208,11 @@ Durante la Segunda Guerra Mundial, Estados Unidos lanzó bombas atómicas sobre 
 Estas bombas, utilizaban la fisión nuclear de uranio y plutonio, respectivamente.
 La enorme energía liberada al dividir átomos produjo explosiones devastadoras, matando a cientos de miles de personas y marcando el fin de la guerra.
 
-![alt text](image-16.png)
+![alt text](img/image-16.png)
 
 La estructura interna de una bomba atómica está compuesta por una cápsula de uranio o plutonio con un núcleo de uranio enriquecido, una caja de explosivos, una cápsula de iniciación y una batería. La cápsula de uranio o plutonio contiene el material fisionable que es la fuente de energía de la bomba. La caja de explosivos se utiliza para comprimir el material fisionable y aumentar su temperatura y presión para iniciar la reacción nuclear. La cápsula de iniciación contiene una mezcla de combustible y oxígeno para asegurar la reacción nuclear. La batería alimenta el circuito eléctrico para activar la cápsula de iniciación.
 
-![alt text](image-29.png)
+![alt text](img/image-29.png)
 
 Tras los eventos de Hiroshima y Nagasaki, se comprendió mejor la fisión nuclear. Sin embargo, en lugar de usar este poder para armas, se empezó a investigar su uso con fines pacíficos, como la generación de electricidad.
 
@@ -230,7 +230,7 @@ El TNP se divide en tres pilares:
 
 La primera vez que se produjo electricidad en un reactor nuclear fue el 20 de diciembre de **1951** en la estación experimental de **Arco, en Idaho (EEUU)**
 
-![alt text](image-17.png)
+![alt text](img/image-17.png)
 
 ## Primera central
 
@@ -240,23 +240,23 @@ El 27 de junio de 1954 comenzó a funcionar la primera central nuclear del mundo
 
 A finales de 2023, en el mundo existían **412 reactores** nucleares en operación, de los que 100, están en la Unión Europea.
 
-![alt text](image-19.png)
+![alt text](img/image-19.png)
 
 A raíz de los accidentes nucleares de los años 70 y 80, el ritmo de construcción de nuevas centrales descendió.
 
-![alt text](image-20.png)
+![alt text](img/image-20.png)
 
 ## La primera central nuclear de España
 
 La primera central nuclear en España fue la **Central Nuclear José Cabrera**, comúnmente conocida como Zorita. Comenzó a operar el 13 de agosto de 1968. La planta estuvo operativa **hasta el 30 de abril de 2006**.  Fue la primera instalación de este tipo en el país y marcó el inicio de la energía nuclear en España.
 
-![alt text](image-21.png)
+![alt text](img/image-21.png)
 
 ## Centrales nucleares de España
 
 En España se encuentran en funcionamiento 5 centrales nucleares, 2 de las cuales disponen de 2 reactores cada una (Almaraz y Ascó), por lo que suman 7 reactores de agua ligera, con una potencia total instalada de 7.398,7 MWe.
 
-![alt text](image-22.png)
+![alt text](img/image-22.png)
 
 Las centrales nucleares de Santa María de Garoña, Jose Cabrera y Vandellós I se encuentran en desmantelamiento.
 
@@ -282,21 +282,21 @@ Las centrales nucleares requieren un **mantenimiento** regular y una **gestión 
 Cada 18 meses, se detiene la operación de una central nuclear para sustituir un tercio del combustible nuclear.
 Sustitución del Combustible.
 
-![alt text](image-23.png)
+![alt text](img/image-23.png)
 
 El proceso implica extraer 60 elementos de combustible nuclear, cada uno con dimensiones de 20 cm x 20 cm x 4 metros.
 
-![alt text](image-24.png)
+![alt text](img/image-24.png)
 
 ## Almacenamiento Temporal
 
 El combustible gastado se almacena en piscinas profundas, generalmente ubicadas fuera del edificio de contención del reactor, durante al menos 5 años.
 
-![alt text](image-25.png)
+![alt text](img/image-25.png)
 
 El agua en estas piscinas actúa como blindaje, reduciendo la dosis radiactiva a la mitad cada 7 cm.
 
-![alt text](image-26.png)
+![alt text](img/image-26.png)
 
 Debido al aumento del combustible gastado, se están implementando métodos de almacenamiento a largo plazo.
 
@@ -305,7 +305,7 @@ Debido al aumento del combustible gastado, se están implementando métodos de a
 El combustible gastado se coloca en contenedores de acero inoxidable con blindaje de plomo, cada uno con capacidad para 35 elementos.
 Estos contenedores se almacenan en una instalación subterránea a 500 metros de profundidad en una formación geológicamente estable.
 
-![alt text](image-27.png)
+![alt text](img/image-27.png)
 
 **Finlandia** está construyendo actualmente una instalación de este tipo.
 Este método ofrece seguridad a largo plazo, ya que el combustible no puede explotar, fundirse ni disolverse en agua.
@@ -351,7 +351,7 @@ Para controlarla, se emplea el **confinamiento magnético** (en reactores como e
 
 Hoy en día, la fusión aún no es comercialmente viable, pero tiene el potencial de proporcionar energía limpia y casi ilimitada si se resuelven los desafíos tecnológicos del confinamiento estable y el mantenimiento del plasma.
 
-![alt text](image-30.png)
+![alt text](img/image-30.png)
 
 El Sol es una gigantesca esfera de plasma que genera su energía a través de la fusión nuclear, un proceso en el que los núcleos de hidrógeno se combinan bajo condiciones extremas de temperatura y presión para formar helio.
 Durante esta fusión, una pequeña cantidad de masa se convierte en una enorme cantidad de energía

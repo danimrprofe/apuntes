@@ -59,9 +59,9 @@ En la actualidad, existen alrededor de 2.300 **molinos de extracción de agua** 
 
 ## Densidad del aire
 
-La densidad del aire (\(\rho\)) varía en función de la temperatura y puede ser calculada utilizando la siguiente ecuación derivada de la ley de los gases ideales:
+La densidad del aire, que se representa con la lerta **ρ** (rho) varía en función de la temperatura y la presión, y puede ser calculada utilizando la siguiente ecuación derivada de la ley de los gases ideales:
 
-![](img/2024-10-04-08-08-10.png)
+![](img/2024-10-04-09-11-40.png)
 
 Donde:
 
@@ -131,9 +131,9 @@ La relación entre el área y la potencia de un aerogenerador es fundamental par
 
 #### Área de barrido
 
-El área de barrido (\(A\)) es el área que ocupan las aspas del aerogenerador cuando giran. Se calcula como el área del círculo formado por las aspas y se determina mediante la siguiente fórmula:
+El área de barrido es el área que ocupan las aspas del aerogenerador cuando giran. Se calcula como el **área del círculo** formado por las aspas y se determina mediante la siguiente fórmula:
 
-![](img/2024-10-04-08-09-18.png)
+![](img/2024-10-04-09-14-40.png)
 
 Donde:
 
@@ -145,10 +145,9 @@ Donde:
 
 La potencia del viento (\(P\)) que atraviesa el área de barrido se calcula utilizando la siguiente fórmula:
 
-![](img/2024-10-04-08-10-04.png)
+![](img/2024-10-04-09-13-58.png)
 
 Donde:
-
 
 - P es la potencia del viento (W)
 - **ρ** es la densidad del aire (kg/m³).
@@ -167,13 +166,26 @@ La fórmula para la potencia del viento muestra que la potencia disponible aumen
 
 ![](img/2024-10-01-18-14-39.png)
 
+## Estructura de un aerogenerador
+
+![](img/2024-10-04-09-19-46.png)
+
+El **rotor** esta formado por:
+
+- **Pala o aspas**: Son los componentes que captan la energía del viento y la convierten en un movimiento rotacional. Normalmente, un aerogenerador tiene entre 2 y 3 aspas.
+- **Buje**: Es el punto de conexión entre las palas y el eje. Permite la rotación del rotor cuando el viento impacta las palas.
+
+La **torre** es la estructura que sostiene el rotor y la góndola a una altura considerable para aprovechar vientos más fuertes y consistentes. Suele ser de **acero** y puede tener forma **tubular** o de celosía.
+
+La **góndola** o nacelle es la carcasa situada en la parte superior de la torre que contiene el g**enerador, la caja de engranajes, el sistema de control y otros componentes** mecánicos y eléctricos. Protege estos equipos de las condiciones climáticas.
+
+![](img/2024-10-01-18-14-48.png)
+
 ## Nacelle
 
 La **nacelle** se situa en lo alto de la torre, y alberga varios componentes importantes, como el generador, la caja de engranajes (si la tiene), y el sistema de control. También contiene el mecanismo que permite rotar el aerogenerador para alinearlo con la dirección del viento.
 
 ![](img/2024-10-01-18-14-44.png)
-
-![](img/2024-10-01-18-14-48.png)
 
 El funcionamiento de un aerogenerador implica una serie de componentes interrelacionados que trabajan en conjunto para convertir la energía cinética del viento en energía eléctrica.
 
@@ -181,7 +193,11 @@ El funcionamiento de un aerogenerador implica una serie de componentes interrela
 - Este eje está conectado a una **caja de cambios**, que incrementa la velocidad de rotación del eje antes de que el movimiento se transfiera al **eje de alta velocidad**. Gracias a esta transformación de velocidad, el eje de alta velocidad puede girar a una velocidad mucho mayor, lo que es necesario para accionar el **generador**, que convierte la energía mecánica en energía eléctrica.
 - Por último, el **controlador** juega un papel crucial al supervisar y gestionar el funcionamiento del aerogenerador, asegurando que la energía generada se optimice y se ajuste según las variaciones en la velocidad del viento y las condiciones operativas, protegiendo así el sistema de posibles daños.
 
-![](img/2024-10-01-18-14-53.png)
+## Transformación de la electricidad
+
+A través de unos cables, la electricidad producida por el **generador**, se transporta hacia la base de la torre, y se lleva hacia un **transformador**, que se encargará de elevar la tensión para enviarla hacia la red eléctrica de distribución.
+
+![](img/2024-10-04-09-26-02.png)
 
 ## Construcción, transporte y montaje
 

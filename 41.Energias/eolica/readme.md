@@ -15,11 +15,10 @@ https://www.windfinder.com/
 
 https://www.aemet.es/es/eltiempo/prediccion/mapa_frentes
 
-<<<<<<< HEAD
+
 Durante el día, la tierra se calienta más rápido que el agua, creando vientos marinos (**brisas** marinas), y durante la noche ocurre lo contrario, con vientos terrestres (brisas terrestres).
-=======
+
 La **brisa** es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
->>>>>>> 8d4d59633751f9aedff888eff4dc77a6510d7261
 
 ![](img/2024-10-01-18-11-57.png)
 

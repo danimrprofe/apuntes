@@ -6,8 +6,9 @@
   - [04. Git](#04-git)
 - [05. Instalación de git](#05-instalación-de-git)
   - [06. Enlazar con Git con nuestra carpeta local y Github](#06-enlazar-con-git-con-nuestra-carpeta-local-y-github)
-  - [07. Guardar cambios](#07-guardar-cambios)
-  - [08. Actualizar carpeta local](#08-actualizar-carpeta-local)
+  - [07. Activar pages en nuestro repositorio](#07-activar-pages-en-nuestro-repositorio)
+  - [08. Guardar cambios](#08-guardar-cambios)
+  - [09. Actualizar carpeta local](#09-actualizar-carpeta-local)
 
 # Control de versiones
 
@@ -31,6 +32,18 @@ Es importante distinguir entre ``git`` y ``GitHub``.
 
 Si queremos guardar nuestro repositorio en ``GitHub``, tenemos que crearlo en la [página web de GitHub](http://github.com). Para ello, nos tendremos que registrar como usuarios previamente.
 
+Ve a github.com y crea una cuenta.
+
+![](img/2024-10-04-11-46-52.png)
+
+A partir de aquí sigue los pasos y registrate con la cuenta del instituto:
+
+![](img/2024-10-04-11-47-16.png)
+
+El password tiene que ser complejo, para que te salga en verde. De lo contrario, no te dejará continuar. Al menos ocho caracteres que incluyan un número y una letra minúscula
+
+![](img/2024-10-04-11-47-23.png)
+
 # 03. Crear un nuevo repositorio
 
 Para crear un repositorio nuevo en GitHub.
@@ -46,18 +59,6 @@ Decidimos si queremos que sea público o privado:
 ![](img/2024-10-04-11-40-03.png)
 
 Al crear el repositorio, este estará vacío.
-
-Ve a github.com y crea una cuenta.
-
-![](img/2024-10-04-11-46-52.png)
-
-A partir de aquí sigue los pasos y registrate con la cuenta del instituto:
-
-![](img/2024-10-04-11-47-16.png)
-
-El password tiene que ser complejo, para que te salga en verde. De lo contrario, no te dejará continuar. Al menos ocho caracteres que incluyan un número y una letra minúscula
-
-![](img/2024-10-04-11-47-23.png)
 
 Crea un repositorio nuevo (botón verde). Los repositorios son como carpetas donde guardaremos nuestros proyectos.
 
@@ -132,7 +133,23 @@ git push -u origin main
 
 Una vez seguidos estos pasos, el contenido de la carpeta se habrá sincronizado con GitHub. Lo podremos comprobar recargando la página. En lugar de las instrucciones anteriores, aparecerá un listado de archivos.
 
-## 07. Guardar cambios
+## 07. Activar pages en nuestro repositorio
+
+Si queremos que nuestro repositorio pueda también visitarse como página web, como si de un hosting se tratase, deberemos activar la opción de **pages** en nuestro repositorio.
+
+Vamos a settings:
+
+![](img/2024-10-04-14-16-28.png)
+
+En el menú izquierdo, pages:
+
+![](img/2024-10-04-14-16-55.png)
+
+Seleccionamos la rama (branch) que queremos desplegar, en este caso main:
+
+![](img/2024-10-04-14-18-03.png)
+
+## 08. Guardar cambios
 
 A partir de aquí, cada vez que queramos guardar cambios, necesitaremos hacer **add, commit y pushear**.
 
@@ -144,7 +161,7 @@ git push -u origin main
 
 En el mensaje entre comillas, introduciremos una descripción que nos ayude a saber qué cambios se han realizado.
 
-## 08. Actualizar carpeta local
+## 09. Actualizar carpeta local
 
 Si queremos actualizar los cambios locales en otro ordenador a partir de un repositorio porque hemos modificado nosotros u otro usuario parte del contenido, tendremos que **pullear** los cambios. Para ello utilizaremos ``git pull`` (sin argumentos).
 

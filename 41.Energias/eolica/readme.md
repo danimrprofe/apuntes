@@ -10,19 +10,27 @@ Se puede utilizar:
 
 ![](img/2024-10-01-18-11-39.png)
 
+El aire se mueve desde zonas de alta presión (más frío y denso) hacia zonas de baja presión (más caliente y menos denso).
+
+La **rotación** terrestre desvía el movimiento del aire, generando patrones de vientos curvados en lugar de lineales. En el hemisferio norte, los vientos se desvían hacia la derecha, y en el hemisferio sur, hacia la izquierda.
+
 ![](img/2024-10-01-18-11-51.png)
 
 https://www.windfinder.com/
 
 https://www.aemet.es/es/eltiempo/prediccion/mapa_frentes
 
-La brisa es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
+Durante el día, la tierra se calienta más rápido que el agua, creando vientos marinos (**brisas** marinas), y durante la noche ocurre lo contrario, con vientos terrestres (brisas terrestres).
 
 ![](img/2024-10-01-18-11-57.png)
 
 ![](img/2024-10-01-18-12-12.png)
 
+Las diferentes direcciones del viento
+
 ![](img/2024-10-01-18-12-08.png)
+
+Escala de velocidades
 
 ![](img/2024-10-01-18-12-24.png)
 
@@ -32,15 +40,14 @@ La brisa es un tipo de viento ligero local motivado por los movimientos de masas
 
 La densidad del aire (\(\rho\)) varía en función de la temperatura y puede ser calculada utilizando la siguiente ecuación derivada de la ley de los gases ideales:
 
-\[
-\rho = \frac{P}{R \cdot T}
-\]
+![](img/2024-10-04-08-08-10.png)
 
 Donde:
-- \(\rho\) es la densidad del aire (kg/m³),
-- \(P\) es la presión atmosférica (Pa),
-- \(R\) es la constante de los gases para el aire seco, que tiene un valor de aproximadamente \(287.05 \, \text{J/(kg·K)}\),
-- \(T\) es la temperatura absoluta en Kelvin (K), que se obtiene sumando 273.15 a la temperatura en grados Celsius.
+
+- ![](img/2024-10-04-08-08-32.png) es la densidad del aire (kg/m³)
+- **P** es la presión atmosférica (Pa),
+- **R** es la constante de los gases para el aire seco, que tiene un valor de aproximadamente \(287.05 \, \text{J/(kg·K)}\),
+- **T** es la temperatura absoluta en Kelvin (K), que se obtiene sumando 273.15 a la temperatura en grados Celsius.
 
 ### Relación con la temperatura
 
@@ -113,28 +120,26 @@ La relación entre el área y la potencia de un aerogenerador es fundamental par
 
 El área de barrido (\(A\)) es el área que ocupan las aspas del aerogenerador cuando giran. Se calcula como el área del círculo formado por las aspas y se determina mediante la siguiente fórmula:
 
-\[
-A = \pi \cdot r^2
-\]
+![](img/2024-10-04-08-09-18.png)
 
 Donde:
-- \(A\) es el área de barrido (m²).
-- \(r\) es el radio del rotor (la longitud de una de las aspas, en metros).
-- \(\pi\) es una constante aproximadamente igual a 3.1416.
+
+- **A** es el área de barrido (m²).
+- **r** es el radio del rotor (la longitud de una de las aspas, en metros).
+- **π** es una constante aproximadamente igual a 3.1416.
 
 #### Potencia del viento
 
 La potencia del viento (\(P\)) que atraviesa el área de barrido se calcula utilizando la siguiente fórmula:
 
-\[
-P = \frac{1}{2} \cdot \rho \cdot A \cdot v^3
-\]
+![](img/2024-10-04-08-10-04.png)
 
 Donde:
-- \(P\) es la potencia del viento (W).
-- \(\rho\) es la densidad del aire (kg/m³).
-- \(A\) es el área de barrido (m²).
-- \(v\) es la velocidad del viento (m/s).
+
+- P es la potencia del viento (W)
+- **ρ** es la densidad del aire (kg/m³).
+- A es el área de barrido (m²).
+- v es la velocidad del viento (m/s).
 
 #### Relación entre área y potencia
 

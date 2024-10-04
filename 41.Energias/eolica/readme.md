@@ -15,7 +15,6 @@ https://www.windfinder.com/
 
 https://www.aemet.es/es/eltiempo/prediccion/mapa_frentes
 
-
 Durante el día, la tierra se calienta más rápido que el agua, creando vientos marinos (**brisas** marinas), y durante la noche ocurre lo contrario, con vientos terrestres (brisas terrestres).
 
 La **brisa** es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
@@ -150,17 +149,11 @@ La potencia del viento (\(P\)) que atraviesa el área de barrido se calcula util
 
 Donde:
 
-<<<<<<< HEAD
+
 - P es la potencia del viento (W)
 - **ρ** es la densidad del aire (kg/m³).
 - A es el área de barrido (m²).
 - v es la velocidad del viento (m/s).
-=======
-- \(P\) es la potencia del viento (W).
-- \(\rho\) es la densidad del aire (kg/m³).
-- \(A\) es el área de barrido (m²).
-- \(v\) es la velocidad del viento (m/s).
->>>>>>> 8d4d59633751f9aedff888eff4dc77a6510d7261
 
 #### Relación entre área y potencia
 

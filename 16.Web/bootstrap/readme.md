@@ -33,7 +33,23 @@ Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta `<met
 </html>
 ```
 
-A continuación añadimos los enlaces para CSS y código javascript de Bootstrap:
+**2) Etiquetas de enlace CSS y Javascript**
+
+A continuación añadimos los enlaces para CSS y código javascript de Bootstrap.
+
+El enlace CSS hará referencia a la hoja de estilos de bootstrap.
+
+```html
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+```
+
+El enlace JS hará referencia al script Javascript de bootstrap. Lo podemos insertar eh `head` o bien al final del `body`.
+
+```html
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+```
+
+Así quedaría una página de ejemplo:
 
 ```html
 <!doctype html>
@@ -50,6 +66,10 @@ A continuación añadimos los enlaces para CSS y código javascript de Bootstrap
   </body>
 </html>
 ```
+
+A partir de aquí, nuestra página adoptará ya ciertos estilos de bootstrap, como la fuente de letra del texto, entre otros.
+
+Para todo lo demás, tendremos que incluir los códigos necesarios en los diferentes elementos de nuestra página.
 
 ## 3. Sistema de Cuadrícula (Grid System)
 

@@ -236,8 +236,8 @@ interesar dar un salto desde una posición a otra determinada.
 Podemos realizarlo de dos formas:
 
 ```html
-<A HREF="#marca"> Zona Activa </A> (marca puede ser cualquier palabra).
-<A NAME="marca">Zona Activa </A> (marca puede ser cualquier palabra).
+<a HREF="#marca"> Zona Activa </A> (marca puede ser cualquier palabra).
+<a NAME="marca">Zona Activa </A> (marca puede ser cualquier palabra).
 ```
 
 ## 7.2 ENLACES A OTRA PÁGINA
@@ -246,7 +246,7 @@ En este caso, simplemente sustituimos lo que hemos llamado marca (el
 destino del enlace) por el nombre del fichero html.
 
 ```html
-<A HREF="web02.html"> Zona Activa </A>
+<a HREF="web02.html"> Zona Activa </A>
 ```
 
 Si queremos hacer un enlace a una dirección web (URL), simplemente
@@ -254,21 +254,22 @@ sustituimos lo que hemos llamado marca (el destino del enlace) por la dirección
 la página web.
 
 ```html
-<A HREF=“http://colegioliceosorolla.es"> Zona Activa </A>
+<a href="http://colegioliceosorolla.es"> Zona Activa </A>
 ```
 
 ## 7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.
 
 La estructura de la etiqueta es:
+
 ```html
-<A HREF="mailto: dirección de email"> Zona Activa </A>
+<a HREF="mailto: dirección de email"> Zona Activa </A>
 ```
 
 ## 7.4 ENLACE EN UNA NUEVA VENTANA.
 
 Se utiliza el comando TARGET. La estructura de la etiqueta será:
 ```html
-<A HREF="indice.html" TARGET="ventana2"> Nueva ventana </A>
+<a HREF="indice.html" TARGET="ventana2"> Nueva ventana </A>
 ```
 
 # 8. IMÁGENES CON HTML
@@ -276,8 +277,9 @@ Se utiliza el comando TARGET. La estructura de la etiqueta será:
 En HTML se debe indicar el nombre y la localización de un fichero que
 contiene una imagen. Para ello utilizamos la etiqueta IMG con el comando SRC que
 sirve para indicar donde se encuentra la imagen. La estructura de la etiqueta es:
+
 ```html
-<IMG SRC=“C://Mis Documentos/Imagenes/imagen.gif">
+<img src="imagen.gif">
 ```
 ### 8.1 COMANDOS PARA LAS IMÁGENES.
 
@@ -312,22 +314,19 @@ línea de texto en la que está. Puede tomar los siguientes valores:
 
 ## Modificar dimensiones
 
-- WIDTH: Redefine el ancho de la imagen.
-- HEIGHT: Redefine el alto de la imagen.
--
+En HTML, puedes usar los atributos width, height y border para definir el ancho, alto y borde de una imagen. A continuación te muestro cómo utilizarlos dentro de la etiqueta <img>
+
 ```html
-![imagen](images/flor.gif)
+<img src="ruta-de-la-imagen.jpg" width="500" height="300" border="5" alt="Descripción de la imagen">
 ```
 
-- BORDER: Dibuja un marco alrededor de la imagen.
--
-```html
-![imagen](images/flor.gif)
-```
+- **`width="500"`**: Define el ancho de la imagen en píxeles. Puedes usar tanto píxeles como porcentaje (`%`) si quieres que el ancho sea relativo al contenedor.
+- **`height="300"`**: Define la altura de la imagen en píxeles o porcentajes.
+- **`border="5"`**: Define un borde alrededor de la imagen. Este atributo está obsoleto en HTML5 y se recomienda usar CSS para personalizar el borde.
 
 ## Imágenes y enlaces
 
-Los hipervínculos pueden ser también definidos sobre imágenes de tal forma
+Los **hipervínculos** pueden ser también definidos sobre **imágenes** de tal forma
 que al hacer clic con el ratón sobre algún punto de la superficie de éstas, se pase al documento correspondiente.
 
 Esto suele ser utilizado sobre todo para introducir botones de navegación en
@@ -335,7 +334,9 @@ las páginas HTML. Una imagen que actúa de hipervínculo se distingue mediante 
 borde de color alrededor de ésta.
 
 ```html
-<A HREF="forms.htm">![imagen](images/boton1.gif)</A>
+<a href="https://www.ejemplo.com">
+    <img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen" style="width:500px">
+</a>
 ```
 
 # 9. Listas
@@ -357,7 +358,7 @@ HTML define varios tipos de listas: **ordenadas** y **no ordenadas**
 
 Los elementos de la lista irán precedidos por un símbolo (fijo por defecto) que
 puede variar según el nivel de anidamiento de la lista. Cada elemento de la misma
-llevará la etiqueta: <LI> Primer elemento </LI>
+llevará la etiqueta: ``<LI> Primer elemento </LI>``
 
 Ejemplo de lista no ordenada:
 
@@ -374,6 +375,7 @@ Ejemplo de lista no ordenada:
 ```html
 <OL> Elementos de la lista </OL>
 ```
+
 La etiqueta `<OL>` se utiliza para una lista ordenada o numerada. Cada marca
 `<LI>` incrementará el número que se visualizará delante del elemento de la lista.
 
@@ -409,6 +411,7 @@ Las tablas son una parte importante en HTML y se utilizan para presentar datos e
 ## Etiquetas
 
 La etiqueta general, que engloba a todas las demás es ``<TABLE>`` y ``</TABLE>``.
+
 ```html
 <TABLE>
 [Resto de las etiquetas]

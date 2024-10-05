@@ -164,10 +164,8 @@ Un párrafo siempre comienza en una nueva línea y los navegadores agregan autom
 
 Para destacar alguna parte del texto se pueden usar las siguientes etiquetas:
 
-- NEGRITA: <B> Texto en negrita </B>
-- CURSIVA: <I> Texto en cursiva </I>
-- SUPERÍNDICES: <SUP> Texto como superíndice </SUP>
-- SUBÍNDICES: <SUB> Texto como subíndice </SUB>
+- NEGRITA: ``<B> Texto en negrita </B>``
+- CURSIVA: ``<I> Texto en cursiva </I>``
 
 ## Estilos de párrafo
 

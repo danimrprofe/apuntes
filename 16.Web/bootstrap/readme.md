@@ -13,6 +13,8 @@
 
 # Bootstrap
 
+![](img/2024-10-05-18-49-26.png)
+
 ## 1. ¿Qué es Bootstrap?
 
 Bootstrap es un **framework** de código abierto que facilita el desarrollo de sitios web y aplicaciones

@@ -1,4 +1,18 @@
 
+- [Bootstrap](#bootstrap)
+  - [1. ¿Qué es Bootstrap?](#1-qué-es-bootstrap)
+  - [2. Cómo Incluir Bootstrap en tu Proyecto](#2-cómo-incluir-bootstrap-en-tu-proyecto)
+  - [3. Clases en Bootstrap](#3-clases-en-bootstrap)
+  - [4. Sistema de Cuadrícula (Grid System)](#4-sistema-de-cuadrícula-grid-system)
+  - [5. Margin i Padding](#5-margin-i-padding)
+  - [6. Text i Alineació](#6-text-i-alineació)
+  - [7. Componentes Bootstrap](#7-componentes-bootstrap)
+  - [8. Componente card](#8-componente-card)
+  - [9. Componente nav](#9-componente-nav)
+  - [10. Componente carroussel](#10-componente-carroussel)
+
+# Bootstrap
+
 ## 1. ¿Qué es Bootstrap?
 
 Bootstrap es un **framework** de código abierto que facilita el desarrollo de sitios web y aplicaciones
@@ -71,30 +85,54 @@ A partir de aquí, nuestra página adoptará ya ciertos estilos de bootstrap, co
 
 Para todo lo demás, tendremos que incluir los códigos necesarios en los diferentes elementos de nuestra página.
 
-## 3. Sistema de Cuadrícula (Grid System)
+## 3. Clases en Bootstrap
 
-El sistema de cuadrícula de Bootstrap se basa en una estructura de 12 columnas, lo que facilita
-crear diseños flexibles y responsivos. Se usan clases de CSS como row y col .
+En Bootstrap, las ``clases predefinidas`` juegan un papel crucial para aplicar estilos de forma rápida y consistente. A menudo se usan en lugar de escribir estilos CSS personalizados, lo que acelera el proceso de desarrollo y asegura que el diseño sea consistente y responsivo.
 
-Clases Responsivas: Puedes ajustar las columnas para diferentes tamaños de pantalla
-utilizando clases como col-sm-* , col-md-* , col-lg-* , donde * es el número de columnas.
+Ejemplos:
 
-## 4. Componentes de Bootstrap
+```html
+<div class="p-3">Contenido con padding</div>
+<div class="col-sm-6 col-md-4">Columna</div>
+```
 
-Bootstrap ofrece una amplia gama de componentes predefinidos que puedes utilizar sin necesidad
-de diseñarlos desde cero. Algunos de los más comunes son:
-Botones: Utiliza la clase btn para crear botones estilizados.
+Estos nombres de clases están definidos en Bootstrap, y podemos usarlos incluyéndolos en el ``atributo class ``de un elemento HTML.
 
-Barra de navegación: Un componente clave para la navegación de tu sitio.
+**Combinación de clases**
 
-Cards: Una manera fácil de mostrar contenido en cajas.
+En Bootstrap, puedes combinar varias clases en un solo elemento HTML para aplicar múltiples estilos o comportamientos de diseño.
 
-## 5. Utilidades de Bootstrap
+En este ejemplo, se usan 3 clases sobre la misma capa:
 
-Bootstrap también ofrece una serie de clases utilitarias que permiten aplicar estilos rápidos sin
-necesidad de CSS personalizado.
+```html
+<div class="bg-warning p-3 m-4">
+  Este es un bloque con fondo de advertencia, padding y margen.
+</div>
+```
 
-## Ejemplo de una fila con dos columnas de igual ancho
+Explicación de las clases:
+
+- ``bg-warning``: Aplica un fondo de color de advertencia (amarillo).
+- ``p-3``: Añade un padding (relleno) de 1rem alrededor del contenido.
+- ``m-4``: Añade un margen de 1.5rem alrededor del bloque.
+
+## 4. Sistema de Cuadrícula (Grid System)
+
+El **sistema de cuadrícula** de Bootstrap se basa en una estructura de 12 columnas, lo que facilita crear diseños flexibles y responsivos.
+
+En resumen, disponemos de 12 columnas que podemos repartir entre capas, con la condición de que sumen 12, con cualquier combinación posible.
+
+Se usan clases de CSS como row y col .
+
+**Ejemplo de una fila con dos columnas de igual ancho**
+
+Aquí no aparece toda la página web, por lo que todo lo que a continuación aparece deberá estar dentro del `body` de nuestra página web.
+
+- La capa container (o container-fluid) es necesaria para que bootstrap funcione.
+- Dentro de ella, la capa con clase ``row`` actuará como contenedor de fila.
+- Dentro de ella, dos columnas de igual ancho (6+6 = 12).
+
+Estas columnas quedarán una al lado de la otra, con igual ancho. A partir de cierto ancho de pantalla, una pasará a colocarse debajo de la otra. Esto es un comportamiento ``responsivo``, que responde a las características de la pantalla en la que se está visualizando la página web. Esta característica se llama ``responsive design``, y viene incorporada en Bootstap.
 
 ```html
 <div class="container">
@@ -105,18 +143,12 @@ necesidad de CSS personalizado.
 </div>
 ```
 
-## Ejemplo del componente card
+Podemos ajustar las columnas para diferentes tamaños de pantalla
+utilizando clases como ``col-sm-* , col-md-* , col-lg-* ``, donde * es el número de columnas.
 
-```html
-<div class="card" style="width: 18rem;">
- <div class="card-body">
- <h5 class="card-title">Título de la Tarjeta</h5>
- <p class="card-text">Texto de ejemplo dentro de una tarjeta de Bootstrap.</p> <a href="#" class="btn btn-primary">Ir a algún lugar</a>
-</div>
-</div>
-```
+Las letras  ``sm, md o lg`` hacen referencia al punto de ancho a partir del cual cambia la disposición de las capas.
 
-## Margin i Padding
+## 5. Margin i Padding
 
 Bootstrap 5 proporciona classes per ajustar fàcilment el **marge** (m-) i el **farcment** o *padding* (p-). Les classes es basen en un sistema de nombres del 0 al 5, on cada número representa un increment del marge o del *padding* en unitats relatives.
 
@@ -136,7 +168,7 @@ Exemples:
 - `mt-3`: marge només a la part superior.
 - `px-4`: *padding* horitzontal (esquerra i dreta).
 
-## Text i Alineació
+## 6. Text i Alineació
 
 Bootstrap ofereix classes per ajustar fàcilment l'alineació del text:
 
@@ -151,3 +183,132 @@ També hi ha altres utilitats per estilitzar i modificar el text:
 
 Pots ajustar l'alineació del text de manera responsable segons la mida de pantalla:
 - **text-sm-left**, **text-md-center**, **text-lg-right**, etc. Això permet canviar l'alineació del text a mesura que la pantalla canvia de mida.
+
+## 7. Componentes Bootstrap
+
+Un **componente Bootstrap** es un bloque predefinido de código que sigue los principios del framework Bootstrap para proporcionar estilos, comportamiento interactivo y funcionalidades de diseño responsivo.
+
+Estos componentes están diseñados para ayudarte a crear **interfaces de usuario (UI)** modernas y atractivas de manera **rápida y fácil**, sin tener que escribir todo el código CSS o JavaScript desde cero.
+
+## 8. Componente card
+
+El ``componente Card`` de Bootstrap es una forma versátil y estilizada de mostrar información agrupada dentro de un contenedor. Puedes usar las tarjetas para mostrar contenido como texto, imágenes, listas de enlaces, botones y más.
+
+```html
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título de la Tarjeta</h5>
+    <p class="card-text">Texto de ejemplo dentro de una tarjeta de Bootstrap.</p> <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+  </div>
+</div>
+```
+
+## 9. Componente nav
+
+El **componente Nav** de Bootstrap se utiliza para crear menús de navegación. Este componente es versátil y te permite diseñar tanto menús horizontales como verticales, barras de pestañas y menús estilo "píldora".
+
+Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegación Horizontal</title>
+  <!-- Incluye Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Deshabilitado</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Incluye Bootstrap JS y Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
+
+## 10. Componente carroussel
+
+El ``componente Carrusel`` en Bootstrap te permite mostrar una serie de imágenes, texto o contenido en formato de diapositivas que pueden desplazarse automáticamente o mediante controles de navegación.
+
+Ejemplo:
+
+```html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Bootstrap</title>
+  <!-- Incluye Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicadores opcionales (puntos) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+  </div>
+
+  <!-- Contenido del carrusel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagen 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Primera diapositiva</h5>
+        <p>Texto descriptivo de la primera diapositiva.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagen 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Segunda diapositiva</h5>
+        <p>Texto descriptivo de la segunda diapositiva.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Imagen 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Tercera diapositiva</h5>
+        <p>Texto descriptivo de la tercera diapositiva.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles de navegación izquierda/derecha -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+<!-- Incluye Bootstrap JS y Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```

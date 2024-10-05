@@ -13,6 +13,10 @@ Características principales:
 
 ##  2. Cómo Incluir Bootstrap en tu Proyecto
 
+Para que todas las caracterísitcas de Bootstrap funcionen, a nuestras páginas web les tendremos que agregar las etiquetas necesarias.
+
+**1) Etiqueta meta viewport**
+
 Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta `<meta name="viewport">` para que la página tenga comportamiento responsivo en dispositivos móviles.
 
 ```html

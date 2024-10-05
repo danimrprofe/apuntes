@@ -3,6 +3,11 @@
 
 La energía eólica es una forma de **energía cinética** producida por el movimiento del viento. El viento se genera debido a las **diferencias en la insolación** (cantidad de radiación solar recibida) en distintas áreas del planeta. Estas diferencias provocan variaciones de temperatura y presión, que a su vez generan el flujo de aire que conocemos como viento.
 
+Se puede utilizar:
+
+- Directamente (barcos de vela, molinos de viento para moler)
+- Transformada en electricidad, mediante aerogeneradores.
+
 ![](img/2024-10-01-18-11-39.png)
 
 El aire se mueve desde zonas de alta presión (más frío y denso) hacia zonas de baja presión (más caliente y menos denso).
@@ -17,8 +22,6 @@ https://www.aemet.es/es/eltiempo/prediccion/mapa_frentes
 
 Durante el día, la tierra se calienta más rápido que el agua, creando vientos marinos (**brisas** marinas), y durante la noche ocurre lo contrario, con vientos terrestres (brisas terrestres).
 
-La **brisa** es un tipo de viento ligero local motivado por los movimientos de masas de aire debido al heterogéneo calentamiento del relieve por el Sol.
-
 ![](img/2024-10-01-18-11-57.png)
 
 ![](img/2024-10-01-18-12-12.png)
@@ -31,9 +34,35 @@ Escala de velocidades
 
 ![](img/2024-10-01-18-12-24.png)
 
-La intensidad del viento varía también geográficamente.
-
 ![](img/2024-10-01-18-12-29.png)
+
+## Densidad del aire
+
+La densidad del aire (\(\rho\)) varía en función de la temperatura y puede ser calculada utilizando la siguiente ecuación derivada de la ley de los gases ideales:
+
+![](img/2024-10-04-08-08-10.png)
+
+Donde:
+
+- ![](img/2024-10-04-08-08-32.png) es la densidad del aire (kg/m³)
+- **P** es la presión atmosférica (Pa),
+- **R** es la constante de los gases para el aire seco, que tiene un valor de aproximadamente \(287.05 \, \text{J/(kg·K)}\),
+- **T** es la temperatura absoluta en Kelvin (K), que se obtiene sumando 273.15 a la temperatura en grados Celsius.
+
+### Relación con la temperatura
+
+- A medida que la **temperatura aumenta**, la **densidad del aire disminuye**, porque el aire se expande cuando se calienta.
+- Cuando la **temperatura disminuye**, la **densidad del aire aumenta**, ya que el aire se contrae al enfriarse.
+
+Este fenómeno es importante en el contexto de la energía eólica, ya que la densidad del aire afecta directamente la cantidad de energía que un aerogenerador puede capturar.
+
+![](img/2024-10-01-18-12-51.png)
+
+![](img/2024-10-01-18-13-04.png)
+
+![](img/2024-10-01-18-13-19.png)
+
+![](img/2024-10-01-18-13-23.png)
 
 ## Molinos antiguos
 
@@ -57,36 +86,6 @@ En la actualidad, existen alrededor de 2.300 **molinos de extracción de agua** 
 
 ![](img/2024-10-01-18-14-06.png)
 
-## Densidad del aire
-
-La densidad del aire, que se representa con la lerta **ρ** (rho) varía en función de la temperatura y la presión, y puede ser calculada utilizando la siguiente ecuación derivada de la ley de los gases ideales:
-
-![](img/2024-10-04-09-11-40.png)
-
-Donde:
-
-- ![](img/2024-10-04-08-08-32.png) es la densidad del aire (kg/m³)
-- **P** es la presión atmosférica (Pa),
-- **R** es la constante de los gases para el aire seco, que tiene un valor de aproximadamente \(287.05 \, \text{J/(kg·K)}\),
-- **T** es la temperatura absoluta en Kelvin (K), que se obtiene sumando 273.15 a la temperatura en grados Celsius.
-
-### Relación con la temperatura
-
-- A medida que la **temperatura aumenta**, la **densidad del aire disminuye**, porque el aire se expande cuando se calienta.
-- Cuando la **temperatura disminuye**, la **densidad del aire aumenta**, ya que el aire se contrae al enfriarse.
-
-Este fenómeno es importante en el contexto de la energía eólica, ya que la densidad del aire afecta directamente la cantidad de energía que un aerogenerador puede capturar.
-
-![](img/2024-10-01-18-12-51.png)
-
-En este gráfico podemos comprobar como la potencia que podemos generar (vatios) depende de la velocidad del viento.
-
-![](img/2024-10-01-18-13-19.png)
-
-El viento no sopla por igual en todas direcciones, por lo que será un aspecto a considerar en la instalación.
-
-![](img/2024-10-01-18-13-23.png)
-
 ## Ventajas y desventajas
 
 ### Ventajas
@@ -103,27 +102,15 @@ El viento no sopla por igual en todas direcciones, por lo que será un aspecto a
 - Los **parques eólicos ocupan grandes extensiones** de terreno, lo que puede generar un impacto visual en el paisaje y también ruido.
 - Pueden generar **interferencias con radares, televisión y radio**, afectando las señales en áreas cercanas a los aerogeneradores.
 
-## Energía eólica en España
-
-En España, la distribución de energía eólica es la siguiente.  En España existen en total **1.345 parques eólicos** que presentan más de 22.000 molinos.
-
-Los parques eólicos en España más importantes contribuyen de manera significativa al mix energético nacional. Según datos recientes, la energía eólica generó alrededor del **21% de la electricidad total** del país.
-
-![](img/2024-10-02-12-04-50.png)
-
 ## Aerogeneradores
-
-Exacto, los aerogeneradores son dispositivos clave en la generación de energía eólica. Sus **palas**, al ser impulsadas por el viento, convierten la energía **cinética** del aire en energía **mecánica**. Esta energía se transforma en energía **eléctrica** a través de un generador interno. La electricidad producida se envía a la **red eléctrica**, donde puede ser utilizada para abastecer hogares, industrias y otros consumos.
 
 ![](img/2024-10-01-18-14-16.png)
 
+Son aparatos que disponen de unas **palas** que giran gracias al viento, y en su interior un generador transforma la energía mecánica del viento en energía eléctrica, que es transferida a la red de distribución.
+
 ### Relación área - potencia
 
-La potencia que un aerogenerador puede generar depende directamente del **área de barrido** de sus aspas y de la **velocidad del viento**. Por lo tanto, al diseñar aerogeneradores, es importante considerar tanto el **tamaño** de las aspas como las **condiciones de viento** del sitio donde se instalarán.
-
-El aerogenerador más grande a día de hoy es este:
-
-![](img/2024-10-02-12-12-00.png)
+a potencia que un aerogenerador puede generar depende directamente del **área de barrido** de sus aspas y de la **velocidad del viento**. Por lo tanto, al diseñar aerogeneradores, es importante considerar tanto el tamaño de las aspas como las condiciones de viento del sitio donde se instalarán.
 
 ### Relación entre área y potencia de aerogeneradores
 
@@ -131,9 +118,9 @@ La relación entre el área y la potencia de un aerogenerador es fundamental par
 
 #### Área de barrido
 
-El área de barrido es el área que ocupan las aspas del aerogenerador cuando giran. Se calcula como el **área del círculo** formado por las aspas y se determina mediante la siguiente fórmula:
+El área de barrido (\(A\)) es el área que ocupan las aspas del aerogenerador cuando giran. Se calcula como el área del círculo formado por las aspas y se determina mediante la siguiente fórmula:
 
-![](img/2024-10-04-09-14-40.png)
+![](img/2024-10-04-08-09-18.png)
 
 Donde:
 
@@ -145,7 +132,7 @@ Donde:
 
 La potencia del viento (\(P\)) que atraviesa el área de barrido se calcula utilizando la siguiente fórmula:
 
-![](img/2024-10-04-09-13-58.png)
+![](img/2024-10-04-08-10-04.png)
 
 Donde:
 
@@ -166,38 +153,17 @@ La fórmula para la potencia del viento muestra que la potencia disponible aumen
 
 ![](img/2024-10-01-18-14-39.png)
 
-## Estructura de un aerogenerador
-
-![](img/2024-10-04-09-19-46.png)
-
-El **rotor** esta formado por:
-
-- **Pala o aspas**: Son los componentes que captan la energía del viento y la convierten en un movimiento rotacional. Normalmente, un aerogenerador tiene entre 2 y 3 aspas.
-- **Buje**: Es el punto de conexión entre las palas y el eje. Permite la rotación del rotor cuando el viento impacta las palas.
-
-La **torre** es la estructura que sostiene el rotor y la góndola a una altura considerable para aprovechar vientos más fuertes y consistentes. Suele ser de **acero** y puede tener forma **tubular** o de celosía.
-
-La **góndola** o nacelle es la carcasa situada en la parte superior de la torre que contiene el g**enerador, la caja de engranajes, el sistema de control y otros componentes** mecánicos y eléctricos. Protege estos equipos de las condiciones climáticas.
-
-![](img/2024-10-01-18-14-48.png)
-
-## Nacelle
-
-La **nacelle** se situa en lo alto de la torre, y alberga varios componentes importantes, como el generador, la caja de engranajes (si la tiene), y el sistema de control. También contiene el mecanismo que permite rotar el aerogenerador para alinearlo con la dirección del viento.
+La góndola: Situada sobre la torre. Es el elemento estructural, y está formado por el bastidor y el armazón. El bastidor es la pieza sobre la que se ensamblan los elementos mecánicos principales.
 
 ![](img/2024-10-01-18-14-44.png)
 
-El funcionamiento de un aerogenerador implica una serie de componentes interrelacionados que trabajan en conjunto para convertir la energía cinética del viento en energía eléctrica.
+![](img/2024-10-01-18-14-48.png)
 
-- El **eje de baja velocidad** es el primer elemento que recibe el movimiento de las aspas del rotor, que gira lentamente debido a la baja velocidad del viento.
-- Este eje está conectado a una **caja de cambios**, que incrementa la velocidad de rotación del eje antes de que el movimiento se transfiera al **eje de alta velocidad**. Gracias a esta transformación de velocidad, el eje de alta velocidad puede girar a una velocidad mucho mayor, lo que es necesario para accionar el **generador**, que convierte la energía mecánica en energía eléctrica.
-- Por último, el **controlador** juega un papel crucial al supervisar y gestionar el funcionamiento del aerogenerador, asegurando que la energía generada se optimice y se ajuste según las variaciones en la velocidad del viento y las condiciones operativas, protegiendo así el sistema de posibles daños.
+El funcionamiento de un aerogenerador implica una serie de componentes interrelacionados que trabajan en conjunto para convertir la energía cinética del viento en energía eléctrica. El **eje de baja velocidad** es el primer elemento que recibe el movimiento de las aspas del rotor, que gira lentamente debido a la baja velocidad del viento. Este eje está conectado a una **caja de cambios**, que incrementa la velocidad de rotación del eje antes de que el movimiento se transfiera al **eje de alta velocidad**.
 
-## Transformación de la electricidad
+Gracias a esta transformación de velocidad, el eje de alta velocidad puede girar a una velocidad mucho mayor, lo que es necesario para accionar el **generador**, que convierte la energía mecánica en energía eléctrica. Por último, el **controlador** juega un papel crucial al supervisar y gestionar el funcionamiento del aerogenerador, asegurando que la energía generada se optimice y se ajuste según las variaciones en la velocidad del viento y las condiciones operativas, protegiendo así el sistema de posibles daños.
 
-A través de unos cables, la electricidad producida por el **generador**, se transporta hacia la base de la torre, y se lleva hacia un **transformador**, que se encargará de elevar la tensión para enviarla hacia la red eléctrica de distribución.
-
-![](img/2024-10-04-09-26-02.png)
+![](img/2024-10-01-18-14-53.png)
 
 ## Construcción, transporte y montaje
 
@@ -211,7 +177,7 @@ A través de unos cables, la electricidad producida por el **generador**, se tra
 
 http://www.youtube.com/watch?v=ACGEJbfWGmA
 
-## Velocidad del viento
+## Velocidades
 
 ![](img/2024-10-01-18-15-08.png)
 
@@ -227,10 +193,10 @@ La **velocidad de corte** es la velocidad máxima del viento a la que un aerogen
 
 ### Instalaciones aisladas
 
-No conectadas a la red eléctrica. Se utilizan para aplicaciones tales como electrificaciones rurales, aplicaciones agrícolas, señalización, repetidores de comunicaciones, bombeo de agua, etc.
-Utilizan, en la mayoría de los casos aerogeneradores de pequeña potencia. Tienen que disponer de un sistema de acumulación (**baterías**) para asegurar el suministro eléctrico
-
 ![](img/2024-10-01-18-15-56.png)
+
+No conectadas a la red eléctrica. Se utilizan para aplicaciones tales como electrificaciones rurales, aplicaciones agrícolas, señalización, repetidores de comunicaciones, bombeo de agua, etc.
+Utilizan, en la mayoría de los casos aerogeneradores de pequeña potencia. Tienen que disponer de un sistema de acumulación (baterías) para asegurar el suministro eléctrico
 
 ### Parques eólicos
 
@@ -238,7 +204,7 @@ Los parques eólicos son un conjunto de aerogeneradores que producen energía el
 
 ![](img/2024-10-01-18-16-06.png)
 
-Los parques eólicos que generan importantes cantidades de energía eléctrica, con potencias superiores a 1 MW, también reciben el nombre de **centrales eólicas**. Es vital colocar los aerogeneradores con una distribución específica que garantice la eficiencia y mejor funcionamiento.
+Parques eólicos que generan importantes cantidades de energía eléctrica, con potencias superiores a 1 MW, también reciben el nombre de centrales eólicas.
 
 ![](img/2024-10-01-18-16-14.png)
 
@@ -246,16 +212,22 @@ Los parques eólicos que generan importantes cantidades de energía eléctrica, 
 
 La energía eólica es más fuerte en el océano que en tierra.
 Hasta hace poco tiempo, al basarse en estructuras fijas, no podían instalarse en lugares de fondos marinos muy profundos o complejos, algo que ha cambiado con la aparición de las estructuras flotantes.
+Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al fondo marino mediante anclajes flexibles, cadenas o cables de acero.
 
 ![](img/2024-10-01-18-16-30.png)
-
-Sobre estas plataformas ya se pueden instalar aerogeneradores, que se anclan al fondo marino mediante anclajes flexibles, cadenas o cables de acero.
 
 ![](img/2024-10-01-18-16-35.png)
 
 ![](img/2024-10-01-18-17-16.png)
 
+![](img/2024-10-01-18-17-20.png)
+
 ## Videos
 
 1. [¿Cómo funciona un aerogenerador? | Sostenibilidad - ACCIONA](https://www.youtube.com/watch?v=Hx1cOrIJcpQ)
 2. [SUBIMOS num GERADOR EÓLICO #Boravê](https://www.youtube.com/watch?v=PHdrLRcOGCA)
+
+¿Sabías que la harina es inflamable al volatilizarse?
+¿Qué pasa si combinas HARINA con FUEGO?
+
+Curiosidades

@@ -15,7 +15,6 @@
   - [7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.](#73-enlace-a-una-dirección-de-correo-electrónico)
   - [7.4 ENLACE EN UNA NUEVA VENTANA.](#74-enlace-en-una-nueva-ventana)
 - [8. IMÁGENES CON HTML](#8-imágenes-con-html)
-    - [8.1 COMANDOS PARA LAS IMÁGENES.](#81-comandos-para-las-imágenes)
   - [Alinear imágenes](#alinear-imágenes)
   - [Modificar dimensiones](#modificar-dimensiones)
   - [Imágenes y enlaces](#imágenes-y-enlaces)
@@ -31,8 +30,8 @@
   - [Estilos de tablas con CSS](#estilos-de-tablas-con-css)
 - [11. Capas](#11-capas)
   - [Ejemplo de página con capas](#ejemplo-de-página-con-capas)
-  - [Formularis](#formularis)
-  - [Àudio i vídeo](#àudio-i-vídeo)
+- [Formularis](#formularis)
+- [Àudio i vídeo](#àudio-i-vídeo)
 
 # 1. INTRODUCCIÓN AL LENGUAJE HTML
 
@@ -105,18 +104,13 @@ Antes de crear nuestra primera página, unas consideraciones sobre el texto:
 - Cuando escribimos en el documento el texto que queremos que aparezca
 en la pantalla, veremos que éste se acomoda a ella, sin que tengamos que
 pulsar el retorno del carro. Si queremos separar el texto en distintos párrafos
-debemos usar la etiqueta <P>, (que tiene su correspondiente etiqueta de
-cierre </P>).
-- El texto se puede colocar entre las etiquetas `<H1>` y </H1>, <H2> y </H2>,
+debemos usar la etiqueta ``<P>``, (que tiene su correspondiente etiqueta de
+cierre ``</P>``).
+- El texto se puede colocar entre las etiquetas `<H1>` y ``</H1>``, ``<H2> ``y ``</H2>``,
 etc. (hasta el número 6). Este número indica el tamaño del mismo. El tamaño
 mayor es el correspondiente al número 1.
-- La etiqueta para centrar es <CENTER> y </CENTER>. Nos centra todo lo que
-esté dentro de ella, ya sea texto, imágenes, etc.
 - Si queremos separar los párrafos, o cualquier otro elemento, pero sin dejar
-una línea en blanco, usamos una etiqueta parecida <BR> (romper la línea).
-- También tenemos los separadores que se consiguen con la etiqueta <HR>
-(no existe la correspondiente de cierre). Con ella se obtiene una línea
-horizontal tan ancha como la pantalla.
+una línea en blanco, usamos una etiqueta parecida ``<BR>`` (romper la línea).
 
 **EJEMPLO PRÁCTICO 1**
 

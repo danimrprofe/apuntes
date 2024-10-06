@@ -30,7 +30,7 @@ atributo onclick , onchange , etc.
 
 **b) En el head o body (Internal Script)**
 
-Puedes escribir el código JavaScript dentro de etiquetas <script> en el archivo HTML.
+Puedes escribir el código JavaScript dentro de etiquetas <script> en el archivo HTML. Este código HTML crea una página web sencilla que incluye un botón, y cuando se hace clic en él, se muestra un mensaje emergente (alerta) en el navegador.
 
 ```html
 <!DOCTYPE html>
@@ -58,7 +58,27 @@ De esta forma podremos hacer referencia al mismo archivo desde diferentes HTML, 
 
 ## 4. Variables y Tipos de Datos
 
-En JavaScript, puedes declarar variables usando las palabras clave var , let o const .
+En JavaScript, puedes declarar variables usando las palabras clave ``var`` , ``let`` o ``const`` .
+
+Para usar una variable, primero tenemos que definirla:
+
+```js
+// Definir una variable
+var numero;
+```
+Ahora la variable existe, pero no tiene guardado ningún valor. Para ello, tenemos que asignárselo utilizando el operador de asignación =.
+
+```js
+// Asignar un valor
+numero = 10;
+```
+También podemos definir una variable y asignarle un valor en la misma instrucción:
+
+```js
+// Operar con la variable
+let resultado = numero + 5;
+console.log(resultado); // Imprime 15
+```
 
 ## 5. Funciones
 

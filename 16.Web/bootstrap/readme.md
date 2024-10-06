@@ -34,6 +34,13 @@ Para que todas las caracterísitcas de Bootstrap funcionen, a nuestras páginas 
 **1) Etiqueta meta viewport**
 
 Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta `<meta name="viewport">` para que la página tenga comportamiento responsivo en dispositivos móviles.
+Las etiquetas ``<meta>`` en HTML son elementos que proporcionan metadatos sobre una página web. Los metadatos son información que no se muestra directamente en la página, pero que ayuda a los navegadores y motores de búsqueda a entender el contenido y comportamiento de la misma
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Esta configuración es clave para que las páginas web sean responsive, es decir, que se **adapten bien a distintos tamaños de pantalla**, ofreciendo una mejor experiencia de usuario en dispositivos móvile
 
 ```html
 <!doctype html>
@@ -51,7 +58,7 @@ Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta `<met
 
 **2) Etiquetas de enlace CSS y Javascript**
 
-A continuación añadimos los enlaces para CSS y código javascript de Bootstrap.
+A continuación añadimos los enlaces para incluir la hoja de estilos CSS y el script Javascript de Bootstrap. Estos se encuentran alojados en un servidor cdn, por lo que desde nuestra página web tenemos que hacer referencia a a ellos.
 
 El enlace CSS hará referencia a la hoja de estilos de bootstrap.
 
@@ -89,7 +96,7 @@ Para todo lo demás, tendremos que incluir los códigos necesarios en los difere
 
 ## 3. Clases en Bootstrap
 
-En Bootstrap, las ``clases predefinidas`` juegan un papel crucial para aplicar estilos de forma rápida y consistente. A menudo se usan en lugar de escribir estilos CSS personalizados, lo que acelera el proceso de desarrollo y asegura que el diseño sea consistente y responsivo.
+En Bootstrap, las ``clases predefinidas`` juegan un papel crucial para aplicar estilos de forma rápida y consistente. A menudo se usan en lugar de escribir estilos CSS personalizados, lo que acelera el proceso de desarrollo y asegura que el diseño sea consistente y responsivo. Estas clases vienen creadas por Bootstrap, por lo que no hay que definirlas.
 
 Ejemplos:
 

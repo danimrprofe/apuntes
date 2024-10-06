@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<ul>
+<li><a href="#bootstrap">Bootstrap</a>
+<ul>
+<li><a href="#1-qu%C3%A9-es-bootstrap">1. ¿Qué es Bootstrap?</a></li>
+<li><a href="#2-c%C3%B3mo-incluir-bootstrap-en-tu-proyecto">2. Cómo Incluir Bootstrap en tu Proyecto</a></li>
+<li><a href="#3-clases-en-bootstrap">3. Clases en Bootstrap</a></li>
+<li><a href="#4-sistema-de-cuadr%C3%ADcula-grid-system">4. Sistema de Cuadrícula (Grid System)</a></li>
+<li><a href="#5-margin-i-padding">5. Margin i Padding</a></li>
+<li><a href="#6-text-i-alineaci%C3%B3">6. Text i Alineació</a></li>
+<li><a href="#7-componentes-bootstrap">7. Componentes Bootstrap</a></li>
+<li><a href="#8-componente-card">8. Componente card</a></li>
+<li><a href="#9-componente-nav">9. Componente nav</a></li>
+<li><a href="#10-componente-carroussel">10. Componente carroussel</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="bootstrap">Bootstrap</h1>
+<p><img src="file:///e:/Docencia/apuntes/16.Web/bootstrap/img/2024-10-05-18-49-26.png" alt=""></p>
+<h2 id="1-%C2%BFqu%C3%A9-es-bootstrap">1. ¿Qué es Bootstrap?</h2>
+<p>Bootstrap es un <strong>framework</strong> de código abierto que facilita el desarrollo de sitios web y aplicaciones
+web modernas. Fue creado por Twitter y proporciona una colección de herramientas CSS,
+JavaScript y HTML que permiten diseñar interfaces de usuario de manera rápida y eficiente.</p>
+<p>Características principales:</p>
+<ul>
+<li>Sistema de cuadrícula (grid) responsiva.</li>
+<li>Componentes predefinidos como botones, formularios, barras de navegación, etc.</li>
+<li>Interactividad mediante plugins de JavaScript.</li>
+</ul>
+<h2 id="2-c%C3%B3mo-incluir-bootstrap-en-tu-proyecto">2. Cómo Incluir Bootstrap en tu Proyecto</h2>
+<p>Para que todas las caracterísitcas de Bootstrap funcionen, a nuestras páginas web les tendremos que agregar las etiquetas necesarias.</p>
+<p><strong>1) Etiqueta meta viewport</strong></p>
+<p>Creamos una archivo index.html en la carpeta raiz. Incluiremos la etiqueta <code>&lt;meta name=&quot;viewport&quot;&gt;</code> para que la página tenga comportamiento responsivo en dispositivos móviles.
+Las etiquetas <code>&lt;meta&gt;</code> en HTML son elementos que proporcionan metadatos sobre una página web. Los metadatos son información que no se muestra directamente en la página, pero que ayuda a los navegadores y motores de búsqueda a entender el contenido y comportamiento de la misma</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+</div></code></pre>
+<p>Esta configuración es clave para que las páginas web sean responsive, es decir, que se <strong>adapten bien a distintos tamaños de pantalla</strong>, ofreciendo una mejor experiencia de usuario en dispositivos móvile</p>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bootstrap demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+<p><strong>2) Etiquetas de enlace CSS y Javascript</strong></p>
+<p>A continuación añadimos los enlaces para incluir la hoja de estilos CSS y el script Javascript de Bootstrap. Estos se encuentran alojados en un servidor cdn, por lo que desde nuestra página web tenemos que hacer referencia a a ellos.</p>
+<p>El enlace CSS hará referencia a la hoja de estilos de bootstrap.</p>
+<pre class="hljs"><code><div>    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+</div></code></pre>
+<p>El enlace JS hará referencia al script Javascript de bootstrap. Lo podemos insertar eh <code>head</code> o bien al final del <code>body</code>.</p>
+<pre class="hljs"><code><div>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</div></code></pre>
+<p>Así quedaría una página de ejemplo:</p>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bootstrap demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+<p>A partir de aquí, nuestra página adoptará ya ciertos estilos de bootstrap, como la fuente de letra del texto, entre otros.</p>
+<p>Para todo lo demás, tendremos que incluir los códigos necesarios en los diferentes elementos de nuestra página.</p>
+<h2 id="3-clases-en-bootstrap">3. Clases en Bootstrap</h2>
+<p>En Bootstrap, las <code>clases predefinidas</code> juegan un papel crucial para aplicar estilos de forma rápida y consistente. A menudo se usan en lugar de escribir estilos CSS personalizados, lo que acelera el proceso de desarrollo y asegura que el diseño sea consistente y responsivo. Estas clases vienen creadas por Bootstrap, por lo que no hay que definirlas.</p>
+<p>Ejemplos:</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-3"</span>&gt;</span>Contenido con padding<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-6 col-md-4"</span>&gt;</span>Columna<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+<p>Estos nombres de clases están definidos en Bootstrap, y podemos usarlos incluyéndolos en el <code>atributo class </code>de un elemento HTML.</p>
+<p><strong>Combinación de clases</strong></p>
+<p>En Bootstrap, puedes combinar varias clases en un solo elemento HTML para aplicar múltiples estilos o comportamientos de diseño.</p>
+<p>En este ejemplo, se usan 3 clases sobre la misma capa:</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-warning p-3 m-4"</span>&gt;</span>
+  Este es un bloque con fondo de advertencia, padding y margen.
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+<p>Explicación de las clases:</p>
+<ul>
+<li><code>bg-warning</code>: Aplica un fondo de color de advertencia (amarillo).</li>
+<li><code>p-3</code>: Añade un padding (relleno) de 1rem alrededor del contenido.</li>
+<li><code>m-4</code>: Añade un margen de 1.5rem alrededor del bloque.</li>
+</ul>
+<h2 id="4-sistema-de-cuadr%C3%ADcula-grid-system">4. Sistema de Cuadrícula (Grid System)</h2>
+<p>El <strong>sistema de cuadrícula</strong> de Bootstrap se basa en una estructura de 12 columnas, lo que facilita crear diseños flexibles y responsivos.</p>
+<p>En resumen, disponemos de 12 columnas que podemos repartir entre capas, con la condición de que sumen 12, con cualquier combinación posible.</p>
+<p>Se usan clases de CSS como row y col .</p>
+<p><strong>Ejemplo de una fila con dos columnas de igual ancho</strong></p>
+<p>Aquí no aparece toda la página web, por lo que todo lo que a continuación aparece deberá estar dentro del <code>body</code> de nuestra página web.</p>
+<ul>
+<li>La capa container (o container-fluid) es necesaria para que bootstrap funcione.</li>
+<li>Dentro de ella, la capa con clase <code>row</code> actuará como contenedor de fila.</li>
+<li>Dentro de ella, dos columnas de igual ancho (6+6 = 12).</li>
+</ul>
+<p>Estas columnas quedarán una al lado de la otra, con igual ancho. A partir de cierto ancho de pantalla, una pasará a colocarse debajo de la otra. Esto es un comportamiento <code>responsivo</code>, que responde a las características de la pantalla en la que se está visualizando la página web. Esta característica se llama <code>responsive design</code>, y viene incorporada en Bootstap.</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>Columna 1 (50%)<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;</span>Columna 2 (50%)<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+<p>Podemos ajustar las columnas para diferentes tamaños de pantalla
+utilizando clases como <code>col-sm-* , col-md-* , col-lg-* </code>, donde * es el número de columnas.</p>
+<p>Las letras  <code>sm, md o lg</code> hacen referencia al punto de ancho a partir del cual cambia la disposición de las capas.</p>
+<h2 id="5-margin-i-padding">5. Margin i Padding</h2>
+<p>Bootstrap 5 proporciona classes per ajustar fàcilment el <strong>marge</strong> (m-) i el <strong>farcment</strong> o <em>padding</em> (p-). Les classes es basen en un sistema de nombres del 0 al 5, on cada número representa un increment del marge o del <em>padding</em> en unitats relatives.</p>
+<ul>
+<li><strong>m-</strong>: ajusta el marge extern.</li>
+<li><strong>p-</strong>: ajusta el <em>padding</em> o marge intern.</li>
+</ul>
+<p>Exemples:</p>
+<ul>
+<li><code>m-0</code>: sense marge.</li>
+<li><code>m-3</code>: marge moderat.</li>
+<li><code>m-5</code>: marge màxim.</li>
+</ul>
+<p>A més, pots ajustar els marges o <em>padding</em> de maneres específiques per a cada costat:</p>
+<ul>
+<li><strong>m(t/b/l/r/x/y)</strong>: per ajustar només la part superior (<strong>t</strong>), inferior (<strong>b</strong>), esquerra (<strong>l</strong>), dreta (<strong>r</strong>), horitzontal (<strong>x</strong>) o vertical (<strong>y</strong>).</li>
+</ul>
+<p>Exemples:</p>
+<ul>
+<li><code>mt-3</code>: marge només a la part superior.</li>
+<li><code>px-4</code>: <em>padding</em> horitzontal (esquerra i dreta).</li>
+</ul>
+<h2 id="6-text-i-alineaci%C3%B3">6. Text i Alineació</h2>
+<p>Bootstrap ofereix classes per ajustar fàcilment l'alineació del text:</p>
+<ul>
+<li><strong>text-left</strong>: alinea el text a l'esquerra.</li>
+<li><strong>text-center</strong>: alinea el text al centre.</li>
+<li><strong>text-right</strong>: alinea el text a la dreta.</li>
+</ul>
+<p>També hi ha altres utilitats per estilitzar i modificar el text:</p>
+<ul>
+<li><strong>text-uppercase</strong>: converteix el text a majúscules.</li>
+<li><strong>text-lowercase</strong>: converteix el text a minúscules.</li>
+<li><strong>text-capitalize</strong>: capitalitza només la primera lletra de cada paraula.</li>
+</ul>
+<p>Pots ajustar l'alineació del text de manera responsable segons la mida de pantalla:</p>
+<ul>
+<li><strong>text-sm-left</strong>, <strong>text-md-center</strong>, <strong>text-lg-right</strong>, etc. Això permet canviar l'alineació del text a mesura que la pantalla canvia de mida.</li>
+</ul>
+<h2 id="7-componentes-bootstrap">7. Componentes Bootstrap</h2>
+<p>Un <strong>componente Bootstrap</strong> es un bloque predefinido de código que sigue los principios del framework Bootstrap para proporcionar estilos, comportamiento interactivo y funcionalidades de diseño responsivo.</p>
+<p>Estos componentes están diseñados para ayudarte a crear <strong>interfaces de usuario (UI)</strong> modernas y atractivas de manera <strong>rápida y fácil</strong>, sin tener que escribir todo el código CSS o JavaScript desde cero.</p>
+<h2 id="8-componente-card">8. Componente card</h2>
+<p>El <code>componente Card</code> de Bootstrap es una forma versátil y estilizada de mostrar información agrupada dentro de un contenedor. Puedes usar las tarjetas para mostrar contenido como texto, imágenes, listas de enlaces, botones y más.</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 18rem;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title"</span>&gt;</span>Título de la Tarjeta<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Texto de ejemplo dentro de una tarjeta de Bootstrap.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Ir a algún lugar<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+<h2 id="9-componente-nav">9. Componente nav</h2>
+<p>El <strong>componente Nav</strong> de Bootstrap se utiliza para crear menús de navegación. Este componente es versátil y te permite diseñar tanto menús horizontales como verticales, barras de pestañas y menús estilo &quot;píldora&quot;.</p>
+<p>Ejemplo:</p>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"es"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Navegación Horizontal<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Incluye Bootstrap CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mt-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Inicio<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Servicios<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Precios<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">"true"</span>&gt;</span>Deshabilitado<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Incluye Bootstrap JS y Popper.js --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+<h2 id="10-componente-carroussel">10. Componente carroussel</h2>
+<p>El <code>componente Carrusel</code> en Bootstrap te permite mostrar una serie de imágenes, texto o contenido en formato de diapositivas que pueden desplazarse automáticamente o mediante controles de navegación.</p>
+<p>Ejemplo:</p>
+<pre class="hljs"><code><div>
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"es"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Carrusel de Bootstrap<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Incluye Bootstrap CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"carouselExampleIndicators"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel slide"</span> <span class="hljs-attr">data-bs-ride</span>=<span class="hljs-string">"carousel"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Indicadores opcionales (puntos) --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-indicators"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Diapositiva 1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Diapositiva 2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Diapositiva 3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Contenido del carrusel --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-inner"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item active"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://via.placeholder.com/800x400"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Imagen 1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-caption d-none d-md-block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Primera diapositiva<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Texto descriptivo de la primera diapositiva.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://via.placeholder.com/800x400"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Imagen 2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-caption d-none d-md-block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Segunda diapositiva<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Texto descriptivo de la segunda diapositiva.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://via.placeholder.com/800x400"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Imagen 3"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-caption d-none d-md-block"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Tercera diapositiva<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Texto descriptivo de la tercera diapositiva.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Controles de navegación izquierda/derecha --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-prev"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string">"prev"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-prev-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>Anterior<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-next"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string">"next"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-next-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>Siguiente<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Incluye Bootstrap JS y Popper.js --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</div></code></pre>
+
+</body>
+</html>

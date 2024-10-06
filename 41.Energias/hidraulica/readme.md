@@ -1,9 +1,11 @@
 # Energía hidráulica
 
+La energía hidráulica es una forma de energía renovable que se genera a partir del movimiento del agua, ya sea en ríos, embalses o corrientes de agua. Esta energía se obtiene aprovechando la energía potencial del agua almacenada en alturas, así como su energía cinética cuando fluye
+
 ## Introducción
 
 En toda España (menos en las Islas Baleares) se produce energía hidráulica
-Un  20% del total de la energía eléctrica que se genera.
+Representa un **20% del total** de la energía eléctrica que se genera.
 
 Podemos encontrar más de **1.300 centrales hidroeléctricas** en España, tanto convencionales como no convencionales
 

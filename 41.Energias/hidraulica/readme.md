@@ -7,7 +7,7 @@ Un  20% del total de la energía eléctrica que se genera.
 
 Podemos encontrar más de **1.300 centrales hidroeléctricas** en España, tanto convencionales como no convencionales
 
-![](img/2024-10-06-15-50-39.png)
+![](img/2024-10-06-16-24-12.png)
 
 ## Molinos de agua
 
@@ -89,6 +89,8 @@ Estas plantas pueden utilizar una variedad de procesos, como la filtración y la
 
 Una **central hidroeléctrica** es una instalación cuya misión es convertir la **energía potencial y cinética** del agua en **energía eléctrica** disponible para el consumo. Este proceso se realiza aprovechando el movimiento del agua, que al caer desde una altura o al ser liberada a presión, impulsa las turbinas conectadas a generadores eléctricos. A través de este mecanismo, la energía contenida en el agua se transforma en electricidad limpia y renovable.
 
+![](img/hidroelectrica.gif)
+
 A mediados del **siglo XX**, la energía hidráulica era una de las principales fuentes de energía en España, llegando a producir **casi la totalidad de la electricidad del país**.
 
 En una época en la que las tecnologías de generación eléctrica a partir de combustibles fósiles aún no estaban tan desarrolladas, la energía hidráulica desempeñó un papel crucial en el suministro eléctrico, aprovechando los abundantes ríos y las condiciones geográficas favorables del territorio español.
@@ -115,11 +117,12 @@ Vista interior
 
 Los péndulos directos e invertidos se usan generalmente para medir rotaciones y traslaciones de estructuras grandes como presas, diques de concreto, edificios altos, torres, estaciones nucleares, etc.
 
-- El **péndulo directo** se usa generalmente para medir la rotación de una estructura.
+El **péndulo directo** se usa generalmente para medir la rotación de una estructura.
 
 ![](img/2024-10-06-15-53-44.png)
 
-- El **péndulo invertido** se usa para detectar movimientos horizontales (traslación) de una estructura con respecto a puntos profundos en la roca fundamental.
+El **péndulo invertido** se usa para detectar movimientos horizontales (traslación) de una estructura con respecto a puntos profundos en la roca fundamental.
+
 ![](img/2024-10-06-15-53-49.png)
 
 Los **azudes** son estructuras más pequeñas que las presas que se utilizan para desviar el agua de un río hacia un canal o acequia.

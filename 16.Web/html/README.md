@@ -1,5 +1,6 @@
 - [1. INTRODUCCIÓN AL LENGUAJE HTML](#1-introducción-al-lenguaje-html)
 - [2. ESTRUCTURA DE UN DOCUMENTO HTML](#2-estructura-de-un-documento-html)
+  - [HEAD y BODy](#head-y-body)
 - [3. EJEMPLO DE UN DOCUMENTO HTML](#3-ejemplo-de-un-documento-html)
 - [4. Títulos y párrafos](#4-títulos-y-párrafos)
   - [Títulos](#títulos)
@@ -15,9 +16,8 @@
   - [7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.](#73-enlace-a-una-dirección-de-correo-electrónico)
   - [7.4 ENLACE EN UNA NUEVA VENTANA.](#74-enlace-en-una-nueva-ventana)
 - [8. IMÁGENES CON HTML](#8-imágenes-con-html)
-    - [8.1 COMANDOS PARA LAS IMÁGENES.](#81-comandos-para-las-imágenes)
-  - [Alinear imágenes](#alinear-imágenes)
-  - [Modificar dimensiones](#modificar-dimensiones)
+  - [8.1 COMANDOS PARA LAS IMÁGENES](#81-comandos-para-las-imágenes)
+  - [Modificar dimensiones de imágenes](#modificar-dimensiones-de-imágenes)
   - [Imágenes y enlaces](#imágenes-y-enlaces)
 - [9. Listas](#9-listas)
   - [Listas no ordenadas](#listas-no-ordenadas)
@@ -31,8 +31,8 @@
   - [Estilos de tablas con CSS](#estilos-de-tablas-con-css)
 - [11. Capas](#11-capas)
   - [Ejemplo de página con capas](#ejemplo-de-página-con-capas)
-  - [Formularis](#formularis)
-  - [Àudio i vídeo](#àudio-i-vídeo)
+- [Formularis](#formularis)
+- [Àudio i vídeo](#àudio-i-vídeo)
 
 # 1. INTRODUCCIÓN AL LENGUAJE HTML
 
@@ -75,17 +75,15 @@ todo el documento HTML debe estar entre las etiquetas <HTML> y </HTML>:
 </HTML>
 ```
 
-El documento en sí está dividido en dos zonas principales:
+## HEAD y BODy
 
-- La CABECERA: comprendido entre las etiquetas <HEAD> y </HEAD>
-Dentro del encabezamiento hay información del documento, que no se ve en
-la pantalla principal, principalmente el título del documento, comprendido entre
-las etiquetas <TITLE> y </TITLE>. El título debe ser breve y descriptivo de su
-contenido, pues será lo que vean los demás cuando añadan nuestra página a sus
-favoritos.
-- El CUERPO: comprendido entre las etiquetas <BODY> y </BODY>
-Dentro del cuerpo está todo lo que queremos que aparezca en la pantalla
-principal (texto, imágenes, etc.). Por tanto, la estructura queda de esta manera:
+**Head**
+
+La cabecera se encuentra entre las etiquetas <HEAD> y </HEAD>. Esta sección contiene información relevante sobre el documento que no es visible directamente en la página, como el título del mismo. El título del documento, ubicado entre las etiquetas <TITLE> y </TITLE>, debe ser conciso y descriptivo, ya que será lo que los usuarios verán al añadir la página a sus favoritos o cuando aparezca en los resultados de búsqueda.
+
+**Body**
+
+El cuerpo del documento se define entre las etiquetas <BODY> y </BODY>. Todo lo que se quiere mostrar en la pantalla principal (como texto, imágenes, enlaces, etc.) se encuentra dentro de esta sección. Es aquí donde se estructura el contenido visible de la página web.
 
 ```html
 <HTML>
@@ -100,27 +98,7 @@ principal (texto, imágenes, etc.). Por tanto, la estructura queda de esta maner
 
 # 3. EJEMPLO DE UN DOCUMENTO HTML
 
-Antes de crear nuestra primera página, unas consideraciones sobre el texto:
-
-- Cuando escribimos en el documento el texto que queremos que aparezca
-en la pantalla, veremos que éste se acomoda a ella, sin que tengamos que
-pulsar el retorno del carro. Si queremos separar el texto en distintos párrafos
-debemos usar la etiqueta <P>, (que tiene su correspondiente etiqueta de
-cierre </P>).
-- El texto se puede colocar entre las etiquetas `<H1>` y </H1>, <H2> y </H2>,
-etc. (hasta el número 6). Este número indica el tamaño del mismo. El tamaño
-mayor es el correspondiente al número 1.
-- La etiqueta para centrar es <CENTER> y </CENTER>. Nos centra todo lo que
-esté dentro de ella, ya sea texto, imágenes, etc.
-- Si queremos separar los párrafos, o cualquier otro elemento, pero sin dejar
-una línea en blanco, usamos una etiqueta parecida <BR> (romper la línea).
-- También tenemos los separadores que se consiguen con la etiqueta <HR>
-(no existe la correspondiente de cierre). Con ella se obtiene una línea
-horizontal tan ancha como la pantalla.
-
-**EJEMPLO PRÁCTICO 1**
-
-En el Bloc de notas copiamos lo siguiente:
+Ejemplo:
 
 ```html
 <!DOCTYPE html>
@@ -135,14 +113,14 @@ En el Bloc de notas copiamos lo siguiente:
 </html>
 ```
 
-Guardamos el fichero con el procesador de textos con el nombre de web01.html y lo
-abrimos con el navegador. Comprueba el resultado.
-
 # 4. Títulos y párrafos
 
 ## Títulos
 
-Para crear un título se utilizan las etiquetas h1, h2, etc.
+Las etiquetas ``<h1>``, ``<h2>``, ``<h3>``, etc., se utilizan para crear títulos y subtítulos dentro del cuerpo (``<BODY>``) de un documento HTML. Estas etiquetas permiten jerarquizar el contenido, facilitando su organización tanto para los usuarios como para los motores de búsqueda.
+
+``<h1>`` es el encabezado de nivel más alto, destinado al título principal de la página o sección.
+``<h2>``, ``<h3>``, etc., son encabezados de niveles inferiores, utilizados para los subtítulos y subapartados.
 
 ```html
 <h1>Heading 1</h1>
@@ -268,6 +246,7 @@ la página web.
 ## 7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.
 
 La estructura de la etiqueta es:
+
 ```html
 <A HREF="mailto: dirección de email"> Zona Activa </A>
 ```
@@ -284,53 +263,72 @@ Se utiliza el comando TARGET. La estructura de la etiqueta será:
 En HTML se debe indicar el nombre y la localización de un fichero que
 contiene una imagen. Para ello utilizamos la etiqueta IMG con el comando SRC que
 sirve para indicar donde se encuentra la imagen. La estructura de la etiqueta es:
+
 ```html
-<IMG SRC=“C://Mis Documentos/Imagenes/imagen.gif">
+<IMG SRC="imagen.gif">
 ```
-### 8.1 COMANDOS PARA LAS IMÁGENES.
+Dentro del atributo src especificamos la ruta para encontrar el archivo que queremos mostrar.
 
-- ALT: El comando ALT permite introducir una descripción (una palabra o una
-frase breve) indicativa de la imagen.
+1. **Ruta absoluta:**
 
-```html
-![imagen](imagen.gif)
-```
-
-## Alinear imágenes
-
-- ALIGN: Alinea la imagen, según la posición que se le indique, respecto a la
-línea de texto en la que está. Puede tomar los siguientes valores:
-- TOP: Alinea la parte superior de la imagen con la línea actual.
+La ruta absoluta incluye el protocolo (como `https://`) y el dominio completo del sitio web. Se utiliza cuando la imagen está alojada en un servidor externo.
 
 ```html
-![imagen](images/flor.gif)
+<img src="https://www.ejemplo.com/imagenes/imagen.jpg" alt="Imagen desde un servidor externo">
 ```
 
-- MIDDLE: Alinea el centro de la imagen con la línea actual.
+2. R**uta relativa a la raíz:**
+
+Esta ruta comienza con una barra inclinada (/) y hace referencia a la raíz del sitio web. Se usa cuando la imagen está ubicada en el servidor actual, pero a partir de la raíz del proyecto.
 
 ```html
-![imagen](images/flor.gif)
+<img src="/imagenes/imagen.jpg" alt="Imagen desde la raíz del sitio">
 ```
 
-- BOTTOM: Alinea la base de la imagen con la línea actual.
+Ruta relativa al archivo actual: Es la ruta más común para archivos locales, donde se especifica la ubicación de la imagen en relación con el archivo HTML actual.
 
 ```html
-![imagen](images/flor.gif)
+<img src="imagenes/imagen.jpg" alt="Imagen en la misma carpeta o subcarpetas">
 ```
 
-## Modificar dimensiones
+Ruta hacia un directorio superior: Si la imagen está en un directorio superior al archivo HTML, puedes usar ../ para navegar hacia arriba en la estructura de carpetas.
 
-- WIDTH: Redefine el ancho de la imagen.
-- HEIGHT: Redefine el alto de la imagen.
--
 ```html
-![imagen](images/flor.gif)
+<img src="../imagenes/imagen.jpg" alt="Imagen en un directorio superior">
 ```
 
-- BORDER: Dibuja un marco alrededor de la imagen.
--
+Aquí puedes ver un ejemplo de cada opción
+
 ```html
-![imagen](images/flor.gif)
+<!-- Imagen desde un servidor externo -->
+<img src="https://www.example.com/images/photo.jpg" alt="Descripción de la imagen">
+
+<!-- Imagen ubicada en la raíz del proyecto -->
+<img src="/images/photo.jpg" alt="Descripción de la imagen">
+
+<!-- Imagen en una carpeta relativa -->
+<img src="images/photo.jpg" alt="Descripción de la imagen">
+
+<!-- Imagen en un directorio superior -->
+<img src="../images/photo.jpg" alt="Descripción de la imagen">
+```
+
+## 8.1 COMANDOS PARA LAS IMÁGENES
+
+El atributo ``alt`` (abreviación de "texto alternativo") se utiliza en las etiquetas de imágenes (``<img>``) para proporcionar una descripción de la imagen cuando esta no se puede mostrar. Es esencial para la accesibilidad web, ya que los lectores de pantalla usan este texto para describir la imagen a los usuarios con discapacidades visuales.
+
+Aquí tienes un ejemplo de cómo se usa el atributo alt:
+
+```html
+<img src="imagen.jpg" alt="Descripción de la imagen">
+```
+
+## Modificar dimensiones de imágenes
+
+El atributo **WIDTH:** Redefine el ancho de la imagen. Este atributo acepta valores en píxeles o como porcentaje del contenedor.
+
+```html
+  <img src="imagen.jpg" alt="Descripción de la imagen" width="300">
 ```
 
 ## Imágenes y enlaces
@@ -412,11 +410,12 @@ siguientes valores:
 
 # 10. Tablas
 
-Las tablas son una parte importante en HTML y se utilizan para presentar datos en una forma estructurada. En HTML5, se ha mejorado el soporte para tablas con nuevas etiquetas y atributos. Esta guía explicará cómo crear tablas en HTML5.
+Las **tablas** son una parte importante en HTML y se utilizan para presentar datos en una forma estructurada. En HTML5, se ha mejorado el soporte para tablas con nuevas etiquetas y atributos.
 
 ## Etiquetas
 
 La etiqueta general, que engloba a todas las demás es ``<TABLE>`` y ``</TABLE>``.
+
 ```html
 <TABLE>
 [Resto de las etiquetas]

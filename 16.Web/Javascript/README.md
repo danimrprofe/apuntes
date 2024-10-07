@@ -1,117 +1,142 @@
-# Javascript
+# Introducción a JavaScript
 
-Aquí aprendrem a:
+![](img/2024-10-06-10-28-47.png)
 
--  Cridar una funció de javascript des d'un botón
--  Definir codi dins una etiqueta script
--  Extreure el codi javascript a un arxiu extern
--  Crear funcions javascript senzilles
--  Crear i utilitzar variables
+## 1. ¿Qué es JavaScript?
 
-## Mayúsculas y minúsculas
+JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web.
+Mientras HTML estructura el contenido y CSS lo estiliza, JavaScript proporciona la lógica para hacer
+que una página web sea dinámica e interactiva.
 
-Javascript es sensible a mayúsculas y minúsculas, por lo que habrá que escribirlas tal como son.
+## 2. ¿Dónde se utiliza JavaScript?
 
-## Ejecutar javascript en un evento
+Se utiliza principalmente en el desarrollo de sitios web para manejar eventos (como clics o entradas de teclado), actualizar contenido de la página sin recargar (usando AJAX), y validar formularios, entre otros.
 
-Al clicar en el botón, se dispara el evento onclick, que ejecuta el comando javascript.
+También existen tecnologías como Node.js, JavaScript también se puede ejecutar en
+servidores.
 
-```html
-<button onclick="window.alert('hola')">Click me</button>
+## 3. Cómo incluir JavaScript en un HTML
+
+JavaScript puede incluirse de tres maneras:
+
+**a) En línea (Inline)**
+
+Se puede incluir directamente dentro de un elemento HTML utilizando el
+atributo onclick , onchange , etc.
+
+```js
+<button onclick="alert('Hola Mundo')">Haz clic aquí</button>
 ```
 
-## Guardar scripts en archivo externo
+**b) En el head o body (Internal Script)**
 
-Para ello debemos guardar el código en un archivo separado con extensión JS, y luego hacer referencia a él dentro del **head** de nuestro documento HTML:
+Puedes escribir el código JavaScript dentro de etiquetas <script> en el archivo HTML. Este código HTML crea una página web sencilla que incluye un botón, y cuando se hace clic en él, se muestra un mensaje emergente (alerta) en el navegador.
 
 ```html
-<script type="text/javascript" src="scripts.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script>
+      function mostrarMensaje() {
+        alert('¡Bienvenido!');
+        }
+    </script>
+  </head>
+  <body>
+    <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+  </body>
+</html>
 ```
+
+**c) En un archivo externo (External Script)**
+
+Lo más recomendable es colocar el código en un archivo separado con extensión .js , para mantener el código organizado y reutilizable.
+
+<script src="app.js"></script>
 
 De esta forma podremos hacer referencia al mismo archivo desde diferentes HTML, y únicamente realizar modificaciones en el archivo javascript.
 
-## Arrays
+## 4. Variables y Tipos de Datos
 
-Los arrays son conjuntos de elementos.
+En JavaScript, puedes declarar variables usando las palabras clave ``var`` , ``let`` o ``const`` .
 
-```javascript
-alumnes = ["dani","manolo", "Juan"]
+Para usar una variable, primero tenemos que definirla:
+
+```js
+// Definir una variable
+var numero;
+```
+Ahora la variable existe, pero no tiene guardado ningún valor. Para ello, tenemos que asignárselo utilizando el operador de asignación =.
+
+```js
+// Asignar un valor
+numero = 10;
+```
+También podemos definir una variable y asignarle un valor en la misma instrucción:
+
+```js
+// Operar con la variable
+let resultado = numero + 5;
+console.log(resultado); // Imprime 15
 ```
 
-Para hacer referencia a los diferentes elementos del array:
+## 5. Funciones
 
-```javascript
-alumno[0] nos devolverá "dani"
-alumno[1] nos devolverá "manolo"
-alumno[2] nos devolverá "juan"
-```
-Si queremos agregar elmentos al array:
+Las funciones permiten encapsular un bloque de código que puede ejecutarse más tarde. Se definen con la palabra clave function .
 
-```javascript
-alumno.push("pepe")
-```
-Ahora el array tendrá 4 elementos, pepe será **alumno[3]**
+Para definir una función:
 
-Para saber la cantidad de elementos que tiene un array:
-
-```javascript
-alumno.length
-```
-Iterar sobre los elementos de un array con for:
-
-```javascript
-for (i=0;i<alumnos.length;i++){
-  windows.alert(alumnos[i]);
-}
-```
-Eliminar el último elemento:
-
-```javascript
-alumnos.pop()
+```js
+function saludar() {
+  console.log("Hola, bienvenido");
+  }
 ```
 
-Eliminar el primer elemento
+Para llamar a la función:
 
-```javascript
-alumnos.shift()
+```js
+saludar(); // Llama a la función
 ```
 
+También podemos llamar a la función en un atributo de evento:
 
-## Snippets d'exemple
+```js
+<button onclick="saludar()">Click me</button>
+```
 
-Abrir un mensaje de alerta pulsando un enlace:
+## 6. Eventos
 
-![imagen](img/2022-10-06-16-09-50.png)
+Los eventos en JavaScript permiten reaccionar a acciones del usuario, como clics, movimientos del
+ratón, etc.
 
-Abrir una página en una ventana nueva:
+## 7. Manipulación del DOM
 
-![imagen](img/2022-10-06-16-09-59.png)
+El DOM (Document Object Model) es una representación de la estructura de un documento HTML. JavaScript puede interactuar con el DOM para **modificar el contenido y la estructura de la página.**
 
-Imprimir página:
+Utilizaremos identificadores en diferentes elementos para hacer referencia a ellos:
 
-![imagen](img/2022-10-06-16-10-03.png)
+```html
+<p id="miParrafo"></p>
+```
 
-Recargar una página
+Para cambiar  el contenido de este párrafo:
 
-![imagen](img/2022-10-06-16-10-07.png)
+```js
+document.getElementById("miParrafo").innerText = "Nuevo contenido";
+```
 
-Pedir confirmación al salir de una página. Recuerda ponerlo dentro de un bloque javascript, o entre etiquetas script.
+## Eventos
 
-![imagen](img/2022-10-06-16-10-11.png)
+Los eventos son sucesos que ocurren durante la navegación, como por ejemplo pulsar un botón, pasar por encima de un texto, cargar la página.
 
+Podemos utilizar javascript para que, al **dispararse un evento**, ejecute instrucciones de javascript.
 
-Mostrar fecha y hora mediante un botón
+Al clicar en el botón, se dispara el evento onclick, que ejecuta el comando javascript.
 
-![imagen](img/2022-10-06-16-12-04.png)
+```js
+<button onclick="window.alert('hola')">Click me</button>
+```
 
-Cambiar el contenido del HTML
+onclick es un evento en JavaScript que se utiliza para ejecutar una función o un conjunto de instrucciones cuando un usuario hace clic en un elemento específico de una página web, como un botón, enlace, imagen o cualquier otro elemento HTML que soporte eventos.
 
-![imagen](img/2022-10-06-16-12-13.png)
-
-Cambiar atributos de un HTML
-
-![imagen](img/2022-10-06-16-12-22.png)
-
-Cambiar estilos CSS
-
-![imagen](img/2022-10-06-16-12-31.png)
+![](img/2024-10-06-10-28-24.png)

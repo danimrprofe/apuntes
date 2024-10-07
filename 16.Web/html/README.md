@@ -16,8 +16,13 @@
   - [7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.](#73-enlace-a-una-dirección-de-correo-electrónico)
   - [7.4 ENLACE EN UNA NUEVA VENTANA.](#74-enlace-en-una-nueva-ventana)
 - [8. IMÁGENES CON HTML](#8-imágenes-con-html)
+<<<<<<< HEAD
   - [8.1 COMANDOS PARA LAS IMÁGENES](#81-comandos-para-las-imágenes)
   - [Modificar dimensiones de imágenes](#modificar-dimensiones-de-imágenes)
+=======
+  - [Alinear imágenes](#alinear-imágenes)
+  - [Modificar dimensiones](#modificar-dimensiones)
+>>>>>>> 7c0eec1ab93ded9c4d218d1682f1a9e2dd222c1e
   - [Imágenes y enlaces](#imágenes-y-enlaces)
 - [9. Listas](#9-listas)
   - [Listas no ordenadas](#listas-no-ordenadas)
@@ -98,7 +103,26 @@ El cuerpo del documento se define entre las etiquetas <BODY> y </BODY>. Todo lo 
 
 # 3. EJEMPLO DE UN DOCUMENTO HTML
 
+<<<<<<< HEAD
 Ejemplo:
+=======
+Antes de crear nuestra primera página, unas consideraciones sobre el texto:
+
+- Cuando escribimos en el documento el texto que queremos que aparezca
+en la pantalla, veremos que éste se acomoda a ella, sin que tengamos que
+pulsar el retorno del carro. Si queremos separar el texto en distintos párrafos
+debemos usar la etiqueta ``<P>``, (que tiene su correspondiente etiqueta de
+cierre ``</P>``).
+- El texto se puede colocar entre las etiquetas `<H1>` y ``</H1>``, ``<H2> ``y ``</H2>``,
+etc. (hasta el número 6). Este número indica el tamaño del mismo. El tamaño
+mayor es el correspondiente al número 1.
+- Si queremos separar los párrafos, o cualquier otro elemento, pero sin dejar
+una línea en blanco, usamos una etiqueta parecida ``<BR>`` (romper la línea).
+
+**EJEMPLO PRÁCTICO 1**
+
+En el Bloc de notas copiamos lo siguiente:
+>>>>>>> 7c0eec1ab93ded9c4d218d1682f1a9e2dd222c1e
 
 ```html
 <!DOCTYPE html>
@@ -148,10 +172,8 @@ Un párrafo siempre comienza en una nueva línea y los navegadores agregan autom
 
 Para destacar alguna parte del texto se pueden usar las siguientes etiquetas:
 
-- NEGRITA: <B> Texto en negrita </B>
-- CURSIVA: <I> Texto en cursiva </I>
-- SUPERÍNDICES: <SUP> Texto como superíndice </SUP>
-- SUBÍNDICES: <SUB> Texto como subíndice </SUB>
+- NEGRITA: ``<B> Texto en negrita </B>``
+- CURSIVA: ``<I> Texto en cursiva </I>``
 
 ## Estilos de párrafo
 
@@ -222,8 +244,8 @@ interesar dar un salto desde una posición a otra determinada.
 Podemos realizarlo de dos formas:
 
 ```html
-<A HREF="#marca"> Zona Activa </A> (marca puede ser cualquier palabra).
-<A NAME="marca">Zona Activa </A> (marca puede ser cualquier palabra).
+<a HREF="#marca"> Zona Activa </A> (marca puede ser cualquier palabra).
+<a NAME="marca">Zona Activa </A> (marca puede ser cualquier palabra).
 ```
 
 ## 7.2 ENLACES A OTRA PÁGINA
@@ -232,7 +254,7 @@ En este caso, simplemente sustituimos lo que hemos llamado marca (el
 destino del enlace) por el nombre del fichero html.
 
 ```html
-<A HREF="web02.html"> Zona Activa </A>
+<a HREF="web02.html"> Zona Activa </A>
 ```
 
 Si queremos hacer un enlace a una dirección web (URL), simplemente
@@ -240,7 +262,7 @@ sustituimos lo que hemos llamado marca (el destino del enlace) por la dirección
 la página web.
 
 ```html
-<A HREF=“http://colegioliceosorolla.es"> Zona Activa </A>
+<a href="http://colegioliceosorolla.es"> Zona Activa </A>
 ```
 
 ## 7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.
@@ -248,14 +270,14 @@ la página web.
 La estructura de la etiqueta es:
 
 ```html
-<A HREF="mailto: dirección de email"> Zona Activa </A>
+<a HREF="mailto: dirección de email"> Zona Activa </A>
 ```
 
 ## 7.4 ENLACE EN UNA NUEVA VENTANA.
 
 Se utiliza el comando TARGET. La estructura de la etiqueta será:
 ```html
-<A HREF="indice.html" TARGET="ventana2"> Nueva ventana </A>
+<a HREF="indice.html" TARGET="ventana2"> Nueva ventana </A>
 ```
 
 # 8. IMÁGENES CON HTML
@@ -265,7 +287,11 @@ contiene una imagen. Para ello utilizamos la etiqueta IMG con el comando SRC que
 sirve para indicar donde se encuentra la imagen. La estructura de la etiqueta es:
 
 ```html
+<<<<<<< HEAD
 <IMG SRC="imagen.gif">
+=======
+<img src="imagen.gif">
+>>>>>>> 7c0eec1ab93ded9c4d218d1682f1a9e2dd222c1e
 ```
 Dentro del atributo src especificamos la ruta para encontrar el archivo que queremos mostrar.
 
@@ -299,6 +325,7 @@ Ruta hacia un directorio superior: Si la imagen está en un directorio superior 
 
 Aquí puedes ver un ejemplo de cada opción
 
+<<<<<<< HEAD
 ```html
 <!-- Imagen desde un servidor externo -->
 <img src="https://www.example.com/images/photo.jpg" alt="Descripción de la imagen">
@@ -330,10 +357,21 @@ El atributo **WIDTH:** Redefine el ancho de la imagen. Este atributo acepta valo
 ```html
   <img src="imagen.jpg" alt="Descripción de la imagen" width="300">
 ```
+=======
+En HTML, puedes usar los atributos width, height y border para definir el ancho, alto y borde de una imagen. A continuación te muestro cómo utilizarlos dentro de la etiqueta <img>
+
+```html
+<img src="ruta-de-la-imagen.jpg" width="500" height="300" border="5" alt="Descripción de la imagen">
+```
+
+- **`width="500"`**: Define el ancho de la imagen en píxeles. Puedes usar tanto píxeles como porcentaje (`%`) si quieres que el ancho sea relativo al contenedor.
+- **`height="300"`**: Define la altura de la imagen en píxeles o porcentajes.
+- **`border="5"`**: Define un borde alrededor de la imagen. Este atributo está obsoleto en HTML5 y se recomienda usar CSS para personalizar el borde.
+>>>>>>> 7c0eec1ab93ded9c4d218d1682f1a9e2dd222c1e
 
 ## Imágenes y enlaces
 
-Los hipervínculos pueden ser también definidos sobre imágenes de tal forma
+Los **hipervínculos** pueden ser también definidos sobre **imágenes** de tal forma
 que al hacer clic con el ratón sobre algún punto de la superficie de éstas, se pase al documento correspondiente.
 
 Esto suele ser utilizado sobre todo para introducir botones de navegación en
@@ -341,7 +379,9 @@ las páginas HTML. Una imagen que actúa de hipervínculo se distingue mediante 
 borde de color alrededor de ésta.
 
 ```html
-<A HREF="forms.htm">![imagen](images/boton1.gif)</A>
+<a href="https://www.ejemplo.com">
+    <img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen" style="width:500px">
+</a>
 ```
 
 # 9. Listas
@@ -363,7 +403,7 @@ HTML define varios tipos de listas: **ordenadas** y **no ordenadas**
 
 Los elementos de la lista irán precedidos por un símbolo (fijo por defecto) que
 puede variar según el nivel de anidamiento de la lista. Cada elemento de la misma
-llevará la etiqueta: <LI> Primer elemento </LI>
+llevará la etiqueta: ``<LI> Primer elemento </LI>``
 
 Ejemplo de lista no ordenada:
 
@@ -380,6 +420,7 @@ Ejemplo de lista no ordenada:
 ```html
 <OL> Elementos de la lista </OL>
 ```
+
 La etiqueta `<OL>` se utiliza para una lista ordenada o numerada. Cada marca
 `<LI>` incrementará el número que se visualizará delante del elemento de la lista.
 

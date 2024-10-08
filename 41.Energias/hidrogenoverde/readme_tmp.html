@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<ul>
+<li><a href="#hidr%C3%B3geno">Hidrógeno</a>
+<ul>
+<li><a href="#1-introducci%C3%B3n">1. INTRODUCCIÓN</a></li>
+<li><a href="#2-tipos-de-hidr%C3%B3geno">2. TIPOS DE HIDRÓGENO</a></li>
+<li><a href="#3-obtenci%C3%B3n-de-hidr%C3%B3geno">3. OBTENCIÓN DE HIDRÓGENO</a></li>
+<li><a href="#4-hidrogeneras">4. HIDROGENERAS</a></li>
+<li><a href="#5-pila-de-combustible">5. PILA DE COMBUSTIBLE</a></li>
+<li><a href="#6-coches-actuales">6. COCHES ACTUALES</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="hidr%C3%B3geno">Hidrógeno</h1>
+<p>El hidrógeno ha ganado importancia como fuente de energía en los últimos años debido a su potencial para descarbonizar sectores clave que son difíciles de electrificar, como la industria pesada, el transporte de larga distancia y la generación de energía. A diferencia de los combustibles fósiles:</p>
+<ul>
+<li>El hidrógeno verde (producido con energías renovables) <strong>no genera emisiones de CO₂</strong>, lo que lo convierte en una opción crucial en la lucha contra el cambio climático.</li>
+<li>Es <strong>versátil, almacenable y puede integrarse en redes energéticas existentes</strong>, facilitando la transición hacia una economía más limpia y sostenible.</li>
+<li>Su papel en la diversificación energética también ayuda a <strong>reducir la dependencia de los combustibles fósiles</strong> y mitiga los riesgos asociados con la volatilidad de los mercados energéticos globales.</li>
+</ul>
+<h2 id="1-introducci%C3%B3n">1. INTRODUCCIÓN</h2>
+<p>El hidrógeno no es una fuente de energía primaria, sino un <strong>vector energético</strong>. Nos servirá para almacenar energía en un punto, y utilizarla en otro.</p>
+<p>El hidrógeno no lo extraemos de la naturaleza, sino que lo generamos a partir de <strong>agua</strong>.
+Este proceso lo realizaremos utilizando <strong>electricidad generada por placas solares</strong>.</p>
+<p>Recientemente se han puesto en marcha 5 autobuses de la EMT que funcionan a base de <strong>hidrógeno</strong> verde. Veremos de dónde se obtiene, cómo se obtiene y cuáles son las aplicaciones.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-48-40.png" alt=""></p>
+<p>1 autobús H2 = 1.000.000 €
+1 autobús gas natural = 280.000 €</p>
+<h2 id="2-tipos-de-hidr%C3%B3geno">2. TIPOS DE HIDRÓGENO</h2>
+<p>El hidrógeno como fuente de energía recibe diferentes nombres, en función de cómo ha sido generado.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Características</strong></th>
+<th><strong>Hidrógeno Gris</strong></th>
+<th><strong>Hidrógeno Azul</strong></th>
+<th><strong>Hidrógeno Verde</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fuente de producción</strong></td>
+<td>Gas natural o carbón (a través de reformado de metano).</td>
+<td>Gas natural (reformado de metano) con captura de carbono.</td>
+<td>Energía renovable (electrólisis del agua usando energía solar, eólica, etc.)</td>
+</tr>
+<tr>
+<td><strong>Proceso de producción</strong></td>
+<td>Reformado con vapor o gasificación.</td>
+<td>Reformado con vapor, pero con captura y almacenamiento de CO₂ (CCS).</td>
+<td>Electrólisis del agua, sin emisiones directas de carbono.</td>
+</tr>
+<tr>
+<td><strong>Emisiones de CO₂</strong></td>
+<td>Altas emisiones de CO₂.</td>
+<td>Emisiones reducidas debido a la captura de CO₂.</td>
+<td>Emisiones nulas durante la producción.</td>
+</tr>
+<tr>
+<td><strong>Impacto ambiental</strong></td>
+<td>Alto, debido a la emisión de gases de efecto invernadero.</td>
+<td>Moderado, se reducen las emisiones, pero sigue utilizando combustibles fósiles.</td>
+<td>Muy bajo, sin emisiones directas ni uso de combustibles fósiles.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-48-54.png" alt=""></p>
+<p>El hidrógeno <strong>verde</strong>, en su producción, es el único que no contamina pues no se generan gases. Hidrógeno verde = producido a partir de fuentes renovables de energía (solar, eólica, etc.).</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-00.png" alt=""></p>
+<h2 id="3-obtenci%C3%B3n-de-hidr%C3%B3geno">3. OBTENCIÓN DE HIDRÓGENO</h2>
+<p>La <strong>electrólisis</strong> se descubrió por primera vez en el año 1800. Tras la invención de la pila eléctrica por Alessandro Volta ese mismo año, otros químicos probaron a conectar sus polos en un recipiente con agua.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-10.png" alt=""></p>
+<p>Así descubrieron que la corriente fluía por el agua y que en los electrodos aparecían separados el <strong>hidrógeno</strong> y el <strong>oxígeno</strong>.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-20.png" alt=""></p>
+<p>Este proceso implica la descomposición del agua en sus componentes básicos, hidrógeno y oxígeno, utilizando electricidad.</p>
+<p>Hay 3 tecnologías que pueden distinguirse por el electrolito que usan:</p>
+<ul>
+<li><strong>Alcalina</strong>, con un electrolito líquido (generalmente potasa)</li>
+<li><strong>Polimérica</strong> (PEM), con un ionómero ácido</li>
+<li>De <strong>alta temperatura</strong>, con un óxido sólido como electrolito.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-27.png" alt=""></p>
+<p>Podemos generar hidrógeno a partir de luz solar:
+Las placas fotovoltaicas capturan la luz solar y la convierten en electricidad.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-37.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-49-48.png" alt=""></p>
+<p>El proyecto de producción de hidrógeno verde en la planta de Lloseta forma parte de la iniciativa europea &quot;Green Hysland&quot;. Nace en la antigua &quot;fábrica de cemento de Cemex&quot;.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-51-19.png" alt=""></p>
+<p>Ha sido el primer proyecto mediterráneo que ha recibido financiación europea para su ejecución.
+Proyecto “Green Hysland”
+https://greenhysland.eu/acerca-de-green-hysland/</p>
+<p>El objetivo es el de descarbonizar la isla en 2050. El proyecto 'Power to Green Hydrogen Mallorca' incluye la construcción de</p>
+<ul>
+<li>Una planta de electrólisis</li>
+<li>El desarrollo de 2 plantas fotovoltaicas que la alimentan</li>
+<li>Una estación de servicio de hidrógeno verde en la isla.</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-05.png" alt=""></p>
+<p>La UE ha comprometido &quot;10 millones de euros&quot; para su puesta en marcha.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-15.png" alt=""></p>
+<p>La <strong>electrolizadora</strong> es la encargada de, utilizando la electricidad producida por los paneles solares, realizar la electrólisis que da lugar al <strong>hidrógeno</strong> a partir del agua.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-22.png" alt=""></p>
+<p>El electrolizador utiliza la electricidad para dividir el agua en sus componentes básicos, hidrógeno y oxígeno.</p>
+<ul>
+<li>El hidrógeno se recoge en un <strong>tanque</strong> separado para su uso posterior.</li>
+<li>El hidrógeno se puede almacenar de forma <strong>comprimida</strong> o <strong>líquida</strong> para su uso posterior. (350-700 bares de presión)</li>
+</ul>
+<p>Este proceso de producción de hidrógeno verde no emite gases con efecto invernadero.</p>
+<p>Para producir hidrógeno necesitamos un suministro de agua cercano y suficiente. Para producir  necesitamos 10 kg de agua desionizada. Necesitamos la1 kg de hidrógeno verde, mitad de agua que el hidrógeno azul y el hidrógeno gris.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-51-36.png" alt=""></p>
+<p>Una vez que esté plenamente operativo cuando se complete el despliegue de las infraestructuras para su consumo, tendrá una producción de al menos 300 toneladas de hidrógeno renovable anuales.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-51-29.png" alt=""></p>
+<p>Está formado por un conjunto de <strong>celdas</strong>, cada una de las cuales consta de dos electrodos, uno positivo y otro negativo, sumergidos en agua. Cuando se aplica una corriente eléctrica a los electrodos, se produce una reacción química que separa el hidrógeno y el oxígeno.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-31.png" alt=""></p>
+<p>Un <strong>stack</strong> es el conjunto de celdas que se ensamblan. Formado por un marco que sostiene las celdas, un sistema de distribución de agua que suministra agua a las celdas y un sistema de recolección de gases que recoge el hidrógeno y el oxígeno producidos.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-39.png" alt=""></p>
+<p>Ejemplo:</p>
+<ul>
+<li>Electrolizador de 20 MW</li>
+<li>16 stacks de 1, 25 MW</li>
+<li>Cada stack de 200 celdas</li>
+</ul>
+<p>Para generar hidrógeno, es necesaria <strong>electricidad</strong>. Si es hidrógeno verde, esta electricidad se debe obtener de energías renovables, como por ejemplo la energía solar fotovoltaica.</p>
+<p>Para ello se aprovechan para alimentar el electrolizador las plantas fotovoltaicas de Lloseta (8,5MW) y Petra (5,85MW).</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-50-55.png" alt=""></p>
+<h2 id="4-hidrogeneras">4. HIDROGENERAS</h2>
+<p>Los vehículos que utilizan hidrógeno son coches con <strong>motor eléctrico</strong>. La electricidad, en lugar de cargarse en baterías, se va generando a medida que el coche circula. Hoy en día se utiliza, entre otros, en coches eléctricos y autobuses.</p>
+<p>Poco a poco se van instalando más hidrogeneras en España.
+A fecha de 26 de enero de 2024, España cuenta con <strong>11 hidrogeneras en activo</strong>. De estas, 2 son públicas y 9 privadas. Las hidrogeneras públicas están abiertas a cualquier usuario, mientras que las hidrogeneras privadas están reservadas a clientes específicos, como empresas o flotas de vehículos.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-52-00.png" alt=""></p>
+<p>Cuando un vehículo de celdas de combustible necesita combustible, se acerca a la <strong>hidrogenera</strong>. Es similar a una gasolinera o estación de servicio, pero en lugar de gasolina, suministran hidrógeno a los vehículos.</p>
+<p>Existe una en Mallorca, pero no está operativa. Por el momento, se traen <strong>cartuchos</strong> de hidrógeno de la península.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-51-50.png" alt=""></p>
+<p>El hidrógeno se suministra al motor del autobús a través de una &quot;tubería de alta presión&quot;.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-52-09.png" alt=""></p>
+<p>Se almacenan a presión en cilindros de almacenamiento reforzados</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-52-13.png" alt=""></p>
+<p>En el caso del coche, podemos ver como los depósitos de hidrógeno se sitúan en la parte inferior del coche, bajo los asientos.
+Los tres depósitos del Mirai pueden albergar un máximo de unos 7,8 kg</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-52-27.png" alt=""></p>
+<h2 id="5-pila-de-combustible">5. PILA DE COMBUSTIBLE</h2>
+<p>La pila de combustible genera <strong>electricidad</strong> para el motor del coche a partir del hidrógeno de los tanques de almacenamiento y del oxígeno que va captando del aire. Esta electricidad se transporta al <strong>motor eléctrico</strong>, que mueve las ruedas del coche.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/![](img/2024-10-02-13-53-29.png).png" alt=""></p>
+<p>El funcionamiento de la celda de combustible es el siguiente:</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/pilacombustible.gif" alt=""></p>
+<ol>
+<li>Cuando el hidrógeno entra en la célula de combustible, se encuentra con un catalizador que descompone las moléculas de hidrógeno en protones (H+) y electrones (e-).</li>
+<li>Los protones se mueven cruzando una membrana de intercambio de protones hacia la sección de cátodo de la célula</li>
+<li>Los electrones se desplazan a través de un circuito externo para generar electricidad.</li>
+<li>En el cátodo, los protones y los electrones se combinan con oxígeno del aire exterior para producir agua en forma de vapor de agua.</li>
+</ol>
+<p>Estas dos placas de platino son el <strong>catalizador</strong>. Favorecen la reacción que disocia las moléculas
+En este lado el hidrógeno se adhiere a la superficie de platino y rompe el enlace molecular
+H2 → 2H+ + 2e-</p>
+<h2 id="6-coches-actuales">6. COCHES ACTUALES</h2>
+<h3 id="veh%C3%ADculos-de-combusti%C3%B3n-interna">Vehículos de combustión interna</h3>
+<p>utilizan un motor de combustión interna que quema combustible para generar energía mecánica.
+Utilizan combustibles fósiles como la gasolina, el diésel o el gas natural.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-53-00.png" alt=""></p>
+<h3 id="veh%C3%ADculos-el%C3%A9ctricos">vehículos eléctricos</h3>
+<p>utilizan &quot;baterías&quot; eléctricas para almacenar energía y motores eléctricos para generar energía mecánica.
+vehículos híbridos</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-53-16.png" alt=""></p>
+<h3 id="veh%C3%ADculos-h%C3%ADbridos">Vehículos híbridos</h3>
+<p>Combinan un motor de combustión interna con un motor eléctrico y una batería.
+Estos vehículos pueden funcionar con combustibles fósiles y electricidad.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-02-13-53-06.png" alt=""></p>
+<h3 id="veh%C3%ADculos-de-hidr%C3%B3geno">Vehículos de hidrógeno</h3>
+<p>Actualmente (2022), en España solo se venden 3 modelos comerciales. Toyota vende en España el <strong>Mirai</strong>, una berlina con una longitud de 4,97 metros. Parte de un precio de 68.900 euros. Existen ayudas estatales para la adquisición de estos coches.</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-08-18-27-10.png" alt=""></p>
+<p>Un tubo trae el hidrógeno de los depósitos, otro lleva el oxígeno captado del aire y otro se lleva el vapor de agua producido para expulsarlo al exterior. Los <strong>cables rojos</strong> son cables de alto voltaje. Transportan la electricidad generada hacia el motor eléctrico</p>
+<p><img src="file:///e:/Docencia/apuntes/41.Energias/hidrogenoverde/img/2024-10-08-18-38-52.png" alt=""></p>
+<p><strong>Consumo y coste</strong></p>
+<p>Un coche 100% eléctrico tiene un costo de recarga que oscila entre 1-2 € / 100 km si se hace en casa.
+El precio depende del coste de la energía en el momento de la recarga.
+Mercado</p>
+<ul>
+<li>El hidrógeno se vende ahora a 10 € por kilogramo.</li>
+<li>Consumo: 0,8 kg / 100 km</li>
+<li>Capacidad depósito: 8 kg</li>
+<li>Coste: 8 € / 100 km</li>
+</ul>
+
+</body>
+</html>

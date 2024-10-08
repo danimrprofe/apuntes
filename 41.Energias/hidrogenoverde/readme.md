@@ -8,6 +8,12 @@
 
 # Hidrógeno
 
+El hidrógeno ha ganado importancia como fuente de energía en los últimos años debido a su potencial para descarbonizar sectores clave que son difíciles de electrificar, como la industria pesada, el transporte de larga distancia y la generación de energía. A diferencia de los combustibles fósiles:
+
+- El hidrógeno verde (producido con energías renovables) **no genera emisiones de CO₂**, lo que lo convierte en una opción crucial en la lucha contra el cambio climático.
+- Es **versátil, almacenable y puede integrarse en redes energéticas existentes**, facilitando la transición hacia una economía más limpia y sostenible.
+- Su papel en la diversificación energética también ayuda a **reducir la dependencia de los combustibles fósiles** y mitiga los riesgos asociados con la volatilidad de los mercados energéticos globales.
+
 ## 1. INTRODUCCIÓN
 
 El hidrógeno no es una fuente de energía primaria, sino un **vector energético**. Nos servirá para almacenar energía en un punto, y utilizarla en otro.

@@ -1,17 +1,33 @@
+- [Energía hidráulica](#energía-hidráulica)
+  - [1. CONDUCCIÓN Y ALMACENAMIENTO DE AGUA](#1-conducción-y-almacenamiento-de-agua)
+  - [Acueductos](#acueductos)
+  - [Canales](#canales)
+  - [Sistemas de drenaje](#sistemas-de-drenaje)
+  - [Plantas de tratamiento de agua](#plantas-de-tratamiento-de-agua)
+  - [Embalses y presas](#embalses-y-presas)
+  - [4. PRESAS](#4-presas)
+  - [Presas de gravedad](#presas-de-gravedad)
+  - [Presas de arco](#presas-de-arco)
+  - [3. CENTRALES HIDROELÉCTRICAS](#3-centrales-hidroeléctricas)
+  - [Componentes de una central](#componentes-de-una-central)
+  - [Detección de movimientos](#detección-de-movimientos)
+  - [Captación de agua](#captación-de-agua)
+  - [Turbinas](#turbinas)
+  - [Generación de electricidad](#generación-de-electricidad)
+  - [4. TIPOS DE CENTRALES](#4-tipos-de-centrales)
+  - [Centrales en circuitos de agua potable](#centrales-en-circuitos-de-agua-potable)
+
 # Energía hidráulica
 
-La energía hidráulica es una forma de energía renovable que se genera a partir del movimiento del agua, ya sea en ríos, embalses o corrientes de agua. Esta energía se obtiene aprovechando la energía potencial del agua almacenada en alturas, así como su energía cinética cuando fluye
+La energía hidráulica es una forma de energía renovable que se genera a partir del movimiento del agua, ya sea en ríos, embalses o corrientes de agua. Esta energía se obtiene aprovechando la energía potencial del agua almacenada en alturas, así como su energía cinética cuando fluye.
 
-## Introducción
+![](img/2024-10-08-07-29-17.png)
 
-En toda España (menos en las Islas Baleares) se produce energía hidráulica
-Representa un **20% del total** de la energía eléctrica que se genera.
+Esta energía se va acumulando gracias a la evaporación y precipitación gradual de grandes cantidades de agua, debido a la acción del sol.
 
-Podemos encontrar más de **1.300 centrales hidroeléctricas** en España, tanto convencionales como no convencionales
+## 1. CONDUCCIÓN Y ALMACENAMIENTO DE AGUA
 
-![](img/2024-10-06-16-24-12.png)
-
-## Molinos de agua
+### Molinos de agua
 
 Los **molinos de agua** son máquinas que convierten la energía del agua en energía mecánica. El agua fluye sobre una rueda hidráulica, la cual gira gracias a la fuerza del agua y acciona un mecanismo que, tradicionalmente, se utilizaba para moler grano.
 
@@ -22,34 +38,6 @@ Las **norias** son ruedas de gran tamaño que también aprovechan la energía de
 ![](img/2024-10-06-16-01-39.png)
 
 https://www.youtube.com/watch?v=xl6LqdmEbCQ
-
-## Embalses y presas
-
-Los **embalses** sonon grandes depósitos de agua. Estos cuerpos de agua artificiales se forman al bloquear el flujo de un río o arroyo mediante una **presa**, lo que provoca que el agua se acumule en un área detrás de la estructura.
-
-Los embalses se utilizan para diversos fines, como:
-
-- Abastecimiento de agua
-- Generación de energía hidroeléctrica
-- Control de inundaciones
-- Riego agrícola
-- Ocio
-
-## Presas de gravedad
-
-Son aquellas que se mantienen en pie y contienen el agua principalmente debido a su propio peso. Estas presas están construidas generalmente con hormigón o piedra y están diseñadas para resistir la presión del agua detrás de ellas. La fuerza de la gravedad impide que la presa se desplace.
-
-![](img/2024-10-06-15-51-19.png)
-
-![](img/2024-10-06-15-51-23.png)
-
-## Presas de arco
-
-Estas presas tienen una forma arqueada con el lado cóncavo orientado hacia el agua. El diseño en arco permite que la presión del agua sea distribuida a los lados del valle o las paredes del cañón. Por lo general, se construyen en lugares estrechos con márgenes rocosos y sólidos, donde la estructura puede apoyarse eficazmente.
-
-![](img/2024-10-06-15-51-33.png)
-
-![](img/2024-10-06-15-51-37.png)
 
 ## Acueductos
 
@@ -87,7 +75,43 @@ Estas plantas pueden utilizar una variedad de procesos, como la filtración y la
 
 ![](img/2024-10-06-15-52-51.png)
 
-## Central hidroeléctrica
+## Embalses y presas
+
+Los **embalses** son grandes depósitos de agua. Estos cuerpos de agua artificiales se forman al bloquear el flujo de un río o arroyo mediante una **presa**, lo que provoca que el agua se acumule en un área detrás de la estructura.
+
+Los embalses se utilizan para diversos fines, como:
+
+- Abastecimiento de agua
+- Generación de energía hidroeléctrica
+- Control de inundaciones
+- Riego agrícola
+- Ocio
+
+## 4. PRESAS
+
+## Presas de gravedad
+
+Son aquellas que se mantienen en pie y contienen el agua principalmente debido a su propio peso. Estas presas están construidas generalmente con hormigón o piedra y están diseñadas para resistir la presión del agua detrás de ellas. La fuerza de la gravedad impide que la presa se desplace.
+
+![](img/2024-10-06-15-51-19.png)
+
+![](img/2024-10-06-15-51-23.png)
+
+## Presas de arco
+
+Estas presas tienen una forma arqueada con el lado cóncavo orientado hacia el agua. El diseño en arco permite que la presión del agua sea distribuida a los lados del valle o las paredes del cañón. Por lo general, se construyen en lugares estrechos con márgenes rocosos y sólidos, donde la estructura puede apoyarse eficazmente.
+
+![](img/2024-10-06-15-51-33.png)
+
+![](img/2024-10-06-15-51-37.png)
+
+## 3. CENTRALES HIDROELÉCTRICAS
+
+En toda España (menos en las Islas Baleares) se produce energía hidráulica. lo que representa un **20% del total** de la energía eléctrica que se genera.
+
+Podemos encontrar más de **1.300 centrales hidroeléctricas** en España, tanto convencionales como no convencionales
+
+![](img/2024-10-06-16-24-12.png)
 
 Una **central hidroeléctrica** es una instalación cuya misión es convertir la **energía potencial y cinética** del agua en **energía eléctrica** disponible para el consumo. Este proceso se realiza aprovechando el movimiento del agua, que al caer desde una altura o al ser liberada a presión, impulsa las turbinas conectadas a generadores eléctricos. A través de este mecanismo, la energía contenida en el agua se transforma en electricidad limpia y renovable.
 
@@ -167,7 +191,8 @@ https://www.youtube.com/watch?v=Lx6UfiEU3Q0
 
 ## Generación de electricidad
 
-La electricidad generada se eleva antes de trasladarla a la red eléctrica mediante un **transformador**. Posteriormente, una línea eléctrica transporta la electricidad hacia alguna **subestación**.
+La corriente eléctrica obtenida en el **alternador**, de alta intensidad y tensión media, se modifica por medio de los transformadores elevadores (se eleva la tensión y se disminuye la intensidad), para facilitarla
+el transporte en líneas de alta tensión, que permiten utilizar cables más delgados y reducir sus pérdidas.
 
 ![](img/2024-10-06-15-55-36.png)
 
@@ -175,7 +200,7 @@ La electricidad se transmite a través de **líneas de transmisión** hacia los 
 
 ![](img/2024-10-06-15-55-41.png)
 
-## Tipos de centrales hidroeléctricas
+## 4. TIPOS DE CENTRALES
 
 ### Centrales de embalse
 

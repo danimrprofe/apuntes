@@ -64,16 +64,6 @@ Las placas fotovoltaicas capturan la luz solar y la convierten en electricidad.
 
 ![](img/2024-10-02-13-49-37.png)
 
-El electrolizador utiliza la electricidad para dividir el agua en sus componentes básicos, hidrógeno y oxígeno.
-El hidrógeno se recoge en un **tanque** separado para su uso posterior.
-
-El hidrógeno se puede almacenar de forma **comprimida** o **líquida** para su uso posterior. (350-700 bares de presión)
-
-Hidrógeno utilizando placas solares
-Este proceso de producción de hidrógeno verde no emite gases con efecto invernadero.
-
-Para producir hidrógeno necesitamos un suministro de agua cercano y suficiente. Para producir  necesitamos 10 kg de agua desionizada. Necesitamos la1 kg de hidrógeno verde, mitad de agua que el hidrógeno azul y el hidrógeno gris.
-
 ![](img/2024-10-02-13-49-48.png)
 
 El proyecto de producción de hidrógeno verde en la planta de Lloseta forma parte de la iniciativa europea "Green Hysland". Nace en la antigua "fábrica de cemento de Cemex".
@@ -98,9 +88,18 @@ La UE ha comprometido "10 millones de euros" para su puesta en marcha.
 
 La **electrolizadora** es la encargada de, utilizando la electricidad producida por los paneles solares, realizar la electrólisis que da lugar al **hidrógeno** a partir del agua.
 
-![](img/2024-10-02-13-51-36.png)
-
 ![](img/2024-10-02-13-50-22.png)
+
+El electrolizador utiliza la electricidad para dividir el agua en sus componentes básicos, hidrógeno y oxígeno.
+
+- El hidrógeno se recoge en un **tanque** separado para su uso posterior.
+- El hidrógeno se puede almacenar de forma **comprimida** o **líquida** para su uso posterior. (350-700 bares de presión)
+
+Este proceso de producción de hidrógeno verde no emite gases con efecto invernadero.
+
+Para producir hidrógeno necesitamos un suministro de agua cercano y suficiente. Para producir  necesitamos 10 kg de agua desionizada. Necesitamos la1 kg de hidrógeno verde, mitad de agua que el hidrógeno azul y el hidrógeno gris.
+
+![](img/2024-10-02-13-51-36.png)
 
 Una vez que esté plenamente operativo cuando se complete el despliegue de las infraestructuras para su consumo, tendrá una producción de al menos 300 toneladas de hidrógeno renovable anuales.
 

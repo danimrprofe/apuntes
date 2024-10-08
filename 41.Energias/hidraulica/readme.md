@@ -143,19 +143,13 @@ Vista interior
 
 Los péndulos directos e invertidos se usan generalmente para medir rotaciones y traslaciones de estructuras grandes como presas, diques de concreto, edificios altos, torres, estaciones nucleares, etc.
 
-El **péndulo directo** se usa generalmente para medir la rotación de una estructura.
+El **péndulo directo** se usa generalmente para medir la **rotación** de una estructura.
 
 ![](img/2024-10-06-15-53-44.png)
 
 El **péndulo invertido** se usa para detectar movimientos horizontales (traslación) de una estructura con respecto a puntos profundos en la roca fundamental.
 
 ![](img/2024-10-06-15-53-49.png)
-
-Los **azudes** son estructuras más pequeñas que las presas que se utilizan para desviar el agua de un río hacia un canal o acequia.
-Las presas son estructuras que se construyen en un río para elevar el nivel del agua y crear un embalse
-Retención y almacenaje
-
-![](img/2024-10-06-15-54-00.png)
 
 ## Captación de agua
 
@@ -204,19 +198,27 @@ La electricidad se transmite a través de **líneas de transmisión** hacia los 
 
 ### Centrales de embalse
 
-En estas centrales existe un embalse en el que se almacena agua y del que se realiza la toma.
+Las centrales hidroeléctricas que utilizan embalses para almacenar agua permiten regular el caudal de agua, lo que proporciona flexibilidad para generar electricidad en momentos de alta demanda o cuando los precios son más favorables.
 
-Se permite regular el caudal
-Se puede elegir el momento de funcionamiento para mayor demanda o mejor precio.
+Algunas características clave de estas centrales son:
+
+1. Almacenamiento de agua: El embalse permite acumular agua para su uso posterior.
+2. Regulación del caudal: Se puede ajustar el caudal de agua que pasa por las turbinas, optimizando la producción de energía.
+3. Gestión de la producción: La posibilidad de elegir cuándo generar energía ayuda a maximizar ingresos y eficiencia.
 
 ![](img/2024-10-06-15-55-54.png)
 
 ### Centrales de bombeo o reversibles
 
-as centrales hidroeléctricas de bombeo o centrales reversibles son un tipo especial de instalación hidroeléctrica que no solo genera electricidad, sino que también actúa como un sistema de almacenamiento de energía. Su funcionamiento se basa en la existencia de dos embalses: uno ubicado aguas arriba de la central y otro aguas abajo. Estas centrales pueden operar tanto en modo de generación de electricidad como en modo de bombeo, según la demanda de energía en la red eléctrica.
+as centrales hidroeléctricas de bombeo o centrales reversibles son un tipo especial de instalación hidroeléctrica que no solo genera electricidad, sino que también actúa como un sistema de almacenamiento de energía. Su funcionamiento se basa en la existencia de **dos embalses**:
 
-- En momentos de alta demanda funcionan como centrales que turbinan agua.
-- En momento de baja demanda. El precio es bajo y el nivel del embalse superior lo permite, bombean agua del embalse inferior al superior
+- Uno ubicado aguas arriba de la central
+- Otro aguas abajo
+
+Estas centrales pueden operar tanto en **modo de generación de electricidad** como en **modo de bombeo**, según la demanda de energía en la red eléctrica.
+
+- **Modo de generación de electricidad:** en momentos de alta demanda funcionan como centrales que turbinan agua para generar electricidad.
+- **Modo de bombeo:** en momento de baja demanda. Si el precio es bajo y el nivel del embalse superior lo permite, bombean agua del embalse inferior al superior.
 
 Funcionan como almacenes energéticos.
 
@@ -226,20 +228,29 @@ https://www.youtube.com/watch?v=ZcJCVwF9yNQ
 
 ### Centrales de agua fluyente
 
-Las centrales de agua fluyente son instalaciones hidroeléctricas que aprovechan el caudal de un río o canal para generar electricidad sin la necesidad de embalses de regulación. Esto significa que no almacenan agua para su uso posterior, sino que turbinan el agua que pasa en el momento, generando energía en tiempo real.
+Las centrales de agua fluyente son instalaciones hidroeléctricas que **aprovechan el caudal de un río o canal** para generar electricidad **sin la necesidad de embalses** de regulación. Esto significa que no almacenan agua para su uso posterior, sino que turbinan **el agua que pasa en el momento**, generando energía en tiempo real.
 
 https://www.youtube.com/watch?v=Ac6sqA6zmoI
 
 ![](img/2024-10-06-15-56-18.png)
 
-- **Centrales sobre el azud:** No detraen agua del cauce. No dejan zona seca o con bajo caudal.
-El azud eleva el nivel del agua, incrementa la altura del salto. Crea zona de aguas tranquilas de donde se detrae el agua
+ **Centrales sobre el azud:**
+
+El **azud** eleva el nivel del agua, incrementa la altura del salto. Crea zona de aguas tranquilas de donde se detrae el agua
+Las presas son estructuras que se construyen en un río para elevar el nivel del agua y crear un embalse
+Retención y almacenaje
+
+![](img/2024-10-06-15-54-00.png)
+
+No detraen agua del cauce. No dejan zona seca o con bajo caudal.
 
 ![](img/2024-10-06-15-56-45.png)
 
 ![](img/2024-10-06-15-56-49.png)
 
-- **Con canal de derivación:** Toman el agua mediante una obra dispuesta en el azud y dirigen hacia la central mediante un canal. Detraen agua del cauce. Deben asegurar un caudal de servidumbre.
+**Con canal de derivación:**
+
+Toman el agua mediante una obra dispuesta en el azud y dirigen hacia la central mediante un canal. Detraen agua del cauce. Deben asegurar un caudal de servidumbre.
 Cuando el caudal es superior al que se puede turbinar, el sobrante pasa por encima del azud.
 Si la turbina para, el caudal pasa por encima del azud, circulando por el cauce del río.
 

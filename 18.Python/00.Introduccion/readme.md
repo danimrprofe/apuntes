@@ -1,6 +1,16 @@
 
 # Python
 
+## Introducción
+
+En este tema aprendremos un **lenguaje de programación**. Los lenguajes de programación se utilizan para crear **programas** que necesitamos que nuestro ordenador utilice.
+
+Los ordenadores trabajan con lenguaje binario (0s y 1s), un idioma completamente diferente al de los humanos. Es por ello que se crean los lenguajes de programación. Gracias a ellos, las personas pueden escribir programas de una forma similar al lenguaje humano.
+
+A diseñar, escribir y probar estos programas se le llama **programar**.
+
+Una vez
+
 ## El lenguaje Python
 
 Existen muchos lenguajes de programación, que son como diferentes idiomas. Cada uno tiene unas palabras propias y una determinada forma de escribirse, y se utilizan para tareas muy variadas. Nosotros vamos a aprender a utilizar **Python**, uno de los lenguajes más populares, pero hay muchos más.

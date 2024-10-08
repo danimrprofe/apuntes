@@ -1,31 +1,45 @@
+- [Hidrógeno](#hidrógeno)
+  - [1. INTRODUCCIÓN](#1-introducción)
+  - [2. TIPOS DE HIDRÓGENO](#2-tipos-de-hidrógeno)
+  - [3. OBTENCIÓN DE HIDRÓGENO](#3-obtención-de-hidrógeno)
+  - [4. HIDROGENERAS](#4-hidrogeneras)
+  - [5. PILA DE COMBUSTIBLE](#5-pila-de-combustible)
+  - [6. COCHES ACTUALES](#6-coches-actuales)
+
 # Hidrógeno
 
-## Introducción
+## 1. INTRODUCCIÓN
 
 El hidrógeno no es una fuente de energía primaria, sino un **vector energético**. Nos servirá para almacenar energía en un punto, y utilizarla en otro.
 
 El hidrógeno no lo extraemos de la naturaleza, sino que lo generamos a partir de **agua**.
 Este proceso lo realizaremos utilizando **electricidad generada por placas solares**.
 
-## Autobuses EMT
-
-Durante este año, se han puesto en marcha 5 autobuses de la EMT que funcionan a base de hidrógeno verde. Veremos de dónde se obtiene, cómo se obtiene y cuáles son las aplicaciones.
+Recientemente se han puesto en marcha 5 autobuses de la EMT que funcionan a base de **hidrógeno** verde. Veremos de dónde se obtiene, cómo se obtiene y cuáles son las aplicaciones.
 
 ![](img/2024-10-02-13-48-40.png)
 
 1 autobús H2 = 1.000.000 €
 1 autobús gas natural = 280.000 €
 
-## Tipos de hidrógeno
+## 2. TIPOS DE HIDRÓGENO
 
 El hidrógeno como fuente de energía recibe diferentes nombres, en función de cómo ha sido generado.
 
+| **Características**       | **Hidrógeno Gris**                                        | **Hidrógeno Azul**                                                              | **Hidrógeno Verde**                                                          |
+| ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Fuente de producción**  | Gas natural o carbón (a través de reformado de metano).   | Gas natural (reformado de metano) con captura de carbono.                       | Energía renovable (electrólisis del agua usando energía solar, eólica, etc.) |
+| **Proceso de producción** | Reformado con vapor o gasificación.                       | Reformado con vapor, pero con captura y almacenamiento de CO₂ (CCS).            | Electrólisis del agua, sin emisiones directas de carbono.                    |
+| **Emisiones de CO₂**      | Altas emisiones de CO₂.                                   | Emisiones reducidas debido a la captura de CO₂.                                 | Emisiones nulas durante la producción.                                       |
+| **Impacto ambiental**     | Alto, debido a la emisión de gases de efecto invernadero. | Moderado, se reducen las emisiones, pero sigue utilizando combustibles fósiles. | Muy bajo, sin emisiones directas ni uso de combustibles fósiles.             |
+
 ![](img/2024-10-02-13-48-54.png)
 
-- El hidrógeno **verde**, en su producción, es el único que no contamina pues no se generan gases. Hidrógeno verde = producido a partir de fuentes renovables de energía (solar, eólica, etc.).
+El hidrógeno **verde**, en su producción, es el único que no contamina pues no se generan gases. Hidrógeno verde = producido a partir de fuentes renovables de energía (solar, eólica, etc.).
+
 ![](img/2024-10-02-13-49-00.png)
 
-## ¿Cómo obtenemos el hidrógeno?
+## 3. OBTENCIÓN DE HIDRÓGENO
 
 La **electrólisis** se descubrió por primera vez en el año 1800. Tras la invención de la pila eléctrica por Alessandro Volta ese mismo año, otros químicos probaron a conectar sus polos en un recipiente con agua.
 
@@ -37,8 +51,6 @@ Así descubrieron que la corriente fluía por el agua y que en los electrodos ap
 
 Este proceso implica la descomposición del agua en sus componentes básicos, hidrógeno y oxígeno, utilizando electricidad.
 
-## Tecnologías de hidrólisis
-
 Hay 3 tecnologías que pueden distinguirse por el electrolito que usan:
 
 - **Alcalina**, con un electrolito líquido (generalmente potasa)
@@ -46,8 +58,6 @@ Hay 3 tecnologías que pueden distinguirse por el electrolito que usan:
 - De **alta temperatura**, con un óxido sólido como electrolito.
 
 ![](img/2024-10-02-13-49-27.png)
-
-## Generación a partir de energía solar
 
 Podemos generar hidrógeno a partir de luz solar:
 Las placas fotovoltaicas capturan la luz solar y la convierten en electricidad.
@@ -62,12 +72,7 @@ El hidrógeno se puede almacenar de forma **comprimida** o **líquida** para su 
 Hidrógeno utilizando placas solares
 Este proceso de producción de hidrógeno verde no emite gases con efecto invernadero.
 
-## ¿Cuanta agua necesitamos?
-
-Para producir hidrógeno necesitamos un suministro de agua cercano y suficiente. Para producir  necesitamos 10 kg de agua desionizada.
-Necesitamos la1 kg de hidrógeno verde, mitad de agua que el hidrógeno azul y el hidrógeno gris.
-
-## El proyecto Green Hysland
+Para producir hidrógeno necesitamos un suministro de agua cercano y suficiente. Para producir  necesitamos 10 kg de agua desionizada. Necesitamos la1 kg de hidrógeno verde, mitad de agua que el hidrógeno azul y el hidrógeno gris.
 
 ![](img/2024-10-02-13-49-48.png)
 
@@ -88,8 +93,6 @@ El objetivo es el de descarbonizar la isla en 2050. El proyecto 'Power to Green 
 ![](img/2024-10-02-13-50-05.png)
 
 La UE ha comprometido "10 millones de euros" para su puesta en marcha.
-
-## Producción del hidrógeno
 
 ![](img/2024-10-02-13-50-15.png)
 
@@ -117,28 +120,26 @@ Ejemplo:
 - 16 stacks de 1, 25 MW
 - Cada stack de 200 celdas
 
-## ¿De dónde extraemos la electricidad?
+Para generar hidrógeno, es necesaria **electricidad**. Si es hidrógeno verde, esta electricidad se debe obtener de energías renovables, como por ejemplo la energía solar fotovoltaica.
 
-Para generar hidrógeno, es necesaria **electricidad**.
-Si es hidrógeno verde, esta electricidad se debe obtener de energías renovables, como por ejemplo la energía solar fotovoltaica.
 Para ello se aprovechan para alimentar el electrolizador las plantas fotovoltaicas de Lloseta (8,5MW) y Petra (5,85MW).
 
 ![](img/2024-10-02-13-50-55.png)
 
-## Vehículos eléctricos de hidrógeno
+## 4. HIDROGENERAS
 
-![](img/2024-10-02-13-52-00.png)
-
-Cuando un vehículo de celdas de combustible necesita combustible, se acerca a la **hidrogenera**. En ella el hidrógeno se dispensa y se suministra al vehículo.
-
-![](img/2024-10-02-13-51-50.png)
-
-Existe una en Mallorca, pero no está operativa. Por el momento, se traen **cartuchos** de hidrógeno de la península.
-
-## Hidrogeneras en España
+Los vehículos que utilizan hidrógeno son coches con **motor eléctrico**. La electricidad, en lugar de cargarse en baterías, se va generando a medida que el coche circula. Hoy en día se utiliza, entre otros, en coches eléctricos y autobuses.
 
 Poco a poco se van instalando más hidrogeneras en España.
 A fecha de 26 de enero de 2024, España cuenta con **11 hidrogeneras en activo**. De estas, 2 son públicas y 9 privadas. Las hidrogeneras públicas están abiertas a cualquier usuario, mientras que las hidrogeneras privadas están reservadas a clientes específicos, como empresas o flotas de vehículos.
+
+![](img/2024-10-02-13-52-00.png)
+
+Cuando un vehículo de celdas de combustible necesita combustible, se acerca a la **hidrogenera**. Es similar a una gasolinera o estación de servicio, pero en lugar de gasolina, suministran hidrógeno a los vehículos.
+
+Existe una en Mallorca, pero no está operativa. Por el momento, se traen **cartuchos** de hidrógeno de la península.
+
+![](img/2024-10-02-13-51-50.png)
 
 El hidrógeno se suministra al motor del autobús a través de una "tubería de alta presión".
 
@@ -153,65 +154,65 @@ Los tres depósitos del Mirai pueden albergar un máximo de unos 7,8 kg
 
 ![](img/2024-10-02-13-52-27.png)
 
-Vehículos de combustión interna:
+## 5. PILA DE COMBUSTIBLE
+
+La pila de combustible genera **electricidad** para el motor del coche a partir del hidrógeno de los tanques de almacenamiento y del oxígeno que va captando del aire. Esta electricidad se transporta al **motor eléctrico**, que mueve las ruedas del coche.
+
+![](img/![](img/2024-10-02-13-53-29.png).png)
+
+El funcionamiento de la celda de combustible es el siguiente:
+
+![](img/pilacombustible.gif)
+
+1. Cuando el hidrógeno entra en la célula de combustible, se encuentra con un catalizador que descompone las moléculas de hidrógeno en protones (H+) y electrones (e-).
+2. Los protones se mueven cruzando una membrana de intercambio de protones hacia la sección de cátodo de la célula
+3. Los electrones se desplazan a través de un circuito externo para generar electricidad.
+4. En el cátodo, los protones y los electrones se combinan con oxígeno del aire exterior para producir agua en forma de vapor de agua.
+
+Estas dos placas de platino son el **catalizador**. Favorecen la reacción que disocia las moléculas
+En este lado el hidrógeno se adhiere a la superficie de platino y rompe el enlace molecular
+H2 → 2H+ + 2e-
+
+## 6. COCHES ACTUALES
+
+### Vehículos de combustión interna
+
 utilizan un motor de combustión interna que quema combustible para generar energía mecánica.
 Utilizan combustibles fósiles como la gasolina, el diésel o el gas natural.
 
 ![](img/2024-10-02-13-53-00.png)
 
-vehículos eléctricos
+### vehículos eléctricos
+
 utilizan "baterías" eléctricas para almacenar energía y motores eléctricos para generar energía mecánica.
 vehículos híbridos
 
 ![](img/2024-10-02-13-53-16.png)
+
+### Vehículos híbridos
 
 Combinan un motor de combustión interna con un motor eléctrico y una batería.
 Estos vehículos pueden funcionar con combustibles fósiles y electricidad.
 
 ![](img/2024-10-02-13-53-06.png)
 
-## Pila de combustible
+### Vehículos de hidrógeno
 
-Genera **electricidad** para el motor del coche a partir de hidrógeno
+Actualmente (2022), en España solo se venden 3 modelos comerciales. Toyota vende en España el **Mirai**, una berlina con una longitud de 4,97 metros. Parte de un precio de 68.900 euros. Existen ayudas estatales para la adquisición de estos coches.
 
-En la parte delantera encontramos la celda de combustible, que genera la electricidad a partir del hidrógeno que proviene de los tanques. Esta electricidad se transporta al motor eléctrico, que mueve las ruedas del coche.
+![](img/2024-10-08-18-27-10.png)
 
-![](img/2024-10-02-13-53-29.png)
+Un tubo trae el hidrógeno de los depósitos, otro lleva el oxígeno captado del aire y otro se lleva el vapor de agua producido para expulsarlo al exterior. Los **cables rojos** son cables de alto voltaje. Transportan la electricidad generada hacia el motor eléctrico
 
-Convierte la energía química almacenada en un combustible, como el hidrógeno, directamente en electricidad y calor.
-Cuando el hidrógeno entra en la célula de combustible, se encuentra con un catalizador que descompone las moléculas de hidrógeno en protones (H+) y electrones (e-).
+![](img/2024-10-08-18-38-52.png)
 
-Los protones se mueven cruzando una membrana de intercambio de protones hacia la sección de cátodo de la célula
-Los electrones se desplazan a través de un circuito externo para generar electricidad.
-Pila de combustible
-
-En el cátodo, los protones y los electrones se combinan con oxígeno del aire exterior para producir agua en forma de vapor de agua.
-
-Cuando los protones y electrones reaccionan con el oxígeno en el cátodo durante el proceso de generación de electricidad, se forma agua
-El agua que se produce sale en forma de vapor de agua.
-
-Estas dos placas de platino son el catalizador. Favorecen la reacción que disocia las moléculas
-En este lado el hidrógeno se adhiere a la superficie de platino y rompe el enlace molecular
-H2 → 2H+ + 2e-
-
-## Coches de hidrógeno
-
-Son coches con motor eléctrico que utilizan hidrógeno para producir la electricidad Actualmente (2022), en España solo se venden 3 modelos comerciales. Toyota vende en España el **Mirai**, una berlina con una longitud de 4,97 metros. Parte de un precio de 68.900 euros. Existen ayudas estatales para la adquisición de estos coches.
-
-Esta es la pila de combustible o FUEL CELL del coche
-Dentro se genera la electricidad que utiliza el motor eléctrico para mover el coche
-Un tubo trae el hidrógeno de los depósitos
-Otro lleva el oxígeno captado del aire
-Otro se lleva el vapor de agua producido para expulsarlo al exterior
-Los cables rojos son cables de alto voltaje. Transportan la electricidad generada hacia el motor eléctrico
-
-## Consumo y coste
+**Consumo y coste**
 
 Un coche 100% eléctrico tiene un costo de recarga que oscila entre 1-2 € / 100 km si se hace en casa.
 El precio depende del coste de la energía en el momento de la recarga.
 Mercado
 
-El hidrógeno se vende ahora a 10 € por kilogramo.
-Consumo: 0,8 kg / 100 km
-Capacidad depósito: 8 kg
-Coste: 8 € / 100 km
+- El hidrógeno se vende ahora a 10 € por kilogramo.
+- Consumo: 0,8 kg / 100 km
+- Capacidad depósito: 8 kg
+- Coste: 8 € / 100 km

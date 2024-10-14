@@ -18,8 +18,7 @@ El hidrógeno ha ganado importancia como fuente de energía en los últimos año
 
 El hidrógeno no es una fuente de energía primaria, sino un **vector energético**. Nos servirá para almacenar energía en un punto, y utilizarla en otro.
 
-El hidrógeno no lo extraemos de la naturaleza, sino que lo generamos a partir de **agua**.
-Este proceso lo realizaremos utilizando **electricidad generada por placas solares**.
+El hidrógeno no lo extraemos de la naturaleza, sino que lo generamos a partir de **agua**, utilizando para separarlo **electricidad**.
 
 Recientemente se han puesto en marcha 5 autobuses de la EMT que funcionan a base de **hidrógeno** verde. Veremos de dónde se obtiene, cómo se obtiene y cuáles son las aplicaciones.
 

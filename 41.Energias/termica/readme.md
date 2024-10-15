@@ -4,6 +4,13 @@ Temperatura:
 
 Es una medida de la energía cinética promedio de las partículas en una sustancia. No es una medida directa de energía, sino una manifestación de cuán rápido se mueven las partículas en un objeto. Se mide en unidades como grados Celsius (°C), Kelvin (K) o Fahrenheit (°F).
 
+Unidades:
+
+- **Grado Celsius (°C).** Para establecer una base de medida de la temperatura Anders Celsius utilizó (en 1742) los puntos de fusión y ebullición del agua. Celsius dividió el intervalo de temperatura que existe entre estos dos puntos en 100 partes iguales a las que llamó grados centígrados °C
+- **Grado Fahrenheit (°F).** Toma divisiones entre el punto de congelación de una disolución de cloruro amónico (a la que le asigna valor cero) y la temperatura normal corporal humana (a la que le asigna valor 100).
+Con la nueva definición de kelvin se mantiene un único punto fijo en la escala Kelvin, el cero absoluto.
+- **Kelvin (K)** El kelvin es la unidad de temperatura termodinámica, una de las unidades básicas del Sistema Internacional de Unidades.
+
 La **energía térmica** es la energía **interna** de un sistema debida al movimiento de sus partículas. Cuanto mayor sea la energía térmica, mayor será la temperatura del sistema. La energía térmica puede cambiar como resultado de la transferencia de calor.
 
 El **calor** es una forma de energía que se transfiere entre cuerpos o sistemas debido a una **diferencia de temperatura**. El calor siempre fluye de la región de mayor temperatura a la de menor temperatura hasta que ambas alcanzan un equilibrio térmico.
@@ -59,9 +66,19 @@ Es decir, deberemos extraer **33,49 kcal** por hora para mantener la temperatura
 
 ### Convección
 
-Es el proceso de transferencia de calor en líquidos y gases. Ocurre cuando las partículas calientes se mueven de una región a otra, transportando calor. Un ejemplo es el movimiento del aire caliente en una habitación o el agua hirviendo en una olla.
+Es el proceso de transferencia de calor en líquidos y gases:
 
-La transferencia de calor por convección ocurre cuando el calor se transfiere entre una superficie sólida y un fluido (líquido o gas) que está en movimiento. El proceso combina dos mecanismos: el transporte de calor debido al movimiento del fluido y la conducción en las zonas cercanas a la superficie.
+- Parte del líquido al
+- Las partículas calientes se mueven de una región a otra, transportando calor.
+- Un ejemplo es el movimiento del aire caliente en una habitación o el agua hirviendo en una olla.
+
+El líquido que está abajo, en contacto con la fuente de calor, al calentarse disminuye su densidad.
+Al volverse menos denso, sube a la superficie.
+
+En cambio, el líquido de la superficie, cede calor y se enfría. Al estar más frio, es menos denso, por lo que se mueve a la parte inferior.
+Esto crea una corriente de agua.
+
+![](img/2024-10-15-12-48-52.png)
 
 La cantidad de calor Q transferido por convección está dada por la Ley de Enfriamiento de Newton:
 
@@ -69,6 +86,8 @@ La cantidad de calor Q transferido por convección está dada por la Ley de Enfr
 
 ### Radiación
 
-Es la transferencia de calor en forma de ondas electromagnéticas, como la luz o los rayos **infrarrojos**. A diferencia de la conducción y la convección, no necesita un medio material para propagarse, lo que permite, por ejemplo, que el calor del sol llegue a la Tierra a través del vacío del espacio.
+Es la transferencia de calor en forma de ondas electromagnéticas, como la luz o los rayos **infrarrojos**.
+A diferencia de la conducción y la convección, **no necesita un medio material** como el aire para propagarse, lo que permite,
+por ejemplo, que el calor del sol llegue a la Tierra a través del vacío del espacio.
 
 ![](img/2024-10-15-11-42-20.png)

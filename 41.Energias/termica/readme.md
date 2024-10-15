@@ -1,8 +1,12 @@
+# Energía térmica
+
 La temperatura, el calor, y la energía térmica son conceptos fundamentales en la física, especialmente cuando se estudian procesos de transferencia de calor. Aquí te dejo un desglose de cada concepto:
 
-Temperatura:
+## Temperatura
 
-Es una medida de la energía cinética promedio de las partículas en una sustancia. No es una medida directa de energía, sino una manifestación de cuán rápido se mueven las partículas en un objeto. Se mide en unidades como grados Celsius (°C), Kelvin (K) o Fahrenheit (°F).
+Es una medida de la energía cinética promedio de las partículas en una sustancia.
+No es una medida directa de energía, sino una manifestación de cuán rápido se mueven las partículas en un objeto.
+Se mide en unidades como grados **Celsius (°C), Kelvin (K) o Fahrenheit (°F).**
 
 Unidades:
 
@@ -11,11 +15,10 @@ Unidades:
 Con la nueva definición de kelvin se mantiene un único punto fijo en la escala Kelvin, el cero absoluto.
 - **Kelvin (K)** El kelvin es la unidad de temperatura termodinámica, una de las unidades básicas del Sistema Internacional de Unidades.
 
-La **energía térmica** es la energía **interna** de un sistema debida al movimiento de sus partículas. Cuanto mayor sea la energía térmica, mayor será la temperatura del sistema. La energía térmica puede cambiar como resultado de la transferencia de calor.
-
-El **calor** es una forma de energía que se transfiere entre cuerpos o sistemas debido a una **diferencia de temperatura**. El calor siempre fluye de la región de mayor temperatura a la de menor temperatura hasta que ambas alcanzan un equilibrio térmico.
-
 ## Transferencia de calor
+
+La **energía térmica** es la energía **interna** de un sistema debida al movimiento de sus partículas. Cuanto mayor sea la energía térmica, mayor será la temperatura del sistema. La energía térmica puede cambiar como resultado de la transferencia de calor.
+El **calor** es una forma de energía que se transfiere entre cuerpos o sistemas debido a una **diferencia de temperatura**. El calor siempre fluye de la región de mayor temperatura a la de menor temperatura hasta que ambas alcanzan un equilibrio térmico.
 
 Es el proceso por el cual el calor se transfiere de un objeto a otro. Existen tres métodos principales de transferencia de calor:
 
@@ -89,5 +92,7 @@ La cantidad de calor Q transferido por convección está dada por la Ley de Enfr
 Es la transferencia de calor en forma de ondas electromagnéticas, como la luz o los rayos **infrarrojos**.
 A diferencia de la conducción y la convección, **no necesita un medio material** como el aire para propagarse, lo que permite,
 por ejemplo, que el calor del sol llegue a la Tierra a través del vacío del espacio.
+
+![](img/2024-10-15-13-07-07.png)
 
 ![](img/2024-10-15-11-42-20.png)

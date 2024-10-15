@@ -36,7 +36,11 @@ Donde:
 
 En el caso de una nevera, nos interesa aislar la temperatura exterior de la temperatura ambiente y, al mismo tiempo, ir sacando ese calor interior hacia el exterior de la nevera.
 
+![](img/2024-10-15-11-58-58.png)
+
 Es por ello que las neveras en sus paredes utilizan **fibra de vidrio**, pues es un material con muy bajo coeficiente de conductividad, de únicamente **0,013 kcal/mhK**.
+
+![](img/2024-10-15-11-59-17.png)
 
 Así pues, el calor que tenemos que extraer es el que se introduce desde el exterior, a fin de mantener la temperatura.
 

@@ -93,7 +93,7 @@ print(pikachu.tipo)
 
 Vamos a introducir el concepto de programación orientada a objetos utilizando un juego de cartas.
 
-# Objetos necesarios
+## Objetos necesarios
 
 Para ello, vamos a crear los siguientes objetos:
 
@@ -153,7 +153,7 @@ from carta import Carta
 
 La línea de código ``from carta import Carta`` se utiliza en Python para importar una clase llamada ``Carta`` desde un archivo de Python llamado ``carta.py``.
 
-# Constructor (init)
+## Constructor (init)
 
 En la segunda línea estamos creando una instancia de la ``clase Carta``, y asignándole el identificador ``cartaprueba``. Al crear un nuevo objeto, se llamará al método ``__init__`` (constructor) de la clase.
 
@@ -163,14 +163,15 @@ from carta import Carta
 cartaprueba = Carta("tréboles", 2)
 ```
 
-# Pintar un objeto
+## Pintar un objeto
 
-No podemos hacer print sobre el objeto a no ser que definamos un métido ``__repr__``
-  - ``print(carta)``
+No podemos hacer print sobre un objeto a no ser que definamos un métido ``__repr__``. De lo contrario, obtendremos un error
+- ``print(carta)``
 
-También podemos imprimir alguna de sus propiedades:
-  - ``print(carta.valor)``
-  - ``print(carta.palo)``
+En cualquier caso, siempre podemos imprimir alguna de sus propiedades:
+
+-  ``print(carta.valor)``
+-  ``print(carta.palo)``
 
 # Representación
 

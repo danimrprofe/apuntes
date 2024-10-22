@@ -42,6 +42,10 @@ Donde:
 - d es el espesor del material (en metros, m).
 - La conductividad térmica **λ**, se puede expresar en kcal/m·°C.
 
+Coeficiente de conductividad térmica
+
+![](img/2024-10-22-08-01-38.png)
+
 **Ejemplo nevera**
 
 En el caso de una nevera, nos interesa aislar la temperatura exterior de la temperatura ambiente y, al mismo tiempo, ir sacando ese calor interior hacia el exterior de la nevera.
@@ -87,6 +91,10 @@ La cantidad de calor Q transferido por convección está dada por la Ley de Enfr
 
 ![](img/2024-10-15-11-40-00.png)
 
+Coeficiente de convección en fluidos
+
+![](img/2024-10-22-08-02-17.png)
+
 ### Radiación
 
 Es la transferencia de calor en forma de ondas electromagnéticas, como la luz o los rayos **infrarrojos**.
@@ -95,4 +103,25 @@ por ejemplo, que el calor del sol llegue a la Tierra a través del vacío del es
 
 ![](img/2024-10-15-13-07-07.png)
 
+Ley de Stefan-Boltzman:
+
 ![](img/2024-10-15-11-42-20.png)
+
+Coeficiente de radiación
+
+![](img/2024-10-22-08-00-57.png)
+
+## Calor
+
+El calor específico se utiliza en la fórmula de calor que relaciona la cantidad de calor con el cambio de temperatura de una sustancia. La fórmula es:
+
+![alt text](image-3.png)
+
+Donde:
+
+- Q es el calor absorbido o liberado (en joules o calorías).
+- m es la masa de la sustancia (en kg o gramos).
+- c es el calor específico de la sustancia (en J/kg·°C o cal/g·°C).
+- ΔT es el cambio de temperatura, es decir, la diferencia entre la temperatura final y la inicial (en °C o K).
+
+Esta fórmula describe cuánto calor (Q) se necesita para cambiar la temperatura de una masa (m) de una sustancia por una cantidad específica de grados (ΔT) dependiendo de su calor específico (c).

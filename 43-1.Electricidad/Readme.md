@@ -92,24 +92,19 @@ En los edificios colectivos, existe un **cuarto de contadores ** donde se encuen
 
 ![](img/2024-10-22-09-46-52.png)
 
-El **contador eléctrico** es el dispositivo encargado de registrar el **consumo de energía**. Hoy en día, los contadores son mayoritariamente digitales, permitiendo la telemedida y gestión remota del consumo.
+El contador eléctrico es el aparato que mide cuánta energía consumes en casa o en cualquier lugar. Actualmente, la mayoría de los contadores son digitales, lo que permite controlar el consumo de forma remota y en tiempo real.
 
-Definició
-Instrument que permet registrar l’energia elèctrica (en kWh) que ha consumit un circuit durant un temps determinat.
-Estructura i funcionament
-Motor elèctric que fa girar un disc d’alumini.
-A major consum, la velocitat augmenta.
-Engranatges compten nombre de revolucions
-Permet calcular l’energia que ha travessat el motor
-I, amb ella, el consum total
+Es un dispositivo que registra la **cantidad de electricidad** (en kWh) que ha utilizado un circuito durante un periodo de tiempo.
+
+Antes, muchos contadores usaban un motor eléctrico que hacía girar un **disco de aluminio**. Cuanto más consumías, más rápido giraba el disco. Los engranajes contaban las vueltas del disco y, de esa forma, se podía calcular la energía que había pasado por el motor y, por lo tanto, el consumo total de electricidad.
 
 ![alt text](image-1.png)
 
-Actualment són digitals, i envien les dades de consum telemàticament.
+Hoy en día, los contadores digitales hacen lo mismo pero de manera más precisa y sin partes móviles.
 
 ![](img/2024-10-22-09-47-14.png)
 
-## 6. Instalación Interior
+## 6. Instalación en el hogar
 
 Desde el cuarto de contadores o el cuadro de maniobra, se lleva la electricidad hasta cada vivienda o unidad mediante una **derivación individual**. Esta línea conecta directamente con el cuadro de distribución de la vivienda.
 

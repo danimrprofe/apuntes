@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="transport-i-distribuci%C3%B3-de-lenergia-el%C3%A8ctrica">Transport i distribució de l'energia elèctrica</h1>
+<p>El transport i la distribució de l’energia elèctrica són components fonamentals del sistema elèctric que permeten que l’energia generada arribi als consumidors finals. A continuació es detallen alguns aspectes importants:</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-40-42.png" alt=""></p>
+<p>En instalaciones eléctricas, las tensiones se clasifican en baja, media y alta tensión según el voltaje utilizado:</p>
+<ul>
+<li><strong>Baja Tensión:</strong> Hasta 1 kV, uso doméstico e industrial pequeño.Instalaciones eléctricas en viviendas, edificios, pequeños comercios y talleres.</li>
+<li><strong>Media Tensión:</strong> De 1 kV a 36 kV (o hasta 72,5 kV), para distribución regional y grandes industrias. Subestaciones de distribución eléctrica, grandes complejos industriales y líneas de distribución que alimentan áreas urbanas o industriales.</li>
+<li>Alta Tensión: Más de 36 kV, para transporte a largas distancias. Líneas de transmisión de energía que conectan centrales eléctricas con redes de distribución.</li>
+</ul>
+<h2 id="1-transport-de-lenergia">1. Transport de l'energia:</h2>
+<p>El transport de l'energia elèctrica es fa a través de grans infraestructures, com les línies d'alta tensió, que són capaces de portar l'electricitat a llargues distàncies amb pèrdues mínimes.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-06-04.png" alt=""></p>
+<p>Infraestructures de transport:</p>
+<p>Les línies d'alta tensió són utilitzades per transportar l'energia des dels punts de generació fins als centres de distribució o consum. Poden ser línies aèries o subterrànies.</p>
+<p>Les torres d'alta tensió: Suporten les línies aèries i garanteixen una separació adequada per motius de seguretat.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-18-35.png" alt=""></p>
+<p>Les <strong>subestacions</strong> són instal·lacions que transformen la tensió de l'electricitat per adaptar-la a les necessitats de la xarxa de transport i distribució.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-19-02.png" alt=""></p>
+<h2 id="2-xarxa-de-distribuci%C3%B3">2. Xarxa de distribució</h2>
+<p>La xarxa de distribució és l'encarregada de portar l'energia des de les subestacions fins als usuaris finals, com llars, empreses i indústries.</p>
+<p>Infraestructures de distribució:
+Línies de mitja i baixa tensió: Distribueixen l'energia a distàncies més curtes. La tensió és reduïda en diferents punts fins a arribar a les necessitats dels consumidors.
+Transformadors: Redueixen la tensió de l'electricitat per fer-la compatible amb els dispositius i instal·lacions dels usuaris finals.</p>
+<h3 id="centres-de-transformaci%C3%B3">Centres de transformació</h3>
+<p>Reben l'energia de la xarxa de mitja tensió i la transformen a baixa tensió per al seu ús en la xarxa urbana o rural</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-42-55.png" alt=""></p>
+<p>Desde las Subestaciones Eléctricas salen las líneas de distribución en <strong>media tensión</strong> hacia los Centros de Transformación (CT)</p>
+<p>En el <strong>centro de transformación</strong> la energía que proviene de la red de media tensión (entre 1 kV y 36 kV) se transforma a baja tensión (230/400 V), que es la adecuada para el uso doméstico e industrial.
+Líneas de distribución de baja tensión: Desde el centro de transformación, la energía es enviada a través de cables de baja tensión (230/400 V). Estos cables pueden ser subterráneos o aéreos, según la infraestructura del lugar.</p>
+<p>Red de Distribución</p>
+<p>Postes o canalizaciones subterráneas: En áreas rurales es común que la distribución sea aérea, utilizando postes y cables aéreos.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-22-28.png" alt=""></p>
+<p>En áreas urbanas, la distribución suele ser subterránea, utilizando canalizaciones (tuberías) por donde circulan los cables eléctricos.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-23-54.png" alt=""></p>
+<p>Empalmes y derivaciones: A lo largo del trayecto, se realizan empalmes y derivaciones para conectar varias líneas y abastecer a distintas zonas o edificios.</p>
+<h2 id="red-interior">Red interior</h2>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-05-38.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-05-51.png" alt=""></p>
+<p>En el interior de las casas existen diferentes elementos, entre la instalación exterior y las viviendas aprticulares, formada por:</p>
+<ul>
+<li>Acometida</li>
+<li>Caja general de protección</li>
+<li>Cuadro de contadores</li>
+<li>Derivaciones individuales</li>
+</ul>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-48-42.png" alt=""></p>
+<h3 id="acometida">Acometida</h3>
+<p>La entrada de la línea eléctrica en los edificios se llama <strong>línea de acometida</strong>.  Es el conjunto de cablesque conecta la red de distribución general con el edificio o vivienda.</p>
+<p>Puede ser <strong>aérea</strong> (cables desde un poste) o <strong>subterránea</strong> (desde una caja de registro bajo tierra). La acometida llega hasta la caja general de protección.</p>
+<h3 id="caja-general-de-protecci%C3%B3n">Caja general de protección</h3>
+<p>La <strong>Caja general de protección (CGP)</strong> es el primer elemento que se encuentra tras la acometida, y su función es <strong>proteger la instalación</strong> de sobrecargas o cortocircuitos. Se coloca en la entrada de los edificios.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-48-03.png" alt=""></p>
+<h2 id="cuarto-de-contadores">Cuarto de Contadores</h2>
+<p>En los edificios colectivos, existe un **cuarto de contadores ** donde se encuentran los contadores eléctricos de cada vivienda. Estos contadores miden el consumo eléctrico individual.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-46-52.png" alt=""></p>
+<p>El contador eléctrico es el aparato que mide cuánta energía consumes en casa o en cualquier lugar. Actualmente, la mayoría de los contadores son digitales, lo que permite controlar el consumo de forma remota y en tiempo real.</p>
+<p>Es un dispositivo que registra la <strong>cantidad de electricidad</strong> (en kWh) que ha utilizado un circuito durante un periodo de tiempo.</p>
+<p>Antes, muchos contadores usaban un motor eléctrico que hacía girar un <strong>disco de aluminio</strong>. Cuanto más consumías, más rápido giraba el disco. Los engranajes contaban las vueltas del disco y, de esa forma, se podía calcular la energía que había pasado por el motor y, por lo tanto, el consumo total de electricidad.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/image-1.png" alt="alt text"></p>
+<p>Hoy en día, los contadores digitales hacen lo mismo pero de manera más precisa y sin partes móviles.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-47-14.png" alt=""></p>
+<h2 id="6-instalaci%C3%B3n-en-el-hogar">6. Instalación en el hogar</h2>
+<p>Desde el cuarto de contadores o el cuadro de maniobra, se lleva la electricidad hasta cada vivienda o unidad mediante una <strong>derivación individual</strong>. Esta línea conecta directamente con el cuadro de distribución de la vivienda.</p>
+<h3 id="cuadro-general-de-maniobra-y-protecci%C3%B3n">Cuadro general de maniobra y protección</h3>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-09-46-07.png" alt=""></p>
+<p>Aquí se encuentran los dispositivos de protección, como diferenciales e interruptores magnetotérmicos, que protegen los circuitos internos de la vivienda. Estos circuitos distribuyen la energía a puntos de consumo como enchufes, iluminación y electrodomésticos.</p>
+<p>El cuadro eléctrico recibe la energía a través de la derivación individual y está localizado a la entrada de la vivienda. Está compuesto por:</p>
+<ul>
+<li>1 Interruptor de Control de Potencia (ICP)</li>
+<li>1 Interruptor General Automático (IGA)</li>
+<li>1 Interruptor Diferencial (ID)</li>
+<li>Varios Pequeños Interruptores Automáticos (PIA)</li>
+</ul>
+<p>La función principal de estos dispositivos es controlar y proteger tanto la instalación como los equipos, y también garantizar la seguridad de los usuarios ante posibles fallos eléctricos.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-04-40.png" alt=""></p>
+<p>En este ejemplo, el general permite un máximo de:</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-12-57.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-11-39-01.png" alt=""></p>
+<h2 id="7-consumo-final">7. Consumo Final</h2>
+<p>Puntos de consumo: Finalmente, la energía llega a los puntos de consumo dentro de la vivienda o edificio (enchufes, lámparas, electrodomésticos, calefacción eléctrica, etc.).</p>
+<p>Podemos encontrar dos o tres cables.</p>
+<ul>
+<li>El cable de <strong>fase</strong>, de color negro o marrón</li>
+<li>El cable <strong>neutro</strong>, de color azul</li>
+<li>El cable de <strong>tierra</strong>, de color verde y amarillo</li>
+</ul>
+<p>La fase y el neutro llevan corriente, el cable de tierra no. Sirve como protección para cuando hay alguna avería y lleva la corriente en ese caso hacia la base de la casa.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-29-21.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-11-39-59.png" alt=""></p>
+<p>En cada aparato, esta electricidad se transforma en otro tipo de energía.</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-11-40-47.png" alt=""></p>
+<h2 id="8-factura-el%C3%A9ctrica">8. Factura eléctrica</h2>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/image.png" alt="alt text"></p>
+<p>Exemple real:</p>
+<p><img src="file:///e:/Docencia/apuntes/43-1.Electricidad/img/2024-10-22-19-01-57.png" alt=""></p>
+<p>Caràcter bimensual
+Components habituals:</p>
+<ul>
+<li>Potència contractada: 5,75 kW x 158,9889 cent/kW/mes = - Subtotal : 18,28 €</li>
+<li>Energia consumida: 9,0922 cent/kWh x 852 KWh = Subtotal: 76,95 €</li>
+<li>Impost sobre l’electricitat: Subtotal: 4,87 €</li>
+<li>Lloguer d’equips de mesura: 57 cents per mes</li>
+<li>IVA (impost sobre el valor afegit): 16%. Sobre 101,24-&gt; 16,20 €</li>
+</ul>
+<p>Total: 117,44 €</p>
+
+</body>
+</html>

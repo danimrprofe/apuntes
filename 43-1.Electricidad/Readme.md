@@ -135,6 +135,16 @@ En este ejemplo, el general permite un máximo de:
 
 Puntos de consumo: Finalmente, la energía llega a los puntos de consumo dentro de la vivienda o edificio (enchufes, lámparas, electrodomésticos, calefacción eléctrica, etc.).
 
+Podemos encontrar dos o tres cables.
+
+- El cable de **fase**, de color negro o marrón
+- El cable **neutro**, de color azul
+- El cable de **tierra**, de color verde y amarillo
+
+La fase y el neutro llevan corriente, el cable de tierra no. Sirve como protección para cuando hay alguna avería y lleva la corriente en ese caso hacia la base de la casa.
+
+![](img/2024-10-22-19-29-21.png)
+
 ![](img/2024-10-22-11-39-59.png)
 
 En cada aparato, esta electricidad se transforma en otro tipo de energía.

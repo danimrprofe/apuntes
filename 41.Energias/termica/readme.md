@@ -4,7 +4,7 @@ La temperatura, el calor, y la energía térmica son conceptos fundamentales en 
 
 ## Temperatura
 
-Es una medida de la energía cinética promedio de las partículas en una sustancia.
+Es una medida de la **energía cinética** promedio de las partículas en una sustancia.
 No es una medida directa de energía, sino una manifestación de cuán rápido se mueven las partículas en un objeto.
 Se mide en unidades como grados **Celsius (°C), Kelvin (K) o Fahrenheit (°F).**
 
@@ -18,6 +18,7 @@ Con la nueva definición de kelvin se mantiene un único punto fijo en la escala
 ## Transferencia de calor
 
 La **energía térmica** es la energía **interna** de un sistema debida al movimiento de sus partículas. Cuanto mayor sea la energía térmica, mayor será la temperatura del sistema. La energía térmica puede cambiar como resultado de la transferencia de calor.
+
 El **calor** es una forma de energía que se transfiere entre cuerpos o sistemas debido a una **diferencia de temperatura**. El calor siempre fluye de la región de mayor temperatura a la de menor temperatura hasta que ambas alcanzan un equilibrio térmico.
 
 Es el proceso por el cual el calor se transfiere de un objeto a otro. Existen tres métodos principales de transferencia de calor:
@@ -113,15 +114,15 @@ Coeficiente de radiación
 
 ## Calor
 
-El calor específico se utiliza en la fórmula de calor que relaciona la cantidad de calor con el cambio de temperatura de una sustancia. La fórmula es:
+La cantidad de calor que gana o pierde una muestra (q) se puede calcular con la ecuación:
 
 ![alt text](image-3.png)
 
+Esta fórmula describe cuánto calor (Q) se necesita para cambiar la temperatura de una masa (m) de una sustancia por una cantidad específica de grados (ΔT) dependiendo de su calor específico (c).
+
 Donde:
 
-- Q es el calor absorbido o liberado (en joules o calorías).
-- m es la masa de la sustancia (en kg o gramos).
-- c es el calor específico de la sustancia (en J/kg·°C o cal/g·°C).
+- Q es el **calor** absorbido o liberado (en joules o calorías).
+- m es la **masa** de la sustancia (en kg o gramos).
+- c es el **calor específico** de la sustancia (en J/kg·°C o cal/g·°C).
 - ΔT es el cambio de temperatura, es decir, la diferencia entre la temperatura final y la inicial (en °C o K).
-
-Esta fórmula describe cuánto calor (Q) se necesita para cambiar la temperatura de una masa (m) de una sustancia por una cantidad específica de grados (ΔT) dependiendo de su calor específico (c).

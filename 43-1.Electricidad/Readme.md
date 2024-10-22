@@ -26,49 +26,68 @@ Transformadors: Redueixen la tensió de l'electricitat per fer-la compatible amb
 
 Reben l'energia de la xarxa de mitja tensió i la transformen a baixa tensió per al seu ús en la xarxa urbana o rural
 
-Desde las Subestaciones Eléctricas salen las líneas de distribución en Alta hacia los Centros de Transformación (CT), donde esta alta tensión (20KV normalmente) se transforma en baja tensión, 400V y 230V, para llevar la energía eléctrica a los usuarios por medio de la red de distribución en baja tensión.
-
 ![](img/2024-10-22-09-42-55.png)
 
-Centro de transformación: Es el lugar donde la energía que proviene de la red de media tensión (entre 1 kV y 36 kV) se transforma a baja tensión (230/400 V), que es la adecuada para el uso doméstico e industrial.
+Desde las Subestaciones Eléctricas salen las líneas de distribución en **media tensión** hacia los Centros de Transformación (CT)
+En el **centro de transformación** la energía que proviene de la red de media tensión (entre 1 kV y 36 kV) se transforma a baja tensión (230/400 V), que es la adecuada para el uso doméstico e industrial.
 Líneas de distribución de baja tensión: Desde el centro de transformación, la energía es enviada a través de cables de baja tensión (230/400 V). Estos cables pueden ser subterráneos o aéreos, según la infraestructura del lugar.
 2. Red de Distribución
 Postes o canalizaciones subterráneas: En áreas rurales es común que la distribución sea aérea, utilizando postes y cables aéreos. En áreas urbanas, la distribución suele ser subterránea, utilizando canalizaciones (tuberías) por donde circulan los cables eléctricos.
 Empalmes y derivaciones: A lo largo del trayecto, se realizan empalmes y derivaciones para conectar varias líneas y abastecer a distintas zonas o edificios.
 
-### 3. Acometida
+## Red interior
 
-Acometida: Es el conjunto de cables que conecta la red de distribución general con el edificio o vivienda. Puede ser aérea (cables desde un poste) o subterránea (desde una caja de registro bajo tierra). La acometida llega hasta el cuadro de maniobra y protección o cuadro de acometida del edificio.
+En el interior de las casas existen diferentes elementos, entre la instalación exterior y las viviendas aprticulares, formada por:
+
+- Acometida
+- Caja general de protección
+- Cuadro de contadores
+- Derivaciones individuales
 
 ![](img/2024-10-22-09-48-42.png)
 
-Caja general de protección (CGP): Es el primer elemento que se encuentra tras la acometida, y su función es proteger la instalación de sobrecargas o cortocircuitos. Se coloca en la entrada de los edificios.
+### Acometida
+
+La entrada de la línea eléctrica en los edificios se llama **línea de acometida**.  Es el conjunto de cablesque conecta la red de distribución general con el edificio o vivienda.
+
+Puede ser **aérea** (cables desde un poste) o **subterránea** (desde una caja de registro bajo tierra). La acometida llega hasta la caja general de protección.
+
+### Caja general de protección
+
+La **Caja general de protección (CGP)** es el primer elemento que se encuentra tras la acometida, y su función es **proteger la instalación** de sobrecargas o cortocircuitos. Se coloca en la entrada de los edificios.
 
 ![](img/2024-10-22-09-48-03.png)
 
-## 5. Cuarto de Contadores
+## Cuarto de Contadores
 
-Cuarto de contadores: En los edificios colectivos, existe un cuarto o gabinete donde se encuentran los contadores eléctricos de cada vivienda. Estos contadores miden el consumo eléctrico individual.
+En los edificios colectivos, existe un **cuarto de contadores ** donde se encuentran los contadores eléctricos de cada vivienda. Estos contadores miden el consumo eléctrico individual.
 
 ![](img/2024-10-22-09-46-52.png)
 
-Contador eléctrico: Dispositivo encargado de registrar el consumo de energía. Hoy en día, los contadores son mayoritariamente digitales, permitiendo la telemedida y gestión remota del consumo.
+El **contador eléctrico** es el dispositivo encargado de registrar el **consumo de energía**. Hoy en día, los contadores son mayoritariamente digitales, permitiendo la telemedida y gestión remota del consumo.
 
 ![](img/2024-10-22-09-47-14.png)
 
 ## 6. Instalación Interior
 
-Derivación individual: Desde el cuarto de contadores o el cuadro de maniobra, se lleva la electricidad hasta cada vivienda o unidad. Esta línea conecta directamente con el cuadro de distribución de la vivienda.
+Desde el cuarto de contadores o el cuadro de maniobra, se lleva la electricidad hasta cada vivienda o unidad mediante una **derivación individual**. Esta línea conecta directamente con el cuadro de distribución de la vivienda.
 
 ### Cuadro eléctrico de la vivienda:
 
 Aquí se encuentran los diferenciales e interruptores magnetotérmicos que protegen los circuitos internos de la vivienda. Los circuitos interiores distribuyen la energía a los puntos de consumo: enchufes, iluminación, electrodomésticos, etc.
 
-Se sitúa dentro del edificio y contiene los dispositivos de protección, como interruptores automáticos (magnetotérmicos) y diferenciales, que protegen a los usuarios de posibles fallos eléctricos.
-Interruptor de control de potencia (ICP): Este dispositivo limita el consumo eléctrico según la potencia contratada por el usuario.
-
 ![](img/2024-10-22-09-46-07.png)
+
+Se sitúa dentro de la casa y contiene los dispositivos de protección, como interruptores automáticos (magnetotérmicos) y diferenciales, que protegen a los usuarios de posibles fallos eléctricos.
+
+![](img/2024-10-22-11-39-01.png)
 
 ## 7. Consumo Final
 
 Puntos de consumo: Finalmente, la energía llega a los puntos de consumo dentro de la vivienda o edificio (enchufes, lámparas, electrodomésticos, calefacción eléctrica, etc.).
+
+![](img/2024-10-22-11-39-59.png)
+
+En cada aparato, esta electricidad se transforma en otro tipo de energía.
+
+![](img/2024-10-22-11-40-47.png)

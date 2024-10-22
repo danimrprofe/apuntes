@@ -88,7 +88,7 @@ La **Caja general de protección (CGP)** es el primer elemento que se encuentra 
 
 ## Cuarto de Contadores
 
-En los edificios colectivos, existe un **cuarto de contadores ** donde se encuentran los contadores eléctricos de cada vivienda. Estos contadores miden el consumo eléctrico individual.
+En los edificios colectivos, existe un **cuarto de contadores** donde se encuentran los contadores eléctricos de cada vivienda. Estos contadores miden el consumo eléctrico individual.
 
 ![](img/2024-10-22-09-46-52.png)
 

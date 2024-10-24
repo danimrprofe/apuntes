@@ -2,8 +2,6 @@
   - [¿Qué es una base de datos?](#qué-es-una-base-de-datos)
   - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
   - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
-    - [Información Académica](#información-académica)
-    - [Información Hospitalaria](#información-hospitalaria)
 - [2. INSTALACIÓN Y ENTORNO BASE ⚙️](#2-instalación-y-entorno-base-️)
   - [Libreoffice base](#libreoffice-base)
   - [Pasos para instalar Libreoffice](#pasos-para-instalar-libreoffice)
@@ -61,7 +59,7 @@
   - [Parte 3. Vamos a crear 2 tablas adicionales. Separa en tablas diferentes esta información: (1 punto)](#parte-3-vamos-a-crear-2-tablas-adicionales-separa-en-tablas-diferentes-esta-información-1-punto)
   - [Parte 4. Crea las relaciones que tu creas necesarias, teniendo en cuenta: (1,5 puntos)](#parte-4-crea-las-relaciones-que-tu-creas-necesarias-teniendo-en-cuenta-15-puntos)
   - [Parte 5. Diseña las siguientes consultas: (2 ptos.)](#parte-5-diseña-las-siguientes-consultas-2-ptos)
-  - [Parte 6. Realiza un formulario que nos permita introducir y actualizar información sobre delincuentes  y otro formulario para insertar condenas (1 punto)](#parte-6-realiza-un-formulario-que-nos-permita-introducir-y-actualizar-información-sobre-delincuentes--y-otro-formulario-para-insertar-condenas-1-punto)
+  - [Parte 6. Formulario](#parte-6-formulario)
   - [Parte 7. Diseña los siguientes informes:  (1,5 puntos)](#parte-7-diseña-los-siguientes-informes--15-puntos)
   - [Parte 8. Conclusiones y dificultades encontradas (1 punto)](#parte-8-conclusiones-y-dificultades-encontradas-1-punto)
 
@@ -71,23 +69,19 @@
 
 Una base de datos es un sistema organizado para recopilar, almacenar y gestionar datos. Permite a los usuarios almacenar, recuperar y manipular datos de manera eficiente.
 
-Las bases de datos están estructuradas en tablas que contienen filas y columnas. Cada columna representa un tipo de datos específico y cada fila contiene una entrada de datos única.
+Las bases de datos están estructuradas en **tablas** que contienen **filas** y **columnas**. Cada columna representa un tipo de datos específico y cada fila contiene una entrada de datos única.
 
 ## ¿Qué ventajas nos aporta una base datos?
 
-**Estructura de datos**: Las bases de datos permiten organizar los datos en estructuras más complejas que los simples archivos de texto. Puedes tener tablas relacionadas entre sí, lo que facilita el manejo de datos complejos y su consulta.
+Las ventajas de almacenar nuestra información en una base de datos son las siguientes:
 
-**Búsqueda eficiente**: Las bases de datos están optimizadas para búsquedas rápidas y eficientes. Puedes buscar información en grandes conjuntos de datos de manera mucho más rápida que si tuvieras que hacerlo en un documento de texto extenso.
-
-**Integridad y consistencia de datos**: Las bases de datos permiten definir reglas para asegurar que los datos sean coherentes y precisos. Se pueden establecer restricciones para evitar inconsistencias en los datos, lo cual es difícil de lograr en un documento de texto.
-
-**Seguridad**: Las bases de datos pueden tener sistemas de seguridad avanzados para proteger los datos sensibles. Los documentos de texto, por otro lado, suelen estar menos protegidos y son más susceptibles a manipulaciones no autorizadas.
-
-**Escalabilidad**: Las bases de datos pueden manejar grandes volúmenes de datos y son escalables. Puedes agregar más datos a medida que tu negocio crece, algo que podría ser problemático en un documento de texto.
-
-**Concurrencia**: Las bases de datos permiten múltiples usuarios acceder y modificar datos simultáneamente sin corromper la información, algo que es difícil de gestionar en un documento de texto compartido.
-
-**Recuperación de datos**: En caso de pérdida de datos, las bases de datos suelen tener sistemas de copia de seguridad y recuperación que facilitan la restauración de los datos a un estado anterior.
+- **Estructura de datos**: Las bases de datos permiten organizar los datos en estructuras más complejas que los simples archivos de texto. Puedes tener tablas relacionadas entre sí, lo que facilita el manejo de datos complejos y su consulta.
+- **Búsqueda eficiente**: Las bases de datos están optimizadas para búsquedas rápidas y eficientes. Puedes buscar información en grandes conjuntos de datos de manera mucho más rápida que si tuvieras que hacerlo en un documento de texto extenso.
+- **Integridad y consistencia de datos**: Las bases de datos permiten definir reglas para asegurar que los datos sean coherentes y precisos. Se pueden establecer restricciones para evitar inconsistencias en los datos, lo cual es difícil de lograr en un documento de texto.
+- **Seguridad**: Las bases de datos pueden tener sistemas de seguridad avanzados para proteger los datos sensibles. Los documentos de texto, por otro lado, suelen estar menos protegidos y son más susceptibles a manipulaciones no autorizadas.
+- **Escalabilidad**: Las bases de datos pueden manejar grandes volúmenes de datos y son escalables. Puedes agregar más datos a medida que tu negocio crece, algo que podría ser problemático en un documento de texto.
+- **Concurrencia**: Las bases de datos permiten múltiples usuarios acceder y modificar datos simultáneamente sin corromper la información, algo que es difícil de gestionar en un documento de texto compartido.
+- **Recuperación de datos**: En caso de pérdida de datos, las bases de datos suelen tener sistemas de copia de seguridad y recuperación que facilitan la restauración de los datos a un estado anterior.
 
 ## Ejemplos de bases de datos
 
@@ -95,21 +89,10 @@ Las bases de datos están estructuradas en tablas que contienen filas y columnas
 
 Ejemplos de bases de datos podrían ser:
 
-### Información Académica
+- **Información Académica**: En este caso, se pueden gestionar datos relacionados con estudiantes, profesores, evaluaciones y amonestaciones, entre otros. La base de datos puede incluir detalles sobre los alumnos, como nombres, direcciones y fechas de nacimiento, así como información sobre profesores y sus especialidades. Además, se pueden registrar evaluaciones, notas y cualquier amonestación disciplinaria que ocurra en el ámbito educativo.
 
-En este caso, se pueden gestionar datos relacionados con estudiantes, profesores, evaluaciones y amonestaciones, entre otros.
-
-La base de datos puede incluir detalles sobre los alumnos, como nombres, direcciones y fechas de nacimiento, así como información sobre profesores y sus especialidades.
-
-Además, se pueden registrar evaluaciones, notas y cualquier amonestación disciplinaria que ocurra en el ámbito educativo.
-
-### Información Hospitalaria
-
-Las bases de datos también son fundamentales en entornos hospitalarios para organizar información relevante.
-
-Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y tratamientos anteriores.
-
-Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.
+- **Información Hospitalaria**: Las bases de datos también son fundamentales en entornos hospitalarios para organizar información relevante.
+Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y tratamientos anteriores. Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.
 
 # 2. INSTALACIÓN Y ENTORNO BASE ⚙️
 
@@ -136,7 +119,7 @@ Además, se pueden gestionar listas de espera para consultas y procedimientos, r
 
 ## Primera ejecución de Base y creación de base de datos
 
-Base forma parte del paquete de ofimática de Libreoffice. Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.
+Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.
 
 <img src="media/image3.png" id="image3">
 
@@ -144,9 +127,9 @@ Al entrar en ``Base`` nos encontraremos la ventana ``Asistente para base de dato
 
 # 3. Crear una base de datos de peliculas
 
-Piensa en una base de datos como un archivo en el que vamos a guardar toda la información necesaria sobre la temática que queremos
+Piensa en una base de datos como un **archivo** en el que vamos a guardar toda la información necesaria sobre la temática que queremos
 
-En esta unidad se va a crear la base de datos que se usará el resto del curso; por tanto, en este caso, elegiremos la primera opción.
+Ahora vamos a crear la base de datos que se usará para toda esta práctica por tanto, en este caso, elegiremos la primera opción.
 
 Una vez que esté creada y volvamos a entrar a Base tendremos que marcar la segunda opción y elegir nuestra base de datos.
 

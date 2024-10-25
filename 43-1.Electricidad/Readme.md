@@ -1,8 +1,10 @@
 # Transport i distribució de l'energia elèctrica
 
-El transport i la distribució de l’energia elèctrica són components fonamentals del sistema elèctric que permeten que l’energia generada arribi als consumidors finals. A continuació es detallen alguns aspectes importants:
+El transport i la distribució de l’energia elèctrica són components fonamentals del sistema elèctric que permeten que l’energia generada en les **centrals elèctriques** arribi als **consumidors finals**.
 
 ![](img/2024-10-22-09-40-42.png)
+
+## Mitja, baixa i alta tensió
 
 En instalaciones eléctricas, las tensiones se clasifican en baja, media y alta tensión según el voltaje utilizado:
 
@@ -10,21 +12,39 @@ En instalaciones eléctricas, las tensiones se clasifican en baja, media y alta 
 - **Media Tensión:** De 1 kV a 36 kV (o hasta 72,5 kV), para distribución regional y grandes industrias. Subestaciones de distribución eléctrica, grandes complejos industriales y líneas de distribución que alimentan áreas urbanas o industriales.
 - Alta Tensión: Más de 36 kV, para transporte a largas distancias. Líneas de transmisión de energía que conectan centrales eléctricas con redes de distribución.
 
-## 1. Transport de l'energia:
+## 1. Transport de l'energia
 
-El transport de l'energia elèctrica es fa a través de grans infraestructures, com les línies d'alta tensió, que són capaces de portar l'electricitat a llargues distàncies amb pèrdues mínimes.
+El transport de l'electricitat ha de cobrir una distància molt llarga entre els centres de producció i els centres de consum, de molts kilòmetres. Aquí entra en joc l'**efecte Joule**, que fa que part de l'electricitat transportada es perdi de camí en forma de calor.
+
+![](img/2024-10-25-09-34-43.png)
+
+Aquesta pèrdua depèn bàsicament de la resistència dels cables, de la seva distància i de la intensitat que hi circuli, segons la següent fòrmula:
+
+![](img/2024-10-25-09-39-23.png)
+
+Com veiem, la calor creix amb el quadrat de la intensitat. És per això que anam a intentar disminuir aquesta intensitata mitjançant transformadors.
+
+Si ens fixem, la potència es voltatge per intensitat. Si la potència és la mateixa i el voltatge l'augmentam, per força la intensitat ha de ser més petita.
+
+![](img/2024-10-25-09-42-31.png)
+
+Per elevat el voltate i disminuir així la intensitat de l'electricitat que hem d'utilitzar, farem servir **transformadors elevadors.**
+
+Aquestes màquines transformaran la electricitat fent pujar la tensió.
+
+![](img/2024-10-25-09-46-04.png)
+
+El transport de l'energia elèctrica es fa a través de grans infraestructures, com les **línies d'alta tensió**, que són capaces de portar l'electricitat a llargues distàncies amb pèrdues mínimes.
 
 ![](img/2024-10-22-19-06-04.png)
 
-Infraestructures de transport:
+Les **línies d'alta tensió** són utilitzades per transportar l'energia des dels punts de generació fins als centres de distribució o consum. Poden ser línies aèries o subterrànies.
 
-Les línies d'alta tensió són utilitzades per transportar l'energia des dels punts de generació fins als centres de distribució o consum. Poden ser línies aèries o subterrànies.
-
-Les torres d'alta tensió: Suporten les línies aèries i garanteixen una separació adequada per motius de seguretat.
+Aquestes línies passsen per les **torres d'alta tensió**, que les suporten i garanteixen una separació adequada per motius de seguretat.
 
 ![](img/2024-10-22-19-18-35.png)
 
-Les **subestacions** són instal·lacions que transformen la tensió de l'electricitat per adaptar-la a les necessitats de la xarxa de transport i distribució.
+De les centrals, arriba l'electricitat a  les **subestacions**. Aquestes són instal·lacions que transformen la tensió de l'electricitat per adaptar-la a les necessitats de la xarxa distribució.
 
 ![](img/2024-10-22-19-19-02.png)
 
@@ -32,9 +52,8 @@ Les **subestacions** són instal·lacions que transformen la tensió de l'electr
 
 La xarxa de distribució és l'encarregada de portar l'energia des de les subestacions fins als usuaris finals, com llars, empreses i indústries.
 
-Infraestructures de distribució:
-Línies de mitja i baixa tensió: Distribueixen l'energia a distàncies més curtes. La tensió és reduïda en diferents punts fins a arribar a les necessitats dels consumidors.
-Transformadors: Redueixen la tensió de l'electricitat per fer-la compatible amb els dispositius i instal·lacions dels usuaris finals.
+Les línies de mitja i baixa tensió distribueixen l'energia a distàncies més curtes. La tensió és reduïda en diferents punts fins a arribar a les necessitats dels consumidors.
+Els transformadors redueixen la tensió de l'electricitat per fer-la compatible amb els dispositius i instal·lacions dels usuaris finals.
 
 ### Centres de transformació
 

@@ -20,15 +20,10 @@
 - [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
 - [9. Crear la ``tabla INTERPRETES``](#9-crear-la-tabla-interpretes)
 - [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
-    - [Agregar o eliminar columnas](#agregar-o-eliminar-columnas)
-    - [Modificación de columnas existentes](#modificación-de-columnas-existentes)
 - [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
   - [Creamos la tabla géneros](#creamos-la-tabla-géneros)
   - [Información de intérpretes](#información-de-intérpretes)
   - [Tipos de relaciones entre tablas](#tipos-de-relaciones-entre-tablas)
-    - [Uno a muchos (pelicula y género) 👤 - 👥](#uno-a-muchos-pelicula-y-género----)
-    - [Uno a uno (1:1) 👤 - 👤](#uno-a-uno-11----)
-    - [Muchos a muchos (N:M)  👥 - 👥](#muchos-a-muchos-nm-----)
   - [Selección de tablas](#selección-de-tablas)
   - [Crear relaciones](#crear-relaciones)
   - [Opciones de actualización y eliminación](#opciones-de-actualización-y-eliminación)
@@ -70,6 +65,8 @@
 Una base de datos es un sistema organizado para recopilar, almacenar y gestionar datos. Permite a los usuarios almacenar, recuperar y manipular datos de manera eficiente.
 
 Las bases de datos están estructuradas en **tablas** que contienen **filas** y **columnas**. Cada columna representa un tipo de datos específico y cada fila contiene una entrada de datos única.
+
+![](img/2024-10-30-09-36-26.png)
 
 ## ¿Qué ventajas nos aporta una base datos?
 

@@ -20,6 +20,7 @@
 - [5. Inserción de datos en la ``tabla PELICULAS``](#5-inserción-de-datos-en-la-tabla-peliculas)
   - [5.1 Abrir una tabla](#51-abrir-una-tabla)
   - [5.2 Insertar un registro](#52-insertar-un-registro)
+  - [5.3 Completar el resto de registros](#53-completar-el-resto-de-registros)
 - [6. Ordenar tablas](#6-ordenar-tablas)
   - [Ejemplo de ordenación](#ejemplo-de-ordenación)
 - [7. Filtrado de datos ](#7-filtrado-de-datos-)
@@ -322,6 +323,8 @@ Si queréis cambiar el ancho de las columnas podéis estirar de la siguiente bar
 También, si hacéis ``doble clic`` en la línea de separación, se autoajusta el ancho de la columna al contenido de las celdas.
 
 Si continuamos insertando filas, hay que hacer un recordatorio: la columna ``id_pelicula`` iba a ser nuestra Llave Primaria; es decir, que los valores de este campo, no podían repetirse para ninguna fila.
+
+## 5.3 Completar el resto de registros
 
 A continuación, rellenamos el resto de filas, con la información de las películas, tal como se muestra.
 

@@ -91,6 +91,8 @@ Ejemplos de bases de datos podrían ser:
 - **Información Hospitalaria**: Las bases de datos también son fundamentales en entornos hospitalarios para organizar información relevante.
 Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y tratamientos anteriores. Además, se pueden gestionar listas de espera para consultas y procedimientos, recetas médicas, detalles de enfermedades y datos sobre médicos, como sus horarios de consulta y especialidades.
 
+![](img/2024-10-30-09-38-37.png)
+
 # 2. INSTALACIÓN Y ENTORNO BASE ⚙️
 
 ## Libreoffice base
@@ -157,6 +159,15 @@ La base de datos que vamos a crear se llamará Curso y la vamos a guardar en la 
 # 4. Creamos nuestra primera tabla
 
 Las bases de datos guardan la información en una o más tablas. Cada tabla guardará un tipo de objeto o una relación entre varios.
+
+- Cada columna de una tabla se llama **campo**.
+- Cada fila de una tabla se llama **registro**. La tabla es un conjunto de registros homogéneos que tienen la misma estructura.
+
+![](img/2024-10-30-09-39-30.png)
+
+A modo de resumen:
+
+![](img/2024-10-30-09-41-23.png)
 
 Para ello nos situamos en el entorno en el menú de tablas y, dentro de las tareas, pulsamos sobre crear tabla en ``vista diseño``.
 

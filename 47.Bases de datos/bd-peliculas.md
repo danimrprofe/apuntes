@@ -1,19 +1,25 @@
 - [1 Introducción](#1-introducción)
-  - [¿Qué es una base de datos?](#qué-es-una-base-de-datos)
-  - [¿Qué ventajas nos aporta una base datos?](#qué-ventajas-nos-aporta-una-base-datos)
-  - [Ejemplos de bases de datos](#ejemplos-de-bases-de-datos)
+  - [1.1 ¿Qué es una base de datos?](#11-qué-es-una-base-de-datos)
+  - [1.2 ¿Qué ventajas nos aporta una base datos?](#12-qué-ventajas-nos-aporta-una-base-datos)
+  - [1.3 Ejemplos de bases de datos](#13-ejemplos-de-bases-de-datos)
 - [2. INSTALACIÓN Y ENTORNO BASE ⚙️](#2-instalación-y-entorno-base-️)
-  - [Libreoffice base](#libreoffice-base)
-  - [Pasos para instalar Libreoffice](#pasos-para-instalar-libreoffice)
-  - [Primera ejecución de Base y creación de base de datos](#primera-ejecución-de-base-y-creación-de-base-de-datos)
-- [3. Crear una base de datos de peliculas](#3-crear-una-base-de-datos-de-peliculas)
-  - [¿Dónde guardaremos nuestra base de datos?](#dónde-guardaremos-nuestra-base-de-datos)
+  - [2.1 Libreoffice base](#21-libreoffice-base)
+  - [2.2 Instalación de libreoffice](#22-instalación-de-libreoffice)
+  - [2.3 Primera ejecución de Base y creación de base de datos](#23-primera-ejecución-de-base-y-creación-de-base-de-datos)
+- [3. Creación de la BD](#3-creación-de-la-bd)
+  - [3.1 Crear una base de datos de peliculas](#31-crear-una-base-de-datos-de-peliculas)
+  - [3.2 Guardar nuestra base de datos](#32-guardar-nuestra-base-de-datos)
 - [4. Creamos nuestra primera tabla](#4-creamos-nuestra-primera-tabla)
-  - [Tipos de datos](#tipos-de-datos)
-  - [La clave primaria 🔑](#la-clave-primaria-)
-  - [Asignar clave primaria](#asignar-clave-primaria)
-  - [Guardar la tabla](#guardar-la-tabla)
+  - [4.1. Estructura de una Tabla](#41-estructura-de-una-tabla)
+  - [4.2 Crear una tabla](#42-crear-una-tabla)
+  - [4.3 Definir campos](#43-definir-campos)
+  - [4.4 Tipos de datos](#44-tipos-de-datos)
+  - [4.5 clave primaria 🔑](#45-clave-primaria-)
+  - [4.6 Asignar clave primaria](#46-asignar-clave-primaria)
+  - [4.7 Guardar la tabla](#47-guardar-la-tabla)
 - [5. Inserción de datos en la ``tabla PELICULAS``](#5-inserción-de-datos-en-la-tabla-peliculas)
+  - [5.1 Abrir una tabla](#51-abrir-una-tabla)
+  - [5.2 Insertar un registro](#52-insertar-un-registro)
 - [6. Ordenar tablas](#6-ordenar-tablas)
   - [Ejemplo de ordenación](#ejemplo-de-ordenación)
 - [7. Filtrado de datos ](#7-filtrado-de-datos-)
@@ -60,7 +66,7 @@
 
 # 1 Introducción
 
-## ¿Qué es una base de datos?
+## 1.1 ¿Qué es una base de datos?
 
 Una base de datos es un sistema organizado para recopilar, almacenar y gestionar datos. Permite a los usuarios almacenar, recuperar y manipular datos de manera eficiente.
 
@@ -68,7 +74,7 @@ Las bases de datos están estructuradas en **tablas** que contienen **filas** y 
 
 ![](img/2024-10-30-09-36-26.png)
 
-## ¿Qué ventajas nos aporta una base datos?
+## 1.2 ¿Qué ventajas nos aporta una base datos?
 
 Las ventajas de almacenar nuestra información en una base de datos son las siguientes:
 
@@ -80,7 +86,7 @@ Las ventajas de almacenar nuestra información en una base de datos son las sigu
 - **Concurrencia**: Las bases de datos permiten múltiples usuarios acceder y modificar datos simultáneamente sin corromper la información, algo que es difícil de gestionar en un documento de texto compartido.
 - **Recuperación de datos**: En caso de pérdida de datos, las bases de datos suelen tener sistemas de copia de seguridad y recuperación que facilitan la restauración de los datos a un estado anterior.
 
-## Ejemplos de bases de datos
+## 1.3 Ejemplos de bases de datos
 
 ¿Qué tipos de bases de datos podemos encontrar?
 
@@ -95,17 +101,18 @@ Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y 
 
 # 2. INSTALACIÓN Y ENTORNO BASE ⚙️
 
-## Libreoffice base
+## 2.1 Libreoffice base
 
 ``Libreoffice`` es un conjunto de programas de ofimática, que además de ser libre, contiene otras herramientas como por ejemplo ``Calc`` o ``Writer``, que nos ayudan a redactar informes o realizar cálculos.
+La última versión a día de hoy es la **versión 24.8**.
 
-<img src="media/image1.png" id="image1">
+![](img/2024-10-30-09-44-36.png)
 
 ``Libreoffice base`` es un programa que nos permite guardar cualquier tipo de información de un tema en concreto en una base de datos, para actualizarla o consultarla en cualquier momento.
 
 <img src="media/image2.png" id="image2">
 
-## Pasos para instalar Libreoffice
+## 2.2 Instalación de libreoffice
 
 1. Visita el sitio web de LibreOffice: Abre tu navegador web y dirígete al sitio oficial de LibreOffice en https://www.libreoffice.org/.
 2. Selecciona la opción "Descargar": En la página principal de LibreOffice, deberías ver un botón o enlace que dice "Descargar" o "Download". Haz clic en él.
@@ -116,7 +123,7 @@ Esto puede incluir datos sobre pacientes, como historiales médicos, alergias y 
 7. Completa la instalación: Sigue las instrucciones en pantalla para completar la instalación. Puedes personalizar la instalación según tus preferencias.
 8. Inicia LibreOffice Base: Después de completar la instalación, busca el icono de LibreOffice en tu escritorio o menú de inicio y abre LibreOffice Base.
 
-## Primera ejecución de Base y creación de base de datos
+## 2.3 Primera ejecución de Base y creación de base de datos
 
 Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.
 
@@ -124,7 +131,9 @@ Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la a
 
 Al entrar en ``Base`` nos encontraremos la ventana ``Asistente para base de datos`` donde se nos da a elegir entre crear una nueva base de datos, abrir una base de datos existente o conectar con una base de datos existente.
 
-# 3. Crear una base de datos de peliculas
+# 3. Creación de la BD
+
+## 3.1 Crear una base de datos de peliculas
 
 Piensa en una base de datos como un **archivo** en el que vamos a guardar toda la información necesaria sobre la temática que queremos
 
@@ -142,7 +151,7 @@ Para terminar, pulsamos sobre el botón finalizar.
 
 <img src="media/image4.png" id="image6">
 
-## ¿Dónde guardaremos nuestra base de datos?
+## 3.2 Guardar nuestra base de datos
 
 Es importante recordar dónde guardamos el archivo, puesto que en las próximas clases lo deberemos buscar para seguir trabajando.
 
@@ -158,6 +167,8 @@ La base de datos que vamos a crear se llamará Curso y la vamos a guardar en la 
 
 # 4. Creamos nuestra primera tabla
 
+## 4.1. Estructura de una Tabla
+
 Las bases de datos guardan la información en una o más tablas. Cada tabla guardará un tipo de objeto o una relación entre varios.
 
 - Cada columna de una tabla se llama **campo**.
@@ -169,21 +180,29 @@ A modo de resumen:
 
 ![](img/2024-10-30-09-41-23.png)
 
+## 4.2 Crear una tabla
+
 Para ello nos situamos en el entorno en el menú de tablas y, dentro de las tareas, pulsamos sobre crear tabla en ``vista diseño``.
 
 <img src="media/image8.png" id="image9">
 
 Nos aparece una pantalla para definir las columnas que tendrá la tabla . Por cada columna de nuestra futura tabla podemos indicar el nombre, el tipo de datos y una breve descripción sobre lo que almacenará dicha columna.
 
+## 4.3 Definir campos
+
 A continuación, nos aparecerá la siguiente ventana. Ahora aparece vacía porque acabamos de crear la tabla. Aquí vamos a definir qué campos va a contener nuestra tabla. Rellenaremos una fila para cada columna que queramos crear.
+
+> Las tablas deben contener al menos un campo
 
 <img src="media/image9.png" id="image10">
 
 Comenzamos a definir el primer campo: nos situamos en la primera fila de la rejilla y en la columna ``Nombre del campo`` escribimos ``id_pelicula``. Digamos que es el número que le asignaremos a cada película que luego introduzcamos en la tabla.
 
+> Los nombres de campos no pueden contener espacios ni caracteres especiales
+
 <img src="media/image10.png" id="image11">
 
-## Tipos de datos
+## 4.4 Tipos de datos
 
 A continuación, tenemos que especificar qué tipo de datos guarda este campo: ¿un número, un texto, una fecha?
 
@@ -204,7 +223,7 @@ A continuación, en la columna ``Descripción``, sería aconsejable que se intro
 
 <img src="media/image12.png" id="image13">
 
-## La clave primaria 🔑
+## 4.5 clave primaria 🔑
 
 En el caso de nuestra tabla ``PELICULAS``, a priori, no hay ningún campo acerca de una película que podamos utilizar para diferenciar una película de otra.
 
@@ -217,7 +236,7 @@ Para este tipo de tablas se suele definir un campo de tipo numérico (como acaba
 
 Cuando un campo cumple estas dos propiedades (sin nulos y sin repetidos) se le llama ``clave primaria`` o ``clave principal``. Toda tabla debe tener una.
 
-## Asignar clave primaria
+## 4.6 Asignar clave primaria
 
 Para indicar que queremos que el campo ``id_pelicula`` sea nuestra Llave Primaria seguimos los siguientes pasos:
 
@@ -241,7 +260,7 @@ Una vez insertado este primer campo, insertaríamos el resto de columnas, que va
 
 <img src="media/image17.png" id="image18">
 
-## Guardar la tabla
+## 4.7 Guardar la tabla
 
 Una vez creados todos los campos con sus propiedades, debemos guardar la tabla. Para ello pulsamos sobre el icono en forma de disquete de la esquina superior izquierda
 
@@ -263,7 +282,12 @@ Si quisiéramos agregar o modificar columnas, elegimos editar.
 
 # 5. Inserción de datos en la ``tabla PELICULAS``
 
-Para insertar datos a través de la hoja de datos tenemos que situarnos en la pantalla principal de en el apartado de ``Tablas`` y hacer doble clic con el botón izquierdo del ratón sobre la ``tabla PELICULAS`
+## 5.1 Abrir una tabla
+
+Para insertar datos a través de la hoja de datos tenemos que situarnos en la pantalla principal de en el apartado de ``Tablas`` y hacer doble clic con el botón izquierdo del ratón sobre la tabla ``PELICULAS``
+
+> Si hacemos clic en ABRIR, podremos insertar registros en la tabla
+> Por el contrario, al hacer clic en EDITAR, podemos modificar los campos de la tabla
 
 <img src="media/image22.png" id="image23">
 
@@ -278,6 +302,8 @@ Aparecen las 6 columnas
 - La columna ``Vista`` aparece con un cuadrado. Este cuadrado nos indica que es un campo del tipo Sí/No y que aparezca con fondo verde significa que no hay ninguna opción elegida por el momento.
 - La flecha indica el lugar en el que se va a insertar la información.
 - Para pasar de una celda a otra, recomiendo utilizar la tecla TAB.
+
+## 5.2 Insertar un registro
 
 A continuación, vamos a introducir la información de nuestra primera fila.
 

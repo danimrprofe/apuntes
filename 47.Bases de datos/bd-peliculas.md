@@ -17,6 +17,7 @@
   - [4.5 clave primaria 🔑](#45-clave-primaria-)
   - [4.6 Asignar clave primaria](#46-asignar-clave-primaria)
   - [4.7 Guardar la tabla](#47-guardar-la-tabla)
+  - [4.8 Editar tablas](#48-editar-tablas)
 - [5. Inserción de datos en la ``tabla PELICULAS``](#5-inserción-de-datos-en-la-tabla-peliculas)
   - [5.1 Abrir una tabla](#51-abrir-una-tabla)
   - [5.2 Insertar un registro](#52-insertar-un-registro)
@@ -26,7 +27,6 @@
 - [7. Filtrado de datos ](#7-filtrado-de-datos-)
 - [8. Editar y borrar ✏️❌](#8-editar-y-borrar-️)
 - [9. Crear la ``tabla INTERPRETES``](#9-crear-la-tabla-interpretes)
-- [10. Tipos de datos y edición de tablas](#10-tipos-de-datos-y-edición-de-tablas)
 - [11. Relaciones entre tablas ↔️](#11-relaciones-entre-tablas-️)
   - [Creamos la tabla géneros](#creamos-la-tabla-géneros)
   - [Información de intérpretes](#información-de-intérpretes)
@@ -281,6 +281,29 @@ Si quisiéramos agregar o modificar columnas, elegimos editar.
 
 <img src="media/image21.png" id="image22">
 
+## 4.8 Editar tablas
+
+Una vez creada, podemos editar las columnas que tiene una tabla para cambiarlas, agregar o eliminar alguna columna, etc. Para abrir esta tabla para editarla tenemos que situarnos en el apartado de ``Tablas`` y hacer un clic con el botón derecho del ratón y seleccionar la opción Editar
+
+<img src="media/image21.png" id="image37">
+
+### Agregar o eliminar columnas
+
+Para añadir nuevas columnas a nuestra tabla hay que seguir el mismo proceso que en la creación de una tabla; es decir, introducir un valor para el nombre del campo, elegir un tipo de campo y escribir una descripción de ese campo.
+
+Para eliminar columnas de nuestra tabla nos situamos al inicio del campo y seleccionamos la opción ``eliminar``. Antes de eliminar una columna de nuestra tabla debemos saber que al hacerlo se borrarán todos los valores que tuviéramos dados a esta columna en nuestra filas.
+
+<img src="media/image36.png" id="image38">
+
+En el caso de haber borrado una columna de la tabla accidentalmente siempre tenemos la opción de cerrar la ventana de edición sin guardar los cambios realizados.
+
+### Modificación de columnas existentes
+
+Las modificaciones que se pueden realizar sobre las columnas existentes pueden ser de dos tipos:
+
+1. Cambios de nombre del campo o de la descripción del mismo.
+2. Cambio en las propiedades del campo, desde ser o no clave primaria, a cambiar el tipo de campo y las propiedades asociadas a ese tipo de campo.
+
 # 5. Inserción de datos en la ``tabla PELICULAS``
 
 ## 5.1 Abrir una tabla
@@ -404,29 +427,6 @@ Una vez creada la estructura de la tabla, deberemos insertar las siguientes fila
 <img src="media/image35.png" id="image36">
 
 Ahora deberíamos tener dos tablas creadas. Repasa que están todos los datos en ella y que no se te ha olvidado nada, antes de continuar.
-
-# 10. Tipos de datos y edición de tablas
-
-Una vez creada, podemos editar las columnas que tiene una tabla para cambiarlas, agregar o eliminar alguna columna, etc. Para abrir esta tabla para editarla tenemos que situarnos en el apartado de ``Tablas`` y hacer un clic con el botón derecho del ratón y seleccionar la opción Editar
-
-<img src="media/image21.png" id="image37">
-
-### Agregar o eliminar columnas
-
-Para añadir nuevas columnas a nuestra tabla hay que seguir el mismo proceso que en la creación de una tabla; es decir, introducir un valor para el nombre del campo, elegir un tipo de campo y escribir una descripción de ese campo.
-
-Para eliminar columnas de nuestra tabla nos situamos al inicio del campo y seleccionamos la opción ``eliminar``. Antes de eliminar una columna de nuestra tabla debemos saber que al hacerlo se borrarán todos los valores que tuviéramos dados a esta columna en nuestra filas.
-
-<img src="media/image36.png" id="image38">
-
-En el caso de haber borrado una columna de la tabla accidentalmente siempre tenemos la opción de cerrar la ventana de edición sin guardar los cambios realizados.
-
-### Modificación de columnas existentes
-
-Las modificaciones que se pueden realizar sobre las columnas existentes pueden ser de dos tipos:
-
-1. Cambios de nombre del campo o de la descripción del mismo.
-2. Cambio en las propiedades del campo, desde ser o no clave primaria, a cambiar el tipo de campo y las propiedades asociadas a ese tipo de campo.
 
 # 11. Relaciones entre tablas ↔️
 

@@ -1,6 +1,10 @@
 # Transport i distribució de l'energia elèctrica
 
-El transport i la distribució de l’energia elèctrica són components fonamentals del sistema elèctric que permeten que l’energia generada en les **centrals elèctriques** arribi als **consumidors finals**.
+L'energia que s'extreu a les centrals en forma de moviment rotatori es transforma en electricitat dins els **alternadors**. Al girar el nucli dins d'un camp magnètic variable, es produeix als cables un **corrent altern** (variable). Així es transforma l'energia mecànica en energia elèctrica a les centrals.
+
+![](img/alternador.gif)
+
+La dificultat radica en el transport i la distribució de l’energia elèctrica al sistema elèctric que permeten que l’energia generada en les **centrals elèctriques** arribi als **consumidors finals**.
 
 ![](img/2024-10-22-09-40-42.png)
 
@@ -22,7 +26,7 @@ Aquesta pèrdua depèn bàsicament de la resistència dels cables, de la seva di
 
 ![](img/2024-10-25-09-39-23.png)
 
-Com veiem, la calor creix amb el quadrat de la intensitat. És per això que anam a intentar disminuir aquesta intensitata mitjançant transformadors.
+Com veiem, la **calor** creix amb el quadrat de la intensitat. És per això que anam a intentar disminuir aquesta intensitata mitjançant transformadors.
 
 Si ens fixem, la potència es voltatge per intensitat. Si la potència és la mateixa i el voltatge l'augmentam, per força la intensitat ha de ser més petita.
 

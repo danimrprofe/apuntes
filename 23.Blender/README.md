@@ -321,7 +321,7 @@ Podemos decirle que enfoque un objeto en concreto, por ejemplo nuestro cubo. Har
 
 # 4. Texturas 🎨
 
-En este video modelamos un vaso o taza en ``Blender`` y le aplicamos imágenes en la superficie de un objeto mediante el uso de materiales.
+Las texturas en Blender son **imágenes** o **patrones** que se aplican a los modelos 3D para darles **apariencia** y realismo. Las texturas pueden ser de muchos tipos, y su uso permite simular detalles como superficies rugosas, colores, reflejos, transparencias, y otros efectos visuales sin tener que modelar cada detalle físicamente.
 
 Las imágenes están descargadas de Internet y editadas en Inkscape. Recordad buscar imágenes con transparencias, preferiblemente png.
 
@@ -343,7 +343,7 @@ En Blender, el "rigging" se refiere al proceso de crear un **esqueleto virtual**
 
 ## Crear un hueso
 
-Con **shift**+a vamos a abrir el menú y vamos a crear el primer hueso en modo objeto.
+Con **shift+a** vamos a abrir el menú y vamos a crear el primer hueso en modo objeto.
 
 ![imagen](img/image67.png)
 

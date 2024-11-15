@@ -397,14 +397,13 @@ Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la colu
 
 # 6. Renderizado
 
-``Renderizar`` es el proceso mediante el cual se crea un archivo de imagen o película definitivo a partir del diseño que estamos realizando.
-
-Mediante renderizad podemos crear:
-
-- Imágenes para uno o varios frames
-- Vídeos generados a partir de un conjunto de frames
-
 El proceso de renderización es importante porque nos permite visualizar el resultado final de nuestro trabajo y asegurarnos de que se vea exactamente como lo queremos.
+
+**Renderizar** es el proceso mediante el cual se genera una **imagen** final o una secuencia de imágenes (en el caso de **vídeos**) a partir de la escena 3D creada en un software de modelado y animación como Blender.
+
+Al renderizar, el programa toma todos los datos de la escena (modelos 3D, luces, cámaras, texturas, materiales, efectos especiales, etc.) y los convierte en un **archivo** visual (como una imagen estática o una animación). 
+
+Este proceso puede ser **intensivo** en cuanto a recursos, ya que depende de factores como la complejidad de la escena, la calidad de los materiales, la resolución, y los efectos visuales aplicados (sombras, reflejos, iluminación global, etc.).
 
 Antes de renderizar es importante elegir los parámetros necesarios como:
 
@@ -472,9 +471,7 @@ Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar
 
 Un sistema de partículas es un conjunto de ``partículas`` que se mueven de forma coordinada. En ``Blender``, un sistema de partículas se puede usar para crear efectos como humo, nieve, lluvia, etc.
 
-Los sistemas de partículas en ``Blender`` se pueden configurar de forma
-
-muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
+Los sistemas de partículas en ``Blender`` se pueden configurar de forma muy detallada, permitiendo a los usuarios controlar cosas como la velocidad, el tamaño y la forma de las partículas.
 
 La simulación con sistemas de partículas permite obtener animaciones complejas de objetos que responden a **fuerzas gravitatorias** y acciones como las que produce el **viento** o un campo magnético. De esta forma podemos recrear **lluvia, nieve, y otros**.
 
@@ -719,7 +716,9 @@ Rotarlo: ``R X 90``
 
 # 11. Galeria de objetos
 
-``BlenderKit`` funciona a través de un ``complemento`` dedicado que los usuarios pueden instalar en Blender. Facilita la búsqueda y la importación sencilla de activos directamente dentro de la interfaz de Blender.
+**BlenderKit** es una plataforma que proporciona una amplia gama de recursos 3D, como **modelos, materiales, pinceles** y más, que los usuarios pueden utilizar **directamente** en sus proyectos dentro de Blender. Funciona a través de un **complemento** dedicado que los usuarios pueden instalar en Blender, lo que les permite acceder a su biblioteca de recursos directamente desde la interfaz del programa.
+
+Una vez instalado, BlenderKit integra un panel dentro de Blender desde donde los usuarios pueden buscar, previsualizar y descargar activos de forma rápida y sencilla
 
 Ir a Preferencias:
 

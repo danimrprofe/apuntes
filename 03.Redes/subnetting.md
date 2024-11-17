@@ -6,9 +6,7 @@ headingDivider: 1
 footer: '**Inteligencia artificial** _IES Ramon Llull_'
 ---
 
-# <!-- fit --> SUBNETTING
-
-<!-- _class: invert-->
+# <!-- fit --> SUBNETTING <!-- _class: invert-->
 
 # Problemática
 

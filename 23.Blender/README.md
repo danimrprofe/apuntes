@@ -1,7 +1,7 @@
 
 ![](img/2023-12-12-06-30-16.png)
 
-- [``Blender``](#blender)
+- [Blender](#blender)
 - [0. Instalación](#0-instalación)
 - [1. Modelado  🖌️](#1-modelado--️)
   - [Taza](#taza)
@@ -12,15 +12,7 @@
 - [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
-    - [Crear una cámara](#crear-una-cámara)
-    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
-    - [Modificar la posición](#modificar-la-posición)
-    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
-    - [Configuración de la cámara](#configuración-de-la-cámara)
-    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
-    - [Analicemos el timeline](#analicemos-el-timeline)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
-    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
 - [4. Texturas 🎨](#4-texturas-)
 - [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
@@ -48,18 +40,13 @@
   - [Colisiones y amortiguación](#colisiones-y-amortiguación)
 - [8. Iluminación](#8-iluminación)
   - [Insertar luz de área](#insertar-luz-de-área)
-    - [Escalar la luz](#escalar-la-luz)
-    - [Subir la luz](#subir-la-luz)
-    - [Potencia](#potencia)
-    - [Altura de la luz](#altura-de-la-luz)
-  - [7. Cámara](#7-cámara)
 - [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [10. Texto](#10-texto)
 - [11. Galeria de objetos](#11-galeria-de-objetos)
   - [Escena final](#escena-final)
   - [Ejemplos](#ejemplos)
 
-# ``Blender``
+# Blender
 
 ``Blender`` es un software de creación 3D gratuito y de código abierto. Está diseñado para modelado, animación, simulación, renderizado, composición y creación de gráficos interactivos. Se trata de una herramienta completa para la creación de contenido 3D con todo lo que necesita para crear proyectos profesionales.
 
@@ -177,21 +164,65 @@ Esta sería una forma hiperrealista de iluminar nuestra escena
 
 # 3. Animación 🎬
 
-Ahora os voy a enseñar una pequeña introducción de cómo funciona la línea de tiempo o ``timeline`` y cómo crear fotogramas clave o ``keyframes``.
+En esta sección exploraremos la línea de tiempo (**timeline**) y aprenderemos a manejar los fotogramas clave (**keyframes**) para crear movimientos y animaciones fluidas.
 
 ## 3.1 Cámara en trayecto
 
-Los pasos seguidos son:
+![img-animacion](img-animacion/2022-11-01-15-07-48.png)
 
-- Crear una curva
-- Agregar restricción a la cámara para que siga trayecto
-- Restablecer posición de la cámara
-- Agregar restricción a la cámara para que apunte a objeto
-- Modificar el trayecto de la curva (en modo edición)
+### **Objetivo:**
+
+Configurar una animación en Blender en la que una cámara siga un trayecto definido, utilizando la línea de tiempo y los fotogramas clave.
+
+### **Pasos en Blender:**
+
+1. **Abrir la Línea de Tiempo:**
+   - Asegúrate de tener visible la **línea de tiempo** (Timeline).
+     Si no está visible, ve a **View > Areas > Timeline** en la parte inferior de la ventana de Blender.
+
+2. **Añadir una cámara a la escena:**
+   - Ve al menú **Add > Camera** (o presiona `Shift + A` > Cámara).
+   - Posiciona la cámara en la ubicación inicial desde donde empezará su recorrido.
+   - Para ver desde la cámara, presiona `Numpad 0`.
+
+3. **Crear un trayecto (Path):**
+   - Agrega un trayecto que seguirá la cámara:
+     Ve a **Add > Curve > Path** (o usa `Shift + A` > Curva > Camino).
+   - Ajusta el trayecto según necesites en el modo de edición (`Tab`) y mueve los puntos con `G`.
+
+4. **Vincular la cámara al trayecto:**
+   - Selecciona la cámara y luego el trayecto (manteniendo `Shift`).
+   - Presiona `Ctrl + P` y selecciona **Follow Path** (Seguir Camino).
+   - La cámara ahora estará vinculada al trayecto.
+
+5. **Animar el movimiento de la cámara:**
+   - Selecciona el trayecto y abre el panel **Object Data Properties** (icono de curva verde).
+   - Activa la opción **Frames** y define la duración del movimiento (por ejemplo, de fotograma 1 a 100).
+   - La cámara se moverá automáticamente a lo largo del trayecto.
+
+6. **Hacer que la cámara mire hacia adelante:**
+   - Selecciona la cámara y ve a **Object Constraint Properties** (icono de cadena).
+   - Añade un modificador de tipo **Track To**:
+     - En **Target**, selecciona el trayecto o un objeto al que la cámara debe mirar.
+     - Ajusta los ejes según necesites (generalmente -Z para **To** y Y para **Up**).
+
+7. **Ajustar velocidad o fotogramas clave:**
+   - Si quieres modificar la velocidad, ajusta el valor de **Frames** en las propiedades del trayecto.
+   - Para un control más detallado, abre el **Graph Editor** (`Shift + F6`) y ajusta las curvas de animación.
+
+8. **Vista previa de la animación:**
+   - Presiona `Space` o `Alt + A` para reproducir la animación.
+   - Ajusta posiciones, trayectos, o tiempos si es necesario.
+
+### **Consejos adicionales:**
+
+- **Aceleraciones y desaceleraciones:**
+  En el **Graph Editor**, selecciona la curva del movimiento y aplica suavizado (`T > Ease In/Out`). Esto hará que los movimientos sean más realistas.
+
+- **Render de vista previa:**
+  Presiona `Ctrl + F12` para renderizar una animación rápida y visualizar el resultado.
 
 Video: https://www.youtube.com/watch?v=M9XMEEMnRJk
-
-![img-animacion](img-animacion/2022-11-01-15-07-48.png)
 
 ## 3.2 Animación personalizada de cámara
 
@@ -401,7 +432,7 @@ El proceso de renderización es importante porque nos permite visualizar el resu
 
 **Renderizar** es el proceso mediante el cual se genera una **imagen** final o una secuencia de imágenes (en el caso de **vídeos**) a partir de la escena 3D creada en un software de modelado y animación como Blender.
 
-Al renderizar, el programa toma todos los datos de la escena (modelos 3D, luces, cámaras, texturas, materiales, efectos especiales, etc.) y los convierte en un **archivo** visual (como una imagen estática o una animación). 
+Al renderizar, el programa toma todos los datos de la escena (modelos 3D, luces, cámaras, texturas, materiales, efectos especiales, etc.) y los convierte en un **archivo** visual (como una imagen estática o una animación).
 
 Este proceso puede ser **intensivo** en cuanto a recursos, ya que depende de factores como la complejidad de la escena, la calidad de los materiales, la resolución, y los efectos visuales aplicados (sombras, reflejos, iluminación global, etc.).
 
@@ -439,7 +470,33 @@ Vamos a configurar los siguientes parámetros
 
 ## Dimensiones
 
+Cuando renderizas una animación o imagen en Blender, los parámetros de la sección Dimensiones en el panel de Properties > Output Properties (icono de **impresora**) son clave para definir el tamaño, formato y calidad del resultado.
+
 ![Alt text](image-1.png)
+
+### **Parámetros de Dimensiones:**
+
+1. **Resolution (Resolución):**
+   - Define el tamaño de la imagen o animación en **píxeles**.
+   - **X (ancho):** Número de píxeles horizontales.
+   - **Y (alto):** Número de píxeles verticales.
+   - Ejemplo: Para Full HD, ajusta `X = 1920` y `Y = 1080`.
+
+2. **% Scale (Escala porcentual):**
+   - Controla un porcentaje de la resolución definida.
+   - Útil para realizar pruebas de renderizado a menor resolución sin cambiar los valores de X e Y.
+   - Ejemplo: Un ajuste de 50 % en Full HD renderiza a 960x540 píxeles.
+
+3. **Aspect Ratio (Relación de aspecto):**
+   - Define la relación de píxeles en términos de ancho y alto.
+   - Usualmente se deja en `1:1` para píxeles cuadrados.
+   - Valores diferentes pueden distorsionar la imagen (por ejemplo, para renderizar con píxeles no cuadrados en cine o televisión).
+
+#### **Consejos prácticos:**
+
+- Si planeas subir tu render a plataformas como YouTube, usa una resolución estándar como **1920x1080** (Full HD) o **3840x2160** (4K).
+- Para proyectos más pequeños o pruebas rápidas, puedes usar una escala del 50 % o una resolución menor, como 1280x720 (HD).
+- Revisa siempre que el FPS coincida con el estándar del proyecto o del medio donde lo publicarás.
 
 ## Frames y framerate
 
@@ -448,6 +505,25 @@ Aquí podemos seleccionar el primer y último frame que queremos renderizar, as�
 Por otro lado, el framerate nos determinará cuantos frames pondremos en cada segundo. A mayor tasa de frames, más fluída quedará la animación, pero durará menos.
 
 ![](img/2023-12-02-11-43-39.png)
+
+### Parámetros
+
+4. **Frame Range (Rango de fotogramas):**
+   - Determina el inicio y final de la animación:
+     - **Start (Inicio):** Número del primer fotograma.
+     - **End (Fin):** Número del último fotograma.
+   - Ejemplo: Si la animación dura 5 segundos a 30 fps, el rango debe ser de 1 a 150.
+
+5. **Frame Step (Paso de fotogramas):**
+   - Define cuántos fotogramas se saltan al renderizar.
+   - Un valor de `1` renderiza todos los fotogramas, mientras que `2` renderiza solo cada segundo fotograma (útil para pruebas rápidas).
+
+6. **FPS (Frames Per Second - Cuadros por segundo):**
+   - Establece la velocidad de la animación.
+   - Valores comunes:
+     - **24 fps:** Cine estándar.
+     - **30 fps:** Videos online.
+     - **60 fps:** Animaciones suaves o videojuegos.
 
 ## Output
 
@@ -466,6 +542,13 @@ La codificación es un poco más compleja. Podéis dejar estos parámetros por d
 Por último, vamos a renderizar el vídeo. Aquí es cuando tendremos que esperar más o menos tiempo, en función de la duración del vídeo, calidad y la tasa de frames, entre otros factores.
 
 ![imagen](img-renderizado/image43.png)
+
+### **Render Image vs Render Animation**
+
+- **Render Image:** Renderiza un solo fotograma de la escena (tecla `F12`), ideal para imágenes estáticas o pruebas rápidas.
+- **Render Animation:** Renderiza todos los fotogramas de la animación definida en el rango (tecla `Ctrl + F12`), guardando una secuencia de imágenes o un video.
+- **Usos:** *Image* para imágenes individuales; *Animation* para videos o proyectos animados.
+- Configura previamente el formato (imagen o video) y la carpeta de salida en **Output Properties**.
 
 # 7. Sistemas de partículas ❄️
 
@@ -619,7 +702,7 @@ En mi caso he colocado la luz a 12 metros de altura, como referencia, por si lo 
 
 ![imagen](img/image20.png)
 
-## 7. Cámara
+### Cámara
 
 La cámara la podéis poner donde queráis. Yo la he modificado a ojo y en una posición en la que se vea bien la escena.
 

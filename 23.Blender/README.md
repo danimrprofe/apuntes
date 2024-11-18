@@ -102,11 +102,9 @@ https://www.youtube.com/watch?v=AW8hmeC5x2c
 
 # 2. Entornos HDRI  🏞️
 
+Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar una escena.
+
 En Blender, puedes cargar un HDRI como mapa de fondo para influir en la iluminación global de tu escena, o usarlo como fuente de luz ambiental para mejorar la calidad visual en tus renderizaciones. Los ``HDRI`` en Blender son especialmente útiles para lograr reflexiones y sombras más naturales alrededor de tus objetos
-
-## ¿Qué son los HDRI?
-
-Los HDRIs son básicamente imágenes 360° raw de alto rango dinámico que nos sirven para iluminar.
 
 ![](img/2023-12-11-10-33-04.png)
 
@@ -152,15 +150,18 @@ Veremos que ahora nuestro objeto está dentro de un entorno que lo ilumina como 
 
 ![](img/2023-12-02-10-13-14.png)
 
-Por ejemplo, si añado una esfera y le aplico un material súper metálico, esencialmente aumento al máximo la propiedad 'metallic' y reduzco la rugosidad ('roughness').
+Por ejemplo, si añado una esfera y le aplico un material súper metálico, esencialmente aumento al máximo la propiedad **metallic** y reduzco la rugosidad (**roughness**).
+
+- La propiedad **Metallic** determina cuánto del material se comporta como un metal. Un valor de 0 (mínimo) hace que el material se comporte como un dieléctrico (no metálico), como madera o plástico. Un valor de 1 (máximo) lo hace completamente metálico.
+- **Roughness** define la aspereza de la superficie, lo que afecta cómo refleja la luz. Un valor de 0 crea una superficie completamente lisa, produciendo reflejos especulares nítidos, como un espejo. Un valor de 1 produce una superficie completamente rugosa, lo que difumina los reflejos.
 
 ![](img/2023-12-02-10-13-19.png)
 
-Si aplicamos ``clic derecho`` y sombreado suave (shade smooth), la geometría se mostraría como una esfera perfecta, permitiéndonos observar todos los reflejos de su entorno. En este punto, la esfera reflejaría de manera óptima el entorno, notando cómo cada cara se distingue individualmente y contribuye a la apariencia de una bola de disco.
+Si aplicamos ``clic derecho`` y sombreado suave (shade smooth), la geometría se mostraría como una esfera perfecta, permitiéndonos observar todos los reflejos de su entorno.
 
 ![](img/2023-12-02-10-13-25.png)
 
-Esta sería una forma hiperrealista de iluminar nuestra escena
+En este punto, la esfera reflejaría de manera óptima el entorno, notando cómo cada cara se distingue individualmente y contribuye a la apariencia de una bola de disco. Esta sería una forma hiperrealista de iluminar nuestra escena
 
 # 3. Animación 🎬
 
@@ -168,11 +169,9 @@ En esta sección exploraremos la línea de tiempo (**timeline**) y aprenderemos 
 
 ## 3.1 Cámara en trayecto
 
+Vamos a configurar una animación en Blender en la que una cámara siga un trayecto definido, utilizando la línea de tiempo y los fotogramas clave.
+
 ![img-animacion](img-animacion/2022-11-01-15-07-48.png)
-
-### **Objetivo:**
-
-Configurar una animación en Blender en la que una cámara siga un trayecto definido, utilizando la línea de tiempo y los fotogramas clave.
 
 ### **Pasos en Blender:**
 
@@ -180,37 +179,53 @@ Configurar una animación en Blender en la que una cámara siga un trayecto defi
    - Asegúrate de tener visible la **línea de tiempo** (Timeline).
      Si no está visible, ve a **View > Areas > Timeline** en la parte inferior de la ventana de Blender.
 
+![](img/2024-11-18-10-16-40.png)
+
 2. **Añadir una cámara a la escena:**
    - Ve al menú **Add > Camera** (o presiona `Shift + A` > Cámara).
    - Posiciona la cámara en la ubicación inicial desde donde empezará su recorrido.
-   - Para ver desde la cámara, presiona `Numpad 0`.
 
-3. **Crear un trayecto (Path):**
-   - Agrega un trayecto que seguirá la cámara:
-     Ve a **Add > Curve > Path** (o usa `Shift + A` > Curva > Camino).
+![](img/2024-11-18-10-17-15.png)
+
+Para ver desde la cámara, cebes estar en modo edición.
+
+![](img/2024-11-18-10-18-23.png)
+
+Presiona `0` en el teclado numérico.
+
+![](img/2024-11-18-10-18-44.png)
+
+1. **Crear un trayecto (Path):**
+
+Agrega un trayecto que seguirá la cámara. Debes estar en el modo objeto.
+
+Ve a **Add > Curve > Path** (o usa `Shift + A` > Curva > Camino).
+
+![](img/2024-11-18-10-20-32.png)
+
    - Ajusta el trayecto según necesites en el modo de edición (`Tab`) y mueve los puntos con `G`.
 
-4. **Vincular la cámara al trayecto:**
+2. **Vincular la cámara al trayecto:**
    - Selecciona la cámara y luego el trayecto (manteniendo `Shift`).
    - Presiona `Ctrl + P` y selecciona **Follow Path** (Seguir Camino).
    - La cámara ahora estará vinculada al trayecto.
 
-5. **Animar el movimiento de la cámara:**
+3. **Animar el movimiento de la cámara:**
    - Selecciona el trayecto y abre el panel **Object Data Properties** (icono de curva verde).
    - Activa la opción **Frames** y define la duración del movimiento (por ejemplo, de fotograma 1 a 100).
    - La cámara se moverá automáticamente a lo largo del trayecto.
 
-6. **Hacer que la cámara mire hacia adelante:**
+4. **Hacer que la cámara mire hacia adelante:**
    - Selecciona la cámara y ve a **Object Constraint Properties** (icono de cadena).
    - Añade un modificador de tipo **Track To**:
      - En **Target**, selecciona el trayecto o un objeto al que la cámara debe mirar.
      - Ajusta los ejes según necesites (generalmente -Z para **To** y Y para **Up**).
 
-7. **Ajustar velocidad o fotogramas clave:**
+5. **Ajustar velocidad o fotogramas clave:**
    - Si quieres modificar la velocidad, ajusta el valor de **Frames** en las propiedades del trayecto.
    - Para un control más detallado, abre el **Graph Editor** (`Shift + F6`) y ajusta las curvas de animación.
 
-8. **Vista previa de la animación:**
+6. **Vista previa de la animación:**
    - Presiona `Space` o `Alt + A` para reproducir la animación.
    - Ajusta posiciones, trayectos, o tiempos si es necesario.
 
@@ -296,7 +311,7 @@ Lo que vamos a hacer para ello va a ser un aquí al primer fotograma le vamos a 
 
 Vamos a avanzar 100 fotograma movemos un poquito la cámara e insertamos otro fotograma localización y rotación
 
-![imagen](media/image33.png)
+![imagen](img/image33.png)
 
  Si ahora le damos al play ya tendríamos nuestra animación hecha. Veréis que la animación no se detiene en el 100, por lo que la tendremos que parar nosotros.
 
@@ -304,7 +319,7 @@ Vamos a avanzar 100 fotograma movemos un poquito la cámara e insertamos otro fo
 
 Aquí vemos que el único objeto animado ha sido la cámara. De hecho, el cubo sigue en su sitio.
 
-![imagen](media/image34.png)
+![imagen](img/image34.png)
 
 Si ampliamos podemos ver la siguiente información. Tenemos dos **keyframes**
 
@@ -313,7 +328,7 @@ Si ampliamos podemos ver la siguiente información. Tenemos dos **keyframes**
 
 En medio, ``Blender`` calculará (extrapolará) todos los frames intermedios que conducirán al movimiento entre esas dos posiciones.
 
-![imagen](media/image35.png)
+![imagen](img/image35.png)
 
 ## 3.3 Animación de un objeto
 

@@ -1,3 +1,59 @@
+# Resistències (I)
+
+Els **resistors** s'intercalen en un circuit per ajustar el valor de la intensitat del corrent que hi circula. Poden ser de dos tipus:
+
+## Resistors Fixes
+
+- El valor d'un resistor fixe ve indicat per un **codi de colors** que permet identificar la seva resistència.
+
+## Resistors Variables
+
+Els **resistors variables** permeten ajustar el seu valor entre 0 i un valor màxim. El valor es modifica mitjançant un **cursor** que es pot moure. Es poden classificar en:
+
+- **Lineals**: La variació de la resistència és proporcional al moviment del cursor.
+- **Angulars**: La resistència canvia segons l'angle del cursor.
+
+Els resistors variables més habituals en electrònica són els **potenciòmetres**.
+
+# Resistències. Codis de Colors
+
+![Imatge de Circuits Electrònics](img%5C57%20-%20Circuits%20electr%C3%B2nics0.png)
+
+## Codis de Colors
+
+Els codis de colors en les resistències es componen de diverses bandes que indiquen el valor i la tolerància de la resistència.
+
+### 1. Codis de 3 bandes de color a un extrem
+- **Valor de la resistència**:
+  - El valor es determina multiplicant el nombre representat per les dues primeres bandes de color per la potència de 10 indicada per la tercera banda.
+
+### 2. Tolerància de la resistència
+- **Tolerància**:
+  - Indica la màxima diferència entre el valor nominal i el valor real de la resistència.
+  - Es pot identificar per una banda extra de color en l'altre extrem de la resistència. Els colors comuns per a la tolerància són:
+    - Or
+    - Plata
+    - Marró
+    - Vermell
+
+![](img%5C57%20-%20Circuits%20electr%C3%B2nics1.png)
+
+# Resistències Variables
+
+Les resistències variables són aquelles que poden modificar el seu valor en funció d'algun paràmetre extern.
+
+## 1. Resistències dependents de la llum
+- **LDR (Light Dependent Resistor)**:
+  - Les LDR canvien la seva resistència segons la intensitat de la llum que les incideix. Quan hi ha més llum, la seva resistència disminueix.
+
+## 2. Resistències dependents de la temperatura
+- Aquestes resistències varien el seu valor en funció de la temperatura a la qual estan exposades.
+  - **Termistores**: Un tipus de resistència que varia segons la temperatura, amb dues classes:
+    - NTC (Coeficient de temperatura negatiu): La resistència disminueix quan la temperatura augmenta.
+    - PTC (Coeficient de temperatura positiu): La resistència augmenta quan la temperatura augmenta.
+
+
+
 
 # La resistència i el potenciòmetre
 

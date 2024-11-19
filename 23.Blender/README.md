@@ -7,12 +7,21 @@
   - [Taza](#taza)
   - [Monigote](#monigote)
 - [2. Entornos HDRI  🏞️](#2-entornos-hdri--️)
-  - [¿Qué son los HDRI?](#qué-son-los-hdri)
   - [Agregando el HDRI](#agregando-el-hdri)
 - [3. Animación 🎬](#3-animación-)
   - [3.1 Cámara en trayecto](#31-cámara-en-trayecto)
+    - [**Pasos en Blender:**](#pasos-en-blender)
+    - [**Consejos adicionales:**](#consejos-adicionales)
   - [3.2 Animación personalizada de cámara](#32-animación-personalizada-de-cámara)
+    - [Crear una cámara](#crear-una-cámara)
+    - [Ver el punto de vista de la cámara](#ver-el-punto-de-vista-de-la-cámara)
+    - [Modificar la posición](#modificar-la-posición)
+    - [Mover la cámara con nosotros](#mover-la-cámara-con-nosotros)
+    - [Configuración de la cámara](#configuración-de-la-cámara)
+    - [Insertar fotogramas clave](#insertar-fotogramas-clave)
+    - [Analicemos el timeline](#analicemos-el-timeline)
   - [3.3 Animación de un objeto](#33-animación-de-un-objeto)
+    - [Enfoque y desenfoque](#enfoque-y-desenfoque)
 - [4. Texturas 🎨](#4-texturas-)
 - [5. Armadura 💀](#5-armadura-)
   - [Rigging](#rigging)
@@ -27,10 +36,14 @@
   - [Eligiendo el motor de renderizado](#eligiendo-el-motor-de-renderizado)
   - [Parámetros de renderizado](#parámetros-de-renderizado)
   - [Dimensiones](#dimensiones)
+    - [**Parámetros de Dimensiones:**](#parámetros-de-dimensiones)
+      - [**Consejos prácticos:**](#consejos-prácticos)
   - [Frames y framerate](#frames-y-framerate)
+    - [Parámetros](#parámetros)
   - [Output](#output)
   - [Codificación](#codificación)
   - [Renderizar animación](#renderizar-animación)
+    - [**Render Image vs Render Animation**](#render-image-vs-render-animation)
 - [7. Sistemas de partículas ❄️](#7-sistemas-de-partículas-️)
   - [Vista lateral del resultado](#vista-lateral-del-resultado)
   - [Crear copo](#crear-copo)
@@ -40,6 +53,11 @@
   - [Colisiones y amortiguación](#colisiones-y-amortiguación)
 - [8. Iluminación](#8-iluminación)
   - [Insertar luz de área](#insertar-luz-de-área)
+    - [Escalar la luz](#escalar-la-luz)
+    - [Subir la luz](#subir-la-luz)
+    - [Potencia](#potencia)
+    - [Altura de la luz](#altura-de-la-luz)
+    - [Cámara](#cámara)
 - [9. Crear telón de fondo](#9-crear-telón-de-fondo)
   - [10. Texto](#10-texto)
 - [11. Galeria de objetos](#11-galeria-de-objetos)
@@ -413,7 +431,7 @@ Aquí abajo podemos cambiar el número de subdivisiones en total le vamos a deja
 
 ## Cadera
 
-Vamos a seleccionar el circulito debajo del hueso y le vamos a dar a la para escribir el hueso y sacarlo que sería la cadera con la **tecla G** lo movemos y con R lo rotamos yo lo coloca donde más o menos iría la cadera para que luego todo funciona lo mejor posible.
+Vamos a seleccionar el circulito debajo del hueso y le vamos a dar a la para escribir el hueso y sacarlo que sería la cadera con ``G`` lo movemos y con ``R`` lo rotamos yo lo coloca donde más o menos iría la cadera para que luego todo funciona lo mejor posible.
 
 ## Pierna
 
@@ -425,9 +443,9 @@ Se hace lo mismo con los tres huesos y hecho esto lo seleccionamos pulsamos CBD 
 
 ## Terminar
 
-ya tenemos todos los huesos necesarios así que vamos a salir del **modo edición** con ``tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``⬆️ ``⬆️ shift`` ` pulsada y por último seleccionamos los huesos.
+ya tenemos todos los huesos necesarios así que vamos a salir del **modo edición** con ``Tab`` al offset mount y lo que hacemos es seleccionar todas las partes del personaje primero manteniendo la tecla ``shift`` pulsada y por último seleccionamos los huesos.
 
-A continuación, pulsamos ``ctrl``+P y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
+A continuación, pulsamos ``ctrl+P`` y elegimos esta opción para unir los huesos al personaje de forma automática para comprobar que no ha funcionado seleccionamos los huesos en esta esquina le damos a la opción pose mode donde podemos mover los huesos para apoyar a nuestro personaje.
 
 Comprobamos que todo funciona y ahora vamos a mejorar un par de cosas para que nuestro rey funciones aún mejor
 
@@ -437,7 +455,7 @@ Primero seleccionamos el hueso del cristal y luego el hueso de la cabeza lo pone
 
 ## Mover todo el personaje
 
-Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **modo edición** con la parte de abajo del hueso seleccionada pulsamos la ``e`` para extruir un nuevo hueso y lo colocamos por aquí.
+Necesitamos un último hueso que nos permita moverlo todo a la vez así que volvemos a **modo edición** con la parte de abajo del hueso seleccionada pulsamos la ``E`` para extruir un nuevo hueso y lo colocamos por aquí.
 
 Ahora lo tenemos que conectar así que primero seleccionamos el hueso de la columna y luego el del suelo pulsamos ``ctrl``+P y le damos a keep offset. Como veis ya está conectado así que ahora hacemos lo mismo con los huesos de la cadera recordad desde el **modo edición** primero seleccionamos el hueso de la cadera y después el del suelo pulsamos ``ctrl``+P y tipo offset desde el pose mode comprobamos que funciona volvemos **modo edición** y hacemos exactamente lo mismo con el hueso de la otra cadera y ya tenemos nuestro gris completo listo para ser animado.
 

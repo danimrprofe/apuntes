@@ -247,29 +247,6 @@ L'inducció electromagnètica és el fenomen en què un canvi en el flux magnèt
 
 ![](img%5C54%20-%20Fen%C3%B2mens%2C%20magnituds%20i%20lleis%20fonamentals%20dels%20circuits%20el%C3%A8ctrics6.png)
 
-# Corrent altern. Valors característics
-
-Els corrents alterns (CA) tenen diverses propietats que els caracteritzen. A continuació es descriuen els valors més importants en aquest tipus de corrent.
-
-## Freqüència
-- La **freqüència** és el nombre d'oscil·lacions que es produeixen per unitat de temps.
-- Es mesura en **Hertz (Hz)**.
-
-## Període
-- El **període** és el temps transcorregut entre dos punts equivalents de l'oscil·lació.
-- Equival al temps necessari per completar una oscil·lació.
-- Es mesura en **segons (s)**.
-
-## Valor Eficaç
-- A causa de que la meitat del temps la senyal és positiva i l'altra meitat negativa, la mitjana de la magnitud sinusoïdal durant un període **T** és **zero**.
-- Per això, la magnitud mesurable del corrent altern es mesura pel **valor eficaç**, també conegut com la **mitjana quadràtica**.
-
-## Valor Mitjà
-- El **valor mitjà** és una altra manera de mesurar una magnitud sinusoïdal, però no es fa servir sovint per a corrents alterns, ja que el valor eficaç ofereix una mesura més representativa.
-
-## Factor de Forma
-- El **factor de forma** és la relació entre el valor eficaç i el valor mitjà.
-
 
 # Llei d’Ohm
 
@@ -383,41 +360,3 @@ Transformació Delta\-Estrella
       * Assegurar\-se que al circuit o a la resistencia no hi hagi tensio
       * Pot provocar el deteriorament de l’aparell i la mesura realitzada no seria la correcta\.
   * Per efectuar la mesura haurem de connectar l’ohmmetre entre els dos punts entre els quals volem mesurar la resistencia\.
-
-# Soldadura tova
-
-![](img%5C54%20-%20Fen%C3%B2mens%2C%20magnituds%20i%20lleis%20fonamentals%20dels%20circuits%20el%C3%A8ctrics9.jpg)
-
-# Soldador elèctric: elements complementaris
-
-* Suport
-  * Permet recolzar el soldador mentres no es fa feina\.
-* Esponja
-  * Per netejar la punta del soldador abans i després d’utilitzar\-lo
-* Puntes
-  * Diverses formes\, intercanviables\. Adaptació al tipus de soldadura
-* Material d’aportació
-  * Generalment aliatge estany\-plom\, en rotlles de fil
-  * Baix punt de fusió
-
-# Tècnica de soldadura tova
-
-* Procediment de soldadura:
-  * Netejar bé les peces que s’han d’unir
-  * Subjectar les peces per tal de que no es moguin
-  * Escalfar la zona de soldadura i afegir estany\, deixant que fongui
-  * Netejar bé la punta del soldador
-  * Deixar el soldador recolzat en el suport
-
-# Precaucions en l’ús del soldador
-
-## Electricitat
-
-- El soldador funciona amb corrent altern de 220 V.
-- Comprovar que el cable estigui en bon estat i sense danys.
-- Assegurar-se que el mànec aïlli perfectament per evitar descàrregues elèctriques.
-
-## Temperatura
-- La punta del soldador pot arribar a temperatures molt elevades.
-- Mai no s’ha de tocar la punta amb les mans.
-- Sempre dipositar el soldador al seu suport quan no s’estigui utilitzant.

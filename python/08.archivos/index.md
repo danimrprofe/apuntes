@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 
 # GESTIÓ DE FITXERS I FORMATS D'EMMAGATZEMAMENT D'INFORMACIÓ
@@ -47,6 +48,33 @@ Un fitxer és una seqüència de bytes que es guarda en un dispositiu d'emmagatz
 - un **nom**
 - una **extensió**
 - **permisos** d'accés
+---
+
+# Permisos d'accés
+
+Els permisos d'accés a fitxers en Windows es gestionen per mitjà del sistema de seguretat de fitxers, que **permet establir qui pot llegir, escriure o executar un fitxer** o directori.
+Aquests permisos es poden aplicar tant a **fitxers** individuals com a **carpetes** i es poden personalitzar per a **usuaris** i **grups** específics.
+
+---
+# Tipus de permisos d'accés:
+- **Lectura** (Read):
+  - Permet llegir el contingut del fitxer o la llista de fitxers d'una carpeta.
+  - No permet modificar ni executar el fitxer.
+- **Escriptura** (Write):
+  - Permet modificar el contingut d'un fitxer o afegir nous fitxers a una carpeta.
+  - No permet llegir ni executar el fitxer.
+
+---
+# Tipus de permisos d'accés:
+- **Execució** (Execute):
+  - Permet executar fitxers que siguin programes o scripts.
+  - Aquest permís s'afegeix en fitxers executables com ``.exe, .bat, .cmd``, o scripts com ``.ps1``.
+- **Modificació** (Modify):
+  - Permet llegir, escriure i eliminar fitxers, així com canviar-ne el contingut.
+  - No permet canviar els permisos d'altres usuaris.
+- **Control** **total** (Full Control):
+  - Inclou tots els permisos: llegir, escriure, executar, modificar, eliminar, i també permet modificar els permisos d'altres usuaris.
+  - És el permís més alt i permet la gestió completa del fitxer o carpeta.
 
 ---
 
@@ -258,17 +286,22 @@ file.writelines(linies)
 
 Els fitxers ``CSV`` (Comma-Separated Values) són fitxers de text on les dades es separen per comes o altres delimitadors. Són útils per emmagatzemar taules de dades i intercanviar informació entre aplicacions.
 
----
-Hi ha un mòdul de Python per treballar amb fitxers CSV.
+```csv
+name,age
+Lionel Messi,35
+Cristiano Ronaldo,38
+Kylian Mbappé,25
+```
 
 ---
 
 # Guardar dades en un fitxer CSV
 
+Hi ha un mòdul de Python per treballar amb fitxers CSV.
+
 ```python
 import csv
 
-# Data to write
 dades = [
     ["Nom", "Edat", "Ciutat"],
     ["John", 28, "New York"],
@@ -296,7 +329,9 @@ with open('treballadors.csv', mode='r', newline='') as arxiu:
         print(row)
 ```
 
-## 5. Format JSON
+---
+# Format **JSON**
+---
 
 ``JSON`` (JavaScript Object Notation) és un format lleuger per a l’emmagatzematge i intercanvi de dades. És fàcilment llegible per humans i estructurat de manera que també és senzill de processar per les màquines. S’utilitza àmpliament en aplicacions web, APIs i bases de dades.
 
@@ -315,11 +350,49 @@ with open('treballadors.csv', mode='r', newline='') as arxiu:
 
 JSON es basa en dos tipus d’estructures fonamentals:
 
-- Els ``objectes`` JSON són representats amb {} (claus). A dins contenen parells clau-valor separats per comes. Aquest objecte en té 4 d’aquests parells.
-- Les ``claus`` són sempre strings (text entre cometes dobles).
-- Els ``valors`` poden ser strings, nombres, booleans, arrays o altres objectes.
+- Els ``objectes`` JSON són representats amb **{}** (claus).
+- Les ``claus`` són sempre strings (text entre cometes dobles): **name, age**
+- Els ``valors`` poden ser strings, nombres, booleans, arrays o altres objectes: **Lionel Messi, 35**.
 
-Les ``llistes`` o arrays JSON son representades amb [] (claudàtors) i contenen una llista ordenada de valors. Els valors poden ser de qualsevol tipus compatible amb JSON. Aquest objecte té un parell clau-valor, i el valor és una llista amb 3 elements.
+```json
+{
+  "name": "Lionel Messi",
+  "age": 35
+}
+```
+Aquest objecte té dos parells clau-valor.
+
+---
+
+Les ``llistes`` o arrays JSON son representades amb **[]** (claudàtors) i contenen una llista ordenada de valors. Els valors poden ser de qualsevol tipus compatible amb JSON. Aquest objecte té un parell clau-valor, i el valor és una llista amb 3 elements.
+
+```json
+{
+  "players": [
+    {
+      "name": "Lionel Messi",
+      "position": "Forward",
+      "team": "Paris Saint-Germain",
+      "nationality": "Argentine",
+      "age": 35
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "position": "Forward",
+      "team": "Al Nassr",
+      "nationality": "Portuguese",
+      "age": 38
+    },
+    {
+      "name": "Kylian Mbappé",
+      "position": "Forward",
+      "team": "Paris Saint-Germain",
+      "nationality": "French",
+      "age": 25
+    }
+  ]
+}
+```
 
 ---
 

@@ -56,7 +56,8 @@ Els permisos d'accés a fitxers en Windows es gestionen per mitjà del sistema d
 Aquests permisos es poden aplicar tant a **fitxers** individuals com a **carpetes** i es poden personalitzar per a **usuaris** i **grups** específics.
 
 ---
-# Tipus de permisos d'accés:
+# Tipus de permisos d'accés
+
 - **Lectura** (Read):
   - Permet llegir el contingut del fitxer o la llista de fitxers d'una carpeta.
   - No permet modificar ni executar el fitxer.
@@ -76,6 +77,7 @@ Aquests permisos es poden aplicar tant a **fitxers** individuals com a **carpete
   - Inclou tots els permisos: llegir, escriure, executar, modificar, eliminar, i també permet modificar els permisos d'altres usuaris.
   - És el permís més alt i permet la gestió completa del fitxer o carpeta.
 
+Python ens permet treballar amb fitxers, utilitzant diferents funcions que ja venen implementades.
 ---
 
 ### Modes d'obertura d'arxius en Python
@@ -87,7 +89,6 @@ Per treballar amb un fitxer, primer cal obrir-lo en un mode específic (lectura,
 3. **`'a'`**:  **afegir**.  Obre el fitxer per afegir contingut al final sense esborrar el que ja hi ha.
 4. **`'x'`**:  creació **exclusiva**. Crea un fitxer nou, però genera un error si el fitxer ja existeix.
 
----
 ### Modes d'obertura d'arxius en Python
 
 5. **`'b'`**:  **binari**. Específic per obrir fitxers en mode binari (per exemple, per llegir o escriure imatges).

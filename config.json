@@ -1,0 +1,10 @@
+{
+    "usuario": "Juan",
+    "idioma": "es",
+    "volumen": 50,
+    "resolucion": {
+        "ancho": 1920,
+        "alto": 1080
+    },
+    "modo_noche": true
+}

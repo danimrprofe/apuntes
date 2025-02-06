@@ -1,1 +1,0 @@
-# Dispositius de xarxa

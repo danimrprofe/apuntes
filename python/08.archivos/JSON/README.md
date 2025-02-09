@@ -1,11 +1,7 @@
 
----
 # Format **JSON**
----
 
 ``JSON`` (JavaScript Object Notation) és un format lleuger per a l’emmagatzematge i intercanvi de dades. És fàcilment llegible per humans i estructurat de manera que també és senzill de processar per les màquines. S’utilitza àmpliament en aplicacions web, APIs i bases de dades.
-
----
 
 ### Característiques principals de JSON
 
@@ -13,8 +9,6 @@
 - Lleuger: ocupa poc espai i no conté caràcters innecessaris.
 - Independent del llenguatge: encara que es basa en **JavaScript**, es pot utilitzar amb **Python**, **Java**, **C#**, etc.
 - Basat en estructures de dades: s'organitza amb objectes i llistes.
-
----
 
 ### Estructura bàsica de JSON
 
@@ -31,8 +25,6 @@ JSON es basa en dos tipus d’estructures fonamentals:
 }
 ```
 Aquest objecte té dos parells clau-valor.
-
----
 
 Les ``llistes`` o arrays JSON son representades amb **[]** (claudàtors) i contenen una llista ordenada de valors. Els valors poden ser de qualsevol tipus compatible amb JSON. Aquest objecte té un parell clau-valor, i el valor és una llista amb 3 elements.
 
@@ -63,8 +55,6 @@ Les ``llistes`` o arrays JSON son representades amb **[]** (claudàtors) i conte
   ]
 }
 ```
-
----
 
 ### Treball amb Python
 

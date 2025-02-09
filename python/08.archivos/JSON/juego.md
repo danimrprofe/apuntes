@@ -6,6 +6,8 @@ Además del archivo Python con el juego, crearemos un archivo de texto ``config.
 
 ![](img/2025-02-04-18-12-32.png)
 
+## Archivo `config.json`
+
 El contenido del archivo .json será el siguiente.
 
 ```JSON
@@ -16,6 +18,8 @@ El contenido del archivo .json será el siguiente.
     "derrotas": 0
 }
 ```
+
+## Archivo del juego `main.py`
 
 El archivo Python quedará tal que así:
 ```python

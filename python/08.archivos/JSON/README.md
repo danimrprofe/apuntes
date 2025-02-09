@@ -66,3 +66,5 @@ Guardar i carregar dades en format JSON.
 - APIs Web: comunicació entre aplicacions i serveis.
 - Bases de dades NoSQL: MongoDB utilitza JSON per emmagatzemar dades.
 - Configuració d’aplicacions: molts programes utilitzen arxius .json per guardar configuracions.
+
+Amb aquest joc aprendrem a [guardar i llegir dades amb Python i JSON](juego.md).

@@ -12,11 +12,20 @@
 
 ### Estructura bàsica de JSON
 
+## Parelles clau-vañpr
+
 JSON es basa en dos tipus d’estructures fonamentals:
 
-- Els ``objectes`` JSON són representats amb **{}** (claus).
 - Les ``claus`` són sempre strings (text entre cometes dobles): **name, age**
 - Els ``valors`` poden ser strings, nombres, booleans, arrays o altres objectes: **Lionel Messi, 35**.
+
+```json
+  "name": "Lionel Messi"
+```
+
+## Objectes
+
+Els ``objectes`` JSON són representats amb **{}** (claus). Aquest objecte té dos parells clau-valor.
 
 ```json
 {
@@ -24,7 +33,8 @@ JSON es basa en dos tipus d’estructures fonamentals:
   "age": 35
 }
 ```
-Aquest objecte té dos parells clau-valor.
+
+## Llistes
 
 Les ``llistes`` o arrays JSON son representades amb **[]** (claudàtors) i contenen una llista ordenada de valors. Els valors poden ser de qualsevol tipus compatible amb JSON. Aquest objecte té un parell clau-valor, i el valor és una llista amb 3 elements.
 

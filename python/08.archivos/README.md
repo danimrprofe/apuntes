@@ -51,13 +51,15 @@ Un fitxer és una seqüència de bytes que es guarda en un dispositiu d'emmagatz
 
 Per treballar amb un fitxer, primer cal obrir-lo en un mode específic (lectura, escriptura, afegir, etc.), i després tancar-lo per evitar pèrdues de dades o errors en el sistema.
 
-1. **`'r'`**: **lectura** (default).  Obre el fitxer per llegir-lo. L'error es produeix si el fitxer no existeix.
-2. **`'w'`**:  **escriptura**.  Crea un fitxer nou (si no existeix) o sobreescriu-lo si ja existeix.
-3. **`'a'`**:  **afegir**.  Obre el fitxer per afegir contingut al final sense esborrar el que ja hi ha.
-4. **`'x'`**:  creació **exclusiva**. Crea un fitxer nou, però genera un error si el fitxer ja existeix.
-5. **`'b'`**:  **binari**. Específic per obrir fitxers en mode binari (per exemple, per llegir o escriure imatges).
-6. **`'t'`**:  **text** (default). Utilitzat per treballar amb fitxers de text. No és necessari especificar-lo ja que és el mode per defecte.
-7. **`'+'`**:  **lectura** i **escriptura**. Permet llegir i escriure al mateix temps (combinat amb altres modes, per exemple `'r+'` o `'w+'`).
+| Mode | Tipus              | Descripció                                                                                     |
+| ---- | ------------------ | ---------------------------------------------------------------------------------------------- |
+| `r`  | Lectura            | Obre el fitxer per llegir-lo. L'error es produeix si el fitxer no existeix.                    |
+| `w`  | Escriptura         | Crea un fitxer nou (si no existeix) o sobreescriu-lo si ja existeix.                           |
+| `a`  | Afegir             | Obre el fitxer per afegir contingut al final sense esborrar el que ja hi ha.                   |
+| `x`  | Creació            | Crea un fitxer nou, però genera un error si el fitxer ja existeix.                             |
+| `b`  | Binari             | Per obrir fitxers en mode binari (per exemple, per llegir o escriure imatges).                 |
+| `t`  | Text               | Per treballar amb fitxers de text. No cal especificar-lo, ja que és el mode per defecte.       |
+| `+`  | Lectura/Escriptura | Permet llegir i escriure al mateix temps (combinat amb altres modes, per exemple `r+` o `w+`). |
 
 ### Exemples d'obertura d'arxius
 

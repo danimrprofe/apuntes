@@ -15,6 +15,8 @@ Aquesta unitat didàctica té com a objectiu que l'alumnat adquireixi els coneix
 
 Un fitxer és un conjunt de **dades** **emmagatzemades** en un dispositiu de memòria (com el disc dur, SSD, o memòria flash) que es poden llegir, escriure i gestionar mitjançant un sistema operatiu.
 
+![](img/2025-02-10-14-46-30.png)
+
 Els fitxers permeten **organitzar** i **conservar** **informació** de manera persistenta perquè estigui disponible fins i tot després de tancar un programa o apagar l'ordinador.
 
 ## 2. Tipus de fitxers
@@ -31,9 +33,7 @@ Alice Johnson
 
 ``Binaris``, quan emmagatzemen informació en format no llegible directament (com **.jpg**, **.exe**).
 
-```
-01010101101010101011101010101011
-```
+![](img/2025-02-10-14-47-03.png)
 
 ### Estructura bàsica d'un fitxer
 
@@ -42,6 +42,8 @@ Un fitxer és una seqüència de bytes que es guarda en un dispositiu d'emmagatz
 - un **nom**
 - una **extensió**
 - **permisos** d'accés
+
+![](img/2025-02-10-14-48-08.png)
 
 ## 3. Treball amb Python
 

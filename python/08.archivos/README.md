@@ -339,17 +339,27 @@ Guardar i carregar dades en format JSON.
 
 ### On es fa servir JSON?
 
-- APIs Web: comunicació entre aplicacions i serveis.
-- Bases de dades NoSQL: MongoDB utilitza JSON per emmagatzemar dades.
-- Configuració d’aplicacions: molts programes utilitzen arxius .json per guardar configuracions.
+Els arxius JSON tenen aplicacions molt variades, d'entre elles destaquen les següents:
+
+- **APIs Web**: comunicació entre aplicacions i serveis.
+
+![alt text](image-1.png)
+
+- **Bases de dades NoSQL**: MongoDB utilitza JSON per emmagatzemar dades.
+
+![alt text](image.png)
+
+- **Configuració d’aplicacions**: molts programes utilitzen arxius .json per guardar configuracions.
+
+![](img/2025-02-10-15-00-04.png)
 
 Amb aquest joc aprendrem a [guardar i llegir dades amb Python i JSON](juego.md).
 
 ## 6. JOC amb JSON
 
-En este ejemplo veremos como utilizar JSON para almacenar la configuración y los datos de partidas, de forma que queden guardadas en un archivo cuando el programa termine, y podamos cargarlos de nuevo cuando el programa vuelva a abrirse para utilizar estos datos.
+En aquest exemple veurem com utilitzar JSON per emmagatzemar la configuració i les dades de les partides, de manera que quedin guardades en un fitxer quan el programa acabi, i puguem carregar-les de nou quan el programa es torni a obrir per utilitzar aquestes dades.
 
-Además del archivo Python con el juego, crearemos un archivo de texto ``config.json`` en el cual guardaremos toda la información que necesitemos.
+A més del fitxer Python amb el joc, crearem un fitxer de text ``config.json`` en el qual guardarem tota la informació que necessitem.
 
 ![](img/2025-02-04-18-12-32.png)
 
@@ -368,11 +378,12 @@ El contenido del archivo .json será el siguiente.
 
 ### Arxiu de joc
 
-El archivo Python quedará tal que así:
+L'arxiu quedarà tal que així
+
 ```python
-import json
-import random
-import os
+import json  # Mòdul per treballar amb fitxers i dades en format JSON (serialització i deserialització).
+import random  # Mòdul per generar valors aleatoris, com números, eleccions aleatòries en llistes, etc.
+import os  # Mòdul per interactuar amb el sistema operatiu, com gestionar fitxers i directoris.
 
 # Nombre del archivo JSON donde guardaremos los parámetros
 CONFIG_FILE = "config.json"

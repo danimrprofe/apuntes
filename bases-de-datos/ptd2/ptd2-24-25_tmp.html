@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ptd2-24-25.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="bases-de-dades-relacionals">Bases de dades relacionals</h1>
+<p>Aquest document proporciona una guia detallada sobre el disseny i la manipulació de bases de dades relacionals, amb un enfocament pràctic en lús de <strong>SQL</strong> i <strong>Python</strong>. Comença explicant el <strong>procés general per dissenyar bases de dades</strong>, incloent-hi la creació d'un <strong>model entitat-relació</strong> i la seva transformació a un <strong>model relacional</strong>, ressaltant la importància de definir clarament els requisits i <strong>les entitats, les relacions i els atributs</strong>.</p>
+<p>Després, aprofundeix en el <strong>llenguatge SQL</strong>, mostrant exemples de sentències per crear, inserir, modificar, eliminar i consultar dades a una base de dades. També explica com fer servir <strong>funcions SQL</strong> per realitzar operacions sobre dades i combinar dades de diferents taules utilitzant la <strong>sentència JOIN</strong>.</p>
+<p>Finalment, s'introdueix la integració de bases de dades amb Python, utilitzant el <strong>mòdul sqlite3</strong>, i es donen exemples de com connectar, inserir, consultar i actualitzar registres. El document conclou amb una introducció a <strong>l'ús de Flask per crear una API</strong> que permeti accedir a les dades de la base de dades a través del web.</p>
+<h2 id="programaci%C3%B3-i-tractament-de-dades-ii">Programació i tractament de dades II</h2>
+<ul>
+<li><a href="#bases-de-dades-relacionals">Bases de dades relacionals</a>
+<ul>
+<li><a href="#programaci%C3%B3-i-tractament-de-dades-ii">Programació i tractament de dades II</a></li>
+</ul>
+</li>
+<li><a href="#1-proceso-general">1. Proceso general</a></li>
+<li><a href="#2-modelo-entidad-relaci%C3%B3n">2. Modelo Entidad-Relación</a>
+<ul>
+<li><a href="#paso-1-define-claramente-los-requisitos">Paso 1. Define claramente los requisitos</a></li>
+<li><a href="#paso-2-identifica-las-entidades">Paso 2. Identifica las entidades</a></li>
+<li><a href="#paso-3-determina-las-relaciones">Paso 3. Determina las relaciones</a></li>
+<li><a href="#paso-4-especifica-los-atributos">Paso 4. Especifica los atributos</a></li>
+</ul>
+</li>
+<li><a href="#3-modelo-relacional">3. Modelo relacional</a></li>
+<li><a href="#sqlite-i-db-browser">SQlite i DB Browser</a></li>
+<li><a href="#4-sql">4. SQL</a>
+<ul>
+<li><a href="#41-sentencia-create">4.1 Sentencia CREATE</a></li>
+<li><a href="#42-sentencia-insert">4.2 Sentencia INSERT</a></li>
+<li><a href="#43-sentencia-alter">4.3 Sentencia ALTER</a></li>
+<li><a href="#44-sentencia-delete">4.4 Sentencia DELETE</a></li>
+<li><a href="#45-sentencia-update">4.5 Sentencia UPDATE</a></li>
+<li><a href="#45-sentencia-select">4.5 Sentencia SELECT</a></li>
+<li><a href="#funciones">Funciones</a></li>
+<li><a href="#46-sentencia-select-con-join">4.6 Sentencia SELECT con JOIN</a></li>
+</ul>
+</li>
+<li><a href="#5-python-y-sql">5. Python y SQL</a>
+<ul>
+<li><a href="#python-y-sqlite3">Python y sqlite3</a></li>
+<li><a href="#proceso-de-conexi%C3%B3n-en-python">Proceso de conexión en Python</a></li>
+<li><a href="#prueba-insertar-libros">Prueba insertar Libros</a></li>
+<li><a href="#mostrar-libros-existentes">Mostrar libros existentes</a></li>
+<li><a href="#actualizar-un-registro">Actualizar un registro</a></li>
+<li><a href="#men%C3%BA">Menú</a></li>
+</ul>
+</li>
+<li><a href="#6-api-con-flask-no-hacer">6. API con Flask (No hacer)</a>
+<ul>
+<li><a href="#qu%C3%A9-es-una-api">¿Qué es una API?</a></li>
+<li><a href="#qu%C3%A9-es-flask">¿Qué es Flask?</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="1-proceso-general">1. Proceso general</h1>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-05-16-05-28.png" alt=""></p>
+<h1 id="2-modelo-entidad-relaci%C3%B3n">2. Modelo Entidad-Relación</h1>
+<p>Crear un modelo entidad-relación (ER) es una parte fundamental del diseño de bases de datos, ya que te ayuda a estructurar y organizar la información de manera lógica. Aquí tienes algunos consejos clave para hacerlo bien:</p>
+<h2 id="paso-1-define-claramente-los-requisitos">Paso 1. Define claramente los requisitos</h2>
+<p>Antes de dibujar nada, comprende el propósito del sistema y recopila todos los <strong>requisitos funcionales</strong>.
+Habla con los <strong>usuarios finales</strong> o stakeholders para asegurarte de que entiendes qué <strong>datos</strong> necesitan manejar y cómo se <strong>relacionan</strong>.</p>
+<h2 id="paso-2-identifica-las-entidades">Paso 2. Identifica las entidades</h2>
+<p>Piensa en las principales &quot;cosas&quot; de tu sistema que necesitas almacenar. Estas suelen ser sustantivos: por ejemplo, Cliente, Producto, Pedido.
+Evita incluir atributos o relaciones en esta etapa; concéntrate solo en identificar entidades.</p>
+<h2 id="paso-3-determina-las-relaciones">Paso 3. Determina las relaciones</h2>
+<p>Identifica cómo interactúan las entidades entre sí. Ejemplo: un Cliente realiza un Pedido.
+Define la cardinalidad (uno a uno, uno a muchos, muchos a muchos).</p>
+<ul>
+<li>1:1: Un empleado tiene un único número de seguridad social.</li>
+<li>1:N: Un cliente puede hacer muchos pedidos.</li>
+<li>M:N: Muchos estudiantes pueden estar en muchos cursos.</li>
+</ul>
+<h2 id="paso-4-especifica-los-atributos">Paso 4. Especifica los atributos</h2>
+<p>Asocia cada atributo a la entidad o relación correspondiente.
+Ejemplo: para la entidad Cliente, puedes añadir atributos como Nombre, Teléfono, Email.
+Selecciona un identificador único o clave primaria para cada entidad.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-05-16-05-47.png" alt=""></p>
+<h1 id="3-modelo-relacional">3. Modelo relacional</h1>
+<p>Un cop tenim el <strong>model entitat-relació (E-R)</strong> definit, hem de transformar-lo en un <strong>model relacional</strong>, que es basa en <strong>taules</strong> amb els seus atributs i tipus de dades.</p>
+<ol>
+<li>
+<p><strong>Entitats → Taules</strong></p>
+<ul>
+<li>Cada entitat es converteix en una taula amb els seus atributs com a columnes.</li>
+<li>L’atribut clau primària (primary key) s’identifica clarament.</li>
+</ul>
+</li>
+<li>
+<p><strong>Relacions → Claus foranes</strong></p>
+<ul>
+<li>Si dues entitats estan relacionades, s’afegeix una clau forana (foreign key) en la taula corresponent.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cardinalitat</strong></p>
+<ul>
+<li>1:1 → Es pot fusionar en una sola taula o fer una clau forana.</li>
+<li>1:N → La clau forana va a la taula del costat N.</li>
+<li>N:M → Es crea una taula intermèdia amb dues claus foranes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tipus de dades adequats</strong></p>
+<ul>
+<li>Es defineixen els tipus de dades correctes per cada camp (VARCHAR, INTEGER, DATE, etc.).</li>
+</ul>
+</li>
+</ol>
+<p>Així doncs, les 4 entitats ens donaran 4 taules, i les dues relacions N:M, una taula cadascuna.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-05-16-06-09.png" alt=""></p>
+<p>Así mismo, quedarán definidas dos tipos de claves:</p>
+<ul>
+<li>Las <code>claves primarias</code> son campos en una tabla que identifican de forma única cada registro. No pueden ser nulas ni repetidas.</li>
+<li>Las <code>claves foráneas</code> son columnas en una tabla que establecen una relación con la clave primaria de otra tabla, asegurando la integridad referencial entre ellas.</li>
+</ul>
+<h1 id="sqlite-i-db-browser">SQlite i DB Browser</h1>
+<p><strong>SQLite</strong> és un <strong>sistema de gestió de bases de dades</strong> relacional (RDBMS) lleuger, sense servidor i basat en fitxers. A diferència d'altres bases de dades com MySQL o PostgreSQL, SQLite no requereix un procés en segon pla per funcionar, ja que emmagatzema tota la informació en un únic fitxer.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-12-16-07-43.png" alt=""></p>
+<p><strong>DB Browser for SQLite</strong> és una eina gràfica de codi obert que permet gestionar bases de dades SQLite d'una manera intuïtiva i sense necessitat d'utilitzar línia de comandes. Amb aquest programa, es poden crear, obrir, modificar i administrar bases de dades SQLite d'una manera visual.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-12-16-07-03.png" alt=""></p>
+<h1 id="4-sql">4. SQL</h1>
+<p>Así pues, las 4 entidades nos darán 4 tablas, y las dos relaciones N:M, otra tabla cada una.</p>
+<p>Ejemplos de sentencias SQL:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> usuarios (<span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> PRIMARY <span class="hljs-keyword">KEY</span>, nombre <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">50</span>)); → Crea una tabla.
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> usuarios (<span class="hljs-keyword">id</span>, nombre) <span class="hljs-keyword">VALUES</span> (<span class="hljs-number">1</span>, <span class="hljs-string">'Juan'</span>); → Inserta un registro.
+<span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> usuarios; → Consulta todos los datos de la tabla.
+<span class="hljs-keyword">UPDATE</span> usuarios <span class="hljs-keyword">SET</span> nombre = <span class="hljs-string">'Carlos'</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">id</span> = <span class="hljs-number">1</span>; → Modifica un registro.
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> usuarios <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">id</span> = <span class="hljs-number">1</span>; → Elimina un registro.
+</div></code></pre>
+<p>Básicamente, una sentencia SQL es una orden que se le da a la base de datos para que haga algo.</p>
+<h2 id="41-sentencia-create">4.1 Sentencia CREATE</h2>
+<p>El comando <code>CREATE TABLE</code> en SQL se utiliza para crear una nueva tabla en una base de datos. Especifica el nombre de la tabla y define las columnas que tendrá, junto con sus tipos de datos y restricciones.</p>
+<p>El elemento básico son las sentencias o queries.</p>
+<p>Sintaxis básica:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> nombre_tabla (
+    columna1 tipo_dato restricciones,
+    columna2 tipo_dato restricciones,
+    ...
+);
+</div></code></pre>
+<h3 id="tipos-de-datos">Tipos de datos</h3>
+<p>En bases de dades, cada camp o columna d'una taula ha de tenir un <strong>tipus de dada</strong> definit que determina quin tipus de valors pot emmagatzemar. Els més comuns són:</p>
+<ul>
+<li><code>VARCHAR(n)</code>: Per a cadenes de text de longitud variable, amb un màxim de n caràcters.</li>
+<li><code>INTEGER</code>: Per a nombres enters.</li>
+<li><code>DECIMAL(p,s) o FLOAT</code>: Per a nombres decimals.</li>
+<li><code>DATE</code>: Per a dates (any, mes i dia).</li>
+<li><code>TIMESTAMP</code>: Per a data i hora.</li>
+<li><code>BOOLEAN</code>: Per a valors lògics (true/false).</li>
+</ul>
+<h3 id="tablas-libros">Tablas Libros</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Libros (
+    ID_Libro <span class="hljs-built_in">INTEGER</span> PRIMARY <span class="hljs-keyword">KEY</span> AUTOINCREMENT, <span class="hljs-comment">-- Identificador único, autoincremental</span>
+    Titulo <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>), <span class="hljs-comment">-- Título del libro (máx. 255 caracteres)</span>
+    ISBN <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">13</span>), <span class="hljs-comment">-- Código ISBN del libro (máx. 13 caracteres)</span>
+    Editorial <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>), <span class="hljs-comment">-- Nombre de la editorial (máx. 100 caracteres)</span>
+    Año_Publicación <span class="hljs-built_in">INT</span>, <span class="hljs-comment">-- Año en que se publicó el libro</span>
+    Ejemplares_Disponibles <span class="hljs-built_in">INT</span> <span class="hljs-comment">-- Cantidad de ejemplares disponibles</span>
+);
+</div></code></pre>
+<h3 id="tabla-autores">Tabla Autores</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Autores (
+    ID_Autor <span class="hljs-built_in">INTEGER</span> PRIMARY <span class="hljs-keyword">KEY</span> AUTOINCREMENT,
+    Nombre <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>),
+    Apellidos <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>),
+    Fecha_Nacimiento <span class="hljs-built_in">DATE</span>,
+    Nacionalidad <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>)
+);
+</div></code></pre>
+<h3 id="tabla-libroautor">Tabla Libro_Autor</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Libro_Autor (
+    ID_Libro <span class="hljs-built_in">INTEGER</span>,
+    ID_Autor <span class="hljs-built_in">INTEGER</span>,
+    PRIMARY <span class="hljs-keyword">KEY</span> (ID_Libro, ID_Autor),
+    <span class="hljs-keyword">FOREIGN</span> <span class="hljs-keyword">KEY</span> (ID_Libro) <span class="hljs-keyword">REFERENCES</span> Libros(ID_Libro),
+    <span class="hljs-keyword">FOREIGN</span> <span class="hljs-keyword">KEY</span> (ID_Autor) <span class="hljs-keyword">REFERENCES</span> Autores(ID_Autor)
+);
+</div></code></pre>
+<p>Los campos ID_Libro e ID_Autor conforman la <code>clave primaria</code>.
+ID_Libro y ID_Autor son <code>claves foráneas</code> de los respectivos campos de las tablas Libros y Autores.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Socios (
+    ID_Socio <span class="hljs-built_in">INTEGER</span> PRIMARY <span class="hljs-keyword">KEY</span> AUTOINCREMENT,
+    Nombre <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>),
+    Apellidos <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>),
+    Dirección <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>),
+    Teléfono <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">15</span>),
+    Email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">100</span>),
+    Fecha_Alta <span class="hljs-built_in">DATE</span>
+);
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Prestamos (
+    ID_Prestamo <span class="hljs-built_in">INTEGER</span> PRIMARY <span class="hljs-keyword">KEY</span> AUTOINCREMENT,
+    ID_Socio <span class="hljs-built_in">INT</span>,
+    Fecha_Prestamo <span class="hljs-built_in">DATE</span>,
+    Fecha_Devolución <span class="hljs-built_in">DATE</span>,
+    Estado <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>),
+    <span class="hljs-keyword">FOREIGN</span> <span class="hljs-keyword">KEY</span> (ID_Socio) <span class="hljs-keyword">REFERENCES</span> Socios(ID_Socio)
+);
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> Prestamo_Libro (
+    ID_Prestamo <span class="hljs-built_in">INT</span>,
+    ID_Libro <span class="hljs-built_in">INT</span>,
+    Cantidad <span class="hljs-built_in">INT</span>,
+    PRIMARY <span class="hljs-keyword">KEY</span> (ID_Prestamo, ID_Libro),
+    <span class="hljs-keyword">FOREIGN</span> <span class="hljs-keyword">KEY</span> (ID_Prestamo) <span class="hljs-keyword">REFERENCES</span> Prestamos(ID_Prestamo),
+    <span class="hljs-keyword">FOREIGN</span> <span class="hljs-keyword">KEY</span> (ID_Libro) <span class="hljs-keyword">REFERENCES</span> Libros(ID_Libro)
+);
+</div></code></pre>
+<h2 id="42-sentencia-insert">4.2 Sentencia INSERT</h2>
+<p>El comando <code>INSERT</code> en SQL se utiliza para agregar nuevas filas (registros) a una tabla en una base de datos. Cuando usas <code>INSERT</code>, estás diciendo a la base de datos que agregue nuevos datos a la tabla que has especificado.</p>
+<p>Sintaxis básica:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> nombre_tabla (columna1, columna2, columna3, ...)
+<span class="hljs-keyword">VALUES</span> (valor1, valor2, valor3, ...);
+</div></code></pre>
+<p>Puedes insertar varias filas al mismo tiempo en una única consulta utilizando el comando <code>INSERT INTO</code>. Esto mejora el rendimiento al evitar múltiples consultas individuales.</p>
+<p>Utilizamos insert para crear nuevos registros en las tablas Libros y Autores.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Libros (Titulo, ISBN, Editorial, Año_Publicación, Ejemplares_Disponibles) <span class="hljs-keyword">VALUES</span>
+(<span class="hljs-string">'Dune'</span>, <span class="hljs-string">'978-0441013593'</span>, <span class="hljs-string">'Chilton Books'</span>, <span class="hljs-number">1965</span>, <span class="hljs-number">5</span>),
+(<span class="hljs-string">'El Hobbit'</span>, <span class="hljs-string">'978-0618968633'</span>, <span class="hljs-string">'Allen &amp; Unwin'</span>, <span class="hljs-number">1937</span>, <span class="hljs-number">3</span>),
+
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Autores (Nombre, Apellidos, Fecha_Nacimiento, Fecha_Fallecimiento, Nacionalidad) <span class="hljs-keyword">VALUES</span>
+( <span class="hljs-string">'Frank'</span>, <span class="hljs-string">'Herbert'</span>, <span class="hljs-string">'1920-10-08'</span>, <span class="hljs-string">'1986-02-11'</span>, <span class="hljs-string">'Estadounidense'</span>),
+( <span class="hljs-string">'J.R.R.'</span>, <span class="hljs-string">'Tolkien'</span>, <span class="hljs-string">'1892-01-03'</span>, <span class="hljs-string">'1973-09-02'</span>, <span class="hljs-string">'Británico'</span>)
+</div></code></pre>
+<p>Deberemos introducir el Libro y el Autor antes de rellenar la tabla Libro_Autor.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Libro_Autor (ID_Libro, ID_Autor) <span class="hljs-keyword">VALUES</span>
+(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>),
+(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>)
+</div></code></pre>
+<p><strong>Tabla Libros</strong></p>
+<p>Aquests són els registres que haurà d contenir la nostra taula <code>Libros</code>. Recordau que ID_Libro es crearà tot sol degut a que l'hem definit amb la restricció <code>AUTOINCREMENT</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID_Libro</th>
+<th>Título</th>
+<th>ISBN</th>
+<th>Editorial</th>
+<th>Año_Publicacion</th>
+<th>Ejemplares_Disponibles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Dune</td>
+<td>9780441013593</td>
+<td>Chilton Books</td>
+<td>1965</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>El Hobbit</td>
+<td>9780618968633</td>
+<td>Allen &amp; Unwin</td>
+<td>1937</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Fundación</td>
+<td>9780553293357</td>
+<td>Gnome Press</td>
+<td>1951</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Canción de Hielo y Fuego</td>
+<td>9780553103540</td>
+<td>Bantam Books</td>
+<td>1996</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>El Juego de Ender</td>
+<td>9780812550702</td>
+<td>Tor Books</td>
+<td>1985</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6</td>
+<td>El Señor de los Anillos: La Comunidad del Anillo</td>
+<td>9780261103573</td>
+<td>George Allen &amp; Unwin</td>
+<td>1954</td>
+<td>5</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1984</td>
+<td>9780451524935</td>
+<td>Secker &amp; Warburg</td>
+<td>1949</td>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Fahrenheit 451</td>
+<td>9781451673319</td>
+<td>Ballantine Books</td>
+<td>1953</td>
+<td>5</td>
+</tr>
+<tr>
+<td>9</td>
+<td>El Mesías de Dune</td>
+<td>9780441172719</td>
+<td>Chilton Books</td>
+<td>1969</td>
+<td>7</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Tormenta de Espadas</td>
+<td>9780553106633</td>
+<td>Bantam Books</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tabla Autores</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID_Autor</th>
+<th>Nombre</th>
+<th>Apellidos</th>
+<th>Fecha_Nacimiento</th>
+<th>Fecha_Fallecimiento</th>
+<th>Nacionalidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Frank</td>
+<td>Herbert</td>
+<td>1920-10-08</td>
+<td>1986-02-11</td>
+<td>Estadounidense</td>
+</tr>
+<tr>
+<td>2</td>
+<td>J.R.R.</td>
+<td>Tolkien</td>
+<td>1892-01-03</td>
+<td>1973-09-02</td>
+<td>Británica</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Isaac</td>
+<td>Asimov</td>
+<td>1920-01-02</td>
+<td>1992-04-06</td>
+<td>Estadounidense</td>
+</tr>
+<tr>
+<td>4</td>
+<td>George R.R.</td>
+<td>Martin</td>
+<td>1948-09-20</td>
+<td>-</td>
+<td>Estadounidense</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Orson</td>
+<td>Scott Card</td>
+<td>1951-08-24</td>
+<td>-</td>
+<td>Estadounidense</td>
+</tr>
+<tr>
+<td>6</td>
+<td>George</td>
+<td>Orwell</td>
+<td>1903-06-25</td>
+<td>1950-01-21</td>
+<td>Británica</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ray</td>
+<td>Bradbury</td>
+<td>1920-08-22</td>
+<td>2012-06-05</td>
+<td>Estadounidense</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tabla Libro_Autor</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID_Libro</th>
+<th>ID_Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>6</td>
+</tr>
+<tr>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="43-sentencia-alter">4.3 Sentencia ALTER</h2>
+<p>El comando <code>ALTER</code> en SQL se utiliza para modificar la estructura de una tabla existente en una base de datos. Es decir, permite agregar, eliminar o modificar columnas, cambiar el tipo de datos de las columnas, renombrar tablas, entre otros</p>
+<p>Agregar un columna</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> empleados <span class="hljs-keyword">ADD</span> columna_edad <span class="hljs-built_in">INT</span>;
+</div></code></pre>
+<p>Modificar el tipo de dato de una columna existente:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> empleados <span class="hljs-keyword">MODIFY</span> columna_edad <span class="hljs-built_in">DECIMAL</span>(<span class="hljs-number">5</span>, <span class="hljs-number">2</span>);
+</div></code></pre>
+<pre class="hljs"><code><div>Cambiar el nombre de una columna:
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> empleados <span class="hljs-keyword">CHANGE</span> columna_edad edad_empleado <span class="hljs-built_in">INT</span>;
+</div></code></pre>
+<p>Eliminar una columna de una tabla:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> empleados <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">COLUMN</span> edad_empleado;
+</div></code></pre>
+<p>Agregar una restricción de clave primaria:</p>
+<pre class="hljs"><code><div>	<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> empleados <span class="hljs-keyword">ADD</span> <span class="hljs-keyword">CONSTRAINT</span> pk_empleados PRIMARY <span class="hljs-keyword">KEY</span> (id_empleado);
+</div></code></pre>
+<h2 id="44-sentencia-delete">4.4 Sentencia DELETE</h2>
+<p>El DELETE en SQL és una instrucció que s'utilitza per <strong>eliminar files</strong> d'una taula en una base de dades.</p>
+<blockquote>
+<p>[!CAUTION]
+Aquesta operació és irreversible, és a dir, un cop eliminada la fila, no es pot recuperar, excepte si es té una còpia de seguretat de la base de dades.</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> Libros <span class="hljs-keyword">WHERE</span> ID_Libro = <span class="hljs-number">3</span>
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> Libros <span class="hljs-keyword">WHERE</span> Titulo = <span class="hljs-string">"Dune"</span>
+</div></code></pre>
+<h2 id="45-sentencia-update">4.5 Sentencia UPDATE</h2>
+<p>UPDATE en SQL és una instrucció que s'utilitza per modificar els valors de les files existents en una taula. Aquesta operació permet actualitzar dades específiques basant-se en una condició</p>
+<p>Actualizar un campo de todos los registros.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">UPDATE</span> Libros <span class="hljs-keyword">SET</span> Ejemplares_Disponibles = <span class="hljs-number">5</span>
+</div></code></pre>
+<p>Permite actualizar datos de ciertos regitros</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">UPDATE</span> Libros <span class="hljs-keyword">SET</span> Ejemplares_Disponibles = <span class="hljs-number">5</span> <span class="hljs-keyword">WHERE</span> ID_Libro = <span class="hljs-number">1</span>
+</div></code></pre>
+<p>Aumentar salario un 10% a ciertos trabajadores</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">UPDATE</span> empleados <span class="hljs-keyword">SET</span> salario = salario * <span class="hljs-number">1.10</span> <span class="hljs-keyword">WHERE</span> fecha_ingreso &lt; <span class="hljs-string">'2015-01-01'</span>;
+</div></code></pre>
+<h2 id="45-sentencia-select">4.5 Sentencia SELECT</h2>
+<p>Permite recuperar registros de 1 o más tablas.</p>
+<ol>
+<li>Select simple: (Devuelve todos los campos de todos los registros)</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Autores
+</div></code></pre>
+<ol start="2">
+<li>Select campos: (Devuelve ciertos campos de todos los registros)</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo <span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">SELECT</span> Nombre, Apellidos <span class="hljs-keyword">FROM</span> AUTORES
+</div></code></pre>
+<h3 id="cl%C3%A1usula-where">Cláusula WHERE</h3>
+<p>La cláusula WHERE nos permitirá seleccionr solo aquellos registros cuyos campos cunmplan con las condiciones especificadas a continuación.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Nombre, Apellidos, Fecha_Nacimiento
+<span class="hljs-keyword">FROM</span> Autores
+<span class="hljs-keyword">WHERE</span> Fecha_Nacimiento &gt; <span class="hljs-string">'1900-01-01'</span>;
+</div></code></pre>
+<h3 id="cl%C3%A1usula-like">Cláusula LIKE</h3>
+<ol>
+<li>Select con operador <code>LIKE</code>:</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">WHERE</span> Titulo <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%Dune%'</span>;
+</div></code></pre>
+<h3 id="operadores-l%C3%B3gicos-and-or">Operadores lógicos (<code>AND</code>, <code>OR</code>)</h3>
+<p>Los operadores lógicos en SQL se utilizan para combinar o modificar <strong>condiciones</strong> en una consulta, lo que permite realizar <strong>filtrados</strong> más complejos en las bases de datos. Estos operadores son fundamentales cuando se quiere hacer consultas que dependan de múltiples condiciones.</p>
+<p>El operador <code>AND</code> se usa para combinar dos o más condiciones en una consulta. Devuelve true solo si todas las condiciones son verdaderas. 6 o más ejemplares y publicados a partir de 1951 (incluído)</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo, Ejemplares_Disponibles, Año_Publicacion
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">WHERE</span> Ejemplares_Disponibles &gt; <span class="hljs-number">5</span> <span class="hljs-keyword">AND</span> Año_Publicacion &gt; <span class="hljs-number">1950</span>;
+</div></code></pre>
+<h3 id="operador-or">Operador OR</h3>
+<p>El operador <code>OR</code> se usa para combinar dos o más condiciones. Devuelve true si al menos una de las condiciones es verdadera.
+Sintaxis:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> empleados
+<span class="hljs-keyword">WHERE</span> edad &gt; <span class="hljs-number">30</span> <span class="hljs-keyword">OR</span> salario &gt; <span class="hljs-number">2500</span>;
+</div></code></pre>
+<h3 id="operador-like">Operador LIKE</h3>
+<p>El operador <code>LIKE</code> se utiliza para buscar un patrón dentro de una columna, especialmente con cadenas de texto. Usa los caracteres especiales % (cualquier secuencia de caracteres) y _ (un solo carácter).</p>
+<p>Título que comienza por D o con 7 o más ejemplares disponibles.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo, Ejemplares_Disponibles
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">WHERE</span> Titulo <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'D%'</span> <span class="hljs-keyword">OR</span> Ejemplares_Disponibles &gt; <span class="hljs-number">6</span>;
+</div></code></pre>
+<ol start="7">
+<li>Select con ORDER BY (ASC por defecto, DESC opcional)</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo, Ejemplares_Disponibles
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> Titulo
+</div></code></pre>
+<ol start="8">
+<li>Select con LIMIT</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> Titulo, Ejemplares_Disponibles
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">LIMIT</span> <span class="hljs-number">3</span>;
+</div></code></pre>
+<ol start="9">
+<li>Select con COUNT</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> Total_titulos
+<span class="hljs-keyword">FROM</span> Libros
+</div></code></pre>
+<h2 id="funciones">Funciones</h2>
+<p>Las funciones permiten hacer operaciones sobre ciertos campos</p>
+<h3 id="funci%C3%B3n-sum">Función SUM()</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">SUM</span>(Ejemplares_Disponibles) <span class="hljs-keyword">AS</span> Total_libros <span class="hljs-keyword">FROM</span> Libros
+</div></code></pre>
+<p>La consulta SQL suma tots els valors de la columna <strong>Ejemplares_Disponibles</strong> de la taula <strong>Libros</strong> i mostra el resultat total amb el nom d'Total_libros.</p>
+<p>Per exemple, si la taula Libros té tres llibres amb 3, 5 i 2 exemplars disponibles, el resultat de la consulta serà:</p>
+<pre class="hljs"><code><div>Total_libros
+
+10
+</div></code></pre>
+<h3 id="funci%C3%B3n-count">Función COUNT()</h3>
+<p>Així, la consulta retorna el nombre total de títols disponibles (llibres diferents)</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> Total_titulos <span class="hljs-keyword">FROM</span> Libros
+</div></code></pre>
+<p>Podemos combinar las funciones en una sola consulta. Així, la consulta retorna el nombre total d'exemplars disponibles de tots els llibres combinats.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">AS</span> Total_titulos, <span class="hljs-keyword">SUM</span>(Ejemplares_Disponibles) <span class="hljs-keyword">AS</span> Total_libros <span class="hljs-keyword">FROM</span> Libros
+</div></code></pre>
+<h3 id="resum">Resum:</h3>
+<p>Aquesta consulta retorna dues coses:</p>
+<ul>
+<li><strong><code>Total_titulos</code></strong>: El nombre total de títols (llibres) que hi ha a la taula <strong><code>Libros</code></strong>. S'obté mitjançant la funció <code>COUNT(*)</code>.</li>
+<li><strong><code>Total_libros</code></strong>: El nombre total d'exemplars disponibles de tots els llibres combinats. Es calcula amb la funció <code>SUM(Ejemplares_Disponibles)</code>.</li>
+</ul>
+<h3 id="exemple">Exemple:</h3>
+<p>Imagina que tens la següent taula <strong><code>Libros</code></strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Título</th>
+<th>Ejemplares_Disponibles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llibre A</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Llibre B</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Llibre C</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>El resultat de la consulta serà:</p>
+<p>| Total_titulos | Total_libros |
+| ------------- ||
+| 3             | 10           |</p>
+<h2 id="46-sentencia-select-con-join">4.6 Sentencia SELECT con JOIN</h2>
+<p>Un JOIN en SQL és una operació que permet combinar dades de <strong>dues o més taules</strong> en una consulta, basant-se en una columna comuna entre elles. Això és útil quan les dades estan distribuïdes en diverses taules relacionades, i vols obtenir informació combinada.</p>
+<h3 id="paso-1-selecci%C3%B3n-de-tablas">Paso 1. Selección de tablas</h3>
+<p>Al querer información de libros con sus autores, por fuerza debremos hacer referencia a las tres tablas, incluída Libro_autor, pues es la que relaciona a las otras dos.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">FROM</span> Libros
+<span class="hljs-keyword">JOIN</span> Libro_Autor
+<span class="hljs-keyword">JOIN</span> Autores
+</div></code></pre>
+<h3 id="paso2-seleccionar-campos">Paso2. Seleccionar campos</h3>
+<p>Seleccionamos únicamente los campos que nos interesan.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> L.ID_Libro, L.Titulo, LA.ID_Libro, LA.ID_Autor, A.ID_Autor, A.Nombre
+<span class="hljs-keyword">FROM</span> Libros L
+<span class="hljs-keyword">JOIN</span> Libro_Autor
+<span class="hljs-keyword">JOIN</span> Autores A
+</div></code></pre>
+<h3 id="paso-2-filrado-on">Paso 2. Filrado (ON)</h3>
+<p>Ahora impondremos con las clausulas ON las condiciones para filtrar únicamente las filas que cumplan las condiciones.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> L.ID_Libro, L.Titulo, LA.ID_Libro, LA.ID_Autor, A.ID_Autor, A.Nombre
+<span class="hljs-keyword">FROM</span> Libros L
+<span class="hljs-keyword">JOIN</span> Libro_Autor LA <span class="hljs-keyword">ON</span> L.ID_Libro = LA.ID_libro
+<span class="hljs-keyword">JOIN</span> Autores A <span class="hljs-keyword">ON</span> LA.ID_Autor = A.ID_Autor
+</div></code></pre>
+<h3 id="paso-4-select-con-campos-y-orden">Paso 4. Select con campos y Orden</h3>
+<p>Finalmente seleccionamos solo los campos que queremos mostrar, y ordenamos por título en orden alfabético ascendente.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> L.Titulo, A.Nombre, A.Apellidos
+<span class="hljs-keyword">FROM</span> Libros L
+<span class="hljs-keyword">JOIN</span> Libro_Autor LA <span class="hljs-keyword">ON</span> L.ID_Libro = LA.ID_Libro
+<span class="hljs-keyword">JOIN</span> Autores A <span class="hljs-keyword">ON</span> LA.ID_Autor = A.ID_Autor
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> L.Titulo;
+</div></code></pre>
+<h1 id="5-python-y-sql">5. Python y SQL</h1>
+<p>A pesar de que es habitual utilizar un SGDB para crear la estructura de la base de datos y solucionar problemas puntuales, los usuarios generalmente no acceden a la base de datos directamente, sino a través de una <strong>página web, programa o app</strong> que internamente se conecta a ella, y hace de intermediaria entre el usuario y la base de datos.</p>
+<h2 id="python-y-sqlite3">Python y sqlite3</h2>
+<p>La forma de acceder dependerá del lenguaje de programación con el que hayamos construido esta web o programa (en nuestro caso <code>Python</code>), y el tipo de base de datos utilizado (en nuestro caso, <code>sqlite</code>).</p>
+<p>En el caso de Python, existe un <strong>módulo</strong> o librería llamada <code>sqlite3</code> que nos proporciona una serie de estructuras y funciones ya creadas para conectar con una base de datos y enviarle consultas.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-06-11-59-26.png" alt=""></p>
+<h2 id="proceso-de-conexi%C3%B3n-en-python">Proceso de conexión en Python</h2>
+<p>De forma simplificada, los pasos son los siguientes</p>
+<ol>
+<li>Conectar o crear el archivo de base de datos: <code>conexion = sqlite3.connect(&quot;nombre_del_archivo.db&quot;)</code></li>
+<li>Crear un cursor para hacer las consultas: <code>cursor = conexion.cursor()</code></li>
+<li>Ejecutar la consulta: <code>cursor.execute()</code></li>
+<li>Guardar cambios: <code>conexion.commit()</code>
+5: Cerrar la conexión: <code>conexion.close()</code></li>
+</ol>
+<h2 id="prueba-insertar-libros">Prueba insertar Libros</h2>
+<p>En este ejemplo veremos como insertar un registro en la tabla <code>Libros</code>.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> sqlite3
+
+<span class="hljs-comment"># Abre (o crea si no existe) una base de datos SQLite llamada biblioteca.db.</span>
+<span class="hljs-comment"># Devuelve un objeto de conexión que se usa para interactuar con la base de datos.</span>
+<span class="hljs-comment"># Si la base de datos ya existe, simplemente la abre.</span>
+conexion = sqlite3.connect(<span class="hljs-string">"biblioteca.db"</span>)
+
+<span class="hljs-comment"># Crea un cursor, que es un objeto que permite ejecutar sentencias SQL en la base de datos.</span>
+<span class="hljs-comment"># Permite ejecutar consultas con cursor.execute(sql, parametros).</span>
+<span class="hljs-comment">#Recupera los resultados de consultas SELECT con cursor.fetchall() o cursor.fetchone().</span>
+<span class="hljs-comment"># Facilita la inserción, actualización y eliminación de datos.</span>
+cursor = conexion.cursor()
+
+nombre = input(<span class="hljs-string">"Titulo"</span>)
+ISBN = input(<span class="hljs-string">"ISBN"</span>)
+editorial = input(<span class="hljs-string">"Editorial"</span>)
+año = input(<span class="hljs-string">"año publicacion"</span>)
+ejemplares_disponibles = int(input(<span class="hljs-string">"ejemplares"</span>))
+
+sql = <span class="hljs-string">"INSERT INTO Libros (Titulo, ISBN, Editorial, Año_publicación, Ejemplares_disponibles) VALUES (?,?,?,?,?)"</span>
+cursor.execute(sql, (nombre, ISBN, editorial, año, ejemplares_disponibles))
+
+<span class="hljs-comment"># COMMIT guarda los cambios realizados en la base de datos de manera permanente.</span>
+<span class="hljs-comment"># Se usa después de operaciones que modifican la base de datos, como INSERT, UPDATE o DELETE.</span>
+<span class="hljs-comment"># SQLite (y otras bases de datos) trabajan con transacciones, lo que significa que los cambios no se aplican hasta que se confirman con commit().</span>
+
+conexion.commit()
+
+<span class="hljs-comment"># Cierra la conexión con la base de datos.</span>
+<span class="hljs-comment"># Se recomienda usarlo siempre que termines de trabajar con la base de datos.</span>
+<span class="hljs-comment"># Evita que el programa siga consumiendo memoria y recursos innecesariamente.</span>
+<span class="hljs-comment"># Reduce el riesgo de corrupción de datos al asegurarse de que la conexión se cierra correctamente.</span>
+<span class="hljs-comment"># Si intentas ejecutar más consultas después de cerrar la conexión, obtendrás un error.</span>
+conexion.close()
+print(<span class="hljs-string">"El libro se ha insertado correctamente"</span>)
+
+</div></code></pre>
+<h2 id="mostrar-libros-existentes">Mostrar libros existentes</h2>
+<p>En este caso veremos como ejecutar un select. En este caso, la consulta nos devolverá los resultados de la consulta, que guardaremos en una variable <code>libros</code>. Con <code>fetchall()</code> recuperaremos todos los registros, y con un for los recorreremos uno a uno para mostrar los diferentes campos.</p>
+<p>Los datos devueltos tienen este formato, que deberemos procesar con el for para recorrer los 3 libros uno a uno y mostrar la información</p>
+<pre class="hljs"><code><div>{<span class="hljs-string">'ID'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'Titulo'</span>: <span class="hljs-string">'El Quijote'</span>, <span class="hljs-string">'ISBN'</span>: <span class="hljs-string">'978-3-16-148410-0'</span>, <span class="hljs-string">'Editorial'</span>: <span class="hljs-string">'Editorial X'</span>, <span class="hljs-string">'Año_publicación'</span>: <span class="hljs-number">1605</span>, <span class="hljs-string">'Ejemplares_disponibles'</span>: <span class="hljs-number">5</span>}
+{<span class="hljs-string">'ID'</span>: <span class="hljs-number">2</span>, <span class="hljs-string">'Titulo'</span>: <span class="hljs-string">'1984'</span>, <span class="hljs-string">'ISBN'</span>: <span class="hljs-string">'978-0-452-28423-4'</span>, <span class="hljs-string">'Editorial'</span>: <span class="hljs-string">'Editorial Y'</span>, <span class="hljs-string">'Año_publicación'</span>: <span class="hljs-number">1949</span>, <span class="hljs-string">'Ejemplares_disponibles'</span>: <span class="hljs-number">3</span>}
+{<span class="hljs-string">'ID'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'Titulo'</span>: <span class="hljs-string">'Cien años de soledad'</span>, <span class="hljs-string">'ISBN'</span>: <span class="hljs-string">'978-0-06-088328-7'</span>, <span class="hljs-string">'Editorial'</span>: <span class="hljs-string">'Editorial Z'</span>, <span class="hljs-string">'Año_publicación'</span>: <span class="hljs-number">1967</span>, <span class="hljs-string">'Ejemplares_disponibles'</span>: <span class="hljs-number">7</span>}
+</div></code></pre>
+<p>Para el primer libro:</p>
+<ul>
+<li>libro['Titulo'] me devolverá <strong>'El Quijote'</strong>.</li>
+<li>linto ['Año_publicación] me devolverá <strong>1605</strong>.</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> sqlite3
+
+<span class="hljs-comment"># Conectamos a la BD</span>
+conexion = sqlite3.connect(<span class="hljs-string">"biblioteca.db"</span>)
+conexion.row_factory = sqlite3.Row  <span class="hljs-comment"># Para obtener los resultados como diccionarios (solo en selects)</span>
+
+<span class="hljs-comment"># Ejecutamos la consulta y recogemos los resultados</span>
+libros = conexion.execute(<span class="hljs-string">'SELECT * FROM Libros'</span>).fetchall()
+
+<span class="hljs-comment"># Cerramos la conexión</span>
+conexion.close()
+
+<span class="hljs-comment"># Pintamos la información por pantalla</span>
+print(<span class="hljs-string">"\nLista de Libros:"</span>)
+print(<span class="hljs-string">"--"</span>)
+<span class="hljs-keyword">for</span> libro <span class="hljs-keyword">in</span> libros:
+    print(<span class="hljs-string">f"ID: <span class="hljs-subst">{libro[<span class="hljs-string">'ID'</span>]}</span> | Título: <span class="hljs-subst">{libro[<span class="hljs-string">'Titulo'</span>]}</span> | ISBN: <span class="hljs-subst">{libro[<span class="hljs-string">'ISBN'</span>]}</span> | Editorial: <span class="hljs-subst">{libro[<span class="hljs-string">'Editorial'</span>]}</span> | Año: <span class="hljs-subst">{libro[<span class="hljs-string">'Año_Publicación'</span>]}</span> | Ejemplares: <span class="hljs-subst">{libro[<span class="hljs-string">'Ejemplares_Disponibles'</span>]}</span>"</span>)
+</div></code></pre>
+<h2 id="actualizar-un-registro">Actualizar un registro</h2>
+<p>En este ejemplo, actualizaremos un libro para descontar un ejemplar.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> sqlite3
+
+conexion = sqlite3.connect(<span class="hljs-string">"biblioteca.db"</span>)
+cursor = conexion.cursor()
+
+<span class="hljs-comment"># Actualizar la cantidad de ejemplares disponibles</span>
+cursor.execute(<span class="hljs-string">"""
+    UPDATE Libros
+    SET Ejemplares_disponibles = Ejemplares_disponibles - 1
+    WHERE ID_libro = ? AND Ejemplares_disponibles &gt; 0
+     """</span>, (id_libro,))
+
+<span class="hljs-keyword">if</span> cursor.rowcount == <span class="hljs-number">0</span>:
+    print(<span class="hljs-string">"No se pudo realizar el préstamo. No hay ejemplares disponibles o el libro no existe."</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">"Ejemplar descontado correctamente."</span>)
+
+<span class="hljs-comment"># Guardar cambios y cerrar la conexión</span>
+conexion.commit()
+conexion.close()
+</div></code></pre>
+<h2 id="men%C3%BA">Menú</h2>
+<p>Una vez terminado, podemos crear un sistema gestor de nuestra biblioteca a través de un menú similar al siguiente:</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    crear_tabla_libros()  <span class="hljs-comment"># Asegurarse de que la tabla exista</span>
+
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        print(<span class="hljs-string">"\nOpciones:"</span>)
+        print(<span class="hljs-string">"1. Mostrar libros"</span>)
+        print(<span class="hljs-string">"2. Agregar nuevo libro"</span>)
+        print(<span class="hljs-string">"3. Eliminar un libro"</span>)
+        print(<span class="hljs-string">"4. Salir"</span>)
+
+        <span class="hljs-comment"># Leer la opción elegida</span>
+        opcion = input(<span class="hljs-string">"Elige una opción (1/2/3/4): "</span>)
+
+        <span class="hljs-keyword">if</span> opcion == <span class="hljs-string">'1'</span>:
+            mostrar_libros()
+        <span class="hljs-keyword">elif</span> opcion == <span class="hljs-string">'2'</span>:
+            agregar_libro()
+        <span class="hljs-keyword">elif</span> opcion == <span class="hljs-string">'3'</span>:
+            eliminar_libro()
+        <span class="hljs-keyword">elif</span> opcion == <span class="hljs-string">'4'</span>:
+            print(<span class="hljs-string">"Saliendo del programa..."</span>)
+            <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">else</span>:
+            print(<span class="hljs-string">"Opción no válida. Por favor, elige 1, 2, 3 o 4."</span>)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    main()
+</div></code></pre>
+<p>A partir d'aquí, haureu d'implementar la resta de la base de dades i de codi per poder fer diferents gestions com ara:</p>
+<ol>
+<li>Inserir un autor</li>
+<li>Inserir un llibre nou</li>
+<li>Mostrar informació de llibres i autors</li>
+<li>Gestionar prèstecs per a socis</li>
+</ol>
+<h1 id="6-api-con-flask-no-hacer">6. API con Flask (No hacer)</h1>
+<p>En aquest exercici, separarem la base de dades i el programa client. La base de dades i el programa <code>servidor.py</code> els col·locarem en un ordinador que farà de servidor. En un altre ordinador, anomenat client, executarem el programa <code>client.py</code>, que es comunicarà per xarxa amb el servidor i li farà peticions a través del protocol HTTP i rebrà les dades en format JSON.</p>
+<h2 id="%C2%BFqu%C3%A9-es-una-api">¿Qué es una API?</h2>
+<p>Una <strong>API</strong> (Interfície de Programació d'Aplicacions) és un conjunt de regles i eines que permeten que diferents aplicacions <strong>es comuniquin entre si</strong>. En el context de les aplicacions web, una API permet que les dades i funcionalitats d'un sistema siguin <strong>accessibles a altres sistemes a través de la web</strong>, generalment utilitzant formats com <strong>JSON</strong> i protocols com <strong>HTTP</strong>.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/image.png" alt="alt text"></p>
+<h2 id="%C2%BFqu%C3%A9-es-flask">¿Qué es Flask?</h2>
+<p><code>Flask</code> és un microframework de Python per crear aplicacions web de manera senzilla i flexible. S’utilitza molt per construir <strong>APIs</strong> pel seu minimalisme i facilitat d’ús. Permet definir rutes, gestionar peticions <strong>HTTP</strong> i retornar dades en formats com <strong>JSON</strong>, ideal per a serveis web lleugers.</p>
+<p>Per poder fer-lo servir, l'hem d'instal·lar primer utilitzant <code>pip</code>. <code>Pip</code> és el gestor de paquets de Python que permet instal·lar, actualitzar i gestionar biblioteques i dependències.</p>
+<p>Aquesta línia instal·la el framework <code>Flask</code> mitjançant <code>pip</code>, el gestor de paquets de Python.</p>
+<pre class="hljs"><code><div>pip install flask
+</div></code></pre>
+<p>Una vegada instal·lat, ja el podem importar al començament del nostre codi per tal de fer-lo servir.
+Aquest sería el programa <code>servidor.py</code>.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+
+app = Flask(__name__)
+
+<span class="hljs-meta">@app.route('/') # Quan rebem una petició http://127.0.0.1:5000</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span> <span class="hljs-comment"># Executarem aquesta funció</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Hola món!'</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    app.run(debug=<span class="hljs-literal">True</span>)
+</div></code></pre>
+<p>Quan executes una aplicació Flask, el servidor de desenvolupament s'inicia i mostra a la consola un missatge similar al següent. Mentres aquest programa no s'aturi, escolta peticions dirigides a ell la següent adreça.</p>
+<pre class="hljs"><code><div> PS Z:\apuntes&gt; &amp; python.exe servidor_senzill.py
+ * Serving Flask app <span class="hljs-string">'servidor_senzill'</span>
+ * Debug mode: on
+WARNING: This is a development server. Do not use it <span class="hljs-keyword">in</span> a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with <span class="hljs-built_in">stat</span>
+ * Debugger is active!
+ * Debugger PIN: 426-667-423
+</div></code></pre>
+<p>Això indica que el servidor està actiu a l'adreça local (<strong>127.0.0.1</strong>, també coneguda com a localhost) en el port <strong>5000</strong> (que és el predeterminat a Flask).</p>
+<p>Si obres un navegador i a la barra d'adreces hi poses: http://127.0.0.1:5000/, a la pantalla apareixerà: <code>Hola món</code>. Això passa perque les peticions es fan com si fossin sol·licituds de pàgines web, a través de la URL.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-07-11-57-36.png" alt=""></p>
+<p>Al terminal del servidor ens apareixerà aquesta informació, mostrant les peticions que ha rebut el servidor.</p>
+<pre class="hljs"><code><div>127.0.0.1 - - [07/Feb/2025 11:57:14] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [07/Feb/2025 11:57:15] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -
+</div></code></pre>
+<p>Ara ampliarem el nostre servidor amb dues funcions:</p>
+<ul>
+<li>Si visitam http://127.0.0.1:5000**/adeu**, ens retornarà <strong>Adeu món</strong></li>
+<li>Si visitan http://127.0.0.1:5000**/hola**, ens retornarà <strong>Hola món</strong></li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+
+app = Flask(__name__)
+
+<span class="hljs-comment"># Quan rebem una petició http://127.0.0.1:5000/hola</span>
+<span class="hljs-meta">@app.route('/hola')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hola</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Hola món!'</span>
+
+<span class="hljs-comment"># Quan rebem una petició http://127.0.0.1:5000/adeu</span>
+<span class="hljs-meta">@app.route('/adeu')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">adeu</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Adeu món!'</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    app.run(debug=<span class="hljs-literal">True</span>)
+</div></code></pre>
+<p>Aquí pots veure les dos sol·licituds des del navegador.</p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-07-12-02-11.png" alt=""></p>
+<p><img src="file:///e:/Docencia/apuntes/bases-de-datos/ptd2/img/2025-02-07-12-02-31.png" alt=""></p>
+<p>Del costat del servidor veim això. Dues peticions rebudes:</p>
+<pre class="hljs"><code><div>127.0.0.1 - - [07/Feb/2025 12:01:47] <span class="hljs-string">"GET /hola HTTP/1.1"</span> 200 -
+127.0.0.1 - - [07/Feb/2025 12:02:21] <span class="hljs-string">"GET /adeu HTTP/1.1"</span> 200 -
+</div></code></pre>
+<p>Farem que la consulta SQL retorni els llibres en format <strong>JSON</strong> i els exposi mitjançant una ruta de l'<strong>API</strong>.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask, jsonify
+<span class="hljs-keyword">import</span> sqlite3  <span class="hljs-comment"># O usa la biblioteca que prefieras para conectar con tu base de datos</span>
+
+<span class="hljs-comment"># Crear la aplicación Flask</span>
+app = Flask(__name__)
+
+<span class="hljs-comment"># Función para conectar a la base de datos (ajústala según tu base de datos)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_db_connection</span><span class="hljs-params">()</span>:</span>
+    conn = sqlite3.connect(<span class="hljs-string">'tu_base_de_datos.db'</span>)  <span class="hljs-comment"># Cambia el nombre de la base de datos</span>
+    conn.row_factory = sqlite3.Row  <span class="hljs-comment"># Esto permite acceder a las columnas por nombre</span>
+    <span class="hljs-keyword">return</span> conn
+
+<span class="hljs-comment"># Ruta de la API para obtener los libros</span>
+<span class="hljs-meta">@app.route('/api/libros', methods=['GET'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_libros</span><span class="hljs-params">()</span>:</span>
+    conn = get_db_connection()
+    libros = conn.execute(<span class="hljs-string">'SELECT * FROM Libros'</span>).fetchall()
+    conn.close()
+
+    <span class="hljs-comment"># Convertir los resultados a formato JSON</span>
+    libros_list = []
+    <span class="hljs-keyword">for</span> libro <span class="hljs-keyword">in</span> libros:
+        libros_list.append({
+            <span class="hljs-string">'ID'</span>: libro[<span class="hljs-string">'ID'</span>],
+            <span class="hljs-string">'Titulo'</span>: libro[<span class="hljs-string">'Titulo'</span>],
+            <span class="hljs-string">'ISBN'</span>: libro[<span class="hljs-string">'ISBN'</span>],
+            <span class="hljs-string">'Editorial'</span>: libro[<span class="hljs-string">'Editorial'</span>],
+            <span class="hljs-string">'Año_Publicación'</span>: libro[<span class="hljs-string">'Año_Publicación'</span>],
+            <span class="hljs-string">'Ejemplares_Disponibles'</span>: libro[<span class="hljs-string">'Ejemplares_Disponibles'</span>]
+        })
+
+    <span class="hljs-keyword">return</span> jsonify(libros_list)
+
+<span class="hljs-comment"># Ruta de la API para insertar un nuevo libro</span>
+<span class="hljs-meta">@app.route('/api/libros', methods=['POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">insertar_libro</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># Obtener los datos del libro desde la solicitud JSON</span>
+    nuevo_libro = request.get_json()
+
+    <span class="hljs-comment"># Verificar que los campos necesarios estén presentes</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> all(key <span class="hljs-keyword">in</span> nuevo_libro <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> (<span class="hljs-string">'Titulo'</span>, <span class="hljs-string">'ISBN'</span>, <span class="hljs-string">'Editorial'</span>, <span class="hljs-string">'Año_Publicación'</span>, <span class="hljs-string">'Ejemplares_Disponibles'</span>)):
+        <span class="hljs-keyword">return</span> jsonify({<span class="hljs-string">'error'</span>: <span class="hljs-string">'Faltan campos requeridos'</span>}), <span class="hljs-number">400</span>  <span class="hljs-comment"># Retorna un error si falta algún campo</span>
+
+    <span class="hljs-comment"># Insertar el nuevo libro en la base de datos</span>
+    conn = get_db_connection()
+    conn.execute(<span class="hljs-string">'''
+        INSERT INTO Libros (Titulo, ISBN, Editorial, Año_Publicación, Ejemplares_Disponibles)
+        VALUES (?, ?, ?, ?, ?)
+    '''</span>, (nuevo_libro[<span class="hljs-string">'Titulo'</span>], nuevo_libro[<span class="hljs-string">'ISBN'</span>], nuevo_libro[<span class="hljs-string">'Editorial'</span>],
+          nuevo_libro[<span class="hljs-string">'Año_Publicación'</span>], nuevo_libro[<span class="hljs-string">'Ejemplares_Disponibles'</span>]))
+    conn.commit()
+    conn.close()
+
+    <span class="hljs-keyword">return</span> jsonify({<span class="hljs-string">'mensaje'</span>: <span class="hljs-string">'Libro insertado con éxito'</span>}), <span class="hljs-number">201</span>  <span class="hljs-comment"># Retorna un mensaje de éxito</span>
+
+<span class="hljs-comment"># Ejecutar la aplicación Flask</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    app.run(debug=<span class="hljs-literal">True</span>)
+</div></code></pre>
+
+</body>
+</html>

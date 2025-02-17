@@ -355,6 +355,42 @@ Els arxius JSON tenen aplicacions molt variades, d'entre elles destaquen les seg
 
 Amb aquest joc aprendrem a [guardar i llegir dades amb Python i JSON](juego.md).
 
+### Guardar i llegir a un arxiu JSON
+
+```python
+import json
+
+arxiu = open("configuracio.json","w")
+
+configuracio = {}
+configuracio["nom"] = "Dani"
+configuracio["professio"] = "professor"
+
+json.dump(configuracio, arxiu, indent=2)
+```
+
+Això generarà un fitxer configuracio.json amb el següent format:
+
+```json
+{
+  "nom": "Dani",
+  "professio": "professor"
+}
+```
+
+Ara, per fer el contrari:
+
+```python
+import json
+# Obrir el fitxer en mode lectura
+arxiu = open("configuracio.json", "r")
+configuracio = json.load(arxiu)  # Carregar el JSON a un diccionari
+
+# Extreure i mostrar els valors directament
+print(f"Nom: {configuracio['nom']}")
+print(f"Professió: {configuracio['professio']}")
+```
+
 ## 6. JOC amb JSON
 
 En aquest exemple veurem com utilitzar JSON per emmagatzemar la configuració i les dades de les partides, de manera que quedin guardades en un fitxer quan el programa acabi, i puguem carregar-les de nou quan el programa es torni a obrir per utilitzar aquestes dades.

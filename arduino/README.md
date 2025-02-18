@@ -129,20 +129,8 @@
   - [Arcoiris](#arcoiris)
   - [LED Chaser](#led-chaser)
   - [Serial glow](#serial-glow)
-- [Wi-Fi](#wi-fi)
-- [ESP8266 NodeMCU](#esp8266-nodemcu)
-- [ESP8266](#esp8266)
-  - [Componentes](#componentes)
-  - [Aplicaciones principales](#aplicaciones-principales)
-  - [Código fuente](#código-fuente-1)
-  - [Subida](#subida)
-  - [Salida monitor serie](#salida-monitor-serie)
-  - [Wifi bridge](#wifi-bridge)
+  - [ESP8266 NodeMCU](#esp8266-nodemcu)
   - [Projecte WLED](#projecte-wled)
-- [Instal·lació](#installació)
-- [Connexió de la tira](#connexió-de-la-tira)
-- [Programari mòbil](#programari-mòbil)
-- [Control](#control)
   - [Braç robòtic](#braç-robòtic)
 
 # Arduino
@@ -3279,25 +3267,24 @@ void loop()
 }
 
 ```
-# Wi-Fi
 
-# ESP8266 NodeMCU
+## ESP8266 NodeMCU
 
 El ``ESP8266 NodeMCU`` es una plataforma de hardware y software open source que permite a los usuarios crear dispositivos conectados a Internet con funciones de red WiFi de forma rápida y fácil.
 
 ![](img/2023-03-15-15-24-34.png)
 
-# ESP8266
+### ESP8266
 
 L'``ESP8266`` és un xip ``Wi-Fi`` de baix cost que s'utilitza àmpliament en projectes de bricolatge i aplicacions ``IoT``. El NodeMCU és una placa de desenvolupament popular basada en l'ESP8266, que proporciona una manera senzilla de prototipar i desenvolupar projectes amb aquest xip.
 
 ![Alt text](image-1.png)
 
-## Componentes
+### Componentes
 
 ![bg contain](img/2023-03-15-15-25-29.png)
 
-## Aplicaciones principales
+### Aplicaciones principales
 
 - Dispositivos domésticos inteligentes
 - Dispositivos IoT
@@ -3309,7 +3296,7 @@ L'``ESP8266`` és un xip ``Wi-Fi`` de baix cost que s'utilitza àmpliament en pr
 - Controles remotos
 - Iluminación automatizada
 
-## Código fuente
+### Código fuente
 
 ```c
 /*
@@ -3416,15 +3403,15 @@ void loop(void){
 }
 ```
 
-## Subida
+### Subida
 
 ![imagen](img/2022-10-17-18-17-40.png)
 
-## Salida monitor serie
+### Salida monitor serie
 
 ![imagen](img/2022-10-17-18-17-12.png)
 
-## Wifi bridge
+### Wifi bridge
 
 ```c
 #include <ESP8266WiFi.h>
@@ -3491,7 +3478,7 @@ El projecte ``WLED`` és un programari de codi obert que us permet controlar tir
 
 https://kno.wled.ge/
 
-# Instal·lació
+### Instal·lació
 
 Per utilitzar el programari ``WLED`` en una placa NodeMCU, primer heu de flashejar la placa amb el microprogramari WLED. Això es pot fer utilitzant l'IDE d'Arduino o altres eines intermitents.
 
@@ -3499,19 +3486,19 @@ https://install.wled.me/
 
 ![](img/2023-03-15-15-20-31.png)
 
-# Connexió de la tira
+### Connexió de la tira
 
 Un cop instal·lat el microprogramari, podeu connectar la vostra tira de LED a la placa NodeMCU.  Connectarem la tira de led al ``pin D4``.
 
 ![](img/2023-03-15-15-29-10.png)
 
-# Programari mòbil
+### Programari mòbil
 
 ![](img/2023-03-15-15-21-10.png)
 
 https://play.google.com/store/apps/details?id=com.aircoookie.WLED&hl=es&gl=US&pli=1
 
-# Control
+### Control
 
 Des del mòbil podrem canviar els colors i els efectes.
 

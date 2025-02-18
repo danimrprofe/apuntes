@@ -3,34 +3,12 @@
   - [2.Simulación](#2simulación)
   - [3.IDE](#3ide)
   - [4.Conectar placa al PC](#4conectar-placa-al-pc)
-  - [Conexión de la Placa Arduino al Ordenador](#conexión-de-la-placa-arduino-al-ordenador)
-  - [Puerto](#puerto)
   - [5. Programar el Arduino](#5-programar-el-arduino)
   - [6. Programación](#6-programación)
   - [7. Botones](#7-botones)
-  - [Explicación del código](#explicación-del-código)
   - [Fuente de alimentación](#fuente-de-alimentación)
-  - [Pantalla LCD](#pantalla-lcd)
-  - [7 segments (4 dígitos)](#7-segments-4-dígitos)
-  - [7 segments (1 dígito)](#7-segments-1-dígito)
-  - [Combinaciones](#combinaciones)
-  - [Componentes necesarios](#componentes-necesarios-1)
-  - [Display de siete segmentos](#display-de-siete-segmentos)
-- [Registro de desplazamiento](#registro-de-desplazamiento)
-  - [Conexión](#conexión)
-  - [Diagrama de cableado](#diagrama-de-cableado-3)
-  - [Paso uno: conexión 74HC595](#paso-uno-conexión-74hc595)
-  - [Paso uno: conexión 74HC595](#paso-uno-conexión-74hc595-1)
-  - [Paso 2: conectar el display de siete segmentos](#paso-2-conectar-el-display-de-siete-segmentos)
-  - [Código](#código)
-  - [LED con 74HC595](#led-con-74hc595)
-  - [74HC595 Registro de desplazamiento](#74hc595-registro-de-desplazamiento)
-  - [Conexión](#conexión-1)
-  - [Esquema](#esquema)
-  - [Diagrama de cableado](#diagrama-de-cableado-4)
-  - [Código](#código-1)
+  - [Luces](#luces)
   - [LED RGB](#led-rgb)
-  - [Componentes necesarios](#componentes-necesarios-2)
   - [LED RGB](#led-rgb-1)
   - [Prácticas LED](#prácticas-led)
   - [Semáforo de coches](#semáforo-de-coches)
@@ -45,10 +23,17 @@
   - [Ejemplo identificación resistencia](#ejemplo-identificación-resistencia)
   - [Resistencias: orientación](#resistencias-orientación)
   - [Resistencias: medición](#resistencias-medición)
-  - [Esquema](#esquema-2)
+  - [Esquema](#esquema-1)
   - [Simulación](#simulación)
   - [Simulación: ejemplo](#simulación-ejemplo)
   - [Resistencias para LED](#resistencias-para-led)
+  - [Pantalla LCD](#pantalla-lcd)
+  - [7 segments (4 dígitos)](#7-segments-4-dígitos)
+  - [7 segments (1 dígito)](#7-segments-1-dígito)
+  - [Conexión](#conexión-2)
+  - [Esquema](#esquema-2)
+  - [Diagrama de cableado](#diagrama-de-cableado-4)
+  - [Código](#código-2)
   - [Librerias](#librerias)
   - [El monitor serie](#el-monitor-serie)
 - [Monitor serie](#monitor-serie)
@@ -75,31 +60,10 @@
   - [Ejemplo](#ejemplo-1)
   - [analogWrite(pin, value)](#analogwritepin-value)
   - [Ejemplo:](#ejemplo-2)
-- [Motores](#motores)
-  - [Tipos](#tipos)
-  - [Motor de corriente contínua](#motor-de-corriente-contínua)
-  - [Motor de corriente contínua](#motor-de-corriente-contínua-1)
-  - [Placa de fuente de alimentación](#placa-de-fuente-de-alimentación)
-  - [Especificaciones](#especificaciones)
-  - [Configuración de voltaje](#configuración-de-voltaje)
-  - [Conexión protoboard](#conexión-protoboard)
-  - [L293D](#l293d)
-  - [Especificaciones](#especificaciones-1)
-  - [Diagrama de pines](#diagrama-de-pines)
-  - [L293 y L293D](#l293-y-l293d)
-  - [Pines](#pines-3)
-  - [Control de la velocidad](#control-de-la-velocidad)
-  - [Dirección de giro](#dirección-de-giro)
-  - [Dirección de giro](#dirección-de-giro-1)
+  - [Motores](#motores)
+  - [Controlador de motor: L293D](#controlador-de-motor-l293d)
   - [Esquema](#esquema-4)
-  - [Montaje físico](#montaje-físico)
-  - [Motor paso a paso mando](#motor-paso-a-paso-mando)
-  - [El motor](#el-motor)
-  - [Controlador](#controlador)
-  - [Componentes necesarios](#componentes-necesarios-4)
-  - [Esquema](#esquema-5)
-  - [Diagrama de cableado](#diagrama-de-cableado-7)
-- [Luces](#luces)
+  - [Motor paso a paso](#motor-paso-a-paso-1)
 - [Módulo de receptor IR](#módulo-de-receptor-ir)
   - [Resumen](#resumen)
   - [Componentes necesarios](#componentes-necesarios-5)
@@ -111,27 +75,10 @@
   - [Esquema](#esquema-6)
   - [Montaje real](#montaje-real)
   - [Código fuente](#código-fuente)
-- [Sensors](#sensors)
-- [Sensors](#sensors-1)
+  - [Sensors](#sensors)
   - [Termistor](#termistor)
-  - [Tipos de termistores](#tipos-de-termistores)
-  - [Código](#código-6)
-  - [Código](#código-7)
-  - [Código](#código-8)
-  - [Montaje](#montaje-4)
   - [Sensor humedad temperatura DHT11](#sensor-humedad-temperatura-dht11)
-  - [Parámetros del sensor](#parámetros-del-sensor)
-  - [Humedad relativa](#humedad-relativa)
-  - [Temperatura](#temperatura)
-  - [Características eléctricas](#características-eléctricas)
-  - [Descripción de pines](#descripción-de-pines)
-  - [Esquema](#esquema-7)
-  - [Diagrama](#diagrama)
-  - [Montaje](#montaje-5)
-  - [Código](#código-9)
-  - [Salida en el monitor](#salida-en-el-monitor)
-  - [Salida de datos](#salida-de-datos)
-- [Interruptor de bola](#interruptor-de-bola)
+  - [Interruptor de bola](#interruptor-de-bola)
   - [Componentes Requeridos](#componentes-requeridos)
   - [Funcionamiento](#funcionamiento)
   - [Conexión](#conexión-4)
@@ -344,7 +291,7 @@ Conecte la placa de``Arduino`` al ordenador con el cable USB y compruebe que la 
 
 ![imagen](media/image44.png)
 
-## Conexión de la Placa Arduino al Ordenador
+### Conexión de la Placa Arduino al Ordenador
 
 Para programar la Placa Arduino mediante el IDE de Arduino, es necesario establecer una conexión física entre la placa y el ordenador.
 
@@ -359,7 +306,7 @@ Para programar la Placa Arduino mediante el IDE de Arduino, es necesario estable
 
 ![](img/2023-12-02-15-30-38.png)
 
-## Puerto
+### Puertos
 
 - Seleccionar puerto interno al que está conectada la placa
 - Conexión serie (puertos COM)
@@ -543,7 +490,7 @@ Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen 
 
 Esto significa que los pines solo estarán correctamente separados cuando se coloquen adecuadamente en la placa de pruebas. Recuerda que el LED debe tener el cable negativo más corto en el lado izquierdo.
 
-## Explicación del código
+### Explicación del código
 
 - Al pulsar el botón izquierdo, se encenderá el **LED**.
 - Al pulsar el botón derecho, se apagará.
@@ -641,400 +588,21 @@ Asegúrese de alinear el módulo correctamente en la placa de pruebas.
 - El pin negativo (-) en el módulo se alinea con la línea azul (-) de la placa-
 - El pin positivo (+) se alinea con la línea roja (+).
 
-## Pantalla LCD
+## Luces
 
-La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con hasta 16 caracteres`` en cada fila.
+Els LEDs, els LCD i els displays de set segments són components electrònics que es poden controlar amb una placa Arduino per a mostrar informació o per a indicar l'estat d'un sistema. Cada un d'aquests dispositius té diferents característiques i funcions, i es poden utilitzar en diferents aplicacions.
 
-![](img/2023-03-24-10-17-19.png)
+- Els [LEDs](LED.md) són diodes emissors de llum que es poden utilitzar per a indicar l'estat d'un sistema, per a il·luminar objectes o per a crear efectes de llum.
 
-### Circuito integrado LCD1602
+![](img/2023-12-07-16-47-32.png)
 
-La pantalla está incrustada en un circuito integrado que la controla, llamado ``LCD1602``. Este circuito integrado se encarga de controlar la visualización de los caracteres en la pantalla, así como la retroiluminación LED.
+- Els [displays LCD](LCD.md) són pantalles de cristall líquid que es poden utilitzar per a mostrar text o gràfics. Aquests displays són útils en moltes aplicacions, com ara en sistemes de control de temperatura, temporitzadors, termostats, etc.
 
-### Pines
+![](img/2023-12-07-16-48-49.png)
 
-- ``VSS`` Un pin que se conecta a tierra
-- ``VDD`` Un pin que se conecta a un + 5V fuente de alimentación
-- ``VO``  ajusta el contraste.
-- ``RS`` Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.
-- ``R/W``: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.
-- ``D0-D7`` son los pines para escribir y leer datos.
-- ``A y K`` controlan de la retroiluminación LED de los pernos
+- Els [displays de set segments](7_segments_(1_dígito).md) són displays que mostren dígits o lletres utilitzant set segments de LEDs per a crear la forma desitjada. Aquests displays són utilitzats en moltes aplicacions, com ara rellotges digitals, termòmetres, indicadors de nivell, etc.
 
-### Esquema de conexión
-
-![imagen](media/image110.jpeg)
-
-### Diagrama de cableado
-
-![imagen](media/image111.jpeg)
-
-La pantalla LCD necesita:
-
-- 6 pines digitales de datos de``Arduino``
-- Coneciones de 5V y GND.
-
-### Potenciómetro
-
-El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. En ocasiones se ajusta con un pequeño destornillador. El potenciómetro utilizado será de ``10 KOhm``
-
-![](img/2023-03-28-12-59-15.png)
-
-### Bibliotecas o librerías de funciones
-
-Antes de ejecutar este código, asegúrate de haber instalado la **biblioteca** ``LiquidCrystal`` o de volver a instalarla si es necesario. De lo contrario, el código no funcionará.
-
-Lo primero que nota en el dibujo es la línea:
-
-```c
-#include <LiquidCrystal.h>
-```
-
-Esta línea le indica al entorno de desarrollo de Arduino que queremos utilizar la biblioteca de cristal líquido.  En este caso, la biblioteca ``LiquidCrystal`` proporciona las funciones necesarias para controlar una pantalla LCD.
-
-Al incluir esta línea al principio de nuestro código, podemos utilizar estas funciones en nuestro programa sin necesidad de definirlas manualmente.
-
-A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de``Arduino`` son para conectarse a que pines de la pantalla.
-
-```c
-LiquidCrystal lcd (7, 8, 9, 10, 11, 12);
-```
-
-Después de subir este código, asegúrese de que se enciende la retroiluminación y ajustar el potenciómetro de toda la manera alrededor hasta que aparezca el mensaje de texto
-
-En la función de **setup**, tenemos dos comandos:
-
-```c
-LCD.Begin (16, 2);
-LCD.Print ("Hola, mundo!");
-```
-
-La primera cuenta la **librería** de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.
-
-En la función de 'loop', aso tienen dos comandos:
-
-```c
-lcd.setCursor (0, 1);
-LCD.Print(Millis()/1000);
-```
-
-El primero establece la posición del cursor (donde aparecerá el siguiente texto) columna 0 y fila 1. Los números de columna y fila comienzan en 0 en lugar de 1.
-
-![imagen](media/image112.png)
-
-La segunda línea muestra el número de milisegundos desde que se restableció el``Arduino``.
-
-```c
-// include the library code:
-#include <LiquidCrystal.h>
-
-// initialize the library with the numbers of the interface pins
-LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
-
-void setup() {
-  // set up the LCD's number of columns and rows:
-  lcd.begin(16, 2);
-  // Print a message to the LCD.
-  lcd.print("Hello, World!");
-}
-
-void loop() {
-  // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
-  lcd.setCursor(0, 1);
-  // print the number of seconds since reset:
-  lcd.print(millis() / 1000);
-}
-```
-
-## 7 segments (4 dígitos)
-
-![imagen](img/2022-12-12-18-28-22.png)
-
-En esta lección, aprendremos a utilizar una pantalla de 7 segmentos de 4 dígitos. Tenemos que tener en cuenta que:
-
-- Si la pantalla es **ánodo común**, el pin común del ánodo se conecta a la fuente de energía
-- Si es de **cátodo común**, el pin común del cátodo se conecta a la tierra.
-
-Cuando se utilizan 4 dígitos de 7 segmentos, el ánodo común o pin de cátodo común se utiliza para controlar qué dígito aparece. A pesar de que hay sólo un dígito de trabajo, el principio de persistencia de la visión le permite ver todos los números de muestra ya que cada uno es tan rápida que apenas notará los intervalos de la velocidad de exploración.
-
-### Componentes necesarios
-
-| Cantidad | Componente                                     |
-| -------- | ---------------------------------------------- |
-| 1        | Elegoo Uno R3                                  |
-| 1        | protoboard                                     |
-| 1        | 74HC595 IC                                     |
-| 1        | display de 4 dígitos de 7 segmentos            |
-| 4        | Resistencias de 220 ohm                        |
-| 1        | M-M cables (cables de puente de macho a macho) |
-
-### Muestra de 4 dígitos de 7 segmentos
-
-![imagen](media/image136.jpeg)
-
-### Diagrama de cableado
-
-Cada dígito tiene 7 segmentos (A a G) y un punto decimal (D1 a D4).
-
-![imagen](media/image137.jpeg)
-
-### Montaje
-
-![imagen](media/image138.jpeg)
-
-## 7 segments (1 dígito)
-
-Un **seven segments** es un dispositivo de visualización formado por siete diodos LED dispuestos en forma de número 8.
-
-Se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.
-
-![imagen](img/2022-12-05-16-21-35.png)
-
-## Combinaciones
-
-Estas son las combinaciones que podemos hacer para mostrar los distintos números:
-
-![imagen](img/2022-12-12-18-32-50.png)
-
-## Componentes necesarios
-
-| cantidad | componente                                     |
-| -------- | ---------------------------------------------- |
-| 1        | placa``Arduino``                               |
-| 1        | protoboard                                     |
-| 1        | circuito integrado 74HC595                     |
-| 1        | Pantalla 7 segments                            |
-| 8        | resistencias de 220 ohm                        |
-| 1        | M-M cables (cables de puente de macho a macho) |
-
-## Display de siete segmentos
-
-Abajo está el diagrama de pines de siete segmentos
-
-![imagen](media/image130.jpeg)
-
-Los números del 0 al 9 se representan en un display de siete segmentos mediante la activación de segmentos individuales. Cada LED, en caso de recibit un 1, se ilumina. Combinando todos los LED podemos hacer todos los números
-
-| dp  | a	b	c	d	e	f	g   |
-| --- | --------------- |
-| 0   | 0	1	1	1	1	1	1	0 |
-| 1   | 0	0	1	1	0	0	0	0 |
-| 2   | 0	1	1	0	1	1	0	1 |
-| 3   | 0	1	1	1	1	0	0	1 |
-| 4   | 0	0	1	1	0	0	1	1 |
-| 5   | 0	1	0	1	1	0	1	1 |
-| 6   | 0	1	0	1	1	1	1	1 |
-| 7   | 0	1	1	1	0	0	0	0 |
-| 8   | 0	1	1	1	1	1	1	1 |
-| 9   | 0	1	1	1	1	0	1	1 |
-
-# Registro de desplazamiento
-
-Vamos a utilizar un **circuito integrado** para simplificar el control del seven segments, en concreto se trata de un registro de desplazamiento **74HC595** para controlar la visualización de un seven segments.
-
-![alt text](image-5.png)
-
-El 74HC595 es un registro de desplazamiento de 8 bits que se utiliza comúnmente para controlar múltiples dispositivos, como un display de siete segmentos. Permite la conexión de varios dispositivos en cadena, simplificando la conexión a microcontroladores u otros circuitos de control. El registro de desplazamiento toma datos de entrada serie y los desplaza a través de sus salidas de forma paralela, lo que lo hace ideal para controlar múltiples segmentos de un display de siete segmentos de manera eficiente y con menos pines de control.
-
-## Conexión
-
-![imagen](media/image131.jpeg)
-
-## Diagrama de cableado
-
-![imagen](media/image132.jpeg)
-
-La siguiente tabla muestra la tabla de correspondencias pantalla de siete segmentos 74HC595 pin
-
-## Paso uno: conexión 74HC595
-
-En primer lugar, el cableado está conectado a la alimentación y tierra:
-
-- VCC (pin 16) y Señor (pin 10) conectado a 5V
-- GND (pin 8) y OE (pin 13) a tierra
-
-## Paso uno: conexión 74HC595
-
-Pin conexión DS, ST_CP y SH_CP:
-
-- DS (pin 14) conectado al pin de tablero UNO R3 2 (la cifra por debajo de la línea amarilla)
-- ST_CP (pin 12, perno de pestillo) conectado al pin de tablero UNO R3 3 (línea azul de la figura abajo)
-- SH_CP (pin 11, pin de reloj) conectado al pin de tablero UNO R3 4 (figura debajo de la línea blanca)
-
-## Paso 2: conectar el display de siete segmentos
-
-El display de siete segmentos 3, 8 pin a UNO R3 Junta GND (este ejemplo utiliza el cátodo común, si se utiliza el ánodo común, por favor conecte el 3, 8 pines para tablero UNO R3 + 5V)
-
-Según la tabla anterior, conecte el 74HC595 Q0 ~ Q7 a siete segmentos pantalla pin correspondiente (A ~ G y DP) y luego cada pie en una resistencia de 220 ohmios en serie.
-
-## Código
-
-![imagen](media/image133.jpeg)
-
-```c
-
-int tDelay = 100;
-int latchPin = 11;      // (11) ST_CP [RCK] on 74HC595
-int clockPin = 9;      // (9) SH_CP [SCK] on 74HC595
-int dataPin = 12;     // (12) DS [S1] on 74HC595
-
-byte leds = 0;
-
-void updateShiftRegister()
-{
-   digitalWrite(latchPin, LOW);
-   shiftOut(dataPin, clockPin, LSBFIRST, leds);
-   digitalWrite(latchPin, HIGH);
-}
-
-void setup()
-{
-  pinMode(latchPin, OUTPUT);
-  pinMode(dataPin, OUTPUT);
-  pinMode(clockPin, OUTPUT);
-}
-
-void loop()
-{
-  leds = 0;
-  updateShiftRegister();
-  delay(tDelay);
-  for (int i = 0; i < 8; i++)
-  {
-    bitSet(leds, i);
-    updateShiftRegister();
-    delay(tDelay);
-  }
-}
-```
-## LED con 74HC595
-
-Veremos cómo utilizar ocho LEDs rojos grandes con un Arduino UNO sin necesidad de sacrificar las 8 salidas disponibles.
-
-Aunque podrías conectar ocho LEDs con una resistencia a pines del Arduino UNO, rápidamente te quedarías sin pines en tu placa si ya tienes varios dispositivos conectados. Si no tienes muchas cosas conectadas al UNO, está bien hacerlo, pero a menudo queremos incorporar botones, sensores, servos, etc. y antes de darte cuenta, te quedas sin pines disponibles.
-
-Por lo tanto, en lugar de hacer eso, usarás un chip llamado ``74HC595``, que es un convertidor serial a paralelo. Este chip cuenta con ocho salidas (perfecto) y tres entradas que se utilizan para cargar datos poco a poco.
-
-![imagen](media/image116.jpeg)
-
-Este chip hace un poco más lento para los LEDs (sólo se puede cambiar el LED unos 500.000 veces por segundo en lugar de 8.000.000 por segundo) pero todavía es muy rápido, forma más rápido que los seres humanos puede detectar, asíque vale!
-
-Componente necesario:
-
-> * (1) x Elegoo Uno R3
-> * Protoboard
-> * leds
-> * resistencias de 220 ohmios
-> * IC x 74hc595
-> * M M cables (cables de puente de macho a macho)
-
-## 74HC595 Registro de desplazamiento
-
-El registro de desplazamiento es un tipo de chip que tiene lo que puede considerarse como posiciones de memoria ocho, cada uno de ellos puede ser un 1 o un 0. Para definir cada uno de estos valores encendido o apagado, alimentamos en los datos mediante los pines del chip 'Datos' y 'El reloj'.
-
-![imagen](media/image117.jpeg)
-
-El pin de reloj debe recibir ocho pulsos. En cada pulso, si el pin de datos es alto, entonces un 1 obtiene empujado en el registro de desplazamiento; de lo contrario, un 0. Cuando se han recibido los ocho impulsos, permitiendo el pin 'Pestillo' copia esos ocho valores en el registro de cierre. Esto es necesario; de lo contrario, parpadean mal los LEDs como se carga los datos en el registro de desplazamiento.
-
-El chip también tiene un pin de salida activado (OE), que se utiliza para activar o desactivar las salidas a la vez. Podría conectar esto a un pin PWM capaz UNO y usar 'analogWrite' para controlar el brillo de los LEDs. Este pin es baja activa, por lo que nos ate a la tierra GND.
-
-![imagen](media/image118.jpeg)
-
-## Conexión
-
-## Esquema
-
-## Diagrama de cableado
-
-![imagen](media/image119.jpeg)
-
-Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.
-
-Es probablemente más fácil poner el **chip 74HC595** en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa.
-
-Pin 1 del chip es a la izquierda de esta muesca.
-Digital 12 del UNO va al pin #14 del registro de desplazamiento
-Digital 11 del UNO va al pin #12 del registro de desplazamiento
-
-9 digital a partir de la UNO va al pin #11 del registro de desplazamiento
-
-Todos sino una de las salidas de la IC está en el lado izquierdo del chip. Por lo tanto, para facilitar la conexión, es donde están los LEDs, también.
-
-Después de la viruta, poner las resistencias en su lugar. Usted necesita tener cuidado de que ninguno de los cables de las resistencias tocan. Usted debe comprobar esto otra vez antes de conectar la energía a la ONU. Si le resulta difícil organizar las resistencias sin sus conductores tocando, entonces ayuda a acortar los cables que están mintiendo más cercanos a la superficie de la placa.
-
-A continuación, coloque los LEDs en la protoboard. Cuanto más positivo lleva LED debe ser hacia el chip, de cualquier lado de la placa están en.
-
-Conecte los conductores del puente como se muestra arriba. No olvide que va desde el pin 8 del IC a la columna GND de la placa.
-
-Carga el bosquejo aparece un poco más adelante y probar. Cada LED debe encenderse alternadamente hasta que todos los LEDs están encendidos y luego se apagara y el ciclo se repite.
-
-## Código
-
-Después de cableado, por favor, abra el programa en el código de carpeta lección 24 8 LED con 74HC595 y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para más detalles sobre el programa cargar si hay algún error.
-
-Lo primero que hacemos es definir los tres pernos que vamos a utilizar. Estos son los UNO salidas digitales que se conectarán a los pines de datos, reloj y cierre de los 74HC595.
-
-```c
-int latchPin = 11;
-clockPin int = 9;
-int dataPin = 12;
-```
-
-A continuación, se define una variable llamada 'leds'. Esto se utiliza para sostener el patrón de que LED actualmente es activado o desactivados. Datos de tipo 'byte' representan números de ocho bits. Cada bit puede estar encendido o apagado, esto es perfecto para realizar un seguimiento de cuáles de nuestros ocho LEDs son on u off.
-
-leds de byte = 0;
-
-La función de **setup** sólo establece los tres pernos que estamos utilizando para ser de salidas digitales.
-
-```c
-void setup()
-{
-  pinMode (latchPin, salida);
-  pinMode (dataPin, salida);
-  pinMode (clockPin, salida);
-}
-```
-
-La **función loop** inicialmente apaga todos los LEDs, al darle a los variable 'leds' el valor 0. A continuación, llama 'updateShiftRegister' que enviará el patrón de 'leds' para el registro de desplazamiento para que el LED se apague. Se tratará con 'updateShiftRegister' funcionamiento más adelante.
-
-La función loop hace una pausa de medio segundo y entonces empieza a contar de 0 a 7 usando el bucle 'for' y la variable 'i'. Cada vez utiliza la función de``Arduino`` 'verdadera' para establecer el bit que controla ese LED en la variable 'leds'. A continuación también llama 'updateShiftRegister' para que los leds actualizar para reflejar lo que está en la variable 'leds'.
-
-Hay entonces medio segundo de retraso antes de 'i' se incrementa y se ilumina el LED próximo.
-
-```c
-void loop()
-{
-  LED = 0;
-  updateShiftRegister();
-  Delay(500);
-  for (int i = 0; i < 8; i ++)
-    {
-      bitSet(leds, i);
-      updateShiftRegister();
-      Delay(500);
-    }
-}
-```
-
-La función 'updateShiftRegister', en primer lugar se establece la latchPin baja, entonces llama al UNO función 'shiftOut' antes de poner el 'latchPin' alta otra vez. Esto toma cuatro parámetros, los dos primeros son los pines para datos y el reloj respectivamente.
-
-El tercer parámetro especifica que final de los datos que desea iniciar en el. Vamos a empezar con la derecha más poco, que se conoce como el 'Bit menos significativo' (LSB).
-
-El último parámetro es los datos reales para ser cambiado de puesto en el registro de desplazamiento, que en este caso es 'leds'.
-
-```c
-void updateShiftRegister()
-{
-digitalWrite (latchPin, bajo);
-shiftOut (dataPin, clockPin, LSBFIRST, leds);
-digitalWrite (latchPin, HIGH);
-}
-```
-
-Si usted deseó dar vuelta a uno de los LED apagado en lugar, llamaría una función similar de``Arduino`` (bitClear) con la variable de 'leds'. Esto ajustará ese poco de 'leds' para ser 0 y entonces sólo necesitará seguir con una llamada a 'updateShiftRegister' para actualizar la actual LED.
-
-![imagen](media/image120.jpeg)
+![Alt text](image-2.png)
 
 ## [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
 
@@ -1050,7 +618,7 @@ Tipos de [LED RGB](https://danimrprofe.github.io/apuntes/arduino/LED_RGB/)
 - Ánodo común utiliza 5V en el pin común, mientras que el cátodo común se conecta  a tierra.
 - Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 total)  para limitar la corriente.
 
-## Componentes necesarios
+### Componentes necesarios
 
 | cantidad | componente                                                        |
 | -------- | ----------------------------------------------------------------- |
@@ -1501,6 +1069,402 @@ La **placa de desarrollo``Arduino`` UNO** es una conveniente fuente de 5 voltios
 - Con la resistencia de ``220 Ω``,  el LED debe ser bastante brillante.
 - Si cambia  la resistencia ``220 Ω`` para la resistencia de ``1 kΩ``, brillará menos.
 - Por último, con el resistor de ``10 kΩ`` en su lugar, el LED será casi invisible.
+
+## Pantalla LCD
+
+La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con hasta 16 caracteres`` en cada fila.
+
+![](img/2023-03-24-10-17-19.png)
+
+### Circuito integrado LCD1602
+
+La pantalla está incrustada en un circuito integrado que la controla, llamado ``LCD1602``. Este circuito integrado se encarga de controlar la visualización de los caracteres en la pantalla, así como la retroiluminación LED.
+
+### Pines
+
+- ``VSS`` Un pin que se conecta a tierra
+- ``VDD`` Un pin que se conecta a un + 5V fuente de alimentación
+- ``VO``  ajusta el contraste.
+- ``RS`` Un registro seleccione pin que controla donde en memoria de la pantalla LCD datos de escritura. Usted puede seleccionar el registro de datos, que es lo que pasa en la pantalla, o un registro de instrucción, que es donde busca controlador de LCD para obtener instrucciones sobre qué hacer.
+- ``R/W``: Pin A lectura y escritura que selecciona el modo de lectura o escritura a modo de E:, Permitiendo a un perno con energía de bajo nivel, módulo causas la LDC para ejecutar instrucciones.
+- ``D0-D7`` son los pines para escribir y leer datos.
+- ``A y K`` controlan de la retroiluminación LED de los pernos
+
+### Esquema de conexión
+
+![imagen](media/image110.jpeg)
+
+### Diagrama de cableado
+
+![imagen](media/image111.jpeg)
+
+La pantalla LCD necesita:
+
+- 6 pines digitales de datos de``Arduino``
+- Coneciones de 5V y GND.
+
+### Potenciómetro
+
+El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. En ocasiones se ajusta con un pequeño destornillador. El potenciómetro utilizado será de ``10 KOhm``
+
+![](img/2023-03-28-12-59-15.png)
+
+### Bibliotecas o librerías de funciones
+
+Antes de ejecutar este código, asegúrate de haber instalado la **biblioteca** ``LiquidCrystal`` o de volver a instalarla si es necesario. De lo contrario, el código no funcionará.
+
+Lo primero que nota en el dibujo es la línea:
+
+```c
+#include <LiquidCrystal.h>
+```
+
+Esta línea le indica al entorno de desarrollo de Arduino que queremos utilizar la biblioteca de cristal líquido.  En este caso, la biblioteca ``LiquidCrystal`` proporciona las funciones necesarias para controlar una pantalla LCD.
+
+Al incluir esta línea al principio de nuestro código, podemos utilizar estas funciones en nuestro programa sin necesidad de definirlas manualmente.
+
+A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de``Arduino`` son para conectarse a que pines de la pantalla.
+
+```c
+LiquidCrystal lcd (7, 8, 9, 10, 11, 12);
+```
+
+Después de subir este código, asegúrese de que se enciende la retroiluminación y ajustar el potenciómetro de toda la manera alrededor hasta que aparezca el mensaje de texto
+
+En la función de **setup**, tenemos dos comandos:
+
+```c
+LCD.Begin (16, 2);
+LCD.Print ("Hola, mundo!");
+```
+
+La primera cuenta la **librería** de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.
+
+En la función de 'loop', aso tienen dos comandos:
+
+```c
+lcd.setCursor (0, 1);
+LCD.Print(Millis()/1000);
+```
+
+El primero establece la posición del cursor (donde aparecerá el siguiente texto) columna 0 y fila 1. Los números de columna y fila comienzan en 0 en lugar de 1.
+
+![imagen](media/image112.png)
+
+La segunda línea muestra el número de milisegundos desde que se restableció el``Arduino``.
+
+```c
+// include the library code:
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  lcd.print("Hello, World!");
+}
+
+void loop() {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(0, 1);
+  // print the number of seconds since reset:
+  lcd.print(millis() / 1000);
+}
+```
+
+## 7 segments (4 dígitos)
+
+![imagen](img/2022-12-12-18-28-22.png)
+
+En esta lección, aprendremos a utilizar una pantalla de 7 segmentos de 4 dígitos. Tenemos que tener en cuenta que:
+
+- Si la pantalla es **ánodo común**, el pin común del ánodo se conecta a la fuente de energía
+- Si es de **cátodo común**, el pin común del cátodo se conecta a la tierra.
+
+Cuando se utilizan 4 dígitos de 7 segmentos, el ánodo común o pin de cátodo común se utiliza para controlar qué dígito aparece. A pesar de que hay sólo un dígito de trabajo, el principio de persistencia de la visión le permite ver todos los números de muestra ya que cada uno es tan rápida que apenas notará los intervalos de la velocidad de exploración.
+
+### Componentes necesarios
+
+| Cantidad | Componente                                     |
+| -------- | ---------------------------------------------- |
+| 1        | Elegoo Uno R3                                  |
+| 1        | protoboard                                     |
+| 1        | 74HC595 IC                                     |
+| 1        | display de 4 dígitos de 7 segmentos            |
+| 4        | Resistencias de 220 ohm                        |
+| 1        | M-M cables (cables de puente de macho a macho) |
+
+### Muestra de 4 dígitos de 7 segmentos
+
+![imagen](media/image136.jpeg)
+
+### Diagrama de cableado
+
+Cada dígito tiene 7 segmentos (A a G) y un punto decimal (D1 a D4).
+
+![imagen](media/image137.jpeg)
+
+### Montaje
+
+![imagen](media/image138.jpeg)
+
+## 7 segments (1 dígito)
+
+Un **seven segments** es un dispositivo de visualización formado por siete diodos LED dispuestos en forma de número 8.
+
+Se utilizan para mostrar números, letras y caracteres especiales. Se usan en una variedad de dispositivos electrónicos, como relojes digitales, calculadoras, contadores, temporizadores, etc.
+
+![imagen](img/2022-12-05-16-21-35.png)
+
+### Combinaciones
+
+Estas son las combinaciones que podemos hacer para mostrar los distintos números:
+
+![imagen](img/2022-12-12-18-32-50.png)
+
+### Componentes necesarios
+
+| cantidad | componente                                     |
+| -------- | ---------------------------------------------- |
+| 1        | placa``Arduino``                               |
+| 1        | protoboard                                     |
+| 1        | circuito integrado 74HC595                     |
+| 1        | Pantalla 7 segments                            |
+| 8        | resistencias de 220 ohm                        |
+| 1        | M-M cables (cables de puente de macho a macho) |
+
+### Display de siete segmentos
+
+Abajo está el diagrama de pines de siete segmentos
+
+![imagen](media/image130.jpeg)
+
+Los números del 0 al 9 se representan en un display de siete segmentos mediante la activación de segmentos individuales. Cada LED, en caso de recibit un 1, se ilumina. Combinando todos los LED podemos hacer todos los números
+
+| dp  | a	b	c	d	e	f	g   |
+| --- | --------------- |
+| 0   | 0	1	1	1	1	1	1	0 |
+| 1   | 0	0	1	1	0	0	0	0 |
+| 2   | 0	1	1	0	1	1	0	1 |
+| 3   | 0	1	1	1	1	0	0	1 |
+| 4   | 0	0	1	1	0	0	1	1 |
+| 5   | 0	1	0	1	1	0	1	1 |
+| 6   | 0	1	0	1	1	1	1	1 |
+| 7   | 0	1	1	1	0	0	0	0 |
+| 8   | 0	1	1	1	1	1	1	1 |
+| 9   | 0	1	1	1	1	0	1	1 |
+
+### Registro de desplazamiento
+
+Vamos a utilizar un **circuito integrado** para simplificar el control del seven segments, en concreto se trata de un registro de desplazamiento **74HC595** para controlar la visualización de un seven segments.
+
+![alt text](image-5.png)
+
+El 74HC595 es un registro de desplazamiento de 8 bits que se utiliza comúnmente para controlar múltiples dispositivos, como un display de siete segmentos. Permite la conexión de varios dispositivos en cadena, simplificando la conexión a microcontroladores u otros circuitos de control. El registro de desplazamiento toma datos de entrada serie y los desplaza a través de sus salidas de forma paralela, lo que lo hace ideal para controlar múltiples segmentos de un display de siete segmentos de manera eficiente y con menos pines de control.
+
+### Conexión
+
+![imagen](media/image131.jpeg)
+
+### Diagrama de cableado
+
+![imagen](media/image132.jpeg)
+
+La siguiente tabla muestra la tabla de correspondencias pantalla de siete segmentos 74HC595 pin
+
+### Paso uno: conexión 74HC595
+
+En primer lugar, el cableado está conectado a la alimentación y tierra:
+
+- VCC (pin 16) y Señor (pin 10) conectado a 5V
+- GND (pin 8) y OE (pin 13) a tierra
+
+### Paso uno: conexión 74HC595
+
+Pin conexión DS, ST_CP y SH_CP:
+
+- DS (pin 14) conectado al pin de tablero UNO R3 2 (la cifra por debajo de la línea amarilla)
+- ST_CP (pin 12, perno de pestillo) conectado al pin de tablero UNO R3 3 (línea azul de la figura abajo)
+- SH_CP (pin 11, pin de reloj) conectado al pin de tablero UNO R3 4 (figura debajo de la línea blanca)
+
+### Paso 2: conectar el display de siete segmentos
+
+El display de siete segmentos 3, 8 pin a UNO R3 Junta GND (este ejemplo utiliza el cátodo común, si se utiliza el ánodo común, por favor conecte el 3, 8 pines para tablero UNO R3 + 5V)
+
+Según la tabla anterior, conecte el 74HC595 Q0 ~ Q7 a siete segmentos pantalla pin correspondiente (A ~ G y DP) y luego cada pie en una resistencia de 220 ohmios en serie.
+
+### Código
+
+![imagen](media/image133.jpeg)
+
+```c
+
+int tDelay = 100;
+int latchPin = 11;      // (11) ST_CP [RCK] on 74HC595
+int clockPin = 9;      // (9) SH_CP [SCK] on 74HC595
+int dataPin = 12;     // (12) DS [S1] on 74HC595
+
+byte leds = 0;
+
+void updateShiftRegister()
+{
+   digitalWrite(latchPin, LOW);
+   shiftOut(dataPin, clockPin, LSBFIRST, leds);
+   digitalWrite(latchPin, HIGH);
+}
+
+void setup()
+{
+  pinMode(latchPin, OUTPUT);
+  pinMode(dataPin, OUTPUT);
+  pinMode(clockPin, OUTPUT);
+}
+
+void loop()
+{
+  leds = 0;
+  updateShiftRegister();
+  delay(tDelay);
+  for (int i = 0; i < 8; i++)
+  {
+    bitSet(leds, i);
+    updateShiftRegister();
+    delay(tDelay);
+  }
+}
+```
+
+### LED con 74HC595
+
+Veremos cómo utilizar ocho LEDs rojos grandes con un Arduino UNO sin necesidad de sacrificar las 8 salidas disponibles.
+
+Aunque podrías conectar ocho LEDs con una resistencia a pines del Arduino UNO, rápidamente te quedarías sin pines en tu placa si ya tienes varios dispositivos conectados. Si no tienes muchas cosas conectadas al UNO, está bien hacerlo, pero a menudo queremos incorporar botones, sensores, servos, etc. y antes de darte cuenta, te quedas sin pines disponibles.
+
+Por lo tanto, en lugar de hacer eso, usarás un chip llamado ``74HC595``, que es un convertidor serial a paralelo. Este chip cuenta con ocho salidas (perfecto) y tres entradas que se utilizan para cargar datos poco a poco.
+
+![imagen](media/image116.jpeg)
+
+Este chip hace un poco más lento para los LEDs (sólo se puede cambiar el LED unos 500.000 veces por segundo en lugar de 8.000.000 por segundo) pero todavía es muy rápido, forma más rápido que los seres humanos puede detectar, asíque vale!
+
+Componente necesario:
+
+> * (1) x Elegoo Uno R3
+> * Protoboard
+> * leds
+> * resistencias de 220 ohmios
+> * IC x 74hc595
+> * M M cables (cables de puente de macho a macho)
+
+### 74HC595 Registro de desplazamiento
+
+El registro de desplazamiento es un tipo de chip que tiene lo que puede considerarse como posiciones de memoria ocho, cada uno de ellos puede ser un 1 o un 0. Para definir cada uno de estos valores encendido o apagado, alimentamos en los datos mediante los pines del chip 'Datos' y 'El reloj'.
+
+![imagen](media/image117.jpeg)
+
+El pin de reloj debe recibir ocho pulsos. En cada pulso, si el pin de datos es alto, entonces un 1 obtiene empujado en el registro de desplazamiento; de lo contrario, un 0. Cuando se han recibido los ocho impulsos, permitiendo el pin 'Pestillo' copia esos ocho valores en el registro de cierre. Esto es necesario; de lo contrario, parpadean mal los LEDs como se carga los datos en el registro de desplazamiento.
+
+El chip también tiene un pin de salida activado (OE), que se utiliza para activar o desactivar las salidas a la vez. Podría conectar esto a un pin PWM capaz UNO y usar 'analogWrite' para controlar el brillo de los LEDs. Este pin es baja activa, por lo que nos ate a la tierra GND.
+
+![imagen](media/image118.jpeg)
+
+## Conexión
+
+## Esquema
+
+## Diagrama de cableado
+
+![imagen](media/image119.jpeg)
+
+Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.
+
+Es probablemente más fácil poner el **chip 74HC595** en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa.
+
+Pin 1 del chip es a la izquierda de esta muesca.
+Digital 12 del UNO va al pin #14 del registro de desplazamiento
+Digital 11 del UNO va al pin #12 del registro de desplazamiento
+
+9 digital a partir de la UNO va al pin #11 del registro de desplazamiento
+
+Todos sino una de las salidas de la IC está en el lado izquierdo del chip. Por lo tanto, para facilitar la conexión, es donde están los LEDs, también.
+
+Después de la viruta, poner las resistencias en su lugar. Usted necesita tener cuidado de que ninguno de los cables de las resistencias tocan. Usted debe comprobar esto otra vez antes de conectar la energía a la ONU. Si le resulta difícil organizar las resistencias sin sus conductores tocando, entonces ayuda a acortar los cables que están mintiendo más cercanos a la superficie de la placa.
+
+A continuación, coloque los LEDs en la protoboard. Cuanto más positivo lleva LED debe ser hacia el chip, de cualquier lado de la placa están en.
+
+Conecte los conductores del puente como se muestra arriba. No olvide que va desde el pin 8 del IC a la columna GND de la placa.
+
+Carga el bosquejo aparece un poco más adelante y probar. Cada LED debe encenderse alternadamente hasta que todos los LEDs están encendidos y luego se apagara y el ciclo se repite.
+
+## Código
+
+Después de cableado, por favor, abra el programa en el código de carpeta lección 24 8 LED con 74HC595 y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para más detalles sobre el programa cargar si hay algún error.
+
+Lo primero que hacemos es definir los tres pernos que vamos a utilizar. Estos son los UNO salidas digitales que se conectarán a los pines de datos, reloj y cierre de los 74HC595.
+
+```c
+int latchPin = 11;
+clockPin int = 9;
+int dataPin = 12;
+```
+
+A continuación, se define una variable llamada 'leds'. Esto se utiliza para sostener el patrón de que LED actualmente es activado o desactivados. Datos de tipo 'byte' representan números de ocho bits. Cada bit puede estar encendido o apagado, esto es perfecto para realizar un seguimiento de cuáles de nuestros ocho LEDs son on u off.
+
+leds de byte = 0;
+
+La función de **setup** sólo establece los tres pernos que estamos utilizando para ser de salidas digitales.
+
+```c
+void setup()
+{
+  pinMode (latchPin, salida);
+  pinMode (dataPin, salida);
+  pinMode (clockPin, salida);
+}
+```
+
+La **función loop** inicialmente apaga todos los LEDs, al darle a los variable 'leds' el valor 0. A continuación, llama 'updateShiftRegister' que enviará el patrón de 'leds' para el registro de desplazamiento para que el LED se apague. Se tratará con 'updateShiftRegister' funcionamiento más adelante.
+
+La función loop hace una pausa de medio segundo y entonces empieza a contar de 0 a 7 usando el bucle 'for' y la variable 'i'. Cada vez utiliza la función de``Arduino`` 'verdadera' para establecer el bit que controla ese LED en la variable 'leds'. A continuación también llama 'updateShiftRegister' para que los leds actualizar para reflejar lo que está en la variable 'leds'.
+
+Hay entonces medio segundo de retraso antes de 'i' se incrementa y se ilumina el LED próximo.
+
+```c
+void loop()
+{
+  LED = 0;
+  updateShiftRegister();
+  Delay(500);
+  for (int i = 0; i < 8; i ++)
+    {
+      bitSet(leds, i);
+      updateShiftRegister();
+      Delay(500);
+    }
+}
+```
+
+La función 'updateShiftRegister', en primer lugar se establece la latchPin baja, entonces llama al UNO función 'shiftOut' antes de poner el 'latchPin' alta otra vez. Esto toma cuatro parámetros, los dos primeros son los pines para datos y el reloj respectivamente.
+
+El tercer parámetro especifica que final de los datos que desea iniciar en el. Vamos a empezar con la derecha más poco, que se conoce como el 'Bit menos significativo' (LSB).
+
+El último parámetro es los datos reales para ser cambiado de puesto en el registro de desplazamiento, que en este caso es 'leds'.
+
+```c
+void updateShiftRegister()
+{
+digitalWrite (latchPin, bajo);
+shiftOut (dataPin, clockPin, LSBFIRST, leds);
+digitalWrite (latchPin, HIGH);
+}
+```
+
+Si usted deseó dar vuelta a uno de los LED apagado en lugar, llamaría una función similar de``Arduino`` (bitClear) con la variable de 'leds'. Esto ajustará ese poco de 'leds' para ser 0 y entonces sólo necesitará seguir con una llamada a 'updateShiftRegister' para actualizar la actual LED.
+
+![imagen](media/image120.jpeg)
 
 ## Librerias
 
@@ -2099,13 +2063,13 @@ void loop() {
 }
 ```
 
-# Motores
+## Motores
 
 Els motors d'Arduino són dispositius que permeten a una placa Arduino controlar el moviment mecànic d'un sistema. Els motors poden ser de diferents tipus i formes, i poden ser controlats per la placa Arduino a través de diferents circuits i protocols.
 
 ![](img/2023-12-02-16-24-57.png)
 
-## Tipos
+### Tipos
 
 Els motors més comuns utilitzats amb Arduino són els **motors de corrent continu **(DC) i els **servomotors**.
 
@@ -2113,23 +2077,21 @@ Els motors més comuns utilitzats amb Arduino són els **motors de corrent conti
 - Els [servomotors](motor-servo.md), d'altra banda, són motors que poden ser controlats amb precisió per a posicionar-se en un determinat angle, i són utilitzats en molts projectes de robòtica i control de moviment.
 - Els [motors pas a pas](motor_paso_a_paso.md) són un tipus de motor que es caracteritza per moure's en increments precisos de posició en lloc de girar continuament
 
-## Motor de corriente contínua
+### Motor de corriente contínua
 
 La fuerza máxima que puede generar un motor pequeño de corriente continua para proyectos de electrónica depende de varios factores, como el diseño y las especificaciones del motor. Sin embargo, en general, los motores pequeños de corriente continua para proyectos de electrónica suelen tener una fuerza máxima relativamente baja.
 
 ![](img/2023-12-02-16-25-39.png)
 
-## Motor de corriente contínua
-
 La fuerza generada por un motor de corriente continua está relacionada con su **torque**. El torque es una medida de la capacidad del motor para generar una fuerza de rotación. Los motores pequeños para proyectos de electrónica generalmente tienen un torque bajo y están diseñados para aplicaciones de baja carga, como mover pequeños mecanismos o generar movimiento en juguetes pequeños.
 
 El **torque máximo** de un motor se especifica en su datasheet o hoja de datos proporcionada por el fabricante. Puede estar en unidades como gramos-centímetro (g·cm) o milinewton-metro (mN·m). Es importante tener en cuenta que el torque máximo disminuye a medida que aumenta la velocidad de rotación del motor.
 
-## Placa de fuente de alimentación
+### Placa de fuente de alimentación
 
 El pequeño motor de corriente continua es probable que use más energía que la que ``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
 
-## Especificaciones
+### Especificaciones
 
 | Característica             | Valor       |
 | -------------------------- | ----------- |
@@ -2137,7 +2099,7 @@ El pequeño motor de corriente continua es probable que use más energía que la
 | Voltaje de salida          | 3.3V / 5v   |
 | Máxima corriente de salida | 700 mA      |
 
-## Configuración de voltaje
+### Configuración de voltaje
 
 ![imagen](media/image140.jpeg)
 
@@ -2145,11 +2107,11 @@ El pequeño motor de corriente continua es probable que use más energía que la
 - Para seleccionar la tensión de salida, mover el puente a los pines correspondientes.
 - Nota: indicador de energía LED y los carriles de la energía de protoboard no se enciende si ambos puentes están en la posición "OFF".
 
-## Conexión protoboard
+### Conexión protoboard
 
 ![width:500px](media/image141.jpeg)
 
-## L293D
+## Controlador de motor: L293D
 
 El L293D és un circuit integrat que s'utilitza com a controlador de motor i permet controlar la direcció i la velocitat d'un motor DC.
 
@@ -2157,7 +2119,7 @@ El dispositiu inclou quatre drivers de pont H, que permeten controlar fins a dos
 
 ![imagen](media/image142.jpeg)
 
-## Especificaciones
+### Especificaciones
 
 | Característica | Valor |
 | -------------- ||
@@ -2165,23 +2127,23 @@ El dispositiu inclou quatre drivers de pont H, que permeten controlar fins a dos
 | Salida de corriente        | 1 A por canal (600 mA para el L293D) |
 | Máxima salida de corriente | 2 A por canal (1.2 A para L293D)     |
 
-## Diagrama de pines
+### Diagrama de pines
 
 ![imagen](media/image143.jpeg)
 
-## L293 y L293D
+### L293 y L293D
 
 - El ``L293`` está diseñado para proporcionar corrientes de transmisión bidireccional de hasta 1 A con tensiones de 4,5 V a 36 V.
 - El ``L293D`` está diseñado para proporcionar bidireccional corrientes de impulsión de hasta 600 mA en tensiones de 4,5 V a 36 V.
 
-## Pines
+### Pines
 
 - 4 pines per controlar la direcció dels motors
 - 1 pin s'utilitza per controlar la  velocitat.
 
 ![](img/2023-05-15-17-25-39.png)
 
-## Control de la velocidad
+### Control de la velocidad
 
 **M1 PWM** lo conectaremos a un pin PWM de``Arduino``. Está marcados en la ONU, el pin 5 es un ejemplo. Cualquier número entero entre 0 y 255, donde:
 
@@ -2193,7 +2155,7 @@ Según el valor que escribamos, se generará una señal PWM diferente.
 
 ![imagen](img/2022-11-13-13-35-36.png)
 
-## Dirección de giro
+### Dirección de giro
 
 La dirección se controla a través de las entradas de dirección:
 
@@ -2202,7 +2164,7 @@ La dirección se controla a través de las entradas de dirección:
 
 ![](img/2023-03-28-12-14-53.png)
 
-## Dirección de giro
+##### Dirección de giro
 
 En la siguiente tabla veréis las 4 combinaciones posibles para el motor 1:
 
@@ -2212,7 +2174,7 @@ En la siguiente tabla veréis las 4 combinaciones posibles para el motor 1:
 
 ![width:800px](media/image147.jpeg)
 
-## Montaje físico
+### Montaje físico
 
 ![](img/2023-03-28-12-13-46.png)
 
@@ -2288,17 +2250,17 @@ void loop() {
 
 ```
 
-## Motor paso a paso mando
+## Motor paso a paso
 
 Veremos cómo funciona el motor de pasos de 4 fases **ULN2003 28BYJ-48** y el controlador de motor de 5V.
 
-## El motor
+### El motor
 
 El motor de pasos de 4 fases ULN2003 28BYJ-48 es un motor de pasos pequeño y económico que se puede controlar con un microcontrolador. El motor tiene 4 fases, cada una con 2 polos. Cada fase requiere energía para que el imán se atraiga o se repulse. Los 4 imanes del motor de pasos están dispuestos de forma que se atraigan y se repulsen en secuencia, lo que hace que el eje del motor gire.
 
 ![imagen](img/2022-11-20-17-13-11.png)
 
-## Controlador
+### Controlador
 
 Para controlar el motor de pasos de 4 fases, se necesita un controlador de motor. El controlador de motor de 5V es un circuito integrado que se usa para controlar el motor de pasos.
 
@@ -2306,7 +2268,7 @@ Para controlar el motor de pasos de 4 fases, se necesita un controlador de motor
 
 El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor. Para hacer que el motor gire, se activan las salidas en secuencia.
 
-## Componentes necesarios
+### Componentes necesarios
 
 | Cantidad | Característica                                  |
 | -------- | ----------------------------------------------- |
@@ -2321,11 +2283,11 @@ El controlador de motor tiene 8 salidas, cada una conectada a una fase del motor
 | x        | Cables hembra-macho (DuPont)                    |
 | x        | Cable macho-macho (hilo de puente)              |
 
-## Esquema
+### Esquema
 
 ![imagen](media/image163.jpeg)
 
-## Diagrama de cableado
+### Diagrama de cableado
 
 ![imagen](media/image164.jpeg)
 
@@ -2412,22 +2374,6 @@ void loop()
   delay(1000);
 }
 ```
-
-# Luces
-
-Els LEDs, els LCD i els displays de set segments són components electrònics que es poden controlar amb una placa Arduino per a mostrar informació o per a indicar l'estat d'un sistema. Cada un d'aquests dispositius té diferents característiques i funcions, i es poden utilitzar en diferents aplicacions.
-
-- Els [LEDs](LED.md) són diodes emissors de llum que es poden utilitzar per a indicar l'estat d'un sistema, per a il·luminar objectes o per a crear efectes de llum.
-
-![](img/2023-12-07-16-47-32.png)
-
-- Els [displays LCD](LCD.md) són pantalles de cristall líquid que es poden utilitzar per a mostrar text o gràfics. Aquests displays són útils en moltes aplicacions, com ara en sistemes de control de temperatura, temporitzadors, termostats, etc.
-
-![](img/2023-12-07-16-48-49.png)
-
-- Els [displays de set segments](7_segments_(1_dígito).md) són displays que mostren dígits o lletres utilitzant set segments de LEDs per a crear la forma desitjada. Aquests displays són utilitzats en moltes aplicacions, com ara rellotges digitals, termòmetres, indicadors de nivell, etc.
-
-![Alt text](image-2.png)
 
 # Módulo de receptor IR
 
@@ -2533,13 +2479,11 @@ void loop() {
 
 ```
 
-# Sensors
+## Sensors
 
 ![](img/2023-03-27-16-42-42.png)
 
 Els sensors d'Arduino són dispositius que permeten a una placa Arduino detectar i mesurar diferents **variables** del seu entorn. Aquests sensors poden mesurar coses com la temperatura, la humitat, la llum, la pressió, el moviment, el so, la proximitat, entre d'altres.
-
-# Sensors
 
 Els sensors són un component clau en molts projectes d'Arduino i són utilitzats per recollir dades del món físic per a ser processats per la placa Arduino.
 
@@ -2551,7 +2495,7 @@ Els sensors són un component clau en molts projectes d'Arduino i són utilitzat
 
 Un **termistor** es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir.
 
-## Tipos de termistores
+### Tipos de termistores
 
 Hay dos clases de termistores:
 
@@ -2564,7 +2508,7 @@ En general, usaremos sensores **NTC** para medir la temperatura.
 
 ![bg contain](media/image114.jpeg)
 
-## Código
+### Código
 
 Antes de ejecutar esto, asegúrese de que ha instalado la **librería** <LiquidCrystal> o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
 
@@ -2578,7 +2522,7 @@ Esto facilita las cosas si decides cambiar que utilizas los pernos.
 
 En la **función loop** ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.
 
-## Código
+### Código
 
 En primer lugar, echemos un vistazo a cálculo de la temperatura.
 
@@ -2592,7 +2536,7 @@ float tempF = (tempC * 9.0) / 5.0 + 32.0;
 
 Cambio lecturas se muestra en una pantalla LCD puede ser complicado. El principal problema es que la lectura puede no ser siempre el mismo número de dígitos. Por lo tanto, si la temperatura cambia de 101,50 a 99.00 entonces el dígito adicional de la lectura antigua es en peligro de quedar en la pantalla.
 
-## Código
+### Código
 
 Para evitar esto, escriba la línea de la pantalla LCD cada vez el bucle.
 
@@ -2605,20 +2549,21 @@ LCD.Print(tempF);
 
 El comentario bastante extraño sirve para recordarles de las 16 columnas de la pantalla. Luego puede imprimir una cadena de esa longitud con espacios donde irá la lectura real.
 
-## Montaje
+### Montaje
 
 ![imagen](media/image115.png)
+
 ## Sensor humedad temperatura DHT11
 
 En este tutorial vamos a aprender cómo usar un sensor de humedad y temperatura **DHT11**. El sensor digital de temperatura y humedad **DHT11** es un sensor que nos proporciona información de  de la temperatura y la humedad.
 
 ![imagen](img/2022-12-12-18-42-31.png)
 
-## Parámetros del sensor
+### Parámetros del sensor
 
 Cualquier magnitud que queramos leer tendrá unas ``características`` de precisión, según el sensor o instrumento que lo mide.
 
-## Humedad relativa
+### Humedad relativa
 
 | Característica            | Descripción                                                               |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -2630,7 +2575,7 @@ Cualquier magnitud que queramos leer tendrá unas ``características`` de precis
 | Histéresis                | Variación de lectura inferior al ±0.3% de humedad relativa                |
 | Estabilidad a largo plazo | Cambio inferior al ±0.5% de humedad relativa por año                      |
 
-## Temperatura
+### Temperatura
 
 | Magnitud | Valor |
 | -------- ||
@@ -2639,7 +2584,7 @@ Cualquier magnitud que queramos leer tendrá unas ``características`` de precis
 | Rango:               | 25 ° C ±2° c    |
 | Tiempo de respuesta: | 1 / e (63%) 10S |
 
-## Características eléctricas
+##### Características eléctricas
 
 Para funcionar, el sensor necesita corriente eléctrica.
 
@@ -2649,7 +2594,7 @@ Para funcionar, el sensor necesita corriente eléctrica.
 | Corriente:              | medición 0.3mA (60μA en espera |
 | Periodo de muestreo:    | más de 2 segundos              |
 
-## Descripción de pines
+### Descripción de pines
 
 El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con la placa arduino. Estos pines son:
 
@@ -2661,19 +2606,19 @@ El sensor dispone de 3 pines para recibir corriente eléctrica y comunicarse con
 | DATA | Lo conectaremos a un pin de datos. En este caso D2 |
 | GND  | Lo conectaremos a tierra                           |
 
-## Esquema
+##### Esquema
 
 ![](media/image94.jpeg)
 
-## Diagrama
+### Diagrama
 
 ![](media/image95.jpeg)
 
-## Montaje
+### Montaje
 
 ![bg contain](media/image96.jpeg)
 
-## Código
+### Código
 
 El siguiente código va a utilizar el sensor que hemos conectado para leer la temperatura y la humedad que está midiendo el sensor.
 
@@ -2722,19 +2667,20 @@ void loop( )
 }
 ```
 
-## Salida en el monitor
+### Salida en el monitor
 
 - Los valores medidos se mostrarán por pantalla en el monitor serie.
 - El monitor serie lo tenemos que abrir desde el IDE de arduino.
 
 ![](img/2023-03-27-11-14-40.png)
 
-## Salida de datos
+### Salida de datos
 
 A continuación se nos abrirá una pantalla en la que podremos ver los datos que nuestro programa está escribiendo.
 
 ![imagen](media/image97.jpeg)
-# Interruptor de bola
+
+## Interruptor de bola
 
 Los sensores de inclinación (interruptor de bola de inclinación) permiten detectar orientación o inclinación. Son pequeños, económicos, de bajo consumo y fáciles de usar. Si se usan correctamente, no se desgastarán. Su simplicidad los hace populares para los juguetes, los adminículos y los aparatos. A veces, se conocen como "interruptores de mercurio", "interruptores de inclinación" o "sensores de bola rodante" por razones obvias.
 

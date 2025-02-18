@@ -8,24 +8,9 @@
   - [5. Programar el Arduino](#5-programar-el-arduino)
   - [6. Programación](#6-programación)
   - [7. Botones](#7-botones)
-  - [Componentes](#componentes)
-  - [Pulsadores](#pulsadores)
-  - [Esquema de conexión](#esquema-de-conexión)
-  - [Diagrama de cableado](#diagrama-de-cableado)
-  - [Las conexiones que vamos a tener que realizar son las siguientes:](#las-conexiones-que-vamos-a-tener-que-realizar-son-las-siguientes)
   - [Explicación del código](#explicación-del-código)
-- [Conexión a tierra](#conexión-a-tierra)
-  - [Código completo](#código-completo)
   - [Fuente de alimentación](#fuente-de-alimentación)
-  - [Especificaciones del producto](#especificaciones-del-producto)
-  - [Configuración de voltaje de salida](#configuración-de-voltaje-de-salida)
   - [Pantalla LCD](#pantalla-lcd)
-  - [Circuito integrado LCD1602](#circuito-integrado-lcd1602)
-  - [Pines](#pines-1)
-  - [Esquema de conexión](#esquema-de-conexión-1)
-  - [Diagrama de cableado](#diagrama-de-cableado-1)
-  - [Potenciómetro](#potenciómetro)
-  - [Bibliotecas o librerías de funciones](#bibliotecas-o-librerías-de-funciones)
   - [7 segments (4 dígitos)](#7-segments-4-dígitos)
   - [7 segments (1 dígito)](#7-segments-1-dígito)
   - [Combinaciones](#combinaciones)
@@ -37,13 +22,13 @@
   - [Paso uno: conexión 74HC595](#paso-uno-conexión-74hc595)
   - [Paso uno: conexión 74HC595](#paso-uno-conexión-74hc595-1)
   - [Paso 2: conectar el display de siete segmentos](#paso-2-conectar-el-display-de-siete-segmentos)
-  - [Código](#código-1)
+  - [Código](#código)
   - [LED con 74HC595](#led-con-74hc595)
   - [74HC595 Registro de desplazamiento](#74hc595-registro-de-desplazamiento)
   - [Conexión](#conexión-1)
   - [Esquema](#esquema)
   - [Diagrama de cableado](#diagrama-de-cableado-4)
-  - [Código](#código-2)
+  - [Código](#código-1)
   - [LED RGB](#led-rgb)
   - [Componentes necesarios](#componentes-necesarios-2)
   - [LED RGB](#led-rgb-1)
@@ -130,10 +115,10 @@
 - [Sensors](#sensors-1)
   - [Termistor](#termistor)
   - [Tipos de termistores](#tipos-de-termistores)
+  - [Código](#código-6)
   - [Código](#código-7)
   - [Código](#código-8)
-  - [Código](#código-9)
-  - [Montaje](#montaje-3)
+  - [Montaje](#montaje-4)
   - [Sensor humedad temperatura DHT11](#sensor-humedad-temperatura-dht11)
   - [Parámetros del sensor](#parámetros-del-sensor)
   - [Humedad relativa](#humedad-relativa)
@@ -142,8 +127,8 @@
   - [Descripción de pines](#descripción-de-pines)
   - [Esquema](#esquema-7)
   - [Diagrama](#diagrama)
-  - [Montaje](#montaje-4)
-  - [Código](#código-10)
+  - [Montaje](#montaje-5)
+  - [Código](#código-9)
   - [Salida en el monitor](#salida-en-el-monitor)
   - [Salida de datos](#salida-de-datos)
 - [Interruptor de bola](#interruptor-de-bola)
@@ -152,14 +137,14 @@
   - [Conexión](#conexión-4)
   - [Esquema](#esquema-8)
   - [Diagrama de conexiones](#diagrama-de-conexiones)
-  - [Código](#código-11)
+  - [Código](#código-10)
   - [Comprobar funcionamiento](#comprobar-funcionamiento)
   - [Detectores IR vs fotocélulas](#detectores-ir-vs-fotocélulas)
   - [¿Qué podemos medir?](#qué-podemos-medir)
   - [Esquema de conexiones](#esquema-de-conexiones)
   - [Diagrama de cableado](#diagrama-de-cableado-8)
-  - [Montaje](#montaje-5)
-  - [Código](#código-12)
+  - [Montaje](#montaje-6)
+  - [Código](#código-11)
 - [Joystick analógico](#joystick-analógico)
   - [Pines del Joystick](#pines-del-joystick)
   - [Pines del Joystick](#pines-del-joystick-1)
@@ -167,7 +152,7 @@
   - [Datos](#datos)
   - [Esquema](#esquema-9)
   - [Diagrama de cableado](#diagrama-de-cableado-9)
-  - [Código](#código-13)
+  - [Código](#código-12)
   - [Sensor luz (fotocelula)](#sensor-luz-fotocelula)
   - [Resumen](#resumen-1)
   - [Fotocélula](#fotocélula)
@@ -176,7 +161,7 @@
   - [Diagrama de cableado](#diagrama-de-cableado-10)
   - [Código para leer valor de un LDR](#código-para-leer-valor-de-un-ldr)
   - [Código encender un LED cuando la luz es baja](#código-encender-un-led-cuando-la-luz-es-baja)
-  - [Código](#código-14)
+  - [Código](#código-13)
   - [Sensor ultrasonico](#sensor-ultrasonico)
   - [Componentes necesarios](#componentes-necesarios-6)
   - [Características técnicas](#características-técnicas)
@@ -185,8 +170,8 @@
   - [Sensor](#sensor)
   - [Conexión](#conexión-6)
   - [Diagrama de cableado](#diagrama-de-cableado-11)
-  - [Montaje](#montaje-6)
-  - [Código](#código-15)
+  - [Montaje](#montaje-7)
+  - [Código](#código-14)
   - [Tira de LEDs](#tira-de-leds)
   - [WS2812B](#ws2812b)
   - [Alimentación](#alimentación)
@@ -200,7 +185,7 @@
 - [Wi-Fi](#wi-fi)
 - [ESP8266 NodeMCU](#esp8266-nodemcu)
 - [ESP8266](#esp8266)
-  - [Componentes](#componentes-1)
+  - [Componentes](#componentes)
   - [Aplicaciones principales](#aplicaciones-principales)
   - [Código fuente](#código-fuente-1)
   - [Subida](#subida)
@@ -532,22 +517,7 @@ En esta lección, aprenderemos a utilizar los botones con entradas digitales par
 - Al presionar el primer botón se encenderá el LED
 - Al pulsar el otro botón se apagará el LED.
 
-## Componentes
-
-Antes de comenzar necesitaremos los siguientes componentes:
-
-| cantidad | componente                |
-| -------- | ------------------------- |
-| 1        | Placa``Arduino`` UNO      |
-| 1        | protoboard                |
-| 1        | LED rojo                  |
-| 1        | resistencia de 220 ohmios |
-| 2        | interruptores             |
-| 7        | cables jumper             |
-
-## Pulsadores
-
-Los interruptores son componentes muy simples. Al pulsar un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro terminales**, lo cual puede resultar un poco confuso.
+Los **interruptores** son componentes muy simples. Al pulsar un botón, conectan dos contactos para que la electricidad fluya a través de ellos. Los interruptores de esta lección tienen **cuatro terminales**, lo cual puede resultar un poco confuso.
 
 En realidad, solo hay dos conexiones eléctricas.
 
@@ -557,15 +527,15 @@ En realidad, solo hay dos conexiones eléctricas.
 
 ![imagen](media/image67.jpeg)
 
-## Esquema de conexión
+### Esquema de conexión
 
 ![bg contain](media/image68.jpeg)
 
-## Diagrama de cableado
+### Diagrama de cableado
 
 ![imagen](media/image69.jpeg)
 
-## Las conexiones que vamos a tener que realizar son las siguientes:
+### Las conexiones que vamos a tener que realizar son las siguientes
 
 ![imagen](media/image70.jpeg)
 
@@ -589,7 +559,7 @@ La función **setup** configura el pin 'ledPin' como salida, mientras que defini
 - El modo **INPUT_PULLUP** indica que el pin debe ser utilizado como una entrada, pero cuando no hay nada conectado a la entrada, esta permanece en estado **HIGH**.
 - En otras palabras, la entrada tiene un valor predeterminado de **HIGH**, a menos que se cambie a **LOW** al pulsar el botón. Esto permite que el botón controle la conexión a tierra y active la acción deseada.
 
-# Conexión a tierra
+### Conexión a tierra
 
 Los interruptores están conectados a tierra por una razón importante. Cuando se presiona un interruptor, este conecta la clavija de entrada a tierra, cambiando su estado de alto a bajo.
 
@@ -600,7 +570,7 @@ En la función **setup**, configuramos el pin 'ledPin' como salida y las otras d
 
 La lógica puede parecer un poco invertida, ya que la entrada está normalmente en alto y solo cambia a bajo cuando se presiona el botón. Manejaremos esto en la **función loop**.
 
-## Código completo
+### Código completo
 
 ```c linenums="1" title="pruebaBoton.ino"
 int ledPin = 5; //pin a que hemos conectado el LED
@@ -627,22 +597,26 @@ void loop()
 }
 ```
 
-title: Arduino
-footer: 16 de maig de 2023 | Daniel Moreno 🌐 <github.com/danimrprofe> | **Braç robòtic**
-_footer: ""
-paginate: true
-_paginate: false
-_class: invert
-marp: true
-headingDivider: 1
-
 ## Fuente de alimentación
 
-El pequeño motor de corriente continua es probable que use más energía que la que``Arduino`` puede suministrar. Si tratamos de conectar el motor directamente a un pin, podríamos dañarlo. Para ello usar un **módulo de alimentación** que proporciona electricidad al motor.
+Este es un **módulo de alimentación** para protoboard. Se trata de una placa diseñada para suministrar energía a un breadboard (protoboard), facilitando la alimentación de circuitos electrónicos.
 
-![imagen](media/image139.jpeg)
+Entrada de alimentación:
 
-## Especificaciones del producto
+- **Conector Jack DC** (a la derecha en la imagen), normalmente compatible con adaptadores de 7V a 12V.
+- **Puerto USB** (a la izquierda), que permite alimentar el módulo con una fuente USB de 5V.
+- **Reguladores de voltaje**: La placa tiene reguladores de tensión que permiten generar 3.3V y 5V a partir de la entrada de alimentación.
+
+Salidas de alimentación:
+
+- Se pueden ver varios pines etiquetados como 3.3V, 5V, GND, que permiten distribuir la energía al protoboard.
+- También hay un interruptor para seleccionar entre 3.3V y 5V según las necesidades del circuito.
+
+**Indicador LED:** El pequeño LED verde indica que la alimentación está activada.
+
+![](img/2025-02-18-10-54-41.png)
+
+### Especificaciones del producto
 
 - Bloqueo Encendido interruptor LED Power indicador
 - Entrada voltaje: 6.5-9v (CC) través 5.5mm x 2,1 mm enchufe
@@ -652,7 +626,7 @@ El pequeño motor de corriente continua es probable que use más energía que la
 - Tamaño: 2.1 en x 1.4 en
 - USB dispositivo conector a bordo a power externos dispositivo
 
-## Configuración de voltaje de salida
+### Configuración de voltaje de salida
 
 ![imagen](media/image140.jpeg)
 
@@ -673,11 +647,11 @@ La pantalla tiene una retroiluminación de LED y puede mostrar ``dos filas con h
 
 ![](img/2023-03-24-10-17-19.png)
 
-## Circuito integrado LCD1602
+### Circuito integrado LCD1602
 
 La pantalla está incrustada en un circuito integrado que la controla, llamado ``LCD1602``. Este circuito integrado se encarga de controlar la visualización de los caracteres en la pantalla, así como la retroiluminación LED.
 
-## Pines
+### Pines
 
 - ``VSS`` Un pin que se conecta a tierra
 - ``VDD`` Un pin que se conecta a un + 5V fuente de alimentación
@@ -687,11 +661,11 @@ La pantalla está incrustada en un circuito integrado que la controla, llamado `
 - ``D0-D7`` son los pines para escribir y leer datos.
 - ``A y K`` controlan de la retroiluminación LED de los pernos
 
-## Esquema de conexión
+### Esquema de conexión
 
 ![imagen](media/image110.jpeg)
 
-## Diagrama de cableado
+### Diagrama de cableado
 
 ![imagen](media/image111.jpeg)
 
@@ -700,20 +674,19 @@ La pantalla LCD necesita:
 - 6 pines digitales de datos de``Arduino``
 - Coneciones de 5V y GND.
 
-## Potenciómetro
+### Potenciómetro
 
 El **potenciómetro** se utiliza para controlar el ``contraste`` de la pantalla. En ocasiones se ajusta con un pequeño destornillador. El potenciómetro utilizado será de ``10 KOhm``
 
 ![](img/2023-03-28-12-59-15.png)
 
-## Bibliotecas o librerías de funciones
-Las **bibliotecas** son conjuntos de funciones predefinidas que permiten a los usuarios realizar tareas específicas sin tener que escribir todo el código desde cero.
+### Bibliotecas o librerías de funciones
 
-Antes de ejecutar este código, asegúrate de haber instalado la biblioteca ``LiquidCrystal`` o de volver a instalarla si es necesario. De lo contrario, el código no funcionará.
+Antes de ejecutar este código, asegúrate de haber instalado la **biblioteca** ``LiquidCrystal`` o de volver a instalarla si es necesario. De lo contrario, el código no funcionará.
 
 Lo primero que nota en el dibujo es la línea:
 
-```arduino
+```c
 #include <LiquidCrystal.h>
 ```
 
@@ -806,7 +779,7 @@ Cada dígito tiene 7 segmentos (A a G) y un punto decimal (D1 a D4).
 
 ![imagen](media/image137.jpeg)
 
-### Código
+### Montaje
 
 ![imagen](media/image138.jpeg)
 
@@ -844,7 +817,7 @@ Abajo está el diagrama de pines de siete segmentos
 Los números del 0 al 9 se representan en un display de siete segmentos mediante la activación de segmentos individuales. Cada LED, en caso de recibit un 1, se ilumina. Combinando todos los LED podemos hacer todos los números
 
 | dp  | a	b	c	d	e	f	g   |
-|  |  |
+| --- | --------------- |
 | 0   | 0	1	1	1	1	1	1	0 |
 | 1   | 0	0	1	1	0	0	0	0 |
 | 2   | 0	1	1	0	1	1	0	1 |

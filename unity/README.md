@@ -7,13 +7,12 @@ s- [Unity](#unity)
 - [Cambiar resolución](#cambiar-resolución)
 - [Cambiar el layout](#cambiar-el-layout)
 - [05. Componentes](#05-componentes)
-  - [Los componentes se añaden a un objeto y modifican sus propiedades](#los-componentes-se-añaden-a-un-objeto-y-modifican-sus-propiedades)
   - [Componentes de un objeto](#componentes-de-un-objeto)
   - [4. Crear pelota](#4-crear-pelota)
-  - [Crear jugadores](#crear-jugadores)
+  - [Crear Jugadores y Paredes](#crear-jugadores-y-paredes)
   - [Duplicar objetos](#duplicar-objetos)
   - [Sprites](#sprites)
-  - [Crear paredes de los lados](#crear-paredes-de-los-lados)
+  - [Crear Paredes de los Lados](#crear-paredes-de-los-lados)
   - [07. Nombrando los objetos](#07-nombrando-los-objetos)
   - [08. Creando los jugadores](#08-creando-los-jugadores)
 - [Pelota](#pelota)
@@ -50,24 +49,16 @@ s- [Unity](#unity)
   - [Inteligencia artificial](#inteligencia-artificial)
 - [ESCENAS](#escenas)
   - [Crear botones](#crear-botones)
-- [Plataformas 2D](#plataformas-2d)
-  - [1. Crear proyecto](#1-crear-proyecto)
-- [2. Importar assets](#2-importar-assets)
-  - [3. Crear tilemap](#3-crear-tilemap)
-  - [4. Crear paleta y pintar la escena](#4-crear-paleta-y-pintar-la-escena)
-  - [5. Asignar collider al tilemap](#5-asignar-collider-al-tilemap)
-  - [Colisiones](#colisiones)
-  - [6. Asignar rigidbody al personaje](#6-asignar-rigidbody-al-personaje)
-  - [7. Crear movimiento lateral del personaje](#7-crear-movimiento-lateral-del-personaje)
-  - [8. Crear salto del personaje](#8-crear-salto-del-personaje)
-  - [9. Mejorar el salto (betterjump)](#9-mejorar-el-salto-betterjump)
-  - [10. Recolección de fruta con animación](#10-recolección-de-fruta-con-animación)
 
 # Unity
 
 Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
 
-![logo de unity](img/2022-10-13-00-34-17.png)
+Unity es un motor de videojuegos multiplataforma muy popular que permite desarrollar juegos en 2D y 3D para diversas plataformas, como **PC, consolas, móviles y realidad virtual**.
+
+Se basa en **C#** para la programación y cuenta con una amplia comunidad y una tienda de activos que facilita el desarrollo.
+
+![](img/2025-02-19-12-34-23.png)
 
 ## Proyectos
 
@@ -151,7 +142,7 @@ Podemos observar los proyectos, la carpeta en la que se guarda el proyecto, así
 
 Existen diferentes ``plantillas`` de proyecto que podemos utilizar y que vienen configuradas con diferentes opciones, según el tipo de juego que queramos hacer,
 
-![imagen](media/image1.png)
+![](img/2025-02-19-12-36-54.png)
 
 ### Crear nuestro proyecto
 
@@ -163,29 +154,30 @@ Arriba podréis elegir la versión del editor con la que vais a crear el proyect
 
 # Cambiar resolución
 
-Vamos a cambiar la ``resolución`` por la típica que se utiliza en pantallas que es la **16:9**.
+En Unity, la relación de **aspecto** (aspect ratio) se refiere a la proporción entre el ancho y la altura de la pantalla en la que se renderiza el juego. Esto es clave para asegurarse de que los elementos en pantalla se vean correctamente en diferentes dispositivos y resoluciones.
 
 ![](2023-03-02-12-54-52.png)
 
 # Cambiar el layout
 
-Es una funcionalidad versátil que nos permite adaptar la disposición de las **ventanas** según nuestras preferencias y necesidades específicas.  Elegiremos la disposición ``2 by 3``.
+En Unity, puedes cambiar el **layout** de las ventanas para adaptarlo a tu flujo de trabajo.
 
-![imagen](media/image2.png)
+![](img/2025-02-19-12-40-05.png)
+
+Cómo Cambiar el Layout en Unity
+
+1. Abrir el menú de layouts
+2. En la barra superior de Unity, ve a ``Window > Layouts``.
+3. Aparecerán varias opciones predefinidas. Seleccionar "2 by 3"
+4. Unity reorganizará las ventanas en **dos** columnas a la izquierda y **tres** filas a la derecha.
 
 # 05. Componentes
 
-![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos6.png)
-
-## Los componentes se añaden a un objeto y modifican sus propiedades
-
-Debajo veréis que se pueden agregar más componentes \( __add component__ \) según este objeto lo necesite\.
-
-![](img%5CTaller%20de%20creaci%C3%B3n%20de%20videojuegos7.png)
+En un juego de Unity, los **objetos** o GameObjects representan los elementos del juego, y sus **componentes** definen su apariencia y comportamiento.
 
 ## Componentes de un objeto
 
-En ``Unity``, cada objeto tiene asociados componentes que modifican su comportamiento y cada uno de ellos presenta sus propias opciones. Esto permite personalizar el objeto y darle una funcionalidad específica.
+En ``Unity``, cada objeto tiene asociados **componentes** que modifican su comportamiento y cada uno de ellos presenta sus propias opciones. Esto permite personalizar el objeto y darle una funcionalidad específica.
 
  ``Unity`` permite personalizar los objetos para darles una funcionalidad específica mediante el uso de componentes asociados a cada uno. Por ejemplo, para un objeto 'player' los **componentes** incluyen:
 
@@ -202,14 +194,27 @@ Dentro de nuestra ventana lo que vamos a hacer es ``clic derecho`` y darle a ``s
 
 ![](2023-03-02-12-56-44.png)
 
-## Crear jugadores
+El **2D Object > Sprite > Square** en Unity solo tiene dos componentes principales:
 
-Para los jugadores para las paredes para todoporque vamos a poder pues escalarlo enlos diferentes ejes y pues nos va aayudar a crear por como comentó el juegoen sí vamos a necesitar ni bajarnosninguna se ni nada va a ser todochocaron aquí en juniti así que buenogenera seguido un primer momento vamos acrear las paredes de arriba y de abajoentonces para ello
+- **Transform**: Controla la posición, rotación y escala del objeto.
+- **Sprite Renderer**: Se encarga de dibujar el sprite en la pantalla.
 
-1. Vamos a la escala y vamos a colocarla en el eje x alo que sería un valor de 18
-2. Ahora vamos a colocarlo en la posición 0 y 0 en el eje x y y
-3. Ahora lo que vamos ahacer es subirlo hacia arriba para ello
-4. También podéis pulsar +w+ cuando tengáis este objeto seleccionado y entonces pues podréis moverlo en ese eje en específico.
+Además de estos, podemos agregarle más componentes si lo necesitamos.
+
+## Crear Jugadores y Paredes
+
+Para construir los jugadores y las paredes en **Pong**, utilizaremos **GameObjects** escalables en diferentes ejes sin necesidad de descargar ningún recurso adicional. Todo se creará directamente en Unity.
+
+### 1. Crear las Paredes (Superior e Inferior)
+
+1. **Crear un GameObject:** Ve a **GameObject > 2D Object > Sprite > Square** para añadir un objeto cuadrado.
+2. **Escalar en el eje X:** En el **Inspector**, ajusta la **escala en X** a **18** para que cubra el ancho de la pantalla.
+3. **Posicionar en el centro:** Ajusta la **posición en X e Y** a **(0,0)** para centrarlo.
+4. **Mover la pared superior:**
+   - Selecciona el objeto y usa la herramienta de mover (atajo de teclado **W**).
+   - Arrástralo hacia arriba para colocarlo en la parte superior de la pantalla.
+
+Repite el proceso para la pared inferior, pero moviéndola hacia abajo.
 
 ## Duplicar objetos
 
@@ -227,22 +232,32 @@ Los ``sprites`` se pueden mover, girar, escalar y rotar fácilmente con ``Unity`
 
 Todos los objetos por defecto tienen una posición y un tamaño\. Esto se cambia en el ``componente Transform``
 
-## Crear paredes de los lados
+## Crear Paredes de los Lados
+
+### 1. Crear la Primera Pared
 
 A partir de un jugador:
 
-1. ``duplicar`` el objeto
-2. Escalar hasta colocarlo como toca
+1. **Duplicar el objeto:** Haz clic derecho sobre el objeto y selecciona **Duplicate**.
+2. **Escalar el objeto:** Ajusta la escala hasta que se coloque correctamente.
+3. **Paneo con la rueda del ratón:** Si pulsas la rueda del ratón, puedes hacer un paneo en la escena.
 
-Si pulsáis la ``rueda`` del ratón podéis hacer una especie de ``paneo``.
+Ahora, para colocar la pared en su lugar:
 
-Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este caso lo que vamos a hacer es poner en la posición de y a 0 y aquí vamos a modificar la posición en el eje x en este caso la podemos poner por ejemplo en ocho y más o menos vemos que se queda cerca de lo que sería pero estas paredes no se tienen que ver tienen que estar por la parte de fuera.
+1. **Posicionar en el eje Y:** Coloca la posición en **Y** a **0**.
+2. **Posicionar en el eje X:** Modifica la posición en el eje **X**. Por ejemplo, ponla en **X = 8** o una posición similar que se ajuste a lo que buscas. Estas paredes deben estar fuera de la vista, en los bordes de la pantalla.
 
-Vamos a colocar pues por ejemplo ahí lo quesería pues yo creo que el nueve y medio va bien estas paredes van a ser diferentes a esta nueva entre colisión en el hecho de que no van a hacer que rebote la pelota sino que cuando colisionan con esta pared va a ser como la portería de un jugador o del otro y entonces pues se añadirá un punto cuando colisiones perfecto
+Una vez colocada, ajusta la posición en **X** a **9.5** para que quede en el lugar adecuado.
 
-### Crear segunda pared
+### 2. Crear la Segunda Pared
 
-Podemos ``duplicar`` el objeto. y ponerlo en el lado contrario que simplemente poniéndole un negativo en el 9,5 pues se pondrá justo en el otro lado.
+Para crear la segunda pared:
+
+1. **Duplicar el objeto:** Duplicamos la pared que ya hemos creado.
+2. **Colocarla en el lado contrario:** Coloca la segunda pared en el lado opuesto, simplemente poniendo un valor negativo en el **X** (por ejemplo, **X = -9.5**). Esto pondrá la pared en el otro lado de la pantalla.
+
+### Comportamiento de las Paredes
+Estas paredes laterales deben ser diferentes a las paredes superior e inferior en cuanto a **colisiones**. No deben hacer que la pelota rebote. En lugar de eso, deben funcionar como las **porterías** de un jugador o del otro, lo que significa que cuando la pelota colisione con estas paredes, se añadirá un **punto** a un jugador.
 
 ## 07. Nombrando los objetos
 

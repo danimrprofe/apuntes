@@ -2,10 +2,33 @@
 - [GESTIÓ DE FITXERS I FORMATS D'EMMAGATZEMAMENT D'INFORMACIÓ](#gestió-de-fitxers-i-formats-demmagatzemament-dinformació)
   - [1. Fitxers](#1-fitxers)
   - [2. Tipus de fitxers](#2-tipus-de-fitxers)
+    - [Estructura bàsica d'un fitxer](#estructura-bàsica-dun-fitxer)
   - [3. Treball amb Python](#3-treball-amb-python)
+    - [Modes d'obertura d'arxius en Python](#modes-dobertura-darxius-en-python)
+    - [Exemples d'obertura d'arxius](#exemples-dobertura-darxius)
+    - [Imprimir contingut per pantalla](#imprimir-contingut-per-pantalla)
+    - [Llegir línea per línia](#llegir-línea-per-línia)
+    - [Eliminar un archivo](#eliminar-un-archivo)
+    - [Mode escriptura](#mode-escriptura)
+    - [Mode annexar](#mode-annexar)
+    - [Borrar una línea concreta](#borrar-una-línea-concreta)
+    - [Modificar una línea concreta](#modificar-una-línea-concreta)
+    - [Insertar una línea en una posición concreta](#insertar-una-línea-en-una-posición-concreta)
   - [4. Format CSV](#4-format-csv)
+    - [Guardar dades en un fitxer CSV](#guardar-dades-en-un-fitxer-csv)
+    - [Llegir des d'un fitxer](#llegir-des-dun-fitxer)
   - [5. FORMAT JSON](#5-format-json)
+    - [Característiques principals de JSON](#característiques-principals-de-json)
+    - [Estructura bàsica de JSON](#estructura-bàsica-de-json)
+    - [Parelles clau-valor](#parelles-clau-valor)
+    - [Objectes](#objectes)
+    - [Llistes](#llistes)
+    - [Treball amb Python](#treball-amb-python)
+    - [On es fa servir JSON?](#on-es-fa-servir-json)
+    - [Guardar i llegir a un arxiu JSON](#guardar-i-llegir-a-un-arxiu-json)
   - [6. JOC amb JSON](#6-joc-amb-json)
+    - [Arxiu de configuració](#arxiu-de-configuració)
+    - [Arxiu de joc](#arxiu-de-joc)
 
 # GESTIÓ DE FITXERS I FORMATS D'EMMAGATZEMAMENT D'INFORMACIÓ
 
@@ -421,62 +444,75 @@ import json  # Mòdul per treballar amb fitxers i dades en format JSON (serialit
 import random  # Mòdul per generar valors aleatoris, com números, eleccions aleatòries en llistes, etc.
 import os  # Mòdul per interactuar amb el sistema operatiu, com gestionar fitxers i directoris.
 
-# Nombre del archivo JSON donde guardaremos los parámetros
-CONFIG_FILE = "config.json"
+ARCHIVO_CONFIG = "configuracion.json"  # Nombre del archivo donde se guardará la configuración del juego
 
-# Función para guardar los parámetros en un archivo JSON
-def guardar_configuracion(data, filename=CONFIG_FILE):
-    with open(filename, "w") as file:
-        json.dump(data, file, indent=4)
-    print(f"Configuración guardada en {filename}")
+# Función para guardar la configuración en un archivo JSON
+def guardar_configuracion(datos, ARCHIVO_CONFIG):
+    archivo = open(ARCHIVO_CONFIG, "w")
+    json.dump(datos, archivo, indent=2)  # Serializa los datos en formato JSON
+    print(f"Configuración guardada en {ARCHIVO_CONFIG}")
 
-# Función para leer los parámetros desde un archivo JSON
-def cargar_configuracion(filename=CONFIG_FILE):
-    if os.path.exists(filename):  # Verifica si el archivo exist
-        with open(filename, "r") as file:
-            return json.load(file)
+# Función para cargar la configuración desde el archivo JSON o crear una nueva si no existe
+def cargar_configuracion(ARCHIVO_CONFIG):
+    if os.path.exists(ARCHIVO_CONFIG):
+        archivo = open(ARCHIVO_CONFIG, "r")
+        return json.load(archivo)  # Carga los datos desde el archivo JSON
     else:
-        print("Veo que es tu primera vez.")
+        # Si no hay configuración previa, se inicia un nuevo perfil
+        print("Es tu primera vez.")
         nombre = input("¿Cómo te llamas?")
-        config_data = {}
-        config_data["usuario"] = nombre
-        config_data["dificultad"] = 10
-        config_data["victorias"] = 0
-        config_data["derrotas"] = 0
-        return config_data  # Retorna valores por defecto si el archivo no existe
+        configuracion = {
+            "usuario": nombre,
+            "dificultad": 10,  # Dificultad predeterminada
+            "victorias": 0,
+            "derrotas": 0
+        }
+        return configuracion
 
-config_data = cargar_configuracion()
+# Cargar o crear la configuración del usuario
+configuracion = cargar_configuracion(ARCHIVO_CONFIG)
 
-print("Bienvenido",config_data["usuario"],"Qué deseas hacer")
-print("1.Jugar")
-print("2.Cambiar dificultad")
+# Menú principal del juego
+print("Bienvenido", configuracion["usuario"])
+print(f"Llevas {configuracion["victorias"]} victorias y {configuracion["derrotas"]} derrotas")
+print("¿Qué quieres hacer?")
+print("1. Jugar")
+print("2. Cambiar dificultad")
+
 accion = int(input())
+
+# Opción para cambiar la dificultad del juego
 if accion == 2:
-    dificultad = config_data["dificultad"]
-    print("La dificultad actual es:",dificultad)
-    dificultad = int(input("Elige nueva dificultad (1-5)"))
-    print("Has cambiado a dificultad:",dificultad)
-    config_data["dificultad"] = dificultad
-    # Guardar la configuración inicial
-    guardar_configuracion(config_data)
+    dificultad = configuracion["dificultad"]
+    print("La dificultad actual es", dificultad)
+    dificultad = int(input(f"Elige nueva dificultad (1-10)"))
+    configuracion["dificultad"] = dificultad
+    guardar_configuracion(configuracion,ARCHIVO_CONFIG)
+
+# Opción para jugar el juego de adivinar el número
 elif accion == 1:
-    numero = random.randint(1,10)
-    print("🎲 Adivina un número del 1 al 10. Tienes 3 intentos.")
+    dificultad = configuracion["dificultad"]
+    numero = random.randint(1, dificultad)  # Genera un número aleatorio según la dificultad
+    print("Adivina un número del 1 al", dificultad)
+    print("Tienes 3 intentos")
+
+    # Bucle para los 3 intentos
     for intento in range(1, 4):
         numero_elegido = int(input(f"Intento {intento}: "))
         if numero_elegido == numero:
-            print(f"🎉 ¡Felicidades! Adivinaste el número {numero} en {intento} intentos.")
-            config_data["victorias"] = config_data["victorias"] +1
+            print("¡Felicidades, has acertado!")
+            configuracion["victorias"] += 1  # Suma una victoria al perfil del usuario
             break
         elif numero_elegido < numero:
-            print("📉 El número es mayor.")
+            print("El número es mayor")
         else:
-            print("📈 El número es menor.")
+            print("El número es menor")
 
-        # Si es el último intento y no acertó, muestra el número correcto
         if intento == 3:
-            print(f"❌ Has perdido. El número era {numero}.")
-            config_data["derrotas"] = config_data["derrotas"] +1
-    guardar_configuracion(config_data)
+            print(f"Has perdido, el número era {numero}")
+            configuracion["derrotas"] += 1  # Suma una derrota al perfil del usuario
+
+    # Guardar la configuración actualizada tras el juego
+    guardar_configuracion(configuracion, ARCHIVO_CONFIG)
 
 ```

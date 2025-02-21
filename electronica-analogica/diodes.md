@@ -20,10 +20,6 @@ Segons el tipus d'impureses que s'hi afegeixen, els semiconductors es poden clas
 - S'obtenen afegint impureses com el bor o l'indi.
 - Aquest tipus de semiconductor té una **major concentració de forats** (l'espai buit que deixen els electrons en moure's), que es comporten com a càrregues positives.
 
-
-
-
-
 ## 1. Definició
 Un **diode** és un component electrònic que permet el pas de corrent en un sentit i impedeix el pas de corrent en l'altre.
 - El diode té **2 terminals**:

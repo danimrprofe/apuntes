@@ -52,25 +52,38 @@ s- [Unity](#unity)
 
 # Unity
 
-Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor ``Unity``, que nos permite crear proyectos 2D y 3D.
+En este tema vamos a trabajar el desarrollo de videojuegos. Para crear un videojuego, hacen falta conocimientos de diseño y de programación. Para el diseño, utilizaremos un motor de videojuegos llamado ``Unity``, que nos permite crear proyectos 2D y 3D. También existen otros motores, como **unreal engine**, pero más complejos y caros.
 
-Unity es un motor de videojuegos multiplataforma muy popular que permite desarrollar juegos en 2D y 3D para diversas plataformas, como **PC, consolas, móviles y realidad virtual**.
+Unity es un motor de videojuegos **multiplataforma**. Es decir, que permite desarrollar juegos en 2D y 3D para diversas plataformas, como:
 
-Se basa en **C#** para la programación y cuenta con una amplia comunidad y una tienda de activos que facilita el desarrollo.
+- PC
+- Consolas
+- Móviles
+- Gafs de realidad virtual
+
+Además del propio diseño, la lógica del juego y el comportamiento de sus diferentes elementos se programan con un lenguaje de programación, en nuestro caso el lenguaje utilizado es **C#**. Para la programación, cualquier IDE es válido. Nosotros utilizaremos **Visual Studio Code**.
 
 ![](img/2025-02-19-12-34-23.png)
 
 ## Proyectos
 
-Durante este curso haremos dos proyectos. Para ambos nos vamos a basar en los tutoriales del canal de **luiscanary**.
+Durante este curso haremos dos proyectos guiados. Para ambos nos vamos a basar en los tutoriales del canal de **luiscanary**.
 
 **Proyecto 1:** pong
+
+El primer proyecto es un proyecto 2D sin físicas de gravedad, el juego clásico de Pong. En él, dos palas accionadas con control del teclado harán rebotar una pelota, intentando que entre en la portería contraria.
 
 Playlist: https://www.youtube.com/watch?v=Mk8e5an2mG8&list=PLNEAWvYbJJ9ltqR_CI5-ZV7p6Emz-v-di
 
 ![](img/2023-12-02-20-05-58.png)
 
 **Proyecto 2:** plataformas 2D
+
+En este proyecto aumentará la complejidad pues:
+
+- Los sprites contendran imágenes de tipo pixel art. En nuestro caso utilizaremos una librería de **assets** o recursos gratuitos, para evitarnos tener que crear todas las imágenes.
+- Incorporaremos **físicas** relacionadas gravedad, por lo que nuestro jugador tendrá que saltar.
+- Crearemos **materiales** que variaran el comportamiento de las diferentes superficies.
 
 Playlist: https://www.youtube.com/watch?v=-m7ZaHhkDAc&list=PLNEAWvYbJJ9kZpaIg2RfzAc_KZixBgchT
 

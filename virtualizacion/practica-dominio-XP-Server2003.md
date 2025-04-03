@@ -399,7 +399,8 @@ Cuando las instalas en la MV, obtienes beneficios como:
 
 Para pasar archivos entre tu máquina real y la virtual en VirtualBox 6, tienes varias opciones:
 
-🔹 1. Carpetas Compartidas (Recomendado)
+#### 1. Carpetas Compartidas (Recomendado)
+
 Si necesitas transferir archivos con frecuencia, esta opción es la mejor.
 
 🔹 Cómo configurar una carpeta compartida:
@@ -418,7 +419,8 @@ Ahí verás la carpeta compartida con tu máquina real.
 
 💡 Si no aparece, prueba instalando las Guest Additions como mencioné antes.
 
-🔹 2. Arrastrar y Soltar (Solo si Guest Additions está instalado)
+#### 2. Arrastrar y Soltar (Solo si Guest Additions está instalado)
+
 Si tienes las Guest Additions instaladas, activa la opción en Configuración > General > Avanzado.
 
 Elige Bidireccional para que funcione en ambos sentidos.
@@ -427,17 +429,21 @@ Ahora puedes arrastrar y soltar archivos directamente entre el anfitrión y la M
 
 ⚠️ Esta opción a veces no funciona bien en Windows XP.
 
-🔹 3. Usar una Unidad USB
-Si tienes un pendrive, puedes conectarlo a la MV.
-1️⃣ En Configuración > USB, habilita el Controlador USB 2.0 o 3.0.
-2️⃣ Agrega tu dispositivo USB desde el icono de "Agregar filtro".
-3️⃣ Cuando inicies la MV, tu Windows XP debería reconocer el pendrive.
+#### 3. Usar una Unidad USB
 
-🔹 4. Montar una Imagen ISO
+Si tienes un pendrive, puedes conectarlo a la MV.
+
+- 1️⃣ En Configuración > USB, habilita el Controlador USB 2.0 o 3.0.
+- 2️⃣ Agrega tu dispositivo USB desde el icono de "Agregar filtro".
+- 3️⃣ Cuando inicies la MV, tu Windows XP debería reconocer el pendrive.
+
+#### 4. Montar una Imagen ISO
+
 Si tienes varios archivos, puedes crear una imagen ISO y montarla en la MV:
-1️⃣ Usa un programa como ImgBurn o PowerISO para crear la ISO en la máquina real.
-2️⃣ En VirtualBox, ve a Configuración > Almacenamiento y agrega la ISO en la unidad de CD.
-3️⃣ Dentro de Windows XP, abre el CD y extrae los archivos.
+
+- 1️⃣ Usa un programa como ImgBurn o PowerISO para crear la ISO en la máquina real.
+- 2️⃣ En VirtualBox, ve a Configuración > Almacenamiento y agrega la ISO en la unidad de CD.
+- 3️⃣ Dentro de Windows XP, abre el CD y extrae los archivos.
 
 🔹 5. Servidor FTP o Compartición en Red
 Si ambas máquinas están en la misma red, puedes:
@@ -447,7 +453,8 @@ Compartir una carpeta en la red y acceder desde XP.
 Montar un servidor FTP en la máquina real y descargar desde XP con un cliente FTP (como FileZilla).
 
 🔥 ¿Cuál es la mejor opción?
-🔹 Si transfieres archivos frecuentemente: Carpetas compartidas.
-🔹 Si son archivos pequeños y ocasionales: Arrastrar y soltar (si funciona).
-🔹 Si prefieres un método clásico: USB o ISO.
-🔹 Si quieres algo avanzado: Compartición de red o FTP.
+
+- 🔹 Si transfieres archivos frecuentemente: Carpetas compartidas.
+- 🔹 Si son archivos pequeños y ocasionales: Arrastrar y soltar (si funciona).
+- 🔹 Si prefieres un método clásico: USB o ISO.
+- 🔹 Si quieres algo avanzado: Compartición de red o FTP.

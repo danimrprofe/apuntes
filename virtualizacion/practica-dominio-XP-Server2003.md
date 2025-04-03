@@ -1,15 +1,16 @@
-2. Crear la máquina virtual de Windows XP
-Paso 1: Configurar la máquina virtual
+# Configuración de un dominio de Windows con Virtualbox
+## 2. Crear la máquina virtual de Windows XP
+### Paso 1: Configurar la máquina virtual
 Abre VirtualBox y haz clic en "Nueva"
 Nombre: Windows XP
 Tipo: Microsoft Windows
 Versión: Windows XP (32-bit)
 Memoria RAM: 512 MB - 1 GB (según lo que quieras probar).
 Disco duro: Crear uno nuevo (VDI, tamaño fijo, 10-20 GB).
-Paso 2: Configurar almacenamiento y arranque
+### Paso 2: Configurar almacenamiento y arranque
 En la configuración de la máquina, ve a "Almacenamiento".
 Selecciona el Controlador IDE y carga la ISO de Windows XP.
-Paso 3: Instalación de Windows XP
+### Paso 3: Instalación de Windows XP
 Inicia la máquina y arranca desde la ISO.
 Sigue los pasos del instalador de Windows XP.
 Formatea el disco en NTFS.
@@ -17,37 +18,32 @@ Completa la instalación y configura usuario/contraseña.
 
 
 Windows XP SP3: M8DPF-XT324-YBKK9-3VF8C-M2X78
-Paso 4: Instalar VirtualBox Guest Additions (Opcional)
+### Paso 4: Instalar VirtualBox Guest Additions (Opcional)
 Ve a Dispositivos > Insertar imagen de Guest Additions.
 Instala los controladores para mejorar el rendimiento.
-3. Crear la máquina virtual de Windows Server 2003
-Paso 1: Configurar la máquina virtual
+## 3. Crear la máquina virtual de Windows Server 2003
+### Paso 1: Configurar la máquina virtual
 En VirtualBox, haz clic en "Nueva".
-
 
 Nombre: Windows Server 2003
 
-
 Tipo: Microsoft Windows
-
 
 Versión: Windows 2003 (32-bit)
 
-
 Memoria RAM: 1 GB o más.
-
 
 Disco duro: 10-30 GB (según uso).
 
 
-Paso 2: Configurar almacenamiento y red
+### Paso 2: Configurar almacenamiento y red
 En "Almacenamiento", carga la ISO de Windows Server 2003 en el Controlador IDE.
 
 
 En "Red", usa el modo Red Interna si quieres conectar ambas máquinas entre sí.
 
 
-Paso 3: Instalación de Windows Server 2003
+### Paso 3: Instalación de Windows Server 2003
 Arranca la máquina e inicia la instalación desde la ISO.
 Sigue los pasos del instalador y selecciona NTFS como sistema de archivos.
 Configura una contraseña para el administrador.
@@ -65,9 +61,9 @@ Para pulsar Ctrl+alt+supr en la máquina virtual clic derecho en el icono de la 
 
 Iniciamos sesión como administrador:
 
-1. Configuración de red en VirtualBox
+## Configuración de red en VirtualBox
 Antes de configurar las direcciones IP dentro de los sistemas operativos, debemos asegurarnos de que ambos usen la misma red interna en VirtualBox.
-Paso 1: Configurar adaptadores de red en VirtualBox
+### Paso 1: Configurar adaptadores de red en VirtualBox
 En VirtualBox, ve a Configuración > Red en cada máquina virtual.
 
 
@@ -78,7 +74,7 @@ Asegúrate de hacer esto en ambas máquinas.
 
 
 
-2. Configurar Windows Server 2003 (Servidor - IP Fija)
+### 2. Configurar Windows Server 2003 (Servidor - IP Fija)
 Dado que actuará como servidor de red, asignaremos una IP fija.
 Paso 2: Asignar IP en Windows Server 2003
 Abre el Panel de Control > Conexiones de red.
@@ -109,7 +105,7 @@ Guarda los cambios y cierra.
 
 
 
-3. Configurar Windows XP (Cliente - IP Manual o Automática)
+### 3. Configurar Windows XP (Cliente - IP Manual o Automática)
 Windows XP puede recibir una IP por DHCP desde el servidor o configurarse manualmente.
 Opción 1: Configurar IP manualmente en XP
 Ve a Panel de Control > Conexiones de red.
@@ -140,7 +136,7 @@ Guarda los cambios y prueba la conexión (ver paso 4).
 
 
 
-4. Probar la conexión entre ambas máquinas
+### 4. Probar la conexión entre ambas máquinas
 Después de configurar las IPs, verifica que pueden comunicarse:
 Paso 4: Probar conectividad con ping
 En Windows XP, abre Símbolo del sistema (cmd).

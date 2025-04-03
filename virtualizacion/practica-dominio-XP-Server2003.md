@@ -329,19 +329,20 @@ Las Guest Additions (o "Adiciones para invitados") son un conjunto de controlado
 ### ¿Para qué sirven?
 
 Cuando las instalas en la MV, obtienes beneficios como:
-✅ Mejor rendimiento gráfico (drivers de video para resoluciones altas).
-✅ Compartir el portapapeles entre la MV y el anfitrión.
-✅ Arrastrar y soltar archivos entre la MV y el sistema real.
-✅ Carpetas compartidas para intercambiar archivos fácilmente.
-✅ Mejor compatibilidad con periféricos (ratón, teclado, red, etc.).
+
+- ✅ Mejor rendimiento gráfico (drivers de video para resoluciones altas).
+- ✅ Compartir el portapapeles entre la MV y el anfitrión.
+- ✅ Arrastrar y soltar archivos entre la MV y el sistema real.
+- ✅ Carpetas compartidas para intercambiar archivos fácilmente.
+- ✅ Mejor compatibilidad con periféricos (ratón, teclado, red, etc.).
 
 ### Cómo instalar las Guest Additions en Windows XP
 
-1️⃣ Enciende la MV y entra en Windows XP.
-2️⃣ En la ventana de VirtualBox, ve a Dispositivos > Insertar imagen de CD de las Guest Additions.
-3️⃣ Se montará un CD virtual dentro de la MV. Abre Mi PC y accede a la unidad de CD.
-4️⃣ Ejecuta VBoxWindowsAdditions.exe y sigue los pasos del instalador.
-5️⃣ Cuando termine, reinicia la MV para aplicar los cambios.
+- 1️⃣ Enciende la MV y entra en Windows XP.
+- 2️⃣ En la ventana de VirtualBox, ve a Dispositivos > Insertar imagen de CD de las Guest Additions.
+- 3️⃣ Se montará un CD virtual dentro de la MV. Abre Mi PC y accede a la unidad de CD.
+- 4️⃣ Ejecuta VBoxWindowsAdditions.exe y sigue los pasos del instalador.
+- 5️⃣ Cuando termine, reinicia la MV para aplicar los cambios.
 
 ### Pasar archivos
 
@@ -351,12 +352,13 @@ Para pasar archivos entre tu máquina real y la virtual en VirtualBox 6, tienes 
 Si necesitas transferir archivos con frecuencia, esta opción es la mejor.
 
 🔹 Cómo configurar una carpeta compartida:
-1️⃣ Apaga la máquina virtual (MV).
-2️⃣ En VirtualBox, selecciona la MV y ve a Configuración > Carpetas compartidas.
-3️⃣ Haz clic en Agregar carpeta nueva (icono de carpeta con un "+" a la derecha).
-4️⃣ En Ruta de carpeta, selecciona una carpeta de tu máquina real.
-5️⃣ Marca Montaje automático y Hacer permanente (para que no desaparezca al reiniciar).
-6️⃣ Guarda y enciende la MV.
+
+- 1️⃣ Apaga la máquina virtual (MV).
+- 2️⃣ En VirtualBox, selecciona la MV y ve a Configuración > Carpetas compartidas.
+- 3️⃣ Haz clic en Agregar carpeta nueva (icono de carpeta con un "+" a la derecha).
+- 4️⃣ En Ruta de carpeta, selecciona una carpeta de tu máquina real.
+- 5️⃣ Marca Montaje automático y Hacer permanente (para que no desaparezca al reiniciar).
+- 6️⃣ Guarda y enciende la MV.
 
 🔹 Acceder a la carpeta en Windows XP:
 En la MV, abre Mi PC > Unidad de red (o ve a \\VBOXSVR\ en el Explorador de archivos).

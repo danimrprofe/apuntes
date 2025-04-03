@@ -23,38 +23,33 @@ Ve a Dispositivos > Insertar imagen de Guest Additions.
 Instala los controladores para mejorar el rendimiento.
 ## 3. Crear la máquina virtual de Windows Server 2003
 ### Paso 1: Configurar la máquina virtual
+
 En VirtualBox, haz clic en "Nueva".
-
-Nombre: Windows Server 2003
-
-Tipo: Microsoft Windows
-
-Versión: Windows 2003 (32-bit)
-
-Memoria RAM: 1 GB o más.
-
-Disco duro: 10-30 GB (según uso).
-
+- Nombre: Windows Server 2003
+- Tipo: Microsoft Windows
+- Versión: Windows 2003 (32-bit)
+- Memoria RAM: 1 GB o más.
+- Disco duro: 10-30 GB (según uso).
 
 ### Paso 2: Configurar almacenamiento y red
-En "Almacenamiento", carga la ISO de Windows Server 2003 en el Controlador IDE.
 
+En "Almacenamiento", carga la ISO de Windows Server 2003 en el Controlador IDE.
 
 En "Red", usa el modo Red Interna si quieres conectar ambas máquinas entre sí.
 
-
 ### Paso 3: Instalación de Windows Server 2003
-Arranca la máquina e inicia la instalación desde la ISO.
-Sigue los pasos del instalador y selecciona NTFS como sistema de archivos.
-Configura una contraseña para el administrador.
-Configura el Rol de Servidor (si quieres probar DHCP, DNS, Active Directory, etc.).
 
+- Arranca la máquina e inicia la instalación desde la ISO.
+- Sigue los pasos del instalador y selecciona NTFS como sistema de archivos.
+- Configura una contraseña para el administrador.
+- Configura el Rol de Servidor (si quieres probar DHCP, DNS, Active Directory, etc.).
 
-Windows Server 2003 Standard x64 Edition VWMD9-2Q897-F427R-TV2KY-CRF2B
-Datos:
-administrator password: 123456
-COMPUTER NAME: SERVIDOR
-Zona horaria: +1
+Windows Server 2003 Standard x64 Edition 
+- Clave: VWMD9-2Q897-F427R-TV2KY-CRF2B
+- administrator password: 123456
+- COMPUTER NAME: SERVIDOR
+- Zona horaria: +1 GMT
+
 Tras reiniciar  la máquina virtual del servidor, iniciamos sesión:
 
 Para pulsar Ctrl+alt+supr en la máquina virtual clic derecho en el icono de la flecha y:
@@ -62,137 +57,98 @@ Para pulsar Ctrl+alt+supr en la máquina virtual clic derecho en el icono de la 
 Iniciamos sesión como administrador:
 
 ## Configuración de red en VirtualBox
+
 Antes de configurar las direcciones IP dentro de los sistemas operativos, debemos asegurarnos de que ambos usen la misma red interna en VirtualBox.
+
 ### Paso 1: Configurar adaptadores de red en VirtualBox
-En VirtualBox, ve a Configuración > Red en cada máquina virtual.
 
+- En VirtualBox, ve a Configuración > Red en cada máquina virtual.
+- En el Adaptador 1, selecciona Red Interna y nómbrala (ejemplo: "RedXP2003").
+- Asegúrate de hacer esto en ambas máquinas.
 
-En el Adaptador 1, selecciona Red Interna y nómbrala (ejemplo: "RedXP2003").
+## 2. Configurar Windows Server 2003 (Servidor - IP Fija)
 
-
-Asegúrate de hacer esto en ambas máquinas.
-
-
-
-### 2. Configurar Windows Server 2003 (Servidor - IP Fija)
 Dado que actuará como servidor de red, asignaremos una IP fija.
-Paso 2: Asignar IP en Windows Server 2003
-Abre el Panel de Control > Conexiones de red.
 
+### Paso 2: Asignar IP en Windows Server 2003
 
-Haz clic derecho en Conexión de área local > Propiedades.
-
-
-Selecciona Protocolo de Internet (TCP/IP) > Propiedades.
-
-
-Configura la siguiente IP:
-
-
-Dirección IP: 192.168.1.1
-
-
-Máscara de subred: 255.255.255.0
-
-
-Puerta de enlace predeterminada: (Vacío o misma IP del servidor si hay NAT)
-
-
-Servidor DNS preferido: 192.168.1.1 (o una IP de Google como 8.8.8.8)
-
-
-Guarda los cambios y cierra.
-
-
+- Abre el Panel de Control > Conexiones de red.
+- Haz clic derecho en Conexión de área local > Propiedades.
+- Selecciona Protocolo de Internet (TCP/IP) > Propiedades.
+- Configura la siguiente IP:
+ - Dirección IP: 192.168.1.1
+ - Máscara de subred: 255.255.255.0
+ - Puerta de enlace predeterminada: (Vacío o misma IP del servidor si hay NAT)
+ - Servidor DNS preferido: 192.168.1.1 (o una IP de Google como 8.8.8.8)
+ - Guarda los cambios y cierra.
 
 ### 3. Configurar Windows XP (Cliente - IP Manual o Automática)
 Windows XP puede recibir una IP por DHCP desde el servidor o configurarse manualmente.
+
 Opción 1: Configurar IP manualmente en XP
-Ve a Panel de Control > Conexiones de red.
 
-
-Clic derecho en Conexión de área local > Propiedades.
-
-
-Selecciona Protocolo de Internet (TCP/IP) > Propiedades.
-
-
-Configura:
-
-
-Dirección IP: 192.168.1.2
-
-
-Máscara de subred: 255.255.255.0
-
-
-Puerta de enlace: 192.168.1.1
-
-
-DNS preferido: 192.168.1.1
-
+- Ve a Panel de Control > Conexiones de red.
+- Clic derecho en Conexión de área local > Propiedades.
+- Selecciona Protocolo de Internet (TCP/IP) > Propiedades.
+- Configura:
+ - Dirección IP: 192.168.1.2
+ - Máscara de subred: 255.255.255.0
+ - Puerta de enlace: 192.168.1.1
+ - DNS preferido: 192.168.1.1
 
 Guarda los cambios y prueba la conexión (ver paso 4).
 
+## 4. Probar la conexión entre ambas máquinas
 
-
-### 4. Probar la conexión entre ambas máquinas
 Después de configurar las IPs, verifica que pueden comunicarse:
-Paso 4: Probar conectividad con ping
-En Windows XP, abre Símbolo del sistema (cmd).
 
+### Paso 4: Probar conectividad con ping
+En Windows XP, abre Símbolo del sistema (cmd).
 
 Escribe:
 
- bash
-CopiarEditar
+```bash
 ping 192.168.1.1
- Si responde, la conexión es correcta.
-
-
+```
+Si responde, la conexión es correcta.
 En Windows Server 2003, prueba:
 
- bash
-CopiarEditar
+```bash
 ping 192.168.1.2
- Si hay respuesta, ambas máquinas están conectadas correctamente.
+```
 
+Si hay respuesta, ambas máquinas están conectadas correctamente.
 
+## Parte 1: Configuración del Controlador de Dominio en Windows Server 2003
 
-
-Tarea: Configuración de Dominio en Windows Server 2003 y Gestión de Usuarios y Recursos
 Objetivo: Configurar un dominio en Windows Server 2003, unir un equipo con Windows XP y gestionar usuarios, grupos y recursos compartidos en la red.
 
-Parte 1: Configuración del Controlador de Dominio en Windows Server 2003
 Instalar Active Directory:
 
-
-Abre Ejecutar (Win + R), escribe dcpromo y presiona Enter.
-Selecciona "Controlador de dominio para un nuevo dominio".
-Elige "Dominio en un nuevo bosque".
-Introduce un nombre de dominio (ejemplo: midominio.local).
-Configura una contraseña segura para el administrador de Active Directory.
-Completa la instalación y reinicia el servidor.
-
+- Abre Ejecutar (Win + R), escribe dcpromo y presiona Enter.
+- Selecciona "Controlador de dominio para un nuevo dominio".
+- Elige "Dominio en un nuevo bosque".
+- Introduce un nombre de dominio (ejemplo: midominio.local).
+- Configura una contraseña segura para el administrador de Active Directory.
+- Completa la instalación y reinicia el servidor.
 
 Configurar DNS y DHCP (Opcional, si la red lo necesita).
 
+## Parte 2: Unión del Cliente Windows XP al Dominio
 
-Parte 2: Unión del Cliente Windows XP al Dominio
 En Windows XP, asigna una IP estática en la misma subred del servidor y usa la IP del servidor como DNS principal.
-
 
 Unir al dominio:
 
+- Ve a Mi PC > Propiedades > Nombre de equipo > Cambiar.
+- Selecciona Dominio, introduce el nombre (midominio.local) y presiona Aceptar.
+- Introduce las credenciales del administrador del dominio cuando se soliciten.
+- Reinicia el equipo.
 
-Ve a Mi PC > Propiedades > Nombre de equipo > Cambiar.
-Selecciona Dominio, introduce el nombre (midominio.local) y presiona Aceptar.
-Introduce las credenciales del administrador del dominio cuando se soliciten.
-Reinicia el equipo.
+## Parte 3: Creación y Gestión de Usuarios y Grupos
 
+### Paso 5: Crear un usuario en Active Directory:
 
-Parte 3: Creación y Gestión de Usuarios y Grupos
-Paso 5: Crear un usuario en Active Directory:
 En el servidor, abre Usuarios y Equipos de Active Directory (dsa.msc).
 Dentro del dominio, haz clic derecho en Usuarios > Nuevo > Usuario.
 Crea el usuario Juan Pérez con nombre de usuario jperez.
@@ -202,11 +158,11 @@ Contraseña provisional: !1234567a, y marcamos que el usuario debe cambiar la co
 
 Ahora ya tendremos el usuario creado:
 
-Paso 6. Crear un grupo y agregar usuarios:
-Dentro de Active Directory, ve a Usuarios > Nuevo > Grupo.
-Llama al grupo Profesores.
+### Paso 6. Crear un grupo y agregar usuarios:
 
-Abre las propiedades del grupo Alumnos  haciendo doble click en el nombre del grupo y añade el usuario jperez. Vamos a add:
+- Dentro de Active Directory, ve a Usuarios > Nuevo > Grupo.
+- Llama al grupo Profesores.
+- Abre las propiedades del grupo Alumnos  haciendo doble click en el nombre del grupo y añade el usuario jperez. Vamos a add:
 
 Escribimos parte del nombre de usuario y le damos a check names:
 
@@ -214,29 +170,16 @@ Nos aparecerá el usuario y le damos a OK:
 
 Ahora el grupo Alumnos tiene un miembro, el usuario jperez.
 
-Parte 4: Creación y Configuración de Recursos Compartidos
+### Parte 4: Creación y Configuración de Recursos Compartidos
+
 Crear una unidad de red compartida:
 
-
-En el servidor, crea una carpeta en C:\Recursos_Alumnos.
-
-
-
-Haz clic derecho > Propiedades > Compartir.
-Activa la opción "Compartir esta carpeta" y nómbrala Alumnos.
-
-Ve a la pestaña Seguridad y otorga permisos de lectura/escritura sólo al grupo Ventas.
-
-
-
-
-
-
-
-
+- En el servidor, crea una carpeta en C:\Recursos_Alumnos.
+- Haz clic derecho > Propiedades > Compartir.
+- Activa la opción "Compartir esta carpeta" y nómbrala Alumnos.
+- Ve a la pestaña **Seguridad** y otorga permisos de **lectura/escritura** sólo al grupo **Ventas**.
 
 El grupo Users, que es más amplio, tiene permisos para acceder a esta carpeta, por lo que se los vamos a quitar:
-
 
 
 Conectar la unidad de red en Windows XP:
@@ -246,7 +189,7 @@ Introduce las credenciales del dominio si lo solicita.
 Asegura que el usuario pueda acceder y escribir en la carpeta.
 
 
-Parte 5: Pruebas y Verificación
+### Parte 5: Pruebas y Verificación
 ✅ El usuario jperez puede iniciar sesión en el dominio desde Windows XP.
  ✅ El usuario jperez tiene acceso a la unidad de red Ventas.
  ✅ El usuario puede crear y modificar archivos en la carpeta compartida.
@@ -258,7 +201,7 @@ Extras (Opcional, si hay más tiempo)
 Extra: Asignación Automática de Unidad de Red con una GPO
 Objetivo: Configurar una Política de Grupo (GPO) en Windows Server 2003 para asignar automáticamente la unidad de red Ventas (Z:) a los usuarios del grupo Ventas.
 
-1. Crear y Configurar la GPO
+### 1. Crear y Configurar la GPO
 Abrir el Editor de Políticas de Grupo:
 
 
@@ -314,7 +257,7 @@ Asegúrate de que Ventas tiene activadas las opciones "Leer" y "Aplicar esta dir
 
 
 
-2. Aplicar la GPO y Verificar
+### 2. Aplicar la GPO y Verificar
 Actualizar las Políticas en Windows XP:
 
 

@@ -3,7 +3,6 @@
     - [1.1. Configurar la máquina virtual](#11-configurar-la-máquina-virtual)
     - [1.2: Configurar almacenamiento y arranque](#12-configurar-almacenamiento-y-arranque)
     - [1.3. Instalación de Windows XP](#13-instalación-de-windows-xp)
-    - [1.4. Instalar VirtualBox Guest Additions (Opcional)](#14-instalar-virtualbox-guest-additions-opcional)
   - [2. Crear la máquina virtual de Windows Server 2003](#2-crear-la-máquina-virtual-de-windows-server-2003)
     - [2.1. Configurar la máquina virtual](#21-configurar-la-máquina-virtual)
     - [2.2. Configurar almacenamiento y red](#22-configurar-almacenamiento-y-red)
@@ -44,6 +43,8 @@
 
 Abre VirtualBox y haz clic en "Nueva"
 
+![](img/2025-04-03-12-26-44.png)
+
 - Nombre: Windows XP
 - Tipo: Microsoft Windows
 - Versión: Windows XP (32-bit)
@@ -52,24 +53,37 @@ Abre VirtualBox y haz clic en "Nueva"
 
 ### 1.2: Configurar almacenamiento y arranque
 
-- En la configuración de la máquina, ve a "Almacenamiento".
-- Selecciona el Controlador IDE y carga la ISO de Windows XP.
+Seleccionando la máquina virtual, a la derecha seleccionamos IDE secundario
+maestro, donde pone **Unidad óptica, Vacío**, con clic derecho de ratón:
+
+![alt text](image.png)
+
+Seleccionar un archivo de disco:
+
+![](img/2025-04-03-12-29-21.png)
+
+Seleccionamos el archivo ISO que queremos:
+
+![](img/2025-04-03-12-30-02.png)
 
 ### 1.3. Instalación de Windows XP
 
-- Inicia la máquina y arranca desde la ISO.
-- Sigue los pasos del instalador de Windows XP.
-- Formatea el disco en NTFS.
-- Completa la instalación y configura usuario/contraseña.
+Inicia la máquina y verás que al rato arranca desde
+la unidad óptica.
 
-Windows XP SP3: M8DPF-XT324-YBKK9-3VF8C-M2X78
+Sigue los pasos del instalador de Windows XP.
 
-### 1.4. Instalar VirtualBox Guest Additions (Opcional)
+Formatea el disco en **NTFS**.
 
-- Ve a Dispositivos > Insertar imagen de Guest Additions.
-- Instala los controladores para mejorar el rendimiento.
+Completa la instalación y configura usuario/contraseña.
+Crea un usuario llamado **Alumno**  sin contraseña.
+
+Clave Windows XP SP3: M8DPF-XT324-YBKK9-3VF8C-M2X78
 
 ## 2. Crear la máquina virtual de Windows Server 2003
+
+Ahora vamos a crear una segunda MV y instalar Windows Server.
+Esta máquina será nuestro **servidor**.
 
 ### 2.1. Configurar la máquina virtual
 
@@ -89,21 +103,30 @@ En VirtualBox, haz clic en "Nueva".
 ### 2.3. Instalación de Windows Server 2003
 
 - Arranca la máquina e inicia la instalación desde la ISO.
-- Sigue los pasos del instalador y selecciona NTFS como sistema de archivos.
-- Configura una contraseña para el administrador.
-- Configura el Rol de Servidor (si quieres probar DHCP, DNS, Active Directory, etc.).
 
-Windows Server 2003 Standard x64 Edition
-- Clave: VWMD9-2Q897-F427R-TV2KY-CRF2B
-- administrator password: 123456
-- COMPUTER NAME: SERVIDOR
-- Zona horaria: +1 GMT
+![](img/2025-04-03-12-24-14.png)
+
+Sigue los pasos del instalador y selecciona **NTFS** como sistema de archivos.
+
+Datos que necesitarás rellenar:
+
+- Clave: ``VWMD9-2Q897-F427R-TV2KY-CRF2B``
+- **administrator password**: 123456
+- **Computer name**: SERVIDOR
+- **Organization**: Vacío
+- **Zona horaria**: +1 GMT
 
 Tras reiniciar  la máquina virtual del servidor, iniciamos sesión:
 
+![](img/2025-04-03-12-21-21.png)
+
 Para pulsar Ctrl+alt+supr en la máquina virtual clic derecho en el icono de la flecha y:
 
+![](img/2025-04-03-12-21-37.png)
+
 Iniciamos sesión como administrador:
+
+![](img/2025-04-03-12-21-48.png)
 
 ## 3. Configuración de red en VirtualBox
 

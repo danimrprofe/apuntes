@@ -31,6 +31,10 @@
       - [Editar la GPO](#editar-la-gpo)
       - [Configurar la Unidad de Red](#configurar-la-unidad-de-red)
       - [2. Aplicar la GPO y Verificar](#2-aplicar-la-gpo-y-verificar)
+  - [11. Guest additions (opcional)](#11-guest-additions-opcional)
+    - [¿Para qué sirven?](#para-qué-sirven)
+    - [Cómo instalar las Guest Additions en Windows XP](#cómo-instalar-las-guest-additions-en-windows-xp)
+    - [Pasar archivos](#pasar-archivos)
 
 # Configuración de un dominio de Windows con Virtualbox
 
@@ -74,8 +78,8 @@ En VirtualBox, haz clic en "Nueva".
 - Nombre: Windows Server 2003
 - Tipo: Microsoft Windows
 - Versión: Windows 2003 (32-bit)
-- Memoria RAM: 1 GB o más.
-- Disco duro: 10-30 GB (según uso).
+- Memoria RAM: 256MB
+- Disco duro: 2 GB
 
 ### 2.2. Configurar almacenamiento y red
 
@@ -107,19 +111,19 @@ Antes de configurar las direcciones IP dentro de los sistemas operativos, debemo
 
 ### 3.1. Configurar adaptadores de red en VirtualBox
 
-- En VirtualBox, ve a Configuración > Red en cada máquina virtual.
-- En el Adaptador 1, selecciona Red Interna y nómbrala (ejemplo: "RedXP2003").
+- En VirtualBox, ve a **Configuración > Red** en cada máquina virtual.
+- En el Adaptador 1, selecciona **Red Interna** y nómbrala (ejemplo: "**RedXP2003**").
 - Asegúrate de hacer esto en ambas máquinas.
 
 ## 4. Configurar Windows Server 2003 (Servidor - IP Fija)
 
-Dado que actuará como servidor de red, asignaremos una IP fija.
+Dado que actuará como servidor de red, asignaremos una **IP fija**.
 
 ### 4.1. Asignar IP en Windows Server 2003
 
-- Abre el Panel de Control > Conexiones de red.
-- Haz clic derecho en Conexión de área local > Propiedades.
-- Selecciona Protocolo de Internet (TCP/IP) > Propiedades.
+- Abre el **Panel de Control > Conexiones de red.**
+- Haz clic derecho en **Conexión de área local > Propiedades.**
+- Selecciona **Protocolo de Internet (TCP/IP) > Propiedades.**
 
 Configura la siguiente IP:
 
@@ -264,10 +268,9 @@ Nómbrala ``Asignación Unidad Alumnos``.
 
 #### Editar la GPO
 
-Haz clic derecho sobre Asignación Unidad Ventas y selecciona Editar.
-
-Ve a: Configuración de usuario > Preferencias > Configuración de Windows > Asignaciones de unidad
-Haz clic derecho en Asignaciones de unidad > Nuevo > Unidad de red.
+- Haz clic derecho sobre **Asignación Unidad Alummos** y selecciona **Editar**.
+- Ve a: Configuración de usuario > Preferencias > Configuración de Windows > Asignaciones de unidad
+- Haz clic derecho en **Asignaciones de unidad > Nuevo > Unidad de red**.
 
 #### Configurar la Unidad de Red
 
@@ -283,8 +286,8 @@ Marca la opción "Reconectar" para que la unidad se vuelva a mapear en cada inic
 
 Filtrar la GPO para el grupo "Alumnos":
 
-- Ve a la pestaña Ámbito.
-- En Seguridad, haz clic en Agregar > Usuarios o grupos.
+- Ve a la pestaña **Ámbito**.
+- En **Seguridad**, haz clic en **Agregar > Usuarios o grupos.**
 - Escribe **Alumnos**, selecciona el grupo y presiona Aceptar.
 
 Asegúrate de que Ventas tiene activadas las opciones "Leer" y "Aplicar esta directiva de grupo".
@@ -307,13 +310,91 @@ Abre **Mi PC** y verifica si aparece la **unidad Z:** conectada automáticamente
 
 Intenta crear y modificar archivos en la carpeta para verificar permisos.
 
-Resultado Esperado:
+Si todo va bien:
 
-- ✅ Los usuarios del grupo Ventas tendrán la unidad : asignada automáticamente al iniciar sesión.
+- ✅ Los usuarios del **grupo Alumnos** tendrán la unidad **z:** asignada automáticamente al iniciar sesión.
 - ✅ La configuración se aplicará sin necesidad de que los usuarios la configuren manualmente.
 
 Extras (Opcionales)
-🔹 Aplicar la GPO solo a ciertos equipos dentro del dominio.
- 🔹 Configurar una GPO de Inicio de Sesión con un script net use Z: \\Servidor\Ventas.
- 🔹 Usar gpresult /R en Windows XP para verificar si la GPO se aplica correctamente.
-Este método ayuda a automatizar la administración de recursos en un dominio de Windows Server 2003. 🚀
+
+- 🔹 Aplicar la GPO solo a ciertos equipos dentro del dominio.
+- 🔹 Configurar una GPO de Inicio de Sesión con un script net use Z: \\Servidor\Ventas.
+- 🔹 Usar gpresult /R en Windows XP para verificar si la GPO se aplica correctamente.
+- Este método ayuda a automatizar la administración de recursos en un dominio de Windows Server 2003. 🚀
+
+## 11. Guest additions (opcional)
+
+Las Guest Additions (o "Adiciones para invitados") son un conjunto de controladores y herramientas que mejoran la integración entre la máquina virtual (MV) y el sistema anfitrión en VirtualBox.
+
+### ¿Para qué sirven?
+
+Cuando las instalas en la MV, obtienes beneficios como:
+✅ Mejor rendimiento gráfico (drivers de video para resoluciones altas).
+✅ Compartir el portapapeles entre la MV y el anfitrión.
+✅ Arrastrar y soltar archivos entre la MV y el sistema real.
+✅ Carpetas compartidas para intercambiar archivos fácilmente.
+✅ Mejor compatibilidad con periféricos (ratón, teclado, red, etc.).
+
+### Cómo instalar las Guest Additions en Windows XP
+
+1️⃣ Enciende la MV y entra en Windows XP.
+2️⃣ En la ventana de VirtualBox, ve a Dispositivos > Insertar imagen de CD de las Guest Additions.
+3️⃣ Se montará un CD virtual dentro de la MV. Abre Mi PC y accede a la unidad de CD.
+4️⃣ Ejecuta VBoxWindowsAdditions.exe y sigue los pasos del instalador.
+5️⃣ Cuando termine, reinicia la MV para aplicar los cambios.
+
+### Pasar archivos
+
+Para pasar archivos entre tu máquina real y la virtual en VirtualBox 6, tienes varias opciones:
+
+🔹 1. Carpetas Compartidas (Recomendado)
+Si necesitas transferir archivos con frecuencia, esta opción es la mejor.
+
+🔹 Cómo configurar una carpeta compartida:
+1️⃣ Apaga la máquina virtual (MV).
+2️⃣ En VirtualBox, selecciona la MV y ve a Configuración > Carpetas compartidas.
+3️⃣ Haz clic en Agregar carpeta nueva (icono de carpeta con un "+" a la derecha).
+4️⃣ En Ruta de carpeta, selecciona una carpeta de tu máquina real.
+5️⃣ Marca Montaje automático y Hacer permanente (para que no desaparezca al reiniciar).
+6️⃣ Guarda y enciende la MV.
+
+🔹 Acceder a la carpeta en Windows XP:
+En la MV, abre Mi PC > Unidad de red (o ve a \\VBOXSVR\ en el Explorador de archivos).
+
+Ahí verás la carpeta compartida con tu máquina real.
+
+💡 Si no aparece, prueba instalando las Guest Additions como mencioné antes.
+
+🔹 2. Arrastrar y Soltar (Solo si Guest Additions está instalado)
+Si tienes las Guest Additions instaladas, activa la opción en Configuración > General > Avanzado.
+
+Elige Bidireccional para que funcione en ambos sentidos.
+
+Ahora puedes arrastrar y soltar archivos directamente entre el anfitrión y la MV.
+
+⚠️ Esta opción a veces no funciona bien en Windows XP.
+
+🔹 3. Usar una Unidad USB
+Si tienes un pendrive, puedes conectarlo a la MV.
+1️⃣ En Configuración > USB, habilita el Controlador USB 2.0 o 3.0.
+2️⃣ Agrega tu dispositivo USB desde el icono de "Agregar filtro".
+3️⃣ Cuando inicies la MV, tu Windows XP debería reconocer el pendrive.
+
+🔹 4. Montar una Imagen ISO
+Si tienes varios archivos, puedes crear una imagen ISO y montarla en la MV:
+1️⃣ Usa un programa como ImgBurn o PowerISO para crear la ISO en la máquina real.
+2️⃣ En VirtualBox, ve a Configuración > Almacenamiento y agrega la ISO en la unidad de CD.
+3️⃣ Dentro de Windows XP, abre el CD y extrae los archivos.
+
+🔹 5. Servidor FTP o Compartición en Red
+Si ambas máquinas están en la misma red, puedes:
+
+Compartir una carpeta en la red y acceder desde XP.
+
+Montar un servidor FTP en la máquina real y descargar desde XP con un cliente FTP (como FileZilla).
+
+🔥 ¿Cuál es la mejor opción?
+🔹 Si transfieres archivos frecuentemente: Carpetas compartidas.
+🔹 Si son archivos pequeños y ocasionales: Arrastrar y soltar (si funciona).
+🔹 Si prefieres un método clásico: USB o ISO.
+🔹 Si quieres algo avanzado: Compartición de red o FTP.

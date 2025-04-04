@@ -52,14 +52,14 @@ Con esta herramienta el objetivo es crear estas dos máquinas virtuales, y conec
 
 ![](img/2025-04-04-09-23-13.png)
 
-![](img/2025-04-04-08-13-49.png)
-
 En esta práctica, configuraremos un dominio de Windows utilizando máquinas virtuales en **VirtualBox**.
 
 Para ello, crearemos dos máquinas virtuales que actuarán como los equipos de una red:
 
 - **Servidor**: Ejecutará **Windows Server 2003** y funcionará como **Controlador de Dominio**.
 - **Cliente**: Ejecutará **Windows XP** y se unirá al dominio administrado por el servidor.
+
+![](img/2025-04-04-08-13-49.png)
 
 Estas máquinas virtuales simularán una pequeña red dentro de nuestro ordenador, permitiéndonos experimentar con la configuración y gestión de un dominio de Windows de manera práctica.
 

@@ -50,6 +50,16 @@ Estas máquinas virtuales simularán una pequeña red dentro de nuestro ordenado
 
 ### 1.2. Configurar la unidad óptica
 
+Para instalar un sistema operativo, debemos disponer de un USB o un CD/DVD con los archivos de instalación.
+Para ello, cuando tenemos un ordenador real:
+
+1) Primero se suele descargar un archivo de extensión **.ISO** que contiene una imagen con todos esos archivos.
+2) Una vez descargado, con algún programa se crea un USB arrancable grabando los archivos que contiene la ISO en este USB.
+4) Una vez hecho esto, se conecta el USB al ordenador y al arrancar se le dice que lo haga a partir de lo que hay en en USB en lugar del disco duro, para realizar la instalación.
+
+En nuestro caso, al utilizar Virtualbox, no existe ordenador como tal, ni lector de CD ni puertos USB, pero sí existe
+una unidad óptica que simula ser un lector de CD/DVD. En ella cargaremos el archivo ISO, para realizar la instalación.
+
 1. Selecciona la máquina virtual creada.
 2. A la derecha, busca la opción **IDE sundario maestro**, donde aparece **Unidad óptica: Vacío**.
 3. Haz **clic derecho** sobre **Vacío**.

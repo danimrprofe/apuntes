@@ -1,19 +1,49 @@
 - [Configuración de un dominio de Windows con Virtualbox](#configuración-de-un-dominio-de-windows-con-virtualbox)
   - [1. Crear la máquina virtual de Windows XP](#1-crear-la-máquina-virtual-de-windows-xp)
+    - [1.1. Configurar la máquina virtual](#11-configurar-la-máquina-virtual)
+    - [1.2. Configurar la unidad óptica](#12-configurar-la-unidad-óptica)
+    - [1.3. Instalación de Windows XP](#13-instalación-de-windows-xp)
   - [2. Crear la máquina virtual](#2-crear-la-máquina-virtual)
+    - [2.1. Configurar la máquina virtual](#21-configurar-la-máquina-virtual)
+    - [2.2. Configurar almacenamiento y red](#22-configurar-almacenamiento-y-red)
+    - [2.3. Instalación de Windows Server 2003](#23-instalación-de-windows-server-2003)
   - [3. Configuración de red en VirtualBox](#3-configuración-de-red-en-virtualbox)
+    - [3.1. Configurar adaptadores de red en VirtualBox](#31-configurar-adaptadores-de-red-en-virtualbox)
   - [4. Configurar Windows Server 2003 (Servidor - IP Fija)](#4-configurar-windows-server-2003-servidor---ip-fija)
+    - [4.1. Asignar IP en Windows Server 2003](#41-asignar-ip-en-windows-server-2003)
   - [5. Configurar Windows XP (Cliente - IP Manual o Automática)](#5-configurar-windows-xp-cliente---ip-manual-o-automática)
+    - [5.1. Configurar IP manualmente en Windows XP](#51-configurar-ip-manualmente-en-windows-xp)
   - [6. Probar la conexión entre ambas máquinas](#6-probar-la-conexión-entre-ambas-máquinas)
+    - [6.1. Probar conectividad con `ping`](#61-probar-conectividad-con-ping)
+      - [Desde Windows XP](#desde-windows-xp)
+      - [Desde Windows Server 2003](#desde-windows-server-2003)
   - [7. Configuración del Controlador de Dominio en Windows Server 2003](#7-configuración-del-controlador-de-dominio-en-windows-server-2003)
+    - [7.1. Instalar Active Directory](#71-instalar-active-directory)
+    - [7.2. Unión del Cliente Windows XP al Dominio](#72-unión-del-cliente-windows-xp-al-dominio)
   - [8. Creación y Gestión de Usuarios y Grupos](#8-creación-y-gestión-de-usuarios-y-grupos)
+    - [8.1. Crear un usuario en Active Directory](#81-crear-un-usuario-en-active-directory)
+    - [8.2. Crear un grupo y agregar usuarios](#82-crear-un-grupo-y-agregar-usuarios)
   - [9. Creación y Configuración de Recursos Compartidos](#9-creación-y-configuración-de-recursos-compartidos)
+    - [9.1. Crear una unidad de red compartida](#91-crear-una-unidad-de-red-compartida)
+    - [9.2. Conectar la unidad de red en Windows XP](#92-conectar-la-unidad-de-red-en-windows-xp)
+    - [9.3. Pruebas y Verificación](#93-pruebas-y-verificación)
   - [10. Asignación Automática de Unidad de Red con una GPO](#10-asignación-automática-de-unidad-de-red-con-una-gpo)
+    - [10.1. Crear y Configurar la GPO](#101-crear-y-configurar-la-gpo)
+      - [Configurar la Unidad de Red](#configurar-la-unidad-de-red)
+      - [Filtrar la GPO para el grupo "Alumnos":](#filtrar-la-gpo-para-el-grupo-alumnos)
+      - [Aplicar la GPO y Verificar](#aplicar-la-gpo-y-verificar)
+      - [Extras (Opcionales)](#extras-opcionales)
   - [11. Guest additions (opcional)](#11-guest-additions-opcional)
+    - [¿Para qué sirven?](#para-qué-sirven)
+    - [Cómo instalar las Guest Additions en Windows XP](#cómo-instalar-las-guest-additions-en-windows-xp)
+    - [Pasar archivos](#pasar-archivos)
+      - [1. Carpetas Compartidas (Recomendado)](#1-carpetas-compartidas-recomendado)
+      - [2. Arrastrar y Soltar (Solo si Guest Additions está instalado)](#2-arrastrar-y-soltar-solo-si-guest-additions-está-instalado)
+      - [3. Usar una Unidad USB](#3-usar-una-unidad-usb)
+      - [4. Montar una Imagen ISO](#4-montar-una-imagen-iso)
 
 # Configuración de un dominio de Windows con Virtualbox
 
-<<<<<<< HEAD
 Lo tenéis instalado en todos los ordenadores.
 
 ![](img/2025-04-04-09-21-05.png)
@@ -21,7 +51,7 @@ Lo tenéis instalado en todos los ordenadores.
 Con esta herramienta el objetivo es crear estas dos máquinas virtuales, y conectarlas entre ellas. En lugar de utilizar ordenadores reales, vamos a **emularlos** dentro de nuestro ordenador.
 
 ![](img/2025-04-04-09-23-13.png)
-=======
+
 ![](img/2025-04-04-08-13-49.png)
 
 En esta práctica, configuraremos un dominio de Windows utilizando máquinas virtuales en **VirtualBox**.
@@ -34,7 +64,6 @@ Para ello, crearemos dos máquinas virtuales que actuarán como los equipos de u
 Estas máquinas virtuales simularán una pequeña red dentro de nuestro ordenador, permitiéndonos experimentar con la configuración y gestión de un dominio de Windows de manera práctica.
 
 ![](img/2025-04-03-16-08-55.png)
->>>>>>> 12d4c667e28727df44deb140e417facf94b4eeab
 
 ## 1. Crear la máquina virtual de Windows XP
 
@@ -44,15 +73,12 @@ La primera máquina que crearemos será un PC con Windows XP.
 
 ### 1.1. Configurar la máquina virtual
 
-<<<<<<< HEAD
 Abre VirtualBox y haz clic en "Nueva".
-=======
+
 1. Abre **VirtualBox** y haz clic en **"Nueva"**.
->>>>>>> 12d4c667e28727df44deb140e417facf94b4eeab
 
    ![](img/2025-04-03-12-26-44.png)
 
-<<<<<<< HEAD
 Entrar en modo experto:
 
 ![](img/2025-04-03-13-08-18.png)
@@ -67,12 +93,11 @@ Para Windows XP, las opciones que marcaremos son:
 - Versión: Windows XP (32-bit)
 - Memoria RAM: 512 MB - 1 GB (según lo que quieras probar).
 - Disco duro: Crear uno nuevo (VDI, tamaño fijo, 10-20 GB).
-=======
-2. Completa los siguientes campos:
+
+1. Completa los siguientes campos:
    - **Nombre:** Windows XP
    - **Tipo:** Microsoft Windows
    - **Versión:** Windows XP (32-bit)
->>>>>>> 12d4c667e28727df44deb140e417facf94b4eeab
 
 3. Asigna la cantidad de **memoria RAM**, recomendada entre **512 MB y 1 GB**, dependiendo de los recursos disponibles en tu equipo.
 

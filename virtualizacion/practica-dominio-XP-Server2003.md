@@ -1,23 +1,19 @@
 - [Configuración de un dominio de Windows con Virtualbox](#configuración-de-un-dominio-de-windows-con-virtualbox)
   - [1. Crear la máquina virtual de Windows XP](#1-crear-la-máquina-virtual-de-windows-xp)
-  - [2. Crear la máquina virtual de Windows Server 2003](#2-crear-la-máquina-virtual-de-windows-server-2003)
-  - [2. Crear la máquina virtual de Windows Server 2003](#2-crear-la-máquina-virtual-de-windows-server-2003-1)
-- [3. Configuración de red en VirtualBox](#3-configuración-de-red-en-virtualbox)
-  - [3.1. Configurar adaptadores de red en VirtualBox](#31-configurar-adaptadores-de-red-en-virtualbox)
-- [4. Configurar Windows Server 2003 (Servidor - IP Fija)](#4-configurar-windows-server-2003-servidor---ip-fija)
-  - [4.1. Asignar IP en Windows Server 2003](#41-asignar-ip-en-windows-server-2003)
+  - [2. Crear la máquina virtual](#2-crear-la-máquina-virtual)
+  - [3. Configuración de red en VirtualBox](#3-configuración-de-red-en-virtualbox)
+  - [4. Configurar Windows Server 2003 (Servidor - IP Fija)](#4-configurar-windows-server-2003-servidor---ip-fija)
   - [5. Configurar Windows XP (Cliente - IP Manual o Automática)](#5-configurar-windows-xp-cliente---ip-manual-o-automática)
   - [6. Probar la conexión entre ambas máquinas](#6-probar-la-conexión-entre-ambas-máquinas)
   - [7. Configuración del Controlador de Dominio en Windows Server 2003](#7-configuración-del-controlador-de-dominio-en-windows-server-2003)
   - [8. Creación y Gestión de Usuarios y Grupos](#8-creación-y-gestión-de-usuarios-y-grupos)
-- [9. Creación y Configuración de Recursos Compartidos](#9-creación-y-configuración-de-recursos-compartidos)
-  - [9.1. Crear una unidad de red compartida](#91-crear-una-unidad-de-red-compartida)
-  - [9.2. Conectar la unidad de red en Windows XP](#92-conectar-la-unidad-de-red-en-windows-xp)
-  - [9.3. Pruebas y Verificación](#93-pruebas-y-verificación)
+  - [9. Creación y Configuración de Recursos Compartidos](#9-creación-y-configuración-de-recursos-compartidos)
   - [10. Asignación Automática de Unidad de Red con una GPO](#10-asignación-automática-de-unidad-de-red-con-una-gpo)
   - [11. Guest additions (opcional)](#11-guest-additions-opcional)
 
 # Configuración de un dominio de Windows con Virtualbox
+
+![](img/2025-04-04-08-13-49.png)
 
 En esta práctica, configuraremos un dominio de Windows utilizando máquinas virtuales en **VirtualBox**.
 
@@ -81,27 +77,7 @@ Estas máquinas virtuales simularán una pequeña red dentro de nuestro ordenado
 
 Clave Windows XP SP3: M8DPF-XT324-YBKK9-3VF8C-M2X78
 
-## 2. Crear la máquina virtual de Windows Server 2003
-
-Ahora vamos a crear una segunda máquina virtual para instalar **Windows Server 2003**.
-Esta máquina actuará como nuestro **servidor** dentro del dominio.
-
-### 2.1. Configurar la máquina virtual
-
-1. Abre **VirtualBox** y haz clic en **"Nueva"**.
-2. Completa los siguientes campos:
-   - **Nombre:** Windows Server 2003
-   - **Tipo:** Microsoft Windows
-   - **Versión:** Windows 2003 (32-bit)
-3. Asigna **256 MB de memoria RAM**.
-4. En la sección de **disco duro**, selecciona **"Crear un disco virtual nuevo"** y configúralo de la siguiente manera:
-   - **Tipo de archivo:** VDI (Virtual Disk Image)
-   - **Almacenamiento:** Tamaño fijo (mejor rendimiento)
-   - **Tamaño:** 2 GB
-
-Una vez configurado, haz clic en **"Crear"** para finalizar.
-
-## 2. Crear la máquina virtual de Windows Server 2003
+## 2. Crear la máquina virtual
 
 Ahora vamos a crear una segunda máquina virtual para instalar **Windows Server 2003**.
 Esta máquina actuará como nuestro **servidor** dentro del dominio.
@@ -158,11 +134,11 @@ Una vez configurado, haz clic en **"Crear"** para finalizar.
 
    ![](img/2025-04-03-12-21-48.png)
 
-# 3. Configuración de red en VirtualBox
+## 3. Configuración de red en VirtualBox
 
 Antes de configurar las direcciones IP dentro de los sistemas operativos, debemos asegurarnos de que ambas máquinas virtuales estén conectadas a la misma **red interna** en VirtualBox.
 
-## 3.1. Configurar adaptadores de red en VirtualBox
+### 3.1. Configurar adaptadores de red en VirtualBox
 
 1. Abre **VirtualBox** y selecciona cada máquina virtual.
 2. Ve a **Configuración > Red**.
@@ -170,11 +146,11 @@ Antes de configurar las direcciones IP dentro de los sistemas operativos, debemo
 4. Asigna un nombre a la red interna (por ejemplo, `"RedXP2003"`).
 5. Asegúrate de repetir estos pasos en ambas máquinas.
 
-# 4. Configurar Windows Server 2003 (Servidor - IP Fija)
+## 4. Configurar Windows Server 2003 (Servidor - IP Fija)
 
 Dado que el servidor actuará como el controlador de la red, debemos asignarle una **IP fija**.
 
-## 4.1. Asignar IP en Windows Server 2003
+### 4.1. Asignar IP en Windows Server 2003
 
 1. Abre **Panel de Control > Conexiones de red**.
 2. Haz **clic derecho** en **Conexión de área local** y selecciona **Propiedades**.
@@ -278,9 +254,9 @@ Ahora ya tendremos el usuario creado.
 
 Ahora el grupo **Alumnos** tiene un **miembro**, el usuario **jperez**.
 
-# 9. Creación y Configuración de Recursos Compartidos
+## 9. Creación y Configuración de Recursos Compartidos
 
-## 9.1. Crear una unidad de red compartida
+### 9.1. Crear una unidad de red compartida
 
 1. En el servidor, crea una carpeta en `C:\Recursos_Alumnos`.
 2. Haz **clic derecho > Propiedades > Compartir**.
@@ -289,14 +265,14 @@ Ahora el grupo **Alumnos** tiene un **miembro**, el usuario **jperez**.
 
 El grupo **Users**, que es más amplio, tiene permisos para acceder a esta carpeta, por lo que vamos a quitar esos permisos.
 
-## 9.2. Conectar la unidad de red en Windows XP
+### 9.2. Conectar la unidad de red en Windows XP
 
 1. En el cliente, abre **Mi PC > Herramientas > Conectar a unidad de red**.
 2. Escribe la ruta `\\Servidor\Alumnos` y selecciona una letra (por ejemplo, `Z:`).
 3. Introduce las **credenciales del dominio** si lo solicita.
 4. Asegúrate de que el usuario pueda acceder y escribir en la carpeta.
 
-## 9.3. Pruebas y Verificación
+### 9.3. Pruebas y Verificación
 
 - ✅ El usuario `jperez` puede iniciar sesión en el dominio desde Windows XP.
 - ✅ El usuario `jperez` tiene acceso a la unidad de red **Alumnos**.

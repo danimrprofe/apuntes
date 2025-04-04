@@ -318,9 +318,7 @@ Vamos a configurar una **Política de Grupo (GPO)** en Windows Server 2003 para 
 
 Asegúrate de que el grupo **Ventas** tiene activadas las opciones **"Leer"** y **"Aplicar esta directiva de grupo"**.
 
-#### 2. Aplicar la GPO y Verificar
-
-#### 2. Aplicar la GPO y Verificar
+#### Aplicar la GPO y Verificar
 
 1. **Actualizar las Políticas en Windows XP**:
 

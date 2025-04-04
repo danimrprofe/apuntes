@@ -37,13 +37,34 @@
 
 # Configuración de un dominio de Windows con Virtualbox
 
+Lo tenéis instalado en todos los ordenadores.
+
+![](img/2025-04-04-09-21-05.png)
+
+Con esta herramienta el objetivo es crear estas dos máquinas virtuales, y conectarlas entre ellas. En lugar de utilizar ordenadores reales, vamos a **emularlos** dentro de nuestro ordenador.
+
+![](img/2025-04-04-09-23-13.png)
+
 ## 1. Crear la máquina virtual de Windows XP
+
+La primera máquina que crearemos será un PC con Windows XP.
+
+![](img/2025-04-04-09-24-25.png)
 
 ### 1.1. Configurar la máquina virtual
 
-Abre VirtualBox y haz clic en "Nueva"
+Abre VirtualBox y haz clic en "Nueva".
 
 ![](img/2025-04-03-12-26-44.png)
+
+Entrar en modo experto:
+
+![](img/2025-04-03-13-08-18.png)
+
+A continuación tenemos que decir qué características o componentes va a tener nuestra MV. Ello dependerá del sistema
+operativo y programas que queramos que funcionen en él.
+
+Para Windows XP, las opciones que marcaremos son:
 
 - Nombre: Windows XP
 - Tipo: Microsoft Windows

@@ -297,10 +297,20 @@ Objetivo: Configurar un dominio en Windows Server 2003, unir un equipo con Windo
 
 1. En **Windows XP**, asigna una IP estática en la misma subred del servidor y usa la IP del servidor como **DNS principal**.
 2. Para unir al dominio:
-   - Ve a **Mi PC > Propiedades > Nombre de equipo > Cambiar**.
+   - Ve a **Mi PC > Propiedades (boton derecho encima)> Nombre de equipo > Cambiar**.
+
+![](img/2025-04-08-13-46-34.png)
+
+![](img/2025-04-08-13-47-24.png)
+
    - Selecciona **Dominio**, introduce el nombre del dominio (`aulainformatica.local`) y presiona **Aceptar**.
    - Introduce las **credenciales** del administrador del dominio cuando se soliciten.
-3. **Reinicia el equipo**.
+
+![](img/2025-04-08-13-45-05.png)
+
+1. **Reinicia el equipo**.
+
+![](img/2025-04-08-13-45-36.png)
 
 ## 8. Creación y Gestión de Usuarios y Grupos
 

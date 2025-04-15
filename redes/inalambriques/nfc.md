@@ -1,6 +1,6 @@
 # NFC (Near Field Communication)
 
-## 📡 ¿Qué es NFC?
+## ¿Qué es NFC?
 
 - Tecnología inalámbrica de **radiofrecuencia** basada en **RFID**.
 - Desarrollada en el año 2000, estandarizada en 2003 por el **NFC Forum** (Sony, Nokia y Philips).
@@ -9,16 +9,16 @@
 - Es **más segura** frente a accesos no autorizados.
 - No está pensada para enviar grandes volúmenes de datos como Wi-Fi o Bluetooth.
 
-### 📶 Especificaciones técnicas
+### Especificaciones técnicas
 
 - **Frecuencia:** 13.56 MHz
 - **Velocidad:** Hasta 424 kbps
 
-## 💳 Aplicaciones de NFC
+## Aplicaciones de NFC
 
 ![](img/2025-04-15-17-21-00.png)
 
-### ✅ Pagos sin contacto
+### Pagos sin contacto
 
 - Se pueden hacer pagos con:
   - Tarjetas de crédito/débito con NFC

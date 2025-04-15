@@ -102,8 +102,6 @@ Los routers **Dual Band** permiten trabajar con **dos bandas de frecuencia** dif
   - Videollamadas
 - Ideal para dispositivos **cercanos al router o punto de acceso**.
 
----
-
 ### Ventajas del Dual Band
 
 - **Flexibilidad:** los usuarios pueden elegir manualmente o dejar que los dispositivos seleccionen la mejor opción.

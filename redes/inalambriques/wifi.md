@@ -1,381 +1,214 @@
----
-marp: true
-theme: uncover
-paginate: true
-headingDivider: 1
-footer: '**Redes inalámbricas** _IES Ramon Llull_'
----
+# Redes Wi-Fi
 
-# <!-- fit --> REDES INALÁMBRICAS
+## Introducción
 
-<!-- _class: invert-->
+Las redes inalámbricas o sin cables, conocidas como **Wi-Fi**, permiten la transmisión de datos sin necesidad de conexiones físicas entre dispositivos.
 
-# 1. INTRODUCCIÓN
+- Hasta hace unos años, la mayoría de redes eran por **cable (Ethernet)**.
+- Las redes cableadas siguen siendo una buena opción si los dispositivos están **fijos y próximos entre sí**.
+- Sin embargo, las redes **Wi-Fi** ofrecen mayor comodidad y flexibilidad al permitir movilidad y menos instalación física.
 
-En este apartado hablaremos de las redes sin cables o **inalámbricas**. Las redes más extendidas hasta hace años eran las redes conectadas por medio de cables.  Si los ordenadores están relativamente próximos y permanecen siempre en el mismo sitio, esta puede ser la mejor opción. Sin embargo, hoy en día las redes inalámbricas están mucho más extendidas.
+## ¿Qué es el Wi-Fi?
 
-# Utilidad
+- Es una tecnología de **comunicación inalámbrica** que transmite señales digitales por el aire.
+- Utiliza **ondas electromagnéticas de alta frecuencia** (GHz) para enviar y recibir datos.
+- El proceso implica:
+  - **Modulación**: codificar la información en la señal.
+  - **Transmisión**: la señal se emite desde una antena emisora.
+  - **Recepción**: otra antena la capta, la **demodula** y recupera los datos originales.
 
-La tecnología inalámbrica es especialmente útil si:
+### Comunicación por microondas
 
-- Si los ordenadores están alejados
-- Los cables pueden molestar o son complicados de instalar.
-- Se quiere disfrutar de la conexión a Internet en cualquier rincón
-- La instalación de una red inalámbrica presenta muchas ventajas. La principal, es que no hay cables por en medio
+- Las redes Wi-Fi utilizan microondas, una forma de radiación electromagnética.
+- La señal viaja por el espacio libre desde el transmisor al receptor.
+- Durante el trayecto, **la señal se atenúa** (pierde fuerza), especialmente con la distancia o con obstáculos.
 
-# Tecnologías inalámbricas
+## Intensidad de señal Wi-Fi
 
-Las **tecnologías** de redes inalámbricas más extendidas:
+- La **intensidad de la señal** influye directamente en la **velocidad de transmisión** y la **estabilidad** de la conexión.
+- Se mide mediante el indicador **RSSI** (*Received Signal Strength Indicator*).
+- La unidad de medida es el **dBm (decibelios-milivatio)**.
 
-- Bluetooth
-- Telefonía móvil (3G, 4G)
-- Wifi
-- NFC
+### Características de la escala en dBm
 
-# Tecnologías inalámbricas
+- Es una **escala logarítmica**, lo que significa:
+  - **+3 dB** → Duplica la intensidad de la señal.
+  - **+10 dB** → Multiplica por 10 la potencia recibida.
+- Una señal débil reduce la calidad y velocidad de la conexión.
 
-En general todos utilizamos una combinación de ellas, puesto que según el uso que queramos dar y dónde nos encontremos, nos serán más o menos convenientes.
+Conocer cómo funciona el Wi-Fi y cómo afecta la intensidad de la señal es clave para optimizar el rendimiento de nuestras redes inalámbricas.
 
-![width:300px](img/2020-04-01-11-50-12.png)
+## Estándares Wi-Fi
 
-# WIFI
+Un **estándar** es un conjunto de normas técnicas que definen cómo debe funcionar una red para garantizar la compatibilidad entre dispositivos.
 
-<!-- _class: invert-->
+### Estándar 802.11
 
-# WIFI
+- Las redes Wi-Fi se basan en el estándar **IEEE 802.11**.
+- Existen diferentes versiones de este estándar, que se identifican por **letras** (a, b, g, n, ac, ax, etc.).
+- Una red Wi-Fi debe cumplir con alguno de estos estándares para asegurar el funcionamiento correcto.
 
-# Wifi: ventajas
+### Certificación
 
-Conexión más sencilla que las redes cableadas. Cualquiera que tenga acceso a la red puede conectarse desde distintos puntos dentro de un rango de espacio
+- Los dispositivos Wi-Fi certificados por la **Wi-Fi Alliance** (organización fundada en 1999) garantizan **compatibilidad** y **seguridad**.
+- Esta certificación asegura que los dispositivos de diferentes marcas puedan conectarse y comunicarse entre sí sin problemas.
 
-# Wifi: ventajas
+## Evolución de los estándares Wi-Fi
 
-Instalación: permiten el acceso de múltiples ordenadores sin ningún problema ni gasto en infraestructura, ni gran cantidad de cables.
+Para facilitar su comprensión, las versiones más recientes de Wi-Fi han adoptado una **nomenclatura más sencilla**:
 
-# WiFi
-
-## Compatibilidad
-
-En cualquier parte del mundo podremos utilizar la tecnología Wifi.
-
-# Inconvenientes
-
-Por el contrario, también presentan algunos inconvenientes, como, por ejemplo:
-
-# Inconvenientes
-
-- **Seguridad**. Existen algunos programas capaces de capturar paquetes, de forma que puedan calcular la contraseña de la red y de esta forma acceder a ella.
-
-# Inconvenientes
-
-No se puede controlar el área de **cobertura** de una conexión, de manera que un receptor se puede conectar desde fuera de la zona de recepción prevista.
-
-# Inconvenientes
-
-- **Menor velocidad** en comparación a una conexión cableada, debido a interferencias y pérdidas de señal
-- La velocidad depende de la **distancia** al router
-
-# Estándares wifi
-
-Un estándar son una serie de normas que definen las características de una red de área local inalámbrica (WLAN).
-
-![](img/2023-05-18-09-43-17.png)
-
-# Estándares wifi
-
-Las redes Wifi también se agrupan en el estándar 802.11. Una red Wifi es una red que cumple con el estándar 802.11.
-
-![imagen](img/2020-03-31-14-38-23.png)
-
-# Estándares wifi
-
-A los dispositivos certificados por la “WiFi Alliance” usan un logotipo como el siguiente, e indica que son compatibles con la tecnología Wifi.
-
-![imagen](img/2020-03-31-14-38-15.png)
-
-# Estándares wifi
-
-Según el tipo de conexión Wifi, tenemos diferentes “estándares” o versiones, que permiten diferentes tipos de conexiones, con velocidades y distancias diferentes. Algunas de ellas son:
-
-- 802.11**b**
-- 802.11**g**
-- 802.11**a**
-- 802.11**n**
-
-# Estándares wifi
-
-Continuamente se crean **versiones** nuevas, que proporcionan más velocidad y/o cobertura, entre otras.
-
-![imagen](img/2020-03-31-14-38-38.png)
-
-Los equipos deberían utilizar las mismas versiones.
-
-# 2.2. DISPOSITIVOS WIFI
-
-Para poder crear una red wifi, necesitamos:
-
-- Dispositivos (smartphones, tablets, TV, ordenadores)
-- Equipos de conexión (router, punto de acceso, etc.).
-
-En función de la red que queramos montar necesitemos unos u otro.
-
-# WiFi Direct
-
-También es posible conectar móviles entre ellos a través de wifi sin necesidad de un router, pero no es lo más habitual.
-
-# 2.3	EQUIPOS FINALES
-
-En equipos antiguos, fabricados antes de inventarse las redes inalámbricas, necesitamos adaptadores para hacer que estos equipos se puedan conectar a una red wifi.
-
-![imagen](img/2020-03-31-14-39-05.png)
-
-Existen diferentes tipos:
-
-# Tarjetas de expansión
-
-Se agregan (o vienen de fábrica) a los ordenadores de sobremesa. Hoy en día están perdiendo terreno debido a las tarjetas USB.
-
-![imagen](img/2020-03-31-14-39-22.png)
-
-# Tarjetas PCMCIA
-
-Modelo que se utilizó mucho en los primeros ordenadores portátiles, Hoy en día internas en estos ordenadores.
-
-![imagen](img/2020-03-31-14-40-12.png)
-
-# Tarjetas PCMCIA
-
-Los ordenadores y portátiles más antiguos necesitan estos accesorios para poderse conectar a una red WiFi.
-
-![imagen](img/2020-04-01-11-49-31.png)
-
-# Antenas USB
-
-Aprovechando que todos los equipos traían de serie puertos **USB**, estas tarjetas se fabricaron con forma de **pendrive**, más sencillo de conectar a un pc, ya sea de sobremesa o portátil. Haciendo uso de todas las ventajas que tiene la tecnología USB.
-
-![imagen](img/2020-03-31-14-39-45.png)
-
-# Módem USB
-
-También se popularizaron los adaptadores USB para conectarse a redes de datos móviles, llamados **modem USB**. Estos nos permitían conectarnos a una red móvil desde un ordenador portátil, por ejemplo.
-
-![imagen](img/2020-04-03-11-22-12.png)
-
-# Circuitos internos
-
-La mayoría de dispositivos hoy en día disponen de adaptadores Wi-Fi en los circuitos internos de la placa:
-
-- Televisiones
-- Móviles y tablets
-- Portátiles
-- Consolas
-
-![imagen](img/2020-03-31-14-40-01.png)
-
-# 2.4	EQUIPOS DE RED
-
-Generalmente los equipos no se conectan directamente entre ellos, sino que necesitan un equipo de red, como por ejemplo un router, para qué gestione la red, los comunique a todos entre ellos, y les de salida a internet. Para ello existen diferentes equipos:
-
-# Punto de acceso
-
-Cuando tenemos un edificio o casa muy grande, podemos necesitar ampliar la cobertura de nuestra red.
-
-# Punto de acceso
-
-Los **puntos de acceso** generan una Red WiFi a la que se pueden conectar otros dispositivos.
-
-Permiten conectar dispositivos en forma inalámbrica a una red existente.
-
-![](img/2023-05-17-09-25-26.png)
-
-# Punto de acceso
-
-Pueden agregarse más puntos de acceso a una red para generar redes de cobertura más amplia.
-
-Suelen estar en las **paredes o techos** de los pasillos en edificios grandes.
-
-![imagen](img/2020-03-31-14-40-29.png)
-
-# REPETIDORES INALÁMBRICOS
-
-- Se utilizan para **extender la cobertura** de una red inalámbrica
-- Se conectan a una red existente que tiene señal más débil
-- Crean una señal limpia a la que se pueden conectar los equipos dentro de su alcance.
-
-![imagen](img/2020-03-31-14-40-48.png)
-
-# Routers inalámbricos
-
-Dispositivos compuestos, especialmente diseñados para redes pequeñas (hogar o pequeña oficina).
-
-![](img/2023-05-17-09-28-16.png)
-
-# Routers inalámbricos
-
-Estos dispositivos incluyen:
-
-- **Router** encargado de interconectar redes con internet
-- **Punto de acceso** (explicado más arriba)
-- **Switch** Permite la comunicación entre todos los equipos conectados
-
-# Routers inalámbricos
-
-Las antenas nos permiten transmitir y recibir la señal de radiofrecuencia para comunicar por Wifi con los diferentes equipos.
-
-![imagen](img/2020-03-31-14-40-54.png)
-
-# Reflexión
-
-Actividad 7: Explica qué equipos de red de los anteriores tienes en tu casa, y adjunta una foto de ellos.
-
-Actividad 8: ¿Cuales de ellos crees que te sería más útil si vivieras en una casa de 3 pisos? ¿Por qué?
-
-# Información en el router
-
-En nuestro router, podemos ver en la parte posterior la información para conectarnos. Como podéis ver, la mayoría de routers hoy en día tienen configuradas dos redes Wi-Fi diferentes, cada una con su nombre (SSID).
-
-# Información en el router
-
-También podemos ver la clave, necesaria para podernos conectar. También tenemos unos **códigos QR** que, en función del dispositivo, le podemos hacer una foto y se conecta a la red sin tener que buscar el nombre ni escribir la contraseña a mano.
-
-![imagen](img/2020-03-31-14-41-29.png)
-
-# Información en el router
-
-Desde nuestro dispositivo portátil solo tenemos que buscar las redes wifi que tenemos a nuestro alcance y también podremos saber si:
-
-- Estan o no protegidas con contraseña
-- Nos llega señal suficiente
-- Tenemos algún problema de conexión a Internet
-
-# Redes wifi accesibles
-
-![imagen](img/2020-05-06-10-14-27.png)
-
-# Impresión por Wifi
-
-![width:700](img/2023-05-18-09-28-12.png)
-
-# Iconos
-
-![width:700](img/2023-05-17-09-33-33.png)
-
-# Reflexión
-
-Actividad 9: adjunta una foto de la etiqueta de tu router. Tapa la clave a ser posible con paint o alguna herramienta de google docs. ¿Cuántas redes wifi tienes y cómo se llaman?¿a cual o cuales te conectas?
-
-# REDES 5 GHZ Y 2.4 GHZ
-
-Muchos habréis visto que tenéis en casa o podéis tener dos redes wifi diferentes. Las dos las crea vuestro router. Una funciona con ondas de 5 GHz (Gigaherzios) y otra de 2.4 GHz. Son como diferentes canales de radio. En función de lo que queramos hacer, nos conviene una u otra.
-
-# REDES 5 GHZ Y 2.4 GHZ
-
-- La de 5 GHz nos ofrece más velocidad, pero llega menos lejos, por lo que es conveniente si estamos cerca. Funciona muy bien para jugar online, o servicios de Streaming (Netflix, HBO)
-- La de 2.4 GHz es mejor para chatear, enviar emails o navegar por la red.
-
-# Diferencias
-
-![width:700](img/2023-05-17-09-35-06.png)
+| Nombre técnico      | Nombre comercial | Velocidad aproximada | Características principales                                         |
+| ------------------- | ---------------- | -------------------- | ------------------------------------------------------------------- |
+| 802.11n             | Wi-Fi 4          | Hasta 600 Mbps       | Mayor alcance y uso de múltiples antenas (MIMO)                     |
+| 802.11ac            | Wi-Fi 5          | Hasta 3.5 Gbps       | Alta velocidad en banda 5 GHz                                       |
+| 802.11ax            | Wi-Fi 6          | Hasta 9.6 Gbps       | Mejor rendimiento con muchos dispositivos                           |
+| 802.11ax (mejorado) | Wi-Fi 6E         | Igual que Wi-Fi 6    | Añade la nueva banda de 6 GHz                                       |
+| 802.11be            | Wi-Fi 7          | > 30 Gbps (estimado) | Muy alta velocidad y baja latencia, ideal para aplicaciones futuras |
 
 ---
 
-![width:1000](img/2020-03-31-14-41-36.png)
+### Nota
 
-# REDES 5 GHZ Y 2.4 GHZ
+- Hablar de **Wi-Fi 6** o **Wi-Fi ax** es equivalente (ambos hacen referencia al estándar **802.11ax**).
+- Cada nueva versión mejora aspectos como la **velocidad**, la **cobertura**, la **eficiencia** y la **capacidad** para conectar múltiples dispositivos.
 
-En la parte trasera del router suele aparecer la información con los nombres de las dos redes.
+## Dual Band en redes Wi-Fi
 
-# REDES 5 GHZ Y 2.4 GHZ
+Los routers **Dual Band** permiten trabajar con **dos bandas de frecuencia** diferentes: **2.4 GHz** y **5 GHz**.
 
-![width:1000](img/2020-05-06-10-23-24.png)
+### ¿Qué es un router Dual Band?
 
-# Seguridad
+- Gestiona **dos redes Wi-Fi separadas** al mismo tiempo.
+- Puede ofrecer una única red con el **mismo nombre (SSID)** y contraseña para ambas bandas.
+- Los **dispositivos eligen automáticamente** la mejor banda según la señal y el rendimiento.
 
-<!-- _class: invert-->
+### Características de cada banda
 
-# SEGURIDAD EN REDES WIFI
+#### 🔵 Banda de 2.4 GHz
 
-- Encriptación
-- Filtrado MAC
-- Ocultación
+- **Mayor cobertura** y mejor penetración en paredes y obstáculos.
+- Ideal para dispositivos de **mayor alcance** o que no necesitan mucha velocidad:
+  - Cámaras de seguridad
+  - Dispositivos IoT (domótica)
+  - Navegación web
+  - Redes sociales
 
-# Encriptación
+#### 🔴 Banda de 5 GHz
 
-Los datos transmitidos por wifi se envían por el aire, por lo que cualquier persona con una antena podría capturarlos y ver lo que estamos enviando (fotos, correos, etc.).
-
-# Encriptación
-
-Por ello es importante cifrar la información o encriptarla, utilizando algún tipo de **contraseña**.
-
-![width:500](img/2020-03-31-14-41-05.png)
-
-# WEP y WPA
-
-Algunos tipos de encriptación Wi-Fi son WEP y WPA, encargados de la codificación de la información transmitida para proteger su confidencialidad. Estos mecanismos transforman lo que estamos enviando para que nadie lo pueda entender salvo el ordenador al que lo enviamos. Utilizaremos para ello una contraseña, que solo sabrán los usuarios autorizados de esa red.
-
-# WEP y WPA
-
-![bg contain](img/2020-03-31-14-41-13.png)
-
-# WEP y WPA
-
-Entrando en el router podemos cambiar el tipo de encriptación (modo de seguridad), cambiar el nombre de nuestra red o la contraseña. Esto solo lo puede hacer el administrador de red. En general, viene ya configurado, y solo usuarios con conocimientos lo pueden cambiar.
-
-# Filtrado MAC
-
-El **filtrado de MAC** sólo se permite acceso a los dispositivos autorizados.
-
-# Filtrado MAC
-
-Cada móvil tiene una tarjeta de red dentro, y por tanto una dirección MAC propia (es única y permite identificar vuestro móvil).
-
-![width:600](img/2023-05-17-09-40-43.png)
-
-# Filtrado MAC
-
-Como cada teléfono tiene una dirección MAC propia, podemos dejar conectar o no a Internet a los móviles que nosotros queramos. Esto se llama filtrado MAC.
-
-![width:700](img/2023-05-17-09-42-44.png)
-
-# Filtrado MAC
-
-En el router se crea una lista de **direcciones permitidas**, las de cada dispositivo que se puede conectar.
-
-![](img/2023-05-17-09-43-57.png)
-
-# Filtrado MAC
-
-Si un móvil con esta dirección se conecta al router, este le permitirá conectarse a Internet. En caso contrario, se conectará a la wifi correctamente pero no tendrá internet.
-
-![](img/2023-05-17-09-44-54.png)
-
-# Filtrado MAC
-
-Podremos elegir si lo que queremos es:
-
-- Permitir solo esos ordenadores y no dejar conectarse a nadie más (**lista blanca**)
-- Dejar conectar a todo el mundo menos a esos (**lista negra**)
+- **Mayor velocidad** y menor interferencia.
+- Perfecta para actividades que requieren un buen ancho de banda:
+  - Juegos en línea
+  - Streaming en HD o 4K
+  - Videollamadas
+- Ideal para dispositivos **cercanos al router o punto de acceso**.
 
 ---
 
-![bg contain](img/2020-03-31-14-41-48.png)
+### Ventajas del Dual Band
 
-# OCULTACIÓN DE RED
+- **Flexibilidad:** los usuarios pueden elegir manualmente o dejar que los dispositivos seleccionen la mejor opción.
+- **Rendimiento optimizado:** se reduce la congestión en la red y se mejora la experiencia de conexión.
 
-Una forma de evitar que alguien se conecte a mi red wifi es ocultarla.
-Si nadie ve el nombre de la Wifi de nuestra casa, es más difícil que puedan conectarse a ella. Esto se llama ocultación del punto de acceso (ocultación SSID).
-De este modo, la red no se muestra en la lista de redes wifi para conectarse y por tanto es invisible a otros usuarios.
+## Dispositivos Wi-Fi
 
-# OCULTACIÓN DE RED
+Los dispositivos Wi-Fi permiten la conexión inalámbrica a redes. Dependiendo del tipo de equipo, existen distintas formas de incorporar conectividad Wi-Fi.
 
-![imagen](img/2020-04-01-12-15-52.png)
+### Adaptadores Wi-Fi externos
 
-# OCULTACIÓN DE RED
+Se utilizan para añadir Wi-Fi a ordenadores que no tienen conexión inalámbrica integrada.
 
-Los que sí conocen el nombre de la red wifi la pueden **escribir a mano el nombre de la red wifi** y conectarse.
+**Tarjetas PCI / miniPCI**:
 
-![width:700](img/2020-03-31-14-41-57.png)
+- Se instalan en ordenadore de sobremesa.
+- Ofrecen buena velocidad y estabilidad.
 
-# Desactivar WiFi
+**Tarjetas PCMCIA**:
 
-También podríamos directamente desactivar la red wifi si solo conectamos al router con cables. De este modo, nadie se podrá conectar por wifi a nuestra red.
+- Usadas en los primeros ordenadores portátiles.
+- Hoy en día están obsoletas.
+
+**Adaptadores USB**:
+
+- Muy comunes en PCs de sobremesa y portátiles.
+- Fácil instalación y portabilidad.
+
+### Dispositivos móviles
+
+Los smartphones, tablets y portátiles modernos **ya integran adaptadores Wi-Fi** en sus placas internas.
+
+#### Características:
+
+- Incluyen **chips especializados** para conexión inalámbrica.
+- Son **compactos y energéticamente eficientes**.
+- Disponen de **antenas internas** para transmitir y recibir señal.
+- Compatibles con:
+  - Estándares Wi-Fi como **802.11ac** (Wi-Fi 5) y **802.11ax** (Wi-Fi 6).
+  - Bandas de frecuencia **2.4 GHz** y **5 GHz**.
+- Garantizan **alto rendimiento y compatibilidad** con las redes actuales.
+
+## Equipos de red
+
+Son dispositivos diseñados para permitir la comunicación y conexión a internet en redes pequeñas, como en el hogar o en oficinas pequeñas.
+
+### 1. Router inalámbrico
+
+Dispositivo principal en muchas redes domésticas o de oficina. Cumple varias funciones:
+
+- **Router:** Conecta la red local a Internet.
+- **Punto de acceso:** Permite que los dispositivos se conecten a la red mediante Wi-Fi.
+- **Switch:** Facilita la comunicación entre todos los dispositivos conectados por cable.
+- **Antenas:** Transmiten y reciben señales de radiofrecuencia para la conexión Wi-Fi.
+
+### 2. Repetidores
+
+Dispositivos que amplían la cobertura de una red Wi-Fi existente:
+
+- Reciben la señal Wi-Fi y la **retransmiten** para ampliar el alcance.
+- Permiten que dispositivos fuera del alcance del router principal se conecten.
+- Son útiles en **espacios grandes** o con **obstáculos** que bloquean la señal.
+- Mejoran la conectividad y reducen las **zonas muertas** (donde no llega la señal).
+- Generan una nueva red Wi-Fi a la que otros dispositivos pueden conectarse.
+- Actúan como **puente** entre la red cableada (Ethernet) y dispositivos inalámbricos.
+- Se pueden usar **múltiples repetidores o puntos de acceso** para crear una red uniforme y con buena cobertura.
+
+### 3. Puntos de acceso (Access Point - AP)
+
+Dispositivos que extienden la red inalámbrica en lugares grandes:
+
+- Se colocan en ubicaciones estratégicas como **techos, pasillos o paredes**.
+- Se conectan a la red central por **cables Ethernet**.
+- Pueden recibir tanto **datos como energía eléctrica** a través de **Power over Ethernet (PoE)**.
+- Permiten ampliar la cobertura Wi-Fi de manera eficaz y con menor interferencia.
+
+## Seguridad en redes Wi-Fi
+
+Para proteger nuestra red inalámbrica y la información que transmitimos, es fundamental aplicar medidas de seguridad adecuadas.
+
+### ¿Qué riesgos queremos evitar?
+
+- **Accesos no autorizados:** Evitar que personas ajenas se conecten a nuestra red.
+- **Espionaje:** Proteger los datos para que no puedan ser interceptados ni leídos.
+
+## Medidas de seguridad Wi-Fi
+
+### 1. Control de acceso
+
+- **Filtrado de direcciones MAC:** Solo los dispositivos cuya dirección MAC esté autorizada pueden conectarse a la red.
+- **Ocultación del SSID:** El nombre de la red Wi-Fi no se muestra públicamente, dificultando su detección por usuarios no autorizados.
+
+### 2. Protocolos de seguridad y cifrado
+
+Los protocolos de seguridad protegen la información que se transmite a través de la red.
+
+- **WEP:** Antiguo sistema de cifrado, actualmente obsoleto y no seguro.
+- **WPA (Wi-Fi Protected Access):** Evolución de WEP. Existen diferentes versiones:
+  - **WPA2-Personal**
+  - **WPA3-Personal** (más seguro y actual)
+
+#### Características:
+
+- Utilizan un sistema de **clave precompartida** (*PSK - Pre-Shared Key*) para autenticarse.
+- Cada dispositivo puede tener **claves de cifrado únicas**, especialmente con WPA2 y WPA3.
+- Permiten cifrar los datos que se transmiten, impidiendo que terceros puedan leer la información incluso si están dentro del alcance de la señal Wi-Fi.
+
+Aplicar estas medidas mejora significativamente la seguridad de una red inalámbrica y protege tanto el acceso como la privacidad de los usuarios.

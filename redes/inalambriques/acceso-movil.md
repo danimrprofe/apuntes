@@ -1,338 +1,427 @@
-Redes móviles
-Telefonía móvil
-Evolución histórica
-Telefonía móvil
-Evolución del mercado
-Red de telefonía móvil
+- [Redes móviles](#redes-móviles)
+  - [Evolución histórica del mercado](#evolución-histórica-del-mercado)
+  - [Liberalización del mercado](#liberalización-del-mercado)
+  - [Operadores Móviles Virtuales (OMV)](#operadores-móviles-virtuales-omv)
+- [Generaciones de redes móviles](#generaciones-de-redes-móviles)
+  - [¿Qué es una generación?](#qué-es-una-generación)
+  - [¿Qué implica un cambio de generación?](#qué-implica-un-cambio-de-generación)
+  - [Estado actual](#estado-actual)
+- [Red móvil 1G](#red-móvil-1g)
+  - [Antenas de Telefonía Móvil](#antenas-de-telefonía-móvil)
+  - [Red celular](#red-celular)
+  - [Handover (cambio de celda)](#handover-cambio-de-celda)
+  - [Red de antenas](#red-de-antenas)
+  - [Comunicación inalámbrica](#comunicación-inalámbrica)
+  - [Frecuencias y espectro electromagnético](#frecuencias-y-espectro-electromagnético)
+  - [Bandas de frecuencia para móviles](#bandas-de-frecuencia-para-móviles)
+  - [Gestión del espectro](#gestión-del-espectro)
+  - [Bandas de frecuencia y operadores](#bandas-de-frecuencia-y-operadores)
+- [Red móvil 2G – Principios de los 90](#red-móvil-2g--principios-de-los-90)
+  - [Contratos](#contratos)
+  - [Evolución de los datos en 2G](#evolución-de-los-datos-en-2g)
+  - [Tarjeta SIM](#tarjeta-sim)
+  - [Formatos físicos](#formatos-físicos)
+  - [eSIM (Embedded SIM)](#esim-embedded-sim)
+  - [Dual SIM](#dual-sim)
+  - [Identificadores en la red](#identificadores-en-la-red)
+  - [Proceso de autenticación en GSM](#proceso-de-autenticación-en-gsm)
+  - [Roaming](#roaming)
+  - [¿Qué es el roaming?](#qué-es-el-roaming)
+- [Red móvil 3G (desde 2004)](#red-móvil-3g-desde-2004)
+  - [¿Qué trajo de nuevo?](#qué-trajo-de-nuevo)
+  - [¿Qué hizo posible la 3G?](#qué-hizo-posible-la-3g)
+  - [Relación con otras generaciones](#relación-con-otras-generaciones)
+- [Red móvil 4G (desde 2010)](#red-móvil-4g-desde-2010)
+  - [¿Qué trajo de nuevo?](#qué-trajo-de-nuevo-1)
+  - [¿Qué hizo posible la 4G?](#qué-hizo-posible-la-4g)
+  - [Relación con generaciones anteriores](#relación-con-generaciones-anteriores)
+- [Red móvil 5G (desde ~2020)](#red-móvil-5g-desde-2020)
+  - [¿Qué trajo de nuevo?](#qué-trajo-de-nuevo-2)
+  - [¿Qué hizo posible la 5G?](#qué-hizo-posible-la-5g)
+  - [Relación con generaciones anteriores](#relación-con-generaciones-anteriores-1)
+
+# Redes móviles
+
+## Evolución histórica del mercado
+
 1986: Entrada de España en la UE
-▪	UE: Organización supranacional 
-▪	Países ceden parte de soberanía. Comparten reglas comunes.
-▪	Evitar conflictos entre estados (interdependencia económica).
+- UE: Organización supranacional
+- Países ceden parte de soberanía. Comparten reglas comunes.
+- Evitar conflictos entre estados (interdependencia económica).
 Proceso de privatización (Felipe González y José María Aznar)
-▪	España tenía empresas públicas 
-▪	Sectores estratégicos: transporte, energía y telecomunicaciones
-▪	Normas de la UE: No se permiten grandes empresas públicas deficitarias.
-▪	Obligación: España privatizó empresas para evitar distorsiones en el mercado.
-▪	Empresas públicas: Algunas se mantuvieron bajo control estatal, pero con limitaciones.
-▪	Capital extranjero: La entrada de inversores en empresas como Telefónica y Seat fue posible gracias a negociaciones con otros países.
+- España tenía empresas públicas
+- Sectores estratégicos: transporte, energía y telecomunicaciones
+- Normas de la UE: No se permiten grandes empresas públicas deficitarias.
+- Obligación: España privatizó empresas para evitar distorsiones en el mercado.
+- Empresas públicas: Algunas se mantuvieron bajo control estatal, pero con limitaciones.
+- Capital extranjero: La entrada de inversores en empresas como Telefónica y Seat fue posible gracias a negociaciones con otros países.
 
-Liberalización del mercado
-Redes móviles
+## Liberalización del mercado
+
 Telefónica: Posición monopolística (1924-1990)
-▪	Telefónica dominaba el mercado de telecomunicaciones en España.
-▪	Privatización de Telefónica (1995-1997)
-▪	1994: Liberalización mercado telecomunicaciones.
-▪	Desarrollo de la red digital GSM.
-▪	Nuevas licencias a través de concursos.
+- Telefónica dominaba el mercado de telecomunicaciones en España.
+- Privatización de Telefónica (1995-1997)
+- 1994: Liberalización mercado telecomunicaciones.
+- Desarrollo de la red digital GSM.
+- Nuevas licencias a través de concursos.
 Cambio de marcas y operadores
-▪	Telefónica se convierte en Movistar.
-▪	Airtel pasa a ser Vodafone (1995).
-▪	🖥️ Retevisión > Amena > Orange (1998).
-▪	En 2006: Nacen los operadores móviles virtuales.
+- Telefónica se convierte en Movistar.
+- Airtel pasa a ser Vodafone (1995).
+- 🖥️ Retevisión > Amena > Orange (1998).
+- En 2006: Nacen los operadores móviles virtuales.
 
-Liberalización del mercado
 Proveedores de servicio
 Objetivo de la liberalización
-▪	Aumentar la competencia en el sector.
-▪	Mejorar servicios para los consumidores.
-▪	Comisión Europea impulsó la liberalización del mercado.
-▪	CNMC y otras entidades facilitaron la entrada de Operadores Móviles Virtuales (OMV).
-Operadores Móviles Virtuales (OMV)
-▪	No tienen red propia
-▪	Usan redes de Movistar, Vodafone, Orange y Yoigo.
-▪	Pagan por usar sus redes
-▪	Ofrecen servicios con su propia marca.
+- Aumentar la competencia en el sector.
+- Mejorar servicios para los consumidores.
+- Comisión Europea impulsó la liberalización del mercado.
+- CNMC y otras entidades facilitaron la entrada de Operadores Móviles Virtuales (OMV).
 
-Operadores móviles virtuales
-Proveedores de servicio
+## Operadores Móviles Virtuales (OMV)
 
-Nichos de mercado de los OMV
-▪	Tarifas prepago para usuarios que prefieren pagar por adelantado.
-▪	Servicios para inmigrantes con planes específicos.
-▪	Planes de bajo coste con precios más competitivos
-▪	Servicios a medida e innovadores.
-▪	Atracción de diversos segmentos de la población.
-Impacto en el mercado
-▪	Mayor competencia en el mercado de telecomunicaciones.
-▪	🌐 Diversidad de opciones para los consumidores.
+- No tienen red propia
+- Usan redes de Movistar, Vodafone, Orange y Yoigo.
+- Pagan por usar sus redes
+- Ofrecen servicios con su propia marca.
 
+Nichos de mercado de los OMV:
 
-Operadores móviles virtuales
+- Tarifas prepago para usuarios que prefieren pagar por adelantado.
+- Servicios para inmigrantes con planes específicos.
+- Planes de bajo coste con precios más competitivos
+- Servicios a medida e innovadores.
+- Atracción de diversos segmentos de la población.
+- Impacto en el mercado
+- Mayor competencia en el mercado de telecomunicaciones.
+- Diversidad de opciones para los consumidores.
 
-Redes móviles
- Icono de Conexión Móvil
- Tipos de conexión:
-•	Dependiendo de la ubicación, tenemos diferentes generaciones de redes móviles.
-•	Cada tecnología tiene una velocidad distinta.
-•	La cobertura puntual influye en la calidad de la conexión.
+# Generaciones de redes móviles
 
-Tecnologías
-Generaciones
-Según se han ido desarrollando nuevas tecnologías, se les ha dado el nombre de generaciones.
-Una generación representa un conjunto de tecnologías móviles que proporcionan alguna mejora sustancial sobre las anteriores.
-Hoy en día están ampliamente extendidas la redes de  quinta generación (5G).
-A cada cambio, las antenas de comunicaciones deben actualizarse para integrar dichas tecnologías.
-Del mismo modo, los teléfonos o terminales deben ser compatibles con dichas tecnologías para poder aprovecharlas.
-Red móvil 1G
-📡 Transmisión analógica
-•	Utilizaban señales analógicas para transmitir voz.
-•	Comunicaciones por modulación de frecuencia (FM) (radio)
-•	Susceptibles a interferencias, ruido y escuchas no autorizadas
-📶 Redes celulares
-•	Celdas: zonas geográficas pequeñas con una antena base (torre) que daba cobertura.
-•	Al moverse de una celda a otra, handover" (transferencia) para mantener la llamada.
-🔋 Baja eficiencia energética
-•	Baterías níquel-cadmio (NiCd), poca autonomía y pesadas
-•	Algunos modelos (Ericsson "Hotline“) grandes se llevaban como maletines.
+## ¿Qué es una generación?
 
-La primera red móvil
-Red móvil 1G
-Funcionamiento básico
-•	Al encender el teléfono, se conectaba a la antena más cercana.
-•	Antena comunicaba con central conmutadora (MSC – Mobile Switching Center).
-•	Al hacer una llamada, se dirigía desde el teléfono a la torre, de ahí por línea terrestre a red telefónica fija.
-•	Solo voz, sin datos ni SMS (eso llegó después con 2G).
- Frecuencias
-•	Bandas 800-900 MHz.
-•	EE.UU. -> AMPS (Advanced Mobile Phone System).
-•	Europa -> NMT (Nordic Mobile Telephone) y TACS (Total Access Communication System).
+- Cada **generación** representa un conjunto de tecnologías móviles con mejoras importantes respecto a la anterior.
+- Se identifican con números: **1G, 2G, 3G, 4G, 5G**.
+- Cada salto generacional supone:
+  - Más velocidad de transmisión.
+  - Nuevas funcionalidades.
+  - Mejor calidad de servicio.
 
-Funcionamiento básico
-Red móvil 1G
+## ¿Qué implica un cambio de generación?
 
-Antenas de Telefonía Móvil
-▪	Ubicación en ciudades: Se colocan en edificios altos.
-▪	Cada antena cubre un área determinada.
-▪	El teléfono se conecta a la antena más cercana mientras nos movemos.
-▪	Antenas conectadas entre sí y a Internet
-▪	Permitiendo enviar información a través de la red de la operadora.
-Cobertura
-Red móvil 1G
+- Las **antenas** y estaciones base deben **actualizarse** para soportar las nuevas tecnologías.
+- Los **móviles** también deben ser **compatibles** para poder aprovechar la nueva red.
+- Por eso, no todos los móviles pueden usar redes 5G, por ejemplo.
 
- Red celular (celdas y handover)
-•	Área de cobertura dividida en celdas hexagonales.
-•	Cada celda tenía su propia estación base con una antena
-•	Cada antena transmite en frecuencias distintas para evitar interferencias.
-•	Cuando el usuario se movía, la red detectaba la pérdida de señal y la ganancia en otra celda vecina, y se realizaba un “handover”:
-•	El sistema cambiaba automáticamente la conexión a otra celda.
-•	Proceso lento y propenso a cortes, no existía una buena gestión digital del traspaso de llamada.
+## Estado actual
 
-Red celular
-Red móvil 1G
+- Hoy en día, la **5G** ya está desplegada en muchas ciudades.
+- Aún convive con 4G, 3G e incluso algunas zonas con 2G.
+- Las generaciones anteriores **no desaparecen de golpe**, sino que se van retirando poco a poco.
 
-Al pasar de una celda a otra, el móvil se conecta a la antena de la celda en la que entra y se desconecta de la anterior, manteniendo la llamada o la conexión en todo momento.
-En la práctica las antenas se colocan donde hay edificios altos y en función de la densidad de población.
-Red celular
-Red móvil 1G
+# Red móvil 1G
 
-Red de antenas
-Red móvil 1G
+### 📡 Transmisión analógica
 
-La antena del operador (estación base) emite ondas electromagnéticas en una banda de frecuencia  determinada.
+- Utilizaban señales analógicas para transmitir voz.
+- Comunicaciones por modulación de frecuencia (FM) (radio).
+- Susceptibles a interferencias, ruido y escuchas no autorizadas.
 
-Estas ondas se propagan por el aire, y van perdiendo potencia por el camino (pérdidas)
+### 🔋 Baja eficiencia energética
 
-Comunicación inalámbrica
-Red móvil 1G
+- Baterías de níquel-cadmio (NiCd), con poca autonomía y pesadas.
+- Algunos modelos (como el Ericsson "Hotline") eran grandes y se llevaban como maletines.
 
-Estas ondas llegan a la antena que tienen internamente los teléfonos. 
+### Funcionamiento básico
+- **Conexión inicial:** Al encender el teléfono, se conectaba a la antena más cercana.
+- **Central conmutadora (MSC):** La antena se comunicaba con la central conmutadora.
+- **Llamada:** Al hacer una llamada, esta se dirigía desde el teléfono a la torre, y de ahí por línea terrestre a la red telefónica fija.
+- **Solo voz:** No había datos ni SMS (eso llegó con 2G).
 
-Esta antena y otros circuitos están configurados para  detectar una frecuencia determinada. De este modo, diferencian la señal móvil de todas las otras señales electromagnéticas que le llegan por el aire.
+## Antenas de Telefonía Móvil
 
-Comunicación inalámbrica
-Red móvil 1G
+- **Ubicación en ciudades:** Se colocan en edificios altos.
+- **Cobertura:** Cada antena cubre un área determinada.
+- El teléfono se conecta a la antena más cercana mientras se mueve.
+- Las antenas están conectadas entre sí y a Internet, lo que permite enviar información a través de la red de la operadora.
 
-Pero, ¿qué frecuencia utilizan?
+## Red celular
 
-El espectro electromagnético contiene todas las frecuencias de ondas posibles.
+- La cobertura se divide en **celdas** con forma hexagonal.
+- Cada celda tiene una **antena propia** (estación base).
+- **Celdas:** Zonas geográficas pequeñas con una antena base (torre) que daba cobertura.
+- Al moverse de una celda a otra, se realizaba el "handover" (transferencia) para mantener la llamada.
+- Cada antena emite en **frecuencias** **distintas** para evitar interferencias.
 
-Según su frecuencia, las ondas pueden tener diferentes aplicaciones, pues el aire y los objetos del entorno reaccionan a ellas de forma distinta.
+## Handover (cambio de celda)
 
+- Cuando el usuario se mueve, el móvil **pierde** **señal** de una celda y **gana señal** de otra.
+- El sistema cambia automáticamente la conexión a la nueva antena: esto se llama “handover”.
+- En 1G, este proceso era **lento y con posibles corte**s, ya que no había buena gestión digital.
 
-Bandas de frecuencia
-Red móvil 1G
+## Red de antenas
 
-Por ejemplo, los rayos X atraviesan la carne y los músculos pero no los huesos.
+- Las **antenas** emiten ondas electromagnéticas en una **banda de frecuencia concreta**.
+- Estas ondas se **propagan por el aire**, pero pierden potencia con la distancia y los obstáculos.
+- Se colocan antenas en lugares altos (tejados, torres) y en función de la **densidad de población**.
 
-La radioterapia utiliza Rayos X de alta energía o Rayos gamma (γ)  `para destruir células cancerosas dañando su ADN en frecuencias 
-entre 10¹䒢 10¹⁹ Hz.
+## Comunicación inalámbrica
 
-Esta energía es suficiente para romper enlaces químicos y dañar el ADN de las células
+- El móvil recibe la señal con su **antena interna**.
+- Detecta solo las ondas de la frecuencia que le interesa, y **descarta otras señales** del entorno (TV, radio, wifi…).
+- Así se asegura que solo se conecta con su operador móvil.
 
-Son muy precisos, y los equipos actuales pueden enfocar la radiación directamente sobre el tumor, minimizando daño al tejido sano
+## Frecuencias y espectro electromagnético
 
+- El **espectro electromagnético** incluye todas las frecuencias posibles.
+- Cada tipo de onda (radio, microondas, rayos X…) tiene propiedades diferentes.
+- Ejemplo: los rayos X atraviesan el cuerpo, pero no los huesos.
+- En medicina, se usan rayos X o gamma para destruir células cancerosas (radioterapia).
 
+## Bandas de frecuencia para móviles
 
+- Las redes móviles usan **frecuencias concretas**, según lo que se necesite:
+  - Mayor cobertura, menor velocidad.
+  - Menor cobertura, mayor velocidad.
+- Las bandas **bajas (700-900 MHz)** llegan más lejos.
+- Las bandas **altas (2-3 GHz)** dan más velocidad pero cubren menos área.
 
-Bandas de frecuencia
-Red móvil 1G
+## Gestión del espectro
 
-Bandas de frecuencia
-Red móvil 1G
+- El **espectro radioeléctrico** es un recurso **limitado y público**.
+- En España lo gestiona la **Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales**.
+- Asignan las frecuencias a los operadores (Movistar, Vodafone, etc.) para que no se solapen.
 
-Para redes móviles, se utilizan diferentes bandas de frecuencia.
+## Bandas de frecuencia y operadores
 
-Según las bandas, se consiguen unos u otros beneficios o ventajas.
+- Las compañías como M**ovistar o Vodafone compran o alquilan bandas de frecuencia** al Estado.
+- Con esas bandas:
+  - Instalan **antenas** que emiten en esas frecuencias.
+  - Los** móviles se conectan** a esas frecuencias para poder llamar, enviar mensajes o navegar por internet.
 
-Bandas de frecuencia
-Red móvil 1G
+# Red móvil 2G – Principios de los 90
 
-¿Quién gestiona las bandas?
+- Digitalización de la red
+- Con 2G llega la digitalización de la voz y los datos.
+- El estándar más usado fue GSM (Global System for Mobile Communications).
 
-Espectro: recurso limitado y público
-Lo gestiona un organismo oficial (España,  Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales)
+Principales mejoras:
 
+- Introducción de la **tarjeta SIM**.
+- Uso de canales compartidos (TDMA: división en el tiempo).
+- **Cifrado** de las comunicaciones.
+- Envío de **SMS** entre usuarios.
+- Transmisión de datos, aunque a baja velocidad.
 
-Bandas de frecuencia
-Red móvil 1G
+###  Popularización de los primeros teléfonos móviles
 
-Las compañías de telecomunicaciones (como Movistar o Vodafone) compran o alquilan bandas de frecuencia para usarlas en sus redes.
+- Los teléfonos eran sencillos, y se ofrecían en modalidad de contrato o tarjetas prepago.
+- Permitían llamar y enviar SMS, pero no la conexión a Internet.
+- La mensajería consistía en enviar SMS, a un coste fijo.
 
-•	Con esas bandas, la compañía instala antenas y las configura para utilizar las bandas asignadas.
-•	Antenas emiten señales en esos rangos de frecuencia. 
-•	Móviles se conectan a esas frecuencias para poder llamar, navegar, etc.
-Bandas de frecuencia
-Red móvil 2G
-Digitalización de Servicios Móviles (Principios de los 90)
-▪	GSM: estándar más usado en 2G.
-▪	Introdujo tarjetas SIM, uso compartido de canales (TDMA) y cifrado.
-▪	Transmisión datos a baja velocidad
-▪	SMS entre usuarios
-▪	Digitalización de voz y datos a baja velocidad
-GPRS (2001)
-▪	Mayor velocidad de transmisión de datos.
-▪	Facilitó MMS y navegación web.
-EDGE
-▪	Mejora en la velocidad de datos y mayor ancho de banda.
-▪	Aplicaciones multimedia avanzadas.
+## Contratos
 
+- Las tarifas más habituales eran de **tarjetas prepago**, con una cantidad de dinero asignada.
+- Permitían recargar el saldo de la tarjeta.
+- También existía la opción de **contrato**, donde se pagaba una tarifa mensual.
 
-Digitalización
-Red móvil 2G
-SIM: Subscriber Identity Module
-▪	Introducida con GSM
-▪	Almacena información que identifica al usuario en la red.
-▪	Contiene:
-•	IMSI (International Mobile Subscriber Identity): número único de suscriptor.
-•	Ki: clave secreta para autenticación con la red.
-•	Agenda de contactos, SMS y algunos datos del operador.
-▪	La SIM permite que el teléfono no esté vinculado al usuario, o sea, puedes cambiar el terminal y mantener tu número.
-SIM
-Red móvil 2G
-Formatos físicos
-▪	Diferentes tamaños 
-▪	Sin SIM, no es posible conectarse a red móvil
-▪	Sí a red Wi-Fi si está disponible.
-eSIM: Embedded SIM
-▪	SIM digital integrada en el dispositivo.
-▪	No necesita tarjeta física 
-▪	Cambio operador sin cambiar SIM
-▪	Mayor flexibilidad y espacio en dispositivo
+![](img/2025-04-15-16-56-32.png)
 
+### Tarjetas prepago
 
-SIM
-Red móvil 2G
-Dual SIM
-▪	Uso personal y laboral: Dos números en un solo dispositivo.
-▪	Varios proveedores: Usar dos operadores al mismo tiempo.
-▪	Viajes al extranjero: Usar una SIM local y la de tu país.
-SIM
-Red móvil 2G
-Identificadores en la red
-Red móvil 2G
-Identificadores en la red
-Red móvil 2G
-Identificación:
-▪	Móvil envía su IMSI a la red
-▪	Luego usa un TMSI (identificador temporal) para proteger su identidad.
+- Las **tarjetas prepago** permitían a los usuarios tener control sobre su gasto, ya que solo se podía gastar el saldo cargado.
+
+![](img/2025-04-15-16-56-16.png)
+
+## Evolución de los datos en 2G
+
+- **GPRS (2001)**
+  - Aumenta la **velocidad de transmisión de datos**.
+  - Permite el uso de **MMS** (mensajes multimedia) y **navegación web básica**.
+- **EDGE**
+  - Mejora la velocidad y **ancho de banda**.
+  - Soporta aplicaciones multimedia más avanzadas.
+
+## Tarjeta SIM
+
+- **SIM**: *Subscriber Identity Module*.
+- Introducida con GSM.
+- Contiene información que **identifica al usuario en la red**.
+
+**¿Qué guarda una SIM?**
+
+- IMSI: número único del usuario en la red.
+- Ki: clave secreta para autenticar al usuario.
+- Agenda de contactos, SMS, y algunos datos del operador.
+
+**¿Qué ventaja tiene?**
+
+- El número está en la **tarjeta**, no en el teléfono.
+- Puedes cambiar de móvil y **mantener tu número y contactos**
+
+## Formatos físicos
+
+- Existen **diferentes tamaños**: SIM, microSIM, nanoSIM.
+- **Sin SIM**, no puedes conectarte a la **red móvil**.
+- Sí puedes conectarte a una **red Wi-Fi** si está disponible.
+
+## eSIM (Embedded SIM)
+
+- SIM **digital integrada** en el dispositivo.
+- No necesita tarjeta física.
+- Permite cambiar de operador **sin cambiar la SIM**.
+- Ahorra espacio y ofrece **más flexibilidad** al usuario.
+
+## Dual SIM
+
+- Permite usar **dos SIM** en el mismo teléfono.
+
+Usos frecuentes:
+
+- **Separar trabajo y vida personal** (dos números en un dispositivo).
+- **Combinar operadores**: aprovechar distintas coberturas o tarifas.
+- **Viajes**: usar una SIM local y mantener la de tu país.
+
+## Identificadores en la red
+
+![](img/2025-04-15-16-59-48.png)
+
+| Concepto | Significa                                                                                 | Para qué sirve                                                       | Dónde se guarda                                                 |
+| -------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **IMSI** | *International Mobile Subscriber Identity*  (Identidad Internacional de Suscriptor Móvil) | Identifica al **usuario** (la **SIM**) dentro de la red del operador | En la **tarjeta SIM**                                           |
+| **IMEI** | *International Mobile Equipment Identity* (Identidad Internacional del Equipo Móvil)      | Identifica al **dispositivo** (**el teléfono**)                      | En el **hardware del móvil** (y no se puede cambiar fácilmente) |
+
+## Proceso de autenticación en GSM
+
+- Móvil envía su IMSI a la red
+- Luego usa un TMSI (identificador temporal) para proteger su identidad.
 Challenge-Response
-▪	Red envía número aleatorio (RAND) al móvil.
-▪	SIM, usando su clave secreta (Ki), calcula una respuesta (SRES) con el algoritmo A3.
-▪	Red hace el mismo cálculo y compara respuestas. Si coinciden → autenticado.
+- Red envía número aleatorio (RAND) al móvil.
+- SIM, usando su clave secreta (Ki), calcula una respuesta (SRES) con el algoritmo A3.
+- Red hace el mismo cálculo y compara respuestas. Si coinciden → autenticado.
 Generación de clave de cifrado
-▪	A partir de RAND y Ki, la SIM genera una clave de sesión Kc con el algoritmo A8.
-▪	Clave se usará para cifrar los datos entre el móvil y la red.
+- A partir de RAND y Ki, la SIM genera una clave de sesión Kc con el algoritmo A8.
+- Clave se usará para cifrar los datos entre el móvil y la red.
 Cifrado de la comunicación
-▪	Se activa el cifrado usando la clave Kc y el algoritmo A5/x.
-Proceso de autenticación en GSM
+- Se activa el cifrado usando la clave Kc y el algoritmo A5/x.
 
-Red móvil 2G
-Capacidad de SIM para conectarse a redes extranjeras 
-Al encenderse en extranjero, escanea redes cercanas.
-Consulta SIM para ver con cuáles tiene acuerdos de roaming tu operadora.
-Teléfono intenta registrar en esa red, enviando IMSI (número suscriptor SIM).
-Red extranjera pregunta a operadora original si puede aceptar al usuario.
-Si OK,  envía información a la red extranjera para autorizarte
-Autenticación a través de la red extranjera
-SIM y operadora original proceso de autenticación (challenge–response), red extranjera como intermediaria.
-Si todo va bien: llamadas, SMS y datos como en tu país, a través de otra red.
-Roaming
-Red móvil 2G
-Roaming en la UE
-•	Viaje dentro de la UE
-•	Sin recargos adicionales por usar el móvil.
-•	Servicios con las mismas tarifas que en España.
-•	Llamadas y mensajes sin costos extra.
-•	Roaming fuera de la UE
-Fuera de la UE (Ej. Marruecos, Ecuador, Filipinas)
-•	SIMs limitadas con datos.
-•	Redes de operadoras locales para consumir datos.
+## Roaming
+
+## ¿Qué es el roaming?
+
+Permite que una **SIM se conecte a redes extranjeras** cuando estás fuera de tu país.
+
+### ¿Cómo funciona?
+
+1. Al encender el móvil en el extranjero, este **escanea redes disponibles**.
+2. Consulta a la **SIM** para saber con qué operadores tiene acuerdos de roaming.
+3. El teléfono intenta registrarse en una de esas redes y **envía el IMSI** (identificador único del usuario).
+4. La red extranjera pregunta a tu **operadora original** si puede aceptar al usuario.
+5. Si es aceptado, se **autoriza el acceso**.
+6. Se realiza una **autenticación segura** entre tu SIM y la operadora original (proceso *challenge-response*), con la red extranjera como intermediaria.
+
+✅ Si todo va bien: puedes **llamar, enviar SMS y usar datos** como si estuvieras en tu país.
+
+### 🇪🇺 Roaming en la Unión Europea
+
+- **Sin recargos adicionales** al viajar por la UE.
+- Usas tu tarifa habitual: llamadas, mensajes y datos **al mismo precio que en España**.
+
+![](img/2025-04-15-16-56-45.png)
+
+### Roaming fuera de la UE
+
+- En países como **Marruecos, Ecuador o Filipinas**:
+  - Algunas SIMs tienen **datos limitados**.
+  - Se conectan a **redes locales**, que pueden tener costes más altos.
+  - Es recomendable consultar las condiciones con tu operador antes de viajar.
 
 https://o2online.es/ayuda/paises-por-zonas-zona-1-zona-2-y-zona-3/
 
-Roaming
-Red móvil 2G
-•	Popularización primeros teléfonos móviles. 
-•	Teléfonos sencillos. Contrato o tarjetas prepago 
-•	Llamar y enviar SMS, pero no la conexión a Internet. 
-•	La mensajería consistía en enviar SMS, a un coste fijo 
-Contratos
-Red móvil 2G
-•	Las tarifas más habituales eran de tarjetas prepago con cierta cantidad de dinero
-•	Permitían recargar el saldo de la tarjeta.
-•	También existía la opción de contrato.
-Tarjetas prepago
-Tipos de red móvil
-3G (2004)
-Tipos de red móvil
-¿Qué tecnologías nuevas trajo 3G?
-1. UMTS (Universal Mobile Telecommunications System)
-•	La evolución natural de GSM.
-•	Usa WCDMA (Wideband Code Division Multiple Access) en vez de TDMA:
-•	Usuarios comparten misma frecuencia mediante códigos únicos, no por tiempo.
-•	Más usuarios simultáneos, mejor rendimiento en áreas densas.
-2. HSPA y HSPA+ (2006)
-•	Mejoras sobre 3G
-•	Velocidades hasta 42 Mbps.
-•	YouTube, redes sociales, videollamadas, mapas, etc. en móviles.
+![](img/2025-04-15-16-56-58.png)
 
-3G
-Tipos de red móvil
-📱 ¿Qué hizo posible 3G?
-•	Nacimiento de smartphones verdaderos (iPhone, Android).
-•	Acceso real a Internet móvil, no sólo WAP.
-•	Apps que necesitaban buena conexión: WhatsApp, mapas, correo en tiempo real, etc.
+# Red móvil 3G (desde 2004)
 
-3G
-Tipos de red móvil
-4G (2013)
-•	Velocidad de descarga: 100 Mbps.
-•	Velocidad de subida: 50 Mbps.
-•	Latencia: de 30-50 ms.
-•	Miles de dispositivos por km².
-•	Streaming de video HD, videollamadas y 🎮 juegos en línea de alta calidad.
+## ¿Qué trajo de nuevo?
 
-4G y 5G
-Tipos de red móvil
-Redes móviles
-🔹 Tipos de Conexión Según Ubicación
-🌳 Campo
-•	Menos usuarios.
-•	Antenas más antiguas.
-•	Conexión más lenta.
-🏙️ Ciudad
-•	Más usuarios.
-•	Antenas modernas.
-•	Conexión más rápida.
+### 1. UMTS (Universal Mobile Telecommunications System)
 
-Calidad de conexión
+- Evolución del estándar GSM.
+- Usa **WCDMA** (Wideband Code Division Multiple Access) en lugar de TDMA.
+- Todos los usuarios comparten **la misma frecuencia**, pero con **códigos únicos**.
+- ✅ Permite más usuarios a la vez y mejor rendimiento en zonas densas.
+
+### 2. HSPA y HSPA+ (2006)
+
+- Mejoras sobre 3G estándar.
+- Velocidades de hasta **42 Mbps**.
+- Permite usar apps con más datos: **YouTube, redes sociales, videollamadas, navegación GPS**, etc.
+
+## ¿Qué hizo posible la 3G?
+
+- **Nacieron los smartphones reales**: iPhone, Android.
+- Acceso completo a **Internet móvil** (ya no solo WAP).
+- Popularización de apps como:
+  - WhatsApp
+  - Mapas con GPS
+  - Correo electrónico en tiempo real
+  - Streaming y redes sociales
+
+![](img/2025-04-15-16-56-00.png)
+
+##  Relación con otras generaciones
+
+- La 3G fue un **gran salto respecto a la 2G**: voz y datos digitales más rápidos.
+- Prepara el camino para la llegada del **4G** y las apps modernas.
+
+# Red móvil 4G (desde 2010)
+
+## ¿Qué trajo de nuevo?
+
+### LTE (Long Term Evolution)
+
+- Tecnología principal de 4G.
+- Basada completamente en **datos IP**, incluso para llamadas (VoIP).
+- Velocidades mucho más altas: **hasta 100 Mbps o más**.
+- Baja latencia ➝ ideal para contenido en tiempo real.
+
+## ¿Qué hizo posible la 4G?
+
+- **Streaming de música y vídeo** fluido (Netflix, Spotify, etc.).
+- **Videollamadas en HD** (Skype, FaceTime...).
+- Apps más avanzadas: juegos online, trabajo en la nube, apps de transporte (Uber, Google Maps en tiempo real).
+- **Tethering** (compartir conexión con otros dispositivos).
+
+## Relación con generaciones anteriores
+
+- Mucho más rápida que 3G.
+- Transición a la era de los **datos móviles masivos**.
+- Puente entre smartphones y el inicio de los dispositivos conectados.
+
+#  Red móvil 5G (desde ~2020)
+
+## ¿Qué trajo de nuevo?
+
+### Características principales
+
+- **Velocidades ultrarrápidas**: hasta 10 Gbps en teoría.
+- **Latencia muy baja**: menos de 1 ms.
+- Conexión de **muchos dispositivos al mismo tiempo** (IoT, ciudades inteligentes).
+- Tres tipos de bandas:
+  - **Banda baja** ➝ cobertura amplia, velocidad moderada.
+  - **Banda media** ➝ equilibrio entre cobertura y velocidad.
+  - **Banda alta (mmWave)** ➝ velocidad máxima, pero poca cobertura.
+
+## ¿Qué hizo posible la 5G?
+
+![](img/2025-04-15-16-55-25.png)
+
+- **Realidad aumentada y virtual** en tiempo real.
+- **Vehículos autónomos** con comunicación instantánea.
+- **Telemedicina** con cirugía remota.
+- **Streaming 4K/8K** y experiencias inmersivas.
+- Desarrollo de **smart cities** y **IoT masivo**.
+
+## Relación con generaciones anteriores
+
+- No solo mejora la velocidad: **transforma sectores enteros** (industria, salud, transporte).
+- Supone el paso de un **móvil conectado** a un **mundo conectado**.

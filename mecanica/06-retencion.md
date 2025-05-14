@@ -6,15 +6,15 @@ Destinados a interrumpir a voluntad el movimiento de rotación del eje.
 
 Los sistemas de frenado son elementos mecánicos que se utilizan para reducir o detener el movimiento de una máquina.
 
-Su funcionamiento consiste en aumentar las resistencias que se producen en una máquina durante su funcionamiento.
+Su funcionamiento consiste en **aumentar las resistencias** que se producen en una máquina durante su funcionamiento.
 
 La energía cinética que poseen los elementos móviles se transforma en trabajo durante la deceleración, generando calor.
 
 ## Pastillas de freno
 
-<img src="media/image44.jpg" id="image44">
-
 Las pastillas de freno pueden estar hechas de materiales metálicos o cerámicos, dependiendo del tipo de freno y de las condiciones de funcionamiento.
+
+<img src="media/image44.jpg" id="image44">
 
 Las pastillas se van desgastando con el uso, y pierden gran parte del material, por lo que dejan de ser efectivas y tienen que ser sustituidas.
 
@@ -35,6 +35,13 @@ Cuando se presiona el pedal de freno, una serie de piezas mecánicas e hidráuli
 Els frens de disc funcionen mitjançant una pinça que pren un disc col·locat en l'eix de gir. La pinça pressiona dues pastilles de fre, una a cada costat del disc, per frenar el moviment. Això es fa mitjançant èmbols que s'accionen amb pressió hidràulica.
 
 <img src="media/image47.jpg" id="image47">
+
+Los frenos de disco tienen varias ventajas:
+
+- ✅ Mejor refrigeración: El disco está al aire libre y se enfría más rápido, evitando el sobrecalentamiento.
+- ✅ Mayor eficacia de frenado: Frenan con más fuerza y precisión, incluso a altas velocidades.
+- ✅ Mejor rendimiento en mojado: El agua se elimina fácilmente del disco, manteniendo la eficacia.
+- ✅ Menor mantenimiento y respuesta más rápida: Se ajustan solos y tienen mejor tacto al frenar.
 
 <img src="media/image48.gif" id="image48">
 

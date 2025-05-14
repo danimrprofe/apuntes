@@ -16,7 +16,7 @@ Un mantenimiento adecuado del sistema de lubricación y la limpieza también son
 
 ## Aceites
 
-La denominació de l'oli es basa en una escala de viscositat que es mesura a través d'un procediment estandarditzat i establert per la Societat d'Enginyers d'Automoció (SAE). Aquesta escala classifica els olis segons la seva consistència o viscositat a diferents temperatures.
+La denominació de l'oli es basa en una `escala de viscositat` que es mesura a través d'un procediment estandarditzat i establert per la Societat d'Enginyers d'Automoció (SAE). Aquesta escala classifica els olis segons la seva consistència o viscositat a diferents temperatures.
 
 <img src="media/image59.png" id="image59">
 
@@ -30,15 +30,25 @@ Los sistemas de lubricación cuentan con diferentes mecanismos para la recircula
 
 <img src="media/image60.png" id="image60">
 
-El carter se encuentra en la parte inferior del motor.
+El `carter` se encuentra en la parte inferior del motor. y recoge el aceite,
+y se situa en la parte inferior del vehículo.
 
 ![](img/2023-12-08-15-41-52.png)
 
+Una bomba recoge el aceite y lo impulsa a través del circuito, que transporta
+el aceite para lubricar las diferentes piezas.
+
+![](img/bombaaceite.gif)
+
 ## Filtro
 
-La reutilización del aceite requiere filtración.
+El aceite va recogiendo restos de desgaste de las piezas que se liberan
+al aceite por la fricción.
 
-La filtración implica tomar una derivación de aceite a presión antes de que llegue a los puntos de lubricación para pasarlo por un filtro.
+Es por ello que la reutilización del aceite requiere filtración.
+
+La filtración implica tomar una **derivación** de aceite a presión antes de
+que llegue a los puntos de lubricación para pasarlo por un filtro.
 
 Esto tiene la ventaja de que, si el filtro se obstruye, la lubricación no se viene afectada.
 
@@ -46,4 +56,21 @@ Esto tiene la ventaja de que, si el filtro se obstruye, la lubricación no se vi
 
 El aceite entra por unos orificios del filtro y sale por la parte central.
 
-![Alt text](image-2.png)
+- El aceite entra por unos **orificios** del filtro.
+- Circula a través del material filtrante y sale por la parte **central**.
+- Los **residuos** e impurezas quedan **atrapados** en el filtro.
+
+Mediante una varilla extraíble podemos comprobar el nivel de aceite, que también se va
+gastando debido a varios factores:
+
+- El aceite del motor se consume por **evaporación** a altas temperaturas
+- Por pequeñas cantidades que se **queman** durante la **combustión**.
+- También puede perderse por desgaste interno del motor o por **fugas**.
+
+Es normal que el nivel baje con el uso. Por eso, se recomienda revisarlo y rellenarlo periódicamente.
+
+![](img/2025-05-14-12-52-03.png)
+
+El aceite debe mantenerse entre dos marcas de la varilla:
+
+![](img/2025-05-14-12-52-31.png)

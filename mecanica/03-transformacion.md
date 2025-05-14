@@ -12,7 +12,7 @@ La potencia se aplica tangencialmente a la rueda, y la resistencia en una direcc
 
 ![](img/2025-05-14-19-55-04.png)
 
-##  Piñón - cremallera
+## Piñón - cremallera
 
 Es un sistema de engranajes que transforma **movimiento circular** en **lineal**.
 
@@ -41,7 +41,6 @@ El sistema de piñón y cremallera convierte el movimiento rotatorio de la maniv
 
 ![](img/2025-05-14-19-54-35.png)
 
-
 ## Tornillo y tuerca
 
 Este mecanismo convierte el movimiento **circular** en movimiento **lineal**.
@@ -49,7 +48,7 @@ Está compuesto por un **tornillo** con rosca y una **tuerca** con rosca corresp
 
 ![](img/2025-05-14-19-54-08.png)
 
-Al girar el tornillo, la tuerca se desplaza linealmente a lo largo del eje. Podemos pensar en este mecanismo como un plano inclinado enrollado a lo largo del tornillo.
+Al girar el tornillo, la tuerca se desplaza linealmente a lo largo del eje. Podemos pensar en este mecanismo como un plano inclinado enrollado a lo largo del tornillo.
 
 ![](img/2025-05-14-19-53-52.png)
 
@@ -81,18 +80,18 @@ En la parte inferior el mango es más ancho que el tornillo, por lo que funciona
 
 El **gato** de tijera, utilizado para levantar cargas muy pesadas, como levantar un coche para cambiar una rueda, está formado de dos mecanismos combinados
 
-1) El husillo se acciona con una manivela, por lo que funciona como torno-manivela.
-2) La manivela va unida a la tuerca, que mueve a su vez las barras
-3) Por último, las barras funcionan a modo de palanca, por lo que se amplifica la fuerza del husillo, facilitando el levantamiento con poco esfuerzo.
+1. El husillo se acciona con una manivela, por lo que funciona como torno-manivela.
+2. La manivela va unida a la tuerca, que mueve a su vez las barras
+3. Por último, las barras funcionan a modo de palanca, por lo que se amplifica la fuerza del husillo, facilitando el levantamiento con poco esfuerzo.
 
 ![](img/2025-05-14-19-51-17.png)
 
 ## Tornillo sin fin
 
-Transforma el movimiento rotacional en movimiento lineal o en otro rotacional,  con gran reducción de velocidad.
+Transforma el movimiento rotacional en movimiento lineal o en otro rotacional, con gran reducción de velocidad.
 
 Este es un mecanismo **reductor**, pues reduce la velocidad de la corona, el engranaje grande. Gracias a esto nos proporciona
-una gran precisión, siendo útil en diferentes objetos como relojes,  instrumentos de medición o sistemas de posicionamiento de alta precisión
+una gran precisión, siendo útil en diferentes objetos como relojes, instrumentos de medición o sistemas de posicionamiento de alta precisión
 
 ![](img/2025-05-14-19-50-46.png)
 
@@ -119,7 +118,7 @@ El tornillo sin fin no es reversible, por lo que la tensión de la cuerda no pue
 Es un mecanismo que, al ser reductor, nos proporciona gran precisión en el ajuste. Pequeños giros permiten cambiar finamente la
 tensión de la cuerda, ideal para afinaciones exactas.
 
-La relación de transmisión de este mecanismo es ``1 / Z``, donde Z es el número de dientes del engranaje.
+La relación de transmisión de este mecanismo es `1 / Z`, donde Z es el número de dientes del engranaje.
 
 En este caso, al tener 18 dientes, necesitamos 18 vueltas de clavija para que el engranaje de una vuelta completa.
 
@@ -133,7 +132,7 @@ Al mover la biela, la manivela gira y viceversa.
 
 ![](img/2025-05-14-19-34-50.png)
 
-Se llama carrera al recorrido lineal  que se realiza, y que corresponde al doble del radio de la manivela.
+Se llama carrera al recorrido lineal que se realiza, y que corresponde al doble del radio de la manivela.
 
 ![](img/2025-05-14-19-34-59.png)
 
@@ -162,5 +161,4 @@ Motores de automóvil:El árbol de levas acciona las válvulas de admisión y e
 Las levas controlan el movimiento preciso de las agujas para formar los patrones del tejido.
 ⚙️ Ventaja: Permite convertir movimiento rotativo en movimiento lineal con gran precisión.
 
-
-El recorrido lineal será igual a ``D = R - r``, los radios mayor y menor de la leva.
+El recorrido lineal será igual a `D = R - r`, los radios mayor y menor de la leva.

@@ -1,5 +1,3 @@
-
-
 # Mecanismos de acoplamiento
 
 Son dispositivos que se utilizan para conectar dos ejes de manera que puedan transmitir energía mecánica entre ellos.
@@ -20,13 +18,22 @@ La estructura está formada por un manguito de fundición con un canal interior 
 
 La junta Cardan és un element mecànic que s'utilitza per a transferir el moviment de rotació d'un eix a un altre quan estan desalineats. Està formada per dues forquilles solidàries als arbres d'entrada i de sortida, i una peça central denominada creueta.
 
-![Alt text](media/image16.gif)
+![alt text](image.png)
 
 Quan l'eix d'entrada gira, arrossega la creueta, i aquesta a la vegada arrossega l'eix de sortida. No obstant, la velocitat de gir de sortida sofreix algunes variacions a causa dels angles que es formen.
 
-Per evitar aquestes variacions, s'instal·len sempre dues juntes Cardan que es compensen entre si. A aquest element se l'anomena doble Cardan.
+Per evitar aquestes variacions, s'instal·len sempre dues juntes Cardan que es compensen entre si. A aquest element se l'anomena **doble Cardan**.
+
+![Alt text](media/image16.gif)
+
+Un exemple el podem trobar als arbres de transmisió, en vehicles on el motor es
+situa al davant, però les rodes que traccionen son les de darrere.
 
 <img src="media/image17.png" id="image17">
+
+L'arbre que uneix el diferencial amb la caixa de canvis és un arbre format per dues juntes cardan.
+
+![](img/2025-05-14-11-51-07.png)
 
 ## Junta homocinètica
 
@@ -44,28 +51,35 @@ En la siguiente imagen vemos como los palieres se unen a las ruedas mediante jun
 
 <img src="media/image20.png" id="image20">
 
+Les rodes es poden moure deguta a les suspensions, i la junta permet l'acoplament independentment d'aquests moviments:
+
+![](img/2025-05-14-11-52-19.png)
+
 ## Embrague
 
-El embrague es responsable de conectar y desconectar el motor de la caja de cambios. Cuando se presiona el pedal del embrague, se desconecta el motor de la caja de cambios, permitiendo cambiar de marcha sin interrupciones en la rotación del motor.
+A diferencia de los anteriores, el embrague es responsable de **conectar y desconectar**
+el motor de la caja de cambios. Cuando se presiona el pedal del embrague, se desconecta
+el motor de la caja de cambios, permitiendo cambiar de marcha sin interrupciones en la
+rotación del motor.
+
+<img src="media/image21.gif" id="image21">
 
 ### Disco de Embrague
 
 El componente clave del sistema de embrague es el disco de embrague. Este disco, situado entre el volante del motor y el platillo de presión, se conecta al motor y a la caja de cambios.
 
-![Alt text](image-18.png)
+![](img/2023-12-09-09-05-26.png)
+
+Mediante un sistema hidráulico, se transmite el movimiento desde el pedal de embrague al propio enmbrague.
+
+En un vehículo con transmisión manual, el conductor controla el embrague a través del pedal del embrague. Al presionar este pedal, se desacopla el motor de la caja de cambios, permitiendo cambiar de marcha. Al soltar el pedal, se vuelve a conectar la transmisión.
+
+![](img/2025-05-14-11-53-39.png)
 
 - Cuando el pedal del embrague se presiona, el disco de embrague se separa del volante del motor, interrumpiendo la transmisión de energía
 - Cuando se libera el pedal del embrague, la presión se aplica al disco, conectando así el motor y la caja de cambios. Al presionar el pedal del embrague, se reduce la presión, desconectando el motor de la caja de cambios.
 
-![](img/2023-12-09-09-05-26.png)
-
-Pedal del Embrague: En un vehículo con transmisión manual, el conductor controla el embrague a través del pedal del embrague. Al presionar este pedal, se desacopla el motor de la caja de cambios, permitiendo cambiar de marcha. Al soltar el pedal, se vuelve a conectar la transmisión.
-
-<img src="media/image21.gif" id="image21">
-
-Su función principal es desacoplar momentáneamente el motor de la transmisión para permitir cambios de marcha suaves y precisos.
-
-<img src="media/image22.jpg" id="image22">
+![](img/2025-05-14-11-54-54.png)
 
 https://www.youtube.com/watch?v=WxRq_bNBmjQ
 

@@ -109,13 +109,15 @@ Permite transmitir movimiento a mayor distancia.
 Un sistema compuesto por una polea conectada al motor, que entra en contacto con una correa extendida
 hacia otra polea.
 
+![](img/2025-05-15-12-47-19.png)
+
 La correa se encarga de transferir el movimiento a la máquina o dispositivo que se desea accionar.
 
 Las correas se clasifican en diferentes tipos según su diseño y aplicación:
 
-- ✔ Correas planas: Usadas en transmisiones de baja potencia y altas velocidades.
-- ✔ Correas trapezoidales: Ofrecen mayor agarre y son ideales para transmisiones de potencia media y alta.
-- ✔ Correas dentadas: Proporcionan una transmisión precisa sin deslizamiento, utilizadas en sistemas que requieren sincronización, como motores de automóviles.
+- ✔ Correas **planas**: Usadas en transmisiones de baja potencia y altas velocidades.
+- ✔ Correas **trapezoidales**: Ofrecen mayor agarre y son ideales para transmisiones de potencia media y alta.
+- ✔ Correas **dentadas**: Proporcionan una transmisión precisa sin deslizamiento, utilizadas en sistemas que requieren sincronización, como motores de automóviles.
 
 La elección del tipo de correa depende del uso específico y las necesidades de transmisión del sistema.
 
@@ -123,23 +125,28 @@ La elección del tipo de correa depende del uso específico y las necesidades de
 
 Son sistemas de transmisión formados por varias poleas de diferentes tamaños en un mismo eje.
 Permiten cambiar entre varias relaciones de transmisión, ajustando la posición de la correa para modificar la velocidad de salida.
+
 Aplicaciones:
-✅ Máquinas herramienta (torno, taladro de columna).
-✅ Sistemas mecánicos donde se requiere ajustar velocidades sin necesidad de engranajes.
-Son una solución sencilla y efectiva para regular la velocidad en sistemas de transmisión mecánica.
+
+- ✅ Máquinas herramienta (torno, taladro de columna).
+- ✅ Sistemas mecánicos donde se requiere ajustar velocidades sin necesidad de engranajes. Son una solución sencilla y efectiva para regular la velocidad en sistemas de transmisión mecánica.
 
 ### Trenes de poleas
 
-✔ ¿Qué son?
 Los trenes de poleas son sistemas compuestos por varias poleas y correas dispuestas en serie para conseguir una relación de transmisión muy alta o muy baja.
-✔ ¿Cómo funcionan?
+
 Se combinan poleas de distintos tamaños para multiplicar o reducir la velocidad de giro.
 Permiten transmitir movimiento a grandes distancias sin necesidad de engranajes.
-✔ Aplicaciones:
-✅ Maquinaria industrial.
-✅ Sistemas de elevación.
-✅ Equipos donde se requiere un ajuste progresivo de velocidad.
+
+Aplicaciones:
+
+- ✅ Maquinaria industrial.
+- ✅ Sistemas de elevación.
+- ✅ Equipos donde se requiere un ajuste progresivo de velocidad.
+
 Este mecanismo es ideal cuando se necesita modificar drásticamente la velocidad dentro de un sistema de transmisión mecánica.
+
+## Correas dentadas
 
 ✔ ¿Qué son?
 Cuando se requiere una transmisión precisa y sin resbalamiento, se emplean correas dentadas o cadenas.
@@ -147,77 +154,68 @@ Cuando se requiere una transmisión precisa y sin resbalamiento, se emplean corr
 Correas dentadas: Funcionan como engranajes flexibles, encajando sus dientes en poleas específicas para evitar deslizamientos.
 Cadenas: Utilizan eslabones metálicos que engranan con ruedas dentadas, garantizando una transmisión exacta del movimiento.
 
-## Correas Dentadas y Cadenas
-
 Correa de distribución
 Alternador: encargado de recargar la batería y generar electricidad cuando el motor está encendido.
 
-¿Qué son?
-Los engranajes son mecanismos formados por ruedas dentadas que transmiten movimiento de manera precisa y sin deslizamiento.
+## Engranajes
+
+Los **engranajes** son mecanismos formados por ruedas dentadas que transmiten movimiento de manera precisa y sin deslizamiento.
 ¿Cómo funcionan?
-El funcionamiento se basa en el contacto directo entre los dientes de las ruedas.
+El funcionamiento se basa en el contacto directo entre los **dientes** de las ruedas.
 Este contacto permite una transmisión exacta del movimiento, asegurando que el desplazamiento se transfiera de manera eficiente y sin pérdidas.
-Los engranajes también permiten convertir la velocidad y el torque entre ejes, ajustando la relación de salida según las necesidades del sistema.
+Los engranajes también permiten convertir la **velocidad** y el **par** entre ejes, ajustando la relación de salida según las necesidades del sistema.
 Los engranajes son esenciales en una amplia gama de aplicaciones, desde motores y transmisiones hasta maquinaria y sistemas de relojería, donde se requiere control preciso de movimiento.
 
-# Engranajes
+### Dimensiones fundamentales
 
-Dimensiones fundamentales
-32
-D (Diámetro primitivo) Define el punto de contacto teórico entre engranajes.
-Z: Es la cantidad total de dientes
-P (paso): distancia entre los centros de dos dientes consecutivos
+- D (Diámetro primitivo) Define el punto de contacto teórico entre engranajes.
+- Z: Es la cantidad total de dientes
+- P (paso): distancia entre los centros de dos dientes consecutivos
 
-Condición de engrane
-Para que dos engranajes puedan engranar correctamente, deben tener el mismo módulo
-Módulo (m)
+Para que dos engranajes puedan engranar correctamente, deben tener el mismo **módulo (m)**
+
 Es una medida en milímetros que indica el tamaño de los dientes de un engranaje.
-Fórmula clave
-Donde:
-d = Diámetro primitivo (mm)
-m = Módulo (mm)
-z = Número de dientes
 
 ### Engranajes helicoidales
 
-Los dientes tienen una forma inclinada, lo que permite un
-Contacto progresivo, reduciendo impactos y vibraciones. Menor fricción, prolongando vida útil del engranaje.
+Los dientes tienen una forma inclinada, lo que permite un **contacto progresivo**, reduciendo impactos y vibraciones. Menor fricción, prolongando vida útil del engranaje.
 
 Pueden soportar mayores cargas y transmitir potencia de manera más eficiente que los engranajes rectos.
-Menos ruidosos y funcionamiento más fluido, ideal para mecanismos de alta velocidad.
+**Menos ruidosos** y funcionamiento más **fluido**, ideal para mecanismos de alta velocidad.
 
 Se utilizan en cajas de cambios, maquinaria industrial y transmisiones que requieren suavidad y durabilidad.
 Desventaja: generan empuje axial (una fuerza a lo largo del eje del engranaje), lo que requiere rodamientos especiales para soportar esa carga.
 
 ### Engranaje de espiga
 
-Mecanismos de transmisión
-Engranaje helicoidal doble
-Combinación de dos engranajes helicoidales opuestos.
+El engranaje de **espiga** o **helicoidal doble** es una combinación de dos engranajes helicoidales
+opuestos.
 
-Visto desde arriba, cada surco en espiral de este engranaje parece una letra V.
+Visto desde arriba, cada surco en espiral de este engranaje parece una **letra V**.
 
-No generan una carga axial adicional.
+Gracias a esta combinación, no generan una carga axial adicional.
+
+### Trenes de engranajes
 
 Los trenes de engranajes permiten modificar la velocidad y el torque mediante la combinación de varios engranajes en serie.
 ✔ Relación de transmisión (i):
+
 Donde:
-z1​ = Número de dientes del engranaje conductor.
-z2​ = Número de dientes del engranaje conducido.
-✔ Relación en trenes de varios engranajes:
-Si hay más engranajes en serie, la relación total se obtiene multiplicando las relaciones individuales:
+
+- z1​ = Número de dientes del engranaje conductor.
+- z2​ = Número de dientes del engranaje conducido.
+
+Si hay más engranajes en serie, la **relación total** se obtiene multiplicando las relaciones individuales
 
 Los trenes de engranajes se usan en cajas de cambio, maquinaria industrial y sistemas de reducción de velocidad.
 
 ### Piñón intermedio o Piñón loco
 
-​Un piñón loco, también conocido como piñón intermedio, es un engranaje que gira libremente sobre un
+​Un piñón loco, también conocido como piñón intermedio, es un engranaje que **gira libremente** sobre un
 eje sin estar fijo a él.
 
-Transmite el movimiento modificando el sentido de giro entre dos engranajes que no están en contacto
-directo
-
-No altera la relación de transmisión
+Transmite el movimiento **modificando el sentido de giro** entre dos engranajes que no están en contacto
+directo. No altera la relación de transmisión
 
 - Simulador de engranajes: https://geargenerator.com/
 

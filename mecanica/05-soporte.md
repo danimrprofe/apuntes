@@ -74,6 +74,11 @@ Los hay de diferentes materiales:
 
 ![](img/2025-05-14-12-11-37.png)
 
+En esta imagen podéis ver un juguete tipo spinner, que gira apoyado
+en un eje gracias a un rodamiento.
+
+![](img/2025-05-16-09-29-09.png)
+
 Como ejemplo, en los patinetes o en general cuando hay ruedas que giran
 libremente sobre un eje, encontramos rodamientos en las ruedas:
 

@@ -10,14 +10,6 @@ Su funcionamiento consiste en **aumentar las resistencias** que se producen en u
 
 La energía cinética que poseen los elementos móviles se transforma en trabajo durante la deceleración, generando calor.
 
-## Pastillas de freno
-
-Las pastillas de freno pueden estar hechas de materiales metálicos o cerámicos, dependiendo del tipo de freno y de las condiciones de funcionamiento.
-
-<img src="media/image44.jpg" id="image44">
-
-Las pastillas se van desgastando con el uso, y pierden gran parte del material, por lo que dejan de ser efectivas y tienen que ser sustituidas.
-
 ## Frenos de tambor
 
 El sistema de freno de tambor se compone de un tambor que se encuentra en el interior de la rueda, y que gira junto con ella.
@@ -55,6 +47,16 @@ Hi ha dos tipus de frens de disc: sistema rígid i sistema flotant. En el sistem
 
 <img src="media/image51.png" id="image51">
 
+## Pastillas de freno
+
+![](img/2025-05-16-09-19-25.png)
+
+Las pastillas de freno pueden estar hechas de materiales metálicos o cerámicos, dependiendo del tipo de freno y de las condiciones de funcionamiento.
+
+<img src="media/image44.jpg" id="image44">
+
+Las pastillas se van desgastando con el uso, y pierden gran parte del material, por lo que dejan de ser efectivas y tienen que ser sustituidas.
+
 ## Accionament dels sistemes de frenat
 
 Hi ha diferents tipus d'accionament dels sistemes de frenat que s'utilitzen en vehicles i altres màquines. Els dos tipus més comuns són els sistemes de frenat mecànics i hidràulics.
@@ -62,6 +64,14 @@ Hi ha diferents tipus d'accionament dels sistemes de frenat que s'utilitzen en v
 **Accionament mecànic**
 
 Els sistemes de frenat mecànics utilitzen una vareta per mitjà d'una palanca per fer girar la lleva i separar les sabates de frens per aplicar-les contra el tambor.
+
+![](img/2025-05-16-09-20-36.png)
+
+Desventajas:
+
+- Usa cables y varillas que pueden aflojarse o romperse con el tiempo.
+- La fuerza no se reparte igual entre las ruedas.
+- Requiere más esfuerzo al pisar el pedal.
 
 **Accionament hidràulic**
 
@@ -89,30 +99,33 @@ Permite que una pieza o componente se mueva en una dirección determinada, pero 
 
 El trinquete generalmente está compuesto por una rueda dentada y una palanca que se encajan entre las dientes de la rueda dentada para evitar que la pieza se mueva hacia atrás.
 
-Permiten rotación de un eje en un sentido determinado le impiden en lo opuesto
-
-Sistema de trinquet. Compost de:
-
-- Roda dentada. Dents tenen un costat recte i l’altre corb.
-- Nucli o trinquet. Articulat en una part fixa, encaixa en el costat recte de la dent
-- Bon funcionament quan el trinquet, en contacte amb la dent, tendeix espontàniament a introduir-se a l’espai lliure.
-
-<img src="media/image55.png" id="imag
+![](img/2025-05-16-09-23-26.png)
 
 ### Carraca
 
-![Alt text](image-4.png)
+En una llave normal, necesitamos sacar y volver a colocar la llave
+para reposicionarla.
 
-Permite apretar o aflojar tornillos y tuercas, ya que te permite aplicar fuerza en un solo sentido sin tener que levantar y reposicionar la herramienta.
+![](img/2025-05-16-09-25-18.png)
+
+En cambio, las **llaves de carraca** permiten apretar o aflojar tornillos
+y tuercas, sin tener que levantar y reposicionar la herramienta.
 
 ![](img/2023-12-08-15-46-03.png)
 
 ## Ruedas de bicicleta
 
-Permite que la rueda gire en una dirección (hacia adelante) mientras el piñón se engancha para impulsar la bicicleta, pero permite que la rueda gire libremente en la dirección opuesta (hacia atrás) sin mover la cadena ni los pedales.
+En las bicicletas encontramo un sistema de trinquete en el buje
+del pedalier.
+
+Este mecanismo permite que la rueda gire en una dirección
+(hacia adelante) mientras el piñón se engancha para impulsar
+la bicicleta, pero permite que la rueda gire libremente en la
+dirección opuesta (hacia atrás) sin mover la cadena ni los pedales.
 
 ![](img/2023-12-08-15-47-08.png)
 
-Esto es esencial para que puedas dejar de pedalear y la bicicleta pueda avanzar sin forzar la transmisión.
+Es por ello que la bicicleta solo se mueve si giramos los pedales
+en un sentido. Esto es esencial para que puedas dejar de pedalear y la bicicleta pueda avanzar sin forzar la transmisión.
 
 ![](img/2023-12-08-15-47-03.png)

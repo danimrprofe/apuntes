@@ -133,6 +133,23 @@ por las ballestas, las cuales, al flexionarse, evitan que se transmitan a la car
 
 ![](img/2025-05-16-08-00-37.png)
 
+## Resonancia en Muelles
+
+Cuando se aplica y luego se suelta una carga sobre un muelle, este comienza a oscilar
+a una **frecuencia natural o propia**, determinada por sus características físicas como
+la rigidez y la masa. Si sobre ese muelle se aplican impulsos o fuerzas repetidas con
+una frecuencia que **coincide con su frecuencia propia**, se produce un fenómeno
+llamado **resonancia**.
+
+En este caso, la energía de cada impulso se acumula en el sistema, lo que provoca un aumento
+progresivo de la **amplitud de las oscilaciones**. Si no se controla, este incremento puede ser
+tan grande que llegue a **dañar el sistema**, provocando deformaciones o incluso roturas.
+
+Para prevenir la resonancia en sistemas con muelles o ballestas, es común asociarles
+**amortiguadores**. Estos componentes disipan parte de la energía del movimiento, reduciendo
+las oscilaciones y evitando que la amplitud crezca de manera peligrosa, asegurando así un
+funcionamiento más seguro y estable del conjunto.
+
 ### 🌀 Amortiguadores
 
 - Disipan energía del movimiento de los muelles.
@@ -157,43 +174,6 @@ El paso controlado del aceite reduce la velocidad de los movimientos bruscos,
 absorbiendo impactos y vibraciones
 .
 ![](img/2025-05-16-08-02-45.png)
-
-## Tipos de Amortiguadores
-
-Los amortiguadores pueden clasificarse en **no presurizados** y **presurizados**, según su diseño
-interno y el tipo de fluido o gas que utilizan.
-
-Los **amortiguadores no presurizados** contienen únicamente **aceite** en su interior.
-Aunque su construcción es más sencilla y económica, presentan algunas desventajas importantes.
-La principal es la **formación de bolsas de aire**, que afectan negativamente al
-rendimiento del amortiguador. Además, en **climas fríos**, su eficacia se ve reducida, ya que el aceite se vuelve más viscoso y no circula correctamente, lo que limita su capacidad para absorber impactos de manera eficiente.
-
-Por otro lado, los **amortiguadores presurizados** incorporan tanto **aceite como gas
-(normalmente nitrógeno)** a presión. Esta combinación permite un funcionamiento más
-constante y eficaz, especialmente en condiciones extremas. Gracias al gas presurizado,
-se reduce la formación de burbujas de aire y se mejora la **estabilidad y comodidad de marcha**,
-lo que los convierte en una opción preferida para vehículos de alto rendimiento o uso exigente.
-
-## Tipos de Amortiguadores Presurizados
-
-Dentro de los amortiguadores presurizados, existen principalmente dos diseños: **doble tubo** y **monotubo**.
-
-Los **amortiguadores de doble tubo** constan de dos cámaras o tubos concéntricos. La cámara interior contiene el aceite, mientras que la cámara exterior actúa como reserva. Cuando el vástago se introduce en el cuerpo del amortiguador, el aceite fluye a través de válvulas ubicadas en el pistón, lo que permite amortiguar el movimiento. Parte del aceite desplazado se transfiere a la cámara de reserva a través de la válvula de pie, asegurando que el sistema mantenga un volumen de aceite adecuado durante todo el recorrido.
-
-Los **amortiguadores monotubo**, también conocidos como de **dos cámaras con gas presurizado**, presentan una única carcasa dividida internamente por un **pistón flotante**. Esta carcasa contiene una cámara de aceite y otra de gas presurizado. Cuando el vástago se comprime, desplaza el aceite, el cual ejerce presión sobre el pistón flotante, comprimiendo el gas. Este diseño permite mantener una **presión interna constante** y reduce significativamente la formación de burbujas, mejorando así el rendimiento incluso en situaciones de alta exigencia.
-
-![](img/2025-05-16-08-07-45.png)
-
-## 🎵 Resonancia en Muelles
-
-**Frecuencia propia:**
-Cuando un muelle oscila tras aplicar y soltar una carga.
-
-**Resonancia:**
-Ocurre si la frecuencia de impulsos coincide con su frecuencia propia, provocando **amplitudes crecientes** que pueden dañar el sistema.
-
-**Prevención:**
-Asociar **amortiguadores** a muelles y ballestas.
 
 https://m.youtube.com/watch?v=fKIdx5dSjLA
 

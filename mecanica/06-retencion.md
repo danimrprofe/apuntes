@@ -35,6 +35,11 @@ Cuando se presiona el pedal de freno, una serie de piezas mecánicas e hidráuli
 
 ## Frens de disc
 
+Los frenos de disco son fáciles de identificar puesto que se ve a través de la llanta el disco y, en este caso de
+color rojo, la pinza que ejerce presión sobre el disco.
+
+<img src="media/image51.png" id="image51">
+
 Els frens de disc funcionen mitjançant una pinça que pren un disc col·locat en l'eix de gir. La pinça pressiona dues pastilles de fre, una a cada costat del disc, per frenar el moviment. Això es fa mitjançant èmbols que s'accionen amb pressió hidràulica.
 
 <img src="media/image47.jpg" id="image47">
@@ -62,8 +67,6 @@ El líquid que circula en el sistema de frenat es diu líquid de frens.
 Hi ha dos tipus de frens de disc: sistema rígid i sistema flotant. En el sistema rígid, els èmbols pressionen per ambdós costats del disc de manera simultània, mentre que en el sistema flotant, una pinça solidària duu dos pistons, un acciona directament sobre una de les pastilles de fre i l'altre acciona sobre l'altra per mitjà de la porta de la pinça.
 
 <img src="media/image50.png" id="image50">
-
-<img src="media/image51.png" id="image51">
 
 ## Pastillas de freno
 

@@ -12,11 +12,22 @@ La energía cinética que poseen los elementos móviles se transforma en trabajo
 
 ## Frenos de tambor
 
+En muchos coches se suelen montar en el eje trasero **frenos de tambor**, que se pueden ver fácilmente a través de las llantas de las ruedas traseras.
+
+![](img/2025-05-18-19-15-02.png)
+
+Suele verse a través de las llantas, y son visibles al desmontar la rueda:
+
+![](img/2025-05-18-19-15-37.png)
+
 El sistema de freno de tambor se compone de un tambor que se encuentra en el interior de la rueda, y que gira junto con ella.
 
 <img src="media/image45.jpg" id="image45">
 
 Las zapatas son piezas de metal en forma de arco que se ajustan dentro del tambor, y que se activan para crear fricción y detener la rotación del tambor y, por lo tanto, de la rueda.
+Al quitar la tapa podemos obervar sus componentes:
+
+![](img/2025-05-18-19-16-30.png)
 
 Cuando se presiona el pedal de freno, una serie de piezas mecánicas e hidráulicas trabajan juntas para empujar las zapatas contra el tambor, lo que crea la fricción necesaria para detener el vehículo.
 
@@ -35,7 +46,14 @@ Los frenos de disco tienen varias ventajas:
 - ✅ Mejor rendimiento en mojado: El agua se elimina fácilmente del disco, manteniendo la eficacia.
 - ✅ Menor mantenimiento y respuesta más rápida: Se ajustan solos y tienen mejor tacto al frenar.
 
-<img src="media/image48.gif" id="image48">
+El proceso de frenado es el siguiente:
+
+1. Al presionar el pedal de freno, un émbolo empuja en líquido de freno, que transmite la fuerza hacia un pistón en los frenos
+2. El líquido empuja el pistón
+3. Si se pisa un poco el freno, el pistón al moverse mueve la pastilla derecha, que toca con el disco y por rozamiento lo frena.
+4. Si se sigue presionando, el pistón hace tope y la pastilla izquierda también toca el disco y, entre las dos pastillas, ejercen mayor presión
+
+![](img/frenado.gif)
 
 El líquid que circula en el sistema de frenat es diu líquid de frens.
 

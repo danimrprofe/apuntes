@@ -1,12 +1,19 @@
 # Lubrificació
 
-<img src="media/image57.png" id="image57">
-
-La lubricación es el proceso de colocar una sustancia entre dos piezas para disminuir el rozamiento y prevenir la oxidación, la suciedad y otras formas de desgaste. Esto produce una mejor eficiencia y vida útil de los mecanismos.
-
 La lubricación es esencial para el funcionamiento de la mayoría de las máquinas.
 
-Sin ella, las piezas se rozan entre sí, lo que genera calor, desgaste y, en última instancia, la falla del mecanismo.
+Sin ella, las piezas se rozan entre sí, lo que genera **calor**, **desgaste** y, en última instancia, la falla del mecanismo.
+
+<img src="media/image57.png" id="image57">
+
+Entre las múltiples ventajas tenemos las siguientes:
+
+1. Forman una película lubricante entre superficies en movimiento.**Evitan el contacto directo entre metales**,
+   lo que facilita el movimiento suave.
+2. Disminuyen el **desgaste**: Al reducir la fricción, también protegen las piezas del deterioro, aumentando su vida útil.
+3. Disipan el **calor**: absorben y transportan el calor generado por el rozamiento, evitando el sobrecalentamiento.
+4. Previenen la **corrosión**: incluyen aditivos **anticorrosivos** que protegen las superficies metálicas
+   de la oxidación.
 
 ## Mantenimento
 
@@ -16,11 +23,15 @@ Un mantenimiento adecuado del sistema de lubricación y la limpieza también son
 
 ## Aceites
 
-La denominació de l'oli es basa en una `escala de viscositat` que es mesura a través d'un procediment estandarditzat i establert per la Societat d'Enginyers d'Automoció (SAE). Aquesta escala classifica els olis segons la seva consistència o viscositat a diferents temperatures.
+La denominación del aceite se basa en una **escala de viscosidad** que se mide a través de un procedimiento
+estandarizado y establecido por la Sociedad de Ingenieros de Automoción (SAE). Esta escala clasifica los
+aceites según su consistencia o viscosidad a diferentes temperaturas.
 
 <img src="media/image59.png" id="image59">
 
-En la denominació de l'oli es fa referència a la seva viscositat a 100 graus Celsius, la qual es representa amb la lletra "W" (que significa "Winter" o hivern en anglès). Així, per exemple, un oli 10W-40 té una viscositat de 10 a baixes temperatures (en fred) i de 40 a altes temperatures (en calent).
+En la denominación del aceite se hace referencia a su viscosidad a 100 grados Celsius, la cual se representa
+con la letra "W" (que significa "Winter" o invierno en inglés). Así, por ejemplo, un aceite 10W-40 tiene una
+viscosidad de 10 a bajas temperaturas (en frío) y de 40 a altas temperaturas (en caliente).
 
 ![](img/2023-12-08-15-42-25.png)
 
@@ -30,7 +41,7 @@ Los sistemas de lubricación cuentan con diferentes mecanismos para la recircula
 
 <img src="media/image60.png" id="image60">
 
-El `carter` se encuentra en la parte inferior del motor. y recoge el aceite,
+El **carter** se encuentra en la parte inferior del motor. y recoge el aceite,
 y se situa en la parte inferior del vehículo.
 
 ![](img/2023-12-08-15-41-52.png)

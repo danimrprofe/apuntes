@@ -3,81 +3,58 @@
 ## 🔋 ¿Qué son?
 
 Los mecanismos acumuladores son dispositivos que **almacenan energía** para liberarla posteriormente cuando sea necesario.
-Tipos de energía que pueden almacenar:
-
-- Mecánica
-- Hidráulica
-- Neumática
-- Eléctrica
-
----
 
 ## ⚙️ Volante de Inercia en Motores
 
 ### 📌 ¿Por qué es necesario?
 
-- En motores (vapor o combustión interna) el trabajo motor se suministra de forma **discontinua**.
-- Las máquinas requieren trabajo **prácticamente constante**.
+En motores (vapor o combustión interna) el trabajo motor se suministra de forma **discontinua**, es decir, a tirones.
 
-### ⚡ Ejemplo: Motor de explosión
-
-El **volante de inercia**:
-
-- Suaviza las fluctuaciones de potencia.
-- Se coloca en el extremo del **cigüeñal**.
-- Almacena energía y la libera para mantener la rotación constante.
+En un motor, el **volante de inercia** de coloca en el extremo del **cigüeñal**. Almacena energía y la libera para mantener la rotación constante.
 
 ![](img/2025-05-11-22-44-59.png)
 
-## 🔄 Energía Cinética Rotacional
+# Energía cinética rotacional
 
-### 📌 ¿Qué es?
+Cuando algo gira, como una peonza o un volante de inercia, **tiene energía por estar rotando**.
+Esa energía se llama **energía cinética rotacional**.
 
-Es la energía asociada al movimiento de rotación de un objeto alrededor de un eje.
+Es parecida a la energía que tiene un coche en movimiento, pero en lugar de ir en línea recta, está dando vueltas.
 
-### 🔧 ¿Cómo se determina?
+📏 ¿De qué depende?
 
-- Depende de la **distribución de la masa** respecto al eje.
-- **Más alejada la masa del eje ➝ mayor momento de inercia**.
+De dos cosas:
 
-### ⚡ Principio para reducirlo:
+- De lo rápido que gira (su **velocidad angular**, en rpm o rad/s).
+- De cómo está **distribuida su masa** respecto al eje de giro.
 
-Concentrar la masa **cerca del eje de rotación**.
+👉 Cuanto más lejos esté la masa del eje, más cuesta hacerlo girar o frenarlo.
+A eso se le llama **momento de inercia**.
 
----
+Ejemplo sencillo:
 
-## 📏 Momento de Inercia
+Si giras una pesa con los brazos estirados, cuesta más que si los tienes pegados al cuerpo.
+Eso es porque al alejar la masa (las pesas) del eje (tu cuerpo) aumentas el momento de inercia.
 
-- Se expresa en **kg·m²**.
-- Cuanto mayor, más difícil es cambiar la velocidad de rotación de un objeto.
+### 🌀 ¿Qué hace un volante de inercia?
 
-**Ejemplo:**
-Hacer girar una varilla desde un extremo es más difícil cuanto mayor sea su momento de inercia.
+Un volante de inercia es una rueda pesada que almacena energía cuando gira.
+👉 Cuanto más rápido gira y más grande es, más energía guarda.
 
----
+Cuando necesita devolver esa energía, mantiene el giro aunque el motor o la fuerza
+que lo impulsa se detenga un momento.
+Esto ayuda a que las máquinas **giren de manera más suave y constante**.
 
-## 🌀 Conservación del Momento Angular
+📊 ¿Cómo se calcula la energía que almacena?
+Se usa esta fórmula:
 
-El **momento angular total de un sistema aislado permanece constante** si no hay fuerzas externas (torques) actuando sobre él.
+Energía rotacional = (1/2) × momento de inercia × (velocidad angular)²
 
----
+Si conoces:
 
-## 📊 Cálculo de Energía Acumulada
-
-**Fórmula:**
-Para un volante de inercia:
-
-- Masa (m)
-- Radio (R)
-- Velocidad angular (ω)
-
-**Ejemplo:**
-
-- R = 0,15 m
-- m = 500 g
-- ω = 2400 rpm
-
----
+- El peso (masa)
+- El tamaño (radio)
+- Y a qué velocidad gira (rpm o rad/s)
 
 # 🚗 Suspensiones
 

@@ -108,45 +108,41 @@ Calcular energía potencial almacenada.
 
 ## Resonancia en Muelles
 
-Cuando se aplica y luego se suelta una carga sobre un muelle, este comienza a oscilar
-a una **frecuencia natural o propia**, determinada por sus características físicas como
-la rigidez y la masa. Si sobre ese muelle se aplican impulsos o fuerzas repetidas con
-una frecuencia que **coincide con su frecuencia propia**, se produce un fenómeno
-llamado **resonancia**.
+Cuando se aplica y luego se suelta una carga sobre un muelle, este comienza a oscilar a una **frecuencia natural o propia**, determinada por su rigidez y masa.
 
-En este caso, la energía de cada impulso se acumula en el sistema, lo que provoca un aumento
-progresivo de la **amplitud de las oscilaciones**. Si no se controla, este incremento puede ser
-tan grande que llegue a **dañar el sistema**, provocando deformaciones o incluso roturas.
+🔄 Si se aplican impulsos o fuerzas repetidas con una frecuencia que **coincide con su frecuencia propia**, se produce la **resonancia**.
 
-Para prevenir la resonancia, es común asociarles
-**amortiguadores**. Estos componentes _disipan_ parte de la energía del movimiento,
-**reduciendo las oscilaciones y evitando que la amplitud crezca de manera peligrosa**, asegurando así un
-funcionamiento más seguro y estable del conjunto.
+- ⚡ La energía de cada impulso se acumula, aumentando la **amplitud de las oscilaciones**.
+- ❗ Si no se controla, la amplitud puede crecer hasta **dañar el sistema**, causando deformaciones o roturas.
+
+🛑 Para prevenirlo, se usan **amortiguadores** que _disipan_ parte de la energía, **reduciendo las oscilaciones y evitando un aumento peligroso de la amplitud**.
+
+✅ Así se asegura un funcionamiento más seguro y estable.
 
 ### 🌀 Amortiguadores
 
-- Disipan energía del movimiento de los muelles.
-- Evitan el rebote continuo.
-- Controlan las oscilaciones y mejoran estabilidad.
+- Disipan la **energía** que generan los movimientos del muelle.
+- Evitan el **rebote continuo** después de una oscilación.
+- Controlan las **oscilaciones** para mejorar la **estabilidad** del sistema.
 
 ![](img/2025-05-16-08-01-08.png)
 
-Estructura básica:
+⚙️ **Estructura básica:**
 
-- Una cámara llena de aceite hidráulico.
-- Dentro de la cámara, se mueve un émbolo con agujeros calibrados
+- Una cámara llena de **aceite hidráulico**.
+- Dentro, un **émbolo** con agujeros calibrados.
 
-Funcionamiento:
+🔄 **Funcionamiento:**
 
-1. El aceite fluye a través de los agujeros del émbolo.
-2. Amortiguamiento: El aceite se fuerza a pasar por aperturas de tamaño diferenciado.
-3. Efecto: El paso controlado del aceite reduce la velocidad de los movimientos bruscos, absorbiendo impactos y vibraciones.
+- El aceite pasa por los agujeros del émbolo.
+- El flujo forzado produce el **amortiguamiento**.
+- Así, se reduce la velocidad de movimientos bruscos, absorbiendo impactos y vibraciones.
 
 ![](img/2025-05-16-08-02-34.png)
 
 El paso controlado del aceite reduce la velocidad de los movimientos bruscos,
 absorbiendo impactos y vibraciones
-.
+
 ![](img/2025-05-16-08-02-45.png)
 
 https://m.youtube.com/watch?v=fKIdx5dSjLA
@@ -177,12 +173,3 @@ Se usan ballestas en vehículos pesados porque:
 - Soportan **mayores cargas**.
 - Son **más resistentes** y duraderas.
 - Ofrecen **mayor estabilidad** al vehículo bajo carga.
-
-## 📋 Resumen:
-
-| Elemento           | Función Principal                             | Ejemplos de uso                 |
-| :----------------- | :-------------------------------------------- | :------------------------------ |
-| Volante de inercia | Almacenar energía rotacional                  | Motores, turbinas               |
-| Muelles            | Absorber impactos, almacenar energía elástica | Suspensiones, puertas, juguetes |
-| Ballestas          | Absorber grandes impactos mediante flexión    | Camiones, autobuses             |
-| Amortiguadores     | Controlar rebote y disipar energía            | Suspensiones de vehículos       |

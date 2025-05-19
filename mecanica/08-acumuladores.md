@@ -78,19 +78,14 @@ El muelle **se deforma**, pero quiere volver a su forma original. Esto ocurre po
 
 > ⚡ **Elasticidad**
 
-Al deformarse, el muelle **acumula energía** en su interior:
-👉 Se llama **energía potencial elástica**.
+🧲 Al deformarse, el muelle acumula energía en su interior:
+👉 Se llama energía potencial elástica.
 
 Cuando sueltas el muelle:
 
 - Esa energía se **libera**.
 - El muelle **empuja en sentido contrario** para recuperar su forma.
 - Cuanto más lo estires, **más fuerza hace para volver** (hasta cierto límite).
-
-⚡ Elasticidad
-
-🧲 Al deformarse, el muelle acumula energía en su interior:
-👉 Se llama energía potencial elástica.
 
 ⚡ Propiedades clave:
 

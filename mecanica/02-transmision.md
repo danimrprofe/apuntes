@@ -4,29 +4,71 @@ Los mecanismos de transmisión permiten que la energía generada por una fuente,
 
 Por ejemplo, en un automóvil, la transmisión adapta la potencia del motor a las ruedas, permitiendo un desplazamiento suave y eficiente.
 
-**Par de fuerzas**
+## 🔄 Par de fuerzas (Momento de fuerza o Torque)
 
-Imagina que estás usando una llave inglesa para apretar un tornillo. No empujas el tornillo en línea recta, sino que aplicas una fuerza que lo hace girar. Eso que estás aplicando es un par (también llamado momento de fuerza o torque).
-El par está relacionado con la fuerza aplicada en un radio (distancia desde el centro de rotación hasta el punto de aplicación de la fuerza).
-El par depende de dos cosas:
-La fuerza que aplicas.
-La distancia desde el eje de giro (cuanto más lejos estés del tornillo, más fácil es girarlo).
+Imagina que usas una **llave inglesa** para apretar un tornillo.
+No empujas en línea recta: aplicas una **fuerza que hace girar**.
+Eso que generas es un **par**.
 
-El **par** es una **fuerza** que hace **girar** algo.
+### 🧠 ¿Qué es el par?
 
-Si usas una barra larga para aflojar una tuerca, necesitas menos fuerza que si usas una barra corta.
-¿Por qué? Porque con más distancia, hay más par.
+El **par** es una **fuerza que produce giro** alrededor de un eje.
 
-Cuando empujas una puerta, no lo haces cerca de las bisagras, siempre empujas en el borde más alejado.
-Cuanto más lejos estés del eje de giro (las bisagras), más par generas, y es más fácil abrir la puerta.
+Se calcula como:
 
-**Velociad angular**
+> 📐 **Par = Fuerza × Distancia al eje de giro**
 
-La velocidad angular (ω) se mide en radianes por segundo.
-Si se tiene la velocidad angular en revoluciones por minuto (rpm), se puede convertir a radianes por segundo utilizando una fórmula (aunque la fórmula específica no se proporciona en las fuentes)
+### 🔍 Factores que influyen:
 
-La **potencia** está relacionada tanto con el par como con la velocidad angular. La fórmula básica para entender esta relación es:
-Mecanismos
+- **Fuerza aplicada** (más fuerza = más par)
+- **Distancia desde el eje de giro** (más lejos = más par)
+
+### 🛠️ Ejemplo 1: Llave inglesa
+
+- Con una **barra larga**, necesitas **menos fuerza** para girar una tuerca.
+- Con una **barra corta**, necesitas **más fuerza**.
+
+🟰 ¡Más distancia = más par!
+
+### 🚪 Ejemplo 2: Puerta
+
+- Nunca empujas una puerta cerca de las **bisagras**.
+- Siempre lo haces en el **borde más alejado** para que cueste menos.
+
+🟰 ¡Cuanto más lejos del eje de giro, más par y más fácil es abrir!
+
+## ⚙️ Velocidad angular (ω)
+
+- La **velocidad angular** indica qué tan rápido gira un objeto alrededor de un eje.
+- Se mide en **radianes por segundo (rad/s)**.
+- También se puede medir en **revoluciones por minuto (rpm)**.
+
+La velocidad angular indica cuántas vueltas da un objeto en un tiempo determinado, expresado en radianes por segundo.
+
+## ⚡ Potencia, par y velocidad angular
+
+La **potencia** (P) en un sistema que gira está relacionada con el **par** (torque) y la **velocidad angular** (ω) mediante la fórmula:
+
+P = M \* W
+
+Donde:
+
+- **P** = potencia (en vatios, W)
+- **M** = par o torque (en newton-metro, Nm)
+- **ω** = velocidad angular (en radianes por segundo, rad/s)
+
+### ¿Qué significa esto?
+
+- La potencia es la **cantidad de trabajo** realizado por unidad de tiempo.
+- Un motor genera potencia al aplicar un **par** y girar a cierta **velocidad angular**.
+- Si aumentas el par o la velocidad angular, la potencia también aumenta.
+
+### Ejemplo:
+
+- Si un motor aplica un par de 10 Nm y gira a 100 rad/s,
+- La potencia será:
+
+P = 10 Nm \* 100 rad/s = 1000 W
 
 ## Poleas
 
@@ -39,32 +81,39 @@ fundamentales en sistemas mecánicos como grúas, ascensores y sistemas de tracc
 
 ### Poleas fijas
 
-Sujeta o colgada a un punto fijo.
-Cambia dirección de aplicación de la fuerza
-La fuerza aplicada en un extremo de la cuerda se transmite íntegramente al otro extremo.
-No ofrece ventaja mecánica (VM = 1)
-Es útil para cambiar la dirección de la fuerza, permitiendo, por ejemplo,
-Levantar carga sin tener que levantarla directamente hacia arriba
-Aprovechar la fuerza de la gravedad, usando el cuerpo
-Con menos esfuerzo en comparación con levantar un objeto directamente.
+- 🔩 Se sujetan en un **punto fijo**.
+- ↩ Cambian la **dirección de la fuerza** aplicada.
+- 💪 La **fuerza** que aplicas en un extremo pasa **entera** al otro.
+- ❌ No dan **ventaja mecánica** (**VM = 1**).
+
+👉 Son útiles para:
+
+- Levantar **cargas** sin hacerlo directamente hacia arriba.
+- Usar la **gravedad** y el peso del cuerpo.
+- Hacer que levantar sea más **cómodo**, aunque no más fácil.
 
 ### Poleas móviles
 
-Se mueven junto con la carga
-Sujeta a una cuerda anclada a un punto fijo.
-Ventaja mecánica 2: Se aplica la mitad de fuerza, pero se tira el doble de cuerda.
-No cambia la dirección de la fuerza.
-Reduce el esfuerzo necesario para levantarla.
-Se utiliza en combinación con poleas fijas
+- ⚙️ Se **mueven junto con la carga**.
+- 🪢 Están sujetas a una cuerda anclada a un **punto fijo**.
+- ➗ Tienen **ventaja mecánica 2**:
+
+  - Se aplica **la mitad de fuerza**
+  - Pero se tira el **doble de cuerda**.
+
+- ↔️ No cambian la **dirección de la fuerza**.
+- 💪 Reducen el **esfuerzo necesario** para levantar la carga.
+- 🔗 Se usan combinadas con **poleas fijas**.
 
 ### Polipastos
 
-Polipasto = conjunto de poleas fijas y móviles unidas a un gancho o una carga.
-Para elevar o mover cargas pesadas de manera más eficiente.
-El polipasto aprovecha la multiplicación de fuerzas que se produce gracias a las poleas fijas y móviles.
-La carga se mueve hacia arriba con una fuerza reducida, ya que las
-Poleas permiten distribuir carga y reducir esfuerzo necesario
-Principalmente en elevadores, grúas y sistemas industriales donde se requieren mover grandes cargas a alturas o distancias.
+Un **polipasto** es un conjunto de **poleas fijas y móviles** unidas a un gancho o una carga.
+Se usa para **elevar o mover cargas pesadas** de forma más eficiente.
+Aprovecha la **multiplicación de fuerzas** que ocurre al combinar poleas fijas y móviles.
+
+La carga se mueve hacia arriba con una **fuerza reducida** porque las poleas distribuyen la carga y reducen el esfuerzo necesario.
+
+Se emplea principalmente en **elevadores, grúas y sistemas industriales** donde se necesitan mover grandes cargas a alturas o distancias.
 
 En el siguiente enlace podemos simular el comportamiento de distintos tipos de poleas:
 https://www.compassproject.net/html5sims/pulleysim/pulley_en.html
@@ -78,29 +127,6 @@ La fricción entre las dos ruedas transmite el movimiento de la rueda motriz a l
 Tipo de transmisión sencilla, eficiente y económica
 Útil en distancias cortas o aplicaciones donde no se requiere gran precisión.
 Este sistema se utiliza comúnmente en ventiladores, maquinaria simple y algunas bicicletas.
-
-## Par
-
-Imagina que estás usando una llave inglesa para apretar un tornillo. No empujas el tornillo en línea recta, sino que aplicas una fuerza que lo hace girar. Eso que estás aplicando es un par (también llamado momento de fuerza o torque).
-El par está relacionado con la fuerza aplicada en un radio (distancia desde el centro de rotación hasta el punto de aplicación de la fuerza).
-El par depende de dos cosas:
-La fuerza que aplicas.
-La distancia desde el eje de giro (cuanto más lejos estés del tornillo, más fácil es girarlo).
-
-El par es una fuerza que hace girar algo.
-
-Si usas una barra larga para aflojar una tuerca, necesitas menos fuerza que si usas una barra corta.
-¿Por qué? Porque con más distancia, hay más par.
-
-Cuando empujas una puerta, no lo haces cerca de las bisagras, ¿verdad?
-Siempre empujas en el borde más alejado.
-orque cuanto más lejos estés del eje de giro (las bisagras), más par generas, y es más fácil abrir la puerta.
-
-La potencia está relacionada tanto con el par como con la velocidad angular. La fórmula básica para entender esta relación es:
-
-Velocidad angular
-La velocidad angular (ω) se mide en radianes por segundo.
-Si se tiene la velocidad angular en revoluciones por minuto (rpm), se puede convertir a radianes por segundo utilizando una fórmula (aunque la fórmula específica no se proporciona en las fuentes)
 
 ## Polea y correa
 

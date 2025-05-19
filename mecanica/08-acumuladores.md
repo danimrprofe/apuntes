@@ -71,14 +71,36 @@ Sistema que conecta las ruedas con el chasis para:
 
 ![](img/2025-05-16-07-58-28.png)
 
-- Absorben impactos deformándose.
-- Acumulan **energía potencial elástica**.
-- Recuperan su forma al cesar la fuerza.
+En mecánica, los muelles absorben impactos mediante **deformación**.
+
+Cuando estiras o comprimes un muelle, estás aplicando una **fuerza** sobre él.
+El muelle **se deforma**, pero quiere volver a su forma original. Esto ocurre por una propiedad llamada:
+
+> ⚡ **Elasticidad**
+
+Al deformarse, el muelle **acumula energía** en su interior:
+👉 Se llama **energía potencial elástica**.
+
+Cuando sueltas el muelle:
+
+- Esa energía se **libera**.
+- El muelle **empuja en sentido contrario** para recuperar su forma.
+- Cuanto más lo estires, **más fuerza hace para volver** (hasta cierto límite).
+
+⚡ Elasticidad
+
+🧲 Al deformarse, el muelle acumula energía en su interior:
+👉 Se llama energía potencial elástica.
+
+⚡ Propiedades clave:
+
+- Acumulan **energía potencial elástica** al comprimirse o estirarse.
+- Recuperan su **forma original** cuando deja de actuar la fuerza.
 
 ![](img/2025-05-16-07-58-40.png)
 
-**Ley de Hooke:**
-`F = k * x`
+La energía que es capaz de almacenar depende de la construcción del muelle
+y en gran medida de la deformación.
 
 **Energía almacenada:**
 `E = 1/2 * k * x²`
@@ -88,6 +110,51 @@ Amortiguador con `k = 3000 N/m` y deformación de `0,15 m`.
 Calcular energía potencial almacenada.
 
 ![](img/2025-05-16-07-59-13.png)
+
+## Resonancia en Muelles
+
+Cuando se aplica y luego se suelta una carga sobre un muelle, este comienza a oscilar
+a una **frecuencia natural o propia**, determinada por sus características físicas como
+la rigidez y la masa. Si sobre ese muelle se aplican impulsos o fuerzas repetidas con
+una frecuencia que **coincide con su frecuencia propia**, se produce un fenómeno
+llamado **resonancia**.
+
+En este caso, la energía de cada impulso se acumula en el sistema, lo que provoca un aumento
+progresivo de la **amplitud de las oscilaciones**. Si no se controla, este incremento puede ser
+tan grande que llegue a **dañar el sistema**, provocando deformaciones o incluso roturas.
+
+Para prevenir la resonancia, es común asociarles
+**amortiguadores**. Estos componentes _disipan_ parte de la energía del movimiento,
+**reduciendo las oscilaciones y evitando que la amplitud crezca de manera peligrosa**, asegurando así un
+funcionamiento más seguro y estable del conjunto.
+
+### 🌀 Amortiguadores
+
+- Disipan energía del movimiento de los muelles.
+- Evitan el rebote continuo.
+- Controlan las oscilaciones y mejoran estabilidad.
+
+![](img/2025-05-16-08-01-08.png)
+
+Estructura básica:
+
+- Una cámara llena de aceite hidráulico.
+- Dentro de la cámara, se mueve un émbolo con agujeros calibrados
+
+Funcionamiento:
+
+1. El aceite fluye a través de los agujeros del émbolo.
+2. Amortiguamiento: El aceite se fuerza a pasar por aperturas de tamaño diferenciado.
+3. Efecto: El paso controlado del aceite reduce la velocidad de los movimientos bruscos, absorbiendo impactos y vibraciones.
+
+![](img/2025-05-16-08-02-34.png)
+
+El paso controlado del aceite reduce la velocidad de los movimientos bruscos,
+absorbiendo impactos y vibraciones
+.
+![](img/2025-05-16-08-02-45.png)
+
+https://m.youtube.com/watch?v=fKIdx5dSjLA
 
 ### 🌀 Ballestas
 
@@ -110,49 +177,11 @@ por las ballestas, las cuales, al flexionarse, evitan que se transmitan a la car
 
 ![](img/2025-05-16-08-00-37.png)
 
-## Resonancia en Muelles
+Se usan ballestas en vehículos pesados porque:
 
-Cuando se aplica y luego se suelta una carga sobre un muelle, este comienza a oscilar
-a una **frecuencia natural o propia**, determinada por sus características físicas como
-la rigidez y la masa. Si sobre ese muelle se aplican impulsos o fuerzas repetidas con
-una frecuencia que **coincide con su frecuencia propia**, se produce un fenómeno
-llamado **resonancia**.
-
-En este caso, la energía de cada impulso se acumula en el sistema, lo que provoca un aumento
-progresivo de la **amplitud de las oscilaciones**. Si no se controla, este incremento puede ser
-tan grande que llegue a **dañar el sistema**, provocando deformaciones o incluso roturas.
-
-Para prevenir la resonancia en sistemas con muelles o ballestas, es común asociarles
-**amortiguadores**. Estos componentes disipan parte de la energía del movimiento, reduciendo
-las oscilaciones y evitando que la amplitud crezca de manera peligrosa, asegurando así un
-funcionamiento más seguro y estable del conjunto.
-
-### 🌀 Amortiguadores
-
-- Disipan energía del movimiento de los muelles.
-- Evitan el rebote continuo.
-- Controlan las oscilaciones y mejoran estabilidad.
-
-![](img/2025-05-16-08-01-08.png)
-
-Estructura básica:
-
-- Una cámara llena de aceite hidráulico.
-- Dentro de la cámara, se mueve un émbolo con agujeros calibrados.
-  Funcionamiento:
-  El aceite fluye a través de los agujeros del émbolo.
-  Amortiguamiento: El aceite se fuerza a pasar por aperturas de tamaño diferenciado.
-  Efecto:
-  El paso controlado del aceite reduce la velocidad de los movimientos bruscos, absorbiendo impactos y vibraciones.
-
-![](img/2025-05-16-08-02-34.png)
-
-El paso controlado del aceite reduce la velocidad de los movimientos bruscos,
-absorbiendo impactos y vibraciones
-.
-![](img/2025-05-16-08-02-45.png)
-
-https://m.youtube.com/watch?v=fKIdx5dSjLA
+- Soportan **mayores cargas**.
+- Son **más resistentes** y duraderas.
+- Ofrecen **mayor estabilidad** al vehículo bajo carga.
 
 ## 📋 Resumen:
 

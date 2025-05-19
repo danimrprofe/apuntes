@@ -25,21 +25,27 @@ Se ve afectado por diferentes factores:
 En cambio, la `rodadura` ocurre cuando un cuerpo **rueda** sobre otro, en lugar de deslizarse.
 En general, suele ser **menor** que el coeficiente de rozamiento por deslizamiento.
 
-## Cojinetes
+## ⚙️ Cojinetes
 
-Los cojinetes son componentes que permiten el giro de ejes reduciendo la fricción.
+Los **cojinetes** son componentes que permiten el **giro de ejes** reduciendo la **fricción**.
 
-El cojinete **roza con el eje**, generando desgaste en sí mismo, no en el eje.
-Se cambian cuando su desgaste supera los límites tolerables.
+### 🔧 ¿Cómo funcionan?
 
-El cojinete se fija al soporte y el eje gira dentro de él. Entre soporte y eje existe un pequeños
-espacio llamado **juego de montaje**, que es la diferencia normalizada entre ambos diámetros (en décimas o centésimas de milímetro).
+- El **cojinete roza con el eje**, generando **desgaste en el cojinete**, no en el eje.
+- Se **sustituye** cuando el desgaste supera los **límites tolerables**.
+- El cojinete se **fija al soporte**, y el **eje gira dentro** de él.
 
-Los cojinetes pueden ser de diferentes materiales en función de su aplicación:
+### 📏 Juego de montaje
 
-- **Plástico:** Para esfuerzos pequeños.
-- **Bronce:** Para esfuerzos medios (motores eléctricos).
-- **Acero:** Para grandes esfuerzos, recubiertos interiormente con material antifricción (estaño o plomo).
+- Entre el soporte y el eje existe un pequeño espacio llamado **juego de montaje**.
+- Es la **diferencia normalizada** entre los diámetros del eje y el alojamiento.
+- Se mide en **décimas o centésimas de milímetro**.
+
+### 🧱 Materiales según esfuerzo
+
+- 🔹 **Plástico** → Para **esfuerzos pequeños**.
+- 🟠 **Bronce** → Para **esfuerzos medios** (como en **motores eléctricos**).
+- ⚫ **Acero** → Para **grandes esfuerzos**, con recubrimiento interior **antifricción** (estaño o plomo).
 
 ![](img/2025-05-11-22-36-59.png)
 

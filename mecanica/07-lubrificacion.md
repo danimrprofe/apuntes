@@ -21,17 +21,25 @@ Un mantenimiento adecuado del sistema de lubricación y la limpieza también son
 
 <img src="media/image58.png" id="image58">
 
-## Aceites
+## 🛢️ Denominación del aceite – Escala SAE
 
-La denominación del aceite se basa en una **escala de viscosidad** que se mide a través de un procedimiento
-estandarizado y establecido por la Sociedad de Ingenieros de Automoción (SAE). Esta escala clasifica los
-aceites según su consistencia o viscosidad a diferentes temperaturas.
+La denominación del aceite se basa en una **escala de viscosidad**,
+establecida por la **Sociedad de Ingenieros de Automoción (SAE)**.
 
-<img src="media/image59.png" id="image59">
+Esta escala clasifica los aceites según su **viscosidad** (o consistencia)
+a distintas **temperaturas**, mediante un procedimiento **estandarizado**.
 
-En la denominación del aceite se hace referencia a su viscosidad a 100 grados Celsius, la cual se representa
-con la letra "W" (que significa "Winter" o invierno en inglés). Así, por ejemplo, un aceite 10W-40 tiene una
-viscosidad de 10 a bajas temperaturas (en frío) y de 40 a altas temperaturas (en caliente).
+## 🌡️ ¿Qué significan los números?
+
+La denominación incluye dos valores separados por una letra **W** ("Winter", invierno):
+
+> Ejemplo: **10W-40**
+
+- **10W** → Viscosidad a **bajas temperaturas** (aceite en frío)
+- **40** → Viscosidad a **altas temperaturas** (aceite a 100 °C)
+
+📌 Un número menor delante de la W indica mejor fluidez en frío.
+📌 Un número mayor detrás de la W indica mejor resistencia a temperaturas elevadas.
 
 ![](img/2023-12-08-15-42-25.png)
 
@@ -51,34 +59,53 @@ el aceite para lubricar las diferentes piezas.
 
 ![](img/bombaaceite.gif)
 
-## Filtro
+## 🧽 Filtro de aceite
 
-El aceite va recogiendo restos de desgaste de las piezas que se liberan
-al aceite por la fricción.
+El aceite del motor **recoge partículas** y restos de **desgaste** de las piezas,
+que se liberan debido a la **fricción** durante el funcionamiento.
 
-Es por ello que la reutilización del aceite requiere filtración.
+## ♻️ ¿Por qué filtrar el aceite?
 
-La filtración implica tomar una **derivación** de aceite a presión antes de
-que llegue a los puntos de lubricación para pasarlo por un filtro.
+- Al reutilizar el aceite, es necesario **eliminar impurezas** mediante **filtración**.
+- Esto evita que los restos circulen y dañen el motor.
 
-Esto tiene la ventaja de que, si el filtro se obstruye, la lubricación no se viene afectada.
+## 🔄 ¿Cómo se realiza la filtración?
+
+- Se toma una **derivación de aceite a presión** _antes_ de que llegue a los puntos de lubricación.
+- El aceite pasa por un **filtro**, que retiene la suciedad.
+
+## ✅ Ventaja del sistema:
+
+Si el filtro se **obstruye**, la lubricación **no se interrumpe**,
+ya que el aceite puede seguir circulando por el circuito principal sin pasar por el filtro.
 
 <img src="media/image61.png" id="image61">
 
-El aceite entra por unos orificios del filtro y sale por la parte central.
+# 🛢️ ¿Cómo funciona el filtro de aceite?
 
-- El aceite entra por unos **orificios** del filtro.
-- Circula a través del material filtrante y sale por la parte **central**.
-- Los **residuos** e impurezas quedan **atrapados** en el filtro.
+## 🔄 Circulación del aceite:
 
-Mediante una varilla extraíble podemos comprobar el nivel de aceite, que también se va
-gastando debido a varios factores:
+1. El aceite entra por unos **orificios** laterales del filtro.
+2. Circula a través del **material filtrante**, que retiene la suciedad.
+3. Sale limpio por la parte **central** del filtro.
+4. Los **residuos e impurezas** quedan **atrapados** en el interior del filtro.
 
-- El aceite del motor se consume por **evaporación** a altas temperaturas
-- Por pequeñas cantidades que se **queman** durante la **combustión**.
-- También puede perderse por desgaste interno del motor o por **fugas**.
+## 📏 Comprobación del nivel de aceite:
 
-Es normal que el nivel baje con el uso. Por eso, se recomienda revisarlo y rellenarlo periódicamente.
+Se utiliza una **varilla medidora (dipstick)** que se extrae del motor para revisar el nivel.
+
+## ❓ ¿Por qué baja el nivel de aceite?
+
+El aceite del motor se **consume con el uso** por varios motivos:
+
+- 🔥 **Evaporación** a altas temperaturas.
+- 💨 Pequeñas cantidades se **queman** durante la **combustión**.
+- 🔧 Puede haber **fugas** o pérdidas internas por desgaste del motor.
+
+## ✅ Recomendación:
+
+Es **normal** que el nivel baje con el tiempo.
+🔁 **Revisar y rellenar** el aceite periódicamente para evitar daños al motor.
 
 ![](img/2025-05-14-12-52-03.png)
 

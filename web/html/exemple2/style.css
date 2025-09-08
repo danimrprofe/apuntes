@@ -1,0 +1,90 @@
+/* CSS comú per totes les pàgines */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+/* Estils específics per pàgines */
+body#index {
+    background-color: #f0f0f0;
+}
+
+header#index {
+    background-color: #4CAF50;
+}
+
+body#jocs {
+    background-color: #fff3e0;
+}
+
+header#jocs {
+    background-color: #ff5722;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffccbc;
+}
+
+body#consoles {
+    background-color: #e0f7fa;
+}
+
+header#consoles {
+    background-color: #00796b;
+}
+
+ol {
+    margin: 20px 0;
+}

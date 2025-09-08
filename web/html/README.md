@@ -1,3 +1,5 @@
+[TOC]
+
 # 🌐 Introducció a Internet i la Web
 
 ## Què és Internet?

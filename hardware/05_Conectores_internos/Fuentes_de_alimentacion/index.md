@@ -1,22 +1,34 @@
 # Fuente de alimentación
 
-* 1\) Transforma
-  * __Corriente eléctrica \(AC\) __ alterna procedente del sistema eléctrico
-  * En  __corriente continua \(DC\) __ en un voltaje apropiado para los distintos componentes del ordenador\.
-* 2\) Permite alimentar diferentes circuitos y dispositivos del ordenador
-  * Voltajes que proporciona la fuente:  __ __  <span style="color:#FF0000"> __\-12 V, \-5 V, 0 V, \+3,3 V, \+5 V,\+12 V__ </span>
+## 🔌 Funciones de la fuente de alimentación
+
+1. **Transforma la corriente**
+
+   - Convierte **corriente alterna (AC)** procedente del sistema eléctrico
+   - En **corriente continua (DC)** con el voltaje adecuado para los distintos componentes del ordenador
+
+2. **Alimenta diferentes circuitos y dispositivos**
+   - Voltajes que proporciona la fuente:
+     **-12 V, -5 V, 0 V, +3,3 V, +5 V, +12 V** ⚡
 
 ![imagen](img/32_Fuentes_de_alimentacion2.png)
 
-* _Posibilidades de expansión_
-* Potencia \(W\) determina la cantidad de componentes
-* Cantidad de conectores de alimentación proporcionan energía
-  * __A la placa base__
-    * Conector de 20 o 24 pines
-  * __A los dispositivos __
-    * Conector de 4 pines molex
-    * Conector Berg de 4 pines minimolex
-    * Conector de 15 pines Serial ATA
+## ⚡ Posibilidades de expansión
+
+- **Potencia (W)**
+  Determina la cantidad de componentes que se pueden alimentar.
+
+- **Conectores de alimentación**
+  Proporcionan energía a los distintos elementos del ordenador:
+
+  - **💻 A la placa base**
+
+    - Conector de **20 o 24 pines**
+
+  - **🖥️ A los dispositivos**
+    - Conector **Molex de 4 pines**
+    - Conector **Berg de 4 pines (minimolex)**
+    - Conector **Serial ATA de 15 pines**
 
 ![imagen](img/32_Fuentes_de_alimentacion3.jpg)
 
@@ -48,22 +60,23 @@ Estas fuentes tienen una alta compatibilidad con DDR2, PCI Express, SATA, entre 
 
 ## Posibles averías
 
-* _Posibles problemas_
-* El ordenador
-  * esta completamente parado\.
-  * funciona momentáneamente pero después se para\.
-  * falla después de estar un tiempo funcionando\.
-  * se bloquea o reinicia por si solo\.
-  * se enciende, la pantalla permanece negra y no se activa el ventilador de la fuente de alimentación ni el disco duro comienza a girar\.
+- _Posibles problemas_
+- El ordenador
 
-* _Para solucionar los anteriores problemas podemos:_
-* __Cable__   __de__   __alimentación__  esta bien conectado\.
-* __Interruptor__  este en la posición de encendido\.
-* Comprobar  __temperatura__  y correcto funcionamiento del  __ventilador__ \.
-* Comprobar si la fuente cumple con los  __requisitos de consumo __ de los componentes del sistema\.
-* Comprobar que dispositivo genera un  __cortocircuito__
-  * Ir desconectando dispositivos hasta dar con el que tiene la avería\.
-  * Examinar el voltaje de la línea \(220 V\)
+  - esta completamente parado\.
+  - funciona momentáneamente pero después se para\.
+  - falla después de estar un tiempo funcionando\.
+  - se bloquea o reinicia por si solo\.
+  - se enciende, la pantalla permanece negra y no se activa el ventilador de la fuente de alimentación ni el disco duro comienza a girar\.
+
+- _Para solucionar los anteriores problemas podemos:_
+- **Cable** **de** **alimentación** esta bien conectado\.
+- **Interruptor** este en la posición de encendido\.
+- Comprobar **temperatura** y correcto funcionamiento del **ventilador** \.
+- Comprobar si la fuente cumple con los **requisitos de consumo ** de los componentes del sistema\.
+- Comprobar que dispositivo genera un **cortocircuito**
+  - Ir desconectando dispositivos hasta dar con el que tiene la avería\.
+  - Examinar el voltaje de la línea \(220 V\)
 
 ## Fuentes modulares
 
@@ -91,7 +104,7 @@ Un ejemplo de esto es el uso de dos fuentes de alimentación en servidores, cone
 
 ![imagen](img/32_Fuentes_de_alimentacion10.png)
 
-En la actualidad se aplican las fuentes de alimentación redundantes a los  __servidores, routers, switches, etcétera\. __
+En la actualidad se aplican las fuentes de alimentación redundantes a los **servidores, routers, switches, etcétera\. **
 
 Fuentes de alimentación lineales
 
@@ -130,12 +143,12 @@ No obstante, el circuito electrónico es mucho más complejo y, además, como fu
 
 Las fuentes de alimentación están diseñadas para ofrecer un rango específico de voltajes y frecuencias eléctricas.
 
-### Voltajes
+### ⚡ Voltajes comunes en sistemas de computación
 
-En la actualidad, existen dos rangos principales de voltajes eléctricos comunes en los sistemas de computación:
+En la actualidad, existen **dos rangos principales de voltaje** según la región:
 
-- 115-120 V para América del Norte
-- 230-240 V para Europa y Asia.
+- **115-120 V** → América del Norte
+- **230-240 V** → Europa y Asia
 
 ### Frecuencias
 
@@ -145,7 +158,7 @@ Estos rangos de voltajes se utilizan en combinación con diferentes **frecuencia
 
 Por ejemplo:
 
-- América del Norte usa una frecuencia de 60  Hz
+- América del Norte usa una frecuencia de 60 Hz
 - Europa y Asia usan una frecuencia de 50 Hz.
 
 ![imagen](img/32_Fuentes_de_alimentacion15.png)
@@ -173,7 +186,7 @@ Para averiguar el precio del kWh hay que mirar la factura de la empresa que te v
 Por ejemplo, si el precio del kWh es de 0,11248€/kWh y el ordenador consume una potencia de 150w (0,15 kw):
 
 - El coste en un día será de
-0,41 €/día (0,15 kW · 24 h · 0,11248€/kWh)
+  0,41 €/día (0,15 kW · 24 h · 0,11248€/kWh)
 - En un mes será de 12,15 €/mes (0,15 kW · 720 h · 0,11248€/kWh).
 
 ## Eficiencia
@@ -190,29 +203,29 @@ Sin embargo, hay que tener en cuenta que la eficiencia varía en función de la 
 
 ![imagen](img/32_Fuentes_de_alimentacion18.jpg)
 
-|   Model   | EP-550P5-T1 |       |       |       |       |       |       |
-| :-------: | :---------: | :---: | :---: | :---: | :---: | :---: | :---: |
-| AC Input  | 115-230Vac  |       |       |       |       |       |       |
-|  Current  |    10/6A    |       |       |       |       |       |       |
-| Frequency |   60/50Hz   |       |       |       |       |       |       |
-| DC Output |    +3.3v    |  +5v  | +12v1 | +12v2 | -12v  |  -5v  | +5vsb |
-| Max. Load |     28A     |  48A  |  20A  |  20A  | 1.0A  | 0.8A  | 2.5A  |
-|  Wattage  |    210W     |       | 240w  | 240w  |  12W  |  4W   | 12.5W |
-|           |    550W     |       |       |       |       |       |       |
-|   Peak    |    650W     |       |       |       |       |       |       |
+|   Model   | EP-550P5-T1 |     |       |       |      |      |       |
+| :-------: | :---------: | :-: | :---: | :---: | :--: | :--: | :---: |
+| AC Input  | 115-230Vac  |     |       |       |      |      |       |
+|  Current  |    10/6A    |     |       |       |      |      |       |
+| Frequency |   60/50Hz   |     |       |       |      |      |       |
+| DC Output |    +3.3v    | +5v | +12v1 | +12v2 | -12v | -5v  | +5vsb |
+| Max. Load |     28A     | 48A |  20A  |  20A  | 1.0A | 0.8A | 2.5A  |
+|  Wattage  |    210W     |     | 240w  | 240w  | 12W  |  4W  | 12.5W |
+|           |    550W     |     |       |       |      |      |       |
+|   Peak    |    650W     |     |       |       |      |      |       |
 
 Especificaciones técnicas
 
-|   Model   | Tuniq Miniplant 950W |       |       |       |       |       |       |
-| :-------: | :------------------: | :---: | :---: | :---: | :---: | :---: | :---: |
-| AC Input  |      110-230Vac      |       |       |       |       |       |       |
-|  Current  |        10/6A         |       |       |       |       |       |       |
-| Frequency |       60/50Hz        |       |       |       |       |       |       |
-| DC Output |        +3.3v         |  +5v  | +12v1 | +12v2 | -12v  |  -5v  | +5vsb |
-| Max. Load |         24A          |  30A  |  20A  |  20A  | 0.5A  | 0.8A  |  3A   |
-|  Wattage  |         170W         |       | 810w  | 810w  |  6W   |  4W   |  15W  |
-|           |         929W         |       |       |       |       |       |       |
-|   Peak    |         950W         |       |       |       |       |       |       |
+|   Model   | Tuniq Miniplant 950W |     |       |       |      |      |       |
+| :-------: | :------------------: | :-: | :---: | :---: | :--: | :--: | :---: |
+| AC Input  |      110-230Vac      |     |       |       |      |      |       |
+|  Current  |        10/6A         |     |       |       |      |      |       |
+| Frequency |       60/50Hz        |     |       |       |      |      |       |
+| DC Output |        +3.3v         | +5v | +12v1 | +12v2 | -12v | -5v  | +5vsb |
+| Max. Load |         24A          | 30A |  20A  |  20A  | 0.5A | 0.8A |  3A   |
+|  Wattage  |         170W         |     | 810w  | 810w  |  6W  |  4W  |  15W  |
+|           |         929W         |     |       |       |      |      |       |
+|   Peak    |         950W         |     |       |       |      |      |       |
 
 ## Consumo eléctrico
 
@@ -246,31 +259,35 @@ Consumo de componentes
 |  Controladora FireWire/USB  |   10    |
 |        Floppy drive         |    5    |
 
-## Elección de una fuente
+## ⚡ Elección de una fuente de alimentación
 
-Factores a tener en cuenta
+**Factores a tener en cuenta:**
 
-* _1\) Potencia necesaria_
-  * Potencia insuficiente: posibles apagones inesperados
-  * Demasiada potencia: elevado coste, menor eficiencia
-* _2\) Capacidad máxima_
-  * Capacidad media y pico
-* _3\) Calidad de la fuente:_
-  * Medidas de seguridad eléctricas
-  * Sello de calidad
-  * Marcas contrastadas
+1. **Potencia necesaria**
+
+   - Potencia insuficiente → posibles **apagones inesperados**
+   - Potencia excesiva → **mayor coste** y **menor eficiencia**
+
+2. **Capacidad máxima**
+
+   - Considerar **capacidad media** y **pico máximo** que puede soportar
+
+3. **Calidad de la fuente**
+   - **Medidas de seguridad eléctricas** (protección contra sobrecarga, cortocircuito, etc.)
+   - **Sello de calidad**
+   - **Marcas contrastadas y confiables**
 
 ## Equipos portátiles
 
 Equipos portátiles
 
-* No tienen la fuente de alimentación integrada en la caja
-* __Adaptador de corriente__
-  * Un cable para conectar al equipo
-  * Otro a la toma de corriente
-* __Adaptadores universales__
-  * Permiten regular el voltaje en función del equipo
-  * Permiten utilizarse en diferentes gamas de equipos portátiles
+- No tienen la fuente de alimentación integrada en la caja
+- **Adaptador de corriente**
+  - Un cable para conectar al equipo
+  - Otro a la toma de corriente
+- **Adaptadores universales**
+  - Permiten regular el voltaje en función del equipo
+  - Permiten utilizarse en diferentes gamas de equipos portátiles
 
 ![imagen](img/32_Fuentes_de_alimentacion19.jpg)
 
@@ -290,16 +307,16 @@ Estas permiten trabajar sin necesidad de estar conectado a una toma de corriente
 
 Equipos portátiles
 
-* _Composición de las baterías_
-* __Componentes__  más comunes
-  * Níquel\-Cadmio
-  * Níquel\-Hidruro metálico
-  * Actualmente: Ión litio \(Li\-ion\)
-* __Baterías ion litio__
-  * Componentes ligeros
-  * Alta capacidad energética
-  * Gran resistencia a la descarga
-  * Utilización en teléfonos móviles, reproductores de música, etc\.
+- _Composición de las baterías_
+- **Componentes** más comunes
+  - Níquel\-Cadmio
+  - Níquel\-Hidruro metálico
+  - Actualmente: Ión litio \(Li\-ion\)
+- **Baterías ion litio**
+  - Componentes ligeros
+  - Alta capacidad energética
+  - Gran resistencia a la descarga
+  - Utilización en teléfonos móviles, reproductores de música, etc\.
 
 ## Etiqueta
 

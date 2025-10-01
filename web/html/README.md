@@ -320,32 +320,21 @@ pastel), se deben variar los otros dos colores haciéndolos más claros, aumenta
 su componente, (número más alto), en una cantidad igual. Así, podemos convertir el
 rojo en rosa con #FF7070.
 
-# 7. ENLACES O HIPERVÍNCULOS.
+## 🔗 Enllaços / Hipervincles (`<a>`)
 
-Este elemento es uno de los más importantes del HTML, ya que es el que
-realmente permite "navegar" por uno o varios documentos, que pueden
-encontrarse en cualquier parte. Se definen los hipervínculos o hiperenlaces del
-documento Web mediante la etiqueta `<A>`.
+- Serveixen per **enllaçar a una altra pàgina, fitxer o lloc web**.
+- L’etiqueta `<a>` té com a atribut principal `href`, que indica la URL de destinació.
+- L’atribut `target="_blank"` obre l’enllaç en una nova pestanya.
 
-Sus comandos más importantes son: NAME, HREF y TARGET.
-
-Vamos a distinguir tres tipos de enlaces:
-
-- Enlaces dentro de la misma página.
-- Enlaces con otra página, que puede encontrarse dentro o fuera de nuestro
-  sistema.
-- Enlaces con una dirección de correo electrónico.
-
-## 7.1 ENLACES DENTRO DE LA MISMA PÁGINA
-
-A veces, en el caso de documentos (o páginas) muy extensos, nos puede
-interesar dar un salto desde una posición a otra determinada.
-Podemos realizarlo de dos formas:
+### Exemple bàsic
 
 ```html
-<a href="#marca"> Zona Activa </a> (marca puede ser cualquier palabra).
-<a name="marca">Zona Activa </a> (marca puede ser cualquier palabra).
+<a href="https://www.example.com">Visita Example</a>
 ```
+
+Exemple obrint en nova pestanya:
+
+<a href="https://www.example.com" target="_blank">Visita Example</a>
 
 ## 7.2 ENLACES A OTRA PÁGINA
 
@@ -361,23 +350,7 @@ sustituimos lo que hemos llamado marca (el destino del enlace) por la dirección
 la página web.
 
 ```html
-<a href="http://colegioliceosorolla.es"> Zona Activa </a>
-```
-
-## 7.3 ENLACE A UNA DIRECCIÓN DE CORREO ELECTRÓNICO.
-
-La estructura de la etiqueta es:
-
-```html
-<a href="mailto: dirección de email"> Zona Activa </a>
-```
-
-## 7.4 ENLACE EN UNA NUEVA VENTANA.
-
-Se utiliza el comando TARGET. La estructura de la etiqueta será:
-
-```html
-<a href="indice.html" target="ventana2"> Nueva ventana </a>
+<a href="https://www.wikipedia.org" target="_blank">Visita Wikipedia</a>
 ```
 
 # 8. IMÁGENES CON HTML
@@ -482,28 +455,32 @@ borde de color alrededor de ésta.
 </a>
 ```
 
-# 9. Listas
+# 9. Llistes
 
-Una lista permite organizar un documento HTML estructurándolo de la
-forma más clara posible, para hacerlo más perceptible al lector.
+Una **llista** permet organitzar un document HTML estructurant-lo de manera clara, fent-lo més comprensible per al lector.
 
-Las listas se utilizan para dividir el documento así como para efectuar numeraciones de objetos.
+Les llistes serveixen per:
 
-HTML define varios tipos de listas: **ordenadas** y **no ordenadas**
+- Dividir el document en parts més fàcils de llegir.
+- Numerar o enumerar objectes.
+
+HTML defineix **dos tipus principals de llistes**:
+
+1. **Llistes ordenades** (`<ol>`) → els elements tenen un número o ordre.
+2. **Llistes no ordenades** (`<ul>`) → els elements van amb vinyetes (•).
 
 ![imagen](img/2022-12-20-12-34-33.png)
 
 ## Listas no ordenadas
+
+Les **llistes no ordenades** (`<ul>`) serveixen per agrupar elements sense un ordre específic.
+Cada element de la llista s’indica amb `<li>` i apareix precedit per una **vinyeta** que pot variar segons el nivell d’anidament.
 
 ```html
 <ul>
   Elementos de la lista
 </ul>
 ```
-
-Los elementos de la lista irán precedidos por un símbolo (fijo por defecto) que
-puede variar según el nivel de anidamiento de la lista. Cada elemento de la misma
-llevará la etiqueta: `<LI> Primer elemento </LI>`
 
 Ejemplo de lista no ordenada:
 
@@ -515,18 +492,16 @@ Ejemplo de lista no ordenada:
 </ul>
 ```
 
-## Listas ordenadas
+## Llistes ordenades
+
+Les **llistes ordenades** (`<ol>`) serveixen per agrupar elements que tenen un **ordre numèric**.
+Cada element de la llista s’indica amb `<li>` i apareix amb un **número** que s’incrementa automàticament.
 
 ```html
 <ol>
   Elementos de la lista
 </ol>
 ```
-
-La etiqueta `<OL>` se utiliza para una lista ordenada o numerada. Cada marca
-`<LI>` incrementará el número que se visualizará delante del elemento de la lista.
-
-Ejemplo de lista numerada:
 
 Por ejemplo:
 
@@ -784,8 +759,6 @@ Con esto, habrás creado una capa div en tu documento HTML.
 Un formulari en HTML serveix per **recollir dades de l’usuari** i enviar-les a un servidor o processar-les amb JavaScript.
 Es defineix amb l’etiqueta `<form>`.
 
----
-
 ## 🔹 Etiqueta `<form>`
 
 ```html
@@ -806,9 +779,9 @@ Es defineix amb l’etiqueta `<form>`.
 <input type="submit" value="Enviar" />
 ```
 
-- ✔ type defineix el tipus de camp.
-- ✔ name és la clau amb la qual s’envia la dada.
-- ✔ value pot ser el valor predeterminat.
+- ✔ `type` defineix el tipus de camp.
+- ✔ `name` és la clau amb la qual s’envia la dada.
+- ✔ `value` pot ser el valor predeterminat.
 
 ## 📝 `<textarea>`
 

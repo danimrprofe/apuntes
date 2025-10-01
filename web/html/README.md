@@ -777,12 +777,94 @@ Con esto, habrás creado una capa div en tu documento HTML.
 
 # Formularis
 
-- Input
-- Form
-- Datalist
-- Atributo placeholder
-- Atributo autofocus
-- Validación restringida
+# 📑 Formularis en HTML
+
+## 🔹 Què és un formulari?
+
+Un formulari en HTML serveix per **recollir dades de l’usuari** i enviar-les a un servidor o processar-les amb JavaScript.
+Es defineix amb l’etiqueta `<form>`.
+
+---
+
+## 🔹 Etiqueta `<form>`
+
+```html
+<form action="processa.php" method="post">
+  <!-- camps del formulari -->
+</form>
+```
+
+###🔹 Camps bàsics (<input />)
+
+```html
+<input type="text" name="usuari" />
+<input type="password" name="clau" />
+<input type="email" name="correu" />
+<input type="number" name="edat" />
+<input type="checkbox" name="accepta" />
+<input type="radio" name="color" value="vermell" />
+<input type="submit" value="Enviar" />
+```
+
+- ✔ type defineix el tipus de camp.
+- ✔ name és la clau amb la qual s’envia la dada.
+- ✔ value pot ser el valor predeterminat.
+
+## 📝 `<textarea>`
+
+- Serveix per **introduir textos llargs** (comentaris, missatges, descripcions).
+- Permet **diverses línies**, a diferència de `<input type="text">`.
+- Necessita etiqueta d’obertura i tancament.
+
+```html
+<textarea name="missatge"></textarea>
+```
+
+## 🔘 Radiobuttons (`<input type="radio">`)
+
+- Serveixen per **seleccionar una sola opció** dins d’un grup.
+- Tots els radiobuttons d’un mateix grup **han de tenir el mateix `name`**.
+- L’atribut `value` indica el valor que s’envia quan està seleccionat.
+- L’atribut `checked` marca l’opció per defecte.
+
+### Exemple
+
+```html
+Sexe: <input type="radio" name="sexe" value="home" /> Home
+<input type="radio" name="sexe" value="dona" /> Dona
+```
+
+## 🔘 Botons en HTML
+
+- Serveixen per **enviar formularis** o executar accions amb JavaScript.
+- Es poden crear amb `<input>` o `<button>`.
+
+```html
+<button type="submit">Enviar</button>
+```
+
+✅ Exemple complet
+
+```html
+<form action="registre.php" method="post">
+  Nom: <input type="text" name="nom" required /><br />
+  Correu: <input type="email" name="correu" /><br />
+  Contrasenya: <input type="password" name="clau" /><br />
+
+  Sexe:
+  <input type="radio" name="sexe" value="home" /> Home
+  <input type="radio" name="sexe" value="dona" /> Dona <br />
+
+  País:
+  <input type="radio" name="pais" value="es" /> Espanya
+  <input type="radio" name="pais" value="fr" /> França <br />
+
+  Missatge:
+  <textarea name="missatge"></textarea><br />
+
+  <input type="submit" value="Registrar" />
+</form>
+```
 
 # Àudio i vídeo
 

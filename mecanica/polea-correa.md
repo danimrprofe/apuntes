@@ -4,7 +4,7 @@ Mecanismo de transmisión de movimiento rotativo que se utiliza en aplicacione
 
 Consiste en una polea que se encuentra conectada al motor y que hace contacto con una correa que se extiende hacia otra polea, que a su vez transfiere el movimiento a la máquina o dispositivo que se desea mover.
 
-<img src="media/image8.gif" id="image8">
+![image8](media/image8.gif)
 
 Las correas pueden ser de diferentes tipos, como las planas, las trapezoidales o las dentadas, y su elección dependerá del tipo de aplicación.
 
@@ -19,7 +19,7 @@ Son especialmente útiles cuando queremos poder cambiar velocidades, ajustando l
 Simulador: Simulador de polea y correa
 https://www.blocklayer.com/pulley-belteng
 
-<img src="media/image9.png" id="image9">
+![image9](media/image9.png)
 
 Si se necesita una relación de transmisión muy elevada o muy reducida se utilizan los trenes de poleas.
 

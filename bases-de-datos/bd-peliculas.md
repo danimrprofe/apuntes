@@ -111,7 +111,7 @@ La última versión a día de hoy es la **versión 24.8**.
 
 ``Libreoffice base`` es un programa que nos permite guardar cualquier tipo de información de un tema en concreto en una base de datos, para actualizarla o consultarla en cualquier momento.
 
-<img src="media/image2.png" id="image2">
+![image2](media/image2.png)
 
 ## 2.2 Instalación de libreoffice
 
@@ -128,7 +128,7 @@ La última versión a día de hoy es la **versión 24.8**.
 
 Una vez tenemos instalado Libreoffice base buscamos en inicio hasta dar con la aplicación.
 
-<img src="media/image3.png" id="image3">
+![image3](media/image3.png)
 
 Al entrar en ``Base`` nos encontraremos la ventana ``Asistente para base de datos`` donde se nos da a elegir entre crear una nueva base de datos, abrir una base de datos existente o conectar con una base de datos existente.
 
@@ -142,15 +142,15 @@ Ahora vamos a crear la base de datos que se usará para toda esta práctica por 
 
 Una vez que esté creada y volvamos a entrar a Base tendremos que marcar la segunda opción y elegir nuestra base de datos.
 
-<img src="media/image4.png" id="image4">
+![image4](media/image4.png)
 
 Nos debe aparecer una ventana. Por un lado, debemos elegir entre registrar o no la base de datos y, por otro, entre abrir o no la base de datos para editarla y crear tablas usando el asistente. Lo vamos a dejar todo tal cual.
 
-<img src="media/image5.png" id="image5">
+![image5](media/image5.png)
 
 Para terminar, pulsamos sobre el botón finalizar.
 
-<img src="media/image4.png" id="image6">
+![image6](media/image4.png)
 
 ## 3.2 Guardar nuestra base de datos
 
@@ -158,13 +158,13 @@ Es importante recordar dónde guardamos el archivo, puesto que en las próximas 
 
 La base de datos se guarda toda dentro de un único archivo en nuestro ordenador como este. La extensión que tienen los tipos de archivo de base de datos es ``.odb``. Aparecerá un icono que nos muestra que este archivo es un archivo de base.
 
-<img src="media/image6.png" id="image7">
+![image7](media/image6.png)
 
 Para finalizar debemos elegir la carpeta donde guardaremos nuestra base de datos y el nombre de la misma.
 
 La base de datos que vamos a crear se llamará Curso y la vamos a guardar en la subcarpeta Bases de Datos, dentro de la carpeta Escritorio
 
-<img src="media/image7.png" id="image8">
+![image8](media/image7.png)
 
 # 4. Creamos nuestra primera tabla
 
@@ -185,7 +185,7 @@ A modo de resumen:
 
 Para ello nos situamos en el entorno en el menú de tablas y, dentro de las tareas, pulsamos sobre crear tabla en ``vista diseño``.
 
-<img src="media/image8.png" id="image9">
+![image9](media/image8.png)
 
 Nos aparece una pantalla para definir las columnas que tendrá la tabla . Por cada columna de nuestra futura tabla podemos indicar el nombre, el tipo de datos y una breve descripción sobre lo que almacenará dicha columna.
 
@@ -195,13 +195,13 @@ A continuación, nos aparecerá la siguiente ventana. Ahora aparece vacía porqu
 
 > Las tablas deben contener al menos un campo
 
-<img src="media/image9.png" id="image10">
+![image10](media/image9.png)
 
 Comenzamos a definir el primer campo: nos situamos en la primera fila de la rejilla y en la columna ``Nombre del campo`` escribimos ``id_pelicula``. Digamos que es el número que le asignaremos a cada película que luego introduzcamos en la tabla.
 
 > Los nombres de campos no pueden contener espacios ni caracteres especiales
 
-<img src="media/image10.png" id="image11">
+![image11](media/image10.png)
 
 ## 4.4 Tipos de datos
 
@@ -218,11 +218,11 @@ Existen los siguientes tipoos de datos:
 
 Por defecto, nos indica ``Texto[VARCHAR]`` como tipo de dato. En nuestro caso, para este campo vamos a elegir uno de los de tipo numérico llamado ``Número[Numeric]``
 
-<img src="media/image11.png" id="image12">
+![image12](media/image11.png)
 
 A continuación, en la columna ``Descripción``, sería aconsejable que se introdujese un comentario acerca del campo que se acaba de insertar
 
-<img src="media/image12.png" id="image13">
+![image13](media/image12.png)
 
 ## 4.5 clave primaria 🔑
 
@@ -243,49 +243,49 @@ Para indicar que queremos que el campo ``id_pelicula`` sea nuestra Llave Primari
 
 Nos situamos en la parte izquierda del campo
 
-<img src="media/image13.png" id="image14">
+![image14](media/image13.png)
 
 Pulsamos botón derecho del ratón
 
-<img src="media/image14.png" id="image15">
+![image15](media/image14.png)
 
 Seleccionamos la opción ``Llave primaria``
 
-<img src="media/image15.png" id="image16">
+![image16](media/image15.png)
 
 Quedando finalmente el campo como se muestra. La llave indica que este campo es la clave principal de la tabla.
 
-<img src="media/image16.png" id="image17">
+![image17](media/image16.png)
 
 Una vez insertado este primer campo, insertaríamos el resto de columnas, que van a ser:
 
-<img src="media/image17.png" id="image18">
+![image18](media/image17.png)
 
 ## 4.7 Guardar la tabla
 
 Una vez creados todos los campos con sus propiedades, debemos guardar la tabla. Para ello pulsamos sobre el icono en forma de disquete de la esquina superior izquierda
 
-<img src="media/image18.png" id="image19">
+![image19](media/image18.png)
 
 A continuación, nos aparece una ventana que nos pide que introducimos el nombre de la tabla. En dicha ventana introducimos el nombre Peliculas y pulsamos el botón Aceptar.
 
-<img src="media/image19.png" id="image20">
+![image20](media/image19.png)
 
 Si hemos seguido todos los pasos correctamente, nuestra ``tabla PELICULAS``debe aparecer dentro del apartado Tablas en la parte inferior de la ventana principal
 
-<img src="media/image20.png" id="image21">
+![image21](media/image20.png)
 
 Las tildes pueden producir problemas por lo que es mejor evitar su uso en los nombres.
 
 Si quisiéramos agregar o modificar columnas, elegimos editar.
 
-<img src="media/image21.png" id="image22">
+![image22](media/image21.png)
 
 ## 4.8 Editar tablas
 
 Una vez creada, podemos editar las columnas que tiene una tabla para cambiarlas, agregar o eliminar alguna columna, etc. Para abrir esta tabla para editarla tenemos que situarnos en el apartado de ``Tablas`` y hacer un clic con el botón derecho del ratón y seleccionar la opción Editar
 
-<img src="media/image21.png" id="image37">
+![image37](media/image21.png)
 
 ### Agregar o eliminar columnas
 
@@ -293,7 +293,7 @@ Para añadir nuevas columnas a nuestra tabla hay que seguir el mismo proceso que
 
 Para eliminar columnas de nuestra tabla nos situamos al inicio del campo y seleccionamos la opción ``eliminar``. Antes de eliminar una columna de nuestra tabla debemos saber que al hacerlo se borrarán todos los valores que tuviéramos dados a esta columna en nuestra filas.
 
-<img src="media/image36.png" id="image38">
+![image38](media/image36.png)
 
 En el caso de haber borrado una columna de la tabla accidentalmente siempre tenemos la opción de cerrar la ventana de edición sin guardar los cambios realizados.
 
@@ -313,11 +313,11 @@ Para insertar datos a través de la hoja de datos tenemos que situarnos en la pa
 > Si hacemos clic en ABRIR, podremos insertar registros en la tabla
 > Por el contrario, al hacer clic en EDITAR, podemos modificar los campos de la tabla
 
-<img src="media/image22.png" id="image23">
+![image23](media/image22.png)
 
 Aparece entonces la pantalla de hoja de datos que se muestra.
 
-<img src="media/image23.png" id="image24">
+![image24](media/image23.png)
 
 En primer lugar, podemos ver que:
 
@@ -335,7 +335,7 @@ A continuación, vamos a introducir la información de nuestra primera fila.
 
 Deberá quedar así:
 
-<img src="media/image24.png" id="image25">
+![image25](media/image24.png)
 
 **Nota**: Como no sabemos el día exacto en el que se estrenó cada una de las películas que tenemos, vamos a indicar siempre el 1 de enero
 
@@ -353,7 +353,7 @@ A continuación, rellenamos el resto de filas, con la información de las pelíc
 
 Poned la información tal cual. Si modificamos algo, en ejercicios posteriores no os cuadrará el resultado.
 
-<img src="media/image25.png" id="image26">
+![image26](media/image25.png)
 
 # 6. Ordenar tablas
 
@@ -361,7 +361,7 @@ Imaginad que queremos ver la lista por orden alfabético, o bien queremos ordena
 
 Podemos ordenar las filas según el valor de cualquiera de las columnas, tanto en orden descendente como ascendente.
 
-<img src="media/image26.png" id="image27">
+![image27](media/image26.png)
 
 Dentro de las opciones de ordenación tenemos tres posibilidades:
 
@@ -379,25 +379,25 @@ Supongamos que deseamos ordenar nuestras filas:
 
 Es decir, los criterios de ordenación serían los que aparecen:
 
-<img src="media/image27.png" id="image28">
+![image28](media/image27.png)
 
 El resultado debería ser el siguiente. Si no os cuadra, comprobad que habéis puesto bien la información y los criterios de ordenación.
 
-<img src="media/image28.png" id="image29">
+![image29](media/image28.png)
 
 # 7. Filtrado de datos ![Alt text](image.png)
 
 En ocasiones podemos querer buscar únicamente un conjunto de películas que cumplen cierta condición. Las opciones de filtrado de datos nos permiten elegir de forma simple qué datos queremos que se muestren.
 
-<img src="media/image29.png" id="image30">
+![image30](media/image29.png)
 
 Elegid los siguientes valores para visualizar las películas entre 1980 y 1989. Para ello, filtraremos por el campo año.
 
-<img src="media/image30.png" id="image31">
+![image31](media/image30.png)
 
 Tocarían dos resultados, que son los que coinciden con las condiciones que hemos establecido.
 
-Lo que estamos viendo es la información filtrada, si volvemos a darle al icono del embudo <img src="media/image32.png" id="image33">, desactivaremos el filtro y veremos todas las películas de nuevo.
+Lo que estamos viendo es la información filtrada, si volvemos a darle al icono del embudo ![image33](media/image32.png), desactivaremos el filtro y veremos todas las películas de nuevo.
 
 Si queremos modificar el filtro y volverlo a definir:
 
@@ -412,7 +412,7 @@ Para borrar una fila entera (no es necesario hacerlo), basta con:
 
 Por ejemplo, imaginemos que la peícula Rocky que tenía en VHS se ha estropeado y ya no se puede ver, entonces me sitúo al inicio de esa fila y selecciono eliminarla.
 
-<img src="media/image33.png" id="image34">
+![image34](media/image33.png)
 
 # 9. Crear la ``tabla INTERPRETES``
 
@@ -420,11 +420,11 @@ Las películas están protagonizadas por actores y actrices. Para poder relacion
 
 Crearemos una tabla llamada ``INTERPRETES`` con los siguientes campos. Al igual que con las películas, crearemos un campo especial que será el número que daremos a cada intérprete.
 
-<img src="media/image34.png" id="image35">
+![image35](media/image34.png)
 
 Una vez creada la estructura de la tabla, deberemos insertar las siguientes filas en ella.
 
-<img src="media/image35.png" id="image36">
+![image36](media/image35.png)
 
 Ahora deberíamos tener dos tablas creadas. Repasa que están todos los datos en ella y que no se te ha olvidado nada, antes de continuar.
 
@@ -434,11 +434,11 @@ Una de las grandes ventajas de las bases de datos es que podemos tener toda la i
 
 Se podría pensar en añadir una nueva columna (no la hagáis) a la ``tabla PELICULAS``que se llamara Género, de manera que por cada película almacenada también tuviera su género.
 
-<img src="media/image37.png" id="image39">
+![image39](media/image37.png)
 
 Si nos fijamos en esta solución podemos ver que se está repitiendo el mismo valor muchas veces, por ejemplo, Ciencia-Ficción aparece en cuatro filas y Drama en otras tantas.
 
-<img src="media/image37.png" id="image40">
+![image40](media/image37.png)
 
 ¿Qué problemas podemos tener si lo hacemos así?
 
@@ -451,25 +451,25 @@ La información de géneros la vamos a crear en una nueva tabla e indicaremos de
 
 Crearemos una nueva table y la llamaremos ``GENEROS`` con los siguientes campos. Marcaremos ``id_genero`` hay que ponerlo como clave principal.
 
-<img src="media/image38.png" id="image41">
+![image41](media/image38.png)
 
 Seleccionado el campo ``id_genero``, vamos a marcar ``valor automático`` a SI. De este modo, no tendremos que rellenar este campo cuando rellenemos información de la tabla. En lugar de esto, se rellenará con el siguiente número disponible.
 
-<img src="media/image38.png" id="image42">
+![image42](media/image38.png)
 
 Y la guardamos con el nombre generos.
 
-<img src="media/image39.png" id="image43">
+![image43](media/image39.png)
 
 Ahora mismo deberíais tener 3 tablas:
 
-<img src="media/image40.png" id="image44">
+![image44](media/image40.png)
 
 Vamos a rellenar la ``tabla GENEROS``. En la primera columna no tenemos que poner nada, siempre se pondrán los valores automáticamente cuando pasemos a la siguiente fila.
 
 💡 Si no se autocompletan los números, revisa que ``genero`` sea clave principal.
 
-<img src="media/image41.png" id="image45">
+![image45](media/image41.png)
 
 ## Información de intérpretes
 
@@ -477,7 +477,7 @@ También vamos a suponer que quisiéramos almacenar información (apellidos, nom
 
 A pesar de haber creado una ``tabla INTERPRETES``  anteriormente, podríamos haber pensado en agregar columnas a la ``tabla PELICULAS``donde guardar la información acerca de sus protagonistas.
 
-<img src="media/image42.png" id="image46">
+![image46](media/image42.png)
 
 Esta solución es difícil de mantener y puede dar multitud de problemas y errores, por lo ya habíamos creado una ``tabla INTERPRETES``
 
@@ -517,29 +517,29 @@ Por tanto, la columna debe ser del mismo tipo de dato que la columna que sea cla
 
 En la ``tabla PELICULAS`` tendremos que crear una columna del mismo tipo que a la que llamaremos Genero.
 
-<img src="media/image43.png" id="image47">
+![image47](media/image43.png)
 
 Los valores que pondremos en esa columna estarán comprendidos en los distintos valores que toma ese valor en la ``tabla GENEROS`` .
 
 Como la columna que hemos creado en la ``tabla PELICULAS`` es nueva, tendremos que completarla con el número correspondiente al género al  que pertenece la película.
 
-<img src="media/image44.png" id="image48">
+![image48](media/image44.png)
 
 Falta indicarle que las dos tablas están relacionadas y que vamos a utilizar para mantener dicha relación la nueva columna ``genero`` que hemos creado en peliculas.
 
 Para realizar esta operación tenemos que abrir la herramienta QUE SOLO ENCONTRARÉIS EN LA VENTANA PRINCIPAL, llamada Relaciones.
 
-<img src="media/image45.png" id="image49">
+![image49](media/image45.png)
 
 ## Selección de tablas
 
 Veréis que se abre una ventana nueva. Lo primero que nos ocurre nada más entrar en la ventana Relaciones. Seleccionamos cada tabla y le damos a añadir.
 
-<img src="media/image46.png" id="image50">
+![image50](media/image46.png)
 
 Deberemos ver esto. Las tablas que aquí vemos las podremos unir con flechas. Estas flechas que pondremos indicarán las relaciones que tienen entre ellas.
 
-<img src="media/image47.png" id="image51">
+![image51](media/image47.png)
 
 ## Crear relaciones
 
@@ -547,11 +547,11 @@ Relación ``géneros - películas``
 
 A continuación, ya podemos establecer la relación que queremos indicar. Para ello pinchamos en el icono que aparece a la derecha en la ventana relaciones
 
-<img src="media/image48.png" id="image52">
+![image52](media/image48.png)
 
 Entonces, nos debe aparecer una ventana donde primero debemos indicar las tablas que queremos relacionar para, a continuación, elegir en función de qué columna vamos a establecer la relación. Debería quedar así:
 
-<img src="media/image49.png" id="image53">
+![image53](media/image49.png)
 
 ## Opciones de actualización y eliminación
 
@@ -564,11 +564,11 @@ Nos ofrece cuatro posibilidades para cada una de ellas. Estas opciones sirven pa
 
 Para la actualización, lo normal suele ser elegir la posibilidad de actualizar en cascada, y para el borrado no existe una opción preferida, sino que dependerá bastante del contexto, en nuestro caso, para esta relación, indicaremos poner a nulos.
 
-<img src="media/image51.png" id="image54">
+![image54](media/image51.png)
 
 Una vez hemos terminado de indicar la relación, ésta debe aparecer indicada tal y como se muestra.
 
-<img src="media/image52.png" id="image55">
+![image55](media/image52.png)
 
 Ahora aparece una línea uniendo ambas tablas y que en el extremo de esa línea;
 
@@ -612,7 +612,7 @@ También marcaremos las dos como clave principal. Es decir, se puede repetir el 
 
 Rellenaremos a continuación el resto de la tabla.
 
-<img src="media/image54.png" id="image57">
+![image57](media/image54.png)
 
 Rellenaremos la tabla, asignando a cada ``id_película``, un ``id_intérprete``. La tabla es la que veis a la izquierda. Si os fijáis:
 
@@ -633,23 +633,23 @@ Así, una vez que nos hemos situado de nuevo en la ventana Relaciones
 
 Añadimos las tablas que queremos relacionar a dicha ventana.
 
-<img src="media/image55.png" id="image58">
+![image58](media/image55.png)
 
 Aquí veis las dos tablas que hemos añadido, pero que no están conectadas con nada más. Ahora vamos a enlazar estas 3 tablas entre sí:
 
-<img src="media/image56.png" id="image59">
+![image59](media/image56.png)
 
 Relacionamos los campos ``id_pelicula`` de las dos tablas. Comprobaréis que aparece 1 y n, indicando que un valor de ``id_pelicula`` en la ``tabla PELICULAS``aparece más de una vez en la ``tabla protagonistas``.
 
-<img src="media/image58.png" id="image60">
+![image60](media/image58.png)
 
 Del mismo modo relacionamos estas dos tablas, a través del campo ``id_interprete`` que aparece en ambas tablas.
 
-<img src="media/image59.png" id="image61">
+![image61](media/image59.png)
 
 Resumiendo, al final las relaciones tienen que quedar así.
 
-<img src="media/image60.png" id="image62">
+![image62](media/image60.png)
 
 # 14. Consultas simples 🔍
 
@@ -661,39 +661,39 @@ La creación de consultas sobre una tabla se realiza utilizando el asistente. Va
 
 Para ello, teniendo seleccionada la sección "Consultas", nos situamos sobre el apartado de tareas y elegimos "Usar el asistente para crear consulta...".
 
-<img src="media/image61.png" id="image63">
+![image63](media/image61.png)
 
 Nos aparece entonces la primera ventana del asistente donde debemos elegir qué campos queremos que se muestren, y seleccionamos entonces los campos Nombre, Apellidos,y Nacionalidad de la ``tabla INTERPRETES``.
 
 Tiene que quedar así:
 
-<img src="media/image62.png" id="image64">
+![image64](media/image62.png)
 
 A continuación, podemos elegir si queremos que se muestren ordenados en función de los valores de uno o varios campos. Nosotros vamos a seleccionar que se ordenen alfabéticamente por los apellidos del intérprete.
 
-<img src="media/image63.png" id="image65">
+![image65](media/image63.png)
 
 En el siguiente paso podemos elegir si queremos indicar uno o varios criterios de búsqueda; es decir, si queremos que las filas que se muestran cumplan alguna condición en particular.
 
 Como en nuestro caso el objetivo es mostrar sólo los intérpretes no españoles, debemos indicar que para el campo Nacionalidad no deseamos aquellos que contengan el valor ``Español`` .
 
-<img src="media/image64.png" id="image66">
+![image66](media/image64.png)
 
 A continuación, podemos elegir con qué nombre (alias), se mostrarán las cabeceras de las columnas de los campos que hemos elegido al mostrar el resultado de la consulta. En este caso, como los nombres de los campos son bastante claros simplemente les quitamos el nombre de la tabla que figura delante del nombre .
 
-<img src="media/image65.png" id="image67">
+![image67](media/image65.png)
 
 A continuación podemos cambiar el nombre de la consulta si queremos:
 
-<img src="media/image66.png" id="image68">
+![image68](media/image66.png)
 
 Como resultado veremos el listado ordenado por apellido en orden ascendente, y evitando los intérpretes españoles.
 
-<img src="media/image67.png" id="image69">
+![image69](media/image67.png)
 
 Siempre que queramos hacer esta consulta, simplemente hacemos doble clic sobre su nombre:
 
-<img src="media/image68.png" id="image70">
+![image70](media/image68.png)
 
 # 15. Consultas sobre varias tablas combinando el asistente con el modo Diseño
 
@@ -703,19 +703,19 @@ Para realizar esta consulta primero vamos a utilizar el asistente para conseguir
 
 Por tanto, empezamos de nuevo yendo a la sección tareas del tipo de objeto consulta y elegimos ``Usar el asistente para crear consulta…``.
 
-<img src="media/image69.png" id="image71">
+![image71](media/image69.png)
 
 Ahora, en la ventana inicial del asistente, elegimos los campos ``Titulo, Director, Año y Formato`` de la ``tabla PELICULAS``
 
-<img src="media/image70.png" id="image72">
+![image72](media/image70.png)
 
 En la siguiente ventana  vamos a indicar que queremos que el resultado se ordene, en primer lugar, en función del campo Director, y, en caso de coincidir el director entre distintas películas, en función del campo Titulo.
 
-<img src="media/image71.png" id="image73">
+![image73](media/image71.png)
 
 En esta consulta no vamos a poner ninguna condición por la que filtrar los datos, por lo que nos vamos directamente a la ventana ``Alias`` , donde vamos a aprovechar para ``maquillar`` que el campo Título no tuviera tilde al crear dicho campo y ahora sí se la incluimos. Además, para que el campo Año quede más concreto lo vamos a presentar como Fecha de estreno.
 
-<img src="media/image72.png" id="image74">
+![image74](media/image72.png)
 
 Antes de finalizar con el asistente, en la ventana ``Información general`` del mismo, debemos incluir el nombre de la consulta, que en este caso va a ser  ``Consulta_Peliculas_Generos``.
 
@@ -723,13 +723,13 @@ Vamos a indicar también que no queremos que se muestre el resultado de la consu
 
 Para esto último debemos activar la casilla ``Modificar consulta`` en dicha ventana
 
-<img src="media/image73.png" id="image75">
+![image75](media/image73.png)
 
 Modo diseño
 
 Nos debe aparecer entonces una ventana que permite crear consultas en modo Diseño.
 
-<img src="media/image74.png" id="image76">
+![image76](media/image74.png)
 
 En primer lugar, podemos ver que la ventana aparece dividida en dos partes bien diferenciadas:
 
@@ -746,41 +746,41 @@ Ya hemos visto entonces que en el modo Diseño nos aparecen los campos de Pelicu
 
 Como el nombre del género es un campo de la ``tabla GENEROS`` lo primero que tenemos que hacer es indicar que queremos incluir dicha tabla en la consulta. Para ello, debemos seleccionar el icono ``Añadir tablas``, que es el primero por la izquierda de los iconos de la fila inferior y elegir la ``tabla GENEROS``.
 
-<img src="media/image75.png" id="image77">
+![image77](media/image75.png)
 
-<img src="media/image76.png" id="image78">
+![image78](media/image76.png)
 
 Podemos observar que automáticamente detecta que estas dos tablas están relacionadas.
 
-<img src="media/image77.png" id="image79">
+![image79](media/image77.png)
 
 Pues lo mismo que si hubiéramos intentado elegir los campos de ambas tablas directamente en el asistente, que la respuesta a la consulta hubiera sido que cada fila de la primera tabla aparecería unida a cada una de las filas de la otra tabla sin ningún criterio, es decir, en nuestro caso tendríamos 90 filas (resultado del producto cartesiano de 10 filas de Peliculas por 9 que tenemos en Generos) de las cuales 80 no significan nada.
 
 Pero al haber indicado que existe la relación y detectarse en el modo Diseño conseguimos, sin necesidad de indicarlo explícitamente, que a la hora de mostrar todas las filas de Peliculas y Géneros, sólo nos muestre aquellas donde el valor para el campo por el que están relacionadas (Genero e ``id_genero`` respectivamente) sea el mismo, es decir, que sólo nos muestre juntas las filas de ambas tablas que realmente están relacionadas.
 
-<img src="media/image78.png" id="image80">
+![image80](media/image78.png)
 
 Una vez hemos añadido la ``tabla GENEROS``, elegimos qué campos queremos mostrar de ella. En este caso, nos basta con el campo Nombre.
 
-<img src="media/image79.png" id="image81">
+![image81](media/image79.png)
 
 Una vez que hemos elegido el campo, no debemos olvidar comprobar que la opción ``Visible`` está marcada para que se muestre este campo en el resultado de la consulta.
 
-<img src="media/image80.png" id="image82">
+![image82](media/image80.png)
 
 En la opción ``Alias`` del campo nombre_genero de la ``tabla GENEROS`` vamos a mostrar la palabra ``Género`` para que cualquier usuario entienda mejor lo que mostrará esta columna.
 
-<img src="media/image81.png" id="image83">
+![image83](media/image81.png)
 
 Dentro del modo Diseño podemos comprobar si la consulta devuelve lo que queremos sin necesidad de cerrar esta ventana y lanzar la consulta desde el menú principal.
 
 Para ello, basta con seleccionar el icono de ejecución de la consulta que se encuentra situado el segundo por la derecha en la fila de iconos superiores. Así, nos aparece entonces en la parte superior de la ventana el resultado de la consulta.
 
-<img src="media/image82.png" id="image84">
+![image84](media/image82.png)
 
 Veremos que se nos muestran los resultados:
 
-<img src="media/image83.png" id="image85">
+![image85](media/image83.png)
 
 Si estamos conformes con el resultado, guardamos la consulta y podemos ver en la ventana principal que las dos consultas de esta unidad aparecen ya almacenadas.
 
@@ -798,13 +798,13 @@ La central, donde se muestran las tablas seleccionadas para la consulta
 
 La inferior, donde cada columna representa cada uno de los campos a mostrar junto con una serie de opciones relacionadas para el filtrado de los resultados.
 
-<img src="media/image84.png" id="image86">
+![image86](media/image84.png)
 
 Vamos a crear nuestra primera consulta completamente en ``vista diseño``. En particular, vamos a crear una consulta que nos muestre todos los actores que protagonizan películas junto con los datos de la película, incluido el nombre del género. Es decir, vamos a construir una consulta que utiliza las cuatro tablas de nuestra base de datos.
 
 Para empezar, nos vamos a la ventana principal, a la sección Consultas y seleccionamos la tarea Crear consulta en ``vista diseño``.
 
-<img src="media/image85.png" id="image87">
+![image87](media/image85.png)
 
 Seleccionar tablas a utilizar en la consulta
 
@@ -812,17 +812,17 @@ Nada más entrar en el modo Diseño, nos mostrará una ventana donde indicar las
 
 Las puedes recolocar un poco para que te sea más fácil ver las relaciones
 
-<img src="media/image86.png" id="image88">
+![image88](media/image86.png)
 
 Especificar criterios de la consulta
 
 A continuación, vamos a especificar que queremos que los resultados de la consulta se muestran ordenados por los apellidos y el nombre de los intérpretes.
 
-<img src="media/image87.png" id="image89">
+![image89](media/image87.png)
 
 Para incluir los campos de la ``tabla PELICULAS``vamos a seleccionar Peliculas:* y así no tenemos que incluir los campos uno a uno
 
-<img src="media/image88.png" id="image90">
+![image90](media/image88.png)
 
 Para seleccionar los campos de la ``tabla INTERPRETES`` no hemos utilizado la posibilidad ``Interpretes.*`` porque es necesario seleccionar cada campo individualmente, ya que vamos a establecer algún criterio de ordenación en función de alguno de los campos de la tabla.
 
@@ -830,7 +830,7 @@ Como en nuestro caso vamos a mostrar los resultados ordenados en función de los
 
 Para terminar, vamos a seleccionar el campo Nombre de la ``tabla GENEROS`` y, en el alias, vamos a poner ``NombreGenero``, para distinguirlo de los campos ya seleccionados, Nombre de la ``tabla INTERPRETES`` y genero de la ``tabla PELICULAS`.
 
-<img src="media/image89.png" id="image91">
+![image91](media/image89.png)
 
 Guardamos la consulta con el nombre ``ConsultaTotal`` y al ejecutarla el resultado es el siguiente. Tendrían que apareceros 14 registros.
 
@@ -842,25 +842,25 @@ Imaginad que queremos un recuento de cuantas películas tenemos de cada género.
 
 Así, vamos a crear una consulta que muestre el nombre de cada género almacenado y el total de películas que tenemos de cada género. El resultado de nuestra consulta, con las filas que tenemos actualmente en Generos y Peliculas, debe ser como la siguiente:
 
-<img src="media/image91.png" id="image93">
+![image93](media/image91.png)
 
 El objetivo es realizar una consulta sobre Generos y Peliculas de manera que agrupemos las filas devueltas en función de cada género para así poder contarlas y poder saber el número de películas asociadas a cada uno de ellos.
 
 Para empezar, elegimos las tablas sobre las que vamos a realizar la consulta, Generos y Peliculas.
 
-<img src="media/image92.png" id="image94">
+![image94](media/image92.png)
 
 Los campos que necesitamos son, por un lado, Nombre de Generos, que es sobre el que agruparemos los resultados devueltos y, por otro, un campo de la ``tabla PELICULAS``que estemos seguros que siempre tendrá un valor (no estará vacío) para cada fila de Peliculas.
 
 Por ejemplo, podemos elegir el campo ``id_pelicula`` que siempre va a tener valor para cada película. Los campos seleccionados se muestran.
 
-<img src="media/image93.png" id="image95">
+![image95](media/image93.png)
 
 A continuación, debemos asociar la función correspondiente a cada uno de los dos campos.
 
 En primer lugar, hemos dicho que queremos agrupar los resultados en función de cada género, para ello vamos a incluir la ``función agrupar`` asociada al campo Nombre de Generos.
 
-<img src="media/image94.png" id="image96">
+![image96](media/image94.png)
 
 En segundo lugar, lo que queremos es contar las películas relacionadas con cada género. Esto último lo conseguimos asociando la función ``Cantidad`` al campo ``id_pelicula`` de Peliculas.
 
@@ -868,21 +868,21 @@ En segundo lugar, lo que queremos es contar las películas relacionadas con cada
 
 Si no aparece la función ``Cantidad``, elegid la función ``Recuento``.
 
-<img src="media/image94.png" id="image97">
+![image97](media/image94.png)
 
 Guardamos entonces la consulta como ``Peliculas de cada Genero``
 
-<img src="media/image95.png" id="image98">
+![image98](media/image95.png)
 
 Al lanzarla nos encontramos una pantalla como esta:
 
-<img src="media/image96.png" id="image99">
+![image99](media/image96.png)
 
 Como vemos arriba, la cabecera con el total de películas está mostrando la función que estamos utilizando junto con el nombre del campo.
 
 Si queremos que el resultado aparezca como el que mostraremos en la figura., es decir, con una cabecera significativa, debemos añadir el **alias** ``Total de Peliculas``.
 
-<img src="media/image95.png" id="image100">
+![image100](media/image95.png)
 
 # 18. Vistas. Consultas sobre vistas
 
@@ -904,25 +904,25 @@ Seleccionamos la consulta que queramos convertir con el botón derecho del rató
 
 Del menú que se despliega seleccionamos la opción ``Crear como vista``.
 
-<img src="media/image97.png" id="image101">
+![image101](media/image97.png)
 
 Se nos despliega entonces una ventana donde tenemos que poner un nombre a la vista, escribimos ``PeliculasCadaGenero`` y aceptamos. Ya hemos convertido la consulta en una vista y podemos ver que ya es así si nos situamos en la sección ``Tablas`` de la ventana principal . Podemos observar que se usa un icono distinto para representar vistas y distinguirlas de las tablas.
 
-<img src="media/image98.png" id="image102">
+![image102](media/image98.png)
 
 ## Crear una consulta sobre la vista
 
 Una vez que ya tenemos la vista, vamos a crear una consulta sobre ella. Para empezar, vemos que al entrar en ``vista diseño`` para crear una nueva consulta ya nos aparece PeliculasCadaGenero como si de una tabla más se tratara y la elegimos como única tabla de la consulta.
 
-<img src="media/image99.png" id="image103">
+![image103](media/image99.png)
 
 Como sólo queremos que nos devuelva el valor medio de las películas de cada género seleccionamos el campo Total de Peliculas y le asociamos la función ``Promedio`` junto con el alias ``Media de cada género``.
 
-<img src="media/image100.png" id="image104">
+![image104](media/image100.png)
 
 Para ver que la consulta hace lo que esperamos en la propia ``vista diseño`` , la lanzamos antes de guardarla utilizando el botón ``Ejecutar`` y, si devuelve el valor esperado, ya hemos terminado.
 
-<img src="media/image101.png" id="image105">
+![image105](media/image101.png)
 
 # 19. FORMULARIOS 📋
 
@@ -963,11 +963,11 @@ Si esta última barra no nos apareciera por cualquier motivo, se puede acceder a
 
 Antes de conocer los controles más importantes de ambas barras es recomendable, para hacer más cómodo el diseño de formularios, incrustar la barra ``Campo de Control…`` con el resto de barras de herramientas; para ello, basta con hacer doble clic con el ratón sobre la cabecera de esta barra y la ventana de diseño de formularios nos quedará como aparece.
 
-<img src="media/image104.png" id="image108">
+![image108](media/image104.png)
 
 En esta última barra, por defecto, no aparecen todos los controles disponibles; si queremos que aparezcan todos, debemos pulsar el icono que abre la barra de herramientas ``Más campos de control`` y nuestra ventana de trabajo debería quedar como la que aparece
 
-<img src="media/image105.png" id="image109">
+![image109](media/image105.png)
 
 ## Creación de un formulario básico.
 
@@ -981,25 +981,25 @@ Para ello, pulsamos sobre el icono ``Navegador de formulario``
 
 Hacemos clic con el botón derecho sobre el campo ``Formulario``, elegimos la opción ``Nuevo`` y, dentro de ésta, ``Formulario``.
 
-<img src="media/image106.png" id="image110">
+![image110](media/image106.png)
 
 Por defecto, al nuevo formulario lo llama Standard pero nosotros lo vamos a renombrar como Form_Interpretes.
 
-<img src="media/image107.png" id="image111">
+![image111](media/image107.png)
 
 Para indicar que el formulario va a estar conectado con la ``tabla INTERPRETES`` hacemos clic con el botón derecho del ratón en el navegador de formulario sobre Form_Interpretes y elegimos ``Propiedades``.
 
- <img src="media/image108.png" id="image112">
+ ![image112](media/image108.png)
 
 En el cuadro resultante, vamos a la ficha ``Datos``, y seleccionamos dentro ``Contenido``. Abrimos el menú desplegable y seleccionamos la tabla sobre la que vamos a construir el formulario, en nuestro caso Interpretes
 
-<img src="media/image109.png" id="image113">
+![image113](media/image109.png)
 
 ## Guardar el formulario
 
 Cerramos las ventanas ``Propiedades del formulario`` y ``Navegador de formulario`` y, antes de continuar, guardamos el formulario pulsando en la pestaña ``Archivo`` y dentro ``Guardar``, y también aquí le nombramos como ``Form_Interpretes``.
 
-<img src="media/image110.png" id="image114">
+![image114](media/image110.png)
 
 Crear campo de texto
 
@@ -1013,7 +1013,7 @@ Veremos que el cursor cambia de forma, y es cuando podemos insertar dicho campo.
 
 Llevamos el cursor a la posición de la zona de trabajo y lo arrastramos hasta que el campo de texto alcance el tamaño deseado.
 
-<img src="media/image111.png" id="image115">
+![image115](media/image111.png)
 
 Ahora tenemos que dar unas propiedades al campo de texto y asignarle la tabla en la que se insertarán los datos introducidos desde este formulario.
 
@@ -1023,57 +1023,57 @@ Seleccionamos dicho cuadro con el botón derecho y nos sale un cuadro emergente,
 
 En el cuadro resultante, vamos a la ficha ``Datos``, y seleccionamos dentro de ``Campo de datos`` el nombre del campo al cual se va a enlazar, en este caso, al campo ``id_interprete``.
 
-<img src="media/image113.png" id="image117">
+![image117](media/image113.png)
 
 Dentro de esta misma ventana de propiedades del campo, nos vamos a la ficha ``General`` al campo ``Nombre`` y escribimos Campo ``id_interprete``.
 
 Una buena práctica es dar un nombre significativo a cada campo que creemos, sobre todo cuando tengamos formularios con muchos campos. Así, podremos distinguir bien cada campo dentro de la ventana ``Navegador de Formularios``.
 
-<img src="media/image114.png" id="image118">
+![image118](media/image114.png)
 
 Colocar un campo de etiqueta
 
 Delante del campo de texto creado vamos a poner un ``Campo etiqueta`` para que cualquier usuario que utilice el formulario conozca lo que debe introducir.
 
-<img src="media/image115.png" id="image119">
+![image119](media/image115.png)
 
 Si hacemos doble clic sobre la etiqueta aparecerá una ventana donde podremos indicar las diferentes propiedades de la etiqueta (nombre que aparecerá en la etiqueta, color de fondo, tipo de letra, tamaño, color,...).
 
 El formato de los formularios puede tener más colorido y distintas fuentes de texto.
 
-<img src="media/image116.png" id="image120">
+![image120](media/image116.png)
 
 Dentro de estas propiedades vemos que hay algunas que nos abren una nueva ventana como, por ejemplo, la propiedad ``Fuente`` donde podemos variar el tamaño y el tipo de la fuente del texto.
 
-<img src="media/image117.png" id="image121">
+![image121](media/image117.png)
 
 Una vez que hemos cambiado las propiedades de la etiqueta, nuestro formulario debería parecerse al de la figura.
 
-<img src="media/image118.png" id="image122">
+![image122](media/image118.png)
 
 Completar el resto de campos del formulario
 
 Si repetimos los pasos realizados para el resto de los campos de la ``tabla INTERPRETES`` podríamos obtener un formulario parecido a este.
 
-<img src="media/image119.png" id="image123">
+![image123](media/image119.png)
 
 ## Guardar cambios
 
 Si salvamos los cambios realizados y cerramos la ventana de edición de formularios, en la ventana de objetos ya debe aparecer el formulario que acabamos de crear.
 
-<img src="media/image120.png" id="image124">
+![image124](media/image120.png)
 
 ## Editar el formulario
 
 Si queremos realizar algún cambio en el formato del formulario, pulsamos sobre el formulario con el botón derecho del ratón y elegimos la opción ‘Editar’.
 
-<img src="media/image121.png" id="image125">
+![image125](media/image121.png)
 
 ## Ejecutar el formulario
 
 En cambio, si lo que queremos es ejecutar el formulario para empezar a insertar datos hacemos doble clic sobre él .
 
-<img src="media/image122.png" id="image126">
+![image126](media/image122.png)
 
 Veréis que abajo aparece el número de registros (filas) que hay guardados en esta tabla y podremos ir viendo la información guardada en el formulario.
 
@@ -1085,13 +1085,13 @@ Recordad rellenar las filas de una en una, y no toda una columna
 
 Es posible que alguno de los campos lo hayamos definido con una longitud corta y hayamos escrito algo más largo. Editar los campos de la tabla y revisarlo.
 
-<img src="media/image123.png" id="image127">
+![image127](media/image123.png)
 
 ## No me deja rellenar una tabla
 
 Comprueba que en la tabla hayas definido un campo como clave principal.
 
-<img src="media/image124.png" id="image128">
+![image128](media/image124.png)
 
 # 21. Práctica delincuentes
 

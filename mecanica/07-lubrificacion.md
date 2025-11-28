@@ -4,7 +4,7 @@ La lubricación es esencial para el funcionamiento de la mayoría de las máquin
 
 Sin ella, las piezas se rozan entre sí, lo que genera **calor**, **desgaste** y, en última instancia, la falla del mecanismo.
 
-<img src="media/image57.png" id="image57">
+![image57](media/image57.png)
 
 Entre las múltiples ventajas tenemos las siguientes:
 
@@ -19,7 +19,7 @@ Entre las múltiples ventajas tenemos las siguientes:
 
 Un mantenimiento adecuado del sistema de lubricación y la limpieza también son esenciales para una lubricación eficaz. Si la lubricación es inadecuada o insuficiente, puede provocar un aumento del rozamiento y de la temperatura, lo que puede acelerar el desgaste y afectar negativamente a la vida útil de los mecanismos.
 
-<img src="media/image58.png" id="image58">
+![image58](media/image58.png)
 
 ## 🛢️ Denominación del aceite – Escala SAE
 
@@ -47,7 +47,7 @@ La denominación incluye dos valores separados por una letra **W** ("Winter", in
 
 Los sistemas de lubricación cuentan con diferentes mecanismos para la recirculación del lubricante. El aceite debe ser bombeado a través del circuito y luego retornado a un recipiente (cárter) donde se recoge.
 
-<img src="media/image60.png" id="image60">
+![image60](media/image60.png)
 
 El **carter** se encuentra en la parte inferior del motor. y recoge el aceite,
 y se situa en la parte inferior del vehículo.
@@ -79,7 +79,7 @@ que se liberan debido a la **fricción** durante el funcionamiento.
 Si el filtro se **obstruye**, la lubricación **no se interrumpe**,
 ya que el aceite puede seguir circulando por el circuito principal sin pasar por el filtro.
 
-<img src="media/image61.png" id="image61">
+![image61](media/image61.png)
 
 # 🛢️ ¿Cómo funciona el filtro de aceite?
 

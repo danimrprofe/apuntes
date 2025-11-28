@@ -150,13 +150,13 @@ Una polea es un elemento mecánico formado por una rueda con una ranura por la q
 
 El principal objetivo del uso de las poleas es reducir el esfuerzo obteniendo ventaja mecánica, aunque también pueden utilizarse para cambiar la dirección de la fuerza.
 
-<img src="media/image1.gif" id="image1">
+![image1](media/image1.gif)
 
 ### Politja mòbil
 
 La politja mòbil no és altra cosa que una politja de ganxo connectada a una corda que té un dels seus extrems ancorat a un punt fix i l'altre (extrem mòbil) connectat a un mecanisme de tracció.
 
-<img src="media/image2.gif" id="image2">
+![image2](media/image2.gif)
 
 L'inconvenient d'aquest muntatge és que per elevar la càrrega hem de fer força en sentit ascendent, cosa que resulta especialment incòmoda i poc efectiva. Per solucionar-ho es recorre a la seva utilització sota la forma de polipast (combinació de politges fixes amb mòbils).
 
@@ -170,7 +170,7 @@ Cuando se tira de la cuerda del polipasto, la carga se mueve hacia arriba, graci
 
 El polipasto puede utilizarse en una gran variedad de actividades, como en la construcción, el traslado de mercancías, en talleres mecánicos, entre otros.
 
-<img src="media/image3.png" id="image3">
+![image3](media/image3.png)
 
 ![Alt text](img/image-7.png)
 
@@ -180,7 +180,7 @@ En el siguiente enlace podemos simular el comportamiento de distintos tipos de p
 
 https://www.compassproject.net/html5sims/pulleysim/pulley_en.html
 
-<img src="media/image4.png" id="image4">
+![image4](media/image4.png)
 
 ## Transmisión circular
 
@@ -202,7 +202,7 @@ Ejes giratorios: pueden girar solidariamente con algunos de los elementos situad
 
 Un árbol es un elemento de una máquina, cilíndrico o no, sobre el que se montan diferentes piezas mecánicas, por ejemplo, un conjunto de engranajes o poleas, a los que se transmite potencia. Pueden adoptar diferentes formas (rectos, acodados, flexibles,). Los árboles (también llamados árboles de transmisión) giran siempre junto con los órganos soportados.
 
-<img src="media/image5.jpg" id="image5">
+![image5](media/image5.jpg)
 
 Como consecuencia de su función, están sometidos fundamentalmente a esfuerzos de torsión y flexión.
 
@@ -222,33 +222,33 @@ En un gran número de ocasiones será necesario transformar el movimiento rotati
 
 Es un dispositivo que convierte el movimiento circular en movimiento lineal o viceversa. Consiste en una manivela que gira alrededor de un eje y que está conectada a un mecanismo de torno que se encarga de transformar el movimiento.
 
-<img src="media/image23.png" id="image23">
+![image23](media/image23.png)
 
-<img src="media/image24.gif" id="image24">
+![image24](media/image24.gif)
 
-<img src="media/image25.png" id="image25">
+![image25](media/image25.png)
 
 ## piñón-cremallera
 
 Es un sistema de engranajes que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un piñón que gira alrededor de un eje y que se conecta a una cremallera que se mueve linealmente. Al girar el piñón, la cremallera se desplaza en la dirección deseada.
 
-<img src="media/image26.jpg" id="image26">
+![image26](media/image26.jpg)
 
 Podemos encontrar este tipo de mecanismo en una puerta automática:
 
-<img src="media/image27.png" id="image27">
+![image27](media/image27.png)
 
 ## Tornillo-tuerca
 
 Es un sistema de rosca que se utiliza para transformar el movimiento circular en movimiento lineal. Consiste en un tornillo con una rosca que se conecta a una tuerca con una rosca correspondiente. Al girar el tornillo, la tuerca se desplaza a lo largo del tornillo en la dirección deseada.
 
-<img src="media/image28.png" id="image28">
+![image28](media/image28.png)
 
 ![Alt text](image-19.png)
 
-<img src="media/image29.png" id="image29">
+![image29](media/image29.png)
 
-<img src="media/image30.png" id="image30">
+![image30](media/image30.png)
 
 ## Tornillo sin fin
 
@@ -262,7 +262,7 @@ Se trata de un sistema que no es reversible.
 
 Es un mecanismo que se utiliza para transformar el movimiento lineal en movimiento circular o viceversa. Consiste en una biela, que es una barra que se mueve linealmente, conectada a una manivela, que es un brazo que gira alrededor de un eje. Al mover la biela, la manivela gira y viceversa.
 
-<img src="media/image32.gif" id="image32">
+![image32](media/image32.gif)
 
 ## Leva
 
@@ -272,11 +272,11 @@ La distancia que recorre la varilla es la diferencia entre el radio mayor y el r
 
 $d = R - r$
 
-<img src="media/image33.png" id="image33">
+![image33](media/image33.png)
 
 En este ejemplo podemos ver como se utilizan las levas para abrir y cerrar las válvulas de admisión en un motor. En este caso, las levas se sincronizan entre sí mediante ``balancines``.
 
-<img src="media/image34.gif" id="image34">
+![image34](media/image34.gif)
 
 ### Árbol de levas
 
@@ -284,32 +284,32 @@ Un árbol de levas es un componente del motor de combustión interna que se enca
 
 El árbol de levas puede estar ubicado en la culata o en el bloque del motor, dependiendo del diseño del motor. La culata, también conocida como tapa de cilindros o tapa del bloque del motor, es la parte superior de un motor de combustión interna que permite el cierre de las cámaras de combustión.
 
-<img src="media/image35.jpg" id="image35">
+![image35](media/image35.jpg)
 
 En los motores de cuatro tiempos, el árbol de levas gira a la mitad de la velocidad del cigüeñal y tiene tantas levas como válvulas tenga el motor.
 
-<img src="media/image36.gif" id="image36">
+![image36](media/image36.gif)
 
 ## Excéntrica
 
 Una excéntrica es una pieza circular que gira alrededor de un eje descentrado y que se utiliza para producir un movimiento lineal.
 
-<img src="media/image37.png" id="image37">
+![image37](media/image37.png)
 
 ## Cigüeñal
 
-Es un componente importante en la mayoría de los motores de combustión interna. Se utiliza para transformar el movimiento lineal de los pistones en movimiento circular. Consiste en un eje que gira alrededor de un punto central y que tiene una serie de contrapesos y muñequillas en ángulos específicos. <img src="media/image38.png" id="image38">
+Es un componente importante en la mayoría de los motores de combustión interna. Se utiliza para transformar el movimiento lineal de los pistones en movimiento circular. Consiste en un eje que gira alrededor de un punto central y que tiene una serie de contrapesos y muñequillas en ángulos específicos. ![image38](media/image38.png)
 
 ## Pistones
 
 Los pistones se conectan a las muñequillas y, al girar el cigüeñal, se produce un movimiento circular que impulsa el motor.
 
-<img src="media/image39.gif" id="image39">
+![image39](media/image39.gif)
 
 ## Resorte
 
 Es un componente elástico que se utiliza para almacenar y liberar energía en una variedad de aplicaciones mecánicas.
 
-<img src="media/image56.gif" id="image56">
+![image56](media/image56.gif)
 
 Los resortes pueden ser de diferentes tipos, como helicoidales, de láminas, de torsión, entre otros, y se utilizan en una amplia gama de aplicaciones, desde relojes hasta vehículos.

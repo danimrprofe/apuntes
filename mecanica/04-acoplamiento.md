@@ -29,7 +29,7 @@ Per evitar aquestes variacions, s'instal·len sempre dues juntes Cardan que es c
 Un exemple el podem trobar als arbres de transmisió, en vehicles on el motor es
 situa al davant, però les rodes que traccionen son les de darrere.
 
-<img src="media/image17.png" id="image17">
+![image17](media/image17.png)
 
 L'arbre que uneix el diferencial amb la caixa de canvis és un arbre format per dues juntes cardan.
 
@@ -41,15 +41,15 @@ La junta homocinètica té com a finalitat connectar dos eixos situats longitudi
 
 Aquesta connexió es fa a través del palier de transmissió de les rodes, que s'uneix per un extrem amb el diferencial i per l'altre amb la caixa de la roda.
 
-<img src="media/image18.gif" id="image18">
+![image18](media/image18.gif)
 
 Aquesta transmissió està sotmesa a moviments oscil·latoris de la suspensió i moviments giratoris de la direcció, per la qual cosa ha de ser articulada. La junta homocinètica actua com una mena de ròtula complexa que permet aquests moviments sense que les rodes perdin tracció ni les transmissions es vegin afectades.
 
-<img src="media/image19.png" id="image19">
+![image19](media/image19.png)
 
 En la siguiente imagen vemos como los palieres se unen a las ruedas mediante juntas homocinéticas.
 
-<img src="media/image20.png" id="image20">
+![image20](media/image20.png)
 
 Les rodes es poden moure deguta a les suspensions, i la junta permet l'acoplament independentment d'aquests moviments:
 
@@ -62,7 +62,7 @@ el motor de la caja de cambios. Cuando se presiona el pedal del embrague, se des
 el motor de la caja de cambios, permitiendo cambiar de marcha sin interrupciones en la
 rotación del motor.
 
-<img src="media/image21.gif" id="image21">
+![image21](media/image21.gif)
 
 ### Disco de Embrague
 

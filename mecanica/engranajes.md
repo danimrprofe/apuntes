@@ -2,11 +2,11 @@
 
 Los engranajes de rueda dentada son uno de los mecanismos más utilizados para la transmisión del movimiento. En general, los engranajes de rueda dentada se componen de dos ruedas dentadas que están unidas por un eje. Las ruedas dentadas se encuentran en contacto y los dientes se interbloquean.
 
-<img src="media/image10.gif" id="image10">
+![image10](media/image10.gif)
 
 Las ruedas dentadas se pueden mover en el mismo sentido o en sentidos opuestos. Si las ruedas dentadas se mueven en el mismo sentido, se llama una reducción; si las ruedas dentadas se mueven en sentidos opuestos, se llama una transmisión.
 
-<img src="media/image11.jpg" id="image11">
+![image11](media/image11.jpg)
 
 Los engranajes de rueda dentada de rueda dentada pueden transmitir un movimiento uniforme a una velocidad diferente.
 
@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=QmpB1-DJZY8&t=137s
 
 Calculador motores y cambios de marchas: https://www.blocklayer.com/rpm-gear
 
-<img src="media/image14.png" id="image14">
+![image14](media/image14.png)
 
 ## Planetario
 
@@ -63,12 +63,12 @@ https://www.youtube.com/watch?v=NG2z5eFTflw
 
 Las cadenas son uno de los mecanismos más simples para transmitir el movimiento. Una cadena es una serie de eslabones conectados. Los eslabones pueden girar libremente en torno a su eje.
 
-<img src="media/image12.gif" id="image12">
+![image12](media/image12.gif)
 
 Las cadenas se utilizan principalmente en bicicletas, motocicletas, motores de bote y trenes de juguete.
 
 
-<img src="media/image13.png" id="image13">
+![image13](media/image13.png)
 
 ### Piñones y platos
 

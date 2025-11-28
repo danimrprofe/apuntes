@@ -92,7 +92,7 @@ Los eventos de agenda se sincronizará con las cuentas de Google (calendar) o de
 
 Podemos abrirlas directamente con Win+A. Se pueden personalizar las notificaciones, y modificar ciertas configuraciones
 
-<img src="media/image6.png" id="image7">
+![image7](media/image6.png)
 
 ---
 

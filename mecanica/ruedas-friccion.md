@@ -12,10 +12,10 @@ Estas ruedas presentan una serie de características:
 2. Normalmente estas ruedas de fricción se emplean en arboles de transmisión muy cercanos y cuando la potencia que hay que transmitir es pequeña.
 3. Este tipo de transmisión tiene la ventaja de que es muy fácil de fabricar, no necesita apenas mantenimiento y no produce ruidos
 
-<img src="media/image6.jpg" id="image6">
+![image6](media/image6.jpg)
 
 Este sistema es utilizado en aplicaciones donde se requiere una transmisión de potencia a corta distancia, como la dinamo de una bicicleta.
 
-<img src="media/image7.jpg" id="image7">
+![image7](media/image7.jpg)
 
 En el siguiente video podemos ver una dinamo en funcionamiento:

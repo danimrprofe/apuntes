@@ -22,7 +22,7 @@ Suele verse a través de las llantas, y son visibles al desmontar la rueda:
 
 El sistema de freno de tambor se compone de un tambor que se encuentra en el interior de la rueda, y que gira junto con ella.
 
-<img src="media/image45.jpg" id="image45">
+![image45](media/image45.jpg)
 
 Las zapatas son piezas de metal en forma de arco que se ajustan dentro del tambor, y que se activan para crear fricción y detener la rotación del tambor y, por lo tanto, de la rueda.
 Al quitar la tapa podemos obervar sus componentes:
@@ -31,18 +31,18 @@ Al quitar la tapa podemos obervar sus componentes:
 
 Cuando se presiona el pedal de freno, una serie de piezas mecánicas e hidráulicas trabajan juntas para empujar las zapatas contra el tambor, lo que crea la fricción necesaria para detener el vehículo.
 
-<img src="media/image46.gif" id="image46">
+![image46](media/image46.gif)
 
 ## Frens de disc
 
 Los frenos de disco son fáciles de identificar puesto que se ve a través de la llanta el disco y, en este caso de
 color rojo, la pinza que ejerce presión sobre el disco.
 
-<img src="media/image51.png" id="image51">
+![image51](media/image51.png)
 
 Els frens de disc funcionen mitjançant una pinça que pren un disc col·locat en l'eix de gir. La pinça pressiona dues pastilles de fre, una a cada costat del disc, per frenar el moviment. Això es fa mitjançant èmbols que s'accionen amb pressió hidràulica.
 
-<img src="media/image47.jpg" id="image47">
+![image47](media/image47.jpg)
 
 Los frenos de disco tienen varias ventajas:
 
@@ -62,11 +62,11 @@ El proceso de frenado es el siguiente:
 
 El líquid que circula en el sistema de frenat es diu líquid de frens.
 
-<img src="media/image49.png" id="image49">
+![image49](media/image49.png)
 
 Hi ha dos tipus de frens de disc: sistema rígid i sistema flotant. En el sistema rígid, els èmbols pressionen per ambdós costats del disc de manera simultània, mentre que en el sistema flotant, una pinça solidària duu dos pistons, un acciona directament sobre una de les pastilles de fre i l'altre acciona sobre l'altra per mitjà de la porta de la pinça.
 
-<img src="media/image50.png" id="image50">
+![image50](media/image50.png)
 
 ## Pastillas de freno
 
@@ -74,7 +74,7 @@ Hi ha dos tipus de frens de disc: sistema rígid i sistema flotant. En el sistem
 
 Las pastillas de freno pueden estar hechas de materiales metálicos o cerámicos, dependiendo del tipo de freno y de las condiciones de funcionamiento.
 
-<img src="media/image44.jpg" id="image44">
+![image44](media/image44.jpg)
 
 Las pastillas se van desgastando con el uso, y pierden gran parte del material, por lo que dejan de ser efectivas y tienen que ser sustituidas.
 
@@ -98,17 +98,17 @@ Desventajas:
 
 Los sistemas de frenado hidráulicos utilizan un líquido para transmitir la presión a través de una columna de líquido que actúa como transmisor de energía.
 
-<img src="media/image52.gif" id="image52">
+![image52](media/image52.gif)
 
 ## Líquidos de freno
 
-<img src="media/image53.png" id="image53">
+![image53](media/image53.png)
 
 El líquido de frenos es un fluido hidráulico que se utiliza en el sistema de frenos. El líquido transmite la presión ejercida por el conductor sobre el pedal del freno a las zapatas o pastillas de freno, que a su vez generan la fricción necesaria para detener el vehículo.
 
 ## Servofrens
 
-Los servofrenos son un tipo especial de sistema de frenado que ayuda a reducir la fuerza de la fuerza que se debe realizar en el pedal de freno. <img src="media/image54.jpg" id="image54">
+Los servofrenos son un tipo especial de sistema de frenado que ayuda a reducir la fuerza de la fuerza que se debe realizar en el pedal de freno. ![image54](media/image54.jpg)
 
 Los servofrenos utilizan una fuente externa de energía, como el aire comprimido o la energía hidráulica, para ayudar a aplicar la fuerza a los frenos y reducir el esfuerzo que se debe hacer en el pedal.
 

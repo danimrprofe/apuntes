@@ -1,14 +1,27 @@
-
-
 # 1. Impressió 3D
 
-Hi ha diferents tècniques d'impressió 3D. La que treballarem nosaltres és la impressió amb plàstic PLA.
+La impressió 3D permet crear objectes físics a partir d’un model digital.
+La tècnica que utilitzarem és la **FDM** (Fused Deposition Modeling), que imprimeix amb **filament PLA**.
 
-La impressora 3D de plàstic imprimeix models creats amb ordinador fonent progressivament **filament** de plàstic sòlid, fent-lo passar per un **extrussor** que el fon i fa que el fil de sortida sigui més prim.
+## 🧵 Com funciona?
 
-Els 3 motors mouen l'extrussor en les 3 dimensions conegudes per a dipositar el filament on correspongui. Al poc, el plàstic solidifica i s'addereix a la resta de la figura.
+La impressora fon progressivament un **filament de plàstic PLA** i el fa passar pel **extrusor**, que escalfa el material fins fondre’l.
+A mesura que el plàstic surt per la **boquilla (nozzle)**, es diposita formant capes molt fines.
 
-La **base** s'encalenteix per a millorar l'adderència del plàstic fus.
+## 🛠️ Moviment de la impressora
+
+3 motors controlen el moviment de l’extrusor en els eixos **X, Y i Z**:
+
+- **X/Y:** desplaçament horitzontal per dibuixar cada capa
+- **Z:** s’eleva per començar la següent capa
+
+Així, la impressora va construint l’objecte **capa sobre capa**.
+
+## 🔥 La base calenta
+
+La **base (hot bed)** s’escalfa per millorar l’**adherència** de la primera capa.
+Això evita que la peça es desprengui o es mogui durant la impressió.
+
 
 ![imagen](img/2022-12-15-16-51-02.png)
 
@@ -18,14 +31,15 @@ Hi ha diferents tècniques d'impressió 3D. La que treballarem nosaltres és la 
 
 La impressora 3D de plàstic imprimeix models creats amb ordinador fonent progressivament **filament** de plàstic sòlid, fent-lo passar per un **extrussor** que el fon i fa que el fil de sortida sigui més prim.
 
-## Motors
+## 🧭 Motors
 
-Els 3 motors mouen en les 3 dimensions conegudes per a dipositar el filament on correspongui.
+Els 3 motors de la impressora controlen el moviment en les tres dimensions per tal de dipositar el filament exactament on toca.
 
-- L'extrussor es mou en vertical a l'eix Z i en horitzontal a l'eix X.
-- La base es mou en l'eix Y.
+- **Extrusor:** es mou en vertical per l’**eix Z** i en horitzontal per l’**eix X**.
+- **Base (llit calent):** es desplaça endavant i enrere per l’**eix Y**.
 
-Al poc, el plàstic solidifica i s'addereix a la resta de la figura.
+Un cop dipositat, el plàstic es **refreda ràpidament**, solidifica i s’adhereix a les capes inferiors fins formar la figura completa.
+
 
 ![imagen](img/2022-12-15-16-51-02.png)
 

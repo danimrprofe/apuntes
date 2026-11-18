@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>5._Problemas_con_los_dispositivos.pptx.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="problemas-con-los-dispositivos">Problemas con los dispositivos</h2>
+<p>Técnicas de montaje, sustitución y conexión de componentes y periféricos microinformáticos</p>
+<h2 id="introducci%C3%B3n">Introducción</h2>
+<p>Windows 7 es cada vez más efectivo a la hora de utilizar los dispositivos instalados, ya sean periféricos o tarjetas de expansión. Además de una gran base de datos de controladores, el sistema operativo cuenta con diversas herramientas para solucionar los problemas de los dispositivos.</p>
+<h2 id="nuevo-dispositivo-nuevo-controlador">Nuevo dispositivo, nuevo controlador</h2>
+<p>Cuando se adquiere un ordenador completo en una tienda, no suele haber problemas de compatibilidad con los dispositivos, especialmente cuando se vende con el sistema operativo preinstalado. Incluso si se adquiere, además del ordenador, otros periféricos no preinstalados, como impresoras, webcam o escáneres, el vendedor suministra discos que contienen los programas de instalación de los dispositivos.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/Montaje_de_componentes/img/5_Problemas_con_los_dispositivos0.jpg" alt="imagen"></p>
+<p>Sin embargo, si se añade nuevos dispositivos, o se sustituyen otros, como por ejemplo una nueva tarjeta de video aceleradora 3D, sí que es posible encontrarse con problemas de compatibilidad con los dispositivos y será necesario disponer del controlador adecuado que solucione el problema y funcione correctamente el dispositivo.</p>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/Montaje_de_componentes/img/5_Problemas_con_los_dispositivos1.jpg" alt="imagen"></p>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/Montaje_de_componentes/img/5_Problemas_con_los_dispositivos2.jpg" alt="imagen"></p>
+<h2 id="controladores-en-windows-7">Controladores en Windows 7</h2>
+<p>Windows 7 ha tratado de mantener, con una base de datos actualizada, tener el controlador adecuado al dispositivo instalado.</p>
+<p>Así que ha incluido en la instalación del sistema operativo miles de controladores para los dispositivos más comunes.</p>
+<p>Pero también es posible que el problema no sea del controlador, pudiendo ser cuestión de una mala conexión, o incluso de un defecto de funcionamiento en el dispositivos.</p>
+<p>Para resolver problemas con los dispositivos, Windows 7 ofrece diversas herramientas.</p>
+<h2 id="dispositivos-e-impresoras">Dispositivos e impresoras</h2>
+<p>Para la mayoría de dispositivos externos, como impresoras, cámaras fotográficas digitales, escáneres, faxes, equipos multifunción, etc. Windows centraliza su gestión desde el  <strong>Panel de control.</strong></p>
+<p>Dentro de la categoría  __Hardware y sonido __ se encuentra la sección  <strong>Dispositivos e Impresoras</strong> , donde aparecerán todos aquellos dispositivos que se encuentran conectados.</p>
+<p>Dependiendo del dispositivo, Windows 7 mostrará más o menos información, incluyendo enlaces a la página web del fabricante, pero siempre se mostrará información sobre el estado del dispositivo.</p>
+<p>Si el dispositivo está conectado pero en la pantalla de  __Dispositivos e impresoras __ se muestra como desconectado, es señal de que existe un problema.</p>
+<h2 id="solucionador-de-problemas">Solucionador de problemas</h2>
+<p>En el caso de tener problemas con un dispositivo, o simplemente, tener la sospecha de ello, es recomendable acudir al  <strong>Solucionador de problemas</strong> .</p>
+<p>Puede accederse fácilmente abriendo el  <strong>Panel de control</strong>  y realizando una búsqueda en la casilla correspondiente.</p>
+<p>Una vez aparezca la pantalla de  __Solución de problemas __ se debe hacer clic en  <strong>Configurar dispositivo</strong> , dentro de la sección  <strong>Hardware y sonido</strong> . Esta herramienta está automatizada e intentará realizar una búsqueda, primero para identificar problemas con los dispositivos y finalmente presentará al usuario las opciones disponibles, desde activar dispositivos  a buscar nuevos controladores.</p>
+<h2 id="panel-de-control">Panel de control</h2>
+<h2 id="solucionar-problemas-con-el-equipo">Solucionar problemas con el equipo</h2>
+<h2 id="solucionador-de-problemas">Solucionador de problemas</h2>
+<p>Una vez se inicie el  <em>Solucionador de problemas</em> , este buscará los posibles problemas asociados  a los diferentes dispositivos. Esto incluye tanto periféricos, impresoras o escáneres, dispositivos internos como tarjetas de expansión WIFI, Bluetooth, etc.</p>
+<p>Durante el análisis es posible que se muestren mensajes  que indican que se está “ <strong>instalando software de controlador de dispositivos</strong> ” y una confirmación para que el usuario permita a la herramienta  seguir con el proceso, para ello, es necesario tener habilitado la opción de  <strong>Windows Update.</strong></p>
+<h2 id="b%C3%BAsqueda-y-actualizaci%C3%B3n-de-controlador">Búsqueda y actualización de controlador</h2>
+<h2 id="windows-update-deshabilitado">Windows Update Deshabilitado</h2>
+<h2 id="solucionador-de-problemas">Solucionador de problemas</h2>
+<p>Una vez acabado el proceso, el  <strong>Solucionador de problemas</strong>  mostrará un informe final. Este incluye una descripción de los problemas encontrados y si se han conseguido solucionar.  Si el problema no se ha solucionado, se le ofrecerá explorar otras opciones, como buscar en ayuda y soporte técnico, dirigirse a una comunidad de Windows online para hacer consultas o recuperar un estado anterior del sistema.</p>
+<h2 id="la-visi%C3%B3n-general">La visión general</h2>
+<ul>
+<li>El clásico Administrador de dispositivos también ofrece una visión rápida del estado de los dispositivos del sistema. Se puede acceder a esta pantalla haciendo clic derecho en el icono de  <strong>Equipo</strong>  desde cualquier ventana del Explorador de Windows. En el menú contextual  se debe escoger la opción  <strong>propiedades</strong> , y en esta,  <strong>Administrador de dispositivos</strong> . Se mostrará una visión de todos los componentes del equipo, agrupados según su tipología (adaptadores de pantalla, de red, dispositivo de imagen, de interfaz de usuario, etc.).</li>
+<li>Si alguno de estos componentes tiene un problema, su grupo se verá expandido y en el icono del dispositivo pueden aparecer distintos símbolos:
+<ul>
+<li>Símbolo flecha hacia abajo  Desactivado</li>
+<li>Símbolo de exclamación  Problema con el dispositivo.</li>
+<li>Símbolo interrogante  Sin identificación del dispositivo</li>
+</ul>
+</li>
+</ul>
+<h2 id="administrador-de-dispositivos">Administrador de dispositivos</h2>
+<p><img src="file:///e:/Docencia/apuntes/docs/hardware/Montaje_de_componentes/img/5_Problemas_con_los_dispositivos3.png" alt="imagen"></p>
+<p>En la ventana del  _administrador de dispositivo _ de Windows 7 se podrá observar todos los dispositivos que están correctamente instalados y sin problemas y los que tienen problemas, por falta de controlador o están deshabilitados.</p>
+
+</body>
+</html>

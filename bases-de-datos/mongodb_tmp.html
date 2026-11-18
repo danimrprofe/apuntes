@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mongodb.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="mongodb">MongoDB</h1>
+<h2 id="introducci%C3%B3n">Introducción</h2>
+<p><strong>Mongodb</strong> es una base de datos NoSQL que se utiliza para almacenar y recuperar datos de forma rápida y sencilla. No requiere un esquema predefinido, por lo que es ideal para aplicaciones en las que los datos pueden cambiar con frecuencia.</p>
+<h2 id="caracter%C3%ADsticas">Características</h2>
+<p>NoSQL se ha convertido en una de las principales opciones para los desarrolladores que buscan una base de datos <strong>flexible</strong> y <strong>escalable</strong>.</p>
+<p>Esto se debe a algunas características únicas que ofrece NoSQL, como un diseño sin esquemas, una mayor escalabilidad y una mejor capacidad de respuesta.</p>
+<p>En primer lugar, una base de datos NoSQL <strong>no requiere un esquema</strong> predefinido para almacenar los datos. Esto significa que los desarrolladores pueden agregar nuevos campos a un documento sin tener que redefinir el esquema de la base de datos. Esto facilita la creación de aplicaciones en las que los requisitos de datos cambian constantemente.</p>
+<p>Además, la escalabilidad es una de las principales ventajas de NoSQL. Esto se debe a que la base de datos se distribuye en varios servidores, lo que permite a los desarrolladores escalar la capacidad de almacenamiento y procesamiento de datos de forma sencilla. Esto significa que una base de datos NoSQL puede crecer sin afectar el rendimiento.</p>
+<p>Por último, una base de datos NoSQL también ofrece una mejor capacidad de respuesta. Esto se debe a que los datos se almacenan en formato JSON, lo que hace que sea muy fácil de leer y escribir. Esto significa que los datos se pueden recuperar y almacenar de forma más rápida, lo que mejora el rendimiento de la aplicación.</p>
+<h2 id="c%C3%B3mo-se-guardan-las-cosas">Cómo se guardan las cosas</h2>
+<ul>
+<li><code>MongoDB</code> permite almacenar <code>datos estructurados</code> en forma de <code>documentos</code>.</li>
+<li>Los <code>documentos</code> se almacenan dentro de <code>colecciones</code>, las cuales a su vez pertenecen a una <code>base de datos</code>.</li>
+<li>Estos documentos tienen una estructura JSON</li>
+<li>Los documentos se pueden comparar con los <code>registros</code> en una base de datos relacional.</li>
+<li>
+<ul>
+<li>No se definen IDs para cada documento, sino que se autogeneran cuando se introduce un documento nuevo</li>
+</ul>
+</li>
+<li>Las <code>colecciones</code> se pueden comparar con las <code>tablas</code> en una base de datos relacional.</li>
+<li>Las <code>base de datos</code> se pueden comparar con las <code>bases de datos</code> en una base de datos relacional.</li>
+</ul>
+<p>Ejemplo:</p>
+<ul>
+<li>Base de datos: <code>tienda</code></li>
+<li>Colección: <code>productos</code></li>
+<li>Documento:</li>
+</ul>
+<pre class="hljs"><code><div>    {
+        <span class="hljs-attr">"_id"</span> : ObjectId(<span class="hljs-string">"5b078ebb6f5a7f36d8916a7f"</span>),
+        <span class="hljs-attr">"nombre"</span> : <span class="hljs-string">"TV LED"</span>,
+        <span class="hljs-attr">"descripcion"</span> : <span class="hljs-string">"TV LED de 50 pulgadas"</span>,
+        <span class="hljs-attr">"precio"</span> : <span class="hljs-number">500</span>,
+        <span class="hljs-attr">"categoria"</span> : <span class="hljs-string">"electronica"</span>,
+        <span class="hljs-attr">"tags"</span> : [
+            <span class="hljs-string">"tv"</span>,
+            <span class="hljs-string">"led"</span>
+        ]
+    }
+</div></code></pre>
+<p>Permite acceder a los datos utilizando librerías javascript.</p>
+<p>En cuanto a los documentos:</p>
+<ul>
+<li>No todos los documentos tienen porqué tener los mismos campos, por lo que se pueden agregar documentos con campos nuevos en cualquier momento.</li>
+<li>Los campos pueden estar anidados, por lo que un campo puede contener a su vez más de un campo.</li>
+</ul>
+<h2 id="instalaci%C3%B3n">Instalación</h2>
+<p>Se puede descargar un instalable para Windows, y se puede instalar o no como un servicio. En función de la decisión que tomemos deberemos agregar al path las rutas a los ejecutables de MongoDB que son, principalmente:</p>
+<ul>
+<li>mongod: se trata del servicio, el engine de mongo, que gestionará la BD</li>
+<li>mongo: shell de mongoDB que nos permitirá comunicarnos con la BD y realizar operaciones sobre ella</li>
+</ul>
+
+</body>
+</html>

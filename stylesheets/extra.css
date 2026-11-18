@@ -1,0 +1,10 @@
+h1 {
+    color: white;
+    font-family: monospace;
+    background-color: #01a1ff;
+    padding: 10px;
+}
+
+h2 {
+    font-weight: 800;
+}

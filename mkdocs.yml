@@ -4,8 +4,8 @@ site_author: danimrprofe
 site_description: >-
   página con apuntes de informática
 
-repo_name: danimprofe/apuntes
-repo_url: https://github.com/danimrprofe/
+repo_name: danimrprofe/apuntes
+repo_url: https://github.com/danimrprofe/apuntes
 
 site_url: https://danimrprofe.github.io/apuntes/
 theme:
@@ -47,6 +47,9 @@ markdown_extensions:
 
 plugins:
   - search
+
+hooks:
+  - .github/hooks/mkdocs_mirror.py
 
 copyright: danimrprofe 2022
 
